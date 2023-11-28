@@ -20,6 +20,13 @@ git branch -M main
 git push -uf origin main
 ```
 
+```
+cd existing_repo
+git remote add origin https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard.git
+git checkout -b develop
+git push origin develop
+```
+
 ## Integrate with your tools
 
 - [ ] [Set up project integrations](https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard/-/settings/integrations)

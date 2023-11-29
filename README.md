@@ -1,4 +1,6 @@
 # Tremor Dashboard Web App
+- Design: [link](https://demos.creative-tim.com/nextjs-material-dashboard-pro/dashboards/analytics)
+- Requirements and Estimate: [link](https://docs.google.com/document/d/1Qiz9K69akpvoF_JJfTmk8pMrpDvHDYRFWhENPoXS2f0/edit?usp=sharing)
 
 ## Prerequisite
 
@@ -30,16 +32,16 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### How to build app
 
-- To build the app:
+1. To build the app:
 
   ```bash
   pnpm run build
   ```
 
-- To start the build on local:
+2. To start the build on local:
 
   ```bash
   pnpm start
   ```
 
-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

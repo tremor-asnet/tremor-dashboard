@@ -10,6 +10,9 @@ module.exports = {
     current: "currentColor",
     extend: {
       colors: {
+        primary: "#344767",
+        secondary: "#7b809a",
+        seldom: "#1a73e8",
         // light mode
         tremor: {
           brand: {
@@ -33,11 +36,10 @@ module.exports = {
             DEFAULT: "#e5e7eb", // gray-200
           },
           content: {
-            subtle: "#9ca3af", // gray-400
-            DEFAULT: "#6b7280", // gray-500
-            emphasis: "#374151", // gray-700
-            strong: "#111827", // gray-900
-            inverted: "#ffffff", // white
+            title: "#344767", // Rhino
+            DEFAULT: "#7b809a", // Waterloo
+            emphasis: "#4caf50", // Fruit Salad
+            seldom: "#1a73e8", // fruitRoyal Blue
           },
         },
         // dark mode
@@ -71,11 +73,25 @@ module.exports = {
           },
         },
       },
+      backgroundColor: {
+        primary: "#344767",
+        few: "#339537",
+        seldom: "#bce2be",
+        
+      },
+      backgroundImage: {
+         gradientPrimary: "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+         gradientSecondary: "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
+         gradientElementary: "linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71))",
+         gradientFew: "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))", 
+         gradientSeldom: "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
+      }, 
       boxShadow: {
         // light
         "tremor-input": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
         "tremor-card":
-          "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
+        "tremor-cardImage": "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px",
         "tremor-dropdown":
           "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
         // dark

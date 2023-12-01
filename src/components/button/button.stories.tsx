@@ -1,15 +1,44 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "..";
+
+import { Button } from "@tremor/react";
+
+import { TiHome } from "react-icons/ti";
 
 const meta = {
   title: "Components/Button",
   component: Button,
-} satisfies Meta<typeof Button>;
+} as Meta<typeof Button>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  render: () => <Button />,
+export const Primary: Story = {
+  render: () => (
+    <Button className="font-sans font-bold bg-primary hover:bg-primary border-transparent text-xs">
+      Primary
+    </Button>
+  ),
+};
+
+export const Secondary: Story = {
+  render: () => (
+    <Button
+      className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
+      variant="secondary"
+    >
+      Secondary
+    </Button>
+  ),
+};
+
+export const Icon: Story = {
+  render: () => (
+    <Button
+      className="font-sans font-bold bg-inherit text-tremor-content-title border-0 border-inherit hover:bg-transparent text-xs"
+      icon={TiHome}
+    >
+      App
+    </Button>
+  ),
 };

@@ -80,11 +80,13 @@ module.exports = {
         
       },
       backgroundImage: {
-         gradientPrimary: "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-         gradientSecondary: "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
-         gradientElementary: "linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71))",
-         gradientFew: "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))", 
-         gradientSeldom: "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
+        gradientPrimary: "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+        gradientSecondary: "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
+        gradientElementary: "linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71))",
+        gradientFew: "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))", 
+        gradientSeldom: "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
+        "gradient-primary": "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+        "hero-signin": "url('/images/bg-sign-in.jpeg')",
       }, 
       boxShadow: {
         // light
@@ -111,7 +113,7 @@ module.exports = {
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
         "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
-      },
+      }
     },
   },
   safelist: [

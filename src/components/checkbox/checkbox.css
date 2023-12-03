@@ -1,0 +1,189 @@
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none;
+}
+
+.checkbox-layout {
+  vertical-align: middle;
+  position: relative;
+}
+
+.checkbox-layout::before {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  content: "";
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  transform: scale3d(2.3, 2.3, 1);
+}
+
+.check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #344767;
+  border-radius: 6px;
+  opacity: 0.25;
+  overflow: hidden;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked + .checkbox-layout .check {
+  opacity: 1;
+}
+
+.check:before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  display: block;
+  margin-top: -3px;
+  margin-left: 7px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
+    0 0 0 0 inset;
+  animation: checkbox-off 0.3s forwards ease-out;
+}
+
+input[type="checkbox"]:focus + .checkbox-layout .check:after {
+  opacity: 0.2;
+}
+
+input[type="checkbox"]:checked + .checkbox-layout .check:before {
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+    -5px 5px 0 10px, 20px -12px 0 11px;
+  animation: checkbox-on 0.3s forwards ease-out;
+}
+
+input[type="checkbox"]:not(:checked) + .checkbox-layout:before {
+  animation: rippleOff 700ms forwards ease-out;
+}
+
+input[type="checkbox"]:checked + .checkbox-layout:before {
+  animation: rippleOn 700ms forwards ease-out;
+}
+
+input[type="checkbox"]:not(:checked) + .checkbox-layout .check:after {
+  animation: rippleOff 700ms forwards ease-out;
+}
+
+input[type="checkbox"]:checked + .checkbox-layout .check:after {
+  animation: rippleOn 700ms forwards ease-out;
+}
+
+input[type="checkbox"][disabled]:not(:checked) ~ .checkbox-layout .check:before,
+input[type="checkbox"][disabled] + .circle {
+  opacity: 0.5;
+}
+
+input[type="checkbox"][disabled] + .checkbox-layout .check:after {
+  background-color: gray;
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"][disabled] + .checkbox-layout {
+  cursor: not-allowed;
+}
+
+.checkbox-layout .check {
+  color: #344767;
+}
+
+.checkbox-layout::before {
+  background-color: #344767;
+}
+
+input[type="checkbox"]:checked + .checkbox-layout .check {
+  color: #344767;
+}
+
+input[type="checkbox"]:not(:checked) + .checkbox-layout {
+  color: #344767;
+}
+
+@keyframes checkbox-on {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 15px 2px 0 11px;
+  }
+  50% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 20px 2px 0 11px;
+  }
+  100% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 20px -12px 0 11px;
+  }
+}
+
+@keyframes checkbox-off {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+  }
+  25% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+  }
+  50% {
+    transform: rotate(45deg);
+    margin-top: -4px;
+    margin-left: 6px;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
+      -5px 5px 0 10px, 15px 2px 0 11px, 0 0 0 0 inset;
+  }
+  51% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
+      0px 0px 0 10px inset;
+  }
+  100% {
+    transform: rotate(0deg);
+    margin-top: -2px;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
+      0px 0px 0 0px inset;
+  }
+}
+
+@keyframes rippleOn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13);
+  }
+}
+
+@keyframes rippleOff {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(13, 13);
+  }
+}

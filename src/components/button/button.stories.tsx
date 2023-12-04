@@ -32,6 +32,16 @@ export const Secondary: Story = {
   ),
 };
 
+export const Light: Story = {
+  render: () => (
+    <Button
+      className="font-sans font-bold text-tremor-content-title text-xs hover:text-tremor-content-title px-6 py-2.5"
+      variant="light"
+    >
+      Light
+    </Button>
+  ),
+};
 export const Icon: Story = {
   render: () => (
     <Button

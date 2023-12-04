@@ -1,44 +1,7 @@
-input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  margin: 0;
-  z-index: -1;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  left: 0;
-  pointer-events: none;
-}
-
-.checkbox-layout {
-  vertical-align: middle;
-  position: relative;
-}
 
 .checkbox-layout::before {
-  position: absolute;
-  left: 8px;
-  top: 2px;
-  content: "";
-  height: 4px;
-  width: 4px;
-  border-radius: 100%;
-  z-index: 1;
-  opacity: 0;
-  margin: 0;
+  @apply absolute content-[""] h-1 w-1 z-[1] opacity-0 m-0 rounded-[100%] left-2 top-0.5;
   transform: scale3d(2.3, 2.3, 1);
-}
-
-.check {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #344767;
-  border-radius: 6px;
-  opacity: 0.25;
-  overflow: hidden;
-  z-index: 1;
 }
 
 input[type="checkbox"]:checked + .checkbox-layout .check {
@@ -46,16 +9,7 @@ input[type="checkbox"]:checked + .checkbox-layout .check {
 }
 
 .check:before {
-  position: absolute;
-  content: "";
-  transform: rotate(45deg);
-  display: block;
-  margin-top: -3px;
-  margin-left: 7px;
-  width: 0;
-  height: 0;
-  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
-    0 0 0 0 inset;
+  @apply absolute content-[""] rotate-45 block mt-[-3px] w-0 h-0 shadow-[0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0_inset] ml-[7px];
   animation: checkbox-off 0.3s forwards ease-out;
 }
 
@@ -64,8 +18,7 @@ input[type="checkbox"]:focus + .checkbox-layout .check:after {
 }
 
 input[type="checkbox"]:checked + .checkbox-layout .check:before {
-  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-    -5px 5px 0 10px, 20px -12px 0 11px;
+  @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,20px_-12px_0_11px];
   animation: checkbox-on 0.3s forwards ease-out;
 }
 
@@ -117,54 +70,31 @@ input[type="checkbox"]:not(:checked) + .checkbox-layout {
 
 @keyframes checkbox-on {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 15px 2px 0 11px;
+    @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,15px_2px_0_11px];
   }
   50% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 20px 2px 0 11px;
+    @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,20px_2px_0_11px];
   }
   100% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 20px -12px 0 11px;
+    @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,20px_-12px_0_11px];
   }
 }
 
 @keyframes checkbox-off {
   0% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+    @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,20px_-12px_0_11px,0_0_0_0_inset];
   }
   25% {
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 20px -12px 0 11px, 0 0 0 0 inset;
+    @apply shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,20px_-12px_0_11px,0_0_0_0_inset];
   }
   50% {
-    transform: rotate(45deg);
-    margin-top: -4px;
-    margin-left: 6px;
-    width: 0px;
-    height: 0px;
-    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0px 0 20px, 0px 32px 0 20px,
-      -5px 5px 0 10px, 15px 2px 0 11px, 0 0 0 0 inset;
+    @apply rotate-45 w-0 h-0 shadow-[0_0_0_10px,10px_-10px_0_10px,32px_0px_0_20px,0px_32px_0_20px,-5px_5px_0_10px,15px_2px_0_11px,0_0_0_0_inset] ml-1.5 -mt-1;
   }
   51% {
-    transform: rotate(0deg);
-    margin-top: -2px;
-    margin-left: -2px;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
-      0px 0px 0 10px inset;
+    @apply rotate-0 w-5 h-5 shadow-[0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0px_0px_0_10px_inset] -ml-0.5 -mt-0.5;
   }
   100% {
-    transform: rotate(0deg);
-    margin-top: -2px;
-    margin-left: -2px;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0,
-      0px 0px 0 0px inset;
+    @apply rotate-0 w-5 h-5 shadow-[0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0_0_0_0,0px_0px_0_0px_inset] -ml-0.5 -mt-0.5;
   }
 }
 

@@ -14,7 +14,7 @@ const CheckBox = ({ id, className = "", ...props }: InputProps) => {
         id={id}
         {...props}
       />
-      <span className="checkbox-layout align-middle relative">
+      <span className="checkbox-layout flex align-middle relative">
         <span className="check relative inline-block w-5 h-5 border opacity-25 overflow-hidden z-[1] rounded-md border-solid border-primary"></span>
       </span>
     </label>

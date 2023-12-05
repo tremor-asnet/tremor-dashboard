@@ -79,6 +79,9 @@ module.exports = {
         seldom: "#bce2be",
         
       },
+      borderColor: {
+        primary: "#344767"
+      },
       backgroundImage: {
         gradientPrimary: "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
         gradientSecondary: "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",

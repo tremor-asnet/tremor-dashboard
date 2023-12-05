@@ -8,7 +8,7 @@ import { ROUTES } from '../../constants';
 const SignUp = () => {
   return (
     <Flex className='min-h-screen flex-col pb-8'>
-      <div className='bg-[linear-gradient(195deg,rgba(66,66,74,0.4),rgba(25,25,25,0.4)),url("/assets/images/bg-sign-up.webp")] m-4 pt-12 pb-56 opacity-100 rounded-xl shadow-none bg-cover bg-no-repeat bg-center w-["calc(100%_-_2rem)"]'></div>
+      <div className='bg-[linear-gradient(195deg,rgba(66,66,74,0.4),rgba(25,25,25,0.4)),url("/assets/images/bg-sign-up.webp")] m-4 pt-12 pb-56 opacity-100 rounded-xl shadow-none bg-cover bg-no-repeat bg-center w-[calc(100%-2rem)]'></div>
       <Flex className='flex-col mx-auto bg-white rounded-xl max-w-sm -mt-80 shadow-dark-tremor-card'>
         <div className='w-full p-4'>
           <Flex className='bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 pb-8'>

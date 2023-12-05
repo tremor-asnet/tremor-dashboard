@@ -89,7 +89,6 @@ module.exports = {
         gradientFew: "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))", 
         gradientSeldom: "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
         "gradient-primary": "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-        "hero-signin": "url('/images/bg-sign-in.jpeg')",
       }, 
       boxShadow: {
         // light

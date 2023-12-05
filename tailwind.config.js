@@ -13,6 +13,7 @@ module.exports = {
         primary: "#344767",
         secondary: "#7b809a",
         seldom: "#1a73e8",
+        few: "#4caf50",
         // light mode
         tremor: {
           brand: {
@@ -38,7 +39,7 @@ module.exports = {
           content: {
             title: "#344767", // Rhino
             DEFAULT: "#7b809a", // Waterloo
-            emphasis: "#4caf50", // Fruit Salad
+            emphasis: "#374151", // Fruit Salad
             seldom: "#1a73e8", // fruitRoyal Blue
           },
         },

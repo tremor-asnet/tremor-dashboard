@@ -9,6 +9,7 @@ import { ROUTES } from '../../constants';
 
 // Styles
 import '../../components/switch/switch.css';
+import Input from '@/components/input/input';
 
 const SignIn = () => {
 
@@ -50,21 +51,21 @@ const SignIn = () => {
           </Flex>
           <div className='w-full p-3'>
             <div className='h-16 w-full'>
-              <TextInput
-                id='emmail'
-                placeholder='Email'
+              <Input
+                variant='primary'
                 type='email'
-                autoFocus
-                className='py-0.5 w-full'
+                id="email"
+                placeholder="Email"
+                label="Email"
               />
             </div>
             <div className='h-16 w-full'>
-              <TextInput
-                id='password'
-                placeholder='Password'
+              <Input
+                variant='primary'
                 type='password'
-                autoFocus
-                className='py-0.5 w-full'
+                id="password"
+                placeholder="Password"
+                label="Password"
               />
             </div>
             <div className='flex items-center space-x-3 mt-1'>

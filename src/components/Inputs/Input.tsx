@@ -70,8 +70,7 @@ const Input = ({
           htmlFor={id}
           className={`${
             variant === "primary" ? labelPrimaryClasses : labelSecondaryClasses
-          }`}
-        >
+          }`}>
           {label}
         </label>
       </div>

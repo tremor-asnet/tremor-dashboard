@@ -12,7 +12,7 @@ const setup = () => {
   };
 
   return render(
-    <CheckBox data-testid="checkbox" onClick={mockOnClick} {...props} />
+    <CheckBox data-testid="checkbox" onClick={mockOnClick} {...props} />,
   );
 };
 
@@ -29,7 +29,7 @@ describe("CheckBox component render", () => {
 
   test("check CheckBox has attr checked", async () => {
     render(
-      <CheckBox id="checkbox" data-testid="checkbox" defaultChecked={true} />
+      <CheckBox id="checkbox" data-testid="checkbox" defaultChecked={true} />,
     );
 
     const checkbox = screen.getByTestId("checkbox");

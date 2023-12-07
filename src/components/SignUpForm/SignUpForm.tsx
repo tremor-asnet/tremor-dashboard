@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ROUTES } from "@/constants";
 
 // Components
-import CheckBox from "../Checkbox/Checkbox";
+import CheckBox from "../Checkboxs/Checkbox";
 
 const SignUpForm = () => {
   return (
@@ -52,16 +52,14 @@ const SignUpForm = () => {
               I agree with the{" "}
               <Link
                 href={ROUTES.HOME}
-                className="hover:underline no-underline text-gray-800 text-sm font-semibold"
-              >
+                className="hover:underline no-underline text-gray-800 text-sm font-semibold">
                 Terms and conditions
               </Link>
             </Text>
           </div>
           <Button
             className="w-full font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
-            size="xs"
-          >
+            size="xs">
             Sign Up
           </Button>
           <Flex className="mt-8 mb-2 justify-center items-center">
@@ -70,8 +68,7 @@ const SignUpForm = () => {
             </Text>
             <Link
               className="text-black-300 font-semibold text-sm ml-2"
-              href={ROUTES.SINGIN}
-            >
+              href={ROUTES.SINGIN}>
               Sign In
             </Link>
           </Flex>

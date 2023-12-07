@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ROUTES } from "@/constants";
 
 // Components
-import CheckBox from "../Checkboxs/Checkbox";
+import CheckBox from "../Checkbox/Checkbox";
 
 const SignUpForm = () => {
   return (

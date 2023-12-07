@@ -1,10 +1,7 @@
 // Libs
 import type { Meta, StoryObj } from "@storybook/react";
 import { Switch } from "@tremor/react";
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-
-// Styles
-import './switch.css';
+import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 const meta = {
   title: "Components/Switch",
@@ -17,19 +14,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <Switch />
-  )
+  render: () => <Switch />,
 };
 
 export const Checked: Story = {
-  render: () => (
-    <Switch checked/>
-  )
+  render: () => <Switch checked />,
 };
 
 export const Disable: Story = {
-  render: () => (
-    <Switch disabled={boolean('Disabled', true)}/>
-  )
+  render: () => <Switch disabled={boolean("Disabled", true)} />,
 };

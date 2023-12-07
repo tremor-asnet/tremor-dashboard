@@ -1,5 +1,5 @@
-import { memo } from 'react';
-import Image from 'next/image'
+import { memo } from "react";
+import Image from "next/image";
 
 // Define the props for the Input component
 interface IAvatarProps {
@@ -16,15 +16,14 @@ interface IAvatarProps {
  * Primary UI component for Avatar component
  */
 const Avatar = ({
-    src,
-    width = 48,
-    height = 48,
-    alt = 'Avatar',
-    className = 'shadow-md',
-    sizes,
-    priority = true,
-  }: IAvatarProps): JSX.Element => {
-
+  src,
+  width = 48,
+  height = 48,
+  alt = "Avatar",
+  className = "shadow-md",
+  sizes,
+  priority = true,
+}: IAvatarProps): JSX.Element => {
   return (
     <div className={`inline-flex rounded-full overflow-hidden ${className}`}>
       <Image
@@ -37,6 +36,6 @@ const Avatar = ({
       />
     </div>
   );
-}
+};
 
 export default memo(Avatar);

@@ -2,10 +2,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import CheckBox from "./checkbox";
+import CheckBox from "./Checkbox";
 
 // Styles
-import './checkbox.css';
+import "./checkbox.css";
 
 const meta = {
   title: "Components/CheckBox",
@@ -17,19 +17,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <CheckBox id='checkbox'/>
-  ),
+  render: () => <CheckBox id="checkbox" />,
 };
 
 export const Checked: Story = {
-  render: () => (
-    <CheckBox id='checkbox' checked/>
-  ),
+  render: () => <CheckBox id="checkbox" checked />,
 };
 
 export const Disabled: Story = {
-  render: () => (
-    <CheckBox id='checkbox' disabled/>
-  ),
+  render: () => <CheckBox id="checkbox" disabled />,
 };

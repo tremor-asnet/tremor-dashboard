@@ -1,11 +1,11 @@
 // Styles
-import "./checkbox.css";
+import "./styles.css";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
 }
 
-const CheckBox = ({ id, className = "", ...props }: InputProps) => {
+const CheckBox = ({ id, ...props }: InputProps) => {
   return (
     <label htmlFor={id}>
       <input
@@ -20,4 +20,5 @@ const CheckBox = ({ id, className = "", ...props }: InputProps) => {
     </label>
   );
 };
+
 export default CheckBox;

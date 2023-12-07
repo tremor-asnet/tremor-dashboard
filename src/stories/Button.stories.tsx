@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { Button } from "@tremor/react";
-
 import { TiHome } from "react-icons/ti";
 
 const meta = {

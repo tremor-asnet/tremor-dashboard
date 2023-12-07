@@ -1,3 +1,4 @@
+"use client";
 import { Flex } from "@tremor/react";
 
 import { SignInForm } from "@/components";

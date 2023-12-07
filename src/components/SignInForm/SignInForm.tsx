@@ -1,3 +1,5 @@
+"use client";
+
 // Libs
 import { useState } from "react";
 import { TextInput, Button, Flex, Switch, Text, Title } from "@tremor/react";

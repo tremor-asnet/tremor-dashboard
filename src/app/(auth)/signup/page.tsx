@@ -1,4 +1,3 @@
-"use client";
 // Components
 import { SignUpForm } from "@/components";
 

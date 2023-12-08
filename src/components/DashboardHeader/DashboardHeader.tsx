@@ -25,7 +25,7 @@ const DashboardHeader = (): JSX.Element => {
   };
 
   return (
-    <div className="md:flex items-center justify-between px-4 py-1">
+    <div className="md:flex items-center justify-between">
       <div className="flex items-center">
         <div className="mr-16">
           <BreadCrumb
@@ -49,7 +49,7 @@ const DashboardHeader = (): JSX.Element => {
           )}
         </div>
       </div>
-      <div className="flex items-center mt-4 md:mt-0">
+      <div className="flex items-center mt-4 md:mt-0 mr-3">
         <div className="mr-4">
           <TextInput
             id="search"

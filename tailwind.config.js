@@ -84,25 +84,32 @@ module.exports = {
         primary: "#344767",
         few: "#339537",
         seldom: "#bce2be",
-        
+        body: "#f0f2f5",
       },
       borderColor: {
-        primary: "#344767"
+        primary: "#344767",
       },
       backgroundImage: {
-        gradientPrimary: "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-        gradientSecondary: "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
-        gradientElementary: "linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71))",
-        gradientFew: "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))", 
-        gradientSeldom: "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
-        "gradient-primary": "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-      }, 
+        gradientPrimary:
+          "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+        gradientSecondary:
+          "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
+        gradientElementary:
+          "linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71))",
+        gradientFew:
+          "linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96))",
+        gradientSeldom:
+          "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
+        "gradient-primary":
+          "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+      },
       boxShadow: {
         // light
         "tremor-input": "none",
         "tremor-card":
           "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
-        "tremor-cardImage": "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px",
+        "tremor-cardImage":
+          "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px",
         "tremor-dropdown":
           "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
         // dark
@@ -123,7 +130,7 @@ module.exports = {
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
         "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
-      }
+      },
     },
   },
   safelist: [

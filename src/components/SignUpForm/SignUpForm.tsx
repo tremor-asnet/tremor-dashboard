@@ -41,17 +41,17 @@ const SignUpForm = () => {
   const isDisableSubmit = isEmailError || isPasswordError;
 
   return (
-    <Flex className="flex-col mx-auto bg-white rounded-xl max-w-sm -mt-32 shadow-dark-tremor-card">
+    <Flex className="flex-col w-[80%] sm:w-full mx-auto bg-white max-w-sm rounded-xl -mt-36 sm:-mt-32 shadow-dark-tremor-card 2xl:max-w-xl">
       <div className="w-full p-4">
         <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 pb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
           <Title className="font-bold pt-8 pb-2 px-8 md:text-2xl text-white">
             Join us today
           </Title>
-          <Text className="text-white font-light max-w-xs px-8 text-center">
+          <Text className="text-white font-light max-w-xs px-6 sm:px-8 text-center">
             Enter your email and password to register
           </Text>
         </Flex>
-        <div className="w-full p-3">
+        <div className="w-full p-2 sm:p-3">
           <Controller
             control={control}
             rules={{
@@ -59,7 +59,7 @@ const SignUpForm = () => {
               minLength: { value: 4, message: MESSAGES_ERROR.NAME_MIN_LENGTH },
             }}
             render={({ field }) => (
-              <div className="h-[70px] w-full">
+              <div className="h-[65px] w-full">
                 <TextInput
                   id="name"
                   placeholder="Name"
@@ -125,8 +125,8 @@ const SignUpForm = () => {
           />
           <div className="flex items-center space-x-3 mt-1">
             <CheckBox id="checkbox" />
-            <Text className="text-secondary font-light">
-              I agree with the{" "}
+            <Text className="text-sm text-secondary font-light">
+              I agree the{" "}
               <Link
                 href={ROUTES.HOME}
                 className="hover:underline no-underline text-gray-800 text-sm font-semibold">

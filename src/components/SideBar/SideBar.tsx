@@ -28,6 +28,7 @@ import {
   ITEMS,
   ITEMS_DASHBOARD,
   ITEMS_PROFILE,
+  DASHBOARD_LINKS,
 } from "../../constants/sections";
 
 // Styles
@@ -93,17 +94,18 @@ const SideBar = () => {
           </AccordionHeader>
           <AccordionBody>
             <List>
-              {ITEMS_DASHBOARD.map(item => {
-                const { label, href, content } = item;
-                return (
-                  <ListItem className="mt-[3px] leading-[26px]" key={label}>
-                    <Link href={href}>
-                      <span>{content}</span>
-                      <span>{label}</span>
-                    </Link>
-                  </ListItem>
-                );
-              })}
+              <ListItem className="bg-[rgb(52,71,103)] my-[3px] leading-[26px] rounded-md hover:bg-none">
+                <Link href={DASHBOARD_LINKS.ANALYTICS}>
+                  <span>{ITEMS_DASHBOARD[0].content}</span>
+                  <span>{ITEMS_DASHBOARD[0].label}</span>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href={DASHBOARD_LINKS.SALES}>
+                  <span>{ITEMS_DASHBOARD[1].content}</span>
+                  <span>{ITEMS_DASHBOARD[1].label}</span>
+                </Link>
+              </ListItem>
             </List>
           </AccordionBody>
         </Accordion>

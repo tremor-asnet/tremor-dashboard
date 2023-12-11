@@ -13,8 +13,8 @@ export const ITEMS = [
 
 // Link items for dashboard
 export const DASHBOARD_LINKS = {
-  ANALYTICS: "",
-  SALES: "",
+  ANALYTICS: "/",
+  SALES: "/",
 };
 
 export const ITEMS_DASHBOARD = [

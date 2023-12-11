@@ -9,7 +9,7 @@ import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";
 
 // Components
 import { TextInput, Button, Flex, Text, Title } from "@tremor/react";
-import CheckBox from "../checkbox/Checkbox";
+import CheckBox from "../Checkbox/Checkbox";
 
 // Types
 import { User } from "@/types";

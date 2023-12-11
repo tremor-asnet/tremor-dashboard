@@ -14,6 +14,7 @@ module.exports = {
         secondary: "#7b809a",
         seldom: "#1a73e8",
         few: "#4caf50",
+        litle: "#ebebeb",
         // light mode
         tremor: {
           brand: {
@@ -128,8 +129,12 @@ module.exports = {
       fontSize: {
         "tremor-label": ["0.75rem"],
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
-        "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
+        "tremor-title": ["1rem", { lineHeight: "1.625rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
+      },
+      fontFamily: {
+        primary: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+        secondary: ["Helvetica", "Arial", "sans-serif"],
       },
     },
   },

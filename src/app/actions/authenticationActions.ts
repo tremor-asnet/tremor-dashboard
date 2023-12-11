@@ -38,23 +38,27 @@ export async function createNewAccount(
     formData.set("password", hashPassword);
 
     const res = await fetch(`${ROUTER_API_URL}/user`, {
-      // @ts-ignore
-      body: new URLSearchParams(formData),
+      method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
-      method: "POST",
+      // @ts-ignore
+      body: new URLSearchParams(formData),
     });
 
+    if (res.status === 403) {
+      throw new Error("Account with this email already exists!");
+    }
+
     if (!res.ok) {
-      throw new Error("Failed to create new account!");
+      throw new Error("Failed to create new account. Please try again!");
     }
 
     return res.json();
   } catch (error: unknown) {
     if (error instanceof Error) {
       return {
-        errorMessage: `Things exploded (${error.message})`,
+        errorMessage: `${error.message}`,
       };
     }
 

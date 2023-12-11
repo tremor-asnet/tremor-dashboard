@@ -17,6 +17,8 @@
 pnpm i
 ```
 
+3. Create `.env` file and following `.env.example` format. Please contact development team to get the key.
+
 ## Integrate with your tools
 
 - [Set up project integrations](https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard/-/settings/integrations)

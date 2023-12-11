@@ -1,5 +1,5 @@
 // Components
-import { SignUpForm } from "@/components";
+import { SignUpForm } from "@/app/ui/SignUpForm/SignUpForm";
 
 const SignUp = () => {
   return (

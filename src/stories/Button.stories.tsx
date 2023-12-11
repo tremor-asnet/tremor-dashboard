@@ -23,8 +23,7 @@ export const Secondary: Story = {
   render: () => (
     <Button
       className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
-      variant="secondary"
-    >
+      variant="secondary">
       Secondary
     </Button>
   ),
@@ -34,8 +33,7 @@ export const Light: Story = {
   render: () => (
     <Button
       className="font-sans font-bold text-tremor-content-title text-xs hover:text-tremor-content-title px-6 py-2.5"
-      variant="light"
-    >
+      variant="light">
       Light
     </Button>
   ),
@@ -44,8 +42,7 @@ export const Icon: Story = {
   render: () => (
     <Button
       className="font-sans font-bold bg-inherit text-tremor-content-title border-0 border-inherit hover:bg-transparent text-xs"
-      icon={TiHome}
-    >
+      icon={TiHome}>
       App
     </Button>
   ),

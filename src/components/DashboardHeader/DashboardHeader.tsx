@@ -1,11 +1,11 @@
 "use client";
 
 // Libs
-import { TextInput } from "@tremor/react";
 import { useState } from "react";
 
 // Components
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import { TextInput } from "@tremor/react";
 import Link from "next/link";
 import {
   MdMenu,
@@ -25,7 +25,7 @@ const DashboardHeader = (): JSX.Element => {
   };
 
   return (
-    <div className="md:flex items-center justify-between">
+    <div className="md:flex items-center justify-between px-4 py-1 xl:ml-[270px]">
       <div className="flex items-center">
         <div className="mr-16">
           <BreadCrumb
@@ -40,7 +40,7 @@ const DashboardHeader = (): JSX.Element => {
           />
         </div>
         <div
-          className="hidden md:block cursor-pointer"
+          className="hidden xl:block cursor-pointer"
           onClick={toggleNavBarOpen}>
           {isNavBarOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />
@@ -63,7 +63,7 @@ const DashboardHeader = (): JSX.Element => {
           <MdAccountCircle className="text-tremor-content text-xl" />
         </Link>
         <div
-          className="sm:block md:hidden cursor-pointer ml-4"
+          className="sm:block xl:hidden cursor-pointer ml-4"
           onClick={toggleNavBarOpen}>
           {isNavBarOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />
@@ -71,10 +71,12 @@ const DashboardHeader = (): JSX.Element => {
             <MdMenu className="text-tremor-content text-2xl" />
           )}
         </div>
-        <MdSettings className="text-tremor-content text-xl mx-4 cursor-pointer" />
+        <div className="relative">
+          <MdSettings className="text-tremor-content text-xl mx-4 cursor-pointer" />
+        </div>
         <div className="relative">
           <MdNotifications className="text-tremor-content text-xl cursor-pointer" />
-          <div className="absolute -top-3 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2">
+          <div className="absolute -top-3 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer">
             9
           </div>
         </div>

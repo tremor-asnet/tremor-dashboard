@@ -1,3 +1,5 @@
+export const ROUTER_API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 export const ROUTES = {
   HOME: "/",
   SIGN_IN: "/signin",

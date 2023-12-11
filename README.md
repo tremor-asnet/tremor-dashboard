@@ -1,4 +1,5 @@
 # Tremor Dashboard Web App
+
 - Design: [link](https://demos.creative-tim.com/nextjs-material-dashboard-pro/dashboards/analytics)
 - Requirements and Estimate: [link](https://docs.google.com/document/d/1Qiz9K69akpvoF_JJfTmk8pMrpDvHDYRFWhENPoXS2f0/edit?usp=sharing)
 
@@ -17,9 +18,11 @@ pnpm i
 ```
 
 ## Integrate with your tools
+
 - [Set up project integrations](https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard/-/settings/integrations)
 
 ## Collaborate with your team
+
 - [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
 - [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
 - [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
@@ -42,28 +45,28 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 1. To build the app:
 
-  ```bash
-  pnpm run build
-  ```
+```bash
+pnpm run build
+```
 
 2. To start the build on local:
 
-  ```bash
-  pnpm start
-  ```
+```bash
+pnpm start
+```
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### How to run Storybook
 
 1. Start Storybook
-  
-  ```bash
-  pnpm run storybook
-  ```
+
+```bash
+pnpm run storybook
+```
 
 2. Build Storybook
 
-  ```bash
-  pnpm run build-storybook
-  ```
+```bash
+pnpm run build-storybook
+```

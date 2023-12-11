@@ -8,7 +8,7 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "@storybook/addon-postcss",
-    "@storybook/addon-knobs"
+    "@storybook/addon-knobs",
   ],
   staticDirs: ["../public"],
   framework: {

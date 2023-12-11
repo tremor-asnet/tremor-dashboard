@@ -4,5 +4,6 @@ export const MESSAGES_ERROR = {
   PASSWORD_REQUIRED: "Password is required.",
   EMAIL_REQUIRED: "Email is required.",
   EMAIL_INVALID: "Invalid email address.",
-  PASSWORD_INVALID: "Invalid password.",
+  PASSWORD_INVALID:
+    "Pasword must have at least 4 characters, 1 special characters and 1 number",
 };

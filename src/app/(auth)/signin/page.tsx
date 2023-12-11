@@ -1,6 +1,7 @@
 import { Flex } from "@tremor/react";
 
-import { SignInForm } from "@/components";
+// Components
+import SignInForm from "../../ui/SignInForm/SignInForm";
 
 const SignIn = () => {
   return (

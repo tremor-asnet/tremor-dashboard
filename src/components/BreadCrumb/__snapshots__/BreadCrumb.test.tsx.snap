@@ -11,7 +11,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
       <li>
         <a
           class="flex"
-          href="/"
+          href="/dashboards/analytics"
         >
           <svg
             class="bg-inherit border-0 py-0 hover:bg-transparent"

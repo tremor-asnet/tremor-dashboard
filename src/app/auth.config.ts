@@ -12,7 +12,9 @@ export const authConfig: NextAuthConfig = {
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isOnDashboard = nextUrl.pathname === ROUTES.HOME;
+      const isOnDashboard = ![ROUTES.SIGN_IN, ROUTES.SIGN_UP].includes(
+        nextUrl.pathname,
+      );
 
       if (isOnDashboard) {
         // Redirect unauthenticated users to login page

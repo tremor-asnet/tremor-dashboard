@@ -1,22 +1,28 @@
-// Styles
-import "./styles.css";
-
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
+  checked?: boolean;
+  handleCheckBox?: () => void;
 }
-
-const CheckBox = ({ id, ...props }: InputProps) => {
+const CheckBox = ({
+  id,
+  tabIndex,
+  checked,
+  handleCheckBox,
+  ...props
+}: InputProps) => {
   return (
     <label htmlFor={id}>
       <input
-        className="opacity-0 absolute z-[-1] w-0 h-0 overflow-hidden pointer-events-none m-0 left-0"
+        className={`form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]`}
         type="checkbox"
         id={id}
+        checked={checked}
+        onChange={handleCheckBox}
+        autoFocus
+        onKeyPress={handleCheckBox}
+        tabIndex={tabIndex}
         {...props}
       />
-      <span className="checkbox-layout flex align-middle relative">
-        <span className="check relative inline-block w-5 h-5 border opacity-25 overflow-hidden z-[1] rounded-md border-solid border-primary"></span>
-      </span>
     </label>
   );
 };

@@ -3,6 +3,7 @@
 // Libs
 import { useFormState, useFormStatus } from "react-dom";
 import { useForm, Controller } from "react-hook-form";
+import { useState } from "react";
 
 // Components
 import { CheckBox } from "@/components";
@@ -35,6 +36,8 @@ export const SignUpForm = () => {
 
   const createNewAccountError = createNewAccountRes?.errorMessage || null;
 
+  const [checked, setChecked] = useState(false);
+
   const { name, email, password } = errors || {};
   const nameErrorMessage = name?.message?.toString();
   const emailErrorMessage = email?.message?.toString();
@@ -42,7 +45,12 @@ export const SignUpForm = () => {
   const isNameError = Boolean(name);
   const isEmailError = Boolean(email);
   const isPasswordError = Boolean(password);
-  const isDisableSubmit = isEmailError || isPasswordError || isNameError;
+  const isDisableSubmit =
+    isEmailError || isPasswordError || isNameError || !checked;
+
+  const handleCheckBox = () => {
+    setChecked(!checked);
+  };
 
   return (
     <Flex className="flex-col w-[80%] sm:w-full mx-auto bg-white max-w-sm rounded-xl -mt-36 sm:-mt-32 shadow-dark-tremor-card 2xl:max-w-xl">
@@ -140,9 +148,13 @@ export const SignUpForm = () => {
           </div>
 
           <div className="flex items-center space-x-3 mt-1 pt-3">
-            <div tabIndex={3}>
-              <CheckBox id="checkbox" />
-            </div>
+            <CheckBox
+              tabIndex={3}
+              checked={checked}
+              handleCheckBox={handleCheckBox}
+              autoFocus
+              id="checkbox"
+            />
             <Text className="text-sm text-secondary font-light">
               I agree the{" "}
               <Link

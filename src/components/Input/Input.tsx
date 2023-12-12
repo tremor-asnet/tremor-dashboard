@@ -12,6 +12,7 @@ interface InputProps {
   label: string;
   htmlFor?: string;
   errorMessage?: string;
+  disabled?: boolean;
 }
 
 /**
@@ -24,6 +25,7 @@ const Input = ({
   placeholder,
   label = "User Name",
   variant,
+  disabled,
   errorMessage,
 }: InputProps): JSX.Element => {
   // note TODO: using tailwind @apply
@@ -36,7 +38,7 @@ const Input = ({
   // note TODO: using tailwind @apply
   const inputSecondaryClasses = `block w-full p-3 text-sm text-tremor-content-title bg-transparent peer ${
     !errorMessage
-      ? " border-0 border-b focus:border-b-2 border-gray-300 focus:outline-none focus:border-tremor-brand-subtle"
+      ? " border-0 border-b focus:border-b-2 border-gray-300 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle"
       : " text-tremor-content-emphasis border-0 border-b focus:border-b-2 border-red-600 focus:outline-none focus:border-red-600"
   }`;
 
@@ -58,6 +60,7 @@ const Input = ({
     <div className="block">
       <div className="relative">
         <input
+          disabled={disabled}
           type={type}
           id={id}
           placeholder={placeholder}

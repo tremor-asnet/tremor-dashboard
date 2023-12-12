@@ -16,6 +16,11 @@ export const authConfig: NextAuthConfig = {
         nextUrl.pathname,
       );
 
+      // TODO: refactor logic to readable
+      if (nextUrl.pathname === "/" && isLoggedIn) {
+        return Response.redirect(new URL(ROUTES.HOME, nextUrl));
+      }
+
       if (isOnDashboard) {
         // Redirect unauthenticated users to login page
         return isLoggedIn;

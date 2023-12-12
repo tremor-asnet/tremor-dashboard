@@ -87,7 +87,7 @@ const SideBar = () => {
       <AccordionList>
         <Accordion className="bg-inherit border-0">
           <AccordionHeader className="bg-[rgba(255,255,255,0.2)] flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md">
-            <Icon size="lg" icon={RiLayoutMasonryFill} tooltip="Icon layout" />
+            <Icon size="lg" icon={RiLayoutMasonryFill} />
             <Text className="text-white font-light self-center">
               Dashboards
             </Text>
@@ -116,7 +116,7 @@ const SideBar = () => {
       <AccordionList>
         <Accordion className="bg-inherit border-0">
           <AccordionHeader className="flex text-[rgba(255,255,255,0.5)] py-1.5">
-            <Icon size="lg" icon={IoMdImage} tooltip="Icon images" />
+            <Icon size="lg" icon={IoMdImage} />
             <Text className="text-white font-light leading-0 self-center ml-2.5">
               Pages
             </Text>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
 import { IoMdImage } from "react-icons/io";
+import { useContext } from "react";
 
 import {
   Accordion,
@@ -31,13 +32,22 @@ import {
   DASHBOARD_LINKS,
 } from "../../constants/sections";
 
+// Context
+import { SidebarContext } from "@/contexts";
+
 // Styles
 import "./styles.css";
+import { MdClose } from "react-icons/md";
 
 const SideBar = () => {
+  const { isOpen, toggleSideBar } = useContext(SidebarContext);
+
   return (
-    <div className="sidebar antialiased bg-gradient-primary w-[250px] rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] translate-x-[-20rem] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] md:translate-x-0">
-      <Flex className="justify-center gap-1 pb-2">
+    <div
+      className={`sidebar antialiased bg-gradient-primary w-[250px] z-10 rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
+        isOpen ? "translate-x-0" : "translate-x-[-20rem]"
+      }`}>
+      <Flex className="justify-center gap-1 pb-2 relative">
         <Image
           src="/assets/images/sidebar-logo.webp"
           width={28}
@@ -49,6 +59,11 @@ const SideBar = () => {
             Tremor Dashboard PRO
           </Metric>
         </Link>
+        <div
+          className="absolute text-gray-400 top-[-10px] right-[-5px] lg:hidden"
+          onClick={toggleSideBar}>
+          <MdClose />
+        </div>
       </Flex>
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
       <AccordionList>

@@ -1,19 +1,35 @@
+"use client";
 // Libs
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
 
 // Components
 import { Flex } from "@tremor/react";
 import { DashboardHeader, SideBar } from "@/components";
+import { SidebarContext, SidebarContextProvider } from "@/contexts";
 
-export default function DashboardLayout({ children }: { children: ReactNode }) {
+export default function DashboardLayoutWrapper({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <SidebarContextProvider>
+      <DashboardLayout>{children}</DashboardLayout>
+    </SidebarContextProvider>
+  );
+}
+
+function DashboardLayout({ children }: { children: ReactNode }) {
+  const { isOpen } = useContext(SidebarContext);
+
   return (
     <Flex alignItems="start" className="bg-body">
       <div className="h-screen">
         <SideBar />
       </div>
-      <div className="flex-1 p-6 pt-8">
+      <div className={`flex-1 p-6 pt-8  ${isOpen ? "lg:ml-[270px]" : ""}`}>
         <DashboardHeader />
-        <div className="mt-4 ml-0 md:ml-[270px]">{children}</div>
+        <div className={`mt-4`}>{children}</div>
       </div>
     </Flex>
   );

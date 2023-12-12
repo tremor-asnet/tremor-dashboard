@@ -147,7 +147,7 @@ export const SignUpForm = () => {
               I agree the{" "}
               <Link
                 tabIndex={4}
-                href={ROUTES.HOME}
+                href="#"
                 className="hover:underline no-underline text-gray-800 text-sm font-semibold">
                 Terms and conditions
               </Link>

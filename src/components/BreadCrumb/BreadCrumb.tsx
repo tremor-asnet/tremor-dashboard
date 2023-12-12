@@ -1,5 +1,5 @@
 // Libs
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import Link from "next/link";
 import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
@@ -9,20 +9,51 @@ import { ROUTES } from "../../constants";
 
 // Types
 import { IBreadCrumb } from "@/types";
+import { usePathname } from "next/navigation";
 
 // Define the props for the BreadCrumb component
 interface IBreadCrumbProps {
   links: IBreadCrumb[];
-  title: string;
 }
 
 /**
  * Primary UI component for BreadCrumb component
  */
-const BreadCrumb = ({ links, title }: IBreadCrumbProps): JSX.Element => {
+const BreadCrumb = (): JSX.Element => {
+  const pathname = usePathname();
+
+  const links: IBreadCrumb[] = useMemo(() => {
+    switch (true) {
+      case pathname.includes("/dashboards/"):
+        return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
+
+      case pathname.includes("/pages/profile/"):
+        return [
+          { name: "pages", url: ROUTES.PROJECTS },
+          { name: "profiles", url: ROUTES.PROJECTS },
+        ];
+
+      default:
+        return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
+    }
+  }, [pathname]);
+
+  const pageName = useMemo(() => {
+    switch (pathname) {
+      case ROUTES.ANALYTICS:
+        return "analytics";
+      case ROUTES.SALES:
+        return "sales";
+      case ROUTES.PROJECTS:
+        return "All Projects";
+      default:
+        return "analytics";
+    }
+  }, [pathname]);
+
   const renderLinks = (): JSX.Element[] => {
     return links.map(link => (
-      <li key={link.id} className="flex items-center">
+      <li key={link.name} className="flex items-center">
         <div className="bc-link">
           <Link className="text-sm capitalize" href={link.url}>
             {link.name}
@@ -50,11 +81,11 @@ const BreadCrumb = ({ links, title }: IBreadCrumbProps): JSX.Element => {
         {renderLinks()}
 
         <li className="text-sm text-tremor-content-title capitalize">
-          {title}
+          {pageName}
         </li>
       </ol>
       <Title className="text-tremor-content-title font-bold capitalize">
-        {title}
+        {pageName}
       </Title>
     </nav>
   );

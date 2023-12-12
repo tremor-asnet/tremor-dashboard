@@ -42,7 +42,7 @@ export const SignUpForm = () => {
   const isNameError = Boolean(name);
   const isEmailError = Boolean(email);
   const isPasswordError = Boolean(password);
-  const isDisableSubmit = isEmailError || isPasswordError;
+  const isDisableSubmit = isEmailError || isPasswordError || isNameError;
 
   return (
     <Flex className="flex-col w-[80%] sm:w-full mx-auto bg-white max-w-sm rounded-xl -mt-36 sm:-mt-32 shadow-dark-tremor-card 2xl:max-w-xl">
@@ -72,6 +72,7 @@ export const SignUpForm = () => {
                   autoFocus
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                   required
+                  tabIndex={0}
                   {...field}
                 />
               </div>
@@ -88,7 +89,7 @@ export const SignUpForm = () => {
               },
             }}
             render={({ field }) => (
-              <div className="h-[70px] w-full">
+              <div tabIndex={1} className="h-[70px] w-full">
                 <TextInput
                   id="email"
                   placeholder="Email"
@@ -115,6 +116,7 @@ export const SignUpForm = () => {
             render={({ field }) => (
               <div className="h-[70px] w-full">
                 <TextInput
+                  tabIndex={2}
                   id="password"
                   placeholder="Password"
                   error={isPasswordError}
@@ -132,16 +134,19 @@ export const SignUpForm = () => {
             className="flex mb-4 items-center space-x-1"
             aria-live="polite"
             aria-atomic="true">
-            {createNewAccountError && (
+            {createNewAccountError && !isDisableSubmit && (
               <p className="text-sm text-red-500">{createNewAccountError}</p>
             )}
           </div>
 
           <div className="flex items-center space-x-3 mt-1 pt-3">
-            <CheckBox id="checkbox" />
+            <div tabIndex={3}>
+              <CheckBox id="checkbox" />
+            </div>
             <Text className="text-sm text-secondary font-light">
               I agree the{" "}
               <Link
+                tabIndex={4}
                 href={ROUTES.HOME}
                 className="hover:underline no-underline text-gray-800 text-sm font-semibold">
                 Terms and conditions
@@ -154,6 +159,7 @@ export const SignUpForm = () => {
               Already have an account?
             </Text>
             <Link
+              tabIndex={6}
               className="text-black-300 font-semibold text-sm ml-2"
               href={ROUTES.SIGN_IN}>
               Sign In
@@ -171,9 +177,10 @@ const SubmitButton = ({ isDisableSubmit }: { isDisableSubmit: boolean }) => {
 
   return (
     <Button
+      tabIndex={5}
       aria-disabled={disabled}
       type="submit"
-      className="w-full font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+      className="w-full focus:ring-2 font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
       size="xs"
       disabled={disabled}>
       Create account

@@ -67,6 +67,7 @@ const SignInForm = () => {
           render={({ field }) => (
             <div className="h-[70px] w-full">
               <TextInput
+                tabIndex={0}
                 id="email"
                 placeholder="Email"
                 error={isEmailError}
@@ -85,14 +86,15 @@ const SignInForm = () => {
           control={control}
           rules={{
             required: MESSAGES_ERROR.PASSWORD_REQUIRED,
-            // pattern: {
-            //   value: REGEX.PASSWORD,
-            //   message: MESSAGES_ERROR.PASSWORD_INVALID,
-            // },
+            pattern: {
+              value: REGEX.PASSWORD,
+              message: MESSAGES_ERROR.PASSWORD_INVALID,
+            },
           }}
           render={({ field }) => (
             <div className="h-[70px] w-full">
               <TextInput
+                tabIndex={1}
                 id="password"
                 placeholder="Password"
                 error={isPasswordError}
@@ -110,12 +112,13 @@ const SignInForm = () => {
           className="flex mb-4 items-center space-x-1"
           aria-live="polite"
           aria-atomic="true">
-          {authenticateErrorMsg && (
+          {authenticateErrorMsg && !isDisableSubmit && (
             <p className="text-sm text-red-500">{authenticateErrorMsg}</p>
           )}
         </div>
         <div className="flex items-center space-x-3 mt-1">
           <Switch
+            tabIndex={2}
             id="switch"
             name="switch"
             checked={isSwitchOn}
@@ -133,6 +136,7 @@ const SignInForm = () => {
             Don&rsquo;t have an acccount?
           </Text>
           <Link
+            tabIndex={4}
             className="text-black-300 font-semibold text-sm ml-2"
             href={ROUTES.SIGN_UP}>
             Sign up
@@ -149,8 +153,9 @@ const LoginButton = ({ isDisableSubmit }: { isDisableSubmit: boolean }) => {
 
   return (
     <Button
+      tabIndex={3}
       aria-disabled={disabled}
-      className="w-full font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+      className="w-full focus:ring-2 font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
       size="xs"
       type="submit"
       disabled={disabled}>

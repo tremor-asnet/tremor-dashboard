@@ -1,7 +1,7 @@
 "use client";
 
 // Libs
-import { useState } from "react";
+import { useContext } from "react";
 
 // Components
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
@@ -18,36 +18,34 @@ import {
 // Constant
 import { ROUTES } from "@/constants";
 
+// Context
+import { SidebarContext } from "@/contexts";
+
 const DashboardHeader = (): JSX.Element => {
-  const [isNavBarOpen, setIsNavBarOpen] = useState(false);
-  const toggleNavBarOpen = (): void => {
-    setIsNavBarOpen(prev => !prev);
-  };
+  const { isOpen, toggleSideBar } = useContext(SidebarContext);
 
   return (
-    <div className="md:flex items-center justify-between px-4 py-1 xl:ml-[270px]">
+    <div className="md:flex items-center justify-between px-4 py-1">
       <div className="flex items-center">
         <div className="mr-16">
           <BreadCrumb />
         </div>
-        <div
-          className="hidden xl:block cursor-pointer"
-          onClick={toggleNavBarOpen}>
-          {isNavBarOpen ? (
+        <div className="hidden xl:block cursor-pointer" onClick={toggleSideBar}>
+          {isOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />
           ) : (
             <MdMenu className="text-tremor-content text-2xl" />
           )}
         </div>
       </div>
-      <div className="flex items-center mt-4 md:mt-0 mr-3">
+      <div className="flex items-center mt-4 md:mt-0 mr-3 justify-end">
         <div className="mr-4">
           <TextInput
             id="search"
             placeholder="Search here"
             type="text"
             autoFocus
-            className="py-0.5 w-full bg-transparent hover:bg-transparent focus:bg-transparent"
+            className="py-0.5 w-full bg-transparent hover:bg-transparent focus:bg-transparent min-w-[100px]"
           />
         </div>
         <Link href={ROUTES.SIGN_IN} aria-label="Link to homepage">
@@ -55,8 +53,8 @@ const DashboardHeader = (): JSX.Element => {
         </Link>
         <div
           className="sm:block xl:hidden cursor-pointer ml-4"
-          onClick={toggleNavBarOpen}>
-          {isNavBarOpen ? (
+          onClick={toggleSideBar}>
+          {isOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />
           ) : (
             <MdMenu className="text-tremor-content text-2xl" />

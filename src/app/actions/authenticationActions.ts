@@ -3,7 +3,8 @@
 import { signIn } from "../auth";
 import { AuthError } from "next-auth";
 import bcrypt from "bcrypt";
-import { ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
+import { redirect } from "next/navigation";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -31,6 +32,7 @@ export async function createNewAccount(
   prevState: { errorMessage: String } | undefined,
   formData: FormData,
 ) {
+  let isSuccess = false;
   try {
     const formPassword = formData.get("password")?.toString();
 
@@ -38,26 +40,35 @@ export async function createNewAccount(
     formData.set("password", hashPassword);
 
     const res = await fetch(`${ROUTER_API_URL}/user`, {
-      // @ts-ignore
-      body: new URLSearchParams(formData),
+      method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
-      method: "POST",
+      // @ts-ignore
+      body: new URLSearchParams(formData),
     });
 
-    if (!res.ok) {
-      throw new Error("Failed to create new account!");
+    if (res.status === 403) {
+      throw new Error("Account with this email already exists!");
     }
 
-    return res.json();
+    if (!res.ok) {
+      throw new Error("Failed to create new account. Please try again!");
+    } else {
+      isSuccess = true;
+    }
   } catch (error: unknown) {
     if (error instanceof Error) {
       return {
-        errorMessage: `Things exploded (${error.message})`,
+        errorMessage: `${error.message}`,
       };
     }
 
     throw error;
+  }
+
+  // https://github.com/vercel/next.js/issues/49298
+  if (isSuccess) {
+    redirect(ROUTES.SIGN_IN);
   }
 }

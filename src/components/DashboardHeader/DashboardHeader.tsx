@@ -28,16 +28,7 @@ const DashboardHeader = (): JSX.Element => {
     <div className="md:flex items-center justify-between px-4 py-1 xl:ml-[270px]">
       <div className="flex items-center">
         <div className="mr-16">
-          <BreadCrumb
-            links={[
-              {
-                id: "1",
-                name: "dashboards",
-                url: `${ROUTES.ANALYTICS}`,
-              },
-            ]}
-            title="analytics"
-          />
+          <BreadCrumb />
         </div>
         <div
           className="hidden xl:block cursor-pointer"

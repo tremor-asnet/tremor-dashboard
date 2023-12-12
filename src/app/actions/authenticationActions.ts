@@ -3,7 +3,8 @@
 import { signIn } from "../auth";
 import { AuthError } from "next-auth";
 import bcrypt from "bcrypt";
-import { ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
+import { redirect } from "next/navigation";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -31,6 +32,7 @@ export async function createNewAccount(
   prevState: { errorMessage: String } | undefined,
   formData: FormData,
 ) {
+  let isSuccess = false;
   try {
     const formPassword = formData.get("password")?.toString();
 
@@ -52,9 +54,9 @@ export async function createNewAccount(
 
     if (!res.ok) {
       throw new Error("Failed to create new account. Please try again!");
+    } else {
+      isSuccess = true;
     }
-
-    return res.json();
   } catch (error: unknown) {
     if (error instanceof Error) {
       return {
@@ -63,5 +65,10 @@ export async function createNewAccount(
     }
 
     throw error;
+  }
+
+  // https://github.com/vercel/next.js/issues/49298
+  if (isSuccess) {
+    redirect(ROUTES.SIGN_IN);
   }
 }

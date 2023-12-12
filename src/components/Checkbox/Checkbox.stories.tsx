@@ -4,9 +4,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import CheckBox from "./Checkbox";
 
-// Styles
-import "./styles.css";
-
 const meta = {
   title: "Components/CheckBox",
   tags: ["autodocs"],

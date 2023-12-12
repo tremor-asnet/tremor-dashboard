@@ -142,7 +142,7 @@ export const SignUpForm = () => {
             <Text className="text-sm text-secondary font-light">
               I agree the{" "}
               <Link
-                href={ROUTES.HOME}
+                href="#"
                 className="hover:underline no-underline text-gray-800 text-sm font-semibold">
                 Terms and conditions
               </Link>

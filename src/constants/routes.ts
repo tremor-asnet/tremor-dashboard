@@ -1,7 +1,7 @@
 export const ROUTER_API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const ROUTES = {
-  HOME: "/",
+  HOME: "/dashboards/analytics",
   SIGN_IN: "/signin",
   SIGN_UP: "/signup",
   ANALYTICS: "/dashboards/analytics",

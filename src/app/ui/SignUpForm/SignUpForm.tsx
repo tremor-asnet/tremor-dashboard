@@ -45,13 +45,13 @@ export const SignUpForm = () => {
   const isDisableSubmit = isEmailError || isPasswordError || isNameError;
 
   return (
-    <Flex className="flex-col w-[80%] sm:w-full mx-auto bg-white max-w-sm rounded-xl -mt-36 sm:-mt-32 shadow-dark-tremor-card 2xl:max-w-xl">
+    <Flex className="flex-col w-full m-auto bg-white max-w-sm rounded-xl shadow-dark-tremor-card 2xl:max-w-xl">
       <div className="w-full p-4">
         <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 pb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
           <Title className="font-bold pt-8 pb-2 px-8 md:text-2xl text-white">
             Join us today
           </Title>
-          <Text className="text-white font-light max-w-xs px-6 sm:px-8 text-center">
+          <Text className="text-white font-light max-w-xs px-6 sm:px-8 text-center md:px-0">
             Enter your email and password to register
           </Text>
         </Flex>

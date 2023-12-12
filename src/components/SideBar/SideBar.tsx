@@ -36,7 +36,7 @@ import "./styles.css";
 
 const SideBar = () => {
   return (
-    <div className="sidebar antialiased bg-gradient-primary w-[250px] rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] translate-x-[-20rem] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] xl:translate-x-0">
+    <div className="sidebar antialiased bg-gradient-primary w-[250px] rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] translate-x-[-20rem] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] md:translate-x-0">
       <Flex className="justify-center gap-1 pb-2">
         <Image
           src="/assets/images/sidebar-logo.webp"

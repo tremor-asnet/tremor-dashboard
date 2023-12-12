@@ -13,7 +13,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
       </div>
       <div className="flex-1 p-6 pt-8">
         <DashboardHeader />
-        <div className="mt-4 ml-0 xl:ml-[270px]">{children}</div>
+        <div className="mt-4 ml-0 md:ml-[270px]">{children}</div>
       </div>
     </Flex>
   );

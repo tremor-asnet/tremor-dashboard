@@ -1,11 +1,12 @@
 // Libs
 import type { Meta, StoryObj } from "@storybook/react";
 import { Switch } from "@tremor/react";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { withKnobs } from "@storybook/addon-knobs";
 
 const meta = {
   title: "Components/Switch",
   decorators: [withKnobs],
+  tags: ["autodocs"],
   component: Switch,
 } as Meta<typeof Switch>;
 
@@ -22,5 +23,5 @@ export const Checked: Story = {
 };
 
 export const Disable: Story = {
-  render: () => <Switch disabled={boolean("Disabled", true)} />,
+  render: () => <Switch disabled />,
 };

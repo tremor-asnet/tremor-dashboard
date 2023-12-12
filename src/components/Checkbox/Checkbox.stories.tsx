@@ -9,6 +9,7 @@ import "./styles.css";
 
 const meta = {
   title: "Components/CheckBox",
+  tags: ["autodocs"],
   component: CheckBox,
 } as Meta<typeof CheckBox>;
 

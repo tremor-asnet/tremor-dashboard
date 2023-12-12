@@ -4,6 +4,7 @@ import { Text } from "@tremor/react";
 
 const meta = {
   title: "Components/Text",
+  tags: ["autodocs"],
   component: Text,
 } as Meta<typeof Text>;
 

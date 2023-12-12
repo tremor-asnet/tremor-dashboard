@@ -68,3 +68,16 @@ export const SecondaryError: Story = {
     />
   ),
 };
+
+export const Disabled: Story = {
+  render: () => (
+    <Input
+      disabled
+      variant="primary"
+      type="text"
+      id="primary_default"
+      placeholder=""
+      label="User Name"
+    />
+  ),
+};

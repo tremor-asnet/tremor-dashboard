@@ -1,6 +1,7 @@
 // Libs
 import { memo, useMemo } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
@@ -9,12 +10,6 @@ import { ROUTES } from "../../constants";
 
 // Types
 import { IBreadCrumb } from "@/types";
-import { usePathname } from "next/navigation";
-
-// Define the props for the BreadCrumb component
-interface IBreadCrumbProps {
-  links: IBreadCrumb[];
-}
 
 /**
  * Primary UI component for BreadCrumb component
@@ -24,13 +19,19 @@ const BreadCrumb = (): JSX.Element => {
 
   const links: IBreadCrumb[] = useMemo(() => {
     switch (true) {
-      case pathname.includes("/dashboards/"):
+      case pathname?.includes("/dashboards/"):
         return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
 
-      case pathname.includes("/pages/profile/"):
+      case pathname?.includes("/pages/profile/"):
         return [
-          { name: "pages", url: ROUTES.PROJECTS },
-          { name: "profiles", url: ROUTES.PROJECTS },
+          { name: "pages", url: ROUTES.PROFILE },
+          { name: "profile", url: ROUTES.PROFILE },
+        ];
+
+      case pathname?.includes("/pages/account/"):
+        return [
+          { name: "pages", url: ROUTES.PROFILE },
+          { name: "account", url: ROUTES.PROFILE },
         ];
 
       default:
@@ -44,8 +45,12 @@ const BreadCrumb = (): JSX.Element => {
         return "analytics";
       case ROUTES.SALES:
         return "sales";
+      case ROUTES.PROFILE:
+        return "profile overview";
       case ROUTES.PROJECTS:
-        return "All Projects";
+        return "all projects";
+      case ROUTES.SETTING:
+        return "settings";
       default:
         return "analytics";
     }

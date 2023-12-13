@@ -29,11 +29,12 @@ import {
   ITEMS,
   ITEMS_DASHBOARD,
   ITEMS_PROFILE,
-  DASHBOARD_LINKS,
 } from "../../constants/sections";
 
+import { ROUTES } from "../../constants/routes";
+
 // Context
-import { SidebarContext } from "@/contexts";
+import { SidebarContext } from "../../contexts/SideBarContext";
 
 // Styles
 import "./styles.css";
@@ -110,13 +111,13 @@ const SideBar = () => {
           <AccordionBody>
             <List>
               <ListItem className="bg-[rgb(52,71,103)] my-[3px] leading-[26px] rounded-md hover:bg-none">
-                <Link href={DASHBOARD_LINKS.ANALYTICS}>
+                <Link href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
                   <span>{ITEMS_DASHBOARD[0].label}</span>
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href={DASHBOARD_LINKS.SALES}>
+                <Link href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
                   <span>{ITEMS_DASHBOARD[1].label}</span>
                 </Link>

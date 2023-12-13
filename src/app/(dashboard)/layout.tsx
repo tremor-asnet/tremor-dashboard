@@ -27,7 +27,10 @@ function DashboardLayout({ children }: { children: ReactNode }) {
       <div className="h-screen">
         <SideBar />
       </div>
-      <div className={`flex-1 p-6 pt-8  ${isOpen ? "lg:ml-[270px]" : ""}`}>
+      <div
+        className={`flex-1 p-6 pt-8 ${
+          isOpen ? "ml-0 lg:ml-28" : "lg:ml-[270px]"
+        }`}>
         <DashboardHeader />
         <div className={`mt-4`}>{children}</div>
       </div>

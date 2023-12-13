@@ -49,12 +49,12 @@ const SignInForm = () => {
 
   return (
     <div className="w-full p-4">
-      <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
+      <Flex className="bg-gradient-primary rounded-xl -mt-11 xs:justify-between sm:justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
         <Title className="font-medium py-10 px:8 text-2xl text-white">
           Sign in
         </Title>
       </Flex>
-      <form action={dispatch} className="w-full p-3">
+      <form action={dispatch} className="w-full sm:p-3">
         <Controller
           control={control}
           rules={{

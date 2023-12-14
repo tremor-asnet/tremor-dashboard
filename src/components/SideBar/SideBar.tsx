@@ -21,9 +21,6 @@ import {
   Text,
 } from "@tremor/react";
 
-// Auth
-import { signOut } from "@/app/auth";
-
 // React icons
 import { MdClose } from "react-icons/md";
 
@@ -45,8 +42,15 @@ import { SidebarContext } from "../../contexts/SideBarContext";
 // Styles
 import "./styles.css";
 
-const SideBar = () => {
+interface SideBarProps {
+  onSignOut: () => void;
+}
+const SideBar = ({ onSignOut }: SideBarProps) => {
   const { isOpen, toggleSideBar } = useContext(SidebarContext);
+
+  const handleSignOut = async () => {
+    await onSignOut();
+  };
 
   return (
     <div
@@ -114,11 +118,7 @@ const SideBar = () => {
                 );
               })}
               <ListItem className="leading-[26px]">
-                <form
-                  action={async () => {
-                    await signOut();
-                  }}
-                  className="w-full flex gap-[20px]">
+                <form action={handleSignOut} className="w-full flex gap-[20px]">
                   <span>L</span>
                   <button
                     type="submit"

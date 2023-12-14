@@ -13,5 +13,5 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const SideBarDashboard: Story = {
-  render: () => <SideBar />,
+  render: () => <SideBar onSignOut={() => {}} />,
 };

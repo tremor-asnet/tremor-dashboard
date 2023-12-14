@@ -11,8 +11,8 @@ interface ProfileInfoProps {
 const ProfileInfo = ({
   isOnHeader = true,
   name = "Richard Davis",
-  info = "CEO &#8260; Co-Founder",
-  src = "&#8260;images&#8260;avatar&#8260;avatar-lg.webp",
+  info = "CEO / Co-Founder",
+  src = "/images/avatar/avatar-lg.webp",
 }: ProfileInfoProps) => {
   return (
     <div className="flex flex-col md:flex-row md:items-center justify-between px-4 py-1">

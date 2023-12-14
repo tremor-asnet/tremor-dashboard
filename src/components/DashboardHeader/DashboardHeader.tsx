@@ -27,10 +27,10 @@ const DashboardHeader = (): JSX.Element => {
   return (
     <div className="md:flex items-center justify-between px-4 py-1">
       <div className="flex items-center">
-        <div className="mr-16">
-          <BreadCrumb />
-        </div>
-        <div className="hidden xl:block cursor-pointer" onClick={toggleSideBar}>
+        <BreadCrumb />
+        <div
+          className="hidden lg:block cursor-pointer mx-16"
+          onClick={toggleSideBar}>
           {isOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />
           ) : (
@@ -52,7 +52,7 @@ const DashboardHeader = (): JSX.Element => {
           <MdAccountCircle className="text-tremor-content text-xl" />
         </Link>
         <div
-          className="sm:block xl:hidden cursor-pointer ml-4"
+          className="sm:block lg:hidden cursor-pointer ml-4"
           onClick={toggleSideBar}>
           {isOpen ? (
             <MdMenuOpen className="text-tremor-content text-2xl" />

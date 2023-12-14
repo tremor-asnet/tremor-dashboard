@@ -49,12 +49,12 @@ const SignInForm = () => {
 
   return (
     <div className="w-full p-4">
-      <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
+      <Flex className="bg-gradient-primary rounded-xl -mt-11 xs:justify-between sm:justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
         <Title className="font-medium py-10 px:8 text-2xl text-white">
           Sign in
         </Title>
       </Flex>
-      <form action={dispatch} className="w-full p-3">
+      <form action={dispatch} className="w-full sm:p-3">
         <Controller
           control={control}
           rules={{
@@ -65,19 +65,22 @@ const SignInForm = () => {
             },
           }}
           render={({ field }) => (
-            <div className="h-[70px] w-full">
+            <div className="h-[68px] w-full">
               <TextInput
                 tabIndex={0}
                 id="email"
                 placeholder="Email"
-                error={isEmailError}
-                errorMessage={emailErrorMessage}
                 type="email"
                 autoFocus
                 required
                 {...field}
                 className="py-0.5 w-full"
               />
+              {isEmailError && (
+                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                  {emailErrorMessage}
+                </p>
+              )}
             </div>
           )}
           name="email"
@@ -97,25 +100,25 @@ const SignInForm = () => {
                 tabIndex={1}
                 id="password"
                 placeholder="Password"
-                error={isPasswordError}
-                errorMessage={passwordErrorMessage}
                 type="password"
                 className="py-0.5 w-full"
                 required
                 {...field}
               />
+              {isPasswordError && (
+                <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
+                  {passwordErrorMessage}
+                </p>
+              )}
+              {authenticateErrorMsg && !isDisableSubmit && (
+                <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                  {authenticateErrorMsg}
+                </p>
+              )}
             </div>
           )}
           name="password"
         />
-        <div
-          className="flex mb-4 items-center space-x-1"
-          aria-live="polite"
-          aria-atomic="true">
-          {authenticateErrorMsg && !isDisableSubmit && (
-            <p className="text-sm text-red-500">{authenticateErrorMsg}</p>
-          )}
-        </div>
         <div className="flex items-center space-x-3 mt-1">
           <Switch
             tabIndex={2}

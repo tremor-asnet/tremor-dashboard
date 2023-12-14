@@ -7,6 +7,9 @@ import { Flex } from "@tremor/react";
 import { DashboardHeader, SideBar } from "@/components";
 import { SidebarContext, SidebarContextProvider } from "@/contexts";
 
+// Auth
+import { signOut } from "@/app/auth";
+
 export default function DashboardLayoutWrapper({
   children,
 }: {
@@ -25,9 +28,12 @@ function DashboardLayout({ children }: { children: ReactNode }) {
   return (
     <Flex alignItems="start" className="bg-body">
       <div className="h-screen">
-        <SideBar />
+        <SideBar onSignOut={signOut} />
       </div>
-      <div className={`flex-1 p-6 pt-8  ${isOpen ? "lg:ml-[270px]" : ""}`}>
+      <div
+        className={`flex-1 p-6 pt-8 ${
+          isOpen ? "ml-0 lg:ml-28" : "lg:ml-[270px]"
+        }`}>
         <DashboardHeader />
         <div className={`mt-4`}>{children}</div>
       </div>

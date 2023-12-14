@@ -6,7 +6,7 @@ import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 
 // Components
-import { CheckBox } from "@/components";
+import { CheckBox, Toast } from "@/components";
 import Link from "next/link";
 import { TextInput, Button, Flex, Text, Title } from "@tremor/react";
 
@@ -35,8 +35,10 @@ export const SignUpForm = () => {
   );
 
   const createNewAccountError = createNewAccountRes?.errorMessage || null;
+  const createNewAccountSuccess = createNewAccountRes?.isSuccess || false;
 
   const [checked, setChecked] = useState(false);
+  const [isCloseToast, setCloseToast] = useState(true);
 
   const { name, email, password } = errors || {};
   const nameErrorMessage = name?.message?.toString();
@@ -52,6 +54,10 @@ export const SignUpForm = () => {
     setChecked(!checked);
   };
 
+  const handleCloseToast = () => {
+    setCloseToast(false);
+  };
+
   return (
     <Flex className="flex-col w-full m-auto bg-white max-w-sm rounded-xl shadow-dark-tremor-card 2xl:max-w-xl">
       <div className="w-full p-4">
@@ -63,6 +69,14 @@ export const SignUpForm = () => {
             Enter your email and password to register
           </Text>
         </Flex>
+        {createNewAccountSuccess && isCloseToast && (
+          <div className="flex justify-center">
+            <Toast
+              content="Create account successfully."
+              onCloseToast={handleCloseToast}
+            />
+          </div>
+        )}
         <form action={dispatch} className="w-full p-2 sm:p-3">
           <Controller
             control={control}
@@ -75,14 +89,17 @@ export const SignUpForm = () => {
                 <TextInput
                   id="name"
                   placeholder="Name"
-                  error={isNameError}
-                  errorMessage={nameErrorMessage}
                   autoFocus
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                   required
                   tabIndex={0}
                   {...field}
                 />
+                {isNameError && (
+                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                    {nameErrorMessage}
+                  </p>
+                )}
               </div>
             )}
             name="name"
@@ -97,17 +114,20 @@ export const SignUpForm = () => {
               },
             }}
             render={({ field }) => (
-              <div tabIndex={1} className="h-[70px] w-full">
+              <div tabIndex={1} className="h-[68px] w-full">
                 <TextInput
                   id="email"
                   placeholder="Email"
-                  error={isEmailError}
-                  errorMessage={emailErrorMessage}
                   type="email"
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                   required
                   {...field}
                 />
+                {isEmailError && (
+                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                    {emailErrorMessage}
+                  </p>
+                )}
               </div>
             )}
             name="email"
@@ -127,27 +147,27 @@ export const SignUpForm = () => {
                   tabIndex={2}
                   id="password"
                   placeholder="Password"
-                  error={isPasswordError}
-                  errorMessage={passwordErrorMessage}
                   type="password"
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                   required
                   {...field}
                 />
+                {isPasswordError && (
+                  <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                    {passwordErrorMessage}
+                  </p>
+                )}
+                {createNewAccountError && !isDisableSubmit && (
+                  <p className="pt-2 text-[11px] xs:text-xs leading-3 text-red-500">
+                    {createNewAccountError}
+                  </p>
+                )}
               </div>
             )}
             name="password"
           />
-          <div
-            className="flex mb-4 items-center space-x-1"
-            aria-live="polite"
-            aria-atomic="true">
-            {createNewAccountError && !isDisableSubmit && (
-              <p className="text-sm text-red-500">{createNewAccountError}</p>
-            )}
-          </div>
 
-          <div className="flex items-center space-x-3 mt-1 pt-3">
+          <div className="flex items-center space-x-3 pt-3">
             <CheckBox
               tabIndex={3}
               checked={checked}
@@ -155,24 +175,24 @@ export const SignUpForm = () => {
               autoFocus
               id="checkbox"
             />
-            <Text className="text-sm text-secondary font-light">
+            <Text className="text-xs xs:text-sm text-secondary font-light">
               I agree the{" "}
               <Link
                 tabIndex={4}
                 href="#"
-                className="hover:underline no-underline text-gray-800 text-sm font-semibold">
+                className="hover:underline no-underline text-gray-800 font-semibold">
                 Terms and conditions
               </Link>
             </Text>
           </div>
           <SubmitButton isDisableSubmit={isDisableSubmit} />
           <Flex className="mt-8 mb-2 justify-center items-center">
-            <Text className="text-secondary font-light">
+            <Text className="text-secondary text-xs xs:text-sm font-light">
               Already have an account?
             </Text>
             <Link
               tabIndex={6}
-              className="text-black-300 font-semibold text-sm ml-2"
+              className="text-black-300 font-semibold text-xs xs:text-sm ml-2"
               href={ROUTES.SIGN_IN}>
               Sign In
             </Link>

@@ -1,34 +1,24 @@
+import { ROUTES } from "./routes";
 // Link items for Brooklyn
 export const LINKS = {
   MY_PROFILE: "/",
   SETTING: "/",
-  LOGOUT: "/",
 };
 
+// Link items for Brooklyn
 export const ITEMS = [
   { content: "M", label: "My Profile", href: LINKS.MY_PROFILE },
   { content: "S", label: "Settings", href: LINKS.SETTING },
-  { content: "L", label: "Logout", href: LINKS.LOGOUT },
 ];
 
-// Link items for dashboard
-export const DASHBOARD_LINKS = {
-  ANALYTICS: "/",
-  SALES: "/",
-};
-
+// Link items Dashboard list
 export const ITEMS_DASHBOARD = [
-  { label: "Analytics", href: DASHBOARD_LINKS.ANALYTICS, content: "A" },
-  { label: "Sales", href: DASHBOARD_LINKS.SALES, content: "S" },
+  { label: "Analytics", href: ROUTES.ANALYTICS, content: "A" },
+  { label: "Sales", href: ROUTES.SALES, content: "S" },
 ];
 
-// Link items for Profile
-export const PROFILE_LINKS = {
-  PROFILE_OVERVIEW: "/",
-  ALL_PROJECT: "/",
-};
-
+// Link items Profile list
 export const ITEMS_PROFILE = [
-  { label: "profile", href: PROFILE_LINKS.PROFILE_OVERVIEW, content: "P" },
-  { label: "All Project", href: PROFILE_LINKS.ALL_PROJECT, content: "A" },
+  { label: "Profile Overview", href: ROUTES.PROFILE, content: "P" },
+  { label: "All Project", href: ROUTES.PROJECTS, content: "A" },
 ];

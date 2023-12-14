@@ -33,7 +33,7 @@ export const authenticate = async (
 };
 
 export async function createNewAccount(
-  prevState: { errorMessage: String; isSuccess: boolean } | undefined,
+  prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,
   formData: FormData,
 ) {
   try {

@@ -6,7 +6,7 @@ import { ROUTES } from "../../constants/index";
 
 interface ToastProps {
   content: string;
-  onCloseToast: () => void;
+  onCloseToast?: () => void;
 }
 
 export const Toast = ({ content = "", onCloseToast }: ToastProps) => {

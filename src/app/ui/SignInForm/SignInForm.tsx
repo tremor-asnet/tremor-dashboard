@@ -77,7 +77,7 @@ const SignInForm = () => {
                 className="py-0.5 w-full"
               />
               {isEmailError && (
-                <p className="pt-1 xs:text-[11px] text-xs text-red-500">
+                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                   {emailErrorMessage}
                 </p>
               )}
@@ -106,12 +106,12 @@ const SignInForm = () => {
                 {...field}
               />
               {isPasswordError && (
-                <p className="pt-1 leading-3 xs:text-[11px] text-xs text-red-500">
+                <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
                   {passwordErrorMessage}
                 </p>
               )}
               {authenticateErrorMsg && !isDisableSubmit && (
-                <p className="pt-1 xs:text-[11px] text-xs leading-3 text-red-500">
+                <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
                   {authenticateErrorMsg}
                 </p>
               )}

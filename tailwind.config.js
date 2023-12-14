@@ -137,8 +137,8 @@ module.exports = {
         secondary: ["Helvetica", "Arial", "sans-serif"],
       },
       screens: {
-        xs: { max: "335px" },
-        // => @media (max-width: 335px) { ... }
+        xs: { min: "336px" },
+        // => @media (min-width: 336px) { ... }
       },
     },
   },

@@ -82,7 +82,7 @@ export const SignUpForm = () => {
                   {...field}
                 />
                 {isNameError && (
-                  <p className="pt-1 text-[11px] text-xs text-red-500">
+                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                     {nameErrorMessage}
                   </p>
                 )}
@@ -110,7 +110,7 @@ export const SignUpForm = () => {
                   {...field}
                 />
                 {isEmailError && (
-                  <p className="pt-1 text-[11px] text-xs text-red-500">
+                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                     {emailErrorMessage}
                   </p>
                 )}
@@ -139,12 +139,12 @@ export const SignUpForm = () => {
                   {...field}
                 />
                 {isPasswordError && (
-                  <p className="pt-1 xs:text-[11px] text-xs leading-3 text-red-500">
+                  <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
                     {passwordErrorMessage}
                   </p>
                 )}
                 {createNewAccountError && !isDisableSubmit && (
-                  <p className="pt-2 text-[11px] text-xs leading-3 text-red-500">
+                  <p className="pt-2 text-[11px] xs:text-xs leading-3 text-red-500">
                     {createNewAccountError}
                   </p>
                 )}

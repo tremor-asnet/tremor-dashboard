@@ -65,19 +65,22 @@ const SignInForm = () => {
             },
           }}
           render={({ field }) => (
-            <div className="h-[70px] w-full">
+            <div className="h-[68px] w-full">
               <TextInput
                 tabIndex={0}
                 id="email"
                 placeholder="Email"
-                error={isEmailError}
-                errorMessage={emailErrorMessage}
                 type="email"
                 autoFocus
                 required
                 {...field}
                 className="py-0.5 w-full"
               />
+              {isEmailError && (
+                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                  {emailErrorMessage}
+                </p>
+              )}
             </div>
           )}
           name="email"
@@ -97,25 +100,25 @@ const SignInForm = () => {
                 tabIndex={1}
                 id="password"
                 placeholder="Password"
-                error={isPasswordError}
-                errorMessage={passwordErrorMessage}
                 type="password"
                 className="py-0.5 w-full"
                 required
                 {...field}
               />
+              {isPasswordError && (
+                <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
+                  {passwordErrorMessage}
+                </p>
+              )}
+              {authenticateErrorMsg && !isDisableSubmit && (
+                <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                  {authenticateErrorMsg}
+                </p>
+              )}
             </div>
           )}
           name="password"
         />
-        <div
-          className="flex mb-4 items-center space-x-1"
-          aria-live="polite"
-          aria-atomic="true">
-          {authenticateErrorMsg && !isDisableSubmit && (
-            <p className="text-sm text-red-500">{authenticateErrorMsg}</p>
-          )}
-        </div>
         <div className="flex items-center space-x-3 mt-1">
           <Switch
             tabIndex={2}

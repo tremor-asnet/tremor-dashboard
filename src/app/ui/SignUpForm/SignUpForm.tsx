@@ -6,7 +6,7 @@ import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 
 // Components
-import { CheckBox } from "@/components";
+import { CheckBox, Toast } from "@/components";
 import Link from "next/link";
 import { TextInput, Button, Flex, Text, Title } from "@tremor/react";
 
@@ -35,6 +35,7 @@ export const SignUpForm = () => {
   );
 
   const createNewAccountError = createNewAccountRes?.errorMessage || null;
+  const createNewAccountSuccess = createNewAccountRes?.isSuccess || false;
 
   const [checked, setChecked] = useState(false);
 
@@ -63,6 +64,11 @@ export const SignUpForm = () => {
             Enter your email and password to register
           </Text>
         </Flex>
+        {createNewAccountSuccess && (
+          <div className="flex justify-center">
+            <Toast content="Create account successfully." />
+          </div>
+        )}
         <form action={dispatch} className="w-full p-2 sm:p-3">
           <Controller
             control={control}

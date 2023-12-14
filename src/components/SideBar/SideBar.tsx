@@ -21,6 +21,12 @@ import {
   Text,
 } from "@tremor/react";
 
+// Auth
+import { signOut } from "@/app/auth";
+
+// React icons
+import { MdClose } from "react-icons/md";
+
 // Components
 import Avatar from "../Avatar/Avatar";
 
@@ -38,7 +44,6 @@ import { SidebarContext } from "../../contexts/SideBarContext";
 
 // Styles
 import "./styles.css";
-import { MdClose } from "react-icons/md";
 
 const SideBar = () => {
   const { isOpen, toggleSideBar } = useContext(SidebarContext);
@@ -108,6 +113,20 @@ const SideBar = () => {
                   </ListItem>
                 );
               })}
+              <ListItem className="leading-[26px]">
+                <form
+                  action={async () => {
+                    await signOut();
+                  }}
+                  className="w-full flex gap-[20px]">
+                  <span>L</span>
+                  <button
+                    type="submit"
+                    className={`${isOpen ? "lg:hidden" : ""}`}>
+                    Logout
+                  </button>
+                </form>
+              </ListItem>
             </List>
           </AccordionBody>
         </Accordion>

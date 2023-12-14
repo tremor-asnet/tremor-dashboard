@@ -136,6 +136,10 @@ module.exports = {
         primary: ["Roboto", "Helvetica", "Arial", "sans-serif"],
         secondary: ["Helvetica", "Arial", "sans-serif"],
       },
+      screens: {
+        xs: { max: "335px" },
+        // => @media (max-width: 335px) { ... }
+      },
     },
   },
   safelist: [

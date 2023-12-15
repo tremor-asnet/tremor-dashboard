@@ -6,3 +6,4 @@ export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as SideBar } from "./SideBar/SideBar";
 export { default as ProfileItem } from "./ProfileItem/ProfileItem";
 export { default as ProfileConversations } from "./ProfileConversations/ProfileConversations";
+export { default as Tabs } from "./Tab/Tab";

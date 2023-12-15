@@ -1,6 +1,8 @@
 "use client";
 
 import { Button, Flex, Text } from "@tremor/react";
+
+// Components
 import { Avatar } from "@/components";
 
 interface ProfileItemProps {

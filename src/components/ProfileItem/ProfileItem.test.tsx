@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
-import ProfileItem from ".";
+import ProfileItem from "./ProfileItem";
 
 describe("ProfileItem component", () => {
   const props = {

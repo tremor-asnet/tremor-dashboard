@@ -6,7 +6,7 @@ exports[`ProfileItem component Should render ProfileItem snapshot correctly 1`] 
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
@@ -56,7 +56,7 @@ exports[`ProfileItem component Should render ProfileItem snapshot correctly 1`] 
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"

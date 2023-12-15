@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import ProfileItem from ".";
+import ProfileItem from "./ProfileItem";
 import { PROFILE_ITEM } from "@/mocks/profileItem";
 
 const meta = {

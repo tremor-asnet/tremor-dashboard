@@ -1,6 +1,8 @@
 "use client";
 
 import { Button, Flex, Text } from "@tremor/react";
+
+// Components
 import { Avatar } from "@/components";
 
 interface ProfileItemProps {
@@ -19,7 +21,7 @@ const ProfileItem = ({
   onClick = () => {},
 }: ProfileItemProps) => {
   return (
-    <Flex>
+    <Flex className="mb-2 py-2">
       <Flex className="justify-start">
         <Avatar src={src} width={48} height={48} alt={alt} />
         <div className="font-medium dark:text-white pl-4">

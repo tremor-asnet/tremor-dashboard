@@ -4,3 +4,7 @@ export type Profile = {
   name: string;
   description: string;
 };
+
+export interface SettingSwitchProps {
+  label: string;
+}

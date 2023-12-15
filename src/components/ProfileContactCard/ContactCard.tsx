@@ -2,24 +2,26 @@
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
 import { Flex, Text } from "@tremor/react";
 
-// Constants
-import { INFO_LIST } from "../../constants/card";
+// Mocks
+import { PROFILE_INFO } from "../../mocks/card";
 
-const ContactCard = () => {
+interface InfoCardProps {
+  description?: string;
+}
+const { description, info } = PROFILE_INFO;
+const ContactCard = ({ description }: InfoCardProps) => {
   return (
     <div>
       <Flex className="flex-col items-baseline p-4">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
-          Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is
-          no. If two equally difficult paths, choose the one more painful in the
-          short term (pain avoidance is creating an illusion of equality).
+          {description}
         </Text>
         <div className="w-full opacity-30 bg-transparent">
           <hr className="bg-transparent bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] h-px opacity-25 mx-0 my-4 border-b-[thin] border-b-[none] border-0 border-solid border-[rgba(0,0,0,0.12)]" />
         </div>
         {
           <div>
-            {INFO_LIST.map(item => (
+            {info.map(item => (
               <Flex className="justify-start gap-3" key={item.information}>
                 <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
                   {item.information}

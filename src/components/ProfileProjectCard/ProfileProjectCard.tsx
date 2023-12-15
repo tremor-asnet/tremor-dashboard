@@ -1,95 +1,105 @@
+// Components
+import Link from "next/link";
 import Image from "next/image";
-
 import Avatar from "@/components/Avatar/Avatar";
 import { Title, Text, Flex, Button } from "@tremor/react";
 
-interface ProfileProjectCardProps {
+// Constants
+import { ROUTES } from "@/constants/routes";
+
+export interface IProjectCard {
   projectSrc: string;
   avatarSrc: string;
   name: string;
   desc: string;
   hashtag: string;
 }
+interface ProfileProjectCardProps {
+  links: IProjectCard[];
+}
 
-const ProfileProjectCard = ({
-  name = "Richard Davis",
-  desc = "CEO / Co-Founder",
-  hashtag = "#1",
-  projectSrc = "/assets/images/profile-project.webp",
-  avatarSrc = "/images/avatar/avatar-xs.webp",
-}: ProfileProjectCardProps) => {
-  return (
-    <Flex className="justify-start flex-col items-start pt-12 pl-12 xl:max-w-[50%] xl:basis-1/2 xl:max-w-[25%] xl:basis-1/4">
-      <Flex>
-        <Image
-          className="rounded-xl shadow-lg"
-          src={projectSrc}
-          width={315}
-          height={180}
-          alt="Project"
-        />
-      </Flex>
-      <Flex className="justify-start flex-col items-start w-[calc(100%-1rem)] pt-4 px-2">
-        <Text className="capitalize">Project {hashtag}</Text>
-        <Title className="font-bold text-xl capitalize mb-2">{name}</Title>
-        <Text className="flex-wrap font-light mb-6">{desc}</Text>
-        <Flex className="justify-between">
-          <Button
-            className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
-            variant="secondary">
-            View Project
-          </Button>
-          <div className="container-avatars">
-            <Avatar
-              alt="Avatar extra small"
-              className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-              height={20}
-              priority
-              src={avatarSrc}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={20}
+const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
+  const renderProjectCards = (): JSX.Element[] => {
+    return links.map(link => (
+      <>
+        <Flex className="justify-start flex-col items-start pt-12 pl-12 xl:max-w-[50%] xl:basis-1/2 xl:max-w-[25%] xl:basis-1/4">
+          <Flex>
+            <Image
+              className="rounded-xl shadow-lg"
+              src={link.projectSrc}
+              width={315}
+              height={180}
+              alt="Project"
             />
-            <Avatar
-              alt="Avatar extra small"
-              className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-              height={20}
-              priority
-              src={avatarSrc}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={20}
-            />
-            <Avatar
-              alt="Avatar extra small"
-              className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-              height={20}
-              priority
-              src={avatarSrc}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={20}
-            />
-            <Avatar
-              alt="Avatar extra small"
-              className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-              height={20}
-              priority
-              src={avatarSrc}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={20}
-            />
-            <Avatar
-              alt="Avatar extra small"
-              className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-              height={20}
-              priority
-              src={avatarSrc}
-              sizes="(max-width: 768px) 100vw, 33vw"
-              width={20}
-            />
-          </div>
+          </Flex>
+          <Flex className="justify-start flex-col items-start w-[calc(100%-1rem)] pt-4 px-2">
+            <Text className="capitalize">Project {link.hashtag}</Text>
+            <Title className="w-full font-bold text-xl capitalize mb-2">
+              <Link href={ROUTES.HOME} className="block">
+                {link.name}
+              </Link>
+            </Title>
+            <Text className="flex-wrap font-light mb-6">{link.desc}</Text>
+            <Flex className="justify-between">
+              <Button
+                className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
+                variant="secondary">
+                View Project
+              </Button>
+              <div className="container-avatars">
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                />
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                />
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                />
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                />
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                />
+              </div>
+            </Flex>
+          </Flex>
         </Flex>
-      </Flex>
-    </Flex>
-  );
+      </>
+    ));
+  };
+  return <Flex className="justify-start flex-row">{renderProjectCards()}</Flex>;
 };
 
 export default ProfileProjectCard;

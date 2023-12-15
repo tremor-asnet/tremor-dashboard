@@ -21,6 +21,9 @@ import {
   Text,
 } from "@tremor/react";
 
+// Auth
+// import { signOut } from "@/app/auth";
+
 // React icons
 import { MdClose } from "react-icons/md";
 

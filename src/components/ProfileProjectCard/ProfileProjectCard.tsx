@@ -22,10 +22,10 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
   const renderProjectCards = (): JSX.Element[] => {
     return links.map(link => (
       <>
-        <Flex className="justify-start flex-col items-start pt-12 pl-12 xl:max-w-[50%] xl:basis-1/2 xl:max-w-[25%] xl:basis-1/4">
+        <Flex className="justify-start flex-col items-start pt-12 pl-12 basis-full lg:max-w-[50%] lg:basis-1/2 xl:max-w-[25%] xl:basis-1/4">
           <Flex>
             <Image
-              className="rounded-xl shadow-lg"
+              className="w-full rounded-xl shadow-lg"
               src={link.projectSrc}
               width={315}
               height={180}
@@ -53,7 +53,15 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
                   height={20}
                   priority
                   src={link.avatarSrc}
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={20}
+                  sizes="100%"
+                />
+                <Avatar
+                  alt="Avatar extra small"
+                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
+                  height={20}
+                  priority
+                  src={link.avatarSrc}
                   width={20}
                 />
                 <Avatar
@@ -62,7 +70,6 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
                   height={20}
                   priority
                   src={link.avatarSrc}
-                  sizes="(max-width: 768px) 100vw, 33vw"
                   width={20}
                 />
                 <Avatar
@@ -71,25 +78,6 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
                   height={20}
                   priority
                   src={link.avatarSrc}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  width={20}
-                />
-                <Avatar
-                  alt="Avatar extra small"
-                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-                  height={20}
-                  priority
-                  src={link.avatarSrc}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  width={20}
-                />
-                <Avatar
-                  alt="Avatar extra small"
-                  className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
-                  height={20}
-                  priority
-                  src={link.avatarSrc}
-                  sizes="(max-width: 768px) 100vw, 33vw"
                   width={20}
                 />
               </div>
@@ -99,7 +87,11 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
       </>
     ));
   };
-  return <Flex className="justify-start flex-row">{renderProjectCards()}</Flex>;
+  return (
+    <Flex className="flex-wrap justify-start flex-row">
+      {renderProjectCards()}
+    </Flex>
+  );
 };
 
 export default ProfileProjectCard;

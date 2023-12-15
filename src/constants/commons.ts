@@ -1,14 +1,14 @@
 export const ITEM_ACTION_PROJECT = [
   {
-    key: "action1",
+    key: "act",
     label: "Action",
   },
   {
-    key: "action2",
+    key: "anotherAct",
     label: "Another action",
   },
   {
-    key: "action2",
+    key: "somethingElse",
     label: "Something else here",
   },
 ];

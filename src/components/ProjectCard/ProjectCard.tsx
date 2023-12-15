@@ -55,7 +55,7 @@ const ProjectCard = ({
           <Flex className="pl-[90px] mb-6 relative">
             <Flex className="flex-col items-start justify-start ">
               <Title className="text-xl font-bold text-base">{title}</Title>
-              <Flex className="items-start justify-start">
+              <Flex className="items-start justify-start  ml-[10px]">
                 {avatars.map(avatar => (
                   <Avatar
                     key={avatar.key}
@@ -74,9 +74,9 @@ const ProjectCard = ({
               <Flex
                 className="flex-col w-[30px] h-[16px] justify-between"
                 onClick={handletToggleAction}>
-                <Text className="w-[4px] h-[4px] rounded-full bg-black" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-black" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-black" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
               </Flex>
               {isOpenAction && (
                 <div className="absolute px-[21px] py-3 right-[26px] top-[5px] z-10 bg-white rounded-md shadow-md">

@@ -9,14 +9,17 @@ import { Avatar, Tabs } from "@/components";
 import {
   ACCOUNT_SWITCH,
   APPLICATION_SWITCH,
+  LIST_PROJECTS,
   TABS_HEADER,
 } from "@/constants/profile";
 
 // Mocks
-import { PROFILE_CONVERSATIONS, PROFILE_ITEM } from "@/mocks/profileItem";
+import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
 import { ProfileConversations } from "@/components";
 import { useState } from "react";
 import { SettingSwitchProps } from "@/types/profile";
+import ProfileInfo from "@/components/ProfileInfo/ProfileInfo";
+import ProfileProjectCard from "@/components/ProfileProjectCard/ProfileProjectCard";
 
 const Profile = () => {
   const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
@@ -33,23 +36,12 @@ const Profile = () => {
         <Card>
           <Flex className="mb-2 py-2">
             {/* Header */}
-            {/* TODO: Will update when have profile header component */}
-            <Flex className="justify-start">
-              <Avatar
-                src={PROFILE_ITEM.src}
-                width={48}
-                height={48}
-                alt={PROFILE_ITEM.alt}
-              />
-              <div className="font-medium dark:text-white pl-4">
-                <Text className="text-sm text-[#344767] font-semibold">
-                  {PROFILE_ITEM.name}
-                </Text>
-                <Text className="text-xs text-[#7b809a] font-light">
-                  {PROFILE_ITEM.description}
-                </Text>
-              </div>
-            </Flex>
+            <ProfileInfo
+              isOnHeader={true}
+              name={PROFILE_HEADER.name}
+              info={PROFILE_HEADER.description}
+              src={PROFILE_HEADER.src}
+            />
             <Tabs tabs={TABS_HEADER} />
           </Flex>
           {/* Main content */}
@@ -105,11 +97,13 @@ const Profile = () => {
                 ))}
               </Flex>
             </div>
+            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             <div className="min-w-[33%] p-4">
               <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
                 profile information
               </Text>
             </div>
+            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             <div className="min-w-[33%] p-4">
               <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
                 conversations
@@ -128,6 +122,7 @@ const Profile = () => {
             <Text className="font-light leading-normal text-sm text-[#7b809a]">
               Architects design houses
             </Text>
+            <ProfileProjectCard links={LIST_PROJECTS} />
           </Flex>
         </Card>
       </div>

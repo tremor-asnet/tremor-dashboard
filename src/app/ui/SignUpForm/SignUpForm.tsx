@@ -38,6 +38,7 @@ export const SignUpForm = () => {
   const createNewAccountSuccess = createNewAccountRes?.isSuccess || false;
 
   const [checked, setChecked] = useState(false);
+  const [isCloseToast, setCloseToast] = useState(true);
 
   const { name, email, password } = errors || {};
   const nameErrorMessage = name?.message?.toString();
@@ -53,6 +54,10 @@ export const SignUpForm = () => {
     setChecked(!checked);
   };
 
+  const handleCloseToast = () => {
+    setCloseToast(false);
+  };
+
   return (
     <Flex className="flex-col w-full m-auto bg-white max-w-sm rounded-xl shadow-dark-tremor-card 2xl:max-w-xl">
       <div className="w-full p-4">
@@ -64,9 +69,12 @@ export const SignUpForm = () => {
             Enter your email and password to register
           </Text>
         </Flex>
-        {createNewAccountSuccess && (
+        {createNewAccountSuccess && isCloseToast && (
           <div className="flex justify-center">
-            <Toast content="Create account successfully." />
+            <Toast
+              content="Create account successfully."
+              onCloseToast={handleCloseToast}
+            />
           </div>
         )}
         <form action={dispatch} className="w-full p-2 sm:p-3">
@@ -167,24 +175,24 @@ export const SignUpForm = () => {
               autoFocus
               id="checkbox"
             />
-            <Text className="xs:text-xs text-sm text-secondary font-light">
+            <Text className="text-xs xs:text-sm text-secondary font-light">
               I agree the{" "}
               <Link
                 tabIndex={4}
                 href="#"
-                className="hover:underline no-underline text-gray-800 xs:text-xs text-sm font-semibold">
+                className="hover:underline no-underline text-gray-800 font-semibold">
                 Terms and conditions
               </Link>
             </Text>
           </div>
           <SubmitButton isDisableSubmit={isDisableSubmit} />
           <Flex className="mt-8 mb-2 justify-center items-center">
-            <Text className="text-secondary xs:text-xs text-sm font-light">
+            <Text className="text-secondary text-xs xs:text-sm font-light">
               Already have an account?
             </Text>
             <Link
               tabIndex={6}
-              className="text-black-300 font-semibold xs:text-xs text-sm ml-2"
+              className="text-black-300 font-semibold text-xs xs:text-sm ml-2"
               href={ROUTES.SIGN_IN}>
               Sign In
             </Link>

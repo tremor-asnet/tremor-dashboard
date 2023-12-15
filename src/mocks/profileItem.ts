@@ -1,5 +1,12 @@
 import { Profile } from "@/types/profile";
 
+export const PROFILE_HEADER = {
+  src: "/images/avatar/avatar-md.webp",
+  alt: "image",
+  name: "Richard Davis",
+  description: "CEO / Co-Founder",
+};
+
 export const PROFILE_ITEM = {
   src: "/images/avatar/avatar-md.webp",
   alt: "image",

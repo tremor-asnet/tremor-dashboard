@@ -1,14 +1,10 @@
 // Libs
 import Link from "next/link";
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
-import { FaPen } from "react-icons/fa";
-import { Flex, Text, Subtitle, Bold } from "@tremor/react";
+import { Flex, Text } from "@tremor/react";
 
 // Constants
 import { SOCIAL_LINK } from "../../constants/common";
-
-// ROUTER
-import { ROUTES } from "../../constants/routes";
 
 type InfoItem = {
   key: string;
@@ -16,22 +12,13 @@ type InfoItem = {
 };
 
 interface ContactCardProps {
-  title: string;
   description?: string;
   info: InfoItem[];
 }
 
-const ContactCard = ({ title, description = "", info }: ContactCardProps) => {
+const ContactCard = ({ description = "", info }: ContactCardProps) => {
   return (
-    <div className="p-4">
-      <Flex className="text-secondary mb-4">
-        <Subtitle className="text-primary">
-          <Bold>{title}</Bold>
-        </Subtitle>
-        <Link href={ROUTES.PROFILE}>
-          <FaPen />
-        </Link>
-      </Flex>
+    <div>
       <Flex className="flex-col items-baseline">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
           {description}

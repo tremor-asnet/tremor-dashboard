@@ -7,3 +7,5 @@ export { default as SideBar } from "./SideBar/SideBar";
 export { default as ProfileItem } from "./ProfileItem/ProfileItem";
 export { default as ProfileConversations } from "./ProfileConversations/ProfileConversations";
 export { default as Tabs } from "./Tab/Tab";
+export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
+export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProjectCard";

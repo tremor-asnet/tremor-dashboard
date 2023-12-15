@@ -3,7 +3,12 @@
 import { Flex, Card, Text, Switch } from "@tremor/react";
 
 // Components
-import { Avatar, Tabs } from "@/components";
+import {
+  Tabs,
+  ProfileConversations,
+  ProfileInfo,
+  ProfileProjectCard,
+} from "@/components";
 
 // Constants
 import {
@@ -15,11 +20,8 @@ import {
 
 // Mocks
 import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
-import { ProfileConversations } from "@/components";
 import { useState } from "react";
 import { SettingSwitchProps } from "@/types/profile";
-import ProfileInfo from "@/components/ProfileInfo/ProfileInfo";
-import ProfileProjectCard from "@/components/ProfileProjectCard/ProfileProjectCard";
 
 const Profile = () => {
   const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);

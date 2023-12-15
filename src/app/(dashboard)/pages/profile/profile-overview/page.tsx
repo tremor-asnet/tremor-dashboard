@@ -24,6 +24,11 @@ import { SettingSwitchProps } from "@/types/profile";
 
 // Mocks
 import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
+import ContactCard from "@/components/ProfileContactCard/ContactCard";
+import { PROFILE_INFO } from "@/mocks/card";
+import Link from "next/link";
+import { ROUTES } from "@/constants";
+import { FaPen } from "react-icons/fa";
 
 const Profile = () => {
   const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
@@ -103,9 +108,18 @@ const Profile = () => {
             </div>
             <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             <div className="min-w-[33%] p-4">
-              <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                profile information
-              </Text>
+              <Flex className="text-secondary mb-4">
+                <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
+                  profile information
+                </Text>
+                <Link href={ROUTES.PROFILE}>
+                  <FaPen />
+                </Link>
+              </Flex>
+              <ContactCard
+                description={PROFILE_INFO.description}
+                info={PROFILE_INFO.info}
+              />
             </div>
             <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             <div className="min-w-[33%] p-4">

@@ -38,7 +38,7 @@ export const LIST_PROJECTS = [
     projectSrc: "/assets/images/profile-project.webp",
     avatarSrc: "/images/avatar/avatar-xs.webp",
     name: "minimalist",
-    desc: "Different people have different taste, and various types of music.",
+    desc: "As Uber works through a huge amount of internal management turmoil.",
     hashtag: "#3",
   },
   {

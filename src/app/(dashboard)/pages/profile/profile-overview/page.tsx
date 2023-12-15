@@ -1,6 +1,7 @@
 "use client";
 
 import { Flex, Card, Text, Switch } from "@tremor/react";
+import { useState } from "react";
 
 // Components
 import {
@@ -18,10 +19,11 @@ import {
   TABS_HEADER,
 } from "@/constants/profile";
 
+// Types
+import { SettingSwitchProps } from "@/types/profile";
+
 // Mocks
 import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
-import { useState } from "react";
-import { SettingSwitchProps } from "@/types/profile";
 
 const Profile = () => {
   const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);

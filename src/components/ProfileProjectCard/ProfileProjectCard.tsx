@@ -22,7 +22,9 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
   const renderProjectCards = (): JSX.Element[] => {
     return links.map(link => (
       <>
-        <Flex className="justify-start flex-col items-start pt-12 pl-12 basis-full lg:max-w-[50%] lg:basis-1/2 xl:max-w-[25%] xl:basis-1/4">
+        <Flex
+          key={link.name}
+          className="justify-start flex-col items-start lg:mt-12 lg:mr-12 lg:[&:nth-child(even)]:mr-0 xl:[&:nth-child(even)]:mr-12 basis-full lg:max-w-[calc(50%-3rem)] lg:basis-1/2 xl:max-w-[calc(25%-3rem)] xl:basis-1/4">
           <Flex>
             <Image
               className="w-full rounded-xl shadow-lg"

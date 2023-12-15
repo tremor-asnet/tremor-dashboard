@@ -32,7 +32,7 @@ const ProfileItem = ({
       <Button
         className="min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
         onClick={onClick}
-        data-testis="click-button">
+        data-testid="click-button">
         Reply
       </Button>
     </Flex>

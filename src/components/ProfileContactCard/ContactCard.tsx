@@ -1,18 +1,38 @@
 // Libs
+import Link from "next/link";
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
-import { Flex, Text } from "@tremor/react";
+import { FaPen } from "react-icons/fa";
+import { Flex, Text, Subtitle, Bold } from "@tremor/react";
 
-// Mocks
-import { PROFILE_INFO } from "../../mocks/card";
+// Constants
+import { SOCIAL_LINK } from "../../constants/common";
 
-interface InfoCardProps {
+// ROUTER
+import { ROUTES } from "../../constants/routes";
+
+type InfoItem = {
+  key: string;
+  value: string;
+};
+
+interface ContactCardProps {
+  title: string;
   description?: string;
+  info: InfoItem[];
 }
-const { description, info } = PROFILE_INFO;
-const ContactCard = ({ description }: InfoCardProps) => {
+
+const ContactCard = ({ title, description = "", info }: ContactCardProps) => {
   return (
-    <div>
-      <Flex className="flex-col items-baseline p-4">
+    <div className="p-4">
+      <Flex className="text-secondary mb-4">
+        <Subtitle className="text-primary">
+          <Bold>{title}</Bold>
+        </Subtitle>
+        <Link href={ROUTES.PROFILE}>
+          <FaPen />
+        </Link>
+      </Flex>
+      <Flex className="flex-col items-baseline">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
           {description}
         </Text>
@@ -22,11 +42,11 @@ const ContactCard = ({ description }: InfoCardProps) => {
         {
           <div>
             {info.map(item => (
-              <Flex className="justify-start gap-3" key={item.information}>
+              <Flex className="justify-start gap-3" key={item.key}>
                 <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
-                  {item.information}
+                  {item.key}
                 </Text>
-                <Text className="font-normal">{item.description}</Text>
+                <Text className="font-normal">{item.value}</Text>
               </Flex>
             ))}
             <Flex className="justify-start gap-3">
@@ -34,9 +54,15 @@ const ContactCard = ({ description }: InfoCardProps) => {
                 Social:
               </Text>
               <Flex className="justify-start gap-2">
-                <IoLogoFacebook className="text-[#3b5998] rounded-lg stroke-2" />
-                <IoLogoTwitter className="text-[#55acee]" />
-                <IoLogoInstagram className="text-[#125688]" />
+                <Link href={SOCIAL_LINK.facebook}>
+                  <IoLogoFacebook className="text-[#3b5998] rounded-lg stroke-2" />
+                </Link>
+                <Link href={SOCIAL_LINK.twitter}>
+                  <IoLogoTwitter className="text-[#55acee]" />
+                </Link>
+                <Link href={SOCIAL_LINK.instagram}>
+                  <IoLogoInstagram className="text-[#125688]" />
+                </Link>
               </Flex>
             </Flex>
           </div>

@@ -14,6 +14,9 @@ import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 //Mocks
 import { PROJECT_DATA } from "@/mocks/project";
 
+//Helpers
+import { formatDate } from "@/helpers";
+
 type AcionCard = {
   key: string;
   label: string;
@@ -38,6 +41,7 @@ const ProjectCard = ({
   const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
   const openActionProject = isOpenAction && id === projectId;
+  const duaDateFormat = formatDate(new Date(dueDate));
 
   const handleItemActionProject = (project: Project, action: string) => {
     onActionProject(project, action);
@@ -58,10 +62,10 @@ const ProjectCard = ({
           </Flex>
           <Flex className="pl-[90px] mb-6 mt-1 relative">
             <Flex className="flex-col items-start justify-start ">
-              <Title className="text-xl font-bold text-base leading-5">
+              <Title className="text-xl font-semibold text-base leading-5">
                 {name}
               </Title>
-              <Flex className="items-start justify-start ml-[10px]">
+              <Flex className="mt-1 items-start justify-start ml-[10px]">
                 {participants?.map((participant: AvatarCard) => (
                   <Avatar
                     key={participant?.avatar}
@@ -116,7 +120,9 @@ const ProjectCard = ({
               <Text className="text-[#7b809a] font-normal">Participants</Text>
             </div>
             <div>
-              <Text className="text-[#344767] font-semibold">{dueDate}</Text>
+              <Text className="text-[#344767] font-semibold">
+                {duaDateFormat}
+              </Text>
               <Text className="text-[#7b809a] font-normal">Due date</Text>
             </div>
           </Flex>

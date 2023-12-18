@@ -22,7 +22,6 @@ export const Default: Story = {
       alt={PROFILE_ITEM.alt}
       name={PROFILE_ITEM.name}
       description={PROFILE_ITEM.description}
-      onClick={() => {}}
     />
   ),
 };

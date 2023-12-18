@@ -21,7 +21,7 @@ export const Default: Story = {
   render: () => (
     <ProfileConversations
       profileList={PROFILE_CONVERSATIONS}
-      onClick={() => {}}
+      title="Profile Conversations"
     />
   ),
 };

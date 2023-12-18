@@ -9,3 +9,5 @@ export { default as ProfileConversations } from "./ProfileConversations/ProfileC
 export { default as Tabs } from "./Tab/Tab";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProjectCard";
+export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";
+export { default as ContactCard } from "./ProfileContactCard/ContactCard";

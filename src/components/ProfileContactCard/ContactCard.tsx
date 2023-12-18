@@ -5,6 +5,8 @@ import { Flex, Text } from "@tremor/react";
 
 // Constants
 import { SOCIAL_LINK } from "../../constants/common";
+import { FaPen } from "react-icons/fa";
+import { ROUTES } from "@/constants";
 
 type InfoItem = {
   key: string;
@@ -12,13 +14,22 @@ type InfoItem = {
 };
 
 interface ContactCardProps {
+  title: string;
   description?: string;
   info: InfoItem[];
 }
 
-const ContactCard = ({ description = "", info }: ContactCardProps) => {
+const ContactCard = ({ title, description = "", info }: ContactCardProps) => {
   return (
     <div>
+      <Flex className="text-secondary mb-4">
+        <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
+          {title}
+        </Text>
+        <Link href={ROUTES.PROFILE}>
+          <FaPen />
+        </Link>
+      </Flex>
       <Flex className="flex-col items-baseline">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
           {description}

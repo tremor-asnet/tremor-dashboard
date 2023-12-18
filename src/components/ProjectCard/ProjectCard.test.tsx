@@ -1,29 +1,17 @@
 import { render } from "@testing-library/react";
 
-// Components
+//Components
 import ProjectCard from "./ProjectCard";
-import SlackIcon from "../../components/Icons/SlackIcon";
 
 //Constans
-import {
-  ITEM_ACTION_PROJECT,
-  URL_AVATAR_PROJECT,
-} from "../../constants/commons";
+import { ITEM_ACTION_PROJECT } from "../../constants/commons";
 
-const data = {
-  id: "1",
-  icon: <SlackIcon />,
-  avatars: URL_AVATAR_PROJECT,
-  title: "Slack Bot",
-  date: "02.03.22",
-  participant: 5,
-  description:
-    "If everything I did failed - which it doesn't, I think that it actually succeeds.",
-};
+//Mocks
+import { PROJECT_DATA } from "@/mocks/project";
 
 describe("Testing ProjectCard component", () => {
   const propsDefault = {
-    projectData: data,
+    projectData: PROJECT_DATA[0],
     actions: ITEM_ACTION_PROJECT,
     isOpenAction: false,
     projectId: "1",

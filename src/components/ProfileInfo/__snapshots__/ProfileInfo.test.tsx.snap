@@ -6,10 +6,10 @@ exports[`Testing profile info component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col md:flex-row md:items-center justify-between px-4 py-1"
+        class="flex flex-col lg:flex-row lg:items-center justify-between px-4 py-1"
       >
         <div
-          class="flex items-center mb-6 profile-info"
+          class="flex flex-col md:flex-row md:items-center profile-info mb-6"
         >
           <div
             class="flex items-center"
@@ -31,7 +31,7 @@ exports[`Testing profile info component Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="ml-6"
+            class="md:ml-6"
             data-testid="profile-info-lg"
           >
             <p
@@ -51,10 +51,10 @@ exports[`Testing profile info component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col md:flex-row md:items-center justify-between px-4 py-1"
+      class="flex flex-col lg:flex-row lg:items-center justify-between px-4 py-1"
     >
       <div
-        class="flex items-center mb-6 profile-info"
+        class="flex flex-col md:flex-row md:items-center profile-info mb-6"
       >
         <div
           class="flex items-center"
@@ -76,7 +76,7 @@ exports[`Testing profile info component Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="ml-6"
+          class="md:ml-6"
           data-testid="profile-info-lg"
         >
           <p

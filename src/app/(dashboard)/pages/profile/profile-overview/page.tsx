@@ -1,7 +1,4 @@
-"use client";
-
-import { Flex, Card, Text, Switch } from "@tremor/react";
-import { useState } from "react";
+import { Flex, Card, Text } from "@tremor/react";
 
 // Components
 import {
@@ -9,34 +6,27 @@ import {
   ProfileConversations,
   ProfileInfo,
   ProfileProjectCard,
+  ContactCard,
+  PlatformSetting,
 } from "@/components";
 
 // Constants
-import {
-  ACCOUNT_SWITCH,
-  APPLICATION_SWITCH,
-  LIST_PROJECTS,
-  TABS_HEADER,
-} from "@/constants/profile";
-
-// Types
-import { SettingSwitchProps } from "@/types/profile";
+import { LIST_PROJECTS, TABS_HEADER } from "@/constants";
 
 // Mocks
-import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
-import ContactCard from "@/components/ProfileContactCard/ContactCard";
-import { PROFILE_INFO } from "@/mocks/card";
-import Link from "next/link";
-import { ROUTES } from "@/constants";
-import { FaPen } from "react-icons/fa";
+import { PROFILE_HEADER, PROFILE_INFO } from "@/mocks";
 
-const Profile = () => {
-  const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
+// Actions
+import {
+  getProfileConversations,
+  getProfileProject,
+} from "@/app/actions/profileAction";
 
-  // Handle to change value is (true or false) for attr checked switch
-  const handleSwitchChange = (value: boolean) => {
-    setIsSwitchOn(value);
-  };
+const Profile = async () => {
+  const data = await getProfileConversations();
+
+  const projectData = await getProfileProject();
+  console.log("projectData", projectData);
 
   return (
     <>
@@ -55,81 +45,27 @@ const Profile = () => {
           </Flex>
           {/* Main content */}
           <Flex className="items-start my-6">
+            {/* Platform Setting */}
             <div className="min-w-[33%] p-4">
-              <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                Platform Setting
-              </Text>
-              <Flex className="flex-col items-start">
-                <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-                  account
-                </text>
-                {ACCOUNT_SWITCH.map(({ label }: SettingSwitchProps) => (
-                  <>
-                    <div className="flex items-center space-x-3 mt-1 py-3">
-                      <Switch
-                        key={label}
-                        tabIndex={2}
-                        id="switch"
-                        name="switch"
-                        checked={isSwitchOn}
-                        color="zinc"
-                        className="flex justify-center items-center"
-                        onChange={handleSwitchChange}
-                      />
-                      <Text className="text-secondary font-normal">
-                        {label}
-                      </Text>
-                    </div>
-                  </>
-                ))}
-                <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-                  application
-                </text>
-                {APPLICATION_SWITCH.map(({ label }: SettingSwitchProps) => (
-                  <>
-                    <div className="flex items-center space-x-3 mt-1 py-3">
-                      <Switch
-                        key={label}
-                        tabIndex={2}
-                        id="switch"
-                        name="switch"
-                        checked={isSwitchOn}
-                        color="zinc"
-                        className="flex justify-center items-center"
-                        onChange={handleSwitchChange}
-                      />
-                      <Text className="text-secondary font-normal">
-                        {label}
-                      </Text>
-                    </div>
-                  </>
-                ))}
-              </Flex>
+              <PlatformSetting title="Platform Setting" />
             </div>
             <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
+            {/* Profile Information */}
             <div className="min-w-[33%] p-4">
-              <Flex className="text-secondary mb-4">
-                <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                  profile information
-                </Text>
-                <Link href={ROUTES.PROFILE}>
-                  <FaPen />
-                </Link>
-              </Flex>
               <ContactCard
+                title="profile information"
                 description={PROFILE_INFO.description}
                 info={PROFILE_INFO.info}
               />
             </div>
             <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
+            {/* Profile Conversations */}
             <div className="min-w-[33%] p-4">
-              <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                conversations
-              </Text>
-              <ProfileConversations
-                profileList={PROFILE_CONVERSATIONS}
+              {/* <ProfileConversations
+                title="conversations"
+                profileList={data}
                 onClick={() => {}}
-              />
+              /> */}
             </div>
           </Flex>
           {/* Projects */}
@@ -140,7 +76,7 @@ const Profile = () => {
             <Text className="font-light leading-normal text-sm text-[#7b809a]">
               Architects design houses
             </Text>
-            <ProfileProjectCard links={LIST_PROJECTS} />
+            <ProfileProjectCard links={projectData} />
           </Flex>
         </Card>
       </div>

@@ -10,9 +10,16 @@ interface ProfileItemProps {
   alt: string;
   name: string;
   description: string;
+  onClick: () => void;
 }
 
-const ProfileItem = ({ src, alt, name, description }: ProfileItemProps) => {
+const ProfileItem = ({
+  src,
+  alt,
+  name,
+  description,
+  onClick = () => {},
+}: ProfileItemProps) => {
   return (
     <Flex className="mb-2 py-2">
       <Flex className="justify-start">
@@ -26,6 +33,7 @@ const ProfileItem = ({ src, alt, name, description }: ProfileItemProps) => {
       </Flex>
       <Button
         className="min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        onClick={onClick}
         data-testid="click-button">
         Reply
       </Button>

@@ -1,7 +1,6 @@
 "use client";
 
 import { Text } from "@tremor/react";
-
 // Components
 import { ProfileItem } from "@/components";
 
@@ -11,11 +10,13 @@ import { Profile } from "@/types/profile";
 interface ProfileConversationProps {
   title: string;
   profileList: Profile[];
+  onClick: () => void;
 }
 
 const ProfileConversation = ({
   title,
   profileList,
+  onClick,
 }: ProfileConversationProps) => {
   return (
     <>
@@ -29,6 +30,7 @@ const ProfileConversation = ({
           alt={profile.alt}
           name={profile.name}
           description={profile.description}
+          onClick={onClick}
         />
       ))}
     </>

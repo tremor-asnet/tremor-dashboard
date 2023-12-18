@@ -16,21 +16,20 @@ export const authConfig: NextAuthConfig = {
         nextUrl.pathname,
       );
 
-      // TODO: refactor logic to readable
-      if (nextUrl.pathname === "/" && isLoggedIn) {
-        return Response.redirect(new URL(ROUTES.HOME, nextUrl));
-      }
-
-      if (isOnDashboard) {
-        // Redirect unauthenticated users to login page
-        return isLoggedIn;
-      }
-
       if (isLoggedIn) {
-        return Response.redirect(new URL(ROUTES.HOME, nextUrl));
-      }
+        // Move to Homepage if logged in
+        if (nextUrl.pathname === "/" || !isOnDashboard) {
+          return Response.redirect(new URL(ROUTES.HOME, nextUrl));
+        }
 
-      return true;
+        return true;
+      } else {
+        if (!isOnDashboard) {
+          return true;
+        }
+        // Move to Sign in page if not logged in and try to access the dashboard
+        return Response.redirect(new URL(ROUTES.SIGN_IN, nextUrl));
+      }
     },
   },
   providers: [],

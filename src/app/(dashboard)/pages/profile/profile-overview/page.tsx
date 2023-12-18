@@ -23,7 +23,8 @@ import {
 } from "@/app/actions/profileAction";
 
 const Profile = async () => {
-  const data = await getProfileConversations();
+  const profileData = await getProfileConversations();
+  console.log("data", profileData);
 
   const projectData = await getProfileProject();
   console.log("projectData", projectData);
@@ -37,8 +38,8 @@ const Profile = async () => {
             {/* Header */}
             <ProfileInfo
               isOnHeader={true}
-              name={PROFILE_HEADER.name}
-              info={PROFILE_HEADER.description}
+              name={profileData.name}
+              role={profileData.description}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} />
@@ -54,7 +55,7 @@ const Profile = async () => {
             <div className="min-w-[33%] p-4">
               <ContactCard
                 title="profile information"
-                description={PROFILE_INFO.description}
+                information={profileData.information}
                 info={PROFILE_INFO.info}
               />
             </div>

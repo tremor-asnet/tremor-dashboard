@@ -15,11 +15,11 @@ type InfoItem = {
 
 interface ContactCardProps {
   title: string;
-  description?: string;
+  information?: string;
   info: InfoItem[];
 }
 
-const ContactCard = ({ title, description = "", info }: ContactCardProps) => {
+const ContactCard = ({ title, information = "", info }: ContactCardProps) => {
   return (
     <div>
       <Flex className="text-secondary mb-4">
@@ -32,7 +32,7 @@ const ContactCard = ({ title, description = "", info }: ContactCardProps) => {
       </Flex>
       <Flex className="flex-col items-baseline">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
-          {description}
+          {information}
         </Text>
         <div className="w-full opacity-30 bg-transparent">
           <hr className="bg-transparent bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] h-px opacity-25 mx-0 my-4 border-b-[thin] border-b-[none] border-0 border-solid border-[rgba(0,0,0,0.12)]" />

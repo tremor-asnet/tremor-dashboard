@@ -4,14 +4,14 @@ import { Title, Text } from "@tremor/react";
 interface ProfileInfoProps {
   isOnHeader: boolean;
   name: string;
-  info: string;
+  role: string;
   src: string;
 }
 
 const ProfileInfo = ({
   isOnHeader = true,
   name = "Richard Davis",
-  info = "CEO / Co-Founder",
+  role = "CEO / Co-Founder",
   src = "/images/avatar/avatar-lg.webp",
 }: ProfileInfoProps) => {
   return (
@@ -41,13 +41,13 @@ const ProfileInfo = ({
         {isOnHeader ? (
           <div className="ml-6" data-testid="profile-info-lg">
             <Title className="font-semibold text-xl">{name}</Title>
-            <Text>{info}</Text>
+            <Text>{role}</Text>
           </div>
         ) : (
           <div className="ml-4" data-testid="profile-info-md">
             <Title className="font-semibold">{name}</Title>
             <Text className="text-xs font-light truncate max-w-[165px]">
-              {info}
+              {role}
             </Text>
           </div>
         )}

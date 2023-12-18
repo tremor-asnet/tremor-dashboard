@@ -19,8 +19,10 @@ export const ContactCardInfo: Story = {
   render: () => (
     <ContactCard
       title="Profile Information"
-      description={PROFILE_INFO.description}
-      info={PROFILE_INFO.info}
+      information={PROFILE_INFO.description}
+      phone={""}
+      email={""}
+      location={""}
     />
   ),
 };

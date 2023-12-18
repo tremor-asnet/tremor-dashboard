@@ -11,10 +11,10 @@ import {
 } from "@/components";
 
 // Constants
-import { LIST_PROJECTS, TABS_HEADER } from "@/constants";
+import { TABS_HEADER } from "@/constants";
 
 // Mocks
-import { PROFILE_HEADER, PROFILE_INFO } from "@/mocks";
+import { PROFILE_HEADER } from "@/mocks";
 
 // Actions
 import {
@@ -24,10 +24,7 @@ import {
 
 const Profile = async () => {
   const profileData = await getProfileConversations();
-  console.log("data", profileData);
-
   const projectData = await getProfileProject();
-  console.log("projectData", projectData);
 
   return (
     <>
@@ -56,17 +53,18 @@ const Profile = async () => {
               <ContactCard
                 title="profile information"
                 information={profileData.information}
-                info={PROFILE_INFO.info}
+                phone={profileData.phone}
+                email={profileData.email}
+                location={profileData.location}
               />
             </div>
             <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             {/* Profile Conversations */}
             <div className="min-w-[33%] p-4">
-              {/* <ProfileConversations
+              <ProfileConversations
                 title="conversations"
-                profileList={data}
-                onClick={() => {}}
-              /> */}
+                profileList={profileData?.conversations.data || []}
+              />
             </div>
           </Flex>
           {/* Projects */}

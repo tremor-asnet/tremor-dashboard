@@ -16,10 +16,19 @@ type InfoItem = {
 interface ContactCardProps {
   title: string;
   information?: string;
-  info: InfoItem[];
+  // info: InfoItem[];
+  phone: string;
+  email: string;
+  location: string;
 }
 
-const ContactCard = ({ title, information = "", info }: ContactCardProps) => {
+const ContactCard = ({
+  title,
+  information = "",
+  phone,
+  email,
+  location,
+}: ContactCardProps) => {
   return (
     <div>
       <Flex className="text-secondary mb-4">
@@ -39,14 +48,37 @@ const ContactCard = ({ title, information = "", info }: ContactCardProps) => {
         </div>
         {
           <div>
-            {info.map(item => (
+            {/* {info.map(item => (
               <Flex className="justify-start gap-3" key={item.key}>
                 <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
                   {item.key}
                 </Text>
                 <Text className="font-normal">{item.value}</Text>
               </Flex>
-            ))}
+            ))} */}
+            <Flex className="justify-start gap-3">
+              <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+                Full Name
+              </Text>
+            </Flex>
+            <Flex className="justify-start gap-3">
+              <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+                Mobile
+              </Text>
+              <Text className="font-normal">{phone}</Text>
+            </Flex>
+            <Flex className="justify-start gap-3">
+              <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+                Email
+              </Text>
+              <Text className="font-normal">{email}</Text>
+            </Flex>
+            <Flex className="justify-start gap-3">
+              <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+                Location
+              </Text>
+              <Text className="font-normal">{location}</Text>
+            </Flex>
             <Flex className="justify-start gap-3">
               <Text className="font-bold text-primary tracking-[0.02857em] capitalize">
                 Social:

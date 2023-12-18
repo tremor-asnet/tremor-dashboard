@@ -1,8 +1,8 @@
 export type Profile = {
-  src: string;
-  alt: string;
+  avatar: string;
+  alt?: string;
   name: string;
-  description: string;
+  lastConversation: string;
 };
 
 export interface SettingSwitchProps {

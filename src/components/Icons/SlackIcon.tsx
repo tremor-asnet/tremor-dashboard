@@ -1,4 +1,4 @@
-export const SlackIcon = () => {
+const SlackIcon = () => {
   return (
     <svg
       width="177px"
@@ -38,3 +38,5 @@ export const SlackIcon = () => {
     </svg>
   );
 };
+
+export default SlackIcon;

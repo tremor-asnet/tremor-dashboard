@@ -1,10 +1,10 @@
-// Libs
-import { ReactNode } from "react";
-
 // Components
-import { Card, Text, Flex, Title } from "@tremor/react";
+import { Card, Text, Flex, Title, Button } from "@tremor/react";
 import Avatar from "../../components/Avatar/Avatar";
-import { SlackIcon } from "../../components/Icons/SlackIcon";
+import SlackIcon from "../../components/Icons/SlackIcon";
+
+//Types
+import { Project } from "../../types/project";
 
 //Constans
 import {
@@ -12,50 +12,65 @@ import {
   URL_AVATAR_PROJECT,
 } from "../../constants/commons";
 
-type AvatarCard = {
-  key: string;
-  src: string;
-};
-
 type AcionCard = {
   key: string;
   label: string;
 };
-
 interface IProjectCard {
-  title: string;
-  description: string;
-  participant: number;
-  date: string;
-  icon: ReactNode;
-  avatars: AvatarCard[];
+  projectData: Project;
   actions: AcionCard[];
-  handletToggleAction: () => void;
+  projectId: string;
+  onToggleAction: (project: Project) => void;
+  onActionProject: (project: Project, action: string) => void;
   isOpenAction: boolean;
 }
 
+const data = {
+  id: "1",
+  icon: <SlackIcon />,
+  avatars: URL_AVATAR_PROJECT,
+  title: "Slack Bot",
+  date: "02.03.22",
+  participant: 5,
+  description:
+    "If everything I did failed - which it doesn't, I think that it actually succeeds.",
+};
+
 const ProjectCard = ({
-  icon = <SlackIcon />,
-  title = "Slack Bot",
-  date = "02.03.22",
-  participant = 5,
-  description = "If everything I did failed - which it doesn't, I think that it actually succeeds.",
-  avatars = URL_AVATAR_PROJECT,
+  projectData = data,
   actions = ITEM_ACTION_PROJECT,
-  isOpenAction,
-  handletToggleAction,
+  isOpenAction = false,
+  projectId = "1",
+  onToggleAction,
+  onActionProject,
 }: IProjectCard): JSX.Element => {
+  const { icon, title, date, participant, description, avatars, id } =
+    projectData;
+
+  const openActionProject = isOpenAction && id === projectId;
+
+  const handleItemActionProject = (
+    event: React.MouseEvent<HTMLElement>,
+    project: Project,
+    action: string,
+  ) => {
+    event.preventDefault();
+    onActionProject(project, action);
+  };
+
   return (
-    <div className="antialiased items-center justify-between px-4 py-1">
+    <div className="antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto px-4 py-1 ring-0 max-w-[350px] border-none relative mt-[40px] rounded-xl shadow-md">
-          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-black justify-center rounded-xl">
+        <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] border-none relative mt-[40px] rounded-xl shadow-md">
+          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl">
             {icon}
           </Flex>
           <Flex className="pl-[90px] mb-6 relative">
             <Flex className="flex-col items-start justify-start ">
-              <Title className="text-xl font-bold text-base">{title}</Title>
-              <Flex className="items-start justify-start  ml-[10px]">
+              <Title className="text-xl font-bold text-base leading-5">
+                {title}
+              </Title>
+              <Flex className="items-start justify-start ml-[10px]">
                 {avatars.map(avatar => (
                   <Avatar
                     key={avatar.key}
@@ -70,20 +85,33 @@ const ProjectCard = ({
                 ))}
               </Flex>
             </Flex>
-            <Flex className="flec-col justify-end">
+            <Flex className="flex-col w-auto justify-end">
               <Flex
-                className="flex-col w-[30px] h-[16px] justify-between"
-                onClick={handletToggleAction}>
+                className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                onClick={onToggleAction}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
               </Flex>
-              {isOpenAction && (
-                <div className="absolute px-[21px] py-3 right-[26px] top-[5px] z-10 bg-white rounded-md shadow-md">
+              {openActionProject && (
+                <div className="absolute px-[18px] py-2 right-[26px] top-[5px] z-10 bg-white rounded-md shadow-md">
                   {actions.map(item => (
-                    <div className="py-1" key={item.key}>
-                      <Text>{item.label}</Text>
-                    </div>
+                    <Flex key={item.key} flex-col>
+                      <Button
+                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
+                        variant="light"
+                        onClick={(event: React.MouseEvent<HTMLButtonElement>) =>
+                          handleItemActionProject(
+                            event,
+                            projectData,
+                            item.label,
+                          )
+                        }>
+                        <Text className="font-normal text-sm text-[#7b809a]">
+                          {item.label}
+                        </Text>
+                      </Button>
+                    </Flex>
                   ))}
                 </div>
               )}

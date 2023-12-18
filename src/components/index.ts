@@ -9,3 +9,9 @@ export { default as ProfileConversations } from "./ProfileConversations/ProfileC
 export { default as Tabs } from "./Tab/Tab";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProjectCard";
+export { default as SlackIcon } from "./Icons/SlackIcon";
+export { default as AsanaIcon } from "./Icons/AsanaIcon";
+export { default as SpotifyIcon } from "./Icons/SpotifyIcon";
+export { default as InvisionIcon } from "./Icons/InvisionIcon";
+export { default as DesignIcon } from "./Icons/DesignIcon";
+export { default as AtlassianIcon } from "./Icons/AtlassianIcon";

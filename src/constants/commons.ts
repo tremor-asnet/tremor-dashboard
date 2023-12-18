@@ -20,10 +20,10 @@ export const URL_AVATAR_PROJECT = [
   },
   {
     key: "avatar2",
-    src: "images/avatar/avatar-xs.webp",
+    src: "/images/avatar/avatar-xs.webp",
   },
   {
     key: "avatar3",
-    src: "images/avatar/avatar-xs.webp",
+    src: "/images/avatar/avatar-xs.webp",
   },
 ];

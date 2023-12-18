@@ -2,6 +2,7 @@
 
 // Libs
 import { useContext } from "react";
+import { usePathname } from "next/navigation";
 
 // Components
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
@@ -24,17 +25,33 @@ import { SidebarContext } from "@/contexts";
 const DashboardHeader = (): JSX.Element => {
   const { isOpen, toggleSideBar } = useContext(SidebarContext);
 
+  const pathname = usePathname();
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+
   return (
-    <div className="md:flex items-center justify-between px-4 py-1">
+    <div
+      className={`md:flex items-center justify-between px-4 py-1 ${
+        isProjectPage
+          ? `absolute top-8 w-[93%] ${
+              isOpen ? "xl:w-[calc(100%_-_165px)]" : "xl:w-[calc(100%_-_330px)]"
+            }`
+          : ""
+      }`}>
       <div className="flex items-center">
         <BreadCrumb />
         <div
-          className="hidden lg:block cursor-pointer mx-16"
+          className="hidden xl:block cursor-pointer mx-16"
           onClick={toggleSideBar}>
           {isOpen ? (
-            <MdMenuOpen className="text-tremor-content text-2xl" />
+            <MdMenuOpen
+              className="text-tremor-content text-2xl"
+              color={`${isProjectPage ? "white" : "inherit"}`}
+            />
           ) : (
-            <MdMenu className="text-tremor-content text-2xl" />
+            <MdMenu
+              className="text-tremor-content text-2xl"
+              color={`${isProjectPage ? "white" : "inherit"}`}
+            />
           )}
         </div>
       </div>
@@ -48,25 +65,45 @@ const DashboardHeader = (): JSX.Element => {
             className="py-0.5 w-full bg-transparent hover:bg-transparent focus:bg-transparent min-w-[100px]"
           />
         </div>
-        <Link href={ROUTES.SIGN_IN} aria-label="Link to homepage">
-          <MdAccountCircle className="text-tremor-content text-xl" />
-        </Link>
-        <div
-          className="sm:block lg:hidden cursor-pointer ml-4"
-          onClick={toggleSideBar}>
-          {isOpen ? (
-            <MdMenuOpen className="text-tremor-content text-2xl" />
-          ) : (
-            <MdMenu className="text-tremor-content text-2xl" />
-          )}
-        </div>
-        <div className="relative">
-          <MdSettings className="text-tremor-content text-xl mx-4 cursor-pointer" />
-        </div>
-        <div className="relative">
-          <MdNotifications className="text-tremor-content text-xl cursor-pointer" />
-          <div className="absolute -top-3 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer">
-            9
+        <div className="flex">
+          <Link href={ROUTES.SIGN_IN} aria-label="Link to homepage">
+            <MdAccountCircle
+              className="text-tremor-content text-xl"
+              color={`${isProjectPage ? "white" : "inherit"}`}
+            />
+          </Link>
+          <div
+            className="sm:block xl:hidden cursor-pointer ml-4"
+            onClick={toggleSideBar}>
+            {isOpen ? (
+              <MdMenuOpen
+                className="text-tremor-content text-2xl"
+                color={`${isProjectPage ? "white" : "inherit"}`}
+              />
+            ) : (
+              <MdMenu
+                className="text-tremor-content text-2xl"
+                color={`${isProjectPage ? "white" : "inherit"}`}
+              />
+            )}
+          </div>
+          <div className="relative">
+            <MdSettings
+              className="text-tremor-content text-xl mx-4 cursor-pointer"
+              color={`${isProjectPage ? "white" : "inherit"}`}
+            />
+          </div>
+          <div className="relative max-w-[10px]">
+            <MdNotifications
+              className="text-tremor-content text-xl cursor-pointer"
+              color={`${isProjectPage ? "white" : "inherit"}`}
+            />
+            <div
+              className={`absolute -top-3 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer ${
+                isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+              }`}>
+              9
+            </div>
           </div>
         </div>
       </div>

@@ -56,9 +56,15 @@ const BreadCrumb = (): JSX.Element => {
     }
   }, [pathname]);
 
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+
   const renderLinks = (): JSX.Element[] => {
     return links.map(link => (
-      <li key={link.name} className="flex items-center">
+      <li
+        key={link.name}
+        className={`flex items-center ${
+          isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+        }`}>
         <div className="bc-link">
           <Link className="text-sm capitalize" href={link.url}>
             {link.name}
@@ -76,7 +82,11 @@ const BreadCrumb = (): JSX.Element => {
       <ol className="flex flex-wrap items-center text-gray-400">
         <li>
           <Link href={ROUTES.HOME} className="flex">
-            <MdHome className="bg-inherit border-0 py-0 hover:bg-transparent" />
+            <MdHome
+              className={`bg-inherit border-0 py-0 hover:bg-transparent ${
+                isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+              }`}
+            />
           </Link>
         </li>
         <li aria-hidden="true" className="text-xs mx-2">
@@ -85,11 +95,17 @@ const BreadCrumb = (): JSX.Element => {
 
         {renderLinks()}
 
-        <li className="text-sm text-tremor-content-title capitalize">
+        <li
+          className={`text-sm text-tremor-content-title capitalize ${
+            isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+          }`}>
           {pageName}
         </li>
       </ol>
-      <Title className="text-tremor-content-title font-bold capitalize">
+      <Title
+        className={`text-tremor-content-title font-bold capitalize ${
+          isProjectPage ? "text-white" : "text-[#344767]"
+        }`}>
         {pageName}
       </Title>
     </nav>

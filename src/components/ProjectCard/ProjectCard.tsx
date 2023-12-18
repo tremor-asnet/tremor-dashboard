@@ -49,12 +49,7 @@ const ProjectCard = ({
 
   const openActionProject = isOpenAction && id === projectId;
 
-  const handleItemActionProject = (
-    event: React.MouseEvent<HTMLElement>,
-    project: Project,
-    action: string,
-  ) => {
-    event.preventDefault();
+  const handleItemActionProject = (project: Project, action: string) => {
     onActionProject(project, action);
   };
 
@@ -88,7 +83,7 @@ const ProjectCard = ({
             <Flex className="flex-col w-auto justify-end">
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
-                onClick={onToggleAction}>
+                onClick={() => onToggleAction(projectData)}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
@@ -100,12 +95,8 @@ const ProjectCard = ({
                       <Button
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
                         variant="light"
-                        onClick={(event: React.MouseEvent<HTMLButtonElement>) =>
-                          handleItemActionProject(
-                            event,
-                            projectData,
-                            item.label,
-                          )
+                        onClick={() =>
+                          handleItemActionProject(projectData, item.label)
                         }>
                         <Text className="font-normal text-sm text-[#7b809a]">
                           {item.label}

@@ -83,7 +83,7 @@ const Projects = () => {
             projectId={projectIdCurrent}
             actions={ITEM_ACTION_PROJECT}
             isOpenAction={isOpen}
-            onToggleAction={() => handleToggleAction(project)}
+            onToggleAction={handleToggleAction}
             onActionProject={handleActionProject}
           />
         ))}

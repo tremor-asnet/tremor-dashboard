@@ -96,13 +96,13 @@ const DashboardHeader = (): JSX.Element => {
               color={`${isProjectPage ? "white" : ""}`}
             />
           </div>
-          <div className="relative max-w-[20px] flex items-center ml-[5px] xs:ml-0">
+          <div className="relative p-2 flex items-center">
             <MdNotifications
               className="text-tremor-content text-xl cursor-pointer"
               color={`${isProjectPage ? "white" : ""}`}
             />
             <div
-              className={`absolute top-0 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
+              className={`absolute top-0 -right-1 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
                 isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
               }`}>
               9

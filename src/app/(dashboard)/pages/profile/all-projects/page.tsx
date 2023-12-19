@@ -64,7 +64,7 @@ const Projects = () => {
             <ProfileInfo
               isOnHeader={true}
               name={PROFILE_HEADER.name}
-              info={PROFILE_HEADER.description}
+              role={PROFILE_HEADER.description}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} className="mx-auto lg:mx-0" />
@@ -82,10 +82,12 @@ const Projects = () => {
           </Text>
         </div>
         <Button
-          className="px-6 py-[10px] bg-[linear-gradient(195deg,#42424a,#191919)] ring-0 border-transparent shadow-md"
+          className="min-w-[64px] text-center uppercase bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]"
           icon={MdAdd}
           onClick={handleAddNewProject}>
-          <Text className="uppercase text-xs text-white">Add New</Text>
+          <Text className="uppercase text-xs text-white font-bold">
+            Add New
+          </Text>
         </Button>
       </Flex>
       <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

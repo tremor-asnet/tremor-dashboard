@@ -1,7 +1,6 @@
 "use client";
 
 import { Flex, Switch, Text } from "@tremor/react";
-import { useState } from "react";
 
 // Constants
 import { ACCOUNT_SWITCH, APPLICATION_SWITCH } from "@/constants";
@@ -9,18 +8,39 @@ import { ACCOUNT_SWITCH, APPLICATION_SWITCH } from "@/constants";
 // Types
 import { SettingSwitchProps } from "@/types/profile";
 
+type accountSettingType = {
+  [key: string]: boolean;
+  emailMentions: boolean;
+  emailFollowing: boolean;
+  emailAnswerPost: boolean;
+};
+
+type applicationSettingType = {
+  [key: string]: boolean;
+  newLaunchesProject: boolean;
+  monthlyProductUpdate: boolean;
+  subscribeToNewsletter: boolean;
+};
+
 interface PlatformSettingProps {
   title: string;
+  accountSetting: accountSettingType;
+  applicationSetting: applicationSettingType;
 }
 
-const PlatformSetting = ({ title }: PlatformSettingProps) => {
-  const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
-
-  // Handle to change value is (true or false) for attr checked switch
-  const handleSwitchChange = (value: boolean) => {
-    setIsSwitchOn(value);
-  };
-
+const PlatformSetting = ({
+  title,
+  accountSetting = {
+    emailMentions: false,
+    emailFollowing: false,
+    emailAnswerPost: false,
+  },
+  applicationSetting = {
+    newLaunchesProject: false,
+    monthlyProductUpdate: false,
+    subscribeToNewsletter: false,
+  },
+}: PlatformSettingProps) => {
   return (
     <>
       <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
@@ -30,7 +50,7 @@ const PlatformSetting = ({ title }: PlatformSettingProps) => {
         <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
           account
         </text>
-        {ACCOUNT_SWITCH.map(({ label }: SettingSwitchProps) => (
+        {ACCOUNT_SWITCH.map(({ label, field }: SettingSwitchProps) => (
           <>
             <div className="flex items-center space-x-3 mt-1 py-3">
               <Switch
@@ -38,10 +58,9 @@ const PlatformSetting = ({ title }: PlatformSettingProps) => {
                 tabIndex={2}
                 id="switch"
                 name="switch"
-                checked={isSwitchOn}
                 color="zinc"
                 className="flex justify-center items-center"
-                onChange={handleSwitchChange}
+                defaultChecked={accountSetting[field]}
               />
               <Text className="text-secondary font-normal">{label}</Text>
             </div>
@@ -50,7 +69,7 @@ const PlatformSetting = ({ title }: PlatformSettingProps) => {
         <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
           application
         </text>
-        {APPLICATION_SWITCH.map(({ label }: SettingSwitchProps) => (
+        {APPLICATION_SWITCH.map(({ label, field }: SettingSwitchProps) => (
           <>
             <div className="flex items-center space-x-3 mt-1 py-3">
               <Switch
@@ -58,10 +77,9 @@ const PlatformSetting = ({ title }: PlatformSettingProps) => {
                 tabIndex={2}
                 id="switch"
                 name="switch"
-                checked={isSwitchOn}
                 color="zinc"
                 className="flex justify-center items-center"
-                onChange={handleSwitchChange}
+                defaultChecked={applicationSetting[field]}
               />
               <Text className="text-secondary font-normal">{label}</Text>
             </div>

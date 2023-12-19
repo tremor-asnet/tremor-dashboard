@@ -7,4 +7,5 @@ export type Profile = {
 
 export interface SettingSwitchProps {
   label: string;
+  field: string;
 }

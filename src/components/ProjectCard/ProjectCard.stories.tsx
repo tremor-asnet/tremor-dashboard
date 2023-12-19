@@ -20,13 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const ProjectCardDefault: Story = {
   render: () => (
-    <ProjectCard
-      projectData={PROJECT_DATA[0]}
-      actions={ITEM_ACTION_PROJECT}
-      isOpenAction={false}
-      projectId="1"
-      onToggleAction={() => {}}
-      onActionProject={() => {}}
-    />
+    <ProjectCard projectData={PROJECT_DATA[0]} actions={ITEM_ACTION_PROJECT} />
   ),
 };

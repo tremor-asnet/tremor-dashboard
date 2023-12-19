@@ -3,12 +3,13 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import SideBar from "./SideBar";
 
-export default { component: SideBar };
 const meta = {
   title: "Components/SideBar",
   component: SideBar,
   tags: ["autodocs"],
 } as Meta<typeof SideBar>;
+
+export default meta;
 
 type Story = StoryObj<typeof meta>;
 

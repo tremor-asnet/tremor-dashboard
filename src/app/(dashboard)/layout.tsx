@@ -33,7 +33,7 @@ function DashboardLayout({ children }: { children: ReactNode }) {
   const isProjectPage = pathname === ROUTES.PROJECTS;
 
   return (
-    <Flex alignItems="start" className="bg-body antialiased">
+    <Flex alignItems="start" className="bg-body antialiased font-primary">
       <div className="h-screen">
         <SideBar onSignOut={signOut} />
       </div>

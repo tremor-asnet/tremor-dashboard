@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
@@ -12,8 +12,7 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { TABS_HEADER } from "@/constants/profile";
 
 // Mocks
-import { PROFILE_HEADER } from "@/mocks/profileItem";
-import { PROJECT_DATA } from "@/mocks/project";
+import { PROFILE_HEADER, PROJECT_DATA } from "@/mocks";
 
 // Types
 import { Project } from "@/types";
@@ -21,9 +20,23 @@ import { Project } from "@/types";
 //Constans
 import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
+// Actions
+import { getAllProjects } from "@/app/actions/projectActions";
+
 const Projects = () => {
   const [isOpen, setOpenAction] = useState(false);
   const [projectIdCurrent, setIdProjectCurrent] = useState("");
+  const [dataAllProjects, setDataAllProjects] = useState(PROJECT_DATA);
+
+  //TODO: fetch from server site
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const data = await getAllProjects();
+      setDataAllProjects(data);
+    };
+
+    fetchProjects();
+  }, []);
 
   const handleToggleAction = (project: Project) => {
     setOpenAction(!isOpen);
@@ -75,10 +88,10 @@ const Projects = () => {
           <Text className="uppercase text-xs text-white">Add New</Text>
         </Button>
       </Flex>
-      <Flex className="flex-wrap justify-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {PROJECT_DATA.map((project: Project) => (
+      <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {dataAllProjects?.map((project: Project) => (
           <ProjectCard
-            key={project.title}
+            key={project.id}
             projectData={project}
             projectId={projectIdCurrent}
             actions={ITEM_ACTION_PROJECT}

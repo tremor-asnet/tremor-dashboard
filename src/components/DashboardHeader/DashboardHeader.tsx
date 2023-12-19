@@ -30,7 +30,7 @@ const DashboardHeader = (): JSX.Element => {
 
   return (
     <div
-      className={`md:flex items-center justify-between px-4 py-1 ${
+      className={`md:flex items-center justify-between px-2 md:px-4 py-1 ${
         isProjectPage
           ? `absolute top-10 md:top-9 pl-7 pr-2 w-[93%] ${
               isOpen ? "xl:w-[calc(100%_-_165px)]" : "xl:w-[calc(100%_-_330px)]"

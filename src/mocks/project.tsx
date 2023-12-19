@@ -1,78 +1,68 @@
 // Types
 import { Project } from "@/types";
 
-// Components
-import {
-  SlackIcon,
-  SpotifyIcon,
-  DesignIcon,
-  AsanaIcon,
-  InvisionIcon,
-  AtlassianIcon,
-} from "@/components/index";
-
 //Constans
 import { URL_AVATAR_PROJECT } from "@/constants/index";
 
 export const PROJECT_DATA: Project[] = [
   {
     id: "1",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Slack Bot",
-    date: "02.03.22",
-    participant: 5,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Slack Bot",
+    dueDate: "02.03.22",
     description:
       "If everything I did failed - which it doesn't, I think that it actually succeeds.",
-    icon: <SlackIcon />,
   },
   {
     id: "2",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Premium Support",
-    date: "22.11.21",
-    participant: 3,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Premium Support",
+    dueDate: "11.22.21",
     description:
       "Pink is obviously a better color. Everyone’s born confident, and everything’s taken away from you.",
-    icon: <SpotifyIcon />,
   },
   {
     id: "3",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Design Tools",
-    date: "06.03.20",
-    participant: 4,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Design Tools",
+    dueDate: "06.03.20",
     description:
       "Constantly growing. We’re constantly making mistakes from which we learn and improve.",
-    icon: <DesignIcon />,
   },
   {
     id: "4",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Looking Great",
-    date: "14.03.24",
-    participant: 6,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Looking Great",
+    dueDate: "03.28.24",
     description:
       "You have the opportunity to play this game of life you need to appreciate every moment.",
-    icon: <AsanaIcon />,
   },
   {
     id: "5",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Developer First",
-    date: "16.01.22",
-    participant: 4,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Developer First",
+    dueDate: "09.26.22",
     description:
       "For standing out. But the time is now to be okay to be the greatest you.",
-    icon: <InvisionIcon />,
   },
   {
     id: "6",
-    avatars: URL_AVATAR_PROJECT,
-    title: "Product Development",
-    date: "16.01.22",
-    participant: 4,
+    cover:
+      "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg",
+    participants: URL_AVATAR_PROJECT,
+    name: "Product Development",
+    dueDate: "01.16.22",
     description:
       "We strive to embrace and drive change in our industry. We are happy to work at such a project.",
-    icon: <AtlassianIcon />,
   },
 ];

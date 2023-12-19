@@ -41,18 +41,13 @@ const ProjectCard = ({
   const [projectIdCurrent, setIdProjectCurrent] = useState("");
   const openActionProject = isOpen && id === projectIdCurrent;
 
-  const handleItemActionProject = (project: Project, action: string) => {
-    handleActionProject(project, action);
-  };
-
-  const handleToggleAction = (project: Project) => {
-    setOpenAction(!isOpen);
-    setIdProjectCurrent(project.id);
-  };
-
-  const handleActionProject = (project: Project, action: string) => {
-    // TODO: handle action a project
+  const handleItemActionProject = () => {
     setOpenAction(false);
+  };
+
+  const handleToggleAction = (id: string) => {
+    setOpenAction(!isOpen);
+    setIdProjectCurrent(id);
   };
 
   return (
@@ -91,7 +86,7 @@ const ProjectCard = ({
             <Flex className="flex-col w-auto justify-end">
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
-                onClick={() => handleToggleAction(projectData)}>
+                onClick={() => handleToggleAction(projectData.id)}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
@@ -103,9 +98,7 @@ const ProjectCard = ({
                       <Button
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
                         variant="light"
-                        onClick={() =>
-                          handleItemActionProject(projectData, item.label)
-                        }>
+                        onClick={() => handleItemActionProject()}>
                         <Text className="font-normal text-sm text-[#7b809a]">
                           {item.label}
                         </Text>

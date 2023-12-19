@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
@@ -23,35 +20,12 @@ import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 // Actions
 import { getAllProjects } from "@/app/actions/projectActions";
 
-const Projects = () => {
-  const [isOpen, setOpenAction] = useState(false);
-  const [projectIdCurrent, setIdProjectCurrent] = useState("");
-  const [dataAllProjects, setDataAllProjects] = useState(PROJECT_DATA);
+// Actions
+import { getProfileConversations } from "@/app/actions/profileAction";
 
-  //TODO: fetch from server site
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const data = await getAllProjects();
-      setDataAllProjects(data);
-    };
-
-    fetchProjects();
-  }, []);
-
-  const handleToggleAction = (project: Project) => {
-    setOpenAction(!isOpen);
-    setIdProjectCurrent(project.id);
-  };
-
-  const handleActionProject = (project: Project, action: string) => {
-    // TODO: handle action a project
-    setOpenAction(false);
-    console.log("project", project, "action", action);
-  };
-
-  const handleAddNewProject = () => {
-    // TODO: handle to add new a project
-  };
+const Projects = async () => {
+  const profileData = await getProfileConversations();
+  const dataAllProjects = await getAllProjects();
 
   return (
     <div>
@@ -63,8 +37,8 @@ const Projects = () => {
             {/* Header */}
             <ProfileInfo
               isOnHeader={true}
-              name={PROFILE_HEADER.name}
-              info={PROFILE_HEADER.description}
+              name={profileData.name}
+              role={profileData.role}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} className="mx-auto lg:mx-0" />
@@ -81,10 +55,7 @@ const Projects = () => {
             projects. Keep you user engaged by providing meaningful information.
           </Text>
         </div>
-        <Button
-          className="px-6 py-[10px] bg-[linear-gradient(195deg,#42424a,#191919)] ring-0 border-transparent shadow-md"
-          icon={MdAdd}
-          onClick={handleAddNewProject}>
+        <Button className="px-6 py-[10px] bg-[linear-gradient(195deg,#42424a,#191919)] ring-0 border-transparent shadow-md">
           <Text className="uppercase text-xs text-white">Add New</Text>
         </Button>
       </Flex>
@@ -93,11 +64,7 @@ const Projects = () => {
           <ProjectCard
             key={project.id}
             projectData={project}
-            projectId={projectIdCurrent}
             actions={ITEM_ACTION_PROJECT}
-            isOpenAction={isOpen}
-            onToggleAction={handleToggleAction}
-            onActionProject={handleActionProject}
           />
         ))}
       </Flex>

@@ -1,5 +1,8 @@
+"use client";
+
 //Libs
 import Image from "next/image";
+import { useState } from "react";
 
 //Components
 import { Card, Text, Flex, Title, Button } from "@tremor/react";
@@ -24,27 +27,33 @@ type AcionCard = {
 interface IProjectCard {
   projectData: Project;
   actions: AcionCard[];
-  projectId: string;
-  onToggleAction: (project: Project) => void;
-  onActionProject: (project: Project, action: string) => void;
-  isOpenAction: boolean;
 }
 
 const ProjectCard = ({
   projectData = PROJECT_DATA[0],
   actions = ITEM_ACTION_PROJECT,
-  isOpenAction = false,
-  projectId = "1",
-  onToggleAction,
-  onActionProject,
 }: IProjectCard): JSX.Element => {
   const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
-  const openActionProject = isOpenAction && id === projectId;
   const duaDateFormat = formatDate(new Date(dueDate));
 
+  const [isOpen, setOpenAction] = useState(false);
+  const [projectIdCurrent, setIdProjectCurrent] = useState("");
+  const openActionProject = isOpen && id === projectIdCurrent;
+
   const handleItemActionProject = (project: Project, action: string) => {
-    onActionProject(project, action);
+    handleActionProject(project, action);
+  };
+
+  const handleToggleAction = (project: Project) => {
+    setOpenAction(!isOpen);
+    setIdProjectCurrent(project.id);
+  };
+
+  const handleActionProject = (project: Project, action: string) => {
+    // TODO: handle action a project
+    setOpenAction(false);
+    console.log("project", project, "action", action);
   };
 
   return (
@@ -83,7 +92,7 @@ const ProjectCard = ({
             <Flex className="flex-col w-auto justify-end">
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
-                onClick={() => onToggleAction(projectData)}>
+                onClick={() => handleToggleAction(projectData)}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />

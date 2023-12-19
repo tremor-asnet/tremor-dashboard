@@ -54,8 +54,8 @@ const Profile = () => {
             <Tabs tabs={TABS_HEADER} />
           </Flex>
           {/* Main content */}
-          <Flex className="items-start my-6">
-            <div className="min-w-[33%] p-4">
+          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap">
+            <div className="w-full md:basis-2/4 lg:basis-1/3 p-4">
               <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
                 Platform Setting
               </Text>
@@ -106,23 +106,25 @@ const Profile = () => {
                 ))}
               </Flex>
             </div>
-            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
-            <div className="min-w-[33%] p-4">
-              <Flex className="text-secondary mb-4">
-                <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                  profile information
-                </Text>
-                <Link href={ROUTES.PROFILE}>
-                  <FaPen />
-                </Link>
-              </Flex>
-              <ContactCard
-                description={PROFILE_INFO.description}
-                info={PROFILE_INFO.info}
-              />
-            </div>
-            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
-            <div className="min-w-[33%] p-4">
+            <Flex className="w-full md:basis-2/4 lg:basis-1/3 p-4">
+              <hr className="rounded h-[400px] w-0.5 bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 -translate-x-5" />
+              <div>
+                <Flex className="text-secondary mb-4">
+                  <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767]">
+                    profile information
+                  </Text>
+                  <Link href={ROUTES.PROFILE}>
+                    <FaPen />
+                  </Link>
+                </Flex>
+                <ContactCard
+                  description={PROFILE_INFO.description}
+                  info={PROFILE_INFO.info}
+                />
+              </div>
+              <hr className="rounded h-[400px] w-0.5 bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 translate-x-5" />
+            </Flex>
+            <div className="w-full lg:basis-1/3 p-4">
               <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
                 conversations
               </Text>
@@ -133,11 +135,11 @@ const Profile = () => {
             </div>
           </Flex>
           {/* Projects */}
-          <Flex className="flex-col items-start">
+          <Flex className="flex-col items-start px-4">
             <Text className="text-[#344767] font-semibold text-base">
               Projects
             </Text>
-            <Text className="font-light leading-normal text-sm text-[#7b809a]">
+            <Text className="font-light leading-normal text-sm text-[#7b809a] mb-6">
               Architects design houses
             </Text>
             <ProfileProjectCard links={LIST_PROJECTS} />

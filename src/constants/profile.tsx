@@ -8,15 +8,18 @@ export const TABS_HEADER = [
 ];
 
 export const ACCOUNT_SWITCH: SettingSwitchProps[] = [
-  { label: "Email me when someone follows me" },
-  { label: "Email me when someone answers on my post" },
-  { label: "Email me when someone mentions me" },
+  { label: "Email me when someone follows me", field: "emailMentions" },
+  {
+    label: "Email me when someone answers on my post",
+    field: "emailFollowing",
+  },
+  { label: "Email me when someone mentions me", field: "emailAnswerPost" },
 ];
 
 export const APPLICATION_SWITCH: SettingSwitchProps[] = [
-  { label: "New launches and projects" },
-  { label: "Monthly product updates" },
-  { label: "Subscribe to newsletter" },
+  { label: "New launches and projects", field: "newLaunchesProject" },
+  { label: "Monthly product updates", field: "monthlyProductUpdate" },
+  { label: "Subscribe to newsletter", field: "subscribeToNewsletter" },
 ];
 
 export const LIST_PROJECTS = [

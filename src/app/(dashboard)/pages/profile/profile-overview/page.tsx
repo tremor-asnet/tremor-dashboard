@@ -1,7 +1,4 @@
-"use client";
-
-import { Flex, Card, Text, Switch } from "@tremor/react";
-import { useState } from "react";
+import { Flex, Card, Text } from "@tremor/react";
 
 // Components
 import {
@@ -9,34 +6,25 @@ import {
   ProfileConversations,
   ProfileInfo,
   ProfileProjectCard,
+  ContactCard,
+  PlatformSetting,
 } from "@/components";
 
 // Constants
-import {
-  ACCOUNT_SWITCH,
-  APPLICATION_SWITCH,
-  LIST_PROJECTS,
-  TABS_HEADER,
-} from "@/constants/profile";
-
-// Types
-import { SettingSwitchProps } from "@/types/profile";
+import { TABS_HEADER } from "@/constants";
 
 // Mocks
-import { PROFILE_CONVERSATIONS, PROFILE_HEADER } from "@/mocks/profileItem";
-import ContactCard from "@/components/ProfileContactCard/ContactCard";
-import { PROFILE_INFO } from "@/mocks/card";
-import Link from "next/link";
-import { ROUTES } from "@/constants";
-import { FaPen } from "react-icons/fa";
+import { PROFILE_HEADER } from "@/mocks";
 
-const Profile = () => {
-  const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
+// Actions
+import {
+  getProfileConversations,
+  getProfileProject,
+} from "@/app/actions/profileAction";
 
-  // Handle to change value is (true or false) for attr checked switch
-  const handleSwitchChange = (value: boolean) => {
-    setIsSwitchOn(value);
-  };
+const Profile = async () => {
+  const profileData = await getProfileConversations();
+  const projectData = await getProfileProject();
 
   return (
     <>
@@ -47,90 +35,40 @@ const Profile = () => {
             {/* Header */}
             <ProfileInfo
               isOnHeader={true}
-              name={PROFILE_HEADER.name}
-              info={PROFILE_HEADER.description}
+              name={profileData.name}
+              role={profileData.role}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} />
           </Flex>
           {/* Main content */}
           <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap">
+            {/* Platform Setting */}
             <div className="w-full md:basis-2/4 lg:basis-1/3 p-4">
-              <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                Platform Setting
-              </Text>
-              <Flex className="flex-col items-start">
-                <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-                  account
-                </text>
-                {ACCOUNT_SWITCH.map(({ label }: SettingSwitchProps) => (
-                  <>
-                    <div className="flex items-center space-x-3 mt-1 py-3">
-                      <Switch
-                        key={label}
-                        tabIndex={2}
-                        id="switch"
-                        name="switch"
-                        checked={isSwitchOn}
-                        color="zinc"
-                        className="flex justify-center items-center"
-                        onChange={handleSwitchChange}
-                      />
-                      <Text className="text-secondary font-normal">
-                        {label}
-                      </Text>
-                    </div>
-                  </>
-                ))}
-                <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-                  application
-                </text>
-                {APPLICATION_SWITCH.map(({ label }: SettingSwitchProps) => (
-                  <>
-                    <div className="flex items-center space-x-3 mt-1 py-3">
-                      <Switch
-                        key={label}
-                        tabIndex={2}
-                        id="switch"
-                        name="switch"
-                        checked={isSwitchOn}
-                        color="zinc"
-                        className="flex justify-center items-center"
-                        onChange={handleSwitchChange}
-                      />
-                      <Text className="text-secondary font-normal">
-                        {label}
-                      </Text>
-                    </div>
-                  </>
-                ))}
-              </Flex>
+              <PlatformSetting
+                title="Platform Setting"
+                accountSetting={profileData.account_setting}
+                applicationSetting={profileData.application_setting}
+              />
             </div>
+            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
+            {/* Profile Information */}
             <Flex className="w-full md:basis-2/4 lg:basis-1/3 p-4">
-              <hr className="rounded h-[400px] w-0.5 bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 -translate-x-5" />
-              <div>
-                <Flex className="text-secondary mb-4">
-                  <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767]">
-                    profile information
-                  </Text>
-                  <Link href={ROUTES.PROFILE}>
-                    <FaPen />
-                  </Link>
-                </Flex>
-                <ContactCard
-                  description={PROFILE_INFO.description}
-                  info={PROFILE_INFO.info}
-                />
-              </div>
-              <hr className="rounded h-[400px] w-0.5 bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 translate-x-5" />
+              <ContactCard
+                title="profile information"
+                information={profileData.information}
+                fullName={profileData.name}
+                phone={profileData.phone}
+                email={profileData.email}
+                location={profileData.location}
+              />
             </Flex>
+            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
+            {/* Profile Conversations */}
             <div className="w-full lg:basis-1/3 p-4">
-              <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
-                conversations
-              </Text>
               <ProfileConversations
-                profileList={PROFILE_CONVERSATIONS}
-                onClick={() => {}}
+                title="conversations"
+                profileList={profileData?.conversations.data || []}
               />
             </div>
           </Flex>
@@ -142,7 +80,7 @@ const Profile = () => {
             <Text className="font-light leading-normal text-sm text-[#7b809a] mb-6">
               Architects design houses
             </Text>
-            <ProfileProjectCard links={LIST_PROJECTS} />
+            <ProfileProjectCard links={projectData} />
           </Flex>
         </Card>
       </div>

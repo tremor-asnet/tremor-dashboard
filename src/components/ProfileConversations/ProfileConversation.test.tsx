@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import { ProfileConversations } from "..";
 
 // Mocks
-import { PROFILE_CONVERSATIONS } from "@/mocks/profileItem";
+import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 
 describe("ProfileConversation component", () => {
   const props = {
@@ -13,7 +13,7 @@ describe("ProfileConversation component", () => {
   };
 
   const profile = () => {
-    return render(<ProfileConversations {...props} />);
+    return render(<ProfileConversations title="Conversation" {...props} />);
   };
 
   it("Should render ProfileConversations snapshot correctly", () => {

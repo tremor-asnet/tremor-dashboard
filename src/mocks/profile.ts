@@ -16,33 +16,33 @@ export const PROFILE_ITEM = {
 
 export const PROFILE_CONVERSATIONS: Profile[] = [
   {
-    src: "/images/avatar/avatar-md.webp",
+    avatar: "/images/avatar/avatar-md.webp",
     alt: "image",
     name: "Anne Marie",
-    description: "Awesome work, can you..",
+    lastConversation: "Awesome work, can you..",
   },
   {
-    src: "/images/avatar/avatar-lg.webp",
+    avatar: "/images/avatar/avatar-lg.webp",
     alt: "image",
     name: "Ivanna",
-    description: "About files I can..",
+    lastConversation: "About files I can..",
   },
   {
-    src: "/images/avatar/avatar-xs.webp",
+    avatar: "/images/avatar/avatar-xs.webp",
     alt: "image",
     name: "Peterson",
-    description: "Have a great afternoon..",
+    lastConversation: "Have a great afternoon..",
   },
   {
-    src: "/images/avatar/avatar-md.webp",
+    avatar: "/images/avatar/avatar-md.webp",
     alt: "image",
     name: "Sophie.B",
-    description: "Hi! I need more information..",
+    lastConversation: "Hi! I need more information..",
   },
   {
-    src: "/images/avatar/avatar-sm.webp",
+    avatar: "/images/avatar/avatar-sm.webp",
     alt: "image",
     name: "Nick Daniel",
-    description: "Hi! I need more information..",
+    lastConversation: "Hi! I need more information..",
   },
 ];

@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import ProfileConversations from "./ProfileConversations";
 
 // Mocks
-import { PROFILE_CONVERSATIONS } from "@/mocks/profileItem";
+import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 
 const meta = {
   title: "Components/ProfileConversations",
@@ -21,7 +21,7 @@ export const Default: Story = {
   render: () => (
     <ProfileConversations
       profileList={PROFILE_CONVERSATIONS}
-      onClick={() => {}}
+      title="Profile Conversations"
     />
   ),
 };

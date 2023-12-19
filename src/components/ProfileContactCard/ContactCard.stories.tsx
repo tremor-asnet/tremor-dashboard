@@ -18,8 +18,11 @@ type Story = StoryObj<typeof meta>;
 export const ContactCardInfo: Story = {
   render: () => (
     <ContactCard
-      description={PROFILE_INFO.description}
-      info={PROFILE_INFO.info}
+      title="Profile Information"
+      information={PROFILE_INFO.description}
+      phone={""}
+      email={""}
+      location={""}
     />
   ),
 };

@@ -2,14 +2,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import ProfileItem from "./ProfileItem";
-import { PROFILE_ITEM } from "@/mocks/profileItem";
+import ConversationItem from "./ConversationItem";
+import { PROFILE_ITEM } from "@/mocks/profile";
 
 const meta = {
-  title: "Components/ProfileItem",
+  title: "Components/ConversationItem",
   tags: ["autodocs"],
-  component: ProfileItem,
-} as Meta<typeof ProfileItem>;
+  component: ConversationItem,
+} as Meta<typeof ConversationItem>;
 
 export default meta;
 
@@ -17,12 +17,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <ProfileItem
+    <ConversationItem
       src={PROFILE_ITEM.src}
       alt={PROFILE_ITEM.alt}
       name={PROFILE_ITEM.name}
       description={PROFILE_ITEM.description}
-      onClick={() => {}}
     />
   ),
 };

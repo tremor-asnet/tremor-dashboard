@@ -28,6 +28,7 @@ const Projects = () => {
   const [projectIdCurrent, setIdProjectCurrent] = useState("");
   const [dataAllProjects, setDataAllProjects] = useState(PROJECT_DATA);
 
+  //TODO: fetch from server site
   useEffect(() => {
     const fetchProjects = async () => {
       const data = await getAllProjects();

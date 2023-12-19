@@ -89,7 +89,7 @@ const ProjectCard = ({
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
               </Flex>
               {openActionProject && (
-                <div className="absolute px-[18px] py-2 right-[26px] top-[5px] z-10 bg-white rounded-md shadow-md">
+                <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white rounded-md shadow-md">
                   {actions.map(item => (
                     <Flex key={item.key} flex-col>
                       <Button

@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
@@ -23,35 +20,12 @@ import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 // Actions
 import { getAllProjects } from "@/app/actions/projectActions";
 
-const Projects = () => {
-  const [isOpen, setOpenAction] = useState(false);
-  const [projectIdCurrent, setIdProjectCurrent] = useState("");
-  const [dataAllProjects, setDataAllProjects] = useState(PROJECT_DATA);
+// Actions
+import { getProfileConversations } from "@/app/actions/profileAction";
 
-  //TODO: fetch from server site
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const data = await getAllProjects();
-      setDataAllProjects(data);
-    };
-
-    fetchProjects();
-  }, []);
-
-  const handleToggleAction = (project: Project) => {
-    setOpenAction(!isOpen);
-    setIdProjectCurrent(project.id);
-  };
-
-  const handleActionProject = (project: Project, action: string) => {
-    // TODO: handle action a project
-    setOpenAction(false);
-    console.log("project", project, "action", action);
-  };
-
-  const handleAddNewProject = () => {
-    // TODO: handle to add new a project
-  };
+const Projects = async () => {
+  const profileData = await getProfileConversations();
+  const ProjectsData = await getAllProjects();
 
   return (
     <div>
@@ -63,8 +37,8 @@ const Projects = () => {
             {/* Header */}
             <ProfileInfo
               isOnHeader={true}
-              name={PROFILE_HEADER.name}
-              role={PROFILE_HEADER.description}
+              name={profileData.name}
+              role={profileData.role}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} className="mx-auto lg:mx-0" />
@@ -81,37 +55,19 @@ const Projects = () => {
             projects. Keep you user engaged by providing meaningful information.
           </Text>
         </div>
-        <Button
-          className="min-w-[64px] text-center uppercase bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]"
-          onClick={handleAddNewProject}>
-          <Flex className="flex-row">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              height="16px"
-              width="16px"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill="none" d="M0 0h24v24H0z"></path>
-              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
-            </svg>
-            <Text className="uppercase text-xs text-white font-bold pl-[5px]">
-              Add New
-            </Text>
-          </Flex>
+        <Button className="min-w-[64px] text-center uppercase bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]">
+          <Text className="flex items-center uppercase text-xs font-bold text-white">
+            <MdAdd size="16" className="mr-2" />
+            Add New
+          </Text>
         </Button>
       </Flex>
       <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {dataAllProjects?.map((project: Project) => (
+        {ProjectsData?.map((project: Project) => (
           <ProjectCard
             key={project.id}
             projectData={project}
-            projectId={projectIdCurrent}
             actions={ITEM_ACTION_PROJECT}
-            isOpenAction={isOpen}
-            onToggleAction={handleToggleAction}
-            onActionProject={handleActionProject}
           />
         ))}
       </Flex>

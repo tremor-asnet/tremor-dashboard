@@ -20,6 +20,7 @@ export const ContactCardInfo: Story = {
     <ContactCard
       title="Profile Information"
       information={PROFILE_INFO.description}
+      fullName=""
       phone={""}
       email={""}
       location={""}

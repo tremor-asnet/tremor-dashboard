@@ -21,7 +21,7 @@ export const ProfileInfoHeader: Story = {
     <ProfileInfo
       isOnHeader
       name="Richard Davis"
-      info="CEO / Co-Founder"
+      role="CEO / Co-Founder"
       src="/images/avatar/avatar-lg.webp"
     />
   ),
@@ -32,7 +32,7 @@ export const ProfileInfoMain: Story = {
     <ProfileInfo
       isOnHeader={false}
       name="Sophie B."
-      info="Hi! I need more information about files I can"
+      role="Hi! I need more information about files I can"
       src="/images/avatar/avatar-md.webp"
     />
   ),

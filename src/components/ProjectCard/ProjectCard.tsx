@@ -1,5 +1,8 @@
+"use client";
+
 //Libs
 import Image from "next/image";
+import { useState } from "react";
 
 //Components
 import { Card, Text, Flex, Title, Button } from "@tremor/react";
@@ -24,27 +27,27 @@ type AcionCard = {
 interface IProjectCard {
   projectData: Project;
   actions: AcionCard[];
-  projectId: string;
-  onToggleAction: (project: Project) => void;
-  onActionProject: (project: Project, action: string) => void;
-  isOpenAction: boolean;
 }
 
 const ProjectCard = ({
   projectData = PROJECT_DATA[0],
   actions = ITEM_ACTION_PROJECT,
-  isOpenAction = false,
-  projectId = "1",
-  onToggleAction,
-  onActionProject,
 }: IProjectCard): JSX.Element => {
   const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
-  const openActionProject = isOpenAction && id === projectId;
   const duaDateFormat = formatDate(new Date(dueDate));
 
-  const handleItemActionProject = (project: Project, action: string) => {
-    onActionProject(project, action);
+  const [isOpenAction, setOpenAction] = useState(false);
+  const [currentProjectId, setCurrentProjectId] = useState("");
+  const openActionProject = isOpenAction && id === currentProjectId;
+
+  const handleItemActionProject = () => {
+    setOpenAction(false);
+  };
+
+  const handleToggleAction = (id: string) => {
+    setOpenAction(!isOpenAction);
+    setCurrentProjectId(id);
   };
 
   return (
@@ -83,7 +86,7 @@ const ProjectCard = ({
             <Flex className="flex-col w-auto justify-end">
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
-                onClick={() => onToggleAction(projectData)}>
+                onClick={() => handleToggleAction(projectData.id)}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
@@ -95,9 +98,7 @@ const ProjectCard = ({
                       <Button
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
                         variant="light"
-                        onClick={() =>
-                          handleItemActionProject(projectData, item.label)
-                        }>
+                        onClick={() => handleItemActionProject()}>
                         <Text className="font-normal text-sm text-[#7b809a]">
                           {item.label}
                         </Text>

@@ -1,5 +1,14 @@
-import Avatar from "@/components/Avatar/Avatar";
+"use client";
+
+// Libs
+import { usePathname } from "next/navigation";
+
+// Components
+import Avatar from "../../components/Avatar/Avatar";
 import { Title, Text } from "@tremor/react";
+
+// Constants
+import { ROUTES } from "../../constants";
 
 interface ProfileInfoProps {
   isOnHeader: boolean;
@@ -14,9 +23,15 @@ const ProfileInfo = ({
   role = "CEO / Co-Founder",
   src = "/images/avatar/avatar-lg.webp",
 }: ProfileInfoProps) => {
+  const pathname = usePathname();
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+
   return (
-    <div className="flex flex-col md:flex-row md:items-center justify-between px-4 py-1">
-      <div className="flex items-center mb-6 profile-info">
+    <div className="flex flex-col lg:flex-row lg:items-center justify-between px-4 py-1">
+      <div
+        className={`flex flex-col xs:flex-row xs:items-center profile-info ${
+          isProjectPage ? "mb-0" : "mb-6"
+        }`}>
         <div className="flex items-center">
           {isOnHeader ? (
             <Avatar
@@ -39,7 +54,7 @@ const ProfileInfo = ({
           )}
         </div>
         {isOnHeader ? (
-          <div className="ml-6" data-testid="profile-info-lg">
+          <div className="xs:ml-6" data-testid="profile-info-lg">
             <Title className="font-semibold text-xl">{name}</Title>
             <Text>{role}</Text>
           </div>

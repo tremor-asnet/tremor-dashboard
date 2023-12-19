@@ -2,13 +2,12 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
 import ProjectCard from "./ProjectCard";
-import { SlackIcon } from "../../components/Icons/SlackIcon";
 
 //Constans
-import {
-  ITEM_ACTION_PROJECT,
-  URL_AVATAR_PROJECT,
-} from "../../constants/commons";
+import { ITEM_ACTION_PROJECT } from "../../constants/commons";
+
+//Mocks
+import { PROJECT_DATA } from "@/mocks/project";
 
 export default { component: ProjectCard };
 const meta = {
@@ -22,15 +21,12 @@ type Story = StoryObj<typeof meta>;
 export const ProjectCardDefault: Story = {
   render: () => (
     <ProjectCard
-      icon={<SlackIcon />}
-      title="Slack Bot"
-      date="02.03.22"
-      participant={5}
-      description="If everything I did failed - which it doesn't, I think that it actually succeeds."
-      avatars={URL_AVATAR_PROJECT}
+      projectData={PROJECT_DATA[0]}
       actions={ITEM_ACTION_PROJECT}
       isOpenAction={false}
-      handletToggleAction={() => {}}
+      projectId="1"
+      onToggleAction={() => {}}
+      onActionProject={() => {}}
     />
   ),
 };

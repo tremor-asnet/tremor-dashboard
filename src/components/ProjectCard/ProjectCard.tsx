@@ -1,89 +1,108 @@
-// Libs
-import { ReactNode } from "react";
+//Libs
+import Image from "next/image";
 
-// Components
-import { Card, Text, Flex, Title } from "@tremor/react";
-import Avatar from "../../components/Avatar/Avatar";
-import { SlackIcon } from "../../components/Icons/SlackIcon";
+//Components
+import { Card, Text, Flex, Title, Button } from "@tremor/react";
+import Avatar from "@/components/Avatar/Avatar";
+
+//Types
+import { Project, AvatarCard } from "@/types";
 
 //Constans
-import {
-  ITEM_ACTION_PROJECT,
-  URL_AVATAR_PROJECT,
-} from "../../constants/commons";
+import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
-type AvatarCard = {
-  key: string;
-  src: string;
-};
+//Mocks
+import { PROJECT_DATA } from "@/mocks/project";
+
+//Helpers
+import { formatDate } from "@/helpers";
 
 type AcionCard = {
   key: string;
   label: string;
 };
-
 interface IProjectCard {
-  title: string;
-  description: string;
-  participant: number;
-  date: string;
-  icon: ReactNode;
-  avatars: AvatarCard[];
+  projectData: Project;
   actions: AcionCard[];
-  handletToggleAction: () => void;
+  projectId: string;
+  onToggleAction: (project: Project) => void;
+  onActionProject: (project: Project, action: string) => void;
   isOpenAction: boolean;
 }
 
 const ProjectCard = ({
-  icon = <SlackIcon />,
-  title = "Slack Bot",
-  date = "02.03.22",
-  participant = 5,
-  description = "If everything I did failed - which it doesn't, I think that it actually succeeds.",
-  avatars = URL_AVATAR_PROJECT,
+  projectData = PROJECT_DATA[0],
   actions = ITEM_ACTION_PROJECT,
-  isOpenAction,
-  handletToggleAction,
+  isOpenAction = false,
+  projectId = "1",
+  onToggleAction,
+  onActionProject,
 }: IProjectCard): JSX.Element => {
+  const { cover, name, dueDate, participants, description, id } = projectData;
+  const participantNumber = participants?.length;
+  const openActionProject = isOpenAction && id === projectId;
+  const duaDateFormat = formatDate(new Date(dueDate));
+
+  const handleItemActionProject = (project: Project, action: string) => {
+    onActionProject(project, action);
+  };
+
   return (
-    <div className="antialiased items-center justify-between px-4 py-1">
+    <div className="antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto px-4 py-1 ring-0 max-w-[350px] border-none relative mt-[40px] rounded-xl shadow-md">
-          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-black justify-center rounded-xl">
-            {icon}
+        <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl">
+            <Image
+              src={cover}
+              width={60}
+              height={60}
+              alt={`${name}-cover`}
+              priority
+            />
           </Flex>
-          <Flex className="pl-[90px] mb-6 relative">
+          <Flex className="pl-[90px] mb-6 mt-1 relative">
             <Flex className="flex-col items-start justify-start ">
-              <Title className="text-xl font-bold text-base">{title}</Title>
-              <Flex className="items-start justify-start  ml-[10px]">
-                {avatars.map(avatar => (
+              <Title className="text-xl font-semibold text-base leading-5">
+                {name}
+              </Title>
+              <Flex className="mt-1 items-start justify-start ml-[10px]">
+                {participants?.map((participant: AvatarCard, index: string) => (
                   <Avatar
-                    key={avatar.key}
+                    key={`${participant?.avatar} avatar ${index} of ${id} with ${name}`}
                     alt="Avatar extra small"
                     className="border-2 border-white border-solid ml-[-10px]"
                     height={20}
                     priority
-                    src={avatar.src}
+                    src={participant?.avatar}
                     sizes="(max-width: 768px) 100vw, 33vw"
                     width={20}
                   />
                 ))}
               </Flex>
             </Flex>
-            <Flex className="flec-col justify-end">
+            <Flex className="flex-col w-auto justify-end">
               <Flex
-                className="flex-col w-[30px] h-[16px] justify-between"
-                onClick={handletToggleAction}>
+                className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                onClick={() => onToggleAction(projectData)}>
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
                 <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
               </Flex>
-              {isOpenAction && (
-                <div className="absolute px-[21px] py-3 right-[26px] top-[5px] z-10 bg-white rounded-md shadow-md">
+              {openActionProject && (
+                <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white rounded-md shadow-md">
                   {actions.map(item => (
-                    <div className="py-1" key={item.key}>
-                      <Text>{item.label}</Text>
-                    </div>
+                    <Flex key={item.key} flex-col>
+                      <Button
+                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
+                        variant="light"
+                        onClick={() =>
+                          handleItemActionProject(projectData, item.label)
+                        }>
+                        <Text className="font-normal text-sm text-[#7b809a]">
+                          {item.label}
+                        </Text>
+                      </Button>
+                    </Flex>
                   ))}
                 </div>
               )}
@@ -96,12 +115,14 @@ const ProjectCard = ({
           <Flex className="my-4">
             <div>
               <Text className="text-[#344767] font-semibold">
-                {participant}
+                {participantNumber}
               </Text>
               <Text className="text-[#7b809a] font-normal">Participants</Text>
             </div>
             <div>
-              <Text className="text-[#344767] font-semibold">{date}</Text>
+              <Text className="text-[#344767] font-semibold">
+                {duaDateFormat}
+              </Text>
               <Text className="text-[#7b809a] font-normal">Due date</Text>
             </div>
           </Flex>

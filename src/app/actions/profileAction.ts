@@ -1,10 +1,11 @@
 "use server";
 
-const baseURLProfileConversations =
-  "https://fine-rose-cygnet-hem.cyclic.app/api";
+// Constants
+import { ROUTER_API_URL } from "@/constants";
 
+// Integration api for Profile Conversation
 export const getProfileConversations = async () => {
-  const res = await fetch(`${baseURLProfileConversations}/profile`, {
+  const res = await fetch(`${ROUTER_API_URL}/profile`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",
@@ -19,10 +20,9 @@ export const getProfileConversations = async () => {
   return res.json();
 };
 
-const baseURLProfileProject = "https://fine-rose-cygnet-hem.cyclic.app/api";
-
+// Integration api for Project List
 export const getProfileProject = async () => {
-  const res = await fetch(`${baseURLProfileProject}/project`, {
+  const res = await fetch(`${ROUTER_API_URL}/project`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",

@@ -27,9 +27,7 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
   const renderProjectCards = (): JSX.Element[] => {
     return links.map(link => (
       <>
-        <Flex
-          key={link.id}
-          className="justify-start flex-col items-start lg:mt-12 lg:mr-12 lg:[&:nth-child(even)]:mr-0 xl:[&:nth-child(even)]:mr-12 basis-full lg:max-w-[calc(50%-3rem)] lg:basis-1/2 xl:max-w-[calc(25%-3rem)] xl:basis-1/4">
+        <Flex key={link.id} className="justify-start flex-col items-start">
           <Flex>
             <Image
               className="w-full rounded-xl shadow-lg"
@@ -39,8 +37,8 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
               alt="Project"
             />
           </Flex>
-          <Flex className="justify-start flex-col items-start w-[calc(100%-1rem)] pt-4 px-2">
-            <Text className="capitalize">{link.secondaryName}</Text>
+          <Flex className="justify-start flex-col items-start pt-4 px-2">
+            <Text className="capitalize">Project {link.secondaryName}</Text>
             <Title className="w-full font-bold text-xl capitalize mb-2">
               <Link href={ROUTES.HOME} className="block">
                 {link.primaryName}
@@ -77,7 +75,7 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
     ));
   };
   return (
-    <Flex className="flex-wrap justify-start flex-row">
+    <Flex className="flex-wrap justify-start flex-row items-start gap-y-12 md:grid md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-4">
       {renderProjectCards()}
     </Flex>
   );

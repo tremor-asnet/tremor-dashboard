@@ -50,7 +50,7 @@ const ProjectCard = ({
   return (
     <div className="antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl">
             <Image
               src={cover}

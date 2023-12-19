@@ -88,7 +88,7 @@ const Projects = () => {
           <Text className="uppercase text-xs text-white">Add New</Text>
         </Button>
       </Flex>
-      <Flex className="flex-wrap justify-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {dataAllProjects?.map((project: Project) => (
           <ProjectCard
             key={project.id}

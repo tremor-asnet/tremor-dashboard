@@ -1,11 +1,15 @@
 "use client";
 // Libs
 import { ReactNode, useContext } from "react";
+import { usePathname } from "next/navigation";
 
 // Components
 import { Flex } from "@tremor/react";
 import { DashboardHeader, SideBar } from "@/components";
 import { SidebarContext, SidebarContextProvider } from "@/contexts";
+
+// Constant
+import { ROUTES } from "@/constants/routes";
 
 // Auth
 import { signOut } from "@/app/auth";
@@ -25,17 +29,20 @@ export default function DashboardLayoutWrapper({
 function DashboardLayout({ children }: { children: ReactNode }) {
   const { isOpen } = useContext(SidebarContext);
 
+  const pathname = usePathname();
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+
   return (
-    <Flex alignItems="start" className="bg-body">
+    <Flex alignItems="start" className="bg-body antialiased font-primary">
       <div className="h-screen">
         <SideBar onSignOut={signOut} />
       </div>
       <div
-        className={`flex-1 p-6 pt-8 ${
-          isOpen ? "ml-0 lg:ml-28" : "lg:ml-[270px]"
+        className={`flex-1 p-4 md:p-6 pt-8 ${
+          isOpen ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
         }`}>
         <DashboardHeader />
-        <div className={`mt-4`}>{children}</div>
+        <div className={`${isProjectPage ? "mt-0" : "mt-4"}`}>{children}</div>
       </div>
     </Flex>
   );

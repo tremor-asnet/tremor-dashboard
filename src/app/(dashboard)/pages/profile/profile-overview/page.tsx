@@ -36,7 +36,7 @@ const Profile = async () => {
             <ProfileInfo
               isOnHeader={true}
               name={profileData.name}
-              role={profileData.description}
+              role={profileData.role}
               src={PROFILE_HEADER.src}
             />
             <Tabs tabs={TABS_HEADER} />

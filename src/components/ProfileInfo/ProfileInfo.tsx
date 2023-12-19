@@ -19,8 +19,8 @@ interface ProfileInfoProps {
 
 const ProfileInfo = ({
   isOnHeader = true,
-  name = "Richard Davis",
-  role = "CEO / Co-Founder",
+  name,
+  role,
   src = "/images/avatar/avatar-lg.webp",
 }: ProfileInfoProps) => {
   const pathname = usePathname();

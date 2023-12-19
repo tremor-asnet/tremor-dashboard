@@ -8,14 +8,14 @@ import { ACCOUNT_SWITCH, APPLICATION_SWITCH } from "@/constants";
 // Types
 import { SettingSwitchProps } from "@/types/profile";
 
-type accountSettingType = {
+type AccountSettingType = {
   [key: string]: boolean;
   emailMentions: boolean;
   emailFollowing: boolean;
   emailAnswerPost: boolean;
 };
 
-type applicationSettingType = {
+type ApplicationSettingType = {
   [key: string]: boolean;
   newLaunchesProject: boolean;
   monthlyProductUpdate: boolean;
@@ -24,8 +24,8 @@ type applicationSettingType = {
 
 interface PlatformSettingProps {
   title: string;
-  accountSetting: accountSettingType;
-  applicationSetting: applicationSettingType;
+  accountSetting: AccountSettingType;
+  applicationSetting: ApplicationSettingType;
 }
 
 const PlatformSetting = ({
@@ -52,9 +52,8 @@ const PlatformSetting = ({
         </text>
         {ACCOUNT_SWITCH.map(({ label, field }: SettingSwitchProps) => (
           <>
-            <div className="flex items-center space-x-3 mt-1 py-3">
+            <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
               <Switch
-                key={label}
                 tabIndex={2}
                 id="switch"
                 name="switch"
@@ -71,9 +70,8 @@ const PlatformSetting = ({
         </text>
         {APPLICATION_SWITCH.map(({ label, field }: SettingSwitchProps) => (
           <>
-            <div className="flex items-center space-x-3 mt-1 py-3">
+            <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
               <Switch
-                key={label}
                 tabIndex={2}
                 id="switch"
                 name="switch"

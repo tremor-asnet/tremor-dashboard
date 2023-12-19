@@ -3,9 +3,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import ProfileProjectCard from "../components/ProfileProjectCard/ProfileProjectCard";
 
-// Constants
-import { ROUTES } from "../constants";
-
 const meta = {
   title: "Components/ProfileProjectCard",
   component: ProfileProjectCard,
@@ -21,32 +18,52 @@ export const Dashboard: Story = {
     <ProfileProjectCard
       links={[
         {
-          projectSrc: "/assets/images/profile-project.webp",
-          avatarSrc: "/images/avatar/avatar-xs.webp",
-          name: "modern",
-          desc: "As Uber works through a huge amount of internal management turmoil.",
-          hashtag: "#1",
+          id: 1,
+          cover: "/assets/images/profile-project.webp",
+          participants: [
+            { avatar: "/images/avatar/avatar-xs.webp" },
+            { avatar: "/images/avatar/avatar-xs.webp" },
+          ],
+          primaryName: "modern",
+          description:
+            "As Uber works through a huge amount of internal management turmoil.",
+          secondaryName: "#1",
         },
         {
-          projectSrc: "/assets/images/profile-project.webp",
-          avatarSrc: "/images/avatar/avatar-xs.webp",
-          name: "scandinavian",
-          desc: "Music is something that everyone has their own specific opinion about.",
-          hashtag: "#2",
+          id: 2,
+          cover: "/assets/images/profile-project.webp",
+          participants: [
+            { avatar: "/images/avatar/avatar-xs.webp" },
+            { avatar: "/images/avatar/avatar-xs.webp" },
+          ],
+          primaryName: "scandinavian",
+          description:
+            "As Uber works through a huge amount of internal management turmoil.",
+          secondaryName: "#2",
         },
         {
-          projectSrc: "/assets/images/profile-project.webp",
-          avatarSrc: "/images/avatar/avatar-xs.webp",
-          name: "minimalist",
-          desc: "Different people have different taste, and various types of music.",
-          hashtag: "#3",
+          id: 3,
+          cover: "/assets/images/profile-project.webp",
+          participants: [
+            { avatar: "/images/avatar/avatar-xs.webp" },
+            { avatar: "/images/avatar/avatar-xs.webp" },
+          ],
+          primaryName: "minimalist",
+          description:
+            "Different people have different taste, and various types of music.",
+          secondaryName: "#2",
         },
         {
-          projectSrc: "/assets/images/profile-project.webp",
-          avatarSrc: "/images/avatar/avatar-xs.webp",
-          name: "gothic",
-          desc: "Why would anyone pick blue over pink? Pink is obviously a better color.",
-          hashtag: "#4",
+          id: 4,
+          cover: "/assets/images/profile-project.webp",
+          participants: [
+            { avatar: "/images/avatar/avatar-xs.webp" },
+            { avatar: "/images/avatar/avatar-xs.webp" },
+          ],
+          primaryName: "gothic",
+          description:
+            "Why would anyone pick blue over pink? Pink is obviously a better color.",
+          secondaryName: "#4",
         },
       ]}
     />

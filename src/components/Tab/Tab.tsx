@@ -5,9 +5,10 @@ import { Tab, TabGroup, TabList, Text } from "@tremor/react";
 import { ITab } from "@/types";
 interface TabsProps {
   tabs: ITab[];
+  className?: string;
 }
 
-const Tabs = ({ tabs }: TabsProps): JSX.Element => {
+const Tabs = ({ tabs, className }: TabsProps): JSX.Element => {
   const renderTabs = (): JSX.Element[] => {
     return tabs.map(tab => (
       <>
@@ -24,8 +25,8 @@ const Tabs = ({ tabs }: TabsProps): JSX.Element => {
   };
 
   return (
-    <TabGroup className="w-auto">
-      <TabList className="w-full sm:w-auto flex flex-col sm:flex-row items-center justify-center bg-[rgb(248,249,250)] p-1 rounded-xl border-0">
+    <TabGroup className={`md:w-auto px-4 py-2 md:p-0 ${className}`}>
+      <TabList className="w-full md:w-auto px-2 space-x-0 md:space-x-4 max-w-auto md:max-w-[350px] lg:max-w-[370px] flex flex-col sm:flex-row items-center justify-center bg-[rgb(248,249,250)] p-1 rounded-xl border-0">
         {renderTabs()}
       </TabList>
     </TabGroup>

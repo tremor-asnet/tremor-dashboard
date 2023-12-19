@@ -83,11 +83,23 @@ const Projects = () => {
         </div>
         <Button
           className="min-w-[64px] text-center uppercase bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]"
-          icon={MdAdd}
           onClick={handleAddNewProject}>
-          <Text className="uppercase text-xs text-white font-bold">
-            Add New
-          </Text>
+          <Flex className="flex-row">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="16px"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+            </svg>
+            <Text className="uppercase text-xs text-white font-bold pl-[5px]">
+              Add New
+            </Text>
+          </Flex>
         </Button>
       </Flex>
       <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

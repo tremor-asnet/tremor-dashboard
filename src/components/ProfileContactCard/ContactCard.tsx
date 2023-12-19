@@ -36,7 +36,7 @@ const ContactCard = ({
         </Link>
       </Flex>
       <Flex className="flex-col items-baseline">
-        <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em] mb-4">
+        <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em]">
           {information}
         </Text>
         <div className="w-full opacity-30 bg-transparent">
@@ -68,18 +68,18 @@ const ContactCard = ({
             </Text>
             <Text className="font-normal">{location}</Text>
           </Flex>
-          <Flex className="justify-start gap-3">
+          <Flex className="justify-start gap-3 gap-2 pr-4 py-2">
             <Text className="font-bold text-primary tracking-[0.02857em] capitalize">
               Social:
             </Text>
-            <Flex className="justify-start gap-2">
-              <Link href={SOCIAL_LINK.facebook}>
+            <Flex className="justify-start">
+              <Link href={SOCIAL_LINK.facebook} className="pl-1 pr-2">
                 <IoLogoFacebook className="text-[#3b5998] rounded-lg stroke-2" />
               </Link>
-              <Link href={SOCIAL_LINK.twitter}>
+              <Link href={SOCIAL_LINK.twitter} className="pl-1 pr-2">
                 <IoLogoTwitter className="text-[#55acee]" />
               </Link>
-              <Link href={SOCIAL_LINK.instagram}>
+              <Link href={SOCIAL_LINK.instagram} className="pl-1 pr-2">
                 <IoLogoInstagram className="text-[#125688]" />
               </Link>
             </Flex>

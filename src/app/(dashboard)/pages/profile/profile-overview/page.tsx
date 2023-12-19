@@ -68,7 +68,7 @@ const Profile = async () => {
             <div className="w-full lg:basis-1/3 p-4">
               <ProfileConversations
                 title="conversations"
-                profileList={profileData?.conversations.data || []}
+                profileList={profileData?.conversations || []}
               />
             </div>
           </Flex>

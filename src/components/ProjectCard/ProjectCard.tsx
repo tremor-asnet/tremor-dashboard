@@ -66,9 +66,9 @@ const ProjectCard = ({
                 {name}
               </Title>
               <Flex className="mt-1 items-start justify-start ml-[10px]">
-                {participants?.map((participant: AvatarCard) => (
+                {participants?.map((participant: AvatarCard, index: string) => (
                   <Avatar
-                    key={participant?.avatar}
+                    key={`${participant?.avatar} avatar ${index} of ${id} with ${name}`}
                     alt="Avatar extra small"
                     className="border-2 border-white border-solid ml-[-10px]"
                     height={20}

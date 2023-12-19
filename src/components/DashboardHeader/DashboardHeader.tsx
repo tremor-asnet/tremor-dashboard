@@ -45,12 +45,12 @@ const DashboardHeader = (): JSX.Element => {
           {isOpen ? (
             <MdMenuOpen
               className="text-tremor-content text-2xl"
-              color={`${isProjectPage ? "white" : "inherit"}`}
+              color={`${isProjectPage ? "white" : ""}`}
             />
           ) : (
             <MdMenu
               className="text-tremor-content text-2xl"
-              color={`${isProjectPage ? "white" : "inherit"}`}
+              color={`${isProjectPage ? "white" : ""}`}
             />
           )}
         </div>
@@ -65,14 +65,14 @@ const DashboardHeader = (): JSX.Element => {
             className="py-0.5 w-full bg-transparent hover:bg-transparent focus:bg-transparent min-w-[100px]"
           />
         </div>
-        <div className="flex flex-wrap item-center">
+        <div className="flex flex-wrap item-center gap-y-1">
           <Link
             href={ROUTES.SIGN_IN}
             aria-label="Link to homepage"
             className="p-2 flex items-center">
             <MdAccountCircle
               className="text-tremor-content text-xl"
-              color={`${isProjectPage ? "white" : "inherit"}`}
+              color={`${isProjectPage ? "white" : ""}`}
             />
           </Link>
           <div
@@ -81,28 +81,28 @@ const DashboardHeader = (): JSX.Element => {
             {isOpen ? (
               <MdMenuOpen
                 className="text-tremor-content text-2xl"
-                color={`${isProjectPage ? "white" : "inherit"}`}
+                color={`${isProjectPage ? "white" : ""}`}
               />
             ) : (
               <MdMenu
                 className="text-tremor-content text-2xl"
-                color={`${isProjectPage ? "white" : "inherit"}`}
+                color={`${isProjectPage ? "white" : ""}`}
               />
             )}
           </div>
           <div className="relative p-2 flex items-center">
             <MdSettings
               className="text-tremor-content text-xl cursor-pointer"
-              color={`${isProjectPage ? "white" : "inherit"}`}
+              color={`${isProjectPage ? "white" : ""}`}
             />
           </div>
-          <div className="relative max-w-[20px] flex items-center">
+          <div className="relative max-w-[20px] flex items-center ml-[5px] xs:ml-0">
             <MdNotifications
               className="text-tremor-content text-xl cursor-pointer"
-              color={`${isProjectPage ? "white" : "inherit"}`}
+              color={`${isProjectPage ? "white" : ""}`}
             />
             <div
-              className={`absolute top-0 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer ${
+              className={`absolute top-0 -right-3 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
                 isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
               }`}>
               9

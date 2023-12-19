@@ -25,7 +25,7 @@ import { getProfileConversations } from "@/app/actions/profileAction";
 
 const Projects = async () => {
   const profileData = await getProfileConversations();
-  const dataAllProjects = await getAllProjects();
+  const ProjectsData = await getAllProjects();
 
   return (
     <div>
@@ -60,7 +60,7 @@ const Projects = async () => {
         </Button>
       </Flex>
       <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {dataAllProjects?.map((project: Project) => (
+        {ProjectsData?.map((project: Project) => (
           <ProjectCard
             key={project.id}
             projectData={project}

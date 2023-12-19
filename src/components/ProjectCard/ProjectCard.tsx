@@ -37,17 +37,17 @@ const ProjectCard = ({
   const participantNumber = participants?.length;
   const duaDateFormat = formatDate(new Date(dueDate));
 
-  const [isOpen, setOpenAction] = useState(false);
-  const [projectIdCurrent, setIdProjectCurrent] = useState("");
-  const openActionProject = isOpen && id === projectIdCurrent;
+  const [isOpenAction, setOpenAction] = useState(false);
+  const [currentProjectId, setCurrentProjectId] = useState("");
+  const openActionProject = isOpenAction && id === currentProjectId;
 
   const handleItemActionProject = () => {
     setOpenAction(false);
   };
 
   const handleToggleAction = (id: string) => {
-    setOpenAction(!isOpen);
-    setIdProjectCurrent(id);
+    setOpenAction(!isOpenAction);
+    setCurrentProjectId(id);
   };
 
   return (

@@ -2,7 +2,7 @@
 
 import { Text } from "@tremor/react";
 // Components
-import { ProfileItem } from "@/components";
+import { ConversationItem } from "@/components";
 
 // types
 import { Profile } from "@/types/profile";
@@ -21,7 +21,7 @@ const ProfileConversation = ({
       {title}
     </Text>
     {profileList.map(profile => (
-      <ProfileItem
+      <ConversationItem
         key={profile.name}
         src={profile.avatar}
         name={profile.name}

@@ -5,19 +5,19 @@ import { Button, Flex, Text } from "@tremor/react";
 // Components
 import { Avatar } from "@/components";
 
-interface ProfileItemProps {
+interface ConversationItemProps {
   src: string;
   alt?: string;
   name: string;
   description: string;
 }
 
-const ProfileItem = ({
+const ConversationItem = ({
   src,
   alt = "",
   name,
   description,
-}: ProfileItemProps) => (
+}: ConversationItemProps) => (
   <Flex className="mb-2 py-2">
     <Flex className="justify-start">
       <Avatar src={src} width={48} height={48} alt={alt} />
@@ -32,4 +32,4 @@ const ProfileItem = ({
   </Flex>
 );
 
-export default ProfileItem;
+export default ConversationItem;

@@ -53,7 +53,6 @@ const ProjectCard = ({
   const handleActionProject = (project: Project, action: string) => {
     // TODO: handle action a project
     setOpenAction(false);
-    console.log("project", project, "action", action);
   };
 
   return (

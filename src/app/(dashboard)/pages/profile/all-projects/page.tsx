@@ -56,7 +56,10 @@ const Projects = async () => {
           </Text>
         </div>
         <Button className="px-6 py-[10px] bg-[linear-gradient(195deg,#42424a,#191919)] ring-0 border-transparent shadow-md">
-          <Text className="uppercase text-xs text-white">Add New</Text>
+          <Text className="flex items-center uppercase text-xs font-bold text-white">
+            <MdAdd size="16" className="mr-2" />
+            Add New
+          </Text>
         </Button>
       </Flex>
       <Flex className="flex-wrap justify-start items-start grid gap-x-6 gap-y-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

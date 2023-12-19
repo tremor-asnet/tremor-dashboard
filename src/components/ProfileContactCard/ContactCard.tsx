@@ -11,6 +11,7 @@ import { ROUTES } from "@/constants";
 interface ContactCardProps {
   title: string;
   information?: string;
+  fullName: string;
   phone: string;
   email: string;
   location: string;
@@ -19,6 +20,7 @@ interface ContactCardProps {
 const ContactCard = ({
   title,
   information = "",
+  fullName,
   phone,
   email,
   location,
@@ -46,6 +48,7 @@ const ContactCard = ({
             <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
               Full Name
             </Text>
+            <Text className="font-normal">{fullName}</Text>
           </Flex>
           <Flex className="justify-start gap-3">
             <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">

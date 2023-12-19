@@ -57,6 +57,7 @@ const Profile = async () => {
               <ContactCard
                 title="profile information"
                 information={profileData.information}
+                fullName={profileData.name}
                 phone={profileData.phone}
                 email={profileData.email}
                 location={profileData.location}

@@ -27,7 +27,7 @@ const ContactCard = ({
 }: ContactCardProps) => {
   return (
     <div>
-      <Flex className="text-secondary mb-4">
+      <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
         <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
           {title}
         </Text>
@@ -35,7 +35,7 @@ const ContactCard = ({
           <FaPen />
         </Link>
       </Flex>
-      <Flex className="flex-col items-baseline">
+      <Flex className="flex-col flex-wrap items-baseline xs:flex-nowrap">
         <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em]">
           {information}
         </Text>

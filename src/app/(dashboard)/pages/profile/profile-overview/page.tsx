@@ -28,7 +28,7 @@ const Profile = async () => {
 
   return (
     <>
-      <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
+      <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
         <Card>
           <Flex className="mb-2 py-2 flex-col md:flex-row items-start md:items-center">
@@ -42,30 +42,32 @@ const Profile = async () => {
             <Tabs tabs={TABS_HEADER} />
           </Flex>
           {/* Main content */}
-          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap">
-            {/* Platform Setting */}
-            <div className="w-full md:basis-2/4 lg:basis-1/3 p-4">
-              <PlatformSetting
-                title="Platform Setting"
-                accountSetting={profileData.account_setting}
-                applicationSetting={profileData.application_setting}
-              />
-            </div>
-            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
-            {/* Profile Information */}
-            <Flex className="w-full md:basis-2/4 lg:basis-1/3 p-4">
-              <ContactCard
-                title="profile information"
-                information={profileData.information}
-                fullName={profileData.name}
-                phone={profileData.phone}
-                email={profileData.email}
-                location={profileData.location}
-              />
+          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-5">
+            <Flex className="flex-col md:flex-row lg:gap-6">
+              {/* Platform Setting */}
+              <div className="w-full md:basis-2/4">
+                <PlatformSetting
+                  title="Platform Setting"
+                  accountSetting={profileData.account_setting}
+                  applicationSetting={profileData.application_setting}
+                />
+              </div>
+              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 lg:flex" />
+              {/* Profile Information */}
+              <Flex className="w-full md:basis-2/4">
+                <ContactCard
+                  title="profile information"
+                  information={profileData.information}
+                  fullName={profileData.name}
+                  phone={profileData.phone}
+                  email={profileData.email}
+                  location={profileData.location}
+                />
+              </Flex>
+              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 lg:flex" />
             </Flex>
-            <hr className="rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25" />
             {/* Profile Conversations */}
-            <div className="w-full lg:basis-1/3 p-4">
+            <div className="w-full lg:basis-1/3">
               <ProfileConversations
                 title="conversations"
                 profileList={profileData?.conversations || []}

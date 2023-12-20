@@ -14,7 +14,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
           href="/dashboards/analytics"
         >
           <svg
-            class="bg-inherit border-0 py-0 hover:bg-transparent"
+            class="bg-inherit border-0 py-0 hover:bg-transparent text-inherit"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -40,7 +40,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
         ⁄
       </li>
       <li
-        class="flex items-center"
+        class="flex items-center text-inherit"
       >
         <div
           class="bc-link"
@@ -60,13 +60,13 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
         </div>
       </li>
       <li
-        class="text-sm text-tremor-content-title capitalize"
+        class="text-sm text-tremor-content-title capitalize text-inherit"
       >
         analytics
       </li>
     </ol>
     <p
-      class="text-tremor-title dark:text-dark-tremor-content-emphasis text-tremor-content-title font-bold capitalize"
+      class="text-tremor-title dark:text-dark-tremor-content-emphasis font-bold capitalize text-[#344767]"
     >
       analytics
     </p>

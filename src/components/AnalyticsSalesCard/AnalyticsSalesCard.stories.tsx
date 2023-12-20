@@ -6,12 +6,13 @@ import AnalyticsSalesCard from "./AnalyticsSalesCard";
 // Mock data
 import { ANALYTIC_SALES_CARD } from "@/mocks/analytics";
 
-export default { component: AnalyticsSalesCard };
 const meta = {
   title: "Components/AnalyticsSalesCard",
   component: AnalyticsSalesCard,
   tags: ["autodocs"],
 } as Meta<typeof AnalyticsSalesCard>;
+
+export default meta;
 
 type Story = StoryObj<typeof meta>;
 

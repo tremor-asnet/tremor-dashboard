@@ -41,14 +41,20 @@ import { SidebarContext } from "@/contexts/SideBarContext";
 // Styles
 import "./styles.css";
 
+// Components
+import { LoadingIndicator } from "@/components";
+
 interface SideBarProps {
-  onSignOut: () => void;
+  onSignOut: () => Promise<void>;
+  isLoading: boolean;
 }
-const SideBar = ({ onSignOut }: SideBarProps) => {
+const SideBar = ({ onSignOut, isLoading = false }: SideBarProps) => {
   const { isOpen, toggleSideBar } = useContext(SidebarContext);
 
   const handleSignOut = async () => {
+    isLoading = false;
     await onSignOut();
+    isLoading = true;
   };
 
   return (
@@ -126,6 +132,7 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                   </button>
                 </form>
               </ListItem>
+              {isLoading && <LoadingIndicator />}
             </List>
           </AccordionBody>
         </Accordion>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
 import { IoMdImage } from "react-icons/io";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import {
   Accordion,
@@ -46,15 +46,15 @@ import { LoadingIndicator } from "@/components";
 
 interface SideBarProps {
   onSignOut: () => Promise<void>;
-  isLoading: boolean;
 }
-const SideBar = ({ onSignOut, isLoading = false }: SideBarProps) => {
+const SideBar = ({ onSignOut }: SideBarProps) => {
   const { isOpen, toggleSideBar } = useContext(SidebarContext);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSignOut = async () => {
-    isLoading = false;
+    setIsLoading;
     await onSignOut();
-    isLoading = true;
+    setIsLoading(true);
   };
 
   return (
@@ -122,7 +122,7 @@ const SideBar = ({ onSignOut, isLoading = false }: SideBarProps) => {
                   </ListItem>
                 );
               })}
-              <ListItem className="leading-[26px]">
+              <ListItem className="leading-[26px] relative">
                 <form action={handleSignOut} className="w-full flex gap-[20px]">
                   <span>L</span>
                   <button
@@ -131,8 +131,12 @@ const SideBar = ({ onSignOut, isLoading = false }: SideBarProps) => {
                     Logout
                   </button>
                 </form>
+                {isLoading && (
+                  <Flex className="absolute left-[80%]">
+                    <LoadingIndicator />
+                  </Flex>
+                )}
               </ListItem>
-              {isLoading && <LoadingIndicator />}
             </List>
           </AccordionBody>
         </Accordion>

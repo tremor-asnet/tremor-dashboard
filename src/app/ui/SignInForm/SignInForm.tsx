@@ -27,7 +27,7 @@ const SignInForm = () => {
       email: "",
       password: "",
     },
-    mode: "onChange",
+    mode: "onBlur",
   });
 
   const [authenticateRes, dispatch] = useFormState(authenticate, undefined);

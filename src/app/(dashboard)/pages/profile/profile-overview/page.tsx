@@ -43,7 +43,7 @@ const Profile = async () => {
           </Flex>
           {/* Main content */}
           <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-5">
-            <Flex className="flex-col md:flex-row lg:gap-6">
+            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:gap-6">
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting

@@ -49,7 +49,7 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
             </Text>
             <Flex className="justify-between">
               <Button
-                className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
+                className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75 py-1.5 px-4"
                 variant="secondary">
                 View Project
               </Button>

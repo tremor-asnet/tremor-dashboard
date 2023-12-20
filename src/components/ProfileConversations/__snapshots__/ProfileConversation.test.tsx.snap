@@ -5,6 +5,11 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <p
+        class="text-tremor-default dark:text-dark-tremor-content text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4"
+      >
+        Conversation
+      </p>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
       >
@@ -12,22 +17,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="w-12 h-12"
           >
-            <img
-              alt="image"
-              data-nimg="1"
-              decoding="async"
-              fetchpriority="high"
-              height="48"
-              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
-              style="color: transparent;"
-              width="48"
-            />
+            <div
+              class="inline-flex rounded-full overflow-hidden shadow-md"
+            >
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="48"
+                src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+            </div>
           </div>
           <div
-            class="font-medium dark:text-white pl-4"
+            class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -35,7 +44,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
               Anne Marie
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
             >
               Awesome work, can you..
             </p>
@@ -43,7 +52,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         </div>
         <button
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-          data-testid="click-button"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -59,22 +67,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="w-12 h-12"
           >
-            <img
-              alt="image"
-              data-nimg="1"
-              decoding="async"
-              fetchpriority="high"
-              height="48"
-              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 2x"
-              style="color: transparent;"
-              width="48"
-            />
+            <div
+              class="inline-flex rounded-full overflow-hidden shadow-md"
+            >
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="48"
+                src="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+            </div>
           </div>
           <div
-            class="font-medium dark:text-white pl-4"
+            class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -82,7 +94,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
               Ivanna
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
             >
               About files I can..
             </p>
@@ -90,7 +102,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         </div>
         <button
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-          data-testid="click-button"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -106,22 +117,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="w-12 h-12"
           >
-            <img
-              alt="image"
-              data-nimg="1"
-              decoding="async"
-              fetchpriority="high"
-              height="48"
-              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75 2x"
-              style="color: transparent;"
-              width="48"
-            />
+            <div
+              class="inline-flex rounded-full overflow-hidden shadow-md"
+            >
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="48"
+                src="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+            </div>
           </div>
           <div
-            class="font-medium dark:text-white pl-4"
+            class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -129,7 +144,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
               Peterson
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
             >
               Have a great afternoon..
             </p>
@@ -137,7 +152,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         </div>
         <button
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-          data-testid="click-button"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -153,22 +167,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="w-12 h-12"
           >
-            <img
-              alt="image"
-              data-nimg="1"
-              decoding="async"
-              fetchpriority="high"
-              height="48"
-              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
-              style="color: transparent;"
-              width="48"
-            />
+            <div
+              class="inline-flex rounded-full overflow-hidden shadow-md"
+            >
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="48"
+                src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+            </div>
           </div>
           <div
-            class="font-medium dark:text-white pl-4"
+            class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -176,7 +194,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
               Sophie.B
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
             >
               Hi! I need more information..
             </p>
@@ -184,7 +202,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         </div>
         <button
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-          data-testid="click-button"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -200,22 +217,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="w-12 h-12"
           >
-            <img
-              alt="image"
-              data-nimg="1"
-              decoding="async"
-              fetchpriority="high"
-              height="48"
-              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
-              style="color: transparent;"
-              width="48"
-            />
+            <div
+              class="inline-flex rounded-full overflow-hidden shadow-md"
+            >
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="48"
+                src="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
+                style="color: transparent;"
+                width="48"
+              />
+            </div>
           </div>
           <div
-            class="font-medium dark:text-white pl-4"
+            class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -223,7 +244,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
               Nick Daniel
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
             >
               Hi! I need more information..
             </p>
@@ -231,7 +252,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         </div>
         <button
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-          data-testid="click-button"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -243,6 +263,11 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
     </div>
   </body>,
   "container": <div>
+    <p
+      class="text-tremor-default dark:text-dark-tremor-content text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4"
+    >
+      Conversation
+    </p>
     <div
       class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
     >
@@ -250,22 +275,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"
       >
         <div
-          class="inline-flex rounded-full overflow-hidden shadow-md"
+          class="w-12 h-12"
         >
-          <img
-            alt="image"
-            data-nimg="1"
-            decoding="async"
-            fetchpriority="high"
-            height="48"
-            src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
-            srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
-            style="color: transparent;"
-            width="48"
-          />
+          <div
+            class="inline-flex rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="48"
+              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
         </div>
         <div
-          class="font-medium dark:text-white pl-4"
+          class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -273,7 +302,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             Anne Marie
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
           >
             Awesome work, can you..
           </p>
@@ -281,7 +310,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       </div>
       <button
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-        data-testid="click-button"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
@@ -297,22 +325,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"
       >
         <div
-          class="inline-flex rounded-full overflow-hidden shadow-md"
+          class="w-12 h-12"
         >
-          <img
-            alt="image"
-            data-nimg="1"
-            decoding="async"
-            fetchpriority="high"
-            height="48"
-            src="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75"
-            srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 2x"
-            style="color: transparent;"
-            width="48"
-          />
+          <div
+            class="inline-flex rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="48"
+              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
         </div>
         <div
-          class="font-medium dark:text-white pl-4"
+          class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -320,7 +352,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             Ivanna
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
           >
             About files I can..
           </p>
@@ -328,7 +360,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       </div>
       <button
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-        data-testid="click-button"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
@@ -344,22 +375,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"
       >
         <div
-          class="inline-flex rounded-full overflow-hidden shadow-md"
+          class="w-12 h-12"
         >
-          <img
-            alt="image"
-            data-nimg="1"
-            decoding="async"
-            fetchpriority="high"
-            height="48"
-            src="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75"
-            srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75 2x"
-            style="color: transparent;"
-            width="48"
-          />
+          <div
+            class="inline-flex rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="48"
+              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
         </div>
         <div
-          class="font-medium dark:text-white pl-4"
+          class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -367,7 +402,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             Peterson
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
           >
             Have a great afternoon..
           </p>
@@ -375,7 +410,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       </div>
       <button
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-        data-testid="click-button"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
@@ -391,22 +425,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"
       >
         <div
-          class="inline-flex rounded-full overflow-hidden shadow-md"
+          class="w-12 h-12"
         >
-          <img
-            alt="image"
-            data-nimg="1"
-            decoding="async"
-            fetchpriority="high"
-            height="48"
-            src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
-            srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
-            style="color: transparent;"
-            width="48"
-          />
+          <div
+            class="inline-flex rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="48"
+              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
         </div>
         <div
-          class="font-medium dark:text-white pl-4"
+          class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -414,7 +452,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             Sophie.B
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
           >
             Hi! I need more information..
           </p>
@@ -422,7 +460,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       </div>
       <button
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-        data-testid="click-button"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
@@ -438,22 +475,26 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
         class="tremor-Flex-root flex w-full flex-row items-center justify-start"
       >
         <div
-          class="inline-flex rounded-full overflow-hidden shadow-md"
+          class="w-12 h-12"
         >
-          <img
-            alt="image"
-            data-nimg="1"
-            decoding="async"
-            fetchpriority="high"
-            height="48"
-            src="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
-            srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
-            style="color: transparent;"
-            width="48"
-          />
+          <div
+            class="inline-flex rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="48"
+              src="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
         </div>
         <div
-          class="font-medium dark:text-white pl-4"
+          class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
@@ -461,7 +502,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             Nick Daniel
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
           >
             Hi! I need more information..
           </p>
@@ -469,7 +510,6 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       </div>
       <button
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
-        data-testid="click-button"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"

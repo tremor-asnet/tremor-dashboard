@@ -28,3 +28,30 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "32.14%",
   },
 ];
+
+export const STATISTICAL_DATA = [
+  {
+    type: "Bookings",
+    amount: "281",
+    totalAmount: "55%",
+    duration: "than last week",
+  },
+  {
+    type: "Today's Users",
+    amount: "2,300",
+    totalAmount: "3%",
+    duration: "than last month",
+  },
+  {
+    type: "Revenue",
+    amount: "34k",
+    totalAmount: "1%",
+    duration: "than yesterday",
+  },
+  {
+    type: "Followers",
+    amount: "+91",
+    totalAmount: "",
+    duration: "Just updated",
+  },
+];

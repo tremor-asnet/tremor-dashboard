@@ -79,7 +79,8 @@
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "pnpm run test"
     ]
   }
 }

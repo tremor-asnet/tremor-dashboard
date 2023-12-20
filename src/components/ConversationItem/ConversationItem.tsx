@@ -18,7 +18,7 @@ const ConversationItem = ({
   name,
   description,
 }: ConversationItemProps) => (
-  <Flex className="mb-2 py-2 flex-wrap sm:flex-nowrap">
+  <Flex className="mb-2 py-2 flex-wrap xs:flex-nowrap">
     <Flex className="justify-start flex-wrap sm:flex-nowrap">
       <div className="w-12 h-12">
         <Avatar src={src} width={48} height={48} alt={alt} />

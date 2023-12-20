@@ -27,7 +27,7 @@ export const SignUpForm = () => {
       email: "",
       password: "",
     },
-    mode: "onChange",
+    mode: "onBlur",
   });
   const [createNewAccountRes, dispatch] = useFormState(
     createNewAccount,

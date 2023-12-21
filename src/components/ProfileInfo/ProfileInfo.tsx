@@ -27,7 +27,7 @@ const ProfileInfo = ({
   const isProjectPage = pathname === ROUTES.PROJECTS;
 
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center justify-between px-4 py-1">
+    <div className="flex flex-col lg:flex-row lg:items-center justify-between py-1">
       <div
         className={`flex flex-col xs:flex-row xs:items-center profile-info ${
           isProjectPage ? "mb-0" : "mb-6"

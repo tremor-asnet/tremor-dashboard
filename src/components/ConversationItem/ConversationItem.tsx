@@ -24,14 +24,16 @@ const ConversationItem = ({
         <Avatar src={src} width={48} height={48} alt={alt} />
       </div>
       <div className="max-w-[180px] font-medium dark:text-white pl-4">
-        <Text className="text-sm text-[#344767] font-semibold">{name}</Text>
-        <Text className="text-xs text-[#7b809a] font-light truncate">
+        <Text className="text-sm text-primary font-semibold">{name}</Text>
+        <Text className="text-xs text-secondary font-light truncate">
           {description}
         </Text>
       </div>
     </Flex>
-    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]">
-      Reply
+    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent">
+      <Text className="text-primary text-xs text-center font-bold uppercase leading-[17px]">
+        Reply
+      </Text>
     </Button>
   </Flex>
 );

@@ -41,7 +41,7 @@ const Projects = async () => {
               role={profileData.role}
               src={PROFILE_HEADER.src}
             />
-            <Tabs tabs={TABS_HEADER} className="mx-auto lg:mx-0" />
+            <Tabs tabs={TABS_HEADER} className="mx-auto sm:mx-0" />
           </Flex>
         </Card>
       </div>

@@ -34,9 +34,11 @@ function DashboardLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const isProjectPage = pathname === ROUTES.PROJECTS;
 
+  // TODO: Need to check show Loading again
   const handleSignOut = async () => {
-    setIsSignOutProcessing(true);
+    // setIsSignOutProcessing(true);
     await signOut();
+    setIsSignOutProcessing(true);
   };
 
   return (

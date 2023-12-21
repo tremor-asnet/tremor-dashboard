@@ -9,7 +9,7 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { TABS_HEADER } from "@/constants/profile";
 
 // Mocks
-import { PROFILE_HEADER, PROJECT_DATA } from "@/mocks";
+import { PROFILE_HEADER } from "@/mocks";
 
 // Types
 import { Project } from "@/types";
@@ -31,7 +31,7 @@ const Projects = async () => {
     <div>
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p- rounded-xl'></div>
       <div className="mx-6 -mt-16">
-        <Card className="p-2">
+        <Card className="px-4 py-2">
           <Flex className="flex-col md:flex-row items-start md:items-center">
             {/* TODO: Will update when have profile header component */}
             {/* Header */}
@@ -50,7 +50,7 @@ const Projects = async () => {
           <Title className="text-xl text-[#344767] font-bold my-2">
             Some of Our Awesome Projects
           </Title>
-          <Text className="xs:text-base tracking-wide leading-7 text-[#7b809a] font-light">
+          <Text className="text-[16px] tracking-wide leading-[1.6] text-[#7b809a] font-light">
             This is the paragraph where you can write more details about your
             projects. Keep you user engaged by providing meaningful information.
           </Text>

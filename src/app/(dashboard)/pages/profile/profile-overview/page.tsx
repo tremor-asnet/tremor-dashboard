@@ -39,11 +39,11 @@ const Profile = async () => {
               role={profileData.role}
               src={PROFILE_HEADER.src}
             />
-            <Tabs tabs={TABS_HEADER} />
+            <Tabs tabs={TABS_HEADER} className="mx-auto sm:mx-0" />
           </Flex>
           {/* Main content */}
           <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-5">
-            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:gap-6">
+            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:w-[68%] lg:gap-6">
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
@@ -76,10 +76,10 @@ const Profile = async () => {
           </Flex>
           {/* Projects */}
           <Flex className="flex-col items-start px-4">
-            <Text className="text-[#344767] font-semibold text-base">
+            <Text className="text-[#344767] font-semibold text-tremor-title">
               Projects
             </Text>
-            <Text className="font-light leading-normal text-sm text-[#7b809a] mb-6">
+            <Text className="font-light leading-normal text-sm text-secondary mb-6">
               Architects design houses
             </Text>
             <ProfileProjectCard links={projectData} />

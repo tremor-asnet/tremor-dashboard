@@ -28,7 +28,7 @@ const ContactCard = ({
   return (
     <div>
       <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
-        <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
+        <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
           {title}
         </Text>
         <Link href={ROUTES.PROFILE}>
@@ -73,13 +73,16 @@ const ContactCard = ({
           </Text>
           <Flex className="justify-start">
             <Link href={SOCIAL_LINK.facebook} className="pl-1 pr-2">
-              <IoLogoFacebook className="text-[#3b5998] rounded-lg stroke-2" />
+              <IoLogoFacebook
+                size={18}
+                className="text-[#3b5998] rounded-lg stroke-2"
+              />
             </Link>
             <Link href={SOCIAL_LINK.twitter} className="pl-1 pr-2">
-              <IoLogoTwitter className="text-[#55acee]" />
+              <IoLogoTwitter size={18} className="text-[#55acee]" />
             </Link>
             <Link href={SOCIAL_LINK.instagram} className="pl-1 pr-2">
-              <IoLogoInstagram className="text-[#125688]" />
+              <IoLogoInstagram size={18} className="text-[#125688]" />
             </Link>
           </Flex>
         </Flex>

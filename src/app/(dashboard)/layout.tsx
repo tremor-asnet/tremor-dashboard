@@ -1,6 +1,6 @@
 "use client";
 // Libs
-import { ReactNode, useContext } from "react";
+import { ReactNode, useContext, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
@@ -27,15 +27,27 @@ export default function DashboardLayoutWrapper({
 }
 
 function DashboardLayout({ children }: { children: ReactNode }) {
+  const [isSignOutProcessing, setIsSignOutProcessing] = useState(false);
+
   const { isOpen } = useContext(SidebarContext);
 
   const pathname = usePathname();
   const isProjectPage = pathname === ROUTES.PROJECTS;
 
+  // TODO: Need to check show Loading again
+  const handleSignOut = async () => {
+    // setIsSignOutProcessing(true);
+    await signOut();
+    setIsSignOutProcessing(true);
+  };
+
   return (
     <Flex alignItems="start" className="bg-body antialiased font-primary">
       <div className="h-screen">
-        <SideBar onSignOut={signOut} />
+        <SideBar
+          onSignOut={handleSignOut}
+          isSignOutProcessing={isSignOutProcessing}
+        />
       </div>
       <div
         className={`flex-1 p-4 md:p-6 pt-8 ${

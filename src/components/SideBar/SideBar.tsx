@@ -41,15 +41,15 @@ import { SidebarContext } from "@/contexts/SideBarContext";
 // Styles
 import "./styles.css";
 
-interface SideBarProps {
-  onSignOut: () => void;
-}
-const SideBar = ({ onSignOut }: SideBarProps) => {
-  const { isOpen, toggleSideBar } = useContext(SidebarContext);
+// Components
+import { LoadingIndicator } from "@/components";
 
-  const handleSignOut = async () => {
-    await onSignOut();
-  };
+interface SideBarProps {
+  onSignOut: () => Promise<void>;
+  isSignOutProcessing: boolean;
+}
+const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
+  const { isOpen, toggleSideBar } = useContext(SidebarContext);
 
   return (
     <div
@@ -116,8 +116,8 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                   </ListItem>
                 );
               })}
-              <ListItem className="leading-[26px]">
-                <form action={handleSignOut} className="w-full flex gap-[20px]">
+              <ListItem className="leading-[26px] relative">
+                <form action={onSignOut} className="w-full flex gap-[20px]">
                   <span>L</span>
                   <button
                     type="submit"
@@ -125,6 +125,11 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                     Logout
                   </button>
                 </form>
+                {isSignOutProcessing && (
+                  <Flex className="absolute left-[80%]">
+                    <LoadingIndicator />
+                  </Flex>
+                )}
               </ListItem>
             </List>
           </AccordionBody>

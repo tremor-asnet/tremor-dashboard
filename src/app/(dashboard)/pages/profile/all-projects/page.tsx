@@ -50,13 +50,13 @@ const Projects = async () => {
           <Title className="text-xl text-[#344767] font-bold my-2">
             Some of Our Awesome Projects
           </Title>
-          <Text className="text-[16px] tracking-wide leading-7 text-[#7b809a] font-light">
+          <Text className="xs:text-base tracking-wide leading-7 text-[#7b809a] font-light">
             This is the paragraph where you can write more details about your
             projects. Keep you user engaged by providing meaningful information.
           </Text>
         </div>
-        <Button className="min-w-[64px] text-center uppercase bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]">
-          <Text className="flex items-center uppercase text-xs font-bold text-white">
+        <Button className="min-w-[64px] text-center uppercase sm:px-[22px] bg-[linear-gradient(195deg,rgb(66,66,74),rgb(25,25,25))] shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem] px-6 py-2.5 rounded-lg border-0 hover:shadow-[rgba(52,71,103,0.4)_0rem_0.875rem_1.625rem_-0.75rem,rgba(52,71,103,0.15)_0rem_0.25rem_1.4375rem_0rem,rgba(52,71,103,0.2)_0rem_0.5rem_0.625rem_-0.3125rem]">
+          <Text className="flex items-center uppercase py-[2px] text-xs font-bold text-white">
             <MdAdd size="16" className="mr-2" />
             Add New
           </Text>

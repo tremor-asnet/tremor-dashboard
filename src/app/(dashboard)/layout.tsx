@@ -50,7 +50,7 @@ function DashboardLayout({ children }: { children: ReactNode }) {
         />
       </div>
       <div
-        className={`flex-1 p-4 md:p-6 pt-8 ${
+        className={`flex-1 p-4 sm:p-5 md:p-6 pt-6 ${
           isOpen ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
         }`}>
         <DashboardHeader />

@@ -62,7 +62,7 @@ export const SignUpForm = () => {
     <Flex className="flex-col w-full m-auto rounded-xl shadow-dark-tremor-card antialiased font-primary">
       <div className="w-full p-4">
         <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 pb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
-          <Title className="font-semibold pt-8 pb-2 px-8 text-[24px] text-white">
+          <Title className="font-semibold pt-8 pb-2 px-8 sm:text-2xl text-white">
             Join us today
           </Title>
           <Text className="text-white font-light max-w-xs px-8 text-center 2xl:px-0">

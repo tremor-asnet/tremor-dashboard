@@ -27,7 +27,7 @@ const SignInForm = () => {
       email: "",
       password: "",
     },
-    mode: "onChange",
+    mode: "onBlur",
   });
 
   const [authenticateRes, dispatch] = useFormState(authenticate, undefined);
@@ -48,9 +48,9 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-4 antialiased font-primary">
       <Flex className="bg-gradient-primary rounded-xl -mt-11 xs:justify-between sm:justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
-        <Title className="font-medium py-10 px:8 text-2xl text-white">
+        <Title className="font-semibold py-10 px:8 sm:text-2xl text-white">
           Sign in
         </Title>
       </Flex>
@@ -140,7 +140,7 @@ const SignInForm = () => {
           </Text>
           <Link
             tabIndex={4}
-            className="text-black-300 font-semibold text-sm ml-2"
+            className="text-primary font-semibold text-sm ml-1"
             href={ROUTES.SIGN_UP}>
             Sign up
           </Link>
@@ -158,11 +158,11 @@ const LoginButton = ({ isDisableSubmit }: { isDisableSubmit: boolean }) => {
     <Button
       tabIndex={3}
       aria-disabled={disabled}
-      className="w-full focus:ring-2 font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+      className="w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
       size="xs"
       type="submit"
       disabled={disabled}>
-      Sign In
+      <Text className="text-xs font-bold text-white">Sign In</Text>
     </Button>
   );
 };

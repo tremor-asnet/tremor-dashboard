@@ -27,7 +27,7 @@ export const SignUpForm = () => {
       email: "",
       password: "",
     },
-    mode: "onChange",
+    mode: "onBlur",
   });
   const [createNewAccountRes, dispatch] = useFormState(
     createNewAccount,
@@ -59,13 +59,13 @@ export const SignUpForm = () => {
   };
 
   return (
-    <Flex className="flex-col w-full m-auto bg-white max-w-sm rounded-xl shadow-dark-tremor-card 2xl:max-w-xl">
+    <Flex className="flex-col w-full m-auto rounded-xl shadow-dark-tremor-card antialiased font-primary">
       <div className="w-full p-4">
         <Flex className="bg-gradient-primary rounded-xl -mt-11 justify-center flex-col mb-7 pb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
-          <Title className="font-bold pt-8 pb-2 px-8 md:text-2xl text-white">
+          <Title className="font-semibold pt-8 pb-2 px-8 sm:text-2xl text-white">
             Join us today
           </Title>
-          <Text className="text-white font-light max-w-xs px-6 sm:px-8 text-center md:px-0">
+          <Text className="text-white font-light max-w-xs px-8 text-center 2xl:px-0">
             Enter your email and password to register
           </Text>
         </Flex>
@@ -175,12 +175,12 @@ export const SignUpForm = () => {
               autoFocus
               id="checkbox"
             />
-            <Text className="text-xs xs:text-sm text-secondary font-light">
+            <Text className="text-xs xs:text-sm text-primary text-secondary font-normal">
               I agree the{" "}
               <Link
                 tabIndex={4}
                 href="#"
-                className="hover:underline no-underline text-gray-800 font-semibold">
+                className="no-underline text-primary font-bold">
                 Terms and conditions
               </Link>
             </Text>
@@ -192,7 +192,7 @@ export const SignUpForm = () => {
             </Text>
             <Link
               tabIndex={6}
-              className="text-black-300 font-semibold text-xs xs:text-sm ml-2"
+              className="text-primary font-semibold text-xs xs:text-sm ml-1"
               href={ROUTES.SIGN_IN}>
               Sign In
             </Link>
@@ -212,10 +212,10 @@ const SubmitButton = ({ isDisableSubmit }: { isDisableSubmit: boolean }) => {
       tabIndex={5}
       aria-disabled={disabled}
       type="submit"
-      className="w-full focus:ring-2 font-normal bg-gradient-primary py-[9px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+      className="w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
       size="xs"
       disabled={disabled}>
-      Create account
+      <Text className="font-bold text-xs text-white"> Create account</Text>
     </Button>
   );
 };

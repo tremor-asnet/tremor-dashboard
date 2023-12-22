@@ -49,9 +49,11 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
             </Text>
             <Flex className="justify-between">
               <Button
-                className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
+                className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
                 variant="secondary">
-                View Project
+                <Text className="font-bold text-seldom text-xs uppercase leading-[17px]">
+                  View Project
+                </Text>
               </Button>
               <div className="container-avatars">
                 {link.participants.map(({ avatar }: AvatarProps) => (

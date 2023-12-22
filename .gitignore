@@ -36,9 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-<<<<<<< HEAD
 #storybook-static
-=======
-# storybook
->>>>>>> develop
 /storybook-static

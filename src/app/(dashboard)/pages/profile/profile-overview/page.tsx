@@ -75,8 +75,8 @@ const Profile = async () => {
             </div>
           </Flex>
           {/* Projects */}
-          <Flex className="flex-col items-start px-4">
-            <Text className="text-[#344767] font-semibold text-tremor-title">
+          <Flex className="flex-col items-start">
+            <Text className="text-primary font-semibold text-tremor-title">
               Projects
             </Text>
             <Text className="font-light leading-normal text-sm text-secondary mb-6">

@@ -47,10 +47,10 @@ const Projects = async () => {
       </div>
       <Flex className="flex-wrap justify-end sm:justify-between mt-4 sm:mt-0">
         <div className="antialiased my-8 sm:max-w-[65%]">
-          <Title className="text-xl text-[#344767] font-bold my-2">
+          <Title className="text-xl text-primary font-bold my-2">
             Some of Our Awesome Projects
           </Title>
-          <Text className="text-[16px] tracking-wide leading-[1.6] text-[#7b809a] font-light">
+          <Text className="text-tremor-title opacity-100 tracking-wide leading-1.6 text-secondary font-light">
             This is the paragraph where you can write more details about your
             projects. Keep you user engaged by providing meaningful information.
           </Text>

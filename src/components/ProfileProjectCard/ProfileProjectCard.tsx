@@ -38,7 +38,9 @@ const ProfileProjectCard = ({ links }: ProfileProjectCardProps) => {
             />
           </Flex>
           <Flex className="justify-start flex-col items-start pt-4 px-2">
-            <Text className="capitalize">Project {link.secondaryName}</Text>
+            <Text className="capitalize font-normal">
+              Project {link.secondaryName}
+            </Text>
             <Title className="w-full font-bold text-xl capitalize mb-2">
               <Link href={ROUTES.HOME} className="block">
                 {link.primaryName}

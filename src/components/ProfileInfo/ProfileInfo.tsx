@@ -56,14 +56,12 @@ const ProfileInfo = ({
         {isOnHeader ? (
           <div className="py-4" data-testid="profile-info-lg">
             <Title className="font-semibold text-xl">{name}</Title>
-            <Text>{role}</Text>
+            <Text className="font-normal">{role}</Text>
           </div>
         ) : (
           <div className="ml-4" data-testid="profile-info-md">
             <Title className="font-semibold">{name}</Title>
-            <Text className="text-xs font-light truncate max-w-[165px]">
-              {role}
-            </Text>
+            <Text className="text-xs truncate max-w-[165px]">{role}</Text>
           </div>
         )}
       </div>

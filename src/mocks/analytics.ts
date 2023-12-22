@@ -56,6 +56,33 @@ export const STATISTICAL_DATA = [
   },
 ];
 
+export const ANALYTIC_INFO = [
+  {
+    id: "1",
+    photo: "/assets/images/analytics/analytics-info-1.webp",
+    name: "Cozy 5 Stars Apartment",
+    description: `The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.`,
+    price: 899,
+    location: "Barcelona, Spain",
+  },
+  {
+    id: "2",
+    photo: "/assets/images/analytics/analytics-info-2.webp",
+    name: "Office Studio",
+    description: `The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the night life in London, UK.`,
+    price: 1.119,
+    location: "London, UK",
+  },
+  {
+    id: "3",
+    photo: "/assets/images/analytics/analytics-info-3.webp",
+    name: "Beautiful Castle",
+    description: `The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Milan.`,
+    price: 459,
+    location: "Milan, Italy",
+  },
+];
+
 export const WEBSITE_CHART = [
   {
     description: "M",

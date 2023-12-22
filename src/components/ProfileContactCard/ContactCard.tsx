@@ -28,10 +28,10 @@ const ContactCard = ({
   return (
     <div>
       <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
-        <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
+        <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
           {title}
         </Text>
-        <Link href={ROUTES.PROFILE}>
+        <Link className="text-xs" href={ROUTES.PROFILE}>
           <FaPen />
         </Link>
       </Flex>

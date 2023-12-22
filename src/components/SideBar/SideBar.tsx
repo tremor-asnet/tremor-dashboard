@@ -101,7 +101,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               src="/images/avatar/avatar-sm.webp"
             />
             <Text
-              className={`leading-0 text-white font-light self-center ml-[7px] ${
+              className={`leading-0 text-white self-center ml-[7px] ${
                 isOpen ? "xl:hidden" : ""
               }`}>
               Brooklyn Alice
@@ -113,7 +113,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 const { label, href, content } = item;
                 return (
                   <ListItem className="leading-[26px]" key={label}>
-                    <Link className="w-full flex" href={href}>
+                    <Link className="w-full flex font-normal" href={href}>
                       <span>{content}</span>
                       <span className={`${isOpen ? "xl:hidden" : ""}`}>
                         {label}
@@ -123,7 +123,9 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 );
               })}
               <ListItem className="leading-[26px] relative">
-                <form action={onSignOut} className="w-full flex gap-[20px]">
+                <form
+                  action={onSignOut}
+                  className="w-full flex gap-5 font-normal">
                   <span>L</span>
                   <button
                     type="submit"
@@ -150,9 +152,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
             } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
             <Icon size="lg" icon={RiLayoutMasonryFill} />
             <Text
-              className={`text-white font-light self-center ${
-                isOpen ? "xl:hidden" : ""
-              }`}>
+              className={`text-white self-center ${isOpen ? "xl:hidden" : ""}`}>
               Dashboards
             </Text>
           </AccordionHeader>
@@ -162,7 +162,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 className={`${
                   isAnalyticsPage ? "bg-[rgb(52,71,103)]" : ""
                 } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
-                <Link href={ROUTES.ANALYTICS}>
+                <Link className="font-normal" href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
                     {ITEMS_DASHBOARD[0].label}
@@ -173,7 +173,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 className={`${
                   isSalesPage ? "bg-[rgb(52,71,103)]" : ""
                 } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
-                <Link href={ROUTES.SALES}>
+                <Link className="font-normal" href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
                     {ITEMS_DASHBOARD[1].label}
@@ -195,7 +195,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
             } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
             <Icon size="lg" icon={IoMdImage} />
             <Text
-              className={`text-white font-light leading-0 self-center ml-2.5 ${
+              className={`text-white leading-0 self-center ml-2.5 ${
                 isOpen ? "xl:hidden" : ""
               }`}>
               Pages
@@ -210,7 +210,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                       ? "bg-[rgba(255,255,255,0.2)]"
                       : ""
                   } flex text-[rgba(255,255,255,0.5)] rounded-md`}>
-                  <Text className="text-white font-light self-center ml-4 mt-1">
+                  <Text className="text-white self-center ml-4 mt-1">
                     <span className="mr-6">P</span>
                     <span className={`${isOpen ? "xl:hidden" : ""}`}>
                       Profile
@@ -227,7 +227,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                             href === pathname ? "bg-[rgb(52,71,103)]" : ""
                           } leading-[26px] mt-1 rounded-md`}
                           key={label}>
-                          <Link href={href}>
+                          <Link className="font-normal" href={href}>
                             <span>{content}</span>
                             <span className={`${isOpen ? "xl:hidden" : ""}`}>
                               {label}

@@ -87,9 +87,9 @@ const ProjectCard = ({
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
                 onClick={() => handleToggleAction(projectData.id)}>
-                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-[#7b809a]" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
+                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
               </Flex>
               {openActionProject && (
                 <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white rounded-md shadow-md">
@@ -99,7 +99,7 @@ const ProjectCard = ({
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
                         variant="light"
                         onClick={() => handleItemActionProject()}>
-                        <Text className="font-normal text-sm text-[#7b809a]">
+                        <Text className="font-normal text-sm text-secondary">
                           {item.label}
                         </Text>
                       </Button>
@@ -109,22 +109,22 @@ const ProjectCard = ({
               )}
             </Flex>
           </Flex>
-          <Text className="text-md text-[#7b809a] my-4 font-light">
+          <Text className="text-md text-secondary my-4 font-light">
             {description}
           </Text>
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex className="my-4">
             <div>
-              <Text className="text-[#344767] font-semibold">
+              <Text className="text-primary font-semibold">
                 {participantNumber}
               </Text>
-              <Text className="text-[#7b809a] font-normal">Participants</Text>
+              <Text className="text-secondary font-normal">Participants</Text>
             </div>
             <div>
-              <Text className="text-[#344767] font-semibold">
+              <Text className="text-primary font-semibold">
                 {duaDateFormat}
               </Text>
-              <Text className="text-[#7b809a] font-normal">Due date</Text>
+              <Text className="text-secondary font-normal">Due date</Text>
             </div>
           </Flex>
         </Card>

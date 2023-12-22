@@ -1,0 +1,20 @@
+
+.recharts-dot.recharts-line-dot {
+  fill: azure;
+  stroke-opacity: inherit;
+}
+
+.recharts-text.recharts-cartesian-axis-tick-value,
+.recharts-curve.recharts-line-curve,
+.recharts-dot.recharts-line-dot {
+  stroke: #fff;
+  font-weight: 100;
+}
+
+.recharts-curve.recharts-line-curve {
+  stroke-width: 6;
+}
+
+.recharts-legend-wrapper {
+  display: none;
+}

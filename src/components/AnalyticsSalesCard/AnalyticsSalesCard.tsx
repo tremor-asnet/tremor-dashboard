@@ -37,7 +37,7 @@ const AnalyticsSalesCard = ({
   data = ANALYTIC_SALES_CARD,
 }: AnalyticsSalesCardProps) => {
   return (
-    <Card className="mt-10 border-none ring-0">
+    <Card className="mt-4 border-none ring-0">
       <Flex>
         <Flex className="absolute -top-4 left-6 w-16 h-16 p-1 shadow-md bg-[linear-gradient(195deg,_#66BB6A,_#43A047)] justify-center rounded-xl text-2xl text-white">
           <MdLanguage />

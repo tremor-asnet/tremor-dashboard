@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 // Components
 import { Flex } from "@tremor/react";
@@ -6,9 +6,6 @@ import AnalyticsSalesCard from "@/components/AnalyticsSalesCard/AnalyticsSalesCa
 import AnalyticsInfo from "@/components/AnalyticsInfo/AnalyticsInfo";
 import AnalyticsStatisticCard from "@/components/AnalyticsStatisticCard/AnalyticsStatisticCard";
 import WebsiteChart from "@/components/WebsiteChart/WebsiteChart";
-import AnalyticsLineChart, {
-  CHART_TYPE,
-} from "@/components/AnalyticsLineChart/AnalyticsLineChart";
 
 //Types
 import { IAnalyticsInfo } from "@/types";
@@ -20,15 +17,23 @@ type AnalyticsStatistical = {
 };
 
 // Mock data
-import {
-  ANALYTIC_SALES_CARD,
-  STATISTICAL_DATA,
-  ANALYTIC_INFO,
-  WEBSITE_CHART,
-} from "@/mocks/analytics";
-import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks/charts";
+import { WEBSITE_CHART } from "@/mocks/analytics";
 
-const Analytics = () => {
+import {
+  getAnalyticInfo,
+  getSaleByCountryChart,
+  getStatisticalCard,
+} from "@/app/actions/analyticsAction";
+import AnalyticsLineChart, {
+  CHART_TYPE,
+} from "@/components/AnalyticsLineChart/AnalyticsLineChart";
+import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks";
+
+const Analytics = async () => {
+  const saleByCountryData = await getSaleByCountryChart();
+  const statisticalCardData = await getStatisticalCard();
+  const analyticData = await getAnalyticInfo();
+
   return (
     <Flex className="flex-col flex-wrap justify-start">
       {/* Sales card  */}
@@ -36,7 +41,7 @@ const Analytics = () => {
         title="Sales by Country"
         chart="/assets/images/analytics/analytics-sales-chart.webp"
         isAnalytics={true}
-        data={ANALYTIC_SALES_CARD}
+        data={saleByCountryData.data}
       />
       {/* Charts */}
       <Flex className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6">
@@ -73,13 +78,13 @@ const Analytics = () => {
       </Flex>
       {/* Statistic cards  */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {STATISTICAL_DATA?.map((item: AnalyticsStatistical) => (
+        {statisticalCardData.data?.map((item: AnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>
       {/* Info cards  */}
       <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
-        {ANALYTIC_INFO?.map((item: IAnalyticsInfo) => (
+        {analyticData.data?.map((item: IAnalyticsInfo) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}
       </Flex>

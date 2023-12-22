@@ -12,9 +12,6 @@ import {
 import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 
-// Mock data
-import { ANALYTIC_SALES_CARD } from "@/mocks/analytics";
-
 export interface IAnalyticsSalesCard {
   flag: string;
   country: string;
@@ -31,10 +28,10 @@ export interface AnalyticsSalesCardProps {
 }
 
 const AnalyticsSalesCard = ({
-  title = "Sales by Country",
-  chart = "/assets/images/analytics/analytics-sales-chart.webp",
-  isAnalytics = true,
-  data = ANALYTIC_SALES_CARD,
+  title,
+  chart,
+  isAnalytics,
+  data,
 }: AnalyticsSalesCardProps) => {
   return (
     <Card className="mt-4 border-none ring-0">

@@ -6,9 +6,6 @@ import { MdEdit, MdPlace, MdRefresh } from "react-icons/md";
 //Types
 import { IAnalyticsInfo } from "@/types";
 
-// Mock data
-import { ANALYTIC_INFO } from "@/mocks/analytics";
-
 export interface AnalyticsInfoProps {
   infoData: IAnalyticsInfo;
 }

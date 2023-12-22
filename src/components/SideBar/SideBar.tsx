@@ -6,6 +6,7 @@ import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
 import { IoMdImage } from "react-icons/io";
 import { useContext } from "react";
+import { usePathname } from "next/navigation";
 
 import {
   Accordion,
@@ -41,15 +42,20 @@ import { SidebarContext } from "@/contexts/SideBarContext";
 // Styles
 import "./styles.css";
 
-interface SideBarProps {
-  onSignOut: () => void;
-}
-const SideBar = ({ onSignOut }: SideBarProps) => {
-  const { isOpen, toggleSideBar } = useContext(SidebarContext);
+// Components
+import { LoadingIndicator } from "@/components";
 
-  const handleSignOut = async () => {
-    await onSignOut();
-  };
+interface SideBarProps {
+  onSignOut: () => Promise<void>;
+  isSignOutProcessing: boolean;
+}
+const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
+  const { isOpen, toggleSideBar } = useContext(SidebarContext);
+  const pathname = usePathname();
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+  const isProfilePage = pathname === ROUTES.PROFILE;
+  const isAnalyticsPage = pathname === ROUTES.ANALYTICS;
+  const isSalesPage = pathname === ROUTES.SALES;
 
   return (
     <div
@@ -116,8 +122,8 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                   </ListItem>
                 );
               })}
-              <ListItem className="leading-[26px]">
-                <form action={handleSignOut} className="w-full flex gap-[20px]">
+              <ListItem className="leading-[26px] relative">
+                <form action={onSignOut} className="w-full flex gap-[20px]">
                   <span>L</span>
                   <button
                     type="submit"
@@ -125,6 +131,11 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                     Logout
                   </button>
                 </form>
+                {isSignOutProcessing && (
+                  <Flex className="absolute left-[80%]">
+                    <LoadingIndicator />
+                  </Flex>
+                )}
               </ListItem>
             </List>
           </AccordionBody>
@@ -133,7 +144,10 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
       <AccordionList>
         <Accordion className="bg-inherit border-0">
-          <AccordionHeader className="bg-[rgba(255,255,255,0.2)] flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md">
+          <AccordionHeader
+            className={`${
+              isAnalyticsPage || isSalesPage ? "bg-[rgba(255,255,255,0.2)]" : ""
+            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
             <Icon size="lg" icon={RiLayoutMasonryFill} />
             <Text
               className={`text-white font-light self-center ${
@@ -144,7 +158,10 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
           </AccordionHeader>
           <AccordionBody>
             <List>
-              <ListItem className="bg-[rgb(52,71,103)] my-[3px] leading-[26px] rounded-md hover:bg-none">
+              <ListItem
+                className={`${
+                  isAnalyticsPage ? "bg-[rgb(52,71,103)]" : ""
+                } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
                 <Link href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
@@ -152,7 +169,10 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                   </span>
                 </Link>
               </ListItem>
-              <ListItem>
+              <ListItem
+                className={`${
+                  isSalesPage ? "bg-[rgb(52,71,103)]" : ""
+                } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
                 <Link href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
@@ -168,8 +188,11 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
         PAGES
       </Subtitle>
       <AccordionList>
-        <Accordion className="bg-inherit border-0">
-          <AccordionHeader className="flex text-[rgba(255,255,255,0.5)] py-1.5">
+        <Accordion className="bg-inherit border-0 mt-1">
+          <AccordionHeader
+            className={`${
+              isProjectPage || isProfilePage ? "bg-[rgba(255,255,255,0.2)]" : ""
+            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
             <Icon size="lg" icon={IoMdImage} />
             <Text
               className={`text-white font-light leading-0 self-center ml-2.5 ${
@@ -180,8 +203,13 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
           </AccordionHeader>
           <AccordionBody>
             <AccordionList>
-              <Accordion className="bg-inherit border-0">
-                <AccordionHeader className="flex text-[rgba(255,255,255,0.5)]">
+              <Accordion className="bg-inherit border-0 mt-1">
+                <AccordionHeader
+                  className={`${
+                    isProjectPage || isProfilePage
+                      ? "bg-[rgba(255,255,255,0.2)]"
+                      : ""
+                  } flex text-[rgba(255,255,255,0.5)] rounded-md`}>
                   <Text className="text-white font-light self-center ml-4 mt-1">
                     <span className="mr-6">P</span>
                     <span className={`${isOpen ? "xl:hidden" : ""}`}>
@@ -194,7 +222,11 @@ const SideBar = ({ onSignOut }: SideBarProps) => {
                     {ITEMS_PROFILE.map(item => {
                       const { label, href, content } = item;
                       return (
-                        <ListItem className="leading-[26px]" key={label}>
+                        <ListItem
+                          className={`${
+                            href === pathname ? "bg-[rgb(52,71,103)]" : ""
+                          } leading-[26px] mt-1 rounded-md`}
+                          key={label}>
                           <Link href={href}>
                             <span>{content}</span>
                             <span className={`${isOpen ? "xl:hidden" : ""}`}>

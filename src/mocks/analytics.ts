@@ -55,3 +55,34 @@ export const STATISTICAL_DATA = [
     duration: "Just updated",
   },
 ];
+
+export const WEBSITE_CHART = [
+  {
+    description: "M",
+    sales: 50,
+  },
+  {
+    description: "T",
+    sales: 20,
+  },
+  {
+    description: "W",
+    sales: 10,
+  },
+  {
+    description: "T",
+    sales: 22,
+  },
+  {
+    description: "F",
+    sales: 50,
+  },
+  {
+    description: "S",
+    sales: 10,
+  },
+  {
+    description: "S",
+    sales: 40,
+  },
+];

@@ -59,30 +59,30 @@ export const STATISTICAL_DATA = [
 export const WEBSITE_CHART = [
   {
     description: "M",
-    Sales: 50,
+    sales: 50,
   },
   {
     description: "T",
-    Sales: 20,
+    sales: 20,
   },
   {
     description: "W",
-    Sales: 10,
+    sales: 10,
   },
   {
     description: "T",
-    Sales: 22,
+    sales: 22,
   },
   {
     description: "F",
-    Sales: 50,
+    sales: 50,
   },
   {
     description: "S",
-    Sales: 10,
+    sales: 10,
   },
   {
     description: "S",
-    Sales: 40,
+    sales: 40,
   },
 ];

@@ -3,7 +3,7 @@ import { FaRegClock } from "react-icons/fa";
 
 type Data = {
   description: string;
-  Sales: number;
+  sales: number;
 };
 
 interface WebsiteChartProps {
@@ -32,7 +32,6 @@ const WebsiteChart = ({
                   index="description"
                   categories={["Sales"]}
                   colors={["gray"]}
-                  valueFormatter={undefined}
                   yAxisWidth={30}
                   showLegend={false}
                 />

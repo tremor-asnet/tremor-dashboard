@@ -1,4 +1,4 @@
-import { BarChart, Card, Flex, Subtitle, Text } from "@tremor/react";
+import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
 type Data = {
@@ -20,17 +20,17 @@ const WebsiteChart = ({
   scheduleText,
 }: WebsiteChartProps) => {
   return (
-    <div className="bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
+    <div className="w-full bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
         <Flex className="">
-          <main className=" w-full mx-auto">
+          <main className="w-full mx-auto">
             <div className="-mt-10">
-              <Card className="bg-[linear-gradient(195deg,#42424a,#191919)] shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]">
+              <Card className="p-2 bg-[linear-gradient(195deg,#42424a,#191919)] shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]">
                 <BarChart
-                  className="mt-6 rounded-tremor-small tremor-border"
+                  className="h-[168px] mt-4"
                   data={data}
                   index="description"
-                  categories={["Sales"]}
+                  categories={["sales"]}
                   colors={["gray"]}
                   yAxisWidth={30}
                   showLegend={false}
@@ -41,9 +41,9 @@ const WebsiteChart = ({
         </Flex>
         <div className="flex-col items-start pt-6 pb-2 px-2">
           <div>
-            <Text className="text-base font-bold opacity-100 capitalize text-[#344767]">
+            <Title className="text-base font-bold opacity-100 capitalize text-[#344767]">
               {title}
-            </Text>
+            </Title>
             <Subtitle className="text-sm font-light opacity-100 text-[#7b809a]">
               {subTitle}
             </Subtitle>

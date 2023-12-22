@@ -22,8 +22,7 @@ export const IconBoxSizeProps: Story = {
   render: () => (
     <IconBox
       icon={<MdLanguage color="white" size="24px" />}
-      width="20"
-      height="20"
+      size={{ width: "20", height: "20" }}
     />
   ),
 };

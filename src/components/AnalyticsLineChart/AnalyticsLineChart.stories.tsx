@@ -20,7 +20,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const AnalyticsLineChartDefault: Story = {
-  render: () => <AnalyticsLineChart dataChart={ANALYTICS_DAILY_CHART} />,
+  render: () => (
+    <AnalyticsLineChart
+      dataChart={ANALYTICS_DAILY_CHART}
+      title={"website views"}
+      subTitle={"Last Campaign Performance"}
+      scheduleText={"campaign sent 2 days ago"}
+      isDailyChart
+    />
+  ),
 };
 
 export const AnalyticsTaskChartDefault: Story = {
@@ -28,6 +36,10 @@ export const AnalyticsTaskChartDefault: Story = {
     <AnalyticsLineChart
       dataChart={ANALYTICS_TASK_CHART}
       type={CHART_TYPE.TASK}
+      title={"Daily Sales"}
+      subTitle={"increase in today sales."}
+      scheduleText={"updated 4 min ago"}
+      isDailyChart={false}
     />
   ),
 };

@@ -1,3 +1,5 @@
+"use client";
+
 //Libs
 import { useState } from "react";
 
@@ -10,10 +12,8 @@ import { FaRegClock } from "react-icons/fa";
 //Styles
 import "@/styles/charts.css";
 
-export enum CHART_TYPE {
-  DAILY = "daily",
-  TASK = "task",
-}
+//Types
+import { CHART_TYPE } from "@/types";
 
 enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",

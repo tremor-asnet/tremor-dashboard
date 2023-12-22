@@ -1,17 +1,14 @@
-"use client";
-
 // Components
 import { Flex } from "@tremor/react";
 import AnalyticsSalesCard from "@/components/AnalyticsSalesCard/AnalyticsSalesCard";
 import AnalyticsInfo from "@/components/AnalyticsInfo/AnalyticsInfo";
 import AnalyticsStatisticCard from "@/components/AnalyticsStatisticCard/AnalyticsStatisticCard";
-import WebsiteChart from "@/components/WebsiteChart/WebsiteChart";
-import AnalyticsLineChart, {
-  CHART_TYPE,
-} from "@/components/AnalyticsLineChart/AnalyticsLineChart";
+import ColumnChart from "@/components/ColumnChart/ColumnChart";
+import AnalyticsLineChart from "@/components/AnalyticsLineChart/AnalyticsLineChart";
 
 //Types
-import { IAnalyticsInfo } from "@/types";
+import { IAnalyticsInfo, CHART_TYPE } from "@/types";
+
 type AnalyticsStatistical = {
   type: string;
   amount: string;
@@ -42,7 +39,7 @@ const Analytics = () => {
       <Flex className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6">
         {/* Website Views chart */}
         <Flex>
-          <WebsiteChart
+          <ColumnChart
             data={WEBSITE_CHART}
             title={"website views"}
             subTitle={"Last Campaign Performance"}

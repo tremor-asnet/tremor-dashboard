@@ -5,17 +5,28 @@ import { ReactNode } from "react";
 import { Flex } from "@tremor/react";
 import { IoMdPrint } from "react-icons/io";
 
+type sizeIcon = {
+  width: string;
+  height: string;
+};
 interface IIconBox {
   icon?: ReactNode;
+  bgBox?: string;
   className?: string;
+  sizeBox?: sizeIcon;
 }
 
 const IconBox = ({
   icon = <IoMdPrint color="white" size="24px" />,
-  className = "w-[74px] h-[74px] bg-[linear-gradient(195deg,#42424a,#191919)]",
+  sizeBox = { width: "16", height: "16" },
+  bgBox = "bg-[linear-gradient(195deg,#42424a,#191919)]",
+  className = "",
 }: IIconBox): JSX.Element => {
   return (
-    <Flex className={`p-1 justify-center rounded-xl ${className}`}>{icon}</Flex>
+    <Flex
+      className={`p-1 justify-center rounded-xl ${bgBox} w-${sizeBox.width} h-${sizeBox.height} ${className}`}>
+      {icon}
+    </Flex>
   );
 };
 

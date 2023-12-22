@@ -31,10 +31,10 @@ const WebsiteChart = ({
                   data={data}
                   index="description"
                   categories={["Sales"]}
-                  colors={["zinc"]}
+                  colors={["gray"]}
                   valueFormatter={undefined}
                   yAxisWidth={30}
-                  showGridLines={true}
+                  showLegend={false}
                 />
               </Card>
             </div>

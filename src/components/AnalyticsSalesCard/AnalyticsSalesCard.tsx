@@ -43,7 +43,9 @@ const AnalyticsSalesCard = ({
           <MdLanguage />
         </Flex>
         <Flex className="flex-col items-start justify-start -mt-3 ml-20">
-          <Title className="text-xl font-bold text-base">{title}</Title>
+          <Title className="text-primary text-xl font-bold text-base">
+            {title}
+          </Title>
         </Flex>
       </Flex>
       <Flex className="relative mt-6 flex-col lg:flex-row">

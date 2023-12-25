@@ -29,9 +29,9 @@ import {
 import { LINE_CHART_DATA } from "@/mocks/charts";
 
 const Analytics = async () => {
-  const AnalyticsData = await getAnalytics();
+  const analyticsData = await getAnalytics();
 
-  const { performance_statistic, daily_sale_statistic } = AnalyticsData;
+  const { performance_statistic, daily_sale_statistic } = analyticsData;
 
   const dataLineCharts =
     [performance_statistic, daily_sale_statistic] || LINE_CHART_DATA;

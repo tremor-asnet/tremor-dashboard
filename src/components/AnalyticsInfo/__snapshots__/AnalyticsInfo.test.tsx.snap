@@ -75,12 +75,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               </svg>
             </div>
             <p
-              class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-normal text-xl text-center leading-snug capitalize mt-8 mb-2"
+              class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
             >
               Cozy 5 Stars Apartment
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base font-light leading-[1.6] tracking-[0.01071em] text-center"
+              class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
             >
               The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
             </p>
@@ -95,7 +95,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
             >
               <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base leading-[1.6] tracking-[0.01071em] text-center"
+                class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
               >
                 $
                 899
@@ -103,7 +103,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               </p>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+              class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
             >
               <svg
                 class="text-tremor-content text-xl mr-1"
@@ -111,20 +111,16 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 24 24"
+                viewBox="0 0 256 256"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+                  d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
                 />
               </svg>
               <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-light"
+                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
               >
                 Barcelona, Spain
               </p>
@@ -205,12 +201,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </svg>
           </div>
           <p
-            class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-normal text-xl text-center leading-snug capitalize mt-8 mb-2"
+            class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
           >
             Cozy 5 Stars Apartment
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base font-light leading-[1.6] tracking-[0.01071em] text-center"
+            class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
           >
             The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
           </p>
@@ -225,7 +221,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base leading-[1.6] tracking-[0.01071em] text-center"
+              class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
             >
               $
               899
@@ -233,7 +229,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+            class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
           >
             <svg
               class="text-tremor-content text-xl mr-1"
@@ -241,20 +237,16 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               height="1em"
               stroke="currentColor"
               stroke-width="0"
-              viewBox="0 0 24 24"
+              viewBox="0 0 256 256"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+                d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
               />
             </svg>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-light"
+              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
             >
               Barcelona, Spain
             </p>
@@ -389,12 +381,12 @@ exports[`Testing analytics sale chart component testing component analytics info
           </svg>
         </div>
         <p
-          class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-normal text-xl text-center leading-snug capitalize mt-8 mb-2"
+          class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
         >
           Cozy 5 Stars Apartment
         </p>
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base font-light leading-[1.6] tracking-[0.01071em] text-center"
+          class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
         >
           The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
         </p>
@@ -409,7 +401,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap !text-base leading-[1.6] tracking-[0.01071em] text-center"
+            class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
           >
             $
             899
@@ -417,7 +409,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
         >
           <svg
             class="text-tremor-content text-xl mr-1"
@@ -425,20 +417,16 @@ exports[`Testing analytics sale chart component testing component analytics info
             height="1em"
             stroke="currentColor"
             stroke-width="0"
-            viewBox="0 0 24 24"
+            viewBox="0 0 256 256"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+              d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
             />
           </svg>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-light"
+            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
           >
             Barcelona, Spain
           </p>

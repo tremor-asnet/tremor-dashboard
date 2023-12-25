@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import {
-  MdLanguage,
+  MdLeaderboard,
   MdOutlinePersonAdd,
   MdOutlineStore,
   MdWeekend,
@@ -12,28 +12,24 @@ type Icon = {
 };
 
 type Sale = {
-  [key: string]: any;
-  booking: Icon;
-  todayUser: Icon;
-  revenus: Icon;
-  followers: Icon;
+  [key: string]: Icon;
 };
 
 export const SALE_STATISTICAL: Sale = {
-  booking: {
-    bgIcon: "bg-[linear-gradient(195deg,#42424a,#191919)]",
-    icon: <MdLanguage color="white" size="24px" />,
-  },
-  todayUser: {
+  bookings: {
     bgIcon: "bg-[linear-gradient(195deg,#42424a,#191919)]",
     icon: <MdWeekend color="white" size="24px" />,
   },
-  revenus: {
-    bgIcon: "bg-[linear-gradient(195deg,#42424a,#191919)]",
+  todayUser: {
+    bgIcon: "bg-[linear-gradient(195deg,#49a3f1,#1A73E8)]",
+    icon: <MdLeaderboard color="white" size="24px" />,
+  },
+  revenue: {
+    bgIcon: "bg-[linear-gradient(195deg,#66BB6A,#43A047)]",
     icon: <MdOutlineStore color="white" size="24px" />,
   },
   followers: {
-    bgIcon: "bg-[linear-gradient(195deg,#42424a,#191919)]",
+    bgIcon: "bg-[linear-gradient(195deg,#EC407A,#D81B60)]",
     icon: <MdOutlinePersonAdd color="white" size="24px" />,
   },
 };

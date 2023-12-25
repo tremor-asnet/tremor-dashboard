@@ -20,14 +20,15 @@ type AnalyticsStatistical = {
 // Mock data
 import { WEBSITE_CHART } from "@/mocks/analytics";
 import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks";
-import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 // Actions
 import { getAnalytics } from "@/app/actions/analyticsAction";
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();
-  console.log(analyticsData.sale_statistical);
+
+  const { sale_by_country, sale_statistical, apartment_statistic } =
+    analyticsData;
 
   return (
     <Flex className="flex-col flex-wrap justify-start">
@@ -36,7 +37,7 @@ const Analytics = async () => {
         title="Sales by Country"
         chart="/assets/images/analytics/analytics-sales-chart.webp"
         isAnalytics={true}
-        data={analyticsData.sale_by_country}
+        data={sale_by_country}
       />
       {/* Charts */}
       <Flex className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6">
@@ -71,20 +72,15 @@ const Analytics = async () => {
           />
         </Flex>
       </Flex>
-      {/* Statistic cards  */}
+      {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {analyticsData.sale_statistical?.map((item: AnalyticsStatistical) => (
-          <AnalyticsStatisticCard
-            key={item.id}
-            bgIcon={SALE_STATISTICAL[item.id]}
-            icon={SALE_STATISTICAL[item.id]}
-            statisticalData={item}
-          />
+        {sale_statistical?.map((item: AnalyticsStatistical) => (
+          <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>
-      {/* Info cards  */}
+      {/* Info cards */}
       <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
-        {analyticsData.apartment_statistic?.map((item: IAnalyticsInfo) => (
+        {apartment_statistic?.map((item: IAnalyticsInfo) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}
       </Flex>

@@ -6,9 +6,10 @@ import { Card, Text, Flex } from "@tremor/react";
 import IconBox from "@/components/IconBox/IconBox";
 
 //Mocks
-import { STATISTICAL_DATA } from "@/mocks/analytics";
+import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 type AnalyticsStatistical = {
+  id: string;
   type: string;
   amount: string;
   totalAmount: string;
@@ -17,16 +18,12 @@ type AnalyticsStatistical = {
 
 interface IAnalyticsStatisticCard {
   statisticalData: AnalyticsStatistical;
-  bgIcon: string;
-  icon: ReactNode;
 }
 
 const AnalyticsStatisticCard = ({
-  statisticalData = STATISTICAL_DATA[0],
-  bgIcon,
-  icon,
+  statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
-  const { type, amount, totalAmount, duration } = statisticalData;
+  const { id, type, amount, totalAmount, duration } = statisticalData;
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -35,8 +32,8 @@ const AnalyticsStatisticCard = ({
           <Flex className="">
             <IconBox
               className="absolute top-[-22px] left-40px"
-              bgBox={bgIcon}
-              icon={icon}
+              bgBox={SALE_STATISTICAL[id].bgIcon}
+              icon={SALE_STATISTICAL[id].icon}
             />
             <Flex className="pl-[90px] flex-col mb-1 items-end">
               <Text className="text-md text-[#7b809a] font-light">{type}</Text>

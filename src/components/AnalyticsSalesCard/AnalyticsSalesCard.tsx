@@ -49,57 +49,60 @@ const AnalyticsSalesCard = ({
       </Flex>
       <Flex className="relative mt-6 lg:mt-0 px-4 flex-col lg:flex-row">
         <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
-          {data.map(item => (
-            <Flex
-              key={item.id}
-              className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
-              <Table className="w-full">
-                <TableBody className="last-child:border-black">
-                  <TableRow className="border-solid">
-                    <TableCell className="p-4 pb-3.5 w-6/12 md:w-4/12 border-gray-500">
-                      <Flex className="items-center">
-                        <Image
-                          src={FLAG_SRC[item.id]}
-                          width="24"
-                          height="18"
-                          alt={item.country}
-                          priority
-                        />
-                        <Flex className="items-start flex-col ml-6">
-                          <Text className="text-xs font-semibold">
-                            Country:
-                          </Text>
-                          <Text className="text-tremor-content-title">
-                            {item.country}
-                          </Text>
+          {data.map(item => {
+            const { id, country, sales, value, bounce } = item;
+            return (
+              <Flex
+                key={item.id}
+                className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
+                <Table className="w-full">
+                  <TableBody className="last-child:border-black">
+                    <TableRow className="border-solid">
+                      <TableCell className="p-4 pb-3.5 w-6/12 md:w-4/12 border-gray-500">
+                        <Flex className="items-center">
+                          <Image
+                            src={FLAG_SRC[id]}
+                            width="24"
+                            height="18"
+                            alt={item.country}
+                            priority
+                          />
+                          <Flex className="items-start flex-col ml-6">
+                            <Text className="text-xs font-semibold">
+                              Country:
+                            </Text>
+                            <Text className="text-tremor-content-title">
+                              {country}
+                            </Text>
+                          </Flex>
                         </Flex>
-                      </Flex>
-                    </TableCell>
-                    <TableCell className="p-4 pb-3.5 w-3/12">
-                      <Text className="text-xs font-semibold">Sale:</Text>
-                      <Text className="text-tremor-content-title">
-                        {item.sales}
-                      </Text>
-                    </TableCell>
-                    {isAnalytics && (
-                      <TableCell className="p-4 pb-3.5 w-3/12 analytics-value">
-                        <Text className="text-xs font-semibold">Value:</Text>
+                      </TableCell>
+                      <TableCell className="p-4 pb-3.5 w-3/12">
+                        <Text className="text-xs font-semibold">Sale:</Text>
                         <Text className="text-tremor-content-title">
-                          {item.value}
+                          {sales}
                         </Text>
                       </TableCell>
-                    )}
-                    <TableCell className="p-4 pb-3.5 w-2/12 hidden sm:table-cell">
-                      <Text className="text-xs font-semibold">Bounce:</Text>
-                      <Text className="text-tremor-content-title">
-                        {item.bounce}
-                      </Text>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </Flex>
-          ))}
+                      {isAnalytics && (
+                        <TableCell className="p-4 pb-3.5 w-3/12 analytics-value">
+                          <Text className="text-xs font-semibold">Value:</Text>
+                          <Text className="text-tremor-content-title">
+                            {value}
+                          </Text>
+                        </TableCell>
+                      )}
+                      <TableCell className="p-4 pb-3.5 w-2/12 hidden sm:table-cell">
+                        <Text className="text-xs font-semibold">Bounce:</Text>
+                        <Text className="text-tremor-content-title">
+                          {bounce}
+                        </Text>
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </Flex>
+            );
+          })}
         </Flex>
         {isAnalytics && (
           <Flex className="justify-center pb-6 px-16 lg:p-6 analytics-map">

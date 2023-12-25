@@ -1,14 +1,9 @@
 import { ROUTES } from "./routes";
-// Link items for Brooklyn
-export const LINKS = {
-  MY_PROFILE: "/",
-  SETTING: "/",
-};
 
 // Link items for Brooklyn
 export const ITEMS = [
-  { content: "M", label: "My Profile", href: LINKS.MY_PROFILE },
-  { content: "S", label: "Settings", href: LINKS.SETTING },
+  { content: "M", label: "My Profile", href: ROUTES.PROFILE },
+  { content: "S", label: "Settings", href: ROUTES.SETTING },
 ];
 
 // Link items Dashboard list

@@ -35,24 +35,28 @@ export const ANALYTIC_SALES_CARD = [
 
 export const STATISTICAL_DATA = [
   {
+    id: "1",
     type: "Bookings",
     amount: "281",
     totalAmount: "55%",
     duration: "than last week",
   },
   {
+    id: "2",
     type: "Today's Users",
     amount: "2,300",
     totalAmount: "3%",
     duration: "than last month",
   },
   {
+    id: "3",
     type: "Revenue",
     amount: "34k",
     totalAmount: "1%",
     duration: "than yesterday",
   },
   {
+    id: "4",
     type: "Followers",
     amount: "+91",
     totalAmount: "",

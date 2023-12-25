@@ -10,6 +10,7 @@ import WebsiteChart from "@/components/WebsiteChart/WebsiteChart";
 //Types
 import { IAnalyticsInfo } from "@/types";
 type AnalyticsStatistical = {
+  id: string;
   type: string;
   amount: string;
   totalAmount: string;
@@ -24,9 +25,11 @@ import AnalyticsLineChart, {
   CHART_TYPE,
 } from "@/components/AnalyticsLineChart/AnalyticsLineChart";
 import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks";
+import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();
+  console.log(SALE_STATISTICAL[analyticsData.apartment_statistic.id]);
 
   return (
     <Flex className="flex-col flex-wrap justify-start">
@@ -73,7 +76,12 @@ const Analytics = async () => {
       {/* Statistic cards  */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
         {analyticsData.sale_statistical?.map((item: AnalyticsStatistical) => (
-          <AnalyticsStatisticCard key={item.type} statisticalData={item} />
+          <AnalyticsStatisticCard
+            key={item.id}
+            bgIcon={SALE_STATISTICAL[item.id]}
+            icon={SALE_STATISTICAL[item.id]}
+            statisticalData={item}
+          />
         ))}
       </Flex>
       {/* Info cards  */}

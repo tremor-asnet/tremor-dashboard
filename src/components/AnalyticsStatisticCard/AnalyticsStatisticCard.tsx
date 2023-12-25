@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 
 //Components
 import { Card, Text, Flex } from "@tremor/react";
-import { MdLanguage } from "react-icons/md";
 import IconBox from "@/components/IconBox/IconBox";
 
 //Mocks
@@ -18,14 +17,14 @@ type AnalyticsStatistical = {
 
 interface IAnalyticsStatisticCard {
   statisticalData: AnalyticsStatistical;
-  bgIcon?: string;
-  icon?: ReactNode;
+  bgIcon: string;
+  icon: ReactNode;
 }
 
 const AnalyticsStatisticCard = ({
   statisticalData = STATISTICAL_DATA[0],
-  bgIcon = "bg-[linear-gradient(195deg,#42424a,#191919)]",
-  icon = <MdLanguage color="white" size="24px" />,
+  bgIcon,
+  icon,
 }: IAnalyticsStatisticCard): JSX.Element => {
   const { type, amount, totalAmount, duration } = statisticalData;
 

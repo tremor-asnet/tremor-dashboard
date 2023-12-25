@@ -12,7 +12,11 @@ import {
 import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 
+// Constants
+import { FLAG_SRC } from "@/constants";
+
 export interface IAnalyticsSalesCard {
+  id: string;
   flag: string;
   country: string;
   sales: string;
@@ -47,7 +51,7 @@ const AnalyticsSalesCard = ({
         <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
           {data.map(item => (
             <Flex
-              key={item.sales}
+              key={item.id}
               className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
               <Table className="w-full">
                 <TableBody className="last-child:border-black">
@@ -55,7 +59,7 @@ const AnalyticsSalesCard = ({
                     <TableCell className="p-3 pb-3.5 w-4/12 border-gray-500">
                       <Flex className="items-center">
                         <Image
-                          src={item.flag}
+                          src={FLAG_SRC[item.id]}
                           width="24"
                           height="18"
                           alt={item.country}

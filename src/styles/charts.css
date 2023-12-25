@@ -1,26 +1,22 @@
 .recharts-dot.recharts-line-dot {
-  fill: azure;
+  @apply fill-[azure];
   stroke-opacity: inherit;
 }
 
 .recharts-text.recharts-cartesian-axis-tick-value {
-  stroke: none;
-  fill: white;
-  font-weight: 100;
-  font-size: 14px;
+  @apply stroke-none fill-[white] font-thin text-sm;
 }
 
 .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
-  stroke: #fff;
-  font-weight: 100;
+  @apply stroke-white font-thin;
 }
 
 .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
-  stroke-width: 4;
+  @apply stroke-[4];
 }
 
 .recharts-legend-wrapper {
-  display: none;
+  @apply hidden;
 }

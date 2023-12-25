@@ -50,8 +50,6 @@ const AnalyticsSalesCard = ({
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
         {data.map(item => {
           const { id, country, sales, value, bounce } = item;
-          console.log("item", item);
-          console.log(FLAG_SRC[id]);
 
           return (
             <Flex

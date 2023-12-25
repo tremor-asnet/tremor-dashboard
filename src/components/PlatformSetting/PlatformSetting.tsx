@@ -43,7 +43,7 @@ const PlatformSetting = ({
 }: PlatformSettingProps) => {
   return (
     <>
-      <Text className="text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4">
+      <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
         {title}
       </Text>
       <Flex className="flex-col items-start">

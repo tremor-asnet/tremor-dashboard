@@ -102,7 +102,7 @@ const DashboardHeader = (): JSX.Element => {
               color={`${isProjectPage ? "white" : ""}`}
             />
             <div
-              className={`absolute top-0 -right-1 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
+              className={`absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
                 isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
               }`}>
               9

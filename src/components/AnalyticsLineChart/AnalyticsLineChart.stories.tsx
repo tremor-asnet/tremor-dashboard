@@ -6,8 +6,8 @@ import AnalyticsLineChart from "./AnalyticsLineChart";
 // Mocks
 import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks/charts";
 
-// Types
-import { CHART_TYPE } from "./AnalyticsLineChart";
+//Types
+import { CHART_TYPE } from "@/types";
 
 const meta = {
   title: "Components/AnalyticsLineChart",

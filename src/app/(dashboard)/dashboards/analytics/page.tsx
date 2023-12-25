@@ -59,7 +59,7 @@ const Analytics = async () => {
         {dataLineCharts?.map((item: LINE_CHART) => (
           <Flex key={item.id}>
             <AnalyticsLineChart
-              dataChart={item.data || LINE_CHART_DATA}
+              dataChart={item.data}
               type={item.id}
               title={item.display}
               subTitle={item.desc}

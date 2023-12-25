@@ -16,7 +16,7 @@ enum CHART_CATEGORIES {
 }
 interface LineChartProps {
   dataChart: LINE_CHART_DATA[];
-  type?: CHART_TYPE;
+  type?: string;
   title: string;
   subTitle: string;
   scheduleText: string;

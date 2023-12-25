@@ -41,7 +41,7 @@ const AnalyticsStatisticCard = ({
             />
             <Flex className="pl-[90px] flex-col mb-1 items-end">
               <Text className="text-md text-secondary font-light">{type}</Text>
-              <Text className="text-[24px] text-tremor-content-title leading-[33px] tracking-[0.1764px] mt-3 font-bold">
+              <Text className="!text-2xl text-primary leading-[33px] tracking-[0.1764px] mt-3 font-bold">
                 {amount}
               </Text>
             </Flex>

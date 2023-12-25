@@ -9,6 +9,9 @@ import AnalyticsLineChart from "@/components/AnalyticsLineChart/AnalyticsLineCha
 //Types
 import { IAnalyticsInfo, CHART_TYPE } from "@/types";
 
+// Actions
+import { getAnalytics } from "@/app/actions/analyticsActions";
+
 type AnalyticsStatistical = {
   type: string;
   amount: string;
@@ -25,7 +28,11 @@ import {
 } from "@/mocks/analytics";
 import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks/charts";
 
-const Analytics = () => {
+const Analytics = async () => {
+  const AnalyticsData = await getAnalytics();
+
+  const { performance_statistic, daily_sale_statistic } = AnalyticsData;
+
   return (
     <Flex className="flex-col flex-wrap justify-start">
       {/* Sales card  */}
@@ -49,21 +56,22 @@ const Analytics = () => {
         {/* Daily Sales chart */}
         <Flex>
           <AnalyticsLineChart
-            dataChart={ANALYTICS_TASK_CHART}
+            dataChart={daily_sale_statistic.data || ANALYTICS_TASK_CHART}
             type={CHART_TYPE.TASK}
-            title={"Daily Sales"}
-            subTitle={"increase in today sales."}
-            scheduleText={"updated 4 min ago"}
+            title={daily_sale_statistic.display}
+            subTitle={daily_sale_statistic.desc}
+            scheduleText={daily_sale_statistic.modified}
             isDailyChart={true}
           />
         </Flex>
         {/* Completed Tasks chart */}
         <Flex>
           <AnalyticsLineChart
-            dataChart={ANALYTICS_DAILY_CHART}
-            title={"Completed Tasks"}
-            subTitle={"Last Campaign Performance"}
-            scheduleText={"just updated"}
+            dataChart={performance_statistic.data || ANALYTICS_DAILY_CHART}
+            title={performance_statistic.display}
+            subTitle={performance_statistic.desc}
+            scheduleText={performance_statistic.modified}
+            descValue={performance_statistic.descValue}
             isDailyChart={false}
           />
         </Flex>

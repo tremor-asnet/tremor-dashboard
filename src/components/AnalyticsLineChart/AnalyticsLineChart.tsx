@@ -33,6 +33,7 @@ interface LineChartProps {
   subTitle: string;
   scheduleText: string;
   isDailyChart: boolean;
+  descValue?: string;
 }
 
 const AnalyticsLineChart = ({
@@ -41,6 +42,7 @@ const AnalyticsLineChart = ({
   title,
   subTitle,
   scheduleText,
+  descValue,
   isDailyChart = true,
 }: LineChartProps) => {
   const [setValue] = useState<any>(null);
@@ -80,7 +82,7 @@ const AnalyticsLineChart = ({
               {title}
             </Title>
             <Subtitle className="text-sm font-light opacity-100 text-[#7b809a]">
-              {isDailyChart && <span className="font-bold">(+15%)</span>}{" "}
+              {isDailyChart && <span className="font-bold">{descValue}</span>}{" "}
               {subTitle}
             </Subtitle>
           </div>

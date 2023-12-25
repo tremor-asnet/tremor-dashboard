@@ -6,15 +6,15 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
   "baseElement": <body>
     <div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4"
+        class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
       >
         Conversation
       </p>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
         >
           <div
             class="w-12 h-12"
@@ -39,32 +39,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+              class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
             >
               Anne Marie
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
             >
               Awesome work, can you..
             </p>
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Reply
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+            >
+              Reply
+            </p>
           </span>
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
         >
           <div
             class="w-12 h-12"
@@ -89,32 +93,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+              class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
             >
               Ivanna
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
             >
               About files I can..
             </p>
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Reply
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+            >
+              Reply
+            </p>
           </span>
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
         >
           <div
             class="w-12 h-12"
@@ -139,32 +147,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+              class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
             >
               Peterson
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
             >
               Have a great afternoon..
             </p>
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Reply
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+            >
+              Reply
+            </p>
           </span>
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
         >
           <div
             class="w-12 h-12"
@@ -189,32 +201,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+              class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
             >
               Sophie.B
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
             >
               Hi! I need more information..
             </p>
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Reply
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+            >
+              Reply
+            </p>
           </span>
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
         >
           <div
             class="w-12 h-12"
@@ -239,24 +255,28 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
             class="max-w-[180px] font-medium dark:text-white pl-4"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+              class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
             >
               Nick Daniel
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+              class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
             >
               Hi! I need more information..
             </p>
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Reply
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+            >
+              Reply
+            </p>
           </span>
         </button>
       </div>
@@ -264,15 +284,15 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
   </body>,
   "container": <div>
     <p
-      class="text-tremor-default dark:text-dark-tremor-content text-sm leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-[#344767] py-4"
+      class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
     >
       Conversation
     </p>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
       >
         <div
           class="w-12 h-12"
@@ -297,32 +317,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+            class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
           >
             Anne Marie
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
           >
             Awesome work, can you..
           </p>
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Reply
+          <p
+            class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+          >
+            Reply
+          </p>
         </span>
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
       >
         <div
           class="w-12 h-12"
@@ -347,32 +371,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+            class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
           >
             Ivanna
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
           >
             About files I can..
           </p>
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Reply
+          <p
+            class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+          >
+            Reply
+          </p>
         </span>
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
       >
         <div
           class="w-12 h-12"
@@ -397,32 +425,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+            class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
           >
             Peterson
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
           >
             Have a great afternoon..
           </p>
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Reply
+          <p
+            class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+          >
+            Reply
+          </p>
         </span>
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
       >
         <div
           class="w-12 h-12"
@@ -447,32 +479,36 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+            class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
           >
             Sophie.B
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
           >
             Hi! I need more information..
           </p>
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Reply
+          <p
+            class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+          >
+            Reply
+          </p>
         </span>
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
       >
         <div
           class="w-12 h-12"
@@ -497,24 +533,28 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
           class="max-w-[180px] font-medium dark:text-white pl-4"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm text-[#344767] font-semibold"
+            class="text-tremor-default dark:text-dark-tremor-content text-sm text-primary font-semibold"
           >
             Nick Daniel
           </p>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-xs text-[#7b809a] font-light truncate"
+            class="text-tremor-default dark:text-dark-tremor-content text-xs text-secondary font-light truncate"
           >
             Hi! I need more information..
           </p>
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] text-xs text-center font-bold uppercase bg-transparent text-[#344767]"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Reply
+          <p
+            class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
+          >
+            Reply
+          </p>
         </span>
       </button>
     </div>

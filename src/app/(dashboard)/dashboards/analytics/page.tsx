@@ -7,7 +7,10 @@ import ColumnChart from "@/components/ColumnChart/ColumnChart";
 import AnalyticsLineChart from "@/components/AnalyticsLineChart/AnalyticsLineChart";
 
 //Types
-import { IAnalyticsInfo, CHART_TYPE } from "@/types";
+import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
+
+// Actions
+import { getAnalytics } from "@/app/actions/analyticsActions";
 
 type AnalyticsStatistical = {
   type: string;
@@ -17,16 +20,20 @@ type AnalyticsStatistical = {
 };
 
 // Mock data
-import { WEBSITE_CHART } from "@/mocks/analytics";
-import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks";
-
-// Actions
-import { getAnalytics } from "@/app/actions/analyticsAction";
+import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();
-  const { sale_by_country, sale_statistical, apartment_statistic } =
-    analyticsData;
+  const {
+    performance_statistic,
+    daily_sale_statistic,
+    sale_by_country,
+    sale_statistical,
+    apartment_statistic,
+  } = analyticsData;
+
+  const dataLineCharts =
+    [performance_statistic, daily_sale_statistic] || LINE_CHART_DATA;
 
   return (
     <Flex className="flex-col flex-wrap justify-start">
@@ -48,27 +55,19 @@ const Analytics = async () => {
             scheduleText={"campaign sent 2 days ago"}
           />
         </Flex>
-        {/* Daily Sales chart */}
-        <Flex>
-          <AnalyticsLineChart
-            dataChart={ANALYTICS_TASK_CHART}
-            type={CHART_TYPE.TASK}
-            title={"Daily Sales"}
-            subTitle={"increase in today sales."}
-            scheduleText={"updated 4 min ago"}
-            isDailyChart={true}
-          />
-        </Flex>
-        {/* Completed Tasks chart */}
-        <Flex>
-          <AnalyticsLineChart
-            dataChart={ANALYTICS_DAILY_CHART}
-            title={"Completed Tasks"}
-            subTitle={"Last Campaign Performance"}
-            scheduleText={"just updated"}
-            isDailyChart={false}
-          />
-        </Flex>
+        {/* Line chart */}
+        {dataLineCharts?.map((item: LINE_CHART) => (
+          <Flex key={item.id}>
+            <AnalyticsLineChart
+              dataChart={item.data}
+              type={item.id}
+              title={item.display}
+              subTitle={item.desc}
+              scheduleText={item.modified}
+              isDailyChart={item.id === CHART_TYPE.SALE}
+            />
+          </Flex>
+        ))}
       </Flex>
       {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">

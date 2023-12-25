@@ -52,7 +52,7 @@ const AnalyticsSalesCard = ({
           const { id, country, sales, value, bounce } = item;
           return (
             <Flex
-              key={item.id}
+              key={id}
               className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
               <Table className="w-full">
                 <TableBody className="last-child:border-black">

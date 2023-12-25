@@ -6,3 +6,8 @@ export interface IAnalyticsInfo {
   price: number | string;
   location: string;
 }
+
+export enum CHART_TYPE {
+  DAILY = "daily",
+  TASK = "task",
+}

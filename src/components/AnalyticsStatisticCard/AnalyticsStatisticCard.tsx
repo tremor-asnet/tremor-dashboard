@@ -34,7 +34,7 @@ const AnalyticsStatisticCard = ({
         <Card className="mx-auto py-3 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="">
             <IconBox
-              className="absolute top-[-22px] left-40px w-[74px] h-[74px]"
+              className="absolute top-[-22px] left-40px"
               bgBox={bgIcon}
               icon={icon}
             />

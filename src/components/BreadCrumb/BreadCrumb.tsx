@@ -104,7 +104,7 @@ const BreadCrumb = (): JSX.Element => {
       </ol>
       <Title
         className={`text-tremor-content-title font-bold capitalize ${
-          isProjectPage ? "text-white" : "text-[#344767]"
+          isProjectPage ? "text-white" : "text-primary"
         }`}>
         {pageName}
       </Title>

@@ -6,19 +6,19 @@ type Data = {
   sales: number;
 };
 
-interface WebsiteChartProps {
+interface ColumnChartProps {
   data: Data[];
   title: string;
   subTitle: string;
   scheduleText: string;
 }
 
-const WebsiteChart = ({
+const ColumnChart = ({
   data,
   title,
   subTitle,
   scheduleText,
-}: WebsiteChartProps) => {
+}: ColumnChartProps) => {
   return (
     <div className="w-full bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
@@ -61,4 +61,4 @@ const WebsiteChart = ({
   );
 };
 
-export default WebsiteChart;
+export default ColumnChart;

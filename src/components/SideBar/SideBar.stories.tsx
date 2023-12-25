@@ -14,5 +14,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SideBarDashboard: Story = {
-  render: () => <SideBar onSignOut={() => {}} />,
+  render: () => (
+    <SideBar
+      onSignOut={function (): Promise<void> {
+        throw new Error("Function not implemented.");
+      }}
+      isSignOutProcessing={false}
+    />
+  ),
 };

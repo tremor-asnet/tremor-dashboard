@@ -22,7 +22,7 @@ export const AnalyticsSalesCardDefault: Story = {
       title="Sales by Country"
       chart="/assets/images/analytics/analytics-sales-chart.webp"
       isAnalytics={true}
-      data={ANALYTIC_SALES_CARD}
+      data={[]}
     />
   ),
 };

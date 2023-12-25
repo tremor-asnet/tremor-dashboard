@@ -2,14 +2,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import WebsiteChart from "./WebsiteChart";
+import ColumnChart from "./ColumnChart";
 import { WEBSITE_CHART } from "@/mocks/analytics";
 
 const meta = {
-  title: "Components/WebsiteChart",
+  title: "Components/ColumnChart",
   tags: ["autodocs"],
-  component: WebsiteChart,
-} as Meta<typeof WebsiteChart>;
+  component: ColumnChart,
+} as Meta<typeof ColumnChart>;
 
 export default meta;
 
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <WebsiteChart
+    <ColumnChart
       data={WEBSITE_CHART}
       title={"website views"}
       subTitle={"Last Campaign Performance"}

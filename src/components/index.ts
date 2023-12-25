@@ -12,3 +12,4 @@ export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProje
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
+export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";

@@ -13,21 +13,14 @@ import { FaRegClock } from "react-icons/fa";
 import "@/styles/charts.css";
 
 //Types
-import { CHART_TYPE } from "@/types";
+import { CHART_TYPE, LINE_CHART_DATA } from "@/types";
 
 enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",
   MOBILE = "Mobile apps",
 }
-
-type LineChart = {
-  date: string;
-  "Desktop apps"?: number;
-  "Mobile apps"?: number;
-};
-
 interface LineChartProps {
-  dataChart: LineChart[];
+  dataChart: LINE_CHART_DATA[];
   type?: CHART_TYPE;
   title: string;
   subTitle: string;

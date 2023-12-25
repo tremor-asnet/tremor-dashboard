@@ -7,9 +7,6 @@ import { PiMapPinFill } from "react-icons/pi";
 //Types
 import { IAnalyticsInfo } from "@/types";
 
-// Mock data
-import { ANALYTIC_INFO } from "@/mocks/analytics";
-
 export interface AnalyticsInfoProps {
   infoData: IAnalyticsInfo;
 }

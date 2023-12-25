@@ -17,15 +17,17 @@ type AnalyticsStatistical = {
 };
 
 // Mock data
-import {
-  ANALYTIC_SALES_CARD,
-  STATISTICAL_DATA,
-  ANALYTIC_INFO,
-  WEBSITE_CHART,
-} from "@/mocks/analytics";
-import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks/charts";
+import { WEBSITE_CHART } from "@/mocks/analytics";
+import { ANALYTICS_DAILY_CHART, ANALYTICS_TASK_CHART } from "@/mocks";
 
-const Analytics = () => {
+// Actions
+import { getAnalytics } from "@/app/actions/analyticsAction";
+
+const Analytics = async () => {
+  const analyticsData = await getAnalytics();
+  const { sale_by_country, sale_statistical, apartment_statistic } =
+    analyticsData;
+
   return (
     <Flex className="flex-col flex-wrap justify-start">
       {/* Sales card  */}
@@ -33,7 +35,7 @@ const Analytics = () => {
         title="Sales by Country"
         chart="/assets/images/analytics/analytics-sales-chart.webp"
         isAnalytics={true}
-        data={ANALYTIC_SALES_CARD}
+        data={sale_by_country}
       />
       {/* Charts */}
       <Flex className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6">
@@ -68,15 +70,15 @@ const Analytics = () => {
           />
         </Flex>
       </Flex>
-      {/* Statistic cards  */}
+      {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {STATISTICAL_DATA?.map((item: AnalyticsStatistical) => (
+        {sale_statistical?.map((item: AnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>
-      {/* Info cards  */}
+      {/* Info cards */}
       <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
-        {ANALYTIC_INFO?.map((item: IAnalyticsInfo) => (
+        {apartment_statistic?.map((item: IAnalyticsInfo) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}
       </Flex>

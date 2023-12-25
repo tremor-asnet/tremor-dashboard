@@ -1,8 +1,3 @@
-"use client";
-
-//Libs
-import { useState } from "react";
-
 //Components
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
@@ -43,8 +38,6 @@ const AnalyticsLineChart = ({
   scheduleText,
   isDailyChart = true,
 }: LineChartProps) => {
-  const [setValue] = useState<any>(null);
-
   return (
     <div className="w-full bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
@@ -68,7 +61,6 @@ const AnalyticsLineChart = ({
                   ]}
                   yAxisWidth={30}
                   showAnimation={true}
-                  onValueChange={(v: any) => setValue(v)}
                 />
               </Card>
             </div>

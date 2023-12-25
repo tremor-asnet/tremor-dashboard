@@ -8,8 +8,8 @@ export interface IAnalyticsInfo {
 }
 
 export enum CHART_TYPE {
-  DAILY = "daily",
-  TASK = "task",
+  SALE = "sale",
+  PERFORMANCE = "performance",
 }
 
 export type LINE_CHART_DATA = {

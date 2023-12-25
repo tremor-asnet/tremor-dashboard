@@ -31,7 +31,7 @@ interface LineChartProps {
 
 const AnalyticsLineChart = ({
   dataChart,
-  type = CHART_TYPE.DAILY,
+  type = CHART_TYPE.SALE,
   title,
   subTitle,
   scheduleText,
@@ -48,7 +48,7 @@ const AnalyticsLineChart = ({
             <div className="-mt-10">
               <Card
                 className={`${
-                  type === CHART_TYPE.DAILY
+                  type === CHART_TYPE.SALE
                     ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
                     : "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]"
                 } p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]`}>
@@ -57,7 +57,7 @@ const AnalyticsLineChart = ({
                   data={dataChart}
                   index="date"
                   categories={[
-                    type === CHART_TYPE.DAILY
+                    type === CHART_TYPE.PERFORMANCE
                       ? CHART_CATEGORIES.DESKTOP
                       : CHART_CATEGORIES.MOBILE,
                   ]}

@@ -33,7 +33,7 @@ const Analytics = async () => {
 
   const { performance_statistic, daily_sale_statistic } = AnalyticsData;
 
-  const DataLineCharts =
+  const dataLineCharts =
     [performance_statistic, daily_sale_statistic] || LINE_CHART_DATA;
 
   return (
@@ -57,15 +57,15 @@ const Analytics = async () => {
           />
         </Flex>
         {/* Line chart */}
-        {DataLineCharts?.map((item: LINE_CHART) => (
+        {dataLineCharts?.map((item: LINE_CHART) => (
           <Flex key={item.id}>
             <AnalyticsLineChart
               dataChart={item.data || LINE_CHART_DATA}
-              type={item.id === "sale" ? CHART_TYPE.TASK : CHART_TYPE.DAILY}
+              type={item.id}
               title={item.display}
               subTitle={item.desc}
               scheduleText={item.modified}
-              isDailyChart={item.id === "sale" ? true : false}
+              isDailyChart={item.id === CHART_TYPE.SALE}
             />
           </Flex>
         ))}

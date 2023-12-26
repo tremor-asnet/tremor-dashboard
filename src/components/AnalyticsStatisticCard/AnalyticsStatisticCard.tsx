@@ -32,16 +32,18 @@ const AnalyticsStatisticCard = ({
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto py-3 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card className="mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="">
             <IconBox
               className="absolute top-[-22px]"
               bgBox={bgIcon}
               icon={icon}
             />
-            <Flex className="pl-[90px] flex-col mb-1 items-end">
-              <Text className="text-md text-secondary font-light">{type}</Text>
-              <Text className="!text-2xl text-primary leading-[33px] tracking-[0.1764px] mt-3 font-bold">
+            <Flex className="pl-[90px] flex-col items-end">
+              <Text className="text-md text-secondary font-light tracking-[0.4px]">
+                {type}
+              </Text>
+              <Text className="!text-2xl text-primary leading-[33px] tracking-[0.1764px] font-bold">
                 {amount}
               </Text>
             </Flex>

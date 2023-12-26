@@ -1,3 +1,8 @@
+"use client";
+
+//Libs
+import { useState } from "react";
+
 //Components
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
@@ -33,6 +38,8 @@ const AnalyticsLineChart = ({
   descValue,
   isDailyChart = true,
 }: LineChartProps) => {
+  const [setValue] = useState<any>(null);
+
   return (
     <div className="w-full bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
@@ -41,7 +48,7 @@ const AnalyticsLineChart = ({
             <div className="-mt-10">
               <Card
                 className={`${
-                  type === CHART_TYPE.SALE
+                  type === CHART_TYPE.PERFORMANCE
                     ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
                     : "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]"
                 } p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]`}>
@@ -56,6 +63,7 @@ const AnalyticsLineChart = ({
                   ]}
                   yAxisWidth={30}
                   showAnimation={true}
+                  onValueChange={(v: any) => setValue(v)}
                 />
               </Card>
             </div>
@@ -71,9 +79,9 @@ const AnalyticsLineChart = ({
               {subTitle}
             </Subtitle>
           </div>
-          <hr className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
+          <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">
-            <FaRegClock size={14} color={"#7b809a"} />
+            <FaRegClock size={12} color={"#7b809a"} />
             <Text className="text-sm font-light opacity-100 text-[#7b809a] ml-1">
               {scheduleText}
             </Text>

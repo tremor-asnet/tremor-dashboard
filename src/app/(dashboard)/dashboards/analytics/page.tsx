@@ -12,7 +12,7 @@ import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 // Actions
 import { getAnalytics } from "@/app/actions/analyticsActions";
 
-type AnalyticsStatistical = {
+type TAnalyticsStatistical = {
   type: string;
   amount: string;
   totalAmount: string;
@@ -67,7 +67,7 @@ const Analytics = async () => {
       </Flex>
       {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {sale_statistical?.map((item: AnalyticsStatistical) => (
+        {sale_statistical?.map((item: TAnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>

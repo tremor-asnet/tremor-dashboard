@@ -1,24 +1,24 @@
 import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
-type Data = {
+type TData = {
   description: string;
   sales: number;
 };
 
-type WebChartData = {
+type TWebChartData = {
   id: string;
   display: string;
   desc: string;
   modified: string;
-  data: Data[];
+  data: TData[];
 };
 
-interface ColumnChartProps {
-  webChartData: WebChartData;
+interface IWebChartData {
+  webChartData: TWebChartData;
 }
 
-const ColumnChart = ({ webChartData }: ColumnChartProps) => {
+const ColumnChart = ({ webChartData }: IWebChartData) => {
   const { display, desc, modified, data } = webChartData;
 
   return (

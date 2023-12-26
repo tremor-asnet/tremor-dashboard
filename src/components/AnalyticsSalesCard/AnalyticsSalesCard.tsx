@@ -92,7 +92,7 @@ const AnalyticsSalesCard = ({
                         <Text className="text-xs font-semibold leading-[1.25]">
                           Value:
                         </Text>
-                        <Text className="text-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
+                        <Text className="text-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           {value}
                         </Text>
                       </TableCell>

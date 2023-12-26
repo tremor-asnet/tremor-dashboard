@@ -47,6 +47,7 @@ export async function createNewAccount(
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
+      cache: "no-store",
       // @ts-ignore
       body: new URLSearchParams(formData),
     });

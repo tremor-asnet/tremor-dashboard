@@ -16,18 +16,20 @@ import { createNewAccount } from "@/app/actions/authenticationActions";
 
 // Types
 import { User } from "@/types";
+import { getFormData } from "@/helpers";
 
 export const SignUpForm = () => {
   const {
     control,
     formState: { errors },
+    handleSubmit,
   } = useForm<User>({
     defaultValues: {
       name: "",
       email: "",
       password: "",
     },
-    mode: "onBlur",
+    mode: "onSubmit",
   });
   const [createNewAccountRes, dispatch] = useFormState(
     createNewAccount,
@@ -58,6 +60,10 @@ export const SignUpForm = () => {
     setCloseToast(false);
   };
 
+  const handleSignUp = (value: User) => {
+    dispatch(getFormData(value));
+  };
+
   return (
     <Flex className="flex-col w-full m-auto rounded-xl shadow-dark-tremor-card antialiased font-primary">
       <div className="w-full p-4">
@@ -77,7 +83,9 @@ export const SignUpForm = () => {
             />
           </div>
         )}
-        <form action={dispatch} className="w-full p-2 sm:p-3">
+        <form
+          onSubmit={handleSubmit(handleSignUp)}
+          className="w-full p-2 sm:p-3">
           <Controller
             control={control}
             rules={{
@@ -91,7 +99,6 @@ export const SignUpForm = () => {
                   placeholder="Name"
                   autoFocus
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
-                  required
                   tabIndex={0}
                   {...field}
                 />
@@ -120,7 +127,6 @@ export const SignUpForm = () => {
                   placeholder="Email"
                   type="email"
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
-                  required
                   {...field}
                 />
                 {isEmailError && (
@@ -149,7 +155,6 @@ export const SignUpForm = () => {
                   placeholder="Password"
                   type="password"
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
-                  required
                   {...field}
                 />
                 {isPasswordError && (

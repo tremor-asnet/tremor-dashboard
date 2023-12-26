@@ -28,7 +28,7 @@ const AnalyticsStatisticCard = ({
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto py-3 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card className="mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="">
             <IconBox
               className="absolute top-[-22px] shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]"

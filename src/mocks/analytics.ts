@@ -1,5 +1,6 @@
 export const ANALYTIC_SALES_CARD = [
   {
+    id: "1",
     flag: "/assets/images/flags/US.webp",
     country: "United State",
     sales: "2500",
@@ -7,6 +8,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "29.9%",
   },
   {
+    id: "2",
     flag: "/assets/images/flags/DE.webp",
     country: "Germany",
     sales: "3.900",
@@ -14,6 +16,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "40.22%",
   },
   {
+    id: "3",
     flag: "/assets/images/flags/GB.webp",
     country: "Great Britain",
     sales: "1.400",
@@ -21,6 +24,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "23.44%",
   },
   {
+    id: "4",
     flag: "/assets/images/flags/BR.webp",
     country: "Brasil",
     sales: "562",
@@ -31,24 +35,28 @@ export const ANALYTIC_SALES_CARD = [
 
 export const STATISTICAL_DATA = [
   {
+    id: "1",
     type: "Bookings",
     amount: "281",
     totalAmount: "55%",
     duration: "than last week",
   },
   {
+    id: "2",
     type: "Today's Users",
     amount: "2,300",
     totalAmount: "3%",
     duration: "than last month",
   },
   {
+    id: "3",
     type: "Revenue",
     amount: "34k",
     totalAmount: "1%",
     duration: "than yesterday",
   },
   {
+    id: "4",
     type: "Followers",
     amount: "+91",
     totalAmount: "",

@@ -131,6 +131,7 @@ module.exports = {
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
         "tremor-title": ["1rem", { lineHeight: "1.625rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
+        "tremor-normal": ["1.5rem", { lineHeight: "2rem" }],
       },
       fontFamily: {
         primary: ["Roboto", "Helvetica", "Arial", "sans-serif"],

@@ -3,13 +3,13 @@ import { ReactNode } from "react";
 
 //Components
 import { Card, Text, Flex } from "@tremor/react";
-import { MdLanguage } from "react-icons/md";
 import IconBox from "@/components/IconBox/IconBox";
 
 //Mocks
-import { STATISTICAL_DATA } from "@/mocks/analytics";
+import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 type AnalyticsStatistical = {
+  id: string;
   type: string;
   amount: string;
   totalAmount: string;
@@ -18,16 +18,12 @@ type AnalyticsStatistical = {
 
 interface IAnalyticsStatisticCard {
   statisticalData: AnalyticsStatistical;
-  bgIcon?: string;
-  icon?: ReactNode;
 }
 
 const AnalyticsStatisticCard = ({
-  statisticalData = STATISTICAL_DATA[0],
-  bgIcon = "bg-[linear-gradient(195deg,#42424a,#191919)]",
-  icon = <MdLanguage color="white" size="24px" />,
+  statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
-  const { type, amount, totalAmount, duration } = statisticalData;
+  const { id, type, amount, totalAmount, duration } = statisticalData;
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -35,15 +31,13 @@ const AnalyticsStatisticCard = ({
         <Card className="mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="">
             <IconBox
-              className="absolute top-[-22px]"
-              bgBox={bgIcon}
-              icon={icon}
+              className="absolute top-[-22px] shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]"
+              bgBox={SALE_STATISTICAL[id].bgIcon}
+              icon={SALE_STATISTICAL[id].icon}
             />
-            <Flex className="pl-[90px] flex-col items-end">
-              <Text className="text-md text-secondary font-light tracking-[0.4px]">
-                {type}
-              </Text>
-              <Text className="!text-2xl text-primary leading-[33px] tracking-[0.1764px] font-bold">
+            <Flex className="pl-[90px] flex-col mb-1 items-end">
+              <Text className="text-md text-secondary font-light">{type}</Text>
+              <Text className="!text-primary text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
                 {amount}
               </Text>
             </Flex>

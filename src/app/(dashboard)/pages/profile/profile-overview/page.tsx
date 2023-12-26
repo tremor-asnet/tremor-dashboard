@@ -10,9 +10,6 @@ import {
   PlatformSetting,
 } from "@/components";
 
-// Constants
-import { TABS_HEADER } from "@/constants";
-
 // Mocks
 import { PROFILE_HEADER } from "@/mocks";
 
@@ -39,7 +36,6 @@ const Profile = async () => {
               role={profileData.role}
               src={PROFILE_HEADER.src}
             />
-            <Tabs tabs={TABS_HEADER} className="mx-auto sm:mx-0" />
           </Flex>
           {/* Main content */}
           <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-5">

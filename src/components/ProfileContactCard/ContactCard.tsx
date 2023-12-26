@@ -59,7 +59,9 @@ const ContactCard = ({
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
             Email
           </Text>
-          <Text className="font-normal">{email}</Text>
+          <Link href={email}>
+            <Text className="font-normal">{email}</Text>
+          </Link>
         </Flex>
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">

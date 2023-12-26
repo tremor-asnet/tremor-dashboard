@@ -46,14 +46,14 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
             <Title className="text-base font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
-            <Subtitle className="text-sm font-light opacity-100 text-[#7b809a]">
+            <Subtitle className="text-sm font-light opacity-100 text-secondary">
               {desc}
             </Subtitle>
           </div>
-          <hr className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
+          <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">
-            <FaRegClock size={14} color={"#7b809a"} />
-            <Text className="text-sm font-light opacity-100 text-[#7b809a] ml-1">
+            <FaRegClock size={12} color={"#7b809a"} />
+            <Text className="text-sm font-light opacity-100 text-secondary ml-1">
               {modified}
             </Text>
           </Flex>

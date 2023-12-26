@@ -14,7 +14,7 @@ export interface AnalyticsInfoProps {
 const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
   const { photo, name, description, price, location } = infoData;
   return (
-    <Card className="group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info">
+    <Card className="group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info">
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <Image

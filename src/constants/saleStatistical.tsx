@@ -1,10 +1,6 @@
 import { ReactNode } from "react";
-import {
-  MdLeaderboard,
-  MdOutlinePersonAdd,
-  MdOutlineStore,
-  MdWeekend,
-} from "react-icons/md";
+import { IoMdPersonAdd } from "react-icons/io";
+import { MdLeaderboard, MdStore, MdWeekend } from "react-icons/md";
 
 type Icon = {
   bgIcon: string;
@@ -26,10 +22,10 @@ export const SALE_STATISTICAL: Sale = {
   },
   revenue: {
     bgIcon: "bg-[linear-gradient(195deg,#66BB6A,#43A047)]",
-    icon: <MdOutlineStore color="white" size="24px" />,
+    icon: <MdStore color="white" size="24px" />,
   },
   followers: {
     bgIcon: "bg-[linear-gradient(195deg,#EC407A,#D81B60)]",
-    icon: <MdOutlinePersonAdd color="white" size="24px" />,
+    icon: <IoMdPersonAdd color="white" size="24px" />,
   },
 };

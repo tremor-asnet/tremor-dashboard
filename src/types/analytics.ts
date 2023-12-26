@@ -26,3 +26,14 @@ export type LINE_CHART = {
   modified: string;
   data: LINE_CHART_DATA[];
 };
+
+type TFixedProps = {
+  eventType: "dot" | "category" | "bar" | "slice" | "bubble";
+  categoryClicked: string;
+};
+
+type TBaseEventProps = TFixedProps & {
+  [key: string]: number | string;
+};
+
+export type TEventProps = TBaseEventProps | null | undefined;

@@ -35,7 +35,7 @@ const Analytics = async () => {
   } = analyticsData;
 
   const dataLineCharts =
-    [performance_statistic, daily_sale_statistic] || LINE_CHART_DATA;
+    [daily_sale_statistic, performance_statistic] || LINE_CHART_DATA;
 
   return (
     <Flex className="flex-col flex-wrap justify-start">
@@ -61,6 +61,7 @@ const Analytics = async () => {
               title={item.display}
               subTitle={item.desc}
               scheduleText={item.modified}
+              descValue={item.descValue}
               isDailyChart={item.id === CHART_TYPE.SALE}
             />
           </Flex>

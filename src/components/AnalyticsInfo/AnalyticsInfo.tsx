@@ -25,7 +25,7 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
             alt={name}
             sizes="(min-width: 768px) 33vw, 70vw"
           />
-          <div className="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black opacity-30 blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"></div>
+          <div className="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"></div>
         </Flex>
         <Flex className="flex-col pt-7 px-2">
           <Flex className="justify-center cursor-pointer -mt-14">

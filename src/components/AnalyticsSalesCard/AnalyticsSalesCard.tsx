@@ -83,7 +83,7 @@ const AnalyticsSalesCard = ({
                     {isAnalytics && (
                       <TableCell className="p-4 pb-3.5 w-3/12 analytics-value">
                         <Text className="text-xs font-semibold">Value:</Text>
-                        <Text className="text-tremor-content-title">
+                        <Text className="text-tremor-content-title truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           {value}
                         </Text>
                       </TableCell>

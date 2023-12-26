@@ -43,10 +43,12 @@ const AnalyticsSalesCard = ({
         <MdLanguage />
       </Flex>
       <Flex className="flex-col items-start justify-start mt-4 ml-[6.5rem]">
-        <Title className="text-xl font-bold text-base">{title}</Title>
+        <Title className="text-lg font-bold text-primary tracking-[0.0075em]">
+          {title}
+        </Title>
       </Flex>
     </Flex>
-    <Flex className="relative mt-6 lg:mt-0 px-4 flex-col lg:flex-row">
+    <Flex className="relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row">
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
         {data.map(item => {
           const { id, country, sales, value, bounce } = item;
@@ -57,7 +59,7 @@ const AnalyticsSalesCard = ({
               <Table className="w-full">
                 <TableBody className="last-child:border-black">
                   <TableRow className="border-solid">
-                    <TableCell className="p-4 pb-3.5 w-6/12 md:w-4/12 border-gray-500">
+                    <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
                       <Flex className="items-center">
                         <Image
                           src={FLAG_SRC[id]}
@@ -67,30 +69,38 @@ const AnalyticsSalesCard = ({
                           priority
                         />
                         <Flex className="items-start flex-col ml-6">
-                          <Text className="text-xs font-semibold">
+                          <Text className="text-xs font-semibold leading-[1.25] tracking-[0.03333em]">
                             Country:
                           </Text>
-                          <Text className="text-tremor-content-title">
+                          <Text className="text-tremor-content-title leading-[1.5]">
                             {country}
                           </Text>
                         </Flex>
                       </Flex>
                     </TableCell>
-                    <TableCell className="p-4 pb-3.5 w-3/12">
-                      <Text className="text-xs font-semibold">Sale:</Text>
-                      <Text className="text-tremor-content-title">{sales}</Text>
+                    <TableCell className="px-4 py-3 text-center">
+                      <Text className="text-xs font-semibold leading-[1.25]">
+                        Sales:
+                      </Text>
+                      <Text className="text-tremor-content-title leading-[1.5]">
+                        {sales}
+                      </Text>
                     </TableCell>
                     {isAnalytics && (
-                      <TableCell className="p-4 pb-3.5 w-3/12 analytics-value">
-                        <Text className="text-xs font-semibold">Value:</Text>
-                        <Text className="text-tremor-content-title">
+                      <TableCell className="px-4 py-3 text-center analytics-value">
+                        <Text className="text-xs font-semibold leading-[1.25]">
+                          Value:
+                        </Text>
+                        <Text className="text-tremor-content-title leading-[1.5]">
                           {value}
                         </Text>
                       </TableCell>
                     )}
-                    <TableCell className="p-4 pb-3.5 w-2/12 hidden sm:table-cell">
-                      <Text className="text-xs font-semibold">Bounce:</Text>
-                      <Text className="text-tremor-content-title">
+                    <TableCell className="px-4 py-3 text-center hidden sm:table-cell">
+                      <Text className="text-xs font-semibold leading-[1.25]">
+                        Bounce:
+                      </Text>
+                      <Text className="text-tremor-content-title leading-[1.5]">
                         {bounce}
                       </Text>
                     </TableCell>
@@ -102,8 +112,15 @@ const AnalyticsSalesCard = ({
         })}
       </Flex>
       {isAnalytics && (
-        <Flex className="justify-center pb-6 px-16 lg:p-6 analytics-map">
-          <Image src={chart} width="380" height="250" alt="chart" priority />
+        <Flex className="justify-center pb-6 px-16 lg:p-0 analytics-map">
+          <Image
+            className="mt-0 lg:-mt-10"
+            src={chart}
+            width="380"
+            height="250"
+            alt="chart"
+            priority
+          />
         </Flex>
       )}
     </Flex>

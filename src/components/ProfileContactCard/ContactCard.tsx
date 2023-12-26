@@ -59,7 +59,7 @@ const ContactCard = ({
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
             Email
           </Text>
-          <Link href={email}>
+          <Link href={`mailto:${email}`}>
             <Text className="font-normal">{email}</Text>
           </Link>
         </Flex>

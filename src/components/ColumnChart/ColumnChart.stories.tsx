@@ -16,12 +16,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <ColumnChart
-      data={WEBSITE_CHART}
-      title={"website views"}
-      subTitle={"Last Campaign Performance"}
-      scheduleText={"campaign sent 2 days ago"}
-    />
-  ),
+  render: () => <ColumnChart webChartData={WEBSITE_CHART} />,
 };

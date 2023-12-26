@@ -12,7 +12,7 @@ import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 // Actions
 import { getAnalytics } from "@/app/actions/analyticsActions";
 
-type AnalyticsStatistical = {
+type TAnalyticsStatistical = {
   type: string;
   amount: string;
   totalAmount: string;
@@ -30,6 +30,7 @@ const Analytics = async () => {
     sale_by_country,
     sale_statistical,
     apartment_statistic,
+    web_statistic,
   } = analyticsData;
 
   const dataLineCharts =
@@ -48,12 +49,7 @@ const Analytics = async () => {
       <Flex className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6">
         {/* Website Views chart */}
         <Flex>
-          <ColumnChart
-            data={WEBSITE_CHART}
-            title={"website views"}
-            subTitle={"Last Campaign Performance"}
-            scheduleText={"campaign sent 2 days ago"}
-          />
+          <ColumnChart webChartData={web_statistic || WEBSITE_CHART} />
         </Flex>
         {/* Line chart */}
         {dataLineCharts?.map((item: LINE_CHART) => (
@@ -71,7 +67,7 @@ const Analytics = async () => {
       </Flex>
       {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {sale_statistical?.map((item: AnalyticsStatistical) => (
+        {sale_statistical?.map((item: TAnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>

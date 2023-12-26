@@ -83,33 +83,39 @@ export const ANALYTIC_INFO = [
   },
 ];
 
-export const WEBSITE_CHART = [
-  {
-    description: "M",
-    sales: 50,
-  },
-  {
-    description: "T",
-    sales: 20,
-  },
-  {
-    description: "W",
-    sales: 10,
-  },
-  {
-    description: "T",
-    sales: 22,
-  },
-  {
-    description: "F",
-    sales: 50,
-  },
-  {
-    description: "S",
-    sales: 10,
-  },
-  {
-    description: "S",
-    sales: 40,
-  },
-];
+export const WEBSITE_CHART = {
+  id: "view-campaign",
+  display: "Website Views",
+  desc: "Last Campaign Performance",
+  modified: "campaign sent 2 days ago",
+  data: [
+    {
+      description: "M",
+      sales: 50,
+    },
+    {
+      description: "T",
+      sales: 20,
+    },
+    {
+      description: "W",
+      sales: 10,
+    },
+    {
+      description: "T",
+      sales: 22,
+    },
+    {
+      description: "F",
+      sales: 50,
+    },
+    {
+      description: "S",
+      sales: 10,
+    },
+    {
+      description: "S",
+      sales: 40,
+    },
+  ],
+};

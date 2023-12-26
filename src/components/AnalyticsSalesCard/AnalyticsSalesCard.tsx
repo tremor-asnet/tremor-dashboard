@@ -52,6 +52,7 @@ const AnalyticsSalesCard = ({
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
         {data.map(item => {
           const { id, country, sales, value, bounce } = item;
+
           return (
             <Flex
               key={id}
@@ -91,7 +92,7 @@ const AnalyticsSalesCard = ({
                         <Text className="text-xs font-semibold leading-[1.25]">
                           Value:
                         </Text>
-                        <Text className="text-tremor-content-title leading-[1.5]">
+                        <Text className="text-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           {value}
                         </Text>
                       </TableCell>

@@ -13,6 +13,7 @@ import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 import { getAnalytics } from "@/app/actions/analyticsActions";
 
 type TAnalyticsStatistical = {
+  id: string;
   type: string;
   amount: string;
   totalAmount: string;

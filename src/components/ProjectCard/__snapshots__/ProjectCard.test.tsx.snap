@@ -6,13 +6,13 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="antialiased items-center justify-between py-1"
+        class="antialiased items-center justify-between pb-1"
       >
         <div
           class="flex items-center"
         >
           <div
-            class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] border-none relative mt-[40px] rounded-xl shadow-md"
+            class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
           >
             <div
               class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl"
@@ -35,12 +35,12 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-col items-start justify-start"
               >
                 <p
-                  class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-bold text-base leading-5"
+                  class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-semibold text-base leading-5"
                 >
                   Slack Bot
                 </p>
                 <div
-                  class="tremor-Flex-root flex w-full flex-row items-start justify-start ml-[10px]"
+                  class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
                 >
                   <div
                     class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
@@ -99,19 +99,19 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                   class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                   />
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                   />
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                   />
                 </div>
               </div>
             </div>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-md text-[#7b809a] my-4 font-light"
+              class="text-tremor-default dark:text-dark-tremor-content text-md text-secondary my-4 font-light"
             >
               If everything I did failed - which it doesn't, I think that it actually succeeds.
             </p>
@@ -123,24 +123,24 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
             >
               <div>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-[#344767] font-semibold"
+                  class="text-tremor-default dark:text-dark-tremor-content text-primary font-semibold"
                 >
                   3
                 </p>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-[#7b809a] font-normal"
+                  class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
                 >
                   Participants
                 </p>
               </div>
               <div>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-[#344767] font-semibold"
+                  class="text-tremor-default dark:text-dark-tremor-content text-primary font-semibold"
                 >
-                  02.03.22
+                  03.02.22
                 </p>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-[#7b809a] font-normal"
+                  class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
                 >
                   Due date
                 </p>
@@ -153,13 +153,13 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="antialiased items-center justify-between py-1"
+      class="antialiased items-center justify-between pb-1"
     >
       <div
         class="flex items-center"
       >
         <div
-          class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] border-none relative mt-[40px] rounded-xl shadow-md"
+          class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
         >
           <div
             class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl"
@@ -182,12 +182,12 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-col items-start justify-start"
             >
               <p
-                class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-bold text-base leading-5"
+                class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-semibold text-base leading-5"
               >
                 Slack Bot
               </p>
               <div
-                class="tremor-Flex-root flex w-full flex-row items-start justify-start ml-[10px]"
+                class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
               >
                 <div
                   class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
@@ -246,19 +246,19 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                 />
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                 />
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-[#7b809a]"
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
                 />
               </div>
             </div>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-md text-[#7b809a] my-4 font-light"
+            class="text-tremor-default dark:text-dark-tremor-content text-md text-secondary my-4 font-light"
           >
             If everything I did failed - which it doesn't, I think that it actually succeeds.
           </p>
@@ -270,24 +270,24 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
           >
             <div>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-[#344767] font-semibold"
+                class="text-tremor-default dark:text-dark-tremor-content text-primary font-semibold"
               >
                 3
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-[#7b809a] font-normal"
+                class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
               >
                 Participants
               </p>
             </div>
             <div>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-[#344767] font-semibold"
+                class="text-tremor-default dark:text-dark-tremor-content text-primary font-semibold"
               >
-                02.03.22
+                03.02.22
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-[#7b809a] font-normal"
+                class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
               >
                 Due date
               </p>

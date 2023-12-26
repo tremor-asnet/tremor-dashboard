@@ -3,7 +3,7 @@
 // Libs
 import { useState } from "react";
 import { useFormState, useFormStatus } from "react-dom";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, Form } from "react-hook-form";
 
 // Components
 import { TextInput, Button, Flex, Switch, Text, Title } from "@tremor/react";
@@ -17,17 +17,19 @@ import { User } from "@/types";
 
 // Actions
 import { authenticate } from "../../actions/authenticationActions";
+import { getFormData } from "@/helpers";
 
 const SignInForm = () => {
   const {
     control,
     formState: { errors },
+    handleSubmit,
   } = useForm<User>({
     defaultValues: {
       email: "",
       password: "",
     },
-    mode: "onBlur",
+    mode: "onSubmit",
   });
 
   const [authenticateRes, dispatch] = useFormState(authenticate, undefined);
@@ -47,6 +49,10 @@ const SignInForm = () => {
     setIsSwitchOn(value);
   };
 
+  const handleSignIn = (value: User) => {
+    dispatch(getFormData(value));
+  };
+
   return (
     <div className="w-full p-4 antialiased font-primary">
       <Flex className="bg-gradient-primary rounded-xl -mt-11 xs:justify-between sm:justify-center flex-col mb-7 shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]">
@@ -54,7 +60,7 @@ const SignInForm = () => {
           Sign in
         </Title>
       </Flex>
-      <form action={dispatch} className="w-full sm:p-3">
+      <form onSubmit={handleSubmit(handleSignIn)} className="w-full sm:p-3">
         <Controller
           control={control}
           rules={{
@@ -72,7 +78,6 @@ const SignInForm = () => {
                 placeholder="Email"
                 type="email"
                 autoFocus
-                required
                 {...field}
                 className="py-0.5 w-full"
               />
@@ -102,7 +107,6 @@ const SignInForm = () => {
                 placeholder="Password"
                 type="password"
                 className="py-0.5 w-full"
-                required
                 {...field}
               />
               {isPasswordError && (

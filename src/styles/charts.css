@@ -1,0 +1,22 @@
+.recharts-dot.recharts-line-dot {
+  @apply fill-[azure];
+  stroke-opacity: inherit;
+}
+
+.recharts-text.recharts-cartesian-axis-tick-value {
+  @apply stroke-none fill-[white] font-thin text-sm;
+}
+
+.recharts-curve.recharts-line-curve,
+.recharts-dot.recharts-line-dot {
+  @apply stroke-white font-thin;
+}
+
+.recharts-curve.recharts-line-curve,
+.recharts-dot.recharts-line-dot {
+  @apply stroke-[4];
+}
+
+.recharts-legend-wrapper {
+  @apply hidden;
+}

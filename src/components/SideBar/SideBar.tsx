@@ -112,8 +112,10 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               {ITEMS.map(item => {
                 const { label, href, content } = item;
                 return (
-                  <ListItem className="leading-[26px]" key={label}>
-                    <Link className="w-full flex font-normal" href={href}>
+                  <ListItem className="leading-[26px] !p-0" key={label}>
+                    <Link
+                      className="w-full flex font-normal py-3 px-6"
+                      href={href}>
                       <span>{content}</span>
                       <span className={`${isOpen ? "xl:hidden" : ""}`}>
                         {label}
@@ -122,14 +124,16 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                   </ListItem>
                 );
               })}
-              <ListItem className="leading-[26px] relative">
+              <ListItem className="leading-[26px] relative !p-0">
                 <form
                   action={onSignOut}
-                  className="w-full flex gap-5 font-normal">
-                  <span>L</span>
+                  className="w-full flex items-center font-normal relative">
+                  <span className="absolute left-6">L</span>
                   <button
                     type="submit"
-                    className={`${isOpen ? "xl:hidden" : ""}`}>
+                    className={`${
+                      isOpen ? "xl:hidden" : ""
+                    } w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
                     Logout
                   </button>
                 </form>
@@ -161,8 +165,10 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               <ListItem
                 className={`${
                   isAnalyticsPage ? "bg-[rgb(52,71,103)]" : ""
-                } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
-                <Link className="font-normal" href={ROUTES.ANALYTICS}>
+                } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
+                <Link
+                  className="font-normal w-full py-3 px-6"
+                  href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
                     {ITEMS_DASHBOARD[0].label}
@@ -172,8 +178,10 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               <ListItem
                 className={`${
                   isSalesPage ? "bg-[rgb(52,71,103)]" : ""
-                } my-[3px] leading-[26px] rounded-md hover:bg-none`}>
-                <Link className="font-normal" href={ROUTES.SALES}>
+                } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
+                <Link
+                  className="font-normal w-full py-3 px-6"
+                  href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
                   <span className={`${isOpen ? "xl:hidden" : ""}`}>
                     {ITEMS_DASHBOARD[1].label}
@@ -225,9 +233,11 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                         <ListItem
                           className={`${
                             href === pathname ? "bg-[rgb(52,71,103)]" : ""
-                          } leading-[26px] mt-1 rounded-md`}
+                          } !p-0 leading-[26px] mt-1 rounded-md`}
                           key={label}>
-                          <Link className="font-normal" href={href}>
+                          <Link
+                            className="font-normal w-full py-3 px-8"
+                            href={href}>
                             <span>{content}</span>
                             <span className={`${isOpen ? "xl:hidden" : ""}`}>
                               {label}

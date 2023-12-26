@@ -14,7 +14,9 @@ const getUserByEmail = async (email: string): Promise<User | undefined> => {
     return undefined;
   }
 
-  const res = await fetch(`${ROUTER_API_URL}/users?email=${email}`);
+  const res = await fetch(`${ROUTER_API_URL}/users?email=${email}`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch user.");

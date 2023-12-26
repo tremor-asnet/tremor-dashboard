@@ -103,6 +103,8 @@ module.exports = {
           "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
         "gradient-primary":
           "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
+        "gradient-line":
+          "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
       },
       boxShadow: {
         // light
@@ -131,6 +133,7 @@ module.exports = {
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
         "tremor-title": ["1rem", { lineHeight: "1.625rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
+        "tremor-normal": ["1.5rem", { lineHeight: "2rem" }],
       },
       fontFamily: {
         primary: ["Roboto", "Helvetica", "Arial", "sans-serif"],

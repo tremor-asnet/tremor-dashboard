@@ -36,4 +36,4 @@ type TBaseEventProps = TFixedProps & {
   [key: string]: number | string;
 };
 
-type TEventProps = TBaseEventProps | null | undefined;
+export type TEventProps = TBaseEventProps | null | undefined;

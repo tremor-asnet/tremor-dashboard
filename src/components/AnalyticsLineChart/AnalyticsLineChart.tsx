@@ -13,23 +13,12 @@ import { FaRegClock } from "react-icons/fa";
 import "@/styles/charts.css";
 
 //Types
-import { CHART_TYPE, LINE_CHART_DATA } from "@/types";
+import { TEventProps, CHART_TYPE, LINE_CHART_DATA } from "@/types";
 
 enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",
   MOBILE = "Mobile apps",
 }
-
-type FixedProps = {
-  eventType: "dot" | "category" | "bar" | "slice" | "bubble";
-  categoryClicked: string;
-};
-
-type BaseEventProps = FixedProps & {
-  [key: string]: number | string;
-};
-
-type EventProps = BaseEventProps | null | undefined;
 
 interface LineChartProps {
   dataChart: LINE_CHART_DATA[];
@@ -75,7 +64,7 @@ const AnalyticsLineChart = ({
                   ]}
                   yAxisWidth={30}
                   showAnimation={true}
-                  onValueChange={(v: EventProps) => setValue(v)}
+                  onValueChange={(v: TEventProps) => setValue(v)}
                 />
               </Card>
             </div>

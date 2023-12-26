@@ -48,7 +48,9 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
           </Flex>
           <Flex className="justify-end font-primary text-secondary font-light">
             <PiMapPinFill className="text-tremor-content text-xl mr-1" />
-            <Text className=" tracking-[0.4px] leading-[21px]">{location}</Text>
+            <Text className="tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]">
+              {location}
+            </Text>
           </Flex>
         </Flex>
       </Flex>

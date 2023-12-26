@@ -5,9 +5,6 @@ import { MdAdd } from "react-icons/md";
 import { ProfileInfo, Tabs } from "@/components";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
-// Constants
-import { TABS_HEADER } from "@/constants/profile";
-
 // Mocks
 import { PROFILE_HEADER } from "@/mocks";
 
@@ -41,7 +38,6 @@ const Projects = async () => {
               role={profileData.role}
               src={PROFILE_HEADER.src}
             />
-            <Tabs tabs={TABS_HEADER} className="mx-auto sm:mx-0" />
           </Flex>
         </Card>
       </div>

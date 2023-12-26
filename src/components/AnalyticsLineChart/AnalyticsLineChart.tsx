@@ -19,6 +19,18 @@ enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",
   MOBILE = "Mobile apps",
 }
+
+type FixedProps = {
+  eventType: "dot" | "category" | "bar" | "slice" | "bubble";
+  categoryClicked: string;
+};
+
+type BaseEventProps = FixedProps & {
+  [key: string]: number | string;
+};
+
+type EventProps = BaseEventProps | null | undefined;
+
 interface LineChartProps {
   dataChart: LINE_CHART_DATA[];
   type?: string;
@@ -63,7 +75,7 @@ const AnalyticsLineChart = ({
                   ]}
                   yAxisWidth={30}
                   showAnimation={true}
-                  onValueChange={(v: any) => setValue(v)}
+                  onValueChange={(v: EventProps) => setValue(v)}
                 />
               </Card>
             </div>

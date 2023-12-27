@@ -95,7 +95,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
           height={28}
           alt="Logo"
         />
-        <Link href={ROUTES.HOME}>
+        <Link href={ROUTES.HOME} onClick={toggleSideBar}>
           <Metric
             className={`text-white text-tremor-default ${
               isOpen ? "xl:hidden" : ""
@@ -138,6 +138,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 return (
                   <ListItem className="leading-[26px] !p-0" key={label}>
                     <Link
+                      onClick={toggleSideBar}
                       className="w-full flex font-normal py-3 px-6"
                       href={href}>
                       <span>{content}</span>
@@ -191,6 +192,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                   isAnalyticsPage ? "bg-[rgb(52,71,103)]" : ""
                 } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
                 <Link
+                  onClick={toggleSideBar}
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
@@ -204,6 +206,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                   isSalesPage ? "bg-[rgb(52,71,103)]" : ""
                 } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
                 <Link
+                  onClick={toggleSideBar}
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
@@ -260,6 +263,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                           } !p-0 leading-[26px] mt-1 rounded-md`}
                           key={label}>
                           <Link
+                            onClick={toggleSideBar}
                             className="font-normal w-full py-3 px-8"
                             href={href}>
                             <span>{content}</span>

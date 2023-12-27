@@ -46,6 +46,9 @@ import "./styles.css";
 // Components
 import { LoadingIndicator } from "@/components";
 
+//Helpers
+import { isBrowser } from "@/helpers";
+
 interface SideBarProps {
   onSignOut: () => Promise<void>;
   isSignOutProcessing: boolean;
@@ -82,7 +85,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
 
   const handleToggleSideBar = () => {
     // handle to when lick to a page the SideBar only close on screen < 768
-    if (window.innerWidth <= 767) {
+    if (isBrowser && window.innerWidth <= 767) {
       toggleSideBar();
     }
   };

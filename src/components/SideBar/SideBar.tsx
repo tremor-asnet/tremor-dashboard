@@ -105,7 +105,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
           height={28}
           alt="Logo"
         />
-        <Link href={ROUTES.HOME} onClick={toggleSideBar}>
+        <Link href={ROUTES.HOME} onClick={handleToggleSideBar}>
           <Metric
             className={`text-white text-tremor-default ${
               isOpen ? "xl:hidden" : ""

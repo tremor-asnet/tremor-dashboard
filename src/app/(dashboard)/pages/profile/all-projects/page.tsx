@@ -33,10 +33,9 @@ const Projects = async () => {
             {/* TODO: Will update when have profile header component */}
             {/* Header */}
             <ProfileInfo
-              isOnHeader={true}
               name={profileData.name}
               role={profileData.role}
-              src={PROFILE_HEADER.src}
+              avatarUrl={PROFILE_HEADER.avatarUrl}
             />
           </Flex>
         </Card>

@@ -1,10 +1,10 @@
 import { Profile } from "@/types/profile";
 
 export const PROFILE_HEADER = {
-  src: "/images/avatar/avatar-md.webp",
+  avatarUrl: "/images/avatar/avatar-lg.webp",
   alt: "image",
   name: "Richard Davis",
-  description: "CEO / Co-Founder",
+  role: "CEO / Co-Founder",
 };
 
 export const PROFILE_ITEM = {

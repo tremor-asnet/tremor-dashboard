@@ -1,6 +1,7 @@
 "use client";
 
 // lib
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
@@ -57,8 +58,31 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
   const isAnalyticsPage = pathname === ROUTES.ANALYTICS;
   const isSalesPage = pathname === ROUTES.SALES;
 
+  const sideBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Add event listener to the document object
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleClickOutside = (event: Event) => {
+    const { current } = sideBarRef;
+    if (current && !current.contains(event.target as Node)) {
+      // Clicked outside the side navigation bar, close it
+      if (isOpen) {
+        toggleSideBar();
+      }
+    }
+  };
+
   return (
     <div
+      ref={sideBarRef}
       className={`sidebar antialiased bg-gradient-primary w-[250px] z-10 rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isOpen
           ? "translate-x-0 xl:w-[100px]"

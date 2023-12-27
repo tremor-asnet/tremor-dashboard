@@ -28,13 +28,12 @@ const Profile = async () => {
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
         <Card>
-          <Flex className="mb-2 py-2 flex-col md:flex-row items-start md:items-center">
+          <Flex className="flex-col md:flex-row items-start md:items-center">
             {/* Header */}
             <ProfileInfo
-              isOnHeader={true}
               name={profileData.name}
               role={profileData.role}
-              src={PROFILE_HEADER.src}
+              avatarUrl={PROFILE_HEADER.avatarUrl}
             />
           </Flex>
           {/* Main content */}

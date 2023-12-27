@@ -6,13 +6,13 @@ exports[`Testing profile info component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col lg:flex-row lg:items-center justify-between py-1"
+        class="flex flex-col lg:flex-row lg:items-center justify-between"
       >
         <div
-          class="flex flex-col xs:flex-row xs:items-center flex-wrap profile-info mb-6"
+          class="flex flex-col xs:flex-row xs:items-center flex-wrap profile-info mb-3 -mt-3 -ml-2"
         >
           <div
-            class="flex items-center mr-6 py-1"
+            class="flex items-center mr-6"
           >
             <div
               class="inline-flex rounded-full overflow-hidden shadow-lg"
@@ -51,13 +51,13 @@ exports[`Testing profile info component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col lg:flex-row lg:items-center justify-between py-1"
+      class="flex flex-col lg:flex-row lg:items-center justify-between"
     >
       <div
-        class="flex flex-col xs:flex-row xs:items-center flex-wrap profile-info mb-6"
+        class="flex flex-col xs:flex-row xs:items-center flex-wrap profile-info mb-3 -mt-3 -ml-2"
       >
         <div
-          class="flex items-center mr-6 py-1"
+          class="flex items-center mr-6"
         >
           <div
             class="inline-flex rounded-full overflow-hidden shadow-lg"

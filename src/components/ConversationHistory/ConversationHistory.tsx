@@ -18,7 +18,7 @@ const ConversationHistory = ({ profileList }: ConversationHistoryProps) => (
     </Text>
     {profileList.map(profile => (
       <ConversationItem
-        key={profile.name}
+        key={profile.name} // TODO: will use id from API
         src={profile.avatar}
         name={profile.name}
         description={profile.lastConversation}

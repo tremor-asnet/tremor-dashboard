@@ -1,4 +1,5 @@
 export type Profile = {
+  id: number;
   avatar: string;
   alt?: string;
   name: string;

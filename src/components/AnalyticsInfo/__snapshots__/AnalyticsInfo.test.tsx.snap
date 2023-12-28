@@ -6,7 +6,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info"
+        class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
       >
         <div
           class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
@@ -28,7 +28,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               width="800"
             />
             <div
-              class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black opacity-30 blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
+              class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
             />
           </div>
           <div
@@ -120,7 +120,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 />
               </svg>
               <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
+                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
               >
                 Barcelona, Spain
               </p>
@@ -132,7 +132,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info"
+      class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
     >
       <div
         class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
@@ -154,7 +154,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             width="800"
           />
           <div
-            class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black opacity-30 blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
+            class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
           />
         </div>
         <div
@@ -246,7 +246,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               />
             </svg>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
+              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
             >
               Barcelona, Spain
             </p>
@@ -312,7 +312,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
 exports[`Testing analytics sale chart component testing component analytics info card render when have data 1`] = `
 <div>
   <div
-    class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info"
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
   >
     <div
       class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
@@ -334,7 +334,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           width="800"
         />
         <div
-          class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black opacity-30 blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
+          class="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"
         />
       </div>
       <div
@@ -426,7 +426,7 @@ exports[`Testing analytics sale chart component testing component analytics info
             />
           </svg>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px]"
+            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
           >
             Barcelona, Spain
           </p>

@@ -8,8 +8,7 @@ import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 
 describe("ConversationHistory component", () => {
   const props = {
-    profileList: PROFILE_CONVERSATIONS,
-    onClick: jest.fn(),
+    conversationHistory: PROFILE_CONVERSATIONS,
   };
 
   const profile = () => {

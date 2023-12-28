@@ -1,6 +1,6 @@
-export type Profile = {
+export type ConversationHistory = {
+  id: number;
   avatar: string;
-  alt?: string;
   name: string;
   lastConversation: string;
 };

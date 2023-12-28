@@ -2,8 +2,7 @@ import { Flex, Card, Text } from "@tremor/react";
 
 // Components
 import {
-  Tabs,
-  ProfileConversations,
+  ConversationHistory,
   ProfileInfo,
   ProfileProjectCard,
   ContactCard,
@@ -14,13 +13,10 @@ import {
 import { PROFILE_HEADER } from "@/mocks";
 
 // Actions
-import {
-  getProfileConversations,
-  getProfileProject,
-} from "@/app/actions/profileAction";
+import { getProfile, getProfileProject } from "@/app/actions/profileAction";
 
 const Profile = async () => {
-  const profileData = await getProfileConversations();
+  const profileData = await getProfile();
   const projectData = await getProfileProject();
 
   return (
@@ -63,9 +59,8 @@ const Profile = async () => {
             </Flex>
             {/* Profile Conversations */}
             <div className="w-full lg:basis-1/3">
-              <ProfileConversations
-                title="conversations"
-                profileList={profileData?.conversations || []}
+              <ConversationHistory
+                conversationHistory={profileData?.conversations || []}
               />
             </div>
           </Flex>

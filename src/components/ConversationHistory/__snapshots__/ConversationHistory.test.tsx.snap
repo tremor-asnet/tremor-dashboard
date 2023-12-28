@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProfileConversation component Should render ProfileConversations snapshot correctly 1`] = `
+exports[`ConversationHistory component Should render ConversationHistory snapshot correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -8,7 +8,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
       <p
         class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
       >
-        Conversation
+        Profile Conversations
       </p>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
@@ -286,7 +286,7 @@ exports[`ProfileConversation component Should render ProfileConversations snapsh
     <p
       class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
     >
-      Conversation
+      Profile Conversations
     </p>
     <div
       class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"

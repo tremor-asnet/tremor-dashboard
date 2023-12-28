@@ -1,5 +1,5 @@
 export type ConversationHistory = {
-  id: number;
+  id: string;
   avatar: string;
   name: string;
   lastConversation: string;

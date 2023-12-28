@@ -8,7 +8,7 @@ export const PROFILE_HEADER = {
 };
 
 export const PROFILE_ITEM = {
-  id: 1,
+  id: "1",
   avatar: "/images/avatar/avatar-md.webp",
   name: "Sophie.B",
   lastConversation: "Hi! I need more information..",
@@ -16,31 +16,31 @@ export const PROFILE_ITEM = {
 
 export const PROFILE_CONVERSATIONS: ConversationHistory[] = [
   {
-    id: 1,
+    id: "1",
     avatar: "/images/avatar/avatar-md.webp",
     name: "Anne Marie",
     lastConversation: "Awesome work, can you..",
   },
   {
-    id: 2,
+    id: "2",
     avatar: "/images/avatar/avatar-lg.webp",
     name: "Ivanna",
     lastConversation: "About files I can..",
   },
   {
-    id: 3,
+    id: "3",
     avatar: "/images/avatar/avatar-xs.webp",
     name: "Peterson",
     lastConversation: "Have a great afternoon..",
   },
   {
-    id: 4,
+    id: "4",
     avatar: "/images/avatar/avatar-md.webp",
     name: "Sophie.B",
     lastConversation: "Hi! I need more information..",
   },
   {
-    id: 5,
+    id: "5",
     avatar: "/images/avatar/avatar-sm.webp",
     name: "Nick Daniel",
     lastConversation: "Hi! I need more information..",

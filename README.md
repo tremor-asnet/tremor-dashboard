@@ -1,74 +1,73 @@
-# Tremor Dashboard Web App
+# **REACT PROJECT - TREMOR DASHBOARD**
 
-- Design: [link](https://demos.creative-tim.com/nextjs-material-dashboard-pro/dashboards/analytics)
-- Requirements and Estimate: [link](https://docs.google.com/document/d/1Qiz9K69akpvoF_JJfTmk8pMrpDvHDYRFWhENPoXS2f0/edit?usp=sharing)
+### Overview:
 
-## Prerequisite
+- This is an internal project which will demonstrate the dashboard like a real system.
+- [Design](https://demos.creative-tim.com/nextjs-material-dashboard-pro/dashboards/analytics)
 
-- [Node](https://nodejs.org/): 18.14.x
-- [Pnpm](https://pnpm.io/)
+### Timeline:
 
-## Install app
+- Estimate time: 6 weeks (Start date: 28 Dec, 2023 - End date: 15 Feb, 2024).
 
-1. Pull code from the repo.
-2. Install the dependencies:
+### Libraries:
+- [React](https://react.dev/learn): is a JavaScript library for building user interfaces.
+- [React Hook Form](https://react-hook-form.com/): React Hook Form reduces the amount of code you need to write while removing unnecessary re-renders.
+- [TailwindCSS](https://tailwindcss.com/): Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
+- [NextJS](https://nextjs.org/): Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start): is a standard library for routing in React.
+- [Tremor](https://www.tremor.so/): Modular components to build dashboards in a breeze. Fully open-source, made by data scientists and software engineers with a sweet spot for design.
+- [Zustand](https://github.com/pmndrs/zustand):A small, fast, and scalable bearbones state management solution. Zustand has a comfy API based on hooks. It isn't boilerplate or opinionated, but has enough convention to be explicit and flux-like.
+- [Storybook](https://storybook.js.org/): captures the rendered state of a UI component. Developers write multiple stories per component that describe all the "interesting" states a component can support.
+- Editor: Visual Studio Code.
 
-```bash
-pnpm i
-```
+### Testing
 
-3. Create `.env` file and following `.env.example` format. Please contact development team to get the key.
+- [React Testing Library](https://testing-library.com/): Simple and complete testing utilities that encourage good testing practices. Is a light-weight solution for testing web pages by querying and interacting with DOM nodes.
 
-## Integrate with your tools
+### Debug tool
 
-- [Set up project integrations](https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard/-/settings/integrations)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) React Developer Tools is a Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies in the Chrome Developer Tools.
+- [Responsively App](https://responsively.app/): A simple application for developing, help dev test design in many screens.
 
-## Collaborate with your team
+### Hosting
 
-- [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+- Open http://localhost:3000 to view it in the browser.
 
-First, run the development server:
+### Deployment
 
-```bash
-pnpm run dev
-```
+- Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Document:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Requirements and plan](https://docs.google.com/document/d/1AOGXX2PbQ1fzuvY2w9G-IrFAWZRk3WjG4GszbrT4bFU/edit) 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Flow App
 
-### How to build app
+![Flow App Tremor Dashboard](./public/assets/images/flow-app.png)
 
-1. To build the app:
+### Task Management
 
-```bash
-pnpm run build
-```
+- [Trello](https://trello.com/b/zopSAsHB/tremor-dashboard-tasks)
 
-2. To start the build on local:
+## Getting started
 
-```bash
-pnpm start
-```
+Build and Run app:
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Command                                                                         | Action                        |
+| :-------------------------------------------------------------------------------| :---------------------------- |
+| `$ git clone https://gitlab.asoft-python.com/van.nguyenthi/tremor-dashboard.git`| Clone Repository with HTTPS   |
+| `$ git clone git@gitlab.asoft-python.com:van.nguyenthi/tremor-dashboard.git`    | Clone Repository with SSH     |
+| `$ cd tremor-dashboard`                                                         | Redirect to folder            |
+| `$ git checkout develop`                                                        | Checkout branch               |
+| `$ npm i pnpm`                                                                  | Install packages pnpm         |
+| `$ pnpm install`                                                                | Install packages dependencies |
+| `$ pnpm run build`                                                              | Run build app                 |
+| `$ pnpm run storybook`                                                          | Run Storybook                 |
+| `$ pnpm test`                                                                   | Run Unit Test                 |
+| `$ pnpm dev`                                                                    | Run webpage                   |
 
-### How to run Storybook
+### Prerequisites:
 
-1. Start Storybook
-
-```bash
-pnpm run storybook
-```
-
-2. Build Storybook
-
-```bash
-pnpm run build-storybook
-```
+- Node: version 18.17.1
+- pnpm: version 8.10.5
+- Vite: version 5.0.0

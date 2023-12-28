@@ -7,18 +7,14 @@ import { ConversationItem } from "@/components";
 // types
 import { Profile } from "@/types/profile";
 
-interface ProfileConversationProps {
-  title: string;
+interface ConversationHistoryProps {
   profileList: Profile[];
 }
 
-const ProfileConversation = ({
-  title,
-  profileList,
-}: ProfileConversationProps) => (
+const ConversationHistory = ({ profileList }: ConversationHistoryProps) => (
   <>
     <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
-      {title}
+      Profile Conversations
     </Text>
     {profileList.map(profile => (
       <ConversationItem
@@ -31,4 +27,4 @@ const ProfileConversation = ({
   </>
 );
 
-export default ProfileConversation;
+export default ConversationHistory;

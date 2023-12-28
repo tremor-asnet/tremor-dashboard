@@ -1,22 +1,22 @@
 import { render } from "@testing-library/react";
 
 // Components
-import { ProfileConversations } from "..";
+import { ConversationHistory } from "..";
 
 // Mocks
 import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 
-describe("ProfileConversation component", () => {
+describe("ConversationHistory component", () => {
   const props = {
     profileList: PROFILE_CONVERSATIONS,
     onClick: jest.fn(),
   };
 
   const profile = () => {
-    return render(<ProfileConversations title="Conversation" {...props} />);
+    return render(<ConversationHistory {...props} />);
   };
 
-  it("Should render ProfileConversations snapshot correctly", () => {
+  it("Should render ConversationHistory snapshot correctly", () => {
     expect(profile()).toMatchSnapshot();
   });
 });

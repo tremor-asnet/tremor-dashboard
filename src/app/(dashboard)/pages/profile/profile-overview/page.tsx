@@ -2,8 +2,7 @@ import { Flex, Card, Text } from "@tremor/react";
 
 // Components
 import {
-  Tabs,
-  ProfileConversations,
+  ConversationHistory,
   ProfileInfo,
   ProfileProjectCard,
   ContactCard,
@@ -63,8 +62,7 @@ const Profile = async () => {
             </Flex>
             {/* Profile Conversations */}
             <div className="w-full lg:basis-1/3">
-              <ProfileConversations
-                title="conversations"
+              <ConversationHistory
                 profileList={profileData?.conversations || []}
               />
             </div>

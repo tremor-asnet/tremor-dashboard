@@ -13,13 +13,10 @@ import {
 import { PROFILE_HEADER } from "@/mocks";
 
 // Actions
-import {
-  getProfileConversations,
-  getProfileProject,
-} from "@/app/actions/profileAction";
+import { getProfile, getProfileProject } from "@/app/actions/profileAction";
 
 const Profile = async () => {
-  const profileData = await getProfileConversations();
+  const profileData = await getProfile();
   const projectData = await getProfileProject();
 
   return (
@@ -63,7 +60,7 @@ const Profile = async () => {
             {/* Profile Conversations */}
             <div className="w-full lg:basis-1/3">
               <ConversationHistory
-                profileList={profileData?.conversations || []}
+                conversationHistory={profileData?.conversations || []}
               />
             </div>
           </Flex>

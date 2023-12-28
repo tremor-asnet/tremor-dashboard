@@ -1,4 +1,4 @@
-import { Profile } from "@/types/profile";
+import { ConversationHistory } from "@/types/profile";
 
 export const PROFILE_HEADER = {
   avatarUrl: "/images/avatar/avatar-lg.webp",
@@ -8,40 +8,40 @@ export const PROFILE_HEADER = {
 };
 
 export const PROFILE_ITEM = {
-  src: "/images/avatar/avatar-md.webp",
-  alt: "image",
+  id: 1,
+  avatar: "/images/avatar/avatar-md.webp",
   name: "Sophie.B",
-  description: "Hi! I need more information..",
+  lastConversation: "Hi! I need more information..",
 };
 
-export const PROFILE_CONVERSATIONS: Profile[] = [
+export const PROFILE_CONVERSATIONS: ConversationHistory[] = [
   {
+    id: 1,
     avatar: "/images/avatar/avatar-md.webp",
-    alt: "image",
     name: "Anne Marie",
     lastConversation: "Awesome work, can you..",
   },
   {
+    id: 2,
     avatar: "/images/avatar/avatar-lg.webp",
-    alt: "image",
     name: "Ivanna",
     lastConversation: "About files I can..",
   },
   {
+    id: 3,
     avatar: "/images/avatar/avatar-xs.webp",
-    alt: "image",
     name: "Peterson",
     lastConversation: "Have a great afternoon..",
   },
   {
+    id: 4,
     avatar: "/images/avatar/avatar-md.webp",
-    alt: "image",
     name: "Sophie.B",
     lastConversation: "Hi! I need more information..",
   },
   {
+    id: 5,
     avatar: "/images/avatar/avatar-sm.webp",
-    alt: "image",
     name: "Nick Daniel",
     lastConversation: "Hi! I need more information..",
   },

@@ -18,10 +18,10 @@ import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 import { getAllProjects } from "@/app/actions/projectActions";
 
 // Actions
-import { getProfileConversations } from "@/app/actions/profileAction";
+import { getProfile } from "@/app/actions/profileAction";
 
 const Projects = async () => {
-  const profileData = await getProfileConversations();
+  const profileData = await getProfile();
   const ProjectsData = await getAllProjects();
 
   return (

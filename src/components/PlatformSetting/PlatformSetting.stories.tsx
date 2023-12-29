@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import PlatformSetting from "./PlatformSetting";
 
 // Constants
-import { APPLICATION_SETTING, ACCOUNT_SETTING } from "@/constants";
+import { APPLICATION_SETTING_DATA, ACCOUNT_SETTING_DATA } from "@/constants";
 
 const meta = {
   title: "Components/PlatformSetting",
@@ -20,8 +20,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <PlatformSetting
-      accountSetting={ACCOUNT_SETTING}
-      applicationSetting={APPLICATION_SETTING}
+      accountSettingData={ACCOUNT_SETTING_DATA}
+      applicationSettingData={APPLICATION_SETTING_DATA}
     />
   ),
 };

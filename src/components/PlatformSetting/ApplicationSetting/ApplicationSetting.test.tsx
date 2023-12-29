@@ -4,11 +4,14 @@ import { render } from "@testing-library/react";
 import ApplicationSetting from "./ApplicationSetting";
 
 // Constants
-import { APPLYCATION_SETTING_DATA, APPLICATION_SETTING } from "@/constants";
+import {
+  APPLYCATION_SETTING_DATA,
+  APPLICATION_SETTING_FIELDS,
+} from "@/constants";
 
 describe("ApplicationSetting component", () => {
   const props = {
-    applicationSetting: APPLICATION_SETTING,
+    applicationSettingFields: APPLICATION_SETTING_FIELDS,
     applicationSettingData: APPLYCATION_SETTING_DATA,
   };
 

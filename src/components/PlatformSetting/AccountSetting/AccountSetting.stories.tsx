@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import AccountSetting from "./AccountSetting";
 
 // Constants
-import { ACCOUNT_SETTING, ACCOUNT_SETTING_DATA } from "@/constants";
+import { ACCOUNT_SETTING_FIELDS, ACCOUNT_SETTING_DATA } from "@/constants";
 
 const meta = {
   title: "Components/AccountSetting",
@@ -20,11 +20,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <AccountSetting
-      accountSetting={{
-        emailMentions: false,
-        emailFollowing: false,
-        emailAnswerPost: false,
-      }}
+      accountSettingFields={ACCOUNT_SETTING_FIELDS}
       accountSettingData={ACCOUNT_SETTING_DATA}
     />
   ),

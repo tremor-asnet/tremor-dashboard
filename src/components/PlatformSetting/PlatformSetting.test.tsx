@@ -4,12 +4,15 @@ import { render } from "@testing-library/react";
 import PlatformSetting from "./PlatformSetting";
 
 // Constants
-import { ACCOUNT_SETTING, APPLICATION_SETTING } from "@/constants";
+import {
+  ACCOUNT_SETTING_DATA,
+  APPLICATION_SETTING_DATA,
+} from "@/constants/profile";
 
 describe("PlatformSetting component", () => {
   const props = {
-    applicationSetting: APPLICATION_SETTING,
-    accountSetting: ACCOUNT_SETTING,
+    applicationSettingData: APPLICATION_SETTING_DATA,
+    accountSettingData: ACCOUNT_SETTING_DATA,
   };
 
   const platformSetting = () => {

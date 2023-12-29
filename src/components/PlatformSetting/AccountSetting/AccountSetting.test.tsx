@@ -4,11 +4,11 @@ import { render } from "@testing-library/react";
 import AccountSetting from "./AccountSetting";
 
 // Constants
-import { ACCOUNT_SETTING, ACCOUNT_SETTING_DATA } from "@/constants";
+import { ACCOUNT_SETTING_FIELDS, ACCOUNT_SETTING_DATA } from "@/constants";
 
 describe("AccountSetting component", () => {
   const props = {
-    accountSetting: ACCOUNT_SETTING,
+    accountSettingFields: ACCOUNT_SETTING_FIELDS,
     accountSettingData: ACCOUNT_SETTING_DATA,
   };
 

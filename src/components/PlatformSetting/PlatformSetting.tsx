@@ -5,9 +5,9 @@ import { AccountSettingType, ApplicationSettingType } from "@/types";
 
 // Constants
 import {
-  ACCOUNT_SETTING,
+  ACCOUNT_SETTING_FIELDS,
   ACCOUNT_SETTING_DATA,
-  APPLICATION_SETTING,
+  APPLICATION_SETTING_FIELDS,
   APPLICATION_SETTING_DATA,
 } from "@/constants";
 
@@ -15,13 +15,13 @@ import {
 import { AccountSetting, ApplicationSetting } from "@/components";
 
 interface PlatformSettingProps {
-  accountSetting: AccountSettingType;
-  applicationSetting: ApplicationSettingType;
+  accountSettingData: AccountSettingType;
+  applicationSettingData: ApplicationSettingType;
 }
 
 const PlatformSetting = ({
-  accountSetting = ACCOUNT_SETTING,
-  applicationSetting = APPLICATION_SETTING,
+  accountSettingData = ACCOUNT_SETTING_DATA,
+  applicationSettingData = APPLICATION_SETTING_DATA,
 }: PlatformSettingProps) => {
   return (
     <>
@@ -30,12 +30,12 @@ const PlatformSetting = ({
       </Text>
       <Flex className="flex-col items-start">
         <AccountSetting
-          accountSetting={accountSetting}
-          accountSettingData={ACCOUNT_SETTING_DATA}
+          accountSettingData={accountSettingData}
+          accountSettingFields={ACCOUNT_SETTING_FIELDS}
         />
         <ApplicationSetting
-          applicationSetting={applicationSetting}
-          applicationSettingData={APPLICATION_SETTING_DATA}
+          applicationSettingData={applicationSettingData}
+          applicationSettingFields={APPLICATION_SETTING_FIELDS}
         />
       </Flex>
     </>

@@ -5,7 +5,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 import ApplicationSetting from "./ApplicationSetting";
 
 // Constants
-import { APPLICATION_SETTING, APPLICATION_SETTING_DATA } from "@/constants";
+import {
+  APPLICATION_SETTING_FIELDS,
+  APPLICATION_SETTING_DATA,
+} from "@/constants";
 
 const meta = {
   title: "Components/ApplicationSetting",
@@ -20,7 +23,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <ApplicationSetting
-      applicationSetting={APPLICATION_SETTING}
+      applicationSettingFields={APPLICATION_SETTING_FIELDS}
       applicationSettingData={APPLICATION_SETTING_DATA}
     />
   ),

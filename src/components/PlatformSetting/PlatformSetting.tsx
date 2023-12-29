@@ -1,88 +1,42 @@
-"use client";
-
-import { Flex, Switch, Text } from "@tremor/react";
-
-// Constants
-import { ACCOUNT_SWITCH, APPLICATION_SWITCH } from "@/constants";
+import { Flex, Text } from "@tremor/react";
 
 // Types
-import { SettingSwitchProps } from "@/types/profile";
+import { AccountSettingType, ApplicationSettingType } from "@/types";
 
-type AccountSettingType = {
-  [key: string]: boolean;
-  emailMentions: boolean;
-  emailFollowing: boolean;
-  emailAnswerPost: boolean;
-};
+// Constants
+import {
+  ACCOUNT_SETTING,
+  ACCOUNT_SETTING_DATA,
+  APPLICATION_SETTING,
+  APPLICATION_SETTING_DATA,
+} from "@/constants";
 
-type ApplicationSettingType = {
-  [key: string]: boolean;
-  newLaunchesProject: boolean;
-  monthlyProductUpdate: boolean;
-  subscribeToNewsletter: boolean;
-};
+// Components
+import { AccountSetting, ApplicationSetting } from "@/components";
 
 interface PlatformSettingProps {
-  title: string;
   accountSetting: AccountSettingType;
   applicationSetting: ApplicationSettingType;
 }
 
 const PlatformSetting = ({
-  title,
-  accountSetting = {
-    emailMentions: false,
-    emailFollowing: false,
-    emailAnswerPost: false,
-  },
-  applicationSetting = {
-    newLaunchesProject: false,
-    monthlyProductUpdate: false,
-    subscribeToNewsletter: false,
-  },
+  accountSetting = ACCOUNT_SETTING,
+  applicationSetting = APPLICATION_SETTING,
 }: PlatformSettingProps) => {
   return (
     <>
       <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
-        {title}
+        Platform Setting
       </Text>
       <Flex className="flex-col items-start">
-        <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-          account
-        </text>
-        {ACCOUNT_SWITCH.map(({ label, field }: SettingSwitchProps) => (
-          <>
-            <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
-              <Switch
-                tabIndex={2}
-                id="switch"
-                name="switch"
-                color="zinc"
-                className="flex justify-center items-center"
-                defaultChecked={accountSetting[field]}
-              />
-              <Text className="text-secondary font-normal">{label}</Text>
-            </div>
-          </>
-        ))}
-        <text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
-          application
-        </text>
-        {APPLICATION_SWITCH.map(({ label, field }: SettingSwitchProps) => (
-          <>
-            <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
-              <Switch
-                tabIndex={2}
-                id="switch"
-                name="switch"
-                color="zinc"
-                className="flex justify-center items-center"
-                defaultChecked={applicationSetting[field]}
-              />
-              <Text className="text-secondary font-normal">{label}</Text>
-            </div>
-          </>
-        ))}
+        <AccountSetting
+          accountSetting={accountSetting}
+          accountSettingData={ACCOUNT_SETTING_DATA}
+        />
+        <ApplicationSetting
+          applicationSetting={applicationSetting}
+          applicationSettingData={APPLICATION_SETTING_DATA}
+        />
       </Flex>
     </>
   );

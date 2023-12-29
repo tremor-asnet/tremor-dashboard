@@ -38,7 +38,6 @@ const Profile = async () => {
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
-                  title="Platform Setting"
                   accountSetting={profileData.account_setting}
                   applicationSetting={profileData.application_setting}
                 />

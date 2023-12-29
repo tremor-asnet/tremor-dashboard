@@ -38,9 +38,8 @@ const Profile = async () => {
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
-                  title="Platform Setting"
-                  accountSetting={profileData.account_setting}
-                  applicationSetting={profileData.application_setting}
+                  accountSettingData={profileData.account_setting}
+                  applicationSettingData={profileData.application_setting}
                 />
               </div>
               <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 lg:flex" />

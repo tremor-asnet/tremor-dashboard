@@ -143,6 +143,9 @@ module.exports = {
         xs: { min: "336px" },
         // => @media (min-width: 336px) { ... }
       },
+      fill: {
+        "light-500": "white",
+      },
     },
   },
   safelist: [
@@ -171,7 +174,7 @@ module.exports = {
     },
     {
       pattern:
-        /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
+        /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|light)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
     },
   ],
   plugins: [

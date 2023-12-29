@@ -115,6 +115,10 @@ module.exports = {
           "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px",
         "tremor-dropdown":
           "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "box-icon-default":
+          "0rem 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06)",
+        "box-icon-primary":
+          "rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem",
         // dark
         "dark-tremor-input": "none",
         "dark-tremor-card":
@@ -142,6 +146,9 @@ module.exports = {
       screens: {
         xs: { min: "336px" },
         // => @media (min-width: 336px) { ... }
+      },
+      fill: {
+        "light-500": "white",
       },
     },
   },
@@ -171,7 +178,7 @@ module.exports = {
     },
     {
       pattern:
-        /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
+        /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|light)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
     },
   ],
   plugins: [

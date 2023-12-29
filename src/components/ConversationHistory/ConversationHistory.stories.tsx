@@ -18,5 +18,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <ConversationHistory profileList={PROFILE_CONVERSATIONS} />,
+  render: () => (
+    <ConversationHistory conversationHistory={PROFILE_CONVERSATIONS} />
+  ),
 };

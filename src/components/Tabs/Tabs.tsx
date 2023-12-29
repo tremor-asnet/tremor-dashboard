@@ -12,6 +12,7 @@ const Tabs = ({ tabs, className }: TabsProps): JSX.Element => {
   const renderTabs = (): JSX.Element[] => {
     return tabs.map(tab => (
       <Tab
+        data-testid="tab"
         key={tab.name}
         className="ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center">
         <div className="flex items-center justify-center text-tremor-content-title text-base px-6">

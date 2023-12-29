@@ -3,7 +3,7 @@
   stroke-opacity: inherit;
 }
 
-.recharts-text.recharts-cartesian-axis-tick-value, .recharts-layer.recharts-bar-rectangles, .recharts-rectangle.fill-gray-500 {
+.recharts-text.recharts-cartesian-axis-tick-value {
   @apply stroke-none fill-[white] font-thin text-sm;
 }
 

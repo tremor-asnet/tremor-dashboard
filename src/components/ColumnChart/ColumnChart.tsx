@@ -2,9 +2,6 @@
 import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
-//Styles
-import "@/styles/charts.css";
-
 type TData = {
   description: string;
   sales: number;
@@ -37,7 +34,7 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
                   data={data}
                   index="description"
                   categories={["sales"]}
-                  colors={["gray"]}
+                  colors={["light"]}
                   yAxisWidth={30}
                   showAnimation={true}
                   showLegend={false}

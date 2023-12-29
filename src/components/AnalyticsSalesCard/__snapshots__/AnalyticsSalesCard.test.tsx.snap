@@ -75,7 +75,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                             decoding="async"
                             fetchpriority="high"
                             height="18"
-                            src=""
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 2x"
                             style="color: transparent;"
                             width="24"
                           />
@@ -169,7 +170,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                             decoding="async"
                             fetchpriority="high"
                             height="18"
-                            src=""
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 2x"
                             style="color: transparent;"
                             width="24"
                           />
@@ -263,7 +265,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                             decoding="async"
                             fetchpriority="high"
                             height="18"
-                            src=""
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 2x"
                             style="color: transparent;"
                             width="24"
                           />
@@ -357,7 +360,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                             decoding="async"
                             fetchpriority="high"
                             height="18"
-                            src=""
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 2x"
                             style="color: transparent;"
                             width="24"
                           />
@@ -516,7 +520,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="18"
-                          src=""
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 2x"
                           style="color: transparent;"
                           width="24"
                         />
@@ -610,7 +615,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="18"
-                          src=""
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 2x"
                           style="color: transparent;"
                           width="24"
                         />
@@ -704,7 +710,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="18"
-                          src=""
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 2x"
                           style="color: transparent;"
                           width="24"
                         />
@@ -798,7 +805,8 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="18"
-                          src=""
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 2x"
                           style="color: transparent;"
                           width="24"
                         />
@@ -1011,7 +1019,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1091,7 +1100,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1171,7 +1181,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1251,7 +1262,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1382,7 +1394,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1476,7 +1489,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1570,7 +1584,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />
@@ -1664,7 +1679,8 @@ exports[`Testing analytics sale chart component testing component analytics sale
                         decoding="async"
                         fetchpriority="high"
                         height="18"
-                        src=""
+                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75"
+                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 2x"
                         style="color: transparent;"
                         width="24"
                       />

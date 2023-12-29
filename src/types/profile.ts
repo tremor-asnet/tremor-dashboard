@@ -1,4 +1,4 @@
-export type ConversationHistory = {
+export type ConversationHistoryType = {
   id: string;
   avatar: string;
   name: string;

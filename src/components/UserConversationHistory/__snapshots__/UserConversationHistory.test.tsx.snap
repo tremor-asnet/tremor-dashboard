@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ConversationItem component Should render ConversationItem snapshot correctly 1`] = `
+exports[`UserConversationHistory component Should render UserConversationHistory snapshot correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -18,7 +18,7 @@ exports[`ConversationItem component Should render ConversationItem snapshot corr
               class="inline-flex rounded-full overflow-hidden shadow-md"
             >
               <img
-                alt="image"
+                alt="Sophie.B"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -75,7 +75,7 @@ exports[`ConversationItem component Should render ConversationItem snapshot corr
             class="inline-flex rounded-full overflow-hidden shadow-md"
           >
             <img
-              alt="image"
+              alt="Sophie.B"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"

@@ -27,6 +27,7 @@ const FormInput = ({
   variant,
   disabled,
   errorMessage,
+  ...props
 }: FormInputProps): JSX.Element => {
   const labelPrimary =
     "label-primary peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:px-2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:-translate-y-4";
@@ -55,7 +56,7 @@ const FormInput = ({
   }`;
 
   return (
-    <div className="block">
+    <>
       <div className="relative">
         <input
           disabled={disabled}
@@ -66,6 +67,7 @@ const FormInput = ({
             variant === "primary" ? inputPrimaryClasses : inputSecondaryClasses
           }`}
           aria-describedby={ariaDescribedby}
+          {...props}
         />
         <label
           htmlFor={id}
@@ -80,7 +82,7 @@ const FormInput = ({
       {errorMessage && (
         <p className="mt-2 text-xs text-red-600">{errorMessage}</p>
       )}
-    </div>
+    </>
   );
 };
 

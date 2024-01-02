@@ -66,44 +66,60 @@ const Breadcrumb = (): JSX.Element => {
           isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
         }`}>
         <div className="bc-link">
-          <Link className="text-sm capitalize" href={link.url}>
+          <Link
+            className={`text-sm capitalize tracking-[0.02857em] leading-[0] ${
+              isProjectPage
+                ? "text-white opacity-[0.8]"
+                : "text-primary opacity-50"
+            }`}
+            href={link.url}>
             {link.name}
           </Link>
         </div>
-        <div aria-hidden="true" className="text-xs mx-2">
-          &#8260;
+        <div
+          aria-hidden="true"
+          className={`text-sm mx-2 ${
+            isProjectPage ? "text-white" : "text-[#6c757d]"
+          }`}>
+          &#47;
         </div>
       </li>
     ));
   };
 
   return (
-    <nav className="block">
+    <nav className={`${isProjectPage ? "pl-4" : ""}`}>
       <ol className="flex flex-wrap items-center text-gray-400">
         <li>
           <Link href={ROUTES.HOME} className="flex">
             <MdHome
-              className={`bg-inherit border-0 py-0 hover:bg-transparent ${
-                isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary tracking-[0.01071em] leading-[0] ${
+                isProjectPage
+                  ? "text-white opacity-[0.8]"
+                  : "text-inherit opacity-50"
               }`}
             />
           </Link>
         </li>
-        <li aria-hidden="true" className="text-xs mx-2">
-          &#8260;
+        <li
+          aria-hidden="true"
+          className={`text-sm mx-2 ${
+            isProjectPage ? "text-white" : "text-[#6c757d]"
+          }`}>
+          &#47;
         </li>
 
         {renderLinks()}
 
         <li
-          className={`text-sm text-tremor-content-title capitalize ${
-            isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+          className={`text-sm text-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
+            isProjectPage ? "text-white" : "text-inherit"
           }`}>
           {pageName}
         </li>
       </ol>
       <Title
-        className={`text-tremor-content-title font-bold capitalize ${
+        className={`text-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
           isProjectPage ? "text-white" : "text-primary"
         }`}>
         {pageName}

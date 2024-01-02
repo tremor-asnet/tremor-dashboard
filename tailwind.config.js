@@ -119,6 +119,7 @@ module.exports = {
           "0rem 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.1), 0rem 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.06)",
         "box-icon-primary":
           "rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem",
+        "box-sidebar": "0rem 1.25rem 1.6875rem 0rem rgba(0, 0, 0, 0.05)",
         // dark
         "dark-tremor-input": "none",
         "dark-tremor-card":

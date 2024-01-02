@@ -59,7 +59,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
 
   return (
     <div
-      className={`sidebar antialiased bg-gradient-primary w-[250px] z-10 rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
+      className={`sidebar antialiased bg-white shadow-box-sidebar bg-gradient-primary w-[250px] z-10 rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isOpen
           ? "translate-x-0 xl:w-[100px]"
           : "translate-x-[-20rem] xl:translate-x-0"

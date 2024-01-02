@@ -6,7 +6,7 @@ export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as SideBar } from "./SideBar/SideBar";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
-export { default as Tabs } from "./Tab/Tab";
+export { default as Tabs } from "./Tabs/Tabs";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProjectCard";
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";

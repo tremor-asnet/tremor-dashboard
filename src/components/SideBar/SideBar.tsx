@@ -165,7 +165,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               <ListItem
                 className={`${
                   isAnalyticsPage
-                    ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                    ? "bg-primary hover:!bg-primary transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
                     : "hover:bg-none"
                 } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
@@ -180,7 +180,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               <ListItem
                 className={`${
                   isSalesPage
-                    ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                    ? "bg-primary hover:!bg-primary transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
                     : "hover:bg-none"
                 } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
@@ -237,7 +237,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                         <ListItem
                           className={`${
                             href === pathname
-                              ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                              ? "bg-primary hover:!bg-primary transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
                               : " hover:bg-none"
                           } !p-0 leading-[26px] mt-1 rounded-md`}
                           key={label}>

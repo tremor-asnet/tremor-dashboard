@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* input */
+    .input-primary {
+        @apply block w-full p-3 text-sm text-tremor-content-title bg-transparent rounded-tremor-small outline outline-1 focus:outline-2 focus:outline-offset-[-1px]
+    }
+    .input-primary-with-error {
+        @apply outline-red-600 focus:outline-red-600
+    }
+    .input-primary-without-error {
+        @apply outline-tremor-outline focus:outline-tremor-brand-subtle
+    }
+    .input-secondary {
+        @apply block w-full p-3 text-sm text-tremor-content-title bg-transparent
+    }
+    .input-secondary-with-error {
+        @apply text-tremor-content-emphasis border-0 border-b focus:border-b-2 border-red-600 focus:outline-none focus:border-red-600
+    }
+    .input-secondary-without-error {
+        @apply border-0 border-b focus:border-b-2 border-gray-300 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle
+    }
+
+    /* label */
+    .label-primary {
+        @apply absolute text-sm duration-300 transform scale-75 origin-[0] -translate-y-4 top-2 z-10 bg-white px-2 start-1 
+    }
+    .label-secondary {
+        @apply absolute text-sm duration-300 transform scale-75 origin-[0] -translate-y-6 top-3 -z-10
+    }
+}

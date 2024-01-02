@@ -48,7 +48,7 @@ const FormInput = ({
   }`;
 
   return (
-    <>
+    <div>
       <div className="relative">
         <input
           disabled={disabled}
@@ -74,7 +74,7 @@ const FormInput = ({
       {errorMessage && (
         <p className="mt-2 text-xs text-red-600">{errorMessage}</p>
       )}
-    </>
+    </div>
   );
 };
 

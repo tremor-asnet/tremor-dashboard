@@ -29,14 +29,6 @@ const FormInput = ({
   errorMessage,
   ...props
 }: FormInputProps): JSX.Element => {
-  const labelPrimary =
-    "label-primary peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:px-2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:-translate-y-4";
-  const labelSecondary =
-    "label-secondary peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:start-0 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto";
-  const labelWithError = "text-red-600 peer-focus:text-red-600";
-  const labelWithoutError =
-    "text-tremor-content peer-focus:text-tremor-content-title";
-
   const inputPrimaryClasses = `input-primary peer ${
     !errorMessage ? "input-primary-without-error" : "input-primary-with-error"
   }`;
@@ -47,12 +39,12 @@ const FormInput = ({
       : "input-secondary-with-error"
   }`;
 
-  const labelPrimaryClasses = `${labelPrimary} ${
-    !errorMessage ? labelWithoutError : labelWithError
+  const labelPrimaryClasses = `label-primary ${
+    !errorMessage ? "label-without-error" : "label-with-error"
   }`;
 
-  const labelSecondaryClasses = `${labelSecondary} ${
-    !errorMessage ? labelWithoutError : labelWithError
+  const labelSecondaryClasses = `label-secondary ${
+    !errorMessage ? "label-without-error" : "label-with-error"
   }`;
 
   return (

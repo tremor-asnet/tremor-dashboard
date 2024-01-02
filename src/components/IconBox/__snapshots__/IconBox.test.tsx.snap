@@ -6,7 +6,7 @@ exports[`Testing IconBox component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)]"
+        class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)]"
       >
         <svg
           color="white"
@@ -28,7 +28,7 @@ exports[`Testing IconBox component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)]"
+      class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)]"
     >
       <svg
         color="white"

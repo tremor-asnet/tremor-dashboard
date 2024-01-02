@@ -7,3 +7,7 @@ export const MESSAGES_ERROR = {
   PASSWORD_INVALID:
     "Password must have at least 8 characters, 1 special character and 1 number",
 };
+
+export const SIGN_UP_MESSAGE = {
+  SUCCESS: "Create account successfully.",
+};

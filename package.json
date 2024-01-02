@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "jest --passWithNoTests --watch",
+    "test": "jest --passWithNoTests",
     "test:update": "jest --passWithNoTests --updateSnapshot",
     "prepare": "husky install"
   },
@@ -79,8 +79,7 @@
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
       "prettier --write",
-      "eslint --fix",
-      "pnpm run test"
+      "eslint --fix"
     ]
   }
 }

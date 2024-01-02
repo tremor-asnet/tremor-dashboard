@@ -11,7 +11,7 @@ import Link from "next/link";
 import { TextInput, Button, Flex, Text, Title } from "@tremor/react";
 
 // Constants
-import { MESSAGES_ERROR, REGEX, ROUTES } from "@/constants";
+import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 import { createNewAccount } from "@/app/actions/authenticationActions";
 
 // Types
@@ -78,8 +78,8 @@ export const SignUpForm = () => {
         {createNewAccountSuccess && isCloseToast && (
           <div className="flex justify-center">
             <Toast
-              content="Create account successfully."
-              onCloseToast={handleCloseToast}
+              message={SIGN_UP_MESSAGE.SUCCESS}
+              onClose={handleCloseToast}
             />
           </div>
         )}

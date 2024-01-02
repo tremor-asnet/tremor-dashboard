@@ -1,20 +1,17 @@
 import { render } from "@testing-library/react";
 
 // Components
-import BreadCrumb from "./BreadCrumb";
-
-// Constants
-import { ROUTES } from "@/constants";
+import Breadcrumb from "./Breadcrumb";
 
 describe("Testing breadcrumb component", () => {
   it("should render correctly with display breadcrumb text", () => {
-    const { container } = render(<BreadCrumb />);
+    const { container } = render(<Breadcrumb />);
     const link = container.getElementsByClassName("bc-link")[0];
     expect(link.textContent).toEqual("dashboards");
   });
 
   it("Should match snapshot", () => {
-    const { container } = render(<BreadCrumb />);
+    const { container } = render(<Breadcrumb />);
     expect(container).toMatchSnapshot();
   });
 });

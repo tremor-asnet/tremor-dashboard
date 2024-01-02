@@ -164,8 +164,10 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
             <List>
               <ListItem
                 className={`${
-                  isAnalyticsPage ? "bg-[rgb(52,71,103)]" : ""
-                } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
+                  isAnalyticsPage
+                    ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                    : "hover:bg-none"
+                } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.ANALYTICS}>
@@ -177,8 +179,10 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
               </ListItem>
               <ListItem
                 className={`${
-                  isSalesPage ? "bg-[rgb(52,71,103)]" : ""
-                } !p-0 my-[3px] leading-[26px] rounded-md hover:bg-none`}>
+                  isSalesPage
+                    ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                    : "hover:bg-none"
+                } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.SALES}>
@@ -232,7 +236,9 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                       return (
                         <ListItem
                           className={`${
-                            href === pathname ? "bg-[rgb(52,71,103)]" : ""
+                            href === pathname
+                              ? "bg-[rgb(52,71,103)] hover:!bg-[rgb(52,71,103)] transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms]"
+                              : " hover:bg-none"
                           } !p-0 leading-[26px] mt-1 rounded-md`}
                           key={label}>
                           <Link

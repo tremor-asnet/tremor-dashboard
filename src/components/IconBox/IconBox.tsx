@@ -22,7 +22,7 @@ const IconBox = ({
 }: IIconBox): JSX.Element => {
   return (
     <Flex
-      className={`p-1 justify-center rounded-xl w-${width} h-${height} ${bgBox} ${className}`}>
+      className={`p-1 justify-center rounded-xl shadow-box-icon-default w-${width} h-${height} ${bgBox} ${className}`}>
       {icon}
     </Flex>
   );

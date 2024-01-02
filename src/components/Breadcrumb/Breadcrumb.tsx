@@ -9,15 +9,15 @@ import { MdHome } from "react-icons/md";
 import { ROUTES } from "../../constants";
 
 // Types
-import { IBreadCrumb } from "@/types";
+import { IBreadcrumb } from "@/types";
 
 /**
  * Primary UI component for BreadCrumb component
  */
-const BreadCrumb = (): JSX.Element => {
+const Breadcrumb = (): JSX.Element => {
   const pathname = usePathname();
 
-  const links: IBreadCrumb[] = useMemo(() => {
+  const links: IBreadcrumb[] = useMemo(() => {
     switch (true) {
       case pathname?.includes("/dashboards/"):
         return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
@@ -112,4 +112,4 @@ const BreadCrumb = (): JSX.Element => {
   );
 };
 
-export default memo(BreadCrumb);
+export default memo(Breadcrumb);

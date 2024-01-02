@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import Breadcrumb from "../Breadcrumb/Breadcrumb";
 import { TextInput } from "@tremor/react";
 import Link from "next/link";
 import {
@@ -38,7 +38,7 @@ const DashboardHeader = (): JSX.Element => {
           : ""
       }`}>
       <div className="flex items-center">
-        <BreadCrumb />
+        <Breadcrumb />
         <div
           className="hidden xl:block cursor-pointer mx-16"
           onClick={toggleSideBar}>

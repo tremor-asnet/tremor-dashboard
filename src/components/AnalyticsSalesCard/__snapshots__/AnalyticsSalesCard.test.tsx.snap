@@ -43,7 +43,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row"
+          class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row"
         >
           <div
             class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
@@ -430,7 +430,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 lg:p-0 analytics-map"
+            class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 md:p-0 analytics-map"
           >
             <img
               alt="chart"
@@ -488,7 +488,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row"
+        class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row"
       >
         <div
           class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
@@ -875,7 +875,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 lg:p-0 analytics-map"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 md:p-0 analytics-map"
         >
           <img
             alt="chart"
@@ -987,7 +987,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
       </div>
     </div>
     <div
-      class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row"
+      class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row"
     >
       <div
         class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
@@ -1362,7 +1362,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
       </div>
     </div>
     <div
-      class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row"
+      class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row"
     >
       <div
         class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
@@ -1749,7 +1749,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 lg:p-0 analytics-map"
+        class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-16 md:p-0 analytics-map"
       >
         <img
           alt="chart"

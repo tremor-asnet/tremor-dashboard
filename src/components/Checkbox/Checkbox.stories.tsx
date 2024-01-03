@@ -15,13 +15,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <CheckBox id="checkbox" />,
+  render: () => <CheckBox handleCheckBox={() => {}} checked={false} />,
 };
 
 export const Checked: Story = {
-  render: () => <CheckBox id="checkbox" checked />,
-};
-
-export const Disabled: Story = {
-  render: () => <CheckBox id="checkbox" disabled />,
+  render: () => <CheckBox handleCheckBox={() => {}} checked />,
 };

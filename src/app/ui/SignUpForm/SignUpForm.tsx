@@ -173,13 +173,7 @@ export const SignUpForm = () => {
           />
 
           <div className="flex items-center space-x-3 pt-3">
-            <CheckBox
-              tabIndex={3}
-              checked={checked}
-              handleCheckBox={handleCheckBox}
-              autoFocus
-              id="checkbox"
-            />
+            <CheckBox checked={checked} handleCheckBox={handleCheckBox} />
             <Text className="text-xs xs:text-sm text-primary text-secondary font-normal">
               I agree the{" "}
               <Link

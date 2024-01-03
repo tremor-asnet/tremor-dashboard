@@ -1,59 +1,36 @@
 // Libs
-import { cleanup, render, fireEvent, screen } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom";
 
 // Components
 import CheckBox from "./Checkbox";
 
-const mockOnClick = jest.fn();
+const handleCheckboxMock = jest.fn();
 
-const setup = () => {
-  const props = {
-    id: "checkbox",
-  };
-
-  return render(
-    <CheckBox data-testid="checkbox" onClick={mockOnClick} {...props} />,
-  );
+const CheckboxProps = {
+  tabIndex: 3,
+  checked: true,
+  handleCheckBox: handleCheckboxMock,
 };
 
-describe("CheckBox component render", () => {
-  afterEach(cleanup);
+const CheckboxComponent = () => render(<CheckBox {...CheckboxProps} />);
 
-  test("should render CheckBox component correctly", () => {
-    setup();
+describe("CheckBox Component", () => {
+  test("renders Checkbox component snapshot correctly", () => {
+    const { container } = CheckboxComponent();
 
-    const checkbox = screen.getByTestId("checkbox");
-
-    expect(checkbox).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
-  test("check CheckBox has attr checked", async () => {
-    render(
-      <CheckBox id="checkbox" data-testid="checkbox" defaultChecked={true} />,
-    );
+  test("renders CheckBox component with provided props", () => {
+    const { getByTestId } = CheckboxComponent();
 
-    const checkbox = screen.getByTestId("checkbox");
+    const checkBoxInput = getByTestId("checkbox");
 
-    expect(checkbox.hasAttribute("checked")).toBeTruthy();
-  });
+    expect(checkBoxInput).toBeInTheDocument();
+    expect(checkBoxInput).toBeChecked();
 
-  test("check CheckBox has attr disabled", async () => {
-    render(<CheckBox id="checkbox" data-testid="checkbox" disabled />);
-
-    const checkbox = screen.getByTestId("checkbox");
-
-    expect(checkbox.hasAttribute("disabled")).toBeTruthy();
-  });
-
-  test("should simulate onClick event on CheckBox", async () => {
-    setup();
-
-    const checkbox = screen.getByTestId("checkbox");
-
-    expect(checkbox).toBeDefined();
-
-    fireEvent.click(checkbox);
-
-    expect(mockOnClick).toHaveBeenCalledTimes(1);
+    fireEvent.click(checkBoxInput!);
+    expect(handleCheckboxMock).toHaveBeenCalledTimes(1);
   });
 });

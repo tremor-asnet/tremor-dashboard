@@ -8,7 +8,7 @@ export { default as UserConversationHistory } from "./UserConversationHistory/Us
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
 export { default as Tabs } from "./Tabs/Tabs";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
-export { default as ProfileProjectCard } from "./ProfileProjectCard/ProfileProjectCard";
+export { default as ProjectInfoCard } from "./ProjectInfoCard/ProjectInfoCard";
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";
 export { default as AccountSetting } from "./PlatformSetting/AccountSetting/AccountSetting";
 export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSetting/ApplicationSetting";

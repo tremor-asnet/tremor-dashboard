@@ -52,8 +52,8 @@ export const PROFILE_INFO_PROJECT_CARD = [
     id: 1,
     cover: "/assets/images/profile-project.webp",
     participants: [
-      { avatar: "/images/avatar/avatar-xs.webp" },
-      { avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Anne Marie", avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Nick Daniel", avatar: "/images/avatar/avatar-xs.webp" },
     ],
     primaryName: "modern",
     description:
@@ -64,8 +64,8 @@ export const PROFILE_INFO_PROJECT_CARD = [
     id: 2,
     cover: "/assets/images/profile-project.webp",
     participants: [
-      { avatar: "/images/avatar/avatar-xs.webp" },
-      { avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Anne Marie", avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Nick Daniel", avatar: "/images/avatar/avatar-xs.webp" },
     ],
     primaryName: "scandinavian",
     description:
@@ -76,8 +76,8 @@ export const PROFILE_INFO_PROJECT_CARD = [
     id: 3,
     cover: "/assets/images/profile-project.webp",
     participants: [
-      { avatar: "/images/avatar/avatar-xs.webp" },
-      { avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Anne Marie", avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Nick Daniel", avatar: "/images/avatar/avatar-xs.webp" },
     ],
     primaryName: "minimalist",
     description:
@@ -88,8 +88,8 @@ export const PROFILE_INFO_PROJECT_CARD = [
     id: 4,
     cover: "/assets/images/profile-project.webp",
     participants: [
-      { avatar: "/images/avatar/avatar-xs.webp" },
-      { avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Anne Marie", avatar: "/images/avatar/avatar-xs.webp" },
+      { name: "Nick Daniel", avatar: "/images/avatar/avatar-xs.webp" },
     ],
     primaryName: "gothic",
     description:

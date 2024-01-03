@@ -4,7 +4,7 @@ import { Flex, Card, Text } from "@tremor/react";
 import {
   ConversationHistory,
   ProfileInfo,
-  ProfileProjectCard,
+  ProjectInfoCard,
   ContactCard,
   PlatformSetting,
 } from "@/components";
@@ -71,7 +71,7 @@ const Profile = async () => {
             <Text className="font-light leading-normal text-sm text-secondary mb-6">
               Architects design houses
             </Text>
-            <ProfileProjectCard links={projectData} />
+            <ProjectInfoCard links={projectData} />
           </Flex>
         </Card>
       </div>

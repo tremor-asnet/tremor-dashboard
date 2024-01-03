@@ -5,9 +5,7 @@ exports[`FormInput component Should render FormInput snapshot correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="block"
-      >
+      <div>
         <div
           class="relative"
         >
@@ -18,7 +16,7 @@ exports[`FormInput component Should render FormInput snapshot correctly 1`] = `
             type="number"
           />
           <label
-            class="label-primary peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:px-2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:-translate-y-4 text-tremor-content peer-focus:text-tremor-content-title"
+            class="label-primary label-without-error"
             data-testid="label"
             for="primary_default"
           >
@@ -29,9 +27,7 @@ exports[`FormInput component Should render FormInput snapshot correctly 1`] = `
     </div>
   </body>,
   "container": <div>
-    <div
-      class="block"
-    >
+    <div>
       <div
         class="relative"
       >
@@ -42,7 +38,7 @@ exports[`FormInput component Should render FormInput snapshot correctly 1`] = `
           type="number"
         />
         <label
-          class="label-primary peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:px-2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:-translate-y-4 text-tremor-content peer-focus:text-tremor-content-title"
+          class="label-primary label-without-error"
           data-testid="label"
           for="primary_default"
         >

@@ -48,7 +48,7 @@ const AnalyticsSalesCard = ({
         </Title>
       </Flex>
     </Flex>
-    <Flex className="relative mt-6 lg:mt-0 px-4 py-0 lg:py-5 flex-col lg:flex-row">
+    <Flex className="relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row">
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
         {data.map(item => {
           const { id, country, sales, value, bounce } = item;
@@ -113,7 +113,7 @@ const AnalyticsSalesCard = ({
         })}
       </Flex>
       {isAnalytics && (
-        <Flex className="justify-center pb-6 px-16 lg:p-0 analytics-map">
+        <Flex className="justify-center pb-6 px-16 md:p-0 analytics-map">
           <Image
             className="mt-0 lg:-mt-10"
             src={chart}

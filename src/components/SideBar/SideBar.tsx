@@ -1,6 +1,7 @@
 "use client";
 
 // lib
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
@@ -45,6 +46,9 @@ import "./styles.css";
 // Components
 import { LoadingIndicator } from "@/components";
 
+//Helpers
+import { isBrowser } from "@/helpers";
+
 interface SideBarProps {
   onSignOut: () => Promise<void>;
   isSignOutProcessing: boolean;
@@ -57,8 +61,38 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
   const isAnalyticsPage = pathname === ROUTES.ANALYTICS;
   const isSalesPage = pathname === ROUTES.SALES;
 
+  const sideBarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Add event listener to the document object
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleClickOutside = (event: Event) => {
+    const { current } = sideBarRef;
+    if (current && !current.contains(event.target as Node)) {
+      // Clicked outside the side navigation bar, close it
+      if (isOpen) {
+        toggleSideBar();
+      }
+    }
+  };
+
+  const handleToggleSideBar = () => {
+    // handle to when lick to a page the SideBar only close on screen < 768
+    if (isBrowser && window.innerWidth <= 767) {
+      toggleSideBar();
+    }
+  };
+
   return (
     <div
+      ref={sideBarRef}
       className={`sidebar antialiased bg-white shadow-box-sidebar bg-gradient-primary w-[250px] z-10 rounded-xl px-4 pt-6 overflow-y-auto fixed left-4 top-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isOpen
           ? "translate-x-0 xl:w-[100px]"
@@ -71,7 +105,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
           height={28}
           alt="Logo"
         />
-        <Link href={ROUTES.HOME}>
+        <Link href={ROUTES.HOME} onClick={handleToggleSideBar}>
           <Metric
             className={`text-white text-tremor-default ${
               isOpen ? "xl:hidden" : ""
@@ -114,6 +148,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                 return (
                   <ListItem className="leading-[26px] !p-0" key={label}>
                     <Link
+                      onClick={handleToggleSideBar}
                       className="w-full flex font-normal py-3 px-6"
                       href={href}>
                       <span>{content}</span>
@@ -169,6 +204,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                     : "hover:bg-none"
                 } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
+                  onClick={handleToggleSideBar}
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.ANALYTICS}>
                   <span>{ITEMS_DASHBOARD[0].content}</span>
@@ -184,6 +220,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                     : "hover:bg-none"
                 } !p-0 my-[3px] leading-[26px] rounded-md`}>
                 <Link
+                  onClick={handleToggleSideBar}
                   className="font-normal w-full py-3 px-6"
                   href={ROUTES.SALES}>
                   <span>{ITEMS_DASHBOARD[1].content}</span>
@@ -242,6 +279,7 @@ const SideBar = ({ onSignOut, isSignOutProcessing }: SideBarProps) => {
                           } !p-0 leading-[26px] mt-1 rounded-md`}
                           key={label}>
                           <Link
+                            onClick={handleToggleSideBar}
                             className="font-normal w-full py-3 px-8"
                             href={href}>
                             <span>{content}</span>

@@ -1,60 +1,53 @@
 "use client";
+
 // Libs
-import { ReactNode, useContext, useState } from "react";
-import { usePathname } from "next/navigation";
+import { ReactNode, useState } from "react";
 
 // Components
 import { Flex } from "@tremor/react";
-import { DashboardHeader, SideBar } from "@/components";
-import { SidebarContext, SidebarContextProvider } from "@/contexts";
-
-// Constant
-import { ROUTES } from "@/constants/routes";
+import SideBar from "@/app/ui/SideBar/SideBar";
+import DashboardHeader from "@/app/ui/DashboardHeader/DashboardHeader";
 
 // Auth
 import { signOut } from "@/app/auth";
+import { usePathname } from "next/navigation";
 
 export default function DashboardLayoutWrapper({
   children,
 }: {
   children: ReactNode;
 }) {
-  return (
-    <SidebarContextProvider>
-      <DashboardLayout>{children}</DashboardLayout>
-    </SidebarContextProvider>
-  );
-}
-
-function DashboardLayout({ children }: { children: ReactNode }) {
   const [isSignOutProcessing, setIsSignOutProcessing] = useState(false);
-
-  const { isOpen } = useContext(SidebarContext);
-
+  const [isCollapse, setIsCollapse] = useState(false);
   const pathname = usePathname();
-  const isProjectPage = pathname === ROUTES.PROJECTS;
+
+  const toggleSidebar = () => {
+    setIsCollapse(isCollapse => !isCollapse);
+  };
 
   // TODO: Need to check show Loading again
   const handleSignOut = async () => {
-    // setIsSignOutProcessing(true);
     await signOut();
     setIsSignOutProcessing(true);
   };
 
   return (
     <Flex alignItems="start" className="bg-body antialiased font-primary">
-      <div className="h-screen">
-        <SideBar
-          onSignOut={handleSignOut}
-          isSignOutProcessing={isSignOutProcessing}
-        />
-      </div>
+      <SideBar
+        pathname={pathname}
+        isCollapse={isCollapse}
+        onSignOut={handleSignOut}
+        isSignOutProcessing={isSignOutProcessing}
+      />
       <div
-        className={`flex-1 p-4 sm:p-5 md:p-6 pt-6 ${
-          isOpen ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
+        className={`p-4 sm:p-5 md:p-6 pt-6 ${
+          isCollapse ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
         }`}>
-        <DashboardHeader />
-        <div className={`${isProjectPage ? "mt-0" : "mt-4"}`}>{children}</div>
+        <DashboardHeader
+          toggleSidebar={toggleSidebar}
+          isCollapseSidebar={isCollapse}
+        />
+        <div className="mt-4">{children}</div>
       </div>
     </Flex>
   );

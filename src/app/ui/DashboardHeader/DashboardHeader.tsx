@@ -60,15 +60,6 @@ const DashboardHeader = ({
         </div>
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 mr-3 md:justify-end">
-        <div className="mr-4">
-          <TextInput
-            id="search"
-            placeholder="Search here"
-            type="text"
-            autoFocus
-            className="py-0.5 w-full bg-transparent hover:bg-transparent focus:bg-transparent min-w-[100px]"
-          />
-        </div>
         <div className="flex flex-wrap item-center gap-y-1">
           <Link
             href={ROUTES.SIGN_IN}

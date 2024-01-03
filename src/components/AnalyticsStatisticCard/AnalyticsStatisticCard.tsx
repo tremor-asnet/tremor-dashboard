@@ -45,9 +45,11 @@ const AnalyticsStatisticCard = ({
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
-              <Text className="text-few leading-[21px] font-bold">
-                {totalAmount}
-              </Text>
+              {totalAmount && (
+                <Text className="text-few leading-[21px] font-bold">
+                  {`+${totalAmount}`}
+                </Text>
+              )}
               <Text className="ml-1 text-secondary leading-[21px] font-light">
                 {duration}
               </Text>

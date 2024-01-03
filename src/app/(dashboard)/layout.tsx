@@ -32,7 +32,9 @@ export default function DashboardLayoutWrapper({
   };
 
   return (
-    <Flex alignItems="start" className="bg-body antialiased font-primary">
+    <Flex
+      alignItems="start"
+      className="bg-body antialiased font-primary min-h-screen">
       <SideBar
         pathname={pathname}
         isCollapse={isCollapse}
@@ -40,14 +42,14 @@ export default function DashboardLayoutWrapper({
         isSignOutProcessing={isSignOutProcessing}
       />
       <div
-        className={`p-4 sm:p-5 md:p-6 pt-6 ${
+        className={`w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 ${
           isCollapse ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
         }`}>
         <DashboardHeader
           toggleSidebar={toggleSidebar}
           isCollapseSidebar={isCollapse}
         />
-        <div className="mt-4">{children}</div>
+        {children}
       </div>
     </Flex>
   );

@@ -1,6 +1,6 @@
 export const ANALYTIC_SALES_CARD = [
   {
-    id: "1",
+    id: "us",
     flag: "/assets/images/flags/US.webp",
     country: "United State",
     sales: "2500",
@@ -8,7 +8,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "29.9%",
   },
   {
-    id: "2",
+    id: "ge",
     flag: "/assets/images/flags/DE.webp",
     country: "Germany",
     sales: "3.900",
@@ -16,7 +16,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "40.22%",
   },
   {
-    id: "3",
+    id: "gb",
     flag: "/assets/images/flags/GB.webp",
     country: "Great Britain",
     sales: "1.400",
@@ -24,7 +24,7 @@ export const ANALYTIC_SALES_CARD = [
     bounce: "23.44%",
   },
   {
-    id: "4",
+    id: "br",
     flag: "/assets/images/flags/BR.webp",
     country: "Brasil",
     sales: "562",

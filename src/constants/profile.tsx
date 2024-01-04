@@ -1,4 +1,4 @@
-import { SettingSwitchProps } from "@/types/profile";
+import { IPlatformSetting } from "@/types/profile";
 import { MdEmail, MdHome, MdSettings } from "react-icons/md";
 
 export const TABS_HEADER = [
@@ -7,7 +7,7 @@ export const TABS_HEADER = [
   { name: "Setting", icon: <MdSettings /> },
 ];
 
-export const ACCOUNT_SWITCH: SettingSwitchProps[] = [
+export const ACCOUNT_SETTING_FIELDS: IPlatformSetting[] = [
   { label: "Email me when someone follows me", field: "emailMentions" },
   {
     label: "Email me when someone answers on my post",
@@ -16,11 +16,23 @@ export const ACCOUNT_SWITCH: SettingSwitchProps[] = [
   { label: "Email me when someone mentions me", field: "emailAnswerPost" },
 ];
 
-export const APPLICATION_SWITCH: SettingSwitchProps[] = [
+export const APPLICATION_SETTING_FIELDS: IPlatformSetting[] = [
   { label: "New launches and projects", field: "newLaunchesProject" },
   { label: "Monthly product updates", field: "monthlyProductUpdate" },
   { label: "Subscribe to newsletter", field: "subscribeToNewsletter" },
 ];
+
+export const ACCOUNT_SETTING_DATA = {
+  emailMentions: false,
+  emailFollowing: false,
+  emailAnswerPost: false,
+};
+
+export const APPLICATION_SETTING_DATA = {
+  newLaunchesProject: false,
+  monthlyProductUpdate: false,
+  subscribeToNewsletter: false,
+};
 
 export const LIST_PROJECTS = [
   {

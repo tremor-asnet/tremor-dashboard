@@ -5,31 +5,35 @@ import { Flex, Text } from "@tremor/react";
 import { FaPen } from "react-icons/fa";
 
 // Constants
-import { SOCIAL_LINK } from "../../constants/common";
-import { ROUTES } from "@/constants";
+import { ROUTES, SOCIAL_LINK } from "@/constants";
+
+// Types
+import { SocialLinkType } from "@/types";
 
 interface ContactCardProps {
-  title: string;
   information?: string;
   fullName: string;
   phone: string;
   email: string;
   location: string;
+  socials?: SocialLinkType;
 }
 
 const ContactCard = ({
-  title,
   information = "",
   fullName,
   phone,
   email,
   location,
+  socials = SOCIAL_LINK,
 }: ContactCardProps) => {
+  const { facebook, twitter, instagram } = socials;
+
   return (
     <div>
       <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
         <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
-          {title}
+          Profile Information
         </Text>
         <Link className="text-xs" href={ROUTES.PROFILE}>
           <FaPen />
@@ -74,16 +78,16 @@ const ContactCard = ({
             Social:
           </Text>
           <Flex className="justify-start">
-            <Link href={SOCIAL_LINK.facebook} className="pl-1 pr-2">
+            <Link href={facebook} className="pl-1 pr-2">
               <IoLogoFacebook
                 size={18}
                 className="text-[#3b5998] rounded-lg stroke-2"
               />
             </Link>
-            <Link href={SOCIAL_LINK.twitter} className="pl-1 pr-2">
+            <Link href={twitter} className="pl-1 pr-2">
               <IoLogoTwitter size={18} className="text-[#55acee]" />
             </Link>
-            <Link href={SOCIAL_LINK.instagram} className="pl-1 pr-2">
+            <Link href={instagram} className="pl-1 pr-2">
               <IoLogoInstagram size={18} className="text-[#125688]" />
             </Link>
           </Flex>

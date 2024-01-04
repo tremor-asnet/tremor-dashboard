@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component Should render Tabs snapshot correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-TabGroup-root w-full md:w-[50%] lg:w-[30%] xl:w-[32%] py-2 md:p-0 undefined"
+      >
+        <div
+          aria-orientation="horizontal"
+          class="tremor-TabList-root overflow-x-clip border-tremor-border dark:border-dark-tremor-border w-full md:w-full space-x-0 max-w-auto md:max-w-full flex flex-col sm:flex-row items-center justify-center bg-[rgb(248,249,250)] p-1 rounded-xl border-0"
+          role="tablist"
+        >
+          <button
+            aria-selected="true"
+            class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+            data-headlessui-state="selected"
+            data-testid="tab"
+            id="headlessui-tabs-tab-:r0:"
+            role="tab"
+            tabindex="0"
+            type="button"
+          >
+            <span>
+              <div
+                class="flex items-center justify-center text-tremor-content-title text-base px-6"
+              >
+                <span
+                  class="text-xl pr-2"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  App
+                </span>
+              </div>
+            </span>
+          </button>
+          <button
+            aria-selected="false"
+            class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+            data-headlessui-state=""
+            data-testid="tab"
+            id="headlessui-tabs-tab-:r1:"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            <span>
+              <div
+                class="flex items-center justify-center text-tremor-content-title text-base px-6"
+              >
+                <span
+                  class="text-xl pr-2"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  Message
+                </span>
+              </div>
+            </span>
+          </button>
+          <button
+            aria-selected="false"
+            class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+            data-headlessui-state=""
+            data-testid="tab"
+            id="headlessui-tabs-tab-:r2:"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            <span>
+              <div
+                class="flex items-center justify-center text-tremor-content-title text-base px-6"
+              >
+                <span
+                  class="text-xl pr-2"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  Setting
+                </span>
+              </div>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-TabGroup-root w-full md:w-[50%] lg:w-[30%] xl:w-[32%] py-2 md:p-0 undefined"
+    >
+      <div
+        aria-orientation="horizontal"
+        class="tremor-TabList-root overflow-x-clip border-tremor-border dark:border-dark-tremor-border w-full md:w-full space-x-0 max-w-auto md:max-w-full flex flex-col sm:flex-row items-center justify-center bg-[rgb(248,249,250)] p-1 rounded-xl border-0"
+        role="tablist"
+      >
+        <button
+          aria-selected="true"
+          class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+          data-headlessui-state="selected"
+          data-testid="tab"
+          id="headlessui-tabs-tab-:r0:"
+          role="tab"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <div
+              class="flex items-center justify-center text-tremor-content-title text-base px-6"
+            >
+              <span
+                class="text-xl pr-2"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                  />
+                </svg>
+              </span>
+              <span>
+                App
+              </span>
+            </div>
+          </span>
+        </button>
+        <button
+          aria-selected="false"
+          class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+          data-headlessui-state=""
+          data-testid="tab"
+          id="headlessui-tabs-tab-:r1:"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span>
+            <div
+              class="flex items-center justify-center text-tremor-content-title text-base px-6"
+            >
+              <span
+                class="text-xl pr-2"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Message
+              </span>
+            </div>
+          </span>
+        </button>
+        <button
+          aria-selected="false"
+          class="tremor-Tab-root flex whitespace-nowrap truncate outline-none focus:ring-0 text-tremor-default ui-selected:text-tremor-brand dark:ui-selected:text-dark-tremor-brand border-transparent transition duration-100 hover:border-tremor-content hover:text-tremor-content-emphasis text-tremor-content dark:hover:border-dark-tremor-content-emphasis dark:hover:text-dark-tremor-content-emphasis dark:text-dark-tremor-content ui-selected:border-tremor-brand dark:ui-selected:border-dark-tremor-brand -mb-px px-2 ui-selected:border-0 ui-selected:bg-tremor-background py-[5px] hover:border-0 hover:outline-0 shadow-none ui-selected:shadow-md rounded-lg w-full md:w-full max-w-full items-center justify-center"
+          data-headlessui-state=""
+          data-testid="tab"
+          id="headlessui-tabs-tab-:r2:"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span>
+            <div
+              class="flex items-center justify-center text-tremor-content-title text-base px-6"
+            >
+              <span
+                class="text-xl pr-2"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+                  />
+                </svg>
+              </span>
+              <span>
+                Setting
+              </span>
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -15,5 +15,5 @@ export const ITEMS_DASHBOARD = [
 // Link items Profile list
 export const ITEMS_PROFILE = [
   { label: "Profile Overview", href: ROUTES.PROFILE, content: "P" },
-  { label: "All Project", href: ROUTES.PROJECTS, content: "A" },
+  { label: "All Projects", href: ROUTES.PROJECTS, content: "A" },
 ];

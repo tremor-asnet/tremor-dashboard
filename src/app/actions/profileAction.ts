@@ -3,8 +3,8 @@
 // Constants
 import { ROUTER_API_URL } from "@/constants";
 
-// Integration api for Profile Conversation
-export const getProfileConversations = async () => {
+// Integration api for Profile
+export const getProfile = async () => {
   const res = await fetch(`${ROUTER_API_URL}/profile`, {
     method: "GET",
     headers: {

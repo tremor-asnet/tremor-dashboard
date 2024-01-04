@@ -25,7 +25,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      {/* TODO: Add class to custom theme dark or light */}
+      <body className={`${inter.className} light`}>{children}</body>
     </html>
   );
 }

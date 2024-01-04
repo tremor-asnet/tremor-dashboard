@@ -2,10 +2,9 @@ import { Flex, Card, Text } from "@tremor/react";
 
 // Components
 import {
-  Tabs,
-  ProfileConversations,
+  ConversationHistory,
   ProfileInfo,
-  ProfileProjectCard,
+  ProjectInfoCard,
   ContactCard,
   PlatformSetting,
 } from "@/components";
@@ -14,13 +13,10 @@ import {
 import { PROFILE_HEADER } from "@/mocks";
 
 // Actions
-import {
-  getProfileConversations,
-  getProfileProject,
-} from "@/app/actions/profileAction";
+import { getProfile, getProfileProject } from "@/app/actions/profileAction";
 
 const Profile = async () => {
-  const profileData = await getProfileConversations();
+  const profileData = await getProfile();
   const projectData = await getProfileProject();
 
   return (
@@ -28,13 +24,12 @@ const Profile = async () => {
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
         <Card>
-          <Flex className="mb-2 py-2 flex-col md:flex-row items-start md:items-center">
+          <Flex className="flex-col md:flex-row items-start md:items-center">
             {/* Header */}
             <ProfileInfo
-              isOnHeader={true}
               name={profileData.name}
               role={profileData.role}
-              src={PROFILE_HEADER.src}
+              avatarUrl={PROFILE_HEADER.avatarUrl}
             />
           </Flex>
           {/* Main content */}
@@ -43,30 +38,28 @@ const Profile = async () => {
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
-                  title="Platform Setting"
-                  accountSetting={profileData.account_setting}
-                  applicationSetting={profileData.application_setting}
+                  accountSettingData={profileData.account_setting}
+                  applicationSettingData={profileData.application_setting}
                 />
               </div>
-              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 lg:flex" />
+              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />
               {/* Profile Information */}
               <Flex className="w-full md:basis-2/4">
                 <ContactCard
-                  title="profile information"
                   information={profileData.information}
                   fullName={profileData.name}
                   phone={profileData.phone}
                   email={profileData.email}
                   location={profileData.location}
+                  socials={profileData.socials}
                 />
               </Flex>
-              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 lg:flex" />
+              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />
             </Flex>
             {/* Profile Conversations */}
-            <div className="w-full lg:basis-1/3">
-              <ProfileConversations
-                title="conversations"
-                profileList={profileData?.conversations || []}
+            <div className="w-full mt-6 lg:mt-0 lg:basis-1/3">
+              <ConversationHistory
+                conversationHistory={profileData?.conversations || []}
               />
             </div>
           </Flex>
@@ -78,7 +71,7 @@ const Profile = async () => {
             <Text className="font-light leading-normal text-sm text-secondary mb-6">
               Architects design houses
             </Text>
-            <ProfileProjectCard links={projectData} />
+            <ProjectInfoCard links={projectData} />
           </Flex>
         </Card>
       </div>

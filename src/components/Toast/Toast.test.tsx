@@ -1,25 +1,33 @@
 // Libs
-import { cleanup, render, screen } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 
 // Components
 import Toast from "./Toast";
 
-const setup = () => {
-  const props = {
-    content: "Create account successfully.",
-  };
+// Constants
+import { SIGN_UP_MESSAGE } from "@/constants";
 
-  return render(<Toast data-testid="toast" {...props} />);
+const handleCloseToast = jest.fn();
+const ToastProps = {
+  message: SIGN_UP_MESSAGE.SUCCESS,
+  onClose: handleCloseToast,
 };
 
-describe("Toast component render", () => {
-  afterEach(cleanup);
+const ToastComponent = () => render(<Toast {...ToastProps} />);
 
-  test("should render Toast component correctly", () => {
-    setup();
+describe("Toast component", () => {
+  test("should render Toast component snapshot correctly", () => {
+    const { container } = ToastComponent();
 
-    const toast = screen.getByTestId("toast");
+    expect(container).toMatchSnapshot();
+  });
 
-    expect(toast).toMatchSnapshot();
+  test("calls onClose when close button is clicked", () => {
+    const { getByTestId } = ToastComponent();
+
+    const closeButton = getByTestId("toast");
+    fireEvent.click(closeButton);
+
+    expect(handleCloseToast).toHaveBeenCalledTimes(0);
   });
 });

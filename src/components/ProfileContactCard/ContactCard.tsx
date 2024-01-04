@@ -5,7 +5,7 @@ import { Flex, Text } from "@tremor/react";
 import { FaPen } from "react-icons/fa";
 
 // Constants
-import { ROUTES } from "@/constants";
+import { ROUTES, SOCIAL_LINK } from "@/constants";
 
 // Types
 import { SocialLinkType } from "@/types";
@@ -16,7 +16,7 @@ interface ContactCardProps {
   phone: string;
   email: string;
   location: string;
-  socials: SocialLinkType;
+  socials?: SocialLinkType;
 }
 
 const ContactCard = ({
@@ -25,7 +25,7 @@ const ContactCard = ({
   phone,
   email,
   location,
-  socials,
+  socials = SOCIAL_LINK,
 }: ContactCardProps) => {
   const { facebook, twitter, instagram } = socials;
 

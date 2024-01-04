@@ -46,12 +46,12 @@ const Profile = async () => {
               {/* Profile Information */}
               <Flex className="w-full md:basis-2/4">
                 <ContactCard
-                  title="profile information"
                   information={profileData.information}
                   fullName={profileData.name}
                   phone={profileData.phone}
                   email={profileData.email}
                   location={profileData.location}
+                  socials={profileData.socials}
                 />
               </Flex>
               <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />

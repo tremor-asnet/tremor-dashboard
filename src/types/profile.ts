@@ -23,3 +23,9 @@ export type ApplicationSettingType = {
   monthlyProductUpdate: boolean;
   subscribeToNewsletter: boolean;
 };
+
+export type SocialLinkType = {
+  facebook: string;
+  twitter: string;
+  instagram: string;
+};

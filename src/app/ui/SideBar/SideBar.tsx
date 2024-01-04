@@ -28,18 +28,14 @@ import { ROUTES } from "@/constants/routes";
 // Styles
 import "./styles.css";
 
+import { useFormStatus } from "react-dom";
+
 interface SideBarProps {
   pathname: string;
   isCollapse: boolean;
   onSignOut: () => Promise<void>;
-  isSignOutProcessing: boolean;
 }
-const SideBar = ({
-  onSignOut,
-  isSignOutProcessing,
-  isCollapse,
-  pathname,
-}: SideBarProps) => {
+const SideBar = ({ onSignOut, isCollapse, pathname }: SideBarProps) => {
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
   const paddingOpenClass = isCollapse && "xl:pl-3.5";
@@ -105,17 +101,8 @@ const SideBar = ({
                   action={onSignOut}
                   className="w-full flex items-center font-normal relative">
                   <span className="absolute left-6">L</span>
-                  <button
-                    type="submit"
-                    className={`${hiddenOpenClass} w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
-                    Logout
-                  </button>
+                  <LogoutButton isCollapse={isCollapse} />
                 </form>
-                {isSignOutProcessing && (
-                  <Flex className="absolute left-[80%]">
-                    <LoadingIndicator />
-                  </Flex>
-                )}
               </ListItem>
             </List>
           </AccordionBody>
@@ -208,5 +195,19 @@ const SideBar = ({
     </div>
   );
 };
+
+function LogoutButton({ isCollapse }: { isCollapse: boolean }) {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      className={`${
+        isCollapse && "xl:hidden"
+      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
+      {pending ? <LoadingIndicator width="w-5" height="w-5" /> : "Logout"}
+    </button>
+  );
+}
 
 export default SideBar;

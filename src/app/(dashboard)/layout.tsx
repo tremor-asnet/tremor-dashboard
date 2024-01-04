@@ -17,7 +17,6 @@ export default function DashboardLayoutWrapper({
 }: {
   children: ReactNode;
 }) {
-  const [isSignOutProcessing, setIsSignOutProcessing] = useState(false);
   const [isCollapse, setIsCollapse] = useState(false);
   const pathname = usePathname();
 
@@ -28,7 +27,6 @@ export default function DashboardLayoutWrapper({
   // TODO: Need to check show Loading again
   const handleSignOut = async () => {
     await signOut();
-    setIsSignOutProcessing(true);
   };
 
   return (
@@ -39,7 +37,6 @@ export default function DashboardLayoutWrapper({
         pathname={pathname}
         isCollapse={isCollapse}
         onSignOut={handleSignOut}
-        isSignOutProcessing={isSignOutProcessing}
       />
       <div
         className={`w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 ${

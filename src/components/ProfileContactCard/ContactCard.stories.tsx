@@ -7,7 +7,7 @@ import { PROFILE_INFO } from "../../mocks/card";
 import ContactCard from "./ContactCard";
 
 // Constants
-import { SOCIAL_LINK } from "@/constants/common";
+import { SOCIAL_LINK } from "@/constants";
 
 export default { component: ContactCard };
 const meta = {

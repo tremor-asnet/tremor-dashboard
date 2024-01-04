@@ -33,16 +33,29 @@ import { useFormStatus } from "react-dom";
 interface SideBarProps {
   pathname: string;
   isCollapse: boolean;
+  toggleSidebar: () => void;
   onSignOut: () => Promise<void>;
 }
-const SideBar = ({ onSignOut, isCollapse, pathname }: SideBarProps) => {
+const SideBar = ({
+  onSignOut,
+  isCollapse,
+  toggleSidebar,
+  pathname,
+}: SideBarProps) => {
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
   const paddingOpenClass = isCollapse && "xl:pl-3.5";
 
+  // Handle case close sidebar in smaller than a desktop screen
+  const handleClickSidebarItem = () => {
+    if (window.innerWidth <= 768) {
+      toggleSidebar();
+    }
+  };
+
   return (
     <div
-      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-10 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
+      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isCollapse
           ? "translate-x-0 xl:w-[100px]"
           : "translate-x-[-20rem] xl:translate-x-0"
@@ -86,7 +99,10 @@ const SideBar = ({ onSignOut, isCollapse, pathname }: SideBarProps) => {
               {ITEMS.map(item => {
                 const { label, href, content } = item;
                 return (
-                  <ListItem className="leading-[26px] !p-0" key={label}>
+                  <ListItem
+                    className="leading-[26px] !p-0"
+                    key={label}
+                    onClick={handleClickSidebarItem}>
                     <Link
                       className={`w-full flex font-normal py-3 px-6 ${centerOpenClass}`}
                       href={href}>
@@ -127,7 +143,8 @@ const SideBar = ({ onSignOut, isCollapse, pathname }: SideBarProps) => {
                   key={label}
                   className={`!p-0 leading-[26px] rounded-md my-[3px] text-center ${
                     pathname === href && "bg-[rgb(52,71,103)]"
-                  }`}>
+                  }`}
+                  onClick={handleClickSidebarItem}>
                   <Link
                     className={`font-normal w-full py-3 px-6 ${centerOpenClass}`}
                     href={href}>
@@ -176,7 +193,8 @@ const SideBar = ({ onSignOut, isCollapse, pathname }: SideBarProps) => {
                         key={label}
                         className={`!p-0 leading-[26px] mt-1 rounded-md ${
                           pathname === href && "bg-[rgb(52,71,103)]"
-                        }`}>
+                        }`}
+                        onClick={handleClickSidebarItem}>
                         <Link
                           className={`font-normal w-full py-3 px-8 ${centerOpenClass}`}
                           href={href}>

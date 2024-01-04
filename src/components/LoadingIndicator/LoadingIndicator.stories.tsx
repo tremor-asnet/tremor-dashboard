@@ -13,5 +13,5 @@ const meta = {
 type Story = StoryObj<typeof meta>;
 
 export const LoadingIndicatorDefault: Story = {
-  render: () => <LoadingIndicator />,
+  render: () => <LoadingIndicator width="w-5" height="w-5" />,
 };

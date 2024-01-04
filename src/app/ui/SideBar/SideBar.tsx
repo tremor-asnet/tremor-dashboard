@@ -40,6 +40,10 @@ const SideBar = ({
   isCollapse,
   pathname,
 }: SideBarProps) => {
+  const hiddenOpenClass = isCollapse && "xl:hidden";
+  const centerOpenClass = isCollapse && "xl:justify-center";
+  const paddingOpenClass = isCollapse && "xl:pl-3.5";
+
   return (
     <div
       className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-10 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
@@ -56,9 +60,7 @@ const SideBar = ({
         />
         <Link href={ROUTES.HOME}>
           <Metric
-            className={`text-white text-tremor-default ${
-              isCollapse && "xl:hidden"
-            }`}>
+            className={`text-white text-tremor-default ${hiddenOpenClass}`}>
             Tremor Dashboard PRO
           </Metric>
         </Link>
@@ -79,9 +81,7 @@ const SideBar = ({
               src="/images/avatar/avatar-sm.webp"
             />
             <Text
-              className={`leading-0 text-white self-center ml-[7px] ${
-                isCollapse && "xl:hidden"
-              }`}>
+              className={`leading-0 text-white self-center ml-[7px] ${hiddenOpenClass}`}>
               Brooklyn Alice
             </Text>
           </AccordionHeader>
@@ -92,12 +92,10 @@ const SideBar = ({
                 return (
                   <ListItem className="leading-[26px] !p-0" key={label}>
                     <Link
-                      className="w-full flex font-normal py-3 px-6"
+                      className={`w-full flex font-normal py-3 px-6 ${centerOpenClass}`}
                       href={href}>
                       <span>{content}</span>
-                      <span className={`${isCollapse && "xl:hidden"}`}>
-                        {label}
-                      </span>
+                      <span className={`${hiddenOpenClass}`}>{label}</span>
                     </Link>
                   </ListItem>
                 );
@@ -109,9 +107,7 @@ const SideBar = ({
                   <span className="absolute left-6">L</span>
                   <button
                     type="submit"
-                    className={`${
-                      isCollapse && "xl:hidden"
-                    } w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
+                    className={`${hiddenOpenClass} w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
                     Logout
                   </button>
                 </form>
@@ -131,10 +127,9 @@ const SideBar = ({
           <AccordionHeader
             className={`${
               pathname.includes("/dashboards") && "bg-[rgba(255,255,255,0.2)]"
-            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
+            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md ${paddingOpenClass}`}>
             <Icon size="lg" icon={RiLayoutMasonryFill} />
-            <Text
-              className={`text-white self-center ${isCollapse && "xl:hidden"}`}>
+            <Text className={`text-white self-center ${hiddenOpenClass}`}>
               Dashboards
             </Text>
           </AccordionHeader>
@@ -146,11 +141,11 @@ const SideBar = ({
                   className={`!p-0 leading-[26px] rounded-md my-[3px] text-center ${
                     pathname === href && "bg-[rgb(52,71,103)]"
                   }`}>
-                  <Link className="font-normal w-full py-3 px-6" href={href}>
+                  <Link
+                    className={`font-normal w-full py-3 px-6 ${centerOpenClass}`}
+                    href={href}>
                     <span>{content}</span>
-                    <span className={`${isCollapse && "xl:hidden"}`}>
-                      {label}
-                    </span>
+                    <span className={`${hiddenOpenClass}`}>{label}</span>
                   </Link>
                 </ListItem>
               ))}
@@ -167,12 +162,10 @@ const SideBar = ({
             className={`${
               pathname.includes("/pages/profile") &&
               "bg-[rgba(255,255,255,0.2)]"
-            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md`}>
+            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md ${paddingOpenClass}`}>
             <Icon size="lg" icon={IoMdImage} />
             <Text
-              className={`text-white leading-0 self-center ml-2.5 ${
-                isCollapse && "xl:hidden"
-              }`}>
+              className={`text-white leading-0 self-center ml-2.5 ${hiddenOpenClass}`}>
               Pages
             </Text>
           </AccordionHeader>
@@ -183,12 +176,10 @@ const SideBar = ({
                   className={`${
                     pathname.includes("/pages/profile") &&
                     "bg-[rgba(255,255,255,0.2)]"
-                  } flex text-[rgba(255,255,255,0.5)] rounded-md`}>
+                  } flex text-[rgba(255,255,255,0.5)] rounded-md ${paddingOpenClass}`}>
                   <Text className="text-white self-center ml-4 mt-1">
                     <span className="mr-6">P</span>
-                    <span className={`${isCollapse && "xl:hidden"}`}>
-                      Profile
-                    </span>
+                    <span className={`${hiddenOpenClass}`}>Profile</span>
                   </Text>
                 </AccordionHeader>
                 <AccordionBody>
@@ -200,12 +191,10 @@ const SideBar = ({
                           pathname === href && "bg-[rgb(52,71,103)]"
                         }`}>
                         <Link
-                          className="font-normal w-full py-3 px-8"
+                          className={`font-normal w-full py-3 px-8 ${centerOpenClass}`}
                           href={href}>
                           <span>{content}</span>
-                          <span className={`${isCollapse && "xl:hidden"}`}>
-                            {label}
-                          </span>
+                          <span className={`${hiddenOpenClass}`}>{label}</span>
                         </Link>
                       </ListItem>
                     ))}

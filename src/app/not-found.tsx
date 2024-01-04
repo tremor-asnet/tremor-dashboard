@@ -9,7 +9,10 @@ import { MdOutlineSentimentVeryDissatisfied } from "react-icons/md";
 const NotFound = () => {
   return (
     <main className="absolute flex flex-col inset-0 items-center justify-center">
-      <MdOutlineSentimentVeryDissatisfied size='64' className="w-10 text-gray-400" />
+      <MdOutlineSentimentVeryDissatisfied
+        size="64"
+        className="w-10 text-gray-400"
+      />
       <h2 className="text-xl font-semibold">404 | Not Found</h2>
       <p>Can not find the page</p>
       <Link

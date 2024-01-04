@@ -55,9 +55,9 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
               </Button>
             </Link>
             <div className="container-avatars">
-              {participants.map(({ name, avatar }, index) => (
+              {participants.map(({ name, avatar }) => (
                 <Avatar
-                  key={index}
+                  key={`${name}-${id}`}
                   alt={name}
                   className="relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
                   width={20}

@@ -36,6 +36,7 @@ export default function DashboardLayoutWrapper({
       <SideBar
         pathname={pathname}
         isCollapse={isCollapse}
+        toggleSidebar={toggleSidebar}
         onSignOut={handleSignOut}
       />
       <div

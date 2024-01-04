@@ -3,12 +3,10 @@
 import { useEffect, useState } from "react";
 
 // Libs
-import { useContext } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
 import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
-import { TextInput } from "@tremor/react";
 import Link from "next/link";
 import {
   MdMenu,
@@ -52,13 +50,14 @@ const DashboardHeader = ({
     };
   }, []);
 
-  const activeStickyScroll = isScrolled
-    ? "sticky top-3 backdrop-blur-md bg-white/30 z-10 rounded-xl bg-white/80 bg-neutral-100 shadow-xl"
-    : "";
+  const activeStickyScroll =
+    isScrolled && !isAllProjectPage
+      ? "sticky top-3 backdrop-blur-md bg-white/30 z-10 rounded-xl bg-white/80 bg-neutral-100 shadow-xl"
+      : "";
 
   return (
     <div
-      className={`${activeStickyScroll} h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
+      className={`${activeStickyScroll} h-32 md:h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
         isAllProjectPage &&
         `absolute top-10 md:top-9 pl-7 pr-2 w-[93%] ${
           isCollapseSidebar

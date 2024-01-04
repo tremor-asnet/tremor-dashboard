@@ -1,11 +1,13 @@
 "use client";
 
 // Libs
+import { useContext } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
+import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
+import { TextInput } from "@tremor/react";
 import Link from "next/link";
-import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import {
   MdMenu,
   MdMenuOpen,
@@ -72,12 +74,12 @@ const DashboardHeader = ({
             className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
             onClick={toggleSidebar}>
             {isCollapseSidebar ? (
-              <MdMenuOpen
+              <MdMenu
                 className="text-tremor-content text-2xl"
                 color={`${isProjectPage && "white"}`}
               />
             ) : (
-              <MdMenu
+              <MdMenuOpen
                 className="text-tremor-content text-2xl"
                 color={`${isProjectPage && "white"}`}
               />

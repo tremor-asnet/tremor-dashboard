@@ -41,7 +41,7 @@ const SalesStatisticCard = ({
       <Flex className="items-start">
         <Flex className="flex-col w-2/3">
           <Flex className="flex-col justify-start items-start">
-            <Text className="text-md text-secondary font-semibold tracking-[0.39998px]">
+            <Text className="text-md text-secondary font-semibold tracking-[0.4px]">
               {type}
             </Text>
             <Text className="text-primary text-xl leading-[33px] font-bold">
@@ -54,7 +54,7 @@ const SalesStatisticCard = ({
                 {`+${totalAmount}`}
               </Text>
             )}
-            <Text className="ml-1 text-secondary leading-[21px] tracking-[0.39998px]">
+            <Text className="ml-1 text-secondary leading-[21px] tracking-[0.4px]">
               {duration}
             </Text>
           </Flex>
@@ -62,7 +62,7 @@ const SalesStatisticCard = ({
         <Flex
           className="justify-end items-end w-1/3 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
-          <Text className="!text-xs leading-[21px] tracking-[0.39998px]">
+          <Text className="!text-xs leading-[21px] tracking-[0.4px]">
             {currentSalesDate}
           </Text>
         </Flex>
@@ -74,7 +74,7 @@ const SalesStatisticCard = ({
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-4 py-1.5"
                   variant="light"
                   onClick={() => handleSelectSalesDate(item.label)}>
-                  <Text className="font-normal text-sm text-secondary hover:text-primary leading-[21px] tracking-[0.13132px]">
+                  <Text className="font-normal text-sm text-secondary hover:text-primary leading-[21px] tracking-[0.13px]">
                     {item.label}
                   </Text>
                 </Button>

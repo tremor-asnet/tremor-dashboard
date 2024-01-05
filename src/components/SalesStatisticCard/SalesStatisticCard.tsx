@@ -9,11 +9,6 @@ import { Card, Text, Flex, Button } from "@tremor/react";
 //Types
 import { TSalesStatistic } from "@/types";
 
-type AcionCard = {
-  key: string;
-  label: string;
-};
-
 //Constans
 import { ITEM_ACTION_SALES_DATE } from "@/constants/commons";
 
@@ -22,19 +17,17 @@ import { STATISTICS_DATA } from "@/mocks/sales";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
-  actions: AcionCard[];
 }
 
 const SalesStatisticCard = ({
   statisticsData = STATISTICS_DATA[0],
-  actions = ITEM_ACTION_SALES_DATE,
 }: ISalesStatisticProp): JSX.Element => {
   const { id, type, amount, totalAmount, duration } = statisticsData;
   const [isOpenAction, setOpenAction] = useState(false);
   const [currentSalesDate, setCurrentSalesDate] = useState("6 May - 7 May");
   const openActionSalesDate = isOpenAction;
 
-  const handleItemActionSalesDate = (labelDate: string) => {
+  const handleSelectSalesDate = (labelDate: string) => {
     setOpenAction(false);
     setCurrentSalesDate(labelDate);
   };
@@ -75,12 +68,12 @@ const SalesStatisticCard = ({
         </Flex>
         {openActionSalesDate && (
           <div className="absolute p-2 -right-2 top-8 z-10 bg-white rounded-lg shadow-md">
-            {actions.map(item => (
+            {ITEM_ACTION_SALES_DATE.map(item => (
               <Flex key={item.key} flex-col>
                 <Button
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-4 py-1.5"
                   variant="light"
-                  onClick={() => handleItemActionSalesDate(item.label)}>
+                  onClick={() => handleSelectSalesDate(item.label)}>
                   <Text className="font-normal text-sm text-secondary hover:text-primary leading-[21px] tracking-[0.13132px]">
                     {item.label}
                   </Text>

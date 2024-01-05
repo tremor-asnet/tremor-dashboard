@@ -1,40 +1,58 @@
 # Tremor Dashboard
 
 ## Overview
-- README: Could we organize command lines in a table? We need a tidy README file https://www.evernote.com/shard/s511/sh/ce382942-6a2e-4a9d-ad05-d45c093049ff/cB86wRFV30q01gBbkdu3qlUrIO4Hxco97KnmjS9wlU7RA-s9TEbqZjC97A 
-- Missing "Prerequisites"
+
+- README: Could we organize command lines in a table? We need a tidy README file [Evernote link](https://www.evernote.com/shard/s511/sh/ce382942-6a2e-4a9d-ad05-d45c093049ff/cB86wRFV30q01gBbkdu3qlUrIO4Hxco97KnmjS9wlU7RA-s9TEbqZjC97A)
 - We need `robots.txt` and `sitemap` from scratch as well.
-- The number from mock data '230,900' should be number 230900 and we will write util to format it from Front-end.
+- The number from mock data `230,900` should be number `230900` and we will write util to format it from Front-end.
 - Cursor pointer on Link, clickable area, button, sidebar...
-- Please check outline-focus while press "tab" keyboard. (imagine: using web without using mouse.)
-- Please truncate test and apply (CSS defensive)[https://defensivecss.dev/] 
+- Please check outline-focus while press `tab` keyboard. (imagine: using web without using mouse.)
+- Please truncate test and apply [CSS defensive](https://defensivecss.dev/)
+- There are lack of configuration next.config.js. Could you double check [next.config.js Options](https://nextjs.org/docs/app/api-reference/next-config-js?)
+- What are difference between `actions/` and `services/`?
+- `src/` is optional but it contains as `root` folder and wrap `app/` now. Did you check [Project structure](https://nextjs.org/docs/getting-started/project-structure)
+- What are difference between `common.ts` and `commons.ts`?
+- Which port to run Storybook locally?
 
 ## React Overview
 
 - Type/interface naming still inconsistent
 - Using useMemo, useCallback, checking rerender.
-- Naming, please use apparent name: example: `isSwitchOn`?? it should be relevent to the action on the form instead of how UI display; `isRememberMe` is better. 
+- Naming, please use apparent name: example: `isSwitchOn`?? it should be relevent to the action on the form instead of how UI display; `isRememberMe` is better.
 - Please collect all images paths in a constant file, don't use everywhere
 - Check props default value. Some is useless, some don't have
 - Checkbox component shows warning 'onKeyPress' is deprecated.
 - Theme is not good at all, colors and metrics are using everywhere in code. Folder 'themes' is empty now. Please split theme.
-- Please apply code spliting.
+- Please apply code splitting.
+- In file `getUserByEmail`, did you check length or valid data from response before interfering it? I can’t see return users[0] without checking length.
+- Why do we need `SidebarContextProvider`?
+- In SignInForm, why do we need these variables? isEmailError, isPasswordError? We need to based on emailErrorMessage or passwordErrorMessage, right?
+- Why do we need to dispatch in SignInForm? Please build it on context.
+
+## Next.js Overview
+
+- I can’t see `Error` and `Loading` for each page
+- How about code splitting? `Suspense` and `Lazy load`?
+- Did you check data-cache for `actions/`?
 
 ## Style config
 
 - Theming for `dark` + `light`
 - Splitting theme into small files
+- How can we switch theme with this code `bg-[linear-gradient(195deg,#42424A,#191919)]`?
 
 ## Storybook
 
 - Please correct + Code snippet + document for Components
+  - Missing docs /snippet of code for Loading Indicator
+  - Some component docs are showing incorrectly
 - Do we need folder src/story/
-    
+
 
 ## Components
 
 - `<Checkbox />`
-    
+
     - onKeyPress? autoFocus?
     - `id`, `checked`, `onChange`… already in `{...props}`
 
@@ -45,7 +63,7 @@
         - `src` ⇒ should be `avatarUrl`
     - Missing storybook
     - Please refactor
-        
+
         ```html
         {isOnHeader ? (
           <Avatar
@@ -67,9 +85,9 @@
           />
         )}
         ```
-        
+
     - Please refactor
-        
+
         ```html
         {isOnHeader ? (
           <div className="ml-6" data-testid="profile-info-lg">
@@ -85,13 +103,15 @@
           </div>
         )}
         ```
-        
+
 - `<BreadCrumb />`
 
     - Please rename into: **Breadcrumb**
     - `pathname` should be come from props
     - Don’t handle logic inside component
     - Please using constant for name
+    - Why did we use <div aria-hidden=“true”, could you use SEMANTIC HTML correctly?
+    - Regarding links, why didn’t use object instead? Same issue for pageName
 
 - `<ConverstionItem />`
 
@@ -100,7 +120,7 @@
     - `name` ?? Please update
     - `description` ?? ⇒ `LastConversation`
 
-- `<ProfileConversation />
+- `<ProfileConversation />`
 
     - Should be `UserConversationHistory`. Conversation is not relative to the profile
     - `profileList` ⇒ conversations
@@ -151,7 +171,7 @@
     - It’s a layout
     - Please split into smaller
     - Make link surrounder area clickable
-        
+
 - `<Tabs />`
 
     - Component is plural but filename is not. Please make both consistent.
@@ -179,7 +199,7 @@
     - using [Array.map](http://Array.map) for render <Avatar … />
 
 - Image lazyload + fallback
-        
+
 
 ## **Page Layout**
 

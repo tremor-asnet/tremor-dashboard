@@ -47,7 +47,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           As Uber works through a huge amount of internal management turmoil.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row items-center flex flex-wrap justify-center xs:justify-between"
+          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
             href="/pages/profile/all-projects"
@@ -147,7 +147,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           As Uber works through a huge amount of internal management turmoil.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row items-center flex flex-wrap justify-center xs:justify-between"
+          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
             href="/pages/profile/all-projects"
@@ -247,7 +247,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           Different people have different taste, and various types of music.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row items-center flex flex-wrap justify-center xs:justify-between"
+          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
             href="/pages/profile/all-projects"
@@ -347,7 +347,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           Why would anyone pick blue over pink? Pink is obviously a better color.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row items-center flex flex-wrap justify-center xs:justify-between"
+          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
             href="/pages/profile/all-projects"

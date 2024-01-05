@@ -185,7 +185,6 @@
 
 - Messy between tremor component example: <Flex /> + div className from tailwind
 - Authentication
-    - useless “use client”; Form should be handle in other component
     - Page layout for form wrapper
 - Dashboard
     - Create `layout.tsx` for `pages/profile/all-project`

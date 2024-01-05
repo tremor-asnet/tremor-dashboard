@@ -44,7 +44,7 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
             <Link href={ROUTES.PROJECTS}>{primaryName}</Link>
           </Title>
           <Text className="flex-wrap font-light mb-6">{description}</Text>
-          <Flex className="justify-between">
+          <Flex className="flex flex-wrap justify-center xs:justify-between">
             <Link href={ROUTES.PROJECTS}>
               <Button
                 className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
@@ -54,7 +54,7 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
                 </Text>
               </Button>
             </Link>
-            <div className="container-avatars">
+            <div className="container-avatars min-w-[56px] flex flex-nowrap ml-3">
               {participants.map(({ name, avatar }) => (
                 <Avatar
                   key={`${name}-${id}`}

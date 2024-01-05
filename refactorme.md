@@ -44,13 +44,15 @@
 ## Storybook
 
 - Please correct + Code snippet + document for Components
-    - Missing docs /snippet of code for Loading Indicator
-    - Some component docs are showing incorrectly
+  - Missing docs /snippet of code for Loading Indicator
+  - Some component docs are showing incorrectly
 - Do we need folder src/story/
+
 
 ## Components
 
 - `<Checkbox />`
+
     - onKeyPress? autoFocus?
     - `id`, `checked`, `onChange`… already in `{...props}`
 
@@ -103,6 +105,7 @@
         ```
 
 - `<BreadCrumb />`
+
     - Please rename into: **Breadcrumb**
     - `pathname` should be come from props
     - Don’t handle logic inside component
@@ -111,38 +114,48 @@
     - Regarding links, why didn’t use object instead? Same issue for pageName
 
 - `<ConverstionItem />`
+
     - What is `src`?
     - `alt` for avatar should be name of person
     - `name` ?? Please update
     - `description` ?? ⇒ `LastConversation`
 
 - `<ProfileConversation />`
+
     - Should be `UserConversationHistory`. Conversation is not relative to the profile
     - `profileList` ⇒ conversations
     - `onClick` ⇒ Please remove unused props
 
 - `<DashboardHeader />`
+
     - Please rearrange, this is not common component. This is for Dashboard layout and should be in the Dashboard
     - Too much logic + duplicate code
+
 - `<Input />`
+
     - This is more complicate than an input. Should rename to FormInput or FormTextControl or sth similar.
     - Btw, the classname is a nightmare. Please use tailwind `@apply`
 
 - `<PlatformSetting />`
+
     - Please rearrange, this is not common component.
     - ACCOUNT_SWITCH, APPLICATION_SWITCH: check naming here.
     - `title`? meaningless
     - Missing test
+
 - `<ContactCard />`
+
     - `title`? meaningless
     - SOCIAL_LINK? this one is not constant. Please pulling from API
 
 - `<ProfileConversation />`
+
     - `title`? meaningless
     - ProfileConversation rename to **ConversationHistory**
     - `key={[profile.name](http://profile.name/)}` → It’s totally wrong. Please using `id` from API
 
 - `<ProfileInfo />`
+
     - `isOnHeader` why I need to know where it be placed? Please find other ways!
     - `src`? meaningless
     - `const isProjectPage = ....` why I care this?
@@ -152,21 +165,26 @@
     - Please find other name
     - Please check unused `<>`
     - ROUTES.HOME → Link of project is not a constant
+
 - `<Sidebar />`
+
     - It’s a layout
     - Please split into smaller
     - Make link surrounder area clickable
 
 - `<Tabs />`
+
     - Component is plural but filename is not. Please make both consistent.
     - Missing test + storybook
     - Please check unused `<>`
 
 - `<Toast />`
+
     - `id="toast-success”` why id is a constant?
     - Split svg into a component like the other
 
 - `<ProfileItem />`
+
     - Should be `ConversationItem`
     - `src` ⇒ `avatarUrl`
     - `alt` ⇒ get from user name
@@ -174,6 +192,7 @@
     - `description` ⇒ `lastConversation`
 
 - `<ProfileProjectCard />`
+
     - Missing storybook
     - Missing test
     - props name `links`  ?
@@ -181,11 +200,11 @@
 
 - Image lazyload + fallback
 
+
 ## **Page Layout**
 
 - Messy between tremor component example: <Flex /> + div className from tailwind
 - Authentication
-    - useless “use client”; Form should be handle in other component
     - Page layout for form wrapper
 - Dashboard
     - Create `layout.tsx` for `pages/profile/all-project`

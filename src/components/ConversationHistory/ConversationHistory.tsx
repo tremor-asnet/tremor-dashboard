@@ -16,7 +16,7 @@ const ConversationHistory = ({
 }: ConversationHistoryProps) => (
   <>
     <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
-      Profile Conversations
+      Conversations
     </Text>
     {conversationHistory.map(conversation => (
       <UserConversationHistory

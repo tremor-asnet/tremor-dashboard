@@ -3,7 +3,7 @@
 ## Overview
 - README: Could we organize command lines in a table? We need a tidy README file https://www.evernote.com/shard/s511/sh/ce382942-6a2e-4a9d-ad05-d45c093049ff/cB86wRFV30q01gBbkdu3qlUrIO4Hxco97KnmjS9wlU7RA-s9TEbqZjC97A 
 - Missing "Prerequisites"
-- We need `robots.txt`` and `sitemap`` from scratch as well.
+- We need `robots.txt` and `sitemap` from scratch as well.
 - The number from mock data '230,900' should be number 230900 and we will write util to format it from Front-end.
 - Cursor pointer on Link, clickable area, button, sidebar...
 - Please check outline-focus while press "tab" keyboard. (imagine: using web without using mouse.)

@@ -8,7 +8,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       <p
         class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
       >
-        Profile Conversations
+        Conversations
       </p>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"
@@ -286,7 +286,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
     <p
       class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
     >
-      Profile Conversations
+      Conversations
     </p>
     <div
       class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 flex-wrap xs:flex-nowrap"

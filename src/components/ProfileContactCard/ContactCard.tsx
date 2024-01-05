@@ -49,19 +49,19 @@ const ContactCard = ({
         {/* TODO: Refactor code */}
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
-            Full Name
+            Full Name:
           </Text>
           <Text className="font-normal">{fullName}</Text>
         </Flex>
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
-            Mobile
+            Mobile:
           </Text>
           <Text className="font-normal">{phone}</Text>
         </Flex>
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
-            Email
+            Email:
           </Text>
           <Link href={`mailto:${email}`}>
             <Text className="font-normal">{email}</Text>
@@ -69,7 +69,7 @@ const ContactCard = ({
         </Flex>
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
-            Location
+            Location:
           </Text>
           <Text className="font-normal">{location}</Text>
         </Flex>

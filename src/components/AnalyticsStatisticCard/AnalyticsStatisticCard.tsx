@@ -32,8 +32,8 @@ const AnalyticsStatisticCard = ({
           <Flex className="">
             <IconBox
               className="absolute top-[-22px] shadow-box-icon-primary"
-              bgBox={SALE_STATISTICAL[id].bgIcon}
-              icon={SALE_STATISTICAL[id].icon}
+              bgBox={SALE_STATISTICAL[id]?.bgIcon}
+              icon={SALE_STATISTICAL[id]?.icon}
             />
             <Flex className="pl-[90px] flex-col mb-1 items-end">
               <Text className="text-md text-secondary font-light">{type}</Text>

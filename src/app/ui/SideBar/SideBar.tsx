@@ -1,3 +1,6 @@
+import { useEffect, useRef } from "react";
+import { useFormStatus } from "react-dom";
+
 // lib
 import Link from "next/link";
 import Image from "next/image";
@@ -28,7 +31,8 @@ import { ROUTES } from "@/constants/routes";
 // Styles
 import "./styles.css";
 
-import { useFormStatus } from "react-dom";
+// Helpers
+import { isBrowser } from "@/helpers";
 
 interface SideBarProps {
   pathname: string;
@@ -42,19 +46,43 @@ const SideBar = ({
   toggleSidebar,
   pathname,
 }: SideBarProps) => {
+  const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
   const paddingOpenClass = isCollapse && "xl:pl-3.5";
 
+  useEffect(() => {
+    // Add event listener to the document object
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isCollapse]);
+
+  const handleClickOutside = (event: Event) => {
+    if (
+      sideBarRef.current &&
+      !sideBarRef.current.contains(event.target as Node)
+    ) {
+      // Clicked outside the side navigation bar, close it
+      if (isCollapse) {
+        toggleSidebar();
+      }
+    }
+  };
+
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {
-    if (window.innerWidth <= 768) {
+    if (isBrowser && window.innerWidth <= 768) {
       toggleSidebar();
     }
   };
 
   return (
     <div
+      ref={sideBarRef}
       className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isCollapse
           ? "translate-x-0 xl:w-[100px]"

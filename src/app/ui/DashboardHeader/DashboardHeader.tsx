@@ -55,6 +55,9 @@ const DashboardHeader = ({
       ? "sticky top-3 backdrop-blur-md bg-white/30 z-10 rounded-xl bg-white/80 bg-neutral-100 shadow-xl"
       : "";
 
+  const activeIconColor =
+    isScrolled && !isAllProjectPage ? "text-stone-950" : "text-tremor-content";
+
   return (
     <div
       className={`${activeStickyScroll} h-32 md:h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
@@ -80,14 +83,14 @@ const DashboardHeader = ({
           )}
         </div>
       </div>
-      <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 mr-3 md:justify-end">
+      <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end">
         <div className="flex flex-wrap item-center gap-y-1">
           <Link
             href={ROUTES.SIGN_IN}
             aria-label="Link to homepage"
             className="p-2 flex items-center">
             <MdAccountCircle
-              className="text-tremor-content text-xl"
+              className={`${activeIconColor} text-xl`}
               color={color}
             />
           </Link>
@@ -105,13 +108,13 @@ const DashboardHeader = ({
           </div>
           <div className="relative p-2 flex items-center">
             <MdSettings
-              className="text-tremor-content text-xl cursor-pointer"
+              className={`${activeIconColor} text-xl cursor-pointer`}
               color={color}
             />
           </div>
           <div className="relative p-2 flex items-center">
             <MdNotifications
-              className="text-tremor-content text-xl cursor-pointer"
+              className={`${activeIconColor} text-xl cursor-pointer`}
               color={color}
             />
             <div

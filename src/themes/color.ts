@@ -185,6 +185,10 @@ export const boxShadow = {
   "box-icon-primary":
     "rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem",
   "box-sidebar": "0rem 1.25rem 1.6875rem 0rem rgba(0, 0, 0, 0.05)",
+  "btn-primary":
+    "rgba(52, 71, 103, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(52, 71, 103, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(52, 71, 103, 0.15) 0rem 0.0625rem 0.3125rem 0rem",
+  "btn-primary-hover":
+    "0rem 0.875rem 1.625rem -0.75rem rgba(52, 71, 103, 0.4), 0rem 0.25rem 1.4375rem 0rem rgba(52, 71, 103, 0.15), 0rem 0.5rem 0.625rem -0.3125rem rgba(52, 71, 103, 0.2)",
   // dark
   "dark-tremor-input": "none",
   "dark-tremor-card":

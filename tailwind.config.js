@@ -10,13 +10,13 @@ import {
   borderRadius,
   fill,
   screens,
-} from "./src/themes";
+} from "./app/themes";
 
 /** @type {import('tailwindcss').Config} */
 /* eslint-disable max-len */
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",

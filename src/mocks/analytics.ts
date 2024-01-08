@@ -1,4 +1,4 @@
-export const ANALYTIC_SALES_CARD = [
+export const SALES_BY_COUNTRY = [
   {
     id: "us",
     flag: "/assets/images/flags/US.webp",
@@ -30,6 +30,14 @@ export const ANALYTIC_SALES_CARD = [
     sales: "562",
     value: "$143,960",
     bounce: "32.14%",
+  },
+  {
+    id: "au",
+    flag: "/assets/images/flags/AU.webp",
+    country: "Australia",
+    sales: "400",
+    value: "$143,960",
+    bounce: "56.83%",
   },
 ];
 

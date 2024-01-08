@@ -4,6 +4,7 @@ type FlagType = {
   ge: string;
   gb: string;
   br: string;
+  au: string;
 };
 
 export const FLAG_SRC: FlagType = {
@@ -11,4 +12,5 @@ export const FLAG_SRC: FlagType = {
   ge: "/assets/images/flags/DE.webp",
   gb: "/assets/images/flags/GB.webp",
   br: "/assets/images/flags/BR.webp",
+  au: "/assets/images/flags/AU.webp",
 };

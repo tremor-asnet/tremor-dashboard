@@ -4,8 +4,8 @@ import { TiHome } from "react-icons/ti";
 
 const meta = {
   title: "Components/Button",
-  tags: ["autodocs"],
   component: Button,
+  tags: ["autodocs"],
 } as Meta<typeof Button>;
 
 export default meta;

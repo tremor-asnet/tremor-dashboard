@@ -5,6 +5,7 @@ import { useState } from "react";
 
 //Components
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
+import Popover from "@/components/Popover/Popover";
 
 //Icons
 import { FaRegClock } from "react-icons/fa";
@@ -75,10 +76,12 @@ const AnalyticsLineChart = ({
             <Title className="text-base font-bold opacity-100 capitalize text-[#344767]">
               {title}
             </Title>
-            <Subtitle className="text-sm font-light opacity-100 text-[#7b809a]">
-              {isDailyChart && <span className="font-bold">{descValue}</span>}{" "}
-              {subTitle}
-            </Subtitle>
+            <Popover content={subTitle}>
+              <Subtitle className="text-sm font-light opacity-100 text-[#7b809a]">
+                {isDailyChart && <span className="font-bold">{descValue}</span>}{" "}
+                {subTitle}
+              </Subtitle>
+            </Popover>
           </div>
           <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">

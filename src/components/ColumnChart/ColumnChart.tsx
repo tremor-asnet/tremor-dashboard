@@ -2,6 +2,8 @@
 import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
+import Popover from "@/components/Popover/Popover";
+
 type TData = {
   description: string;
   sales: number;
@@ -49,9 +51,11 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
             <Title className="text-base font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
-            <Subtitle className="text-sm font-light opacity-100 text-secondary">
-              {desc}
-            </Subtitle>
+            <Popover content={desc}>
+              <Subtitle className="text-sm font-light opacity-100 text-secondary truncate max-w-[310px]">
+                {desc}
+              </Subtitle>
+            </Popover>
           </div>
           <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">

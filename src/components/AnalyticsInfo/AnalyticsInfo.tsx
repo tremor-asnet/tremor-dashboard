@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Title, Text, Flex, Card } from "@tremor/react";
 import { MdEdit, MdRefresh } from "react-icons/md";
 import { PiMapPinFill } from "react-icons/pi";
+import Popover from "@/components/Popover/Popover";
 
 //Types
 import { IAnalyticsInfo } from "@/types";
@@ -48,9 +49,11 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
           </Flex>
           <Flex className="justify-end font-primary text-secondary font-light">
             <PiMapPinFill className="text-tremor-content text-xl mr-1" />
-            <Text className="tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]">
-              {location}
-            </Text>
+            <Popover content={location}>
+              <Text className="tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]">
+                {location}
+              </Text>
+            </Popover>
           </Flex>
         </Flex>
       </Flex>

@@ -5,6 +5,7 @@ export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
 export { default as Tabs } from "./Tabs/Tabs";
+export { default as Popover } from "./Popover/Popover";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProjectInfoCard } from "./ProjectInfoCard/ProjectInfoCard";
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";

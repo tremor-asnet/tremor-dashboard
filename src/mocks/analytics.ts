@@ -31,6 +31,14 @@ export const ANALYTIC_SALES_CARD = [
     value: "$143,960",
     bounce: "32.14%",
   },
+  {
+    id: "au",
+    flag: "/assets/images/flags/AU.webp",
+    country: "Australia",
+    sales: "400",
+    value: "$143,960",
+    bounce: "56.83%",
+  },
 ];
 
 export const STATISTICAL_DATA = [

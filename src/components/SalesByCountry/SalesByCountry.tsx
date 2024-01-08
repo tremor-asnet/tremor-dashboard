@@ -15,7 +15,7 @@ import Image from "next/image";
 // Constants
 import { FLAG_SRC } from "@/constants";
 
-export interface IAnalyticsSalesCard {
+export interface ISalesByCountry {
   id: string;
   flag: string;
   country: string;
@@ -24,31 +24,39 @@ export interface IAnalyticsSalesCard {
   bounce: string;
 }
 
-export interface AnalyticsSalesCardProps {
+export interface SalesByCountryProps {
   title: string;
-  chart: string;
+  chart?: string;
   isAnalytics: boolean;
-  data: IAnalyticsSalesCard[];
+  data: ISalesByCountry[];
 }
 
-const AnalyticsSalesCard = ({
+const SalesByCountry = ({
   title,
   chart,
   isAnalytics,
   data,
-}: AnalyticsSalesCardProps) => (
+}: SalesByCountryProps) => (
   <Card className="p-0 mt-4 border-none ring-0">
     <Flex>
-      <Flex className="absolute -top-4 left-6 w-16 h-16 p-1 shadow-md bg-[linear-gradient(195deg,_#66BB6A,_#43A047)] justify-center rounded-xl text-2xl text-white">
-        <MdLanguage />
-      </Flex>
-      <Flex className="flex-col items-start justify-start mt-4 ml-[6.5rem]">
+      {isAnalytics && (
+        <Flex className="absolute -top-4 left-6 w-16 h-16 p-1 shadow-md bg-[linear-gradient(195deg,_#66BB6A,_#43A047)] justify-center rounded-xl text-2xl text-white">
+          <MdLanguage />
+        </Flex>
+      )}
+      <Flex
+        className={`flex-col items-start justify-start mt-4 ${
+          isAnalytics ? "ml-[6.5rem]" : "ml-4"
+        }`}>
         <Title className="text-lg font-bold text-primary tracking-[0.0075em]">
           {title}
         </Title>
       </Flex>
     </Flex>
-    <Flex className="relative mt-6 md:mt-0 px-4 py-0 md:py-5 flex-col md:flex-row">
+    <Flex
+      className={`relative mt-6 md:mt-0 py-0 flex-col md:flex-row ${
+        isAnalytics ? "px-4 md:py-5" : "px-0 md:py-4"
+      }`}>
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
         {data.map(item => {
           const { id, country, sales, value, bounce } = item;
@@ -88,7 +96,7 @@ const AnalyticsSalesCard = ({
                       </Text>
                     </TableCell>
                     {isAnalytics && (
-                      <TableCell className="px-4 py-3 text-center analytics-value">
+                      <TableCell className="px-4 py-3 text-center value">
                         <Text className="text-xs font-semibold leading-[1.25]">
                           Value:
                         </Text>
@@ -97,7 +105,10 @@ const AnalyticsSalesCard = ({
                         </Text>
                       </TableCell>
                     )}
-                    <TableCell className="px-4 py-3 text-center hidden sm:table-cell">
+                    <TableCell
+                      className={`px-4 py-3 text-center bounce ${
+                        isAnalytics && "hidden md:table-cell"
+                      }`}>
                       <Text className="text-xs font-semibold leading-[1.25]">
                         Bounce:
                       </Text>
@@ -112,8 +123,8 @@ const AnalyticsSalesCard = ({
           );
         })}
       </Flex>
-      {isAnalytics && (
-        <Flex className="justify-center pb-6 px-16 md:p-0 analytics-map">
+      {isAnalytics && chart && (
+        <Flex className="justify-center pb-6 px-16 md:p-0 map">
           <Image
             className="mt-0 lg:-mt-10"
             src={chart}
@@ -128,4 +139,4 @@ const AnalyticsSalesCard = ({
   </Card>
 );
 
-export default AnalyticsSalesCard;
+export default SalesByCountry;

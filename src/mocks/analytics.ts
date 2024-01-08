@@ -1,4 +1,4 @@
-export const ANALYTIC_SALES_CARD = [
+export const SALES_BY_COUNTRY = [
   {
     id: "us",
     flag: "/assets/images/flags/US.webp",

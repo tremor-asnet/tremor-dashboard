@@ -1,6 +1,6 @@
 // Components
 import { Flex } from "@tremor/react";
-import AnalyticsSalesCard from "@/components/AnalyticsSalesCard/AnalyticsSalesCard";
+import SalesByCountry from "@/components/SalesByCountry/SalesByCountry";
 import AnalyticsInfo from "@/components/AnalyticsInfo/AnalyticsInfo";
 import AnalyticsStatisticCard from "@/components/AnalyticsStatisticCard/AnalyticsStatisticCard";
 import ColumnChart from "@/components/ColumnChart/ColumnChart";
@@ -40,7 +40,7 @@ const Analytics = async () => {
   return (
     <Flex className="flex-col flex-wrap justify-start">
       {/* Sales card  */}
-      <AnalyticsSalesCard
+      <SalesByCountry
         title="Sales by Country"
         chart="/assets/images/analytics/analytics-sales-chart.webp"
         isAnalytics={true}

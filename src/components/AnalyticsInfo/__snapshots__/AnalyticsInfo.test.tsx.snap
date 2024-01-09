@@ -16,7 +16,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           >
             <img
               alt="Cozy 5 Stars Apartment"
-              class="1234 relative w-full rounded-xl shadow-lg z-10"
+              class="relative w-full rounded-xl shadow-lg z-10"
               data-nimg="1"
               decoding="async"
               height="533"
@@ -157,7 +157,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         >
           <img
             alt="Cozy 5 Stars Apartment"
-            class="1234 relative w-full rounded-xl shadow-lg z-10"
+            class="relative w-full rounded-xl shadow-lg z-10"
             data-nimg="1"
             decoding="async"
             height="533"
@@ -352,7 +352,7 @@ exports[`Testing analytics sale chart component testing component analytics info
       >
         <img
           alt="Cozy 5 Stars Apartment"
-          class="1234 relative w-full rounded-xl shadow-lg z-10"
+          class="relative w-full rounded-xl shadow-lg z-10"
           data-nimg="1"
           decoding="async"
           height="533"

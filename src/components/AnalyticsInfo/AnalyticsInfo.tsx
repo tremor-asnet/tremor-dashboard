@@ -30,7 +30,7 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <Image
             {...rest}
-            className="1234 relative w-full rounded-xl shadow-lg z-10"
+            className="relative w-full rounded-xl shadow-lg z-10"
             src={imgSrc ? imgSrc : "/images/not-found.jpg"}
             width={800}
             height={533}

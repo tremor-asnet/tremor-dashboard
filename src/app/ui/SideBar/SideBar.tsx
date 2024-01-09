@@ -25,7 +25,7 @@ import {
 import { Avatar, LoadingIndicator } from "@/components";
 
 // Constants
-import { ITEMS, ITEMS_DASHBOARD, ITEMS_PROFILE } from "@/constants/sections";
+import { ITEMS_PROFILE, ITEMS_DASHBOARD } from "@/constants/sections";
 import { ROUTES } from "@/constants/routes";
 
 // Styles
@@ -49,7 +49,6 @@ const SideBar = ({
   const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
-  const paddingOpenClass = isCollapse && "xl:pl-3.5";
 
   useEffect(() => {
     // Add event listener to the document object
@@ -124,7 +123,7 @@ const SideBar = ({
           </AccordionHeader>
           <AccordionBody>
             <List>
-              {ITEMS.map(item => {
+              {ITEMS_PROFILE.map(item => {
                 const { label, href, content } = item;
                 return (
                   <ListItem
@@ -153,91 +152,23 @@ const SideBar = ({
         </Accordion>
       </AccordionList>
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
-      <AccordionList>
-        <Accordion className="bg-inherit border-0">
-          <AccordionHeader
-            className={`${
-              pathname.includes("/dashboards") && "bg-[rgba(255,255,255,0.2)]"
-            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md ${paddingOpenClass}`}>
-            <Icon size="lg" icon={RiLayoutMasonryFill} />
-            <Text className={`text-white self-center ${hiddenOpenClass}`}>
-              Dashboards
-            </Text>
-          </AccordionHeader>
-          <AccordionBody>
-            <List>
-              {ITEMS_DASHBOARD.map(({ label, content, href }) => (
-                <ListItem
-                  key={label}
-                  className={`!p-0 leading-[26px] rounded-md my-[3px] text-center ${
-                    pathname === href && "bg-[rgb(52,71,103)]"
-                  }`}
-                  onClick={handleClickSidebarItem}>
-                  <Link
-                    className={`font-normal w-full py-3 px-6 ${centerOpenClass}`}
-                    href={href}>
-                    <span>{content}</span>
-                    <span className={`${hiddenOpenClass}`}>{label}</span>
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
-          </AccordionBody>
-        </Accordion>
-      </AccordionList>
-      <Subtitle className="text-white text-xs leading-[15px] font-bold ml-4 mt-4 mb-2">
-        PAGES
-      </Subtitle>
-      <AccordionList>
-        <Accordion className="bg-inherit border-0 mt-1">
-          <AccordionHeader
-            className={`${
-              pathname.includes("/pages/profile") &&
-              "bg-[rgba(255,255,255,0.2)]"
-            } flex text-[rgba(255,255,255,0.5)] py-1.5 rounded-md ${paddingOpenClass}`}>
-            <Icon size="lg" icon={IoMdImage} />
-            <Text
-              className={`text-white leading-0 self-center ml-2.5 ${hiddenOpenClass}`}>
-              Pages
-            </Text>
-          </AccordionHeader>
-          <AccordionBody>
-            <AccordionList>
-              <Accordion className="bg-inherit border-0 mt-1">
-                <AccordionHeader
-                  className={`${
-                    pathname.includes("/pages/profile") &&
-                    "bg-[rgba(255,255,255,0.2)]"
-                  } flex text-[rgba(255,255,255,0.5)] rounded-md ${paddingOpenClass}`}>
-                  <Text className="text-white self-center ml-4 mt-1">
-                    <span className="mr-6">P</span>
-                    <span className={`${hiddenOpenClass}`}>Profile</span>
-                  </Text>
-                </AccordionHeader>
-                <AccordionBody>
-                  <List>
-                    {ITEMS_PROFILE.map(({ label, href, content }) => (
-                      <ListItem
-                        key={label}
-                        className={`!p-0 leading-[26px] mt-1 rounded-md ${
-                          pathname === href && "bg-[rgb(52,71,103)]"
-                        }`}
-                        onClick={handleClickSidebarItem}>
-                        <Link
-                          className={`font-normal w-full py-3 px-8 ${centerOpenClass}`}
-                          href={href}>
-                          <span>{content}</span>
-                          <span className={`${hiddenOpenClass}`}>{label}</span>
-                        </Link>
-                      </ListItem>
-                    ))}
-                  </List>
-                </AccordionBody>
-              </Accordion>
-            </AccordionList>
-          </AccordionBody>
-        </Accordion>
-      </AccordionList>
+      <ul>
+        {ITEMS_DASHBOARD.map(({ label, content, href }) => (
+          <li
+            key={label}
+            className={`tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center ${
+              pathname === href && "bg-[rgb(52,71,103)]"
+            }`}
+            onClick={handleClickSidebarItem}>
+            <Link
+              className={`font-normal w-full py-3 px-8 ${centerOpenClass}`}
+              href={href}>
+              <span>{content}</span>
+              <span className={`${hiddenOpenClass}`}>{label}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

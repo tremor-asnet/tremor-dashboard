@@ -55,12 +55,12 @@ const DashboardHeader = ({
   }, []);
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
-    isScrolled && (isMobile || (!isMobile && !isAllProjectPage))
+    isScrolled && (isMobile || !isAllProjectPage)
       ? `sticky top-0 py-2 z-50 bg-lighter box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
       : `${stickyTransition}`;
 
   const activeIconColor =
-    isScrolled && (isMobile || (!isMobile && !isAllProjectPage))
+    isScrolled && (isMobile || !isAllProjectPage)
       ? "text-primary"
       : "text-tremor-content";
 
@@ -69,7 +69,7 @@ const DashboardHeader = ({
       className={`${activeStickyScroll} h-32 md:h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
         isAllProjectPage &&
         `absolute top-10 md:top-9 pl-1 pr-2 ${
-          activeStickyScroll ? "w-full" : "w-[93%]"
+          activeStickyScroll && isMobile ? "w-full" : "w-[93%]"
         } ${
           isCollapseSidebar
             ? "xl:w-[calc(100%_-_165px)]"

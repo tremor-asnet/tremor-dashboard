@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { FaCheckCircle } from "react-icons/fa";
 
 // Components
 import Toast from "./Toast";
@@ -15,5 +16,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const ToastDefault: Story = {
-  render: () => <Toast message={SIGN_UP_MESSAGE.SUCCESS} />,
+  render: () => (
+    <Toast icon={<FaCheckCircle />} message={SIGN_UP_MESSAGE.SUCCESS} />
+  ),
 };

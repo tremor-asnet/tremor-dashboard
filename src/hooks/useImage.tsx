@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export const useImage = (photo: string | undefined) => {
+export const useImage = (photo: string) => {
   const [imgSrc, setImgSrc] = useState(photo);
 
   useEffect(() => {

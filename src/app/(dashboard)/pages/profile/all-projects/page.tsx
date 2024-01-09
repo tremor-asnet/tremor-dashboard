@@ -2,7 +2,7 @@ import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
 // Components
-import { ProfileInfo, Tabs } from "@/components";
+import { ProfileInfo } from "@/components";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
 // Mocks

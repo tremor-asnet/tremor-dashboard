@@ -77,6 +77,7 @@ export const backgroundColor = {
   few: "#339537",
   seldom: "#bce2be",
   body: "#f0f2f5",
+  lighter: "rgba(255, 255, 255, 0.8)",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -189,6 +190,8 @@ export const boxShadow = {
     "rgba(52, 71, 103, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(52, 71, 103, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(52, 71, 103, 0.15) 0rem 0.0625rem 0.3125rem 0rem",
   "btn-primary-hover":
     "0rem 0.875rem 1.625rem -0.75rem rgba(52, 71, 103, 0.4), 0rem 0.25rem 1.4375rem 0rem rgba(52, 71, 103, 0.15), 0rem 0.5rem 0.625rem -0.3125rem rgba(52, 71, 103, 0.2)",
+  "box-header-sticky":
+    "rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   // dark
   "dark-tremor-input": "none",
   "dark-tremor-card":

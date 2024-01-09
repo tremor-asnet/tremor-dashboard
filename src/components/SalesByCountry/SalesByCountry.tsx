@@ -1,3 +1,5 @@
+"use client";
+
 // Components
 import {
   Card,
@@ -76,6 +78,7 @@ const SalesByCountry = ({
                           height="18"
                           alt={item.country}
                           priority
+                          onError={() => fail("/images/not-found.jpg")}
                         />
                         <Flex className="items-start flex-col ml-6">
                           <Text className="text-xs font-semibold leading-[1.25] tracking-[0.03333em]">
@@ -132,6 +135,7 @@ const SalesByCountry = ({
             height="250"
             alt="chart"
             priority
+            onError={() => fail("/images/not-found.jpg")}
           />
         </Flex>
       )}

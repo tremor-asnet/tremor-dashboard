@@ -127,18 +127,24 @@ const SideBar = ({
             <List>
               {ITEMS_PROFILE.map(item => {
                 const { label, href, content } = item;
+                const isActive = href === pathname;
+                const itemBackground = isActive
+                  ? "bg-primary hover:!bg-primary"
+                  : "hover:bg-none";
+
+                const menuItemClass = [
+                  `${itemBackground} `,
+                  `!p-0 leading-[26px] mt-1 rounded-md `,
+                  `${transitionBgClass}`,
+                ].join("");
+                const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
+
                 return (
                   <ListItem
-                    className={`${
-                      href === pathname
-                        ? "bg-primary hover:!bg-primary"
-                        : "hover:bg-none"
-                    } !p-0 leading-[26px] mt-1 rounded-md ${transitionBgClass}`}
+                    className={menuItemClass}
                     key={label}
                     onClick={handleClickSidebarItem}>
-                    <Link
-                      className={`w-full flex font-normal py-3 px-6 ${centerOpenClass}`}
-                      href={href}>
+                    <Link className={linkClass} href={href}>
                       <span>{content}</span>
                       <span className={`${hiddenOpenClass}`}>{label}</span>
                     </Link>
@@ -159,23 +165,32 @@ const SideBar = ({
       </AccordionList>
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
       <ul>
-        {ITEMS_DASHBOARD.map(({ label, content, href }) => (
-          <li
-            key={label}
-            className={`tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center ${
-              href === pathname
-                ? "bg-primary hover:!bg-primary"
-                : "hover:bg-none"
-            } !p-0 leading-[26px] mt-1 rounded-md ${transitionBgClass}`}
-            onClick={handleClickSidebarItem}>
-            <Link
-              className={`font-normal w-full py-3 px-8 ${centerOpenClass}`}
-              href={href}>
-              <span>{content}</span>
-              <span className={`${hiddenOpenClass}`}>{label}</span>
-            </Link>
-          </li>
-        ))}
+        {ITEMS_DASHBOARD.map(({ label, content, href }) => {
+          const isActive = href === pathname;
+          const itemBackground = isActive
+            ? "bg-primary hover:!bg-primary"
+            : "hover:bg-none";
+
+          const menuItemClass = [
+            `tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center `,
+            `${itemBackground} `,
+            `!p-0 leading-[26px] mt-1 rounded-md `,
+            `${transitionBgClass}`,
+          ].join("");
+          const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
+
+          return (
+            <li
+              key={label}
+              className={menuItemClass}
+              onClick={handleClickSidebarItem}>
+              <Link className={linkClass} href={href}>
+                <span>{content}</span>
+                <span className={`${hiddenOpenClass}`}>{label}</span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

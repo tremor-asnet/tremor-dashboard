@@ -1,18 +1,20 @@
-// Components
 import Link from "next/link";
 import Image from "next/image";
-import Avatar from "@/components/Avatar/Avatar";
 import { Title, Text, Flex, Button } from "@tremor/react";
+
+// Components
+import { Avatar } from "@/components";
 
 // Constants
 import { ROUTES } from "@/constants/routes";
+// import { useImage } from "@/hooks/useImage";
 
 interface AvatarProps {
   name: string;
   avatar: string;
 }
 
-interface IProjectCard {
+export interface IProjectCard {
   id: number;
   cover: string;
   primaryName: string;
@@ -26,6 +28,8 @@ interface ProjectInfoCardProps {
 }
 
 const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
+  // const { imgSrc, handleOnError } = useImage(links);
+
   const renderProjectCards = links.map(
     ({ id, cover, description, participants, primaryName, secondaryName }) => (
       <Flex key={id} className="justify-start flex-col items-start">

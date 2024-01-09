@@ -1,30 +1,42 @@
-// Components
+"use client";
+
 import Image from "next/image";
 import { Title, Text, Flex, Card } from "@tremor/react";
+
+// React Icon
 import { MdEdit, MdRefresh } from "react-icons/md";
 import { PiMapPinFill } from "react-icons/pi";
-import Popover from "@/components/Popover/Popover";
+
+// Components
+import { Popover } from "@/components";
 
 //Types
 import { IAnalyticsInfo } from "@/types";
+
+// Hooks
+import { useImage } from "@/hooks/useImage";
 
 export interface AnalyticsInfoProps {
   infoData: IAnalyticsInfo;
 }
 
 const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
-  const { photo, name, description, price, location } = infoData;
+  const { imgSrc, handleOnError } = useImage(infoData.photo);
+  const { photo, name, description, price, location, ...rest } = infoData;
+
   return (
     <Card className="group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info">
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <Image
-            className="relative w-full rounded-xl shadow-lg z-10"
-            src={photo}
+            {...rest}
+            className="1234 relative w-full rounded-xl shadow-lg z-10"
+            src={imgSrc ? imgSrc : "/images/not-found.jpg"}
             width={800}
             height={533}
             alt={name}
             sizes="(min-width: 768px) 33vw, 70vw"
+            onError={handleOnError}
           />
           <div className="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"></div>
         </Flex>

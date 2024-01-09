@@ -119,11 +119,25 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
                 />
               </svg>
-              <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+              <div
+                class="w-fit h-fit relative flex justify-center"
               >
-                Barcelona, Spain
-              </p>
+                <p
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+                >
+                  Barcelona, Spain
+                </p>
+                <div
+                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 transition-all"
+                  hidden=""
+                >
+                  <div
+                    class="text-sm font-light text-secondary rounded bg-white p-3 shadow-md mb-[10px]"
+                  >
+                    Barcelona, Spain
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,11 +259,25 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
               />
             </svg>
-            <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+            <div
+              class="w-fit h-fit relative flex justify-center"
             >
-              Barcelona, Spain
-            </p>
+              <p
+                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+              >
+                Barcelona, Spain
+              </p>
+              <div
+                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 transition-all"
+                hidden=""
+              >
+                <div
+                  class="text-sm font-light text-secondary rounded bg-white p-3 shadow-md mb-[10px]"
+                >
+                  Barcelona, Spain
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -425,11 +453,25 @@ exports[`Testing analytics sale chart component testing component analytics info
               d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
             />
           </svg>
-          <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+          <div
+            class="w-fit h-fit relative flex justify-center"
           >
-            Barcelona, Spain
-          </p>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+            >
+              Barcelona, Spain
+            </p>
+            <div
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 transition-all"
+              hidden=""
+            >
+              <div
+                class="text-sm font-light text-secondary rounded bg-white p-3 shadow-md mb-[10px]"
+              >
+                Barcelona, Spain
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

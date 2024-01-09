@@ -53,11 +53,11 @@ const DashboardHeader = ({
       window.removeEventListener("scroll", scrollDashboardHeader);
     };
   }, []);
-
+  const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
     isScrolled && (isMobile || (!isMobile && !isAllProjectPage))
-      ? "sticky top-0 py-2 z-50 bg-lighter box-header-sticky transition-shadow duration-300 ease-in-out delay-[0ms] backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky"
-      : "";
+      ? `sticky top-0 py-2 z-50 bg-lighter box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
+      : `${stickyTransition}`;
 
   const activeIconColor =
     isScrolled && (isMobile || (!isMobile && !isAllProjectPage))

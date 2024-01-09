@@ -52,7 +52,7 @@ const SignIn = () => {
 
   // Handle to change value is (true or false) for attr checked switch
   const handleSwitchChange = (value: boolean) => {
-    setIsSwitchOn(value);
+    setIsSwitchOn(!isSwitchOn);
   };
 
   const handleSignIn = async (value: User) => {
@@ -62,6 +62,7 @@ const SignIn = () => {
         errorMessage: "",
       });
 
+      // TODO: Include isSwitchOn to formData
       const res = await authenticate({ errorMessage: "" }, getFormData(value));
 
       setFormStatus({

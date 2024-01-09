@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Title, Text, Flex, Button } from "@tremor/react";
@@ -7,14 +9,13 @@ import { Avatar } from "@/components";
 
 // Constants
 import { ROUTES } from "@/constants/routes";
-// import { useImage } from "@/hooks/useImage";
 
 interface AvatarProps {
   name: string;
   avatar: string;
 }
 
-export interface IProjectCard {
+interface IProjectCard {
   id: number;
   cover: string;
   primaryName: string;
@@ -28,8 +29,6 @@ interface ProjectInfoCardProps {
 }
 
 const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
-  // const { imgSrc, handleOnError } = useImage(links);
-
   const renderProjectCards = links.map(
     ({ id, cover, description, participants, primaryName, secondaryName }) => (
       <Flex key={id} className="justify-start flex-col items-start">
@@ -40,6 +39,7 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
             width={315}
             height={180}
             alt={primaryName}
+            onError={() => fail("/images/not-found.jpg")}
           />
         </Flex>
         <Flex className="justify-start flex-col items-start pt-4 px-2">

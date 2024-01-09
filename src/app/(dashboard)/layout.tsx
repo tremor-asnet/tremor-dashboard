@@ -40,7 +40,7 @@ export default function DashboardLayoutWrapper({
         onSignOut={handleSignOut}
       />
       <div
-        className={`w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20 ${
+        className={`flex flex-col w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20 ${
           isCollapse ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
         }`}>
         <DashboardHeader

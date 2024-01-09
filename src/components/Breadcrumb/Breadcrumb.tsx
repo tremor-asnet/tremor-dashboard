@@ -97,7 +97,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
   };
 
   return (
-    <nav className={`${isProjectPage ? "pl-3" : ""}`}>
+    <nav className={`${isProjectPage ? "pl-3" : isMobile ? "pl-3" : ""}`}>
       <ol className="flex flex-wrap items-center text-gray-400">
         <li>
           <Link href={ROUTES.HOME} className="flex">

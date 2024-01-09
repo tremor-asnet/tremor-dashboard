@@ -56,7 +56,7 @@ const DashboardHeader = ({
 
   const activeStickyScroll =
     isScrolled && (isMobile || (!isMobile && !isAllProjectPage))
-      ? "sticky top-3 backdrop-blur-md bg-white/30 z-10 rounded-xl bg-white/80 bg-neutral-100 shadow-xl"
+      ? "sticky top-0 py-2 z-50 bg-lighter box-header-sticky transition-shadow duration-300 ease-in-out delay-[0ms] backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky"
       : "";
 
   const activeIconColor =
@@ -68,7 +68,7 @@ const DashboardHeader = ({
     <div
       className={`${activeStickyScroll} h-32 md:h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
         isAllProjectPage &&
-        `absolute top-10 md:top-9 pl-7 pr-2 ${
+        `absolute top-10 md:top-9 pl-1 pr-2 ${
           activeStickyScroll ? "w-full" : "w-[93%]"
         } ${
           isCollapseSidebar

@@ -15,8 +15,8 @@ import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";
 // Types
 import { User } from "@/types";
 
-// Actions
-import { authenticate } from "@/app/actions";
+// Services
+import { authenticate } from "@/app/services";
 
 // Helpers
 import { getFormData, isEmpty } from "@/helpers";

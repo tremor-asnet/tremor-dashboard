@@ -13,14 +13,18 @@ import { TextInput, Button, Flex, Text } from "@tremor/react";
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 
-// Actions
-import { createNewAccount } from "@/app/actions";
+// Services
+import { createNewAccount } from "@/app/services";
 
 // Types
 import { User } from "@/types";
 
 // Helpers
 import { getFormData } from "@/helpers";
+import { FaCheckCircle } from "react-icons/fa";
+
+// Hooks
+import { useToast } from "@/hooks/useToastMessage";
 
 const SignUp = () => {
   const router = useRouter();
@@ -43,7 +47,6 @@ const SignUp = () => {
   });
 
   const [checked, setChecked] = useState(false);
-  const [openToast, setOpenToast] = useState(false);
 
   const { name, email, password } = errors || {};
   const nameErrorMessage = name?.message?.toString();
@@ -63,9 +66,7 @@ const SignUp = () => {
     setChecked(!checked);
   };
 
-  const handleCloseToast = () => {
-    setOpenToast(false);
-  };
+  const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
 
   const handleSignUp = async (value: User) => {
     try {
@@ -84,11 +85,7 @@ const SignUp = () => {
         errorMessage: res?.errorMessage || "",
       });
 
-      // TODO: Re-build Toast component
-      setOpenToast(true);
-      setTimeout(() => {
-        router.push(ROUTES.SIGN_IN);
-      }, 2000);
+      handleOpenToast();
     } catch (error: any) {
       setFormStatus({
         isPending: false,
@@ -99,10 +96,13 @@ const SignUp = () => {
 
   return (
     <div>
-      {openToast && (
-        // TODO: Re-build Toast component
-        <div className="flex justify-center">
-          <Toast message={SIGN_UP_MESSAGE.SUCCESS} onClose={handleCloseToast} />
+      {isOpenToast && (
+        <div className="flex justify-center fixed right-5 top-5">
+          <Toast
+            icon={<FaCheckCircle />}
+            message={SIGN_UP_MESSAGE.SUCCESS}
+            onClose={handleCloseToast}
+          />
         </div>
       )}
       <form onSubmit={handleSubmit(handleSignUp)} className="w-full p-2 sm:p-3">

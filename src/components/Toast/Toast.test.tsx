@@ -6,9 +6,11 @@ import Toast from "./Toast";
 
 // Constants
 import { SIGN_UP_MESSAGE } from "@/constants";
+import { FaCheckCircle } from "react-icons/fa";
 
 const handleCloseToast = jest.fn();
 const ToastProps = {
+  icon: <FaCheckCircle />,
   message: SIGN_UP_MESSAGE.SUCCESS,
   onClose: handleCloseToast,
 };

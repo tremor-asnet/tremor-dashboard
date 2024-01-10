@@ -19,27 +19,33 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const AnalyticsLineChartDefault: Story = {
+export const AnalyticsPerformanceLineChart: Story = {
   render: () => (
-    <AnalyticsLineChart
-      dataChart={LINE_CHART_DATA[1].data}
-      title={"website views"}
-      subTitle={"Last Campaign Performance"}
-      scheduleText={"campaign sent 2 days ago"}
-      isDailyChart
-    />
+    <div className="mt-10">
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[0].data}
+        type={CHART_TYPE.PERFORMANCE}
+        title="Completed Tasks"
+        subTitle={"Last Campaign Performance"}
+        scheduleText={"just updated"}
+        isDailyChart={false}
+      />
+    </div>
   ),
 };
 
-export const AnalyticsTaskChartDefault: Story = {
+export const AnalyticsSaleLineChart: Story = {
   render: () => (
-    <AnalyticsLineChart
-      dataChart={LINE_CHART_DATA[0].data}
-      type={CHART_TYPE.PERFORMANCE}
-      title={"Daily Sales"}
-      subTitle={"increase in today sales."}
-      scheduleText={"updated 4 min ago"}
-      isDailyChart={false}
-    />
+    <div className="mt-10">
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[1].data}
+        type={CHART_TYPE.SALE}
+        title={"Daily Sales"}
+        descValue="(+15%)"
+        subTitle={"increase in today sales."}
+        scheduleText={"updated 4 mins ago"}
+        isDailyChart
+      />
+    </div>
   ),
 };

@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+// Constants
+import { NOT_FOUND } from "@/constants";
+
 interface ImageProps {
   className?: string;
   src: string;
@@ -29,14 +32,14 @@ const CustomImage = ({
     setImgSrc(src);
   }, [src]);
 
-  const handleOnError = () => setImgSrc("/images/not-found.jpg");
+  const handleOnError = () => setImgSrc(NOT_FOUND.SRC);
 
   return (
     <>
       <Image
         {...rest}
         className={`bg-[white] ${className}`}
-        src={imgSrc ? imgSrc : "/images/not-found.png"}
+        src={imgSrc ? imgSrc : NOT_FOUND.SRC}
         width={width}
         height={height}
         sizes={sizes}

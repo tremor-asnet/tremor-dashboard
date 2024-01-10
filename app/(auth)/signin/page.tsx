@@ -158,7 +158,7 @@ const SignIn = () => {
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
-        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#97979a,#98989a)] py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
         size="xs"
         type="submit"
         disabled={isDisableSubmit}>

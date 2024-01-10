@@ -24,7 +24,7 @@ import {
 import { Avatar, LoadingIndicator } from "@/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES } from "@/constants";
+import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
 
 // Styles
 import "./styles.css";
@@ -101,7 +101,7 @@ const SideBar = ({
       </Flex>
       <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
         <Image
-          src="/assets/images/sidebar-logo.webp"
+          src={LOGO_SRC.logo}
           width={28}
           height={28}
           alt="Tremor Dashboard"

@@ -13,8 +13,8 @@ import { TextInput, Button, Flex, Text } from "@tremor/react";
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 
-// Actions
-import { createNewAccount } from "@/app/actions";
+// Services
+import { createNewAccount } from "@/app/services";
 
 // Types
 import { User } from "@/types";

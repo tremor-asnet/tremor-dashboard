@@ -5,6 +5,10 @@ export const color = {
   seldom: "#1a73e8",
   few: "#4caf50",
   litle: "#ebebeb",
+
+  dark: {
+    primary: "#fff",
+  },
   // light mode
   tremor: {
     brand: {
@@ -68,6 +72,7 @@ export const color = {
       emphasis: "#d2d6da",
       strong: "#f9fafb", // gray-50
       inverted: "#000000", // black
+      title: "#fff",
     },
   },
 };
@@ -80,6 +85,10 @@ export const backgroundColor = {
   body: "#f0f2f5",
   total: "rgb(26, 32, 53)",
 
+  dark: {
+    primary: "#111827",
+    "gradient-primary": "#1a2333",
+  },
   //TODO: Will update when implement light/dark themes
   // light mode
   tremor: {

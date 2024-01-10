@@ -5,6 +5,10 @@ export const color = {
   seldom: "#1a73e8",
   few: "#4caf50",
   litle: "#ebebeb",
+
+  dark: {
+    primary: "#fff",
+  },
   // light mode
   tremor: {
     brand: {
@@ -68,31 +72,40 @@ export const color = {
       emphasis: "#d2d6da",
       strong: "#f9fafb", // gray-50
       inverted: "#000000", // black
+      title: "#fff",
     },
   },
 };
 
 export const backgroundColor = {
   primary: "#344767",
+  secondary: "#ffffff",
   few: "#339537",
   seldom: "#bce2be",
   body: "#f0f2f5",
+  total: "rgb(26, 32, 53)",
   lighter: "rgba(255, 255, 255, 0.8)",
 
+  dark: {
+    primary: "#111827",
+    "gradient-primary": "#1a2333",
+  },
   //TODO: Will update when implement light/dark themes
   // light mode
   tremor: {
-    primary: "#344767",
+    primary: "#ffffff",
     few: "#339537",
     seldom: "#bce2be",
     body: "#f0f2f5",
+    // total: "#ffffff",
   },
   // dark mode
   "dark-tremor": {
-    primary: "#344767",
+    primary: "#202940",
     few: "#339537",
     seldom: "#bce2be",
     body: "#f0f2f5",
+    total: "rgb(26, 32, 53)",
   },
 };
 

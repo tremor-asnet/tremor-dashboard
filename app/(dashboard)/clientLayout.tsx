@@ -42,7 +42,7 @@ export default function DashboardLayout({
   return (
     <Flex
       alignItems="start"
-      className="bg-body antialiased font-primary min-h-screen">
+      className="bg-body dark:bg-dark-primary antialiased font-primary min-h-screen">
       <SideBar
         avatarUrl={avatar}
         name={name}

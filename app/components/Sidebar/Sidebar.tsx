@@ -6,6 +6,7 @@ import { useFormStatus } from "react-dom";
 // lib
 import Link from "next/link";
 import Image from "next/image";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import {
   Accordion,
@@ -91,6 +92,13 @@ const SideBar = ({
           ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
           : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
       }`}>
+      <Flex className="justify-end hidden xl:flex">
+        <div
+          className="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
+          onClick={toggleSidebar}>
+          {isCollapse ? <FaAngleLeft /> : <FaAngleRight />}
+        </div>
+      </Flex>
       <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
         <Image
           src="/assets/images/sidebar-logo.webp"

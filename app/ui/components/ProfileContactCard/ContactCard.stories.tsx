@@ -23,10 +23,10 @@ export const ContactCardInfo: Story = {
   render: () => (
     <ContactCard
       information={PROFILE_INFO.description}
-      fullName=""
-      phone={""}
-      email={""}
-      location={""}
+      fullName={PROFILE_INFO.info[0].value}
+      phone={PROFILE_INFO.info[1].value}
+      email={PROFILE_INFO.info[2].value}
+      location={PROFILE_INFO.info[3].value}
       socials={SOCIAL_LINK}
     />
   ),

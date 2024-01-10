@@ -8,7 +8,7 @@ export const PROFILE_INFO = {
     },
     {
       key: "Mobile",
-      value: "Alec M. Thompson",
+      value: "(44) 123 1234 123",
     },
     {
       key: "Email",

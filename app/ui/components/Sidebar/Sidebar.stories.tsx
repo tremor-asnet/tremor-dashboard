@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import SideBar from "./Sidebar";
 
-// Constantss
+// Constants
 import { ROUTES } from "@/constants";
 
 const meta = {
@@ -18,13 +18,15 @@ type Story = StoryObj<typeof meta>;
 
 export const SideBarDashboard: Story = {
   render: () => (
-    <SideBar
-      pathname={ROUTES.PROJECTS}
-      toggleSidebar={() => {}}
-      isCollapse={false}
-      onSignOut={function (): Promise<void> {
-        throw new Error("Function not implemented.");
-      }}
-    />
+    <div className="min-h-screen">
+      <SideBar
+        pathname={ROUTES.PROJECTS}
+        toggleSidebar={() => {}}
+        isCollapse={true}
+        onSignOut={function (): Promise<void> {
+          throw new Error("Function not implemented.");
+        }}
+      />
+    </div>
   ),
 };

@@ -80,7 +80,7 @@ const SideBar = ({
   return (
     <div
       ref={sideBarRef}
-      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
+      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
         isCollapse
           ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
           : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"

@@ -1,21 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import {
-  MdMenu,
-  MdMenuOpen,
-  MdSettings,
-  MdNotifications,
-} from "react-icons/md";
+import { useContext, useEffect, useState } from "react";
 
 // Libs
 import { usePathname } from "next/navigation";
 
 // Components
-import { Breadcrumb } from "@/components";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 
-// Constants
+// Icons
+import { MdMenu, MdMenuOpen, MdNotifications } from "react-icons/md";
+import { HiMiniMoon } from "react-icons/hi2";
+import { IoSunny } from "react-icons/io5";
+
+// Constant
 import { ROUTES } from "@/constants";
+
+// Contexts
+import { ThemeContext } from "../../../src/context/theme";
 
 // Helpers
 import { isBrowser } from "@/helpers";
@@ -29,6 +31,7 @@ const DashboardHeader = ({
   isCollapseSidebar,
   toggleSidebar,
 }: DashboardHeaderProps): JSX.Element => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const pathname = usePathname();
   const isMobile = isBrowser && window.innerWidth <= 768;
@@ -54,7 +57,7 @@ const DashboardHeader = ({
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
     isScrolled && (isMobile || !isAllProjectPage)
-      ? `sticky top-0 py-2 z-40 bg-lighter box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
+      ? `sticky top-0 py-2 z-50 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
       : `${stickyTransition}`;
 
   const activeIconColor =
@@ -90,11 +93,33 @@ const DashboardHeader = ({
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
         <div className="flex flex-wrap item-center gap-y-1">
-          <div className="relative p-2 flex items-center">
-            <MdSettings
-              className={`${activeIconColor} text-xl cursor-pointer`}
-              color={color}
-            />
+          <div
+            className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
+            onClick={toggleSidebar}>
+            {isCollapseSidebar ? (
+              <MdMenu
+                className={`${activeIconColor}  text-2xl`}
+                color={color}
+              />
+            ) : (
+              <MdMenuOpen
+                className={`${activeIconColor} text-2xl`}
+                color={color}
+              />
+            )}
+          </div>
+          <div className="relative p-2 flex items-center" onClick={toggleTheme}>
+            {theme ? (
+              <HiMiniMoon
+                className={`${activeIconColor} text-xl cursor-pointer`}
+                color={color}
+              />
+            ) : (
+              <IoSunny
+                className={`${activeIconColor} text-xl cursor-pointer`}
+                color={color}
+              />
+            )}
           </div>
           <div className="relative p-2 flex items-center">
             <MdNotifications

@@ -40,6 +40,7 @@ interface SideBarProps {
   toggleSidebar: () => void;
   onSignOut: () => Promise<void>;
 }
+
 const SideBar = ({
   avatarUrl,
   name,
@@ -86,7 +87,7 @@ const SideBar = ({
   return (
     <div
       ref={sideBarRef}
-      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
+      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
         isCollapse
           ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
           : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
@@ -114,7 +115,7 @@ const SideBar = ({
       </Flex>
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
       <AccordionList>
-        <Accordion className="bg-inherit border-0 rounded-md">
+        <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md">
           <AccordionHeader
             className={`min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 ${
               isCollapse && "xl:w-[200%]"
@@ -128,8 +129,8 @@ const SideBar = ({
               src={avatarUrl}
             />
             <Text
-              className={`leading-0 min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              {name}
+              className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
+              Brooklyn Alice
             </Text>
           </AccordionHeader>
           <AccordionBody>
@@ -146,7 +147,7 @@ const SideBar = ({
                   `!p-0 leading-[26px] mt-1 rounded-md `,
                   `${transitionBgClass}`,
                 ].join("");
-                const linkClass = `w-full flex font-d py-3 px-6 ${centerOpenClass}`;
+                const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
 
                 return (
                   <ListItem
@@ -163,7 +164,7 @@ const SideBar = ({
               <ListItem className="leading-[26px] relative !p-0 mt-1">
                 <form
                   action={onSignOut}
-                  className="w-full flex items-center font-d relative">
+                  className="w-full flex items-center font-normal relative">
                   <span className="absolute left-6">L</span>
                   <LogoutButton isCollapse={isCollapse} />
                 </form>
@@ -186,7 +187,7 @@ const SideBar = ({
             `!p-0 leading-[26px] mt-1 rounded-md `,
             `${transitionBgClass}`,
           ].join("");
-          const linkClass = `font-d w-full py-3 px-8 ${centerOpenClass}`;
+          const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
 
           return (
             <li
@@ -213,7 +214,7 @@ function LogoutButton({ isCollapse }: { isCollapse: boolean }) {
       type="submit"
       className={`${
         isCollapse && "xl:hidden"
-      } min-h-[44px] w-full flex gap-5 font-d z-10 py-3 pl-14 pr-6`}>
+      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
       {pending ? <LoadingIndicator width="w-5" height="w-5" /> : "Logout"}
     </button>
   );

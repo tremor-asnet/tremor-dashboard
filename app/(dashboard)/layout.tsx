@@ -12,6 +12,7 @@ export default async function DashboardLayoutWrapper({
   children: ReactNode;
 }) {
   const profileData = await getProfile();
+
   return (
     <DashboardLayout profileData={profileData}>{children}</DashboardLayout>
   );

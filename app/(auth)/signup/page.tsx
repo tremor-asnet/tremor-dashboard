@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 // Components
-import { CheckBox, Toast } from "@/ui/components";
+import { CheckBox, Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
 
 // Constants

@@ -7,7 +7,7 @@ import {
   ProjectInfoCard,
   ContactCard,
   PlatformSetting,
-} from "@/ui/components";
+} from "@/components";
 
 // Mocks
 import { PROFILE_HEADER } from "@/mocks";

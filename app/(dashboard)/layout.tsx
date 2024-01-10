@@ -5,8 +5,8 @@ import { ReactNode, useState } from "react";
 
 // Components
 import { Flex } from "@tremor/react";
-import SideBar from "@/ui/components/Sidebar/Sidebar";
-import DashboardHeader from "@/ui/components/DashboardHeader/DashboardHeader";
+import SideBar from "@/components/Sidebar/Sidebar";
+import DashboardHeader from "@/components/DashboardHeader/DashboardHeader";
 
 // Auth
 import { signOut } from "@/auth";

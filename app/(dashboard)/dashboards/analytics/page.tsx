@@ -4,19 +4,17 @@ import { lazy } from "react";
 import { Card, Flex } from "@tremor/react";
 
 const AnalyticsInfo = lazy(
-  () => import("@/ui/components/AnalyticsInfo/AnalyticsInfo"),
+  () => import("@/components/AnalyticsInfo/AnalyticsInfo"),
 );
 const AnalyticsStatisticCard = lazy(
-  () => import("@/ui/components/AnalyticsStatisticCard/AnalyticsStatisticCard"),
+  () => import("@/components/AnalyticsStatisticCard/AnalyticsStatisticCard"),
 );
-const ColumnChart = lazy(
-  () => import("@/ui/components/ColumnChart/ColumnChart"),
-);
+const ColumnChart = lazy(() => import("@/components/ColumnChart/ColumnChart"));
 const AnalyticsLineChart = lazy(
-  () => import("@/ui/components/AnalyticsLineChart/AnalyticsLineChart"),
+  () => import("@/components/AnalyticsLineChart/AnalyticsLineChart"),
 );
 const SalesByCountry = lazy(
-  () => import("@/ui/components/SalesByCountry/SalesByCountry"),
+  () => import("@/components/SalesByCountry/SalesByCountry"),
 );
 
 //Types

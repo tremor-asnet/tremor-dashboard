@@ -7,7 +7,7 @@ import { useForm, Controller } from "react-hook-form";
 // Components
 import Link from "next/link";
 import { TextInput, Button, Flex, Switch, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/ui/components";
+import { LoadingIndicator } from "@/components";
 
 // Constants
 import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";

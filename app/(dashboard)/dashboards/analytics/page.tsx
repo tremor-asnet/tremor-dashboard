@@ -23,7 +23,10 @@ const SalesByCountry = lazy(
 import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 
 // Actions
-import { getAnalytics } from "@/actions/analyticsActions";
+import { getAnalytics } from "@/services";
+
+// Mock data
+import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 type TAnalyticsStatistical = {
   id: string;
@@ -32,9 +35,6 @@ type TAnalyticsStatistical = {
   totalAmount: string;
   duration: string;
 };
-
-// Mock data
-import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();

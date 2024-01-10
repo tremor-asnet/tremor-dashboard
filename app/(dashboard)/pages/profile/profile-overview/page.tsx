@@ -13,7 +13,7 @@ import {
 import { PROFILE_HEADER } from "@/mocks";
 
 // Actions
-import { getProfile, getProfileProject } from "@/actions/profileAction";
+import { getProfile, getProfileProject } from "@/services";
 
 const Profile = async () => {
   const profileData = await getProfile();

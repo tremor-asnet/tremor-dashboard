@@ -12,7 +12,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { authConfig } from "./auth.config";
 
 // Services
-import { getUserByEmail } from "./services/userServices";
+import { getUserByEmail } from "./services";
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,

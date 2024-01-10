@@ -15,8 +15,7 @@ import { Project } from "@/types";
 import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
 // Actions
-import { getAllProjects } from "@/actions/projectActions";
-import { getProfile } from "@/actions/profileAction";
+import { getAllProjects, getProfile } from "@/services";
 
 const Projects = async () => {
   const profileData = await getProfile();

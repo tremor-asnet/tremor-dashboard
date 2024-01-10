@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 // Libs
 import { usePathname } from "next/navigation";
@@ -19,6 +19,9 @@ import {
 // Constant
 import { ROUTES } from "@/constants";
 
+// Contexts
+import { ThemeContext } from "@/context/theme";
+
 interface DashboardHeaderProps {
   toggleSidebar: () => void;
   isCollapseSidebar: boolean;
@@ -28,6 +31,7 @@ const DashboardHeader = ({
   isCollapseSidebar,
   toggleSidebar,
 }: DashboardHeaderProps): JSX.Element => {
+  const { toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const pathname = usePathname();
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
@@ -106,7 +110,7 @@ const DashboardHeader = ({
               />
             )}
           </div>
-          <div className="relative p-2 flex items-center">
+          <div className="relative p-2 flex items-center" onClick={toggleTheme}>
             <MdSettings
               className={`${activeIconColor} text-xl cursor-pointer`}
               color={color}

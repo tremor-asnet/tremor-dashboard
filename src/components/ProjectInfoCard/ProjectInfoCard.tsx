@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Title, Text, Flex, Button } from "@tremor/react";
 
 // Components
-import { Avatar } from "@/components";
+import { Avatar, CustomImage } from "@/components";
 
 // Constants
 import { ROUTES } from "@/constants/routes";
@@ -33,13 +32,12 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
     ({ id, cover, description, participants, primaryName, secondaryName }) => (
       <Flex key={id} className="justify-start flex-col items-start">
         <Flex>
-          <Image
+          <CustomImage
             className="w-full rounded-xl shadow-lg"
             src={cover}
             width={315}
             height={180}
             alt={primaryName}
-            onError={() => fail("/images/not-found.jpg")}
           />
         </Flex>
         <Flex className="justify-start flex-col items-start pt-4 px-2">

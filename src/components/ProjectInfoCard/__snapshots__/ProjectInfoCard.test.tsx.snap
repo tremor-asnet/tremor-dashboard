@@ -13,11 +13,11 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="modern"
-          class="w-full rounded-xl shadow-lg"
+          class="bg-[white] w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height="180"
-          loading="lazy"
           src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
@@ -74,6 +74,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -90,6 +91,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -113,11 +115,11 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="scandinavian"
-          class="w-full rounded-xl shadow-lg"
+          class="bg-[white] w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height="180"
-          loading="lazy"
           src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
@@ -174,6 +176,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -190,6 +193,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -213,11 +217,11 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="minimalist"
-          class="w-full rounded-xl shadow-lg"
+          class="bg-[white] w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height="180"
-          loading="lazy"
           src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
@@ -274,6 +278,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -290,6 +295,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -313,11 +319,11 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="gothic"
-          class="w-full rounded-xl shadow-lg"
+          class="bg-[white] w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
+          fetchpriority="high"
           height="180"
-          loading="lazy"
           src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
@@ -374,6 +380,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -390,6 +397,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"

@@ -14,3 +14,4 @@ export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSett
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
 export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";
+export { default as CustomImage } from "./CustomImage/CustomImage";

@@ -3,7 +3,6 @@ import { useFormStatus } from "react-dom";
 
 // lib
 import Link from "next/link";
-import Image from "next/image";
 import { RiLayoutMasonryFill } from "react-icons/ri";
 import { IoMdImage } from "react-icons/io";
 
@@ -22,7 +21,7 @@ import {
 } from "@tremor/react";
 
 // Components
-import { Avatar, LoadingIndicator } from "@/components";
+import { Avatar, LoadingIndicator, CustomImage } from "@/components";
 
 // Constants
 import { ITEMS, ITEMS_DASHBOARD, ITEMS_PROFILE } from "@/constants/sections";
@@ -89,7 +88,7 @@ const SideBar = ({
           : "translate-x-[-20rem] xl:translate-x-0"
       }`}>
       <Flex className="justify-normal pl-5 gap-1 pb-2 relative">
-        <Image
+        <CustomImage
           src="/assets/images/sidebar-logo.webp"
           width={28}
           height={28}

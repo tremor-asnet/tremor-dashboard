@@ -16,6 +16,7 @@ import Image from "next/image";
 
 // Constants
 import { FLAG_SRC } from "@/constants";
+import { CustomImage } from "..";
 
 export interface ISalesByCountry {
   id: string;
@@ -72,13 +73,12 @@ const SalesByCountry = ({
                   <TableRow className="border-solid">
                     <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
                       <Flex className="items-center">
-                        <Image
+                        <CustomImage
                           src={FLAG_SRC[id]}
-                          width="24"
-                          height="18"
+                          width={24}
+                          height={18}
                           alt={item.country}
                           priority
-                          onError={() => fail("/images/not-found.jpg")}
                         />
                         <Flex className="items-start flex-col ml-6">
                           <Text className="text-xs font-semibold leading-[1.25] tracking-[0.03333em]">
@@ -128,14 +128,13 @@ const SalesByCountry = ({
       </Flex>
       {isAnalytics && chart && (
         <Flex className="justify-center pb-6 px-16 md:p-0 map">
-          <Image
+          <CustomImage
             className="mt-0 lg:-mt-10"
             src={chart}
-            width="380"
-            height="250"
+            width={380}
+            height={250}
             alt="chart"
             priority
-            onError={() => fail("/images/not-found.jpg")}
           />
         </Flex>
       )}

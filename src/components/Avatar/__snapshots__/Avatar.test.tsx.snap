@@ -10,6 +10,7 @@ exports[`Testing avatar component Should match snapshot 1`] = `
       >
         <img
           alt="Avatar md"
+          class="bg-[white] undefined"
           data-nimg="1"
           decoding="async"
           fetchpriority="high"
@@ -28,6 +29,7 @@ exports[`Testing avatar component Should match snapshot 1`] = `
     >
       <img
         alt="Avatar md"
+        class="bg-[white] undefined"
         data-nimg="1"
         decoding="async"
         fetchpriority="high"

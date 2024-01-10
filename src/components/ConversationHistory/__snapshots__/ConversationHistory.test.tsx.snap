@@ -24,6 +24,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             >
               <img
                 alt="Anne Marie"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -78,6 +79,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             >
               <img
                 alt="Ivanna"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -132,6 +134,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             >
               <img
                 alt="Peterson"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -186,6 +189,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             >
               <img
                 alt="Sophie.B"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -240,6 +244,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             >
               <img
                 alt="Nick Daniel"
+                class="bg-[white] undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -302,6 +307,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           >
             <img
               alt="Anne Marie"
+              class="bg-[white] undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -356,6 +362,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           >
             <img
               alt="Ivanna"
+              class="bg-[white] undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -410,6 +417,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           >
             <img
               alt="Peterson"
+              class="bg-[white] undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -464,6 +472,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           >
             <img
               alt="Sophie.B"
+              class="bg-[white] undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -518,6 +527,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           >
             <img
               alt="Nick Daniel"
+              class="bg-[white] undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"

@@ -1,8 +1,9 @@
 "use client";
 
 import { memo } from "react";
-import Image from "next/image";
-import { useImage } from "@/hooks/useImage";
+
+// Components
+import { CustomImage } from "@/components";
 
 // Define the props for the Input component
 interface IAvatarProps {
@@ -26,21 +27,16 @@ const Avatar = ({
   className = "shadow-md",
   sizes,
   priority = true,
-  ...rest
 }: IAvatarProps): JSX.Element => {
-  const { imgSrc, handleOnError } = useImage(src);
-
   return (
     <div className={`inline-flex rounded-full overflow-hidden ${className}`}>
-      <Image
-        {...rest}
-        src={imgSrc ? imgSrc : "/images/not-found.jpg"}
+      <CustomImage
+        src={src}
         width={width}
         height={height}
         alt={alt}
         sizes={sizes}
         priority={priority}
-        onError={handleOnError}
       />
     </div>
   );

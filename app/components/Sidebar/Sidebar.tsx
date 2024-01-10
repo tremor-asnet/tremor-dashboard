@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { useFormStatus } from "react-dom";
 
@@ -21,8 +23,7 @@ import {
 import { Avatar, LoadingIndicator } from "@/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD } from "@/constants/sections";
-import { ROUTES } from "@/constants/routes";
+import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES } from "@/constants";
 
 // Styles
 import "./styles.css";
@@ -31,12 +32,16 @@ import "./styles.css";
 import { isBrowser } from "@/helpers";
 
 interface SideBarProps {
+  avatarUrl: string;
+  name: string;
   pathname: string;
   isCollapse: boolean;
   toggleSidebar: () => void;
   onSignOut: () => Promise<void>;
 }
 const SideBar = ({
+  avatarUrl,
+  name,
   onSignOut,
   isCollapse,
   toggleSidebar,
@@ -112,11 +117,11 @@ const SideBar = ({
               width={36}
               height={36}
               priority
-              src="/images/avatar/avatar-sm.webp"
+              src={avatarUrl}
             />
             <Text
               className={`leading-0 min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              Brooklyn Alice
+              {name}
             </Text>
           </AccordionHeader>
           <AccordionBody>
@@ -133,7 +138,7 @@ const SideBar = ({
                   `!p-0 leading-[26px] mt-1 rounded-md `,
                   `${transitionBgClass}`,
                 ].join("");
-                const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
+                const linkClass = `w-full flex font-d py-3 px-6 ${centerOpenClass}`;
 
                 return (
                   <ListItem
@@ -150,7 +155,7 @@ const SideBar = ({
               <ListItem className="leading-[26px] relative !p-0 mt-1">
                 <form
                   action={onSignOut}
-                  className="w-full flex items-center font-normal relative">
+                  className="w-full flex items-center font-d relative">
                   <span className="absolute left-6">L</span>
                   <LogoutButton isCollapse={isCollapse} />
                 </form>
@@ -173,7 +178,7 @@ const SideBar = ({
             `!p-0 leading-[26px] mt-1 rounded-md `,
             `${transitionBgClass}`,
           ].join("");
-          const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
+          const linkClass = `font-d w-full py-3 px-8 ${centerOpenClass}`;
 
           return (
             <li
@@ -200,7 +205,7 @@ function LogoutButton({ isCollapse }: { isCollapse: boolean }) {
       type="submit"
       className={`${
         isCollapse && "xl:hidden"
-      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
+      } min-h-[44px] w-full flex gap-5 font-d z-10 py-3 pl-14 pr-6`}>
       {pending ? <LoadingIndicator width="w-5" height="w-5" /> : "Logout"}
     </button>
   );

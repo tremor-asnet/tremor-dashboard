@@ -11,7 +11,7 @@ export const getAnalytics = async () => {
   });
 
   if (!res.ok) {
-    const message = `An error has occured: ${res.status} - ${res.statusText}`;
+    const message = `An error has occurred: ${res.status} - ${res.statusText}`;
     throw new Error(message);
   }
 

@@ -31,18 +31,19 @@ import "./styles.css";
 // Helpers
 import { isBrowser } from "@/helpers";
 
+// Actions
+import { signOutAction } from "@/actions";
+
 interface SideBarProps {
   avatarUrl: string;
   name: string;
   pathname: string;
   isCollapse: boolean;
   toggleSidebar: () => void;
-  onSignOut: () => Promise<void>;
 }
 const SideBar = ({
   avatarUrl,
   name,
-  onSignOut,
   isCollapse,
   toggleSidebar,
   pathname,
@@ -54,6 +55,18 @@ const SideBar = ({
     "transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20";
 
   useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (
+        sideBarRef.current &&
+        !sideBarRef.current.contains(event.target as Node)
+      ) {
+        // Clicked outside the side navigation bar, close it
+        if (isCollapse) {
+          toggleSidebar();
+        }
+      }
+    };
+
     // Add event listener to the document object
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -61,19 +74,7 @@ const SideBar = ({
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isCollapse]);
-
-  const handleClickOutside = (event: Event) => {
-    if (
-      sideBarRef.current &&
-      !sideBarRef.current.contains(event.target as Node)
-    ) {
-      // Clicked outside the side navigation bar, close it
-      if (isCollapse) {
-        toggleSidebar();
-      }
-    }
-  };
+  }, [isCollapse, toggleSidebar]);
 
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {
@@ -154,7 +155,7 @@ const SideBar = ({
               })}
               <ListItem className="leading-[26px] relative !p-0 mt-1">
                 <form
-                  action={onSignOut}
+                  action={signOutAction}
                   className="w-full flex items-center font-d relative">
                   <span className="absolute left-6">L</span>
                   <LogoutButton isCollapse={isCollapse} />

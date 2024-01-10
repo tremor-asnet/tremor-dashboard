@@ -9,9 +9,7 @@ export const useImage = (photo: string) => {
     setImgSrc(photo);
   }, [photo]);
 
-  const handleOnError = () => {
-    () => setImgSrc("/images/not-found.jpg");
-  };
+  const handleOnError = () => setImgSrc("/images/not-found.jpg");
 
   return { imgSrc, handleOnError };
 };

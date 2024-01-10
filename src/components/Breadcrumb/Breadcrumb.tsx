@@ -70,7 +70,7 @@ const Breadcrumb = (): JSX.Element => {
             className={`text-sm capitalize tracking-[0.02857em] leading-[0] ${
               isProjectPage
                 ? "text-white opacity-[0.8]"
-                : "text-primary opacity-50"
+                : "text-primary dark:text-dark-primary opacity-50"
             }`}
             href={link.url}>
             {link.name}
@@ -93,7 +93,7 @@ const Breadcrumb = (): JSX.Element => {
         <li>
           <Link href={ROUTES.HOME} className="flex">
             <MdHome
-              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary tracking-[0.01071em] leading-[0] ${
+              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary dark:text-dark-primary tracking-[0.01071em] leading-[0] ${
                 isProjectPage
                   ? "text-white opacity-[0.8]"
                   : "text-inherit opacity-50"
@@ -112,15 +112,15 @@ const Breadcrumb = (): JSX.Element => {
         {renderLinks()}
 
         <li
-          className={`text-sm text-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
+          className={`text-sm text-tremor-content-title dark:text-dark-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
             isProjectPage ? "text-white" : "text-inherit"
           }`}>
           {pageName}
         </li>
       </ol>
       <Title
-        className={`text-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
-          isProjectPage ? "text-white" : "text-primary"
+        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
+          isProjectPage ? "text-white" : "text-primary dark:text-dark-primary"
         }`}>
         {pageName}
       </Title>

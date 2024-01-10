@@ -2,19 +2,15 @@ import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
 // Components
-import { ProfileInfo } from "@/components";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
-
-// Mocks
-import { PROFILE_HEADER } from "@/mocks";
+import { ProfileInfo, ProjectCard } from "@/components";
 
 // Types
 import { Project } from "@/types";
 
-//Constans
+//Constants
 import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
-// Actions
+// Services
 import { getAllProjects, getProfile } from "@/services";
 
 const Projects = async () => {
@@ -32,7 +28,7 @@ const Projects = async () => {
             <ProfileInfo
               name={profileData.name}
               role={profileData.role}
-              avatarUrl={PROFILE_HEADER.avatarUrl}
+              avatarUrl={profileData.avatar}
             />
           </Flex>
         </Card>

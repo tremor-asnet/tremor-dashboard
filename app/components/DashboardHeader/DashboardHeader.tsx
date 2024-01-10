@@ -6,16 +6,10 @@ import { useContext, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
-import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 
 // Icons
-import {
-  MdMenu,
-  MdMenuOpen,
-  MdAccountCircle,
-  MdNotifications,
-} from "react-icons/md";
+import { MdMenu, MdMenuOpen, MdNotifications } from "react-icons/md";
 import { HiMiniMoon } from "react-icons/hi2";
 import { IoSunny } from "react-icons/io5";
 
@@ -100,15 +94,6 @@ const DashboardHeader = ({
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end">
         <div className="flex flex-wrap item-center gap-y-1">
-          <Link
-            href={ROUTES.SIGN_IN}
-            aria-label="Link to homepage"
-            className="p-2 flex items-center">
-            <MdAccountCircle
-              className={`${activeIconColor} text-xl`}
-              color={color}
-            />
-          </Link>
           <div
             className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
             onClick={toggleSidebar}>

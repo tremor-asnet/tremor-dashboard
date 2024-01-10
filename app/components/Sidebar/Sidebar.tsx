@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { useFormStatus } from "react-dom";
 
@@ -21,8 +23,7 @@ import {
 import { Avatar, LoadingIndicator } from "@/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD } from "@/constants/sections";
-import { ROUTES } from "@/constants/routes";
+import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES } from "@/constants";
 
 // Styles
 import "./styles.css";
@@ -31,6 +32,8 @@ import "./styles.css";
 import { isBrowser } from "@/helpers";
 
 interface SideBarProps {
+  avatarUrl: string;
+  name: string;
   pathname: string;
   isCollapse: boolean;
   toggleSidebar: () => void;
@@ -38,6 +41,8 @@ interface SideBarProps {
 }
 
 const SideBar = ({
+  avatarUrl,
+  name,
   onSignOut,
   isCollapse,
   toggleSidebar,
@@ -113,7 +118,7 @@ const SideBar = ({
               width={36}
               height={36}
               priority
-              src="/images/avatar/avatar-sm.webp"
+              src={avatarUrl}
             />
             <Text
               className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>

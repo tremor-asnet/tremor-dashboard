@@ -21,7 +21,7 @@ export const SideBarDashboard: Story = {
     <SideBar
       pathname={ROUTES.PROJECTS}
       toggleSidebar={() => {}}
-      isCollapse={false}
+      isCollapse={true}
       onSignOut={function (): Promise<void> {
         throw new Error("Function not implemented.");
       }}

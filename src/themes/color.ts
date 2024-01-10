@@ -74,24 +74,28 @@ export const color = {
 
 export const backgroundColor = {
   primary: "#344767",
+  secondary: "#ffffff",
   few: "#339537",
   seldom: "#bce2be",
   body: "#f0f2f5",
+  total: "rgb(26, 32, 53)",
 
   //TODO: Will update when implement light/dark themes
   // light mode
   tremor: {
-    primary: "#344767",
+    primary: "#ffffff",
     few: "#339537",
     seldom: "#bce2be",
     body: "#f0f2f5",
+    // total: "#ffffff",
   },
   // dark mode
   "dark-tremor": {
-    primary: "#344767",
+    primary: "#202940",
     few: "#339537",
     seldom: "#bce2be",
     body: "#f0f2f5",
+    total: "rgb(26, 32, 53)",
   },
 };
 

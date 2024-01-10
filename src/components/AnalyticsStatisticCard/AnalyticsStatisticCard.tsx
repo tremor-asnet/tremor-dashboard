@@ -31,7 +31,7 @@ const AnalyticsStatisticCard = ({
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
       <div className="flex items-center">
-        <Card className="mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="">
             <IconBox
               className="absolute top-[-22px] shadow-box-icon-primary"
@@ -54,7 +54,7 @@ const AnalyticsStatisticCard = ({
                 </Text>
               )}
               <Text className="ml-1 text-secondary leading-[21px] font-light">
-                {duration}
+                {duration} hellooo
               </Text>
             </Flex>
           </Flex>

@@ -18,6 +18,9 @@ import Image from "next/image";
 import { FLAG_SRC } from "@/constants";
 import { CustomImage } from "..";
 
+// Helper
+import { removeCommasForNumber } from "@/helpers";
+
 export interface ISalesByCountry {
   id: string;
   flag: string;
@@ -104,7 +107,7 @@ const SalesByCountry = ({
                           Value:
                         </Text>
                         <Text className="text-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
-                          {value}
+                          {removeCommasForNumber(value)}
                         </Text>
                       </TableCell>
                     )}

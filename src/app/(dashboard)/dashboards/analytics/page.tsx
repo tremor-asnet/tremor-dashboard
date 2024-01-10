@@ -1,16 +1,27 @@
+import { lazy } from "react";
+
 // Components
-import { Flex } from "@tremor/react";
-import SalesByCountry from "@/components/SalesByCountry/SalesByCountry";
-import AnalyticsInfo from "@/components/AnalyticsInfo/AnalyticsInfo";
-import AnalyticsStatisticCard from "@/components/AnalyticsStatisticCard/AnalyticsStatisticCard";
-import ColumnChart from "@/components/ColumnChart/ColumnChart";
-import AnalyticsLineChart from "@/components/AnalyticsLineChart/AnalyticsLineChart";
+import { Card, Flex } from "@tremor/react";
+
+const AnalyticsInfo = lazy(
+  () => import("@/components/AnalyticsInfo/AnalyticsInfo"),
+);
+const AnalyticsStatisticCard = lazy(
+  () => import("@/components/AnalyticsStatisticCard/AnalyticsStatisticCard"),
+);
+const ColumnChart = lazy(() => import("@/components/ColumnChart/ColumnChart"));
+const AnalyticsLineChart = lazy(
+  () => import("@/components/AnalyticsLineChart/AnalyticsLineChart"),
+);
+const SalesByCountry = lazy(
+  () => import("@/components/SalesByCountry/SalesByCountry"),
+);
 
 //Types
 import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 
-// Actions
-import { getAnalytics } from "@/app/actions/analyticsActions";
+// Services
+import { getAnalytics } from "@/app/services";
 
 type TAnalyticsStatistical = {
   id: string;

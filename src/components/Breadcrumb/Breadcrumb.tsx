@@ -11,11 +11,22 @@ import { ROUTES } from "../../constants";
 // Types
 import { IBreadcrumb } from "@/types";
 
+// Helpers
+import { isBrowser } from "@/helpers";
+
 /**
  * Primary UI component for BreadCrumb component
  */
-const Breadcrumb = (): JSX.Element => {
+
+export interface BreadcrumbProps {
+  isScrolled?: boolean;
+}
+
+const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
   const pathname = usePathname();
+  const isMobile = isBrowser && window.innerWidth <= 768;
+  const isProjectPage = pathname === ROUTES.PROJECTS;
+  const isStickyHeader = (!isScrolled || !isMobile) && isProjectPage;
 
   const links: IBreadcrumb[] = useMemo(() => {
     switch (true) {
@@ -56,19 +67,17 @@ const Breadcrumb = (): JSX.Element => {
     }
   }, [pathname]);
 
-  const isProjectPage = pathname === ROUTES.PROJECTS;
-
   const renderLinks = (): JSX.Element[] => {
     return links.map(link => (
       <li
         key={link.name}
         className={`flex items-center ${
-          isProjectPage ? "text-white opacity-[0.8]" : "text-inherit"
+          isStickyHeader ? "text-white opacity-[0.8]" : "text-inherit"
         }`}>
         <div className="bc-link">
           <Link
             className={`text-sm capitalize tracking-[0.02857em] leading-[0] ${
-              isProjectPage
+              isStickyHeader
                 ? "text-white opacity-[0.8]"
                 : "text-primary opacity-50"
             }`}
@@ -79,7 +88,7 @@ const Breadcrumb = (): JSX.Element => {
         <div
           aria-hidden="true"
           className={`text-sm mx-2 ${
-            isProjectPage ? "text-white" : "text-[#6c757d]"
+            isStickyHeader ? "text-white" : "text-[#6c757d]"
           }`}>
           &#47;
         </div>
@@ -88,13 +97,13 @@ const Breadcrumb = (): JSX.Element => {
   };
 
   return (
-    <nav className={`${isProjectPage ? "pl-4" : ""}`}>
+    <nav className={`${isProjectPage ? "pl-3" : isMobile ? "pl-3" : ""}`}>
       <ol className="flex flex-wrap items-center text-gray-400">
         <li>
           <Link href={ROUTES.HOME} className="flex">
             <MdHome
               className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary tracking-[0.01071em] leading-[0] ${
-                isProjectPage
+                isStickyHeader
                   ? "text-white opacity-[0.8]"
                   : "text-inherit opacity-50"
               }`}
@@ -104,7 +113,7 @@ const Breadcrumb = (): JSX.Element => {
         <li
           aria-hidden="true"
           className={`text-sm mx-2 ${
-            isProjectPage ? "text-white" : "text-[#6c757d]"
+            isStickyHeader ? "text-white" : "text-[#6c757d]"
           }`}>
           &#47;
         </li>
@@ -113,14 +122,14 @@ const Breadcrumb = (): JSX.Element => {
 
         <li
           className={`text-sm text-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
-            isProjectPage ? "text-white" : "text-inherit"
+            isStickyHeader ? "text-white" : "text-inherit"
           }`}>
           {pageName}
         </li>
       </ol>
       <Title
         className={`text-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
-          isProjectPage ? "text-white" : "text-primary"
+          isStickyHeader ? "text-white" : "text-primary"
         }`}>
         {pageName}
       </Title>

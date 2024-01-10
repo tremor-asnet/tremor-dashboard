@@ -1,3 +1,2 @@
-export * from "./formatDate";
-export * from "./formatFormData";
+export * from "./format";
 export * from "./common";

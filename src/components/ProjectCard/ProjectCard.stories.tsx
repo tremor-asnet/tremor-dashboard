@@ -9,12 +9,13 @@ import { ITEM_ACTION_PROJECT } from "../../constants/commons";
 //Mocks
 import { PROJECT_DATA } from "@/mocks/project";
 
-export default { component: ProjectCard };
 const meta = {
   title: "Components/ProjectCard",
   component: ProjectCard,
   tags: ["autodocs"],
 } as Meta<typeof ProjectCard>;
+
+export default meta;
 
 type Story = StoryObj<typeof meta>;
 

@@ -14,7 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   render: () => (
-    <Button className="font-sans font-bold bg-primary hover:bg-primary border-transparent text-xs">
+    <Button className="font-bold bg-primary hover:bg-primary border-transparent text-xs">
       Primary
     </Button>
   ),
@@ -23,7 +23,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   render: () => (
     <Button
-      className="font-sans font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
+      className="font-bold bg-inherit text-tremor-content-seldom text-xs hover:bg-transparent hover:opacity-75"
       variant="secondary">
       Secondary
     </Button>
@@ -33,7 +33,7 @@ export const Secondary: Story = {
 export const Light: Story = {
   render: () => (
     <Button
-      className="font-sans font-bold text-tremor-content-title text-xs hover:text-tremor-content-title px-6 py-2.5"
+      className="font-bold text-tremor-content-title text-xs hover:text-tremor-content-title px-6 py-2.5"
       variant="light">
       Light
     </Button>
@@ -42,7 +42,7 @@ export const Light: Story = {
 export const Icon: Story = {
   render: () => (
     <Button
-      className="font-sans font-bold bg-inherit text-tremor-content-title border-0 border-inherit hover:bg-transparent text-xs"
+      className="font-bold bg-inherit text-tremor-content-title border-0 border-inherit hover:bg-transparent text-xs"
       icon={TiHome}>
       App
     </Button>
@@ -53,7 +53,7 @@ export const Disable: Story = {
   render: () => (
     <Button
       disabled
-      className="font-sans font-bold bg-primary hover:bg-primary border-transparent text-xs">
+      className="font-bold bg-primary hover:bg-primary border-transparent text-xs">
       Primary
     </Button>
   ),

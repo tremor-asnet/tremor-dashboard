@@ -5,6 +5,9 @@ import { ReactNode } from "react";
 import { Card, Text, Flex } from "@tremor/react";
 import IconBox from "@/components/IconBox/IconBox";
 
+// Helpers
+import { removeCommasForNumber } from "@/helpers";
+
 //Mocks
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
@@ -38,7 +41,7 @@ const AnalyticsStatisticCard = ({
             <Flex className="pl-[90px] flex-col mb-1 items-end">
               <Text className="text-md text-secondary font-light">{type}</Text>
               <Text className="!text-primary text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
-                {amount}
+                {removeCommasForNumber(amount)}
               </Text>
             </Flex>
           </Flex>

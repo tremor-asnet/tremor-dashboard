@@ -82,7 +82,7 @@ const SideBar = ({
   return (
     <div
       ref={sideBarRef}
-      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
+      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-20 px-4 pt-6 overflow-y-auto fixed top-4 left-4 h-[calc(100vh-2rem)] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.6,1)] delay-[0ms] ${
         isCollapse
           ? "translate-x-0 xl:w-[100px]"
           : "translate-x-[-20rem] xl:translate-x-0"
@@ -103,7 +103,7 @@ const SideBar = ({
       </Flex>
       <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
       <AccordionList>
-        <Accordion className="bg-inherit border-0">
+        <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0">
           <AccordionHeader
             className={`flex text-[rgba(255,255,255,0.5)] py-2 ${
               isCollapse && "xl:w-[200%]"
@@ -117,7 +117,7 @@ const SideBar = ({
               src="/images/avatar/avatar-sm.webp"
             />
             <Text
-              className={`leading-0 text-white self-center ml-[7px] ${hiddenOpenClass}`}>
+              className={`leading-0 text-white dark:text-dark-primary self-center ml-[7px] ${hiddenOpenClass}`}>
               Brooklyn Alice
             </Text>
           </AccordionHeader>

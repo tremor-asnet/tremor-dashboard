@@ -56,7 +56,7 @@ const DashboardHeader = ({
 
   const activeStickyScroll =
     isScrolled && !isAllProjectPage
-      ? "sticky top-3 backdrop-blur-md bg-white/30 z-10 rounded-xl bg-white/80 bg-neutral-100 shadow-xl"
+      ? "sticky top-3 backdrop-blur-md bg-white/30 dark:bg-dark-gradient-primary/30 z-10 rounded-xl bg-white/80 dark:bg-dark-gradient-primary/80 bg-neutral-100 shadow-xl"
       : "";
 
   const activeIconColor =

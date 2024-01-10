@@ -56,8 +56,6 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         return "analytics";
       case ROUTES.SALES:
         return "sales";
-      case ROUTES.PROFILE:
-        return "profile overview";
       case ROUTES.PROJECTS:
         return "all projects";
       case ROUTES.SETTING:

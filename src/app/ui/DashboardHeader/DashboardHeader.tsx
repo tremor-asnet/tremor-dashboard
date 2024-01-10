@@ -6,15 +6,18 @@ import { useContext, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
-import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+
+// Icons
 import {
   MdMenu,
   MdMenuOpen,
   MdAccountCircle,
-  MdSettings,
   MdNotifications,
 } from "react-icons/md";
+import { HiMiniMoon } from "react-icons/hi2";
+import { IoSunny } from "react-icons/io5";
 
 // Constant
 import { ROUTES } from "@/constants";
@@ -34,7 +37,7 @@ const DashboardHeader = ({
   isCollapseSidebar,
   toggleSidebar,
 }: DashboardHeaderProps): JSX.Element => {
-  const { toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const pathname = usePathname();
   const isMobile = isBrowser && window.innerWidth <= 768;
@@ -122,10 +125,17 @@ const DashboardHeader = ({
             )}
           </div>
           <div className="relative p-2 flex items-center" onClick={toggleTheme}>
-            <MdSettings
-              className={`${activeIconColor} text-xl cursor-pointer`}
-              color={color}
-            />
+            {theme ? (
+              <HiMiniMoon
+                className={`${activeIconColor} text-xl cursor-pointer`}
+                color={color}
+              />
+            ) : (
+              <IoSunny
+                className={`${activeIconColor} text-xl cursor-pointer`}
+                color={color}
+              />
+            )}
           </div>
           <div className="relative p-2 flex items-center">
             <MdNotifications

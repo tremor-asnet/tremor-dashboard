@@ -54,7 +54,7 @@ const AnalyticsStatisticCard = ({
                 </Text>
               )}
               <Text className="ml-1 text-secondary leading-[21px] font-light">
-                {duration} hellooo
+                {duration}
               </Text>
             </Flex>
           </Flex>

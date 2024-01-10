@@ -20,8 +20,8 @@ const SalesByCountry = lazy(
 //Types
 import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
 
-// Actions
-import { getAnalytics } from "@/app/actions/analyticsActions";
+// Services
+import { getAnalytics } from "@/app/services";
 
 type TAnalyticsStatistical = {
   id: string;

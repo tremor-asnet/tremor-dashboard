@@ -15,13 +15,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <Switch />,
+  render: () => <Switch color="zinc" />,
 };
 
 export const Checked: Story = {
-  render: () => <Switch checked />,
+  render: () => <Switch checked color="zinc" />,
 };
 
 export const Disable: Story = {
-  render: () => <Switch disabled />,
+  render: () => <Switch disabled color="zinc" />,
 };

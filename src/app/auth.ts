@@ -9,10 +9,10 @@ import bcrypt from "bcrypt";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 // Configs
-import { authConfig } from "./auth.config";
+import { authConfig } from "@/app/auth.config";
 
 // Services
-import { getUserByEmail } from "./services/userServices";
+import { getUserByEmail } from "@/app/services";
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,

@@ -2,7 +2,7 @@ import { Flex, Card, Text, Title, Button } from "@tremor/react";
 import { MdAdd } from "react-icons/md";
 
 // Components
-import { ProfileInfo, Tabs } from "@/components";
+import { ProfileInfo } from "@/components";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
 // Mocks
@@ -14,11 +14,11 @@ import { Project } from "@/types";
 //Constans
 import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
-// Actions
-import { getAllProjects } from "@/app/actions/projectActions";
+// Services
+import { getAllProjects } from "@/app/services";
 
-// Actions
-import { getProfile } from "@/app/actions/profileAction";
+// Services
+import { getProfile } from "@/app/services";
 
 const Projects = async () => {
   const profileData = await getProfile();

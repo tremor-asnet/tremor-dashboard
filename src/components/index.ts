@@ -14,3 +14,5 @@ export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSett
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
 export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";
+export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";

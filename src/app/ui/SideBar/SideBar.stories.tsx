@@ -25,6 +25,8 @@ export const SideBarDashboard: Story = {
       onSignOut={function (): Promise<void> {
         throw new Error("Function not implemented.");
       }}
+      avatarUrl={""}
+      name={""}
     />
   ),
 };

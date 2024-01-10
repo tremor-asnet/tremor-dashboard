@@ -4,8 +4,6 @@ import { useFormStatus } from "react-dom";
 // lib
 import Link from "next/link";
 import Image from "next/image";
-import { RiLayoutMasonryFill } from "react-icons/ri";
-import { IoMdImage } from "react-icons/io";
 
 import {
   Accordion,
@@ -16,8 +14,6 @@ import {
   Metric,
   List,
   ListItem,
-  Icon,
-  Subtitle,
   Text,
 } from "@tremor/react";
 
@@ -25,8 +21,7 @@ import {
 import { Avatar, LoadingIndicator } from "@/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD } from "@/constants/sections";
-import { ROUTES } from "@/constants/routes";
+import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES } from "@/constants";
 
 // Styles
 import "./styles.css";
@@ -35,12 +30,16 @@ import "./styles.css";
 import { isBrowser } from "@/helpers";
 
 interface SideBarProps {
+  avatarUrl: string;
+  name: string;
   pathname: string;
   isCollapse: boolean;
   toggleSidebar: () => void;
   onSignOut: () => Promise<void>;
 }
 const SideBar = ({
+  avatarUrl,
+  name,
   onSignOut,
   isCollapse,
   toggleSidebar,
@@ -116,11 +115,11 @@ const SideBar = ({
               width={36}
               height={36}
               priority
-              src="/images/avatar/avatar-sm.webp"
+              src={avatarUrl}
             />
             <Text
               className={`leading-0 min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              Brooklyn Alice
+              {name}
             </Text>
           </AccordionHeader>
           <AccordionBody>

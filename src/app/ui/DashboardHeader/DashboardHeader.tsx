@@ -6,12 +6,11 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
-import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
-import Link from "next/link";
+import { Breadcrumb } from "@/components";
+
 import {
   MdMenu,
   MdMenuOpen,
-  MdAccountCircle,
   MdSettings,
   MdNotifications,
 } from "react-icons/md";
@@ -93,15 +92,6 @@ const DashboardHeader = ({
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end">
         <div className="flex flex-wrap item-center gap-y-1">
-          <Link
-            href={ROUTES.SIGN_IN}
-            aria-label="Link to homepage"
-            className="p-2 flex items-center">
-            <MdAccountCircle
-              className={`${activeIconColor} text-xl`}
-              color={color}
-            />
-          </Link>
           <div
             className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
             onClick={toggleSidebar}>

@@ -9,11 +9,8 @@ import {
   PlatformSetting,
 } from "@/components";
 
-// Mocks
-import { PROFILE_HEADER } from "@/mocks";
-
 // Actions
-import { getProfile, getProfileProject } from "@/app/actions/profileAction";
+import { getProfile, getProfileProject } from "@/app/actions";
 
 const Profile = async () => {
   const profileData = await getProfile();
@@ -29,7 +26,7 @@ const Profile = async () => {
             <ProfileInfo
               name={profileData.name}
               role={profileData.role}
-              avatarUrl={PROFILE_HEADER.avatarUrl}
+              avatarUrl={profileData.avatar}
             />
           </Flex>
           {/* Main content */}

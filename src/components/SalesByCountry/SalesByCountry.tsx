@@ -1,6 +1,5 @@
 "use client";
 
-// Components
 import {
   Card,
   Flex,
@@ -12,11 +11,12 @@ import {
   Title,
 } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
-import Image from "next/image";
 
 // Constants
 import { FLAG_SRC } from "@/constants";
-import { CustomImage } from "..";
+
+// Components
+import { CustomImage } from "@/components";
 
 export interface ISalesByCountry {
   id: string;

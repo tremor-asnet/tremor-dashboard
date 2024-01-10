@@ -62,7 +62,13 @@ const SignIn = () => {
         errorMessage: "",
       });
 
-      const res = await authenticate({ errorMessage: "" }, getFormData(value));
+      const res = await authenticate(
+        { errorMessage: "" },
+        getFormData({
+          ...value,
+          remember: isSwitchOn,
+        }),
+      );
 
       setFormStatus({
         isPending: false,

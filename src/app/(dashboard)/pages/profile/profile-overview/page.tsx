@@ -9,8 +9,8 @@ import {
   PlatformSetting,
 } from "@/components";
 
-// Actions
-import { getProfile, getProfileProject } from "@/app/actions";
+// Services
+import { getProfile, getProfileProject } from "@/app/services";
 
 const Profile = async () => {
   const profileData = await getProfile();

@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 import DashboardLayout from "./clientLayout";
 
-import { getProfile } from "@/app/actions";
+import { getProfile } from "@/app/services";
 
 export default async function DashboardLayoutWrapper({
   children,

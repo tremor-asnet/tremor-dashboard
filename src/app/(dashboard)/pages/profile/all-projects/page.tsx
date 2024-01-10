@@ -10,8 +10,8 @@ import { Project } from "@/types";
 //Constants
 import { ITEM_ACTION_PROJECT } from "@/constants";
 
-// Actions
-import { getAllProjects, getProfile } from "@/app/actions";
+// Services
+import { getAllProjects, getProfile } from "@/app/services";
 
 const Projects = async () => {
   const profileData = await getProfile();

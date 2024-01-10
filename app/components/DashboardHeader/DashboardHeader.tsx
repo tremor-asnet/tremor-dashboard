@@ -54,7 +54,7 @@ const DashboardHeader = ({
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
     isScrolled && (isMobile || !isAllProjectPage)
-      ? `sticky top-0 py-2 z-50 bg-lighter box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
+      ? `sticky top-0 py-2 z-40 bg-lighter box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
       : `${stickyTransition}`;
 
   const activeIconColor =
@@ -64,7 +64,7 @@ const DashboardHeader = ({
 
   return (
     <div
-      className={`${activeStickyScroll} h-32 md:h-20 mb-3.5 md:flex items-center justify-between px-2 md:px-4 py-1 ${
+      className={`${activeStickyScroll} h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 ${
         isAllProjectPage &&
         `absolute top-10 md:top-9 pl-1 pr-2 ${
           activeStickyScroll && isMobile ? "w-full" : "w-[93%]"
@@ -75,37 +75,21 @@ const DashboardHeader = ({
         }`
       }`}>
       <div className="flex items-center">
-        <Breadcrumb isScrolled={isScrolled} />
         <div
-          className="hidden xl:block cursor-pointer mx-16"
+          className={`block xl:hidden cursor-pointer ${
+            isAllProjectPage ? "" : "mr-2"
+          }`}
           onClick={toggleSidebar}>
           {isCollapseSidebar ? (
-            <MdMenuOpen
-              className="text-tremor-content text-2xl"
-              color={color}
-            />
+            <MdMenuOpen className="text-2xl" color={color} />
           ) : (
-            <MdMenu className="text-tremor-content text-2xl" color={color} />
+            <MdMenu className="text-2xl" color={color} />
           )}
         </div>
+        <Breadcrumb isScrolled={isScrolled} />
       </div>
-      <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end">
+      <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
         <div className="flex flex-wrap item-center gap-y-1">
-          <div
-            className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
-            onClick={toggleSidebar}>
-            {isCollapseSidebar ? (
-              <MdMenu
-                className={`${activeIconColor}  text-2xl`}
-                color={color}
-              />
-            ) : (
-              <MdMenuOpen
-                className={`${activeIconColor} text-2xl`}
-                color={color}
-              />
-            )}
-          </div>
           <div className="relative p-2 flex items-center">
             <MdSettings
               className={`${activeIconColor} text-xl cursor-pointer`}

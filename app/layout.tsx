@@ -2,7 +2,7 @@
 import "./globals.css";
 
 // Context
-import { ThemeProvider } from "../src/context/theme";
+import { ThemeProvider } from "@/context/theme";
 
 // Components
 import ClientRootLayout from "./ClientRootLayout";

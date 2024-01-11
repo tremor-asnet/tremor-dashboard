@@ -5,7 +5,6 @@ import { useFormStatus } from "react-dom";
 
 // lib
 import Link from "next/link";
-import Image from "next/image";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import {
@@ -21,7 +20,7 @@ import {
 } from "@tremor/react";
 
 // Components
-import { Avatar, LoadingIndicator } from "@/components";
+import { Avatar, LoadingIndicator, CustomImage } from "@/components";
 
 // Constants
 import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
@@ -100,7 +99,7 @@ const SideBar = ({
         </div>
       </Flex>
       <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
-        <Image
+        <CustomImage
           src={LOGO_SRC.logo}
           width={28}
           height={28}
@@ -130,7 +129,7 @@ const SideBar = ({
             />
             <Text
               className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              Brooklyn Alice
+              {name}
             </Text>
           </AccordionHeader>
           <AccordionBody>

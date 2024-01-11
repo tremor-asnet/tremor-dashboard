@@ -1,4 +1,3 @@
-// Components
 import {
   Card,
   Flex,
@@ -10,10 +9,12 @@ import {
   Title,
 } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
-import Image from "next/image";
 
 // Constants
 import { FLAG_SRC } from "@/constants";
+
+// Components
+import { CustomImage } from "@/components";
 
 export interface ISalesByCountry {
   id: string;
@@ -70,10 +71,10 @@ const SalesByCountry = ({
                   <TableRow className="border-solid">
                     <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
                       <Flex className="items-center">
-                        <Image
+                        <CustomImage
                           src={FLAG_SRC[id]}
-                          width="24"
-                          height="18"
+                          width={24}
+                          height={18}
                           alt={item.country}
                           priority
                         />
@@ -125,11 +126,11 @@ const SalesByCountry = ({
       </Flex>
       {isAnalytics && chart && (
         <Flex className="justify-center pb-6 px-16 md:p-0 map">
-          <Image
+          <CustomImage
             className="mt-0 lg:-mt-10"
             src={chart}
-            width="380"
-            height="250"
+            width={380}
+            height={250}
             alt="chart"
             priority
           />

@@ -23,17 +23,18 @@ const CustomImage = ({
   height,
   alt,
   sizes,
+
   ...rest
 }: ImageProps) => {
-  const [fallbackSrc, setFallbackImgSrc] = useState(src);
+  const [fallbackSrc, setFallbackImgSrc] = useState(false);
 
-  const handleOnError = () => setFallbackImgSrc(NOT_FOUND.SRC);
+  const handleOnError = () => setFallbackImgSrc(true);
 
   return (
     <>
       <Image
-        className={`${!fallbackSrc ? "bg-[white]" : ""} ${className}`}
-        src={fallbackSrc}
+        className={className}
+        src={fallbackSrc ? NOT_FOUND.SRC : src}
         width={width}
         height={height}
         sizes={sizes}

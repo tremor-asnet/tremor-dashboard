@@ -19,7 +19,7 @@ exports[`UserConversationHistory component Should render UserConversationHistory
             >
               <img
                 alt="Sophie.B"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -77,7 +77,7 @@ exports[`UserConversationHistory component Should render UserConversationHistory
           >
             <img
               alt="Sophie.B"
-              class="bg-[white] undefined"
+              class=" undefined"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"

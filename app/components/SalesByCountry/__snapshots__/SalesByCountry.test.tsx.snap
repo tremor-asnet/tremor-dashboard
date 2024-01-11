@@ -71,7 +71,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         >
                           <img
                             alt="United State"
-                            class="bg-[white] undefined"
+                            class=" undefined"
                             data-nimg="1"
                             decoding="async"
                             fetchpriority="high"
@@ -167,7 +167,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         >
                           <img
                             alt="Germany"
-                            class="bg-[white] undefined"
+                            class=" undefined"
                             data-nimg="1"
                             decoding="async"
                             fetchpriority="high"
@@ -263,7 +263,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         >
                           <img
                             alt="Great Britain"
-                            class="bg-[white] undefined"
+                            class=" undefined"
                             data-nimg="1"
                             decoding="async"
                             fetchpriority="high"
@@ -359,7 +359,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         >
                           <img
                             alt="Brasil"
-                            class="bg-[white] undefined"
+                            class=" undefined"
                             data-nimg="1"
                             decoding="async"
                             fetchpriority="high"
@@ -455,7 +455,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         >
                           <img
                             alt="Australia"
-                            class="bg-[white] undefined"
+                            class=" undefined"
                             data-nimg="1"
                             decoding="async"
                             fetchpriority="high"
@@ -534,7 +534,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           >
             <img
               alt="chart"
-              class="bg-[white] mt-0 lg:-mt-10"
+              class=" mt-0 lg:-mt-10"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
@@ -616,7 +616,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       >
                         <img
                           alt="United State"
-                          class="bg-[white] undefined"
+                          class=" undefined"
                           data-nimg="1"
                           decoding="async"
                           fetchpriority="high"
@@ -712,7 +712,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       >
                         <img
                           alt="Germany"
-                          class="bg-[white] undefined"
+                          class=" undefined"
                           data-nimg="1"
                           decoding="async"
                           fetchpriority="high"
@@ -808,7 +808,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       >
                         <img
                           alt="Great Britain"
-                          class="bg-[white] undefined"
+                          class=" undefined"
                           data-nimg="1"
                           decoding="async"
                           fetchpriority="high"
@@ -904,7 +904,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       >
                         <img
                           alt="Brasil"
-                          class="bg-[white] undefined"
+                          class=" undefined"
                           data-nimg="1"
                           decoding="async"
                           fetchpriority="high"
@@ -1000,7 +1000,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       >
                         <img
                           alt="Australia"
-                          class="bg-[white] undefined"
+                          class=" undefined"
                           data-nimg="1"
                           decoding="async"
                           fetchpriority="high"
@@ -1079,7 +1079,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         >
           <img
             alt="chart"
-            class="bg-[white] mt-0 lg:-mt-10"
+            class=" mt-0 lg:-mt-10"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -1194,7 +1194,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="United State"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1276,7 +1276,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Germany"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1358,7 +1358,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Great Britain"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1440,7 +1440,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Brasil"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1522,7 +1522,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Australia"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1655,7 +1655,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="United State"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1751,7 +1751,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Germany"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1847,7 +1847,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Great Britain"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -1943,7 +1943,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Brasil"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -2039,7 +2039,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     >
                       <img
                         alt="Australia"
-                        class="bg-[white] undefined"
+                        class=" undefined"
                         data-nimg="1"
                         decoding="async"
                         fetchpriority="high"
@@ -2118,7 +2118,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
       >
         <img
           alt="chart"
-          class="bg-[white] mt-0 lg:-mt-10"
+          class=" mt-0 lg:-mt-10"
           data-nimg="1"
           decoding="async"
           fetchpriority="high"

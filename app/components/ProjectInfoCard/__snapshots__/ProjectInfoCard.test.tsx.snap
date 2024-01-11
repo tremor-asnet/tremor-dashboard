@@ -13,7 +13,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="modern"
-          class="bg-[white] w-full rounded-xl shadow-lg"
+          class=" w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
           height="180"
@@ -74,7 +74,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -91,7 +91,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -115,7 +115,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="scandinavian"
-          class="bg-[white] w-full rounded-xl shadow-lg"
+          class=" w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
           height="180"
@@ -176,7 +176,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -193,7 +193,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -217,7 +217,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="minimalist"
-          class="bg-[white] w-full rounded-xl shadow-lg"
+          class=" w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
           height="180"
@@ -278,7 +278,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -295,7 +295,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -319,7 +319,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       >
         <img
           alt="gothic"
-          class="bg-[white] w-full rounded-xl shadow-lg"
+          class=" w-full rounded-xl shadow-lg"
           data-nimg="1"
           decoding="async"
           height="180"
@@ -380,7 +380,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Anne Marie"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -397,7 +397,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             >
               <img
                 alt="Nick Daniel"
-                class="bg-[white] undefined"
+                class=" undefined"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"

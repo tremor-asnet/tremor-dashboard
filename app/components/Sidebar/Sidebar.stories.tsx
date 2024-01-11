@@ -18,15 +18,17 @@ type Story = StoryObj<typeof meta>;
 
 export const SideBarDashboard: Story = {
   render: () => (
-    <SideBar
-      pathname={ROUTES.PROJECTS}
-      toggleSidebar={() => {}}
-      isCollapse={true}
-      onSignOut={function (): Promise<void> {
-        throw new Error("Function not implemented.");
-      }}
-      avatarUrl={""}
-      name={""}
-    />
+    <div className="min-h-screen">
+      <SideBar
+        avatarUrl="/images/avatar/avatar-sm.webp"
+        name="Brooklyn Alice"
+        pathname={ROUTES.PROJECTS}
+        toggleSidebar={() => {}}
+        isCollapse={true}
+        onSignOut={function (): Promise<void> {
+          throw new Error("Function not implemented.");
+        }}
+      />
+    </div>
   ),
 };

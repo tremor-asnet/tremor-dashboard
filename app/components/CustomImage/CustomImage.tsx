@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // Constants
 import { NOT_FOUND } from "@/constants";
@@ -32,7 +32,7 @@ const CustomImage = ({
   return (
     <>
       <Image
-        className={`${fallbackSrc ? "bg-[white]" : ""} ${className}`}
+        className={`${!fallbackSrc ? "bg-[white]" : ""} ${className}`}
         src={fallbackSrc}
         width={width}
         height={height}

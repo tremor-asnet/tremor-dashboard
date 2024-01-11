@@ -129,7 +129,7 @@ const SideBar = ({
             />
             <Text
               className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              Brooklyn Alice
+              {name}
             </Text>
           </AccordionHeader>
           <AccordionBody>

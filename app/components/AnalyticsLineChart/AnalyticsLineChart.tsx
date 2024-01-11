@@ -27,7 +27,7 @@ interface LineChartProps {
   title: string;
   subTitle: string;
   scheduleText: string;
-  isDailyChart: boolean;
+  isDailyChart?: boolean;
   descValue?: string;
 }
 

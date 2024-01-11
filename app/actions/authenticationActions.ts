@@ -9,7 +9,7 @@ import { cookies } from "next/headers";
 import { signIn, signOut } from "@/auth";
 
 // Constants
-import { ROUTER_API_URL } from "@/constants";
+import { REMEMBER_ME, ROUTER_API_URL } from "@/constants";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -34,7 +34,7 @@ export const authenticate = async (
 };
 
 export async function signOutAction() {
-  cookies().delete("remember-me");
+  cookies().delete(REMEMBER_ME);
   await signOut();
 }
 

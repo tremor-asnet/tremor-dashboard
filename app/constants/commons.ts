@@ -46,3 +46,5 @@ export const SOCIAL_LINK = {
   twitter: "https://twitter.com/",
   instagram: "https://instagram.com",
 };
+
+export const REMEMBER_ME = "remember-me";

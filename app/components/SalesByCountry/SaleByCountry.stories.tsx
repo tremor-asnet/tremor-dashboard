@@ -6,6 +6,9 @@ import SalesByCountry from "./SalesByCountry";
 // Mock data
 import { SALES_BY_COUNTRY } from "@/mocks/analytics";
 
+// Constants
+import { CHART_SRC } from "@/constants";
+
 const meta = {
   title: "Components/SalesByCountry",
   component: SalesByCountry,
@@ -20,7 +23,7 @@ export const AnalyticsSalesByCountry: Story = {
   render: () => (
     <SalesByCountry
       title="Sales by Country"
-      chart="/assets/images/analytics/analytics-sales-chart.webp"
+      chart={CHART_SRC.analytics}
       isAnalytics={true}
       data={SALES_BY_COUNTRY}
     />

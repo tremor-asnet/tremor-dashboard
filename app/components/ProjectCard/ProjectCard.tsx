@@ -32,8 +32,7 @@ const ProjectCard = ({
   projectData = PROJECT_DATA[0],
   actions = ITEM_ACTION_PROJECT,
 }: IProjectCard): JSX.Element => {
-  const { cover, name, dueDate, participants, description, id, ...rest } =
-    projectData;
+  const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
   const duaDateFormat = formatDate(new Date(dueDate));
 

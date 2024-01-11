@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Title, Text, Flex, Button } from "@tremor/react";
 

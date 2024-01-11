@@ -38,10 +38,8 @@ describe("Test isEmpty function", () => {
 });
 
 describe("Test getErrorMessage function", () => {
-  test("Should render throw error", () => {
-    expect(() => getErrorMessage(404, "Not Found")).toThrow(Error);
-    expect(() => getErrorMessage(404, "Not Found")).toThrow(
-      "An error has occurred: 404 - Not Found",
-    );
+  test("Should render correct message", () => {
+    const result = getErrorMessage(404, "Not Found");
+    expect(result).toBe("An error has occurred: 404 - Not Found");
   });
 });

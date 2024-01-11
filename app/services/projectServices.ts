@@ -14,7 +14,7 @@ export const getAllProjects = async () => {
     },
   });
 
-  if (!res.ok) getErrorMessage(res.status, res.statusText);
+  if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
   return res.json();
 };

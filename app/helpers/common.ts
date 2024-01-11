@@ -12,5 +12,5 @@ export const isEmpty = (value: any) => {
 
 export const getErrorMessage = (statusCode: number, statusText: string) => {
   const errorMessage = `An error has occurred: ${statusCode} - ${statusText}`;
-  throw new Error(errorMessage);
+  return errorMessage;
 };

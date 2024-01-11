@@ -4,6 +4,7 @@
 import NextAuth from "next-auth";
 import { z } from "zod";
 import bcrypt from "bcrypt";
+import { cookies } from "next/headers";
 
 // "Credentials" next-provider: User login by "email" & "password"
 import CredentialsProvider from "next-auth/providers/credentials";
@@ -19,11 +20,19 @@ export const { auth, signIn, signOut } = NextAuth({
   providers: [
     CredentialsProvider({
       name: "credentials",
-      async authorize(credentials) {
+      async authorize(credentials, req) {
+        const body = await req.json();
+
+        cookies().set({
+          name: "remember-me",
+          value: body.remember,
+          httpOnly: true,
+          path: "/",
+        });
+
         try {
           const parsedCredentials = z
-            // TODO: Update password credential
-            .object({ email: z.string().email(), password: z.string().min(2) })
+            .object({ email: z.string().email(), password: z.string().min(8) })
             .safeParse(credentials);
 
           if (parsedCredentials.success) {

@@ -1,6 +1,10 @@
 "use server";
 
+// Constants
 import { ROUTER_API_URL } from "@/constants";
+
+// Helpers
+import { getErrorMessage } from "@/helpers";
 
 export const getAnalytics = async () => {
   const res = await fetch(`${ROUTER_API_URL}/analytics`, {
@@ -10,10 +14,7 @@ export const getAnalytics = async () => {
     },
   });
 
-  if (!res.ok) {
-    const message = `An error has occured: ${res.status} - ${res.statusText}`;
-    throw new Error(message);
-  }
+  if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
   return res.json();
 };

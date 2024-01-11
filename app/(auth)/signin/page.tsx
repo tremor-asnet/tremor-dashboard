@@ -52,24 +52,23 @@ const SignIn = () => {
   };
 
   const handleSignIn = async (value: User) => {
-    try {
-      setFormStatus({
-        isPending: true,
-        errorMessage: "",
-      });
+    setFormStatus({
+      isPending: true,
+      errorMessage: "",
+    });
 
-      const res = await authenticate({ errorMessage: "" }, getFormData(value));
+    const res = await authenticate(
+      { errorMessage: "" },
+      getFormData({
+        ...value,
+        remember: isRememberedMe,
+      }),
+    );
 
-      setFormStatus({
-        isPending: false,
-        errorMessage: res?.errorMessage || "",
-      });
-    } catch (error: any) {
-      setFormStatus({
-        isPending: false,
-        errorMessage: error?.errorMessage || "",
-      });
-    }
+    setFormStatus({
+      isPending: false,
+      errorMessage: res?.errorMessage || "",
+    });
   };
 
   return (
@@ -123,17 +122,17 @@ const SignIn = () => {
               {...field}
             />
             <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
-              {passwordErrorMessage}
+              {passwordErrorMessage
+                ? passwordErrorMessage
+                : formStatus.errorMessage}
             </p>
           </div>
         )}
         name="password"
       />
-      {!isEmpty(formStatus.errorMessage) && (
-        <p className="py-3 text-[11px] xs:text-xs leading-3 text-red-500">
-          {formStatus.errorMessage}
-        </p>
-      )}
+
+      {/* {renderErrorMessage(formStatus.errorMessage)} */}
+
       <div className="flex items-center space-x-3 mt-1">
         <Switch
           tabIndex={2}

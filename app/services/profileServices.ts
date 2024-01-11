@@ -3,6 +3,9 @@
 // Constants
 import { ROUTER_API_URL } from "@/constants";
 
+// Helpers
+import { getErrorMessage } from "@/helpers";
+
 // Integration api for Profile
 export const getProfile = async () => {
   const res = await fetch(`${ROUTER_API_URL}/profile`, {
@@ -12,10 +15,7 @@ export const getProfile = async () => {
     },
   });
 
-  if (!res.ok) {
-    const message = `An error has occured: ${res.status} - ${res.statusText}`;
-    throw new Error(message);
-  }
+  if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
   return res.json();
 };
@@ -29,10 +29,7 @@ export const getProfileProject = async () => {
     },
   });
 
-  if (!res.ok) {
-    const message = `An error has occured: ${res.status} - ${res.statusText}`;
-    throw new Error(message);
-  }
+  if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
   return res.json();
 };

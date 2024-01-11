@@ -43,10 +43,10 @@ interface SideBarProps {
 const SideBar = ({
   avatarUrl,
   name,
-  onSignOut,
   isCollapse,
   toggleSidebar,
   pathname,
+  onSignOut,
 }: SideBarProps) => {
   const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
@@ -55,6 +55,17 @@ const SideBar = ({
     "transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20";
 
   useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      const currentRef = sideBarRef.current;
+
+      if (currentRef && !currentRef.contains(event.target as Node)) {
+        // Clicked outside the side navigation bar, close it
+        if (isCollapse) {
+          toggleSidebar();
+        }
+      }
+    };
+
     // Add event listener to the document object
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -62,19 +73,7 @@ const SideBar = ({
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isCollapse]);
-
-  const handleClickOutside = (event: Event) => {
-    if (
-      sideBarRef.current &&
-      !sideBarRef.current.contains(event.target as Node)
-    ) {
-      // Clicked outside the side navigation bar, close it
-      if (isCollapse) {
-        toggleSidebar();
-      }
-    }
-  };
+  }, [isCollapse, toggleSidebar]);
 
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {

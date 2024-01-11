@@ -6,3 +6,4 @@ export * from "./commons";
 export * from "./flagSrc";
 export * from "./images";
 export * from "./sections";
+export * from "./images";

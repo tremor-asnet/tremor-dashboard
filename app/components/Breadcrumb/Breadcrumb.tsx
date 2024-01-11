@@ -6,7 +6,7 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ROUTES } from "@/constants";
+import { ROUTES } from "../../constants";
 
 // Types
 import { IBreadcrumb } from "@/types";
@@ -56,8 +56,6 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         return "analytics";
       case ROUTES.SALES:
         return "sales";
-      case ROUTES.PROFILE:
-        return "profile overview";
       case ROUTES.PROJECTS:
         return "all projects";
       case ROUTES.SETTING:
@@ -79,7 +77,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
             className={`text-sm capitalize tracking-[0.02857em] leading-[0] ${
               isStickyHeader
                 ? "text-white opacity-[0.8]"
-                : "text-primary opacity-50"
+                : "text-primary dark:text-dark-primary opacity-50"
             }`}
             href={link.url}>
             {link.name}
@@ -102,7 +100,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         <li>
           <Link href={ROUTES.HOME} className="flex">
             <MdHome
-              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary tracking-[0.01071em] leading-[0] ${
+              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary dark:text-dark-primary tracking-[0.01071em] leading-[0] ${
                 isStickyHeader
                   ? "text-white opacity-[0.8]"
                   : "text-inherit opacity-50"
@@ -121,14 +119,14 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         {renderLinks()}
 
         <li
-          className={`text-sm text-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
+          className={`text-sm text-tremor-content-title dark:text-dark-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
             isStickyHeader ? "text-white" : "text-inherit"
           }`}>
           {pageName}
         </li>
       </ol>
       <Title
-        className={`text-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
+        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
           isStickyHeader ? "text-white" : "text-primary"
         }`}>
         {pageName}

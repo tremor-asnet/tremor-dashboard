@@ -1,7 +1,7 @@
 import { lazy } from "react";
 
 // Components
-import { Card, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
 
 const AnalyticsInfo = lazy(
   () => import("@/components/AnalyticsInfo/AnalyticsInfo"),
@@ -25,6 +25,9 @@ import { getAnalytics } from "@/services";
 
 // Mock data
 import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
+
+// Constants
+import { CHART_SRC } from "@/constants";
 
 type TAnalyticsStatistical = {
   id: string;
@@ -53,7 +56,7 @@ const Analytics = async () => {
       {/* Sales card  */}
       <SalesByCountry
         title="Sales by Country"
-        chart="/assets/images/analytics/analytics-sales-chart.webp"
+        chart={CHART_SRC.analytics}
         isAnalytics={true}
         data={sale_by_country}
       />

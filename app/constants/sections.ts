@@ -10,6 +10,5 @@ export const ITEMS_PROFILE = [
 export const ITEMS_DASHBOARD = [
   { label: "Analytics", href: ROUTES.ANALYTICS, content: "A" },
   { label: "Sales", href: ROUTES.SALES, content: "S" },
-  { label: "Profile Overview", href: ROUTES.PROFILE, content: "P" },
   { label: "All Projects", href: ROUTES.PROJECTS, content: "A" },
 ];

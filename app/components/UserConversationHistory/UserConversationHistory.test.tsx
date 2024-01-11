@@ -1,9 +1,12 @@
 import { render } from "@testing-library/react";
 import UserConversationHistory from "./UserConversationHistory";
 
+// Constants
+import { AVATAR_SRC } from "@/constants";
+
 describe("UserConversationHistory component", () => {
   const props = {
-    avatar: "/images/avatar/avatar-md.webp",
+    avatar: AVATAR_SRC.md,
     name: "Sophie.B",
     lastConversation: "Hi! I need more information..",
   };

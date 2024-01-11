@@ -5,3 +5,4 @@ export * from "./profile";
 export * from "./commons";
 export * from "./flagSrc";
 export * from "./sections";
+export * from "./images";

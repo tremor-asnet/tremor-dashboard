@@ -32,15 +32,13 @@ import "./styles.css";
 // Helpers
 import { isBrowser } from "@/helpers";
 
-// Actions
-import { signOutAction } from "@/actions";
-
 interface SideBarProps {
   avatarUrl: string;
   name: string;
   pathname: string;
   isCollapse: boolean;
   toggleSidebar: () => void;
+  onSignOut: () => Promise<void>;
 }
 
 const SideBar = ({
@@ -49,6 +47,7 @@ const SideBar = ({
   isCollapse,
   toggleSidebar,
   pathname,
+  onSignOut,
 }: SideBarProps) => {
   const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";

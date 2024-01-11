@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 
 // Components
 import { Flex } from "@tremor/react";
-
-// Components
 import { SideBar, DashboardHeader } from "@/components";
+
+// Actions
+import { signOutAction } from "@/actions";
 
 interface DashboardLayoutProp {
   profileData: {
@@ -41,6 +42,7 @@ export default function DashboardLayout({
         pathname={pathname}
         isCollapse={isCollapseSidebar}
         toggleSidebar={toggleSidebar}
+        onSignOut={signOutAction}
       />
       <div
         className={`flex flex-col w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20 ${

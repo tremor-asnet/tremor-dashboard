@@ -57,7 +57,7 @@ const DashboardHeader = ({
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
     isScrolled && (isMobile || !isAllProjectPage)
-      ? `sticky top-0 py-2 z-50 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
+      ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
       : `${stickyTransition}`;
 
   const activeIconColor =
@@ -93,21 +93,6 @@ const DashboardHeader = ({
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
         <div className="flex flex-wrap item-center gap-y-1">
-          <div
-            className="sm:block xl:hidden p-2 flex items-center cursor-pointer"
-            onClick={toggleSidebar}>
-            {isCollapseSidebar ? (
-              <MdMenu
-                className={`${activeIconColor}  text-2xl`}
-                color={color}
-              />
-            ) : (
-              <MdMenuOpen
-                className={`${activeIconColor} text-2xl`}
-                color={color}
-              />
-            )}
-          </div>
           <div className="relative p-2 flex items-center" onClick={toggleTheme}>
             {theme ? (
               <HiMiniMoon

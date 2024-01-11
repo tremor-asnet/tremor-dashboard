@@ -8,7 +8,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 // Contexts
-import { ThemeContext } from "../src/context/theme";
+import { ThemeContext } from "@/context/theme";
 
 interface ClientRootLayoutProps {
   children: React.ReactNode;

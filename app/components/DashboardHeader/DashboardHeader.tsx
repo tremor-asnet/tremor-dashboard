@@ -17,7 +17,7 @@ import { IoSunny } from "react-icons/io5";
 import { ROUTES } from "@/constants";
 
 // Contexts
-import { ThemeContext } from "../../../src/context/theme";
+import { ThemeContext } from "@/context/theme";
 
 // Helpers
 import { isBrowser } from "@/helpers";

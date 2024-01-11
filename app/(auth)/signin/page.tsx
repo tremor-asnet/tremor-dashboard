@@ -38,21 +38,17 @@ const SignIn = () => {
     isPending: false,
     errorMessage: "",
   });
-  // const authenticateErrorMsg = authenticateRes?.errorMessage || null;
 
   const { email, password } = errors;
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
-  const isEmailError = Boolean(email);
-  const isPasswordError = Boolean(password);
-  const isDisableSubmit =
-    isEmailError || isPasswordError || formStatus.isPending;
+  const isDisableSubmit = formStatus.isPending;
 
-  const [isSwitchOn, setIsSwitchOn] = useState<boolean>(false);
+  const [isRememberedMe, setIsRememberedMe] = useState<boolean>(false);
 
   // Handle to change value is (true or false) for attr checked switch
   const handleSwitchChange = (value: boolean) => {
-    setIsSwitchOn(value);
+    setIsRememberedMe(value);
   };
 
   const handleSignIn = async (value: User) => {
@@ -66,7 +62,7 @@ const SignIn = () => {
         { errorMessage: "" },
         getFormData({
           ...value,
-          remember: isSwitchOn,
+          remember: isRememberedMe,
         }),
       );
 
@@ -105,11 +101,9 @@ const SignIn = () => {
               required
               {...field}
             />
-            {isEmailError && (
-              <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                {emailErrorMessage}
-              </p>
-            )}
+            <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+              {emailErrorMessage}
+            </p>
           </div>
         )}
         name="email"
@@ -134,11 +128,9 @@ const SignIn = () => {
               required
               {...field}
             />
-            {isPasswordError && (
-              <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
-                {passwordErrorMessage}
-              </p>
-            )}
+            <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
+              {passwordErrorMessage}
+            </p>
           </div>
         )}
         name="password"
@@ -153,7 +145,7 @@ const SignIn = () => {
           tabIndex={2}
           id="switch"
           name="switch"
-          checked={isSwitchOn}
+          checked={isRememberedMe}
           color="zinc"
           className="flex justify-center items-center"
           onChange={handleSwitchChange}

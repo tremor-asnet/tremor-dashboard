@@ -1,17 +1,16 @@
 "use client";
 
 //Libs
-import Image from "next/image";
 import { useState } from "react";
+import { Card, Text, Flex, Title, Button } from "@tremor/react";
 
 //Components
-import { Card, Text, Flex, Title, Button } from "@tremor/react";
-import Avatar from "@/components/Avatar/Avatar";
+import { Avatar, CustomImage } from "@/components";
 
 //Types
 import { Project, AvatarCard } from "@/types";
 
-//Constans
+//Constants
 import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 
 //Mocks
@@ -55,7 +54,7 @@ const ProjectCard = ({
       <div className="flex items-center">
         <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl">
-            <Image
+            <CustomImage
               src={cover}
               width={60}
               height={60}

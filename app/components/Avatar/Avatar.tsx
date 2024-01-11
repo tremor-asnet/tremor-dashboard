@@ -1,5 +1,9 @@
+"use client";
+
 import { memo } from "react";
-import Image from "next/image";
+
+// Components
+import { CustomImage } from "@/components";
 
 // Define the props for the Input component
 interface IAvatarProps {
@@ -26,7 +30,7 @@ const Avatar = ({
 }: IAvatarProps): JSX.Element => {
   return (
     <div className={`inline-flex rounded-full overflow-hidden ${className}`}>
-      <Image
+      <CustomImage
         src={src}
         width={width}
         height={height}

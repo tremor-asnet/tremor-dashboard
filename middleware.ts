@@ -9,14 +9,11 @@ export const config = {
 };
 
 export default function auth(params: GetServerSidePropsContext) {
-  const cookieStore = cookies();
-
-  if (cookieStore.get("remember-me")?.value === "true" && authConfig.session) {
-    authConfig.session.maxAge = 3 * 24 * 60 * 60;
-  }
-
-  if (cookieStore.get("remember-me")?.value === "false" && authConfig.session) {
-    authConfig.session.maxAge = 24 * 60 * 60;
+  if (authConfig.session) {
+    authConfig.session.maxAge =
+      cookies().get("remember-me")?.value === "true"
+        ? 3 * 24 * 60 * 60
+        : 24 * 60 * 60;
   }
 
   return NextAuth(authConfig).auth(params);

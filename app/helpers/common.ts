@@ -9,3 +9,8 @@ export const isEmpty = (value: any) => {
     return !value;
   }
 };
+
+export const getErrorMessage = (statusCode: number, statusText: string) => {
+  const errorMessage = `An error has occurred: ${statusCode} - ${statusText}`;
+  throw new Error(errorMessage);
+};

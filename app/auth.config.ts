@@ -4,6 +4,8 @@ import type { NextAuthConfig } from "next-auth";
 // Constants
 import { ROUTES } from "@/constants";
 
+const maxAge = 24 * 60 * 60;
+
 export const authConfig: NextAuthConfig = {
   pages: {
     signIn: ROUTES.SIGN_IN,
@@ -33,7 +35,7 @@ export const authConfig: NextAuthConfig = {
     },
   },
   session: {
-    maxAge: 24 * 60 * 60,
+    maxAge,
   },
   providers: [],
 };

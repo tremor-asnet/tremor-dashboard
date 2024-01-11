@@ -56,10 +56,9 @@ const SideBar = ({
 
   useEffect(() => {
     const handleClickOutside = (event: Event) => {
-      if (
-        sideBarRef.current &&
-        !sideBarRef.current.contains(event.target as Node)
-      ) {
+      const currentRef = sideBarRef.current;
+
+      if (currentRef && !currentRef.contains(event.target as Node)) {
         // Clicked outside the side navigation bar, close it
         if (isCollapse) {
           toggleSidebar();

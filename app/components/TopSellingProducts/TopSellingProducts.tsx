@@ -76,7 +76,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                         src={TOP_SELLING_PRODUCTS_SRC[product_id]}
                         width={48}
                         height={48}
-                        alt={item.name}
+                        alt={name}
                         priority
                       />
                     </Flex>

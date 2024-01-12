@@ -213,7 +213,7 @@ function LogoutButton({ isCollapse }: { isCollapse: boolean }) {
       className={`${
         isCollapse && "xl:hidden"
       } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
-      {pending ? <LoadingIndicator width="w-5" height="w-5" /> : "Logout"}
+      {pending ? <LoadingIndicator width={5} height={5} /> : "Logout"}
     </button>
   );
 }

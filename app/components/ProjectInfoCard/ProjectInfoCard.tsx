@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { Title, Text, Flex, Button } from "@tremor/react";
-
 // Components
-import { Avatar, CustomImage } from "@/components";
+import Link from "next/link";
+import Image from "next/image";
+import Avatar from "@/components/Avatar/Avatar";
+import { Title, Text, Flex, Button } from "@tremor/react";
 
 // Constants
 import { ROUTES } from "@/constants/routes";
@@ -25,12 +25,12 @@ interface ProjectInfoCardProps {
   links: IProjectCard[];
 }
 
-const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
+export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
   const renderProjectCards = links.map(
     ({ id, cover, description, participants, primaryName, secondaryName }) => (
       <Flex key={id} className="justify-start flex-col items-start">
         <Flex>
-          <CustomImage
+          <Image
             className="w-full rounded-xl shadow-lg"
             src={cover}
             width={315}
@@ -39,17 +39,21 @@ const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
           />
         </Flex>
         <Flex className="justify-start flex-col items-start pt-4 px-2">
-          <Text className="capitalize font-normal">{secondaryName}</Text>
-          <Title className="w-full font-bold text-xl capitalize mb-2">
+          <Text className="capitalize font-normal dark:text-dark-tremor-content-romance">
+            {secondaryName}
+          </Text>
+          <Title className="w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary">
             <Link href={ROUTES.PROJECTS}>{primaryName}</Link>
           </Title>
-          <Text className="flex-wrap font-light mb-6">{description}</Text>
+          <Text className="flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance">
+            {description}
+          </Text>
           <Flex className="flex flex-wrap">
             <Link href={ROUTES.PROJECTS}>
               <Button
                 className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
                 variant="secondary">
-                <Text className="font-bold text-seldom text-xs uppercase leading-[17px]">
+                <Text className="font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom">
                   View Project
                 </Text>
               </Button>

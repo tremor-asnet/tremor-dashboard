@@ -22,13 +22,15 @@ const UserConversationHistory = ({
         <Avatar src={avatar} width={48} height={48} alt={name} />
       </div>
       <div className="max-w-[180px] font-medium dark:text-white pl-4">
-        <Text className="text-sm text-primary font-semibold">{name}</Text>
-        <Text className="text-xs text-secondary font-light truncate">
+        <Text className="text-sm text-primary dark:text-dark-primary font-semibold">
+          {name}
+        </Text>
+        <Text className="text-xs text-secondary font-light truncate dark:text-dark-romance">
           {lastConversation}
         </Text>
       </div>
     </Flex>
-    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent">
+    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]">
       <Text className="text-primary text-xs text-center font-bold uppercase leading-[17px]">
         Reply
       </Text>

@@ -3,6 +3,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
 import ColumnChart from "./ColumnChart";
+
+// Mocks
 import { WEBSITE_CHART } from "@/mocks/analytics";
 
 const meta = {

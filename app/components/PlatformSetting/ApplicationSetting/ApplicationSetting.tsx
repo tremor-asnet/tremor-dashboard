@@ -10,6 +10,12 @@ import {
 // Types
 import { IPlatformSetting, ApplicationSettingType } from "@/types/profile";
 
+// Contexts
+import { useContext } from "react";
+
+// Themes
+import { ThemeContext } from "@/context/theme";
+
 interface IApplicationSettingProps {
   applicationSettingFields: IPlatformSetting[];
   applicationSettingData: ApplicationSettingType;
@@ -19,9 +25,12 @@ const ApplicationSetting = ({
   applicationSettingFields = APPLICATION_SETTING_FIELDS,
   applicationSettingData = APPLICATION_SETTING_DATA,
 }: IApplicationSettingProps) => {
+  const { theme } = useContext(ThemeContext);
+  const color = theme ? "white" : "zinc";
+
   return (
     <>
-      <Text className="text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
+      <Text className="text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
         Application
       </Text>
       {applicationSettingFields.map(({ label, field }: IPlatformSetting) => (
@@ -30,11 +39,13 @@ const ApplicationSetting = ({
             tabIndex={2}
             id="switch"
             name="switch"
-            color="zinc"
+            color={color}
             className="flex justify-center items-center"
             defaultChecked={applicationSettingData[field]}
           />
-          <Text className="text-secondary font-normal">{label}</Text>
+          <Text className="text-secondary font-normal dark:text-dark-romance">
+            {label}
+          </Text>
         </div>
       ))}
     </>

@@ -6,7 +6,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
   "baseElement": <body>
     <div>
       <p
-        class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
+        class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
       >
         Platform Setting
       </p>
@@ -14,7 +14,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="tremor-Flex-root flex w-full justify-between flex-col items-start"
       >
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+          class="text-tremor-default text-xs leading-tight dark:text-dark-romance opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
         >
           Account
         </p>
@@ -22,7 +22,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex justify-center items-center"
+            class="flex justify-center items-center dark:text-dark-romance"
             tabindex="2"
           >
             <input
@@ -56,7 +56,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             Email me when someone follows me
           </p>
@@ -65,7 +65,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex justify-center items-center"
+            class="flex justify-center items-center dark:text-dark-romance"
             tabindex="2"
           >
             <input
@@ -99,7 +99,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             Email me when someone answers on my post
           </p>
@@ -108,7 +108,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex justify-center items-center"
+            class="flex justify-center items-center dark:text-dark-romance"
             tabindex="2"
           >
             <input
@@ -142,13 +142,13 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             Email me when someone mentions me
           </p>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+          class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
         >
           Application
         </p>
@@ -190,7 +190,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             New launches and projects
           </p>
@@ -233,7 +233,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             Monthly product updates
           </p>
@@ -276,7 +276,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
             </button>
           </div>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+            class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
           >
             Subscribe to newsletter
           </p>
@@ -286,7 +286,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
   </body>,
   "container": <div>
     <p
-      class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
+      class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
     >
       Platform Setting
     </p>
@@ -294,7 +294,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
       class="tremor-Flex-root flex w-full justify-between flex-col items-start"
     >
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+        class="text-tremor-default text-xs leading-tight dark:text-dark-romance opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
       >
         Account
       </p>
@@ -302,7 +302,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex justify-center items-center"
+          class="flex justify-center items-center dark:text-dark-romance"
           tabindex="2"
         >
           <input
@@ -336,7 +336,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Email me when someone follows me
         </p>
@@ -345,7 +345,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex justify-center items-center"
+          class="flex justify-center items-center dark:text-dark-romance"
           tabindex="2"
         >
           <input
@@ -379,7 +379,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Email me when someone answers on my post
         </p>
@@ -388,7 +388,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex justify-center items-center"
+          class="flex justify-center items-center dark:text-dark-romance"
           tabindex="2"
         >
           <input
@@ -422,13 +422,13 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Email me when someone mentions me
         </p>
       </div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+        class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
       >
         Application
       </p>
@@ -470,7 +470,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           New launches and projects
         </p>
@@ -513,7 +513,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Monthly product updates
         </p>
@@ -556,7 +556,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Subscribe to newsletter
         </p>

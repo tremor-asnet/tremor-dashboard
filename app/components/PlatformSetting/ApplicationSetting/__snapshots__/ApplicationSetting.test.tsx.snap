@@ -6,7 +6,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
   "baseElement": <body>
     <div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+        class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
       >
         Application
       </p>
@@ -48,7 +48,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           New launches and projects
         </p>
@@ -91,7 +91,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Monthly product updates
         </p>
@@ -134,7 +134,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
           </button>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
         >
           Subscribe to newsletter
         </p>
@@ -143,7 +143,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
   </body>,
   "container": <div>
     <p
-      class="text-tremor-default dark:text-dark-tremor-content text-xs leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+      class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
     >
       Application
     </p>
@@ -185,7 +185,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
         </button>
       </div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
       >
         New launches and projects
       </p>
@@ -228,7 +228,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
         </button>
       </div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
       >
         Monthly product updates
       </p>
@@ -271,7 +271,7 @@ exports[`ApplicationSetting component Should render ApplicationSetting snapshot 
         </button>
       </div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
       >
         Subscribe to newsletter
       </p>

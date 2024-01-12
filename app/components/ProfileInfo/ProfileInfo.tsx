@@ -37,8 +37,10 @@ const ProfileInfo = ({ name, role, avatarUrl }: ProfileInfoProps) => {
           />
         </div>
         <div className="py-4" data-testid="profile-info-lg">
-          <Title className="font-semibold text-xl">{name}</Title>
-          <Text className="font-normal">{role}</Text>
+          <Title className="font-semibold text-xl dark:text-dark-primary">
+            {name}
+          </Title>
+          <Text className="font-normal dark:text-dark-romance">{role}</Text>
         </div>
       </div>
     </div>

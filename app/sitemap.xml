@@ -1,20 +1,27 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
   <url>
-    <loc>https://tremor-dashboard-khczxmczp-asn.vercel.app</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
+    <loc>https://tremor-dashboard-gamma.vercel.app/</loc>
+    <lastmod>2024-01-04T17:30:24.021Z</lastmod>
   </url>
   <url>
-    <loc>https://acme.com/about</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://tremor-dashboard-gamma.vercel.app/signup/</loc>
+     <lastmod>2024-01-04T17:30:24.021Z</lastmod>
   </url>
   <url>
-    <loc>https://acme.com/blog</loc>
-    <lastmod>2023-04-06T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://tremor-dashboard-gamma.vercel.app/signin</loc>
+     <lastmod>2024-01-04T17:30:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tremor-dashboard-gamma.vercel.app/dashboards/analytics</loc>
+     <lastmod>2024-01-04T17:30:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tremor-dashboard-gamma.vercel.app/pages/profile/all-projects</loc>
+     <lastmod>2024-01-04T17:30:24.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tremor-dashboard-gamma.vercel.app/pages/profile/profile-overview</loc>
+     <lastmod>2024-01-04T17:30:24.021Z</lastmod>
   </url>
 </urlset>

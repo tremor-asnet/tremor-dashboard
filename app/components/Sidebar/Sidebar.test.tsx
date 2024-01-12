@@ -7,22 +7,30 @@ import Sidebar from "./Sidebar";
 import { ROUTES } from "@/constants";
 
 describe("Sidebar component", () => {
+  const mockFunction = jest.fn();
+
+  const propsDefault = {
+    avatarUrl: "/images/avatar/avatar-sm.webp",
+    name: "Brooklyn Alice",
+    pathname: ROUTES.PROJECTS,
+    isCollapse: true,
+    toggleSidebar: mockFunction,
+    onSignOut: mockFunction,
+  };
+
   const sidebar = () => {
-    return render(
-      <Sidebar
-        avatarUrl="/images/avatar/avatar-sm.webp"
-        name="Brooklyn Alice"
-        pathname={ROUTES.PROJECTS}
-        toggleSidebar={() => {}}
-        isCollapse={true}
-        onSignOut={function (): Promise<void> {
-          throw new Error("Function not implemented.");
-        }}
-      />,
-    );
+    return render(<Sidebar {...propsDefault} />);
   };
 
   it("Should render Sidebar snapshot correctly", () => {
     expect(sidebar()).toMatchSnapshot();
+  });
+
+  it("Should render correctly name with display Sidebar", () => {
+    const { getByText } = render(<Sidebar {...propsDefault} />);
+
+    const name = getByText("Brooklyn Alice");
+
+    expect(name).toBeTruthy;
   });
 });

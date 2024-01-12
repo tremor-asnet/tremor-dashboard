@@ -5,3 +5,13 @@ export type TSalesStatistic = {
   totalAmount: string;
   duration: string;
 };
+
+export type TTopSellingProducts = {
+  product_id: number;
+  name: string;
+  orders: string;
+  value: string;
+  ads_spent: string;
+  refunds: number;
+  refunds_type: string;
+};

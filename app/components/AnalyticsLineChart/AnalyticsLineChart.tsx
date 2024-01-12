@@ -27,7 +27,7 @@ interface LineChartProps {
   title: string;
   subTitle: string;
   scheduleText: string;
-  isDailyChart: boolean;
+  isDailyChart?: boolean;
   descValue?: string;
 }
 
@@ -42,18 +42,21 @@ const AnalyticsLineChart = ({
 }: LineChartProps) => {
   const [setValue] = useState<any>(null);
 
+  const classCheckTypeChart =
+    type === CHART_TYPE.PERFORMANCE
+      ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
+      : "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]";
+
+  const handleChartValueChanged = (v: TEventProps) => setValue(v);
+
   return (
-    <div className="w-full bg-white bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
+    <div className="w-full bg-white bg-clip-border shadow-line-chart">
       <div className="p-4">
         <Flex className="">
           <main className="w-full mx-auto">
             <div className="-mt-10">
               <Card
-                className={`${
-                  type === CHART_TYPE.PERFORMANCE
-                    ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
-                    : "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]"
-                } p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]`}>
+                className={`${classCheckTypeChart} p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]`}>
                 <LineChart
                   className="h-[168px] mt-4"
                   data={dataChart}
@@ -65,7 +68,7 @@ const AnalyticsLineChart = ({
                   ]}
                   yAxisWidth={30}
                   showAnimation={true}
-                  onValueChange={(v: TEventProps) => setValue(v)}
+                  onValueChange={handleChartValueChanged}
                 />
               </Card>
             </div>

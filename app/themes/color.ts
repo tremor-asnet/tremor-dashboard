@@ -205,6 +205,8 @@ export const boxShadow = {
     "0rem 0.875rem 1.625rem -0.75rem rgba(52, 71, 103, 0.4), 0rem 0.25rem 1.4375rem 0rem rgba(52, 71, 103, 0.15), 0rem 0.5rem 0.625rem -0.3125rem rgba(52, 71, 103, 0.2)",
   "box-header-sticky":
     "rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
+  "line-chart":
+    "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)",
   // dark
   "dark-tremor-input": "none",
   "dark-tremor-card":

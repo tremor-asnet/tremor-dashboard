@@ -37,7 +37,8 @@ const DashboardHeader = ({
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
   // Check the condition if it is page All Project then display the white color
-  const color = (!isScrolled || !isMobile) && isAllProjectPage && "white";
+  const colorIconCaseProject =
+    (!isScrolled || !isMobile) && isAllProjectPage ? "white" : "#344767";
 
   useEffect(() => {
     const scrollDashboardHeader = () => {
@@ -84,9 +85,9 @@ const DashboardHeader = ({
           }`}
           onClick={toggleSidebar}>
           {isCollapseSidebar ? (
-            <MdMenuOpen className="text-2xl" color={color} />
+            <MdMenuOpen className="text-2xl" color={colorIconCaseProject} />
           ) : (
-            <MdMenu className="text-2xl" color={color} />
+            <MdMenu className="text-2xl" color={colorIconCaseProject} />
           )}
         </div>
         <Breadcrumb isScrolled={isScrolled} />
@@ -97,19 +98,19 @@ const DashboardHeader = ({
             {theme ? (
               <HiMiniMoon
                 className={`${activeIconColor} text-xl cursor-pointer`}
-                color={color}
+                color={colorIconCaseProject}
               />
             ) : (
               <IoSunny
                 className={`${activeIconColor} text-xl cursor-pointer`}
-                color={color}
+                color={colorIconCaseProject}
               />
             )}
           </div>
           <div className="relative p-2 flex items-center">
             <MdNotifications
               className={`${activeIconColor} text-xl cursor-pointer`}
-              color={color}
+              color={colorIconCaseProject}
             />
             <div
               className={`absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${

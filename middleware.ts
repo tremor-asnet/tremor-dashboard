@@ -17,8 +17,8 @@ export default function auth(params: GetServerSidePropsContext) {
   if (authConfig.session) {
     authConfig.session.maxAge =
       cookies().get(REMEMBER_ME)?.value === "true"
-        ? parseInt(process.env.NEXT_PUBLIC_EXPIRED_TIME || "259200") // 3 days
-        : 24 * 60 * 60;
+        ? parseInt(process.env.NEXT_PUBLIC_EXPIRED_TIME_REMEMBER || "259200") // 3 days
+        : parseInt(process.env.NEXT_PUBLIC_EXPIRED_TIME_NO_REMEMBER || "86400"); // 1 day
   }
 
   return NextAuth(authConfig).auth(params);

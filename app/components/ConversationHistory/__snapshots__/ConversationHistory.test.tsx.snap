@@ -54,7 +54,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
         >
           <span
-            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+            class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -108,7 +108,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
         >
           <span
-            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+            class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -162,7 +162,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
         >
           <span
-            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+            class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -216,7 +216,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
         >
           <span
-            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+            class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -270,7 +270,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
         >
           <span
-            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+            class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -332,7 +332,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
       >
         <span
-          class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -386,7 +386,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
       >
         <span
-          class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -440,7 +440,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
       >
         <span
-          class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -494,7 +494,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
       >
         <span
-          class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"
@@ -548,7 +548,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]"
       >
         <span
-          class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-primary text-xs text-center font-bold uppercase leading-[17px]"

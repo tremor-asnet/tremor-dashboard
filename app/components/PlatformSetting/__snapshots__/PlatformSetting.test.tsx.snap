@@ -22,42 +22,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center dark:text-dark-romance"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center dark:text-dark-romance"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -69,42 +65,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center dark:text-dark-romance"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center dark:text-dark-romance"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -116,42 +108,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center dark:text-dark-romance"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center dark:text-dark-romance"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -168,42 +156,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -215,42 +199,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -262,42 +242,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
           class="flex items-center space-x-3 mt-1 py-3"
         >
           <div
-            class="flex flex-row items-center justify-start"
+            class="flex justify-center items-center"
+            tabindex="2"
           >
-            <div
-              class="flex justify-center items-center"
-              tabindex="2"
+            <input
+              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+              name="switch"
+              type="checkbox"
+            />
+            <button
+              aria-checked="false"
+              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+              data-headlessui-state=""
+              id="switch"
+              role="switch"
+              tabindex="0"
+              type="button"
             >
-              <input
-                class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-                name="switch"
-                type="checkbox"
-              />
-              <button
-                aria-checked="false"
-                class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-                data-headlessui-state=""
-                id="switch"
-                role="switch"
-                tabindex="0"
-                type="button"
+              <span
+                class="tremor-Switch-sr-only sr-only"
               >
-                <span
-                  class="tremor-Switch-sr-only sr-only"
-                >
-                  Switch 
-                  off
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-                />
-                <span
-                  aria-hidden="true"
-                  class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-                />
-              </button>
-            </div>
+                Switch 
+                off
+              </span>
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+              />
+              <span
+                aria-hidden="true"
+                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+              />
+            </button>
           </div>
           <p
             class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -326,42 +302,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center dark:text-dark-romance"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center dark:text-dark-romance"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -373,42 +345,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center dark:text-dark-romance"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center dark:text-dark-romance"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -420,42 +388,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center dark:text-dark-romance"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center dark:text-dark-romance"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -472,42 +436,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -519,42 +479,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
@@ -566,42 +522,38 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         class="flex items-center space-x-3 mt-1 py-3"
       >
         <div
-          class="flex flex-row items-center justify-start"
+          class="flex justify-center items-center"
+          tabindex="2"
         >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
+          <input
+            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+            name="switch"
+            type="checkbox"
+          />
+          <button
+            aria-checked="false"
+            class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+            data-headlessui-state=""
+            id="switch"
+            role="switch"
+            tabindex="0"
+            type="button"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex flex-shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
+            <span
+              class="tremor-Switch-sr-only sr-only"
             >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
+              Switch 
+              off
+            </span>
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+            />
+            <span
+              aria-hidden="true"
+              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+            />
+          </button>
         </div>
         <p
           class="text-tremor-default text-secondary font-normal dark:text-dark-romance"

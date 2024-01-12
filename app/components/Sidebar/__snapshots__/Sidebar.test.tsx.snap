@@ -65,7 +65,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           >
             <button
               aria-expanded="false"
-              class="tremor-AccordionHeader-root w-full items-center justify-between px-4 dark:text-dark-tremor-content-emphasis min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
+              class="tremor-AccordionHeader-root w-full items-center justify-between dark:text-dark-tremor-content-emphasis px-4 min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
               data-headlessui-state=""
               id="headlessui-disclosure-button-:r0:"
               type="button"
@@ -96,13 +96,17 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               </div>
               <div>
                 <svg
-                  class="tremor-AccordionHeader-arrowIcon h-5 w-5 -mr-1 text-tremor-content-subtle dark:text-dark-tremor-content-subtle transition-all -rotate-180"
-                  fill="currentColor"
+                  class="tremor-AccordionHeader-arrowIcon text-tremor-content-subtle dark:text-dark-tremor-content-subtle -mr-1 h-4 w-4 transition-all -rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"
+                    d="M5 15l7-7 7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
               </div>
@@ -229,7 +233,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         >
           <button
             aria-expanded="false"
-            class="tremor-AccordionHeader-root w-full items-center justify-between px-4 dark:text-dark-tremor-content-emphasis min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
+            class="tremor-AccordionHeader-root w-full items-center justify-between dark:text-dark-tremor-content-emphasis px-4 min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
             data-headlessui-state=""
             id="headlessui-disclosure-button-:r0:"
             type="button"
@@ -260,13 +264,17 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             </div>
             <div>
               <svg
-                class="tremor-AccordionHeader-arrowIcon h-5 w-5 -mr-1 text-tremor-content-subtle dark:text-dark-tremor-content-subtle transition-all -rotate-180"
-                fill="currentColor"
+                class="tremor-AccordionHeader-arrowIcon text-tremor-content-subtle dark:text-dark-tremor-content-subtle -mr-1 h-4 w-4 transition-all -rotate-180"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"
+                  d="M5 15l7-7 7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>

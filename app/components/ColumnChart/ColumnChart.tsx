@@ -25,7 +25,7 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
   const { display, desc, modified, data } = webChartData;
 
   return (
-    <div className="w-full bg-white bg-clip-border shadow-line-chart">
+    <div className="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
         <Flex className="">
           <main className="w-full mx-auto">
@@ -47,19 +47,19 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
         </Flex>
         <div className="flex-col items-start pt-6 pb-2 px-2">
           <div>
-            <Title className="text-base font-bold opacity-100 capitalize text-[#344767]">
+            <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
             <Popover content={desc}>
-              <Subtitle className="text-sm font-light opacity-100 text-secondary truncate max-w-[310px]">
+              <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]">
                 {desc}
               </Subtitle>
             </Popover>
           </div>
           <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">
-            <FaRegClock size={12} color={"#7b809a"} />
-            <Text className="text-sm font-light opacity-100 text-secondary ml-1">
+            <FaRegClock size={12} color={"#ffffffcc"} />
+            <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1">
               {modified}
             </Text>
           </Flex>

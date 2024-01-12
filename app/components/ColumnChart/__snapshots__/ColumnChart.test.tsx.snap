@@ -6,7 +6,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
   "baseElement": <body>
     <div>
       <div
-        class="w-full bg-white bg-clip-border shadow-line-chart"
+        class="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]"
       >
         <div
           class="p-4"
@@ -450,7 +450,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
           >
             <div>
               <p
-                class="text-tremor-title dark:text-dark-tremor-content-emphasis text-base font-bold opacity-100 capitalize text-[#344767]"
+                class="text-tremor-title text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]"
               >
                 Website Views
               </p>
@@ -458,7 +458,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 class="w-fit h-fit relative flex justify-center"
               >
                 <p
-                  class="dark:text-dark-tremor-content-subtle text-sm font-light opacity-100 text-secondary truncate max-w-[310px]"
+                  class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]"
                 >
                   Last Campaign Performance
                 </p>
@@ -481,12 +481,12 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="tremor-Flex-root flex w-full flex-row items-center justify-start"
             >
               <svg
-                color="#7b809a"
+                color="#ffffffcc"
                 fill="currentColor"
                 height="12"
                 stroke="currentColor"
                 stroke-width="0"
-                style="color: rgb(123, 128, 154);"
+                style="color: rgba(255, 255, 255, 0.8);"
                 viewBox="0 0 512 512"
                 width="12"
                 xmlns="http://www.w3.org/2000/svg"
@@ -496,7 +496,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 />
               </svg>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-sm font-light opacity-100 text-secondary ml-1"
+                class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1"
               >
                 campaign sent 2 days ago
               </p>
@@ -515,7 +515,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
   </body>,
   "container": <div>
     <div
-      class="w-full bg-white bg-clip-border shadow-line-chart"
+      class="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]"
     >
       <div
         class="p-4"
@@ -959,7 +959,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
         >
           <div>
             <p
-              class="text-tremor-title dark:text-dark-tremor-content-emphasis text-base font-bold opacity-100 capitalize text-[#344767]"
+              class="text-tremor-title text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]"
             >
               Website Views
             </p>
@@ -967,7 +967,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="w-fit h-fit relative flex justify-center"
             >
               <p
-                class="dark:text-dark-tremor-content-subtle text-sm font-light opacity-100 text-secondary truncate max-w-[310px]"
+                class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]"
               >
                 Last Campaign Performance
               </p>
@@ -990,12 +990,12 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
             class="tremor-Flex-root flex w-full flex-row items-center justify-start"
           >
             <svg
-              color="#7b809a"
+              color="#ffffffcc"
               fill="currentColor"
               height="12"
               stroke="currentColor"
               stroke-width="0"
-              style="color: rgb(123, 128, 154);"
+              style="color: rgba(255, 255, 255, 0.8);"
               viewBox="0 0 512 512"
               width="12"
               xmlns="http://www.w3.org/2000/svg"
@@ -1005,7 +1005,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               />
             </svg>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content text-sm font-light opacity-100 text-secondary ml-1"
+              class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1"
             >
               campaign sent 2 days ago
             </p>

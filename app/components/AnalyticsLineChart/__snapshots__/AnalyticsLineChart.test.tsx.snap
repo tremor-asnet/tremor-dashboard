@@ -422,7 +422,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
                               class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                             >
                               <svg
-                                class="flex-none text-blue-500 h-2 w-2 mr-1.5 opacity-100"
+                                class="flex-none h-2 w-2 mr-1.5 text-blue-500 opacity-100"
                                 fill="currentColor"
                                 viewBox="0 0 8 8"
                               >

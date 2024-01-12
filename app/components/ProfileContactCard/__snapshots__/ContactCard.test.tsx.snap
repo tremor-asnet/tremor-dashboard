@@ -10,7 +10,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           class="tremor-Flex-root w-full flex-row justify-between items-center text-secondary mb-4 flex flex-wrap xs:flex-nowrap"
         >
           <p
-            class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
+            class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
           >
             Profile Information
           </p>
@@ -37,7 +37,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           class="tremor-Flex-root flex w-full justify-between flex-col flex-wrap items-baseline xs:flex-nowrap"
         >
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-light leading-normal opacity-100 normal-case tracking-[0.02857em]"
+            class="text-tremor-default font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance opacity-100 normal-case tracking-[0.02857em]"
           >
             Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)
           </p>
@@ -52,31 +52,31 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+              class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
             >
               Full Name:
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+              class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
             />
           </div>
           <div
             class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+              class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
             >
               Mobile:
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+              class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
             />
           </div>
           <div
             class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+              class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
             >
               Email:
             </p>
@@ -84,7 +84,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
               href="mailto:"
             >
               <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+                class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
               />
             </a>
           </div>
@@ -92,19 +92,19 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+              class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
             >
               Location:
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+              class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
             />
           </div>
           <div
             class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2 pr-4 py-2"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize"
+              class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize"
             >
               Social:
             </p>
@@ -183,7 +183,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
         class="tremor-Flex-root w-full flex-row justify-between items-center text-secondary mb-4 flex flex-wrap xs:flex-nowrap"
       >
         <p
-          class="dark:text-dark-tremor-content text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
+          class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
         >
           Profile Information
         </p>
@@ -210,7 +210,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
         class="tremor-Flex-root flex w-full justify-between flex-col flex-wrap items-baseline xs:flex-nowrap"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-light leading-normal opacity-100 normal-case tracking-[0.02857em]"
+          class="text-tremor-default font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance opacity-100 normal-case tracking-[0.02857em]"
         >
           Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)
         </p>
@@ -225,31 +225,31 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+            class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
           >
             Full Name:
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+            class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
           />
         </div>
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+            class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
           >
             Mobile:
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+            class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
           />
         </div>
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+            class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
           >
             Email:
           </p>
@@ -257,7 +257,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             href="mailto:"
           >
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+              class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
             />
           </a>
         </div>
@@ -265,19 +265,19 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize my-2"
+            class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
           >
             Location:
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+            class="text-tremor-default text-tremor-content font-normal dark:text-dark-tremor-content-romance"
           />
         </div>
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2 pr-4 py-2"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-bold text-primary tracking-[0.02857em] capitalize"
+            class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize"
           >
             Social:
           </p>

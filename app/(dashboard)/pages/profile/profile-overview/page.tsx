@@ -20,7 +20,7 @@ const Profile = async () => {
     <>
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
-        <Card>
+        <Card className="dark:bg-dark-tremor-primary">
           <Flex className="flex-col md:flex-row items-start md:items-center">
             {/* Header */}
             <ProfileInfo
@@ -62,10 +62,10 @@ const Profile = async () => {
           </Flex>
           {/* Projects */}
           <Flex className="flex-col items-start">
-            <Text className="text-primary font-semibold text-tremor-title">
+            <Text className="text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-tremor-title">
               Projects
             </Text>
-            <Text className="font-light leading-normal text-sm text-secondary mb-6">
+            <Text className="font-light leading-normal  dark:text-dark-tremor-content-romance text-sm text-secondary mb-6">
               Architects design houses
             </Text>
             <ProjectInfoCard links={projectData} />

@@ -32,7 +32,7 @@ const ContactCard = ({
   return (
     <div>
       <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
-        <Text className="text-tremor-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
+        <Text className="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
           Profile Information
         </Text>
         <Link className="text-xs" href={ROUTES.PROFILE}>
@@ -40,7 +40,7 @@ const ContactCard = ({
         </Link>
       </Flex>
       <Flex className="flex-col flex-wrap items-baseline xs:flex-nowrap">
-        <Text className="font-light leading-normal uppercase opacity-100 normal-case tracking-[0.02857em]">
+        <Text className="font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance uppercase opacity-100 normal-case tracking-[0.02857em]">
           {information}
         </Text>
         <div className="w-full opacity-30 bg-transparent">
@@ -48,33 +48,41 @@ const ContactCard = ({
         </div>
         {/* TODO: Refactor code */}
         <Flex className="justify-start gap-3">
-          <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+          <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Full Name:
           </Text>
-          <Text className="font-normal">{fullName}</Text>
+          <Text className="font-normal dark:text-dark-tremor-content-romance">
+            {fullName}
+          </Text>
         </Flex>
         <Flex className="justify-start gap-3">
-          <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+          <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Mobile:
           </Text>
-          <Text className="font-normal">{phone}</Text>
+          <Text className="font-normal dark:text-dark-tremor-content-romance">
+            {phone}
+          </Text>
         </Flex>
         <Flex className="justify-start gap-3">
-          <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+          <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Email:
           </Text>
           <Link href={`mailto:${email}`}>
-            <Text className="font-normal">{email}</Text>
+            <Text className="font-normal dark:text-dark-tremor-content-romance">
+              {email}
+            </Text>
           </Link>
         </Flex>
         <Flex className="justify-start gap-3">
-          <Text className="font-bold text-primary tracking-[0.02857em] capitalize my-2">
+          <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Location:
           </Text>
-          <Text className="font-normal">{location}</Text>
+          <Text className="font-normal dark:text-dark-tremor-content-romance">
+            {location}
+          </Text>
         </Flex>
         <Flex className="justify-start gap-3 gap-2 pr-4 py-2">
-          <Text className="font-bold text-primary tracking-[0.02857em] capitalize">
+          <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize">
             Social:
           </Text>
           <Flex className="justify-start">

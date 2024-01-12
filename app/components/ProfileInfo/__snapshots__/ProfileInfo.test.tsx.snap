@@ -35,12 +35,12 @@ exports[`Testing profile info component Should match snapshot 1`] = `
             data-testid="profile-info-lg"
           >
             <p
-              class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-semibold text-xl"
+              class="text-tremor-title text-tremor-content-emphasis font-semibold text-xl dark:text-dark-primary"
             >
               Richard Davis
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+              class="text-tremor-default text-tremor-content font-normal dark:text-dark-romance"
             >
               CEO / Co-Founder
             </p>
@@ -80,12 +80,12 @@ exports[`Testing profile info component Should match snapshot 1`] = `
           data-testid="profile-info-lg"
         >
           <p
-            class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis font-semibold text-xl"
+            class="text-tremor-title text-tremor-content-emphasis font-semibold text-xl dark:text-dark-primary"
           >
             Richard Davis
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content font-normal"
+            class="text-tremor-default text-tremor-content font-normal dark:text-dark-romance"
           >
             CEO / Co-Founder
           </p>

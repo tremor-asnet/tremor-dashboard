@@ -7,7 +7,8 @@ export const color = {
   litle: "#ebebeb",
 
   dark: {
-    primary: "#fff",
+    primary: "#ffffff",
+    romance: "#ffffffcc",
   },
   // light mode
   tremor: {
@@ -73,6 +74,8 @@ export const color = {
       strong: "#f9fafb", // gray-50
       inverted: "#000000", // black
       title: "#fff",
+      romance: "#ffffffcc",
+      seldom: "#1a73e8",
     },
   },
 };
@@ -97,7 +100,7 @@ export const backgroundColor = {
     few: "#339537",
     seldom: "#bce2be",
     body: "#f0f2f5",
-    // total: "#ffffff",
+    border: "#ced4da",
   },
   // dark mode
   "dark-tremor": {
@@ -106,6 +109,7 @@ export const backgroundColor = {
     seldom: "#bce2be",
     body: "#f0f2f5",
     total: "rgb(26, 32, 53)",
+    border: "rgb(50, 58, 84)",
   },
 };
 
@@ -121,6 +125,9 @@ export const backgroundImage = {
     "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
   "gradient-line":
     "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
+  "gradient-pickled":
+    "linear-gradient(195deg, rgb(50, 58, 84), rgb(26, 32, 53))",
+  "gradient-arsenic": "linear-gradient(195deg, #42424a, #191919)",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -213,4 +220,6 @@ export const boxShadow = {
     "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
   "dark-tremor-dropdown":
     "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+  "box-header":
+    "rgba(52, 71, 103, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
 };

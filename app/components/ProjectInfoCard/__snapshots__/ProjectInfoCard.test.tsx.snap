@@ -18,7 +18,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           decoding="async"
           height="180"
           loading="lazy"
-          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
+          src="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
           width="315"
@@ -28,12 +28,12 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content capitalize font-normal"
+          class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
         >
           #1
         </p>
         <p
-          class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-bold text-xl capitalize mb-2"
+          class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
             href="/pages/profile/all-projects"
@@ -42,7 +42,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           </a>
         </p>
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap font-light mb-6"
+          class="text-tremor-default text-tremor-content flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance"
         >
           As Uber works through a huge amount of internal management turmoil.
         </p>
@@ -53,13 +53,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/pages/profile/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content font-bold text-seldom text-xs uppercase leading-[17px]"
+                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -118,7 +118,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           decoding="async"
           height="180"
           loading="lazy"
-          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
+          src="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
           width="315"
@@ -128,12 +128,12 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content capitalize font-normal"
+          class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
         >
           #2
         </p>
         <p
-          class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-bold text-xl capitalize mb-2"
+          class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
             href="/pages/profile/all-projects"
@@ -142,7 +142,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           </a>
         </p>
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap font-light mb-6"
+          class="text-tremor-default text-tremor-content flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance"
         >
           As Uber works through a huge amount of internal management turmoil.
         </p>
@@ -153,13 +153,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/pages/profile/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content font-bold text-seldom text-xs uppercase leading-[17px]"
+                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -218,7 +218,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           decoding="async"
           height="180"
           loading="lazy"
-          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
+          src="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
           width="315"
@@ -228,12 +228,12 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content capitalize font-normal"
+          class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
         >
           #2
         </p>
         <p
-          class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-bold text-xl capitalize mb-2"
+          class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
             href="/pages/profile/all-projects"
@@ -242,7 +242,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           </a>
         </p>
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap font-light mb-6"
+          class="text-tremor-default text-tremor-content flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance"
         >
           Different people have different taste, and various types of music.
         </p>
@@ -253,13 +253,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/pages/profile/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content font-bold text-seldom text-xs uppercase leading-[17px]"
+                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -318,7 +318,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           decoding="async"
           height="180"
           loading="lazy"
-          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
+          src="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75"
           srcset="/_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=384&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fprofile-project.webp&w=640&q=75 2x"
           style="color: transparent;"
           width="315"
@@ -328,12 +328,12 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content capitalize font-normal"
+          class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
         >
           #4
         </p>
         <p
-          class="text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis w-full font-bold text-xl capitalize mb-2"
+          class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
             href="/pages/profile/all-projects"
@@ -342,7 +342,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           </a>
         </p>
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content flex-wrap font-light mb-6"
+          class="text-tremor-default text-tremor-content flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance"
         >
           Why would anyone pick blue over pink? Pink is obviously a better color.
         </p>
@@ -353,13 +353,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/pages/profile/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content font-bold text-seldom text-xs uppercase leading-[17px]"
+                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>

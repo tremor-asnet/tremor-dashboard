@@ -350,7 +350,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                             </g>
                           </g>
                           <g
-                            class="recharts-layer recharts-bar fill-light-500"
+                            class="recharts-layer recharts-bar fill-light"
                           >
                             <g
                               class="recharts-layer recharts-bar-rectangles"
@@ -859,7 +859,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                           </g>
                         </g>
                         <g
-                          class="recharts-layer recharts-bar fill-light-500"
+                          class="recharts-layer recharts-bar fill-light"
                         >
                           <g
                             class="recharts-layer recharts-bar-rectangles"

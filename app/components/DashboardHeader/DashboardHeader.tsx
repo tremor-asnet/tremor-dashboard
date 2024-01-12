@@ -58,12 +58,12 @@ const DashboardHeader = ({
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll =
     isScrolled && (isMobile || !isAllProjectPage)
-      ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky`
+      ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
       : `${stickyTransition}`;
 
   const activeIconColor =
     isScrolled && (isMobile || !isAllProjectPage)
-      ? "text-primary"
+      ? "text-primary dark:text-dark-primary"
       : "text-tremor-content";
 
   return (
@@ -96,12 +96,12 @@ const DashboardHeader = ({
         <div className="flex flex-wrap item-center gap-y-1">
           <div className="relative p-2 flex items-center" onClick={toggleTheme}>
             {theme ? (
-              <HiMiniMoon
+              <IoSunny
                 className={`${activeIconColor} text-xl cursor-pointer`}
                 color={colorIconCaseProject}
               />
             ) : (
-              <IoSunny
+              <HiMiniMoon
                 className={`${activeIconColor} text-xl cursor-pointer`}
                 color={colorIconCaseProject}
               />

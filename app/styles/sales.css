@@ -1,0 +1,16 @@
+.recharts-curve.recharts-line-curve {
+  @apply stroke-[3];
+}
+
+.recharts-dot.recharts-line-dot {
+  r: 6;
+}
+
+.recharts-dot.recharts-line-dot {
+  @apply fill-[blue];
+  stroke-opacity: inherit;
+}
+
+.recharts-legend-wrapper > div {
+  @apply justify-start;
+}

@@ -8,11 +8,60 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
       <div
         class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
       >
-        <p
-          class="font-medium text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis"
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
-          Revenue
-        </p>
+          <p
+            class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+          >
+            Revenue
+          </p>
+          <div
+            class="w-fit h-fit relative flex justify-center"
+          >
+            <button
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:border-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+            >
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                <svg
+                  class="text-xs"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="19"
+                    r="2"
+                  />
+                  <path
+                    d="M10 3h4v12h-4z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+              hidden=""
+            >
+              <div
+                class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+              >
+                See which ads perform better
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           class="w-full h-72 mt-2"
         >
@@ -512,11 +561,60 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
     <div
       class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
     >
-      <p
-        class="font-medium text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis"
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
-        Revenue
-      </p>
+        <p
+          class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+        >
+          Revenue
+        </p>
+        <div
+          class="w-fit h-fit relative flex justify-center"
+        >
+          <button
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:border-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+          >
+            <span
+              class="tremor-Button-text text-sm whitespace-nowrap"
+            >
+              <svg
+                class="text-xs"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <circle
+                  cx="12"
+                  cy="19"
+                  r="2"
+                />
+                <path
+                  d="M10 3h4v12h-4z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+            hidden=""
+          >
+            <div
+              class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+            >
+              See which ads perform better
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         class="w-full h-72 mt-2"
       >

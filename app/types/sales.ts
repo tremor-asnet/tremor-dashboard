@@ -18,6 +18,6 @@ export type TTopSellingProducts = {
 
 export type TRevenueChart = {
   date: string;
-  "Facebook Ads"?: number;
-  "Google Ads"?: number;
+  parameterFacebook?: number;
+  parameterGoogle?: number;
 };

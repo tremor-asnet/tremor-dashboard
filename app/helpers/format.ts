@@ -3,21 +3,23 @@
  * @param number string
  * @returns string
  */
-export const formatMoney = (number: string): string => {
-  return "$" + parseFloat(number).toLocaleString("en-US");
+export const formatMoney = (number: string): string =>
+  `$${parseFloat(number).toLocaleString("en-US")}`;
+
+/**
+ * Format percentage
+ * @param number string
+ * @returns string
+ */
+export const formatPercentage = (number: string): string => {
+  const parsedNumber = parseFloat(number);
+  let formattedPercentage = "";
+
+  if (parsedNumber > 0) {
+    formattedPercentage = `+${number}%`;
+  } else if (parsedNumber <= 0) {
+    formattedPercentage = `${number}%`;
+  }
+
+  return formattedPercentage;
 };
-
-/**
- * Format positive percentage ("3" --> "+3%")
- * @param number string
- * @returns string
- */
-export const formatPositivePercentage = (number: string): string =>
-  `+${number}%`;
-
-/**
- * Format percentage ("23.9" --> "23.9%")
- * @param number string
- * @returns string
- */
-export const formatPercentage = (number: string): string => `${number}%`;

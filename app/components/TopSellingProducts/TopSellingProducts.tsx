@@ -56,24 +56,24 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
         <TableBody className="last:!border-transparent">
           {data.map(item => {
             const {
-              product_id,
+              productId,
               name,
               orders,
               value,
-              ads_spent,
+              adsSpent,
               refunds,
-              refunds_type,
+              refundsType,
             } = item;
             return (
               <TableRow
-                key={product_id}
+                key={productId}
                 className="border-0 border-b !border-gray-100">
                 <TableCell className="px-6 py-3">
                   <Flex>
                     <Flex className="w-16 mr-3 md:mr-1">
                       <CustomImage
                         className="rounded-full"
-                        src={TOP_SELLING_PRODUCTS_SRC[product_id]}
+                        src={TOP_SELLING_PRODUCTS_SRC[productId]}
                         width={48}
                         height={48}
                         alt={name}
@@ -97,7 +97,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                 </TableCell>
                 <TableCell className="px-6 py-3 text-center">
                   <Text className="text-secondary leading-[21px] tracking-[0.4px] product-ads-spent">
-                    {ads_spent}
+                    {adsSpent}
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3">
@@ -105,7 +105,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                     <Text className="text-secondary leading-[21px] tracking-[0.4px] product-refunds">
                       {refunds}
                     </Text>
-                    {refunds_type === "increase" ? (
+                    {refundsType === "increase" ? (
                       <MdKeyboardArrowUp className="text-xl text-few" />
                     ) : (
                       <MdKeyboardArrowDown className="text-xl text-[#F44335]" />

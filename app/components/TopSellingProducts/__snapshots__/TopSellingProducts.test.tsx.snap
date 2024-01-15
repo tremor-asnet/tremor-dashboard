@@ -76,8 +76,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="48"
-                          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75 2x"
+                          src="http://localhost/"
                           style="color: transparent;"
                           width="48"
                         />
@@ -117,9 +116,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <p
                       class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                    >
-                      $9.500
-                    </p>
+                    />
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -133,7 +130,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         13
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-[#F44335]"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -143,11 +140,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M0 0h24v24H0z"
+                          d="M0 0h24v24H0V0z"
                           fill="none"
                         />
                         <path
-                          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                         />
                       </svg>
                     </div>
@@ -172,8 +169,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="48"
-                          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75 2x"
+                          src="http://localhost/"
                           style="color: transparent;"
                           width="48"
                         />
@@ -213,9 +209,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <p
                       class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                    >
-                      $4.200
-                    </p>
+                    />
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -268,8 +262,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="48"
-                          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75 2x"
+                          src="http://localhost/"
                           style="color: transparent;"
                           width="48"
                         />
@@ -309,9 +302,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <p
                       class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                    >
-                      $9.430
-                    </p>
+                    />
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -325,7 +316,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         54
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-[#F44335]"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -335,11 +326,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M0 0h24v24H0z"
+                          d="M0 0h24v24H0V0z"
                           fill="none"
                         />
                         <path
-                          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                         />
                       </svg>
                     </div>
@@ -364,8 +355,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="48"
-                          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75 2x"
+                          src="http://localhost/"
                           style="color: transparent;"
                           width="48"
                         />
@@ -405,9 +395,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <p
                       class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                    >
-                      $7.364
-                    </p>
+                    />
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -460,8 +448,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           decoding="async"
                           fetchpriority="high"
                           height="48"
-                          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75 2x"
+                          src="http://localhost/"
                           style="color: transparent;"
                           width="48"
                         />
@@ -501,9 +488,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <p
                       class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                    >
-                      $20.531
-                    </p>
+                    />
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -517,7 +502,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         121
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-[#F44335]"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -527,11 +512,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M0 0h24v24H0z"
+                          d="M0 0h24v24H0V0z"
                           fill="none"
                         />
                         <path
-                          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                         />
                       </svg>
                     </div>
@@ -616,8 +601,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         decoding="async"
                         fetchpriority="high"
                         height="48"
-                        src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75 2x"
+                        src="http://localhost/"
                         style="color: transparent;"
                         width="48"
                       />
@@ -657,9 +641,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 >
                   <p
                     class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                  >
-                    $9.500
-                  </p>
+                  />
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -673,7 +655,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       13
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-[#F44335]"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -683,11 +665,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M0 0h24v24H0z"
+                        d="M0 0h24v24H0V0z"
                         fill="none"
                       />
                       <path
-                        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                       />
                     </svg>
                   </div>
@@ -712,8 +694,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         decoding="async"
                         fetchpriority="high"
                         height="48"
-                        src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75 2x"
+                        src="http://localhost/"
                         style="color: transparent;"
                         width="48"
                       />
@@ -753,9 +734,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 >
                   <p
                     class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                  >
-                    $4.200
-                  </p>
+                  />
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -808,8 +787,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         decoding="async"
                         fetchpriority="high"
                         height="48"
-                        src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75 2x"
+                        src="http://localhost/"
                         style="color: transparent;"
                         width="48"
                       />
@@ -849,9 +827,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 >
                   <p
                     class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                  >
-                    $9.430
-                  </p>
+                  />
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -865,7 +841,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       54
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-[#F44335]"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -875,11 +851,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M0 0h24v24H0z"
+                        d="M0 0h24v24H0V0z"
                         fill="none"
                       />
                       <path
-                        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                       />
                     </svg>
                   </div>
@@ -904,8 +880,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         decoding="async"
                         fetchpriority="high"
                         height="48"
-                        src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75 2x"
+                        src="http://localhost/"
                         style="color: transparent;"
                         width="48"
                       />
@@ -945,9 +920,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 >
                   <p
                     class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                  >
-                    $7.364
-                  </p>
+                  />
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1000,8 +973,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         decoding="async"
                         fetchpriority="high"
                         height="48"
-                        src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75 2x"
+                        src="http://localhost/"
                         style="color: transparent;"
                         width="48"
                       />
@@ -1041,9 +1013,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 >
                   <p
                     class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                  >
-                    $20.531
-                  </p>
+                  />
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1057,7 +1027,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       121
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-[#F44335]"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -1067,11 +1037,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M0 0h24v24H0z"
+                        d="M0 0h24v24H0V0z"
                         fill="none"
                       />
                       <path
-                        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                       />
                     </svg>
                   </div>
@@ -1210,8 +1180,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       decoding="async"
                       fetchpriority="high"
                       height="48"
-                      src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75"
-                      srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblue-shoe.webp&w=96&q=75 2x"
+                      src="http://localhost/"
                       style="color: transparent;"
                       width="48"
                     />
@@ -1251,9 +1220,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               >
                 <p
                   class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                >
-                  $9.500
-                </p>
+                />
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1267,7 +1234,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     13
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-[#F44335]"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -1277,11 +1244,11 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M0 0h24v24H0z"
+                      d="M0 0h24v24H0V0z"
                       fill="none"
                     />
                     <path
-                      d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                     />
                   </svg>
                 </div>
@@ -1306,8 +1273,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       decoding="async"
                       fetchpriority="high"
                       height="48"
-                      src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75"
-                      srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-mug.webp&w=96&q=75 2x"
+                      src="http://localhost/"
                       style="color: transparent;"
                       width="48"
                     />
@@ -1347,9 +1313,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               >
                 <p
                   class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                >
-                  $4.200
-                </p>
+                />
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1402,8 +1366,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       decoding="async"
                       fetchpriority="high"
                       height="48"
-                      src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75"
-                      srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fblack-chair.webp&w=96&q=75 2x"
+                      src="http://localhost/"
                       style="color: transparent;"
                       width="48"
                     />
@@ -1443,9 +1406,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               >
                 <p
                   class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                >
-                  $9.430
-                </p>
+                />
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1459,7 +1420,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     54
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-[#F44335]"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -1469,11 +1430,11 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M0 0h24v24H0z"
+                      d="M0 0h24v24H0V0z"
                       fill="none"
                     />
                     <path
-                      d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                     />
                   </svg>
                 </div>
@@ -1498,8 +1459,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       decoding="async"
                       fetchpriority="high"
                       height="48"
-                      src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75"
-                      srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fbang-sound.webp&w=96&q=75 2x"
+                      src="http://localhost/"
                       style="color: transparent;"
                       width="48"
                     />
@@ -1539,9 +1499,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               >
                 <p
                   class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                >
-                  $7.364
-                </p>
+                />
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1594,8 +1552,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       decoding="async"
                       fetchpriority="high"
                       height="48"
-                      src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75"
-                      srcset="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fphoto-tools.webp&w=96&q=75 2x"
+                      src="http://localhost/"
                       style="color: transparent;"
                       width="48"
                     />
@@ -1635,9 +1592,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               >
                 <p
                   class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-ads-spent"
-                >
-                  $20.531
-                </p>
+                />
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1651,7 +1606,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     121
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-[#F44335]"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -1661,11 +1616,11 @@ exports[`Testing analytics sale chart component testing component top selling pr
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M0 0h24v24H0z"
+                      d="M0 0h24v24H0V0z"
                       fill="none"
                     />
                     <path
-                      d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
                     />
                   </svg>
                 </div>

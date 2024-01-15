@@ -20,7 +20,7 @@ interface ISalesStatisticProp {
 }
 
 const SalesStatisticCard = ({
-  statisticsData = STATISTICS_DATA[0],
+  statisticsData,
 }: ISalesStatisticProp): JSX.Element => {
   const { id, type, amount, totalAmount, duration } = statisticsData;
   const [isOpenAction, setOpenAction] = useState(false);

@@ -52,8 +52,8 @@ const ProjectCard = ({
   return (
     <div className="antialiased items-center justify-between pb-1">
       <div className="flex items-center">
-        <Card className="mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
-          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl">
+        <Card className="dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+          <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled">
             <CustomImage
               src={cover}
               width={60}
@@ -64,7 +64,7 @@ const ProjectCard = ({
           </Flex>
           <Flex className="pl-[90px] mb-6 mt-1 relative">
             <Flex className="flex-col items-start justify-start ">
-              <Title className="text-xl font-semibold text-base leading-5">
+              <Title className="text-xl text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5">
                 {name}
               </Title>
               <Flex className="mt-1 items-start justify-start ml-[10px]">
@@ -108,19 +108,19 @@ const ProjectCard = ({
               )}
             </Flex>
           </Flex>
-          <Text className="text-md text-secondary my-4 font-light">
+          <Text className="text-md text-secondary my-4 font-light dark:text-dark-tremor-content-romance">
             {description}
           </Text>
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex className="my-4">
             <div>
-              <Text className="text-primary font-semibold">
+              <Text className="text-primary font-semibold dark:text-dark-tremor-content-title">
                 {participantNumber}
               </Text>
               <Text className="text-secondary font-normal">Participants</Text>
             </div>
             <div>
-              <Text className="text-primary font-semibold">
+              <Text className="text-primary font-semibold dark:text-dark-tremor-content-title">
                 {duaDateFormat}
               </Text>
               <Text className="text-secondary font-normal">Due date</Text>

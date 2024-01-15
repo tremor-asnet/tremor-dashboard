@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useFormStatus } from "react-dom";
 
 // lib
@@ -48,6 +48,8 @@ const SideBar = ({
   pathname,
   onSignOut,
 }: SideBarProps) => {
+  const [isPending, setIsPending] = useState(false);
+
   const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
@@ -82,140 +84,165 @@ const SideBar = ({
     }
   };
 
+  const handleToggleLoadingOverlay = (pending: boolean) => {
+    setIsPending(pending);
+  };
+
   return (
-    <div
-      ref={sideBarRef}
-      className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
-        isCollapse
-          ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
-          : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
-      }`}>
-      <Flex className="justify-end">
-        <div
-          className="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
-          onClick={toggleSidebar}>
-          {isCollapse ? <FaAngleLeft /> : <FaAngleRight />}
-        </div>
-      </Flex>
-      <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
-        <CustomImage
-          src={LOGO_SRC.logo}
-          width={28}
-          height={28}
-          alt="Tremor Dashboard"
-        />
-        <Link href={ROUTES.HOME}>
-          <Metric
-            className={`text-white text-tremor-default min-w-[200px] flex flex-nowrap ${hiddenOpenClass} delay-300 duration-500`}>
-            Tremor Dashboard PRO
-          </Metric>
-        </Link>
-      </Flex>
-      <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
-      <AccordionList>
-        <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md">
-          <AccordionHeader
-            className={`min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 ${
-              isCollapse && "xl:w-[200%]"
-            }`}>
-            <Avatar
-              alt="Avatar small"
-              className="flex items-center justify-center"
-              width={36}
-              height={36}
-              priority
-              src={avatarUrl}
-            />
-            <Text
-              className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
-              {name}
-            </Text>
-          </AccordionHeader>
-          <AccordionBody>
-            <List>
-              {ITEMS_PROFILE.map(item => {
-                const { label, href, content } = item;
-                const isActive = href === pathname;
-                const itemBackground = isActive
-                  ? "bg-primary hover:!bg-primary"
-                  : "hover:bg-none";
+    <>
+      <div
+        ref={sideBarRef}
+        className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
+          isCollapse
+            ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
+            : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
+        }`}>
+        <Flex className="justify-end">
+          <div
+            className="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
+            onClick={toggleSidebar}>
+            {isCollapse ? <FaAngleLeft /> : <FaAngleRight />}
+          </div>
+        </Flex>
+        <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
+          <CustomImage
+            src={LOGO_SRC.logo}
+            width={28}
+            height={28}
+            alt="Tremor Dashboard"
+          />
+          <Link href={ROUTES.HOME}>
+            <Metric
+              className={`text-white text-tremor-default min-w-[200px] flex flex-nowrap ${hiddenOpenClass} delay-300 duration-500`}>
+              Tremor Dashboard PRO
+            </Metric>
+          </Link>
+        </Flex>
+        <div className="h-px bg-gradient-divider my-4 opacity-25" />
+        <AccordionList>
+          <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md">
+            <AccordionHeader
+              className={`min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 ${
+                isCollapse && "xl:w-[200%]"
+              }`}>
+              <Avatar
+                alt="Avatar small"
+                className="flex items-center justify-center"
+                width={36}
+                height={36}
+                priority
+                src={avatarUrl}
+              />
+              <Text
+                className={`leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] ${hiddenOpenClass}`}>
+                {name}
+              </Text>
+            </AccordionHeader>
+            <AccordionBody>
+              <List>
+                {ITEMS_PROFILE.map(item => {
+                  const { label, href, content } = item;
+                  const isActive = href === pathname;
+                  const itemBackground = isActive
+                    ? "bg-primary hover:!bg-primary"
+                    : "hover:bg-none";
 
-                const menuItemClass = [
-                  `${itemBackground} `,
-                  `!p-0 leading-[26px] mt-1 rounded-md `,
-                  `${transitionBgClass}`,
-                ].join("");
-                const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
+                  const menuItemClass = [
+                    `${itemBackground} `,
+                    `!p-0 leading-[26px] mt-1 rounded-md `,
+                    `${transitionBgClass}`,
+                  ].join("");
+                  const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
 
-                return (
-                  <ListItem
-                    className={menuItemClass}
-                    key={label}
-                    onClick={handleClickSidebarItem}>
-                    <Link className={linkClass} href={href}>
-                      <span>{content}</span>
-                      <span className={`${hiddenOpenClass}`}>{label}</span>
-                    </Link>
-                  </ListItem>
-                );
-              })}
-              <ListItem className="leading-[26px] relative !p-0 mt-1">
-                <form
-                  action={onSignOut}
-                  className="w-full flex items-center font-normal relative">
-                  <span className="absolute left-6">L</span>
-                  <LogoutButton isCollapse={isCollapse} />
-                </form>
-              </ListItem>
-            </List>
-          </AccordionBody>
-        </Accordion>
-      </AccordionList>
-      <div className="h-px bg-[linear-gradient(to_right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))] my-4 opacity-25" />
-      <ul>
-        {ITEMS_DASHBOARD.map(({ label, content, href }) => {
-          const isActive = href === pathname;
-          const itemBackground = isActive
-            ? "bg-primary hover:!bg-primary"
-            : "hover:bg-none";
+                  return (
+                    <ListItem
+                      className={menuItemClass}
+                      key={label}
+                      onClick={handleClickSidebarItem}>
+                      <Link className={linkClass} href={href}>
+                        <span>{content}</span>
+                        <span className={`${hiddenOpenClass}`}>{label}</span>
+                      </Link>
+                    </ListItem>
+                  );
+                })}
+                <ListItem className="leading-[26px] relative !p-0 mt-1">
+                  <form
+                    action={onSignOut}
+                    className="w-full h-[50px] flex items-center font-normal relative">
+                    <span
+                      className={`absolute ${
+                        isCollapse ? "w-full text-center" : "left-6"
+                      }`}>
+                      L
+                    </span>
+                    <LogoutButton
+                      className={`${
+                        isCollapse && "xl:hidden"
+                      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}
+                      handleToggleLoadingOverlay={handleToggleLoadingOverlay}
+                    />
+                  </form>
+                </ListItem>
+              </List>
+            </AccordionBody>
+          </Accordion>
+        </AccordionList>
+        <div className="h-px bg-gradient-divider my-4 opacity-25" />
+        <ul>
+          {ITEMS_DASHBOARD.map(({ label, content, href }) => {
+            const isActive = href === pathname;
+            const itemBackground = isActive
+              ? "bg-primary hover:!bg-primary"
+              : "hover:bg-none";
 
-          const menuItemClass = [
-            `tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center `,
-            `${itemBackground} `,
-            `!p-0 leading-[26px] mt-1 rounded-md `,
-            `${transitionBgClass}`,
-          ].join("");
-          const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
+            const menuItemClass = [
+              `tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center `,
+              `${itemBackground} `,
+              `!p-0 leading-[26px] mt-1 rounded-md `,
+              `${transitionBgClass}`,
+            ].join("");
+            const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
 
-          return (
-            <li
-              key={label}
-              className={menuItemClass}
-              onClick={handleClickSidebarItem}>
-              <Link className={linkClass} href={href}>
-                <span>{content}</span>
-                <span className={`${hiddenOpenClass}`}>{label}</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+            return (
+              <li
+                key={label}
+                className={menuItemClass}
+                onClick={handleClickSidebarItem}>
+                <Link className={linkClass} href={href}>
+                  <span>{content}</span>
+                  <span className={`${hiddenOpenClass}`}>{label}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      {isPending && (
+        <LoadingIndicator width={10} height={10} isFullWidth={true} />
+      )}
+    </>
   );
 };
 
-function LogoutButton({ isCollapse }: { isCollapse: boolean }) {
+const LogoutButton = ({
+  handleToggleLoadingOverlay,
+  className,
+}: {
+  handleToggleLoadingOverlay: (pending: boolean) => void;
+  className: string;
+}) => {
   const { pending } = useFormStatus();
 
+  useEffect(() => {
+    handleToggleLoadingOverlay(pending);
+  }, [pending]);
+
   return (
-    <button
-      type="submit"
-      className={`${
-        isCollapse && "xl:hidden"
-      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}>
-      {pending ? <LoadingIndicator width={5} height={5} /> : "Logout"}
+    <button type="submit" className={className}>
+      Logout
     </button>
   );
-}
+};
 
 export default SideBar;

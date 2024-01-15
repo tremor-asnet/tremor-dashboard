@@ -15,3 +15,9 @@ export type TTopSellingProducts = {
   refunds: number;
   refunds_type: string;
 };
+
+export type TRevenueChart = {
+  date: string;
+  parameterFacebook?: number;
+  parameterGoogle?: number;
+};

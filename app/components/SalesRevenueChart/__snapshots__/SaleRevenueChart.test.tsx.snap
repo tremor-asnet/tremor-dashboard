@@ -1,0 +1,1157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        >
+          <p
+            class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+          >
+            Revenue
+          </p>
+          <div
+            class="w-fit h-fit relative flex justify-center"
+          >
+            <button
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:border-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+            >
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                <svg
+                  class="text-xs"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0V0z"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="19"
+                    r="2"
+                  />
+                  <path
+                    d="M10 3h4v12h-4z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+              hidden=""
+            >
+              <div
+                class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+              >
+                See which ads perform better
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-72 mt-2"
+        >
+          <div>
+            <div
+              class="recharts-wrapper"
+              role="region"
+              style="position: relative; cursor: default; width: 100px; height: 100px;"
+            >
+              <svg
+                class="recharts-surface"
+                height="100"
+                style="width: 100%; height: 100%;"
+                viewBox="0 0 100 100"
+                width="100"
+              >
+                <title />
+                <desc />
+                <defs>
+                  <clippath
+                    id="recharts1-clip"
+                  >
+                    <rect
+                      height="60"
+                      width="60"
+                      x="35"
+                      y="5"
+                    />
+                  </clippath>
+                </defs>
+                <g
+                  class="recharts-cartesian-grid"
+                >
+                  <g
+                    class="recharts-cartesian-grid-horizontal"
+                  >
+                    <line
+                      class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                      fill="none"
+                      height="60"
+                      stroke="#ccc"
+                      width="60"
+                      x="35"
+                      x1="35"
+                      x2="95"
+                      y="5"
+                      y1="65"
+                      y2="65"
+                    />
+                    <line
+                      class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                      fill="none"
+                      height="60"
+                      stroke="#ccc"
+                      width="60"
+                      x="35"
+                      x1="35"
+                      x2="95"
+                      y="5"
+                      y1="50"
+                      y2="50"
+                    />
+                    <line
+                      class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                      fill="none"
+                      height="60"
+                      stroke="#ccc"
+                      width="60"
+                      x="35"
+                      x1="35"
+                      x2="95"
+                      y="5"
+                      y1="35"
+                      y2="35"
+                    />
+                    <line
+                      class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                      fill="none"
+                      height="60"
+                      stroke="#ccc"
+                      width="60"
+                      x="35"
+                      x1="35"
+                      x2="95"
+                      y="5"
+                      y1="20"
+                      y2="20"
+                    />
+                    <line
+                      class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                      fill="none"
+                      height="60"
+                      stroke="#ccc"
+                      width="60"
+                      x="35"
+                      x1="35"
+                      x2="95"
+                      y="5"
+                      y1="5"
+                      y2="5"
+                    />
+                  </g>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis text-tremor-label fill-tremor-content dark:fill-dark-tremor-content"
+                >
+                  <g
+                    class="recharts-cartesian-axis-ticks"
+                  >
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="30"
+                        orientation="bottom"
+                        stroke="none"
+                        text-anchor="middle"
+                        transform="translate(0, 6)"
+                        width="60"
+                        x="55"
+                        y="73"
+                      >
+                        <tspan
+                          dy="0.71em"
+                          x="55"
+                        >
+                          Apr
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="30"
+                        orientation="bottom"
+                        stroke="none"
+                        text-anchor="middle"
+                        transform="translate(0, 6)"
+                        width="60"
+                        x="60"
+                        y="73"
+                      >
+                        <tspan
+                          dy="0.71em"
+                          x="60"
+                        >
+                          Jun
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="30"
+                        orientation="bottom"
+                        stroke="none"
+                        text-anchor="middle"
+                        transform="translate(0, 6)"
+                        width="60"
+                        x="65"
+                        y="73"
+                      >
+                        <tspan
+                          dy="0.71em"
+                          x="65"
+                        >
+                          Aug
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="30"
+                        orientation="bottom"
+                        stroke="none"
+                        text-anchor="middle"
+                        transform="translate(0, 6)"
+                        width="60"
+                        x="70"
+                        y="73"
+                      >
+                        <tspan
+                          dy="0.71em"
+                          x="70"
+                        >
+                          Oct
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="30"
+                        orientation="bottom"
+                        stroke="none"
+                        text-anchor="middle"
+                        transform="translate(0, 6)"
+                        width="60"
+                        x="75"
+                        y="73"
+                      >
+                        <tspan
+                          dy="0.71em"
+                          x="75"
+                        >
+                          Dec
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+                <g
+                  class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis text-tremor-label fill-tremor-content dark:fill-dark-tremor-content"
+                >
+                  <g
+                    class="recharts-cartesian-axis-ticks"
+                  >
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="60"
+                        orientation="left"
+                        stroke="none"
+                        text-anchor="end"
+                        transform="translate(-3, 0)"
+                        width="30"
+                        x="27"
+                        y="65"
+                      >
+                        <tspan
+                          dy="0.355em"
+                          x="27"
+                        >
+                          0
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="60"
+                        orientation="left"
+                        stroke="none"
+                        text-anchor="end"
+                        transform="translate(-3, 0)"
+                        width="30"
+                        x="27"
+                        y="50"
+                      >
+                        <tspan
+                          dy="0.355em"
+                          x="27"
+                        >
+                          200
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="60"
+                        orientation="left"
+                        stroke="none"
+                        text-anchor="end"
+                        transform="translate(-3, 0)"
+                        width="30"
+                        x="27"
+                        y="35"
+                      >
+                        <tspan
+                          dy="0.355em"
+                          x="27"
+                        >
+                          400
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="60"
+                        orientation="left"
+                        stroke="none"
+                        text-anchor="end"
+                        transform="translate(-3, 0)"
+                        width="30"
+                        x="27"
+                        y="20"
+                      >
+                        <tspan
+                          dy="0.355em"
+                          x="27"
+                        >
+                          600
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="recharts-layer recharts-cartesian-axis-tick"
+                    >
+                      <text
+                        class="recharts-text recharts-cartesian-axis-tick-value"
+                        fill=""
+                        height="60"
+                        orientation="left"
+                        stroke="none"
+                        text-anchor="end"
+                        transform="translate(-3, 0)"
+                        width="30"
+                        x="27"
+                        y="5"
+                      >
+                        <tspan
+                          dy="0.355em"
+                          x="27"
+                        >
+                          800
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+                <g
+                  class="recharts-layer recharts-line stroke-indigo-500"
+                >
+                  <path
+                    class="recharts-curve recharts-line-curve"
+                    d="M55,61.25L57.5,57.5L60,50L62.5,50L65,35L67.5,39.5L70,27.5L72.5,31.25L75,12.5"
+                    fill="none"
+                    height="60"
+                    name="Facebook Ads"
+                    stroke=""
+                    stroke-dasharray="0px 0px"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-opacity="1"
+                    stroke-width="2"
+                    width="60"
+                  />
+                </g>
+                <g
+                  class="recharts-layer recharts-line stroke-neutral-500"
+                >
+                  <path
+                    class="recharts-curve recharts-line-curve"
+                    d="M55,65L57.5,62.75L60,62L62.5,56.75L65,53.75L67.5,49.25L70,43.25L72.5,46.25L75,43.25"
+                    fill="none"
+                    height="60"
+                    name="Google Ads"
+                    stroke=""
+                    stroke-dasharray="0px 0px"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-opacity="1"
+                    stroke-width="2"
+                    width="60"
+                  />
+                </g>
+                <g
+                  class="recharts-layer recharts-line cursor-pointer"
+                >
+                  <path
+                    class="recharts-curve recharts-line-curve"
+                    d="M55,61.25L57.5,57.5L60,50L62.5,50L65,35L67.5,39.5L70,27.5L72.5,31.25L75,12.5"
+                    fill="none"
+                    height="60"
+                    name="Facebook Ads"
+                    stroke="transparent"
+                    stroke-dasharray="0px 0px"
+                    stroke-opacity="0"
+                    stroke-width="12"
+                    width="60"
+                  />
+                </g>
+                <g
+                  class="recharts-layer recharts-line cursor-pointer"
+                >
+                  <path
+                    class="recharts-curve recharts-line-curve"
+                    d="M55,65L57.5,62.75L60,62L62.5,56.75L65,53.75L67.5,49.25L70,43.25L72.5,46.25L75,43.25"
+                    fill="none"
+                    height="60"
+                    name="Google Ads"
+                    stroke="transparent"
+                    stroke-dasharray="0px 0px"
+                    stroke-opacity="0"
+                    stroke-width="12"
+                    width="60"
+                  />
+                </g>
+              </svg>
+              <div
+                class="recharts-legend-wrapper"
+                style="position: absolute; width: 90px; height: 60px; left: 5px; top: 5px;"
+              >
+                <div
+                  class="flex items-center justify-end"
+                >
+                  <ol
+                    class="tremor-Legend-root relative overflow-hidden"
+                  >
+                    <div
+                      class="h-full flex flex-wrap"
+                      tabindex="0"
+                    >
+                      <li
+                        class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
+                      >
+                        <svg
+                          class="flex-none text-indigo-500 h-2 w-2 mr-1.5 opacity-100"
+                          fill="currentColor"
+                          viewBox="0 0 8 8"
+                        >
+                          <circle
+                            cx="4"
+                            cy="4"
+                            r="4"
+                          />
+                        </svg>
+                        <p
+                          class="whitespace-nowrap truncate text-tremor-default text-tremor-content group-hover:text-tremor-content-emphasis dark:text-dark-tremor-content opacity-100 dark:group-hover:text-dark-tremor-content-emphasis"
+                        >
+                          Facebook Ads
+                        </p>
+                      </li>
+                      <li
+                        class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
+                      >
+                        <svg
+                          class="flex-none text-neutral-500 h-2 w-2 mr-1.5 opacity-100"
+                          fill="currentColor"
+                          viewBox="0 0 8 8"
+                        >
+                          <circle
+                            cx="4"
+                            cy="4"
+                            r="4"
+                          />
+                        </svg>
+                        <p
+                          class="whitespace-nowrap truncate text-tremor-default text-tremor-content group-hover:text-tremor-content-emphasis dark:text-dark-tremor-content opacity-100 dark:group-hover:text-dark-tremor-content-emphasis"
+                        >
+                          Google Ads
+                        </p>
+                      </li>
+                    </div>
+                  </ol>
+                </div>
+              </div>
+              <div
+                class="recharts-tooltip-wrapper"
+                role="dialog"
+                style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px; outline: none;"
+                tabindex="-1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      id="recharts_measurement_span"
+      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre;"
+    >
+       
+    </span>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      >
+        <p
+          class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+        >
+          Revenue
+        </p>
+        <div
+          class="w-fit h-fit relative flex justify-center"
+        >
+          <button
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:border-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+          >
+            <span
+              class="tremor-Button-text text-sm whitespace-nowrap"
+            >
+              <svg
+                class="text-xs"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <circle
+                  cx="12"
+                  cy="19"
+                  r="2"
+                />
+                <path
+                  d="M10 3h4v12h-4z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div
+            class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+            hidden=""
+          >
+            <div
+              class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+            >
+              See which ads perform better
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-72 mt-2"
+      >
+        <div>
+          <div
+            class="recharts-wrapper"
+            role="region"
+            style="position: relative; cursor: default; width: 100px; height: 100px;"
+          >
+            <svg
+              class="recharts-surface"
+              height="100"
+              style="width: 100%; height: 100%;"
+              viewBox="0 0 100 100"
+              width="100"
+            >
+              <title />
+              <desc />
+              <defs>
+                <clippath
+                  id="recharts1-clip"
+                >
+                  <rect
+                    height="60"
+                    width="60"
+                    x="35"
+                    y="5"
+                  />
+                </clippath>
+              </defs>
+              <g
+                class="recharts-cartesian-grid"
+              >
+                <g
+                  class="recharts-cartesian-grid-horizontal"
+                >
+                  <line
+                    class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                    fill="none"
+                    height="60"
+                    stroke="#ccc"
+                    width="60"
+                    x="35"
+                    x1="35"
+                    x2="95"
+                    y="5"
+                    y1="65"
+                    y2="65"
+                  />
+                  <line
+                    class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                    fill="none"
+                    height="60"
+                    stroke="#ccc"
+                    width="60"
+                    x="35"
+                    x1="35"
+                    x2="95"
+                    y="5"
+                    y1="50"
+                    y2="50"
+                  />
+                  <line
+                    class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                    fill="none"
+                    height="60"
+                    stroke="#ccc"
+                    width="60"
+                    x="35"
+                    x1="35"
+                    x2="95"
+                    y="5"
+                    y1="35"
+                    y2="35"
+                  />
+                  <line
+                    class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                    fill="none"
+                    height="60"
+                    stroke="#ccc"
+                    width="60"
+                    x="35"
+                    x1="35"
+                    x2="95"
+                    y="5"
+                    y1="20"
+                    y2="20"
+                  />
+                  <line
+                    class="stroke-1 stroke-tremor-border dark:stroke-dark-tremor-border"
+                    fill="none"
+                    height="60"
+                    stroke="#ccc"
+                    width="60"
+                    x="35"
+                    x1="35"
+                    x2="95"
+                    y="5"
+                    y1="5"
+                    y2="5"
+                  />
+                </g>
+              </g>
+              <g
+                class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis text-tremor-label fill-tremor-content dark:fill-dark-tremor-content"
+              >
+                <g
+                  class="recharts-cartesian-axis-ticks"
+                >
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="30"
+                      orientation="bottom"
+                      stroke="none"
+                      text-anchor="middle"
+                      transform="translate(0, 6)"
+                      width="60"
+                      x="55"
+                      y="73"
+                    >
+                      <tspan
+                        dy="0.71em"
+                        x="55"
+                      >
+                        Apr
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="30"
+                      orientation="bottom"
+                      stroke="none"
+                      text-anchor="middle"
+                      transform="translate(0, 6)"
+                      width="60"
+                      x="60"
+                      y="73"
+                    >
+                      <tspan
+                        dy="0.71em"
+                        x="60"
+                      >
+                        Jun
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="30"
+                      orientation="bottom"
+                      stroke="none"
+                      text-anchor="middle"
+                      transform="translate(0, 6)"
+                      width="60"
+                      x="65"
+                      y="73"
+                    >
+                      <tspan
+                        dy="0.71em"
+                        x="65"
+                      >
+                        Aug
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="30"
+                      orientation="bottom"
+                      stroke="none"
+                      text-anchor="middle"
+                      transform="translate(0, 6)"
+                      width="60"
+                      x="70"
+                      y="73"
+                    >
+                      <tspan
+                        dy="0.71em"
+                        x="70"
+                      >
+                        Oct
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="30"
+                      orientation="bottom"
+                      stroke="none"
+                      text-anchor="middle"
+                      transform="translate(0, 6)"
+                      width="60"
+                      x="75"
+                      y="73"
+                    >
+                      <tspan
+                        dy="0.71em"
+                        x="75"
+                      >
+                        Dec
+                      </tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis text-tremor-label fill-tremor-content dark:fill-dark-tremor-content"
+              >
+                <g
+                  class="recharts-cartesian-axis-ticks"
+                >
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="60"
+                      orientation="left"
+                      stroke="none"
+                      text-anchor="end"
+                      transform="translate(-3, 0)"
+                      width="30"
+                      x="27"
+                      y="65"
+                    >
+                      <tspan
+                        dy="0.355em"
+                        x="27"
+                      >
+                        0
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="60"
+                      orientation="left"
+                      stroke="none"
+                      text-anchor="end"
+                      transform="translate(-3, 0)"
+                      width="30"
+                      x="27"
+                      y="50"
+                    >
+                      <tspan
+                        dy="0.355em"
+                        x="27"
+                      >
+                        200
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="60"
+                      orientation="left"
+                      stroke="none"
+                      text-anchor="end"
+                      transform="translate(-3, 0)"
+                      width="30"
+                      x="27"
+                      y="35"
+                    >
+                      <tspan
+                        dy="0.355em"
+                        x="27"
+                      >
+                        400
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="60"
+                      orientation="left"
+                      stroke="none"
+                      text-anchor="end"
+                      transform="translate(-3, 0)"
+                      width="30"
+                      x="27"
+                      y="20"
+                    >
+                      <tspan
+                        dy="0.355em"
+                        x="27"
+                      >
+                        600
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis-tick"
+                  >
+                    <text
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      fill=""
+                      height="60"
+                      orientation="left"
+                      stroke="none"
+                      text-anchor="end"
+                      transform="translate(-3, 0)"
+                      width="30"
+                      x="27"
+                      y="5"
+                    >
+                      <tspan
+                        dy="0.355em"
+                        x="27"
+                      >
+                        800
+                      </tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                class="recharts-layer recharts-line stroke-indigo-500"
+              >
+                <path
+                  class="recharts-curve recharts-line-curve"
+                  d="M55,61.25L57.5,57.5L60,50L62.5,50L65,35L67.5,39.5L70,27.5L72.5,31.25L75,12.5"
+                  fill="none"
+                  height="60"
+                  name="Facebook Ads"
+                  stroke=""
+                  stroke-dasharray="0px 0px"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="2"
+                  width="60"
+                />
+              </g>
+              <g
+                class="recharts-layer recharts-line stroke-neutral-500"
+              >
+                <path
+                  class="recharts-curve recharts-line-curve"
+                  d="M55,65L57.5,62.75L60,62L62.5,56.75L65,53.75L67.5,49.25L70,43.25L72.5,46.25L75,43.25"
+                  fill="none"
+                  height="60"
+                  name="Google Ads"
+                  stroke=""
+                  stroke-dasharray="0px 0px"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-opacity="1"
+                  stroke-width="2"
+                  width="60"
+                />
+              </g>
+              <g
+                class="recharts-layer recharts-line cursor-pointer"
+              >
+                <path
+                  class="recharts-curve recharts-line-curve"
+                  d="M55,61.25L57.5,57.5L60,50L62.5,50L65,35L67.5,39.5L70,27.5L72.5,31.25L75,12.5"
+                  fill="none"
+                  height="60"
+                  name="Facebook Ads"
+                  stroke="transparent"
+                  stroke-dasharray="0px 0px"
+                  stroke-opacity="0"
+                  stroke-width="12"
+                  width="60"
+                />
+              </g>
+              <g
+                class="recharts-layer recharts-line cursor-pointer"
+              >
+                <path
+                  class="recharts-curve recharts-line-curve"
+                  d="M55,65L57.5,62.75L60,62L62.5,56.75L65,53.75L67.5,49.25L70,43.25L72.5,46.25L75,43.25"
+                  fill="none"
+                  height="60"
+                  name="Google Ads"
+                  stroke="transparent"
+                  stroke-dasharray="0px 0px"
+                  stroke-opacity="0"
+                  stroke-width="12"
+                  width="60"
+                />
+              </g>
+            </svg>
+            <div
+              class="recharts-legend-wrapper"
+              style="position: absolute; width: 90px; height: 60px; left: 5px; top: 5px;"
+            >
+              <div
+                class="flex items-center justify-end"
+              >
+                <ol
+                  class="tremor-Legend-root relative overflow-hidden"
+                >
+                  <div
+                    class="h-full flex flex-wrap"
+                    tabindex="0"
+                  >
+                    <li
+                      class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
+                    >
+                      <svg
+                        class="flex-none text-indigo-500 h-2 w-2 mr-1.5 opacity-100"
+                        fill="currentColor"
+                        viewBox="0 0 8 8"
+                      >
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="4"
+                        />
+                      </svg>
+                      <p
+                        class="whitespace-nowrap truncate text-tremor-default text-tremor-content group-hover:text-tremor-content-emphasis dark:text-dark-tremor-content opacity-100 dark:group-hover:text-dark-tremor-content-emphasis"
+                      >
+                        Facebook Ads
+                      </p>
+                    </li>
+                    <li
+                      class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
+                    >
+                      <svg
+                        class="flex-none text-neutral-500 h-2 w-2 mr-1.5 opacity-100"
+                        fill="currentColor"
+                        viewBox="0 0 8 8"
+                      >
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="4"
+                        />
+                      </svg>
+                      <p
+                        class="whitespace-nowrap truncate text-tremor-default text-tremor-content group-hover:text-tremor-content-emphasis dark:text-dark-tremor-content opacity-100 dark:group-hover:text-dark-tremor-content-emphasis"
+                      >
+                        Google Ads
+                      </p>
+                    </li>
+                  </div>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="recharts-tooltip-wrapper"
+              role="dialog"
+              style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px; outline: none;"
+              tabindex="-1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

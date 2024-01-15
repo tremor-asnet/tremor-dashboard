@@ -15,6 +15,9 @@ import Image from "next/image";
 // Constants
 import { FLAG_SRC } from "@/constants";
 
+// Helpers
+import { formatMoney } from "@/helpers";
+
 export interface ISalesByCountry {
   id: string;
   flag: string;
@@ -101,7 +104,7 @@ const SalesByCountry = ({
                           Value:
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
-                          {value}
+                          {formatMoney(value)}
                         </Text>
                       </TableCell>
                     )}
@@ -113,7 +116,7 @@ const SalesByCountry = ({
                         Bounce:
                       </Text>
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-                        {bounce}
+                        <span>{bounce}%</span>
                       </Text>
                     </TableCell>
                   </TableRow>

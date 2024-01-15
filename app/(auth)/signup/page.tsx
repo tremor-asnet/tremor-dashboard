@@ -3,7 +3,6 @@
 // Libs
 import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 // Components
@@ -27,7 +26,6 @@ import { FaCheckCircle } from "react-icons/fa";
 import { useToast } from "@/hooks/useToastMessage";
 
 const SignUp = () => {
-  const router = useRouter();
   const {
     control,
     formState: { errors },
@@ -52,15 +50,7 @@ const SignUp = () => {
   const nameErrorMessage = name?.message?.toString();
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
-  const isNameError = Boolean(name);
-  const isEmailError = Boolean(email);
-  const isPasswordError = Boolean(password);
-  const isDisableSubmit =
-    isEmailError ||
-    isPasswordError ||
-    isNameError ||
-    !checked ||
-    formStatus.isPending;
+  const isDisableSubmit = !checked || formStatus.isPending;
 
   const handleCheckBox = () => {
     setChecked(!checked);
@@ -123,7 +113,7 @@ const SignUp = () => {
                 required
                 {...field}
               />
-              {isNameError && (
+              {nameErrorMessage && (
                 <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                   {nameErrorMessage}
                 </p>
@@ -151,7 +141,7 @@ const SignUp = () => {
                 required
                 {...field}
               />
-              {isEmailError && (
+              {emailErrorMessage && (
                 <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                   {emailErrorMessage}
                 </p>
@@ -180,7 +170,7 @@ const SignUp = () => {
                 required
                 {...field}
               />
-              {isPasswordError && (
+              {passwordErrorMessage && (
                 <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
                   {passwordErrorMessage}
                 </p>

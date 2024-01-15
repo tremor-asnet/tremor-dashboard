@@ -53,6 +53,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
               index="name"
               category="percent"
               variant="pie"
+              // @ts-expect-error: Tremor bug when add colors into config
               colors={["royal-blue", "amaranth", "cod-gray", "river-bed"]}
               showAnimation={true}
             />

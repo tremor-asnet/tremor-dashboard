@@ -69,3 +69,54 @@ export const TOP_SELLING_PRODUCTS_DATA = [
     refunds_type: "increase",
   },
 ];
+
+export const REVENUE_CHART_DATA = {
+  title: "Revenue",
+  data: [
+    {
+      date: "Apr",
+      "Facebook Ads": 50,
+      "Google Ads": 0,
+    },
+    {
+      date: "May",
+      "Facebook Ads": 100,
+      "Google Ads": 30,
+    },
+    {
+      date: "Jun",
+      "Facebook Ads": 200,
+      "Google Ads": 40,
+    },
+    {
+      date: "Jul",
+      "Facebook Ads": 200,
+      "Google Ads": 110,
+    },
+    {
+      date: "Aug",
+      "Facebook Ads": 400,
+      "Google Ads": 150,
+    },
+    {
+      date: "Sep",
+      "Facebook Ads": 340,
+      "Google Ads": 210,
+    },
+    {
+      date: "Oct",
+      "Facebook Ads": 500,
+      "Google Ads": 290,
+    },
+    {
+      date: "Now",
+      "Facebook Ads": 450,
+      "Google Ads": 250,
+    },
+    {
+      date: "Dec",
+      "Facebook Ads": 700,
+      "Google Ads": 290,
+    },
+  ],
+};

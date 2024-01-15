@@ -109,7 +109,7 @@ export const REVENUE_CHART_DATA = {
       "Google Ads": 290,
     },
     {
-      date: "Now",
+      date: "Nov",
       "Facebook Ads": 450,
       "Google Ads": 250,
     },

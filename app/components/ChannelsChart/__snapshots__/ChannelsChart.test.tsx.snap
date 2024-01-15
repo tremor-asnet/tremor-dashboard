@@ -202,7 +202,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
             >
               700,000
             </span>
-            are from social media.
+            from social media.
           </p>
         </div>
         <div

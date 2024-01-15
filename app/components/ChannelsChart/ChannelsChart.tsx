@@ -5,6 +5,9 @@ import { MdOutlinePriorityHigh } from "react-icons/md";
 // Constants
 import { CHANNELS_CHART_COLOR } from "@/constants";
 
+//Helpers
+import { numberWithCommas } from "@/helpers";
+
 //Styles
 import "@/styles/charts.css";
 
@@ -15,8 +18,8 @@ type TData = {
 };
 
 type TChannelChartData = {
-  sale_total: string;
-  sale_social_media: string;
+  sale_total: number;
+  sale_social_media: number;
   data: TData[];
 };
 
@@ -78,9 +81,14 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
         <Flex className="flex-col md:flex-row">
           <Flex>
             <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
-              More than<span className="font-bold mx-1">{sale_total}</span>
+              More than
+              <span className="font-bold mx-1">
+                {numberWithCommas(sale_total)}
+              </span>
               sales are made using referral marketing, and
-              <span className="font-bold mx-1">{sale_social_media}</span>are
+              <span className="font-bold mx-1">
+                {numberWithCommas(sale_social_media)}
+              </span>
               from social media.
             </Text>
           </Flex>

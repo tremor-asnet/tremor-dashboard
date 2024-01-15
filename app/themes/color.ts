@@ -81,7 +81,7 @@ export const color = {
 };
 
 export const backgroundColor = {
-  primary: "#344767",
+  primary: "#123456",
   secondary: "#ffffff",
   few: "#339537",
   seldom: "#bce2be",
@@ -180,6 +180,10 @@ export const borderColor = {
 
 export const fill = {
   "light-500": "white",
+  "royal-blue-500": "#1a73e8",
+  "amaranth-500": "#d81b60",
+  "cod-gray-500": "#191919",
+  "river-bed-500": "#495361",
 
   //TODO: Will update when implement light/dark themes
   // light mode

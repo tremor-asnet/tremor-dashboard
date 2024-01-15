@@ -13,6 +13,10 @@ import { ITEM_ACTION_PROJECT } from "@/constants/commons";
 // Services
 import { getAllProjects, getProfile } from "@/services";
 
+export const metadata = {
+  title: "All Projects - Tremor Dashboard",
+};
+
 const Projects = async () => {
   const profileData = await getProfile();
   const ProjectsData = await getAllProjects();

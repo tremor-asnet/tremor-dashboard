@@ -12,6 +12,10 @@ import {
 // Actions
 import { getProfile, getProfileProject } from "@/services";
 
+export const metadata = {
+  title: "Profile Overview - Tremor Dashboard",
+};
+
 const Profile = async () => {
   const profileData = await getProfile();
   const projectData = await getProfileProject();

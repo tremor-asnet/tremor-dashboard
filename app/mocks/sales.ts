@@ -22,6 +22,17 @@ export const STATISTICS_DATA = [
   },
 ];
 
+export const CHANNELS_CHART_DATA = {
+  sale_total: 1200000,
+  sale_social_media: 700000,
+  data: [
+    { id: 1, name: "facebook", percent: 15 },
+    { id: 2, name: "direct", percent: 20 },
+    { id: 3, name: "organic", percent: 10 },
+    { id: 4, name: "referral", percent: 55 },
+  ],
+};
+
 export const TOP_SELLING_PRODUCTS_DATA = [
   {
     product_id: 1,

@@ -13,13 +13,6 @@ export const formatMoney = (number: string): string =>
  */
 export const formatPercentage = (number: string): string => {
   const parsedNumber = parseFloat(number);
-  let formattedPercentage = "";
 
-  if (parsedNumber > 0) {
-    formattedPercentage = `+${number}%`;
-  } else if (parsedNumber <= 0) {
-    formattedPercentage = `${number}%`;
-  }
-
-  return formattedPercentage;
+  return parsedNumber <= 0 ? `${number}%` : `+${number}%`;
 };

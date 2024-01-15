@@ -69,30 +69,24 @@ describe("Test formatPercentage function", () => {
 });
 
 describe("Test formatPercentage function", () => {
-  test("formats positive number correctly", () => {
-    const input = "5.5";
-    const expectedOutput = "+5.5%";
+  test("formats positive numbers with a plus sign and percentage", () => {
+    const positiveNumber = "42";
+    const formattedResult = formatPercentage(positiveNumber);
 
-    const result = formatPercentage(input);
-
-    expect(result).toBe(expectedOutput);
+    expect(formattedResult).toBe("+42%");
   });
 
-  test("formats zero correctly", () => {
-    const input = "0";
-    const expectedOutput = "0%";
+  test("formats negative numbers with a minus sign and percentage", () => {
+    const negativeNumber = "-15.5";
+    const formattedResult = formatPercentage(negativeNumber);
 
-    const result = formatPercentage(input);
-
-    expect(result).toBe(expectedOutput);
+    expect(formattedResult).toBe("-15.5%");
   });
 
-  test("formats negative number correctly", () => {
-    const input = "-3";
-    const expectedOutput = "-3%";
+  test("formats zero with a plus sign and percentage", () => {
+    const zero = "0";
+    const formattedResult = formatPercentage(zero);
 
-    const result = formatPercentage(input);
-
-    expect(result).toBe(expectedOutput);
+    expect(formattedResult).toBe("0%");
   });
 });

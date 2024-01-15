@@ -17,7 +17,7 @@ const IconBox = ({
   icon = <IoMdPrint color="white" size="24px" />,
   width = "16",
   height = "16",
-  bgBox = "bg-[linear-gradient(195deg,#42424a,#191919)]",
+  bgBox = "bg-gradient-arsenic",
   className = "",
 }: IIconBox): JSX.Element => {
   return (

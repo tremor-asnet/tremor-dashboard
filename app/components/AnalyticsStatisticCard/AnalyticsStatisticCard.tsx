@@ -8,6 +8,9 @@ import IconBox from "@/components/IconBox/IconBox";
 //Mocks
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
+// Helpers
+import { formatPercentage } from "@/helpers";
+
 type AnalyticsStatistical = {
   id: string;
   type: string;
@@ -36,8 +39,10 @@ const AnalyticsStatisticCard = ({
               icon={SALE_STATISTICAL[id]?.icon}
             />
             <Flex className="pl-[90px] flex-col mb-1 items-end">
-              <Text className="text-md text-secondary font-light">{type}</Text>
-              <Text className="!text-primary text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
+              <Text className="text-md dark:text-dark-romance text-secondary font-light">
+                {type}
+              </Text>
+              <Text className="text-tremor-content-title dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
                 {amount}
               </Text>
             </Flex>
@@ -46,11 +51,11 @@ const AnalyticsStatisticCard = ({
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
               {totalAmount && (
-                <Text className="text-few leading-[21px] font-bold">
-                  {`+${totalAmount}`}
+                <Text className="text-few dark:text-few leading-[21px] font-bold">
+                  {formatPercentage(totalAmount)}
                 </Text>
               )}
-              <Text className="ml-1 text-secondary leading-[21px] font-light">
+              <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">
                 {duration}
               </Text>
             </Flex>

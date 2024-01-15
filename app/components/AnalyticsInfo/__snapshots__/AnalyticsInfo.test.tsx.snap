@@ -75,12 +75,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               </svg>
             </div>
             <p
-              class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
+              class="text-tremor-title w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
             >
               Cozy 5 Stars Apartment
             </p>
             <p
-              class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
+              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
             >
               The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
             </p>
@@ -95,7 +95,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
             >
               <p
-                class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
+                class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
               >
                 $
                 899
@@ -123,7 +123,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="w-fit h-fit relative flex justify-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+                  class="text-tremor-default text-tremor-content dark:text-dark-romance tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
                 >
                   Barcelona, Spain
                 </p>
@@ -215,12 +215,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </svg>
           </div>
           <p
-            class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
+            class="text-tremor-title w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
           >
             Cozy 5 Stars Apartment
           </p>
           <p
-            class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
+            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
           >
             The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
           </p>
@@ -235,7 +235,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <p
-              class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
+              class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
             >
               $
               899
@@ -263,7 +263,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="w-fit h-fit relative flex justify-center"
             >
               <p
-                class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+                class="text-tremor-default text-tremor-content dark:text-dark-romance tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
               >
                 Barcelona, Spain
               </p>
@@ -409,12 +409,12 @@ exports[`Testing analytics sale chart component testing component analytics info
           </svg>
         </div>
         <p
-          class="text-tremor-title dark:text-dark-tremor-content-emphasis w-full font-primary font-normal tracking-normal text-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
+          class="text-tremor-title w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2"
         >
           Cozy 5 Stars Apartment
         </p>
         <p
-          class="dark:text-dark-tremor-content text-secondary font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
+          class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center"
         >
           The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.
         </p>
@@ -429,7 +429,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <p
-            class="text-tremor-content dark:text-dark-tremor-content flex-wrap font-primary font-normal text-tremor-title leading-[26px] tracking-[0.17136px] text-center"
+            class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
           >
             $
             899
@@ -457,7 +457,7 @@ exports[`Testing analytics sale chart component testing component analytics info
             class="w-fit h-fit relative flex justify-center"
           >
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
+              class="text-tremor-default text-tremor-content dark:text-dark-romance tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]"
             >
               Barcelona, Spain
             </p>

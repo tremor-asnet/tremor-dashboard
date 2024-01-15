@@ -12,6 +12,10 @@ export const getAnalytics = async () => {
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
+    next: {
+      // Re-validate every minute
+      revalidate: 60,
+    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));

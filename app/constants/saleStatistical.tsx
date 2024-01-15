@@ -13,7 +13,7 @@ type Sale = {
 
 export const SALE_STATISTICAL: Sale = {
   bookings: {
-    bgIcon: "bg-[linear-gradient(195deg,#42424a,#191919)]",
+    bgIcon: "bg-gradient-arsenic",
     icon: <MdWeekend color="white" size="24px" />,
   },
   todayUser: {

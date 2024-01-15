@@ -3,7 +3,7 @@
 exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
 <div>
   <div
-    class="w-full bg-white bg-clip-border shadow-line-chart"
+    class="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]"
   >
     <div
       class="p-4"
@@ -422,7 +422,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
                               class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                             >
                               <svg
-                                class="flex-none h-2 w-2 mr-1.5 text-blue-500 opacity-100"
+                                class="flex-none text-blue-500 h-2 w-2 mr-1.5 opacity-100"
                                 fill="currentColor"
                                 viewBox="0 0 8 8"
                               >
@@ -460,7 +460,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-tremor-title dark:text-dark-tremor-content-emphasis text-base font-bold opacity-100 capitalize text-[#344767]"
+            class="text-tremor-title text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]"
           >
             Daily Sales
           </p>
@@ -468,7 +468,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             class="w-fit h-fit relative flex justify-center"
           >
             <p
-              class="dark:text-dark-tremor-content-subtle text-sm font-light opacity-100 text-[#7b809a]"
+              class="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]"
             >
               <span
                 class="font-bold"
@@ -497,12 +497,12 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row items-center justify-start"
         >
           <svg
-            color="#7b809a"
+            color="#ffffffcc"
             fill="currentColor"
             height="12"
             stroke="currentColor"
             stroke-width="0"
-            style="color: rgb(123, 128, 154);"
+            style="color: rgba(255, 255, 255, 0.8);"
             viewBox="0 0 512 512"
             width="12"
             xmlns="http://www.w3.org/2000/svg"
@@ -512,7 +512,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             />
           </svg>
           <p
-            class="text-tremor-default dark:text-dark-tremor-content text-sm font-light opacity-100 text-[#7b809a] ml-1"
+            class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a] ml-1"
           >
             updated 4 mins ago
           </p>

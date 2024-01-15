@@ -5,7 +5,7 @@ import LoadingIndicator from "./LoadingIndicator";
 
 describe("LoadingIndicator component", () => {
   const loadingIndicator = () => {
-    return render(<LoadingIndicator width="w-5" height="w-5" />);
+    return render(<LoadingIndicator width={10} height={10} />);
   };
 
   it("Should render LoadingIndicator snapshot correctly", () => {

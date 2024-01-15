@@ -13,6 +13,10 @@ export const getProfile = async () => {
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
+    // Re-validate when user update profile
+    next: {
+      tags: ["profile"],
+    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
@@ -26,6 +30,9 @@ export const getProfileProject = async () => {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",
+    },
+    next: {
+      revalidate: 10,
     },
   });
 

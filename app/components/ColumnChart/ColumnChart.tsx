@@ -30,7 +30,7 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
         <Flex className="">
           <main className="w-full mx-auto">
             <div className="-mt-10">
-              <Card className="p-2 bg-gradient-arsenic shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]">
+              <Card className="p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]">
                 <BarChart
                   className="h-[168px] mt-4"
                   data={data}

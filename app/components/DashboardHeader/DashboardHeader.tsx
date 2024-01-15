@@ -38,7 +38,7 @@ const DashboardHeader = ({
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
   // Check the condition if it is page All Project then display the white color
   const colorIconCaseProject =
-    (!isScrolled || !isMobile) && isAllProjectPage ? "white" : "#344767";
+    (!isScrolled || !isMobile) && isAllProjectPage && "white";
 
   useEffect(() => {
     const scrollDashboardHeader = () => {

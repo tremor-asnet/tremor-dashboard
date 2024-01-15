@@ -24,8 +24,8 @@ const SalesRevenueChart = ({
 }: RevenueChartProps) => {
   const [setValue] = useState<any>(null);
 
-  const chartValueChange = () => {
-    (v: TEventProps) => setValue(v);
+  const chartValueChange = (v: TEventProps) => {
+    setValue(v);
   };
 
   return (

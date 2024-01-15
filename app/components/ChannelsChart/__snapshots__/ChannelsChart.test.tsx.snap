@@ -3,7 +3,7 @@
 exports[`Testing ChannelsChart component Should match snapshot 1`] = `
 <div>
   <div
-    class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-4 ring-0 border-none relative rounded-xl shadow-md"
+    class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-4 ring-0 border-none relative rounded-xl shadow-md dark:bg-dark-tremor-primary"
   >
     <div
       class="tremor-Flex-root flex w-full justify-between items-start flex-col"
@@ -139,7 +139,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
         >
           <ul>
             <li
-              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary text-xs capitalize tracking-[0.4px]"
+              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary dark:text-white text-xs capitalize tracking-[0.4px]"
             >
               <i
                 class="flex rounded-full w-2 h-2 mr-2 bg-blue-500"
@@ -149,7 +149,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
               </span>
             </li>
             <li
-              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary text-xs capitalize tracking-[0.4px]"
+              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary dark:text-white text-xs capitalize tracking-[0.4px]"
             >
               <i
                 class="flex rounded-full w-2 h-2 mr-2 bg-red-500"
@@ -159,7 +159,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
               </span>
             </li>
             <li
-              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary text-xs capitalize tracking-[0.4px]"
+              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary dark:text-white text-xs capitalize tracking-[0.4px]"
             >
               <i
                 class="flex rounded-full w-2 h-2 mr-2 bg-primary"
@@ -169,7 +169,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
               </span>
             </li>
             <li
-              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary text-xs capitalize tracking-[0.4px]"
+              class="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary dark:text-white text-xs capitalize tracking-[0.4px]"
             >
               <i
                 class="flex rounded-full w-2 h-2 mr-2 bg-gray-500"
@@ -188,7 +188,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <p
-            class="text-tremor-default dark:text-dark-tremor-content font-light text-secondary tracking-[0.4px]"
+            class="text-tremor-default font-light text-secondary dark:text-white tracking-[0.4px]"
           >
             More than
             <span
@@ -215,7 +215,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
               class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <span
-                class="text-xs tracking-[0.35px]"
+                class="text-xs tracking-[0.35px] dark:text-white"
               >
                 read more
               </span>

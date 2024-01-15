@@ -29,7 +29,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
   const { sale_total, sale_social_media, data } = channelChartData;
 
   return (
-    <Card className="p-4 ring-0 border-none relative rounded-xl shadow-md">
+    <Card className="p-4 ring-0 border-none relative rounded-xl shadow-md dark:bg-dark-tremor-primary">
       <Flex className="items-start flex-col">
         <Flex>
           <Flex className="flex-col justify-start items-start">
@@ -65,7 +65,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
                 return (
                   <li
                     key={id}
-                    className="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary text-xs capitalize tracking-[0.4px]">
+                    className="flex items-center h-0 px-[15.5px] py-[9px] mb-4 last:mb-0 text-primary dark:text-white text-xs capitalize tracking-[0.4px]">
                     <i
                       className={`flex rounded-full w-2 h-2 mr-2 bg-${CHANNELS_CHART_COLOR[id]}`}></i>
                     <span>{name}</span>
@@ -77,7 +77,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
         </Flex>
         <Flex className="flex-col md:flex-row">
           <Flex>
-            <Text className="font-light text-secondary tracking-[0.4px]">
+            <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
               More than<span className="font-bold mx-1">{sale_total}</span>
               sales are made using referral marketing, and
               <span className="font-bold mx-1">{sale_social_media}</span>are
@@ -86,7 +86,9 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
           </Flex>
           <Flex className="justify-end w-full md:w-2/3 md: mt-4">
             <Button className="uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5">
-              <span className="text-xs tracking-[0.35px]">read more</span>
+              <span className="text-xs tracking-[0.35px] dark:text-white">
+                read more
+              </span>
             </Button>
           </Flex>
         </Flex>

@@ -15,8 +15,8 @@ type TData = {
 };
 
 type TChannelChartData = {
-  sale_total: number;
-  sale_social_media: number;
+  sale_total: string;
+  sale_social_media: string;
   data: TData[];
 };
 
@@ -85,10 +85,8 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
             </Text>
           </Flex>
           <Flex className="justify-end w-full md:w-2/3 md: mt-4">
-            <Button className="uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5">
-              <span className="text-xs tracking-[0.35px] dark:text-white">
-                read more
-              </span>
+            <Button className="uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:text-white">
+              <span className="text-xs">read more</span>
             </Button>
           </Flex>
         </Flex>

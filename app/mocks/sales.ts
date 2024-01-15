@@ -23,8 +23,8 @@ export const STATISTICS_DATA = [
 ];
 
 export const CHANNELS_CHART_DATA = {
-  sale_total: 1200000,
-  sale_social_media: 700000,
+  sale_total: "1,200,000",
+  sale_social_media: "700,000",
   data: [
     { id: 1, name: "facebook", percent: 15 },
     { id: 2, name: "direct", percent: 20 },

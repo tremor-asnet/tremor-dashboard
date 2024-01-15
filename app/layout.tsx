@@ -10,6 +10,9 @@ import { ThemeProvider } from "@/context/theme";
 // Components
 import ClientRootLayout from "./ClientRootLayout";
 
+// Constants
+import { METADATA } from "@/constants";
+
 export const metadata: Metadata = {
   title: "Tremor Dashboard - System manage budgets, products and users",
   description:
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "https://tremor-dashboard-gamma.vercel.app/",
     images: [
       {
-        url: "/assets/images/home-preview.png",
+        url: METADATA.HOME_PREVIEW,
         width: 1200,
         height: 628,
       },

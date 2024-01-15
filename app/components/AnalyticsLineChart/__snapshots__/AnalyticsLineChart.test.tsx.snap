@@ -479,7 +479,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
               increase in today sales.
             </p>
             <div
-              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary transition-all "
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
               hidden=""
             >
               <div

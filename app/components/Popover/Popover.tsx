@@ -29,7 +29,7 @@ const Popover = ({ content = "", children, className = "" }: PopoverProps) => {
       {children}
       <div
         hidden={!show}
-        className={`min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary transition-all ${className}`}>
+        className={`min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all ${className}`}>
         <div className="text-sm font-light rounded p-3 shadow-md mb-[10px]">
           {content}
         </div>

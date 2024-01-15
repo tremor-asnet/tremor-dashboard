@@ -128,6 +128,8 @@ export const backgroundImage = {
   "gradient-pickled":
     "linear-gradient(195deg, rgb(50, 58, 84), rgb(26, 32, 53))",
   "gradient-arsenic": "linear-gradient(195deg, #42424a, #191919)",
+  "gradient-divider":
+    "linear-gradient(to right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))",
 
   //TODO: Will update when implement light/dark themes
   // light mode

@@ -15,7 +15,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
             class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
           >
             <div
-              class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl"
+              class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl"
             >
               <img
                 alt="Slack Bot-cover"
@@ -162,7 +162,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
           class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
         >
           <div
-            class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-[linear-gradient(195deg,#42424a,#191919)] justify-center rounded-xl"
+            class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl"
           >
             <img
               alt="Slack Bot-cover"

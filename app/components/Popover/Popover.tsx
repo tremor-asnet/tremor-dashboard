@@ -5,9 +5,10 @@ import { useRef, useState, ReactNode } from "react";
 interface PopoverProps {
   children: ReactNode;
   content: string;
+  className?: string;
 }
 
-const Popover = ({ content = "", children }: PopoverProps) => {
+const Popover = ({ content = "", children, className = "" }: PopoverProps) => {
   const [show, setShow] = useState(false);
   const wrapperRef = useRef(null);
 
@@ -28,8 +29,8 @@ const Popover = ({ content = "", children }: PopoverProps) => {
       {children}
       <div
         hidden={!show}
-        className="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 transition-all">
-        <div className="text-sm font-light text-secondary rounded bg-white p-3 shadow-md mb-[10px]">
+        className={`min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all ${className}`}>
+        <div className="text-sm font-light rounded p-3 shadow-md mb-[10px]">
           {content}
         </div>
       </div>

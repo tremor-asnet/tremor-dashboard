@@ -8,6 +8,9 @@ import IconBox from "@/components/IconBox/IconBox";
 //Mocks
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
+// Helpers
+import { formatPercentage } from "@/helpers";
+
 type AnalyticsStatistical = {
   id: string;
   type: string;
@@ -49,7 +52,7 @@ const AnalyticsStatisticCard = ({
             <Flex className="justify-start items-start tracking-[0.4px]">
               {totalAmount && (
                 <Text className="text-few dark:text-few leading-[21px] font-bold">
-                  {`+${totalAmount}`}
+                  {formatPercentage(totalAmount)}
                 </Text>
               )}
               <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">

@@ -3,14 +3,18 @@
 }
 
 .recharts-dot.recharts-line-dot {
-  r: 6;
-}
-
-.recharts-dot.recharts-line-dot {
-  @apply fill-[blue];
   stroke-opacity: inherit;
+  r: 6;
 }
 
 .recharts-legend-wrapper > div {
   @apply justify-start;
+}
+
+path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-[blue];
+}
+
+path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-[gray];
 }

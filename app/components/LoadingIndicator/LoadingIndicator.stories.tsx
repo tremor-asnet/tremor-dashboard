@@ -14,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const LoadingIndicatorDefault: Story = {
-  render: () => <LoadingIndicator width="w-5" height="w-5" />,
+  render: () => <LoadingIndicator width={5} height={5} />,
 };

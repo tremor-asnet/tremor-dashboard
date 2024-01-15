@@ -154,7 +154,7 @@ const SignIn = () => {
         type="submit"
         disabled={isDisableSubmit}>
         {formStatus.isPending ? (
-          <LoadingIndicator width="w-5" height="w-5" />
+          <LoadingIndicator width={5} height={5} />
         ) : (
           <Text className="text-xs font-bold text-white">Sign In</Text>
         )}

@@ -2,14 +2,14 @@ const LoadingIndicator = ({
   width,
   height,
 }: {
-  width: string;
-  height: string;
+  width: number;
+  height: number;
 }) => (
   <div role="status">
     <svg
       aria-hidden="true"
-      className={`${width} ${height} text-transparent animate-spin dark:text-gray-600 fill-white`}
-      viewBox="0 0 100 101"
+      className={`w-${width} h-${height} text-transparent animate-spin dark:text-gray-600 fill-white`}
+      viewBox="0 0 22 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path

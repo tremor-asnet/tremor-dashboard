@@ -15,11 +15,11 @@ import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";
 // Types
 import { User } from "@/types";
 
-// Actionss
+// Actions
 import { authenticate } from "@/actions";
 
 // Helpers
-import { getFormData, isEmpty } from "@/helpers";
+import { getFormData } from "@/helpers";
 
 const SignIn = () => {
   const {
@@ -85,7 +85,6 @@ const SignIn = () => {
         render={({ field }) => (
           <div className="h-[68px] w-full">
             <TextInput
-              tabIndex={0}
               id="email"
               placeholder="Email"
               type="email"

@@ -103,13 +103,12 @@ const SignUp = () => {
             minLength: { value: 4, message: MESSAGES_ERROR.NAME_MIN_LENGTH },
           }}
           render={({ field }) => (
-            <div className="h-[65px] w-full">
+            <div className="h-[70px] w-full">
               <TextInput
                 id="name"
                 placeholder="Name"
                 autoFocus
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
-                tabIndex={0}
                 required
                 {...field}
               />
@@ -132,20 +131,20 @@ const SignUp = () => {
             },
           }}
           render={({ field }) => (
-            <div tabIndex={1} className="h-[68px] w-full">
+            <div className="h-[70px] w-full">
               <TextInput
                 id="email"
                 placeholder="Email"
                 type="email"
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                 required
+                tabIndex={0}
                 {...field}
               />
-              {emailErrorMessage && (
-                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                  {emailErrorMessage}
-                </p>
-              )}
+
+              <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                {emailErrorMessage}
+              </p>
             </div>
           )}
           name="email"
@@ -162,12 +161,12 @@ const SignUp = () => {
           render={({ field }) => (
             <div className="h-[70px] w-full">
               <TextInput
-                tabIndex={2}
                 id="password"
                 placeholder="Password"
                 type="password"
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
                 required
+                tabIndex={1}
                 {...field}
               />
               {passwordErrorMessage && (
@@ -181,19 +180,20 @@ const SignUp = () => {
         />
 
         <div className="flex items-center space-x-3 pt-3">
-          <CheckBox checked={checked} handleCheckBox={handleCheckBox} />
+          <CheckBox
+            checked={checked}
+            handleCheckBox={handleCheckBox}
+            tabIndex={2}
+          />
           <Text className="text-xs xs:text-sm text-primary text-secondary font-normal">
             I agree the{" "}
-            <Link
-              tabIndex={4}
-              href="#"
-              className="no-underline text-primary font-bold">
+            <Link href="#" className="no-underline text-primary font-bold">
               Terms and conditions
             </Link>
           </Text>
         </div>
         <Button
-          tabIndex={5}
+          tabIndex={3}
           aria-disabled={isDisableSubmit}
           type="submit"
           className="w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
@@ -207,7 +207,7 @@ const SignUp = () => {
             Already have an account?
           </Text>
           <Link
-            tabIndex={6}
+            tabIndex={4}
             className="text-primary font-semibold text-xs xs:text-sm ml-1"
             href={ROUTES.SIGN_IN}>
             Sign In

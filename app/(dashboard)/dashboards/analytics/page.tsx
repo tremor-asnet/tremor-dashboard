@@ -29,6 +29,10 @@ import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 // Constants
 import { CHART_SRC } from "@/constants";
 
+export const metadata = {
+  title: "Analytics - Tremor Dashboard",
+};
+
 type TAnalyticsStatistical = {
   id: string;
   type: string;

@@ -15,3 +15,7 @@ export const AVATAR_SRC = {
 export const CHART_SRC = {
   analytics: "/assets/images/analytics/analytics-sales-chart.webp",
 };
+
+export const METADATA = {
+  HOME_PREVIEW: "/assets/images/home-preview.png",
+};

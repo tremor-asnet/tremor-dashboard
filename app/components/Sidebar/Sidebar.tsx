@@ -80,7 +80,7 @@ const SideBar = ({
 
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {
-    if (isBrowser && window.innerWidth <= BREAKPOINTS.LG) {
+    if (isBrowser && window.innerWidth < BREAKPOINTS.XL) {
       toggleSidebar();
     }
   };

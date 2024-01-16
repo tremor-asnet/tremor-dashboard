@@ -128,11 +128,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   Barcelona, Spain
                 </p>
                 <div
-                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
+                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
                   hidden=""
                 >
                   <div
-                    class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                    class="text-sm font-light rounded p-3"
                   >
                     Barcelona, Spain
                   </div>
@@ -268,11 +268,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 Barcelona, Spain
               </p>
               <div
-                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
+                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
                 hidden=""
               >
                 <div
-                  class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                  class="text-sm font-light rounded p-3"
                 >
                   Barcelona, Spain
                 </div>
@@ -462,11 +462,11 @@ exports[`Testing analytics sale chart component testing component analytics info
               Barcelona, Spain
             </p>
             <div
-              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
               hidden=""
             >
               <div
-                class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                class="text-sm font-light rounded p-3"
               >
                 Barcelona, Spain
               </div>

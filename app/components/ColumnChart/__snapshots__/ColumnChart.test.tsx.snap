@@ -463,11 +463,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                   Last Campaign Performance
                 </p>
                 <div
-                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
+                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
                   hidden=""
                 >
                   <div
-                    class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                    class="text-sm font-light rounded p-3"
                   >
                     Last Campaign Performance
                   </div>
@@ -972,11 +972,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 Last Campaign Performance
               </p>
               <div
-                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all "
+                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
                 hidden=""
               >
                 <div
-                  class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                  class="text-sm font-light rounded p-3"
                 >
                   Last Campaign Performance
                 </div>

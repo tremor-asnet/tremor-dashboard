@@ -1,4 +1,5 @@
 import { SalesRevenueChart } from "@/components";
+import ChannelChart from "@/components/ChannelsChart/ChannelsChart";
 import ChannelsChart from "@/components/ChannelsChart/ChannelsChart";
 import SalesByCountry from "@/components/SalesByCountry/SalesByCountry";
 import SalesStatisticCard from "@/components/SalesStatisticCard/SalesStatisticCard";
@@ -26,36 +27,38 @@ const Sales = async () => {
   console.log("saleData: ", saleData.revenue);
 
   return (
-    <Flex className="flex-col">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-x-6 pb-6">
-        {saleData.header_info?.map((item: TSalesStatistical) => (
-          <SalesStatisticCard key={item.type} statisticsData={item} />
-        ))}
-      </div>
-      <div className="w-full grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 py-6">
-        <div className="group flex items-end overflow-hidden rounded-lg shadow-lg">
-          <ChannelsChart
-            title="Channels"
-            channelChartData={saleData.channels}
-          />
+    <div className="grid grid-cols-1 sm:grid-cols-6 gap-5">
+      {saleData.header_info?.map((item: TSalesStatistical) => (
+        <div className="col-span-6 sm:col-span-2" key={item.type}>
+          <SalesStatisticCard statisticsData={item} />
         </div>
-        <div className="group relative flex items-end overflow-hidden rounded-lg shadow-lg md:col-span-2">
-          <SalesRevenueChart
-            revenueType="Revenue"
-            dataChart={REVENUE_CHART_DATA.data}
-          />
-        </div>
+      ))}
+      <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+        <ChannelChart title="Channels" channelChartData={saleData.channels} />
       </div>
-      <SalesByCountry
-        title="Sales by Country"
-        isAnalytics={false}
-        data={analyticsData.sale_by_country}
-      />
-      <TopSellingProducts
-        title="Top Selling Products"
-        data={saleData.top_selling_products}
-      />
-    </Flex>
+      <div className="grid grid-cols-subgrid col-span-6 sm:col-span-3 lg:col-span-4">
+        <SalesRevenueChart
+          dataChart={REVENUE_CHART_DATA.data}
+          revenueType="Revenue"
+        />
+      </div>
+      {/* <div className="grid grid-cols-subgrid col-span-6 lg:col-span-4">
+        <SalesByAge title="Sales by age" data={SALES_AGE_CHART} />
+      </div> */}
+      <div className="col-span-6 lg:col-span-2">
+        <SalesByCountry
+          title="Sales by Country"
+          isAnalytics={false}
+          data={analyticsData.sale_by_country}
+        />
+      </div>
+      <div className="grid grid-cols-subgrid col-span-6">
+        <TopSellingProducts
+          title="Top Selling Products"
+          data={saleData.top_selling_products}
+        />
+      </div>
+    </div>
   );
 };
 

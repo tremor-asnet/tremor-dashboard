@@ -12,7 +12,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <p
-            class="123 text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+            class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
           >
             Revenue
           </p>
@@ -565,7 +565,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
         <p
-          class="123 text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
+          class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
         >
           Revenue
         </p>

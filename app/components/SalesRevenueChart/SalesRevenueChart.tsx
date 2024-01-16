@@ -28,7 +28,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   return (
     <Card>
       <Flex>
-        <Text className="123 text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
+        <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
           {revenueType}
         </Text>
         <Popover

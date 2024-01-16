@@ -85,9 +85,15 @@ const DashboardHeader = ({
           }`}
           onClick={toggleSidebar}>
           {isCollapseSidebar ? (
-            <MdMenuOpen className="text-2xl" color={colorIconCaseProject} />
+            <MdMenuOpen
+              className="text-2xl text-secondary dark:text-white"
+              color={colorIconCaseProject}
+            />
           ) : (
-            <MdMenu className="text-2xl" color={colorIconCaseProject} />
+            <MdMenu
+              className="text-2xl text-secondary dark:text-white"
+              color={colorIconCaseProject}
+            />
           )}
         </div>
         <Breadcrumb isScrolled={isScrolled} />

@@ -24,7 +24,7 @@ const Profile = async () => {
     <>
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
-        <Card className="dark:bg-dark-tremor-primary">
+        <Card className="dark:bg-dark-tremor-primary ring-0">
           <Flex className="flex-col md:flex-row items-start md:items-center">
             {/* Header */}
             <ProfileInfo

@@ -370,7 +370,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
                         </g>
                       </g>
                       <g
-                        class="recharts-layer recharts-line stroke-blue-500"
+                        class="recharts-layer recharts-line stroke-gray-500"
                       >
                         <path
                           class="recharts-curve recharts-line-curve"
@@ -404,44 +404,6 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
                         />
                       </g>
                     </svg>
-                    <div
-                      class="recharts-legend-wrapper"
-                      style="position: absolute; width: 90px; height: 60px; left: 5px; top: 5px;"
-                    >
-                      <div
-                        class="flex items-center justify-end"
-                      >
-                        <ol
-                          class="tremor-Legend-root relative overflow-hidden"
-                        >
-                          <div
-                            class="h-full flex flex-wrap"
-                            tabindex="0"
-                          >
-                            <li
-                              class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
-                            >
-                              <svg
-                                class="flex-none text-blue-500 h-2 w-2 mr-1.5 opacity-100"
-                                fill="currentColor"
-                                viewBox="0 0 8 8"
-                              >
-                                <circle
-                                  cx="4"
-                                  cy="4"
-                                  r="4"
-                                />
-                              </svg>
-                              <p
-                                class="whitespace-nowrap truncate text-tremor-default text-tremor-content group-hover:text-tremor-content-emphasis dark:text-dark-tremor-content opacity-100 dark:group-hover:text-dark-tremor-content-emphasis"
-                              >
-                                Mobile apps
-                              </p>
-                            </li>
-                          </div>
-                        </ol>
-                      </div>
-                    </div>
                     <div
                       class="recharts-tooltip-wrapper"
                       role="dialog"

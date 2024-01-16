@@ -150,7 +150,7 @@ const SideBar = ({
 
                   const menuItemClass = [
                     `${itemBackground} `,
-                    `!p-0 leading-[26px] mt-1 rounded-md `,
+                    `!p-0 leading-[26px] mt-1 rounded-md text-center`,
                     `${transitionBgClass}`,
                   ].join("");
                   const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
@@ -161,8 +161,11 @@ const SideBar = ({
                       key={label}
                       onClick={handleClickSidebarItem}>
                       <Link className={linkClass} href={href}>
-                        <span>{content}</span>
-                        <span className={`${hiddenOpenClass}`}>{label}</span>
+                        <span className="w-5">{content}</span>
+                        <span
+                          className={`${hiddenOpenClass} w-full text-start`}>
+                          {label}
+                        </span>
                       </Link>
                     </ListItem>
                   );
@@ -170,19 +173,17 @@ const SideBar = ({
                 <ListItem className="leading-[26px] relative !p-0 mt-1">
                   <form
                     action={onSignOut}
-                    className="w-full h-[50px] flex items-center font-normal relative">
-                    <span
-                      className={`absolute ${
-                        isCollapse ? "w-full text-center" : "left-6"
-                      }`}>
-                      L
-                    </span>
-                    <LogoutButton
-                      className={`${
-                        isCollapse && "xl:hidden"
-                      } min-h-[44px] w-full flex gap-5 font-normal z-10 py-3 pl-14 pr-6`}
-                      handleToggleLoadingOverlay={handleToggleLoadingOverlay}
-                    />
+                    className="w-full h-[50px] flex items-center relative">
+                    <Flex
+                      className={`w-full font-normal py-3 px-6 ${centerOpenClass} gap-5`}>
+                      <span className="pl-1">L</span>
+                      <LogoutButton
+                        className={`${
+                          isCollapse && "xl:hidden"
+                        } pl-2 w-full font-normal z-10 text-start`}
+                        handleToggleLoadingOverlay={handleToggleLoadingOverlay}
+                      />
+                    </Flex>
                   </form>
                 </ListItem>
               </List>
@@ -203,7 +204,7 @@ const SideBar = ({
               `!p-0 leading-[26px] mt-1 rounded-md `,
               `${transitionBgClass}`,
             ].join("");
-            const linkClass = `font-normal w-full py-3 px-8 ${centerOpenClass}`;
+            const linkClass = `font-normal w-full py-3 px-7 ${centerOpenClass}`;
 
             return (
               <li
@@ -212,7 +213,7 @@ const SideBar = ({
                 onClick={handleClickSidebarItem}>
                 <Link className={linkClass} href={href}>
                   <span>{content}</span>
-                  <span className={`${hiddenOpenClass}`}>{label}</span>
+                  <span className={`${hiddenOpenClass} pl-2`}>{label}</span>
                 </Link>
               </li>
             );

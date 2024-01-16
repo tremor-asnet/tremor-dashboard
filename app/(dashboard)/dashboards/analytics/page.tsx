@@ -56,7 +56,7 @@ const Analytics = async () => {
     [daily_sale_statistic, performance_statistic] || LINE_CHART_DATA;
 
   return (
-    <Flex className="flex-col flex-wrap justify-start">
+    <Flex className="flex-col flex-wrap justify-start analytics-page">
       {/* Sales card  */}
       <SalesByCountry
         title="Sales by Country"

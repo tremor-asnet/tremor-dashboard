@@ -7,20 +7,15 @@
   @apply stroke-none fill-[white] font-thin text-sm;
 }
 
- /* TODO: Check style line chart */
-/* .recharts-curve.recharts-line-curve,
+.analytics-page .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
   @apply stroke-white font-thin;
-} */
+}
 
 .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
-  @apply stroke-[4];
+  @apply stroke-[3];
 }
-
-/* .recharts-legend-wrapper {
-  @apply hidden;
-} */
 
 .recharts-pie {
   @apply stroke-2;

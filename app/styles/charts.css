@@ -7,10 +7,11 @@
   @apply stroke-none fill-[white] font-thin text-sm;
 }
 
-.recharts-curve.recharts-line-curve,
+ /* TODO: Check style line chart */
+/* .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
   @apply stroke-white font-thin;
-}
+} */
 
 .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {

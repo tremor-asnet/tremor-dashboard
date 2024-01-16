@@ -76,6 +76,7 @@ export const color = {
       title: "#fff",
       romance: "#ffffffcc",
       seldom: "#1a73e8",
+      slate: "#7b809a",
     },
   },
 };

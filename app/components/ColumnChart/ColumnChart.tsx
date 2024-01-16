@@ -59,7 +59,10 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
           </div>
           <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
           <Flex className="justify-start">
-            <FaRegClock size={12} color={"#ffffffcc"} />
+            <FaRegClock
+              size={12}
+              className="text-secondary dark:text-dark-romance"
+            />
             <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1">
               {modified}
             </Text>

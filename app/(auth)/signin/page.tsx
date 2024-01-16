@@ -148,12 +148,12 @@ const SignIn = () => {
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
-        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#98989a,#969698)] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] py-0 mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
         size="xs"
         type="submit"
         disabled={isDisableSubmit}>
         {formStatus.isPending ? (
-          <LoadingIndicator width={6} height={6} />
+          <LoadingIndicator width={7} height={7} />
         ) : (
           <Text className="text-xs font-bold text-white">Sign In</Text>
         )}

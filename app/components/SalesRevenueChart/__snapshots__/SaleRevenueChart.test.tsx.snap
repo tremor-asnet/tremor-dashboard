@@ -13,9 +13,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         >
           <p
             class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
-          >
-            Revenue
-          </p>
+          />
           <div
             class="w-fit h-fit relative flex justify-center"
           >
@@ -566,9 +564,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
       >
         <p
           class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-bold tracking-[0.12px]"
-        >
-          Revenue
-        </p>
+        />
         <div
           class="w-fit h-fit relative flex justify-center"
         >

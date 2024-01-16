@@ -18,3 +18,7 @@ path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots
 path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
   @apply fill-[gray];
 }
+
+.sale-page .recharts-text.recharts-cartesian-axis-tick-value {
+  @apply fill-[gray];
+}

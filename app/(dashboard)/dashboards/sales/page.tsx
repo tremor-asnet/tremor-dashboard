@@ -30,7 +30,7 @@ const Sales = async () => {
   const analyticsData = await getAnalytics();
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-6 gap-5">
+    <div className="grid grid-cols-1 sm:grid-cols-6 gap-5 sale-page">
       {saleData.header_info?.map((item: TSalesStatistical) => (
         <div className="col-span-6 sm:col-span-2" key={item.type}>
           <SalesStatisticCard statisticsData={item} />

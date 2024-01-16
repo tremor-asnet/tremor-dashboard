@@ -21,3 +21,13 @@ export type TRevenueChart = {
   parameterFacebook?: number;
   parameterGoogle?: number;
 };
+
+export type SalesByAgeDataProps = {
+  value: number;
+  ageRange: string;
+};
+
+export type SalesByAgeProps = {
+  data: SalesByAgeDataProps[];
+  title: string;
+};

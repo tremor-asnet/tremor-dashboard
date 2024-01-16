@@ -120,3 +120,25 @@ export const REVENUE_CHART_DATA = {
     },
   ],
 };
+export const SALES_AGE_CHART = [
+  {
+    value: 34,
+    ageRange: "16-20",
+  },
+  {
+    value: 23,
+    ageRange: "21-25",
+  },
+  {
+    value: 45,
+    ageRange: "26-30",
+  },
+  {
+    value: 53,
+    ageRange: "36-40",
+  },
+  {
+    value: 26,
+    ageRange: "40+",
+  },
+];

@@ -17,5 +17,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SalesRevenueChartDefault: Story = {
-  render: () => <SalesRevenueChart dataChart={REVENUE_CHART_DATA.data} />,
+  render: () => (
+    <SalesRevenueChart
+      revenueType="Revenue"
+      dataChart={REVENUE_CHART_DATA.data}
+    />
+  ),
 };

@@ -20,7 +20,7 @@ type TData = {
 type TChannelChartData = {
   sale_total: number;
   sale_social_media: number;
-  data: TData[];
+  channels: TData[];
 };
 
 interface IChannelChartData {
@@ -29,7 +29,7 @@ interface IChannelChartData {
 }
 
 const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
-  const { sale_total, sale_social_media, data } = channelChartData;
+  const { sale_total, sale_social_media, channels } = channelChartData;
 
   return (
     <Card className="p-4 ring-0 border-none relative rounded-xl shadow-md dark:bg-dark-tremor-primary">
@@ -52,7 +52,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
           <Flex className="p-4 w-7/12">
             <DonutChart
               className="h-[200px]"
-              data={data}
+              data={channels}
               index="name"
               category="percent"
               variant="pie"
@@ -63,7 +63,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
           </Flex>
           <Flex className="w-5/12">
             <ul>
-              {data.map(item => {
+              {channels?.map(item => {
                 const { id, name } = item;
                 return (
                   <li

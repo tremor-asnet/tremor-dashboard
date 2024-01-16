@@ -1,20 +1,17 @@
 // Components
-import { SalesRevenueChart } from "@/components";
-import ChannelChart from "@/components/ChannelsChart/ChannelsChart";
-import SalesByAge from "@/components/SalesByAge";
-import SalesByCountry from "@/components/SalesByCountry/SalesByCountry";
-import SalesStatisticCard from "@/components/SalesStatisticCard/SalesStatisticCard";
-import TopSellingProducts from "@/components/TopSellingProducts/TopSellingProducts";
-
-// Mocks
 import {
-  CHANNELS_CHART_DATA,
-  REVENUE_CHART_DATA,
-  SALES_AGE_CHART,
-  SALES_BY_COUNTRY,
-  STATISTICS_DATA,
-  TOP_SELLING_PRODUCTS_DATA,
-} from "@/mocks";
+  SalesRevenueChart,
+  ChannelChart,
+  SalesByAge,
+  SalesByCountry,
+  SalesStatisticCard,
+  TopSellingProducts,
+} from "@/components";
+
+import { REVENUE_CHART_DATA } from "@/mocks";
+
+// Services
+import { getAnalytics, getSales } from "@/services";
 
 type TSalesStatistical = {
   id: string;
@@ -28,34 +25,40 @@ export const metadata = {
   title: "Sales - Tremor Dashboard",
 };
 
-const Sales = () => {
+const Sales = async () => {
+  const saleData = await getSales();
+  const analyticsData = await getAnalytics();
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-6 gap-5">
-      {STATISTICS_DATA.map((item: TSalesStatistical) => (
+      {saleData.header_info?.map((item: TSalesStatistical) => (
         <div className="col-span-6 sm:col-span-2" key={item.type}>
           <SalesStatisticCard statisticsData={item} />
         </div>
       ))}
       <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-        <ChannelChart title="Channels" channelChartData={CHANNELS_CHART_DATA} />
+        <ChannelChart title="Channels" channelChartData={saleData.channels} />
       </div>
       <div className="grid grid-cols-subgrid col-span-6 sm:col-span-3 lg:col-span-4">
-        <SalesRevenueChart dataChart={REVENUE_CHART_DATA.data} />
+        <SalesRevenueChart
+          dataChart={REVENUE_CHART_DATA.data}
+          revenueType="Revenue"
+        />
       </div>
       <div className="grid grid-cols-subgrid col-span-6 lg:col-span-4">
-        <SalesByAge title="Sales by age" data={SALES_AGE_CHART} />
+        <SalesByAge title="Sales by age" data={saleData.sales_by_age} />
       </div>
       <div className="col-span-6 lg:col-span-2">
         <SalesByCountry
           title="Sales by Country"
           isAnalytics={false}
-          data={SALES_BY_COUNTRY}
+          data={analyticsData.sale_by_country}
         />
       </div>
       <div className="grid grid-cols-subgrid col-span-6">
         <TopSellingProducts
           title="Top Selling Products"
-          data={TOP_SELLING_PRODUCTS_DATA}
+          data={saleData.top_selling_products}
         />
       </div>
     </div>

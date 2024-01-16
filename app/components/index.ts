@@ -18,3 +18,8 @@ export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
 export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as SideBar } from "./Sidebar/Sidebar";
 export { default as SalesRevenueChart } from "./SalesRevenueChart/SalesRevenueChart";
+export { default as ChannelChart } from "./ChannelsChart/ChannelsChart";
+export { default as SalesByAge } from "./SalesByAge/index";
+export { default as SalesByCountry } from "./SalesByCountry/SalesByCountry";
+export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatisticCard";
+export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";

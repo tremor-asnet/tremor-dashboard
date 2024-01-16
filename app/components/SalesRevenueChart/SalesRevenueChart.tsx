@@ -15,13 +15,10 @@ import "@/styles/sales.css";
 
 interface RevenueChartProps {
   dataChart: TRevenueChart[];
-  title?: string;
+  revenueType: string;
 }
 
-const SalesRevenueChart = ({
-  dataChart,
-  title = "Revenue",
-}: RevenueChartProps) => {
+const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   const [setValue] = useState<any>(null);
 
   const chartValueChange = (v: TEventProps) => {
@@ -32,7 +29,7 @@ const SalesRevenueChart = ({
     <Card className="dark:bg-dark-tremor-primary">
       <Flex>
         <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
-          {title}
+          {revenueType}
         </Text>
         <Popover
           content="See which ads perform better"
@@ -47,7 +44,7 @@ const SalesRevenueChart = ({
       <LineChart
         className="h-72 mt-2"
         data={dataChart}
-        index="date"
+        index="month"
         categories={["Facebook Ads", "Google Ads"]}
         colors={["indigo", "neutral"]}
         yAxisWidth={30}

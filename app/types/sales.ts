@@ -7,17 +7,17 @@ export type TSalesStatistic = {
 };
 
 export type TTopSellingProducts = {
-  product_id: number;
+  productId: number;
   name: string;
   orders: string;
   value: string;
-  ads_spent: string;
+  adsSpent: string;
   refunds: number;
-  refunds_type: string;
+  refundsType: string;
 };
 
 export type TRevenueChart = {
-  date: string;
+  month: string;
   parameterFacebook?: number;
   parameterGoogle?: number;
 };

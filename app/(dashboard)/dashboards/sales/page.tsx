@@ -1,13 +1,17 @@
-import { SalesRevenueChart } from "@/components";
-import ChannelChart from "@/components/ChannelsChart/ChannelsChart";
-import ChannelsChart from "@/components/ChannelsChart/ChannelsChart";
-import SalesByCountry from "@/components/SalesByCountry/SalesByCountry";
-import SalesStatisticCard from "@/components/SalesStatisticCard/SalesStatisticCard";
-import TopSellingProducts from "@/components/TopSellingProducts/TopSellingProducts";
-import { CHANNELS_CHART_DATA, REVENUE_CHART_DATA } from "@/mocks";
-import { getAnalytics } from "@/services";
-import { getSales } from "@/services/salesServices";
-import { Flex } from "@tremor/react";
+// Components
+import {
+  SalesRevenueChart,
+  ChannelChart,
+  SalesByAge,
+  SalesByCountry,
+  SalesStatisticCard,
+  TopSellingProducts,
+} from "@/components";
+
+import { REVENUE_CHART_DATA } from "@/mocks";
+
+// Services
+import { getAnalytics, getSales } from "@/services";
 
 type TSalesStatistical = {
   id: string;
@@ -24,7 +28,6 @@ export const metadata = {
 const Sales = async () => {
   const saleData = await getSales();
   const analyticsData = await getAnalytics();
-  console.log("saleData: ", saleData.revenue);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-6 gap-5">
@@ -42,9 +45,9 @@ const Sales = async () => {
           revenueType="Revenue"
         />
       </div>
-      {/* <div className="grid grid-cols-subgrid col-span-6 lg:col-span-4">
-        <SalesByAge title="Sales by age" data={SALES_AGE_CHART} />
-      </div> */}
+      <div className="grid grid-cols-subgrid col-span-6 lg:col-span-4">
+        <SalesByAge title="Sales by age" data={saleData.sales_by_age} />
+      </div>
       <div className="col-span-6 lg:col-span-2">
         <SalesByCountry
           title="Sales by Country"

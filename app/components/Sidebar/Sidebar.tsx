@@ -24,6 +24,7 @@ import { Avatar, LoadingIndicator, CustomImage } from "@/components";
 
 // Constants
 import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
+import { BREAKPOINTS } from "@/constants/breakpoints";
 
 // Styles
 import "./styles.css";
@@ -79,7 +80,7 @@ const SideBar = ({
 
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {
-    if (isBrowser && window.innerWidth <= 768) {
+    if (isBrowser && window.innerWidth <= BREAKPOINTS.LG) {
       toggleSidebar();
     }
   };

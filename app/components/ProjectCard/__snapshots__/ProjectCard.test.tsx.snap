@@ -98,15 +98,20 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                 <div
                   class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
                 >
-                  <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                  />
-                  <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                  />
-                  <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                  />
+                  <svg
+                    class="text-secondary dark:text-dark-romance"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 192 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -245,15 +250,20 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
               <div
                 class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
               >
-                <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                />
-                <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                />
-                <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content w-[4px] h-[4px] rounded-full bg-secondary"
-                />
+                <svg
+                  class="text-secondary dark:text-dark-romance"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 192 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                  />
+                </svg>
               </div>
             </div>
           </div>

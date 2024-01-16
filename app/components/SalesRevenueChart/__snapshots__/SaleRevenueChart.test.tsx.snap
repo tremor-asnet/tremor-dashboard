@@ -6,7 +6,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+        class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -26,7 +26,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
                 class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <svg
-                  class="text-xs"
+                  class="text-xs text-secondary"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
@@ -559,7 +559,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+      class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -579,7 +579,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
               class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <svg
-                class="text-xs"
+                class="text-xs text-secondary"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"

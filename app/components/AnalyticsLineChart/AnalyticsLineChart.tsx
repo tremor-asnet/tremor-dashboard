@@ -14,6 +14,7 @@ import { FaRegClock } from "react-icons/fa";
 import "@/styles/charts.css";
 
 //Types
+import { type Color } from "@tremor/react";
 import { TEventProps, CHART_TYPE, LINE_CHART_DATA } from "@/types";
 
 enum CHART_CATEGORIES {
@@ -28,6 +29,7 @@ interface LineChartProps {
   subTitle: string;
   scheduleText: string;
   isDailyChart: boolean;
+  colors?: Color[];
   descValue?: string;
 }
 
@@ -38,6 +40,7 @@ const AnalyticsLineChart = ({
   subTitle,
   scheduleText,
   descValue,
+  colors = [],
   isDailyChart = true,
 }: LineChartProps) => {
   const [setValue] = useState<any>(null);
@@ -64,8 +67,10 @@ const AnalyticsLineChart = ({
                       : CHART_CATEGORIES.MOBILE,
                   ]}
                   yAxisWidth={30}
+                  colors={colors}
                   showAnimation={true}
                   onValueChange={(v: TEventProps) => setValue(v)}
+                  showLegend={false}
                 />
               </Card>
             </div>

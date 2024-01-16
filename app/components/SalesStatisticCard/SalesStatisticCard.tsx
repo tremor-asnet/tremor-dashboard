@@ -37,24 +37,24 @@ const SalesStatisticCard = ({
   };
 
   return (
-    <Card className="ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+    <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
         <Flex className="flex-col w-2/3">
           <Flex className="flex-col justify-start items-start">
-            <Text className="text-md text-secondary font-semibold tracking-[0.4px]">
+            <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
               {type}
             </Text>
-            <Text className="text-primary text-xl leading-[33px] font-bold">
+            <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold">
               {amount}
             </Text>
           </Flex>
           <Flex className="justify-start items-start">
             {totalAmount && (
-              <Text className="text-few leading-[22px] font-bold">
+              <Text className="text-few dark:text-few leading-[22px] font-bold">
                 {`+${totalAmount}`}
               </Text>
             )}
-            <Text className="ml-1 text-secondary leading-[21px] tracking-[0.4px]">
+            <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">
               {duration}
             </Text>
           </Flex>
@@ -62,7 +62,7 @@ const SalesStatisticCard = ({
         <Flex
           className="justify-end items-end w-1/3 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
-          <Text className="!text-xs leading-[21px] tracking-[0.4px]">
+          <Text className="!text-xs text-secondary dark:text-secondary leading-[21px] tracking-[0.4px]">
             {currentSalesDate}
           </Text>
         </Flex>

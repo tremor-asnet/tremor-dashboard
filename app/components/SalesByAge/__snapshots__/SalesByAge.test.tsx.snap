@@ -13,7 +13,7 @@ exports[`SalesByAge components Should match snapshot 1`] = `
     </span>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+        class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary"
       >
         <p
           class="font-medium text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis"
@@ -372,7 +372,7 @@ exports[`SalesByAge components Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6"
+      class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary"
     >
       <p
         class="font-medium text-tremor-title text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis"

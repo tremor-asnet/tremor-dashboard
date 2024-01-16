@@ -29,7 +29,7 @@ const SalesRevenueChart = ({
   };
 
   return (
-    <Card>
+    <Card className="dark:bg-dark-tremor-primary">
       <Flex>
         <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
           {title}
@@ -40,7 +40,7 @@ const SalesRevenueChart = ({
           <Button
             className="!rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
             variant="secondary">
-            <MdOutlinePriorityHigh className="text-xs" />
+            <MdOutlinePriorityHigh className="text-xs text-secondary" />
           </Button>
         </Popover>
       </Flex>

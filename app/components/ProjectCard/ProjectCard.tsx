@@ -3,6 +3,7 @@
 //Libs
 import { useState } from "react";
 import { Card, Text, Flex, Title, Button } from "@tremor/react";
+import { FaEllipsisV } from "react-icons/fa";
 
 //Components
 import { Avatar, CustomImage } from "@/components";
@@ -86,9 +87,7 @@ const ProjectCard = ({
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
                 onClick={() => handleToggleAction(projectData.id)}>
-                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
-                <Text className="w-[4px] h-[4px] rounded-full bg-secondary" />
+                <FaEllipsisV className="text-secondary dark:text-dark-romance" />
               </Flex>
               {openActionProject && (
                 <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white rounded-md shadow-md">

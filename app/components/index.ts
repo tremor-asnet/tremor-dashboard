@@ -1,10 +1,8 @@
 export { default as Avatar } from "./Avatar/Avatar";
 export { default as CheckBox } from "./Checkbox/Checkbox";
-export { default as Input } from "./FormInput/FormInput";
 export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
-export { default as Tabs } from "./Tabs/Tabs";
 export { default as Popover } from "./Popover/Popover";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProjectInfoCard } from "./ProjectInfoCard/ProjectInfoCard";

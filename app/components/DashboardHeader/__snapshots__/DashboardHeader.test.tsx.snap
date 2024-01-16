@@ -15,7 +15,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             class="block xl:hidden cursor-pointer mr-2"
           >
             <svg
-              class="text-2xl"
+              class="text-2xl text-secondary dark:text-white"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -169,7 +169,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           class="block xl:hidden cursor-pointer mr-2"
         >
           <svg
-            class="text-2xl"
+            class="text-2xl text-secondary dark:text-white"
             fill="currentColor"
             height="1em"
             stroke="currentColor"

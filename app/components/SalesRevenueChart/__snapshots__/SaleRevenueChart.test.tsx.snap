@@ -51,11 +51,11 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
               </span>
             </button>
             <div
-              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
               hidden=""
             >
               <div
-                class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+                class="text-sm font-light rounded p-3"
               >
                 See which ads perform better
               </div>
@@ -604,11 +604,11 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
             </span>
           </button>
           <div
-            class="min-w-fit w-[200px] h-fit absolute bottom-[100%] z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
+            class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]"
             hidden=""
           >
             <div
-              class="text-sm font-light rounded p-3 shadow-md mb-[10px]"
+              class="text-sm font-light rounded p-3"
             >
               See which ads perform better
             </div>

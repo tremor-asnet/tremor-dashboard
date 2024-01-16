@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, LineChart, Flex, Button, Text, Title } from "@tremor/react";
+import { Card, LineChart, Flex, Button, Text } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 import { useState } from "react";
 

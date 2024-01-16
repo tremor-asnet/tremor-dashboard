@@ -25,7 +25,7 @@ export const STATISTICS_DATA = [
 export const CHANNELS_CHART_DATA = {
   sale_total: 1200000,
   sale_social_media: 700000,
-  data: [
+  channels: [
     { id: 1, name: "facebook", percent: 15 },
     { id: 2, name: "direct", percent: 20 },
     { id: 3, name: "organic", percent: 10 },
@@ -85,47 +85,47 @@ export const REVENUE_CHART_DATA = {
   title: "Revenue",
   data: [
     {
-      date: "Apr",
+      month: "Apr",
       "Facebook Ads": 50,
       "Google Ads": 0,
     },
     {
-      date: "May",
+      month: "May",
       "Facebook Ads": 100,
       "Google Ads": 30,
     },
     {
-      date: "Jun",
+      month: "Jun",
       "Facebook Ads": 200,
       "Google Ads": 40,
     },
     {
-      date: "Jul",
+      month: "Jul",
       "Facebook Ads": 200,
       "Google Ads": 110,
     },
     {
-      date: "Aug",
+      month: "Aug",
       "Facebook Ads": 400,
       "Google Ads": 150,
     },
     {
-      date: "Sep",
+      month: "Sep",
       "Facebook Ads": 340,
       "Google Ads": 210,
     },
     {
-      date: "Oct",
+      month: "Oct",
       "Facebook Ads": 500,
       "Google Ads": 290,
     },
     {
-      date: "Nov",
+      month: "Nov",
       "Facebook Ads": 450,
       "Google Ads": 250,
     },
     {
-      date: "Dec",
+      month: "Dec",
       "Facebook Ads": 700,
       "Google Ads": 290,
     },

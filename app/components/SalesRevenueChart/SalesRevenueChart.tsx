@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, LineChart, Flex, Button, Text } from "@tremor/react";
+import { Card, LineChart, Flex, Button, Text, Title } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ import "@/styles/sales.css";
 
 interface RevenueChartProps {
   dataChart: TRevenueChart[];
-  revenueType?: string;
+  revenueType: string;
 }
 
 const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
@@ -28,7 +28,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   return (
     <Card>
       <Flex>
-        <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
+        <Text className="123 text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
           {revenueType}
         </Text>
         <Popover
@@ -44,7 +44,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
       <LineChart
         className="h-72 mt-2"
         data={dataChart}
-        index="date"
+        index="month"
         categories={["Facebook Ads", "Google Ads"]}
         colors={["indigo", "neutral"]}
         yAxisWidth={30}

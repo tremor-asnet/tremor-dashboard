@@ -17,7 +17,7 @@ export type TTopSellingProducts = {
 };
 
 export type TRevenueChart = {
-  date: string;
+  month: string;
   parameterFacebook?: number;
   parameterGoogle?: number;
 };

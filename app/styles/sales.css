@@ -1,0 +1,24 @@
+.recharts-curve.recharts-line-curve {
+  @apply stroke-[3];
+}
+
+.recharts-dot.recharts-line-dot {
+  stroke-opacity: inherit;
+  r: 6;
+}
+
+.recharts-legend-wrapper > div {
+  @apply justify-start;
+}
+
+path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-[blue];
+}
+
+path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-[gray];
+}
+
+.sale-page .recharts-text.recharts-cartesian-axis-tick-value {
+  @apply fill-[gray];
+}

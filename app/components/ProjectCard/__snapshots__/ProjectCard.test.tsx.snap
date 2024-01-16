@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ProjectCard component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="antialiased items-center justify-between pb-1"
+      >
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
+          >
+            <div
+              class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled"
+            >
+              <img
+                alt="Slack Bot-cover"
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="60"
+                src="https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg"
+                style="color: transparent;"
+                width="60"
+              />
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center pl-[90px] mb-6 mt-1 relative"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-col items-start justify-start"
+              >
+                <p
+                  class="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5"
+                >
+                  Slack Bot
+                </p>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
+                >
+                  <div
+                    class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                  >
+                    <img
+                      alt="Avatar extra small"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="20"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                      srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                      style="color: transparent;"
+                      width="20"
+                    />
+                  </div>
+                  <div
+                    class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                  >
+                    <img
+                      alt="Avatar extra small"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="20"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                      srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                      style="color: transparent;"
+                      width="20"
+                    />
+                  </div>
+                  <div
+                    class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                  >
+                    <img
+                      alt="Avatar extra small"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="20"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                      srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                      style="color: transparent;"
+                      width="20"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tremor-Flex-root flex items-center flex-col w-auto justify-end"
+              >
+                <div
+                  class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                >
+                  <svg
+                    class="text-secondary dark:text-dark-romance"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 192 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-tremor-default text-md text-secondary my-4 font-light dark:text-dark-tremor-content-romance"
+            >
+              If everything I did failed - which it doesn't, I think that it actually succeeds.
+            </p>
+            <div
+              class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+            />
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center my-4"
+            >
+              <div>
+                <p
+                  class="text-tremor-default text-primary font-semibold dark:text-dark-tremor-content-title"
+                >
+                  3
+                </p>
+                <p
+                  class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+                >
+                  Participants
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-tremor-default text-primary font-semibold dark:text-dark-tremor-content-title"
+                >
+                  03.02.22
+                </p>
+                <p
+                  class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+                >
+                  Due date
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="antialiased items-center justify-between pb-1"
+    >
+      <div
+        class="flex items-center"
+      >
+        <div
+          class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
+        >
+          <div
+            class="tremor-Flex-root flex flex-row items-center absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled"
+          >
+            <img
+              alt="Slack Bot-cover"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="60"
+              src="https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/logo-slack.0aa818de.svg"
+              style="color: transparent;"
+              width="60"
+            />
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center pl-[90px] mb-6 mt-1 relative"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-col items-start justify-start"
+            >
+              <p
+                class="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5"
+              >
+                Slack Bot
+              </p>
+              <div
+                class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
+              >
+                <div
+                  class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                >
+                  <img
+                    alt="Avatar extra small"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="20"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                    style="color: transparent;"
+                    width="20"
+                  />
+                </div>
+                <div
+                  class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                >
+                  <img
+                    alt="Avatar extra small"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="20"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                    style="color: transparent;"
+                    width="20"
+                  />
+                </div>
+                <div
+                  class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px]"
+                >
+                  <img
+                    alt="Avatar extra small"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="20"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-xs.webp&w=3840&q=75 3840w"
+                    style="color: transparent;"
+                    width="20"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tremor-Flex-root flex items-center flex-col w-auto justify-end"
+            >
+              <div
+                class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+              >
+                <svg
+                  class="text-secondary dark:text-dark-romance"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 192 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-tremor-default text-md text-secondary my-4 font-light dark:text-dark-tremor-content-romance"
+          >
+            If everything I did failed - which it doesn't, I think that it actually succeeds.
+          </p>
+          <div
+            class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+          />
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center my-4"
+          >
+            <div>
+              <p
+                class="text-tremor-default text-primary font-semibold dark:text-dark-tremor-content-title"
+              >
+                3
+              </p>
+              <p
+                class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+              >
+                Participants
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-tremor-default text-primary font-semibold dark:text-dark-tremor-content-title"
+              >
+                03.02.22
+              </p>
+              <p
+                class="text-tremor-default dark:text-dark-tremor-content text-secondary font-normal"
+              >
+                Due date
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

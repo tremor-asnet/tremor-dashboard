@@ -481,12 +481,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="tremor-Flex-root flex w-full flex-row items-center justify-start"
             >
               <svg
-                color="#ffffffcc"
+                class="text-secondary dark:text-dark-romance"
                 fill="currentColor"
                 height="12"
                 stroke="currentColor"
                 stroke-width="0"
-                style="color: rgba(255, 255, 255, 0.8);"
                 viewBox="0 0 512 512"
                 width="12"
                 xmlns="http://www.w3.org/2000/svg"
@@ -990,12 +989,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
             class="tremor-Flex-root flex w-full flex-row items-center justify-start"
           >
             <svg
-              color="#ffffffcc"
+              class="text-secondary dark:text-dark-romance"
               fill="currentColor"
               height="12"
               stroke="currentColor"
               stroke-width="0"
-              style="color: rgba(255, 255, 255, 0.8);"
               viewBox="0 0 512 512"
               width="12"
               xmlns="http://www.w3.org/2000/svg"

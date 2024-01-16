@@ -6,7 +6,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
+        class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -561,7 +561,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
+      class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1170,7 +1170,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
 exports[`Testing analytics sale chart component testing component analytics sales card not render when isAnalytics is false 1`] = `
 <div>
   <div
-    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
   >
     <div
       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1620,7 +1620,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
 exports[`Testing analytics sale chart component testing component analytics sales card render when isAnalytics is false 1`] = `
 <div>
   <div
-    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
   >
     <div
       class="tremor-Flex-root flex w-full flex-row justify-between items-center"

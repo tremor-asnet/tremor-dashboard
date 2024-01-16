@@ -18,9 +18,9 @@
   @apply stroke-[4];
 }
 
-.recharts-legend-wrapper {
+/* .recharts-legend-wrapper {
   @apply hidden;
-}
+} */
 
 .recharts-pie {
   @apply stroke-2;

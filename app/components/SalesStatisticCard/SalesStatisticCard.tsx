@@ -9,11 +9,15 @@ import { Card, Text, Flex, Button } from "@tremor/react";
 //Types
 import { TSalesStatistic } from "@/types";
 
-//Constans
+//Constants
 import { ITEM_ACTION_SALES_DATE } from "@/constants/commons";
+import { SALES_STATISTIC_TYPE } from "@/constants/sales";
 
 //Mocks
 import { STATISTICS_DATA } from "@/mocks/sales";
+
+// Helpers
+import { formatDecimalNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -36,6 +40,13 @@ const SalesStatisticCard = ({
     setOpenAction(!isOpenAction);
   };
 
+  const formattedAmount =
+    {
+      [SALES_STATISTIC_TYPE.SALES]: "$230,220",
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatDecimalNumber(amount),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: `$${formatDecimalNumber(amount)}`,
+    }[type] || "";
+
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
@@ -45,7 +56,7 @@ const SalesStatisticCard = ({
               {type}
             </Text>
             <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold">
-              {amount}
+              {formattedAmount}
             </Text>
           </Flex>
           <Flex className="justify-start items-start">

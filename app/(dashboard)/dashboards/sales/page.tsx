@@ -18,8 +18,8 @@ import { getAnalytics, getSales } from "@/services";
 type TSalesStatistical = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  totalAmount: number;
   duration: string;
 };
 

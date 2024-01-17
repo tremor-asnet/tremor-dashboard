@@ -107,7 +107,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
-                          2500
+                          2.500
                         </p>
                       </td>
                       <td
@@ -205,7 +205,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
-                          3.900
+                          3..900
                         </p>
                       </td>
                       <td
@@ -303,7 +303,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
-                          1.400
+                          1..400
                         </p>
                       </td>
                       <td
@@ -662,7 +662,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
-                        2500
+                        2.500
                       </p>
                     </td>
                     <td
@@ -760,7 +760,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
-                        3.900
+                        3..900
                       </p>
                     </td>
                     <td
@@ -858,7 +858,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
-                        1.400
+                        1..400
                       </p>
                     </td>
                     <td
@@ -1250,7 +1250,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      2500
+                      2.500
                     </p>
                   </td>
                   <td
@@ -1334,7 +1334,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      3.900
+                      3..900
                     </p>
                   </td>
                   <td
@@ -1418,7 +1418,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      1.400
+                      1..400
                     </p>
                   </td>
                   <td
@@ -1721,7 +1721,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      2500
+                      2.500
                     </p>
                   </td>
                   <td
@@ -1819,7 +1819,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      3.900
+                      3..900
                     </p>
                   </td>
                   <td
@@ -1917,7 +1917,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
-                      1.400
+                      1..400
                     </p>
                   </td>
                   <td

@@ -9,13 +9,16 @@ import IconBox from "@/components/IconBox/IconBox";
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 // Helpers
-import { formatPercentage } from "@/helpers";
+import { formatAbbreviateNumber, formatPercentage } from "@/helpers";
+
+// Constants
+import { SALE_STATISTICAL_TYPE } from "@/constants/analytics";
 
 type AnalyticsStatistical = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  totalAmount: number;
   duration: string;
 };
 
@@ -27,6 +30,11 @@ const AnalyticsStatisticCard = ({
   statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
   const { id, type, amount, totalAmount, duration } = statisticalData;
+
+  const formattedMount =
+    type === SALE_STATISTICAL_TYPE.REVENUE
+      ? formatAbbreviateNumber(34522)
+      : amount;
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -43,7 +51,7 @@ const AnalyticsStatisticCard = ({
                 {type}
               </Text>
               <Text className="text-tremor-content-title dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
-                {amount}
+                {formattedMount}
               </Text>
             </Flex>
           </Flex>

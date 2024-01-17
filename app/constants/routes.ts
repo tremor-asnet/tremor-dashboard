@@ -8,7 +8,7 @@ export const ROUTES = {
   SIGN_UP: "/signup",
   ANALYTICS: "/dashboards/analytics",
   SALES: "/dashboards/sales",
-  PROFILE: "/pages/profile/profile-overview",
+  PROFILE: "/pages/profile/my-profile",
   PROJECTS: "/pages/profile/all-projects",
   SETTING: "/pages/account/settings",
 };

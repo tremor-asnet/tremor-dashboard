@@ -16,3 +16,16 @@ export const formatPercentage = (number: string): string => {
 
   return parsedNumber <= 0 ? `${number}%` : `+${number}%`;
 };
+
+/**
+ * Format decimal number
+ * @param value number
+ * @returns string
+ */
+export const formatDecimalNumber = (value: number): string => {
+  const numStr = value.toString();
+
+  return numStr.length > 3
+    ? numStr.slice(0, -3) + "." + numStr.slice(-3)
+    : numStr;
+};

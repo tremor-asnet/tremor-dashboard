@@ -37,8 +37,7 @@ const DashboardHeader = ({
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
   // Check the condition if it is page All Project then display the white color
-  const colorIconCaseProject =
-    (!isScrolled || !isMobile) && isAllProjectPage && "white";
+  const colorIconCaseProject = !isScrolled && isAllProjectPage && "white";
 
   useEffect(() => {
     const scrollDashboardHeader = () => {
@@ -56,27 +55,18 @@ const DashboardHeader = ({
     };
   }, []);
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
-  const activeStickyScroll =
-    isScrolled && (isMobile || !isAllProjectPage)
-      ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
-      : `${stickyTransition}`;
+  const activeStickyScroll = isScrolled
+    ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
+    : `${stickyTransition}`;
 
-  const activeIconColor =
-    isScrolled && (isMobile || !isAllProjectPage)
-      ? "text-primary dark:text-dark-primary"
-      : "text-tremor-content";
+  const activeIconColor = isScrolled
+    ? "text-primary dark:text-dark-primary"
+    : "text-tremor-content";
 
   return (
     <div
       className={`${activeStickyScroll} h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 ${
-        isAllProjectPage &&
-        `absolute top-10 md:top-9 pl-1 pr-2 ${
-          activeStickyScroll && isMobile ? "w-full" : "w-[93%]"
-        } ${
-          isCollapseSidebar
-            ? "xl:w-[calc(100%_-_165px)]"
-            : "xl:w-[calc(100%_-_330px)]"
-        }`
+        isAllProjectPage && `pl-1 pr-2`
       }`}>
       <div className="flex items-center">
         <div

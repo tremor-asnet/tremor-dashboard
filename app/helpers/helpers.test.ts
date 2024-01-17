@@ -1,4 +1,10 @@
-import { formatMoney, formatPercentage, getErrorMessage, isEmpty } from ".";
+import {
+  formatIntegerNumber,
+  formatMoney,
+  formatPercentage,
+  getErrorMessage,
+  isEmpty,
+} from ".";
 
 describe("Test isEmpty function", () => {
   test("Check the param with empty value", () => {
@@ -88,5 +94,17 @@ describe("Test formatPercentage function", () => {
     const formattedResult = formatPercentage(zero);
 
     expect(formattedResult).toBe("0%");
+  });
+});
+
+describe("formatIntegerNumber function", () => {
+  it("should format number", () => {
+    const result = formatIntegerNumber(1234567);
+    expect(result).toBe("1,234,567");
+  });
+
+  it("should format zero", () => {
+    const result = formatIntegerNumber(0);
+    expect(result).toBe("0");
   });
 });

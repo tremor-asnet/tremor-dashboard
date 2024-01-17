@@ -16,3 +16,11 @@ export const formatPercentage = (number: string): string => {
 
   return parsedNumber <= 0 ? `${number}%` : `+${number}%`;
 };
+
+/**
+ * Format integer number
+ * @param value number
+ * @returns string
+ */
+export const formatIntegerNumber = (value: number): string =>
+  new Intl.NumberFormat().format(value);

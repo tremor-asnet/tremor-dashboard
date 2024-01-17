@@ -16,7 +16,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           </p>
           <a
             class="text-xs"
-            href="/pages/profile/profile-overview"
+            href="/pages/profile/my-profile"
           >
             <svg
               fill="currentColor"
@@ -189,7 +189,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
         </p>
         <a
           class="text-xs"
-          href="/pages/profile/profile-overview"
+          href="/pages/profile/my-profile"
         >
           <svg
             fill="currentColor"

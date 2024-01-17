@@ -16,3 +16,16 @@ export const formatPercentage = (number: string): string => {
 
   return parsedNumber <= 0 ? `${number}%` : `+${number}%`;
 };
+
+/**
+ * Format abbreviate number
+ * @param number number
+ * @returns string
+ */
+export const formatAbbreviateNumber = (number: number): string => {
+  return number < 1e3
+    ? number.toString()
+    : number < 1e6
+      ? Math.floor(number / 1e3) + "K"
+      : Math.floor(number / 1e6) + "M";
+};

@@ -1,4 +1,10 @@
-import { formatMoney, formatPercentage, getErrorMessage, isEmpty } from ".";
+import {
+  formatAbbreviateNumber,
+  formatMoney,
+  formatPercentage,
+  getErrorMessage,
+  isEmpty,
+} from ".";
 
 describe("Test isEmpty function", () => {
   test("Check the param with empty value", () => {
@@ -88,5 +94,20 @@ describe("Test formatPercentage function", () => {
     const formattedResult = formatPercentage(zero);
 
     expect(formattedResult).toBe("0%");
+  });
+});
+
+describe("formatAbbreviateNumber function", () => {
+  test("formatAbbreviateNumber correctly formats numbers", () => {
+    // Test case: number < 1e3
+    expect(formatAbbreviateNumber(500)).toBe("500");
+
+    // Test case: 1e3 <= number < 1e6
+    expect(formatAbbreviateNumber(1500)).toBe("1K");
+    expect(formatAbbreviateNumber(999999)).toBe("999K");
+
+    // Test case: number >= 1e6
+    expect(formatAbbreviateNumber(1000000)).toBe("1M");
+    expect(formatAbbreviateNumber(1500000)).toBe("1M");
   });
 });

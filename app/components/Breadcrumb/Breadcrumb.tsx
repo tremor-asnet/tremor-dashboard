@@ -26,7 +26,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
   const pathname = usePathname();
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isProjectPage = pathname === ROUTES.PROJECTS;
-  const isStickyHeader = (!isScrolled || !isMobile) && isProjectPage;
+  const isStickyHeader = !isScrolled && isProjectPage;
 
   const links: IBreadcrumb[] = useMemo(() => {
     switch (true) {
@@ -56,6 +56,8 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         return "analytics";
       case ROUTES.SALES:
         return "sales";
+      case ROUTES.PROFILE:
+        return "my profile";
       case ROUTES.PROJECTS:
         return "all projects";
       case ROUTES.SETTING:
@@ -95,7 +97,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
   };
 
   return (
-    <nav className={`${isProjectPage ? "pl-3" : isMobile ? "pl-3" : ""}`}>
+    <nav className={`${isProjectPage ? "pl-3 z-20" : isMobile ? "pl-3" : ""}`}>
       <ol className="flex flex-wrap items-center text-gray-400">
         <li>
           <Link href={ROUTES.HOME} className="flex">

@@ -26,7 +26,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   };
 
   return (
-    <Card className="dark:bg-dark-tremor-primary">
+    <Card className="h-full dark:bg-dark-tremor-primary ring-0">
       <Flex>
         <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
           {revenueType}

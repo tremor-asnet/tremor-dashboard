@@ -36,8 +36,8 @@ export const metadata = {
 type TAnalyticsStatistical = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  totalAmount: number;
   duration: string;
 };
 

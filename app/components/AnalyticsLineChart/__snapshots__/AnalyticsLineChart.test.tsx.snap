@@ -18,7 +18,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             class="-mt-10"
           >
             <div
-              class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))] p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]"
+              class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))] p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem] ring-0"
             >
               <div
                 class="w-full h-[168px] mt-4"
@@ -432,11 +432,13 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             <p
               class="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]"
             >
+              (
               <span
                 class="font-bold"
               >
                 (+15%)
               </span>
+              )
                
               increase in today sales.
             </p>

@@ -16,15 +16,15 @@ import Image from "next/image";
 import { FLAG_SRC } from "@/constants";
 
 // Helpers
-import { formatMoney } from "@/helpers";
+import { formatIntegerNumber } from "@/helpers";
 
 export interface ISalesByCountry {
   id: string;
   flag: string;
   country: string;
-  sales: string;
-  value: string;
-  bounce: string;
+  sales: number;
+  value: number;
+  bounce: number;
 }
 
 export interface SalesByCountryProps {
@@ -104,7 +104,7 @@ const SalesByCountry = ({
                           Value:
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
-                          {formatMoney(value)}
+                          <span>${formatIntegerNumber(value)}</span>
                         </Text>
                       </TableCell>
                     )}

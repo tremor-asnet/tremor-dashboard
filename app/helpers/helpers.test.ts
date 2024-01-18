@@ -6,6 +6,7 @@ import {
   formatPercentage,
   getErrorMessage,
   isEmpty,
+  formattedNumber,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -148,5 +149,40 @@ describe("formatAbbreviateNumber function", () => {
     // Test case: number >= 1e6
     expect(formatAbbreviateNumber(1000000)).toBe("1m");
     expect(formatAbbreviateNumber(1500000)).toBe("1m");
+  });
+});
+
+describe("formattedNumber function", () => {
+  test("formats number with decimal currency", () => {
+    const result = formattedNumber({
+      value: 23000,
+      currency: "$",
+      isDecimalNumber: true,
+    });
+    expect(result).toBe("$23.000");
+  });
+
+  test("formats number with commas currency", () => {
+    const result = formattedNumber({
+      value: 23000,
+      currency: "$",
+      isDecimalNumber: false,
+    });
+    expect(result).toBe("$23,000");
+  });
+
+  test("formats number with commas", () => {
+    const result = formattedNumber({ value: 23000, isDecimalNumber: false });
+    expect(result).toBe("23,000");
+  });
+
+  test("formats number with decimal", () => {
+    const result = formattedNumber({ value: 23000, isDecimalNumber: true });
+    expect(result).toBe("23.000");
+  });
+
+  test("formats number without currency and decimal", () => {
+    const result = formattedNumber({ value: 23000 });
+    expect(result).toBe("23,000");
   });
 });

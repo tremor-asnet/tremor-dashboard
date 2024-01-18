@@ -29,46 +29,6 @@ export const formatAbbreviateNumber = (number: number): string => {
 };
 
 /**
- * Format decimal number
- * Ex: 23999 --> 23.999
- * @param value number
- * @returns string
- */
-export const formatDecimalNumber = (
-  value: number,
-  currency?: string,
-): string => {
-  const formattedNumber = value.toLocaleString("en-US").split(",").join(".");
-
-  if (currency) {
-    return `${currency}${formattedNumber}`;
-  }
-
-  return formattedNumber;
-};
-
-/**
- * Format integer number
- * Ex:
- * 15222 --> 15,222
- * 15222 --> $15,222
- * @param value number
- * @returns string
- */
-export const formatIntegerNumber = (
-  value: number,
-  currency?: string,
-): string => {
-  const formattedNumber = value.toLocaleString("en-US");
-
-  if (currency) {
-    return `${currency}${formattedNumber}`;
-  }
-
-  return formattedNumber;
-};
-
-/**
  * Format number with:
  * decimal currency ( 23000 --> $23.000 )
  * commas currency ( 23000 --> $23,000 )

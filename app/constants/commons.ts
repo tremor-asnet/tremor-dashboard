@@ -47,4 +47,5 @@ export const SOCIAL_LINK = {
   instagram: "https://instagram.com",
 };
 
-export const REMEMBER_ME = "remember-me";
+export const REMEMBER_ME_COOKIES_KEY = "remember-me";
+export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";

@@ -9,7 +9,12 @@ import { cookies } from "next/headers";
 import { signIn, signOut } from "@/auth";
 
 // Constants
-import { REMEMBER_ME, ROUTER_API_URL, ROUTES } from "@/constants";
+import {
+  AUTH_SESSION_COOKIES_KEY,
+  REMEMBER_ME_COOKIES_KEY,
+  ROUTER_API_URL,
+  ROUTES,
+} from "@/constants";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -34,8 +39,13 @@ export const authenticate = async (
 };
 
 export async function signOutAction() {
-  cookies().delete(REMEMBER_ME);
-  cookies().delete("authjs.session-token");
+  cookies().delete(REMEMBER_ME_COOKIES_KEY);
+  cookies().delete(
+    (process.env.NODE_ENV === "production" &&
+      process.env.NEXT_PUBLIC_AUTH_SESSION_TOKEN_KEY) ||
+      AUTH_SESSION_COOKIES_KEY,
+  );
+
   await signOut({ redirectTo: ROUTES.SIGN_IN });
 }
 

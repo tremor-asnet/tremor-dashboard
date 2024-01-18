@@ -33,7 +33,7 @@ const AnalyticsStatisticCard = ({
 
   const formattedMount =
     type === SALE_STATISTICAL_TYPE.REVENUE
-      ? formatAbbreviateNumber(34522)
+      ? formatAbbreviateNumber(amount)
       : amount;
 
   return (

@@ -12,7 +12,7 @@ import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 import { formatAbbreviateNumber, formatPercentage } from "@/helpers";
 
 // Constants
-import { SALE_STATISTICAL_TYPE } from "@/constants/analytics";
+import { ANALYTICS_STATISTICAL_TYPE } from "@/constants/analytics";
 
 type AnalyticsStatistical = {
   id: string;
@@ -33,7 +33,7 @@ const AnalyticsStatisticCard = ({
   const { id, type, amount, amountChange, duration } = statisticalData;
 
   const formattedMount =
-    type === SALE_STATISTICAL_TYPE.REVENUE
+    type === ANALYTICS_STATISTICAL_TYPE.REVENUE
       ? formatAbbreviateNumber(amount)
       : amount;
 

@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Pagination component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
+      >
+        <div
+          class="tremor-Flex-root w-full flex-row items-center flex flex-1 justify-between sm:hidden"
+        >
+          <a
+            class="relative inline-flex items-center border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+            href="#"
+          >
+            Previous
+          </a>
+          <a
+            class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+            href="#"
+          >
+            Next
+          </a>
+        </div>
+        <div
+          class="tremor-Flex-root flex-row justify-between items-center hidden sm:flex sm:flex-1 sm:items-center sm:justify-between w-full"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <p
+              class="text-sm text-gray-700"
+            >
+              Showing 
+              <span
+                class="font-medium"
+              >
+                1
+              </span>
+               to
+               
+              <span
+                class="font-medium"
+              >
+                10
+              </span>
+               of
+               
+              <span
+                class="font-medium"
+              >
+                12
+              </span>
+               entries
+            </p>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+          >
+            <nav
+              aria-label="Pagination"
+              class="isolate inline-flex -space-x-px gap-2"
+            >
+              <button
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                disabled=""
+              >
+                <span
+                  class="sr-only"
+                >
+                  Previous
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 p-[3px]"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="15 18 9 12 15 6"
+                  />
+                </svg>
+              </button>
+              <a
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 hover:bg-gray"
+                href="#"
+              >
+                1
+              </a>
+              <a
+                aria-current="page"
+                class="relative z-10 inline-flex items-center justify-center rounded-full bg-gradient-item-page w-[36px] h-[36px] text-sm font-normal text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+                href="#"
+              >
+                2
+              </a>
+              <a
+                class="relative hidden items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+                href="#"
+              >
+                3
+              </a>
+              <button
+                class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >
+                <span
+                  class="sr-only"
+                >
+                  Next
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 p-[3px]"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="9 18 15 12 9 6"
+                  />
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
+    >
+      <div
+        class="tremor-Flex-root w-full flex-row items-center flex flex-1 justify-between sm:hidden"
+      >
+        <a
+          class="relative inline-flex items-center border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          href="#"
+        >
+          Previous
+        </a>
+        <a
+          class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          href="#"
+        >
+          Next
+        </a>
+      </div>
+      <div
+        class="tremor-Flex-root flex-row justify-between items-center hidden sm:flex sm:flex-1 sm:items-center sm:justify-between w-full"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        >
+          <p
+            class="text-sm text-gray-700"
+          >
+            Showing 
+            <span
+              class="font-medium"
+            >
+              1
+            </span>
+             to
+             
+            <span
+              class="font-medium"
+            >
+              10
+            </span>
+             of
+             
+            <span
+              class="font-medium"
+            >
+              12
+            </span>
+             entries
+          </p>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+        >
+          <nav
+            aria-label="Pagination"
+            class="isolate inline-flex -space-x-px gap-2"
+          >
+            <button
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              disabled=""
+            >
+              <span
+                class="sr-only"
+              >
+                Previous
+              </span>
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 p-[3px]"
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  points="15 18 9 12 15 6"
+                />
+              </svg>
+            </button>
+            <a
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 hover:bg-gray"
+              href="#"
+            >
+              1
+            </a>
+            <a
+              aria-current="page"
+              class="relative z-10 inline-flex items-center justify-center rounded-full bg-gradient-item-page w-[36px] h-[36px] text-sm font-normal text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+              href="#"
+            >
+              2
+            </a>
+            <a
+              class="relative hidden items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+              href="#"
+            >
+              3
+            </a>
+            <button
+              class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span
+                class="sr-only"
+              >
+                Next
+              </span>
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 p-[3px]"
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  points="9 18 15 12 9 6"
+                />
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

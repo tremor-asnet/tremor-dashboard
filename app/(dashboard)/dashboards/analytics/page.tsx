@@ -36,9 +36,10 @@ export const metadata = {
 type TAnalyticsStatistical = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  amountChange: number;
   duration: string;
+  amountChangeType: number;
 };
 
 const Analytics = async () => {

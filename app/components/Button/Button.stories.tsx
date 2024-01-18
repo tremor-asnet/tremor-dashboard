@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@tremor/react";
+import { Button, Text } from "@tremor/react";
 import { TiHome } from "react-icons/ti";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const meta = {
   title: "Components/Button",
@@ -55,6 +56,27 @@ export const Disable: Story = {
       disabled
       className="font-bold bg-primary hover:bg-primary border-transparent text-xs">
       Primary
+    </Button>
+  ),
+};
+
+export const NewOder: Story = {
+  render: () => (
+    <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover">
+      <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+        New Order
+      </Text>
+    </Button>
+  ),
+};
+
+export const Filters: Story = {
+  render: () => (
+    <Button
+      icon={RiArrowDropDownLine}
+      iconPosition="right"
+      className="antialiased flex items-center uppercase font-bold min-w-[64px] bg-transparent text-center border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 uppercase sm:px-[26px] text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary dark:bg-gradient-pickled px-6 py-[9px] rounded-lg hover:!shadow-btn-primary-hover">
+      <Text className="text-inherit text-xs">Filters</Text>
     </Button>
   ),
 };

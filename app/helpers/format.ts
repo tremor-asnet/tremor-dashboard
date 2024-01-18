@@ -67,3 +67,27 @@ export const formatIntegerNumber = (
 
   return formattedNumber;
 };
+
+/**
+ * Format number by decimal currency ( 23000 --> $23.000 )
+ * Format number by commas currency ( 23000 --> $23,000 )
+ * Format number with commas ( 23000 --> 23,000 )
+ * Format number with decimal ( 23000 --> 23.000 )
+ * @param value number
+ * @param isDecimalNumber boolean
+ * @param currency string
+ * @returns string
+ */
+export const formattedNumber = (
+  value: number,
+  isDecimalNumber: boolean,
+  currency?: string,
+): string => {
+  let formattedNumber = value.toLocaleString("en-US");
+
+  if (isDecimalNumber) {
+    formattedNumber = formattedNumber.split(",").join(".");
+  }
+
+  return currency ? `${currency}${formattedNumber}` : formattedNumber;
+};

@@ -11,8 +11,8 @@ import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 // Helpers
 import {
   formatAbbreviateNumber,
-  formatIntegerNumber,
   formatPercentage,
+  formattedNumber,
 } from "@/helpers";
 
 // Constants
@@ -39,7 +39,7 @@ const AnalyticsStatisticCard = ({
   const formattedAmount =
     {
       [ANALYTICS_STATISTICAL_TYPE.BOOKINGS]: amount,
-      [ANALYTICS_STATISTICAL_TYPE.TODAY_USER]: formatIntegerNumber(amount),
+      [ANALYTICS_STATISTICAL_TYPE.TODAY_USER]: formattedNumber(amount, false),
       [ANALYTICS_STATISTICAL_TYPE.REVENUE]: formatAbbreviateNumber(amount),
       [ANALYTICS_STATISTICAL_TYPE.FOLLOWERS]: amount,
     }[type] || "";

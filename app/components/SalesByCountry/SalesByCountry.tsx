@@ -16,7 +16,7 @@ import Image from "next/image";
 import { CURRENCY, FLAG_SRC } from "@/constants";
 
 // Helpers
-import { formatDecimalNumber, formatIntegerNumber } from "@/helpers";
+import { formattedNumber } from "@/helpers";
 
 export interface ISalesByCountry {
   id: string;
@@ -95,7 +95,7 @@ const SalesByCountry = ({
                         Sales:
                       </Text>
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-                        {formatDecimalNumber(sales)}
+                        {formattedNumber(sales, true)}
                       </Text>
                     </TableCell>
                     {isAnalytics && (
@@ -105,7 +105,7 @@ const SalesByCountry = ({
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           <span>
-                            {formatIntegerNumber(value, CURRENCY.DOLLAR)}
+                            {formattedNumber(value, false, CURRENCY.DOLLAR)}
                           </span>
                         </Text>
                       </TableCell>

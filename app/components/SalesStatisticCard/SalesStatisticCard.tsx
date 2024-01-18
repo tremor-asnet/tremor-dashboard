@@ -17,7 +17,7 @@ import {
 } from "@/constants";
 
 // Helpers
-import { formatDecimalNumber, formatIntegerNumber } from "@/helpers";
+import { formattedNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -42,13 +42,15 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: formatIntegerNumber(
+      [SALES_STATISTIC_TYPE.SALES]: formattedNumber(
         amount,
+        false,
         CURRENCY.DOLLAR,
       ),
-      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatDecimalNumber(amount),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formatDecimalNumber(
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formattedNumber(amount, true),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber(
         amount,
+        true,
         CURRENCY.DOLLAR,
       ),
     }[type] || "";

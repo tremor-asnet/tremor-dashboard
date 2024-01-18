@@ -13,6 +13,9 @@ import { IAnalyticsInfo } from "@/types";
 // Helpers
 import { formatDecimalNumber } from "@/helpers";
 
+// Constants
+import { CURRENCY } from "@/constants";
+
 export interface AnalyticsInfoProps {
   infoData: IAnalyticsInfo;
 }
@@ -49,7 +52,7 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
         <Flex className="p-2 pt-0">
           <Flex>
             <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
-              &#36;{formatDecimalNumber(price)}/night
+              {formatDecimalNumber(price, CURRENCY.DOLLAR)}/night
             </Text>
           </Flex>
           <Flex className="justify-end font-primary text-secondary font-light">

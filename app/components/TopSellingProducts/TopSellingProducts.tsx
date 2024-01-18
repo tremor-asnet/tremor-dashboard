@@ -12,7 +12,7 @@ import {
 } from "@tremor/react";
 
 // Constants
-import { TOP_SELLING_PRODUCTS_SRC } from "@/constants";
+import { CURRENCY, TOP_SELLING_PRODUCTS_SRC } from "@/constants";
 
 // Components
 import { CustomImage } from "@/components";
@@ -98,12 +98,14 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                 </TableCell>
                 <TableCell className="px-6 py-3">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value">
-                    <span>${formatDecimalNumber(value)}</span>
+                    <span>{formatDecimalNumber(value, CURRENCY.DOLLAR)}</span>
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3 text-center">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent">
-                    <span>${formatDecimalNumber(adsSpent)}</span>
+                    <span>
+                      {formatDecimalNumber(adsSpent, CURRENCY.DOLLAR)}
+                    </span>
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3">

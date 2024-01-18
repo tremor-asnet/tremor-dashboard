@@ -10,14 +10,14 @@ import { Card, Text, Flex, Button } from "@tremor/react";
 import { TSalesStatistic } from "@/types";
 
 //Constants
-import { ITEM_ACTION_SALES_DATE } from "@/constants/commons";
-import { SALES_STATISTIC_TYPE } from "@/constants/sales";
-
-//Mocks
-import { STATISTICS_DATA } from "@/mocks/sales";
+import {
+  CURRENCY,
+  ITEM_ACTION_SALES_DATE,
+  SALES_STATISTIC_TYPE,
+} from "@/constants";
 
 // Helpers
-import { formatDecimalNumber } from "@/helpers";
+import { formatDecimalNumber, formatIntegerNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -42,9 +42,15 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: amount,
+      [SALES_STATISTIC_TYPE.SALES]: formatIntegerNumber(
+        amount,
+        CURRENCY.DOLLAR,
+      ),
       [SALES_STATISTIC_TYPE.CUSTOMERS]: formatDecimalNumber(amount),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: `$${formatDecimalNumber(amount)}`,
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formatDecimalNumber(
+        amount,
+        CURRENCY.DOLLAR,
+      ),
     }[type] || "";
 
   return (

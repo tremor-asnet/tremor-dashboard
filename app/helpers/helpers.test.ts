@@ -1,6 +1,4 @@
 import {
-  formatIntegerNumber,
-  formatDecimalNumber,
   formatAbbreviateNumber,
   formatMoney,
   formatPercentage,

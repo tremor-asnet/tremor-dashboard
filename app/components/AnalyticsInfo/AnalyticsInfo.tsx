@@ -10,6 +10,9 @@ import { CustomImage, Popover } from "@/components";
 //Types
 import { IAnalyticsInfo } from "@/types";
 
+// Helpers
+import { formatDecimalNumber } from "@/helpers";
+
 export interface AnalyticsInfoProps {
   infoData: IAnalyticsInfo;
 }
@@ -46,7 +49,7 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
         <Flex className="p-2 pt-0">
           <Flex>
             <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
-              &#36;{price}/night
+              &#36;{formatDecimalNumber(price)}/night
             </Text>
           </Flex>
           <Flex className="justify-end font-primary text-secondary font-light">

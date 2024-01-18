@@ -16,7 +16,7 @@ import Image from "next/image";
 import { FLAG_SRC } from "@/constants";
 
 // Helpers
-import { formatIntegerNumber } from "@/helpers";
+import { formatDecimalNumber, formatIntegerNumber } from "@/helpers";
 
 export interface ISalesByCountry {
   id: string;
@@ -95,7 +95,7 @@ const SalesByCountry = ({
                         Sales:
                       </Text>
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-                        {sales}
+                        {formatDecimalNumber(sales)}
                       </Text>
                     </TableCell>
                     {isAnalytics && (

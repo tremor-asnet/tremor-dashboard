@@ -5,3 +5,4 @@ export * from "./project";
 export * from "./analytics";
 export * from "./sales";
 export * from "./profile";
+export * from "./table-list";

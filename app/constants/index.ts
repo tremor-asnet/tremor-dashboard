@@ -9,3 +9,4 @@ export * from "./sections";
 export * from "./images";
 export * from "./products";
 export * from "./colors";
+export * from "./status";

@@ -16,6 +16,7 @@ export const formatPercentage = (number: number): string =>
 
 /**
  * Format abbreviate number
+ * Ex: 34000 --> 34k
  * @param number number
  * @returns string
  */
@@ -29,13 +30,9 @@ export const formatAbbreviateNumber = (number: number): string => {
 
 /**
  * Format decimal number
+ * Ex: 23999 --> 23.999
  * @param value number
  * @returns string
  */
-export const formatDecimalNumber = (value: number): string => {
-  const numStr = value.toString();
-
-  return numStr.length > 3
-    ? numStr.slice(0, -3) + "." + numStr.slice(-3)
-    : numStr;
-};
+export const formatDecimalNumber = (value: number): string =>
+  new Intl.NumberFormat().format(value).split(",").join(".");

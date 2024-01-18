@@ -18,8 +18,9 @@ type AnalyticsStatistical = {
   id: string;
   type: string;
   amount: number;
-  totalAmount: number;
+  amountChange: number;
   duration: string;
+  amountChangeType: number;
 };
 
 interface IAnalyticsStatisticCard {
@@ -29,7 +30,7 @@ interface IAnalyticsStatisticCard {
 const AnalyticsStatisticCard = ({
   statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
-  const { id, type, amount, totalAmount, duration } = statisticalData;
+  const { id, type, amount, amountChange, duration } = statisticalData;
 
   const formattedMount =
     type === SALE_STATISTICAL_TYPE.REVENUE
@@ -58,9 +59,9 @@ const AnalyticsStatisticCard = ({
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
-              {totalAmount && (
+              {amountChange && (
                 <Text className="text-few dark:text-few leading-[21px] font-bold">
-                  {formatPercentage(totalAmount)}
+                  {formatPercentage(amountChange)}
                 </Text>
               )}
               <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">

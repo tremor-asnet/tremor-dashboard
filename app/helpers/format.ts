@@ -11,10 +11,20 @@ export const formatMoney = (number: string): string =>
  * @param number string
  * @returns string
  */
-export const formatPercentage = (number: string): string => {
-  const parsedNumber = parseFloat(number);
+export const formatPercentage = (number: number): string =>
+  number <= 0 ? `${number}%` : `+${number}%`;
 
-  return parsedNumber <= 0 ? `${number}%` : `+${number}%`;
+/**
+ * Format abbreviate number
+ * @param number number
+ * @returns string
+ */
+export const formatAbbreviateNumber = (number: number): string => {
+  return number < 1e3
+    ? number.toString()
+    : number < 1e6
+      ? Math.floor(number / 1e3) + "k"
+      : Math.floor(number / 1e6) + "m";
 };
 
 /**

@@ -42,7 +42,7 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: "$230,220",
+      [SALES_STATISTIC_TYPE.SALES]: amount,
       [SALES_STATISTIC_TYPE.CUSTOMERS]: formatDecimalNumber(amount),
       [SALES_STATISTIC_TYPE.AVG_REVENUE]: `$${formatDecimalNumber(amount)}`,
     }[type] || "";

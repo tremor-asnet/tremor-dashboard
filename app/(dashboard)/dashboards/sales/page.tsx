@@ -8,7 +8,6 @@ import {
   SalesByCountry,
   SalesStatisticCard,
   TopSellingProducts,
-  TrackOrder,
 } from "@/components";
 
 import { REVENUE_CHART_DATA } from "@/mocks";
@@ -34,7 +33,6 @@ const Sales = async () => {
 
   return (
     <Grid numItems={1} numItemsMd={3} className="gap-5 sale-page">
-      <TrackOrder />
       <Col numColSpan={1} numColSpanMd={3}>
         <Grid className="gap-5" numItemsMd={3}>
           {saleData.header_info?.map((item: TSalesStatistical) => (

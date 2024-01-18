@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackOrder Component render TrackOrder component with snapshot correctly 1`] = `
+<div>
+  <div
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
+  >
+    <ul
+      class="relative m-0 w-full p-0 pb-6"
+    >
+      <li
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+        >
+          <span
+            class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"
+              />
+            </svg>
+          </span>
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+            >
+              Order received
+            </span>
+            <span
+              class="text-tremor-label text-primary font-light dark:text-dark-romance"
+            >
+              22 DEC 7:21 AM
+            </span>
+          </div>
+        </div>
+        <div
+          class="text-tremor-label text-primary font-light pl-[4.3rem] dark:text-dark-romance"
+        />
+      </li>
+      <li
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+      >
+        <div
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']"
+        >
+          <span
+            class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-5 12H9v-2h6v2zm5-7H4V4l16-.02V7z"
+              />
+            </svg>
+          </span>
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+            >
+              Generate order id 
+              #1832412
+            </span>
+            <span
+              class="text-tremor-label text-primary font-light dark:text-dark-romance"
+            >
+              22 DEC 7:21 AM
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+      >
+        <div
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']"
+        >
+          <span
+            class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="176"
+                cy="416"
+                r="32"
+              />
+              <circle
+                cx="400"
+                cy="416"
+                r="32"
+              />
+              <path
+                d="M456.8 120.78a23.92 23.92 0 00-18.56-8.78H133.89l-6.13-34.78A16 16 0 00112 64H48a16 16 0 000 32h50.58l45.66 258.78A16 16 0 00160 368h256a16 16 0 000-32H173.42l-5.64-32h241.66A24.07 24.07 0 00433 284.71l28.8-144a24 24 0 00-5-19.93z"
+              />
+            </svg>
+          </span>
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+            >
+              Order transmited to courier
+            </span>
+            <span
+              class="text-tremor-label text-primary font-light dark:text-dark-romance"
+            >
+              22 DEC 8:10 AM
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="relative h-fit"
+      >
+        <div
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']"
+        >
+          <span
+            class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"
+              />
+            </svg>
+          </span>
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+            >
+              Order delivered
+            </span>
+            <span
+              class="text-tremor-label text-primary font-light dark:text-dark-romance"
+            >
+              22 DEC 4:54 PM
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

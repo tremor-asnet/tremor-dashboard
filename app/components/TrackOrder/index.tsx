@@ -1,102 +1,96 @@
-"use client";
+import { Card, Flex } from "@tremor/react";
 
-import { Flex, Icon } from "@tremor/react";
-import React, { useState } from "react";
-import { FaRegBell } from "react-icons/fa";
+// Icon React
+import { FaBell } from "react-icons/fa";
+import { IoMdCheckmark } from "react-icons/io";
+import { IoCart } from "react-icons/io5";
+import { MdInventory } from "react-icons/md";
 
-const TrackOrder = () => {
-  const steps = [
-    "Order received",
-    "Generate order id #1832412",
-    "Order transited to courier",
-    "Order delivered",
-  ];
+interface TrackOrderProps {
+  id: string;
+  generateOrderId: string;
+  deliveredAt: string;
+  transmitedToCourierAt: string;
+  generateOrderAt: string;
+}
 
+const TrackOrder = ({
+  id,
+  transmitedToCourierAt,
+  generateOrderId,
+  deliveredAt,
+  generateOrderAt,
+}: TrackOrderProps) => {
   return (
-    <>
-      <ul className="bg-white relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out">
-        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600">
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] no-underline after:bg-[#e0e0e0] after:content-[''] hover:bg-[#f9f9f9] focus:outline-none dark:after:bg-neutral-600 dark:hover:bg-[#3b3b3b]">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]">
-              <FaRegBell />
+    <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0">
+      <ul className="relative m-0 w-full p-0 pb-6">
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']">
+          <Flex className="justify-start px-6 pt-6 leading-[1.3rem] after:content-['']">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <FaBell />
             </span>
-            <span className="text-neutral-500 after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-neutral-300">
-              step1
-            </span>
-          </div>
-          <div className="pb-6 pl-[4.2rem]">22 DEC 7:20 PM</div>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary">
+                Order received
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {generateOrderAt}
+              </span>
+            </div>
+          </Flex>
+          <div className="text-tremor-label text-primary font-light pl-[4.3rem] dark:text-dark-romance"></div>
         </li>
 
-        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600">
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] no-underline after:bg-[#e0e0e0] after:content-[''] hover:bg-[#f9f9f9] focus:outline-none dark:after:bg-neutral-600 dark:hover:bg-[#3b3b3b]">
-            <span className="mr-3 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]">
-              2
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']">
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <MdInventory />
             </span>
-            <span className="text-neutral-500 after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-neutral-300">
-              step2
-            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary">
+                Generate order id {id}
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {generateOrderId}
+              </span>
+            </div>
           </div>
-          <div className="pb-6 pl-[4.2rem]">22 DEC 7:20 PM</div>
+        </li>
+
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']">
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <IoCart />
+            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary">
+                Order transmited to courier
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {transmitedToCourierAt}
+              </span>
+            </div>
+          </div>
         </li>
 
         <li className="relative h-fit">
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] no-underline after:bg-[#e0e0e0] after:content-[''] hover:bg-[#f9f9f9] focus:outline-none dark:after:bg-neutral-600 dark:hover:bg-[#3b3b3b]">
-            <span className="mr-3 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]">
-              3
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:content-['']">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
+              <IoMdCheckmark />
             </span>
-            <span className="text-neutral-500 after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-neutral-300">
-              step3
-            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary">
+                Order delivered
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {deliveredAt}
+              </span>
+            </div>
           </div>
-          <div className="pb-6 pl-[4.2rem]">22 DEC 7:20 PM</div>
         </li>
       </ul>
-    </>
+    </Card>
   );
 };
 
 export default TrackOrder;
-{
-  /* <div classNameName="flex flex-col relative">
-        <Flex className="flex-row items-start mb-6 after:content-[''] after:absolute after:h-full after:opacity-100 after:border-r-2 after:border-r-[#dee2e6] after:border-solid after:left-[15px] after:top-8">
-          <Flex className="justify-center items-center w-8 h-8 z-[2] opacity-100 shadow-none text-sm rounded-[50%] bg-[rgb(123,128,154)]">
-            <Icon size="xs" icon={FaRegBell} />
-          </Flex>
-          <Flex className="flex-col items-start ml-[15px]">
-            <p className="text-tremor-default text-primary">Order received</p>
-            <p>22 DEC 7:20 PM</p>
-          </Flex>
-        </Flex>
-        <Flex className="flex-row items-start mb-6 after:content-[''] after:absolute after:h-full after:opacity-100 after:border-r-2 after:border-r-[#dee2e6] after:border-solid after:left-[15px] after:top-8">
-          <Flex className="justify-center items-center w-8 h-8 z-[2] opacity-100 shadow-none text-sm rounded-[50%] bg-[rgb(123,128,154)]">
-            <Icon size="xs" icon={FaRegBell} />
-          </Flex>
-          <Flex className="flex-col items-start ml-[15px]">
-            <p className="text-tremor-default text-primary">
-              Generate order id #1832412
-            </p>
-            <p>22 DEC 7:20 PM</p>
-          </Flex>
-        </Flex>
-        <Flex className="flex-row items-start mb-6 after:content-[''] after:absolute after:h-full after:opacity-100 after:border-r-2 after:border-r-[#dee2e6] after:border-solid after:left-[15px] after:top-8">
-          <Flex className="justify-center items-center w-8 h-8 z-[2] opacity-100 shadow-none text-sm rounded-[50%] bg-[rgb(123,128,154)]">
-            <Icon size="xs" icon={FaRegBell} />
-          </Flex>
-          <Flex className="flex-col items-start ml-[15px]">
-            <p className="text-tremor-default text-primary">
-              Order transited to courier
-            </p>
-            <p>22 DEC 7:20 PM</p>
-          </Flex>
-        </Flex>
-        <Flex className="flex-row items-start">
-          <Flex className="justify-center items-center w-8 h-8 z-[2] opacity-100 shadow-none text-sm rounded-[50%] bg-[rgb(123,128,154)]">
-            <Icon size="xs" icon={FaRegBell} />
-          </Flex>
-          <Flex className="flex-col items-start ml-[15px]">
-            <p className="text-tremor-default text-primary">Order delivered</p>
-            <p>22 DEC 7:20 PM</p>
-          </Flex>
-        </Flex>
-      </div> */
-}

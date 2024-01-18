@@ -96,7 +96,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           <span
                             class="text-few"
                           >
-                            8..232
+                            8.232
                           </span>
                            
                           orders
@@ -112,7 +112,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $130..992
+                        130.992
                       </span>
                     </p>
                   </td>
@@ -124,7 +124,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $9..500
+                        9.500
                       </span>
                     </p>
                   </td>
@@ -199,7 +199,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           <span
                             class="text-few"
                           >
-                            12..821
+                            12.821
                           </span>
                            
                           orders
@@ -215,7 +215,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $80..250
+                        80.250
                       </span>
                     </p>
                   </td>
@@ -227,7 +227,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $4..200
+                        4.200
                       </span>
                     </p>
                   </td>
@@ -302,7 +302,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           <span
                             class="text-few"
                           >
-                            2..421
+                            2.421
                           </span>
                            
                           orders
@@ -318,7 +318,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $40..600
+                        40.600
                       </span>
                     </p>
                   </td>
@@ -330,7 +330,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $9..430
+                        9.430
                       </span>
                     </p>
                   </td>
@@ -405,7 +405,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           <span
                             class="text-few"
                           >
-                            5..921
+                            5.921
                           </span>
                            
                           orders
@@ -421,7 +421,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $91..300
+                        91.300
                       </span>
                     </p>
                   </td>
@@ -433,7 +433,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $7..364
+                        7.364
                       </span>
                     </p>
                   </td>
@@ -524,7 +524,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $140..925
+                        140.925
                       </span>
                     </p>
                   </td>
@@ -536,7 +536,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     >
                       <span>
                         $
-                        $20..531
+                        20.531
                       </span>
                     </p>
                   </td>
@@ -671,7 +671,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <span
                           class="text-few"
                         >
-                          8..232
+                          8.232
                         </span>
                          
                         orders
@@ -687,7 +687,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $130..992
+                      130.992
                     </span>
                   </p>
                 </td>
@@ -699,7 +699,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $9..500
+                      9.500
                     </span>
                   </p>
                 </td>
@@ -774,7 +774,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <span
                           class="text-few"
                         >
-                          12..821
+                          12.821
                         </span>
                          
                         orders
@@ -790,7 +790,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $80..250
+                      80.250
                     </span>
                   </p>
                 </td>
@@ -802,7 +802,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $4..200
+                      4.200
                     </span>
                   </p>
                 </td>
@@ -877,7 +877,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <span
                           class="text-few"
                         >
-                          2..421
+                          2.421
                         </span>
                          
                         orders
@@ -893,7 +893,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $40..600
+                      40.600
                     </span>
                   </p>
                 </td>
@@ -905,7 +905,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $9..430
+                      9.430
                     </span>
                   </p>
                 </td>
@@ -980,7 +980,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <span
                           class="text-few"
                         >
-                          5..921
+                          5.921
                         </span>
                          
                         orders
@@ -996,7 +996,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $91..300
+                      91.300
                     </span>
                   </p>
                 </td>
@@ -1008,7 +1008,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $7..364
+                      7.364
                     </span>
                   </p>
                 </td>
@@ -1099,7 +1099,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $140..925
+                      140.925
                     </span>
                   </p>
                 </td>
@@ -1111,7 +1111,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   >
                     <span>
                       $
-                      $20..531
+                      20.531
                     </span>
                   </p>
                 </td>
@@ -1300,7 +1300,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       <span
                         class="text-few"
                       >
-                        8..232
+                        8.232
                       </span>
                        
                       orders
@@ -1316,7 +1316,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $130..992
+                    130.992
                   </span>
                 </p>
               </td>
@@ -1328,7 +1328,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $9..500
+                    9.500
                   </span>
                 </p>
               </td>
@@ -1403,7 +1403,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       <span
                         class="text-few"
                       >
-                        12..821
+                        12.821
                       </span>
                        
                       orders
@@ -1419,7 +1419,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $80..250
+                    80.250
                   </span>
                 </p>
               </td>
@@ -1431,7 +1431,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $4..200
+                    4.200
                   </span>
                 </p>
               </td>
@@ -1506,7 +1506,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       <span
                         class="text-few"
                       >
-                        2..421
+                        2.421
                       </span>
                        
                       orders
@@ -1522,7 +1522,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $40..600
+                    40.600
                   </span>
                 </p>
               </td>
@@ -1534,7 +1534,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $9..430
+                    9.430
                   </span>
                 </p>
               </td>
@@ -1609,7 +1609,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       <span
                         class="text-few"
                       >
-                        5..921
+                        5.921
                       </span>
                        
                       orders
@@ -1625,7 +1625,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $91..300
+                    91.300
                   </span>
                 </p>
               </td>
@@ -1637,7 +1637,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $7..364
+                    7.364
                   </span>
                 </p>
               </td>
@@ -1728,7 +1728,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $140..925
+                    140.925
                   </span>
                 </p>
               </td>
@@ -1740,7 +1740,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 >
                   <span>
                     $
-                    $20..531
+                    20.531
                   </span>
                 </p>
               </td>

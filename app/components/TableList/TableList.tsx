@@ -19,14 +19,11 @@ import { CheckBox, CustomImage } from "@/components";
 // Constants
 import { STATUS_TEXT } from "@/constants";
 
+// Helpers
+import { ProductStatus } from "@/helpers";
+
 // Icons
-import {
-  MdArrowDropUp,
-  MdArrowDropDown,
-  MdDone,
-  MdReplay,
-  MdClose,
-} from "react-icons/md";
+import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 //Types
 import { ProductName, TTableList } from "@/types";
@@ -37,7 +34,6 @@ export interface TableListProps {
 
 const TableList = ({ data }: TableListProps): JSX.Element => {
   const handleCheckBox = () => {};
-
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <Flex className="items-start justify-start my-2">
@@ -198,30 +194,7 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
                   </TableCell>
                   <TableCell className="px-6 py-5">
                     <Flex className="justify-start text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-                      {status === 0 ? (
-                        <Button
-                          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                          variant="light"
-                          onClick={() => {}}>
-                          <MdDone className="text-xs text-green-500" />
-                        </Button>
-                      ) : status === 1 ? (
-                        <Button
-                          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-red-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                          variant="light"
-                          onClick={() => {}}>
-                          <MdClose className="text-xs text-red-500" />
-                        </Button>
-                      ) : status === 2 ? (
-                        <Button
-                          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-primary dark:border-white mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                          variant="light"
-                          onClick={() => {}}>
-                          <MdReplay className="text-xs text-primary dark:text-dark-romance" />
-                        </Button>
-                      ) : (
-                        <span className="w-[25px] h-[25px] mr-2"></span>
-                      )}
+                      {ProductStatus(status)}
                       <Text className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
                         {STATUS_TEXT[status]}
                       </Text>

@@ -29,8 +29,13 @@ export const formatAbbreviateNumber = (number: number): string => {
 
 /**
  * Format integer number
+ * Ex:
+ * 15222 --> 15,222
+ * 15222 --> $15,222
  * @param value number
  * @returns string
  */
-export const formatIntegerNumber = (value: number): string =>
-  new Intl.NumberFormat().format(value);
+export const formatIntegerNumber = (
+  value: number,
+  currency: string = "",
+): string => `${currency}${new Intl.NumberFormat().format(value)}`;

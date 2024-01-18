@@ -104,6 +104,11 @@ describe("formatIntegerNumber function", () => {
     expect(result).toBe("1,234,567");
   });
 
+  it("should format number with currency", () => {
+    const result = formatIntegerNumber(1234567, "$");
+    expect(result).toBe("$1,234,567");
+  });
+
   it("should format zero", () => {
     const result = formatIntegerNumber(0);
     expect(result).toBe("0");

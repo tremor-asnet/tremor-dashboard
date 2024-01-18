@@ -104,7 +104,7 @@ const SalesByCountry = ({
                           Value:
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
-                          <span>${formatIntegerNumber(value)}</span>
+                          <span>{formatIntegerNumber(value, "$")}</span>
                         </Text>
                       </TableCell>
                     )}

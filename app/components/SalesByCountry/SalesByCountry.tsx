@@ -95,7 +95,10 @@ const SalesByCountry = ({
                         Sales:
                       </Text>
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-                        {formattedNumber(sales, true)}
+                        {formattedNumber({
+                          value: sales,
+                          isDecimalNumber: true,
+                        })}
                       </Text>
                     </TableCell>
                     {isAnalytics && (
@@ -105,7 +108,11 @@ const SalesByCountry = ({
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           <span>
-                            {formattedNumber(value, false, CURRENCY.DOLLAR)}
+                            {formattedNumber({
+                              value,
+                              isDecimalNumber: true,
+                              currency: CURRENCY.DOLLAR,
+                            })}
                           </span>
                         </Text>
                       </TableCell>

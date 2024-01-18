@@ -89,7 +89,10 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                       </Text>
                       <Text className="text-secondary leading-[21px] tracking-[0.4px] product-orders">
                         <span className="text-few">
-                          {formattedNumber(orders, true)}
+                          {formattedNumber({
+                            value: orders,
+                            isDecimalNumber: true,
+                          })}
                         </span>{" "}
                         orders
                       </Text>
@@ -98,13 +101,23 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                 </TableCell>
                 <TableCell className="px-6 py-3">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value">
-                    <span>{formattedNumber(value, true, CURRENCY.DOLLAR)}</span>
+                    <span>
+                      {formattedNumber({
+                        value,
+                        currency: CURRENCY.DOLLAR,
+                        isDecimalNumber: true,
+                      })}
+                    </span>
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3 text-center">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent">
                     <span>
-                      {formattedNumber(adsSpent, true, CURRENCY.DOLLAR)}
+                      {formattedNumber({
+                        value: adsSpent,
+                        currency: CURRENCY.DOLLAR,
+                        isDecimalNumber: true,
+                      })}
                     </span>
                   </Text>
                 </TableCell>

@@ -69,20 +69,25 @@ export const formatIntegerNumber = (
 };
 
 /**
- * Format number by decimal currency ( 23000 --> $23.000 )
- * Format number by commas currency ( 23000 --> $23,000 )
- * Format number with commas ( 23000 --> 23,000 )
- * Format number with decimal ( 23000 --> 23.000 )
+ * Format number with:
+ * decimal currency ( 23000 --> $23.000 )
+ * commas currency ( 23000 --> $23,000 )
+ * commas ( 23000 --> 23,000 )
+ * decimal ( 23000 --> 23.000 )
  * @param value number
  * @param isDecimalNumber boolean
  * @param currency string
  * @returns string
  */
-export const formattedNumber = (
-  value: number,
-  isDecimalNumber: boolean,
-  currency?: string,
-): string => {
+export const formattedNumber = ({
+  value,
+  currency = "",
+  isDecimalNumber = false,
+}: {
+  value: number;
+  currency?: string;
+  isDecimalNumber?: boolean;
+}): string => {
   let formattedNumber = value.toLocaleString("en-US");
 
   if (isDecimalNumber) {

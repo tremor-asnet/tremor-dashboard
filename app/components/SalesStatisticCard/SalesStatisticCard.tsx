@@ -17,7 +17,7 @@ import {
 } from "@/constants";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { formatPercentage, formattedNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -42,17 +42,26 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: formattedNumber(
-        amount,
-        false,
-        CURRENCY.DOLLAR,
-      ),
-      [SALES_STATISTIC_TYPE.CUSTOMERS]: formattedNumber(amount, true),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber(
-        amount,
-        true,
-        CURRENCY.DOLLAR,
-      ),
+      [SALES_STATISTIC_TYPE.SALES]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+      }),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formattedNumber({
+        value: amount,
+        isDecimalNumber: true,
+      }),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+        isDecimalNumber: true,
+      }),
+    }[type] || "";
+
+  const formattedTotalAmount =
+    {
+      [SALES_STATISTIC_TYPE.SALES]: formatPercentage(totalAmount),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatPercentage(totalAmount),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: totalAmount,
     }[type] || "";
 
   return (
@@ -70,7 +79,7 @@ const SalesStatisticCard = ({
           <Flex className="justify-start items-start">
             {totalAmount && (
               <Text className="text-few dark:text-few leading-[22px] font-bold">
-                {`+${totalAmount}`}
+                {formattedTotalAmount}
               </Text>
             )}
             <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">

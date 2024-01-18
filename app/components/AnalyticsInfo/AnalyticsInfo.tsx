@@ -52,7 +52,11 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
         <Flex className="p-2 pt-0">
           <Flex>
             <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
-              {formattedNumber(price, true, CURRENCY.DOLLAR)}
+              {formattedNumber({
+                value: price,
+                currency: CURRENCY.DOLLAR,
+                isDecimalNumber: true,
+              })}
               /night
             </Text>
           </Flex>

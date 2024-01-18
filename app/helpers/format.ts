@@ -29,6 +29,25 @@ export const formatAbbreviateNumber = (number: number): string => {
 };
 
 /**
+ * Format decimal number
+ * Ex: 23999 --> 23.999
+ * @param value number
+ * @returns string
+ */
+export const formatDecimalNumber = (
+  value: number,
+  currency?: string,
+): string => {
+  const formattedNumber = value.toLocaleString("en-US").split(",").join(".");
+
+  if (currency) {
+    return `${currency}${formattedNumber}`;
+  }
+
+  return formattedNumber;
+};
+
+/**
  * Format integer number
  * Ex:
  * 15222 --> 15,222
@@ -38,14 +57,13 @@ export const formatAbbreviateNumber = (number: number): string => {
  */
 export const formatIntegerNumber = (
   value: number,
-  currency: string = "",
-): string => `${currency}${new Intl.NumberFormat().format(value)}`;
+  currency?: string,
+): string => {
+  const formattedNumber = value.toLocaleString("en-US");
 
-/**
- * Format decimal number
- * Ex: 23999 --> 23.999
- * @param value number
- * @returns string
- */
-export const formatDecimalNumber = (value: number): string =>
-  new Intl.NumberFormat().format(value).split(",").join(".");
+  if (currency) {
+    return `${currency}${formattedNumber}`;
+  }
+
+  return formattedNumber;
+};

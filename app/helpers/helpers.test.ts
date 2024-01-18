@@ -1,4 +1,5 @@
 import {
+  formatDecimalNumber,
   formatAbbreviateNumber,
   formatMoney,
   formatPercentage,
@@ -94,6 +95,26 @@ describe("Test formatPercentage function", () => {
     const formattedResult = formatPercentage(zero);
 
     expect(formattedResult).toBe("0%");
+  });
+});
+
+describe("formatDecimalNumber function", () => {
+  test("formats numbers with more than 3 digits correctly", () => {
+    expect(formatDecimalNumber(234234)).toBe("234.234");
+    expect(formatDecimalNumber(1233)).toBe("1.233");
+  });
+
+  test("does not modify numbers with 3 or fewer digits", () => {
+    expect(formatDecimalNumber(978)).toBe("978");
+    expect(formatDecimalNumber(42)).toBe("42");
+  });
+
+  test("handles negative numbers correctly", () => {
+    expect(formatDecimalNumber(-56789)).toBe("-56.789");
+  });
+
+  test("handles zero correctly", () => {
+    expect(formatDecimalNumber(0)).toBe("0");
   });
 });
 

@@ -9,7 +9,11 @@ import IconBox from "@/components/IconBox/IconBox";
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 // Helpers
-import { formatAbbreviateNumber, formatPercentage } from "@/helpers";
+import {
+  formatAbbreviateNumber,
+  formatIntegerNumber,
+  formatPercentage,
+} from "@/helpers";
 
 // Constants
 import { ANALYTICS_STATISTICAL_TYPE } from "@/constants/analytics";
@@ -32,10 +36,13 @@ const AnalyticsStatisticCard = ({
 }: IAnalyticsStatisticCard): JSX.Element => {
   const { id, type, amount, amountChange, duration } = statisticalData;
 
-  const formattedMount =
-    type === ANALYTICS_STATISTICAL_TYPE.REVENUE
-      ? formatAbbreviateNumber(amount)
-      : amount;
+  const formattedAmount =
+    {
+      [ANALYTICS_STATISTICAL_TYPE.BOOKINGS]: amount,
+      [ANALYTICS_STATISTICAL_TYPE.TODAY_USER]: formatIntegerNumber(amount),
+      [ANALYTICS_STATISTICAL_TYPE.REVENUE]: formatAbbreviateNumber(amount),
+      [ANALYTICS_STATISTICAL_TYPE.FOLLOWERS]: amount,
+    }[type] || "";
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -52,7 +59,7 @@ const AnalyticsStatisticCard = ({
                 {type}
               </Text>
               <Text className="text-tremor-content-title dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
-                {formattedMount}
+                {formattedAmount}
               </Text>
             </Flex>
           </Flex>

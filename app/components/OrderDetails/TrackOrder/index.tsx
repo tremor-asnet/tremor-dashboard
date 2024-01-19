@@ -19,7 +19,7 @@ const TrackOrder = ({
   return (
     <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0">
       <ul className="relative m-0 w-full p-0 pb-6">
-        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-line-empty after:w-[0.125rem] after:bg-border after:line-content">
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
           <Flex className="justify-start px-6 pt-6 leading-[1.3rem] after:line-content">
             <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
               <FaBell />

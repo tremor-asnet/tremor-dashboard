@@ -5,11 +5,11 @@ export const color = {
   seldom: "#1a73e8",
   few: "#4caf50",
   litle: "#ebebeb",
-  lighter: "rgba(255, 255, 255, 0.8)",
 
   dark: {
     primary: "#ffffff",
     romance: "#ffffffcc",
+    lighter: "rgba(255, 255, 255, 0.8)",
   },
   // light mode
   tremor: {

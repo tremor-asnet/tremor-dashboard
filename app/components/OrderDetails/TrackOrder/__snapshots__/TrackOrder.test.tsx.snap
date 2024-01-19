@@ -9,7 +9,7 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
       class="relative m-0 w-full p-0 pb-6"
     >
       <li
-        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-line-empty after:w-[0.125rem] after:bg-border after:line-content"
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start px-6 pt-6 leading-[1.3rem] after:line-content"

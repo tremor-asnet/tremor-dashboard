@@ -12,3 +12,4 @@ export * from "./colors";
 export * from "./currencies";
 export * from "./sales";
 export * from "./commons";
+export * from "./status";

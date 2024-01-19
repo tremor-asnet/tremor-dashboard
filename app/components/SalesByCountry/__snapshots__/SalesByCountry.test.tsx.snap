@@ -121,7 +121,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
-                          $NaN
+                          <span>
+                            $230.900
+                          </span>
                         </p>
                       </td>
                       <td
@@ -203,7 +205,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
-                          $NaN
+                          <span>
+                            $440.000
+                          </span>
                         </p>
                       </td>
                       <td
@@ -285,7 +289,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
-                          $190,700
+                          <span>
+                            $190.700
+                          </span>
                         </p>
                       </td>
                       <td
@@ -367,7 +373,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
-                          $NaN
+                          <span>
+                            $143.960
+                          </span>
                         </p>
                       </td>
                       <td
@@ -449,7 +457,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         <p
                           class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
-                          $NaN
+                          <span>
+                            $143.960
+                          </span>
                         </p>
                       </td>
                       <td
@@ -612,7 +622,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
-                        $NaN
+                        <span>
+                          $230.900
+                        </span>
                       </p>
                     </td>
                     <td
@@ -694,7 +706,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
-                        $NaN
+                        <span>
+                          $440.000
+                        </span>
                       </p>
                     </td>
                     <td
@@ -776,7 +790,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
-                        $190,700
+                        <span>
+                          $190.700
+                        </span>
                       </p>
                     </td>
                     <td
@@ -858,7 +874,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
-                        $NaN
+                        <span>
+                          $143.960
+                        </span>
                       </p>
                     </td>
                     <td
@@ -940,7 +958,9 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       <p
                         class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
-                        $NaN
+                        <span>
+                          $143.960
+                        </span>
                       </p>
                     </td>
                     <td
@@ -1543,7 +1563,9 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
-                      $NaN
+                      <span>
+                        $230.900
+                      </span>
                     </p>
                   </td>
                   <td
@@ -1625,7 +1647,9 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
-                      $NaN
+                      <span>
+                        $440.000
+                      </span>
                     </p>
                   </td>
                   <td
@@ -1707,7 +1731,9 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
-                      $190,700
+                      <span>
+                        $190.700
+                      </span>
                     </p>
                   </td>
                   <td
@@ -1789,7 +1815,9 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
-                      $NaN
+                      <span>
+                        $143.960
+                      </span>
                     </p>
                   </td>
                   <td
@@ -1871,7 +1899,9 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     <p
                       class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
-                      $NaN
+                      <span>
+                        $143.960
+                      </span>
                     </p>
                   </td>
                   <td

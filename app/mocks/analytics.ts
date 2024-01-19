@@ -4,7 +4,7 @@ export const SALES_BY_COUNTRY = [
     flag: "/assets/images/flags/US.webp",
     country: "United State",
     sales: 2500,
-    value: "$230,900",
+    value: 230900,
     bounce: 29.9,
   },
   {
@@ -12,7 +12,7 @@ export const SALES_BY_COUNTRY = [
     flag: "/assets/images/flags/DE.webp",
     country: "Germany",
     sales: 3900,
-    value: "$440,000",
+    value: 440000,
     bounce: 40.22,
   },
   {
@@ -20,7 +20,7 @@ export const SALES_BY_COUNTRY = [
     flag: "/assets/images/flags/GB.webp",
     country: "Great Britain",
     sales: 1400,
-    value: "190700",
+    value: 190700,
     bounce: 23.44,
   },
   {
@@ -28,7 +28,7 @@ export const SALES_BY_COUNTRY = [
     flag: "/assets/images/flags/BR.webp",
     country: "Brasil",
     sales: 562,
-    value: "$143,960",
+    value: 143960,
     bounce: 32.14,
   },
   {
@@ -36,7 +36,7 @@ export const SALES_BY_COUNTRY = [
     flag: "/assets/images/flags/AU.webp",
     country: "Australia",
     sales: 400,
-    value: "$143,960",
+    value: 143960,
     bounce: 56.83,
   },
 ];

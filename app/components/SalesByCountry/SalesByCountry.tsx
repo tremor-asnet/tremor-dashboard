@@ -13,17 +13,17 @@ import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 
 // Constants
-import { FLAG_SRC } from "@/constants";
+import { CURRENCY, FLAG_SRC } from "@/constants";
 
 // Helpers
-import { formatDecimalNumber, formatMoney } from "@/helpers";
+import { formattedNumber } from "@/helpers";
 
 export interface ISalesByCountry {
   id: string;
   flag: string;
   country: string;
   sales: number;
-  value: string;
+  value: number;
   bounce: number;
 }
 
@@ -93,7 +93,10 @@ const SalesByCountry = ({
                         Sales:
                       </Text>
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-                        {formatDecimalNumber(sales)}
+                        {formattedNumber({
+                          value: sales,
+                          isDecimalNumber: true,
+                        })}
                       </Text>
                     </TableCell>
                     {isAnalytics && (
@@ -102,7 +105,13 @@ const SalesByCountry = ({
                           Value:
                         </Text>
                         <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
-                          {formatMoney(value)}
+                          <span>
+                            {formattedNumber({
+                              value,
+                              isDecimalNumber: true,
+                              currency: CURRENCY.DOLLAR,
+                            })}
+                          </span>
                         </Text>
                       </TableCell>
                     )}

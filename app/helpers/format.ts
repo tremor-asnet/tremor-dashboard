@@ -29,10 +29,30 @@ export const formatAbbreviateNumber = (number: number): string => {
 };
 
 /**
- * Format decimal number
- * Ex: 23999 --> 23.999
+ * Format number with:
+ * decimal currency ( 23000 --> $23.000 )
+ * commas currency ( 23000 --> $23,000 )
+ * commas ( 23000 --> 23,000 )
+ * decimal ( 23000 --> 23.000 )
  * @param value number
+ * @param isDecimalNumber boolean
+ * @param currency string
  * @returns string
  */
-export const formatDecimalNumber = (value: number): string =>
-  new Intl.NumberFormat().format(value).split(",").join(".");
+export const formattedNumber = ({
+  value,
+  currency = "",
+  isDecimalNumber = false,
+}: {
+  value: number;
+  currency?: string;
+  isDecimalNumber?: boolean;
+}): string => {
+  let formattedNumber = value.toLocaleString("en-US");
+
+  if (isDecimalNumber) {
+    formattedNumber = formattedNumber.split(",").join(".");
+  }
+
+  return currency ? `${currency}${formattedNumber}` : formattedNumber;
+};

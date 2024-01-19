@@ -27,14 +27,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                     class="tremor-Flex-root flex flex-row items-center w-auto justify-start mr-4"
                   >
                     <img
-                      alt="Gold Glasses"
+                      alt="Orlando Imieto"
                       class="rounded-full"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
                       height="110"
-                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
-                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75 2x"
                       style="color: transparent;"
                       width="110"
                     />
@@ -45,14 +45,12 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                     <p
                       class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                     >
-                      Gold Glasses
+                      Nike Sport V2
                     </p>
                     <p
                       class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                     >
-                      Order was 
-                      delivered
-                       2 days ago.
+                      Order was delivered 2 days ago.
                     </p>
                     <p
                       class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
@@ -84,7 +82,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                   >
-                    Do you like the product? Leave us a review here.
+                    Do you like the item? Leave us a review here.
                   </p>
                 </div>
               </td>
@@ -117,14 +115,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                   class="tremor-Flex-root flex flex-row items-center w-auto justify-start mr-4"
                 >
                   <img
-                    alt="Gold Glasses"
+                    alt="Orlando Imieto"
                     class="rounded-full"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
                     height="110"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75 2x"
                     style="color: transparent;"
                     width="110"
                   />
@@ -135,14 +133,12 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                   <p
                     class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                   >
-                    Gold Glasses
+                    Nike Sport V2
                   </p>
                   <p
                     class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                   >
-                    Order was 
-                    delivered
-                     2 days ago.
+                    Order was delivered 2 days ago.
                   </p>
                   <p
                     class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
@@ -174,7 +170,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 <p
                   class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                 >
-                  Do you like the product? Leave us a review here.
+                  Do you like the item? Leave us a review here.
                 </p>
               </div>
             </td>

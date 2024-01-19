@@ -5,4 +5,4 @@ export * from "./charts";
 export * from "./analytics";
 export * from "./sales";
 export * from "./table-list";
-export * from "./order-detail";
+export * from "./orders";

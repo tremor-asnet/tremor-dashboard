@@ -2,15 +2,13 @@ export type ProductDetail = {
   id: number;
   name: string;
   count: number;
-  price: number;
-  url: string;
 };
 
 export type TOrderDetail = {
   id: number;
   order_code: string;
   order_deliver_price: number;
-  order_tax: string;
+  order_tax: number;
   created_at: string;
   products: ProductDetail[];
   track_order_info: {
@@ -26,4 +24,19 @@ export type TOrderDetail = {
     email: string;
     vat: string;
   };
+};
+
+export type TCustomer = {
+  id: number;
+  avatar: string;
+  full_name: string;
+};
+
+export type TOrderList = {
+  id: number;
+  created_at: string;
+  status: number;
+  customer: TCustomer;
+  products: ProductDetail[];
+  revenue: number;
 };

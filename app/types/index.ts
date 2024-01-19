@@ -6,4 +6,4 @@ export * from "./analytics";
 export * from "./sales";
 export * from "./profile";
 export * from "./table-list";
-export * from "./order-detail";
+export * from "./orders";

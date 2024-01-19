@@ -1,10 +1,7 @@
 import { Flex, Bold, Text, Button } from "@tremor/react";
 
-export interface InvoiceHeaderProps {
-  id: number;
-  createdAt: string;
-  orderCode: string;
-}
+// Types
+import { InvoiceHeaderProps } from "@/types/orderDetails";
 
 export const InvoiceHeader = ({
   id,

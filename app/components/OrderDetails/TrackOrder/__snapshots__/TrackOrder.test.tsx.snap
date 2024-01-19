@@ -3,21 +3,16 @@
 exports[`TrackOrder Component render TrackOrder component with snapshot correctly 1`] = `
 <div>
   <div
-    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0 pt-6"
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0"
   >
-    <b
-      class="text-inherit font-bold dark:text-white mb-4 pl-6"
-    >
-      Track order
-    </b>
     <ul
       class="relative m-0 w-full p-0 pb-6"
     >
       <li
-        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[1px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
       >
         <div
-          class="flex justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start px-6 pt-6 leading-[1.3rem] after:line-content"
         >
           <span
             class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
@@ -40,23 +35,23 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             class="flex flex-col"
           >
             <span
-              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary"
             >
               Order received
             </span>
             <span
               class="text-tremor-label text-primary font-light dark:text-dark-romance"
             >
-              Order Deliver
+              22 DEC 7:21 AM
             </span>
           </div>
         </div>
       </li>
       <li
-        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[1px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
       >
         <div
-          class="flex justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
         >
           <span
             class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
@@ -83,23 +78,24 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             class="flex flex-col"
           >
             <span
-              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary"
             >
-              Generate order id
+              Generate order id 
+              #1832412
             </span>
             <span
               class="text-tremor-label text-primary font-light dark:text-dark-romance"
             >
-              Order Deliver
+              22 DEC 7:21 AM
             </span>
           </div>
         </div>
       </li>
       <li
-        class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[1px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
+        class="1234 relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty"
       >
         <div
-          class="flex justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
         >
           <span
             class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
@@ -132,23 +128,23 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             class="flex flex-col"
           >
             <span
-              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary"
             >
               Order transmited to courier
             </span>
             <span
               class="text-tremor-label text-primary font-light dark:text-dark-romance"
             >
-              Order Deliver
+              22 DEC 8:10 AM
             </span>
           </div>
         </div>
       </li>
       <li
-        class="relative h-fit undefined"
+        class="relative h-fit"
       >
         <div
-          class="flex justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+          class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
         >
           <span
             class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary"
@@ -171,14 +167,14 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             class="flex flex-col"
           >
             <span
-              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+              class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary"
             >
               Order delivered
             </span>
             <span
               class="text-tremor-label text-primary font-light dark:text-dark-romance"
             >
-              27 , JAN
+              22 DEC 4:54 PM
             </span>
           </div>
         </div>

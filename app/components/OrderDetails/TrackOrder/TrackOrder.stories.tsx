@@ -21,9 +21,11 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   render: () => (
     <TrackOrder
-      data={mockTrackOrder}
-      deliveredAt={"27 , JAN"}
-      descriptionInfo=""
+      id={mockTrackOrder.id}
+      generateOrderAt={mockTrackOrder.generateOrderId}
+      deliveredAt={mockTrackOrder.deliveredAt}
+      transmitedToCourierAt={mockTrackOrder.transmitedToCourierAt}
+      generateOrderId={mockTrackOrder.generateOrderId}
     />
   ),
 };

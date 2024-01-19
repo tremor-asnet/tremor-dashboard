@@ -36,4 +36,10 @@
     .label-with-error {
         @apply text-red-600 peer-focus:text-red-600
     }
+    .line-track {
+        @apply h-[calc(100%-2.25rem)]
+    }
+    .line-content {
+        @apply content-['']
+    }
 }

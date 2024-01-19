@@ -18,6 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   render: () => (
-    <OrderDetailContact order_status="delivered" data={ORDER_DETAIL_DATA} />
+    <OrderDetailContact orderStatus="delivered" data={ORDER_DETAIL_DATA} />
   ),
 };

@@ -8,7 +8,7 @@ import { ORDER_DETAIL_DATA } from "@/mocks";
 
 describe("Testing Order detail contact section", () => {
   const propsDefault = {
-    order_status: "delivered",
+    orderStatus: "delivered",
     data: ORDER_DETAIL_DATA,
   };
 

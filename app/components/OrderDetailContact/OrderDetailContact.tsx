@@ -15,26 +15,32 @@ import { CustomImage } from "@/components";
 import { ProductDetail, TOrderDetail } from "@/types";
 
 export interface OrderDetailContactProps {
-  order_status: string;
+  orderStatus: string;
   data: TOrderDetail[];
 }
 
-const OrderDetailContact = ({
-  order_status,
-  data,
-}: OrderDetailContactProps) => {
+const OrderDetailContact = ({ orderStatus, data }: OrderDetailContactProps) => {
   return (
     <Table className="w-full">
       <TableBody>
         {data.map(item => {
-          const { id, products } = item;
+          const {
+            id = 1,
+            products = [
+              {
+                id: 1,
+                name: "Gold Glasses",
+                count: 1,
+                price: 40,
+                url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/product-12.0b55635d.jpg",
+              },
+            ],
+          } = item;
           return (
             <TableRow key={id}>
               <TableCell>
-                {products?.map((product: ProductDetail, index: number) => (
-                  <Flex
-                    key={`Product ${index} of ${product.name} by ${product.id}`}
-                    className="w-auto justify-start">
+                {products?.map((product: ProductDetail) => (
+                  <Flex key={product.id} className="w-auto justify-start">
                     <Flex className="w-auto justify-start mr-4">
                       <CustomImage
                         alt={product.name}
@@ -49,11 +55,11 @@ const OrderDetailContact = ({
                       <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
                         {product.name}
                       </Title>
-                      <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
-                        Order was {order_status} 2 days ago.
+                      <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+                        Order was {orderStatus} 2 days ago.
                       </Text>
-                      <Text className="p-2 mt-4 font-bold text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
-                        {order_status}
+                      <Text className="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
+                        {orderStatus}
                       </Text>
                     </Flex>
                   </Flex>
@@ -61,7 +67,7 @@ const OrderDetailContact = ({
               </TableCell>
               <TableCell>
                 <Flex className="flex-col items-end">
-                  <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover px-2 py-1.5 leading-[17px] tracking-[0.35px]">
+                  <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-2 py-1.5 leading-[17px] tracking-[0.35px]">
                     <Text className="uppercase py-[2px] text-xs font-bold text-white uppercase">
                       contact us
                     </Text>

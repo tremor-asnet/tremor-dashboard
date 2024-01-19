@@ -64,6 +64,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
           </p>
           <p
             class="font-bold dark:text-white"
+            data-testid="total-price"
           >
             $105.95
           </p>
@@ -131,6 +132,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
         </p>
         <p
           class="font-bold dark:text-white"
+          data-testid="total-price"
         >
           $105.95
         </p>

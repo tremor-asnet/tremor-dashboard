@@ -48,7 +48,7 @@ export const OrderSummary = (monies: OrderSummaryProps) => {
           <p className="text-tremor-content text-xl font-light dark:text-lighter">
             Total:
           </p>
-          <p className="font-bold dark:text-white">
+          <p className="font-bold dark:text-white" data-testid="total-price">
             {formattedNumber({
               value: totalPayment,
               currency: CURRENCY.DOLLAR,

@@ -62,9 +62,17 @@ describe("Test OderSummary component", () => {
 
   test("Should render correct total price", () => {
     render(<OrderSummary {...mockOrderSummary} />);
-    const result = screen.getByText(
-      (_, element) => element?.textContent === "$105.95",
+    const result = screen.getByTestId("total-price");
+    const total =
+      mockOrderSummary.delivery +
+      mockOrderSummary.productPrice +
+      mockOrderSummary.taxes;
+    expect(result).toHaveTextContent(
+      formattedNumber({
+        value: total,
+        currency: CURRENCY.DOLLAR,
+        isDecimalNumber: true,
+      }),
     );
-    expect(result).toBeTruthy();
   });
 });

@@ -6,7 +6,7 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
+        class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
       >
         <div
           class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
@@ -48,31 +48,31 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
               class="isolate inline-flex -space-x-px gap-2"
             >
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
                 href="#"
               >
                 1
               </a>
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
                 href="#"
               >
                 2
               </a>
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
                 href="#"
               >
                 3
               </a>
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
                 href="#"
               >
                 4
               </a>
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
                 href="#"
               >
                 5
@@ -111,7 +111,7 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
+      class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
     >
       <div
         class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
@@ -153,31 +153,31 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
             class="isolate inline-flex -space-x-px gap-2"
           >
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
               href="#"
             >
               1
             </a>
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
               href="#"
             >
               2
             </a>
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
               href="#"
             >
               3
             </a>
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
               href="#"
             >
               4
             </a>
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
               href="#"
             >
               5

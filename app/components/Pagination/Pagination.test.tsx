@@ -5,7 +5,7 @@ import Pagination from "./Pagination";
 
 describe("Testing Pagination component", () => {
   const propsDefault = {
-    totalCount: 5,
+    total: 5,
   };
 
   it("Should match snapshot", () => {

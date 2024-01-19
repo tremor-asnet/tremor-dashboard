@@ -6,7 +6,7 @@ import { Flex } from "@tremor/react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 interface PaginationProps {
-  totalCount?: number;
+  total?: number;
   offset?: number;
   pageSize?: number;
   hasNext?: boolean;
@@ -15,7 +15,7 @@ interface PaginationProps {
 }
 
 export const Pagination = ({
-  totalCount,
+  total = 1,
   offset = 1,
   pageSize = 1,
   hasNext = true,
@@ -25,11 +25,10 @@ export const Pagination = ({
   const [data, setData] = useState({
     pageOffset: offset,
     pageSize: pageSize,
-    totalCount: totalCount,
+    totalCount: total,
     hasPrev: hasPrev,
     hasNext: hasNext,
   });
-  const total = data.totalCount || 1;
   const listItemsPage = Array.from({ length: total }, (v, i) => i);
 
   const handleNextPage = useCallback(() => {
@@ -69,7 +68,7 @@ export const Pagination = ({
   };
 
   return (
-    <Flex className="antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6">
+    <Flex className="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6">
       <Flex className="flex flex-wrap items-center justify-between w-full">
         <Flex className="w-auto py-2">
           <p className="text-sm text-secondary">
@@ -98,8 +97,8 @@ export const Pagination = ({
                 onClick={() => handleChangePage(curentPage + 1)}
                 className={`relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 ${
                   data.pageOffset === curentPage + 1
-                    ? "z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
-                    : "text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                    ? "z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
+                    : "text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
                 }`}>
                 {curentPage + 1}
               </a>

@@ -26,3 +26,4 @@ export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingPr
 export { default as Pagination } from "./Pagination/Pagination";
 export { default as TableList } from "./TableList/TableList";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
+export { default as InputSearch } from "./InputSearch/InputSearch";

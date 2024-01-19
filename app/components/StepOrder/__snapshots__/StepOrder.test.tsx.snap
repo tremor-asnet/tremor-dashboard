@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepOrder Component render StepOrder component with snapshot correctly 1`] = `
+<div>
+  <li
+    class="relative h-fit undefined"
+  >
+    <div
+      class="flex justify-start px-6 pt-6 leading-[1.3rem] after:content-['']"
+    >
+      <span
+        class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"
+          />
+        </svg>
+      </span>
+      <div
+        class="flex flex-col"
+      >
+        <span
+          class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] after:content-[data-content] dark:text-dark-primary"
+        >
+          Order delivered
+        </span>
+        <span
+          class="text-tremor-label text-primary font-light dark:text-dark-romance"
+        />
+      </div>
+    </div>
+  </li>
+</div>
+`;

@@ -142,22 +142,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div
-              class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-            >
-              <div
-                class="tremor-Table-root overflow-auto w-full"
-              >
-                <table
-                  class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-                >
-                  <tbody
-                    class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                  >
                     <tr
                       class="tremor-TableRow-row border-solid"
                     >
@@ -240,22 +224,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div
-              class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-            >
-              <div
-                class="tremor-Table-root overflow-auto w-full"
-              >
-                <table
-                  class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-                >
-                  <tbody
-                    class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                  >
                     <tr
                       class="tremor-TableRow-row border-solid"
                     >
@@ -338,22 +306,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div
-              class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-            >
-              <div
-                class="tremor-Table-root overflow-auto w-full"
-              >
-                <table
-                  class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-                >
-                  <tbody
-                    class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                  >
                     <tr
                       class="tremor-TableRow-row border-solid"
                     >
@@ -436,22 +388,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div
-              class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-            >
-              <div
-                class="tremor-Table-root overflow-auto w-full"
-              >
-                <table
-                  class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-                >
-                  <tbody
-                    class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                  >
                     <tr
                       class="tremor-TableRow-row border-solid"
                     >
@@ -697,22 +633,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-          >
-            <div
-              class="tremor-Table-root overflow-auto w-full"
-            >
-              <table
-                class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-              >
-                <tbody
-                  class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                >
                   <tr
                     class="tremor-TableRow-row border-solid"
                   >
@@ -795,22 +715,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-          >
-            <div
-              class="tremor-Table-root overflow-auto w-full"
-            >
-              <table
-                class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-              >
-                <tbody
-                  class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                >
                   <tr
                     class="tremor-TableRow-row border-solid"
                   >
@@ -893,22 +797,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-          >
-            <div
-              class="tremor-Table-root overflow-auto w-full"
-            >
-              <table
-                class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-              >
-                <tbody
-                  class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                >
                   <tr
                     class="tremor-TableRow-row border-solid"
                   >
@@ -991,22 +879,6 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-          >
-            <div
-              class="tremor-Table-root overflow-auto w-full"
-            >
-              <table
-                class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-              >
-                <tbody
-                  class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-                >
                   <tr
                     class="tremor-TableRow-row border-solid"
                   >
@@ -1271,22 +1143,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1355,22 +1211,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1439,22 +1279,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1523,22 +1347,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1756,22 +1564,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1854,22 +1646,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -1952,22 +1728,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >
@@ -2050,22 +1810,6 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
-        >
-          <div
-            class="tremor-Table-root overflow-auto w-full"
-          >
-            <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-            >
-              <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
-              >
                 <tr
                   class="tremor-TableRow-row border-solid"
                 >

@@ -61,16 +61,14 @@ const SalesByCountry = ({
         isAnalytics ? "px-4 md:py-5" : "px-0 md:py-4"
       }`}>
       <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
-        {data.map(item => {
-          const { id, country, sales, value, bounce } = item;
+        <Flex className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
+          <Table className="w-full">
+            <TableBody className="last-child:border-black">
+              {data.map(item => {
+                const { id, country, sales, value, bounce } = item;
 
-          return (
-            <Flex
-              key={id}
-              className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
-              <Table className="w-full">
-                <TableBody className="last-child:border-black">
-                  <TableRow className="border-solid">
+                return (
+                  <TableRow key={id} className="border-solid">
                     <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
                       <Flex className="items-center">
                         <Image
@@ -120,11 +118,11 @@ const SalesByCountry = ({
                       </Text>
                     </TableCell>
                   </TableRow>
-                </TableBody>
-              </Table>
-            </Flex>
-          );
-        })}
+                );
+              })}
+            </TableBody>
+          </Table>
+        </Flex>
       </Flex>
       {isAnalytics && chart && (
         <Flex className="justify-center pb-6 px-16 md:p-0 map">

@@ -8,6 +8,7 @@ import { MdInventory } from "react-icons/md";
 
 // Types
 import { TrackOrderProps } from "@/types";
+import dayjs from "dayjs";
 
 const TrackOrder = ({
   id,
@@ -29,7 +30,7 @@ const TrackOrder = ({
                 Order received
               </span>
               <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
-                {generateOrderAt}
+                {dayjs(generateOrderAt).format("DD MMM h:m A")}
               </span>
             </div>
           </Flex>
@@ -44,8 +45,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Generate order id {id}
               </span>
-              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
-                {generateOrderId}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {dayjs(generateOrderId).format("DD MMM h:m A")}
               </span>
             </div>
           </div>
@@ -60,8 +61,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Order transmited to courier
               </span>
-              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
-                {transmitedToCourierAt}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {dayjs(transmitedToCourierAt).format("DD MMM h:m A")}
               </span>
             </div>
           </div>
@@ -76,8 +77,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Order delivered
               </span>
-              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
-                {deliveredAt}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {dayjs(deliveredAt).format("DD MMM h:m A")}
               </span>
             </div>
           </div>

@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const PaginationDefault: Story = {
   render: () => (
     <Flex className="w-full justify-center mt-10">
-      <Pagination totalCount={5} />
+      <Pagination totalCount={2} />
     </Flex>
   ),
 };

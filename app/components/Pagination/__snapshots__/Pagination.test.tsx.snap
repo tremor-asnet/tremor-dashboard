@@ -31,25 +31,25 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <p
-              class="text-sm text-gray-700"
+              class="text-sm text-secondary"
             >
               Showing 
               <span
-                class="font-medium"
+                class="font-normal"
               >
                 1
               </span>
                to
                
               <span
-                class="font-medium"
+                class="font-normal"
               >
                 10
               </span>
                of
                
               <span
-                class="font-medium"
+                class="font-normal"
               >
                 12
               </span>
@@ -63,54 +63,21 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
               aria-label="Pagination"
               class="isolate inline-flex -space-x-px gap-2"
             >
-              <button
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-                disabled=""
-              >
-                <span
-                  class="sr-only"
-                >
-                  Previous
-                </span>
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 p-[3px]"
-                  fill="none"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polyline
-                    points="15 18 9 12 15 6"
-                  />
-                </svg>
-              </button>
               <a
-                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 hover:bg-gray"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
                 href="#"
               >
                 1
               </a>
               <a
                 aria-current="page"
-                class="relative z-10 inline-flex items-center justify-center rounded-full bg-gradient-item-page w-[36px] h-[36px] text-sm font-normal text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
                 href="#"
               >
                 2
               </a>
-              <a
-                class="relative hidden items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
-                href="#"
-              >
-                3
-              </a>
               <button
-                class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
               >
                 <span
                   class="sr-only"
@@ -168,25 +135,25 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <p
-            class="text-sm text-gray-700"
+            class="text-sm text-secondary"
           >
             Showing 
             <span
-              class="font-medium"
+              class="font-normal"
             >
               1
             </span>
              to
              
             <span
-              class="font-medium"
+              class="font-normal"
             >
               10
             </span>
              of
              
             <span
-              class="font-medium"
+              class="font-normal"
             >
               12
             </span>
@@ -200,54 +167,21 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
             aria-label="Pagination"
             class="isolate inline-flex -space-x-px gap-2"
           >
-            <button
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
-              disabled=""
-            >
-              <span
-                class="sr-only"
-              >
-                Previous
-              </span>
-              <svg
-                aria-hidden="true"
-                class="h-5 w-5 p-[3px]"
-                fill="none"
-                height="1em"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="15 18 9 12 15 6"
-                />
-              </svg>
-            </button>
             <a
-              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 hover:bg-gray"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
               href="#"
             >
               1
             </a>
             <a
               aria-current="page"
-              class="relative z-10 inline-flex items-center justify-center rounded-full bg-gradient-item-page w-[36px] h-[36px] text-sm font-normal text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
               href="#"
             >
               2
             </a>
-            <a
-              class="relative hidden items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
-              href="#"
-            >
-              3
-            </a>
             <button
-              class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
             >
               <span
                 class="sr-only"

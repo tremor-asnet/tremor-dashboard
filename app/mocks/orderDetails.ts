@@ -4,7 +4,7 @@ export const mockInvoiceHeader = {
   orderCode: "KF332",
 };
 
-export const mockOderSummary = {
+export const mockOrderSummary = {
   productPrice: 90,
   delivery: 14,
   taxes: 1.95,

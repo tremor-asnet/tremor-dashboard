@@ -16,47 +16,43 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
-          <p
-            class="text-tremor-default text-tremor-content dark:text-lighter"
-          >
-            Product Price:
-          </p>
-          <p
-            class="font-bold dark:text-white"
-          >
-            $
-            90
-          </p>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
-        >
-          <p
-            class="text-tremor-default text-tremor-content dark:text-lighter"
-          >
-            Delivery:
-          </p>
-          <p
-            class="font-bold dark:text-white"
-          >
-            $
-            14
-          </p>
-        </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
-        >
-          <p
-            class="text-tremor-default text-tremor-content dark:text-lighter"
-          >
-            Taxes:
-          </p>
-          <p
-            class="font-bold dark:text-white"
-          >
-            $
-            1.95
-          </p>
+          <div>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter"
+            >
+              Product Price
+            </p>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter"
+            >
+              Delivery
+            </p>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter"
+            >
+              Taxes
+            </p>
+          </div>
+          <div>
+            <p
+              class="font-bold dark:text-white text-end"
+              data-testid="productPrice"
+            >
+              $90
+            </p>
+            <p
+              class="font-bold dark:text-white text-end"
+              data-testid="delivery"
+            >
+              $14
+            </p>
+            <p
+              class="font-bold dark:text-white text-end"
+              data-testid="taxes"
+            >
+              $1.95
+            </p>
+          </div>
         </div>
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-4"
@@ -69,8 +65,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
           <p
             class="font-bold dark:text-white"
           >
-            $
-            105.95
+            $105.95
           </p>
         </div>
       </div>
@@ -88,47 +83,43 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
-        <p
-          class="text-tremor-default text-tremor-content dark:text-lighter"
-        >
-          Product Price:
-        </p>
-        <p
-          class="font-bold dark:text-white"
-        >
-          $
-          90
-        </p>
-      </div>
-      <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
-      >
-        <p
-          class="text-tremor-default text-tremor-content dark:text-lighter"
-        >
-          Delivery:
-        </p>
-        <p
-          class="font-bold dark:text-white"
-        >
-          $
-          14
-        </p>
-      </div>
-      <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
-      >
-        <p
-          class="text-tremor-default text-tremor-content dark:text-lighter"
-        >
-          Taxes:
-        </p>
-        <p
-          class="font-bold dark:text-white"
-        >
-          $
-          1.95
-        </p>
+        <div>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter"
+          >
+            Product Price
+          </p>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter"
+          >
+            Delivery
+          </p>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter"
+          >
+            Taxes
+          </p>
+        </div>
+        <div>
+          <p
+            class="font-bold dark:text-white text-end"
+            data-testid="productPrice"
+          >
+            $90
+          </p>
+          <p
+            class="font-bold dark:text-white text-end"
+            data-testid="delivery"
+          >
+            $14
+          </p>
+          <p
+            class="font-bold dark:text-white text-end"
+            data-testid="taxes"
+          >
+            $1.95
+          </p>
+        </div>
       </div>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-4"
@@ -141,8 +132,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
         <p
           class="font-bold dark:text-white"
         >
-          $
-          105.95
+          $105.95
         </p>
       </div>
     </div>

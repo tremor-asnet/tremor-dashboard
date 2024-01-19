@@ -17,5 +17,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <TableList data={TABLE_LIST_DATA} />,
+  render: () => <TableList data={TABLE_LIST_DATA} handleCheckBox={() => {}} />,
 };

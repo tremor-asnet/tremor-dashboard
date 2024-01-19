@@ -4,11 +4,11 @@ import { Button, Flex } from "@tremor/react";
 // Icons
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
-export interface TableListHeaderProps {
+export interface HeaderCellContentsProps {
   title: string;
 }
 
-const TableListHeader = ({ title }: TableListHeaderProps) => (
+const HeaderCellContents = ({ title }: HeaderCellContentsProps) => (
   <Flex>
     <Flex>{title}</Flex>
     <Flex className="relative flex-col">
@@ -30,4 +30,4 @@ const TableListHeader = ({ title }: TableListHeaderProps) => (
   </Flex>
 );
 
-export default TableListHeader;
+export default HeaderCellContents;

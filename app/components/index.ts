@@ -24,4 +24,4 @@ export { default as SalesByCountry } from "./SalesByCountry/SalesByCountry";
 export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatisticCard";
 export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
 export { default as TableList } from "./TableList/TableList";
-export { default as TableListHeader } from "./TableListHeader/TableListHeader";
+export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";

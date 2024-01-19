@@ -14,7 +14,7 @@ import {
 } from "@tremor/react";
 
 // Components
-import { CheckBox, CustomImage, TableListHeader } from "@/components";
+import { CheckBox, CustomImage, HeaderCellContents } from "@/components";
 
 // Constants
 import { STATUS_TEXT } from "@/constants";
@@ -38,22 +38,22 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
           <TableHead>
             <TableRow className="border-0 border-b border-gray-100">
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="id" />
+                <HeaderCellContents title="id" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="date" />
+                <HeaderCellContents title="date" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="status" />
+                <HeaderCellContents title="status" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="customer" />
+                <HeaderCellContents title="customer" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="product" />
+                <HeaderCellContents title="product" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <TableListHeader title="product" />
+                <HeaderCellContents title="product" />
               </TableHeaderCell>
             </TableRow>
           </TableHead>

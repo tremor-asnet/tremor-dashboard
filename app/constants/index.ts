@@ -9,3 +9,7 @@ export * from "./sections";
 export * from "./images";
 export * from "./products";
 export * from "./colors";
+export * from "./currencies";
+export * from "./sales";
+export * from "./commons";
+export * from "./status";

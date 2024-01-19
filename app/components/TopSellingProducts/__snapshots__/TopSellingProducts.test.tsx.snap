@@ -111,8 +111,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
-                        $
-                        130.992
+                        $130.992
                       </span>
                     </p>
                   </td>
@@ -123,8 +122,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
-                        $
-                        9.500
+                        $9.500
                       </span>
                     </p>
                   </td>
@@ -214,8 +212,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
-                        $
-                        80.250
+                        $80.250
                       </span>
                     </p>
                   </td>
@@ -226,8 +223,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
-                        $
-                        4.200
+                        $4.200
                       </span>
                     </p>
                   </td>
@@ -317,8 +313,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
-                        $
-                        40.600
+                        $40.600
                       </span>
                     </p>
                   </td>
@@ -329,8 +324,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
-                        $
-                        9.430
+                        $9.430
                       </span>
                     </p>
                   </td>
@@ -420,8 +414,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
-                        $
-                        91.300
+                        $91.300
                       </span>
                     </p>
                   </td>
@@ -432,8 +425,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
-                        $
-                        7.364
+                        $7.364
                       </span>
                     </p>
                   </td>
@@ -523,8 +515,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
-                        $
-                        140.925
+                        $140.925
                       </span>
                     </p>
                   </td>
@@ -535,8 +526,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
-                        $
-                        20.531
+                        $20.531
                       </span>
                     </p>
                   </td>
@@ -686,8 +676,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
-                      $
-                      130.992
+                      $130.992
                     </span>
                   </p>
                 </td>
@@ -698,8 +687,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
-                      $
-                      9.500
+                      $9.500
                     </span>
                   </p>
                 </td>
@@ -789,8 +777,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
-                      $
-                      80.250
+                      $80.250
                     </span>
                   </p>
                 </td>
@@ -801,8 +788,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
-                      $
-                      4.200
+                      $4.200
                     </span>
                   </p>
                 </td>
@@ -892,8 +878,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
-                      $
-                      40.600
+                      $40.600
                     </span>
                   </p>
                 </td>
@@ -904,8 +889,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
-                      $
-                      9.430
+                      $9.430
                     </span>
                   </p>
                 </td>
@@ -995,8 +979,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
-                      $
-                      91.300
+                      $91.300
                     </span>
                   </p>
                 </td>
@@ -1007,8 +990,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
-                      $
-                      7.364
+                      $7.364
                     </span>
                   </p>
                 </td>
@@ -1098,8 +1080,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
-                      $
-                      140.925
+                      $140.925
                     </span>
                   </p>
                 </td>
@@ -1110,8 +1091,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
-                      $
-                      20.531
+                      $20.531
                     </span>
                   </p>
                 </td>
@@ -1315,8 +1295,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
-                    $
-                    130.992
+                    $130.992
                   </span>
                 </p>
               </td>
@@ -1327,8 +1306,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
-                    $
-                    9.500
+                    $9.500
                   </span>
                 </p>
               </td>
@@ -1418,8 +1396,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
-                    $
-                    80.250
+                    $80.250
                   </span>
                 </p>
               </td>
@@ -1430,8 +1407,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
-                    $
-                    4.200
+                    $4.200
                   </span>
                 </p>
               </td>
@@ -1521,8 +1497,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
-                    $
-                    40.600
+                    $40.600
                   </span>
                 </p>
               </td>
@@ -1533,8 +1508,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
-                    $
-                    9.430
+                    $9.430
                   </span>
                 </p>
               </td>
@@ -1624,8 +1598,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
-                    $
-                    91.300
+                    $91.300
                   </span>
                 </p>
               </td>
@@ -1636,8 +1609,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
-                    $
-                    7.364
+                    $7.364
                   </span>
                 </p>
               </td>
@@ -1727,8 +1699,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
-                    $
-                    140.925
+                    $140.925
                   </span>
                 </p>
               </td>
@@ -1739,8 +1710,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
-                    $
-                    20.531
+                    $20.531
                   </span>
                 </p>
               </td>

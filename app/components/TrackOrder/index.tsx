@@ -1,49 +1,87 @@
-import { Bold, Card } from "@tremor/react";
+import { Card, Flex } from "@tremor/react";
 
 // Icon React
+import { FaBell } from "react-icons/fa";
 import { IoMdCheckmark } from "react-icons/io";
-
-// Components
-import { StepOrder } from "@/components";
+import { IoCart } from "react-icons/io5";
+import { MdInventory } from "react-icons/md";
 
 // Types
-import { StepOrderProps } from "@/types";
-
-interface TrackOrderProps {
-  data: StepOrderProps[];
-  descriptionInfo: string;
-  deliveredAt: string;
-}
+import { TrackOrderProps } from "@/types";
 
 const TrackOrder = ({
-  data,
-  descriptionInfo,
+  id,
+  transmitedToCourierAt,
+  generateOrderId,
   deliveredAt,
+  generateOrderAt,
 }: TrackOrderProps) => {
   return (
-    <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0 pt-6">
-      <Bold className="dark:text-white mb-4 pl-6">Track order</Bold>
+    <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0">
       <ul className="relative m-0 w-full p-0 pb-6">
-        {data.map(item => {
-          const { iconInfo, titleInfo } = item;
-          return (
-            <>
-              <StepOrder
-                className="after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[1px] after:h-[calc(100%-2.25rem)] after:w-[0.125rem] after:bg-border after:content-['']"
-                backgroundColor="bg-light"
-                iconInfo={iconInfo}
-                titleInfo={titleInfo}
-                descriptionInfo={descriptionInfo}
-              />
-            </>
-          );
-        })}
-        <StepOrder
-          backgroundColor="bg-few"
-          iconInfo={<IoMdCheckmark />}
-          titleInfo="Order delivered"
-          descriptionInfo={deliveredAt}
-        />
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:h-line-empty after:w-[0.125rem] after:bg-border after:line-content">
+          <Flex className="justify-start px-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <FaBell />
+            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
+                Order received
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {generateOrderAt}
+              </span>
+            </div>
+          </Flex>
+        </li>
+
+        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <MdInventory />
+            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
+                Generate order id {id}
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {generateOrderId}
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li className="1234 relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty">
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+              <IoCart />
+            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
+                Order transmited to courier
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {transmitedToCourierAt}
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li className="relative h-fit">
+          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
+              <IoMdCheckmark />
+            </span>
+            <div className="flex flex-col">
+              <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
+                Order delivered
+              </span>
+              <span className="text-tremor-label text-primary font-light dark:text-dark-romance">
+                {deliveredAt}
+              </span>
+            </div>
+          </div>
+        </li>
       </ul>
     </Card>
   );

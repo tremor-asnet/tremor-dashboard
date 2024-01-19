@@ -1,7 +1,7 @@
 import { FaBell } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
 import { IoCart } from "react-icons/io5";
-import { StepOrderProps } from "@/types/orderDetail";
+import { TrackOrderProps } from "@/types/orderDetail";
 
 export const mockInvoiceHeader = {
   id: 241342,
@@ -9,17 +9,10 @@ export const mockInvoiceHeader = {
   orderCode: "KF332",
 };
 
-export const mockTrackOrder: StepOrderProps[] = [
-  {
-    iconInfo: <FaBell />,
-    titleInfo: "Order received",
-  },
-  {
-    iconInfo: <MdInventory />,
-    titleInfo: "Generate order id",
-  },
-  {
-    iconInfo: <IoCart />,
-    titleInfo: "Order transmited to courier",
-  },
-];
+export const mockTrackOrder: TrackOrderProps = {
+  id: "#1832412",
+  generateOrderAt: "22 DEC 7:21 AM",
+  deliveredAt: "22 DEC 4:54 PM",
+  transmitedToCourierAt: "22 DEC 8:10 AM",
+  generateOrderId: "22 DEC 7:21 AM",
+};

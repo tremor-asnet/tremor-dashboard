@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
-
-export interface StepOrderProps {
-  iconInfo: ReactNode;
-  titleInfo: string;
-  descriptionInfo?: string;
-  className?: string;
-  backgroundColor?: string;
+export interface TrackOrderProps {
+  id: string;
+  generateOrderAt: string;
+  deliveredAt: string;
+  transmitedToCourierAt: string;
+  generateOrderId: string;
 }

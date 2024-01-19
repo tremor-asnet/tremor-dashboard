@@ -36,9 +36,11 @@ const Sales = async () => {
   return (
     <Grid numItems={1} numItemsMd={3} className="gap-5 sale-page">
       <TrackOrder
-        data={mockTrackOrder}
-        deliveredAt={"27 , JAN"}
-        descriptionInfo=""
+        id={mockTrackOrder.id}
+        generateOrderAt={mockTrackOrder.generateOrderId}
+        deliveredAt={mockTrackOrder.deliveredAt}
+        transmitedToCourierAt={mockTrackOrder.transmitedToCourierAt}
+        generateOrderId={mockTrackOrder.generateOrderId}
       />
       <Col numColSpan={1} numColSpanMd={3}>
         <Grid className="gap-5" numItemsMd={3}>

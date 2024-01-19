@@ -8,7 +8,7 @@ const OrderSearch = ({ onSearch }: InputSearchProps) => (
   <Flex className="p-6 items-start justify-end">
     <TextInput
       id="search_order"
-      className="w-auto"
+      className="w-auto dark:bg-transparent dark:border-white"
       onChange={onSearch}
       placeholder="Search..."
     />

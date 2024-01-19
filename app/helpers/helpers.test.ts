@@ -1,3 +1,4 @@
+import { CURRENCY } from "@/constants";
 import {
   formatAbbreviateNumber,
   formatMoney,
@@ -117,7 +118,7 @@ describe("formattedNumber function", () => {
   test("formats number with decimal currency", () => {
     const result = formattedNumber({
       value: 23000,
-      currency: "$",
+      currency: CURRENCY.DOLLAR,
       isDecimalNumber: true,
     });
     expect(result).toBe("$23.000");
@@ -126,7 +127,7 @@ describe("formattedNumber function", () => {
   test("formats number with commas currency", () => {
     const result = formattedNumber({
       value: 23000,
-      currency: "$",
+      currency: CURRENCY.DOLLAR,
       isDecimalNumber: false,
     });
     expect(result).toBe("$23,000");

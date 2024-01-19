@@ -26,7 +26,7 @@ import { ProductStatus } from "@/helpers";
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 //Types
-import { ProductName, TTableList } from "@/types";
+import { ProductOrder, TTableList } from "@/types";
 
 export interface TableListProps {
   data: TTableList[];
@@ -222,9 +222,9 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
                     </Flex>
                   </TableCell>
                   <TableCell className="px-6 py-5">
-                    {products?.map((product: ProductName, index: number) => (
+                    {products?.map((product: ProductOrder, index: number) => (
                       <Text
-                        key={`Product ${index} of ${product.name} by ${id}`}
+                        key={`Product ${index} of ${product.name} by ${product.id}`}
                         className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product">
                         {product.name}
                       </Text>

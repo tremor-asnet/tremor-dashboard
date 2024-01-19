@@ -1,5 +1,7 @@
-export type ProductName = {
+export type ProductOrder = {
+  id: number;
   name: string;
+  count: number;
 };
 
 export type TTableList = {
@@ -11,6 +13,6 @@ export type TTableList = {
     full_name: string;
     avatar?: string;
   };
-  products: ProductName[];
+  products: ProductOrder[];
   revenue: string;
 };

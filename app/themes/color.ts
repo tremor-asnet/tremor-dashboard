@@ -90,6 +90,8 @@ export const backgroundColor = {
   body: "#f0f2f5",
   total: "rgb(26, 32, 53)",
   lighter: "rgba(255, 255, 255, 0.8)",
+  light: "#7b809a",
+  border: "#dee2e6",
   dark_blue: "rgb(32, 41, 64)",
 
   dark: {

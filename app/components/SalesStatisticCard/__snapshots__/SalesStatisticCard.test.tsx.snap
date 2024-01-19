@@ -25,7 +25,7 @@ exports[`Testing SalesStatisticCard component Should match snapshot 1`] = `
               <p
                 class="text-tremor-default text-primary dark:text-dark-primary text-xl leading-[33px] font-bold"
               >
-                230220
+                $230,220
               </p>
             </div>
             <div
@@ -34,7 +34,7 @@ exports[`Testing SalesStatisticCard component Should match snapshot 1`] = `
               <p
                 class="text-tremor-default text-few dark:text-few leading-[22px] font-bold"
               >
-                +55
+                +55%
               </p>
               <p
                 class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]"
@@ -77,7 +77,7 @@ exports[`Testing SalesStatisticCard component Should match snapshot 1`] = `
             <p
               class="text-tremor-default text-primary dark:text-dark-primary text-xl leading-[33px] font-bold"
             >
-              230220
+              $230,220
             </p>
           </div>
           <div
@@ -86,7 +86,7 @@ exports[`Testing SalesStatisticCard component Should match snapshot 1`] = `
             <p
               class="text-tremor-default text-few dark:text-few leading-[22px] font-bold"
             >
-              +55
+              +55%
             </p>
             <p
               class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]"

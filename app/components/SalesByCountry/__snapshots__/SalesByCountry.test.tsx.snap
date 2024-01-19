@@ -97,21 +97,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Sales:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           2.500
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -119,23 +119,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Value:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
                           <span>
-                            $230.900
+                            $230,900
                           </span>
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           <span>
                             29.9
@@ -181,21 +181,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Sales:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           3.900
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -203,23 +203,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Value:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
                           <span>
-                            $440.000
+                            $440,000
                           </span>
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           <span>
                             40.22
@@ -265,21 +265,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Sales:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           1.400
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -287,23 +287,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Value:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
                           <span>
-                            $190.700
+                            $190,700
                           </span>
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           <span>
                             23.44
@@ -349,21 +349,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Sales:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           562
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -371,23 +371,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Value:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
                           <span>
-                            $143.960
+                            $143,960
                           </span>
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           <span>
                             32.14
@@ -433,21 +433,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Sales:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           400
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -455,23 +455,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Value:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                         >
                           <span>
-                            $143.960
+                            $143,960
                           </span>
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
                         <p
-                          class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                          class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                         >
                           <span>
                             56.83
@@ -598,21 +598,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Sales:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         2.500
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -620,23 +620,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Value:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
                         <span>
-                          $230.900
+                          $230,900
                         </span>
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         <span>
                           29.9
@@ -682,21 +682,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Sales:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         3.900
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -704,23 +704,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Value:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
                         <span>
-                          $440.000
+                          $440,000
                         </span>
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         <span>
                           40.22
@@ -766,21 +766,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Sales:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         1.400
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -788,23 +788,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Value:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
                         <span>
-                          $190.700
+                          $190,700
                         </span>
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         <span>
                           23.44
@@ -850,21 +850,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Sales:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         562
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -872,23 +872,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Value:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
                         <span>
-                          $143.960
+                          $143,960
                         </span>
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         <span>
                           32.14
@@ -934,21 +934,21 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Sales:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         400
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -956,23 +956,23 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Value:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                       >
                         <span>
-                          $143.960
+                          $143,960
                         </span>
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
                       <p
-                        class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                        class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                       >
                         <span>
                           56.83
@@ -1132,29 +1132,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       2.500
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         29.9
@@ -1200,29 +1200,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       3.900
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         40.22
@@ -1268,29 +1268,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       1.400
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         23.44
@@ -1336,29 +1336,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       562
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         32.14
@@ -1404,29 +1404,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       400
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         56.83
@@ -1539,21 +1539,21 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       2.500
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -1561,23 +1561,23 @@ exports[`Testing analytics sale chart component testing component analytics sale
                       Value:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
                       <span>
-                        $230.900
+                        $230,900
                       </span>
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         29.9
@@ -1623,21 +1623,21 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       3.900
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -1645,23 +1645,23 @@ exports[`Testing analytics sale chart component testing component analytics sale
                       Value:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
                       <span>
-                        $440.000
+                        $440,000
                       </span>
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         40.22
@@ -1707,21 +1707,21 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       1.400
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -1729,23 +1729,23 @@ exports[`Testing analytics sale chart component testing component analytics sale
                       Value:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
                       <span>
-                        $190.700
+                        $190,700
                       </span>
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         23.44
@@ -1791,21 +1791,21 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       562
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -1813,23 +1813,23 @@ exports[`Testing analytics sale chart component testing component analytics sale
                       Value:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
                       <span>
-                        $143.960
+                        $143,960
                       </span>
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         32.14
@@ -1875,21 +1875,21 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Sales:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       400
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -1897,23 +1897,23 @@ exports[`Testing analytics sale chart component testing component analytics sale
                       Value:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]"
                     >
                       <span>
-                        $143.960
+                        $143,960
                       </span>
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-center bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
                     <p
-                      class="text-tremor-default text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
+                      class="text-tremor-default text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]"
                     >
                       <span>
                         56.83

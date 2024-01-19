@@ -88,11 +88,11 @@ const SalesByCountry = ({
                         </Flex>
                       </Flex>
                     </TableCell>
-                    <TableCell className="px-4 py-3 text-center">
-                      <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25]">
+                    <TableCell className="px-4 py-3 text-left">
+                      <Text className="text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]">
                         Sales:
                       </Text>
-                      <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
+                      <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
                         {formattedNumber({
                           value: sales,
                           isDecimalNumber: true,
@@ -100,15 +100,14 @@ const SalesByCountry = ({
                       </Text>
                     </TableCell>
                     {isAnalytics && (
-                      <TableCell className="px-4 py-3 text-center value">
+                      <TableCell className="px-4 py-3 text-left value">
                         <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25]">
                           Value:
                         </Text>
-                        <Text className="text-tremor-content-title dark:text-dark-tremor-content-title m-auto leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
+                        <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
                           <span>
                             {formattedNumber({
                               value,
-                              isDecimalNumber: true,
                               currency: CURRENCY.DOLLAR,
                             })}
                           </span>
@@ -116,13 +115,13 @@ const SalesByCountry = ({
                       </TableCell>
                     )}
                     <TableCell
-                      className={`px-4 py-3 text-center bounce ${
+                      className={`px-4 py-3 text-left bounce ${
                         isAnalytics && "hidden md:table-cell"
                       }`}>
-                      <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25]">
+                      <Text className="text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]">
                         Bounce:
                       </Text>
-                      <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
+                      <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
                         <span>{bounce}%</span>
                       </Text>
                     </TableCell>

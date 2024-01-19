@@ -4,14 +4,12 @@ import { render } from "@testing-library/react";
 import TrackOrder from ".";
 
 // Mocks
-import { TRACK_ORDER } from "@/mocks/orders";
+import { mockTrackOrder } from "@/mocks/orderDetails";
 
 const TrackOrderProps = {
-  id: TRACK_ORDER.ID,
-  generateOrderId: TRACK_ORDER.GENERATION_ORDER_ID,
-  deliveredAt: TRACK_ORDER.DELIVERED_AT,
-  transmitedToCourierAt: TRACK_ORDER.TRANSMITED_TO_COURIER_AT,
-  generateOrderAt: TRACK_ORDER.GENERATE_ORDER_AT,
+  data: mockTrackOrder,
+  deliveredAt: "27 , JAN",
+  descriptionInfo: "Order Deliver",
 };
 
 const TrackOrderComponent = () => render(<TrackOrder {...TrackOrderProps} />);

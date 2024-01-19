@@ -24,3 +24,4 @@ export { default as SalesByCountry } from "./SalesByCountry/SalesByCountry";
 export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatisticCard";
 export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
 export { default as TrackOrder } from "./TrackOrder/index";
+export { default as StepOrder } from "./StepOrder/index";

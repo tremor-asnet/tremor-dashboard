@@ -10,14 +10,14 @@ import { Card, Text, Flex, Button } from "@tremor/react";
 import { TSalesStatistic } from "@/types";
 
 //Constants
-import { ITEM_ACTION_SALES_DATE } from "@/constants/commons";
-import { SALES_STATISTIC_TYPE } from "@/constants/sales";
-
-//Mocks
-import { STATISTICS_DATA } from "@/mocks/sales";
+import {
+  CURRENCY,
+  ITEM_ACTION_SALES_DATE,
+  SALES_STATISTIC_TYPE,
+} from "@/constants";
 
 // Helpers
-import { formatDecimalNumber } from "@/helpers";
+import { formatPercentage, formattedNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -42,9 +42,26 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: amount,
-      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatDecimalNumber(amount),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: `$${formatDecimalNumber(amount)}`,
+      [SALES_STATISTIC_TYPE.SALES]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+      }),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formattedNumber({
+        value: amount,
+        isDecimalNumber: true,
+      }),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+        isDecimalNumber: true,
+      }),
+    }[type] || "";
+
+  const formattedTotalAmount =
+    {
+      [SALES_STATISTIC_TYPE.SALES]: formatPercentage(totalAmount),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatPercentage(totalAmount),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: totalAmount,
     }[type] || "";
 
   return (
@@ -62,7 +79,7 @@ const SalesStatisticCard = ({
           <Flex className="justify-start items-start">
             {totalAmount && (
               <Text className="text-few dark:text-few leading-[22px] font-bold">
-                {`+${totalAmount}`}
+                {formattedTotalAmount}
               </Text>
             )}
             <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">

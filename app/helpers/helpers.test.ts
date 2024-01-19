@@ -1,10 +1,11 @@
+import { CURRENCY } from "@/constants";
 import {
-  formatDecimalNumber,
   formatAbbreviateNumber,
   formatMoney,
   formatPercentage,
   getErrorMessage,
   isEmpty,
+  formattedNumber,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -98,26 +99,6 @@ describe("Test formatPercentage function", () => {
   });
 });
 
-describe("formatDecimalNumber function", () => {
-  test("formats numbers with more than 3 digits correctly", () => {
-    expect(formatDecimalNumber(234234)).toBe("234.234");
-    expect(formatDecimalNumber(1233)).toBe("1.233");
-  });
-
-  test("does not modify numbers with 3 or fewer digits", () => {
-    expect(formatDecimalNumber(978)).toBe("978");
-    expect(formatDecimalNumber(42)).toBe("42");
-  });
-
-  test("handles negative numbers correctly", () => {
-    expect(formatDecimalNumber(-56789)).toBe("-56.789");
-  });
-
-  test("handles zero correctly", () => {
-    expect(formatDecimalNumber(0)).toBe("0");
-  });
-});
-
 describe("formatAbbreviateNumber function", () => {
   test("formatAbbreviateNumber correctly formats numbers", () => {
     // Test case: number < 1e3
@@ -130,5 +111,40 @@ describe("formatAbbreviateNumber function", () => {
     // Test case: number >= 1e6
     expect(formatAbbreviateNumber(1000000)).toBe("1m");
     expect(formatAbbreviateNumber(1500000)).toBe("1m");
+  });
+});
+
+describe("formattedNumber function", () => {
+  test("formats number with decimal currency", () => {
+    const result = formattedNumber({
+      value: 23000,
+      currency: CURRENCY.DOLLAR,
+      isDecimalNumber: true,
+    });
+    expect(result).toBe("$23.000");
+  });
+
+  test("formats number with commas currency", () => {
+    const result = formattedNumber({
+      value: 23000,
+      currency: CURRENCY.DOLLAR,
+      isDecimalNumber: false,
+    });
+    expect(result).toBe("$23,000");
+  });
+
+  test("formats number with commas", () => {
+    const result = formattedNumber({ value: 23000, isDecimalNumber: false });
+    expect(result).toBe("23,000");
+  });
+
+  test("formats number with decimal", () => {
+    const result = formattedNumber({ value: 23000, isDecimalNumber: true });
+    expect(result).toBe("23.000");
+  });
+
+  test("formats number without currency and decimal", () => {
+    const result = formattedNumber({ value: 23000 });
+    expect(result).toBe("23,000");
   });
 });

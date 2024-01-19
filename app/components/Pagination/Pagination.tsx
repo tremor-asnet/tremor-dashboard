@@ -30,6 +30,7 @@ export const Pagination = ({
     hasNext: hasNext,
   });
   const total = data.totalCount || 1;
+  const listItemsPage = Array.from({ length: total }, (v, i) => i);
 
   const handleNextPage = useCallback(() => {
     const newOffset: number =
@@ -59,29 +60,25 @@ export const Pagination = ({
     });
   };
 
+  const handleChangePage = (curentOffset: number) => {
+    onPageChange(curentOffset);
+    setData({
+      ...data,
+      pageOffset: curentOffset,
+    });
+  };
+
   return (
     <Flex className="antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6">
-      <Flex className="flex flex-1 justify-between sm:hidden">
-        <a
-          href="#"
-          className="relative inline-flex items-center border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
-          Previous
-        </a>
-        <a
-          href="#"
-          className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
-          Next
-        </a>
-      </Flex>
-      <Flex className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between w-full">
-        <Flex>
+      <Flex className="flex flex-wrap items-center justify-between w-full">
+        <Flex className="w-auto py-2">
           <p className="text-sm text-secondary">
             Showing <span className="font-normal">1</span> to{" "}
             <span className="font-normal">10</span> of{" "}
             <span className="font-normal">12</span> entries
           </p>
         </Flex>
-        <Flex className="justify-end">
+        <Flex className="w-auto py-2">
           <nav
             className="isolate inline-flex -space-x-px gap-2"
             aria-label="Pagination">
@@ -94,32 +91,31 @@ export const Pagination = ({
                 <FiChevronLeft className="h-5 w-5 p-[3px]" aria-hidden="true" />
               </button>
             )}
-            <a
-              href="#"
-              className={`relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 ${
-                data.pageOffset === 1
-                  ? "z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
-                  : "text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
-              }`}>
-              1
-            </a>
-            <a
-              href="#"
-              aria-current="page"
-              className={`relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 ${
-                data.pageOffset === 2
-                  ? "z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
-                  : "text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
-              }`}>
-              2
-            </a>
-            <button
-              onClick={handleNextPage}
-              disabled={!data.hasNext}
-              className="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0">
-              <span className="sr-only">Next</span>
-              <FiChevronRight className="h-5 w-5 p-[3px]" aria-hidden="true" />
-            </button>
+            {listItemsPage.map(curentPage => (
+              <a
+                href="#"
+                key={curentPage}
+                onClick={() => handleChangePage(curentPage + 1)}
+                className={`relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 ${
+                  data.pageOffset === curentPage + 1
+                    ? "z-10  bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination"
+                    : "text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                }`}>
+                {curentPage + 1}
+              </a>
+            ))}
+            {data.hasNext && (
+              <button
+                onClick={handleNextPage}
+                disabled={!data.hasNext}
+                className="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0">
+                <span className="sr-only">Next</span>
+                <FiChevronRight
+                  className="h-5 w-5 p-[3px]"
+                  aria-hidden="true"
+                />
+              </button>
+            )}
           </nav>
         </Flex>
       </Flex>

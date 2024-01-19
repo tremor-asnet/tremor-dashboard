@@ -9,26 +9,10 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
         class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
       >
         <div
-          class="tremor-Flex-root w-full flex-row items-center flex flex-1 justify-between sm:hidden"
-        >
-          <a
-            class="relative inline-flex items-center border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-            href="#"
-          >
-            Previous
-          </a>
-          <a
-            class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-            href="#"
-          >
-            Next
-          </a>
-        </div>
-        <div
-          class="tremor-Flex-root flex-row justify-between items-center hidden sm:flex sm:flex-1 sm:items-center sm:justify-between w-full"
+          class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
           >
             <p
               class="text-sm text-secondary"
@@ -57,7 +41,7 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+            class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
           >
             <nav
               aria-label="Pagination"
@@ -70,11 +54,28 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
                 1
               </a>
               <a
-                aria-current="page"
                 class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
                 href="#"
               >
                 2
+              </a>
+              <a
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                href="#"
+              >
+                3
+              </a>
+              <a
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                href="#"
+              >
+                4
+              </a>
+              <a
+                class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+                href="#"
+              >
+                5
               </a>
               <button
                 class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
@@ -113,26 +114,10 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
       class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between bg-white px-4 py-3 sm:px-6"
     >
       <div
-        class="tremor-Flex-root w-full flex-row items-center flex flex-1 justify-between sm:hidden"
-      >
-        <a
-          class="relative inline-flex items-center border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-          href="#"
-        >
-          Previous
-        </a>
-        <a
-          class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-          href="#"
-        >
-          Next
-        </a>
-      </div>
-      <div
-        class="tremor-Flex-root flex-row justify-between items-center hidden sm:flex sm:flex-1 sm:items-center sm:justify-between w-full"
+        class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
         >
           <p
             class="text-sm text-secondary"
@@ -161,7 +146,7 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+          class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
         >
           <nav
             aria-label="Pagination"
@@ -174,11 +159,28 @@ exports[`Testing Pagination component Should match snapshot 1`] = `
               1
             </a>
             <a
-              aria-current="page"
               class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
               href="#"
             >
               2
+            </a>
+            <a
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              href="#"
+            >
+              3
+            </a>
+            <a
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              href="#"
+            >
+              4
+            </a>
+            <a
+              class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body"
+              href="#"
+            >
+              5
             </a>
             <button
               class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"

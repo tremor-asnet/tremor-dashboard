@@ -1,4 +1,4 @@
-import { BillingInfoProps, TrackOrderProps } from "@/types";
+import { BillingInfoProps, TrackOrderProps } from "@/types/orderDetails";
 
 export const mockInvoiceHeader = {
   id: 241342,
@@ -21,8 +21,8 @@ export const mockTrackOrder: TrackOrderProps = {
 };
 
 export const mockBillingInfo: BillingInfoProps = {
-  owner_name: "Oliver Liam",
-  company_name: "Viking Burrito",
+  ownerName: "Oliver Liam",
+  companyName: "Viking Burrito",
   email: "oliver@burrito.com",
   vat: "FRB1235476",
 };

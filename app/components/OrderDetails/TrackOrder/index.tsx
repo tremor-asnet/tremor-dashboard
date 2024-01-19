@@ -7,7 +7,7 @@ import { IoCart } from "react-icons/io5";
 import { MdInventory } from "react-icons/md";
 
 // Types
-import { TrackOrderProps } from "@/types";
+import { TrackOrderProps } from "@/types/orderDetails";
 
 const TrackOrder = ({
   id,

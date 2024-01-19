@@ -20,8 +20,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <BillingInfo
-      owner_name={mockBillingInfo.owner_name}
-      company_name={mockBillingInfo.company_name}
+      ownerName={mockBillingInfo.ownerName}
+      companyName={mockBillingInfo.companyName}
       email={mockBillingInfo.email}
       vat={mockBillingInfo.vat}
     />

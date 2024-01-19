@@ -7,8 +7,8 @@ import BillingInfo from ".";
 import { mockBillingInfo } from "@/mocks/orderDetails";
 
 const props = {
-  owner_name: mockBillingInfo.owner_name,
-  company_name: mockBillingInfo.company_name,
+  ownerName: mockBillingInfo.ownerName,
+  companyName: mockBillingInfo.companyName,
   email: mockBillingInfo.email,
   vat: mockBillingInfo.vat,
 };

@@ -14,6 +14,8 @@ import { REVENUE_CHART_DATA } from "@/mocks";
 
 // Services
 import { getAnalytics, getSales } from "@/services";
+import BillingInfo from "@/components/OrderDetails/BillingInfo";
+import { mockBillingInfo } from "@/mocks/orderDetails";
 
 type TSalesStatistical = {
   id: string;
@@ -33,6 +35,12 @@ const Sales = async () => {
 
   return (
     <Grid numItems={1} numItemsMd={3} className="gap-5 sale-page">
+      <BillingInfo
+        ownerName={mockBillingInfo.ownerName}
+        companyName={mockBillingInfo.companyName}
+        email={mockBillingInfo.email}
+        vat={mockBillingInfo.vat}
+      />
       <Col numColSpan={1} numColSpanMd={3}>
         <Grid className="gap-5" numItemsMd={3}>
           {saleData.header_info?.map((item: TSalesStatistical) => (

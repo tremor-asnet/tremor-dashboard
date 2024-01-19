@@ -9,3 +9,18 @@ export interface OrderSummaryProps {
   delivery: number;
   taxes: number;
 }
+
+export interface TrackOrderProps {
+  id: string;
+  generateOrderAt: string;
+  deliveredAt: string;
+  transmitedToCourierAt: string;
+  generateOrderId: string;
+}
+
+export interface BillingInfoProps {
+  ownerName: string;
+  companyName: string;
+  email: string;
+  vat: string;
+}

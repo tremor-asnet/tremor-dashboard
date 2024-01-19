@@ -14,16 +14,13 @@ import {
 } from "@tremor/react";
 
 // Components
-import { CheckBox, CustomImage } from "@/components";
+import { CheckBox, CustomImage, TableListHeader } from "@/components";
 
 // Constants
 import { STATUS_TEXT } from "@/constants";
 
 // Helpers
 import { ProductStatus } from "@/helpers";
-
-// Icons
-import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 //Types
 import { ProductOrder, TTableList } from "@/types";
@@ -40,131 +37,23 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
         <Table className="w-full">
           <TableHead>
             <TableRow className="border-0 border-b border-gray-100">
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex className="mr-4">id</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="id" />
               </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex>date</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="date" />
               </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex>status</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="status" />
               </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex>customer</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="customer" />
               </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex>product</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="product" />
               </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <Flex>
-                  <Flex>revenue</Flex>
-                  <Flex className="relative flex-col">
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropUp className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                    <Flex className="absotule top-0 justify-end">
-                      <Button
-                        className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100 text-secondary dark:text-dark-romance"
-                        variant="light">
-                        <MdArrowDropDown className="w-4 h-4" />
-                      </Button>
-                    </Flex>
-                  </Flex>
-                </Flex>
+              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+                <TableListHeader title="product" />
               </TableHeaderCell>
             </TableRow>
           </TableHead>
@@ -173,34 +62,32 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
               const { id, created_at, status, customer, products, revenue } =
                 item;
               return (
-                <TableRow
-                  key={id}
-                  className="border-0 border-b !border-gray-100">
-                  <TableCell className="px-6 py-5">
+                <TableRow key={id}>
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     <Flex className="justify-start ml-2">
                       <CheckBox
                         handleCheckBox={handleCheckBox}
                         checked={false}
                       />
-                      <Text className="ml-4 text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] order-id">
+                      <Text className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id">
                         #{id}
                       </Text>
                     </Flex>
                   </TableCell>
-                  <TableCell className="px-6 py-5">
-                    <Text className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
+                    <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
                       {created_at}
                     </Text>
                   </TableCell>
-                  <TableCell className="px-6 py-5">
-                    <Flex className="justify-start text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
+                    <Flex className="justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
                       {ProductStatus(status)}
-                      <Text className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+                      <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
                         {STATUS_TEXT[status]}
                       </Text>
                     </Flex>
                   </TableCell>
-                  <TableCell className="px-6 py-5">
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     <Flex className="w-auto justify-start">
                       {customer.avatar ? (
                         <CustomImage
@@ -212,26 +99,26 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
                           width={24}
                         />
                       ) : (
-                        <Flex className="w-6 h-6 justify-center text-white text-xs bg-primary dark:bg-dark-primary rounded-full mr-2">
+                        <Flex className="w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2">
                           {customer.full_name.substring(0, 1)}
                         </Flex>
                       )}
-                      <Text className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
+                      <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
                         {customer.full_name}
                       </Text>
                     </Flex>
                   </TableCell>
-                  <TableCell className="px-6 py-5">
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     {products?.map((product: ProductOrder, index: number) => (
                       <Text
                         key={`Product ${index} of ${product.name} by ${product.id}`}
-                        className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product">
+                        className="text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product">
                         {product.name}
                       </Text>
                     ))}
                   </TableCell>
-                  <TableCell className="px-6 py-5">
-                    <Text className="text-secondary dark:text-dark-romance text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue">
+                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
+                    <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue">
                       {revenue}
                     </Text>
                   </TableCell>

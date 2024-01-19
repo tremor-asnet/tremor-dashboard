@@ -14,10 +14,11 @@ import {
   CURRENCY,
   ITEM_ACTION_SALES_DATE,
   SALES_STATISTIC_TYPE,
+  UNIT,
 } from "@/constants";
 
 // Helpers
-import { formatPercentage, formattedNumber } from "@/helpers";
+import { formatAdjustNumber, formattedNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -26,7 +27,8 @@ interface ISalesStatisticProp {
 const SalesStatisticCard = ({
   statisticsData,
 }: ISalesStatisticProp): JSX.Element => {
-  const { id, type, amount, totalAmount, duration } = statisticsData;
+  const { id, type, amount, amountChange, duration, amountChangeType } =
+    statisticsData;
   const [isOpenAction, setOpenAction] = useState(false);
   const [currentSalesDate, setCurrentSalesDate] = useState("6 May - 7 May");
   const openActionSalesDate = isOpenAction;
@@ -59,10 +61,25 @@ const SalesStatisticCard = ({
 
   const formattedTotalAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: formatPercentage(totalAmount),
-      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatPercentage(totalAmount),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: totalAmount,
+      [SALES_STATISTIC_TYPE.SALES]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        unit: UNIT.PERCENT,
+      }),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        unit: UNIT.PERCENT,
+      }),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        currency: CURRENCY.DOLLAR,
+      }),
     }[type] || "";
+
+  const totalAmountColor =
+    type === SALES_STATISTIC_TYPE.AVG_REVENUE ? "text-secondary" : "text-few";
 
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
@@ -77,8 +94,9 @@ const SalesStatisticCard = ({
             </Text>
           </Flex>
           <Flex className="justify-start items-start">
-            {totalAmount && (
-              <Text className="text-few dark:text-few leading-[22px] font-bold">
+            {amountChange && (
+              <Text
+                className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>
                 {formattedTotalAmount}
               </Text>
             )}

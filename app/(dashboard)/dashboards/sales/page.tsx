@@ -17,13 +17,8 @@ import { getAnalytics, getSales } from "@/services";
 import BillingInfo from "@/components/OrderDetails/BillingInfo";
 import { mockBillingInfo } from "@/mocks/orderDetails";
 
-type TSalesStatistical = {
-  id: string;
-  type: string;
-  amount: number;
-  totalAmount: number;
-  duration: string;
-};
+// Types
+import { TSalesStatistic } from "@/types";
 
 export const metadata = {
   title: "Sales - Tremor Dashboard",
@@ -43,7 +38,7 @@ const Sales = async () => {
       />
       <Col numColSpan={1} numColSpanMd={3}>
         <Grid className="gap-5" numItemsMd={3}>
-          {saleData.header_info?.map((item: TSalesStatistical) => (
+          {saleData.header_info?.map((item: TSalesStatistic) => (
             <div key={item.type}>
               <SalesStatisticCard statisticsData={item} />
             </div>

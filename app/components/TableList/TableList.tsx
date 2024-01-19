@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Card,
   Flex,
@@ -10,11 +8,15 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  Button,
 } from "@tremor/react";
 
 // Components
-import { CheckBox, CustomImage, HeaderCellContents } from "@/components";
+import {
+  CheckBox,
+  CustomImage,
+  HeaderCellContents,
+  Pagination,
+} from "@/components";
 
 // Constants
 import { STATUS_TEXT } from "@/constants";
@@ -27,13 +29,13 @@ import { ProductOrder, TTableList } from "@/types";
 
 export interface TableListProps {
   data: TTableList[];
+  handleCheckBox: () => void;
 }
 
-const TableList = ({ data }: TableListProps): JSX.Element => {
-  const handleCheckBox = () => {};
+const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
-      <Flex className="items-start justify-start my-2">
+      <Flex flexDirection="col" className="items-start justify-start my-2">
         <Table className="w-full">
           <TableHead>
             <TableRow className="border-0 border-b border-gray-100">
@@ -127,6 +129,7 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
             })}
           </TableBody>
         </Table>
+        <Pagination total={2} />
       </Flex>
     </Card>
   );

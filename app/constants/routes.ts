@@ -11,4 +11,5 @@ export const ROUTES = {
   PROFILE: "/pages/profile/my-profile",
   PROJECTS: "/pages/profile/all-projects",
   SETTING: "/pages/account/settings",
+  ORDER_LIST: "/order-list",
 };

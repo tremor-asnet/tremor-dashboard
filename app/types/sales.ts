@@ -2,8 +2,9 @@ export type TSalesStatistic = {
   id: string;
   type: string;
   amount: number;
-  totalAmount: number;
+  amountChange: number;
   duration: string;
+  amountChangeType: number;
 };
 
 export type TTopSellingProducts = {

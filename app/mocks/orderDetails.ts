@@ -14,10 +14,10 @@ export const mockOrderSummary = {
 
 export const mockTrackOrder: TrackOrderProps = {
   id: "#1832412",
-  generateOrderAt: "22 DEC 7:21 AM",
-  deliveredAt: "22 DEC 4:54 PM",
-  transmitedToCourierAt: "22 DEC 8:10 AM",
-  generateOrderId: "22 DEC 7:21 AM",
+  generateOrderAt: "2024-01-11T02:48:52Z",
+  deliveredAt: "2024-01-11T02:48:52Z",
+  transmitedToCourierAt: "2024-01-11T02:48:52Z",
+  generateOrderId: "2024-01-11T02:48:52Z",
 };
 
 export const mockBillingInfo: BillingInfoProps = {

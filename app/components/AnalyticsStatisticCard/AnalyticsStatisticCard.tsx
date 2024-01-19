@@ -11,12 +11,13 @@ import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 // Helpers
 import {
   formatAbbreviateNumber,
-  formatPercentage,
+  formatAdjustNumber,
   formattedNumber,
 } from "@/helpers";
 
 // Constants
 import { ANALYTICS_STATISTICAL_TYPE } from "@/constants/analytics";
+import { UNIT } from "@/constants";
 
 type AnalyticsStatistical = {
   id: string;
@@ -34,7 +35,8 @@ interface IAnalyticsStatisticCard {
 const AnalyticsStatisticCard = ({
   statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
-  const { id, type, amount, amountChange, duration } = statisticalData;
+  const { id, type, amount, amountChange, duration, amountChangeType } =
+    statisticalData;
 
   const formattedAmount =
     {
@@ -43,7 +45,10 @@ const AnalyticsStatisticCard = ({
         value: amount,
       }),
       [ANALYTICS_STATISTICAL_TYPE.REVENUE]: formatAbbreviateNumber(amount),
-      [ANALYTICS_STATISTICAL_TYPE.FOLLOWERS]: amount,
+      [ANALYTICS_STATISTICAL_TYPE.FOLLOWERS]: formatAdjustNumber({
+        value: amount,
+        isPositive: amountChangeType,
+      }),
     }[type] || "";
 
   return (
@@ -68,11 +73,13 @@ const AnalyticsStatisticCard = ({
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
-              {amountChange && (
-                <Text className="text-few dark:text-few leading-[21px] font-bold">
-                  {formatPercentage(amountChange)}
-                </Text>
-              )}
+              <Text className="text-few dark:text-few leading-[21px] font-bold">
+                {formatAdjustNumber({
+                  value: amountChange,
+                  isPositive: amountChangeType,
+                  unit: UNIT.PERCENT,
+                })}
+              </Text>
               <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">
                 {duration}
               </Text>

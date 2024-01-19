@@ -3,22 +3,25 @@ export const STATISTICS_DATA = [
     id: "1",
     type: "Sales",
     amount: 230220,
-    totalAmount: 55,
+    amountChange: 55,
     duration: "since last month",
+    amountChangeType: 0,
   },
   {
     id: "2",
     type: "Customers",
     amount: 3200,
-    totalAmount: 12,
+    amountChange: 12,
     duration: "since last month",
+    amountChangeType: 0,
   },
   {
     id: "3",
     type: "Avg. Revenue",
     amount: 1200,
-    totalAmount: 213,
+    amountChange: 213,
     duration: "since last month",
+    amountChangeType: 0,
   },
 ];
 

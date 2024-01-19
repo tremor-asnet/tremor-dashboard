@@ -5,11 +5,11 @@ export const color = {
   seldom: "#1a73e8",
   few: "#4caf50",
   litle: "#ebebeb",
-  lighter: "rgba(255, 255, 255, 0.8)",
 
   dark: {
     primary: "#ffffff",
     romance: "#ffffffcc",
+    lighter: "rgba(255, 255, 255, 0.8)",
   },
   // light mode
   tremor: {
@@ -133,6 +133,7 @@ export const backgroundImage = {
   "gradient-arsenic": "linear-gradient(195deg, #42424a, #191919)",
   "gradient-divider":
     "linear-gradient(to right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))",
+  "gradient-item-page": "linear-gradient(195deg, #42424a, #191919)",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -166,6 +167,10 @@ export const backgroundImage = {
       "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
     "gradient-line":
       "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
+  },
+  dark: {
+    "gradient-item-page":
+      "linear-gradient(195deg, rgb(50, 58, 84), rgb(26, 32, 53))",
   },
 };
 
@@ -223,6 +228,8 @@ export const boxShadow = {
     "rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   "line-chart":
     "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)",
+  "item-pagination":
+    "0rem 0.1875rem 0.1875rem 0rem rgba(52, 71, 103, 0.15),0rem 0.1875rem 0.0625rem -0.125rem rgba(52, 71, 103, 0.2),0rem 0.0625rem 0.3125rem 0rem rgba(52, 71, 103, 0.15)",
   // dark
   "dark-tremor-input": "none",
   "dark-tremor-card":
@@ -231,4 +238,9 @@ export const boxShadow = {
     "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
   "box-header":
     "rgba(52, 71, 103, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
+
+  dark: {
+    "item-pagination":
+      "rgba(52, 71, 103, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(52, 71, 103, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(52, 71, 103, 0.15) 0rem 0.0625rem 0.3125rem 0rem",
+  },
 };

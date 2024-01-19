@@ -17,5 +17,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <OrderDetailContact data={ORDER_DATA} />,
+  render: () => (
+    <OrderDetailContact orderStatus="delivered" data={ORDER_DATA} />
+  ),
 };

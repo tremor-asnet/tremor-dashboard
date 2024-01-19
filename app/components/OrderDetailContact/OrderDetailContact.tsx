@@ -6,15 +6,23 @@ import { TOrderList } from "@/types";
 import { OrderDetailItem } from "@/components";
 
 export interface OrderDetailContactProps {
+  orderStatus: string;
   data: TOrderList[];
 }
 
-const OrderDetailContact = ({ data = [] }: OrderDetailContactProps) => {
+const OrderDetailContact = ({
+  orderStatus,
+  data = [],
+}: OrderDetailContactProps) => {
   return (
     <Table className="w-full">
       <TableBody>
         {data.map(item => (
-          <OrderDetailItem key={item.id} orderDetail={item} />
+          <OrderDetailItem
+            key={item.id}
+            orderStatus={orderStatus}
+            orderDetail={item}
+          />
         ))}
       </TableBody>
     </Table>

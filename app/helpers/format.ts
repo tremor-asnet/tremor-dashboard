@@ -15,6 +15,30 @@ export const formatPercentage = (number: number): string =>
   number <= 0 ? `${number}%` : `+${number}%`;
 
 /**
+ * Format adjust increase or decrease number
+ * Ex: 91 --> +91, 55 --> -55%, 312 --> +$312
+ * @param number string
+ * @returns string
+ */
+export const formatAdjustNumber = ({
+  value,
+  isPositive = 0,
+  currency = "",
+  unit = "",
+}: {
+  value: number;
+  isPositive?: number;
+  currency?: string;
+  unit?: string;
+}): string => {
+  if (value === 0) return "";
+
+  const sign = isPositive === 0 ? "+" : "-";
+
+  return `${sign}${currency}${value?.toLocaleString("en-US")}${unit}`;
+};
+
+/**
  * Format abbreviate number
  * Ex: 34000 --> 34k
  * @param number number

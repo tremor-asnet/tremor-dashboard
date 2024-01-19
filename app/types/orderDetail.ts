@@ -7,3 +7,10 @@ export interface StepOrderProps {
   className?: string;
   backgroundColor?: string;
 }
+
+export interface BillingInfoProps {
+  owner_name: string;
+  company_name: string;
+  email: string;
+  vat: string;
+}

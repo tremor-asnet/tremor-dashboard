@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BillingInfo component Should match snapshot 1`] = `
+<div>
+  <div
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand h-full bg-tremor-primary dark:bg-dark-tremor-primary border-none ring-0 p-6"
+  >
+    <b
+      class="text-inherit font-bold dark:text-white"
+    >
+      Billing Information
+    </b>
+    <div
+      class="opacity-100 bg-greyish mt-6 rounded-lg p-6 dark:bg-dark-tremor-primary"
+    >
+      <span
+        class="text-primary text-tremor-default font-semibold dark:text-white"
+      >
+        Oliver Liam
+      </span>
+      <div
+        class="mt-4"
+      >
+        <div
+          class="tremor-Flex-root flex w-full justify-between items-center flex-row mb-2"
+        >
+          <span
+            class="text-tremor-label text-tremor-content dark:text-dark-romance"
+          >
+            Company Name:
+            <span
+              class="text-primary font-semibold pl-2.5  dark:text-white"
+            >
+              Viking Burrito
+            </span>
+          </span>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full justify-between items-center flex-row mb-2"
+        >
+          <span
+            class="text-tremor-label text-tremor-content dark:text-dark-romance"
+          >
+            Email Address:
+            <span
+              class="text-primary font-semibold pl-2.5  dark:text-white"
+            >
+              oliver@burrito.com
+            </span>
+          </span>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full justify-between items-center flex-row mb-2"
+        >
+          <span
+            class="text-tremor-label text-tremor-content dark:text-dark-romance"
+          >
+            VAT Number:
+            <span
+              class="text-primary font-semibold pl-2.5  dark:text-white"
+            >
+              FRB1235476
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

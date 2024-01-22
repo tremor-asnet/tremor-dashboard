@@ -12,4 +12,5 @@ export const ROUTES = {
   PROJECTS: "/pages/profile/all-projects",
   SETTING: "/pages/account/settings",
   ORDER_LIST: "/order-list",
+  PRODUCT_LIST: "/product-list",
 };

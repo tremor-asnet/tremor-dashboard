@@ -417,7 +417,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        product
+                        revenue
                       </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
@@ -2106,7 +2106,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      product
+                      revenue
                     </div>
                     <div
                       class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"

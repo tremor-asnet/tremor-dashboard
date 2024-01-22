@@ -27,13 +27,13 @@ import { STATUS_TEXT } from "@/constants";
 import { ProductStatus } from "@/helpers";
 
 //Types
-import { ProductOrder, TTableList } from "@/types";
+import { ProductOrder, TProductTable } from "@/types";
 
-export interface TableListProps {
-  data: TTableList[];
+export interface ProductTableProps {
+  data: TProductTable[];
 }
 
-const TableList = ({ data }: TableListProps): JSX.Element => {
+const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
   const handleCheckBox = () => {
     // TODO: Handle checkbox here
   };
@@ -140,4 +140,4 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
   );
 };
 
-export default TableList;
+export default ProductTable;

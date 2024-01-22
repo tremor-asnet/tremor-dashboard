@@ -1,5 +1,5 @@
 // Components
-import { TableList } from "@/components";
+import { ProductTable } from "@/components";
 import OrderSearch from "@/components/OrderSearch/OrderSearch";
 import { Button, Flex, Text } from "@tremor/react";
 
@@ -28,7 +28,7 @@ const OrderListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <TableList data={orderListData} />
+        <ProductTable data={orderListData} />
       </div>
     </Flex>
   );

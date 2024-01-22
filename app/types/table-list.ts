@@ -4,7 +4,7 @@ export type ProductOrder = {
   count: number;
 };
 
-export type TTableList = {
+export type TProductTable = {
   id: number;
   createdAt: string;
   status: number;

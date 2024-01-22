@@ -1,5 +1,6 @@
 "use client";
 
+import { METADATA } from "@/constants";
 // Import libs
 import { Flex } from "@tremor/react";
 import Image from "next/image";
@@ -16,7 +17,7 @@ const PaymentDetails = () => {
         <Flex justifyContent="start" alignItems="center">
           <Image
             className="mr-4"
-            src="/assets/images/mastercard.webp"
+            src={METADATA.MASTERCARD}
             alt="master card icon"
             width="38"
             height="28"

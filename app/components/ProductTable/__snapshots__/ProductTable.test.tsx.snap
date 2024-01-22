@@ -35,7 +35,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         id
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -112,7 +112,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         date
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -189,7 +189,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         status
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -266,7 +266,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         customer
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -343,7 +343,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         product
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -417,10 +417,10 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        product
+                        revenue
                       </div>
                       <div
-                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                        class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -1724,7 +1724,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       id
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -1801,7 +1801,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       date
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -1878,7 +1878,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       status
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -1955,7 +1955,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       customer
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -2032,7 +2032,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       product
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -2106,10 +2106,10 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      product
+                      revenue
                     </div>
                     <div
-                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col"
+                      class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"

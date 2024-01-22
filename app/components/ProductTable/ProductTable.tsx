@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   Flex,
@@ -25,14 +27,17 @@ import { STATUS_TEXT } from "@/constants";
 import { ProductStatus } from "@/helpers";
 
 //Types
-import { ProductOrder, TTableList } from "@/types";
+import { ProductOrder, TProductTable } from "@/types";
 
-export interface TableListProps {
-  data: TTableList[];
-  handleCheckBox: () => void;
+export interface ProductTableProps {
+  data: TProductTable[];
 }
 
-const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
+const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
+  const handleCheckBox = () => {
+    // TODO: Handle checkbox here
+  };
+
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <Flex flexDirection="col" className="items-start justify-start my-2">
@@ -55,13 +60,13 @@ const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
                 <HeaderCellContents title="product" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="product" />
+                <HeaderCellContents title="revenue" />
               </TableHeaderCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {data.map(item => {
-              const { id, created_at, status, customer, products, revenue } =
+              const { id, createdAt, status, customer, products, revenue } =
                 item;
               return (
                 <TableRow key={id}>
@@ -78,7 +83,7 @@ const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-                      {created_at}
+                      {createdAt}
                     </Text>
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
@@ -135,4 +140,4 @@ const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
   );
 };
 
-export default TableList;
+export default ProductTable;

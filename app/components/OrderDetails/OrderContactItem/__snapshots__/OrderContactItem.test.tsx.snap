@@ -5,11 +5,11 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <tr
-        class="tremor-TableRow-row"
+      <div
+        class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent"
       >
-        <td
-          class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4"
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <div
             class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
@@ -18,14 +18,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="tremor-Flex-root flex flex-row items-center w-auto justify-start mr-4"
             >
               <img
-                alt="Orlando Imieto"
+                alt="Gold Glasses"
                 class="rounded-full"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
                 height="110"
-                src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75 2x"
+                src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
                 style="color: transparent;"
                 width="110"
               />
@@ -36,25 +36,23 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               <p
                 class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
               >
-                Nike Sport V2
+                Gold Glasses
               </p>
               <p
-                class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+                class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
               >
-                Order was 
-                delivered
-                 2 days ago.
+                Order was delivered 2 days ago.
               </p>
               <p
-                class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+                class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
               >
                 delivered
               </p>
             </div>
           </div>
-        </td>
-        <td
-          class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4"
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <div
             class="tremor-Flex-root flex w-full justify-between flex-col items-end"
@@ -78,16 +76,16 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               Do you like the item? Leave us a review here.
             </p>
           </div>
-        </td>
-      </tr>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <tr
-      class="tremor-TableRow-row"
+    <div
+      class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent"
     >
-      <td
-        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4"
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
         <div
           class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
@@ -96,14 +94,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="tremor-Flex-root flex flex-row items-center w-auto justify-start mr-4"
           >
             <img
-              alt="Orlando Imieto"
+              alt="Gold Glasses"
               class="rounded-full"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
               height="110"
-              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-2.1593fb7f.jpg&w=256&q=75 2x"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
               style="color: transparent;"
               width="110"
             />
@@ -114,25 +112,23 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <p
               class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
-              Nike Sport V2
+              Gold Glasses
             </p>
             <p
-              class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+              class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
-              Order was 
-              delivered
-               2 days ago.
+              Order was delivered 2 days ago.
             </p>
             <p
-              class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+              class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
             >
               delivered
             </p>
           </div>
         </div>
-      </td>
-      <td
-        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4"
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
         <div
           class="tremor-Flex-root flex w-full justify-between flex-col items-end"
@@ -156,8 +152,8 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             Do you like the item? Leave us a review here.
           </p>
         </div>
-      </td>
-    </tr>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 // Components
-import TableList from "./TableList";
+import ProductTable from "./ProductTable";
 
 // Mock data
 import { TABLE_LIST_DATA } from "@/mocks";
@@ -14,7 +14,7 @@ describe("Testing table list component", () => {
   };
 
   it("Should match snapshot", () => {
-    const component = render(<TableList {...propsDefault} />);
+    const component = render(<ProductTable {...propsDefault} />);
     expect(component).toMatchSnapshot();
   });
 });

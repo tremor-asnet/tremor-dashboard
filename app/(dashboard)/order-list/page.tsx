@@ -1,22 +1,13 @@
-"use client";
-
-// Components
-import { TableList } from "@/components";
-import OrderSearch from "@/components/OrderSearch/OrderSearch";
 import { Button, Flex, Text } from "@tremor/react";
 
-// Mocks
-import { TABLE_LIST_DATA } from "@/mocks";
-import Select from "@/components/Select";
+// Components
+import { ProductTable, Select, OrderSearch } from "@/components";
 
-const OrderListPage = () => {
-  const handleSearch = () => {
-    // TODO: Handle search here
-  };
+// Services
+import { getOrders } from "@/services";
 
-  const handleCheckBox = () => {
-    // TODO: Handle check box here
-  };
+const OrderListPage = async () => {
+  const orderListData = await getOrders();
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -29,8 +20,8 @@ const OrderListPage = () => {
         <Select />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <OrderSearch onSearch={handleSearch} />
-        <TableList data={TABLE_LIST_DATA} handleCheckBox={handleCheckBox} />
+        <OrderSearch />
+        <ProductTable data={orderListData} />
       </div>
     </Flex>
   );

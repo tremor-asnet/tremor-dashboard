@@ -1,0 +1,3 @@
+interface ListOptionProps {
+  option: string;
+}

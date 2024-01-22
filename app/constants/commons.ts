@@ -48,3 +48,9 @@ export const SOCIAL_LINK = {
 };
 
 export const REMEMBER_ME = "remember-me";
+
+export const listOption: ListOptionProps[] = [
+  { option: "Paid" },
+  { option: "Refunded" },
+  { option: "Canceled" },
+];

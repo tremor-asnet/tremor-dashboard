@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   Flex,
@@ -29,10 +31,13 @@ import { ProductOrder, TTableList } from "@/types";
 
 export interface TableListProps {
   data: TTableList[];
-  handleCheckBox: () => void;
 }
 
-const TableList = ({ data, handleCheckBox }: TableListProps): JSX.Element => {
+const TableList = ({ data }: TableListProps): JSX.Element => {
+  const handleCheckBox = () => {
+    // TODO: Handle checkbox here
+  };
+
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <Flex flexDirection="col" className="items-start justify-start my-2">

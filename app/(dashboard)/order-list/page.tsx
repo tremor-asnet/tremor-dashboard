@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 // Components
 import { TableList } from "@/components";
@@ -8,17 +8,11 @@ import { Button, Flex, Text } from "@tremor/react";
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-// Mocks
-import { TABLE_LIST_DATA } from "@/mocks";
+// Services
+import { getOrders } from "@/services/ordersServices";
 
-const OrderListPage = () => {
-  const handleSearch = () => {
-    // TODO: Handle search here
-  };
-
-  const handleCheckBox = () => {
-    // TODO: Handle check box here
-  };
+const OrderListPage = async () => {
+  const orderListData = await getOrders();
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -28,16 +22,15 @@ const OrderListPage = () => {
             new order
           </Text>
         </Button>
-        <Button
-          icon={RiArrowDropDownLine}
-          iconPosition="right"
-          className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent">
-          <Text className="uppercase text-xs">Filters</Text>
+        <Button className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent">
+          <Flex className="uppercase text-xs">
+            Filters <RiArrowDropDownLine />
+          </Flex>
         </Button>
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <OrderSearch onSearch={handleSearch} />
-        <TableList data={TABLE_LIST_DATA} handleCheckBox={handleCheckBox} />
+        <OrderSearch />
+        <TableList data={orderListData} />
       </div>
     </Flex>
   );

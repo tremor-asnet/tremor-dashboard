@@ -5,7 +5,7 @@ import Select from ".";
 
 describe("Testing Select component", () => {
   it("Should match snapshot", () => {
-    const component = render(<Select />);
+    const component = render(<Select title="Filter" />);
     expect(component).toMatchSnapshot();
   });
 });

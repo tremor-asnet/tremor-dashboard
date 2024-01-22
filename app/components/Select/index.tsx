@@ -1,12 +1,22 @@
 "use client";
 
-import { listOption } from "@/constants";
-import { useOutsideClick } from "@/hooks/useOutsideClick";
-import { Button, Text } from "@tremor/react";
 import { RefObject, useState } from "react";
+import { Button, Text } from "@tremor/react";
+
+// Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Select = () => {
+// Constants
+import { listOption } from "@/constants";
+
+// Hooks
+import { useOutsideClick } from "@/hooks";
+
+interface SelectProps {
+  title: string;
+}
+
+const Select = ({ title }: SelectProps) => {
   const [showListOption, setShowListOption] = useState(false);
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
@@ -19,7 +29,7 @@ const Select = () => {
         iconPosition="right"
         className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
         onClick={() => setShowListOption(true)}>
-        <Text className="uppercase text-xs">Filters</Text>
+        <Text className="uppercase text-xs">{title}</Text>
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>

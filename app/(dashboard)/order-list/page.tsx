@@ -17,7 +17,7 @@ const OrderListPage = async () => {
             new order
           </Text>
         </Button>
-        <Select />
+        <Select title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />

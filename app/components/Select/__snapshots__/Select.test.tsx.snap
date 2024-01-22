@@ -15,7 +15,7 @@ exports[`Testing Select component Should match snapshot 1`] = `
             <p
               class="text-tremor-default text-tremor-content dark:text-dark-tremor-content uppercase text-xs"
             >
-              Filters
+              Filter
             </p>
           </span>
           <svg
@@ -47,7 +47,7 @@ exports[`Testing Select component Should match snapshot 1`] = `
           <p
             class="text-tremor-default text-tremor-content dark:text-dark-tremor-content uppercase text-xs"
           >
-            Filters
+            Filter
           </p>
         </span>
         <svg

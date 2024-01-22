@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import { TableList, InputSearch } from "@/components";
+import { ProductTable, InputSearch } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Icons
@@ -11,14 +11,6 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { TABLE_LIST_DATA } from "@/mocks";
 
 const ProductListPage = () => {
-  const handleSearch = () => {
-    // TODO: Handle search here
-  };
-
-  const handleCheckBox = () => {
-    // TODO: Handle check box here
-  };
-
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex>
@@ -37,8 +29,8 @@ const ProductListPage = () => {
         </Button>
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch onSearch={handleSearch} />
-        <TableList data={TABLE_LIST_DATA} handleCheckBox={handleCheckBox} />
+        <InputSearch />
+        <ProductTable data={TABLE_LIST_DATA} />
       </div>
     </Flex>
   );

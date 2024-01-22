@@ -5,15 +5,17 @@ export const ORDER_DATA = [
     status: 0,
     customer: {
       id: 1,
+      full_name: "Orlando Imieto",
       avatar:
         "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
-      full_name: "Orlando Imieto",
     },
     products: [
       {
         id: 1,
-        name: "Nike Sport V2",
+        name: "Gold Glasses",
         count: 1,
+        price: 40,
+        url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/product-12.0b55635d.jpg",
       },
     ],
     revenue: 140.2,

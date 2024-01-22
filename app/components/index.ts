@@ -25,8 +25,8 @@ export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatist
 export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
 export { default as TrackOrder } from "./OrderDetails/TrackOrder";
 export { default as Pagination } from "./Pagination/Pagination";
-export { default as TableList } from "./TableList/TableList";
+export { default as ProductTable } from "./ProductTable/ProductTable";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
-export { default as OrderDetailContact } from "./OrderDetailContact/OrderDetailContact";
-export { default as OrderDetailItem } from "./OrderDetailItem/OrderDetailItem";
+export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
+export { default as OrderContactItem } from "./OrderDetails/OrderContactItem/OrderContactItem";
 export { default as InputSearch } from "./InputSearch/InputSearch";

@@ -4,9 +4,9 @@ export type ProductOrder = {
   count: number;
 };
 
-export type TTableList = {
+export type TProductTable = {
   id: number;
-  created_at: string;
+  createdAt: string;
   status: number;
   customer: {
     id: number;

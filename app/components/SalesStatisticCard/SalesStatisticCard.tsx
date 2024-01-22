@@ -9,11 +9,16 @@ import { Card, Text, Flex, Button } from "@tremor/react";
 //Types
 import { TSalesStatistic } from "@/types";
 
-//Constans
-import { ITEM_ACTION_SALES_DATE } from "@/constants/commons";
+//Constants
+import {
+  CURRENCY,
+  ITEM_ACTION_SALES_DATE,
+  SALES_STATISTIC_TYPE,
+  UNIT,
+} from "@/constants";
 
-//Mocks
-import { STATISTICS_DATA } from "@/mocks/sales";
+// Helpers
+import { formatAdjustNumber, formattedNumber } from "@/helpers";
 
 interface ISalesStatisticProp {
   statisticsData: TSalesStatistic;
@@ -22,7 +27,8 @@ interface ISalesStatisticProp {
 const SalesStatisticCard = ({
   statisticsData,
 }: ISalesStatisticProp): JSX.Element => {
-  const { id, type, amount, totalAmount, duration } = statisticsData;
+  const { id, type, amount, amountChange, duration, amountChangeType } =
+    statisticsData;
   const [isOpenAction, setOpenAction] = useState(false);
   const [currentSalesDate, setCurrentSalesDate] = useState("6 May - 7 May");
   const openActionSalesDate = isOpenAction;
@@ -36,6 +42,45 @@ const SalesStatisticCard = ({
     setOpenAction(!isOpenAction);
   };
 
+  const formattedAmount =
+    {
+      [SALES_STATISTIC_TYPE.SALES]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+      }),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formattedNumber({
+        value: amount,
+        isDecimalNumber: true,
+      }),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber({
+        value: amount,
+        currency: CURRENCY.DOLLAR,
+        isDecimalNumber: true,
+      }),
+    }[type] || "";
+
+  const formattedTotalAmount =
+    {
+      [SALES_STATISTIC_TYPE.SALES]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        unit: UNIT.PERCENT,
+      }),
+      [SALES_STATISTIC_TYPE.CUSTOMERS]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        unit: UNIT.PERCENT,
+      }),
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formatAdjustNumber({
+        value: amountChange,
+        isPositive: amountChangeType,
+        currency: CURRENCY.DOLLAR,
+      }),
+    }[type] || "";
+
+  const totalAmountColor =
+    type === SALES_STATISTIC_TYPE.AVG_REVENUE ? "text-secondary" : "text-few";
+
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
@@ -45,13 +90,14 @@ const SalesStatisticCard = ({
               {type}
             </Text>
             <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold">
-              {amount}
+              {formattedAmount}
             </Text>
           </Flex>
           <Flex className="justify-start items-start">
-            {totalAmount && (
-              <Text className="text-few dark:text-few leading-[22px] font-bold">
-                {`+${totalAmount}`}
+            {amountChange && (
+              <Text
+                className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>
+                {formattedTotalAmount}
               </Text>
             )}
             <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">

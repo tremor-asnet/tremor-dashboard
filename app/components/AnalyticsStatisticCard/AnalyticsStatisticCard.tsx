@@ -9,14 +9,23 @@ import IconBox from "@/components/IconBox/IconBox";
 import { SALE_STATISTICAL } from "@/constants/saleStatistical";
 
 // Helpers
-import { formatPercentage } from "@/helpers";
+import {
+  formatAbbreviateNumber,
+  formatAdjustNumber,
+  formattedNumber,
+} from "@/helpers";
+
+// Constants
+import { ANALYTICS_STATISTICAL_TYPE } from "@/constants/analytics";
+import { UNIT } from "@/constants";
 
 type AnalyticsStatistical = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  amountChange: number;
   duration: string;
+  amountChangeType: number;
 };
 
 interface IAnalyticsStatisticCard {
@@ -26,7 +35,21 @@ interface IAnalyticsStatisticCard {
 const AnalyticsStatisticCard = ({
   statisticalData,
 }: IAnalyticsStatisticCard): JSX.Element => {
-  const { id, type, amount, totalAmount, duration } = statisticalData;
+  const { id, type, amount, amountChange, duration, amountChangeType } =
+    statisticalData;
+
+  const formattedAmount =
+    {
+      [ANALYTICS_STATISTICAL_TYPE.BOOKINGS]: amount,
+      [ANALYTICS_STATISTICAL_TYPE.TODAY_USER]: formattedNumber({
+        value: amount,
+      }),
+      [ANALYTICS_STATISTICAL_TYPE.REVENUE]: formatAbbreviateNumber(amount),
+      [ANALYTICS_STATISTICAL_TYPE.FOLLOWERS]: formatAdjustNumber({
+        value: amount,
+        isPositive: amountChangeType,
+      }),
+    }[type] || "";
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -43,18 +66,20 @@ const AnalyticsStatisticCard = ({
                 {type}
               </Text>
               <Text className="text-tremor-content-title dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
-                {amount}
+                {formattedAmount}
               </Text>
             </Flex>
           </Flex>
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
-              {totalAmount && (
-                <Text className="text-few dark:text-few leading-[21px] font-bold">
-                  {formatPercentage(totalAmount)}
-                </Text>
-              )}
+              <Text className="text-few dark:text-few leading-[21px] font-bold">
+                {formatAdjustNumber({
+                  value: amountChange,
+                  isPositive: amountChangeType,
+                  unit: UNIT.PERCENT,
+                })}
+              </Text>
               <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">
                 {duration}
               </Text>

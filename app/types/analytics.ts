@@ -3,7 +3,7 @@ export interface IAnalyticsInfo {
   photo: string;
   name: string;
   description: string;
-  price: number | string;
+  price: number;
   location: string;
 }
 

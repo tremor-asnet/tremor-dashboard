@@ -1,6 +1,4 @@
 // Components
-
-//import { TableList, InputSearch } from "@/components";
 import { ProductTable, InputSearch } from "@/components";
 
 import { Button, Flex, Text } from "@tremor/react";

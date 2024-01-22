@@ -1,8 +1,7 @@
 "use client";
 
 // Components
-import { TableList } from "@/components";
-import InputSearch from "@/components/InputSearch/InputSearch";
+import { TableList, InputSearch } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Icons

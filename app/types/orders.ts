@@ -1,7 +1,22 @@
-export type ProductDetail = {
+export type TOrderProduct = {
   id: number;
   name: string;
   count: number;
+  price: number;
+  url: string;
+};
+
+export type TOrder = {
+  id: number;
+  created_at: string;
+  status: number;
+  customer: {
+    id: number;
+    full_name: string;
+    avatar?: string;
+  };
+  products: TOrderProduct[];
+  revenue: number;
 };
 
 export type TOrderDetail = {
@@ -10,7 +25,6 @@ export type TOrderDetail = {
   order_deliver_price: number;
   order_tax: number;
   created_at: string;
-  products: ProductDetail[];
   track_order_info: {
     generate_order_id: string;
     generate_order_at: string;
@@ -24,19 +38,4 @@ export type TOrderDetail = {
     email: string;
     vat: string;
   };
-};
-
-export type TCustomer = {
-  id: number;
-  avatar: string;
-  full_name: string;
-};
-
-export type TOrderList = {
-  id: number;
-  created_at: string;
-  status: number;
-  customer: TCustomer;
-  products: ProductDetail[];
-  revenue: number;
 };

@@ -1,23 +1,21 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import OrderDetailItem from "./OrderDetailItem";
+import OrderContactItem from "./OrderContactItem";
 
 // Mock data
 import { ORDER_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/OrderDetailItem",
-  component: OrderDetailItem,
+  title: "Components/OrderContactItem",
+  component: OrderContactItem,
   tags: ["autodocs"],
-} as Meta<typeof OrderDetailItem>;
+} as Meta<typeof OrderContactItem>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => (
-    <OrderDetailItem orderStatus="delivered" orderDetail={ORDER_DATA[0]} />
-  ),
+  render: () => <OrderContactItem orderContact={ORDER_DATA[0]} />,
 };

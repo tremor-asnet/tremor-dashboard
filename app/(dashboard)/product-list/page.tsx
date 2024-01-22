@@ -36,7 +36,7 @@ const ProductListPage = () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch onSearch={handleSearch} />
-        <TableList data={TABLE_LIST_DATA} handleCheckBox={handleCheckBox} />
+        <TableList data={TABLE_LIST_DATA} />
       </div>
     </Flex>
   );

@@ -1,7 +1,7 @@
 export const TABLE_LIST_DATA = [
   {
     id: 10421,
-    created_at: "1 Nov, 10:20 AM",
+    createdAt: "1 Nov, 10:20 AM",
     status: 0,
     customer: {
       id: 1,
@@ -20,7 +20,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10422,
-    created_at: "1 Nov, 10:53 AM",
+    createdAt: "1 Nov, 10:53 AM",
     status: 0,
     customer: {
       id: 2,
@@ -39,7 +39,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10423,
-    created_at: "1 Nov, 11:13 AM",
+    createdAt: "1 Nov, 11:13 AM",
     status: 2,
     customer: {
       id: 3,
@@ -56,7 +56,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10424,
-    created_at: "1 Nov, 12:20 PM",
+    createdAt: "1 Nov, 12:20 PM",
     status: 0,
     customer: {
       id: 4,
@@ -75,7 +75,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10425,
-    created_at: "1 Nov, 12:20 PM",
+    createdAt: "1 Nov, 12:20 PM",
     status: 1,
     customer: {
       id: 5,
@@ -94,7 +94,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10426,
-    created_at: "1 Nov, 2:19 PM",
+    createdAt: "1 Nov, 2:19 PM",
     status: 0,
     customer: {
       id: 6,
@@ -111,7 +111,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10427,
-    created_at: "1 Nov, 3:42 AM",
+    createdAt: "1 Nov, 3:42 AM",
     status: 0,
     customer: {
       id: 7,
@@ -128,7 +128,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10428,
-    created_at: "2 Nov, 9:32 AM",
+    createdAt: "2 Nov, 9:32 AM",
     status: 0,
     customer: {
       id: 8,
@@ -145,7 +145,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10429,
-    created_at: "2 Nov, 10:14 AM",
+    createdAt: "2 Nov, 10:14 AM",
     status: 0,
     customer: {
       id: 9,
@@ -164,7 +164,7 @@ export const TABLE_LIST_DATA = [
   },
   {
     id: 10430,
-    created_at: "2 Nov, 10:14 AM",
+    createdAt: "2 Nov, 10:14 AM",
     status: 2,
     customer: {
       id: 10,

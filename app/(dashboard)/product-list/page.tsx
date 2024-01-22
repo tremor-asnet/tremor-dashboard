@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import { TableList, InputSearch } from "@/components";
+import { ProductTable, InputSearch } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Icons
@@ -36,7 +36,7 @@ const ProductListPage = () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch onSearch={handleSearch} />
-        <TableList data={TABLE_LIST_DATA} handleCheckBox={handleCheckBox} />
+        <ProductTable data={TABLE_LIST_DATA} />
       </div>
     </Flex>
   );

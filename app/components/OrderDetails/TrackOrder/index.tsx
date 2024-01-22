@@ -1,4 +1,5 @@
 import { Card, Flex } from "@tremor/react";
+import dayjs from "dayjs";
 
 // Icon React
 import { FaBell } from "react-icons/fa";
@@ -7,8 +8,7 @@ import { IoCart } from "react-icons/io5";
 import { MdInventory } from "react-icons/md";
 
 // Types
-import { TrackOrderProps } from "@/types";
-import dayjs from "dayjs";
+import { TrackOrderProps } from "@/types/orderDetails";
 
 const TrackOrder = ({
   id,

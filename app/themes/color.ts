@@ -93,6 +93,7 @@ export const backgroundColor = {
   light: "#7b809a",
   border: "#dee2e6",
   dark_blue: "rgb(32, 41, 64)",
+  greyish: "#f8f9fa",
 
   dark: {
     primary: "#111827",

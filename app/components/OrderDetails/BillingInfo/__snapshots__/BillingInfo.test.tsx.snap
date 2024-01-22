@@ -19,7 +19,9 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
       <div
         class="tremor-Flex-root flex w-full flex-row justify-start items-baseline mt-4 gap-3"
       >
-        <div>
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start max-w-[90px]"
+        >
           <p
             class="mb-2 text-xs dark:text-dark-lighter"
           >
@@ -36,7 +38,9 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
             VAT Number:
           </p>
         </div>
-        <div>
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start"
+        >
           <p
             class="mb-2 font-bold text-xs dark:text-white"
           >

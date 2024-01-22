@@ -21,14 +21,14 @@ const BillingInfo = (billingData: BillingInfoProps) => {
           className="mt-4 gap-3"
           alignItems="baseline"
           justifyContent="start">
-          <div>
+          <Flex flexDirection="col" alignItems="start" className="max-w-[90px]">
             {listTitle.map(title => (
               <p className="mb-2 text-xs dark:text-dark-lighter" key={title}>
                 {`${title}:`}
               </p>
             ))}
-          </div>
-          <div>
+          </Flex>
+          <Flex flexDirection="col" alignItems="start">
             {Object.keys(billingInfo).map(item => {
               const data =
                 billingInfo[item as keyof Omit<BillingInfoProps, "ownerName">];
@@ -40,7 +40,7 @@ const BillingInfo = (billingData: BillingInfoProps) => {
                 </p>
               );
             })}
-          </div>
+          </Flex>
         </Flex>
       </Flex>
     </div>

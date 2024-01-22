@@ -66,7 +66,7 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
           </TableHead>
           <TableBody>
             {data.map(item => {
-              const { id, created_at, status, customer, products, revenue } =
+              const { id, createdAt, status, customer, products, revenue } =
                 item;
               return (
                 <TableRow key={id}>
@@ -83,7 +83,7 @@ const TableList = ({ data }: TableListProps): JSX.Element => {
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-                      {created_at}
+                      {createdAt}
                     </Text>
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

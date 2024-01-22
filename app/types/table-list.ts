@@ -6,7 +6,7 @@ export type ProductOrder = {
 
 export type TTableList = {
   id: number;
-  created_at: string;
+  createdAt: string;
   status: number;
   customer: {
     id: number;

@@ -1,5 +1,3 @@
-// "use client";
-
 // Components
 import { TableList } from "@/components";
 import OrderSearch from "@/components/OrderSearch/OrderSearch";

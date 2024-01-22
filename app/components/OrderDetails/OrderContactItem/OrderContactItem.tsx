@@ -6,7 +6,7 @@ import { CustomImage } from "@/components";
 import { TOrder } from "@/types";
 
 // Helpers
-import { OrderStatus } from "@/helpers";
+import { orderStatus } from "@/helpers";
 
 export type OrderContactItemProps = {
   orderContact: TOrder;
@@ -30,7 +30,7 @@ const OrderContactItem = ({ orderContact }: OrderContactItemProps) => (
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
             {orderContact.products[0].name}
           </Title>
-          {OrderStatus(orderContact.status)}
+          {orderStatus(orderContact.status)}
         </Flex>
       </Flex>
     </Flex>

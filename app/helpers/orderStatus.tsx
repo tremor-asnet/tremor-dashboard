@@ -1,5 +1,6 @@
-export const OrderStatus = (status: number) => {
+export const orderStatus = (status: number) => {
   switch (status) {
+    // When data response status === 0, the order status is delivered
     case 0:
       return (
         <>
@@ -11,6 +12,7 @@ export const OrderStatus = (status: number) => {
           </p>
         </>
       );
+    // When data response status === 1, the order status is canceled
     case 1:
       return (
         <>
@@ -22,6 +24,7 @@ export const OrderStatus = (status: number) => {
           </p>
         </>
       );
+    // When data response status === 2, the order status is refunded
     case 2:
       return (
         <>
@@ -33,6 +36,7 @@ export const OrderStatus = (status: number) => {
           </p>
         </>
       );
+    // When data response status === !0 | !1 | !2, the order status is pending
     default:
       return (
         <>

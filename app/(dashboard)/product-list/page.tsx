@@ -30,8 +30,10 @@ const ProductListPage = () => {
         <Button
           icon={RiArrowDropDownLine}
           iconPosition="right"
-          className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent">
-          <Text className="uppercase text-xs">Filters</Text>
+          className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-white hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent">
+          <Text className="uppercase text-xs text-inherit dark:text-inherit">
+            Filters
+          </Text>
         </Button>
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">

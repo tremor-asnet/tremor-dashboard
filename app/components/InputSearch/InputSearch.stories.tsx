@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { Text, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
 import InputSearch from "./InputSearch";
 
 const meta = {

@@ -60,7 +60,7 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
                 <HeaderCellContents title="product" />
               </TableHeaderCell>
               <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="product" />
+                <HeaderCellContents title="revenue" />
               </TableHeaderCell>
             </TableRow>
           </TableHead>

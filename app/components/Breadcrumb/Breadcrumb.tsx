@@ -62,6 +62,8 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
         return "all projects";
       case ROUTES.SETTING:
         return "settings";
+      case ROUTES.ORDER_LIST:
+        return "order-list";
       default:
         return "analytics";
     }

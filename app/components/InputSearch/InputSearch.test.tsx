@@ -4,12 +4,8 @@ import { render } from "@testing-library/react";
 import InputSearch from "./InputSearch";
 
 describe("Testing InputSearch component", () => {
-  const propsDefault = {
-    onSearch: () => {},
-  };
-
   it("Should match snapshot", () => {
-    const component = render(<InputSearch {...propsDefault} />);
+    const component = render(<InputSearch />);
     expect(component).toMatchSnapshot();
   });
 });

@@ -6,10 +6,10 @@ exports[`Testing table list component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto"
+        class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:text-light dark:bg-dark-tremor-primary overflow-x-auto"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-col items-start justify-start my-2"
+          class="tremor-Flex-root flex w-full flex-col items-start justify-start my-2 dark:bg-dark-tremor-primary"
         >
           <div
             class="tremor-Table-root overflow-auto w-full"
@@ -24,7 +24,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableRow-row border-0 border-b border-gray-100"
                 >
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -101,7 +101,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </div>
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -178,7 +178,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </div>
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -255,7 +255,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </div>
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -332,7 +332,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </div>
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -409,7 +409,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </div>
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -505,7 +505,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10421"
                       >
                         #
@@ -517,7 +517,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 10:20 AM
                     </p>
@@ -555,7 +555,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -580,7 +580,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Orlando Imieto
                       </p>
@@ -590,7 +590,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Nike Sport V2
                     </p>
@@ -599,7 +599,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $140,20
                     </p>
@@ -620,7 +620,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10422"
                       >
                         #
@@ -632,7 +632,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 10:53 AM
                     </p>
@@ -670,7 +670,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -695,7 +695,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Alice Murinho
                       </p>
@@ -705,7 +705,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Valvet T-shirt
                     </p>
@@ -714,7 +714,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $42,00
                     </p>
@@ -735,7 +735,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10423"
                       >
                         #
@@ -747,7 +747,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 11:13 AM
                     </p>
@@ -785,7 +785,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Refunded
                       </p>
@@ -803,7 +803,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         M
                       </div>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Michael Mirra
                       </p>
@@ -813,7 +813,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Leather Wallet  +1 more
                     </p>
@@ -822,7 +822,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $25,50
                     </p>
@@ -843,7 +843,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10424"
                       >
                         #
@@ -855,7 +855,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 12:20 PM
                     </p>
@@ -893,7 +893,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -918,7 +918,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Andrew Nichel
                       </p>
@@ -928,7 +928,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Bracelet Onu-Lino
                     </p>
@@ -937,7 +937,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $19,40
                     </p>
@@ -958,7 +958,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10425"
                       >
                         #
@@ -970,7 +970,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 12:20 PM
                     </p>
@@ -1008,7 +1008,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Canceled
                       </p>
@@ -1033,7 +1033,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Sebastian Koga
                       </p>
@@ -1043,7 +1043,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Phone Case Pink  x 2
                     </p>
@@ -1052,7 +1052,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $44,90
                     </p>
@@ -1073,7 +1073,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10426"
                       >
                         #
@@ -1085,7 +1085,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 2:19 PM
                     </p>
@@ -1123,7 +1123,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -1141,7 +1141,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         L
                       </div>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Laur Gilbert
                       </p>
@@ -1151,7 +1151,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Backpack Niver
                     </p>
@@ -1160,7 +1160,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $112,50
                     </p>
@@ -1181,7 +1181,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10427"
                       >
                         #
@@ -1193,7 +1193,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       1 Nov, 3:42 AM
                     </p>
@@ -1231,7 +1231,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -1249,7 +1249,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         I
                       </div>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Iryna Innda
                       </p>
@@ -1259,7 +1259,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Adidas Vio
                     </p>
@@ -1268,7 +1268,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $200,00
                     </p>
@@ -1289,7 +1289,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10428"
                       >
                         #
@@ -1301,7 +1301,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       2 Nov, 9:32 AM
                     </p>
@@ -1339,7 +1339,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -1357,7 +1357,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         A
                       </div>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Arrias Liunda
                       </p>
@@ -1367,7 +1367,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Airpods 2 Gen
                     </p>
@@ -1376,7 +1376,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $350,00
                     </p>
@@ -1397,7 +1397,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10429"
                       >
                         #
@@ -1409,7 +1409,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       2 Nov, 10:14 AM
                     </p>
@@ -1447,7 +1447,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Paid
                       </p>
@@ -1472,7 +1472,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Andrew Nichel
                       </p>
@@ -1482,7 +1482,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Bracelet Warret
                     </p>
@@ -1491,7 +1491,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $15,00
                     </p>
@@ -1512,7 +1512,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <a
-                        class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10430"
                       >
                         #
@@ -1524,7 +1524,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       2 Nov, 10:14 AM
                     </p>
@@ -1562,7 +1562,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         </span>
                       </button>
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                       >
                         Refunded
                       </p>
@@ -1587,7 +1587,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         width="24"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                       >
                         Andrew Nichel
                       </p>
@@ -1597,7 +1597,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                     >
                       Watter Bottle India  x 3
                     </p>
@@ -1606,7 +1606,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
                       $25,00
                     </p>
@@ -1705,10 +1705,10 @@ exports[`Testing table list component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto"
+      class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:text-light dark:bg-dark-tremor-primary overflow-x-auto"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start my-2"
+        class="tremor-Flex-root flex w-full flex-col items-start justify-start my-2 dark:bg-dark-tremor-primary"
       >
         <div
           class="tremor-Table-root overflow-auto w-full"
@@ -1723,7 +1723,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 class="tremor-TableRow-row border-0 border-b border-gray-100"
               >
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1800,7 +1800,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </div>
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1877,7 +1877,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </div>
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1954,7 +1954,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </div>
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2031,7 +2031,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </div>
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2108,7 +2108,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </div>
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   <div
                     class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2204,7 +2204,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10421"
                     >
                       #
@@ -2216,7 +2216,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 10:20 AM
                   </p>
@@ -2254,7 +2254,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -2279,7 +2279,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Orlando Imieto
                     </p>
@@ -2289,7 +2289,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Nike Sport V2
                   </p>
@@ -2298,7 +2298,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $140,20
                   </p>
@@ -2319,7 +2319,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10422"
                     >
                       #
@@ -2331,7 +2331,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 10:53 AM
                   </p>
@@ -2369,7 +2369,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -2394,7 +2394,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Alice Murinho
                     </p>
@@ -2404,7 +2404,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Valvet T-shirt
                   </p>
@@ -2413,7 +2413,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $42,00
                   </p>
@@ -2434,7 +2434,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10423"
                     >
                       #
@@ -2446,7 +2446,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 11:13 AM
                   </p>
@@ -2484,7 +2484,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Refunded
                     </p>
@@ -2502,7 +2502,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       M
                     </div>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Michael Mirra
                     </p>
@@ -2512,7 +2512,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Leather Wallet  +1 more
                   </p>
@@ -2521,7 +2521,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $25,50
                   </p>
@@ -2542,7 +2542,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10424"
                     >
                       #
@@ -2554,7 +2554,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 12:20 PM
                   </p>
@@ -2592,7 +2592,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -2617,7 +2617,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Andrew Nichel
                     </p>
@@ -2627,7 +2627,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Bracelet Onu-Lino
                   </p>
@@ -2636,7 +2636,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $19,40
                   </p>
@@ -2657,7 +2657,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10425"
                     >
                       #
@@ -2669,7 +2669,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 12:20 PM
                   </p>
@@ -2707,7 +2707,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Canceled
                     </p>
@@ -2732,7 +2732,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Sebastian Koga
                     </p>
@@ -2742,7 +2742,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Phone Case Pink  x 2
                   </p>
@@ -2751,7 +2751,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $44,90
                   </p>
@@ -2772,7 +2772,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10426"
                     >
                       #
@@ -2784,7 +2784,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 2:19 PM
                   </p>
@@ -2822,7 +2822,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -2840,7 +2840,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       L
                     </div>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Laur Gilbert
                     </p>
@@ -2850,7 +2850,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Backpack Niver
                   </p>
@@ -2859,7 +2859,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $112,50
                   </p>
@@ -2880,7 +2880,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10427"
                     >
                       #
@@ -2892,7 +2892,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     1 Nov, 3:42 AM
                   </p>
@@ -2930,7 +2930,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -2948,7 +2948,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       I
                     </div>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Iryna Innda
                     </p>
@@ -2958,7 +2958,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Adidas Vio
                   </p>
@@ -2967,7 +2967,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $200,00
                   </p>
@@ -2988,7 +2988,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10428"
                     >
                       #
@@ -3000,7 +3000,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     2 Nov, 9:32 AM
                   </p>
@@ -3038,7 +3038,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -3056,7 +3056,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       A
                     </div>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Arrias Liunda
                     </p>
@@ -3066,7 +3066,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Airpods 2 Gen
                   </p>
@@ -3075,7 +3075,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $350,00
                   </p>
@@ -3096,7 +3096,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10429"
                     >
                       #
@@ -3108,7 +3108,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     2 Nov, 10:14 AM
                   </p>
@@ -3146,7 +3146,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Paid
                     </p>
@@ -3171,7 +3171,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Andrew Nichel
                     </p>
@@ -3181,7 +3181,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Bracelet Warret
                   </p>
@@ -3190,7 +3190,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $15,00
                   </p>
@@ -3211,7 +3211,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <a
-                      class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10430"
                     >
                       #
@@ -3223,7 +3223,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     2 Nov, 10:14 AM
                   </p>
@@ -3261,7 +3261,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       </span>
                     </button>
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
                     >
                       Refunded
                     </p>
@@ -3286,7 +3286,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       width="24"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
                     >
                       Andrew Nichel
                     </p>
@@ -3296,7 +3296,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
                   >
                     Watter Bottle India  x 3
                   </p>
@@ -3305,7 +3305,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
                     $25,00
                   </p>

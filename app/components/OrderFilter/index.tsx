@@ -16,28 +16,39 @@ interface SelectProps {
   title: string;
 }
 
-const Select = ({ title }: SelectProps) => {
+const OrderFilter = ({ title }: SelectProps) => {
   const [showListOption, setShowListOption] = useState(false);
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
   });
+
+  const handleClickOption = () => {
+    setShowListOption(true);
+  };
+
+  const handleClickItem = () => {
+    setShowListOption(false);
+  };
 
   return (
     <div>
       <Button
         icon={RiArrowDropDownLine}
         iconPosition="right"
-        className="font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
-        onClick={() => setShowListOption(true)}>
-        <Text className="uppercase text-xs">{title}</Text>
+        variant="secondary"
+        className="font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
+        onClick={handleClickOption}>
+        <Text className="uppercase text-xs text-primary">{title}</Text>
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>
           <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
-            {listOption.map(({ option }) => (
+            {listOption.map(({ option, value }) => (
               <li
                 key={option}
-                className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary">
+                value={value}
+                className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
+                onClick={handleClickItem}>
                 Status: {option}
               </li>
             ))}
@@ -52,4 +63,4 @@ const Select = ({ title }: SelectProps) => {
   );
 };
 
-export default Select;
+export default OrderFilter;

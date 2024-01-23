@@ -1,11 +1,11 @@
 import { render } from "@testing-library/react";
 
 // Components
-import Select from ".";
+import OrderFilter from ".";
 
-describe("Testing Select component", () => {
+describe("Testing OrderFilter component", () => {
   it("Should match snapshot", () => {
-    const component = render(<Select title="Filter" />);
+    const component = render(<OrderFilter title="Filter" />);
     expect(component).toMatchSnapshot();
   });
 });

@@ -1,7 +1,7 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { ProductTable, Select, OrderSearch } from "@/components";
+import { ProductTable, OrderFilter, OrderSearch } from "@/components";
 
 // Services
 import { getOrders } from "@/services";
@@ -17,7 +17,7 @@ const OrderListPage = async () => {
             new order
           </Text>
         </Button>
-        <Select title="Filter" />
+        <OrderFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />

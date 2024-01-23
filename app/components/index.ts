@@ -30,5 +30,5 @@ export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellCo
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
 export { default as OrderContactItem } from "./OrderDetails/OrderContactItem/OrderContactItem";
 export { default as InputSearch } from "./InputSearch/InputSearch";
-export { default as Select } from "./Select";
+export { default as OrderFilter } from "./OrderFilter";
 export { default as OrderSearch } from "./OrderSearch/OrderSearch";

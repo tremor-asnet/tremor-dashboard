@@ -2,18 +2,18 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import Select from ".";
+import OrderFilter from "../OrderFilter";
 
 const meta = {
-  title: "Components/Select",
+  title: "Components/OrderFilter",
   tags: ["autodocs"],
-  component: Select,
-} as Meta<typeof Select>;
+  component: OrderFilter,
+} as Meta<typeof OrderFilter>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <Select title="Filter" />,
+  render: () => <OrderFilter title="Filter" />,
 };

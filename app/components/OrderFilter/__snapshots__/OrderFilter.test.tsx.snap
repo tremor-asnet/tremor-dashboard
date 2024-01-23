@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Select component Should match snapshot 1`] = `
+exports[`Testing OrderFilter component Should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
             <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content uppercase text-xs"
+              class="text-tremor-default dark:text-dark-tremor-content uppercase text-xs text-primary"
             >
               Filter
             </p>
@@ -39,13 +39,13 @@ exports[`Testing Select component Should match snapshot 1`] = `
   "container": <div>
     <div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm font-bold bg-transparent border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content uppercase text-xs"
+            class="text-tremor-default dark:text-dark-tremor-content uppercase text-xs text-primary"
           >
             Filter
           </p>

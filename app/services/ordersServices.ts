@@ -4,8 +4,8 @@ import { ROUTER_API_URL } from "@/constants";
 // Helpers
 import { getErrorMessage } from "@/helpers";
 
-export const getOrders = async () => {
-  const res = await fetch(`${ROUTER_API_URL}/orders`, {
+export const getOrders = async (page: number) => {
+  const res = await fetch(`${ROUTER_API_URL}/orders?page=${page}&size=10`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",
@@ -21,8 +21,8 @@ export const getOrders = async () => {
   return res.json();
 };
 
-export const getOrderDetails = async () => {
-  const res = await fetch(`${ROUTER_API_URL}/orders/detail`, {
+export const getOrderDetails = async (id: number) => {
+  const res = await fetch(`${ROUTER_API_URL}/orders/${id}`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",

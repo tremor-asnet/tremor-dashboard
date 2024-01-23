@@ -6,14 +6,11 @@ import { OrderContact, TrackOrder } from "@/components";
 import PaymentDetails from "@/components/OrderDetails/PaymentDetails";
 import BillingInfo from "@/components/OrderDetails/BillingInfo";
 
-// Mocks
-import { ORDER_DATA } from "@/mocks";
-
 // Services
 import { getOrderDetails } from "@/services/ordersServices";
 
-const OrderDetailsPage = async () => {
-  const orderDetails = await getOrderDetails();
+const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
+  const orderDetails = await getOrderDetails(params.id);
   const {
     id,
     orderCode,
@@ -22,6 +19,7 @@ const OrderDetailsPage = async () => {
     trackOrderInfo,
     billingInfo,
     createdAt,
+    products,
   } = orderDetails;
 
   const monies = {
@@ -43,7 +41,7 @@ const OrderDetailsPage = async () => {
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <OrderContact data={ORDER_DATA} />
+            <OrderContact data={products} />
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
@@ -53,9 +51,8 @@ const OrderDetailsPage = async () => {
               </div>
               <div className="w-full">
                 <div className="mb-4">
-                  <PaymentDetails />
+                  <PaymentDetails last4Bank={billingInfo.last4Bank} />
                 </div>
-
                 <BillingInfo {...billingInfo} />
               </div>
               <Col numColSpanMd={2} numColSpanLg={1}>

@@ -10,7 +10,8 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { getOrders } from "@/services/ordersServices";
 
 const OrderListPage = async () => {
-  const orderListData = await getOrders();
+  // TODO: Change param pass to getOrders when implement pagination
+  const orderListData = await getOrders(1);
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -28,7 +29,7 @@ const OrderListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <ProductTable data={orderListData} />
+        <ProductTable data={orderListData.results} />
       </div>
     </Flex>
   );

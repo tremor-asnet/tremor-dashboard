@@ -21,6 +21,7 @@ export interface TrackOrderProps {
 export interface BillingInfoProps {
   ownerName: string;
   companyName: string;
+  last4Bank: string;
   email: string;
   vat: string;
 }

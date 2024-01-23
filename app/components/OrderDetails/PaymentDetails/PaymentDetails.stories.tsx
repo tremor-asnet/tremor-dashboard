@@ -14,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const PopoverDefault: Story = {
-  render: () => <PaymentDetails />,
+  render: () => <PaymentDetails last4Bank="7852" />,
 };

@@ -5,7 +5,7 @@ import { BillingInfoProps } from "@/types/orderDetails";
 
 const BillingInfo = (billingData: BillingInfoProps) => {
   const listTitle = ["Company Name", "Email Address", "VAT Number"];
-  const { ownerName, ...billingInfo } = billingData;
+  const { ownerName, last4Bank, ...billingInfo } = billingData;
 
   return (
     <div>
@@ -31,7 +31,12 @@ const BillingInfo = (billingData: BillingInfoProps) => {
           <Flex flexDirection="col" alignItems="start">
             {Object.keys(billingInfo).map(item => {
               const data =
-                billingInfo[item as keyof Omit<BillingInfoProps, "ownerName">];
+                billingInfo[
+                  item as keyof Omit<
+                    BillingInfoProps,
+                    "ownerName" | "last4Bank"
+                  >
+                ];
               return (
                 <p
                   key={`${item}`}

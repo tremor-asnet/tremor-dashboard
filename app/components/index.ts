@@ -28,5 +28,4 @@ export { default as Pagination } from "./Pagination/Pagination";
 export { default as ProductTable } from "./ProductTable/ProductTable";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
-export { default as OrderContactItem } from "./OrderDetails/OrderContactItem/OrderContactItem";
 export { default as InputSearch } from "./InputSearch/InputSearch";

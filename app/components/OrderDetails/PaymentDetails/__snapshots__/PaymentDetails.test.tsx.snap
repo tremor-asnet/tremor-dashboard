@@ -32,7 +32,8 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
             <h6
               class="text-tremor-content-title dark:text-dark-primary font-bold"
             >
-              **** **** **** 7852
+              **** **** **** 
+              7852
             </h6>
           </div>
           <div
@@ -81,7 +82,8 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
           <h6
             class="text-tremor-content-title dark:text-dark-primary font-bold"
           >
-            **** **** **** 7852
+            **** **** **** 
+            7852
           </h6>
         </div>
         <div

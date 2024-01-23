@@ -3,6 +3,7 @@ import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
 
 const OrderContact = ({ name, url }: { name: string; url: string }) => {
+  // TODO: Handle delivered days
   return (
     <Flex>
       <Flex justifyContent="start">

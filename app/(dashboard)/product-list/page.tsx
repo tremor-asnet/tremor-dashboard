@@ -19,7 +19,7 @@ const ProductListPage = () => {
         <OrderFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch />
+        <InputSearch onChange={() => {}} />
         <ProductTable data={TABLE_LIST_DATA} />
       </div>
     </Flex>

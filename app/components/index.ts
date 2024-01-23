@@ -32,3 +32,4 @@ export { default as OrderContactItem } from "./OrderDetails/OrderContactItem/Ord
 export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as OrderSearch } from "./OrderSearch/OrderSearch";
+export { default as SelectOption } from "./SelectOption";

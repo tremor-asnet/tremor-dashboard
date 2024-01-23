@@ -12,8 +12,10 @@ const BillingInfo = ({
   const { ownerName, last4Bank, ...billingInfo } = billingData;
 
   return (
-    <div>
-      <Bold className="dark:text-white">Billing Information</Bold>
+    <>
+      <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
+        Billing Information
+      </Bold>
       <Flex
         flexDirection="col"
         alignItems="start"
@@ -25,14 +27,20 @@ const BillingInfo = ({
           className="mt-4 gap-3"
           alignItems="baseline"
           justifyContent="start">
-          <Flex flexDirection="col" alignItems="start" className="max-w-[90px]">
+          <Flex
+            flexDirection="col"
+            alignItems="start"
+            className="max-w-[90px] text-secondary dark:text-dark-romance">
             {listTitle.map(title => (
               <p className="mb-2 text-xs dark:text-dark-lighter" key={title}>
                 {`${title}:`}
               </p>
             ))}
           </Flex>
-          <Flex flexDirection="col" alignItems="start">
+          <Flex
+            flexDirection="col"
+            alignItems="start"
+            className="text-primary dark:text-white">
             {Object.keys(billingInfo).map(item => {
               const data =
                 billingInfo[
@@ -52,7 +60,7 @@ const BillingInfo = ({
           </Flex>
         </Flex>
       </Flex>
-    </div>
+    </>
   );
 };
 

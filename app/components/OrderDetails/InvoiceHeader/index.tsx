@@ -11,8 +11,10 @@ export const InvoiceHeader = ({
   return (
     <Flex>
       <div>
-        <Bold className="dark:text-white">Order Details</Bold>
-        <div className="mt-2">
+        <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
+          Order Details
+        </Bold>
+        <div className="mt-2 tracking-[0.4px]">
           <Text className="dark:text-lighter">
             Order no. <Bold>{id}</Bold> from{" "}
             <Bold>
@@ -24,7 +26,7 @@ export const InvoiceHeader = ({
           </Text>
         </div>
       </div>
-      <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
+      <Button className="py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white hover:shadow-btn-primary-hover">
         <Text className="uppercase text-xs text-white dark:text-white">
           invoice
         </Text>

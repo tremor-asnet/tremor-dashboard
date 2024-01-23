@@ -21,10 +21,10 @@ import {
 } from "@/components";
 
 // Constants
-import { STATUS_TEXT } from "@/constants";
+import { SEPARATOR, STATUS_TEXT } from "@/constants";
 
 // Helpers
-import { ProductStatus } from "@/helpers";
+import { ProductStatus, formatDateTime } from "@/helpers";
 
 //Types
 import { ProductOrder, TProductTable } from "@/types";
@@ -84,7 +84,7 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
                     </TableCell>
                     <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                       <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-                        {createdAt}
+                        {formatDateTime(createdAt, SEPARATOR.COMMAS)}
                       </Text>
                     </TableCell>
                     <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const InputSearchDefault: Story = {
   render: () => (
     <Flex className="w-full justify-center mt-10">
-      <InputSearch onSearch={() => {}} />
+      <InputSearch onChange={() => {}} />
     </Flex>
   ),
 };

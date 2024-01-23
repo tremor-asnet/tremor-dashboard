@@ -137,7 +137,7 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
             })}
           </TableBody>
         </Table>
-        <Pagination total={2} />
+        {data.length ? <Pagination total={2} /> : ""}
       </Flex>
     </Card>
   );

@@ -7,12 +7,16 @@ exports[`Testing OrderFilter component Should match snapshot 1`] = `
     <div>
       <div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis uppercase text-xs font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:!text-white dark:!text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent hover:text-primary"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-white hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
           >
-            Filter
+            <p
+              class="text-tremor-default uppercase text-xs text-inherit dark:text-inherit"
+            >
+              Filter
+            </p>
           </span>
           <svg
             class="tremor-Button-icon shrink-0 h-5 w-5 -mr-1 ml-1.5"
@@ -35,12 +39,16 @@ exports[`Testing OrderFilter component Should match snapshot 1`] = `
   "container": <div>
     <div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis uppercase text-xs font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:!text-white dark:!text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent hover:text-primary"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-white hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"
         >
-          Filter
+          <p
+            class="text-tremor-default uppercase text-xs text-inherit dark:text-inherit"
+          >
+            Filter
+          </p>
         </span>
         <svg
           class="tremor-Button-icon shrink-0 h-5 w-5 -mr-1 ml-1.5"

@@ -18,7 +18,7 @@ const SelectOption = ({ data, onClickItem }: SelectOptionProps) => (
       ))}
       <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
       <li className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary">
-        Remove File
+        Remove Filter
       </li>
     </ul>
   </>

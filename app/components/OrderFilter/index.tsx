@@ -39,9 +39,9 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         icon={RiArrowDropDownLine}
         iconPosition="right"
         variant="secondary"
-        className="font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
+        className="uppercase text-xs text-primary font-bold border-primary focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:!text-white dark:!text-dark-tremor-content-title hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent hover:text-primary"
         onClick={handleClickOption}>
-        <Text className="uppercase text-xs text-primary">{title}</Text>
+        {title}
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>

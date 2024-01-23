@@ -15,12 +15,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="mr-4"
           >
             <img
+              alt="Leather Wallet"
               class="rounded-full"
               data-nimg="1"
               decoding="async"
               fetchpriority="high"
               height="110"
-              src="http://localhost/"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
               style="color: transparent;"
               width="110"
             />
@@ -30,7 +32,9 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             <p
               class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
-            />
+            >
+              Leather Wallet
+            </p>
             <p
               class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
@@ -83,12 +87,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           class="mr-4"
         >
           <img
+            alt="Leather Wallet"
             class="rounded-full"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
             height="110"
-            src="http://localhost/"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
             style="color: transparent;"
             width="110"
           />
@@ -98,7 +104,9 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         >
           <p
             class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
-          />
+          >
+            Leather Wallet
+          </p>
           <p
             class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
           >

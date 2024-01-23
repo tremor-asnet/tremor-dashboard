@@ -2,31 +2,23 @@
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
 
-//Types
-import { TOrder } from "@/types";
-
-export type OrderContactProps = {
-  data: TOrder[];
-};
-
-const OrderContact = ({ data }: { data: any }) => {
-  const firstItem = data[0];
+const OrderContact = ({ name, url }: { name: string; url: string }) => {
   return (
     <Flex>
       <Flex justifyContent="start">
         <div className="mr-4">
           <CustomImage
-            alt={firstItem.name}
+            alt={name}
             className="rounded-full"
             height={110}
             priority
-            src={firstItem.url}
+            src={url}
             width={110}
           />
         </div>
         <Flex flexDirection="col" alignItems="start" className="py-4">
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
-            {firstItem.name}
+            {name}
           </Title>
           <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
             Order was delivered 2 days ago.

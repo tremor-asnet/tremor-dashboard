@@ -3,8 +3,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import OrderContact from "./OrderContact";
 
-// Mock data
-import { ORDER_DATA } from "@/mocks";
+const propsDefault = {
+  name: "Leather Wallet",
+  url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
+};
 
 const meta = {
   title: "Components/OrderContact",
@@ -17,5 +19,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <OrderContact data={ORDER_DATA} />,
+  render: () => <OrderContact {...propsDefault} />,
 };

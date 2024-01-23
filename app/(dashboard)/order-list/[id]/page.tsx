@@ -46,7 +46,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <OrderContact data={products} />
+            <OrderContact {...products[0]} />
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>

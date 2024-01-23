@@ -9,8 +9,34 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 // Services
 import { getOrders } from "@/services/ordersServices";
 
-const OrderListPage = async () => {
-  const orderListData = await getOrders();
+// Types
+import { TProductTable } from "@/types";
+
+type TSearchParams = {
+  query: string;
+};
+
+const OrderListPage = async ({
+  searchParams,
+}: {
+  searchParams?: TSearchParams;
+}) => {
+  const orderListData: TProductTable[] = await getOrders();
+
+  const { query } = searchParams || { query: "" };
+
+  let filteredData: TProductTable[] = [];
+
+  if (query) {
+    filteredData = orderListData.filter(
+      item =>
+        item.products?.find(product =>
+          product.name.toLowerCase().includes(query.toLowerCase()),
+        ),
+    );
+  } else {
+    filteredData = orderListData;
+  }
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -28,7 +54,7 @@ const OrderListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <ProductTable data={orderListData} />
+        <ProductTable data={filteredData} />
       </div>
     </Flex>
   );

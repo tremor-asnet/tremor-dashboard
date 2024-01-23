@@ -1,5 +1,39 @@
 # Tremor Dashboard
 
+Please refactor Datatable common component so that can be used in many places
+
+```jsx
+const DataTable = ({ data, columnsDef, ...other-config }) => {
+    // Handle logics here
+
+    // Please using Tremor Datatable component
+    const renderTableHead = () => { ... }
+    const renderTableBody = () => { ... }
+    const renderTableFooter = () => { ... }
+
+    return (<>
+        {
+            renderTableHead()
+            renderTableBody()
+            renderTableFooter()
+        }
+    </>);
+}
+
+/***************/
+const ProductDataTable = ({ productData }) => {
+    const productColumnsDef = [
+        { ... }, // column 1
+        { ... }, // column 2
+        { ... }, // column n
+    ];
+
+    const otherConfigs = {.....};
+
+    return <DataTable data={productData} columnsDef={productColumnsDef} {...otherConfigs} />
+}
+```
+
 ## Overview
 
 - README: Could we organize command lines in a table? We need a tidy README file [Evernote link](https://www.evernote.com/shard/s511/sh/ce382942-6a2e-4a9d-ad05-d45c093049ff/cB86wRFV30q01gBbkdu3qlUrIO4Hxco97KnmjS9wlU7RA-s9TEbqZjC97A)

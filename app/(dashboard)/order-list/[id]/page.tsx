@@ -22,10 +22,19 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     products,
   } = orderDetails;
 
+  const {
+    transmitedToCourierAt,
+    generateOrderId,
+    deliveredAt,
+    generateOrderAt,
+  } = trackOrderInfo;
+
   const productPrice = products.reduce(
     (total: number, item: any) => total + item.count * item.price,
     0,
   );
+
+  const firstProduct = products.length > 0 ? products[0] : null;
 
   const monies = {
     productPrice: productPrice,
@@ -46,23 +55,33 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <OrderContact {...products[0]} />
+            <OrderContact name={firstProduct.name} url={firstProduct.url} />
             <Divider />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-4">
               <div className="w-full">
-                <TrackOrder {...trackOrderInfo} />
+                <TrackOrder
+                  id={trackOrderInfo.id}
+                  transmitedToCourierAt={transmitedToCourierAt}
+                  deliveredAt={deliveredAt}
+                  generateOrderAt={generateOrderAt}
+                  generateOrderId={generateOrderId}
+                />
               </div>
               <div className="w-full">
                 <div className="mb-4">
                   <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
                 </div>
-                <BillingInfo {...billingInfo} />
+                <BillingInfo billingData={billingInfo} />
               </div>
               <Col numColSpanMd={2} numColSpanLg={1}>
                 <div className="w-full lg:pl-20">
-                  <OrderSummary {...monies} />
+                  <OrderSummary
+                    productPrice={productPrice}
+                    delivery={orderDeliverPrice}
+                    taxes={orderTax}
+                  />
                 </div>
               </Col>
             </Grid>

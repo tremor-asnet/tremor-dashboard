@@ -13,5 +13,4 @@ export const ROUTES = {
   SETTING: "/pages/account/settings",
   ORDER_LIST: "/order-list",
   PRODUCT_LIST: "/product-list",
-  ORDER_DETAILS: (id: number): string => `/order-list/${id}`,
 };

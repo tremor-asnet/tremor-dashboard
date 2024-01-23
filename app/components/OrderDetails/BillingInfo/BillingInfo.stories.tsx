@@ -18,12 +18,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <BillingInfo
-      ownerName={mockBillingInfo.ownerName}
-      companyName={mockBillingInfo.companyName}
-      email={mockBillingInfo.email}
-      vat={mockBillingInfo.vat}
-    />
-  ),
+  render: () => <BillingInfo billingData={mockBillingInfo} />,
 };

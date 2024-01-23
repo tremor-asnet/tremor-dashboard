@@ -1,5 +1,4 @@
 // Components
-import { ProductTable } from "@/components";
 import OrderSearch from "@/components/OrderSearch/OrderSearch";
 import { Button, Flex, Text } from "@tremor/react";
 
@@ -8,6 +7,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Services
 import { getOrders } from "@/services/ordersServices";
+import OrderTable from "@/components/OrderTable";
 
 const OrderListPage = async () => {
   const orderListData = await getOrders();
@@ -28,7 +28,7 @@ const OrderListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <ProductTable data={orderListData} />
+        <OrderTable data={orderListData} />
       </div>
     </Flex>
   );

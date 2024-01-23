@@ -11,6 +11,7 @@ import {
   TableCell,
   TableRow,
 } from "@tremor/react";
+import Link from "next/link";
 
 // Components
 import {
@@ -21,7 +22,7 @@ import {
 } from "@/components";
 
 // Constants
-import { STATUS_TEXT } from "@/constants";
+import { ROUTES, STATUS_TEXT } from "@/constants";
 
 // Helpers
 import { ProductStatus } from "@/helpers";
@@ -76,9 +77,11 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
                         handleCheckBox={handleCheckBox}
                         checked={false}
                       />
-                      <Text className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id">
+                      <Link
+                        href={ROUTES.ORDER_DETAILS(id)}
+                        className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
                         #{id}
-                      </Text>
+                      </Link>
                     </Flex>
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

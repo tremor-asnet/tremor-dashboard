@@ -12,6 +12,9 @@ import { RiRefund2Line } from "react-icons/ri";
 // Types
 import { TrackOrderProps } from "@/types/orderDetails";
 
+// Helpers
+import { formatDateTime } from "@/helpers";
+
 const TrackOrder = ({
   id,
   transmitedToCourierAt,
@@ -106,8 +109,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Order received
               </span>
-              <span className="text-tremor-label text-secondary font-light dark:text-dark-romance uppercase">
-                {dayjs(generateOrderAt).format("DD MMM h:m A")}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {formatDateTime(generateOrderAt)}
               </span>
             </div>
           </Flex>
@@ -122,8 +125,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Generate order id {id}
               </span>
-              <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(generateOrderId).format("DD MMM h:m A")}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {formatDateTime(generateOrderId)}
               </span>
             </div>
           </div>
@@ -138,8 +141,8 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Order transmited to courier
               </span>
-              <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(transmitedToCourierAt).format("DD MMM h:m A")}
+              <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
+                {formatDateTime(transmitedToCourierAt)}
               </span>
             </div>
           </div>

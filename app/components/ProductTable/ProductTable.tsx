@@ -25,7 +25,7 @@ import {
 import { ROUTES, STATUS_TEXT } from "@/constants";
 
 // Helpers
-import { ProductStatus } from "@/helpers";
+import { ProductStatus, formatDateTime } from "@/helpers";
 
 //Types
 import { ProductOrder, TProductTable } from "@/types";

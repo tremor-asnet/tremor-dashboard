@@ -38,7 +38,9 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <p
               class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
-              Order was delivered 2 days ago.
+              Order was delivered 
+              NaN
+               days ago.
             </p>
             <p
               class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
@@ -69,7 +71,15 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <p
               class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
-              Do you like the item? Leave us a review here.
+              Do you like the item? Leave us a review
+               
+              <a
+                class="font-semibold"
+                href="#"
+              >
+                here
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -110,7 +120,9 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           <p
             class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
           >
-            Order was delivered 2 days ago.
+            Order was delivered 
+            NaN
+             days ago.
           </p>
           <p
             class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
@@ -141,7 +153,15 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           <p
             class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
           >
-            Do you like the item? Leave us a review here.
+            Do you like the item? Leave us a review
+             
+            <a
+              class="font-semibold"
+              href="#"
+            >
+              here
+            </a>
+            .
           </p>
         </div>
       </div>

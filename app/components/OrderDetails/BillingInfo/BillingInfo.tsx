@@ -9,7 +9,7 @@ const BillingInfo = ({
   billingData: Partial<BillingInfoProps>;
 }) => {
   const listTitle = ["Company Name", "Email Address", "VAT Number"];
-  const { ownerName, last4Bank, ...billingInfo } = billingData;
+  const { ownerName, cardLast4Digit, ...billingInfo } = billingData;
 
   return (
     <>
@@ -46,7 +46,7 @@ const BillingInfo = ({
                 billingInfo[
                   item as keyof Omit<
                     BillingInfoProps,
-                    "ownerName" | "last4Bank"
+                    "ownerName" | "cardLast4Digit"
                   >
                 ];
               return (

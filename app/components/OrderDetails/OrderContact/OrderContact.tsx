@@ -1,9 +1,21 @@
 // Components
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
+import Link from "next/link";
 
-const OrderContact = ({ name, url }: { name: string; url: string }) => {
-  // TODO: Handle delivered days
+const OrderContact = ({
+  name,
+  url,
+  date,
+}: {
+  name: string;
+  url: string;
+  date: string;
+}) => {
+  const firstDay = new Date().getTime();
+  const lastDay = new Date(date).getTime();
+  const period = Math.round((firstDay - lastDay) / (1000 * 3600 * 24));
+
   return (
     <Flex>
       <Flex justifyContent="start">
@@ -22,7 +34,7 @@ const OrderContact = ({ name, url }: { name: string; url: string }) => {
             {name}
           </Title>
           <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
-            Order was delivered 2 days ago.
+            Order was delivered {period} days ago.
           </p>
           <p className="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
             delivered
@@ -37,7 +49,11 @@ const OrderContact = ({ name, url }: { name: string; url: string }) => {
             </Text>
           </Button>
           <Text className="mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
-            Do you like the item? Leave us a review here.
+            Do you like the item? Leave us a review{" "}
+            <Link href="#" className="font-semibold">
+              here
+            </Link>
+            .
           </Text>
         </Flex>
       </Flex>

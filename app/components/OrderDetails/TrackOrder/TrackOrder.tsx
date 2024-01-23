@@ -32,7 +32,7 @@ const TrackOrder = ({
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
                 Order received
               </span>
-              <span className="text-tremor-label text-secondary font-light dark:text-dark-romance">
+              <span className="text-tremor-label text-secondary font-light dark:text-dark-romance uppercase">
                 {dayjs(generateOrderAt).format("DD MMM h:m A")}
               </span>
             </div>

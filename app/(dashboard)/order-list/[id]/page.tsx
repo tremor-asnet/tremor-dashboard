@@ -1,7 +1,7 @@
 // Components
 import { InvoiceHeader } from "@/components/OrderDetails/InvoiceHeader";
 import { OrderSummary } from "@/components/OrderDetails/OrderSummary/OrderSummary";
-import { Card, Col, Divider, Flex, Grid } from "@tremor/react";
+import { Card, Col, Flex, Grid } from "@tremor/react";
 import { OrderContact, TrackOrder } from "@/components";
 import PaymentDetails from "@/components/OrderDetails/PaymentDetails/PaymentDetails";
 import BillingInfo from "@/components/OrderDetails/BillingInfo/BillingInfo";
@@ -49,7 +49,11 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <OrderContact name={firstProduct.name} url={firstProduct.url} />
+            <OrderContact
+              name={firstProduct.name}
+              url={firstProduct.url}
+              date={deliveredAt}
+            />
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>

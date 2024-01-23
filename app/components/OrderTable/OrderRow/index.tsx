@@ -1,7 +1,7 @@
 // Components
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import { STATUS_TEXT } from "@/constants";
+import { ROUTES, STATUS_TEXT } from "@/constants";
 import Checkbox from "./Checkbox";
 
 // Helper
@@ -9,6 +9,7 @@ import { ProductStatus } from "@/helpers";
 
 // Types
 import { ProductOrder, TProductTable } from "@/types";
+import Link from "next/link";
 
 const OrderRow = ({
   id,
@@ -27,9 +28,11 @@ const OrderRow = ({
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         <Flex className="justify-start ml-2">
           <Checkbox onChange={handleChangeCheckbox} />
-          <Text className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id">
+          <Link
+            href={`${ROUTES.ORDER_LIST}/${id}`}
+            className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
             #{id}
-          </Text>
+          </Link>
         </Flex>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

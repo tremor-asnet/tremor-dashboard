@@ -14,7 +14,12 @@ import {
 import Link from "next/link";
 
 // Components
-import { CheckBox, CustomImage, HeaderCellContents } from "@/components";
+import {
+  CheckBox,
+  CustomImage,
+  HeaderCellContents,
+  Pagination,
+} from "@/components";
 
 // Constants
 import { ROUTES, STATUS_TEXT, SEPARATOR } from "@/constants";
@@ -25,7 +30,6 @@ import { ProductStatus, formatDateTime } from "@/helpers";
 //Types
 import { ProductOrder, TProductTable } from "@/types";
 import { useEffect, useMemo, useState } from "react";
-import Pagination from "../common/Pagination";
 
 export interface ProductTableProps {
   data: TProductTable[];

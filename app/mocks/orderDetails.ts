@@ -23,6 +23,7 @@ export const mockTrackOrder: TrackOrderProps = {
 export const mockBillingInfo: BillingInfoProps = {
   ownerName: "Oliver Liam",
   companyName: "Viking Burrito",
+  last4Bank: "1234",
   email: "oliver@burrito.com",
   vat: "FRB1235476",
 };

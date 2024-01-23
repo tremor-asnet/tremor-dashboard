@@ -1,5 +1,4 @@
 import { Card, Flex } from "@tremor/react";
-import dayjs from "dayjs";
 
 // Icon React
 import { FaBell } from "react-icons/fa";

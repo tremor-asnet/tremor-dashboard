@@ -8,6 +8,9 @@ import { Flex, TextInput } from "@tremor/react";
 // Types
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
+// Helpers
+import { debounce } from "@/helpers/debounce";
+
 const OrderSearch = () => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -28,12 +31,14 @@ const OrderSearch = () => {
     replace(`${pathname}?${params.toString()}`);
   };
 
+  const debounceSearch = debounce(handleSearch, 1000);
+
   return (
     <Flex className="p-6 items-start justify-end">
       <TextInput
         id="search_order"
         className="w-auto dark:bg-transparent dark:border-white"
-        onChange={handleSearch}
+        onChange={debounceSearch}
         placeholder="Search..."
       />
     </Flex>

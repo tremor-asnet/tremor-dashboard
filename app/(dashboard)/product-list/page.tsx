@@ -35,7 +35,7 @@ const ProductListPage = () => {
         </Button>
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch onSearch={handleSearch} />
+        <InputSearch onChange={handleSearch} />
         <ProductTable data={TABLE_LIST_DATA} />
       </div>
     </Flex>

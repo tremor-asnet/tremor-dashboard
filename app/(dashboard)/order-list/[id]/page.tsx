@@ -1,10 +1,10 @@
 // Components
 import { InvoiceHeader } from "@/components/OrderDetails/InvoiceHeader";
-import { OrderSummary } from "@/components/OrderDetails/OrderSummary";
+import { OrderSummary } from "@/components/OrderDetails/OrderSummary/OrderSummary";
 import { Card, Col, Divider, Flex, Grid } from "@tremor/react";
 import { OrderContact, TrackOrder } from "@/components";
-import PaymentDetails from "@/components/OrderDetails/PaymentDetails";
-import BillingInfo from "@/components/OrderDetails/BillingInfo";
+import PaymentDetails from "@/components/OrderDetails/PaymentDetails/PaymentDetails";
+import BillingInfo from "@/components/OrderDetails/BillingInfo/BillingInfo";
 
 // Services
 import { getOrderDetails } from "@/services/ordersServices";
@@ -35,12 +35,6 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
   );
 
   const firstProduct = products.length > 0 ? products[0] : null;
-
-  const monies = {
-    productPrice: productPrice,
-    delivery: orderDeliverPrice,
-    taxes: orderTax,
-  };
 
   return (
     <Flex justifyContent="center" className="w-full bg-transparent">

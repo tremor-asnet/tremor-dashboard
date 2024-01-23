@@ -5,7 +5,7 @@ import { ROUTER_API_URL } from "@/constants";
 import { getErrorMessage } from "@/helpers";
 
 export const getOrders = async () => {
-  const res = await fetch(`${ROUTER_API_URL}/orders?page=0&size=10`, {
+  const res = await fetch(`${ROUTER_API_URL}/orders`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",

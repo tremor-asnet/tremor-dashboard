@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import PaymentDetails from ".";
+import PaymentDetails from "./PaymentDetails";
 
 describe("Payment Details Components Testing", () => {
   test("Should render correctly", () => {

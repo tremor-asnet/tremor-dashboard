@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 // Components
-import BillingInfo from ".";
+import BillingInfo from "./BillingInfo";
 
 // Mocks
 import { mockBillingInfo } from "@/mocks/orderDetails";

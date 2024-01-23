@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import BillingInfo from ".";
+import BillingInfo from "./BillingInfo";
 
 // Mocks
 import { mockBillingInfo } from "@/mocks/orderDetails";

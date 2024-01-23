@@ -25,17 +25,15 @@ const OrderListPage = async ({
 
   const { query } = searchParams || { query: "" };
 
-  let filteredData: TProductTable[] = [];
+  let filteredData = orderListData;
 
   if (query) {
-    filteredData = orderListData.filter(
+    filteredData = orderListData?.filter(
       item =>
         item.products?.find(product =>
           product.name.toLowerCase().includes(query.toLowerCase()),
         ),
     );
-  } else {
-    filteredData = orderListData;
   }
 
   return (

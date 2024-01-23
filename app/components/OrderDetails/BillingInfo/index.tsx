@@ -3,7 +3,7 @@ import { Bold, Flex } from "@tremor/react";
 // Types
 import { BillingInfoProps } from "@/types/orderDetails";
 
-const BillingInfo = (billingData: BillingInfoProps) => {
+const BillingInfo = (billingData: Partial<BillingInfoProps>) => {
   const listTitle = ["Company Name", "Email Address", "VAT Number"];
   const { ownerName, last4Bank, ...billingInfo } = billingData;
 

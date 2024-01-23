@@ -22,8 +22,13 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     products,
   } = orderDetails;
 
+  const productPrice = products.reduce(
+    (total: number, item: any) => total + item.count * item.price,
+    0,
+  );
+
   const monies = {
-    productPrice: 123,
+    productPrice: productPrice,
     delivery: orderDeliverPrice,
     taxes: orderTax,
   };

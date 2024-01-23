@@ -56,7 +56,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               </div>
               <div className="w-full">
                 <div className="mb-4">
-                  <PaymentDetails last4Bank={billingInfo.last4Bank} />
+                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
                 </div>
                 <BillingInfo {...billingInfo} />
               </div>

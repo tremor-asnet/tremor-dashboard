@@ -5,7 +5,7 @@ import { METADATA } from "@/constants";
 import { Flex } from "@tremor/react";
 import Image from "next/image";
 
-const PaymentDetails = ({ last4Bank }: { last4Bank: string }) => {
+const PaymentDetails = ({ cardLast4Digit }: { cardLast4Digit: string }) => {
   return (
     <div>
       <h6 className="text-tremor-content-title dark:text-dark-primary font-bold">
@@ -23,7 +23,7 @@ const PaymentDetails = ({ last4Bank }: { last4Bank: string }) => {
             height="28"
           />
           <h6 className="text-tremor-content-title dark:text-dark-primary font-bold">
-            **** **** **** {last4Bank}
+            **** **** **** {cardLast4Digit}
           </h6>
         </Flex>
         <div className="group">

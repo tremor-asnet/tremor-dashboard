@@ -33,7 +33,16 @@ describe("Order Row Testing", () => {
   };
 
   it("should match snapshot", () => {
-    const container = render(<OrderRow item={data} />);
+    const container = render(
+      <OrderRow
+        id={data.id}
+        createdAt={data.createdAt}
+        status={data.status}
+        customer={data.customer}
+        products={data.products}
+        revenue={data.revenue}
+      />,
+    );
     expect(container).toMatchSnapshot();
   });
 });

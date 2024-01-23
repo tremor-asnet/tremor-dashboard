@@ -22,7 +22,17 @@ const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
           <TableHeading />
           <TableBody>
             {data.map(item => {
-              return <OrderRow key={item.id} item={item} />;
+              return (
+                <OrderRow
+                  key={item.id}
+                  id={item.id}
+                  createdAt={item.createdAt}
+                  status={item.status}
+                  customer={item.customer}
+                  products={item.products}
+                  revenue={item.revenue}
+                />
+              );
             })}
           </TableBody>
         </Table>

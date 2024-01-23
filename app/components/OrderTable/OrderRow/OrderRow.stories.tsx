@@ -38,5 +38,14 @@ const data: TProductTable = {
 };
 
 export const PaginationDefault: Story = {
-  render: () => <OrderRow item={data} />,
+  render: () => (
+    <OrderRow
+      id={data.id}
+      createdAt={data.createdAt}
+      status={data.status}
+      customer={data.customer}
+      products={data.products}
+      revenue={data.revenue}
+    />
+  ),
 };

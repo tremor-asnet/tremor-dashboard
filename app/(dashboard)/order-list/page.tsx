@@ -1,7 +1,8 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { ProductTable, OrderFilter, OrderSearch } from "@/components";
+import { OrderFilter, OrderSearch } from "@/components";
+import OrderTable from "@/components/OrderTable";
 
 // Services
 import { getOrders } from "@/services";

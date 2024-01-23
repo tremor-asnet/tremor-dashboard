@@ -10,13 +10,14 @@ import { ProductStatus } from "@/helpers";
 // Types
 import { ProductOrder, TProductTable } from "@/types";
 
-interface TableRowProps {
-  item: TProductTable;
-}
-
-const OrderRow = ({ item }: TableRowProps) => {
-  const { id, createdAt, status, customer, products, revenue } = item;
-
+const OrderRow = ({
+  id,
+  createdAt,
+  status,
+  customer,
+  products,
+  revenue,
+}: TProductTable) => {
   const handleChangeCheckbox = () => {
     // TODO: Handle change checkbox checked here
   };
@@ -68,7 +69,7 @@ const OrderRow = ({ item }: TableRowProps) => {
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         {products?.map((product: ProductOrder, index: number) => (
           <Text
-            key={`Product ${index} of ${product.name} by ${product.id}`}
+            key={product.id}
             className="text-xs font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product">
             {product.name}
           </Text>

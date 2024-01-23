@@ -6,8 +6,32 @@ import { ProductTable, OrderFilter, OrderSearch } from "@/components";
 // Services
 import { getOrders } from "@/services";
 
-const OrderListPage = async () => {
-  const orderListData = await getOrders();
+// Types
+import { TProductTable } from "@/types";
+
+type TSearchParams = {
+  query: string;
+};
+
+const OrderListPage = async ({
+  searchParams,
+}: {
+  searchParams?: TSearchParams;
+}) => {
+  const orderListData: TProductTable[] = await getOrders();
+
+  const { query } = searchParams || { query: "" };
+
+  let filteredData = orderListData;
+
+  if (query) {
+    filteredData = orderListData?.filter(
+      item =>
+        item.products?.find(product =>
+          product.name.toLowerCase().includes(query.toLowerCase()),
+        ),
+    );
+  }
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -21,7 +45,7 @@ const OrderListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <ProductTable data={orderListData} />
+        <ProductTable data={filteredData} />
       </div>
     </Flex>
   );

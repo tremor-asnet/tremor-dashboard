@@ -14,13 +14,25 @@ import { useOutsideClick } from "@/hooks";
 
 // Components
 import { SelectOption } from "@/components";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface OrderFilterProps {
   title: string;
 }
 
 const OrderFilter = ({ title }: OrderFilterProps) => {
+  const searchParams = useSearchParams();
+
   const [showListOption, setShowListOption] = useState(false);
+  const [selectedStatus, setSelectedStatus] = useState(
+    searchParams.get("category"),
+  );
+
+  const router = useRouter();
+
+  const newParams = new URLSearchParams(searchParams.toString());
+  const pathName = usePathname();
+
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
   });
@@ -29,7 +41,17 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleClickItem = () => {
+  const handleClickItem = (status: string) => {
+    const currentStatus = newParams.get("status");
+    if (currentStatus !== status) {
+      newParams.set("status", status);
+    }
+
+    const query = newParams ? `${newParams}` : "";
+    router.push(`${pathName}?${query}`);
+
+    console.log("query: ", query);
+
     setShowListOption(false);
   };
 
@@ -45,7 +67,23 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>
-          <SelectOption data={listOption} onClickItem={handleClickItem} />
+          <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+            {listOption.map(({ option, value }) => (
+              <li
+                key={option}
+                value={value}
+                className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
+                onClick={() => handleClickItem(value.toString())}
+                data-testid="option">
+                Status: {option}
+              </li>
+            ))}
+            <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
+            <li className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary">
+              Remove File
+            </li>
+          </ul>
+          {/* <SelectOption data={listOption} onClickItem={handleClickItem} /> */}
         </div>
       )}
     </div>

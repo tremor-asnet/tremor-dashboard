@@ -1,18 +1,18 @@
 import { Flex, TextInput } from "@tremor/react";
 
 interface InputSearchProps {
-  onSearch: () => void;
+  onChange: () => void;
 }
 
-const OrderSearch = ({ onSearch }: InputSearchProps) => (
+const InputSearch = ({ onChange }: InputSearchProps) => (
   <Flex className="p-6 items-start justify-end">
     <TextInput
       id="search_order"
       className="w-auto"
-      onChange={onSearch}
+      onChange={onChange}
       placeholder="Search..."
     />
   </Flex>
 );
 
-export default OrderSearch;
+export default InputSearch;

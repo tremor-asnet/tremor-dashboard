@@ -1,5 +1,4 @@
 import { Bold, Flex } from "@tremor/react";
-import dayjs from "dayjs";
 
 // Icon React
 import { FaBell } from "react-icons/fa";
@@ -36,7 +35,7 @@ const TrackOrder = ({
                 Order delivered
               </span>
               <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(date).format("DD MMM h:m A")}
+                {formatDateTime(date)}
               </span>
             </div>
           </div>
@@ -52,7 +51,7 @@ const TrackOrder = ({
                 Order canceled
               </span>
               <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(date).format("DD MMM h:m A")}
+                {formatDateTime(date)}
               </span>
             </div>
           </div>
@@ -69,7 +68,7 @@ const TrackOrder = ({
                 Order refunded
               </span>
               <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(date).format("DD MMM h:m A")}
+                {formatDateTime(date)}
               </span>
             </div>
           </div>
@@ -86,7 +85,7 @@ const TrackOrder = ({
                 Order delivered
               </span>
               <span className="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance">
-                {dayjs(deliveredAt).format("DD MMM h:m A")}
+                {formatDateTime(deliveredAt)}
               </span>
             </div>
           </div>

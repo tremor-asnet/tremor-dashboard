@@ -828,875 +828,116 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     </p>
                   </td>
                 </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10424"
-                      >
-                        #
-                        10424
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      01 Nov, 12:20 PM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-green-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Paid
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <img
-                        alt="Andrew Nichel"
-                        class="w-6 h-6 rounded-full mr-2"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="24"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=48&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=48&q=75 2x"
-                        style="color: transparent;"
-                        width="24"
-                      />
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Andrew Nichel
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Bracelet Onu-Lino
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      1940
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10425"
-                      >
-                        #
-                        10425
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      01 Nov, 12:20 PM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-red-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-red-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Canceled
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <img
-                        alt="Sebastian Koga"
-                        class="w-6 h-6 rounded-full mr-2"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="24"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=48&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=48&q=75 2x"
-                        style="color: transparent;"
-                        width="24"
-                      />
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Sebastian Koga
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Phone Case Pink  x 2
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      4490
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10426"
-                      >
-                        #
-                        10426
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      01 Nov, 02:19 PM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-green-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Paid
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <div
-                        class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                      >
-                        L
-                      </div>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Laur Gilbert
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Backpack Niver
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      11250
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10427"
-                      >
-                        #
-                        10427
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      01 Nov, 03:42 AM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-green-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Paid
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <div
-                        class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                      >
-                        I
-                      </div>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Iryna Innda
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Adidas Vio
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      20000
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10428"
-                      >
-                        #
-                        10428
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      02 Nov, 09:32 AM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-green-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Paid
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <div
-                        class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                      >
-                        A
-                      </div>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Arrias Liunda
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Airpods 2 Gen
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      35000
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10429"
-                      >
-                        #
-                        10429
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      02 Nov, 10:14 AM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-green-500"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Paid
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <img
-                        alt="Andrew Nichel"
-                        class="w-6 h-6 rounded-full mr-2"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="24"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=48&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=48&q=75 2x"
-                        style="color: transparent;"
-                        width="24"
-                      />
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Andrew Nichel
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Bracelet Warret
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      1500
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  class="tremor-TableRow-row"
-                >
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                    >
-                      <input
-                        class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                        data-testid="checkbox"
-                        type="checkbox"
-                      />
-                      <a
-                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10430"
-                      >
-                        #
-                        10430
-                      </a>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                    >
-                      02 Nov, 10:14 AM
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-primary dark:border-white mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                      >
-                        <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
-                        >
-                          <svg
-                            class="text-xs text-primary dark:text-dark-romance"
-                            fill="currentColor"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                      >
-                        Refunded
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                    >
-                      <img
-                        alt="Andrew Nichel"
-                        class="w-6 h-6 rounded-full mr-2"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="24"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=48&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=48&q=75 2x"
-                        style="color: transparent;"
-                        width="24"
-                      />
-                      <p
-                        class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                      >
-                        Andrew Nichel
-                      </p>
-                    </div>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                    >
-                      Watter Bottle India  x 3
-                    </p>
-                  </td>
-                  <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                  >
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                    >
-                      2500
-                    </p>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
           <div
-            class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+            class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
           >
             <div
-              class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
+              class="flex w-auto py-2"
             >
-              <div
-                class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
+              <p
+                class="text-sm text-secondary"
               >
-                <p
-                  class="text-sm text-secondary"
+                Showing
+                 
+                <span
+                  class="font-normal"
                 >
-                  Showing 
-                  <span
-                    class="font-normal"
-                  >
-                    1
-                  </span>
-                   to
-                   
-                  <span
-                    class="font-normal"
-                  >
-                    10
-                  </span>
-                   of
-                   
-                  <span
-                    class="font-normal"
-                  >
-                    12
-                  </span>
-                   entries
-                </p>
-              </div>
-              <div
-                class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
+                  1
+                </span>
+                 
+                to
+                 
+                <span
+                  class="font-normal"
+                >
+                  3
+                </span>
+                 
+                of 
+                <span
+                  class="font-normal"
+                >
+                  10
+                </span>
+                 entries
+              </p>
+            </div>
+            <div
+              class="flex gap-2 justify-end items-center"
+            >
+              <button
+                aria-label="Previous page button"
+                class="btn-paginate hidden"
+                data-testid="prev-page-button"
+                disabled=""
               >
-                <nav
-                  aria-label="Pagination"
-                  class="isolate inline-flex -space-x-px gap-2"
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <a
-                    class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
-                    href="#"
-                  >
-                    1
-                  </a>
-                  <a
-                    class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
-                    href="#"
-                  >
-                    2
-                  </a>
-                  <button
-                    class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
-                  >
-                    <span
-                      class="sr-only"
-                    >
-                      Next
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      class="h-5 w-5 p-[3px]"
-                      fill="none"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <polyline
-                        points="9 18 15 12 9 6"
-                      />
-                    </svg>
-                  </button>
-                </nav>
-              </div>
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                aria-label="Page button 1"
+                class="btn-paginate-active"
+                disabled=""
+              >
+                1
+              </button>
+              <button
+                aria-label="Page button 2"
+                class="btn-paginate"
+              >
+                2
+              </button>
+              <button
+                aria-label="Page button 3"
+                class="btn-paginate"
+              >
+                3
+              </button>
+              <button
+                aria-label="Page button 4"
+                class="btn-paginate"
+              >
+                4
+              </button>
+              <button
+                aria-label="Next page button"
+                class="btn-paginate "
+                data-testid="next-page-button"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -2527,875 +1768,116 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   </p>
                 </td>
               </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10424"
-                    >
-                      #
-                      10424
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    01 Nov, 12:20 PM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-green-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Paid
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <img
-                      alt="Andrew Nichel"
-                      class="w-6 h-6 rounded-full mr-2"
-                      data-nimg="1"
-                      decoding="async"
-                      fetchpriority="high"
-                      height="24"
-                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=48&q=75"
-                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-3.a3eccb16.jpg&w=48&q=75 2x"
-                      style="color: transparent;"
-                      width="24"
-                    />
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Andrew Nichel
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Bracelet Onu-Lino
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    1940
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10425"
-                    >
-                      #
-                      10425
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    01 Nov, 12:20 PM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-red-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-red-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Canceled
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <img
-                      alt="Sebastian Koga"
-                      class="w-6 h-6 rounded-full mr-2"
-                      data-nimg="1"
-                      decoding="async"
-                      fetchpriority="high"
-                      height="24"
-                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=48&q=75"
-                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-4.f9d98090.jpg&w=48&q=75 2x"
-                      style="color: transparent;"
-                      width="24"
-                    />
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Sebastian Koga
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Phone Case Pink  x 2
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    4490
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10426"
-                    >
-                      #
-                      10426
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    01 Nov, 02:19 PM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-green-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Paid
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                    >
-                      L
-                    </div>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Laur Gilbert
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Backpack Niver
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    11250
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10427"
-                    >
-                      #
-                      10427
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    01 Nov, 03:42 AM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-green-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Paid
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                    >
-                      I
-                    </div>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Iryna Innda
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Adidas Vio
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    20000
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10428"
-                    >
-                      #
-                      10428
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    02 Nov, 09:32 AM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-green-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Paid
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <div
-                      class="tremor-Flex-root flex flex-row items-center w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2"
-                    >
-                      A
-                    </div>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Arrias Liunda
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Airpods 2 Gen
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    35000
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10429"
-                    >
-                      #
-                      10429
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    02 Nov, 10:14 AM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-green-500"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Paid
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <img
-                      alt="Andrew Nichel"
-                      class="w-6 h-6 rounded-full mr-2"
-                      data-nimg="1"
-                      decoding="async"
-                      fetchpriority="high"
-                      height="24"
-                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=48&q=75"
-                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fteam-5.249ffb17.jpg&w=48&q=75 2x"
-                      style="color: transparent;"
-                      width="24"
-                    />
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Andrew Nichel
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Bracelet Warret
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    1500
-                  </p>
-                </td>
-              </tr>
-              <tr
-                class="tremor-TableRow-row"
-              >
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
-                  >
-                    <input
-                      class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
-                      data-testid="checkbox"
-                      type="checkbox"
-                    />
-                    <a
-                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                      href="/order-list/10430"
-                    >
-                      #
-                      10430
-                    </a>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
-                  >
-                    02 Nov, 10:14 AM
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex w-full flex-row items-center justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                  >
-                    <button
-                      class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border border-primary dark:border-white mr-2 text-tremor-content-title hover:text-tremor-content-title"
-                    >
-                      <span
-                        class="tremor-Button-text text-sm whitespace-nowrap"
-                      >
-                        <svg
-                          class="text-xs text-primary dark:text-dark-romance"
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 24 24"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status"
-                    >
-                      Refunded
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <div
-                    class="tremor-Flex-root flex flex-row items-center w-auto justify-start"
-                  >
-                    <img
-                      alt="Andrew Nichel"
-                      class="w-6 h-6 rounded-full mr-2"
-                      data-nimg="1"
-                      decoding="async"
-                      fetchpriority="high"
-                      height="24"
-                      src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=48&q=75"
-                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fivana-squares.ce014a37.jpg&w=48&q=75 2x"
-                      style="color: transparent;"
-                      width="24"
-                    />
-                    <p
-                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer"
-                    >
-                      Andrew Nichel
-                    </p>
-                  </div>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product"
-                  >
-                    Watter Bottle India  x 3
-                  </p>
-                </td>
-                <td
-                  class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-                >
-                  <p
-                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
-                  >
-                    2500
-                  </p>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
         <div
-          class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+          class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
         >
           <div
-            class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
+            class="flex w-auto py-2"
           >
-            <div
-              class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
+            <p
+              class="text-sm text-secondary"
             >
-              <p
-                class="text-sm text-secondary"
+              Showing
+               
+              <span
+                class="font-normal"
               >
-                Showing 
-                <span
-                  class="font-normal"
-                >
-                  1
-                </span>
-                 to
-                 
-                <span
-                  class="font-normal"
-                >
-                  10
-                </span>
-                 of
-                 
-                <span
-                  class="font-normal"
-                >
-                  12
-                </span>
-                 entries
-              </p>
-            </div>
-            <div
-              class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
+                1
+              </span>
+               
+              to
+               
+              <span
+                class="font-normal"
+              >
+                3
+              </span>
+               
+              of 
+              <span
+                class="font-normal"
+              >
+                10
+              </span>
+               entries
+            </p>
+          </div>
+          <div
+            class="flex gap-2 justify-end items-center"
+          >
+            <button
+              aria-label="Previous page button"
+              class="btn-paginate hidden"
+              data-testid="prev-page-button"
+              disabled=""
             >
-              <nav
-                aria-label="Pagination"
-                class="isolate inline-flex -space-x-px gap-2"
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <a
-                  class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
-                  href="#"
-                >
-                  1
-                </a>
-                <a
-                  class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
-                  href="#"
-                >
-                  2
-                </a>
-                <button
-                  class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
-                >
-                  <span
-                    class="sr-only"
-                  >
-                    Next
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="h-5 w-5 p-[3px]"
-                    fill="none"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <polyline
-                      points="9 18 15 12 9 6"
-                    />
-                  </svg>
-                </button>
-              </nav>
-            </div>
+                <path
+                  clip-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Page button 1"
+              class="btn-paginate-active"
+              disabled=""
+            >
+              1
+            </button>
+            <button
+              aria-label="Page button 2"
+              class="btn-paginate"
+            >
+              2
+            </button>
+            <button
+              aria-label="Page button 3"
+              class="btn-paginate"
+            >
+              3
+            </button>
+            <button
+              aria-label="Page button 4"
+              class="btn-paginate"
+            >
+              4
+            </button>
+            <button
+              aria-label="Next page button"
+              class="btn-paginate "
+              data-testid="next-page-button"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

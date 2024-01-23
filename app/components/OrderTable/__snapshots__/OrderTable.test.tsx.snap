@@ -800,9 +800,8 @@ exports[`Order Table Testing should match snapshot 1`] = `
                           </svg>
                         </span>
                       </div>
-                      <a
-                        class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10423"
+                      <p
+                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10423
@@ -930,9 +929,8 @@ exports[`Order Table Testing should match snapshot 1`] = `
                           </svg>
                         </span>
                       </div>
-                      <a
-                        class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                        href="/order-list/10424"
+                      <p
+                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10424
@@ -2451,9 +2449,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10421"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10421
@@ -2588,9 +2591,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10422"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10422
@@ -2725,9 +2733,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10423"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10423
@@ -2855,9 +2868,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10424"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10424
@@ -2992,9 +3010,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10425"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10425
@@ -3129,9 +3152,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10426"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10426
@@ -3259,9 +3287,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10427"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10427
@@ -3389,9 +3422,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10428"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10428
@@ -3519,9 +3557,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10429"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10429
@@ -3656,9 +3699,14 @@ exports[`Order Table Testing should match snapshot 1`] = `
                         </svg>
                       </span>
                     </div>
+<<<<<<< HEAD
                     <a
                       class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10430"
+=======
+                    <p
+                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+>>>>>>> eade095 (fix: update UI of checkbox)
                     >
                       #
                       10430

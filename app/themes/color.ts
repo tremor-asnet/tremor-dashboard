@@ -5,6 +5,8 @@ export const color = {
   seldom: "#1a73e8",
   few: "#4caf50",
   litle: "#ebebeb",
+  select: "#f0f2f5",
+  attention: "#f44335",
 
   dark: {
     primary: "#ffffff",
@@ -97,6 +99,7 @@ export const backgroundColor = {
 
   dark: {
     primary: "#111827",
+    secondary: "#344767",
     "gradient-primary": "#1a2333",
   },
   //TODO: Will update when implement light/dark themes
@@ -137,6 +140,8 @@ export const backgroundImage = {
   "gradient-divider":
     "linear-gradient(to right,rgba(255,255,255,0),#FFFFFF,rgba(255,255,255,0))",
   "gradient-item-page": "linear-gradient(195deg, #42424a, #191919)",
+  "gradient-select":
+    "linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -241,6 +246,8 @@ export const boxShadow = {
     "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
   "box-header":
     "rgba(52, 71, 103, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
+  "select-option":
+    "rgba(0, 0, 0, 0.14) 0rem 0.125rem 0.125rem 0rem, rgba(0, 0, 0, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(0, 0, 0, 0.12) 0rem 0.0625rem 0.3125rem 0rem",
 
   dark: {
     "item-pagination":

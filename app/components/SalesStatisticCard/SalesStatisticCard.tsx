@@ -84,7 +84,7 @@ const SalesStatisticCard = ({
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
-        <Flex className="flex-col w-2/3">
+        <Flex className="flex-col w-2/3 md:w-1/2">
           <Flex className="flex-col justify-start items-start">
             <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
               {type}
@@ -93,20 +93,9 @@ const SalesStatisticCard = ({
               {formattedAmount}
             </Text>
           </Flex>
-          <Flex className="justify-start items-start">
-            {amountChange && (
-              <Text
-                className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>
-                {formattedTotalAmount}
-              </Text>
-            )}
-            <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">
-              {duration}
-            </Text>
-          </Flex>
         </Flex>
         <Flex
-          className="justify-end items-end w-1/3 cursor-pointer"
+          className="justify-end items-end w-1/3 md:w-1/2 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
           <Text className="!text-xs text-secondary dark:text-secondary leading-[21px] tracking-[0.4px]">
             {currentSalesDate}
@@ -128,6 +117,17 @@ const SalesStatisticCard = ({
             ))}
           </div>
         )}
+      </Flex>
+      <Flex className="justify-start items-start">
+        {amountChange && (
+          <Text
+            className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>
+            {formattedTotalAmount}
+          </Text>
+        )}
+        <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">
+          {duration}
+        </Text>
       </Flex>
     </Card>
   );

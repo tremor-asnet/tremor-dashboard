@@ -505,7 +505,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10421
@@ -619,7 +619,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10422
@@ -733,7 +733,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10423
@@ -840,7 +840,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10424
@@ -954,7 +954,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10425
@@ -1068,7 +1068,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10426
@@ -1175,7 +1175,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10427
@@ -1282,7 +1282,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10428
@@ -1389,7 +1389,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10429
@@ -1503,7 +1503,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         type="checkbox"
                       />
                       <p
-                        class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
                         10430
@@ -2194,7 +2194,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10421
@@ -2308,7 +2308,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10422
@@ -2422,7 +2422,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10423
@@ -2529,7 +2529,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10424
@@ -2643,7 +2643,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10425
@@ -2757,7 +2757,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10426
@@ -2864,7 +2864,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10427
@@ -2971,7 +2971,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10428
@@ -3078,7 +3078,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10429
@@ -3192,7 +3192,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       type="checkbox"
                     />
                     <p
-                      class="text-tremor-default text-tremor-content ml-4 dark:text-white dark:opacity-70 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
                       10430

@@ -2,13 +2,37 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { ProductTable, OrderFilter, InputSearch } from "@/components";
+import { ProductTable, OrderFilter, OrderSearch } from "@/components";
 
 // Services
 import { getOrders } from "@/services";
 
-const OrderListPage = async () => {
-  const orderListData = await getOrders();
+// Types
+import { TProductTable } from "@/types";
+
+type TSearchParams = {
+  query: string;
+};
+
+const OrderListPage = async ({
+  searchParams,
+}: {
+  searchParams?: TSearchParams;
+}) => {
+  const orderListData: TProductTable[] = await getOrders();
+
+  const { query } = searchParams || { query: "" };
+
+  let filteredData = orderListData;
+
+  if (query) {
+    filteredData = orderListData?.filter(
+      item =>
+        item.products?.find(product =>
+          product.name.toLowerCase().includes(query.toLowerCase()),
+        ),
+    );
+  }
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -21,8 +45,8 @@ const OrderListPage = async () => {
         <OrderFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch />
-        <ProductTable data={orderListData} />
+        <OrderSearch />
+        <ProductTable data={filteredData} />
       </div>
     </Flex>
   );

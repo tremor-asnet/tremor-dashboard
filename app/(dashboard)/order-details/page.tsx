@@ -18,15 +18,15 @@ import { ORDER_DATA } from "@/mocks";
 const OrderDetailsPage = () => {
   return (
     <Flex justifyContent="center" className="w-full bg-transparent">
-      <Card className="w-full md:w-2/3 dark:bg-dark_blue">
+      <Card className="w-full md:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
         <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-2">
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <InvoiceHeader {...mockInvoiceHeader} />
-            <Divider />
+            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <OrderContact data={ORDER_DATA} />
-            <Divider />
+            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-4">
@@ -40,7 +40,7 @@ const OrderDetailsPage = () => {
                 />
               </div>
               <div className="w-full">
-                <div className="mb-4">
+                <div className="mb-6">
                   <PaymentDetails />
                 </div>
 

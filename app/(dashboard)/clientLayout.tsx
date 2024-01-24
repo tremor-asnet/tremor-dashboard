@@ -37,7 +37,6 @@ export default function DashboardLayout({
   const signOutAction = async () => {
     setIsPending(true);
     await fetch(`/api/logout`, { method: "POST" });
-    setIsPending(false);
     setIsCollapseSidebar(false);
     router.replace(ROUTES.SIGN_IN);
   };

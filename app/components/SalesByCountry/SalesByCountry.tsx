@@ -3,19 +3,11 @@ import { Card, Flex, Table, TableBody, Title } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 
-// Constants
-
 // Helpers
-import SalesByCountryRow from "../SalesByCountryRow";
+import { SalesByCountryRow } from "@/components";
 
-export interface ISalesByCountry {
-  id: string;
-  flag: string;
-  country: string;
-  sales: number;
-  value: number;
-  bounce: number;
-}
+// Types
+import { ISalesByCountry } from "@/types";
 
 export interface SalesByCountryProps {
   title: string;

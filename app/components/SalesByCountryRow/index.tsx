@@ -1,8 +1,14 @@
-import { CURRENCY, FLAG_SRC } from "@/constants";
-import { formattedNumber } from "@/helpers";
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import Image from "next/image";
-import { ISalesByCountry } from "../SalesByCountry/SalesByCountry";
+
+// Constants
+import { CURRENCY, FLAG_SRC } from "@/constants";
+
+// Helpers
+import { formattedNumber } from "@/helpers";
+
+// Types
+import { ISalesByCountry } from "@/types";
 
 interface SalesByCountryRowProps {
   data: ISalesByCountry;

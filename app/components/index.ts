@@ -32,3 +32,4 @@ export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderSearch } from "./OrderSearch/OrderSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SelectOption } from "./SelectOption";
+export { default as SalesByCountryRow } from "./SalesByCountryRow";

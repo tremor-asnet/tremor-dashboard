@@ -69,6 +69,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         <div ref={selectRef as RefObject<HTMLDivElement>}>
           <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
             {listOption.map(({ option, value }) => (
+              // TODO: split to component
               <li
                 key={option}
                 value={value}

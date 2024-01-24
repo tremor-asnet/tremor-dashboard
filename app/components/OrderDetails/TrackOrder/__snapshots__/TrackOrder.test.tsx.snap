@@ -11,13 +11,13 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
     class="relative m-0 w-full p-0 pb-6 tracking-[0.4px]"
   >
     <li
-      class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
+      class="relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start px-6 pt-6 leading-[1.3rem] after:line-content"
+        class="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content"
       >
         <span
-          class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          class="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
         >
           <svg
             fill="currentColor"
@@ -50,13 +50,13 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
       </div>
     </li>
     <li
-      class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
+      class="relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"
     >
       <div
-        class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
+        class="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content"
       >
         <span
-          class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          class="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
         >
           <svg
             fill="currentColor"
@@ -94,13 +94,13 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
       </div>
     </li>
     <li
-      class="1234 relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty"
+      class="1234 relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty"
     >
       <div
-        class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
+        class="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content"
       >
         <span
-          class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
+          class="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary"
         >
           <svg
             fill="currentColor"
@@ -146,10 +146,10 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
       class="relative h-fit"
     >
       <div
-        class="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content"
+        class="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content"
       >
         <span
-          class="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary"
+          class="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary"
         >
           <svg
             fill="currentColor"

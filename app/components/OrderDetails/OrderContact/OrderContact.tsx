@@ -46,7 +46,7 @@ const OrderContact = ({
               contact us
             </Text>
           </Button>
-          <Text className="mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <Text className="mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
             Do you like the item? Leave us a review{" "}
             <Link href="#" className="font-semibold">
               here

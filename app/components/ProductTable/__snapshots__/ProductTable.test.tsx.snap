@@ -519,7 +519,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 10:20 AM
+                      01 Nov, 10:20 AM
                     </p>
                   </td>
                   <td
@@ -601,7 +601,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $140,20
+                      14020
                     </p>
                   </td>
                 </tr>
@@ -634,7 +634,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 10:53 AM
+                      01 Nov, 10:53 AM
                     </p>
                   </td>
                   <td
@@ -716,7 +716,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $42,00
+                      4200
                     </p>
                   </td>
                 </tr>
@@ -749,7 +749,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 11:13 AM
+                      01 Nov, 11:13 AM
                     </p>
                   </td>
                   <td
@@ -824,7 +824,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $25,50
+                      2550
                     </p>
                   </td>
                 </tr>
@@ -857,7 +857,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 12:20 PM
+                      01 Nov, 12:20 PM
                     </p>
                   </td>
                   <td
@@ -939,7 +939,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $19,40
+                      1940
                     </p>
                   </td>
                 </tr>
@@ -972,7 +972,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 12:20 PM
+                      01 Nov, 12:20 PM
                     </p>
                   </td>
                   <td
@@ -1054,7 +1054,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $44,90
+                      4490
                     </p>
                   </td>
                 </tr>
@@ -1087,7 +1087,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 2:19 PM
+                      01 Nov, 02:19 PM
                     </p>
                   </td>
                   <td
@@ -1162,7 +1162,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $112,50
+                      11250
                     </p>
                   </td>
                 </tr>
@@ -1195,7 +1195,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 3:42 AM
+                      01 Nov, 03:42 AM
                     </p>
                   </td>
                   <td
@@ -1270,7 +1270,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $200,00
+                      20000
                     </p>
                   </td>
                 </tr>
@@ -1303,7 +1303,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 9:32 AM
+                      02 Nov, 09:32 AM
                     </p>
                   </td>
                   <td
@@ -1378,7 +1378,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $350,00
+                      35000
                     </p>
                   </td>
                 </tr>
@@ -1411,7 +1411,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 10:14 AM
+                      02 Nov, 10:14 AM
                     </p>
                   </td>
                   <td
@@ -1493,7 +1493,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $15,00
+                      1500
                     </p>
                   </td>
                 </tr>
@@ -1526,7 +1526,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 10:14 AM
+                      02 Nov, 10:14 AM
                     </p>
                   </td>
                   <td
@@ -1608,7 +1608,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $25,00
+                      2500
                     </p>
                   </td>
                 </tr>
@@ -2218,7 +2218,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 10:20 AM
+                    01 Nov, 10:20 AM
                   </p>
                 </td>
                 <td
@@ -2300,7 +2300,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $140,20
+                    14020
                   </p>
                 </td>
               </tr>
@@ -2333,7 +2333,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 10:53 AM
+                    01 Nov, 10:53 AM
                   </p>
                 </td>
                 <td
@@ -2415,7 +2415,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $42,00
+                    4200
                   </p>
                 </td>
               </tr>
@@ -2448,7 +2448,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 11:13 AM
+                    01 Nov, 11:13 AM
                   </p>
                 </td>
                 <td
@@ -2523,7 +2523,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $25,50
+                    2550
                   </p>
                 </td>
               </tr>
@@ -2556,7 +2556,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 12:20 PM
+                    01 Nov, 12:20 PM
                   </p>
                 </td>
                 <td
@@ -2638,7 +2638,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $19,40
+                    1940
                   </p>
                 </td>
               </tr>
@@ -2671,7 +2671,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 12:20 PM
+                    01 Nov, 12:20 PM
                   </p>
                 </td>
                 <td
@@ -2753,7 +2753,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $44,90
+                    4490
                   </p>
                 </td>
               </tr>
@@ -2786,7 +2786,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 2:19 PM
+                    01 Nov, 02:19 PM
                   </p>
                 </td>
                 <td
@@ -2861,7 +2861,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $112,50
+                    11250
                   </p>
                 </td>
               </tr>
@@ -2894,7 +2894,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 3:42 AM
+                    01 Nov, 03:42 AM
                   </p>
                 </td>
                 <td
@@ -2969,7 +2969,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $200,00
+                    20000
                   </p>
                 </td>
               </tr>
@@ -3002,7 +3002,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 9:32 AM
+                    02 Nov, 09:32 AM
                   </p>
                 </td>
                 <td
@@ -3077,7 +3077,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $350,00
+                    35000
                   </p>
                 </td>
               </tr>
@@ -3110,7 +3110,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 10:14 AM
+                    02 Nov, 10:14 AM
                   </p>
                 </td>
                 <td
@@ -3192,7 +3192,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $15,00
+                    1500
                   </p>
                 </td>
               </tr>
@@ -3225,7 +3225,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 10:14 AM
+                    02 Nov, 10:14 AM
                   </p>
                 </td>
                 <td
@@ -3307,7 +3307,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $25,00
+                    2500
                   </p>
                 </td>
               </tr>

@@ -14,10 +14,33 @@ exports[`Order Row Testing should match snapshot 1`] = `
           <div
             class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
           >
-            <input
-              class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-              type="checkbox"
-            />
+            <div
+              class="relative inline-flex items-center"
+            >
+              <input
+                class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                type="checkbox"
+              />
+              <span
+                class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+              >
+                <svg
+                  baseProfile="tiny"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  version="1.2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                  />
+                </svg>
+              </span>
+            </div>
             <a
               class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
               href="/order-list/1"
@@ -136,10 +159,33 @@ exports[`Order Row Testing should match snapshot 1`] = `
         <div
           class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
         >
-          <input
-            class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-            type="checkbox"
-          />
+          <div
+            class="relative inline-flex items-center"
+          >
+            <input
+              class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+              type="checkbox"
+            />
+            <span
+              class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+            >
+              <svg
+                baseProfile="tiny"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                version="1.2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                />
+              </svg>
+            </span>
+          </div>
           <a
             class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
             href="/order-list/1"

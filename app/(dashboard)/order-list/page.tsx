@@ -47,7 +47,7 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <OrderTable data={orderListData} />
+        <OrderTable data={filteredData} />
       </div>
     </Flex>
   );

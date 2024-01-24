@@ -16,6 +16,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           >
             <svg
               class="text-2xl text-secondary dark:text-white"
+              color=""
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -115,6 +116,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
               <svg
                 aria-hidden="true"
                 class="text-tremor-content text-xl cursor-pointer"
+                color=""
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -135,6 +137,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             >
               <svg
                 class="text-tremor-content text-xl cursor-pointer"
+                color=""
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -170,6 +173,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
         >
           <svg
             class="text-2xl text-secondary dark:text-white"
+            color=""
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -269,6 +273,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             <svg
               aria-hidden="true"
               class="text-tremor-content text-xl cursor-pointer"
+              color=""
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -289,6 +294,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           >
             <svg
               class="text-tremor-content text-xl cursor-pointer"
+              color=""
               fill="currentColor"
               height="1em"
               stroke="currentColor"

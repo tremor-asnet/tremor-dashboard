@@ -9,7 +9,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-between items-center flex-col"
       >
         <div
-          class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent"
+          class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent last:p-0 last:m-0"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -37,7 +37,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-auto flex-col justify-start items-start"
               >
                 <p
-                  class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+                  class="text-tremor-title dark:text-dark-tremor-content-emphasis text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
                 >
                   Gold Glasses
                 </p>
@@ -67,14 +67,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                   class="tremor-Button-text text-sm whitespace-nowrap"
                 >
                   <p
-                    class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                    class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-white uppercase"
                   >
                     contact us
                   </p>
                 </span>
               </button>
               <p
-                class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+                class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
               >
                 Do you like the item? Leave us a review here.
               </p>
@@ -89,7 +89,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full justify-between items-center flex-col"
     >
       <div
-        class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent"
+        class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row pb-4 mb-4 border-0 border-b border-gray-100 last:border-transparent last:p-0 last:m-0"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -117,7 +117,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-auto flex-col justify-start items-start"
             >
               <p
-                class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+                class="text-tremor-title dark:text-dark-tremor-content-emphasis text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
               >
                 Gold Glasses
               </p>
@@ -147,14 +147,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                  class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-white uppercase"
                 >
                   contact us
                 </p>
               </span>
             </button>
             <p
-              class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+              class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
             >
               Do you like the item? Leave us a review here.
             </p>

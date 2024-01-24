@@ -2,8 +2,13 @@
 
 exports[`TrackOrder Component render TrackOrder component with snapshot correctly 1`] = `
 <div>
+  <b
+    class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+  >
+    Track order
+  </b>
   <ul
-    class="relative m-0 w-full p-0 pb-6"
+    class="relative m-0 w-full p-0 pb-6 tracking-[0.4px]"
   >
     <li
       class="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content"

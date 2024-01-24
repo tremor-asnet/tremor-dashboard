@@ -1,0 +1,1004 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Heading testing should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <thead
+        class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
+      >
+        <tr
+          class="tremor-TableRow-row border-0 border-b border-gray-100"
+        >
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                id
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                date
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                status
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                customer
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                product
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+          <th
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              >
+                revenue
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 14l5-5 5 5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+                >
+                  <button
+                    class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                  >
+                    <span
+                      class="tremor-Button-text text-sm whitespace-nowrap"
+                    >
+                      <svg
+                        class="w-4 h-4"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7 10l5 5 5-5z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+    </div>
+  </body>,
+  "container": <div>
+    <thead
+      class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
+    >
+      <tr
+        class="tremor-TableRow-row border-0 border-b border-gray-100"
+      >
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              id
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              date
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              status
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              customer
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              product
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              revenue
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

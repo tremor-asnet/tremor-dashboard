@@ -16,22 +16,24 @@ export const OrderSummary = (monies: OrderSummaryProps) => {
 
   return (
     <>
-      <Bold className="dark:text-white">Order Summary</Bold>
-      <Flex flexDirection="col" className="mt-2">
+      <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
+        Order Summary
+      </Bold>
+      <Flex flexDirection="col" className="mt-2 tracking-[0.4px]">
         <Flex>
-          <div>
+          <Flex className="flex-col items-start text-secondary dark:text-dark-romance">
             {listTitle.map(title => (
-              <Text className="dark:text-lighter" key={title}>
-                {title}
+              <Text className="dark:text-lighter leading-6 mb-2" key={title}>
+                {title}&#58;
               </Text>
             ))}
-          </div>
-          <div>
+          </Flex>
+          <Flex className="flex-col items-end text-primary dark:text-white">
             {Object.keys(monies).map(item => {
               const money = monies[item as keyof OrderSummaryProps];
               return (
                 <p
-                  className="font-bold dark:text-white text-end"
+                  className="font-semibold mb-2"
                   key={`${item}`}
                   data-testid={`${item}`}>
                   {formattedNumber({
@@ -42,18 +44,20 @@ export const OrderSummary = (monies: OrderSummaryProps) => {
                 </p>
               );
             })}
-          </div>
+          </Flex>
         </Flex>
         <Flex className="mt-4">
-          <p className="text-tremor-content text-xl font-light dark:text-lighter">
+          <Flex className="text-xl font-light text-secondary dark:text-dark-romance">
             Total:
-          </p>
-          <p className="font-bold dark:text-white" data-testid="total-price">
+          </Flex>
+          <Flex
+            className="flex-col items-end text-xl font-semibold text-primary dark:text-white"
+            data-testid="total-price">
             {formattedNumber({
               value: totalPayment,
               currency: CURRENCY.DOLLAR,
             })}
-          </p>
+          </Flex>
         </Flex>
       </Flex>
     </>

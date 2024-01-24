@@ -26,14 +26,14 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   };
 
   return (
-    <Card className="h-full dark:bg-dark-tremor-primary ring-0">
+    <Card className="p-5 h-full dark:bg-dark-tremor-primary ring-0">
       <Flex>
         <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
           {revenueType}
         </Text>
         <Popover
           content="See which ads perform better"
-          className="text-center !bg-black !bottom-[0] rounded-md !text-white right-[0]">
+          className="text-center !bg-black !bottom-[-18px] rounded-md !text-white right-[38px] min-w-[170px] before:content-['▶'] before:absolute before:top-[16px] before:right-[-12px] before:text-[black]">
           <Button
             className="!rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
             variant="secondary">

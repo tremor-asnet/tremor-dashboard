@@ -12,7 +12,7 @@ import { SideBar, DashboardHeader, LoadingIndicator } from "@/components";
 import { signOut } from "@/auth";
 
 // Constants
-import { ROUTES } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
 
 interface DashboardLayoutProp {
   profileData: {
@@ -39,7 +39,7 @@ export default function DashboardLayout({
 
   const signOutAction = async () => {
     setIsPending(true);
-    await signOut({ redirect: false });
+    await fetch(`/api/logout`, { method: "POST" });
     setIsPending(false);
     setIsCollapseSidebar(false);
     router.replace(ROUTES.SIGN_IN);

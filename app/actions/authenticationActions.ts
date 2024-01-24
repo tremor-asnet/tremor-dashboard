@@ -6,15 +6,10 @@ import bcrypt from "bcrypt";
 import { cookies } from "next/headers";
 
 // Auth
-import { signIn, signOut } from "@/auth";
+import { signIn } from "@/auth";
 
 // Constants
-import {
-  AUTH_SESSION_COOKIES_KEY,
-  REMEMBER_ME_COOKIES_KEY,
-  ROUTER_API_URL,
-  ROUTES,
-} from "@/constants";
+import { ROUTER_API_URL } from "@/constants";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -37,17 +32,6 @@ export const authenticate = async (
     throw error;
   }
 };
-
-export async function signOutAction() {
-  cookies().delete(REMEMBER_ME_COOKIES_KEY);
-  cookies().delete(
-    (process.env.NODE_ENV === "production" &&
-      process.env.NEXT_PUBLIC_AUTH_SESSION_TOKEN_KEY) ||
-      AUTH_SESSION_COOKIES_KEY,
-  );
-
-  await signOut({ redirectTo: ROUTES.SIGN_IN });
-}
 
 export async function createNewAccount(
   prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,

@@ -37,7 +37,8 @@ const DashboardHeader = ({
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
   // Check the condition if it is page All Project then display the white color
-  const colorIconCaseProject = !isScrolled && isAllProjectPage && "white";
+  const colorIconCaseProject =
+    (!isScrolled && isAllProjectPage && "white") || "";
 
   useEffect(() => {
     const scrollDashboardHeader = () => {
@@ -71,7 +72,7 @@ const DashboardHeader = ({
       <div className="flex items-center">
         <div
           className={`block xl:hidden cursor-pointer ${
-            isAllProjectPage ? "" : "mr-2"
+            isAllProjectPage ? "z-20" : "mr-2"
           }`}
           onClick={toggleSidebar}>
           {isCollapseSidebar ? (

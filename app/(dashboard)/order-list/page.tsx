@@ -13,6 +13,7 @@ import { TProductTable } from "@/types";
 
 type TSearchParams = {
   query: string;
+  status: string;
 };
 
 const OrderListPage = async ({
@@ -23,6 +24,7 @@ const OrderListPage = async ({
   const orderListData: TProductTable[] = await getOrders();
 
   const { query } = searchParams || { query: "" };
+  const { status } = searchParams || { status: "" };
 
   let filteredData = orderListData;
 
@@ -34,6 +36,12 @@ const OrderListPage = async ({
         ),
     );
   }
+
+  filteredData = status
+    ? filteredData.filter(
+        (item: TProductTable) => item.status.toString() === status,
+      )
+    : filteredData;
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -47,7 +55,7 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <OrderSearch />
-        <OrderTable data={orderListData} />
+        <OrderTable data={filteredData} />
       </div>
     </Flex>
   );

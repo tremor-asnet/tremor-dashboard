@@ -1,33 +1,41 @@
 "use client";
 
-import { Card, Flex, Table, TableBody } from "@tremor/react";
-import { useSearchParams } from "next/navigation";
+import {
+  Card,
+  Flex,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  Text,
+} from "@tremor/react";
+import { useEffect, useMemo, useState } from "react";
 
 // Components
-import { Pagination } from "@/components";
+import Pagination from "@/components/common/Pagination";
+import TableHeading from "./TableHeading";
+import OrderRow from "./OrderRow";
 
 //Types
 import { TProductTable } from "@/types";
-import TableHeading from "./TableHeading";
-import OrderRow from "./OrderRow";
-import { useEffect, useState } from "react";
-
 export interface ProductTableProps {
   data: TProductTable[];
 }
 
 const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
-  const [orders, setOrders] = useState<TProductTable[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const searchParams = useSearchParams();
-  const params = searchParams.get("status");
+  const pageSize = 10;
 
   useEffect(() => {
-    const newData = data.filter(
-      (item: TProductTable) => item.status.toString() === params,
-    );
-    params ? setOrders(newData) : setOrders(data);
-  }, [params]);
+    setCurrentPage(1);
+  }, [data]);
+
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * pageSize;
+    const lastPageIndex = firstPageIndex + pageSize;
+    return data.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, data]);
 
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
@@ -35,22 +43,37 @@ const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
         <Table className="w-full">
           <TableHeading />
           <TableBody>
-            {orders.map(item => {
-              return (
-                <OrderRow
-                  key={item.id}
-                  id={item.id}
-                  createdAt={item.createdAt}
-                  status={item.status}
-                  customer={item.customer}
-                  products={item.products}
-                  revenue={item.revenue}
-                />
-              );
-            })}
+            {currentTableData.length ? (
+              currentTableData.map(item => {
+                return (
+                  <OrderRow
+                    key={item.id}
+                    id={item.id}
+                    createdAt={item.createdAt}
+                    status={item.status}
+                    customer={item.customer}
+                    products={item.products}
+                    revenue={item.revenue}
+                  />
+                );
+              })
+            ) : (
+              <TableRow className="w-full">
+                <TableCell colSpan={6} className="h-32 text-center">
+                  <Text className="text-xl font-semibold">
+                    Result Not Found
+                  </Text>
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
-        <Pagination total={2} />
+        <Pagination
+          currentPage={currentPage}
+          pageSize={pageSize}
+          totalCount={data.length}
+          onPageChange={setCurrentPage}
+        />
       </Flex>
     </Card>
   );

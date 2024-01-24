@@ -42,9 +42,9 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             Order received
           </span>
           <span
-            class="text-tremor-label text-secondary font-light dark:text-dark-romance"
+            class="text-tremor-label text-primary uppercase font-light dark:text-dark-romance"
           >
-            11 Jan 9:48 AM
+            11 Jan 09:48 AM
           </span>
         </div>
       </div>
@@ -86,9 +86,9 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             #1832412
           </span>
           <span
-            class="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance"
+            class="text-tremor-label text-primary uppercase font-light dark:text-dark-romance"
           >
-            11 Jan 9:48 AM
+            11 Jan 09:48 AM
           </span>
         </div>
       </div>
@@ -135,9 +135,9 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             Order transmited to courier
           </span>
           <span
-            class="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance"
+            class="text-tremor-label text-primary uppercase font-light dark:text-dark-romance"
           >
-            11 Jan 9:48 AM
+            11 Jan 09:48 AM
           </span>
         </div>
       </div>
@@ -176,7 +176,7 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
           <span
             class="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance"
           >
-            11 Jan 9:48 AM
+            11 Jan 09:48 AM
           </span>
         </div>
       </div>

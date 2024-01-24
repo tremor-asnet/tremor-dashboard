@@ -80,3 +80,24 @@ export const formattedNumber = ({
 
   return currency ? `${currency}${formattedNumber}` : formattedNumber;
 };
+
+/**
+ * Format dots to commas number
+ * Ex: ( 23.9 --> 23,9 ), ( 23.9 --> $23,9)
+ * @param object
+ * @returns string
+ */
+export const formatDotsToCommasNumber = ({
+  value,
+  currency = "",
+  positionFraction = 0,
+}: {
+  value: number;
+  currency?: string;
+  positionFraction?: number;
+}): string =>
+  `${currency}${value
+    .toLocaleString("en-US", {
+      minimumFractionDigits: positionFraction,
+    })
+    .replace(/\./, ",")}`;

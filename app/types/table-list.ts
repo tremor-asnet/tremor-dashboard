@@ -14,5 +14,5 @@ export type TProductTable = {
     avatar?: string;
   };
   products: ProductOrder[];
-  revenue: string;
+  revenue: number;
 };

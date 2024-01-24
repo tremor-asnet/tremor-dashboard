@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, Flex, Table, TableBody } from "@tremor/react";
+import { useSearchParams } from "next/navigation";
 
 // Components
 import { Pagination } from "@/components";
@@ -15,13 +16,22 @@ export interface ProductTableProps {
 }
 
 const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
+  const searchParams = useSearchParams();
+  const params = searchParams.get("status");
+
+  const newData = data.filter(
+    (item: TProductTable) => item.status.toString() === params,
+  );
+
+  console.log("new data:", newData);
+
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <Flex flexDirection="col" className="items-start justify-start my-2">
         <Table className="w-full">
           <TableHeading />
           <TableBody>
-            {data.map(item => {
+            {newData.map(item => {
               return (
                 <OrderRow
                   key={item.id}

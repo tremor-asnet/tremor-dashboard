@@ -1,6 +1,7 @@
 "use client";
 
-import { RefObject, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { ChangeEvent, RefObject, useState } from "react";
 import { Button, Text } from "@tremor/react";
 
 // Icons
@@ -12,10 +13,6 @@ import { listOption } from "@/constants";
 // Hooks
 import { useOutsideClick } from "@/hooks";
 
-// Components
-import { SelectOption } from "@/components";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-
 interface OrderFilterProps {
   title: string;
 }
@@ -24,14 +21,12 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
-  const [selectedStatus, setSelectedStatus] = useState(
-    searchParams.get("category"),
-  );
 
   const router = useRouter();
 
   const newParams = new URLSearchParams(searchParams.toString());
   const pathName = usePathname();
+  const currentStatus = newParams.get("status");
 
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
@@ -42,7 +37,6 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
   };
 
   const handleClickItem = (status: string) => {
-    const currentStatus = newParams.get("status");
     if (currentStatus !== status) {
       newParams.set("status", status);
     }
@@ -50,8 +44,11 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     const query = newParams ? `${newParams}` : "";
     router.push(`${pathName}?${query}`);
 
-    console.log("query: ", query);
+    setShowListOption(false);
+  };
 
+  const handleRemoveFilter = () => {
+    newParams.delete("status");
     setShowListOption(false);
   };
 
@@ -81,11 +78,12 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
               </li>
             ))}
             <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
-            <li className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary">
+            <li
+              className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary"
+              onClick={handleRemoveFilter}>
               Remove File
             </li>
           </ul>
-          {/* <SelectOption data={listOption} onClickItem={handleClickItem} /> */}
         </div>
       )}
     </div>

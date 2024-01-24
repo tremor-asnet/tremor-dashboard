@@ -50,8 +50,13 @@ const SalesByCountry = ({
                 {listData.map(item => (
                   <SalesByCountryRow
                     key={`${item.id}`}
-                    data={item}
                     isAnalytics={isAnalytics}
+                    id={item.id}
+                    flag={item.flag}
+                    country={item.country}
+                    sales={item.sales}
+                    value={item.value}
+                    bounce={item.bounce}
                   />
                 ))}
               </TableBody>

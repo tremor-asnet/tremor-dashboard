@@ -1834,6 +1834,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
             </table>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
           <div
@@ -1923,6 +1924,8 @@ exports[`Order Table Testing should match snapshot 1`] = `
 =======
 >>>>>>> 3322e14 (fix: update no product found and pagination for order list page)
 >>>>>>> 9a4a231 (fix: update no product found and pagination for order list page)
+=======
+>>>>>>> 7c8b975 (feat: implement pagination for product table)
         </div>
       </div>
     </div>
@@ -3809,6 +3812,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
           </table>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         <div
@@ -3898,6 +3902,8 @@ exports[`Order Table Testing should match snapshot 1`] = `
 =======
 >>>>>>> 3322e14 (fix: update no product found and pagination for order list page)
 >>>>>>> 9a4a231 (fix: update no product found and pagination for order list page)
+=======
+>>>>>>> 7c8b975 (feat: implement pagination for product table)
       </div>
     </div>
   </div>,

@@ -5,55 +5,36 @@ import {
   Flex,
   Text,
   Table,
-  TableHead,
-  TableHeaderCell,
   TableBody,
   TableCell,
   TableRow,
 } from "@tremor/react";
 import Link from "next/link";
 
-// Components
-import {
-  CheckBox,
-  CustomImage,
-  HeaderCellContents,
-  Pagination,
-} from "@/components";
-
-// Constants
-import { ROUTES, STATUS_TEXT, SEPARATOR } from "@/constants";
-
-// Helpers
-import { ProductStatus, formatDateTime } from "@/helpers";
-
 //Types
-import { ProductOrder, TProductTable } from "@/types";
+import { Product } from "@/types";
+import TableHeading from "./TableHeading";
+import ProductRow from "./ProductRow";
 import { useEffect, useMemo, useState } from "react";
+import Pagination from "../common/Pagination";
 
 export interface ProductTableProps {
-  data: TProductTable[];
+  data: Product[];
 }
 
 const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [orders, setOrders] = useState<TProductTable[]>([]);
-
-  const pageSize = 3;
+  const pageSize = 10;
 
   useEffect(() => {
-    setOrders(data);
-  }, []);
+    setCurrentPage(1);
+  }, [data]);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
-    return orders.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, orders]);
-
-  const handleCheckBox = () => {
-    // TODO: Handle checkbox here
-  };
+    return data.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, data]);
 
   return (
     <Card className="p-0 border-none ring-0 dark:text-light dark:bg-dark-tremor-primary overflow-x-auto">
@@ -61,100 +42,40 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
         flexDirection="col"
         className="items-start justify-start my-2 dark:bg-dark-tremor-primary">
         <Table className="w-full">
-          <TableHead>
-            <TableRow className="border-0 border-b border-gray-100">
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="id" />
-              </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="date" />
-              </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="status" />
-              </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="customer" />
-              </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="product" />
-              </TableHeaderCell>
-              <TableHeaderCell className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase">
-                <HeaderCellContents title="revenue" />
-              </TableHeaderCell>
-            </TableRow>
-          </TableHead>
+          <TableHeading />
           <TableBody>
-            {data.map(item => {
-              const { id, createdAt, status, customer, products, revenue } =
-                item;
-              return (
-                <TableRow key={id}>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    <Flex className="justify-start ml-2">
-                      <CheckBox
-                        handleCheckBox={handleCheckBox}
-                        checked={false}
-                      />
-                      <Link
-                        href={`${ROUTES.ORDER_LIST}/${id}`}
-                        className="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
-                        #{id}
-                      </Link>
-                    </Flex>
-                  </TableCell>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    <Text className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-                      {formatDateTime(createdAt, SEPARATOR.COMMAS)}
-                    </Text>
-                  </TableCell>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    <Flex className="justify-start text-xs font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-                      {ProductStatus(status)}
-                      <Text className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-                        {STATUS_TEXT[status]}
-                      </Text>
-                    </Flex>
-                  </TableCell>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    <Flex className="w-auto justify-start">
-                      {customer.avatar ? (
-                        <CustomImage
-                          alt={customer.full_name}
-                          className="w-6 h-6 rounded-full mr-2"
-                          height={24}
-                          priority
-                          src={customer.avatar}
-                          width={24}
-                        />
-                      ) : (
-                        <Flex className="w-6 h-6 justify-center text-white text-xs bg-primary rounded-full mr-2">
-                          {customer.full_name.substring(0, 1)}
-                        </Flex>
-                      )}
-                      <Text className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
-                        {customer.full_name}
-                      </Text>
-                    </Flex>
-                  </TableCell>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    {products?.map((product: ProductOrder, index: number) => (
-                      <Text
-                        key={`Product ${index} of ${product.name} by ${product.id}`}
-                        className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px] order-product">
-                        {product.name}
-                      </Text>
-                    ))}
-                  </TableCell>
-                  <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-                    <Text className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-revenue">
-                      {revenue}
-                    </Text>
-                  </TableCell>
-                </TableRow>
-              );
-            })}
+            {currentTableData.length ? (
+              currentTableData.map(product => {
+                return (
+                  <ProductRow
+                    key={product.id}
+                    id={product.productId}
+                    image={product.image}
+                    name={product.productName}
+                    price={product.price}
+                    isAvailable={product.isAvailable}
+                    providerName={product.providerName}
+                    createdAt={product.createdAt}
+                  />
+                );
+              })
+            ) : (
+              <TableRow className="w-full">
+                <TableCell colSpan={6} className="h-32 text-center">
+                  <Text className="text-xl font-semibold">
+                    Result Not Found
+                  </Text>
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
+        <Pagination
+          currentPage={currentPage}
+          pageSize={pageSize}
+          totalCount={data.length}
+          onPageChange={page => setCurrentPage(page)}
+        />
       </Flex>
     </Card>
   );

@@ -72,11 +72,7 @@ const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
           currentPage={currentPage}
           pageSize={pageSize}
           totalCount={data.length}
-<<<<<<< HEAD
           onPageChange={setCurrentPage}
-=======
-          onPageChange={page => setCurrentPage(page)}
->>>>>>> 9a4a231 (fix: update no product found and pagination for order list page)
         />
       </Flex>
     </Card>

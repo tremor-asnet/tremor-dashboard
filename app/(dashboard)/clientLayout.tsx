@@ -8,11 +8,8 @@ import { usePathname, useRouter } from "next/navigation";
 import { Flex } from "@tremor/react";
 import { SideBar, DashboardHeader, LoadingIndicator } from "@/components";
 
-// Actions
-import { signOut } from "@/auth";
-
 // Constants
-import { ROUTER_API_URL, ROUTES } from "@/constants";
+import { ROUTES } from "@/constants";
 
 interface DashboardLayoutProp {
   profileData: {

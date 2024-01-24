@@ -3,7 +3,6 @@
 // Libs
 import { AuthError } from "next-auth";
 import bcrypt from "bcrypt";
-import { cookies } from "next/headers";
 
 // Auth
 import { signIn } from "@/auth";

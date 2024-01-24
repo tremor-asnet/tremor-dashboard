@@ -1,15 +1,17 @@
 // Components
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import { ROUTES, STATUS_TEXT } from "@/constants";
 import Checkbox from "./Checkbox";
 
 // Helper
-import { ProductStatus } from "@/helpers";
+import { ProductStatus, formatDateTime } from "@/helpers";
 
 // Types
 import { ProductOrder, TProductTable } from "@/types";
 import Link from "next/link";
+
+// Constants
+import { SEPARATOR, STATUS_TEXT, ROUTES } from "@/constants";
 
 const OrderRow = ({
   id,
@@ -37,7 +39,7 @@ const OrderRow = ({
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-          {createdAt}
+          {formatDateTime(createdAt, SEPARATOR.COMMAS)}
         </Text>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

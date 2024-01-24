@@ -4,7 +4,7 @@ export const orderStatus = (status: number, period: number) => {
     case 0:
       return (
         <>
-          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full">
             Order was delivered {period} days ago.
           </p>
           <p className="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
@@ -16,7 +16,7 @@ export const orderStatus = (status: number, period: number) => {
     case 1:
       return (
         <>
-          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full">
             Order was canceled {period} days ago.
           </p>
           <p className="p-2 mt-4 font-bold text-white dark:text-white bg-red-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
@@ -28,7 +28,7 @@ export const orderStatus = (status: number, period: number) => {
     case 2:
       return (
         <>
-          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full">
             Order was refunded {period} days ago.
           </p>
           <p className="p-2 mt-4 font-bold text-white dark:text-white bg-primary text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
@@ -40,7 +40,7 @@ export const orderStatus = (status: number, period: number) => {
     default:
       return (
         <>
-          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full">
             Order is peding for {period}.
           </p>
           <p className="p-2 mt-4 font-bold text-white dark:text-white bg-seldom text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">

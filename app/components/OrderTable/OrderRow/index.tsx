@@ -12,9 +12,10 @@ import {
 
 // Types
 import { ProductOrder, TProductTable } from "@/types";
+import Link from "next/link";
 
 // Constants
-import { CURRENCY, SEPARATOR, STATUS_TEXT } from "@/constants";
+import { CURRENCY, SEPARATOR, STATUS_TEXT, ROUTES } from "@/constants";
 
 const OrderRow = ({
   id,
@@ -33,9 +34,11 @@ const OrderRow = ({
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         <Flex className="justify-start ml-2">
           <Checkbox onChange={handleChangeCheckbox} />
-          <Text className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id">
-            #{id}
-          </Text>
+          <Link
+            href={`${ROUTES.ORDER_LIST}/${id}`}
+            className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
+            &#35;{id}
+          </Link>
         </Flex>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

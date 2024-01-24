@@ -18,12 +18,13 @@ exports[`Order Row Testing should match snapshot 1`] = `
               class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
               type="checkbox"
             />
-            <p
-              class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+            <a
+              class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+              href="/order-list/1"
             >
               #
               1
-            </p>
+            </a>
           </div>
         </td>
         <td
@@ -139,12 +140,13 @@ exports[`Order Row Testing should match snapshot 1`] = `
             class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
             type="checkbox"
           />
-          <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
+          <a
+            class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+            href="/order-list/1"
           >
             #
             1
-          </p>
+          </a>
         </div>
       </td>
       <td

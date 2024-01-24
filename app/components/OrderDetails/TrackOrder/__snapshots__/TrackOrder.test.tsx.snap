@@ -174,7 +174,7 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
             Order delivered
           </span>
           <span
-            class="text-tremor-label text-primary uppercase font-light dark:text-dark-romance"
+            class="text-tremor-label text-secondary uppercase font-light dark:text-dark-romance"
           >
             11 Jan 09:48 AM
           </span>

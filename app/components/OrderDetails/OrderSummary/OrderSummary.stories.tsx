@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { OrderSummary } from ".";
+import { OrderSummary } from "./OrderSummary";
 import { Card } from "@tremor/react";
 
 // Mocks

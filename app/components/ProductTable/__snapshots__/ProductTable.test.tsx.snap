@@ -504,19 +504,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10421"
                       >
                         #
                         10421
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 10:20 AM
                     </p>
@@ -618,19 +619,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10422"
                       >
                         #
                         10422
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 10:53 AM
                     </p>
@@ -732,19 +734,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10423"
                       >
                         #
                         10423
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 11:13 AM
                     </p>
@@ -839,19 +842,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10424"
                       >
                         #
                         10424
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 12:20 PM
                     </p>
@@ -953,19 +957,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10425"
                       >
                         #
                         10425
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 12:20 PM
                     </p>
@@ -1067,19 +1072,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10426"
                       >
                         #
                         10426
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 02:19 PM
                     </p>
@@ -1174,19 +1180,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10427"
                       >
                         #
                         10427
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       01 Nov, 03:42 AM
                     </p>
@@ -1281,19 +1288,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10428"
                       >
                         #
                         10428
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       02 Nov, 09:32 AM
                     </p>
@@ -1388,19 +1396,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10429"
                       >
                         #
                         10429
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       02 Nov, 10:14 AM
                     </p>
@@ -1502,19 +1511,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10430"
                       >
                         #
                         10430
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                      class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
                       02 Nov, 10:14 AM
                     </p>
@@ -2193,19 +2203,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10421"
                     >
                       #
                       10421
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 10:20 AM
                   </p>
@@ -2307,19 +2318,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10422"
                     >
                       #
                       10422
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 10:53 AM
                   </p>
@@ -2421,19 +2433,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10423"
                     >
                       #
                       10423
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 11:13 AM
                   </p>
@@ -2528,19 +2541,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10424"
                     >
                       #
                       10424
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 12:20 PM
                   </p>
@@ -2642,19 +2656,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10425"
                     >
                       #
                       10425
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 12:20 PM
                   </p>
@@ -2756,19 +2771,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10426"
                     >
                       #
                       10426
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 02:19 PM
                   </p>
@@ -2863,19 +2879,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10427"
                     >
                       #
                       10427
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     01 Nov, 03:42 AM
                   </p>
@@ -2970,19 +2987,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10428"
                     >
                       #
                       10428
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     02 Nov, 09:32 AM
                   </p>
@@ -3077,19 +3095,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10429"
                     >
                       #
                       10429
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     02 Nov, 10:14 AM
                   </p>
@@ -3191,19 +3210,20 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10430"
                     >
                       #
                       10430
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
+                    class="text-tremor-default text-tremor-content text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
                     02 Nov, 10:14 AM
                   </p>

@@ -87,7 +87,7 @@ const OrderRow = ({
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         <Text className="text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue">
           {formatDotsToCommasNumber({
-            value: 2165454,
+            value: revenue,
             currency: CURRENCY.DOLLAR,
             positionFraction: 2,
           })}

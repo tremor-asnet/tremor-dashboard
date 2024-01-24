@@ -1,51 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Popover component Should match snapshot 1`] = `
+exports[`Checkbox Testing should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="w-fit h-fit relative flex justify-center"
-      >
-        <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-        >
-          Hover to show content popover
-        </p>
-        <div
-          class="min-w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
-          hidden=""
-        >
-          <div
-            class="text-sm font-light rounded p-2"
-          >
-            Content popover
-          </div>
-        </div>
-      </div>
+      <input
+        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
+        type="checkbox"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="w-fit h-fit relative flex justify-center"
-    >
-      <p
-        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content"
-      >
-        Hover to show content popover
-      </p>
-      <div
-        class="min-w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
-        hidden=""
-      >
-        <div
-          class="text-sm font-light rounded p-2"
-        >
-          Content popover
-        </div>
-      </div>
-    </div>
+    <input
+      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
+      type="checkbox"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

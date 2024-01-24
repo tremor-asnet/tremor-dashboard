@@ -23,8 +23,8 @@ const OrderListPage = async ({
 }) => {
   const orderListData: TProductTable[] = await getOrders();
 
-  const { query } = searchParams || { query: "" };
-  const { status } = searchParams || { status: "" };
+  const { query = "" } = searchParams as TSearchParams;
+  const { status = "" } = searchParams as TSearchParams;
 
   let filteredData = orderListData;
 

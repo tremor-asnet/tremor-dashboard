@@ -1,3 +1,4 @@
+// Components
 import { Bold, Flex } from "@tremor/react";
 
 // Icon React

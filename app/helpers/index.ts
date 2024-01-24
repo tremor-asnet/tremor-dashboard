@@ -4,3 +4,4 @@ export * from "./common";
 export * from "./format";
 export * from "./formatNumber";
 export * from "./productStatus";
+export * from "./orderStatus";

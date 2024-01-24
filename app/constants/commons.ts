@@ -49,3 +49,9 @@ export const SOCIAL_LINK = {
 
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
+
+export const listOption: ListOptionProps[] = [
+  { option: "Paid", value: 0 },
+  { option: "Refunded", value: 2 },
+  { option: "Canceled", value: 1 },
+];

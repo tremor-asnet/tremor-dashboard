@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { Text, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
 import InputSearch from "./InputSearch";
 
 const meta = {
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const InputSearchDefault: Story = {
   render: () => (
     <Flex className="w-full justify-center mt-10">
-      <InputSearch onSearch={() => {}} />
+      <InputSearch onChange={() => {}} />
     </Flex>
   ),
 };

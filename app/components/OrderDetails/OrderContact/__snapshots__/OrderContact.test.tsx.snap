@@ -6,7 +6,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center flex-wrap sm:flex-nowrap"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-start items-center"
@@ -36,7 +36,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               Leather Wallet
             </p>
             <p
-              class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+              class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
             >
               Order was delivered 
               13
@@ -69,7 +69,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </span>
             </button>
             <p
-              class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+              class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
             >
               Do you like the item? Leave us a review
                
@@ -88,7 +88,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center flex-wrap sm:flex-nowrap"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-start items-center"
@@ -118,7 +118,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             Leather Wallet
           </p>
           <p
-            class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+            class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
           >
             Order was delivered 
             13
@@ -151,7 +151,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             </span>
           </button>
           <p
-            class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondar leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]"
+            class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
           >
             Do you like the item? Leave us a review
              

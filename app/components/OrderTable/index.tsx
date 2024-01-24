@@ -26,7 +26,7 @@ const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
     const newData = data.filter(
       (item: TProductTable) => item.status.toString() === params,
     );
-    params === null ? setOrders(data) : setOrders(newData);
+    params ? setOrders(newData) : setOrders(data);
   }, [params]);
 
   return (

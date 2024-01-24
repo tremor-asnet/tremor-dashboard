@@ -49,6 +49,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
 
   const handleRemoveFilter = () => {
     newParams.delete("status");
+    router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
   };
 

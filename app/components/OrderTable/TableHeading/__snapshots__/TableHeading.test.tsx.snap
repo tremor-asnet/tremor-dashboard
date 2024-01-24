@@ -12,7 +12,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           class="tremor-TableRow-row border-0 border-b border-gray-100"
         >
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -89,7 +89,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -166,7 +166,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -243,7 +243,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -320,7 +320,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -397,7 +397,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+            class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -485,7 +485,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
         class="tremor-TableRow-row border-0 border-b border-gray-100"
       >
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -562,7 +562,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -639,7 +639,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -716,7 +716,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -793,7 +793,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -870,7 +870,7 @@ exports[`Table Heading testing should match snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content dark:text-dark-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"

@@ -22,19 +22,35 @@ import {
 } from "@/components";
 
 // Constants
-import { ROUTES, STATUS_TEXT } from "@/constants";
+import { ROUTES, STATUS_TEXT, SEPARATOR } from "@/constants";
 
 // Helpers
-import { ProductStatus } from "@/helpers";
+import { ProductStatus, formatDateTime } from "@/helpers";
 
 //Types
 import { ProductOrder, TProductTable } from "@/types";
+import { useEffect, useMemo, useState } from "react";
 
 export interface ProductTableProps {
   data: TProductTable[];
 }
 
 const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [orders, setOrders] = useState<TProductTable[]>([]);
+
+  const pageSize = 3;
+
+  useEffect(() => {
+    setOrders(data);
+  }, []);
+
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * pageSize;
+    const lastPageIndex = firstPageIndex + pageSize;
+    return orders.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, orders]);
+
   const handleCheckBox = () => {
     // TODO: Handle checkbox here
   };
@@ -88,7 +104,7 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
                     <Text className="text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-dagte">
-                      {createdAt}
+                      {formatDateTime(createdAt, SEPARATOR.COMMAS)}
                     </Text>
                   </TableCell>
                   <TableCell className="px-6 py-5 border-0 border-b border-gray-100">

@@ -16,7 +16,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$140,20",
+    revenue: 14020,
   },
   {
     id: 10422,
@@ -35,7 +35,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$42,00",
+    revenue: 4200,
   },
   {
     id: 10423,
@@ -52,7 +52,7 @@ export const TABLE_LIST_DATA = [
         count: 3,
       },
     ],
-    revenue: "$25,50",
+    revenue: 2550,
   },
   {
     id: 10424,
@@ -71,7 +71,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$19,40",
+    revenue: 1940,
   },
   {
     id: 10425,
@@ -90,7 +90,7 @@ export const TABLE_LIST_DATA = [
         count: 2,
       },
     ],
-    revenue: "$44,90",
+    revenue: 4490,
   },
   {
     id: 10426,
@@ -107,7 +107,7 @@ export const TABLE_LIST_DATA = [
         count: 2,
       },
     ],
-    revenue: "$112,50",
+    revenue: 11250,
   },
   {
     id: 10427,
@@ -124,7 +124,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$200,00",
+    revenue: 20000,
   },
   {
     id: 10428,
@@ -141,7 +141,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$350,00",
+    revenue: 35000,
   },
   {
     id: 10429,
@@ -160,7 +160,7 @@ export const TABLE_LIST_DATA = [
         count: 1,
       },
     ],
-    revenue: "$15,00",
+    revenue: 1500,
   },
   {
     id: 10430,
@@ -179,6 +179,6 @@ export const TABLE_LIST_DATA = [
         count: 3,
       },
     ],
-    revenue: "$25,00",
+    revenue: 2500,
   },
 ];

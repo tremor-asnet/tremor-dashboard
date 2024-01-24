@@ -499,10 +499,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10421"
@@ -518,7 +541,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 10:20 AM
+                      01 Nov, 10:20 AM
                     </p>
                   </td>
                   <td
@@ -600,7 +623,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $140,20
+                      $14,020,00
                     </p>
                   </td>
                 </tr>
@@ -613,10 +636,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10422"
@@ -632,7 +678,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 10:53 AM
+                      01 Nov, 10:53 AM
                     </p>
                   </td>
                   <td
@@ -714,7 +760,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $42,00
+                      $4,200,00
                     </p>
                   </td>
                 </tr>
@@ -727,10 +773,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10423"
@@ -746,7 +815,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 11:13 AM
+                      01 Nov, 11:13 AM
                     </p>
                   </td>
                   <td
@@ -821,7 +890,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $25,50
+                      $2,550,00
                     </p>
                   </td>
                 </tr>
@@ -834,10 +903,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10424"
@@ -853,7 +945,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 12:20 PM
+                      01 Nov, 12:20 PM
                     </p>
                   </td>
                   <td
@@ -935,7 +1027,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $19,40
+                      $1,940,00
                     </p>
                   </td>
                 </tr>
@@ -948,10 +1040,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10425"
@@ -967,7 +1082,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 12:20 PM
+                      01 Nov, 12:20 PM
                     </p>
                   </td>
                   <td
@@ -1049,7 +1164,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $44,90
+                      $4,490,00
                     </p>
                   </td>
                 </tr>
@@ -1062,10 +1177,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10426"
@@ -1081,7 +1219,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 2:19 PM
+                      01 Nov, 02:19 PM
                     </p>
                   </td>
                   <td
@@ -1156,7 +1294,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $112,50
+                      $11,250,00
                     </p>
                   </td>
                 </tr>
@@ -1169,10 +1307,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10427"
@@ -1188,7 +1349,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      1 Nov, 3:42 AM
+                      01 Nov, 03:42 AM
                     </p>
                   </td>
                   <td
@@ -1263,7 +1424,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $200,00
+                      $20,000,00
                     </p>
                   </td>
                 </tr>
@@ -1276,10 +1437,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10428"
@@ -1295,7 +1479,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 9:32 AM
+                      02 Nov, 09:32 AM
                     </p>
                   </td>
                   <td
@@ -1370,7 +1554,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $350,00
+                      $35,000,00
                     </p>
                   </td>
                 </tr>
@@ -1383,10 +1567,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10429"
@@ -1402,7 +1609,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 10:14 AM
+                      02 Nov, 10:14 AM
                     </p>
                   </td>
                   <td
@@ -1484,7 +1691,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $15,00
+                      $1,500,00
                     </p>
                   </td>
                 </tr>
@@ -1497,10 +1704,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                     >
-                      <input
-                        class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                        type="checkbox"
-                      />
+                      <div
+                        class="relative inline-flex items-center"
+                      >
+                        <input
+                          class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                          type="checkbox"
+                        />
+                        <span
+                          class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                        >
+                          <svg
+                            baseProfile="tiny"
+                            fill="currentColor"
+                            height="1em"
+                            stroke="currentColor"
+                            stroke-width="0"
+                            version="1.2"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                       <a
                         class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                         href="/order-list/10430"
@@ -1516,7 +1746,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                     >
-                      2 Nov, 10:14 AM
+                      02 Nov, 10:14 AM
                     </p>
                   </td>
                   <td
@@ -1598,96 +1828,12 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      $25,00
+                      $2,500,00
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div
-            class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
-          >
-            <div
-              class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
-            >
-              <div
-                class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
-              >
-                <p
-                  class="text-sm text-secondary"
-                >
-                  Showing 
-                  <span
-                    class="font-normal"
-                  >
-                    1
-                  </span>
-                   to
-                   
-                  <span
-                    class="font-normal"
-                  >
-                    10
-                  </span>
-                   of
-                   
-                  <span
-                    class="font-normal"
-                  >
-                    12
-                  </span>
-                   entries
-                </p>
-              </div>
-              <div
-                class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
-              >
-                <nav
-                  aria-label="Pagination"
-                  class="isolate inline-flex -space-x-px gap-2"
-                >
-                  <a
-                    class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
-                    href="#"
-                  >
-                    1
-                  </a>
-                  <a
-                    class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
-                    href="#"
-                  >
-                    2
-                  </a>
-                  <button
-                    class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
-                  >
-                    <span
-                      class="sr-only"
-                    >
-                      Next
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      class="h-5 w-5 p-[3px]"
-                      fill="none"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <polyline
-                        points="9 18 15 12 9 6"
-                      />
-                    </svg>
-                  </button>
-                </nav>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -2188,10 +2334,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10421"
@@ -2207,7 +2376,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 10:20 AM
+                    01 Nov, 10:20 AM
                   </p>
                 </td>
                 <td
@@ -2289,7 +2458,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $140,20
+                    $14,020,00
                   </p>
                 </td>
               </tr>
@@ -2302,10 +2471,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10422"
@@ -2321,7 +2513,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 10:53 AM
+                    01 Nov, 10:53 AM
                   </p>
                 </td>
                 <td
@@ -2403,7 +2595,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $42,00
+                    $4,200,00
                   </p>
                 </td>
               </tr>
@@ -2416,10 +2608,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10423"
@@ -2435,7 +2650,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 11:13 AM
+                    01 Nov, 11:13 AM
                   </p>
                 </td>
                 <td
@@ -2510,7 +2725,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $25,50
+                    $2,550,00
                   </p>
                 </td>
               </tr>
@@ -2523,10 +2738,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10424"
@@ -2542,7 +2780,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 12:20 PM
+                    01 Nov, 12:20 PM
                   </p>
                 </td>
                 <td
@@ -2624,7 +2862,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $19,40
+                    $1,940,00
                   </p>
                 </td>
               </tr>
@@ -2637,10 +2875,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10425"
@@ -2656,7 +2917,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 12:20 PM
+                    01 Nov, 12:20 PM
                   </p>
                 </td>
                 <td
@@ -2738,7 +2999,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $44,90
+                    $4,490,00
                   </p>
                 </td>
               </tr>
@@ -2751,10 +3012,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10426"
@@ -2770,7 +3054,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 2:19 PM
+                    01 Nov, 02:19 PM
                   </p>
                 </td>
                 <td
@@ -2845,7 +3129,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $112,50
+                    $11,250,00
                   </p>
                 </td>
               </tr>
@@ -2858,10 +3142,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10427"
@@ -2877,7 +3184,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    1 Nov, 3:42 AM
+                    01 Nov, 03:42 AM
                   </p>
                 </td>
                 <td
@@ -2952,7 +3259,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $200,00
+                    $20,000,00
                   </p>
                 </td>
               </tr>
@@ -2965,10 +3272,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10428"
@@ -2984,7 +3314,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 9:32 AM
+                    02 Nov, 09:32 AM
                   </p>
                 </td>
                 <td
@@ -3059,7 +3389,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $350,00
+                    $35,000,00
                   </p>
                 </td>
               </tr>
@@ -3072,10 +3402,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10429"
@@ -3091,7 +3444,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 10:14 AM
+                    02 Nov, 10:14 AM
                   </p>
                 </td>
                 <td
@@ -3173,7 +3526,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $15,00
+                    $1,500,00
                   </p>
                 </td>
               </tr>
@@ -3186,10 +3539,33 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <div
                     class="tremor-Flex-root flex w-full flex-row items-center justify-start ml-2"
                   >
-                    <input
-                      class="w-5 h-5 accent-primary checked:bg-blue-500 rounded-3xl"
-                      type="checkbox"
-                    />
+                    <div
+                      class="relative inline-flex items-center"
+                    >
+                      <input
+                        class="before:content[''] peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-primary hover:before:opacity-10"
+                        type="checkbox"
+                      />
+                      <span
+                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"
+                      >
+                        <svg
+                          baseProfile="tiny"
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          version="1.2"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.972 6.251c-.967-.538-2.185-.188-2.72.777l-3.713 6.682-2.125-2.125c-.781-.781-2.047-.781-2.828 0-.781.781-.781 2.047 0 2.828l4 4c.378.379.888.587 1.414.587l.277-.02c.621-.087 1.166-.46 1.471-1.009l5-9c.537-.966.189-2.183-.776-2.72z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
                     <a
                       class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
                       href="/order-list/10430"
@@ -3205,7 +3581,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-dagte"
                   >
-                    2 Nov, 10:14 AM
+                    02 Nov, 10:14 AM
                   </p>
                 </td>
                 <td
@@ -3287,96 +3663,12 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    $25,00
+                    $2,500,00
                   </p>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <div
-          class="tremor-Flex-root flex-row antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
-        >
-          <div
-            class="tremor-Flex-root flex-row flex flex-wrap items-center justify-between w-full"
-          >
-            <div
-              class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
-            >
-              <p
-                class="text-sm text-secondary"
-              >
-                Showing 
-                <span
-                  class="font-normal"
-                >
-                  1
-                </span>
-                 to
-                 
-                <span
-                  class="font-normal"
-                >
-                  10
-                </span>
-                 of
-                 
-                <span
-                  class="font-normal"
-                >
-                  12
-                </span>
-                 entries
-              </p>
-            </div>
-            <div
-              class="tremor-Flex-root flex flex-row justify-between items-center w-auto py-2"
-            >
-              <nav
-                aria-label="Pagination"
-                class="isolate inline-flex -space-x-px gap-2"
-              >
-                <a
-                  class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 z-10  bg-gradient-item-page dark:bg-gradient-item-page text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 shadow-item-pagination dark:shadow-item-pagination"
-                  href="#"
-                >
-                  1
-                </a>
-                <a
-                  class="relative inline-flex items-center justify-center rounded-full w-[36px] h-[36px] text-sm font-normal focus:z-20 text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-offset-0 hover:bg-body hover:!text-primary dark:text-white"
-                  href="#"
-                >
-                  2
-                </a>
-                <button
-                  class="relative inline-flex items-center rounded-full px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-body focus:z-20 focus:outline-offset-0"
-                >
-                  <span
-                    class="sr-only"
-                  >
-                    Next
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="h-5 w-5 p-[3px]"
-                    fill="none"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <polyline
-                      points="9 18 15 12 9 6"
-                    />
-                  </svg>
-                </button>
-              </nav>
-            </div>
-          </div>
         </div>
       </div>
     </div>

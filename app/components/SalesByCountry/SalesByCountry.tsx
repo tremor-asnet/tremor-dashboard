@@ -23,6 +23,8 @@ const SalesByCountry = ({
   data,
 }: SalesByCountryProps) => {
   const listData = isAnalytics ? data.slice(0, -1) : data;
+  const titleClass = isAnalytics ? "ml-[6.5rem]" : "ml-4";
+  const tableContainerClass = isAnalytics ? "px-4 md:py-5" : "px-0 md:py-4";
 
   return (
     <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0">
@@ -33,25 +35,21 @@ const SalesByCountry = ({
           </Flex>
         )}
         <Flex
-          className={`flex-col items-start justify-start mt-4 ${
-            isAnalytics ? "ml-[6.5rem]" : "ml-4"
-          }`}>
+          className={`flex-col items-start justify-start mt-4 ${titleClass}`}>
           <Title className="text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]">
             {title}
           </Title>
         </Flex>
       </Flex>
       <Flex
-        className={`relative mt-6 md:mt-0 py-0 flex-col md:flex-row ${
-          isAnalytics ? "px-4 md:py-5" : "px-0 md:py-4"
-        }`}>
+        className={`relative mt-6 md:mt-0 py-0 flex-col md:flex-row ${tableContainerClass}`}>
         <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
           <Flex className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
             <Table className="w-full">
               <TableBody className="last-child:border-black">
                 {listData.map(item => (
                   <SalesByCountryRow
-                    key={item.id}
+                    key={`${item.id}`}
                     data={item}
                     isAnalytics={isAnalytics}
                   />

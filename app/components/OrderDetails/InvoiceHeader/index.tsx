@@ -34,3 +34,5 @@ export const InvoiceHeader = ({
     </Flex>
   );
 };
+
+export default InvoiceHeader;

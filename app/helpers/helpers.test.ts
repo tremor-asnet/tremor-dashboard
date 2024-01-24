@@ -6,6 +6,7 @@ import {
   getErrorMessage,
   isEmpty,
   formattedNumber,
+  formatDateTime,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -146,5 +147,20 @@ describe("formattedNumber function", () => {
   test("formats number without currency and decimal", () => {
     const result = formattedNumber({ value: 23000 });
     expect(result).toBe("23,000");
+  });
+});
+
+describe("formatDateTime function", () => {
+  it("should format date and time without separator", () => {
+    const dateValue = "2022-01-23T12:34:56";
+    const formattedDate = formatDateTime(dateValue);
+    expect(formattedDate).toBe("23 Jan 12:34 PM");
+  });
+
+  it("should format date and time with a separator", () => {
+    const dateValue = "2022-01-23T12:34:56";
+    const separator = ",";
+    const formattedDate = formatDateTime(dateValue, separator);
+    expect(formattedDate).toBe("23 Jan, 12:34 PM");
   });
 });

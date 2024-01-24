@@ -1,18 +1,16 @@
 "use client";
 
-// Components
-import { Flex, Bold } from "@tremor/react";
+import { METADATA } from "@/constants";
+// Import libs
+import { Flex } from "@tremor/react";
 import Image from "next/image";
 
-// Constants
-import { METADATA } from "@/constants";
-
-const PaymentDetails = () => {
+const PaymentDetails = ({ cardLast4Digit }: { cardLast4Digit: string }) => {
   return (
-    <>
-      <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
+    <div>
+      <h6 className="text-tremor-content-title dark:text-dark-primary font-bold">
         Payment Details
-      </Bold>
+      </h6>
       <Flex
         alignItems="center"
         className="p-6 mt-4 border-[#dee2e6] rounded-lg border">
@@ -24,9 +22,9 @@ const PaymentDetails = () => {
             width="38"
             height="28"
           />
-          <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
-            **** **** **** 7852
-          </Bold>
+          <h6 className="text-tremor-content-title dark:text-dark-primary font-bold">
+            **** **** **** {cardLast4Digit}
+          </h6>
         </Flex>
         <div className="group">
           <span className="invisible absolute rounded-md bg-black text-white group-hover:visible p-2 text-xs -translate-x-1/2 translate-y-10 w-42">
@@ -37,7 +35,7 @@ const PaymentDetails = () => {
           </button>
         </div>
       </Flex>
-    </>
+    </div>
   );
 };
 

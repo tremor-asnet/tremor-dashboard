@@ -119,7 +119,7 @@ exports[`Order Row Testing should match snapshot 1`] = `
           <p
             class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
           >
-            $2,165,454,00
+            $revenue
           </p>
         </td>
       </tr>
@@ -240,7 +240,7 @@ exports[`Order Row Testing should match snapshot 1`] = `
         <p
           class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
         >
-          $2,165,454,00
+          $revenue
         </p>
       </td>
     </tr>

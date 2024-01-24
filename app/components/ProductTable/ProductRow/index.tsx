@@ -1,8 +1,13 @@
+// Components
 import Checkbox from "@/components/common/Checkbox";
-import { Product } from "@/types";
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import Image from "next/image";
 
+// Constants
+import { SEPARATOR } from "@/constants";
+
+// Helpers
+import { formatDateTime } from "@/helpers";
 interface ProductRowProps {
   id: string;
   image: string;
@@ -58,7 +63,9 @@ const ProductRow = ({
         <h6 className="text-xs font-semibold">{providerName}</h6>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-        <h6 className="text-xs font-semibold">{createdAt}</h6>
+        <h6 className="text-xs font-semibold">
+          {formatDateTime(createdAt, SEPARATOR.COMMAS)}
+        </h6>
       </TableCell>
     </TableRow>
   );

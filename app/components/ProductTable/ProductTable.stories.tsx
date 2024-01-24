@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import ProductTable from "./ProductTable";
 
 // Mock data
-import { TABLE_LIST_DATA } from "@/mocks";
+import { MOCK_PRODUCTS } from "@/mocks";
 
 const meta = {
   title: "Components/TableList",
@@ -17,5 +17,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <ProductTable data={TABLE_LIST_DATA} />,
+  render: () => <ProductTable data={MOCK_PRODUCTS} />,
 };

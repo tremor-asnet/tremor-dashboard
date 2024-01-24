@@ -1,3 +1,4 @@
+// Components
 import { HeaderCellContents } from "@/components";
 import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 

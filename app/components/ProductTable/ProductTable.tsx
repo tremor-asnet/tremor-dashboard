@@ -1,5 +1,6 @@
 "use client";
 
+// Components
 import {
   Card,
   Flex,
@@ -9,14 +10,15 @@ import {
   TableCell,
   TableRow,
 } from "@tremor/react";
-import Link from "next/link";
-
-//Types
-import { Product } from "@/types";
+import Pagination from "@/components/common/Pagination";
 import TableHeading from "./TableHeading";
 import ProductRow from "./ProductRow";
+
+// Types
+import { Product } from "@/types";
+
+// React hooks
 import { useEffect, useMemo, useState } from "react";
-import Pagination from "../common/Pagination";
 
 export interface ProductTableProps {
   data: Product[];

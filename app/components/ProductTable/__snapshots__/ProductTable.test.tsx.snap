@@ -530,6 +530,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        230019
                       </p>
                     </div>
                   </td>
@@ -540,17 +541,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Christopher Knight Home"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Christopher Knight Home
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -560,6 +566,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      89.53
                     </h6>
                   </td>
                   <td
@@ -568,7 +575,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -576,7 +583,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider A
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -584,7 +593,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 10:20 AM
+                      22 Nov, 11:01 AM
                     </h6>
                   </td>
                 </tr>
@@ -628,6 +637,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        87120
                       </p>
                     </div>
                   </td>
@@ -638,17 +648,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Bar Height Swivel Barstool"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Bar Height Swivel Barstool
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -658,6 +673,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      99.99
                     </h6>
                   </td>
                   <td
@@ -666,7 +682,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -674,7 +690,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider B
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -682,7 +700,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 10:53 AM
+                      09 Jan, 09:00 AM
                     </h6>
                   </td>
                 </tr>
@@ -726,6 +744,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        001992
                       </p>
                     </div>
                   </td>
@@ -736,17 +755,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Modern Square"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Modern Square
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -756,6 +780,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      59.99
                     </h6>
                   </td>
                   <td
@@ -772,7 +797,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider C
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -780,7 +807,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 11:13 AM
+                      09 Aug, 06:55 AM
                     </h6>
                   </td>
                 </tr>
@@ -824,6 +851,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        412301
                       </p>
                     </div>
                   </td>
@@ -834,17 +862,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Signature Design by Ashley"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Signature Design by Ashley
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -854,6 +887,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      129
                     </h6>
                   </td>
                   <td
@@ -862,7 +896,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -870,7 +904,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider B
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -878,7 +914,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 12:20 PM
+                      19 Feb, 09:08 AM
                     </h6>
                   </td>
                 </tr>
@@ -922,6 +958,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        876543
                       </p>
                     </div>
                   </td>
@@ -932,17 +969,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Product Name X"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Product Name X
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -952,6 +994,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      56.99
                     </h6>
                   </td>
                   <td
@@ -968,7 +1011,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider Y
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -976,7 +1021,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 12:20 PM
+                      23 Jan, 10:04 AM
                     </h6>
                   </td>
                 </tr>
@@ -1020,6 +1065,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        123123
                       </p>
                     </div>
                   </td>
@@ -1030,17 +1076,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Product Name 5"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Product Name 5
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -1050,6 +1101,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      45
                     </h6>
                   </td>
                   <td
@@ -1058,7 +1110,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -1066,7 +1118,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider 5
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -1074,7 +1128,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 2:19 PM
+                      23 Jan, 10:05 AM
                     </h6>
                   </td>
                 </tr>
@@ -1118,6 +1172,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        230019
                       </p>
                     </div>
                   </td>
@@ -1128,17 +1183,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Christopher Knight Home"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Christopher Knight Home
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -1148,6 +1208,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      89.53
                     </h6>
                   </td>
                   <td
@@ -1156,7 +1217,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -1164,7 +1225,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider A
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -1172,7 +1235,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      1 Nov, 3:42 AM
+                      01 Nov, 10:20 AM
                     </h6>
                   </td>
                 </tr>
@@ -1216,6 +1279,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        87120
                       </p>
                     </div>
                   </td>
@@ -1226,17 +1290,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Bar Height Swivel Barstool"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Bar Height Swivel Barstool
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -1246,6 +1315,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      99.99
                     </h6>
                   </td>
                   <td
@@ -1254,7 +1324,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -1262,7 +1332,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider B
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -1270,7 +1342,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      2 Nov, 9:32 AM
+                      01 Nov, 10:26 AM
                     </h6>
                   </td>
                 </tr>
@@ -1314,6 +1386,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        1992
                       </p>
                     </div>
                   </td>
@@ -1324,17 +1397,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Modern Square"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Modern Square
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -1344,6 +1422,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      59.99
                     </h6>
                   </td>
                   <td
@@ -1360,7 +1439,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider C
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -1368,7 +1449,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      2 Nov, 10:14 AM
+                      01 Nov, 11:22 AM
                     </h6>
                   </td>
                 </tr>
@@ -1412,6 +1493,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
+                        412301
                       </p>
                     </div>
                   </td>
@@ -1422,17 +1504,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="flex items-center gap-4"
                     >
                       <img
+                        alt="Signature Design by Ashley"
                         class="w-10 h-10 rounded-full"
                         data-nimg="1"
                         decoding="async"
                         height="40"
-                        src=""
+                        loading="lazy"
+                        src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75 2x"
                         style="color: transparent;"
                         width="40"
                       />
                       <h6
                         class="text-xs font-semibold"
-                      />
+                      >
+                        Signature Design by Ashley
+                      </h6>
                     </div>
                   </td>
                   <td
@@ -1442,6 +1529,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-xs font-semibold"
                     >
                       $ 
+                      129
                     </h6>
                   </td>
                   <td
@@ -1450,7 +1538,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      No
+                      Yes
                     </h6>
                   </td>
                   <td
@@ -1458,7 +1546,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   >
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Provider A
+                    </h6>
                   </td>
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -1466,12 +1556,149 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     <h6
                       class="text-xs font-semibold"
                     >
-                      2 Nov, 10:14 AM
+                      01 Nov, 01:00 PM
                     </h6>
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div
+            class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+          >
+            <div
+              class="flex w-auto py-2"
+            >
+              <p
+                class="text-sm text-secondary"
+              >
+                Showing
+                 
+                <span
+                  class="font-normal"
+                >
+                  1
+                </span>
+                 
+                to
+                 
+                <span
+                  class="font-normal"
+                >
+                  10
+                </span>
+                 
+                of 
+                <span
+                  class="font-normal"
+                >
+                  66
+                </span>
+                 entries
+              </p>
+            </div>
+            <div
+              class="flex gap-2 justify-end items-center"
+            >
+              <button
+                aria-label="Previous page button"
+                class="btn-paginate hidden"
+                data-testid="prev-page-button"
+                disabled=""
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                aria-label="Page button 1"
+                class="btn-paginate-active"
+                disabled=""
+              >
+                1
+              </button>
+              <button
+                aria-label="Page button 2"
+                class="btn-paginate"
+              >
+                2
+              </button>
+              <button
+                aria-label="Page button 3"
+                class="btn-paginate"
+              >
+                3
+              </button>
+              <button
+                aria-label="Page button 4"
+                class="btn-paginate"
+              >
+                4
+              </button>
+              <button
+                aria-label="Page button 5"
+                class="btn-paginate"
+              >
+                5
+              </button>
+              <svg
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 15 15"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M3.625 7.5C3.625 8.12132 3.12132 8.625 2.5 8.625C1.87868 8.625 1.375 8.12132 1.375 7.5C1.375 6.87868 1.87868 6.375 2.5 6.375C3.12132 6.375 3.625 6.87868 3.625 7.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM12.5 8.625C13.1213 8.625 13.625 8.12132 13.625 7.5C13.625 6.87868 13.1213 6.375 12.5 6.375C11.8787 6.375 11.375 6.87868 11.375 7.5C11.375 8.12132 11.8787 8.625 12.5 8.625Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              <button
+                aria-label="Page button 7"
+                class="btn-paginate"
+              >
+                7
+              </button>
+              <button
+                aria-label="Next page button"
+                class="btn-paginate "
+                data-testid="next-page-button"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -2003,6 +2230,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      230019
                     </p>
                   </div>
                 </td>
@@ -2013,17 +2241,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Christopher Knight Home"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Christopher Knight Home
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2033,6 +2266,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    89.53
                   </h6>
                 </td>
                 <td
@@ -2041,7 +2275,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2049,7 +2283,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider A
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2057,7 +2293,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 10:20 AM
+                    22 Nov, 11:01 AM
                   </h6>
                 </td>
               </tr>
@@ -2101,6 +2337,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      87120
                     </p>
                   </div>
                 </td>
@@ -2111,17 +2348,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Bar Height Swivel Barstool"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Bar Height Swivel Barstool
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2131,6 +2373,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    99.99
                   </h6>
                 </td>
                 <td
@@ -2139,7 +2382,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2147,7 +2390,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider B
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2155,7 +2400,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 10:53 AM
+                    09 Jan, 09:00 AM
                   </h6>
                 </td>
               </tr>
@@ -2199,6 +2444,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      001992
                     </p>
                   </div>
                 </td>
@@ -2209,17 +2455,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Modern Square"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Modern Square
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2229,6 +2480,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    59.99
                   </h6>
                 </td>
                 <td
@@ -2245,7 +2497,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider C
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2253,7 +2507,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 11:13 AM
+                    09 Aug, 06:55 AM
                   </h6>
                 </td>
               </tr>
@@ -2297,6 +2551,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      412301
                     </p>
                   </div>
                 </td>
@@ -2307,17 +2562,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Signature Design by Ashley"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Signature Design by Ashley
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2327,6 +2587,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    129
                   </h6>
                 </td>
                 <td
@@ -2335,7 +2596,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2343,7 +2604,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider B
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2351,7 +2614,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 12:20 PM
+                    19 Feb, 09:08 AM
                   </h6>
                 </td>
               </tr>
@@ -2395,6 +2658,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      876543
                     </p>
                   </div>
                 </td>
@@ -2405,17 +2669,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Product Name X"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Product Name X
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2425,6 +2694,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    56.99
                   </h6>
                 </td>
                 <td
@@ -2441,7 +2711,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider Y
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2449,7 +2721,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 12:20 PM
+                    23 Jan, 10:04 AM
                   </h6>
                 </td>
               </tr>
@@ -2493,6 +2765,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      123123
                     </p>
                   </div>
                 </td>
@@ -2503,17 +2776,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Product Name 5"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Product Name 5
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2523,6 +2801,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    45
                   </h6>
                 </td>
                 <td
@@ -2531,7 +2810,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2539,7 +2818,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider 5
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2547,7 +2828,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 2:19 PM
+                    23 Jan, 10:05 AM
                   </h6>
                 </td>
               </tr>
@@ -2591,6 +2872,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      230019
                     </p>
                   </div>
                 </td>
@@ -2601,17 +2883,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Christopher Knight Home"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Christopher Knight Home
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2621,6 +2908,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    89.53
                   </h6>
                 </td>
                 <td
@@ -2629,7 +2917,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2637,7 +2925,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider A
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2645,7 +2935,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    1 Nov, 3:42 AM
+                    01 Nov, 10:20 AM
                   </h6>
                 </td>
               </tr>
@@ -2689,6 +2979,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      87120
                     </p>
                   </div>
                 </td>
@@ -2699,17 +2990,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Bar Height Swivel Barstool"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Bar Height Swivel Barstool
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2719,6 +3015,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    99.99
                   </h6>
                 </td>
                 <td
@@ -2727,7 +3024,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2735,7 +3032,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider B
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2743,7 +3042,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    2 Nov, 9:32 AM
+                    01 Nov, 10:26 AM
                   </h6>
                 </td>
               </tr>
@@ -2787,6 +3086,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      1992
                     </p>
                   </div>
                 </td>
@@ -2797,17 +3097,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Modern Square"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Modern Square
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2817,6 +3122,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    59.99
                   </h6>
                 </td>
                 <td
@@ -2833,7 +3139,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider C
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2841,7 +3149,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    2 Nov, 10:14 AM
+                    01 Nov, 11:22 AM
                   </h6>
                 </td>
               </tr>
@@ -2885,6 +3193,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
+                      412301
                     </p>
                   </div>
                 </td>
@@ -2895,17 +3204,22 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="flex items-center gap-4"
                   >
                     <img
+                      alt="Signature Design by Ashley"
                       class="w-10 h-10 rounded-full"
                       data-nimg="1"
                       decoding="async"
                       height="40"
-                      src=""
+                      loading="lazy"
+                      src="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=96&q=75 2x"
                       style="color: transparent;"
                       width="40"
                     />
                     <h6
                       class="text-xs font-semibold"
-                    />
+                    >
+                      Signature Design by Ashley
+                    </h6>
                   </div>
                 </td>
                 <td
@@ -2915,6 +3229,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                     class="text-xs font-semibold"
                   >
                     $ 
+                    129
                   </h6>
                 </td>
                 <td
@@ -2923,7 +3238,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    No
+                    Yes
                   </h6>
                 </td>
                 <td
@@ -2931,7 +3246,9 @@ exports[`Testing table list component Should match snapshot 1`] = `
                 >
                   <h6
                     class="text-xs font-semibold"
-                  />
+                  >
+                    Provider A
+                  </h6>
                 </td>
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
@@ -2939,12 +3256,149 @@ exports[`Testing table list component Should match snapshot 1`] = `
                   <h6
                     class="text-xs font-semibold"
                   >
-                    2 Nov, 10:14 AM
+                    01 Nov, 01:00 PM
                   </h6>
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <div
+          class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+        >
+          <div
+            class="flex w-auto py-2"
+          >
+            <p
+              class="text-sm text-secondary"
+            >
+              Showing
+               
+              <span
+                class="font-normal"
+              >
+                1
+              </span>
+               
+              to
+               
+              <span
+                class="font-normal"
+              >
+                10
+              </span>
+               
+              of 
+              <span
+                class="font-normal"
+              >
+                66
+              </span>
+               entries
+            </p>
+          </div>
+          <div
+            class="flex gap-2 justify-end items-center"
+          >
+            <button
+              aria-label="Previous page button"
+              class="btn-paginate hidden"
+              data-testid="prev-page-button"
+              disabled=""
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Page button 1"
+              class="btn-paginate-active"
+              disabled=""
+            >
+              1
+            </button>
+            <button
+              aria-label="Page button 2"
+              class="btn-paginate"
+            >
+              2
+            </button>
+            <button
+              aria-label="Page button 3"
+              class="btn-paginate"
+            >
+              3
+            </button>
+            <button
+              aria-label="Page button 4"
+              class="btn-paginate"
+            >
+              4
+            </button>
+            <button
+              aria-label="Page button 5"
+              class="btn-paginate"
+            >
+              5
+            </button>
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M3.625 7.5C3.625 8.12132 3.12132 8.625 2.5 8.625C1.87868 8.625 1.375 8.12132 1.375 7.5C1.375 6.87868 1.87868 6.375 2.5 6.375C3.12132 6.375 3.625 6.87868 3.625 7.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM12.5 8.625C13.1213 8.625 13.625 8.12132 13.625 7.5C13.625 6.87868 13.1213 6.375 12.5 6.375C11.8787 6.375 11.375 6.87868 11.375 7.5C11.375 8.12132 11.8787 8.625 12.5 8.625Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <button
+              aria-label="Page button 7"
+              class="btn-paginate"
+            >
+              7
+            </button>
+            <button
+              aria-label="Next page button"
+              class="btn-paginate "
+              data-testid="next-page-button"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>

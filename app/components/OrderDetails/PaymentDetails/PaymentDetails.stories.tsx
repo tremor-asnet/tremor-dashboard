@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import PaymentDetails from ".";
+import PaymentDetails from "./PaymentDetails";
 
 const meta = {
   title: "Components/PaymentDetails",
@@ -14,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const PopoverDefault: Story = {
-  render: () => <PaymentDetails />,
+  render: () => <PaymentDetails cardLast4Digit="7852" />,
 };

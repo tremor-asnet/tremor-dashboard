@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 // Components
-import { OrderSummary } from ".";
+import { OrderSummary } from "./OrderSummary";
 
 // Mocks
 import { mockOrderSummary } from "@/mocks/orderDetails";

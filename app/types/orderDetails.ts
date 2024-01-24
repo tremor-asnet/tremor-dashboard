@@ -16,11 +16,13 @@ export interface TrackOrderProps {
   deliveredAt: string;
   transmitedToCourierAt: string;
   generateOrderId: string;
+  status?: number;
 }
 
 export interface BillingInfoProps {
   ownerName: string;
   companyName: string;
+  cardLast4Digit: string;
   email: string;
   vat: string;
 }

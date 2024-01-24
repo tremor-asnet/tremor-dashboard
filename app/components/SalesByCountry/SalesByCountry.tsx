@@ -3,7 +3,7 @@ import { Card, Flex, Table, TableBody, Title } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
 import Image from "next/image";
 
-// Helpers
+// Components
 import { SalesByCountryRow } from "@/components";
 
 // Types

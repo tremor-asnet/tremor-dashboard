@@ -34,7 +34,7 @@ const data: TProductTable = {
       count: 2,
     },
   ],
-  revenue: "revenue",
+  revenue: 2300,
 };
 
 export const PaginationDefault: Story = {

@@ -18,19 +18,18 @@ import ProductRow from "./ProductRow";
 import { Product } from "@/types";
 
 // React hooks
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 export interface ProductTableProps {
   data: Product[];
+  pageSize?: number;
 }
 
-const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
+const ProductTable = ({
+  data,
+  pageSize = 10,
+}: ProductTableProps): JSX.Element => {
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 10;
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [data]);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -76,7 +75,7 @@ const ProductTable = ({ data }: ProductTableProps): JSX.Element => {
           currentPage={currentPage}
           pageSize={pageSize}
           totalCount={data.length}
-          onPageChange={page => setCurrentPage(page)}
+          onPageChange={setCurrentPage}
         />
       </Flex>
     </Card>

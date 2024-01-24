@@ -8,6 +8,7 @@ import { Button, Flex, Text } from "@tremor/react";
 import { MOCK_PRODUCTS } from "@/mocks";
 
 const ProductListPage = () => {
+  // TODO: Update key whenever the filter data change
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex>
@@ -20,7 +21,7 @@ const ProductListPage = () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch onChange={() => {}} />
-        <ProductTable data={MOCK_PRODUCTS} />
+        <ProductTable key={1} data={MOCK_PRODUCTS} />
       </div>
     </Flex>
   );

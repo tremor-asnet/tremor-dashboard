@@ -1,7 +1,7 @@
 // Components
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import Checkbox from "./Checkbox";
+import Checkbox from "@/components/common/Checkbox";
 import Link from "next/link";
 
 // Helper

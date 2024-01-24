@@ -39,7 +39,7 @@ const Pagination = ({
   const lastPage = paginationRange![paginationRange!.length - 1];
 
   return (
-    <div className="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6">
+    <div className="antialiased font-primary flex gap-6 flex-col sm:flex-row items-start sm:items-center w-full justify-between px-4 py-3 sm:px-6">
       <div className="flex w-auto py-2">
         <p className="text-sm text-secondary">
           Showing{" "}

@@ -4,6 +4,7 @@ export type ProductOrder = {
   count: number;
 };
 
+// TODO: This type will be change to interface Order
 export type TProductTable = {
   id: number;
   createdAt: string;

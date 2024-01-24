@@ -5,16 +5,11 @@ import "@testing-library/jest-dom";
 import ProductTable from "./ProductTable";
 
 // Mock data
-import { TABLE_LIST_DATA } from "@/mocks";
+import { MOCK_PRODUCTS } from "@/mocks";
 
 describe("Testing table list component", () => {
-  const propsDefault = {
-    data: TABLE_LIST_DATA,
-    handleCheckBox: jest.fn(),
-  };
-
   it("Should match snapshot", () => {
-    const component = render(<ProductTable {...propsDefault} />);
+    const component = render(<ProductTable data={MOCK_PRODUCTS} />);
     expect(component).toMatchSnapshot();
   });
 });

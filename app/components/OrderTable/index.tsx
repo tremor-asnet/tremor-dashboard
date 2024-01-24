@@ -10,20 +10,24 @@ import { Pagination } from "@/components";
 import { TProductTable } from "@/types";
 import TableHeading from "./TableHeading";
 import OrderRow from "./OrderRow";
+import { useEffect, useState } from "react";
 
 export interface ProductTableProps {
   data: TProductTable[];
 }
 
 const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
+  const [orders, setOrders] = useState<TProductTable[]>([]);
+
   const searchParams = useSearchParams();
   const params = searchParams.get("status");
 
-  const newData = data.filter(
-    (item: TProductTable) => item.status.toString() === params,
-  );
-
-  console.log("new data:", newData);
+  useEffect(() => {
+    const newData = data.filter(
+      (item: TProductTable) => item.status.toString() === params,
+    );
+    params === null ? setOrders(data) : setOrders(newData);
+  }, [params]);
 
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
@@ -31,7 +35,7 @@ const OrderTable = ({ data }: ProductTableProps): JSX.Element => {
         <Table className="w-full">
           <TableHeading />
           <TableBody>
-            {newData.map(item => {
+            {orders.map(item => {
               return (
                 <OrderRow
                   key={item.id}

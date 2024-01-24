@@ -32,3 +32,12 @@ export type SalesByAgeProps = {
   data: SalesByAgeDataProps[];
   title: string;
 };
+
+export interface ISalesByCountry {
+  id: string;
+  flag: string;
+  country: string;
+  sales: number;
+  value: number;
+  bounce: number;
+}

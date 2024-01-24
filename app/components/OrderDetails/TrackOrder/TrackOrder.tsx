@@ -27,8 +27,8 @@ const TrackOrder = ({
     switch (status) {
       case 0:
         return (
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
               <IoMdCheckmark />
             </span>
             <div className="flex flex-col">
@@ -43,8 +43,8 @@ const TrackOrder = ({
         );
       case 1:
         return (
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-red-500 text-sm font-medium text-dark-primary">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-red-500 text-sm font-medium text-dark-primary">
               <RxCross2 />
             </span>
             <div className="flex flex-col">
@@ -60,8 +60,8 @@ const TrackOrder = ({
 
       case 2:
         return (
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-lg font-medium text-dark-primary">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-lg font-medium text-dark-primary">
               <RiRefund2Line />
             </span>
             <div className="flex flex-col">
@@ -77,8 +77,8 @@ const TrackOrder = ({
 
       default:
         return (
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-few text-sm font-medium text-dark-primary">
               <IoMdCheckmark />
             </span>
             <div className="flex flex-col">
@@ -100,9 +100,9 @@ const TrackOrder = ({
         Track order
       </Bold>
       <ul className="relative m-0 w-full p-0 pb-6 tracking-[0.4px]">
-        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
-          <Flex className="justify-start px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+        <li className="relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
               <FaBell />
             </span>
             <div className="flex flex-col">
@@ -113,12 +113,12 @@ const TrackOrder = ({
                 {formatDateTime(generateOrderAt)}
               </span>
             </div>
-          </Flex>
+          </div>
         </li>
 
-        <li className="relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+        <li className="relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:line-content">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
               <MdInventory />
             </span>
             <div className="flex flex-col">
@@ -132,9 +132,9 @@ const TrackOrder = ({
           </div>
         </li>
 
-        <li className="1234 relative h-fit after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty">
-          <div className="flex cursor-pointer items-center px-6 pt-6 leading-[1.3rem] after:line-content">
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
+        <li className="1234 relative h-fit after:absolute after:left-[1.45rem] after:top-[3.6rem] after:mt-[5px] after:line-track after:w-[0.125rem] after:bg-border after:content-empty">
+          <div className="flex cursor-pointer items-start pl-2 pr-6 pt-6 leading-[1.3rem] after:line-content">
+            <span className="mr-3 flex h-8 w-8 min-w-[32px] mt-1 items-center justify-center rounded-full bg-light text-sm font-medium text-dark-primary">
               <IoCart />
             </span>
             <div className="flex flex-col">

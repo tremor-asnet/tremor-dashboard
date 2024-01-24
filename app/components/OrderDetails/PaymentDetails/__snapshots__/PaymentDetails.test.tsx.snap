@@ -5,11 +5,62 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <b
-        class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+      <div>
+        <h6
+          class="text-tremor-content-title dark:text-dark-primary font-bold"
+        >
+          Payment Details
+        </h6>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center p-6 mt-4 border-[#dee2e6] rounded-lg border"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center"
+          >
+            <img
+              alt="master card icon"
+              class="mr-4"
+              data-nimg="1"
+              decoding="async"
+              height="28"
+              loading="lazy"
+              src="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="38"
+            />
+            <h6
+              class="text-tremor-content-title dark:text-dark-primary font-bold"
+            >
+              **** **** **** 
+              7852
+            </h6>
+          </div>
+          <div
+            class="group"
+          >
+            <span
+              class="invisible absolute rounded-md bg-black text-white group-hover:visible p-2 text-xs -translate-x-1/2 translate-y-10 w-42"
+            >
+              We do not store card details
+            </span>
+            <button
+              class="w-6 h-6 text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
+            >
+              !
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <h6
+        class="text-tremor-content-title dark:text-dark-primary font-bold"
       >
         Payment Details
-      </b>
+      </h6>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center p-6 mt-4 border-[#dee2e6] rounded-lg border"
       >
@@ -28,11 +79,12 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
             style="color: transparent;"
             width="38"
           />
-          <b
-            class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+          <h6
+            class="text-tremor-content-title dark:text-dark-primary font-bold"
           >
-            **** **** **** 7852
-          </b>
+            **** **** **** 
+            7852
+          </h6>
         </div>
         <div
           class="group"
@@ -48,52 +100,6 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
             !
           </button>
         </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <b
-      class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
-    >
-      Payment Details
-    </b>
-    <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center p-6 mt-4 border-[#dee2e6] rounded-lg border"
-    >
-      <div
-        class="tremor-Flex-root flex w-full flex-row justify-start items-center"
-      >
-        <img
-          alt="master card icon"
-          class="mr-4"
-          data-nimg="1"
-          decoding="async"
-          height="28"
-          loading="lazy"
-          src="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75"
-          srcset="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75 2x"
-          style="color: transparent;"
-          width="38"
-        />
-        <b
-          class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
-        >
-          **** **** **** 7852
-        </b>
-      </div>
-      <div
-        class="group"
-      >
-        <span
-          class="invisible absolute rounded-md bg-black text-white group-hover:visible p-2 text-xs -translate-x-1/2 translate-y-10 w-42"
-        >
-          We do not store card details
-        </span>
-        <button
-          class="w-6 h-6 text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
-        >
-          !
-        </button>
       </div>
     </div>
   </div>,

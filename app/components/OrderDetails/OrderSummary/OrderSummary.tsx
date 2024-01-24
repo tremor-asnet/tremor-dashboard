@@ -63,3 +63,5 @@ export const OrderSummary = (monies: OrderSummaryProps) => {
     </>
   );
 };
+
+export default OrderSummary;

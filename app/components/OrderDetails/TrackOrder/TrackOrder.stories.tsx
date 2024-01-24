@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import TrackOrder from ".";
+import TrackOrder from "./TrackOrder";
 
 // Mocks
 import { mockTrackOrder } from "@/mocks/orderDetails";

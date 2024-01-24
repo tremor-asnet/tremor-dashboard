@@ -504,12 +504,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10421"
                       >
                         #
                         10421
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -618,12 +619,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10422"
                       >
                         #
                         10422
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -732,12 +734,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10423"
                       >
                         #
                         10423
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -839,12 +842,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10424"
                       >
                         #
                         10424
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -953,12 +957,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10425"
                       >
                         #
                         10425
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -1067,12 +1072,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10426"
                       >
                         #
                         10426
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -1174,12 +1180,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10427"
                       >
                         #
                         10427
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -1281,12 +1288,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10428"
                       >
                         #
                         10428
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -1388,12 +1396,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10429"
                       >
                         #
                         10429
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -1502,12 +1511,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         data-testid="checkbox"
                         type="checkbox"
                       />
-                      <p
-                        class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                      <a
+                        class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                        href="/order-list/10430"
                       >
                         #
                         10430
-                      </p>
+                      </a>
                     </div>
                   </td>
                   <td
@@ -2193,12 +2203,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10421"
                     >
                       #
                       10421
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2307,12 +2318,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10422"
                     >
                       #
                       10422
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2421,12 +2433,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10423"
                     >
                       #
                       10423
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2528,12 +2541,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10424"
                     >
                       #
                       10424
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2642,12 +2656,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10425"
                     >
                       #
                       10425
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2756,12 +2771,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10426"
                     >
                       #
                       10426
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2863,12 +2879,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10427"
                     >
                       #
                       10427
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -2970,12 +2987,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10428"
                     >
                       #
                       10428
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -3077,12 +3095,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10429"
                     >
                       #
                       10429
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td
@@ -3191,12 +3210,13 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       data-testid="checkbox"
                       type="checkbox"
                     />
-                    <p
-                      class="text-tremor-default text-tremor-content ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id"
+                    <a
+                      class="ml-4 text-xs dark:text-white dark:opacity-70 font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                      href="/order-list/10430"
                     >
                       #
                       10430
-                    </p>
+                    </a>
                   </div>
                 </td>
                 <td

@@ -10,21 +10,27 @@ import { formattedNumber } from "@/helpers";
 // Types
 import { ISalesByCountry } from "@/types";
 
-interface SalesByCountryRowProps {
-  data: ISalesByCountry;
+interface SalesByCountryRowProps extends ISalesByCountry {
   isAnalytics: boolean;
 }
 
-const SalesByCountryRow = ({ data, isAnalytics }: SalesByCountryRowProps) => {
+const SalesByCountryRow = ({
+  isAnalytics,
+  id,
+  country,
+  sales,
+  value,
+  bounce,
+}: SalesByCountryRowProps) => {
   return (
-    <TableRow key={data.id} className="border-solid">
+    <TableRow key={id} className="border-solid">
       <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
         <Flex className="items-center">
           <Image
-            src={FLAG_SRC[data.id]}
+            src={FLAG_SRC[id]}
             width="24"
             height="18"
-            alt={data.country}
+            alt={country}
             priority
           />
           <Flex className="items-start flex-col ml-6">
@@ -32,7 +38,7 @@ const SalesByCountryRow = ({ data, isAnalytics }: SalesByCountryRowProps) => {
               Country:
             </Text>
             <Text className="text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-              {data.country}
+              {country}
             </Text>
           </Flex>
         </Flex>
@@ -43,7 +49,7 @@ const SalesByCountryRow = ({ data, isAnalytics }: SalesByCountryRowProps) => {
         </Text>
         <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
           {formattedNumber({
-            value: data.sales,
+            value: sales,
             isDecimalNumber: true,
           })}
         </Text>
@@ -56,7 +62,7 @@ const SalesByCountryRow = ({ data, isAnalytics }: SalesByCountryRowProps) => {
           <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
             <span>
               {formattedNumber({
-                value: data.value,
+                value,
                 currency: CURRENCY.DOLLAR,
               })}
             </span>
@@ -71,7 +77,7 @@ const SalesByCountryRow = ({ data, isAnalytics }: SalesByCountryRowProps) => {
           Bounce:
         </Text>
         <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">
-          <span>{data.bounce}%</span>
+          <span>{bounce}%</span>
         </Text>
       </TableCell>
     </TableRow>

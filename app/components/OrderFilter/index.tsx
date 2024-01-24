@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { RefObject, useState } from "react";
 import { Button, Text } from "@tremor/react";
 
@@ -12,15 +13,21 @@ import { listOption } from "@/constants";
 // Hooks
 import { useOutsideClick } from "@/hooks";
 
-// Components
-import { SelectOption } from "@/components";
-
 interface OrderFilterProps {
   title: string;
 }
 
 const OrderFilter = ({ title }: OrderFilterProps) => {
+  const searchParams = useSearchParams();
+
   const [showListOption, setShowListOption] = useState(false);
+
+  const router = useRouter();
+
+  const newParams = new URLSearchParams(searchParams.toString());
+  const pathName = usePathname();
+  const currentStatus = newParams.get("status");
+
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
   });
@@ -29,7 +36,20 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleClickItem = () => {
+  const handleClickItem = (status: string) => {
+    if (currentStatus !== status) {
+      newParams.set("status", status);
+    }
+
+    const query = newParams ? `${newParams}` : "";
+    router.push(`${pathName}?${query}`);
+
+    setShowListOption(false);
+  };
+
+  const handleRemoveFilter = () => {
+    newParams.delete("status");
+    router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
   };
 
@@ -47,7 +67,25 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>
-          <SelectOption data={listOption} onClickItem={handleClickItem} />
+          <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+            {listOption.map(({ option, value }) => (
+              // TODO: split to component
+              <li
+                key={option}
+                value={value}
+                className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
+                onClick={() => handleClickItem(value.toString())}
+                data-testid="option">
+                Status: {option}
+              </li>
+            ))}
+            <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
+            <li
+              className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary"
+              onClick={handleRemoveFilter}>
+              Remove Filer
+            </li>
+          </ul>
         </div>
       )}
     </div>

@@ -13,6 +13,7 @@ import { TProductTable } from "@/types";
 
 type TSearchParams = {
   query: string;
+  status: string;
 };
 
 const OrderListPage = async ({
@@ -22,7 +23,8 @@ const OrderListPage = async ({
 }) => {
   const orderListData: TProductTable[] = await getOrders();
 
-  const { query } = searchParams || { query: "" };
+  const { query = "" } = searchParams as TSearchParams;
+  const { status = "" } = searchParams as TSearchParams;
 
   let filteredData = orderListData;
 
@@ -34,6 +36,12 @@ const OrderListPage = async ({
         ),
     );
   }
+
+  filteredData = status
+    ? filteredData.filter(
+        (item: TProductTable) => item.status.toString() === status,
+      )
+    : filteredData;
 
   return (
     <Flex flexDirection="col" className="gap-4">

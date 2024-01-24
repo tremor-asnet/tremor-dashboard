@@ -1,10 +1,25 @@
+import dynamic from "next/dynamic";
+
 // Components
-import { InvoiceHeader } from "@/components/OrderDetails/InvoiceHeader";
-import { OrderSummary } from "@/components/OrderDetails/OrderSummary/OrderSummary";
+const InvoiceHeader = dynamic(
+  () => import("@/components/OrderDetails/InvoiceHeader"),
+);
+const OrderSummary = dynamic(
+  () => import("@/components/OrderDetails/OrderSummary/OrderSummary"),
+);
+const PaymentDetails = dynamic(
+  () => import("@/components/OrderDetails/PaymentDetails/PaymentDetails"),
+);
+const BillingInfo = dynamic(
+  () => import("@/components/OrderDetails/BillingInfo/BillingInfo"),
+);
+const OrderContact = dynamic(
+  () => import("@/components/OrderDetails/OrderContact/OrderContact"),
+);
+const TrackOrder = dynamic(
+  () => import("@/components/OrderDetails/TrackOrder/TrackOrder"),
+);
 import { Card, Col, Flex, Grid } from "@tremor/react";
-import { OrderContact, TrackOrder } from "@/components";
-import PaymentDetails from "@/components/OrderDetails/PaymentDetails/PaymentDetails";
-import BillingInfo from "@/components/OrderDetails/BillingInfo/BillingInfo";
 
 // Services
 import { getOrderDetails } from "@/services/ordersServices";
@@ -20,6 +35,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     billingInfo,
     createdAt,
     products,
+    status,
   } = orderDetails;
 
   const {
@@ -53,6 +69,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               name={firstProduct.name}
               url={firstProduct.url}
               date={deliveredAt}
+              status={status}
             />
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>

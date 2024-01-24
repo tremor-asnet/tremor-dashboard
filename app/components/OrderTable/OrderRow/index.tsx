@@ -31,7 +31,7 @@ const OrderRow = ({
           <Link
             href={`${ROUTES.ORDER_LIST}/${id}`}
             className="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
-            #{id}
+            &#35;{id}
           </Link>
         </Flex>
       </TableCell>

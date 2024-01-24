@@ -2,15 +2,18 @@
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
 import Link from "next/link";
+import { orderStatus } from "@/helpers";
 
 const OrderContact = ({
   name,
   url,
   date,
+  status = 0,
 }: {
   name: string;
   url: string;
   date: string;
+  status?: number;
 }) => {
   const firstDay = new Date().getTime();
   const lastDay = new Date(date).getTime();
@@ -33,12 +36,7 @@ const OrderContact = ({
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
             {name}
           </Title>
-          <p className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] tracking-[0.4px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
-            Order was delivered {period} days ago.
-          </p>
-          <p className="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase">
-            delivered
-          </p>
+          {orderStatus(status, period)}
         </Flex>
       </Flex>
       <Flex>

@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ChangeEvent, RefObject, useState } from "react";
+import { RefObject, useState } from "react";
 import { Button, Text } from "@tremor/react";
 
 // Icons

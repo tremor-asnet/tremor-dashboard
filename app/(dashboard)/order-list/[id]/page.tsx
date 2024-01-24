@@ -54,7 +54,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
 
   return (
     <Flex justifyContent="center" className="w-full bg-transparent">
-      <Card className="w-full md:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
+      <Card className="w-full lg:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
         <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-2">
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <InvoiceHeader

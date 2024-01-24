@@ -1564,7 +1564,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
             </table>
           </div>
           <div
-            class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+            class="antialiased font-primary flex gap-6 flex-col sm:flex-row items-start sm:items-center w-full justify-between px-4 py-3 sm:px-6"
           >
             <div
               class="flex w-auto py-2"
@@ -3264,7 +3264,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
           </table>
         </div>
         <div
-          class="antialiased font-primary flex items-center w-full justify-between px-4 py-3 sm:px-6"
+          class="antialiased font-primary flex gap-6 flex-col sm:flex-row items-start sm:items-center w-full justify-between px-4 py-3 sm:px-6"
         >
           <div
             class="flex w-auto py-2"

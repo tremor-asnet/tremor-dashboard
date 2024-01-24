@@ -42,7 +42,7 @@ exports[`Order Row Testing should match snapshot 1`] = `
               </span>
             </div>
             <a
-              class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+              class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
               href="/order-list/1"
             >
               #
@@ -187,7 +187,7 @@ exports[`Order Row Testing should match snapshot 1`] = `
             </span>
           </div>
           <a
-            class="ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+            class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
             href="/order-list/1"
           >
             #

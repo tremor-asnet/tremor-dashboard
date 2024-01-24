@@ -23,8 +23,6 @@ export { default as SalesByAge } from "./SalesByAge/index";
 export { default as SalesByCountry } from "./SalesByCountry/SalesByCountry";
 export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatisticCard";
 export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
-export { default as TrackOrder } from "./OrderDetails/TrackOrder/TrackOrder";
-export { default as Pagination } from "./Pagination/Pagination";
 export { default as ProductTable } from "./ProductTable/ProductTable";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";

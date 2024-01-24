@@ -82,6 +82,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
                   deliveredAt={deliveredAt}
                   generateOrderAt={generateOrderAt}
                   generateOrderId={generateOrderId}
+                  status={status}
                 />
               </div>
               <div className="w-full">

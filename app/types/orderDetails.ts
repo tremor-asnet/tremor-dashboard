@@ -16,6 +16,7 @@ export interface TrackOrderProps {
   deliveredAt: string;
   transmitedToCourierAt: string;
   generateOrderId: string;
+  status?: number;
 }
 
 export interface BillingInfoProps {

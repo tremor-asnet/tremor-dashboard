@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import BillingInfo from ".";
+import BillingInfo from "./BillingInfo";
 
 // Mocks
 import { mockBillingInfo } from "@/mocks/orderDetails";
@@ -18,12 +18,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <BillingInfo
-      ownerName={mockBillingInfo.ownerName}
-      companyName={mockBillingInfo.companyName}
-      email={mockBillingInfo.email}
-      vat={mockBillingInfo.vat}
-    />
-  ),
+  render: () => <BillingInfo billingData={mockBillingInfo} />,
 };

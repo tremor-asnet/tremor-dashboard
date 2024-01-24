@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 // Components
-import TrackOrder from ".";
+import TrackOrder from "./TrackOrder";
 
 // Mocks
 import { mockTrackOrder } from "@/mocks/orderDetails";

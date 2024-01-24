@@ -71,7 +71,7 @@ const DashboardHeader = ({
       <div className="flex items-center">
         <div
           className={`block xl:hidden cursor-pointer ${
-            isAllProjectPage ? "" : "mr-2"
+            isAllProjectPage ? "z-20" : "mr-2"
           }`}
           onClick={toggleSidebar}>
           {isCollapseSidebar ? (

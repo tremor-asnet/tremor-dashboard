@@ -599,7 +599,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      14020
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -712,7 +712,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      4200
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -818,7 +818,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      2550
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -931,7 +931,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      1940
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1044,7 +1044,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      4490
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1150,7 +1150,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      11250
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1256,7 +1256,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      20000
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1362,7 +1362,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      35000
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1475,7 +1475,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      1500
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -1588,7 +1588,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     <p
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                     >
-                      2500
+                      $2,165,454,00
                     </p>
                   </td>
                 </tr>
@@ -2278,7 +2278,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    14020
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2391,7 +2391,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    4200
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2497,7 +2497,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    2550
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2610,7 +2610,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    1940
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2723,7 +2723,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    4490
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2829,7 +2829,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    11250
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -2935,7 +2935,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    20000
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -3041,7 +3041,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    35000
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -3154,7 +3154,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    1500
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>
@@ -3267,7 +3267,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   <p
                     class="text-tremor-default text-tremor-content dark:text-dark-tremor-content text-xs font-semibold leading-[15px] tracking-[0.4px] order-revenue"
                   >
-                    2500
+                    $2,165,454,00
                   </p>
                 </td>
               </tr>

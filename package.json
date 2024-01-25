@@ -43,7 +43,6 @@
     "@testing-library/react": "^14.1.2",
     "@types/bcrypt": "^5.0.1",
     "@types/jest": "^29.5.10",
-    "@types/lodash.get": "^4.4.9",
     "@types/node": "^20",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.14",
@@ -90,4 +89,3 @@
     ]
   }
 }
-

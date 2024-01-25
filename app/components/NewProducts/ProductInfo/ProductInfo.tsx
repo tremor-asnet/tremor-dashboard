@@ -151,7 +151,7 @@ const ProductInfo = () => {
               <Controller
                 control={control}
                 render={() => (
-                  <div className="h-[70px] w-full min-w-[290px]">
+                  <div className="h-[70px] w-full">
                     <Select
                       placeholder="Small"
                       className="select-custom dark:text-white dark:bg-transparent">

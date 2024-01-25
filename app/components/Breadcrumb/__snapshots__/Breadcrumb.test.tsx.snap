@@ -36,7 +36,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
         /
       </li>
       <li
-        class="flex gap-2 bc-link false text-sm capitalize text-tremor-content-title dark:text-dark-tremor-content-title  tracking-[0.02857em] leading-[0]"
+        class="flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] leading-[0] false text-tremor-content-title dark:text-dark-tremor-content-title  "
       >
         <a
           href="/analytics"

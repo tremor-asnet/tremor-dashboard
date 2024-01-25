@@ -2,16 +2,19 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import DataTable from ".";
+import DataGrid from ".";
 
 // Types
 import { ColumnType, TOrder } from "@/types";
 
+// Constants
+import { STATUS_TEXT } from "@/constants";
+
 const meta = {
-  title: "Components/common/DataTable",
+  title: "Components/common/DataGrid",
   tags: ["autodocs"],
-  component: DataTable,
-} as Meta<typeof DataTable>;
+  component: DataGrid,
+} as Meta<typeof DataGrid>;
 
 export default meta;
 
@@ -92,8 +95,19 @@ const columns: ColumnType<TOrder>[] = [
     key: "created_at",
     title: "Date",
   },
+  {
+    key: "status",
+    title: "Status",
+    customNode: (_, { status }) => (
+      <div className="flex justify-start text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+        <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+          {STATUS_TEXT[status]}
+        </p>
+      </div>
+    ),
+  },
 ];
 
 export const DataTableDefault: Story = {
-  render: () => <DataTable data={data} columns={columns} />,
+  render: () => <DataGrid data={data} columns={columns} />,
 };

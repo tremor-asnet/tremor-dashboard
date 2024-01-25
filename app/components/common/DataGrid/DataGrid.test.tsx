@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 //Components
-import DataTable from ".";
+import DataGrid from ".";
 
 // Types
 import { TOrder, ColumnType } from "@/types";
@@ -85,7 +85,7 @@ describe("Data Table Testing", () => {
   ];
 
   it("should match snapshot", () => {
-    const { container } = render(<DataTable data={data} columns={columns} />);
+    const { container } = render(<DataGrid data={data} columns={columns} />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -9,7 +9,7 @@ interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
 }
 
-const DataTableHeader = <T,>({ columns }: DataTableHeaderProps<T>) => (
+const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => (
   <TableHead>
     <TableRow>
       {columns.map(column => (
@@ -23,4 +23,4 @@ const DataTableHeader = <T,>({ columns }: DataTableHeaderProps<T>) => (
   </TableHead>
 );
 
-export default DataTableHeader;
+export default DataGridHeader;

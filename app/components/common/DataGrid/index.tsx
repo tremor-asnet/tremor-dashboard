@@ -3,8 +3,8 @@
 // Components
 import { ColumnType } from "@/types";
 import { Card, Table } from "@tremor/react";
-import DataTableHeader from "./DataTableHeader";
-import DataTableBody from "./DataTableBody";
+import DataGridHeader from "./DataGridHeader";
+import DataGridBody from "./DataGridBody";
 import Pagination from "../Pagination";
 
 // Hooks
@@ -16,7 +16,7 @@ interface DataTableProps<T> {
   pageSize?: number;
 }
 
-const DataTable = <T,>({ data, columns, pageSize = 10 }: DataTableProps<T>) => {
+const DataGrid = <T,>({ data, columns, pageSize = 10 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const currentTableData = useMemo(() => {
@@ -29,8 +29,8 @@ const DataTable = <T,>({ data, columns, pageSize = 10 }: DataTableProps<T>) => {
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
-          <DataTableHeader columns={columns} />
-          <DataTableBody columns={columns} data={currentTableData} />
+          <DataGridHeader columns={columns} />
+          <DataGridBody columns={columns} data={currentTableData} />
         </Table>
         <Pagination
           currentPage={currentPage}
@@ -43,4 +43,4 @@ const DataTable = <T,>({ data, columns, pageSize = 10 }: DataTableProps<T>) => {
   );
 };
 
-export default DataTable;
+export default DataGrid;

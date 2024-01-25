@@ -135,11 +135,11 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Clothing"
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      <SelectItem value="1">Clothing</SelectItem>
-                      <SelectItem value="2">Electronics</SelectItem>
-                      <SelectItem value="3">Furniture</SelectItem>
-                      <SelectItem value="4">Others</SelectItem>
-                      <SelectItem value="5">Real Estate</SelectItem>
+                      <SelectItem value="Clothing">Clothing</SelectItem>
+                      <SelectItem value="Electronics">Electronics</SelectItem>
+                      <SelectItem value="Furniture">Furniture</SelectItem>
+                      <SelectItem value="Others">Others</SelectItem>
+                      <SelectItem value="Real Estate">Real Estate</SelectItem>
                     </Select>
                   </div>
                 )}
@@ -155,11 +155,11 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Small"
                       className="select-custom dark:text-white dark:bg-transparent">
-                      <SelectItem value="1">Extra Large</SelectItem>
-                      <SelectItem value="2">Extra Small</SelectItem>
-                      <SelectItem value="3">Large</SelectItem>
-                      <SelectItem value="4">Medium</SelectItem>
-                      <SelectItem value="5">Small</SelectItem>
+                      <SelectItem value="Extra Large">Extra Large</SelectItem>
+                      <SelectItem value="Extra Small">Extra Small</SelectItem>
+                      <SelectItem value="Large">Large</SelectItem>
+                      <SelectItem value="Medium">Medium</SelectItem>
+                      <SelectItem value="Small">Small</SelectItem>
                     </Select>
                   </div>
                 )}

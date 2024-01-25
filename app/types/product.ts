@@ -12,8 +12,8 @@ export interface Product {
 export type TProductInfo = {
   id: string;
   name: string;
-  description: string;
-  weight: string;
-  category: string;
-  size: string;
+  description?: string;
+  weight?: string;
+  category?: string;
+  size?: string;
 };

@@ -1,14 +1,18 @@
-"use client";
-
 // Components
-import { ProductTable, OrderFilter, InputSearch } from "@/components";
+import { ProductTable, OrderFilter, OrderSearch } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
-// Mocks
-import { MOCK_PRODUCTS } from "@/mocks";
+// Services
+import { getProducts } from "@/services/productServices";
 
-const ProductListPage = () => {
+// Types
+import { Product } from "@/types";
+
+const ProductListPage = async () => {
   // TODO: Update key whenever the filter data change
+
+  const productListData: Product[] = await getProducts();
+
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex>
@@ -20,8 +24,8 @@ const ProductListPage = () => {
         <OrderFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch onChange={() => {}} />
-        <ProductTable key={1} data={MOCK_PRODUCTS} />
+        <OrderSearch />
+        <ProductTable key={1} data={productListData} />
       </div>
     </Flex>
   );

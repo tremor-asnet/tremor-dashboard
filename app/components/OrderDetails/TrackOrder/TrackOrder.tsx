@@ -10,7 +10,7 @@ import { RxCross2 } from "react-icons/rx";
 import { RiRefund2Line } from "react-icons/ri";
 
 // Types
-import { TrackOrderProps } from "@/types/orderDetails";
+import { TrackOrderData } from "@/types";
 
 // Helpers
 import { formatDateTime } from "@/helpers";
@@ -22,7 +22,7 @@ const TrackOrder = ({
   deliveredAt,
   generateOrderAt,
   status = 0,
-}: TrackOrderProps) => {
+}: TrackOrderData) => {
   const trackingOrder = (status: number, date: string) => {
     switch (status) {
       case 0:

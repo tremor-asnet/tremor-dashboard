@@ -1,13 +1,13 @@
 import { Flex, Bold, Text, Button } from "@tremor/react";
 
 // Types
-import { InvoiceHeaderProps } from "@/types/orderDetails";
+import { InvoiceHeaderData } from "@/types";
 
 export const InvoiceHeader = ({
   id,
   createdAt,
   orderCode,
-}: InvoiceHeaderProps) => {
+}: InvoiceHeaderData) => {
   return (
     <Flex>
       <div>

@@ -94,7 +94,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   class="h-[70px] w-full"
                 >
                   <div
-                    class="w-full min-w-[10rem] relative text-tremor-default select-custtom dark:text-white dark:border-light dark:focus:border-white"
+                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                     data-headlessui-state=""
                   >
                     <button
@@ -144,7 +144,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   class="h-[70px] w-full min-w-[290px]"
                 >
                   <div
-                    class="w-full min-w-[10rem] relative text-tremor-default select-custtom dark:text-white dark:bg-transparent"
+                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:bg-transparent"
                     data-headlessui-state=""
                   >
                     <button
@@ -185,7 +185,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
             </div>
           </div>
           <button
-            aria-disabled="false"
             class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-xs border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[80px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
             type="submit"
           >
@@ -293,7 +292,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 class="h-[70px] w-full"
               >
                 <div
-                  class="w-full min-w-[10rem] relative text-tremor-default select-custtom dark:text-white dark:border-light dark:focus:border-white"
+                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                   data-headlessui-state=""
                 >
                   <button
@@ -343,7 +342,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 class="h-[70px] w-full min-w-[290px]"
               >
                 <div
-                  class="w-full min-w-[10rem] relative text-tremor-default select-custtom dark:text-white dark:bg-transparent"
+                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:bg-transparent"
                   data-headlessui-state=""
                 >
                   <button
@@ -384,7 +383,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
           </div>
         </div>
         <button
-          aria-disabled="false"
           class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-xs border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[80px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
           type="submit"
         >

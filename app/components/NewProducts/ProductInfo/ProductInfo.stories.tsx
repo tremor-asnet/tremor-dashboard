@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
 import { Flex } from "@tremor/react";
-import ProductInfo from "./";
+import ProductInfo from "./ProductInfo";
 
 const meta = {
   title: "Components/ProductInfo",

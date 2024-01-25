@@ -1,16 +1,16 @@
-.select-custtom button {
+.select-custom button {
   @apply !bg-transparent rounded-none !border-b-[#d2d6da] border-0 border-b border-solid;
 }
 
-.select-custtom button:hover {
+.select-custom button:hover {
   @apply !bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
 }
 
-.select-custtom button:active {
+.select-custom button:active {
   @apply !bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
 }
 
-.select-custtom button:focus {
+.select-custom button:focus {
   @apply bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
 }
 

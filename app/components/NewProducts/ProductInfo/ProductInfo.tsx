@@ -2,7 +2,6 @@
 
 // Libs
 import { useForm, Controller } from "react-hook-form";
-import { useState } from "react";
 import dynamic from "next/dynamic";
 
 // Components
@@ -43,20 +42,11 @@ const ProductInfo = () => {
     mode: "onSubmit",
   });
 
-  const [formStatus, setFormStatus] = useState({
-    isPending: false,
-    errorMessage: "",
-  });
-
   const { name } = errors || {};
   const nameErrorMessage = name?.message?.toString() || "";
-  const isDisableSubmit = formStatus.isPending;
 
   const handleNext = () => {
-    setFormStatus({
-      isPending: false,
-      errorMessage: nameErrorMessage,
-    });
+    //TODO handle to check submit form with next button
   };
 
   return (
@@ -144,7 +134,7 @@ const ProductInfo = () => {
                   <div className="h-[70px] w-full">
                     <Select
                       placeholder="Clothing"
-                      className="select-custtom dark:text-white dark:border-light dark:focus:border-white">
+                      className="select-custom dark:text-white dark:border-light dark:focus:border-white">
                       <SelectItem value="1">Clothing</SelectItem>
                       <SelectItem value="2">Electronics</SelectItem>
                       <SelectItem value="3">Furniture</SelectItem>
@@ -164,7 +154,7 @@ const ProductInfo = () => {
                   <div className="h-[70px] w-full min-w-[290px]">
                     <Select
                       placeholder="Small"
-                      className="select-custtom dark:text-white dark:bg-transparent">
+                      className="select-custom dark:text-white dark:bg-transparent">
                       <SelectItem value="1">Extra Large</SelectItem>
                       <SelectItem value="2">Extra Small</SelectItem>
                       <SelectItem value="3">Large</SelectItem>
@@ -179,11 +169,9 @@ const ProductInfo = () => {
           </Flex>
         </Flex>
         <Button
-          aria-disabled={isDisableSubmit}
           type="submit"
           className="antialiased min-w-[80px] py-[12px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
-          size="xs"
-          disabled={isDisableSubmit}>
+          size="xs">
           <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
             Next
           </Text>

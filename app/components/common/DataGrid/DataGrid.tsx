@@ -3,9 +3,9 @@
 // Components
 import { ColumnType } from "@/types";
 import { Card, Table } from "@tremor/react";
-import DataGridHeader from "./DataGridHeader";
-import DataGridBody from "./DataGridBody";
 import Pagination from "../Pagination";
+import DataGridHeader from "./DataGridHeader/DataGridHeader";
+import DataGridBody from "./DataGridBody/DataGridBody";
 
 // Hooks
 import { useMemo, useState } from "react";

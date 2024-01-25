@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 //Components
-import DataGrid from ".";
+import DataGrid from "./DataGrid";
 
 // Types
 import { TOrder, ColumnType } from "@/types";

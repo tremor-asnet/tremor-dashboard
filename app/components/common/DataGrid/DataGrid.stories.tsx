@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import DataGrid from ".";
+import DataGrid from "./DataGrid";
 
 // Types
 import { ColumnType, TOrder } from "@/types";

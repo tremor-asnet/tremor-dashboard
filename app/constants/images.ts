@@ -18,4 +18,5 @@ export const CHART_SRC = {
 
 export const METADATA = {
   HOME_PREVIEW: "/assets/images/home-preview.png",
+  MASTERCARD: "/assets/images/mastercard.webp",
 };

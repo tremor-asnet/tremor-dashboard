@@ -1,17 +1,18 @@
 export type TSalesStatistic = {
   id: string;
   type: string;
-  amount: string;
-  totalAmount: string;
+  amount: number;
+  amountChange: number;
   duration: string;
+  amountChangeType: number;
 };
 
 export type TTopSellingProducts = {
   productId: number;
   name: string;
-  orders: string;
-  value: string;
-  adsSpent: string;
+  orders: number;
+  value: number;
+  adsSpent: number;
   refunds: number;
   refundsType: string;
 };
@@ -31,3 +32,12 @@ export type SalesByAgeProps = {
   data: SalesByAgeDataProps[];
   title: string;
 };
+
+export interface ISalesByCountry {
+  id: string;
+  flag: string;
+  country: string;
+  sales: number;
+  value: number;
+  bounce: number;
+}

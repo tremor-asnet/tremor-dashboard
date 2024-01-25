@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useFormStatus } from "react-dom";
 
 // lib
 import Link from "next/link";
@@ -49,8 +48,6 @@ const SideBar = ({
   pathname,
   onSignOut,
 }: SideBarProps) => {
-  const [isPending, setIsPending] = useState(false);
-
   const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
@@ -83,10 +80,6 @@ const SideBar = ({
     if (isBrowser && window.innerWidth < BREAKPOINTS.XL) {
       toggleSidebar();
     }
-  };
-
-  const handleToggleLoadingOverlay = (pending: boolean) => {
-    setIsPending(pending);
   };
 
   return (
@@ -153,38 +146,35 @@ const SideBar = ({
                     `!p-0 leading-[26px] mt-1 rounded-md text-center`,
                     `${transitionBgClass}`,
                   ].join("");
-                  const linkClass = `w-full flex font-normal py-3 px-6 ${centerOpenClass}`;
 
                   return (
                     <ListItem
                       className={menuItemClass}
                       key={label}
                       onClick={handleClickSidebarItem}>
-                      <Link className={linkClass} href={href}>
-                        <span className="w-5">{content}</span>
-                        <span
-                          className={`${hiddenOpenClass} w-full text-start`}>
-                          {label}
-                        </span>
+                      <Link href={href}>
+                        <Flex
+                          className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
+                          <span className="w-5">{content}</span>
+                          <span
+                            className={`${hiddenOpenClass} w-full text-start`}>
+                            {label}
+                          </span>
+                        </Flex>
                       </Link>
                     </ListItem>
                   );
                 })}
                 <ListItem className="leading-[26px] relative !p-0 mt-1">
-                  <form
-                    action={onSignOut}
-                    className="w-full h-[50px] flex items-center relative">
-                    <Flex
-                      className={`w-full font-normal py-3 px-6 ${centerOpenClass} gap-5`}>
-                      <span className="pl-1">L</span>
-                      <LogoutButton
-                        className={`${
-                          isCollapse && "xl:hidden"
-                        } pl-2 w-full font-normal z-10 text-start`}
-                        handleToggleLoadingOverlay={handleToggleLoadingOverlay}
-                      />
-                    </Flex>
-                  </form>
+                  <Flex
+                    className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
+                    <span className="w-5">L</span>
+                    <button
+                      onClick={onSignOut}
+                      className={`${hiddenOpenClass} w-full text-start`}>
+                      Logout
+                    </button>
+                  </Flex>
                 </ListItem>
               </List>
             </AccordionBody>
@@ -220,30 +210,7 @@ const SideBar = ({
           })}
         </ul>
       </div>
-      {isPending && (
-        <LoadingIndicator width={10} height={10} isFullWidth={true} />
-      )}
     </>
-  );
-};
-
-const LogoutButton = ({
-  handleToggleLoadingOverlay,
-  className,
-}: {
-  handleToggleLoadingOverlay: (pending: boolean) => void;
-  className: string;
-}) => {
-  const { pending } = useFormStatus();
-
-  useEffect(() => {
-    handleToggleLoadingOverlay(pending);
-  }, [pending]);
-
-  return (
-    <button type="submit" className={className}>
-      Logout
-    </button>
   );
 };
 

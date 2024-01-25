@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BillingInfo component Should match snapshot 1`] = `
+<div>
+  <b
+    class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+  >
+    Billing Information
+  </b>
+  <div
+    class="tremor-Flex-root flex w-full flex-col justify-between items-start bg-greyish mt-4 rounded-lg p-6 dark:bg-dark-tremor-primary"
+  >
+    <span
+      class="text-primary text-tremor-default font-semibold dark:text-white"
+    >
+      Oliver Liam
+    </span>
+    <div
+      class="tremor-Flex-root flex w-full flex-row justify-start items-baseline mt-4 gap-3"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start max-w-[90px] text-secondary dark:text-dark-romance"
+      >
+        <p
+          class="mb-2 text-xs dark:text-dark-lighter"
+        >
+          Company Name:
+        </p>
+        <p
+          class="mb-2 text-xs dark:text-dark-lighter"
+        >
+          Email Address:
+        </p>
+        <p
+          class="mb-2 text-xs dark:text-dark-lighter"
+        >
+          VAT Number:
+        </p>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start text-primary dark:text-white"
+      >
+        <p
+          class="mb-2 font-bold text-xs dark:text-white"
+        >
+          Viking Burrito
+        </p>
+        <p
+          class="mb-2 font-bold text-xs dark:text-white"
+        >
+          oliver@burrito.com
+        </p>
+        <p
+          class="mb-2 font-bold text-xs dark:text-white"
+        >
+          FRB1235476
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

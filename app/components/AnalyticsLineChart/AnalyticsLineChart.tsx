@@ -56,7 +56,7 @@ const AnalyticsLineChart = ({
                   type === CHART_TYPE.PERFORMANCE
                     ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
                     : "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]"
-                } p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem]`}>
+                } p-2 text-[rgb(52,71,103)] rounded-lg shadow-[rgba(0,0,0,0.14)_0rem_0.25rem_1.25rem_0rem,rgba(76,175,79,0.4)_0rem_0.4375rem_0.625rem_-0.3125rem] ring-0`}>
                 <LineChart
                   className="h-[168px] mt-4"
                   data={dataChart}
@@ -81,9 +81,13 @@ const AnalyticsLineChart = ({
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {title}
             </Title>
-            <Popover content={subTitle}>
+            <Popover content={subTitle} className="min-w-[200px]">
               <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]">
-                {isDailyChart && <span className="font-bold">{descValue}</span>}{" "}
+                {isDailyChart && (
+                  <>
+                    (<span className="font-bold">{descValue}</span>)
+                  </>
+                )}{" "}
                 {subTitle}
               </Subtitle>
             </Popover>

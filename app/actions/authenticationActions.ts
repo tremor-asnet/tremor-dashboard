@@ -3,13 +3,12 @@
 // Libs
 import { AuthError } from "next-auth";
 import bcrypt from "bcrypt";
-import { cookies } from "next/headers";
 
 // Auth
-import { signIn, signOut } from "@/auth";
+import { signIn } from "@/auth";
 
 // Constants
-import { REMEMBER_ME, ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL } from "@/constants";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -32,11 +31,6 @@ export const authenticate = async (
     throw error;
   }
 };
-
-export async function signOutAction() {
-  cookies().delete(REMEMBER_ME);
-  await signOut();
-}
 
 export async function createNewAccount(
   prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,

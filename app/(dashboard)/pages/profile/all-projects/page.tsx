@@ -22,7 +22,7 @@ const Projects = async () => {
   const ProjectsData = await getAllProjects();
 
   return (
-    <div>
+    <div className="-mt-[150px] sm:-mt-[100px]">
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p- rounded-xl'></div>
       <div className="mx-6 -mt-16">
         <Card className="px-4 py-2 dark:bg-dark-tremor-primary ring-0">

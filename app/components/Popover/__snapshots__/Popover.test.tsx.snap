@@ -14,11 +14,11 @@ exports[`Testing Popover component Should match snapshot 1`] = `
           Hover to show content popover
         </p>
         <div
-          class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+          class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
           hidden=""
         >
           <div
-            class="text-sm font-light rounded p-3"
+            class="text-sm font-light rounded p-2"
           >
             Content popover
           </div>
@@ -36,11 +36,11 @@ exports[`Testing Popover component Should match snapshot 1`] = `
         Hover to show content popover
       </p>
       <div
-        class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+        class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
         hidden=""
       >
         <div
-          class="text-sm font-light rounded p-3"
+          class="text-sm font-light rounded p-2"
         >
           Content popover
         </div>

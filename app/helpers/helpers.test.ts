@@ -7,6 +7,7 @@ import {
   isEmpty,
   formattedNumber,
   formatDateTime,
+  getCrumbName,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -162,5 +163,35 @@ describe("formatDateTime function", () => {
     const separator = ",";
     const formattedDate = formatDateTime(dateValue, separator);
     expect(formattedDate).toBe("23 Jan, 12:34 PM");
+  });
+});
+
+describe("getPageTitle function", () => {
+  test("Should render Order Details with id", () => {
+    const mockValue = {
+      name: "1234",
+      path: "/order-list/1234",
+      params: "1234",
+    };
+    const name = getCrumbName({ ...mockValue });
+    expect(name).toBe("Order Details" + " #" + "1234");
+  });
+
+  test("Should render Product Details with id", () => {
+    const mockValue = {
+      name: "1234",
+      path: "/product-list/1234",
+      params: "1234",
+    };
+    const name = getCrumbName({ ...mockValue });
+    expect(name).toBe("Product Details" + " #" + "1234");
+  });
+
+  test("Should render correct name", () => {
+    const mockValue = {
+      name: "Test",
+    };
+    const name = getCrumbName({ ...mockValue });
+    expect(name).toBe("Test");
   });
 });

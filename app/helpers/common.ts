@@ -14,3 +14,23 @@ export const getErrorMessage = (statusCode: number, statusText: string) => {
   const errorMessage = `An error has occurred: ${statusCode} - ${statusText}`;
   return errorMessage;
 };
+
+export const getCrumbName = ({
+  name,
+  path,
+  params,
+}: {
+  name: string;
+  path?: string;
+  params?: string | string[];
+}) => {
+  if (path && params) {
+    if (path.includes(`/order-list/${name}`))
+      return `Order Details ${params && "#" + params}`;
+
+    if (path.includes(`/product-list/${name}`))
+      return `Product Details ${params && "#" + params}`;
+  }
+
+  return name;
+};

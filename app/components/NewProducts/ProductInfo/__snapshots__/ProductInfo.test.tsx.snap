@@ -6,7 +6,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <form
-        class="w-full p-2 sm:p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default"
+        class="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
@@ -17,7 +17,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between flex-col items-end"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-start"
+            class="tremor-Flex-root flex w-full justify-between items-start flex-col sm:flex-row"
           >
             <div
               class="tremor-Flex-root flex w-full justify-between items-center flex-col"
@@ -63,7 +63,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex w-full justify-between items-center ml-6 flex-col"
+              class="tremor-Flex-root flex w-full justify-between items-center ml-0 flex-col mt-4 sm:mt-0 sm:ml-6"
             >
               <div
                 class="h-[70px] w-full min-w-[290px]"
@@ -204,7 +204,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <form
-      class="w-full p-2 sm:p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default"
+      class="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
@@ -215,7 +215,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-between flex-col items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-start"
+          class="tremor-Flex-root flex w-full justify-between items-start flex-col sm:flex-row"
         >
           <div
             class="tremor-Flex-root flex w-full justify-between items-center flex-col"
@@ -261,7 +261,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="tremor-Flex-root flex w-full justify-between items-center ml-6 flex-col"
+            class="tremor-Flex-root flex w-full justify-between items-center ml-0 flex-col mt-4 sm:mt-0 sm:ml-6"
           >
             <div
               class="h-[70px] w-full min-w-[290px]"

@@ -52,12 +52,12 @@ const ProductInfo = () => {
   return (
     <form
       onSubmit={handleSubmit(handleNext)}
-      className="w-full p-2 sm:p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
+      className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Infomation
       </Text>
       <Flex className="flex-col items-end">
-        <Flex className="items-start">
+        <Flex className="items-start flex-col sm:flex-row">
           <Flex className="flex-col">
             <Controller
               control={control}
@@ -109,7 +109,7 @@ const ProductInfo = () => {
               />
             </Flex>
           </Flex>
-          <Flex className="ml-6 flex-col">
+          <Flex className="ml-0 flex-col mt-4 sm:mt-0 sm:ml-6">
             <Controller
               control={control}
               render={({ field }) => (

@@ -1,3 +1,5 @@
+import { ROUTES } from "@/constants";
+
 export const isBrowser = typeof window !== "undefined";
 
 export const isEmpty = (value: any) => {
@@ -25,10 +27,10 @@ export const getCrumbName = ({
   params?: string | string[];
 }) => {
   if (path && params) {
-    if (path.includes(`/order-list/${name}`))
+    if (path.includes(`${ROUTES.ORDER_LIST}/`))
       return `Order Details ${params && "#" + params}`;
 
-    if (path.includes(`/product-list/${name}`))
+    if (path.includes(`${ROUTES.PRODUCT_LIST}/`))
       return `Product Details ${params && "#" + params}`;
   }
 

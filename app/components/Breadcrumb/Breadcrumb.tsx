@@ -30,9 +30,10 @@ const Breadcrumb = ({
 
   const renderTitle = () => {
     if (pathname) {
-      if (pathname.includes(`/order-list/`)) return "Order Details";
+      if (pathname.includes(`${ROUTES.ORDER_LIST}/`)) return "Order Details";
 
-      if (pathname.includes(`/product-list/`)) return "Product Details";
+      if (pathname.includes(`${ROUTES.PRODUCT_LIST}/`))
+        return "Product Details";
     }
 
     return newPath?.slice(-1);

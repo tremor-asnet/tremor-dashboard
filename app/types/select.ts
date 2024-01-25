@@ -1,4 +1,4 @@
-interface ListOptionProps {
+interface ListOption {
   option: string;
   value: number;
 }

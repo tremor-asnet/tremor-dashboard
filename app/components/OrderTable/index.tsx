@@ -17,9 +17,9 @@ import TableHeading from "./TableHeading";
 import OrderRow from "./OrderRow";
 
 //Types
-import { TProductTable } from "@/types";
+import { ProductTableData } from "@/types";
 export interface ProductTableProps {
-  data: TProductTable[];
+  data: ProductTableData[];
 }
 
 const OrderTable = ({ data }: ProductTableProps): JSX.Element => {

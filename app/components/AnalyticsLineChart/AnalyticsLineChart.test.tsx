@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import AnalyticsLineChart from "./AnalyticsLineChart";
 
 // Types
-import { CHART_TYPE } from "@/types";
+import { CHART_TYPE } from "@/constants";
 
 // Mocks
 import { LINE_CHART_DATA } from "@/mocks/charts";
@@ -28,7 +28,9 @@ describe("Testing AnalyticsLineChart component", () => {
   };
 
   it("Should match snapshot", () => {
-    const { container } = render(<AnalyticsLineChart {...propsDefault} />);
+    const { container } = render(
+      <AnalyticsLineChart isDailyChart={false} {...propsDefault} />,
+    );
     expect(container).toMatchSnapshot();
   });
 

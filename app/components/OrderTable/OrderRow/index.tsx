@@ -1,7 +1,7 @@
 // Components
 import { Flex, TableCell, TableRow, Text } from "@tremor/react";
-import { CustomImage } from "@/components";
-import Checkbox from "@/components/common/Checkbox";
+import { CustomImage, Checkbox } from "@/components";
+
 import Link from "next/link";
 
 // Helper
@@ -12,7 +12,7 @@ import {
 } from "@/helpers";
 
 // Types
-import { ProductOrder, TProductTable } from "@/types";
+import { ProductOrder, ProductTableData } from "@/types";
 
 // Constants
 import { CURRENCY, SEPARATOR, STATUS_TEXT, ROUTES } from "@/constants";
@@ -24,7 +24,7 @@ const OrderRow = ({
   customer,
   products,
   revenue,
-}: TProductTable) => {
+}: ProductTableData) => {
   const handleChangeCheckbox = () => {
     // TODO: Handle change checkbox checked here
   };

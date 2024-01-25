@@ -21,14 +21,14 @@ import { CustomImage } from "@/components";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 //Types
-import { TTopSellingProducts } from "@/types";
+import { TopSellingProductsData } from "@/types";
 
 // Helpers
 import { formattedNumber } from "@/helpers";
 
 export interface TopSellingProductsProps {
   title: string;
-  data: TTopSellingProducts[];
+  data: TopSellingProductsData[];
 }
 
 const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (

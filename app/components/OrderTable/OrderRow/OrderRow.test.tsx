@@ -4,10 +4,10 @@ import { render } from "@testing-library/react";
 import OrderRow from ".";
 
 // Types
-import { TProductTable } from "@/types";
+import { ProductTableData } from "@/types";
 
 describe("Order Row Testing", () => {
-  const data: TProductTable = {
+  const data: ProductTableData = {
     id: 1,
     createdAt: "2023-11-22",
     status: 1,

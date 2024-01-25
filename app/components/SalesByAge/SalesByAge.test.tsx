@@ -8,9 +8,9 @@ import SalesByAge from ".";
 import { SALES_AGE_CHART } from "@/mocks";
 
 // Types
-import { SalesByAgeProps } from "@/types";
+import { SalesByAgeContainer } from "@/types";
 
-const propsSalesByAge: SalesByAgeProps = {
+const propsSalesByAge: SalesByAgeContainer = {
   data: SALES_AGE_CHART,
   title: "Sales by Age",
 };

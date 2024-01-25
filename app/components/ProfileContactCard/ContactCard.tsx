@@ -8,7 +8,7 @@ import { FaPen } from "react-icons/fa";
 import { ROUTES, SOCIAL_LINK } from "@/constants";
 
 // Types
-import { SocialLinkType } from "@/types";
+import { SocialLink } from "@/types";
 
 interface ContactCardProps {
   information?: string;
@@ -16,7 +16,7 @@ interface ContactCardProps {
   phone: string;
   email: string;
   location: string;
-  socials?: SocialLinkType;
+  socials?: SocialLink;
 }
 
 const ContactCard = ({

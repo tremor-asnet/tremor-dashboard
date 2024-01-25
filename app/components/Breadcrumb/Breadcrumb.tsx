@@ -40,7 +40,7 @@ const Breadcrumb = ({
       if (pathname.includes(`/product-list/`)) return "Product Details";
     }
 
-    return newPath;
+    return newPath?.slice(-1);
   };
 
   return (

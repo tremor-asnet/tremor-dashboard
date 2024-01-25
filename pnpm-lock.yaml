@@ -91,6 +91,9 @@ devDependencies:
   '@types/jest':
     specifier: ^29.5.10
     version: 29.5.11
+  '@types/lodash.get':
+    specifier: ^4.4.9
+    version: 4.4.9
   '@types/node':
     specifier: ^20
     version: 20.10.4
@@ -145,6 +148,9 @@ devDependencies:
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
+  lodash.get:
+    specifier: ^4.4.2
+    version: 4.4.2
   next-compose-plugins:
     specifier: ^2.2.1
     version: 2.2.1
@@ -4829,6 +4835,12 @@ packages:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
       '@types/node': 20.10.4
+    dev: true
+
+  /@types/lodash.get@4.4.9:
+    resolution: {integrity: sha512-J5dvW98sxmGnamqf+/aLP87PYXyrha9xIgc2ZlHl6OHMFR2Ejdxep50QfU0abO1+CH6+ugx+8wEUN1toImAinA==}
+    dependencies:
+      '@types/lodash': 4.14.202
     dev: true
 
   /@types/lodash@4.14.202:
@@ -11163,6 +11175,10 @@ packages:
 
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+    dev: true
+
+  /lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
     dev: true
 
   /lodash.isfunction@3.0.9:

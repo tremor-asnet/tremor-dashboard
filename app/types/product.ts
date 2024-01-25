@@ -8,3 +8,12 @@ export interface Product {
   providerName: string;
   image: string;
 }
+
+export type TProductInfo = {
+  id: string;
+  name: string;
+  description: string;
+  weight: string;
+  category: string;
+  size: string;
+};

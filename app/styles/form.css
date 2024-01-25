@@ -1,0 +1,45 @@
+.select-custtom button {
+  @apply !bg-transparent rounded-none !border-b-[#d2d6da] border-0 border-b border-solid;
+}
+
+.select-custtom button:hover {
+  @apply !bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
+}
+
+.select-custtom button:active {
+  @apply !bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
+}
+
+.select-custtom button:focus {
+  @apply bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
+}
+
+.ql-container.ql-snow {
+  @apply rounded-b-md min-h-[130px] border-[#d2d6da];
+}
+
+.ql-toolbar.ql-snow {
+  @apply rounded-t-md border-[#d2d6da] ;
+}
+
+.quill:focus .ql-toolbar.ql-snow,
+.quill:focus .ql-container.ql-snow {
+  @apply border-[#344767];
+}
+
+.quill:hover .ql-toolbar.ql-snow,
+.quill:hover .ql-container.ql-snow {
+  @apply border-[#344767];
+}
+
+.dark .ql-formats span {
+  @apply !text-white;
+}
+
+.dark .ql-editor.ql-blank::before {
+  @apply !text-white;
+}
+
+.dark .ql-snow .ql-stroke {
+  stroke: white !important;
+}

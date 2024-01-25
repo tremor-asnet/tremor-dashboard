@@ -2,10 +2,10 @@
 
 //Libs
 import { useState } from "react";
+import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
 //Components
-import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
-import Popover from "@/components/Popover/Popover";
+import { Popover } from "@/components";
 
 //Icons
 import { FaRegClock } from "react-icons/fa";
@@ -15,7 +15,10 @@ import "@/styles/charts.css";
 
 //Types
 import { type Color } from "@tremor/react";
-import { TEventProps, CHART_TYPE, LINE_CHART_DATA } from "@/types";
+import { TEvent, LineChartData } from "@/types";
+
+// Constants
+import { CHART_TYPE } from "@/constants";
 
 enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",
@@ -23,7 +26,7 @@ enum CHART_CATEGORIES {
 }
 
 interface LineChartProps {
-  dataChart: LINE_CHART_DATA[];
+  dataChart: LineChartData[];
   type?: string;
   title: string;
   subTitle: string;
@@ -69,7 +72,7 @@ const AnalyticsLineChart = ({
                   yAxisWidth={30}
                   colors={colors}
                   showAnimation={true}
-                  onValueChange={(v: TEventProps) => setValue(v)}
+                  onValueChange={(v: TEvent) => setValue(v)}
                   showLegend={false}
                 />
               </Card>

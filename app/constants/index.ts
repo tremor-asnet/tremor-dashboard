@@ -13,3 +13,6 @@ export * from "./units";
 export * from "./sales";
 export * from "./commons";
 export * from "./status";
+export * from "./saleStatistical";
+export * from "./analytics";
+export * from "./breakpoints";

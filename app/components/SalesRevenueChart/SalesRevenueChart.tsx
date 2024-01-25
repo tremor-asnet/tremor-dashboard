@@ -5,7 +5,7 @@ import { MdOutlinePriorityHigh } from "react-icons/md";
 import { useState } from "react";
 
 //Types
-import { TEventProps, TRevenueChart } from "@/types";
+import { TEvent, TRevenueChart } from "@/types";
 
 // Components
 import { Popover } from "@/components";
@@ -21,7 +21,7 @@ interface RevenueChartProps {
 const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
   const [setValue] = useState<any>(null);
 
-  const chartValueChange = (v: TEventProps) => {
+  const chartValueChange = (v: TEvent) => {
     setValue(v);
   };
 

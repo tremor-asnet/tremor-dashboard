@@ -7,7 +7,7 @@ import AnalyticsLineChart from "./AnalyticsLineChart";
 import { LINE_CHART_DATA } from "@/mocks/charts";
 
 //Types
-import { CHART_TYPE } from "@/types";
+import { CHART_TYPE } from "@/constants";
 
 const meta = {
   title: "Components/AnalyticsLineChart",

@@ -432,13 +432,6 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             <p
               class="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]"
             >
-              (
-              <span
-                class="font-bold"
-              >
-                (+15%)
-              </span>
-              )
                
               increase in today sales.
             </p>

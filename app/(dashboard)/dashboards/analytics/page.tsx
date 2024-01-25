@@ -18,7 +18,7 @@ const SalesByCountry = lazy(
 );
 
 //Types
-import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
+import { AnalyticsInfoData, LineChart } from "@/types";
 
 // Actions
 import { getAnalytics } from "@/services";
@@ -27,7 +27,7 @@ import { getAnalytics } from "@/services";
 import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 // Constants
-import { CHART_SRC } from "@/constants";
+import { CHART_SRC, CHART_TYPE } from "@/constants";
 
 export const metadata = {
   title: "Analytics - Tremor Dashboard",
@@ -72,7 +72,7 @@ const Analytics = async () => {
           <ColumnChart webChartData={web_statistic || WEBSITE_CHART} />
         </Flex>
         {/* Line chart */}
-        {dataLineCharts?.map((item: LINE_CHART) => (
+        {dataLineCharts?.map((item: LineChart) => (
           <Flex key={item.id}>
             <AnalyticsLineChart
               dataChart={item.data}
@@ -94,7 +94,7 @@ const Analytics = async () => {
       </Flex>
       {/* Info cards */}
       <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
-        {apartment_statistic?.map((item: IAnalyticsInfo) => (
+        {apartment_statistic?.map((item: AnalyticsInfoData) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}
       </Flex>

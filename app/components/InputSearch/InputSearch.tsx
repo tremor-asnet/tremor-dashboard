@@ -31,14 +31,12 @@ const InputSearch = () => {
     replace(`${pathname}?${params.toString()}`);
   };
 
-  const debounceSearch = debounce(handleSearch, 1000);
-
   return (
     <Flex className="p-6 items-start justify-end">
       <TextInput
         id="search_order"
         className="w-auto dark:bg-transparent dark:border-white"
-        onChange={debounceSearch}
+        onChange={debounce(handleSearch, 1000)}
         placeholder="Search..."
       />
     </Flex>

@@ -17,6 +17,13 @@ export const getErrorMessage = (statusCode: number, statusText: string) => {
   return errorMessage;
 };
 
+export const getObjectValue = <T, Key extends keyof T>(
+  obj: T,
+  key: Key,
+): T[Key] => {
+  return obj[key];
+};
+
 export const getCrumbName = ({
   name,
   path,

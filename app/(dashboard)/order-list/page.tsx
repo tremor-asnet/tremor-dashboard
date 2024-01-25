@@ -2,14 +2,13 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { InputSearch, OrderFilter } from "@/components";
-import OrderTable from "@/components/OrderTable";
+import { InputSearch, OrderFilter, OrderTable } from "@/components";
 
 // Services
 import { getOrders } from "@/services";
 
 // Types
-import { TProductTable } from "@/types";
+import { ProductTableData } from "@/types";
 
 type TSearchParams = {
   query: string;
@@ -21,7 +20,7 @@ const OrderListPage = async ({
 }: {
   searchParams?: TSearchParams;
 }) => {
-  const orderListData: TProductTable[] = await getOrders();
+  const orderListData: ProductTableData[] = await getOrders();
 
   const { query = "" } = searchParams as TSearchParams;
   const { status = "" } = searchParams as TSearchParams;
@@ -39,7 +38,7 @@ const OrderListPage = async ({
 
   filteredData = status
     ? filteredData.filter(
-        (item: TProductTable) => item.status.toString() === status,
+        (item: ProductTableData) => item.status.toString() === status,
       )
     : filteredData;
 

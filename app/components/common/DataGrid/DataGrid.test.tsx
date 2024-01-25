@@ -4,10 +4,10 @@ import { render } from "@testing-library/react";
 import DataGrid from "./DataGrid";
 
 // Types
-import { TOrder, ColumnType } from "@/types";
+import { Order, ColumnType } from "@/types";
 
 describe("Data Table Testing", () => {
-  const data: TOrder[] = [
+  const data: Order[] = [
     {
       id: 10425,
       created_at: "2023-11-01T10:20:00+00:00",
@@ -73,7 +73,7 @@ describe("Data Table Testing", () => {
     },
   ];
 
-  const columns: ColumnType<TOrder>[] = [
+  const columns: ColumnType<Order>[] = [
     {
       key: "id",
       title: "Id",

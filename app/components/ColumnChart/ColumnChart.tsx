@@ -30,7 +30,7 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
         <Flex className="">
           <main className="w-full mx-auto">
             <div className="-mt-10">
-              <Card className="p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]">
+              <Card className="p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)] ring-0">
                 <BarChart
                   className="h-[168px] mt-4"
                   data={data}
@@ -51,7 +51,7 @@ const ColumnChart = ({ webChartData }: IWebChartData) => {
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
-            <Popover content={desc}>
+            <Popover content={desc} className="min-w-[200px]">
               <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]">
                 {desc}
               </Subtitle>

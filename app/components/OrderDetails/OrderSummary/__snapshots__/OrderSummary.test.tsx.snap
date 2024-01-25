@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test OderSummary component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <b
+        class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+      >
+        Order Summary
+      </b>
+      <div
+        class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-2 tracking-[0.4px]"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        >
+          <div
+            class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
+          >
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            >
+              Product Price
+              :
+            </p>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            >
+              Delivery
+              :
+            </p>
+            <p
+              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            >
+              Taxes
+              :
+            </p>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full justify-between flex-col items-end text-primary dark:text-white"
+          >
+            <p
+              class="font-semibold mb-2"
+              data-testid="productPrice"
+            >
+              $90
+            </p>
+            <p
+              class="font-semibold mb-2"
+              data-testid="delivery"
+            >
+              $14
+            </p>
+            <p
+              class="font-semibold mb-2"
+              data-testid="taxes"
+            >
+              $1.95
+            </p>
+          </div>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-4"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl font-light text-secondary dark:text-dark-romance"
+          >
+            Total:
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full justify-between flex-col items-end text-xl font-semibold text-primary dark:text-white"
+            data-testid="total-price"
+          >
+            $105.95
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <b
+      class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
+    >
+      Order Summary
+    </b>
+    <div
+      class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-2 tracking-[0.4px]"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      >
+        <div
+          class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
+        >
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+          >
+            Product Price
+            :
+          </p>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+          >
+            Delivery
+            :
+          </p>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+          >
+            Taxes
+            :
+          </p>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full justify-between flex-col items-end text-primary dark:text-white"
+        >
+          <p
+            class="font-semibold mb-2"
+            data-testid="productPrice"
+          >
+            $90
+          </p>
+          <p
+            class="font-semibold mb-2"
+            data-testid="delivery"
+          >
+            $14
+          </p>
+          <p
+            class="font-semibold mb-2"
+            data-testid="taxes"
+          >
+            $1.95
+          </p>
+        </div>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-4"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl font-light text-secondary dark:text-dark-romance"
+        >
+          Total:
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full justify-between flex-col items-end text-xl font-semibold text-primary dark:text-white"
+          data-testid="total-price"
+        >
+          $105.95
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

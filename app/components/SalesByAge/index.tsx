@@ -5,7 +5,7 @@ import { Card, Title, BarChart } from "@tremor/react";
 
 const SalesByAge = ({ data, title }: SalesByAgeProps) => {
   return (
-    <Card className="dark:bg-dark-tremor-primary">
+    <Card className="dark:bg-dark-tremor-primary ring-0">
       <Title>{title}</Title>
       <BarChart
         className="mt-6 w-full"

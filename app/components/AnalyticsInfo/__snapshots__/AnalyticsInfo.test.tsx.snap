@@ -97,8 +97,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               <p
                 class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
               >
-                $
-                899
+                $899
                 /night
               </p>
             </div>
@@ -128,11 +127,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   Barcelona, Spain
                 </p>
                 <div
-                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+                  class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
                   hidden=""
                 >
                   <div
-                    class="text-sm font-light rounded p-3"
+                    class="text-sm font-light rounded p-2"
                   >
                     Barcelona, Spain
                   </div>
@@ -237,8 +236,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             <p
               class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
             >
-              $
-              899
+              $899
               /night
             </p>
           </div>
@@ -268,11 +266,11 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 Barcelona, Spain
               </p>
               <div
-                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+                class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
                 hidden=""
               >
                 <div
-                  class="text-sm font-light rounded p-3"
+                  class="text-sm font-light rounded p-2"
                 >
                   Barcelona, Spain
                 </div>
@@ -431,8 +429,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           <p
             class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
           >
-            $
-            899
+            $899
             /night
           </p>
         </div>
@@ -462,11 +459,11 @@ exports[`Testing analytics sale chart component testing component analytics info
               Barcelona, Spain
             </p>
             <div
-              class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+              class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
               hidden=""
             >
               <div
-                class="text-sm font-light rounded p-3"
+                class="text-sm font-light rounded p-2"
               >
                 Barcelona, Spain
               </div>

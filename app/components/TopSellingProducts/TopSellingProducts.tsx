@@ -12,7 +12,7 @@ import {
 } from "@tremor/react";
 
 // Constants
-import { TOP_SELLING_PRODUCTS_SRC } from "@/constants";
+import { CURRENCY, TOP_SELLING_PRODUCTS_SRC } from "@/constants";
 
 // Components
 import { CustomImage } from "@/components";
@@ -22,6 +22,9 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 //Types
 import { TTopSellingProducts } from "@/types";
+
+// Helpers
+import { formattedNumber } from "@/helpers";
 
 export interface TopSellingProductsProps {
   title: string;
@@ -85,19 +88,37 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                         {name}
                       </Text>
                       <Text className="text-secondary leading-[21px] tracking-[0.4px] product-orders">
-                        <span className="text-few">{orders}</span> orders
+                        <span className="text-few">
+                          {formattedNumber({
+                            value: orders,
+                            isDecimalNumber: true,
+                          })}
+                        </span>{" "}
+                        orders
                       </Text>
                     </Flex>
                   </Flex>
                 </TableCell>
                 <TableCell className="px-6 py-3">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value">
-                    {value}
+                    <span>
+                      {formattedNumber({
+                        value,
+                        currency: CURRENCY.DOLLAR,
+                        isDecimalNumber: true,
+                      })}
+                    </span>
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3 text-center">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent">
-                    {adsSpent}
+                    <span>
+                      {formattedNumber({
+                        value: adsSpent,
+                        currency: CURRENCY.DOLLAR,
+                        isDecimalNumber: true,
+                      })}
+                    </span>
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3">

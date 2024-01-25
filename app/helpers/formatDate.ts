@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 const padTo2Digits = (num: number) => {
   return num.toString().padStart(2, "0");
 };
@@ -9,3 +11,13 @@ export const formatDate = (date: Date) => {
     date.toLocaleDateString("en", { year: "2-digit" }),
   ].join(".");
 };
+
+/**
+ * Format by date time
+ * Ex: 2024-01-11T02:48:52Z --> 11 Jan 09:48 AM, 2024-01-11T02:48:52Z --> 11 Jan, 09:48 AM
+ * @param value string
+ * @param separator string
+ * @returns string
+ */
+export const formatDateTime = (value: string, separator: string = "") =>
+  dayjs(value).format(`DD MMM${separator} hh:mm A`);

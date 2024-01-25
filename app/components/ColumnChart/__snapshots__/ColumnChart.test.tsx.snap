@@ -21,7 +21,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 class="-mt-10"
               >
                 <div
-                  class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]"
+                  class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)] ring-0"
                 >
                   <div
                     class="w-full h-[168px] mt-4"
@@ -463,11 +463,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                   Last Campaign Performance
                 </p>
                 <div
-                  class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+                  class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
                   hidden=""
                 >
                   <div
-                    class="text-sm font-light rounded p-3"
+                    class="text-sm font-light rounded p-2"
                   >
                     Last Campaign Performance
                   </div>
@@ -529,7 +529,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="-mt-10"
             >
               <div
-                class="tremor-Card-root relative w-full text-left ring-1 rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)]"
+                class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-2 bg-[linear-gradient(195deg,#42424a,#191919)] dark:bg-gradient-pickled shadow-[0rem_0.25rem_1.25rem_0rem_rgba(0,0,0,0.14),0rem_0.4375rem_0.625rem_-0.3125rem_rgba(64,64,64,0.4)] ring-0"
               >
                 <div
                   class="w-full h-[168px] mt-4"
@@ -971,11 +971,11 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 Last Campaign Performance
               </p>
               <div
-                class="min-w-fit w-[200px] h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all "
+                class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
                 hidden=""
               >
                 <div
-                  class="text-sm font-light rounded p-3"
+                  class="text-sm font-light rounded p-2"
                 >
                   Last Campaign Performance
                 </div>

@@ -11,7 +11,7 @@ describe("Testing Popover component", () => {
 
   it("Should match snapshot", () => {
     const component = render(
-      <Popover {...propsDefault}>
+      <Popover {...propsDefault} className="min-w-[200px]">
         <Text>Hover to show content popover</Text>
       </Popover>,
     );

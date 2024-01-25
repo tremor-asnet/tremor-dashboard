@@ -12,7 +12,7 @@ import { Avatar, CustomImage } from "@/components";
 import { Project, AvatarCard } from "@/types";
 
 //Constants
-import { ITEM_ACTION_PROJECT } from "@/constants/commons";
+import { ITEM_ACTION_PROJECT } from "@/constants";
 
 //Mocks
 import { PROJECT_DATA } from "@/mocks/project";
@@ -20,19 +20,19 @@ import { PROJECT_DATA } from "@/mocks/project";
 //Helpers
 import { formatDate } from "@/helpers";
 
-type AcionCard = {
+interface ActionCardProps {
   key: string;
   label: string;
-};
-interface IProjectCard {
+}
+interface ProjectCardProps {
   projectData: Project;
-  actions: AcionCard[];
+  actions: ActionCardProps[];
 }
 
 const ProjectCard = ({
   projectData = PROJECT_DATA[0],
   actions = ITEM_ACTION_PROJECT,
-}: IProjectCard): JSX.Element => {
+}: ProjectCardProps): JSX.Element => {
   const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
   const duaDateFormat = formatDate(new Date(dueDate));

@@ -33,14 +33,14 @@ export const metadata = {
   title: "Analytics - Tremor Dashboard",
 };
 
-type TAnalyticsStatistical = {
+interface AnalyticsStatistical {
   id: string;
   type: string;
   amount: number;
   amountChange: number;
   duration: string;
   amountChangeType: number;
-};
+}
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();
@@ -88,7 +88,7 @@ const Analytics = async () => {
       </Flex>
       {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {sale_statistical?.map((item: TAnalyticsStatistical) => (
+        {sale_statistical?.map((item: AnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>

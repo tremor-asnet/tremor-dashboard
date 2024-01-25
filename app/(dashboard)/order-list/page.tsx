@@ -10,7 +10,7 @@ import { getOrders } from "@/services";
 // Types
 import { ProductTableData } from "@/types";
 
-type TSearchParams = {
+type SearchParams = {
   query: string;
   status: string;
 };
@@ -18,12 +18,12 @@ type TSearchParams = {
 const OrderListPage = async ({
   searchParams,
 }: {
-  searchParams?: TSearchParams;
+  searchParams?: SearchParams;
 }) => {
   const orderListData: ProductTableData[] = await getOrders();
 
-  const { query = "" } = searchParams as TSearchParams;
-  const { status = "" } = searchParams as TSearchParams;
+  const { query = "" } = searchParams as SearchParams;
+  const { status = "" } = searchParams as SearchParams;
 
   let filteredData = orderListData;
 

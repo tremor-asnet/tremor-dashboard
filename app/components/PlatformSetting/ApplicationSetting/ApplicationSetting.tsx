@@ -16,7 +16,7 @@ import { useContext } from "react";
 // Themes
 import { ThemeContext } from "@/context/theme";
 
-interface IApplicationSettingProps {
+interface ApplicationSettingProps {
   applicationSettingFields: PlatformSetting[];
   applicationSettingData: ApplicationSettingData;
 }
@@ -24,7 +24,7 @@ interface IApplicationSettingProps {
 const ApplicationSetting = ({
   applicationSettingFields = APPLICATION_SETTING_FIELDS,
   applicationSettingData = APPLICATION_SETTING_DATA,
-}: IApplicationSettingProps) => {
+}: ApplicationSettingProps) => {
   const { theme } = useContext(ThemeContext);
   const color = theme ? "white" : "zinc";
 

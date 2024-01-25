@@ -15,7 +15,7 @@ import "@/styles/charts.css";
 
 //Types
 import { type Color } from "@tremor/react";
-import { TEvent, LineChartData } from "@/types";
+import { Event, LineChartData } from "@/types";
 
 // Constants
 import { CHART_TYPE } from "@/constants";
@@ -72,7 +72,7 @@ const AnalyticsLineChart = ({
                   yAxisWidth={30}
                   colors={colors}
                   showAnimation={true}
-                  onValueChange={(v: TEvent) => setValue(v)}
+                  onValueChange={(v: Event) => setValue(v)}
                   showLegend={false}
                 />
               </Card>

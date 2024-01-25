@@ -22,13 +22,13 @@ export interface LineChart {
   data: LineChartData[];
 }
 
-type TFixed = {
+type Fixed = {
   eventType: "dot" | "category" | "bar" | "slice" | "bubble";
   categoryClicked: string;
 };
 
-type TBaseEvent = TFixed & {
+type BaseEvent = Fixed & {
   [key: string]: number | string;
 };
 
-export type TEvent = TBaseEvent | null | undefined;
+export type Event = BaseEvent | null | undefined;

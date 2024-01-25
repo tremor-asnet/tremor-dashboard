@@ -1,4 +1,4 @@
-import { IPlatformSetting } from "@/types/profile";
+import { PlatformSetting } from "@/types";
 import { MdEmail, MdHome, MdSettings } from "react-icons/md";
 
 export const TABS_HEADER = [
@@ -7,7 +7,7 @@ export const TABS_HEADER = [
   { name: "Setting", icon: <MdSettings /> },
 ];
 
-export const ACCOUNT_SETTING_FIELDS: IPlatformSetting[] = [
+export const ACCOUNT_SETTING_FIELDS: PlatformSetting[] = [
   { label: "Email me when someone follows me", field: "emailMentions" },
   {
     label: "Email me when someone answers on my post",
@@ -16,7 +16,7 @@ export const ACCOUNT_SETTING_FIELDS: IPlatformSetting[] = [
   { label: "Email me when someone mentions me", field: "emailAnswerPost" },
 ];
 
-export const APPLICATION_SETTING_FIELDS: IPlatformSetting[] = [
+export const APPLICATION_SETTING_FIELDS: PlatformSetting[] = [
   { label: "New launches and projects", field: "newLaunchesProject" },
   { label: "Monthly product updates", field: "monthlyProductUpdate" },
   { label: "Subscribe to newsletter", field: "subscribeToNewsletter" },

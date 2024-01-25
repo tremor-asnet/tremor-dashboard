@@ -8,7 +8,7 @@ import {
 } from "@/constants";
 
 // Types
-import { IPlatformSetting, ApplicationSettingType } from "@/types/profile";
+import { PlatformSetting, ApplicationSettingData } from "@/types";
 
 // Contexts
 import { useContext } from "react";
@@ -17,8 +17,8 @@ import { useContext } from "react";
 import { ThemeContext } from "@/context/theme";
 
 interface IApplicationSettingProps {
-  applicationSettingFields: IPlatformSetting[];
-  applicationSettingData: ApplicationSettingType;
+  applicationSettingFields: PlatformSetting[];
+  applicationSettingData: ApplicationSettingData;
 }
 
 const ApplicationSetting = ({
@@ -33,7 +33,7 @@ const ApplicationSetting = ({
       <Text className="text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
         Application
       </Text>
-      {applicationSettingFields.map(({ label, field }: IPlatformSetting) => (
+      {applicationSettingFields.map(({ label, field }: PlatformSetting) => (
         <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
           <Switch
             tabIndex={2}

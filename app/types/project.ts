@@ -1,8 +1,8 @@
-export type AvatarCard = {
+export interface AvatarCard {
   avatar: string;
-};
+}
 
-export type Project = {
+export interface Project {
   id: string;
   created_at?: string;
   name: string;
@@ -10,4 +10,4 @@ export type Project = {
   participants: AvatarCard[];
   dueDate: string;
   cover: string;
-};
+}

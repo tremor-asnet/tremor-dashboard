@@ -1,5 +1,5 @@
 // Components
-import { ProductTable, OrderFilter, OrderSearch } from "@/components";
+import { ProductTable, OrderFilter, InputSearch } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Services
@@ -24,7 +24,7 @@ const ProductListPage = async () => {
         <OrderFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <OrderSearch />
+        <InputSearch />
         <ProductTable key={1} data={productListData} />
       </div>
     </Flex>

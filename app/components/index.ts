@@ -26,8 +26,7 @@ export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingPr
 export { default as ProductTable } from "./ProductTable/ProductTable";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
-export { default as InputSearch } from "./InputSearch/InputSearch";
-export { default as OrderSearch } from "./OrderSearch/OrderSearch";
+export { default as OrderSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SelectOption } from "./SelectOption";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";

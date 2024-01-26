@@ -1,27 +1,27 @@
-//Components
 import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
-import Popover from "@/components/Popover/Popover";
+//Components
+import { Popover } from "@/components";
 
-type TData = {
+interface DataProps {
   description: string;
   sales: number;
-};
+}
 
-type TWebChartData = {
+interface TWebChartData {
   id: string;
   display: string;
   desc: string;
   modified: string;
-  data: TData[];
-};
+  data: DataProps[];
+}
 
-interface IWebChartData {
+interface WebChartDataProps {
   webChartData: TWebChartData;
 }
 
-const ColumnChart = ({ webChartData }: IWebChartData) => {
+const ColumnChart = ({ webChartData }: WebChartDataProps) => {
   const { display, desc, modified, data } = webChartData;
 
   return (

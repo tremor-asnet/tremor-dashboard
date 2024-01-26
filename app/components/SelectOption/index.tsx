@@ -1,5 +1,5 @@
 interface SelectOptionProps {
-  data: ListOptionProps[];
+  data: ListOption[];
   onClickItem: () => void;
 }
 

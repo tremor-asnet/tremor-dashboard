@@ -1,6 +1,7 @@
-//Components
 import { DonutChart, Card, Flex, Text, Button } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
+
+//Components
 import { Popover } from "@/components";
 
 // Constants
@@ -12,24 +13,24 @@ import { numberWithCommas } from "@/helpers";
 //Styles
 import "@/styles/charts.css";
 
-type TData = {
+interface DataProps {
   id: number;
   name: string;
   percent: number;
-};
-
-type TChannelChartData = {
-  sale_total: number;
-  sale_social_media: number;
-  channels: TData[];
-};
-
-interface IChannelChartData {
-  title: string;
-  channelChartData: TChannelChartData;
 }
 
-const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
+interface ChannelChartDataProps {
+  sale_total: number;
+  sale_social_media: number;
+  channels: DataProps[];
+}
+
+interface ChannelChartProps {
+  title: string;
+  channelChartData: ChannelChartDataProps;
+}
+
+const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
   const { sale_total, sale_social_media, channels } = channelChartData;
 
   return (

@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import DataGrid from "./DataGrid";
 
 // Types
-import { ColumnType, TOrder } from "@/types";
+import { ColumnType, Order } from "@/types";
 
 // Constants
 import { STATUS_TEXT } from "@/constants";
@@ -20,7 +20,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const data: TOrder[] = [
+const data: Order[] = [
   {
     id: 10425,
     created_at: "2023-11-01T10:20:00+00:00",
@@ -86,7 +86,7 @@ const data: TOrder[] = [
   },
 ];
 
-const columns: ColumnType<TOrder>[] = [
+const columns: ColumnType<Order>[] = [
   {
     key: "id",
     title: "Id",

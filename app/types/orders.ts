@@ -1,4 +1,4 @@
-export type TOrderProduct = {
+export type OrderProduct = {
   id: number;
   name: string;
   count: number;
@@ -6,7 +6,7 @@ export type TOrderProduct = {
   url: string;
 };
 
-export type TOrder = {
+export type Order = {
   id: number;
   created_at: string;
   status: number;
@@ -15,11 +15,11 @@ export type TOrder = {
     full_name: string;
     avatar?: string;
   };
-  products: TOrderProduct[];
+  products: OrderProduct[];
   revenue: number;
 };
 
-export type TOrderDetail = {
+export type OrderDetail = {
   id: number;
   order_code: string;
   order_deliver_price: number;

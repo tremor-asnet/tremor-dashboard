@@ -1,4 +1,4 @@
-export interface IBreadcrumb {
+export interface BreadcrumbLink {
   name: string;
   url: string;
 }

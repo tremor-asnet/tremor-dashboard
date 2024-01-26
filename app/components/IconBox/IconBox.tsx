@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 import { Flex } from "@tremor/react";
 import { IoMdPrint } from "react-icons/io";
 
-interface IIconBox {
+interface IconBoxProps {
   icon?: ReactNode;
   bgBox?: string;
   className?: string;
@@ -19,7 +19,7 @@ const IconBox = ({
   height = "16",
   bgBox = "bg-gradient-arsenic",
   className = "",
-}: IIconBox): JSX.Element => {
+}: IconBoxProps): JSX.Element => {
   return (
     <Flex
       className={`p-1 justify-center rounded-xl shadow-box-icon-default w-${width} h-${height} ${bgBox} ${className}`}>

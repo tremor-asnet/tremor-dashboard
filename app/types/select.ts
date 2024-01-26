@@ -1,4 +1,4 @@
-interface ListOption {
+export interface ListOption {
   option: string;
   value: number;
 }

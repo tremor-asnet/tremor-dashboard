@@ -1,5 +1,7 @@
+import { SelectOption } from "@/types";
+
 interface SelectOptionProps {
-  data: ListOption[];
+  data: SelectOption[];
   onClickItem: () => void;
 }
 

@@ -16,7 +16,7 @@ import {
 } from "@tremor/react";
 
 // Types
-import { TPricingInfo, SelectOption } from "@/types";
+import { TPricingInfo, SelectOptionData } from "@/types";
 
 // Constants
 import { TYPE_PRICE, TAGS_PRICE } from "@/constants";
@@ -72,7 +72,7 @@ const PricingInfo = () => {
                     <Select
                       placeholder="USD"
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      {TYPE_PRICE.map((item: SelectOption) => (
+                      {TYPE_PRICE.map((item: SelectOptionData) => (
                         <SelectItem key={item.value} value={item.value}>
                           {item.option}
                         </SelectItem>
@@ -106,7 +106,7 @@ const PricingInfo = () => {
                     <MultiSelect
                       defaultValue={["In Stock", "Out of Stock"]}
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      {TAGS_PRICE.map((item: SelectOption) => (
+                      {TAGS_PRICE.map((item: SelectOptionData) => (
                         <MultiSelectItem key={item.value} value={item.value}>
                           {item.option}
                         </MultiSelectItem>

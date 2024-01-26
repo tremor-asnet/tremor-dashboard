@@ -67,3 +67,49 @@ export const TAGS_PRICE: SelectOption[] = [
     value: "5",
   },
 ];
+
+export const CATEGORY_PRODUCT: SelectOption[] = [
+  {
+    option: "Clothing",
+    value: "1",
+  },
+  {
+    option: "Electronics",
+    value: "2",
+  },
+  {
+    option: "Furniture",
+    value: "3",
+  },
+  {
+    option: "Others",
+    value: "4",
+  },
+  {
+    option: "Real Estate",
+    value: "5",
+  },
+];
+
+export const SIZE_PRODUCT: SelectOption[] = [
+  {
+    option: "Extra Large",
+    value: "1",
+  },
+  {
+    option: "Extra Small",
+    value: "2",
+  },
+  {
+    option: "Large",
+    value: "3",
+  },
+  {
+    option: "Medium",
+    value: "4",
+  },
+  {
+    option: "Small",
+    value: "5",
+  },
+];

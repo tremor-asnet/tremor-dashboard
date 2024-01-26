@@ -15,10 +15,10 @@ import {
 } from "@tremor/react";
 
 // Constants
-import { MESSAGES_ERROR } from "@/constants";
+import { MESSAGES_ERROR, CATEGORY_PRODUCT, SIZE_PRODUCT } from "@/constants";
 
 // Types
-import { TProductInfo } from "@/types";
+import { TProductInfo, SelectOption } from "@/types";
 
 // Styles
 import "@/styles/form.css";
@@ -135,11 +135,11 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Clothing"
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      <SelectItem value="Clothing">Clothing</SelectItem>
-                      <SelectItem value="Electronics">Electronics</SelectItem>
-                      <SelectItem value="Furniture">Furniture</SelectItem>
-                      <SelectItem value="Others">Others</SelectItem>
-                      <SelectItem value="Real Estate">Real Estate</SelectItem>
+                      {CATEGORY_PRODUCT.map((item: SelectOption) => (
+                        <SelectItem key={item.value} value={item.value}>
+                          {item.option}
+                        </SelectItem>
+                      ))}
                     </Select>
                   </div>
                 )}
@@ -155,11 +155,11 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Small"
                       className="select-custom dark:text-white dark:bg-transparent">
-                      <SelectItem value="Extra Large">Extra Large</SelectItem>
-                      <SelectItem value="Extra Small">Extra Small</SelectItem>
-                      <SelectItem value="Large">Large</SelectItem>
-                      <SelectItem value="Medium">Medium</SelectItem>
-                      <SelectItem value="Small">Small</SelectItem>
+                      {SIZE_PRODUCT.map((item: SelectOption) => (
+                        <SelectItem key={item.value} value={item.value}>
+                          {item.option}
+                        </SelectItem>
+                      ))}
                     </Select>
                   </div>
                 )}

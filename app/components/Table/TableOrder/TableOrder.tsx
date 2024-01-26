@@ -2,18 +2,20 @@
 
 // Components
 import DataGrid from "@/components/common/DataGrid/DataGrid";
-import CustomCheckBoxField from "../common/CustomCheckBoxField";
-import CustomDateFormatNode from "../common/CustomDateFormatNode";
-import CustomStatusNode from "../common/CustomStatusNode";
-import CustomAvatarName from "../common/CustomAvatarName";
-import CustomListNode from "../common/CustomListNode";
-import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
 
 //Types
 import { ColumnType, Order } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
+import {
+  CustomAvatarName,
+  CustomCheckBoxField,
+  CustomDateFormatNode,
+  CustomListNode,
+  CustomNumberFormatNode,
+  CustomStatusNode,
+} from "../common";
 
 interface TableOrderProps {
   orders: Order[];
@@ -67,7 +69,7 @@ const TableOrder = ({ orders }: TableOrderProps) => {
       key: "revenue",
       title: "Revenue",
       customNode: (_, { revenue }) => (
-        <CustomNumberFormatNode revenue={revenue} />
+        <CustomNumberFormatNode value={revenue} />
       ),
     },
   ];

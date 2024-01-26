@@ -1,17 +1,20 @@
 "use client";
 
 // Components
-import DataGrid from "@/components/common/DataGrid/DataGrid";
-import CustomCheckBoxField from "../common/CustomCheckBoxField";
-import CustomAvatarName from "../common/CustomAvatarName";
-import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
-import CustomDateFormatNode from "../common/CustomDateFormatNode";
 
 // Types
 import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
+import DataGrid from "@/components/common/DataGrid/DataGrid";
+import {
+  CustomAvatarName,
+  CustomCheckBoxField,
+  CustomDateFormatNode,
+  CustomNumberFormatNode,
+} from "../common";
+
 interface TableProductProps {
   products: Product[];
 }
@@ -44,13 +47,15 @@ const TableProduct = ({ products }: TableProductProps) => {
     {
       key: "price",
       title: "Price",
-      customNode: (_, { price }) => <CustomNumberFormatNode revenue={price} />,
+      customNode: (_, { price }) => <CustomNumberFormatNode value={price} />,
     },
     {
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { isAvailable }) => (
-        <h6 className="text-xs font-semibold">{isAvailable ? "Yes" : "No"}</h6>
+        <p className="text-xs dark:text-white font-semibold">
+          {isAvailable ? "Yes" : "No"}
+        </p>
       ),
     },
     {

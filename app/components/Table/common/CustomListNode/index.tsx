@@ -4,7 +4,7 @@ interface CustomListNode {
   products: OrderProduct[];
 }
 
-const CustomListNode = ({ products }: CustomListNode) => (
+export const CustomListNode = ({ products }: CustomListNode) => (
   <>
     {products?.map(product => (
       <p
@@ -15,5 +15,3 @@ const CustomListNode = ({ products }: CustomListNode) => (
     ))}
   </>
 );
-
-export default CustomListNode;

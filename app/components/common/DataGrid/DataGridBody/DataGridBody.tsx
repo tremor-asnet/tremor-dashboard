@@ -17,7 +17,7 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
     <TableBody>
       {data.length ? (
         data.map(item => {
-          const id = getObjectValue(item, "id" as keyof T) as string;
+          const id = getObjectValue(item, "id");
           return (
             <TableRow key={`table-body-${id}`}>
               {columns.map(column => (
@@ -27,8 +27,8 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
                   {column.customNode ? (
                     column.customNode(column, item)
                   ) : (
-                    <p className="text-xs font-semibold">
-                      {getObjectValue(item, column.key as keyof T) as string}
+                    <p className="text-xs dark:text-white font-semibold">
+                      {getObjectValue(item, column.key)}
                     </p>
                   )}
                 </TableCell>
@@ -39,7 +39,9 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
       ) : (
         <TableRow className="w-full">
           <TableCell colSpan={6} className="h-32 text-center">
-            <p className="text-xl font-semibold">Result Not Found</p>
+            <p className="text-xl dark:text-white font-semibold">
+              Result Not Found
+            </p>
           </TableCell>
         </TableRow>
       )}

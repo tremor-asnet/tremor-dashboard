@@ -8,7 +8,7 @@ interface CustomCheckboxFieldProps {
   onChange: () => void;
 }
 
-const CustomCheckBoxField = ({
+export const CustomCheckBoxField = ({
   id,
   link,
   onChange,
@@ -22,5 +22,3 @@ const CustomCheckBoxField = ({
     </Link>
   </div>
 );
-
-export default CustomCheckBoxField;

@@ -36,7 +36,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             modern
           </a>
@@ -50,7 +50,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             <button
               class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
@@ -136,7 +136,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             scandinavian
           </a>
@@ -150,7 +150,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             <button
               class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
@@ -236,7 +236,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             minimalist
           </a>
@@ -250,7 +250,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             <button
               class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
@@ -336,7 +336,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="text-tremor-title w-full font-bold text-xl capitalize mb-2 text-primary dark:text-dark-primary"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             gothic
           </a>
@@ -350,7 +350,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
         >
           <a
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             <button
               class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"

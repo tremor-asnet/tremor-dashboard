@@ -2,12 +2,6 @@
 
 // Components
 import DataGrid from "@/components/common/DataGrid/DataGrid";
-
-//Types
-import { ColumnType, Order } from "@/types";
-
-// Constants
-import { ROUTES } from "@/constants";
 import {
   CustomAvatarName,
   CustomCheckBoxField,
@@ -16,6 +10,12 @@ import {
   CustomNumberFormatNode,
   CustomStatusNode,
 } from "../common";
+
+//Types
+import { ColumnType, Order } from "@/types";
+
+// Constants
+import { ROUTES } from "@/constants";
 
 interface TableOrderProps {
   orders: Order[];

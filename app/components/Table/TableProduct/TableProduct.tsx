@@ -1,12 +1,6 @@
 "use client";
 
 // Components
-
-// Types
-import { Product, ColumnType } from "@/types";
-
-// Constants
-import { ROUTES } from "@/constants";
 import DataGrid from "@/components/common/DataGrid/DataGrid";
 import {
   CustomAvatarName,
@@ -14,6 +8,12 @@ import {
   CustomDateFormatNode,
   CustomNumberFormatNode,
 } from "../common";
+
+// Types
+import { Product, ColumnType } from "@/types";
+
+// Constants
+import { ROUTES } from "@/constants";
 
 interface TableProductProps {
   products: Product[];

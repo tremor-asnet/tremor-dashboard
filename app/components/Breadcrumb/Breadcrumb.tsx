@@ -8,7 +8,7 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ROUTES } from "@/constants";
+import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
 
 // Helpers
 import { getCrumbName, isBrowser } from "@/helpers";
@@ -28,29 +28,13 @@ const Breadcrumb = ({
   const isStickyHeader = !isScrolled && isProjectPage;
   const newPath = pathname?.split("/").filter(path => path);
 
-  console.log("pathname", pathname);
-  console.log("params", params);
-  const pattern = /.*order-list\/\w+/;
-  console.log("test", pattern.test(pathname));
-
-  console.log(
-    "newPath",
-    getCrumbName({
-      name: "order-list",
-      path: pathname,
-      params: "1234",
-    }),
-  );
-
-  const renderTitle = () => {
-    if (pathname) {
-      if (pathname.includes(`${ROUTES.ORDER_LIST}/`)) return "Order Details";
-
-      if (pathname.includes(`${ROUTES.PRODUCT_LIST}/`))
-        return "Product Details";
+  const renderTitle = (path?: string) => {
+    if (path) {
+      if (path.match(ORDER_LIST_REGEX)) return "Order Details";
+      if (path.match(PRODUCT_LIST_REGEX)) return "Product Details";
     }
 
-    return newPath?.slice(-1);
+    return newPath?.pop()?.replace("-", " ");
   };
 
   const renderCrumb = () => {
@@ -71,7 +55,7 @@ const Breadcrumb = ({
                 <Link href={href}>
                   {getCrumbName({
                     name: link,
-                    path: pathname,
+                    path: href,
                     params: params?.id,
                   })}
                 </Link>
@@ -103,7 +87,7 @@ const Breadcrumb = ({
         className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
           isStickyHeader ? "text-white" : "text-primary"
         }`}>
-        {renderTitle()}
+        {renderTitle(pathname)}
       </Title>
     </nav>
   );

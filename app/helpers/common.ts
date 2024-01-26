@@ -1,4 +1,4 @@
-import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
+import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX } from "@/constants";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -30,16 +30,14 @@ export const getCrumbName = ({
   params,
 }: {
   name: string;
-  path?: string;
+  path: string;
   params?: string | string[];
 }) => {
-  if (path && params) {
-    if (ORDER_LIST_REGEX.test(path))
-      return `Order Details ${params && "#" + params}`;
-
-    if (PRODUCT_LIST_REGEX.test(path))
-      return `Product Details ${params && "#" + params}`;
+  if (ORDER_LIST_REGEX.test(path)) {
+    return `Order Details ${params && "#" + params}`;
+  } else if (PRODUCT_LIST_REGEX.test(path)) {
+    return `Product Details ${params && "#" + params}`;
+  } else {
+    return name.replace("-", " ");
   }
-
-  return name;
 };

@@ -56,5 +56,5 @@ export const listOption: ListOption[] = [
   { option: "Canceled", value: 1 },
 ];
 
-export const ORDER_LIST_REGEX = /.*\/\/order-list\/\w+/;
-export const PRODUCT_LIST_REGEX = /.*\/\/product-list\/\w+/;
+export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
+export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;

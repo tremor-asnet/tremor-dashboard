@@ -7,6 +7,7 @@ import { getProducts } from "@/services/productServices";
 
 // Types
 import { Product } from "@/types";
+import TableProduct from "@/components/Table/TableProduct/TableProduct";
 
 type SearchParamsProduct = {
   productName: string;
@@ -43,7 +44,7 @@ const ProductListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <ProductTable key={1} data={filteredData} />
+        <TableProduct key={productName} products={filteredData} />
       </div>
     </Flex>
   );

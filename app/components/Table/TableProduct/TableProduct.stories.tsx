@@ -1,6 +1,19 @@
-import { Product } from "@/types/product";
+import type { Meta, StoryObj } from "@storybook/react";
 
-export const MOCK_PRODUCTS: Product[] = [
+// Components
+import TableProduct from "./TableProduct";
+
+// Types
+import { Product } from "@/types";
+
+const meta = {
+  title: "Components/Tables/TableProduct",
+  component: TableProduct,
+  tags: ["autodocs"],
+} as Meta<typeof TableProduct>;
+
+// Mocks
+const mockProducts: Product[] = [
   {
     id: 230019,
     createdAt: "2023-11-22T04:01:46+00:00",
@@ -52,3 +65,11 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/chair-steel.dd1d3892.jpeg",
   },
 ];
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Primary: Story = {
+  render: () => <TableProduct products={mockProducts} />,
+};

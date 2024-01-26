@@ -19,7 +19,7 @@ const InputSearch = () => {
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
-    const value = e.target.value;
+    const value = e.target.value.trim();
     const params = new URLSearchParams(searchParams);
 
     if (value) {

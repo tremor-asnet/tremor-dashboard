@@ -23,7 +23,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           for="upload_products"
         >
           <p
-            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4"
+            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4 false"
           >
             Drop files here to upload
           </p>
@@ -37,7 +37,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="tremor-Flex-root w-full flex-row justify-start items-center hidden"
           >
             <div
-              class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group"
+              class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group product-url"
             >
               <div
                 class="tremor-Flex-root flex w-full flex-row justify-between items-center overflow-hidden rounded-[20px]"
@@ -56,7 +56,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 />
               </div>
               <div
-                class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6"
+                class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6 product-detail"
               >
                 <p
                   class="text-tremor-title text-tremor-content-emphasis dark:text-dark-title uppercase px-2 mb-4 leading-5 bg-white opacity-70 rounded product-size"
@@ -91,7 +91,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0"
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0 product-success"
               >
                 <svg
                   height="54px"
@@ -120,7 +120,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100"
+                class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100 product-error"
               >
                 <svg
                   height="54px"
@@ -152,7 +152,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </svg>
               </div>
               <button
-                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0"
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0 product-remove"
               >
                 <span
                   class="tremor-Button-text text-sm whitespace-nowrap"
@@ -185,7 +185,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         for="upload_products"
       >
         <p
-          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4"
+          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4 false"
         >
           Drop files here to upload
         </p>
@@ -199,7 +199,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           class="tremor-Flex-root w-full flex-row justify-start items-center hidden"
         >
           <div
-            class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group"
+            class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group product-url"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center overflow-hidden rounded-[20px]"
@@ -218,7 +218,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               />
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6"
+              class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6 product-detail"
             >
               <p
                 class="text-tremor-title text-tremor-content-emphasis dark:text-dark-title uppercase px-2 mb-4 leading-5 bg-white opacity-70 rounded product-size"
@@ -253,7 +253,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0"
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0 product-success"
             >
               <svg
                 height="54px"
@@ -282,7 +282,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </svg>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100"
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100 product-error"
             >
               <svg
                 height="54px"
@@ -314,7 +314,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </svg>
             </div>
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0 product-remove"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"

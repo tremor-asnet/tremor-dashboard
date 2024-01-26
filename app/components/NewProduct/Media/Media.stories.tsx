@@ -6,6 +6,7 @@ import Media from "./Media";
 const propsDefault = {
   name: "Gold Glasses",
   url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/product-12.0b55635d.jpg",
+  isUploaded: false,
 };
 
 const meta = {
@@ -20,4 +21,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   render: () => <Media {...propsDefault} />,
+};
+
+export const Secondary: Story = {
+  render: () => <Media {...propsDefault} isUploaded={true} />,
 };

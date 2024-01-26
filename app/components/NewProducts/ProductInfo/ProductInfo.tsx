@@ -18,7 +18,7 @@ import {
 import { MESSAGES_ERROR, CATEGORY_PRODUCT, SIZE_PRODUCT } from "@/constants";
 
 // Types
-import { TProductInfo, SelectOption } from "@/types";
+import { TProductInfo, SelectOptionData } from "@/types";
 
 // Styles
 import "@/styles/form.css";
@@ -135,7 +135,7 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Clothing"
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      {CATEGORY_PRODUCT.map((item: SelectOption) => (
+                      {CATEGORY_PRODUCT.map((item: SelectOptionData) => (
                         <SelectItem key={item.value} value={item.value}>
                           {item.option}
                         </SelectItem>
@@ -155,7 +155,7 @@ const ProductInfo = () => {
                     <Select
                       placeholder="Small"
                       className="select-custom dark:text-white dark:bg-transparent">
-                      {SIZE_PRODUCT.map((item: SelectOption) => (
+                      {SIZE_PRODUCT.map((item: SelectOptionData) => (
                         <SelectItem key={item.value} value={item.value}>
                           {item.option}
                         </SelectItem>

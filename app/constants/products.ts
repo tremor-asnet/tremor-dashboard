@@ -68,7 +68,7 @@ export const TAGS_PRICE: SelectOptionData[] = [
   },
 ];
 
-export const CATEGORY_PRODUCT: SelectOption[] = [
+export const CATEGORY_PRODUCT: SelectOptionData[] = [
   {
     option: "Clothing",
     value: "1",
@@ -91,7 +91,7 @@ export const CATEGORY_PRODUCT: SelectOption[] = [
   },
 ];
 
-export const SIZE_PRODUCT: SelectOption[] = [
+export const SIZE_PRODUCT: SelectOptionData[] = [
   {
     option: "Extra Large",
     value: "1",

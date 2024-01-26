@@ -12,6 +12,9 @@ import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
 //Types
 import { ColumnType, Order } from "@/types";
 
+// Constants
+import { ROUTES } from "@/constants";
+
 interface TableOrderProps {
   orders: Order[];
 }
@@ -27,7 +30,11 @@ const TableOrder = ({ orders }: TableOrderProps) => {
       key: "id",
       title: "Id",
       customNode: (_, { id }) => (
-        <CustomCheckBoxField id={id} onChange={handleChangeCheckbox} />
+        <CustomCheckBoxField
+          id={id}
+          link={`${ROUTES.ORDER_LIST}/${id}`}
+          onChange={handleChangeCheckbox}
+        />
       ),
     },
     {
@@ -46,7 +53,9 @@ const TableOrder = ({ orders }: TableOrderProps) => {
       key: "customer",
       title: "Customer",
       customNode: (_, { customer }) => {
-        return <CustomAvatarName customer={customer} />;
+        return (
+          <CustomAvatarName avatar={customer.avatar} text={customer.fullName} />
+        );
       },
     },
     {

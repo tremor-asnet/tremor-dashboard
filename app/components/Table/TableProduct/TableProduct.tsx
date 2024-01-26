@@ -5,9 +5,9 @@ import DataGrid from "@/components/common/DataGrid/DataGrid";
 import {
   CustomAvatarName,
   CustomCheckBoxField,
-  CustomDateFormatNode,
-  CustomNumberFormatNode,
-} from "../common";
+  CustomDateFormat,
+  CustomNumberFormat,
+} from "@/components/Table/common";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -47,7 +47,7 @@ const TableProduct = ({ products }: TableProductProps) => {
     {
       key: "price",
       title: "Price",
-      customNode: (_, { price }) => <CustomNumberFormatNode value={price} />,
+      customNode: (_, { price }) => <CustomNumberFormat value={price} />,
     },
     {
       key: "isAvailable",
@@ -65,9 +65,7 @@ const TableProduct = ({ products }: TableProductProps) => {
     {
       key: "createdAt",
       title: "Created Date",
-      customNode: (_, { createdAt }) => (
-        <CustomDateFormatNode date={createdAt} />
-      ),
+      customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
     },
   ];
 

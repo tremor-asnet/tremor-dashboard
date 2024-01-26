@@ -5,7 +5,7 @@ interface CustomAvatarNameProps {
   text: string;
 }
 
-const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
+export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-auto">
     {avatar ? (
       <Image
@@ -26,5 +26,3 @@ const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
     </p>
   </div>
 );
-
-export default CustomAvatarName;

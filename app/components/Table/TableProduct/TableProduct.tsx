@@ -2,16 +2,19 @@
 
 // Components
 import DataGrid from "@/components/common/DataGrid/DataGrid";
-import CustomCheckBoxField from "../common/CustomCheckBoxField";
-import CustomAvatarName from "../common/CustomAvatarName";
-import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
-import CustomDateFormatNode from "../common/CustomDateFormatNode";
+import {
+  CustomAvatarName,
+  CustomCheckBoxField,
+  CustomDateFormat,
+  CustomNumberFormat,
+} from "@/components/Table/common";
 
 // Types
 import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
+
 interface TableProductProps {
   products: Product[];
 }
@@ -44,13 +47,15 @@ const TableProduct = ({ products }: TableProductProps) => {
     {
       key: "price",
       title: "Price",
-      customNode: (_, { price }) => <CustomNumberFormatNode revenue={price} />,
+      customNode: (_, { price }) => <CustomNumberFormat value={price} />,
     },
     {
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { isAvailable }) => (
-        <h6 className="text-xs font-semibold">{isAvailable ? "Yes" : "No"}</h6>
+        <p className="text-xs dark:text-white font-semibold">
+          {isAvailable ? "Yes" : "No"}
+        </p>
       ),
     },
     {
@@ -60,9 +65,7 @@ const TableProduct = ({ products }: TableProductProps) => {
     {
       key: "createdAt",
       title: "Created Date",
-      customNode: (_, { createdAt }) => (
-        <CustomDateFormatNode date={createdAt} />
-      ),
+      customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
     },
   ];
 

@@ -186,7 +186,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   10425
                 </p>
@@ -195,7 +195,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   2023-11-01T10:20:00+00:00
                 </p>
@@ -208,7 +208,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   12345
                 </p>
@@ -217,7 +217,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   2023-11-01T03:20:00+00:00
                 </p>
@@ -230,7 +230,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   12350
                 </p>
@@ -239,7 +239,7 @@ exports[`Data Table Testing should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   2023-11-01T11:03:00+00:00
                 </p>

@@ -2,12 +2,14 @@
 
 // Components
 import DataGrid from "@/components/common/DataGrid/DataGrid";
-import CustomCheckBoxField from "../common/CustomCheckBoxField";
-import CustomDateFormatNode from "../common/CustomDateFormatNode";
-import CustomStatusNode from "../common/CustomStatusNode";
-import CustomAvatarName from "../common/CustomAvatarName";
-import CustomListNode from "../common/CustomListNode";
-import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
+import {
+  CustomAvatarName,
+  CustomCheckBoxField,
+  CustomDateFormat,
+  CustomList,
+  CustomNumberFormat,
+  CustomStatus,
+} from "@/components/Table/common";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -40,14 +42,12 @@ const TableOrder = ({ orders }: TableOrderProps) => {
     {
       key: "createdAt",
       title: "Date",
-      customNode: (_, { createdAt }) => (
-        <CustomDateFormatNode date={createdAt} />
-      ),
+      customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
     },
     {
       key: "status",
       title: "Status",
-      customNode: (_, { status }) => <CustomStatusNode status={status} />,
+      customNode: (_, { status }) => <CustomStatus status={status} />,
     },
     {
       key: "customer",
@@ -61,14 +61,12 @@ const TableOrder = ({ orders }: TableOrderProps) => {
     {
       key: "products",
       title: "Products",
-      customNode: (_, { products }) => <CustomListNode products={products} />,
+      customNode: (_, { products }) => <CustomList products={products} />,
     },
     {
       key: "revenue",
       title: "Revenue",
-      customNode: (_, { revenue }) => (
-        <CustomNumberFormatNode revenue={revenue} />
-      ),
+      customNode: (_, { revenue }) => <CustomNumberFormat value={revenue} />,
     },
   ];
 

@@ -1,5 +1,6 @@
 // Components
-import { ProductTable, OrderFilter, InputSearch } from "@/components";
+import { OrderFilter, InputSearch } from "@/components";
+import TableProduct from "@/components/Table/TableProduct/TableProduct";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Services
@@ -7,7 +8,6 @@ import { getProducts } from "@/services/productServices";
 
 // Types
 import { Product } from "@/types";
-import TableProduct from "@/components/Table/TableProduct/TableProduct";
 
 type SearchParamsProduct = {
   productName: string;

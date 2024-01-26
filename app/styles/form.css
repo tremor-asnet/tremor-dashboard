@@ -6,16 +6,41 @@
   @apply  border-0;
 }
 
-.dark .select-custom svg {
-  @apply  text-white;
-}
-
-.dark button .text-tremor-content-emphasis {
-  @apply bg-[#1a2035];
-}
-
 .select-custom button:hover,
 .select-custom button:active,
 .select-custom button:focus  {
   @apply bg-transparent rounded-none border-0 !border-b-[#344767] shadow-none outline-none ring-0;
+}
+
+.ql-container.ql-snow {
+  @apply rounded-b-md min-h-[130px] border-[#d2d6da];
+}
+
+.ql-toolbar.ql-snow {
+  @apply rounded-t-md border-[#d2d6da] ;
+}
+
+.quill:focus .ql-toolbar.ql-snow,
+.quill:focus .ql-container.ql-snow {
+  @apply border-[#344767];
+}
+
+.quill:hover .ql-toolbar.ql-snow,
+.quill:hover .ql-container.ql-snow {
+  @apply border-[#344767];
+}
+
+.dark .ql-formats span,
+.dark .select-custom svg,
+.dark .ql-editor.ql-blank::before {
+  @apply text-white;
+}
+
+.dark .ql-snow .ql-stroke {
+  stroke: white;
+}
+
+
+.dark button .text-tremor-content-emphasis {
+  @apply bg-[#1a2035];
 }

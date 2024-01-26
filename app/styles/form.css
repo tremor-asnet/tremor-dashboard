@@ -1,0 +1,21 @@
+.select-custom button {
+  @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid;
+}
+
+.select-custom button + button {
+  @apply  border-0;
+}
+
+.dark .select-custom svg {
+  @apply  text-white;
+}
+
+.dark button .text-tremor-content-emphasis {
+  @apply bg-[#1a2035];
+}
+
+.select-custom button:hover,
+.select-custom button:active,
+.select-custom button:focus  {
+  @apply bg-transparent rounded-none border-0 !border-b-[#344767] shadow-none outline-none ring-0;
+}

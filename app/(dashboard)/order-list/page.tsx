@@ -11,8 +11,8 @@ import { getOrders } from "@/services";
 import { ProductTableData } from "@/types";
 
 type SearchParams = {
-  query: string;
-  status: string;
+  productName?: string;
+  status?: string;
 };
 
 const OrderListPage = async ({
@@ -22,16 +22,15 @@ const OrderListPage = async ({
 }) => {
   const orderListData: ProductTableData[] = await getOrders();
 
-  const { query = "" } = searchParams as SearchParams;
-  const { status = "" } = searchParams as SearchParams;
+  const { productName = "", status = "" } = searchParams as SearchParams;
 
   let filteredData = orderListData;
 
-  if (query) {
+  if (productName) {
     filteredData = orderListData?.filter(
       item =>
         item.products?.find(product =>
-          product.name.toLowerCase().includes(query.toLowerCase()),
+          product.name.toLowerCase().includes(productName.toLowerCase()),
         ),
     );
   }

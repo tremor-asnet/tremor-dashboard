@@ -23,9 +23,9 @@ const InputSearch = () => {
     const params = new URLSearchParams(searchParams);
 
     if (value) {
-      params.set("query", value);
+      params.set("productName", value);
     } else {
-      params.delete("query");
+      params.delete("productName");
     }
 
     replace(`${pathname}?${params.toString()}`);

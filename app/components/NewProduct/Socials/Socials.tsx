@@ -1,26 +1,27 @@
 // Components
-import { Title, Flex, TextInput } from "@tremor/react";
+import { Title, Flex } from "@tremor/react";
 
 const Socials = () => {
+  const inputClasses = `w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white`;
   return (
     <>
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
         Socials
       </Title>
       <Flex className="flex-col items-start justify-start mt-8 text-secondary dark:text-dark-romance text-sm font-normal">
-        <TextInput
+        <input
+          className={inputClasses}
           id="shoppifyHandle"
-          className="py-1 mb-4 dark:bg-transparent dark:border-white"
           placeholder="Shoppify Handle"
         />
-        <TextInput
+        <input
+          className={inputClasses}
           id="facebookAccount"
-          className="py-1 mb-4 dark:bg-transparent dark:border-white"
           placeholder="Facebook Account"
         />
-        <TextInput
+        <input
+          className={inputClasses}
           id="instagramAccount"
-          className="py-1 mb-4 dark:bg-transparent dark:border-white"
           placeholder="Instagram Account"
         />
       </Flex>

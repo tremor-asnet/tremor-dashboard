@@ -13,42 +13,21 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
       <div
         class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8 text-secondary dark:text-dark-romance text-sm font-normal"
       >
-        <div
-          class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-        >
-          <input
-            class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-            data-testid="base-input"
-            id="shoppifyHandle"
-            placeholder="Shoppify Handle"
-            type="text"
-            value=""
-          />
-        </div>
-        <div
-          class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-        >
-          <input
-            class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-            data-testid="base-input"
-            id="facebookAccount"
-            placeholder="Facebook Account"
-            type="text"
-            value=""
-          />
-        </div>
-        <div
-          class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-        >
-          <input
-            class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-            data-testid="base-input"
-            id="instagramAccount"
-            placeholder="Instagram Account"
-            type="text"
-            value=""
-          />
-        </div>
+        <input
+          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          id="shoppifyHandle"
+          placeholder="Shoppify Handle"
+        />
+        <input
+          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          id="facebookAccount"
+          placeholder="Facebook Account"
+        />
+        <input
+          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          id="instagramAccount"
+          placeholder="Instagram Account"
+        />
       </div>
     </div>
   </body>,
@@ -61,42 +40,21 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
     <div
       class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8 text-secondary dark:text-dark-romance text-sm font-normal"
     >
-      <div
-        class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-      >
-        <input
-          class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-          data-testid="base-input"
-          id="shoppifyHandle"
-          placeholder="Shoppify Handle"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-      >
-        <input
-          class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-          data-testid="base-input"
-          id="facebookAccount"
-          placeholder="Facebook Account"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class="tremor-TextInput-root relative w-full flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border py-1 mb-4 dark:bg-transparent dark:border-white"
-      >
-        <input
-          class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-          data-testid="base-input"
-          id="instagramAccount"
-          placeholder="Instagram Account"
-          type="text"
-          value=""
-        />
-      </div>
+      <input
+        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        id="shoppifyHandle"
+        placeholder="Shoppify Handle"
+      />
+      <input
+        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        id="facebookAccount"
+        placeholder="Facebook Account"
+      />
+      <input
+        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        id="instagramAccount"
+        placeholder="Instagram Account"
+      />
     </div>
   </div>,
   "debug": [Function],

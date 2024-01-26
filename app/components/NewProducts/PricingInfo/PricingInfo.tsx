@@ -16,7 +16,10 @@ import {
 } from "@tremor/react";
 
 // Types
-import { TPricingInfo } from "@/types";
+import { TPricingInfo, SelectOption } from "@/types";
+
+// Constants
+import { TYPE_PRICE, TAGS_PRICE } from "@/constants";
 
 // Styles
 import "@/styles/form.css";
@@ -69,12 +72,11 @@ const PricingInfo = () => {
                     <Select
                       placeholder="USD"
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      <SelectItem value="BTC">BTC</SelectItem>
-                      <SelectItem value="CNY">CNY</SelectItem>
-                      <SelectItem value="EUR">EUR</SelectItem>
-                      <SelectItem value="GBP">GBP</SelectItem>
-                      <SelectItem value="INR">INR</SelectItem>
-                      <SelectItem value="USD">USD</SelectItem>
+                      {TYPE_PRICE.map((item: SelectOption) => (
+                        <SelectItem key={item.value} value={item.value}>
+                          {item.option}
+                        </SelectItem>
+                      ))}
                     </Select>
                   </div>
                 )}
@@ -104,17 +106,11 @@ const PricingInfo = () => {
                     <MultiSelect
                       defaultValue={["In Stock", "Out of Stock"]}
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      <MultiSelectItem value="Black Friday">
-                        Black Friday
-                      </MultiSelectItem>
-                      <MultiSelectItem value="Expired">Expired</MultiSelectItem>
-                      <MultiSelectItem value="Out of Stock">
-                        Out of Stock
-                      </MultiSelectItem>
-                      <MultiSelectItem value="In Stock">
-                        In Stock
-                      </MultiSelectItem>
-                      <MultiSelectItem value="Sale">Sale</MultiSelectItem>
+                      {TAGS_PRICE.map((item: SelectOption) => (
+                        <MultiSelectItem key={item.value} value={item.value}>
+                          {item.option}
+                        </MultiSelectItem>
+                      ))}
                     </MultiSelect>
                   </div>
                 )}

@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Order detail contact section Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <p
+        class="text-tremor-title font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize"
+      >
+        Media
+      </p>
+      <p
+        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content mt-8"
+      >
+        Product Image
+      </p>
+      <div
+        class="tremor-Flex-root flex flex-col items-center justify-center w-full p-5 my-2 min-h-[150px] text-secondary hover:text-secondary dark:text-dark-romance text-sm font-normal cursor-pointer border border-gray-300 rounded-md"
+      >
+        <label
+          class="cursor-pointer dropzone"
+          for="uploadProducts"
+        >
+          <p
+            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4 false"
+          >
+            Drop files here to upload
+          </p>
+        </label>
+        <input
+          class="hidden"
+          id="uploadProducts"
+          multiple=""
+          type="file"
+        />
+        <div
+          class="tremor-Flex-root w-full flex-row justify-start items-center hidden"
+        >
+          <div
+            class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group product-url"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center overflow-hidden rounded-[20px]"
+            >
+              <img
+                alt="Gold Glasses"
+                class="relative z-10 group-hover:blur group-hover:scale-105 product-img"
+                data-nimg="1"
+                decoding="async"
+                fetchpriority="high"
+                height="120"
+                src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
+                style="color: transparent;"
+                width="120"
+              />
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6 product-detail"
+            >
+              <p
+                class="text-tremor-title text-tremor-content-emphasis dark:text-dark-title uppercase px-2 mb-4 leading-5 bg-white opacity-70 rounded product-size"
+              >
+                <b
+                  class="text-inherit font-bold"
+                >
+                  71.4
+                </b>
+                 kb
+              </p>
+              <p
+                class="text-tremor-default dark:text-dark-tremor-content text-primary px-2 mb-4 bg-white opacity-70 rounded truncate max-w-[100px] product-file-name"
+              >
+                product-12.0b55635d.jpg
+              </p>
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-50 top-1/2 left-1/2 -ml-10 opacity-0"
+            >
+              <div
+                class="tremor-ProgressBar-root flex items-center w-20"
+              >
+                <div
+                  class="tremor-ProgressBar-progressBarWrapper relative flex items-center w-full rounded-tremor-full bg-opacity-20 bg-gray-500 h-2"
+                >
+                  <div
+                    class="tremor-ProgressBar-progressBar flex-col h-full rounded-tremor-full bg-gray-500"
+                    style="width: 45%;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0 product-success"
+            >
+              <svg
+                class="w-16 h-16 text-white"
+                fill="currentColor"
+                fill-opacity="0.816519475"
+                height="1em"
+                stroke="#747474"
+                stroke-opacity="0.198794158"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm-42.7 318.9L106.7 260.3l29.9-29.9 76.8 76.8 162.1-162.1 29.9 29.9-192.1 191.9z"
+                />
+              </svg>
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100 product-error"
+            >
+              <svg
+                class="w-16 h-16 text-white"
+                fill="currentColor"
+                fill-opacity="0.816519475"
+                height="1em"
+                stroke="#747474"
+                stroke-opacity="0.198794158"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 48C140.559 48 48 140.559 48 256c0 115.436 92.559 208 208 208 115.435 0 208-92.564 208-208 0-115.441-92.564-208-208-208zm104.002 282.881l-29.12 29.117L256 285.117l-74.881 74.881-29.121-29.117L226.881 256l-74.883-74.881 29.121-29.116L256 226.881l74.881-74.878 29.12 29.116L285.119 256l74.883 74.881z"
+                />
+              </svg>
+            </div>
+            <button
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0 product-remove"
+            >
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                Remove file
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <p
+      class="text-tremor-title font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize"
+    >
+      Media
+    </p>
+    <p
+      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content mt-8"
+    >
+      Product Image
+    </p>
+    <div
+      class="tremor-Flex-root flex flex-col items-center justify-center w-full p-5 my-2 min-h-[150px] text-secondary hover:text-secondary dark:text-dark-romance text-sm font-normal cursor-pointer border border-gray-300 rounded-md"
+    >
+      <label
+        class="cursor-pointer dropzone"
+        for="uploadProducts"
+      >
+        <p
+          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content p-4 false"
+        >
+          Drop files here to upload
+        </p>
+      </label>
+      <input
+        class="hidden"
+        id="uploadProducts"
+        multiple=""
+        type="file"
+      />
+      <div
+        class="tremor-Flex-root w-full flex-row justify-start items-center hidden"
+      >
+        <div
+          class="tremor-Flex-root flex flex-col justify-between items-center relative w-auto m-4 group product-url"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center overflow-hidden rounded-[20px]"
+          >
+            <img
+              alt="Gold Glasses"
+              class="relative z-10 group-hover:blur group-hover:scale-105 product-img"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="120"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-12.0b55635d.jpg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="120"
+            />
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-start items-center absolute z-20 min-h-full max-h-full px-2 py-6 product-detail"
+          >
+            <p
+              class="text-tremor-title text-tremor-content-emphasis dark:text-dark-title uppercase px-2 mb-4 leading-5 bg-white opacity-70 rounded product-size"
+            >
+              <b
+                class="text-inherit font-bold"
+              >
+                71.4
+              </b>
+               kb
+            </p>
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-primary px-2 mb-4 bg-white opacity-70 rounded truncate max-w-[100px] product-file-name"
+            >
+              product-12.0b55635d.jpg
+            </p>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-50 top-1/2 left-1/2 -ml-10 opacity-0"
+          >
+            <div
+              class="tremor-ProgressBar-root flex items-center w-20"
+            >
+              <div
+                class="tremor-ProgressBar-progressBarWrapper relative flex items-center w-full rounded-tremor-full bg-opacity-20 bg-gray-500 h-2"
+              >
+                <div
+                  class="tremor-ProgressBar-progressBar flex-col h-full rounded-tremor-full bg-gray-500"
+                  style="width: 45%;"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-0 product-success"
+          >
+            <svg
+              class="w-16 h-16 text-white"
+              fill="currentColor"
+              fill-opacity="0.816519475"
+              height="1em"
+              stroke="#747474"
+              stroke-opacity="0.198794158"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm-42.7 318.9L106.7 260.3l29.9-29.9 76.8 76.8 162.1-162.1 29.9 29.9-192.1 191.9z"
+              />
+            </svg>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center absolute z-30 top-1/2 left-1/2 -mt-[27px] -ml-[27px] opacity-100 product-error"
+          >
+            <svg
+              class="w-16 h-16 text-white"
+              fill="currentColor"
+              fill-opacity="0.816519475"
+              height="1em"
+              stroke="#747474"
+              stroke-opacity="0.198794158"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 48C140.559 48 48 140.559 48 256c0 115.436 92.559 208 208 208 115.435 0 208-92.564 208-208 0-115.441-92.564-208-208-208zm104.002 282.881l-29.12 29.117L256 285.117l-74.881 74.881-29.121-29.117L226.881 256l-74.883-74.881 29.121-29.116L256 226.881l74.881-74.878 29.12 29.116L285.119 256l74.883 74.881z"
+              />
+            </svg>
+          </div>
+          <button
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none bg-transparent dark:hover:text-dark-tremor-brand-emphasis text-primary font-normal hover:text-primary dark:text-dark-primary text-xs px-6 py-0 product-remove"
+          >
+            <span
+              class="tremor-Button-text text-sm whitespace-nowrap"
+            >
+              Remove file
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

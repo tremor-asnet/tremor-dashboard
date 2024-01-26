@@ -8,10 +8,28 @@ import { getProducts } from "@/services/productServices";
 // Types
 import { Product } from "@/types";
 
-const ProductListPage = async () => {
+type SearchParamsProduct = {
+  productName: string;
+};
+
+const ProductListPage = async ({
+  searchParams,
+}: {
+  searchParams?: SearchParamsProduct;
+}) => {
   // TODO: Update key whenever the filter data change
 
   const productListData: Product[] = await getProducts();
+
+  const { productName = "" } = searchParams as SearchParamsProduct;
+
+  let filteredData = productListData;
+
+  if (productName) {
+    filteredData = productListData?.filter((item: Product) =>
+      item.productName.toLowerCase().includes(productName.toLowerCase()),
+    );
+  }
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -25,7 +43,7 @@ const ProductListPage = async () => {
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <ProductTable key={1} data={productListData} />
+        <ProductTable key={1} data={filteredData} />
       </div>
     </Flex>
   );

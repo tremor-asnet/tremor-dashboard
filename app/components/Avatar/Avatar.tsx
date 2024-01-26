@@ -6,7 +6,7 @@ import { memo } from "react";
 import { CustomImage } from "@/components";
 
 // Define the props for the Input component
-interface IAvatarProps {
+interface AvatarProps {
   src: string;
   width: number;
   height: number;
@@ -27,7 +27,7 @@ const Avatar = ({
   className = "shadow-md",
   sizes,
   priority = true,
-}: IAvatarProps): JSX.Element => {
+}: AvatarProps): JSX.Element => {
   return (
     <div className={`inline-flex rounded-full overflow-hidden ${className}`}>
       <CustomImage

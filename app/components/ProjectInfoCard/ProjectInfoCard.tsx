@@ -12,7 +12,7 @@ interface AvatarProps {
   avatar: string;
 }
 
-interface IProjectCard {
+interface ProjectCard {
   id: number;
   cover: string;
   primaryName: string;
@@ -22,7 +22,7 @@ interface IProjectCard {
 }
 
 interface ProjectInfoCardProps {
-  links: IProjectCard[];
+  links: ProjectCard[];
 }
 
 export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {

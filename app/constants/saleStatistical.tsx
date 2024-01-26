@@ -2,14 +2,14 @@ import { ReactNode } from "react";
 import { IoMdPersonAdd } from "react-icons/io";
 import { MdLeaderboard, MdStore, MdWeekend } from "react-icons/md";
 
-type Icon = {
+interface Icon {
   bgIcon: string;
   icon: ReactNode;
-};
+}
 
-type Sale = {
+interface Sale {
   [key: string]: Icon;
-};
+}
 
 export const SALE_STATISTICAL: Sale = {
   bookings: {

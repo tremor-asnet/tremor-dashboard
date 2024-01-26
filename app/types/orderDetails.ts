@@ -1,16 +1,16 @@
-export interface InvoiceHeaderProps {
+export interface InvoiceHeaderData {
   id: number;
   createdAt: string;
   orderCode: string;
 }
 
-export interface OrderSummaryProps {
+export interface OrderSummaryData {
   productPrice: number;
   delivery: number;
   taxes: number;
 }
 
-export interface TrackOrderProps {
+export interface TrackOrderData {
   id: string;
   generateOrderAt: string;
   deliveredAt: string;
@@ -19,7 +19,7 @@ export interface TrackOrderProps {
   status?: number;
 }
 
-export interface BillingInfoProps {
+export interface BillingInfoData {
   ownerName: string;
   companyName: string;
   cardLast4Digit: string;

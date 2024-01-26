@@ -1,9 +1,9 @@
 "use client";
 
-import { SalesByAgeProps } from "@/types";
+import { SalesByAgeContainer } from "@/types";
 import { Card, Title, BarChart } from "@tremor/react";
 
-const SalesByAge = ({ data, title }: SalesByAgeProps) => {
+const SalesByAge = ({ data, title }: SalesByAgeContainer) => {
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0">
       <Title>{title}</Title>

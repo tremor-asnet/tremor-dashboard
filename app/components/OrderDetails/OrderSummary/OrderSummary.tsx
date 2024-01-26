@@ -1,7 +1,7 @@
 import { Bold, Flex, Text } from "@tremor/react";
 
 // Types
-import { OrderSummaryProps } from "@/types/orderDetails";
+import { OrderSummaryData } from "@/types";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -9,7 +9,7 @@ import { CURRENCY } from "@/constants";
 // Helpers
 import { formattedNumber } from "@/helpers";
 
-export const OrderSummary = (monies: OrderSummaryProps) => {
+export const OrderSummary = (monies: OrderSummaryData) => {
   const { productPrice, delivery, taxes } = monies;
   const totalPayment = productPrice + delivery + taxes;
   const listTitle = ["Product Price", "Delivery", "Taxes"];
@@ -30,7 +30,7 @@ export const OrderSummary = (monies: OrderSummaryProps) => {
           </Flex>
           <Flex className="flex-col items-end text-primary dark:text-white">
             {Object.keys(monies).map(item => {
-              const money = monies[item as keyof OrderSummaryProps];
+              const money = monies[item as keyof OrderSummaryData];
               return (
                 <p
                   className="font-semibold mb-2"

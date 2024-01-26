@@ -6,10 +6,10 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ROUTES } from "../../constants";
+import { ROUTES } from "@/constants";
 
 // Types
-import { IBreadcrumb } from "@/types";
+import { BreadcrumbLink } from "@/types";
 
 // Helpers
 import { isBrowser } from "@/helpers";
@@ -28,7 +28,7 @@ const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
   const isProjectPage = pathname === ROUTES.PROJECTS;
   const isStickyHeader = !isScrolled && isProjectPage;
 
-  const links: IBreadcrumb[] = useMemo(() => {
+  const links: BreadcrumbLink[] = useMemo(() => {
     switch (true) {
       case pathname?.includes("/dashboards/"):
         return [{ name: "dashboards", url: ROUTES.ANALYTICS }];

@@ -1,7 +1,7 @@
 import { Flex, Text } from "@tremor/react";
 
 // Types
-import { AccountSettingType, ApplicationSettingType } from "@/types";
+import { AccountSettingData, ApplicationSettingData } from "@/types";
 
 // Constants
 import {
@@ -15,8 +15,8 @@ import {
 import { AccountSetting, ApplicationSetting } from "@/components";
 
 interface PlatformSettingProps {
-  accountSettingData: AccountSettingType;
-  applicationSettingData: ApplicationSettingType;
+  accountSettingData: AccountSettingData;
+  applicationSettingData: ApplicationSettingData;
 }
 
 const PlatformSetting = ({

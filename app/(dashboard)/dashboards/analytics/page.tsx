@@ -18,7 +18,7 @@ const SalesByCountry = lazy(
 );
 
 //Types
-import { IAnalyticsInfo, CHART_TYPE, LINE_CHART } from "@/types";
+import { AnalyticsInfoData, LineChart } from "@/types";
 
 // Actions
 import { getAnalytics } from "@/services";
@@ -27,20 +27,20 @@ import { getAnalytics } from "@/services";
 import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 // Constants
-import { CHART_SRC } from "@/constants";
+import { CHART_SRC, CHART_TYPE } from "@/constants";
 
 export const metadata = {
   title: "Analytics - Tremor Dashboard",
 };
 
-type TAnalyticsStatistical = {
+interface AnalyticsStatistical {
   id: string;
   type: string;
   amount: number;
   amountChange: number;
   duration: string;
   amountChangeType: number;
-};
+}
 
 const Analytics = async () => {
   const analyticsData = await getAnalytics();
@@ -72,7 +72,7 @@ const Analytics = async () => {
           <ColumnChart webChartData={web_statistic || WEBSITE_CHART} />
         </Flex>
         {/* Line chart */}
-        {dataLineCharts?.map((item: LINE_CHART) => (
+        {dataLineCharts?.map((item: LineChart) => (
           <Flex key={item.id}>
             <AnalyticsLineChart
               dataChart={item.data}
@@ -88,13 +88,13 @@ const Analytics = async () => {
       </Flex>
       {/* Statistic cards */}
       <Flex className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-0 lg:gap-y-6 md:gap-x-6">
-        {sale_statistical?.map((item: TAnalyticsStatistical) => (
+        {sale_statistical?.map((item: AnalyticsStatistical) => (
           <AnalyticsStatisticCard key={item.type} statisticalData={item} />
         ))}
       </Flex>
       {/* Info cards */}
       <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
-        {apartment_statistic?.map((item: IAnalyticsInfo) => (
+        {apartment_statistic?.map((item: AnalyticsInfoData) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}
       </Flex>

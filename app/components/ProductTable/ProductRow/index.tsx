@@ -4,10 +4,10 @@ import { Flex, TableCell, TableRow, Text } from "@tremor/react";
 import Image from "next/image";
 
 // Constants
-import { SEPARATOR } from "@/constants";
+import { CURRENCY, SEPARATOR } from "@/constants";
 
 // Helpers
-import { formatDateTime } from "@/helpers";
+import { formatDateTime, formatDotsToCommasNumber } from "@/helpers";
 
 interface ProductRowProps {
   id: string;
@@ -55,7 +55,13 @@ const ProductRow = ({
         </div>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
-        <h6 className="text-xs font-semibold">$ {price}</h6>
+        <h6 className="text-xs font-semibold">
+          {formatDotsToCommasNumber({
+            value: price,
+            currency: CURRENCY.DOLLAR,
+            positionFraction: 2,
+          })}
+        </h6>
       </TableCell>
       <TableCell className="px-6 py-5 border-0 border-b border-gray-100">
         <h6 className="text-xs font-semibold">{isAvailable ? "Yes" : "No"}</h6>

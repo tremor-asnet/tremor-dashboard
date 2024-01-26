@@ -8,7 +8,7 @@ import { PiMapPinFill } from "react-icons/pi";
 import { CustomImage, Popover } from "@/components";
 
 //Types
-import { IAnalyticsInfo } from "@/types";
+import { AnalyticsInfoData } from "@/types";
 
 // Helpers
 import { formattedNumber } from "@/helpers";
@@ -17,7 +17,7 @@ import { formattedNumber } from "@/helpers";
 import { CURRENCY } from "@/constants";
 
 export interface AnalyticsInfoProps {
-  infoData: IAnalyticsInfo;
+  infoData: AnalyticsInfoData;
 }
 
 const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {

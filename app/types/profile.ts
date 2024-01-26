@@ -1,31 +1,31 @@
-export type ConversationHistoryType = {
+export interface Conversation {
   id: string;
   avatar: string;
   name: string;
   lastConversation: string;
-};
+}
 
-export interface IPlatformSetting {
+export interface PlatformSetting {
   label: string;
   field: string;
 }
 
-export type AccountSettingType = {
+export interface AccountSettingData {
   [key: string]: boolean;
   emailMentions: boolean;
   emailFollowing: boolean;
   emailAnswerPost: boolean;
-};
+}
 
-export type ApplicationSettingType = {
+export interface ApplicationSettingData {
   [key: string]: boolean;
   newLaunchesProject: boolean;
   monthlyProductUpdate: boolean;
   subscribeToNewsletter: boolean;
-};
+}
 
-export type SocialLinkType = {
+export interface SocialLink {
   facebook: string;
   twitter: string;
   instagram: string;
-};
+}

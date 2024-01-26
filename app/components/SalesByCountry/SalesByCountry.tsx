@@ -7,13 +7,13 @@ import Image from "next/image";
 import { SalesByCountryRow } from "@/components";
 
 // Types
-import { ISalesByCountry } from "@/types";
+import { SalesByCountryData } from "@/types";
 
 export interface SalesByCountryProps {
   title: string;
   chart?: string;
   isAnalytics: boolean;
-  data: ISalesByCountry[];
+  data: SalesByCountryData[];
 }
 
 const SalesByCountry = ({

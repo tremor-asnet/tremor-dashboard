@@ -10,7 +10,7 @@ exports[`LoadingIndicator component Should render LoadingIndicator snapshot corr
       >
         <svg
           aria-hidden="true"
-          class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-white"
+          class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-white dark:fill-white"
           fill="none"
           viewBox="0 0 22 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ exports[`LoadingIndicator component Should render LoadingIndicator snapshot corr
     >
       <svg
         aria-hidden="true"
-        class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-white"
+        class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-white dark:fill-white"
         fill="none"
         viewBox="0 0 22 24"
         xmlns="http://www.w3.org/2000/svg"

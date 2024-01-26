@@ -11,20 +11,20 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         Socials
       </p>
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8 text-secondary dark:text-dark-romance text-sm font-normal"
+        class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8"
       >
         <input
-          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
           id="shoppifyHandle"
           placeholder="Shoppify Handle"
         />
         <input
-          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
           id="facebookAccount"
           placeholder="Facebook Account"
         />
         <input
-          class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+          class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
           id="instagramAccount"
           placeholder="Instagram Account"
         />
@@ -38,20 +38,20 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
       Socials
     </p>
     <div
-      class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8 text-secondary dark:text-dark-romance text-sm font-normal"
+      class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8"
     >
       <input
-        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
         id="shoppifyHandle"
         placeholder="Shoppify Handle"
       />
       <input
-        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
         id="facebookAccount"
         placeholder="Facebook Account"
       />
       <input
-        class="w-full text-sm text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white"
+        class="w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white"
         id="instagramAccount"
         placeholder="Instagram Account"
       />

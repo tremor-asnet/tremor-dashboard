@@ -6,15 +6,16 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
     class=""
   >
     <ol
-      class="flex flex-wrap items-center text-gray-400"
+      class="flex flex-wrap gap-2 items-center text-gray-400"
     >
-      <li>
+      <li
+        class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]"
+      >
         <a
-          class="flex"
           href="/dashboards/analytics"
         >
           <svg
-            class="bg-inherit border-0 py-0 hover:bg-transparent text-primary dark:text-dark-primary tracking-[0.01071em] leading-[0] text-inherit opacity-50"
+            class="text-lg"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -32,37 +33,16 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
             />
           </svg>
         </a>
-      </li>
-      <li
-        aria-hidden="true"
-        class="text-sm mx-2 text-[#6c757d]"
-      >
         /
       </li>
       <li
-        class="flex items-center text-inherit"
+        class="flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] leading-[0] false text-tremor-content-title dark:text-dark-tremor-content-title  "
       >
-        <div
-          class="bc-link"
+        <a
+          href="/analytics"
         >
-          <a
-            class="text-sm capitalize tracking-[0.02857em] leading-[0] text-primary dark:text-dark-primary opacity-50"
-            href="/dashboards/analytics"
-          >
-            dashboards
-          </a>
-        </div>
-        <div
-          aria-hidden="true"
-          class="text-sm mx-2 text-[#6c757d]"
-        >
-          /
-        </div>
-      </li>
-      <li
-        class="text-sm text-tremor-content-title dark:text-dark-tremor-content-title capitalize tracking-[0.02857em] leading-[0] text-inherit"
-      >
-        analytics
+          analytics
+        </a>
       </li>
     </ol>
     <p

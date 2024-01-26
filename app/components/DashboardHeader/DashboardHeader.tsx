@@ -31,9 +31,9 @@ const DashboardHeader = ({
   isCollapseSidebar,
   toggleSidebar,
 }: DashboardHeaderProps): JSX.Element => {
+  const pathname = usePathname();
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const pathname = usePathname();
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
   // Check the condition if it is page All Project then display the white color
@@ -87,7 +87,7 @@ const DashboardHeader = ({
             />
           )}
         </div>
-        <Breadcrumb isScrolled={isScrolled} />
+        <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
       </div>
       <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
         <div className="flex flex-wrap item-center gap-y-1">

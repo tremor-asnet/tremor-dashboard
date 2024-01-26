@@ -1,23 +1,23 @@
-export type OrderProduct = {
+export interface OrderProduct {
   id: number;
   name: string;
   count: number;
-  price: number;
-  url: string;
-};
+  price?: number;
+  url?: string;
+}
 
-export type Order = {
+export interface Order {
   id: number;
-  created_at: string;
+  createdAt: string;
   status: number;
   customer: {
     id: number;
-    full_name: string;
+    fullName: string;
     avatar?: string;
   };
   products: OrderProduct[];
   revenue: number;
-};
+}
 
 export type OrderDetail = {
   id: number;

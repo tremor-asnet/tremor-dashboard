@@ -55,3 +55,6 @@ export const listOption: ListOption[] = [
   { option: "Refunded", value: 2 },
   { option: "Canceled", value: 1 },
 ];
+
+export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
+export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;

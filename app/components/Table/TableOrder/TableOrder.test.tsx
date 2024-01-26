@@ -1,26 +1,11 @@
-// Libs
-import type { Meta, StoryObj } from "@storybook/react";
-
 // Components
-import DataGrid from "./DataGrid";
+import { render } from "@testing-library/react";
+import TableOrder from "./TableOrder";
 
 // Types
-import { ColumnType, Order } from "@/types";
+import { Order } from "@/types";
 
-// Constants
-import { STATUS_TEXT } from "@/constants";
-
-const meta = {
-  title: "Components/common/DataGrid",
-  tags: ["autodocs"],
-  component: DataGrid,
-} as Meta<typeof DataGrid>;
-
-export default meta;
-
-type Story = StoryObj<typeof meta>;
-
-const data: Order[] = [
+const mockOrders: Order[] = [
   {
     id: 10425,
     createdAt: "2023-11-01T10:20:00+00:00",
@@ -84,30 +69,53 @@ const data: Order[] = [
       },
     ],
   },
+  {
+    id: 12356,
+    createdAt: "2023-11-01T09:20:00+00:00",
+    status: 2,
+    customer: {
+      id: 13,
+      avatar:
+        "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
+      fullName: "Orlando Imieto",
+    },
+    revenue: 23.9,
+    products: [
+      {
+        id: 10,
+        name: "Watter Bottle India",
+        count: 3,
+        url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
+        price: 34.35,
+      },
+    ],
+  },
+  {
+    id: 12352,
+    createdAt: "2023-11-01T16:05:00+00:00",
+    status: 0,
+    customer: {
+      id: 16,
+      avatar:
+        "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
+      fullName: "Orlando Imieto",
+    },
+    revenue: 350,
+    products: [
+      {
+        id: 10,
+        name: "Watter Bottle India",
+        count: 3,
+        url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
+        price: 71,
+      },
+    ],
+  },
 ];
 
-const columns: ColumnType<Order>[] = [
-  {
-    key: "id",
-    title: "Id",
-  },
-  {
-    key: "createdAt",
-    title: "Date",
-  },
-  {
-    key: "status",
-    title: "Status",
-    customNode: (_, { status }) => (
-      <div className="flex justify-start text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-        <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-          {STATUS_TEXT[status]}
-        </p>
-      </div>
-    ),
-  },
-];
-
-export const DataTableDefault: Story = {
-  render: () => <DataGrid data={data} columns={columns} />,
-};
+describe("Order Table Testing", () => {
+  it("should match snapshot", () => {
+    const { container } = render(<TableOrder orders={mockOrders} />);
+    expect(container).toMatchSnapshot();
+  });
+});

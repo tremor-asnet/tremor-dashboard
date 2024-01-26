@@ -2,17 +2,18 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { InputSearch, OrderFilter, OrderTable } from "@/components";
+import { InputSearch, OrderFilter } from "@/components";
+import TableOrder from "@/components/Table/TableOrder/TableOrder";
 
 // Services
 import { getOrders } from "@/services";
 
 // Types
-import { ProductTableData } from "@/types";
+import { Order } from "@/types";
 
 type SearchParams = {
-  query: string;
-  status: string;
+  productName?: string;
+  status?: string;
 };
 
 const OrderListPage = async ({
@@ -20,26 +21,23 @@ const OrderListPage = async ({
 }: {
   searchParams?: SearchParams;
 }) => {
-  const orderListData: ProductTableData[] = await getOrders();
+  const orderListData: Order[] = await getOrders();
 
-  const { query = "" } = searchParams as SearchParams;
-  const { status = "" } = searchParams as SearchParams;
+  const { productName = "", status = "" } = searchParams as SearchParams;
 
   let filteredData = orderListData;
 
-  if (query) {
+  if (productName) {
     filteredData = orderListData?.filter(
       item =>
         item.products?.find(product =>
-          product.name.toLowerCase().includes(query.toLowerCase()),
+          product.name.toLowerCase().includes(productName.toLowerCase()),
         ),
     );
   }
 
   filteredData = status
-    ? filteredData.filter(
-        (item: ProductTableData) => item.status.toString() === status,
-      )
+    ? filteredData.filter(item => item.status.toString() === status)
     : filteredData;
 
   return (
@@ -54,7 +52,7 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <OrderTable data={filteredData} />
+        <TableOrder key={`${productName}-${status}`} orders={filteredData} />
       </div>
     </Flex>
   );

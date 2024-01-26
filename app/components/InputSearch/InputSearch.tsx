@@ -19,13 +19,13 @@ const InputSearch = () => {
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
-    const value = e.target.value;
+    const value = e.target.value.trim();
     const params = new URLSearchParams(searchParams);
 
     if (value) {
-      params.set("query", value);
+      params.set("productName", value);
     } else {
-      params.delete("query");
+      params.delete("productName");
     }
 
     replace(`${pathname}?${params.toString()}`);

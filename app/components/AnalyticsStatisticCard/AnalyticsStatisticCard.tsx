@@ -1,12 +1,8 @@
 //Libs
-import { ReactNode } from "react";
+import { Card, Text, Flex } from "@tremor/react";
 
 //Components
-import { Card, Text, Flex } from "@tremor/react";
-import IconBox from "@/components/IconBox/IconBox";
-
-//Mocks
-import { SALE_STATISTICAL } from "@/constants/saleStatistical";
+import { IconBox } from "@/components";
 
 // Helpers
 import {
@@ -16,25 +12,28 @@ import {
 } from "@/helpers";
 
 // Constants
-import { ANALYTICS_STATISTICAL_TYPE } from "@/constants/analytics";
-import { UNIT } from "@/constants";
+import {
+  SALE_STATISTICAL,
+  ANALYTICS_STATISTICAL_TYPE,
+  UNIT,
+} from "@/constants";
 
-type AnalyticsStatistical = {
+interface AnalyticsStatisticalDataProps {
   id: string;
   type: string;
   amount: number;
   amountChange: number;
   duration: string;
   amountChangeType: number;
-};
+}
 
-interface IAnalyticsStatisticCard {
-  statisticalData: AnalyticsStatistical;
+interface AnalyticsStatisticCardProps {
+  statisticalData: AnalyticsStatisticalDataProps;
 }
 
 const AnalyticsStatisticCard = ({
   statisticalData,
-}: IAnalyticsStatisticCard): JSX.Element => {
+}: AnalyticsStatisticCardProps): JSX.Element => {
   const { id, type, amount, amountChange, duration, amountChangeType } =
     statisticalData;
 

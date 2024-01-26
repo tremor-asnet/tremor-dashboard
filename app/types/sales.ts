@@ -1,13 +1,13 @@
-export type TSalesStatistic = {
+export interface SalesStatisticData {
   id: string;
   type: string;
   amount: number;
   amountChange: number;
   duration: string;
   amountChangeType: number;
-};
+}
 
-export type TTopSellingProducts = {
+export interface TopSellingProductsData {
   productId: number;
   name: string;
   orders: number;
@@ -15,25 +15,25 @@ export type TTopSellingProducts = {
   adsSpent: number;
   refunds: number;
   refundsType: string;
-};
+}
 
-export type TRevenueChart = {
+export interface RevenueChartData {
   month: string;
   parameterFacebook?: number;
   parameterGoogle?: number;
-};
+}
 
-export type SalesByAgeDataProps = {
+export interface SalesByAgeData {
   value: number;
   ageRange: string;
-};
+}
 
-export type SalesByAgeProps = {
-  data: SalesByAgeDataProps[];
+export interface SalesByAgeContainer {
+  data: SalesByAgeData[];
   title: string;
-};
+}
 
-export interface ISalesByCountry {
+export interface SalesByCountryData {
   id: string;
   flag: string;
   country: string;

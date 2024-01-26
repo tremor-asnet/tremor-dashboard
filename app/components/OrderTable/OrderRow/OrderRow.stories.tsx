@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import OrderRow from ".";
-import { TProductTable } from "@/types";
+import { ProductTableData } from "@/types";
 
 const meta = {
   title: "Components/OrderTable/OrderRow",
@@ -12,7 +12,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const data: TProductTable = {
+const data: ProductTableData = {
   id: 1,
   createdAt: "2023-11-22",
   status: 1,

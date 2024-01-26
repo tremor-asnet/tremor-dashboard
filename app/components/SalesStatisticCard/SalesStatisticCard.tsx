@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Card, Text, Flex, Button } from "@tremor/react";
 
 //Types
-import { TSalesStatistic } from "@/types";
+import { SalesStatisticData } from "@/types";
 
 //Constants
 import {
@@ -20,13 +20,13 @@ import {
 // Helpers
 import { formatAdjustNumber, formattedNumber } from "@/helpers";
 
-interface ISalesStatisticProp {
-  statisticsData: TSalesStatistic;
+interface SalesStatisticProp {
+  statisticsData: SalesStatisticData;
 }
 
 const SalesStatisticCard = ({
   statisticsData,
-}: ISalesStatisticProp): JSX.Element => {
+}: SalesStatisticProp): JSX.Element => {
   const { id, type, amount, amountChange, duration, amountChangeType } =
     statisticsData;
   const [isOpenAction, setOpenAction] = useState(false);

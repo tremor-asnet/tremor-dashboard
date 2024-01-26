@@ -1,12 +1,12 @@
 import { Bold, Flex } from "@tremor/react";
 
 // Types
-import { BillingInfoProps } from "@/types/orderDetails";
+import { BillingInfoData } from "@/types";
 
 const BillingInfo = ({
   billingData,
 }: {
-  billingData: Partial<BillingInfoProps>;
+  billingData: Partial<BillingInfoData>;
 }) => {
   const listTitle = ["Company Name", "Email Address", "VAT Number"];
   const { ownerName, cardLast4Digit, ...billingInfo } = billingData;
@@ -45,7 +45,7 @@ const BillingInfo = ({
               const data =
                 billingInfo[
                   item as keyof Omit<
-                    BillingInfoProps,
+                    BillingInfoData,
                     "ownerName" | "cardLast4Digit"
                   >
                 ];

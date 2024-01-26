@@ -2,6 +2,10 @@
   @apply !bg-transparent rounded-none !border-b-[#d2d6da] border-0 border-b border-solid;
 }
 
+.select-custom button + button {
+  @apply  border-0;
+}
+
 .select-custom button:hover {
   @apply !bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
 }

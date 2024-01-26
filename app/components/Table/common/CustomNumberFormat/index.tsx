@@ -4,18 +4,16 @@ import { CURRENCY } from "@/constants";
 // Helpers
 import { formatDotsToCommasNumber } from "@/helpers";
 
-interface CustomNumberFormatNodeProps {
-  revenue: number;
+interface CustomNumberFormatProps {
+  value: number;
 }
 
-const CustomNumberFormatNode = ({ revenue }: CustomNumberFormatNodeProps) => (
+export const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
   <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-revenue">
     {formatDotsToCommasNumber({
-      value: revenue,
+      value,
       currency: CURRENCY.DOLLAR,
       positionFraction: 2,
     })}
   </p>
 );
-
-export default CustomNumberFormatNode;

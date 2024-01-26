@@ -569,17 +569,17 @@ exports[`Order Table Testing should match snapshot 1`] = `
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                <h6
-                  class="text-xs font-semibold"
+                <p
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Yes
-                </h6>
+                </p>
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Provider A
                 </p>
@@ -676,17 +676,17 @@ exports[`Order Table Testing should match snapshot 1`] = `
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                <h6
-                  class="text-xs font-semibold"
+                <p
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Yes
-                </h6>
+                </p>
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Provider B
                 </p>
@@ -783,17 +783,17 @@ exports[`Order Table Testing should match snapshot 1`] = `
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                <h6
-                  class="text-xs font-semibold"
+                <p
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Yes
-                </h6>
+                </p>
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Provider A
                 </p>
@@ -890,17 +890,17 @@ exports[`Order Table Testing should match snapshot 1`] = `
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                <h6
-                  class="text-xs font-semibold"
+                <p
+                  class="text-xs dark:text-white font-semibold"
                 >
                   No
-                </h6>
+                </p>
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Provider C
                 </p>
@@ -997,17 +997,17 @@ exports[`Order Table Testing should match snapshot 1`] = `
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                <h6
-                  class="text-xs font-semibold"
+                <p
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Yes
-                </h6>
+                </p>
               </td>
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
                 <p
-                  class="text-xs font-semibold"
+                  class="text-xs dark:text-white font-semibold"
                 >
                   Provider B
                 </p>

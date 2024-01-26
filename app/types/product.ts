@@ -1,7 +1,6 @@
 export interface Product {
   id: number;
   createdAt: string;
-  productId: string;
   productName: string;
   price: number;
   isAvailable: boolean;
@@ -16,4 +15,12 @@ export type TProductInfo = {
   weight?: string;
   category?: string;
   size?: string;
+};
+
+export type TPricingInfo = {
+  id: string;
+  price: string;
+  type?: string;
+  sku?: string;
+  tags?: string[];
 };

@@ -1,7 +1,7 @@
 // Components
 import { Title, Flex } from "@tremor/react";
 
-const Socials = () => {
+const Socials = ({ handleSocials }: { handleSocials: () => void }) => {
   const inputClasses = `w-full text-sm text-secondary dark:text-dark-romance text-tremor-content-title py-1 mb-6 rounded-none ring-0 border-0 border-b focus:border-b-2 border-gray-300 focus:border-tremor-brand-subtle focus:outline-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:border-white dark:text-white`;
   return (
     <>
@@ -11,18 +11,21 @@ const Socials = () => {
       <Flex className="flex-col items-start justify-start mt-8">
         <input
           className={inputClasses}
-          id="shoppifyHandle"
+          id="shoppify-handle"
           placeholder="Shoppify Handle"
+          onChange={handleSocials}
         />
         <input
           className={inputClasses}
-          id="facebookAccount"
+          id="facebook-account"
           placeholder="Facebook Account"
+          onChange={handleSocials}
         />
         <input
           className={inputClasses}
-          id="instagramAccount"
+          id="instagram-account"
           placeholder="Instagram Account"
+          onChange={handleSocials}
         />
       </Flex>
     </>

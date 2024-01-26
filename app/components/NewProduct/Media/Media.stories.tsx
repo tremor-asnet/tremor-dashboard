@@ -6,6 +6,8 @@ import Media from "./Media";
 const propsDefault = {
   name: "Gold Glasses",
   url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/product-12.0b55635d.jpg",
+  path: "product-12.0b55635d.jpg",
+  size: "71.4",
   isUploaded: false,
 };
 

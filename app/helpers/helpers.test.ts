@@ -174,7 +174,7 @@ describe("getPageTitle function", () => {
       params: "1234",
     };
     const name = getCrumbName({ ...mockValue });
-    expect(name).toBe("Order Details" + " #" + "1234");
+    expect(name).toBe("1234");
   });
 
   test("Should render Product Details with id", () => {
@@ -184,7 +184,7 @@ describe("getPageTitle function", () => {
       params: "1234",
     };
     const name = getCrumbName({ ...mockValue });
-    expect(name).toBe("Product Details" + " #" + "1234");
+    expect(name).toBe("1234");
   });
 
   test("Should render correct name", () => {

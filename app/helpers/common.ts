@@ -1,4 +1,4 @@
-import { ROUTES } from "@/constants";
+import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -34,10 +34,10 @@ export const getCrumbName = ({
   params?: string | string[];
 }) => {
   if (path && params) {
-    if (path.includes(`${ROUTES.ORDER_LIST}/`))
+    if (ORDER_LIST_REGEX.test(path))
       return `Order Details ${params && "#" + params}`;
 
-    if (path.includes(`${ROUTES.PRODUCT_LIST}/`))
+    if (PRODUCT_LIST_REGEX.test(path))
       return `Product Details ${params && "#" + params}`;
   }
 

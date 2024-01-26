@@ -28,6 +28,20 @@ const Breadcrumb = ({
   const isStickyHeader = !isScrolled && isProjectPage;
   const newPath = pathname?.split("/").filter(path => path);
 
+  console.log("pathname", pathname);
+  console.log("params", params);
+  const pattern = /.*order-list\/\w+/;
+  console.log("test", pattern.test(pathname));
+
+  console.log(
+    "newPath",
+    getCrumbName({
+      name: "order-list",
+      path: pathname,
+      params: "1234",
+    }),
+  );
+
   const renderTitle = () => {
     if (pathname) {
       if (pathname.includes(`${ROUTES.ORDER_LIST}/`)) return "Order Details";

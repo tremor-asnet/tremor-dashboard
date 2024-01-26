@@ -176,72 +176,76 @@ exports[`Data Table Testing should match snapshot 1`] = `
               </th>
             </tr>
           </thead>
-          <tr
-            class="tremor-TableRow-row"
+          <tbody
+            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
+            <tr
+              class="tremor-TableRow-row"
             >
-              <p
-                class="text-xs font-semibold"
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                10425
-              </p>
-            </td>
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
+                <p
+                  class="text-xs font-semibold"
+                >
+                  10425
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
+              >
+                <p
+                  class="text-xs font-semibold"
+                >
+                  2023-11-01T10:20:00+00:00
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
             >
-              <p
-                class="text-xs font-semibold"
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                2023-11-01T10:20:00+00:00
-              </p>
-            </td>
-          </tr>
-          <tr
-            class="tremor-TableRow-row"
-          >
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
+                <p
+                  class="text-xs font-semibold"
+                >
+                  12345
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
+              >
+                <p
+                  class="text-xs font-semibold"
+                >
+                  2023-11-01T03:20:00+00:00
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
             >
-              <p
-                class="text-xs font-semibold"
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                12345
-              </p>
-            </td>
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-            >
-              <p
-                class="text-xs font-semibold"
+                <p
+                  class="text-xs font-semibold"
+                >
+                  12350
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
               >
-                2023-11-01T03:20:00+00:00
-              </p>
-            </td>
-          </tr>
-          <tr
-            class="tremor-TableRow-row"
-          >
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-            >
-              <p
-                class="text-xs font-semibold"
-              >
-                12350
-              </p>
-            </td>
-            <td
-              class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 border-b border-gray-100"
-            >
-              <p
-                class="text-xs font-semibold"
-              >
-                2023-11-01T11:03:00+00:00
-              </p>
-            </td>
-          </tr>
+                <p
+                  class="text-xs font-semibold"
+                >
+                  2023-11-01T11:03:00+00:00
+                </p>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

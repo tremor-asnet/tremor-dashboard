@@ -38,3 +38,15 @@ export const getCrumbName = ({
     return name.replace("-", " ");
   }
 };
+
+/**
+ * Filter data by value
+ * @param data []
+ * @param field string
+ * @param value string
+ * @returns []
+ */
+export const filterDataByValue = <T>(data: T[], field: string, value: string) =>
+  data.filter(item =>
+    getObjectValue(item, field).toLowerCase().includes(value.toLowerCase()),
+  );

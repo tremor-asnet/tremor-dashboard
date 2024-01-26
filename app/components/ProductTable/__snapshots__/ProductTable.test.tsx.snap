@@ -742,7 +742,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
-                        001992
+                        1992
                       </p>
                     </div>
                   </td>
@@ -1166,7 +1166,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
-                        230019
+                        2
                       </p>
                     </div>
                   </td>
@@ -1272,7 +1272,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
-                        87120
+                        3
                       </p>
                     </div>
                   </td>
@@ -1378,7 +1378,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
-                        1992
+                        4
                       </p>
                     </div>
                   </td>
@@ -1484,7 +1484,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                         class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                       >
                         #
-                        412301
+                        5
                       </p>
                     </div>
                   </td>
@@ -2432,7 +2432,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
-                      001992
+                      1992
                     </p>
                   </div>
                 </td>
@@ -2856,7 +2856,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
-                      230019
+                      2
                     </p>
                   </div>
                 </td>
@@ -2962,7 +2962,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
-                      87120
+                      3
                     </p>
                   </div>
                 </td>
@@ -3068,7 +3068,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
-                      1992
+                      4
                     </p>
                   </div>
                 </td>
@@ -3174,7 +3174,7 @@ exports[`Testing table list component Should match snapshot 1`] = `
                       class="text-tremor-default text-tremor-content dark:text-dark-tremor-content ml-4 text-xs font-semibold leading-[15px] tracking-[0.4px] order-id"
                     >
                       #
-                      412301
+                      5
                     </p>
                   </div>
                 </td>

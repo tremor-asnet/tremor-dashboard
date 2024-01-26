@@ -50,7 +50,7 @@ const ProductTable = ({
                 return (
                   <ProductRow
                     key={product.id}
-                    id={product.productId}
+                    id={product.id.toString()}
                     image={product.image}
                     name={product.productName}
                     price={product.price}

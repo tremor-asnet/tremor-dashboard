@@ -36,3 +36,4 @@ export { default as OrderRow } from "./OrderTable/OrderRow";
 export { default as Checkbox } from "./common/Checkbox";
 export { default as OrderTable } from "./OrderTable";
 export { default as ProductRow } from "./ProductTable/ProductRow";
+export { default as FilterItem } from "./FilterItem";

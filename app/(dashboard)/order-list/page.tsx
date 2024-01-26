@@ -3,13 +3,13 @@ import { Button, Flex, Text } from "@tremor/react";
 
 // Components
 import { InputSearch, OrderFilter } from "@/components";
+import TableOrder from "@/components/Table/TableOrder/TableOrder";
 
 // Services
 import { getOrders } from "@/services";
 
 // Types
 import { Order } from "@/types";
-import TableOrder from "@/components/Table/TableOrder/TableOrder";
 
 type SearchParams = {
   query: string;

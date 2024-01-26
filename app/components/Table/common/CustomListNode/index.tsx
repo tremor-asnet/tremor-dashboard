@@ -1,10 +1,10 @@
 import { OrderProduct } from "@/types";
 
-interface ProductsNodeProps {
+interface CustomListNode {
   products: OrderProduct[];
 }
 
-export const ProductsNode = ({ products }: ProductsNodeProps) => (
+const CustomListNode = ({ products }: CustomListNode) => (
   <>
     {products?.map(product => (
       <p
@@ -15,3 +15,5 @@ export const ProductsNode = ({ products }: ProductsNodeProps) => (
     ))}
   </>
 );
+
+export default CustomListNode;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface CustomerNodeProps {
+interface CustomAvatarNameProps {
   customer: {
     id: number;
     avatar?: string;
@@ -8,7 +8,7 @@ interface CustomerNodeProps {
   };
 }
 
-const CustomerNode = ({ customer }: CustomerNodeProps) => (
+const CustomAvatarName = ({ customer }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-auto">
     {customer.avatar ? (
       <Image
@@ -30,4 +30,4 @@ const CustomerNode = ({ customer }: CustomerNodeProps) => (
   </div>
 );
 
-export default CustomerNode;
+export default CustomAvatarName;

@@ -1,14 +1,17 @@
+// Constants
 import { SEPARATOR } from "@/constants";
+
+// Helpers
 import { formatDateTime } from "@/helpers";
 
-interface FormatDateNodeProps {
+interface CustomDateFormatNodeProps {
   date: string;
 }
 
-const FormatDateNode = ({ date }: FormatDateNodeProps) => (
+const CustomDateFormatNode = ({ date }: CustomDateFormatNodeProps) => (
   <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-dagte">
     {formatDateTime(date, SEPARATOR.COMMAS)}
   </p>
 );
 
-export default FormatDateNode;
+export default CustomDateFormatNode;

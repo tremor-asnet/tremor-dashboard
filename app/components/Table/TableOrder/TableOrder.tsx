@@ -2,12 +2,12 @@
 
 // Components
 import DataGrid from "@/components/common/DataGrid/DataGrid";
-import IdNode from "../common/IdNode";
-import FormatDateNode from "../common/FormatDateNode";
-import StatusNode from "../common/StatusNode";
-import CustomerNode from "../common/CustomerNode";
-import { ProductsNode } from "../common/ProductsNode";
-import RevenueNode from "../common/RevenueNode";
+import CustomCheckBoxField from "../common/CustomCheckBoxField";
+import CustomDateFormatNode from "../common/CustomDateFormatNode";
+import CustomStatusNode from "../common/CustomStatusNode";
+import CustomAvatarName from "../common/CustomAvatarName";
+import CustomListNode from "../common/CustomListNode";
+import CustomNumberFormatNode from "../common/CustomNumberFormatNode";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -27,35 +27,39 @@ const TableOrder = ({ orders }: TableOrderProps) => {
       key: "id",
       title: "Id",
       customNode: (_, { id }) => (
-        <IdNode id={id} onChange={handleChangeCheckbox} />
+        <CustomCheckBoxField id={id} onChange={handleChangeCheckbox} />
       ),
     },
     {
       key: "createdAt",
       title: "Date",
-      customNode: (_, { createdAt }) => <FormatDateNode date={createdAt} />,
+      customNode: (_, { createdAt }) => (
+        <CustomDateFormatNode date={createdAt} />
+      ),
     },
     {
       key: "status",
       title: "Status",
-      customNode: (_, { status }) => <StatusNode status={status} />,
+      customNode: (_, { status }) => <CustomStatusNode status={status} />,
     },
     {
       key: "customer",
       title: "Customer",
       customNode: (_, { customer }) => {
-        return <CustomerNode customer={customer} />;
+        return <CustomAvatarName customer={customer} />;
       },
     },
     {
       key: "products",
       title: "Products",
-      customNode: (_, { products }) => <ProductsNode products={products} />,
+      customNode: (_, { products }) => <CustomListNode products={products} />,
     },
     {
       key: "revenue",
       title: "Revenue",
-      customNode: (_, { revenue }) => <RevenueNode revenue={revenue} />,
+      customNode: (_, { revenue }) => (
+        <CustomNumberFormatNode revenue={revenue} />
+      ),
     },
   ];
 

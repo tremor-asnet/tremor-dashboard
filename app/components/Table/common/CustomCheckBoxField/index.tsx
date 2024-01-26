@@ -5,12 +5,12 @@ import Link from "next/link";
 // Constants
 import { ROUTES } from "@/constants";
 
-interface IdNodeProps {
+interface CustomCheckboxFieldProps {
   id: number;
   onChange: () => void;
 }
 
-const IdNode = ({ id, onChange }: IdNodeProps) => (
+const CustomCheckBoxField = ({ id, onChange }: CustomCheckboxFieldProps) => (
   <div className="flex justify-start items-center ml-2">
     <Checkbox onChange={onChange} />
     <Link
@@ -21,4 +21,4 @@ const IdNode = ({ id, onChange }: IdNodeProps) => (
   </div>
 );
 
-export default IdNode;
+export default CustomCheckBoxField;

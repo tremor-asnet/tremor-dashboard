@@ -4,11 +4,11 @@ import { STATUS_TEXT } from "@/constants";
 // Helpers
 import { ProductStatus } from "@/helpers";
 
-interface StatusNodeProps {
+interface CustomStatusNodeProps {
   status: number;
 }
 
-const StatusNode = ({ status }: StatusNodeProps) => (
+const CustomStatusNode = ({ status }: CustomStatusNodeProps) => (
   <div className="flex justify-start items-center text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
     {ProductStatus(status)}
     <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
@@ -17,4 +17,4 @@ const StatusNode = ({ status }: StatusNodeProps) => (
   </div>
 );
 
-export default StatusNode;
+export default CustomStatusNode;

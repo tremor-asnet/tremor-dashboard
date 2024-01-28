@@ -46,7 +46,25 @@ export const getCrumbName = ({
  * @param value string
  * @returns []
  */
-export const filterDataByValue = <T>(data: T[], field: string, value: string) =>
+export const searchProductDataByValue = <T>(
+  data: T[],
+  field: string,
+  value: string,
+) =>
   data.filter(item =>
     getObjectValue(item, field).toLowerCase().includes(value.toLowerCase()),
+  );
+
+export const searchOrderDataByValue = <T, Y>(
+  data: T[],
+  fieldOuter: string,
+  fieldInner: string,
+  value: string,
+) =>
+  data.filter(item =>
+    (getObjectValue(item, fieldOuter) as unknown as Y[]).find(itemInner =>
+      getObjectValue(itemInner, fieldInner)
+        .toLowerCase()
+        .includes((value as string).toLowerCase()),
+    ),
   );

@@ -18,7 +18,7 @@ import {
 import { TPricingInfo, SelectOptionData } from "@/types";
 
 // Constants
-import { TYPE_PRICE, TAGS_PRICE } from "@/constants";
+import { TYPE_PRICE, TAGS_PRICE, PRODUCT_TAGS } from "@/constants";
 
 // Styles
 import "@/styles/form.css";
@@ -110,7 +110,10 @@ const PricingInfo = ({ price, type, sku, tags }: PricingInfoData) => {
                 <div className="w-full mb-4">
                   <Text className="text-secondary dark:text-white">Tags</Text>
                   <MultiSelect
-                    defaultValue={["In Stock", "Out of Stock"]}
+                    defaultValue={[
+                      PRODUCT_TAGS.IN_STOCK,
+                      PRODUCT_TAGS.OUT_OF_STOCK,
+                    ]}
                     className="select-custom dark:text-white dark:border-light dark:focus:border-white">
                     {TAGS_PRICE.map((item: SelectOptionData) => (
                       <MultiSelectItem key={item.value} value={item.value}>

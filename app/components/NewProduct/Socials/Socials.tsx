@@ -12,10 +12,15 @@ interface SocialsData {
   instagramUrl?: string;
 }
 
-const Socials = ({ shoppifyUrl, facebookUrl, instagramUrl }: SocialsData) => {
+const Socials = ({
+  shoppifyUrl = "",
+  facebookUrl = "",
+  instagramUrl = "",
+}: SocialsData) => {
   const handleSocials = () => {
     // TODO: Handle change here
   };
+
   return (
     <Card className="dark:bg-dark-tremor-primary">
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
@@ -27,21 +32,21 @@ const Socials = ({ shoppifyUrl, facebookUrl, instagramUrl }: SocialsData) => {
           id="shoppify-handle"
           placeholder="Shoppify Handle"
           onChange={handleSocials}
-          value={shoppifyUrl || ""}
+          value={shoppifyUrl}
         />
         <input
           className="input-text"
           id="facebook-account"
           placeholder="Facebook Account"
           onChange={handleSocials}
-          value={facebookUrl || ""}
+          value={facebookUrl}
         />
         <input
           className="input-text"
           id="instagram-account"
           placeholder="Instagram Account"
           onChange={handleSocials}
-          value={instagramUrl || ""}
+          value={instagramUrl}
         />
       </Flex>
     </Card>

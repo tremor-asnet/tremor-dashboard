@@ -1,0 +1,59 @@
+import { Title, Text, Flex, Card, Button } from "@tremor/react";
+
+// React Icon
+import { MdEdit, MdRefresh } from "react-icons/md";
+
+// Components
+import { CustomImage } from "@/components";
+
+const ProductImage = ({
+  name,
+  desc,
+  image,
+}: {
+  name: string;
+  desc: string;
+  image: string;
+}): JSX.Element => {
+  return (
+    <Card className="bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info">
+      <Flex className="justify-start flex-col items-start -mt-10">
+        <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
+          <CustomImage
+            className="relative w-full rounded-xl shadow-lg z-10"
+            src={image}
+            width={800}
+            height={533}
+            alt={name}
+            sizes="(min-width: 768px) 33vw, 70vw"
+          />
+          <div className="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"></div>
+        </Flex>
+        <Flex className="flex-col pt-7 px-2">
+          <Flex className="justify-center cursor-pointer -mt-16">
+            {/* <MdRefresh className="text-[#e91e63] text-xl mx-6" />
+            <MdEdit className="text-tremor-content-title text-xl mx-6" /> */}
+            <Button className="antialiased py-[12px] text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-2 py-1.5 leading-[17px] tracking-[0.35px]">
+              <Text className="uppercase py-[2px] text-xs font-bold text-white uppercase mx-2">
+                Edit
+              </Text>
+            </Button>
+            <Button className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 hover:bg-transparent hover:opacity-75 mx-2">
+              <Text className="uppercase py-[1px] text-xs font-bold text-red-500 uppercase mx-2">
+                Remove
+              </Text>
+            </Button>
+          </Flex>
+          <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">
+            {name}
+          </Title>
+          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4">
+            {desc}
+          </Text>
+        </Flex>
+      </Flex>
+    </Card>
+  );
+};
+
+export default ProductImage;

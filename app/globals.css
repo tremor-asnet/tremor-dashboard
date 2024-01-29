@@ -51,4 +51,21 @@
   .btn-paginate-active {
     @apply text-sm w-9 h-9 inline-flex justify-center items-center rounded-full bg-black text-white dark:bg-primary shadow-sm shadow-white;
   }
+
+  /* Stepper */
+  .stepper-dark-bg {
+    @apply bg-gradient-to-b from-[#323a54] to-[#1a2035];
+  }
+
+  .stepper-text-content {
+    @apply text-xs text-center uppercase px-1.5;
+  }
+
+  .stepper-dot {
+    @apply shrink-0 w-3 h-3 bg-zinc-400;
+  }
+
+  .stepper-dot-active {
+    @apply shrink-0 w-4 h-4 bg-white;
+  }
 }

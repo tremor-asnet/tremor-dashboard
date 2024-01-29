@@ -1,5 +1,5 @@
 // Types
-import { SelectOption } from "@/types";
+import { SelectOptionData } from "@/types";
 
 type TopSellingProductsType = {
   [key: number]: string;
@@ -18,7 +18,7 @@ export const TOP_SELLING_PRODUCTS_SRC: TopSellingProductsType = {
   5: "/assets/images/products/photo-tools.webp",
 };
 
-export const TYPE_PRICE: SelectOption[] = [
+export const TYPE_PRICE: SelectOptionData[] = [
   {
     option: "BTC",
     value: "1",
@@ -45,7 +45,7 @@ export const TYPE_PRICE: SelectOption[] = [
   },
 ];
 
-export const TAGS_PRICE: SelectOption[] = [
+export const TAGS_PRICE: SelectOptionData[] = [
   {
     option: "Black Friday",
     value: "1",
@@ -64,6 +64,52 @@ export const TAGS_PRICE: SelectOption[] = [
   },
   {
     option: "Sale",
+    value: "5",
+  },
+];
+
+export const CATEGORY_PRODUCT: SelectOptionData[] = [
+  {
+    option: "Clothing",
+    value: "1",
+  },
+  {
+    option: "Electronics",
+    value: "2",
+  },
+  {
+    option: "Furniture",
+    value: "3",
+  },
+  {
+    option: "Others",
+    value: "4",
+  },
+  {
+    option: "Real Estate",
+    value: "5",
+  },
+];
+
+export const SIZE_PRODUCT: SelectOptionData[] = [
+  {
+    option: "Extra Large",
+    value: "1",
+  },
+  {
+    option: "Extra Small",
+    value: "2",
+  },
+  {
+    option: "Large",
+    value: "3",
+  },
+  {
+    option: "Medium",
+    value: "4",
+  },
+  {
+    option: "Small",
     value: "5",
   },
 ];

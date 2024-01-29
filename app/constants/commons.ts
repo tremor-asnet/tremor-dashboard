@@ -1,3 +1,6 @@
+// Types
+import { ListOption } from "@/types";
+
 export const ITEM_ACTION_PROJECT = [
   {
     key: "act",

@@ -125,7 +125,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               href="/analytics"
             >
               <span>
-                A
+                AN
               </span>
               <span
                 class="xl:hidden pl-2"
@@ -327,7 +327,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             href="/analytics"
           >
             <span>
-              A
+              AN
             </span>
             <span
               class="xl:hidden pl-2"

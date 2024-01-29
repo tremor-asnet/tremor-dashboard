@@ -39,7 +39,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
             >
               Order was delivered 
-              15
+              18
                days ago.
             </p>
             <p
@@ -121,7 +121,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
           >
             Order was delivered 
-            15
+            18
              days ago.
           </p>
           <p

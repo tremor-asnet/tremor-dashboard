@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { SelectOption } from "@/components";
 
 // Constants
-import { listOption } from "@/constants";
+import { orderListOption } from "@/constants";
 
 const meta = {
   title: "Components/SelectOption",
@@ -18,5 +18,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <SelectOption data={listOption} onClickItem={() => {}} />,
+  render: () => <SelectOption data={orderListOption} onClickItem={() => {}} />,
 };

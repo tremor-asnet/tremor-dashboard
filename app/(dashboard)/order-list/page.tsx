@@ -12,7 +12,7 @@ import { getOrders } from "@/services";
 import { Order, OrderProduct } from "@/types";
 
 // Helpers
-import { searchOrderDataByValue } from "@/helpers";
+import { filterOrderList, searchOrderDataByValue } from "@/helpers";
 
 type SearchParams = {
   productName?: string;
@@ -30,6 +30,8 @@ const OrderListPage = async ({
 
   let filteredData = orderListData;
 
+  // console.log(filteredData);
+
   if (productName) {
     filteredData = searchOrderDataByValue<Order, OrderProduct>(
       orderListData,
@@ -40,7 +42,7 @@ const OrderListPage = async ({
   }
 
   filteredData = status
-    ? filteredData.filter(item => item.status.toString() === status)
+    ? filterOrderList<Order>(filteredData, "status", status)
     : filteredData;
 
   return (

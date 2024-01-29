@@ -1,19 +1,19 @@
 // Components
-import { OrderFilter, InputSearch } from "@/components";
-import TableProduct from "@/components/Table/TableProduct/TableProduct";
+import { TableProduct, InputSearch, ProductFilter } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Services
-import { getProducts } from "@/services/productServices";
+import { getProducts } from "@/services";
 
 // Types
 import { Product } from "@/types";
 
 // Helpers
-import { searchProductDataByValue } from "@/helpers";
+import { filterProductList, searchProductDataByValue } from "@/helpers";
 
 type SearchParamsProduct = {
   productName: string;
+  isAvailable: string;
 };
 
 const ProductListPage = async ({
@@ -25,7 +25,8 @@ const ProductListPage = async ({
 
   const productListData: Product[] = await getProducts();
 
-  const { productName = "" } = searchParams as SearchParamsProduct;
+  const { productName = "", isAvailable = "" } =
+    searchParams as SearchParamsProduct;
 
   let filteredData = productListData;
 
@@ -37,6 +38,14 @@ const ProductListPage = async ({
     );
   }
 
+  filteredData = isAvailable
+    ? filterProductList(
+        filteredData,
+        "isAvailable",
+        String(isAvailable).toLowerCase() === "true",
+      )
+    : filteredData;
+
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex>
@@ -45,11 +54,14 @@ const ProductListPage = async ({
             new product
           </Text>
         </Button>
-        <OrderFilter title="Filter" />
+        <ProductFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <TableProduct key={productName} products={filteredData} />
+        <TableProduct
+          key={`${productName}-${isAvailable}`}
+          products={filteredData}
+        />
       </div>
     </Flex>
   );

@@ -55,6 +55,14 @@ export const searchProductDataByValue = <T>(
     getObjectValue(item, field).toLowerCase().includes(value.toLowerCase()),
   );
 
+/**
+ * Search Order data by value
+ * @param data []
+ * @param fieldOuter string
+ * @param fieldInner string
+ * @param value string
+ * @returns []
+ */
 export const searchOrderDataByValue = <T, Y>(
   data: T[],
   fieldOuter: string,

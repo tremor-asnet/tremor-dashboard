@@ -9,7 +9,7 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-auto">
     {avatar ? (
       <Image
-        className="w-6 h-6 rounded-full mr-2"
+        className="w-6 h-6 min-w-[24px] rounded-full mr-2"
         alt={text}
         width={24}
         height={24}

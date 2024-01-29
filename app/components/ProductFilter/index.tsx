@@ -83,7 +83,7 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
                   title="Is Available"
                   option={option}
                   value={value}
-                  className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
+                  additionalClass="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
                   onSelectFilter={handleSelectFilter}
                 />
               ))}

@@ -1,8 +1,9 @@
-import { ListOption } from "@/types";
+import { ListOption, ProductListOption } from "@/types";
+import { Button } from "@tremor/react";
 
 interface SelectOptionProps {
   title: string;
-  data: ListOption[];
+  data: ListOption[] | ProductListOption[];
   onSelectItem: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onSelectRemove: () => void;
 }
@@ -13,23 +14,25 @@ const SelectOption = ({
   onSelectItem,
   onSelectRemove,
 }: SelectOptionProps) => (
-  <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
-    {data.map(({ option, value }) => (
-      <li
-        className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
-        key={option}>
-        <button onClick={onSelectItem} value={value}>
-          {title}: {option}
-        </button>
-      </li>
-    ))}
+  <>
+    <ul>
+      {data.map(({ option, value }) => (
+        <li
+          className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
+          key={option}>
+          <button onClick={onSelectItem} value={value}>
+            {title}: {option}
+          </button>
+        </li>
+      ))}
+    </ul>
     <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
-    <li
-      className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary"
+    <button
+      className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary text-left"
       onClick={onSelectRemove}>
       Remove Filter
-    </li>
-  </ul>
+    </button>
+  </>
 );
 
 export default SelectOption;

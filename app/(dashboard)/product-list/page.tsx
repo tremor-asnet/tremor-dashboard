@@ -9,7 +9,7 @@ import { getProducts } from "@/services";
 import { Product } from "@/types";
 
 // Helpers
-import { searchProductDataByValue } from "@/helpers";
+import { filterProductList, searchProductDataByValue } from "@/helpers";
 
 type SearchParamsProduct = {
   productName: string;
@@ -39,8 +39,10 @@ const ProductListPage = async ({
   }
 
   filteredData = isAvailable
-    ? filteredData.filter(
-        (item: Product) => item.isAvailable === (Number(isAvailable) === 0),
+    ? filterProductList(
+        filteredData,
+        "isAvailable",
+        String(isAvailable).toLowerCase() === "true",
       )
     : filteredData;
 

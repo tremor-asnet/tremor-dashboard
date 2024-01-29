@@ -76,3 +76,12 @@ export const searchOrderDataByValue = <T, Y>(
         .includes((value as string).toLowerCase()),
     ),
   );
+
+export const filterOrderList = <T>(data: T[], field: string, value: string) =>
+  data.filter(item => getObjectValue(item, field).toString() === value);
+
+export const filterProductList = <T>(
+  data: T[],
+  field: string,
+  value: boolean,
+) => data.filter(item => Boolean(getObjectValue(item, field)) === value);

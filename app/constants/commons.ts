@@ -1,5 +1,5 @@
 // Types
-import { ListOption } from "@/types";
+import { ListOption, ProductListOption } from "@/types";
 
 export const ITEM_ACTION_PROJECT = [
   {
@@ -59,9 +59,9 @@ export const orderListOption: ListOption[] = [
   { option: "Canceled", value: 1 },
 ];
 
-export const ProductListOption: ListOption[] = [
-  { option: "Yes", value: 0 },
-  { option: "No", value: 1 },
+export const ProductList: ProductListOption[] = [
+  { option: "Yes", value: "true" },
+  { option: "No", value: "false" },
 ];
 
 export const ORDER_LIST_REGEX = /order-list\/\w+/gm;

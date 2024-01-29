@@ -8,7 +8,7 @@ import { Button, Text } from "@tremor/react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Constants
-import { ProductListOption } from "@/constants";
+import { ProductList } from "@/constants";
 
 // Hooks
 import { useOutsideClick } from "@/hooks";
@@ -74,10 +74,12 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
         </Text>
       </Button>
       {showListOption && (
-        <div ref={selectRef as RefObject<HTMLDivElement>}>
+        <div
+          ref={selectRef as RefObject<HTMLDivElement>}
+          className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
           <SelectOption
             title="Is Available"
-            data={ProductListOption}
+            data={ProductList}
             onSelectItem={handleSelectFilter}
             onSelectRemove={handleRemoveFilter}
           />

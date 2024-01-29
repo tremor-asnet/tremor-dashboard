@@ -24,3 +24,19 @@ export type TPricingInfo = {
   sku?: string;
   tags?: string[];
 };
+
+export type TEditProduct = {
+  name: string;
+  desc: string;
+  weight: number;
+  category: number;
+  quantity: number;
+  price: number;
+  currency: number;
+  sku: string;
+  tags: [number, number];
+  image: string;
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
+};

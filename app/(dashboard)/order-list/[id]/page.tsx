@@ -52,6 +52,10 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
 
   const firstProduct = products.length > 0 ? products[0] : null;
 
+  const firstDay = new Date().getTime();
+  const lastDay = new Date(deliveredAt).getTime();
+  const period = Math.round((firstDay - lastDay) / (1000 * 3600 * 24));
+
   return (
     <Flex justifyContent="center" className="w-full bg-transparent">
       <Card className="w-full lg:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
@@ -68,7 +72,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <OrderContact
               name={firstProduct.name}
               url={firstProduct.url}
-              date={deliveredAt}
+              date={period}
               status={status}
             />
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />

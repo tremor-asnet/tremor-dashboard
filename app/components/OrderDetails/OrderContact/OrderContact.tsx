@@ -12,13 +12,9 @@ const OrderContact = ({
 }: {
   name: string;
   url: string;
-  date: string;
+  date: number;
   status?: number;
 }) => {
-  const firstDay = new Date().getTime();
-  const lastDay = new Date(date).getTime();
-  const period = Math.round((firstDay - lastDay) / (1000 * 3600 * 24));
-
   return (
     <Flex className="flex-wrap sm:flex-nowrap">
       <Flex justifyContent="start">
@@ -36,7 +32,7 @@ const OrderContact = ({
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
             {name}
           </Title>
-          {orderStatus(status, period)}
+          {orderStatus(status, date)}
         </Flex>
       </Flex>
       <Flex>

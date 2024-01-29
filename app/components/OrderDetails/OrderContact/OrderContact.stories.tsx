@@ -6,7 +6,7 @@ import OrderContact from "./OrderContact";
 const propsDefault = {
   name: "Leather Wallet",
   url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
-  date: "2024-01-11T09:48:52Z",
+  date: 18,
 };
 
 const meta = {

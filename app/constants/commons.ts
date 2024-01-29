@@ -50,10 +50,15 @@ export const SOCIAL_LINK = {
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
 
-export const listOption: ListOption[] = [
+export const orderListOption: ListOption[] = [
   { option: "Paid", value: 0 },
   { option: "Refunded", value: 2 },
   { option: "Canceled", value: 1 },
+];
+
+export const ProductListOption: ListOption[] = [
+  { option: "Yes", value: 0 },
+  { option: "No", value: 1 },
 ];
 
 export const ORDER_LIST_REGEX = /order-list\/\w+/gm;

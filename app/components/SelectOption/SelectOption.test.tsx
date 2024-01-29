@@ -2,10 +2,10 @@ import { render } from "@testing-library/react";
 
 // Components
 import SelectOption from ".";
-import { listOption } from "@/constants";
+import { orderListOption } from "@/constants";
 
 const Props = {
-  data: listOption,
+  data: orderListOption,
   onClickItem: jest.fn(),
 };
 

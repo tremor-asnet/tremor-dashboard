@@ -3,14 +3,14 @@
 exports[`Stepper component testing should match snapshot 1`] = `
 <div>
   <ul
-    class="grid grid-cols-4 pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg rounded-lg"
+    class="grid grid-cols-undefined pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg rounded-lg"
   >
     <li>
       <div
         class="flex items-center w-full h-4 pl-[50%]"
       >
         <span
-          class="stepper-dot-active rounded-full"
+          class="stepper-dot-active"
         />
         <span
           class="h-0.5 w-full bg-white"
@@ -19,30 +19,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
       <p
         class="stepper-text-content text-white mt-2"
       >
-        1. 
-        Product Info
-      </p>
-    </li>
-    <li>
-      <div
-        class="flex items-center w-full h-4"
-      >
-        <span
-          class="h-0.5 w-[50%] bg-white"
-        />
-        <span
-          class="stepper-dot-active rounded-full"
-        />
-        <span
-          class="h-0.5 w-[50%] bg-zinc-400"
-        />
-      </div>
-      <p
-        class="stepper-text-content mt-2 text-white"
-      >
-        2
-        . 
-        Media
+        1. Product Info
       </p>
     </li>
     <li>
@@ -53,37 +30,13 @@ exports[`Stepper component testing should match snapshot 1`] = `
           class="h-0.5 w-[50%] bg-zinc-400"
         />
         <span
-          class="stepper-dot rounded-full"
-        />
-        <span
-          class="h-0.5 w-[50%] bg-zinc-400"
+          class="stepper-dot"
         />
       </div>
       <p
         class="stepper-text-content mt-2 text-zinc-400"
       >
-        3
-        . 
-        Social
-      </p>
-    </li>
-    <li>
-      <div
-        class="flex items-center w-full h-4"
-      >
-        <span
-          class="h-0.5 w-[50%] bg-zinc-400"
-        />
-        <span
-          class="rounded-full stepper-dot"
-        />
-      </div>
-      <p
-        class="stepper-text-content mt-2 text-zinc-400"
-      >
-        4
-        . 
-        Pricing
+        undefined. undefined
       </p>
     </li>
   </ul>

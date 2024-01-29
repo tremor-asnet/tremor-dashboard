@@ -20,5 +20,6 @@ export const StepperDefault: Story = {
   args: {
     steps: steps,
     currentStep: 2,
+    total: steps.length,
   },
 };

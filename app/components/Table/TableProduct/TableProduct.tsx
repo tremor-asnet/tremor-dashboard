@@ -24,8 +24,6 @@ const TableProduct = ({ products }: TableProductProps) => {
     // TODO: Handle checkbox change here
   };
 
-  console.log(products);
-
   // Product Table Props
   const columns: ColumnType<Product>[] = [
     {

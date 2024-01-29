@@ -32,7 +32,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Id
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -109,7 +109,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Product
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -186,7 +186,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Price
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -263,7 +263,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Is Available
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -340,7 +340,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Provider Name
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -417,7 +417,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                     Created Date
                   </div>
                   <div
-                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col mx-4"
+                    class="tremor-Flex-root flex w-full justify-between items-center relative flex-col ml-4"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row items-center absotule top-0 justify-end"
@@ -540,7 +540,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Christopher Knight Home"
-                    class="w-6 h-6 rounded-full mr-2"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -647,7 +647,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Bar Height Swivel Barstool"
-                    class="w-6 h-6 rounded-full mr-2"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -754,7 +754,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Christopher Knight Home"
-                    class="w-6 h-6 rounded-full mr-2"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -861,7 +861,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Modern Square"
-                    class="w-6 h-6 rounded-full mr-2"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -968,7 +968,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Signature Design by Ashley"
-                    class="w-6 h-6 rounded-full mr-2"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"

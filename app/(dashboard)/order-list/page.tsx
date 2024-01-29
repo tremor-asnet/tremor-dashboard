@@ -9,7 +9,10 @@ import TableOrder from "@/components/Table/TableOrder/TableOrder";
 import { getOrders } from "@/services";
 
 // Types
-import { Order } from "@/types";
+import { Order, OrderProduct } from "@/types";
+
+// Helpers
+import { searchOrderDataByValue } from "@/helpers";
 
 type SearchParams = {
   productName?: string;
@@ -28,11 +31,11 @@ const OrderListPage = async ({
   let filteredData = orderListData;
 
   if (productName) {
-    filteredData = orderListData?.filter(
-      item =>
-        item.products?.find(product =>
-          product.name.toLowerCase().includes(productName.toLowerCase()),
-        ),
+    filteredData = searchOrderDataByValue<Order, OrderProduct>(
+      orderListData,
+      "products",
+      "name",
+      productName,
     );
   }
 

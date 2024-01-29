@@ -9,6 +9,9 @@ import { getProducts } from "@/services/productServices";
 // Types
 import { Product } from "@/types";
 
+// Helpers
+import { searchProductDataByValue } from "@/helpers";
+
 type SearchParamsProduct = {
   productName: string;
 };
@@ -27,8 +30,10 @@ const ProductListPage = async ({
   let filteredData = productListData;
 
   if (productName) {
-    filteredData = productListData?.filter((item: Product) =>
-      item.productName.toLowerCase().includes(productName.toLowerCase()),
+    filteredData = searchProductDataByValue<Product>(
+      productListData,
+      "productName",
+      productName,
     );
   }
 

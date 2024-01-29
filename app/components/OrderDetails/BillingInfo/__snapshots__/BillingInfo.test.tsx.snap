@@ -24,7 +24,7 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         <p
           class="mb-2 text-xs dark:text-dark-lighter"
         >
-          Company Name:
+          VAT Number:
         </p>
         <p
           class="mb-2 text-xs dark:text-dark-lighter"
@@ -34,7 +34,7 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         <p
           class="mb-2 text-xs dark:text-dark-lighter"
         >
-          VAT Number:
+          Company Name:
         </p>
       </div>
       <div
@@ -45,11 +45,12 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         >
           Viking Burrito
         </p>
-        <p
+        <a
           class="mb-2 font-bold text-xs dark:text-white"
+          href="mailto: oliver@burrito.com"
         >
           oliver@burrito.com
-        </p>
+        </a>
         <p
           class="mb-2 font-bold text-xs dark:text-white"
         >

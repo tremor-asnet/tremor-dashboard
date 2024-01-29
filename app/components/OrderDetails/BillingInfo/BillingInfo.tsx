@@ -8,7 +8,7 @@ const BillingInfo = ({
 }: {
   billingData: Partial<BillingInfoData>;
 }) => {
-  const listTitle = ["Company Name", "Email Address", "VAT Number"];
+  const listTitle = ["VAT Number", "Email Address", "Company Name"];
   const { ownerName, cardLast4Digit, ...billingInfo } = billingData;
 
   return (
@@ -49,7 +49,14 @@ const BillingInfo = ({
                     "ownerName" | "cardLast4Digit"
                   >
                 ];
-              return (
+              return item === "email" ? (
+                <a
+                  href={`mailto: ${data}`}
+                  key={`${item}`}
+                  className="mb-2 font-bold text-xs dark:text-white">
+                  {data}
+                </a>
+              ) : (
                 <p
                   key={`${item}`}
                   className="mb-2 font-bold text-xs dark:text-white">

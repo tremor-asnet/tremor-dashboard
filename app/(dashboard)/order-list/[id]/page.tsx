@@ -74,8 +74,8 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-4">
-              <div className="w-full">
+            <Flex className="justify-start items-start">
+              <div className="w-full lg:max-w-[190px]">
                 <TrackOrder
                   id={trackOrderInfo.id}
                   transmitedToCourierAt={transmitedToCourierAt}
@@ -85,22 +85,26 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
                   status={status}
                 />
               </div>
-              <div className="w-full">
-                <div className="mb-6">
-                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
+              <Flex className="items-start">
+                <div className="w-full lg:min-w-[297px] lg:max-w-[297px]">
+                  <div className="mb-6">
+                    <PaymentDetails
+                      cardLast4Digit={billingInfo.cardLast4Digit}
+                    />
+                  </div>
+                  <BillingInfo billingData={billingInfo} />
                 </div>
-                <BillingInfo billingData={billingInfo} />
-              </div>
-              <Col numColSpanMd={2} numColSpanLg={1}>
-                <div className="w-full lg:pl-20">
-                  <OrderSummary
-                    productPrice={productPrice}
-                    delivery={orderDeliverPrice}
-                    taxes={orderTax}
-                  />
-                </div>
-              </Col>
-            </Grid>
+                <Col numColSpanMd={2} numColSpanLg={1}>
+                  <div className="w-full lg:pl-6">
+                    <OrderSummary
+                      productPrice={productPrice}
+                      delivery={orderDeliverPrice}
+                      taxes={orderTax}
+                    />
+                  </div>
+                </Col>
+              </Flex>
+            </Flex>
           </Col>
         </Grid>
       </Card>

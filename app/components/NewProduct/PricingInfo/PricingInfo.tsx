@@ -24,13 +24,20 @@ import { TYPE_PRICE, TAGS_PRICE } from "@/constants";
 // Styles
 import "@/styles/form.css";
 
-const PricingInfo = () => {
+interface PricingInfoData {
+  price?: string;
+  type?: string;
+  sku?: string;
+  tags?: string[];
+}
+
+const PricingInfo = ({ price, type, sku, tags }: PricingInfoData) => {
   const { control, handleSubmit } = useForm<TPricingInfo>({
     defaultValues: {
-      price: "",
-      type: "",
-      sku: "",
-      tags: [""],
+      price,
+      type,
+      sku,
+      tags,
     },
     mode: "onSubmit",
   });
@@ -97,36 +104,27 @@ const PricingInfo = () => {
                 name="sku"
               />
             </Flex>
-            <Flex className="flex-col items-start">
-              <Text className="text-secondary mb-3 dark:text-white">Tags</Text>
-              <Controller
-                control={control}
-                render={() => (
-                  <div className="h-[70px] w-full">
-                    <MultiSelect
-                      defaultValue={["In Stock", "Out of Stock"]}
-                      className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                      {TAGS_PRICE.map((item: SelectOptionData) => (
-                        <MultiSelectItem key={item.value} value={item.value}>
-                          {item.option}
-                        </MultiSelectItem>
-                      ))}
-                    </MultiSelect>
-                  </div>
-                )}
-                name="tags"
-              />
-            </Flex>
+
+            <Controller
+              control={control}
+              render={() => (
+                <div className="w-full mb-4">
+                  <Text className="text-secondary dark:text-white">Tags</Text>
+                  <MultiSelect
+                    defaultValue={["In Stock", "Out of Stock"]}
+                    className="select-custom dark:text-white dark:border-light dark:focus:border-white">
+                    {TAGS_PRICE.map((item: SelectOptionData) => (
+                      <MultiSelectItem key={item.value} value={item.value}>
+                        {item.option}
+                      </MultiSelectItem>
+                    ))}
+                  </MultiSelect>
+                </div>
+              )}
+              name="tags"
+            />
           </Flex>
         </Flex>
-        <Button
-          type="submit"
-          className="antialiased min-w-[80px] py-[12px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
-          size="xs">
-          <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
-            Send
-          </Text>
-        </Button>
       </Flex>
     </form>
   );

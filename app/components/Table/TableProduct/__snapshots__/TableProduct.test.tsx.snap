@@ -525,7 +525,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   </div>
                   <a
                     class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                    href="/product-list/230019"
+                    href="/product-list/edit-product"
                   >
                     #
                     230019
@@ -632,7 +632,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   </div>
                   <a
                     class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                    href="/product-list/87120"
+                    href="/product-list/edit-product"
                   >
                     #
                     87120
@@ -739,7 +739,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   </div>
                   <a
                     class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                    href="/product-list/2456772"
+                    href="/product-list/edit-product"
                   >
                     #
                     2456772
@@ -846,7 +846,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   </div>
                   <a
                     class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                    href="/product-list/1992"
+                    href="/product-list/edit-product"
                   >
                     #
                     1992
@@ -953,7 +953,7 @@ exports[`Order Table Testing should match snapshot 1`] = `
                   </div>
                   <a
                     class="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
-                    href="/product-list/412301"
+                    href="/product-list/edit-product"
                   >
                     #
                     412301

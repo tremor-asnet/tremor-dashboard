@@ -1,8 +1,5 @@
 import { Title, Text, Flex, Card, Button } from "@tremor/react";
 
-// React Icon
-import { MdEdit, MdRefresh } from "react-icons/md";
-
 // Components
 import { CustomImage } from "@/components";
 
@@ -16,7 +13,7 @@ const ProductImage = ({
   image: string;
 }): JSX.Element => {
   return (
-    <Card className="bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info">
+    <Card className="w-full bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 border-none ring-0 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info">
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <CustomImage
@@ -47,7 +44,7 @@ const ProductImage = ({
           <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">
             {name}
           </Title>
-          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4">
+          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base">
             {desc}
           </Text>
         </Flex>

@@ -29,7 +29,6 @@ export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SelectOption } from "./SelectOption";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
-export { default as ProductInfo } from "./NewProducts/ProductInfo/ProductInfo";
-export { default as PricingInfo } from "./NewProducts/PricingInfo/PricingInfo";
+export { default as ProductInfo } from "./NewProduct/ProductInfo/ProductInfo";
 export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";

@@ -103,90 +103,72 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+                class="w-full mb-4"
               >
                 <p
-                  class="text-tremor-default text-secondary mb-3 dark:text-white"
+                  class="text-tremor-default text-secondary dark:text-white"
                 >
                   Tags
                 </p>
                 <div
-                  class="h-[70px] w-full"
+                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  data-headlessui-state=""
                 >
-                  <div
-                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
                     data-headlessui-state=""
+                    id="headlessui-listbox-button-:r1:"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
-                      data-headlessui-state=""
-                      id="headlessui-listbox-button-:r1:"
-                      type="button"
+                    <div
+                      class="h-6 flex items-center"
                     >
                       <div
-                        class="h-6 flex items-center"
-                      >
-                        <div
-                          class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
-                        />
-                      </div>
-                      <span
-                        class="absolute inset-y-0 right-0 flex items-center mr-2.5"
-                      >
-                        <svg
-                          class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2.5"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M19 9l-7 7-7-7"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <button
-                      class="absolute inset-y-0 right-0 flex items-center mr-8"
-                      type="button"
+                        class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
+                      />
+                    </div>
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center mr-2.5"
                     >
                       <svg
-                        class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          clip-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                          fill-rule="evenodd"
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
-                    </button>
-                  </div>
+                    </span>
+                  </button>
+                  <button
+                    class="absolute inset-y-0 right-0 flex items-center mr-8"
+                    type="button"
+                  >
+                    <svg
+                      class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-xs border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[80px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
-            type="submit"
-          >
-            <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
-            >
-              <p
-                class="text-tremor-default items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title"
-              >
-                Send
-              </p>
-            </span>
-          </button>
         </div>
       </form>
     </div>
@@ -290,90 +272,72 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+              class="w-full mb-4"
             >
               <p
-                class="text-tremor-default text-secondary mb-3 dark:text-white"
+                class="text-tremor-default text-secondary dark:text-white"
               >
                 Tags
               </p>
               <div
-                class="h-[70px] w-full"
+                class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                data-headlessui-state=""
               >
-                <div
-                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
                   data-headlessui-state=""
+                  id="headlessui-listbox-button-:r1:"
+                  type="button"
                 >
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
-                    data-headlessui-state=""
-                    id="headlessui-listbox-button-:r1:"
-                    type="button"
+                  <div
+                    class="h-6 flex items-center"
                   >
                     <div
-                      class="h-6 flex items-center"
-                    >
-                      <div
-                        class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
-                      />
-                    </div>
-                    <span
-                      class="absolute inset-y-0 right-0 flex items-center mr-2.5"
-                    >
-                      <svg
-                        class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.5"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M19 9l-7 7-7-7"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <button
-                    class="absolute inset-y-0 right-0 flex items-center mr-8"
-                    type="button"
+                      class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
+                    />
+                  </div>
+                  <span
+                    class="absolute inset-y-0 right-0 flex items-center mr-2.5"
                   >
                     <svg
-                      class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
+                      class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        clip-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                        fill-rule="evenodd"
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                     </svg>
-                  </button>
-                </div>
+                  </span>
+                </button>
+                <button
+                  class="absolute inset-y-0 right-0 flex items-center mr-8"
+                  type="button"
+                >
+                  <svg
+                    class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-xs border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[80px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover"
-          type="submit"
-        >
-          <span
-            class="tremor-Button-text text-sm whitespace-nowrap"
-          >
-            <p
-              class="text-tremor-default items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title"
-            >
-              Send
-            </p>
-          </span>
-        </button>
       </div>
     </form>
   </div>,

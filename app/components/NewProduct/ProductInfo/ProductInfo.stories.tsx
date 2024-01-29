@@ -17,7 +17,13 @@ type Story = StoryObj<typeof meta>;
 export const ProductInfoDefault: Story = {
   render: () => (
     <Flex className="w-full justify-center mt-10">
-      <ProductInfo />
+      <ProductInfo
+        productName="Minimal Bar Stool"
+        description="Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back."
+        weight="2"
+        quantity="50"
+        category="Clothing"
+      />
     </Flex>
   ),
 };

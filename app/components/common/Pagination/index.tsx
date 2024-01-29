@@ -67,7 +67,8 @@ const Pagination = ({
         </button>
 
         {paginationRange?.map(pageNumber => {
-          if (pageNumber === DOTS) return <RxDotsHorizontal />;
+          if (pageNumber === DOTS)
+            return <RxDotsHorizontal className="dark:text-secondary" />;
 
           return (
             <button

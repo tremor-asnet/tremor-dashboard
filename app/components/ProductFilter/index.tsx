@@ -14,7 +14,7 @@ import { ProductListOption } from "@/constants";
 import { useOutsideClick } from "@/hooks";
 
 // Components
-import { FilterItem } from "@/components";
+import { SelectOption } from "@/components";
 
 interface ProductFilterProps {
   title: string;
@@ -75,24 +75,12 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
       </Button>
       {showListOption && (
         <div ref={selectRef as RefObject<HTMLDivElement>}>
-          <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
-            {ProductListOption.map(({ option, value }) => (
-              <FilterItem
-                key={option}
-                title="Is Available"
-                option={option}
-                value={value}
-                additionalClass="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
-                onSelectFilter={handleSelectFilter}
-              />
-            ))}
-            <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
-            <li
-              className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary"
-              onClick={handleRemoveFilter}>
-              Remove Filter
-            </li>
-          </ul>
+          <SelectOption
+            title="Is Available"
+            data={ProductListOption}
+            onSelectItem={handleSelectFilter}
+            onSelectRemove={handleRemoveFilter}
+          />
         </div>
       )}
     </div>

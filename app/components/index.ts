@@ -32,6 +32,6 @@ export { default as ProductInfo } from "./NewProducts/ProductInfo/ProductInfo";
 export { default as PricingInfo } from "./NewProducts/PricingInfo/PricingInfo";
 export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";
-export { default as FilterItem } from "./FilterItem";
 export { default as ProductFilter } from "./ProductFilter";
 export { default as TableProduct } from "./Table/TableProduct/TableProduct";
+export { default as SelectOption } from "./SelectOption";

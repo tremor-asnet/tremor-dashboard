@@ -6,7 +6,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
+        class="tremor-Card-root relative text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand w-full bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 border-none ring-0 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
       >
         <div
           class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
@@ -70,7 +70,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               Minimal Bar Stool 3
             </p>
             <p
-              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4"
+              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
             >
               The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
             </p>
@@ -81,7 +81,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
+      class="tremor-Card-root relative text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand w-full bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 border-none ring-0 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
     >
       <div
         class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
@@ -145,7 +145,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             Minimal Bar Stool 3
           </p>
           <p
-            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4"
+            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
           >
             The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
           </p>

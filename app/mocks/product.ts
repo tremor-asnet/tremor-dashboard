@@ -52,3 +52,32 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/chair-steel.dd1d3892.jpeg",
   },
 ];
+
+export const mockProductImage = {
+  name: "Minimal Bar Stool 3",
+  desc: "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.",
+  image:
+    "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/product-11.b01b2346.jpg",
+};
+
+export const mockProductInfo = {
+  productName: "Minimal Bar Stool",
+  description:
+    "Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.",
+  weight: "2",
+  quantity: "50",
+  category: "Clothing",
+};
+
+export const mockProductSocial = {
+  shoppifyUrl: "https://shoppify-url.com",
+  facebookUrl: "https://facebook-url.com",
+  instagramUrl: "https://instagra-url.com",
+};
+
+export const mockPricingInfo = {
+  price: "90",
+  type: "USD",
+  sku: "71283476591",
+  tags: [""],
+};

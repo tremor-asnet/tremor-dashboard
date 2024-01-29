@@ -32,7 +32,8 @@ const TableProduct = ({ products }: TableProductProps) => {
       customNode: (_, { id }) => (
         <CustomCheckBoxField
           id={id}
-          link={`${ROUTES.PRODUCT_LIST}/${id}`}
+          // TODO: update route when integrate api
+          link={`${ROUTES.EDIT_PRODUCT}`}
           onChange={handleCheckboxChange}
         />
       ),

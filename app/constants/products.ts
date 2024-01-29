@@ -113,3 +113,11 @@ export const SIZE_PRODUCT: SelectOptionData[] = [
     value: "5",
   },
 ];
+
+export const PRODUCT_TAGS = {
+  IN_STOCK: "In stock",
+  OUT_OF_STOCK: "Out of stock",
+  BLACK_FRIDAY: "Black Friday",
+  SALE: "Sale",
+  EXPIRED: "Expired",
+};

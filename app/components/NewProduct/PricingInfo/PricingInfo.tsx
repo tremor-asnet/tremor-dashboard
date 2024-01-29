@@ -6,7 +6,6 @@ import { useForm, Controller } from "react-hook-form";
 // Components
 import {
   TextInput,
-  Button,
   Text,
   Flex,
   Select,

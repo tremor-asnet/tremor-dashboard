@@ -1,11 +1,13 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 // Libs
 import { useForm, Controller } from "react-hook-form";
 
 // Components
 import { TextInput, Text, Flex, Select, SelectItem, Card } from "@tremor/react";
-import QuillEditor from "react-quill";
+const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
 import { MESSAGES_ERROR, CATEGORY_PRODUCT } from "@/constants";

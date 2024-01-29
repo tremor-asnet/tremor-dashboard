@@ -1,3 +1,5 @@
+import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX } from "@/constants";
+
 export const isBrowser = typeof window !== "undefined";
 
 export const isEmpty = (value: any) => {
@@ -15,9 +17,24 @@ export const getErrorMessage = (statusCode: number, statusText: string) => {
   return errorMessage;
 };
 
-export const getObjectValue = <T, Key extends keyof T>(
-  obj: T,
-  key: Key,
-): T[Key] => {
-  return obj[key];
+export const getObjectValue = <T, Key extends keyof T>(obj: T, key: string) => {
+  return obj[key as Key] as string;
+};
+
+export const getCrumbName = ({
+  name,
+  path,
+  params,
+}: {
+  name: string;
+  path: string;
+  params?: string | string[];
+}) => {
+  if (ORDER_LIST_REGEX.test(path)) {
+    return `Order Details ${params && "#" + params}`;
+  } else if (PRODUCT_LIST_REGEX.test(path)) {
+    return `Product Details ${params && "#" + params}`;
+  } else {
+    return name.replace("-", " ");
+  }
 };

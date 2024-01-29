@@ -1,3 +1,6 @@
+// Types
+import { ListOption } from "@/types";
+
 export const ITEM_ACTION_PROJECT = [
   {
     key: "act",
@@ -55,3 +58,7 @@ export const listOption: ListOption[] = [
   { option: "Refunded", value: 2 },
   { option: "Canceled", value: 1 },
 ];
+
+export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
+export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;
+export const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;

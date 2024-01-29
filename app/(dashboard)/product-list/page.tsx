@@ -39,7 +39,7 @@ const ProductListPage = async ({
 
   return (
     <Flex flexDirection="col" className="gap-4">
-      <Flex>
+      <Flex className="relative">
         <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
           <Text className="uppercase text-xs text-white dark:text-white">
             new product

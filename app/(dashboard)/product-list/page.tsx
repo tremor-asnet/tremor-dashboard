@@ -51,7 +51,10 @@ const ProductListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <TableProduct key={productName} products={filteredData} />
+        <TableProduct
+          key={`${productName}-${isAvailable}`}
+          products={filteredData}
+        />
       </div>
     </Flex>
   );

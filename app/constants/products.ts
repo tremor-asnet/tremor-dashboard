@@ -114,6 +114,25 @@ export const SIZE_PRODUCT: SelectOptionData[] = [
   },
 ];
 
+export const COLOR_PRODUCT: SelectOptionData[] = [
+  {
+    option: "Black",
+    value: "1",
+  },
+  {
+    option: "Blue",
+    value: "2",
+  },
+  {
+    option: "Orange",
+    value: "3",
+  },
+  {
+    option: "White",
+    value: "4",
+  },
+];
+
 export const PRODUCT_TAGS = {
   IN_STOCK: "In stock",
   OUT_OF_STOCK: "Out of stock",

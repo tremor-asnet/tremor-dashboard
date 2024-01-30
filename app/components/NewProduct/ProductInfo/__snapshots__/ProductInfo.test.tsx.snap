@@ -35,7 +35,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                     class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                     data-testid="base-input"
                     id="name"
-                    name="name"
                     placeholder="Name"
                     required=""
                     type="text"
@@ -71,7 +70,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                     class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                     data-testid="base-input"
                     id="weight"
-                    name="weight"
                     placeholder="Weight"
                     type="text"
                     value=""
@@ -93,7 +91,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                     class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                     data-testid="base-input"
                     id="quantity"
-                    name="quantity"
                     placeholder="Quantity"
                     type="text"
                     value=""
@@ -111,6 +108,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 <div
                   class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                   data-headlessui-state=""
+                  id="category"
                 >
                   <button
                     aria-expanded="false"
@@ -183,7 +181,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                   data-testid="base-input"
                   id="name"
-                  name="name"
                   placeholder="Name"
                   required=""
                   type="text"
@@ -219,7 +216,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                   data-testid="base-input"
                   id="weight"
-                  name="weight"
                   placeholder="Weight"
                   type="text"
                   value=""
@@ -241,7 +237,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
                   data-testid="base-input"
                   id="quantity"
-                  name="quantity"
                   placeholder="Quantity"
                   type="text"
                   value=""
@@ -259,6 +254,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               <div
                 class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                 data-headlessui-state=""
+                id="category"
               >
                 <button
                   aria-expanded="false"

@@ -46,6 +46,7 @@
 }
 
 form input.text-tremor-default,
-form button.text-tremor-content {
+form button.text-tremor-content,
+form button.text-tremor-content-emphasis {
   @apply pl-0;
 }

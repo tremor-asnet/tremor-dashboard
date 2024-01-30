@@ -19,9 +19,9 @@ const renderPathHeading = (path: string) => {
 
   return (
     <>
-      <Title className="font-semibold pt-8 pb-2 px-8 sm:text-2xl text-white">
+      <Text className="font-semibold pt-8 pb-2 px-8 sm:text-2xl text-white">
         {title[path]}
-      </Title>
+      </Text>
       <Text className="text-white dark:text-white font-light max-w-xs px-8 text-center 2xl:px-0">
         {subText[path]}
       </Text>

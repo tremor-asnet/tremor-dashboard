@@ -7,9 +7,10 @@ interface StepperProps {
   currentStep: number;
   steps: string[];
   total: number;
+  extendClass?: string;
 }
 
-const Stepper = ({ currentStep, steps, total }: StepperProps) => {
+const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
   const isFirstStep = currentStep === 1;
   const isLastStep = currentStep === total;
   const lastStepContent = `${total}. ${steps[total - 1]}`;
@@ -33,7 +34,7 @@ const Stepper = ({ currentStep, steps, total }: StepperProps) => {
 
   return (
     <ul
-      className={`grid grid-cols-${total} pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg rounded-lg`}>
+      className={`grid grid-cols-${total} pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg rounded-lg ${extendClass}`}>
       {/* First Item */}
       <StepperFirstItem isFirstStep={isFirstStep} content={`1. ${steps[0]}`} />
       {/* Body Items */}

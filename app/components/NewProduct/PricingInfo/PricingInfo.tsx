@@ -26,10 +26,6 @@ import "@/styles/form.css";
 const PricingInfo = () => {
   const { control } = useFormContext();
 
-  const handleSend = () => {
-    //TODO handle to check submit form with send button
-  };
-
   return (
     <div className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">

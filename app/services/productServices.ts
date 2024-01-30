@@ -28,10 +28,7 @@ export const getProductDetails = async (id: number) => {
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
-    },
+    cache: "no-store",
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));

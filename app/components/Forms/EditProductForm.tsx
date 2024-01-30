@@ -76,9 +76,7 @@ const EditProductForm = ({
   });
   const { handleSubmit } = formHandler;
   const onSubmit = async (data: EditProductData) => {
-    console.log(data);
     await editProduct(id, data);
-    // alert("Editted!");
   };
 
   return (

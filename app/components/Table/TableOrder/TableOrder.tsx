@@ -78,6 +78,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
 
   useEffect(() => {
     setLoading(true);
+
     // Delay to check show loading
     setTimeout(() => {
       setLoading(false);

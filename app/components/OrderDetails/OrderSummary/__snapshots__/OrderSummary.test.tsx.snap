@@ -20,19 +20,19 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
           >
             <p
-              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+              class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
             >
               Product Price
               :
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+              class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
             >
               Delivery
               :
             </p>
             <p
-              class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+              class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
             >
               Taxes
               :
@@ -95,19 +95,19 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
         >
           <p
-            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
           >
             Product Price
             :
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
           >
             Delivery
             :
           </p>
           <p
-            class="text-tremor-default text-tremor-content dark:text-lighter leading-6 mb-2"
+            class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
           >
             Taxes
             :

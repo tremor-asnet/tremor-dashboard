@@ -6,11 +6,12 @@ import dynamic from "next/dynamic";
 import { useForm, Controller } from "react-hook-form";
 
 // Components
-import { TextInput, Text, Flex, Select, SelectItem, Card } from "@tremor/react";
+import { Text, Flex, Card } from "@tremor/react";
+import { TextField, SelectField } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
-import { MESSAGES_ERROR, CATEGORY_PRODUCT } from "@/constants";
+import { MESSAGES_ERROR, CATEGORY_PRODUCT, COLOR_PRODUCT } from "@/constants";
 
 // Types
 import { TProductInfo, SelectOptionData } from "@/types";
@@ -25,6 +26,10 @@ interface ProductInfoData {
   weight?: string;
   category?: string;
   quantity?: string;
+  isEdit?: boolean;
+  collection?: string;
+  price?: string;
+  color?: string;
 }
 
 const ProductInfo = ({
@@ -33,6 +38,10 @@ const ProductInfo = ({
   weight,
   category,
   quantity,
+  isEdit = false,
+  collection,
+  price,
+  color,
 }: ProductInfoData) => {
   const {
     control,
@@ -45,6 +54,9 @@ const ProductInfo = ({
       weight: weight,
       category: category,
       quantity: quantity,
+      collection: collection,
+      price: price,
+      color: color,
     },
     mode: "onSubmit",
   });
@@ -62,7 +74,7 @@ const ProductInfo = ({
         Product Information
       </Text>
       <form onSubmit={handleSubmit(handleNext)}>
-        <Flex className="items-start gap-2">
+        <Flex className="items-start gap-6">
           <Flex flexDirection="col" className="gap-4">
             <Controller
               control={control}
@@ -74,17 +86,14 @@ const ProductInfo = ({
                 },
               }}
               render={({ field }) => (
-                <div className="w-full">
-                  <Text className="text-secondary dark:text-lighter mb-2">
-                    Name
-                  </Text>
-                  <TextInput
+                <div className="w-full mb-2">
+                  <TextField
                     id="name"
+                    label="Name"
                     placeholder="Name"
-                    className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                    autoFocus
-                    required
-                    {...field}
+                    autoFocus={true}
+                    required={true}
+                    value={field.value}
                   />
                   {nameErrorMessage && (
                     <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -95,7 +104,38 @@ const ProductInfo = ({
               )}
               name="name"
             />
-
+            {isEdit && (
+              <Flex className="mb-4 gap-4">
+                <Controller
+                  control={control}
+                  render={({ field }) => (
+                    <div className="w-full">
+                      <TextField
+                        id="collection"
+                        label="Collection"
+                        placeholder="Summer"
+                        value={field.value}
+                      />
+                    </div>
+                  )}
+                  name="collection"
+                />
+                <Controller
+                  control={control}
+                  render={({ field }) => (
+                    <div className="w-full">
+                      <TextField
+                        id="price"
+                        label="Price"
+                        placeholder="$90"
+                        value={field.value}
+                      />
+                    </div>
+                  )}
+                  name="price"
+                />
+              </Flex>
+            )}
             <Controller
               control={control}
               render={({ field }) => (
@@ -117,15 +157,12 @@ const ProductInfo = ({
             <Controller
               control={control}
               render={({ field }) => (
-                <div className="w-full mb-4">
-                  <Text className="text-secondary dark:text-lighter mb-2">
-                    Weight
-                  </Text>
-                  <TextInput
+                <div className="w-full mb-6">
+                  <TextField
                     id="weight"
+                    label="Weight"
                     placeholder="Weight"
-                    className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                    {...field}
+                    value={field.value}
                   />
                 </div>
               )}
@@ -135,15 +172,12 @@ const ProductInfo = ({
             <Controller
               control={control}
               render={({ field }) => (
-                <div className="w-full mb-4">
-                  <Text className="text-secondary dark:text-lighter mb-2">
-                    Quantity
-                  </Text>
-                  <TextInput
+                <div className="w-full mb-8">
+                  <TextField
                     id="quantity"
+                    label="Quantity"
                     placeholder="Quantity"
-                    className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                    {...field}
+                    value={field.value}
                   />
                 </div>
               )}
@@ -153,23 +187,33 @@ const ProductInfo = ({
             <Controller
               control={control}
               render={() => (
-                <div className="w-full mb-4">
-                  <Text className="text-secondary mb-3 dark:text-lighter mb-2">
-                    Category
-                  </Text>
-                  <Select
+                <div className="w-full mb-7">
+                  <SelectField
+                    id="category"
+                    label="Category"
                     placeholder="Clothing"
-                    className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                    {CATEGORY_PRODUCT.map((item: SelectOptionData) => (
-                      <SelectItem key={item.value} value={item.value}>
-                        {item.option}
-                      </SelectItem>
-                    ))}
-                  </Select>
+                    selectData={CATEGORY_PRODUCT}
+                  />
                 </div>
               )}
               name="category"
             />
+            {isEdit && (
+              <Controller
+                control={control}
+                render={() => (
+                  <div className="w-full mb-4">
+                    <SelectField
+                      id="color"
+                      label="Color"
+                      placeholder="Black"
+                      selectData={COLOR_PRODUCT}
+                    />
+                  </div>
+                )}
+                name="color"
+              />
+            )}
           </Flex>
         </Flex>
       </form>

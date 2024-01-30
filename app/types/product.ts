@@ -15,6 +15,9 @@ export type TProductInfo = {
   weight?: string;
   category?: string;
   quantity?: string;
+  collection?: string;
+  price?: string;
+  color?: string;
 };
 
 export type TPricingInfo = {

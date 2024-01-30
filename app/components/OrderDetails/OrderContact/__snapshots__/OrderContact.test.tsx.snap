@@ -62,7 +62,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                  class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
                 >
                   contact us
                 </p>
@@ -144,7 +144,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
               >
                 contact us
               </p>

@@ -1,9 +1,13 @@
-// Components
+import { Suspense } from "react";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { InputSearch, OrderFilter } from "@/components";
-import TableOrder from "@/components/Table/TableOrder/TableOrder";
+import {
+  InputSearch,
+  LoadingIndicator,
+  OrderFilter,
+  TableOrder,
+} from "@/components";
 
 // Services
 import { getOrders } from "@/services";
@@ -30,8 +34,6 @@ const OrderListPage = async ({
 
   let filteredData = orderListData;
 
-  // console.log(filteredData);
-
   if (productName) {
     filteredData = searchOrderDataByValue<Order, OrderProduct>(
       orderListData,
@@ -57,7 +59,24 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <TableOrder key={`${productName}-${status}`} orders={filteredData} />
+        <Suspense
+          key={`${productName}-${status}`}
+          fallback={
+            <LoadingIndicator
+              additionalClass="flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
+          }>
+          <TableOrder
+            key={`${productName}-${status}`}
+            orders={filteredData}
+            status={status}
+            keyword={productName}
+          />
+        </Suspense>
       </div>
     </Flex>
   );

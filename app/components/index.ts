@@ -36,3 +36,5 @@ export { default as SelectField } from "./common/SelectField/SelectField";
 export { default as ProductFilter } from "./ProductFilter";
 export { default as TableProduct } from "./Table/TableProduct/TableProduct";
 export { default as SelectOption } from "./SelectOption";
+export { default as TableOrder } from "./Table/TableOrder/TableOrder";
+export { default as DataGrid } from "./common/DataGrid/DataGrid";

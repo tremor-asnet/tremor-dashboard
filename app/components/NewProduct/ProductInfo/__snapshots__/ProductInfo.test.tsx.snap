@@ -6,7 +6,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root relative text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default"
+        class="tremor-Card-root relative text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
@@ -154,7 +154,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root relative text-left ring-1 rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default"
+      class="tremor-Card-root relative text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"

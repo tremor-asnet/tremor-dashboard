@@ -22,7 +22,7 @@ const Socials = ({
   };
 
   return (
-    <Card className="dark:bg-dark-tremor-primary">
+    <Card className="dark:bg-dark-tremor-primary ring-0">
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
         Socials
       </Title>

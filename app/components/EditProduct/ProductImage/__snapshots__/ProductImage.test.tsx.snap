@@ -16,14 +16,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             <img
               alt="Minimal Bar Stool 3"
-              class="relative w-full rounded-xl shadow-lg z-10"
+              class="w-full h-[500px] rounded-xl shadow-lg z-10 object-cover"
               data-nimg="1"
               decoding="async"
-              height="533"
+              height="500"
               loading="lazy"
-              sizes="(min-width: 768px) 33vw, 70vw"
-              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75 3840w"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
               style="color: transparent;"
               width="800"
             />
@@ -91,14 +90,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         >
           <img
             alt="Minimal Bar Stool 3"
-            class="relative w-full rounded-xl shadow-lg z-10"
+            class="w-full h-[500px] rounded-xl shadow-lg z-10 object-cover"
             data-nimg="1"
             decoding="async"
-            height="533"
+            height="500"
             loading="lazy"
-            sizes="(min-width: 768px) 33vw, 70vw"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75 3840w"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
             style="color: transparent;"
             width="800"
           />

@@ -1,5 +1,7 @@
 "use client";
 
+import { useFormContext } from "react-hook-form";
+
 // Components
 import { Title, Flex, Card } from "@tremor/react";
 
@@ -12,11 +14,8 @@ interface SocialsData {
   instagramUrl?: string;
 }
 
-const Socials = ({
-  shoppifyUrl = "",
-  facebookUrl = "",
-  instagramUrl = "",
-}: SocialsData) => {
+const Socials = () => {
+  const { register } = useFormContext();
   const handleSocials = () => {
     // TODO: Handle change here
   };
@@ -27,27 +26,9 @@ const Socials = ({
         Socials
       </Title>
       <Flex className="flex-col items-start justify-start mt-8">
-        <input
-          className="input-text"
-          id="shoppify-handle"
-          placeholder="Shoppify Handle"
-          onChange={handleSocials}
-          value={shoppifyUrl}
-        />
-        <input
-          className="input-text"
-          id="facebook-account"
-          placeholder="Facebook Account"
-          onChange={handleSocials}
-          value={facebookUrl}
-        />
-        <input
-          className="input-text"
-          id="instagram-account"
-          placeholder="Instagram Account"
-          onChange={handleSocials}
-          value={instagramUrl}
-        />
+        <input className="input-text" {...register("shopifyUrl")} />
+        <input className="input-text" {...register("facebookUrl")} />
+        <input className="input-text" {...register("instagramUrl")} />
       </Flex>
     </Card>
   );

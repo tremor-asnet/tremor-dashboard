@@ -1,7 +1,7 @@
 "use client";
 
 // Libs
-import { useForm, Controller } from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import {
@@ -15,7 +15,7 @@ import {
 } from "@tremor/react";
 
 // Types
-import { TPricingInfo, SelectOptionData } from "@/types";
+import { SelectOptionData } from "@/types";
 
 // Constants
 import { TYPE_PRICE, TAGS_PRICE, PRODUCT_TAGS } from "@/constants";
@@ -23,32 +23,15 @@ import { TYPE_PRICE, TAGS_PRICE, PRODUCT_TAGS } from "@/constants";
 // Styles
 import "@/styles/form.css";
 
-interface PricingInfoData {
-  price?: string;
-  type?: string;
-  sku?: string;
-  tags?: string[];
-}
-
-const PricingInfo = ({ price, type, sku, tags }: PricingInfoData) => {
-  const { control, handleSubmit } = useForm<TPricingInfo>({
-    defaultValues: {
-      price,
-      type,
-      sku,
-      tags,
-    },
-    mode: "onSubmit",
-  });
+const PricingInfo = () => {
+  const { control } = useFormContext();
 
   const handleSend = () => {
     //TODO handle to check submit form with send button
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(handleSend)}
-      className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
+    <div className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Pricing
       </Text>
@@ -128,7 +111,7 @@ const PricingInfo = ({ price, type, sku, tags }: PricingInfoData) => {
           </Flex>
         </Flex>
       </Flex>
-    </form>
+    </div>
   );
 };
 

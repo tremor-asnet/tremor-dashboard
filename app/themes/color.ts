@@ -7,6 +7,7 @@ export const color = {
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
+  lighter: "rgba(255, 255, 255, 0.8)",
 
   dark: {
     primary: "#ffffff",

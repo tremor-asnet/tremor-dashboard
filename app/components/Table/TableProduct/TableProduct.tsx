@@ -81,6 +81,7 @@ const TableProduct = ({
 
   useEffect(() => {
     setLoading(true);
+
     // Delay to check show loading
     setTimeout(() => {
       setLoading(false);

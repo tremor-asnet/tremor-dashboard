@@ -1,13 +1,14 @@
 "use client";
+import { useEffect, useState } from "react";
 
 // Components
-import DataGrid from "@/components/common/DataGrid/DataGrid";
 import {
   CustomAvatarName,
   CustomCheckBoxField,
   CustomDateFormat,
   CustomNumberFormat,
 } from "@/components/Table/common";
+import { DataGrid, LoadingIndicator } from "@/components";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -17,9 +18,17 @@ import { ROUTES } from "@/constants";
 
 interface TableProductProps {
   products: Product[];
+  isAvailable: string;
+  keyword: string;
 }
 
-const TableProduct = ({ products }: TableProductProps) => {
+const TableProduct = ({
+  products,
+  isAvailable,
+  keyword,
+}: TableProductProps) => {
+  const [loading, setLoading] = useState(false);
+
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
@@ -69,6 +78,26 @@ const TableProduct = ({ products }: TableProductProps) => {
       customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
     },
   ];
+
+  useEffect(() => {
+    setLoading(true);
+    // Delay to check show loading
+    setTimeout(() => {
+      setLoading(false);
+    }, 100);
+  }, [isAvailable, keyword]);
+
+  if (loading === true) {
+    return (
+      <LoadingIndicator
+        additionalClass="flex justify-center items-center"
+        width={8}
+        height={8}
+        isFullWidth={false}
+        fillColor="river-bed-500"
+      />
+    );
+  }
 
   return <DataGrid data={products} columns={columns} />;
 };

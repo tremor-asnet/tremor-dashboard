@@ -39,7 +39,10 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleClickItem = (isAvailable: string) => {
+  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const { value } = e.target as HTMLInputElement;
+    const isAvailable = value.toString();
+
     if (currentIsAvailable !== isAvailable) {
       newParams.set("isAvailable", isAvailable);
     }
@@ -48,11 +51,6 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
     router.push(`${pathName}?${query}`);
 
     setShowListOption(false);
-  };
-
-  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const { value } = e.target as HTMLInputElement;
-    handleClickItem(value.toString());
   };
 
   const handleRemoveFilter = () => {

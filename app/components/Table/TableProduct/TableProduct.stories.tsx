@@ -17,5 +17,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <TableProduct products={MOCK_PRODUCTS} />,
+  render: () => (
+    <TableProduct
+      products={MOCK_PRODUCTS}
+      isAvailable="isAvailable"
+      keyword="productName"
+    />
+  ),
 };

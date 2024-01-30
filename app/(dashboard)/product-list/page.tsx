@@ -1,6 +1,13 @@
 // Components
-import { TableProduct, InputSearch, ProductFilter } from "@/components";
+import { Suspense } from "react";
 import { Button, Flex, Text } from "@tremor/react";
+
+import {
+  TableProduct,
+  InputSearch,
+  ProductFilter,
+  LoadingIndicator,
+} from "@/components";
 
 // Services
 import { getProducts } from "@/services";
@@ -58,10 +65,24 @@ const ProductListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <TableProduct
+        <Suspense
           key={`${productName}-${isAvailable}`}
-          products={filteredData}
-        />
+          fallback={
+            <LoadingIndicator
+              additionalClass="flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
+          }>
+          <TableProduct
+            key={`${productName}-${isAvailable}`}
+            products={filteredData}
+            isAvailable={isAvailable}
+            keyword={productName}
+          />
+        </Suspense>
       </div>
     </Flex>
   );

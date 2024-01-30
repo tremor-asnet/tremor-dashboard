@@ -39,7 +39,9 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleClickItem = (status: string) => {
+  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const { value } = e.target as HTMLInputElement;
+    const status = value.toString();
     if (currentStatus !== status) {
       newParams.set("status", status);
     }
@@ -48,11 +50,6 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     router.push(`${pathName}?${query}`);
 
     setShowListOption(false);
-  };
-
-  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const { value } = e.target as HTMLInputElement;
-    handleClickItem(value.toString());
   };
 
   const handleRemoveFilter = () => {

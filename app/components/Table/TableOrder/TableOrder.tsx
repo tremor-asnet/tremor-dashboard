@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 // Components
-import DataGrid from "@/components/common/DataGrid/DataGrid";
 import {
   CustomAvatarName,
   CustomCheckBoxField,
@@ -10,6 +11,7 @@ import {
   CustomNumberFormat,
   CustomStatus,
 } from "@/components/Table/common";
+import { DataGrid, LoadingIndicator } from "@/components";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -19,9 +21,13 @@ import { ROUTES } from "@/constants";
 
 interface TableOrderProps {
   orders: Order[];
+  status: string;
+  keyword: string;
 }
 
-const TableOrder = ({ orders }: TableOrderProps) => {
+const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
+  const [loading, setLoading] = useState(false);
+
   const handleChangeCheckbox = () => {
     // TODO: handle checkbox here
   };
@@ -69,6 +75,26 @@ const TableOrder = ({ orders }: TableOrderProps) => {
       customNode: (_, { revenue }) => <CustomNumberFormat value={revenue} />,
     },
   ];
+
+  useEffect(() => {
+    setLoading(true);
+    // Delay to check show loading
+    setTimeout(() => {
+      setLoading(false);
+    }, 100);
+  }, [status, keyword]);
+
+  if (loading === true) {
+    return (
+      <LoadingIndicator
+        additionalClass="flex justify-center items-center"
+        width={8}
+        height={8}
+        isFullWidth={false}
+        fillColor="river-bed-500"
+      />
+    );
+  }
 
   return <DataGrid data={orders} columns={columns} />;
 };

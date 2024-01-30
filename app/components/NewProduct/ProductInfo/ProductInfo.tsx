@@ -57,7 +57,7 @@ const ProductInfo = ({
   };
 
   return (
-    <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default">
+    <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </Text>

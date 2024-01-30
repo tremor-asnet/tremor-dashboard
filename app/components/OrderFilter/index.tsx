@@ -42,6 +42,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
   const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
     const { value } = e.target as HTMLInputElement;
     const status = value.toString();
+
     if (currentStatus !== status) {
       newParams.set("status", status);
     }

@@ -89,7 +89,7 @@ const SignIn = () => {
               placeholder="Email"
               type="email"
               autoFocus
-              className="py-0.5 w-full"
+              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
               required
               {...field}
             />
@@ -116,7 +116,7 @@ const SignIn = () => {
               id="password"
               placeholder="Password"
               type="password"
-              className="py-0.5 w-full"
+              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
               required
               {...field}
             />
@@ -150,7 +150,7 @@ const SignIn = () => {
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
-        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+        className="min-h-[43px] flex w-full bg-gradient-primary dark:bg-gradient-pickled opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent"
         size="xs"
         type="submit"
         disabled={isDisableSubmit}>

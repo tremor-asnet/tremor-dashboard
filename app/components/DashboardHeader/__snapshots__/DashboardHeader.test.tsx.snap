@@ -38,7 +38,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             class=""
           >
             <ol
-              class="flex flex-wrap gap-2 items-center text-gray-400"
+              class="flex flex-wrap gap-2 items-center text-gray-400 dark:text-white"
             >
               <li
                 class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]"
@@ -164,7 +164,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           class=""
         >
           <ol
-            class="flex flex-wrap gap-2 items-center text-gray-400"
+            class="flex flex-wrap gap-2 items-center text-gray-400 dark:text-white"
           >
             <li
               class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]"

@@ -42,7 +42,10 @@ const Breadcrumb = ({
       <>
         {newPath?.map((link, index) => {
           const href = `/${newPath.slice(0, index + 1).join("/")}`;
-          const crumbItemTextWhite = isProjectPage && "text-white";
+          const crumbItemTextWhite =
+            isProjectPage && isStickyHeader
+              ? "text-white dark:text-white"
+              : "text-primary";
           const activeCrumb =
             pathname === href
               ? "text-tremor-content-title dark:text-dark-tremor-content-title  "
@@ -74,7 +77,12 @@ const Breadcrumb = ({
 
   return (
     <nav className={`${isProjectPage ? "pl-3 z-20" : isMobile ? "pl-3" : ""}`}>
-      <ol className="flex flex-wrap gap-2 items-center text-gray-400">
+      <ol
+        className={`flex flex-wrap gap-2 items-center ${
+          isProjectPage && isStickyHeader
+            ? "text-lighter"
+            : "text-gray-400 dark:text-white"
+        }`}>
         <li className="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]">
           <Link href={ROUTES.HOME}>
             <MdHome className="text-lg" />

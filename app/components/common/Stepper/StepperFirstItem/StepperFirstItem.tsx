@@ -3,12 +3,15 @@
 // Libs
 import { memo } from "react";
 
+// Types
+import { Step } from "@/types";
+
 interface StepperFirstItemProps {
   isFirstStep: boolean;
-  content: string;
+  step: Step;
 }
 
-const StepperFirstItem = ({ isFirstStep, content }: StepperFirstItemProps) => {
+const StepperFirstItem = ({ isFirstStep, step }: StepperFirstItemProps) => {
   const firstItemRightLineClass = `h-0.5 w-full ${
     isFirstStep ? "bg-zinc-400" : "bg-white"
   }`;
@@ -19,7 +22,7 @@ const StepperFirstItem = ({ isFirstStep, content }: StepperFirstItemProps) => {
         <span className="stepper-dot-active"></span>
         <span className={firstItemRightLineClass}></span>
       </div>
-      <p className="stepper-text-content text-white mt-2">{content}</p>
+      <p className="stepper-text-content text-white mt-2">{`${step.index}. ${step.content}`}</p>
     </li>
   );
 };

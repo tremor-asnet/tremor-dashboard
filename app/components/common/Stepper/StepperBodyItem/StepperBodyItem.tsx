@@ -3,27 +3,26 @@
 // Libs
 import { memo } from "react";
 
+// Types
+import { Step } from "@/types";
+
 interface StepperBodyItemProps {
   currentStep: number;
-  itemStep: number;
-  content: string;
+  step: Step;
 }
 
-const StepperBodyItem = ({
-  currentStep,
-  itemStep,
-  content,
-}: StepperBodyItemProps) => {
+const StepperBodyItem = ({ currentStep, step }: StepperBodyItemProps) => {
+  const stepIndex = step.index;
   const leftLineClass = `h-0.5 w-[50%] ${
-    currentStep >= itemStep ? "bg-white" : "bg-zinc-400"
+    currentStep >= stepIndex ? "bg-white" : "bg-zinc-400"
   }`;
   const dotClass =
-    currentStep >= itemStep ? "stepper-dot-active" : "stepper-dot";
+    currentStep >= stepIndex ? "stepper-dot-active" : "stepper-dot";
   const rightLineClass = `h-0.5 w-[50%] ${
-    currentStep > itemStep ? "bg-white" : "bg-zinc-400"
+    currentStep > stepIndex ? "bg-white" : "bg-zinc-400"
   }`;
   const textClass = `stepper-text-content mt-2 ${
-    currentStep >= itemStep ? "text-white" : "text-zinc-400"
+    currentStep >= stepIndex ? "text-white" : "text-zinc-400"
   }`;
 
   return (
@@ -36,7 +35,7 @@ const StepperBodyItem = ({
         {/* Right line */}
         <span className={rightLineClass}></span>
       </div>
-      <p className={textClass}>{content}</p>
+      <p className={textClass}>{`${step.index}. ${step.content}`}</p>
     </li>
   );
 };

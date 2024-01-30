@@ -3,12 +3,15 @@
 // Libs
 import { memo } from "react";
 
+// Types
+import { Step } from "@/types";
+
 interface StepperLastItemProps {
   isLastStep: boolean;
-  content: string;
+  step: Step;
 }
 
-const StepperLastItem = ({ isLastStep, content }: StepperLastItemProps) => {
+const StepperLastItem = ({ isLastStep, step }: StepperLastItemProps) => {
   const lastItemLeftLineClass = `h-0.5 w-[50%] ${
     isLastStep ? "bg-white" : "bg-zinc-400"
   }`;
@@ -23,7 +26,7 @@ const StepperLastItem = ({ isLastStep, content }: StepperLastItemProps) => {
         <span className={lastItemLeftLineClass}></span>
         <span className={lastItemDotClass}></span>
       </div>
-      <p className={lastItemTextClass}>{content}</p>
+      <p className={lastItemTextClass}>{`${step.index}. ${step.content}`}</p>
     </li>
   );
 };

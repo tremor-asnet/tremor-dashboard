@@ -60,7 +60,7 @@ const OrderListPage = async ({
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
         <Suspense
-          key={status}
+          key={`${productName}-${status}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"

@@ -40,3 +40,11 @@ export type TEditProduct = {
   facebookUrl: string;
   instagramUrl: string;
 };
+
+export interface IProductInfo {
+  name?: string;
+  description?: string;
+  weight?: number;
+  category?: number;
+  quantity?: number;
+}

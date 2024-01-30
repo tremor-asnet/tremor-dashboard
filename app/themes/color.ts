@@ -73,7 +73,7 @@ export const color = {
     },
     content: {
       subtle: "#4b5563", // gray-600
-      DEFAULT: "#6b7280", // gray-600
+      DEFAULT: "#fff", // white
       emphasis: "#d2d6da",
       strong: "#f9fafb", // gray-50
       inverted: "#000000", // black
@@ -119,7 +119,7 @@ export const backgroundColor = {
     seldom: "#bce2be",
     body: "#f0f2f5",
     total: "rgb(26, 32, 53)",
-    border: "rgb(50, 58, 84)",
+    border: "rgb(206, 212, 218)",
   },
 };
 
@@ -194,6 +194,7 @@ export const borderColor = {
   // dark mode
   "dark-tremor": {
     primary: "#344767",
+    background: "rgb(255, 255, 255)",
   },
 };
 
@@ -240,7 +241,8 @@ export const boxShadow = {
   "item-pagination":
     "0rem 0.1875rem 0.1875rem 0rem rgba(52, 71, 103, 0.15),0rem 0.1875rem 0.0625rem -0.125rem rgba(52, 71, 103, 0.2),0rem 0.0625rem 0.3125rem 0rem rgba(52, 71, 103, 0.15)",
   // dark
-  "dark-tremor-input": "none",
+  "dark-tremor-input":
+    "rgba(52,71,103,0.15) 0rem 0.1875rem 0.1875rem 0rem,rgba(52,71,103,0.2) 0rem 0.1875rem 0.0625rem -0.125rem,rgba(52,71,103,0.15) 0rem 0.0625rem 0.3125rem 0rem",
   "dark-tremor-card":
     "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
   "dark-tremor-dropdown":

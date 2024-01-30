@@ -108,7 +108,7 @@ const SignUp = () => {
                 id="name"
                 placeholder="Name"
                 autoFocus
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-tremor-dark-border focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 {...field}
               />
@@ -136,7 +136,7 @@ const SignUp = () => {
                 id="email"
                 placeholder="Email"
                 type="email"
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-tremor-dark-border focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 tabIndex={0}
                 {...field}
@@ -164,7 +164,7 @@ const SignUp = () => {
                 id="password"
                 placeholder="Password"
                 type="password"
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-tremor-dark-border focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 tabIndex={1}
                 {...field}
@@ -198,7 +198,7 @@ const SignUp = () => {
           tabIndex={3}
           aria-disabled={isDisableSubmit}
           type="submit"
-          className="min-h-[43px] w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+          className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
           <Text className="font-bold text-xs text-white dark:text-white">

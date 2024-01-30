@@ -62,8 +62,8 @@ const ProductInfo = ({
         Product Information
       </Text>
       <form onSubmit={handleSubmit(handleNext)}>
-        <Flex className="items-start gap-2">
-          <Flex flexDirection="col" className="gap-4">
+        <Flex flexDirection="col" className="items-start gap-6 md:flex-row">
+          <Flex flexDirection="col" className="gap-6">
             <Controller
               control={control}
               rules={{

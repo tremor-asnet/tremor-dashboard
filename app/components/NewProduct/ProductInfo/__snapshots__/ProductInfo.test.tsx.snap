@@ -15,10 +15,10 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
         </p>
         <form>
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-start gap-2"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start gap-6 md:flex-row"
           >
             <div
-              class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-4"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-6"
             >
               <div
                 class="w-full"
@@ -163,10 +163,10 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
       </p>
       <form>
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-start gap-2"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start gap-6 md:flex-row"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-4"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-6"
           >
             <div
               class="w-full"

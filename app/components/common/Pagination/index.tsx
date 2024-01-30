@@ -40,21 +40,23 @@ const Pagination = ({
 
   return (
     <div className="antialiased font-primary flex gap-6 flex-col sm:flex-row items-start sm:items-center w-full justify-between px-4 py-3 sm:px-6">
-      <div className="flex w-auto py-2">
-        <p className="text-sm text-secondary">
-          Showing{" "}
-          <span className="font-normal">
-            {currentPage * pageSize - pageSize + 1}
-          </span>{" "}
-          to{" "}
-          <span className="font-normal">
-            {currentPage * pageSize >= totalCount
-              ? totalCount
-              : currentPage * pageSize}
-          </span>{" "}
-          of <span className="font-normal">{totalCount}</span> entries
-        </p>
-      </div>
+      {totalCount >= pageSize && (
+        <div className="flex w-auto py-2">
+          <p className="text-sm text-secondary">
+            Showing{" "}
+            <span className="font-normal">
+              {currentPage * pageSize - pageSize + 1}
+            </span>{" "}
+            to{" "}
+            <span className="font-normal">
+              {currentPage * pageSize >= totalCount
+                ? totalCount
+                : currentPage * pageSize}
+            </span>{" "}
+            of <span className="font-normal">{totalCount}</span> entries
+          </p>
+        </div>
+      )}
 
       <div className="flex gap-2 justify-end items-center m-auto md:m-0">
         <button

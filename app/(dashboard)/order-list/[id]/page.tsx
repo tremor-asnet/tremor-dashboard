@@ -52,6 +52,10 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
 
   const firstProduct = products.length > 0 ? products[0] : null;
 
+  const firstDay = new Date().getTime();
+  const lastDay = new Date(deliveredAt).getTime();
+  const period = Math.round((firstDay - lastDay) / (1000 * 3600 * 24));
+
   return (
     <Flex justifyContent="center" className="w-full bg-transparent">
       <Card className="w-full lg:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
@@ -68,39 +72,41 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <OrderContact
               name={firstProduct.name}
               url={firstProduct.url}
-              date={deliveredAt}
+              date={period}
               status={status}
             />
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-4">
-              <div className="w-full">
-                <TrackOrder
-                  id={trackOrderInfo.id}
-                  transmitedToCourierAt={transmitedToCourierAt}
-                  deliveredAt={deliveredAt}
-                  generateOrderAt={generateOrderAt}
-                  generateOrderId={generateOrderId}
-                  status={status}
-                />
-              </div>
-              <div className="w-full">
-                <div className="mb-6">
-                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
-                </div>
-                <BillingInfo billingData={billingInfo} />
-              </div>
-              <Col numColSpanMd={2} numColSpanLg={1}>
-                <div className="w-full lg:pl-20">
-                  <OrderSummary
-                    productPrice={productPrice}
-                    delivery={orderDeliverPrice}
-                    taxes={orderTax}
+            <Flex className="justify-start items-start flex-wrap lg:flex-nowrap">
+              <Flex className="justify-start items-start flex-wrap mb-6 sm:flex-nowrap">
+                <div className="w-full lg:max-w-[190px]">
+                  <TrackOrder
+                    id={trackOrderInfo.id}
+                    transmitedToCourierAt={transmitedToCourierAt}
+                    deliveredAt={deliveredAt}
+                    generateOrderAt={generateOrderAt}
+                    generateOrderId={generateOrderId}
+                    status={status}
                   />
                 </div>
-              </Col>
-            </Grid>
+                <div className="w-full lg:min-w-[292px] lg:max-w-[292px]">
+                  <div className="mb-6">
+                    <PaymentDetails
+                      cardLast4Digit={billingInfo.cardLast4Digit}
+                    />
+                  </div>
+                  <BillingInfo billingData={billingInfo} />
+                </div>
+              </Flex>
+              <div className="w-full lg:max-w-[160px] lg:pl-6">
+                <OrderSummary
+                  productPrice={productPrice}
+                  delivery={orderDeliverPrice}
+                  taxes={orderTax}
+                />
+              </div>
+            </Flex>
           </Col>
         </Grid>
       </Card>

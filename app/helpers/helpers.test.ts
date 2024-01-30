@@ -8,6 +8,8 @@ import {
   formattedNumber,
   formatDateTime,
   getCrumbName,
+  searchOrderDataByValue,
+  searchProductDataByValue,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -194,5 +196,49 @@ describe("getPageTitle function", () => {
     };
     const name = getCrumbName({ ...mockValue });
     expect(name).toBe("Test");
+  });
+});
+
+describe("searchOrderDataByValue function", () => {
+  test("filters data correctly", () => {
+    const orderListData = [
+      {
+        products: [{ name: "ProductA" }, { name: "ProductB" }],
+      },
+      {
+        products: [{ name: "ProductC" }, { name: "ProductD" }],
+      },
+    ];
+
+    const productName = "ProductA";
+
+    const filteredData = searchOrderDataByValue(
+      orderListData,
+      "products",
+      "name",
+      productName,
+    );
+
+    expect(filteredData).toHaveLength(1);
+    expect(filteredData[0].products[0].name).toBe(productName);
+  });
+});
+
+describe("searchProductDataByValue function", () => {
+  const productListData = [
+    { productName: "ProductA" },
+    { productName: "ProductB" },
+    { productName: "ProductC" },
+  ];
+
+  test("filters data correctly", () => {
+    const result = searchProductDataByValue(
+      productListData,
+      "productName",
+      "ProductA",
+    );
+
+    expect(result.length).toBe(1);
+    expect(result[0].productName).toBe("ProductA");
   });
 });

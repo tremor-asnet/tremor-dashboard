@@ -1,16 +1,19 @@
 // Components
-import { OrderFilter, InputSearch } from "@/components";
-import TableProduct from "@/components/Table/TableProduct/TableProduct";
+import { TableProduct, InputSearch, ProductFilter } from "@/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Services
-import { getProducts } from "@/services/productServices";
+import { getProducts } from "@/services";
 
 // Types
 import { Product } from "@/types";
 
+// Helpers
+import { filterProductList, searchProductDataByValue } from "@/helpers";
+
 type SearchParamsProduct = {
   productName: string;
+  isAvailable: string;
 };
 
 const ProductListPage = async ({
@@ -22,29 +25,43 @@ const ProductListPage = async ({
 
   const productListData: Product[] = await getProducts();
 
-  const { productName = "" } = searchParams as SearchParamsProduct;
+  const { productName = "", isAvailable = "" } =
+    searchParams as SearchParamsProduct;
 
   let filteredData = productListData;
 
   if (productName) {
-    filteredData = productListData?.filter((item: Product) =>
-      item.productName.toLowerCase().includes(productName.toLowerCase()),
+    filteredData = searchProductDataByValue<Product>(
+      productListData,
+      "productName",
+      productName,
     );
   }
 
+  filteredData = isAvailable
+    ? filterProductList(
+        filteredData,
+        "isAvailable",
+        String(isAvailable).toLowerCase() === "true",
+      )
+    : filteredData;
+
   return (
     <Flex flexDirection="col" className="gap-4">
-      <Flex>
+      <Flex className="relative">
         <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
           <Text className="uppercase text-xs text-white dark:text-white">
             new product
           </Text>
         </Button>
-        <OrderFilter title="Filter" />
+        <ProductFilter title="Filter" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <TableProduct key={productName} products={filteredData} />
+        <TableProduct
+          key={`${productName}-${isAvailable}`}
+          products={filteredData}
+        />
       </div>
     </Flex>
   );

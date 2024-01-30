@@ -38,3 +38,64 @@ export const getCrumbName = ({
     return name.replace("-", " ");
   }
 };
+
+/**
+ * Filter data by value
+ * @param data []
+ * @param field string
+ * @param value string
+ * @returns []
+ */
+export const searchProductDataByValue = <T>(
+  data: T[],
+  field: string,
+  value: string,
+) =>
+  data.filter(item =>
+    getObjectValue(item, field).toLowerCase().includes(value.toLowerCase()),
+  );
+
+/**
+ * Search Order data by value
+ * @param data []
+ * @param fieldOuter string
+ * @param fieldInner string
+ * @param value string
+ * @returns []
+ */
+export const searchOrderDataByValue = <T, Y>(
+  data: T[],
+  fieldOuter: string,
+  fieldInner: string,
+  value: string,
+) =>
+  data.filter(item =>
+    (getObjectValue(item, fieldOuter) as unknown as Y[]).find(itemInner =>
+      getObjectValue(itemInner, fieldInner)
+        .toLowerCase()
+        .includes((value as string).toLowerCase()),
+    ),
+  );
+
+/**
+ * Filter Order by IsAvailable
+ * @param data []
+ * @param field string
+ * @param value string
+ * @returns []
+ */
+export const filterOrderList = <T>(data: T[], field: string, value: string) =>
+  data.filter(item => getObjectValue(item, field).toString() === value);
+
+/**
+ * Filter Product by IsAvailable
+ * @param data []
+ * @param field string
+ * @param value string
+ * @returns []
+ */
+export const filterProductList = <T>(
+  data: T[],
+  field: string,
+  value: boolean,
+) => data.filter(item => Boolean(getObjectValue(item, field)) === value);

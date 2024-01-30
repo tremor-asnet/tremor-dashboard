@@ -8,7 +8,7 @@ import { Button, Text } from "@tremor/react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Constants
-import { orderListOption } from "@/constants";
+import { ProductList } from "@/constants";
 
 // Hooks
 import { useOutsideClick } from "@/hooks";
@@ -16,11 +16,11 @@ import { useOutsideClick } from "@/hooks";
 // Components
 import { SelectOption } from "@/components";
 
-interface OrderFilterProps {
+interface ProductFilterProps {
   title: string;
 }
 
-const OrderFilter = ({ title }: OrderFilterProps) => {
+const ProductFilter = ({ title }: ProductFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
@@ -29,7 +29,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
 
   const newParams = new URLSearchParams(searchParams.toString());
   const pathName = usePathname();
-  const currentStatus = newParams.get("status");
+  const currentIsAvailable = newParams.get("isAvailable");
 
   const selectRef = useOutsideClick(() => {
     setShowListOption(false);
@@ -39,9 +39,9 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleClickItem = (status: string) => {
-    if (currentStatus !== status) {
-      newParams.set("status", status);
+  const handleClickItem = (isAvailable: string) => {
+    if (currentIsAvailable !== isAvailable) {
+      newParams.set("isAvailable", isAvailable);
     }
 
     const query = newParams ? `${newParams}` : "";
@@ -56,7 +56,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
   };
 
   const handleRemoveFilter = () => {
-    newParams.delete("status");
+    newParams.delete("isAvailable");
     router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
   };
@@ -78,8 +78,8 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
           ref={selectRef as RefObject<HTMLDivElement>}
           className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
           <SelectOption
-            title="Status"
-            data={orderListOption}
+            title="Is Available"
+            data={ProductList}
             onSelectItem={handleSelectFilter}
             onSelectRemove={handleRemoveFilter}
           />
@@ -89,4 +89,4 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
   );
 };
 
-export default OrderFilter;
+export default ProductFilter;

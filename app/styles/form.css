@@ -44,3 +44,8 @@
 .dark button .text-tremor-content-emphasis {
   @apply bg-[#1a2035];
 }
+
+form input.text-tremor-default,
+form button.text-tremor-content {
+  @apply pl-0;
+}

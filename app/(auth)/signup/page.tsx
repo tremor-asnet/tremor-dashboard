@@ -95,7 +95,9 @@ const SignUp = () => {
           />
         </div>
       )}
-      <form onSubmit={handleSubmit(handleSignUp)} className="w-full p-2 sm:p-3">
+      <form
+        onSubmit={handleSubmit(handleSignUp)}
+        className="w-full p-2 sm:p-3 sign-up">
         <Controller
           control={control}
           rules={{

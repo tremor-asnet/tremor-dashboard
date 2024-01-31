@@ -1,6 +1,7 @@
 "use client";
 
 // Libs
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 // Components
@@ -16,7 +17,11 @@ import { IMedia, IPricing, IProductInfo, ISocial, NewProduct } from "@/types";
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
+// Services
+import { addNewProduct } from "@/services";
+
 const ProductManager = () => {
+  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [newProduct, setNewProduct] = useState<NewProduct>({
     productName: "",
@@ -114,7 +119,7 @@ const ProductManager = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const handleSubmitPricingForm = (pricing: IPricing) => {
+  const handleSubmitPricingForm = async (pricing: IPricing) => {
     setNewProduct({
       ...newProduct,
       price: pricing.price,
@@ -123,7 +128,14 @@ const ProductManager = () => {
       tags: pricing.tags?.map(Number),
     });
 
-    // TODO : Integrate add new product API here and redirect to product list page
+    try {
+      await addNewProduct(newProduct);
+
+      // TODO: display toast
+      router.push("product-list");
+    } catch (error) {
+      // TODO: handle Error here
+    }
   };
 
   return (

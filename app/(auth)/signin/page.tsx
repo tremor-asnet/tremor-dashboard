@@ -72,7 +72,9 @@ const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleSignIn)} className="w-full sm:p-3">
+    <form
+      onSubmit={handleSubmit(handleSignIn)}
+      className="w-full sm:p-3 sign-in">
       <Controller
         control={control}
         rules={{

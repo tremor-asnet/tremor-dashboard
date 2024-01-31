@@ -47,13 +47,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </span>
               </button>
               <button
-                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-transparent dark:hover:border-transparent hover:bg-transparent hover:opacity-75 mx-2"
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
               >
                 <span
                   class="tremor-Button-text text-sm whitespace-nowrap"
                 >
                   <p
-                    class="text-tremor-default dark:text-dark-tremor-content py-[1px] text-xs font-bold text-red-500 uppercase mx-2"
+                    class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
                   >
                     Remove
                   </p>
@@ -118,13 +118,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </span>
             </button>
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-transparent dark:hover:border-transparent hover:bg-transparent hover:opacity-75 mx-2"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content py-[1px] text-xs font-bold text-red-500 uppercase mx-2"
+                  class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
                 >
                   Remove
                 </p>

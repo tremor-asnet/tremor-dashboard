@@ -9,12 +9,11 @@ export interface Product {
 }
 
 export type TProductInfo = {
-  id: string;
-  name: string;
+  productName: string;
   description?: string;
-  weight?: string;
+  weight?: number;
   category?: string;
-  quantity?: string;
+  quantity?: number;
   collection?: string;
   price?: string;
   color?: string;
@@ -45,12 +44,33 @@ export type TEditProduct = {
 };
 
 export interface IProductInfo {
-  name?: string;
-  description?: string;
-  weight?: number;
-  category?: number;
-  quantity?: number;
+  productName: string;
+  description: string;
+  weight: number;
+  category: number;
+  quantity: number;
 }
+
+export interface NewProduct {
+  productName: string;
+  description: string;
+  weight: number;
+  category: number;
+  quantity: number;
+  price: number;
+  isAvailable: true;
+  providerName: string;
+  image: string;
+  currency: number;
+  sku: string;
+  tags: number[];
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
+}
+
+export interface ISocial
+  extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
 
 export interface EditProductData {
   productName: string;

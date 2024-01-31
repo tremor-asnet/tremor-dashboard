@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 // Components
 import {
   CustomAvatarName,
@@ -26,8 +24,6 @@ interface TableOrderProps {
 }
 
 const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
-  const [loading, setLoading] = useState(false);
-
   const handleChangeCheckbox = () => {
     // TODO: handle checkbox here
   };
@@ -76,28 +72,14 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
     },
   ];
 
-  useEffect(() => {
-    setLoading(true);
-
-    // Delay to check show loading
-    setTimeout(() => {
-      setLoading(false);
-    }, 100);
-  }, [status, keyword]);
-
-  if (loading === true) {
-    return (
-      <LoadingIndicator
-        additionalClass="flex justify-center items-center"
-        width={8}
-        height={8}
-        isFullWidth={false}
-        fillColor="river-bed-500"
-      />
-    );
-  }
-
-  return <DataGrid data={orders} columns={columns} />;
+  return (
+    <DataGrid
+      data={orders}
+      columns={columns}
+      filterBy={status}
+      keyword={keyword}
+    />
+  );
 };
 
 export default TableOrder;

@@ -2,7 +2,8 @@
   @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
 }
 
-.select-custom li {
+.select-custom li,
+.select-custom svg {
   @apply cursor-pointer;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .select-custom button:focus  {
-  @apply bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
+  @apply bg-transparent rounded-none border-0 border-b !border-b-[#344767] shadow-none outline-none ring-0;
 }
 
 .ql-container.ql-snow {
@@ -49,4 +50,13 @@ form button.text-tremor-content-emphasis {
 form.product-info :is(.dark .dark\:shadow-dark-tremor-input):hover,
 form.pricing-info :is(.dark .dark\:shadow-dark-tremor-input):hover {
   @apply bg-transparent;
+}
+
+form.sign-in input.text-tremor-default {
+  @apply pl-3 pr-4;
+}
+
+form.sign-in :is(.dark .dark\:shadow-dark-tremor-input),
+form.sign-up :is(.dark .dark\:shadow-dark-tremor-input) {
+  @apply shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem];
 }

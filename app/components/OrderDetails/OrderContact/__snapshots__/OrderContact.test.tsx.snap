@@ -71,10 +71,10 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <p
               class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
             >
-              Do you like the item? Leave us a review
+              Do you like the product? Leave us a review
                
               <a
-                class="font-semibold"
+                class="font-normal"
                 href="#"
               >
                 here
@@ -153,10 +153,10 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           <p
             class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
           >
-            Do you like the item? Leave us a review
+            Do you like the product? Leave us a review
              
             <a
-              class="font-semibold"
+              class="font-normal"
               href="#"
             >
               here

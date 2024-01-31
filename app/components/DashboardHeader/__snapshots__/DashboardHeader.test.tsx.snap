@@ -41,7 +41,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
               class="flex flex-wrap gap-2 items-center text-gray-400 dark:text-white"
             >
               <li
-                class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]"
+                class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
               >
                 <a
                   href="/analytics"
@@ -69,7 +69,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
               </li>
             </ol>
             <p
-              class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] text-primary"
+              class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-primary"
             />
           </nav>
         </div>
@@ -167,7 +167,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             class="flex flex-wrap gap-2 items-center text-gray-400 dark:text-white"
           >
             <li
-              class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]"
+              class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
             >
               <a
                 href="/analytics"
@@ -195,7 +195,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             </li>
           </ol>
           <p
-            class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] text-primary"
+            class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-primary"
           />
         </nav>
       </div>

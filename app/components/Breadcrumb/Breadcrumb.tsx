@@ -54,7 +54,7 @@ const Breadcrumb = ({
           return (
             <>
               <li
-                className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] leading-[0] ${crumbItemTextWhite} ${activeCrumb}`}>
+                className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
                 <Link href={href}>
                   {getCrumbName({
                     name: link,
@@ -83,7 +83,7 @@ const Breadcrumb = ({
             ? "text-lighter"
             : "text-gray-400 dark:text-white"
         }`}>
-        <li className="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em] leading-[0]">
+        <li className="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]">
           <Link href={ROUTES.HOME}>
             <MdHome className="text-lg" />
           </Link>
@@ -92,7 +92,7 @@ const Breadcrumb = ({
         {renderCrumb()}
       </ol>
       <Title
-        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
+        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 ${
           isStickyHeader ? "text-white" : "text-primary"
         }`}>
         {renderTitle(pathname)}

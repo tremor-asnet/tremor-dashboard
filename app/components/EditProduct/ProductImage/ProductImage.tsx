@@ -31,8 +31,8 @@ const ProductImage = ({
                 Edit
               </Text>
             </Button>
-            <Button className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-transparent dark:hover:border-transparent hover:bg-transparent hover:opacity-75 mx-2">
-              <Text className="uppercase py-[1px] text-xs font-bold text-red-500 uppercase mx-2">
+            <Button className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2">
+              <Text className="py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2">
                 Remove
               </Text>
             </Button>

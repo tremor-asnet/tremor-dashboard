@@ -1,5 +1,4 @@
 import { ListOption, ProductListOption } from "@/types";
-import { Button } from "@tremor/react";
 
 interface SelectOptionProps {
   title: string;

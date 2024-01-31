@@ -31,7 +31,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   Name
                 </p>
                 <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                 >
                   <input
                     class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
@@ -50,54 +50,49 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-secondary dark:text-lighter mb-2"
                 >
-                  Description ❪optional❫
+                  Description 
+                  <span
+                    class="text-xs pl-1"
+                  >
+                    (optional)
+                  </span>
                 </p>
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-col justify-between items-center"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-start"
             >
-              <div
-                class="w-full mb-6"
-              >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Weight
-                </p>
-                <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                >
-                  <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="weight"
-                    placeholder="Weight"
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
               <div
                 class="w-full mb-8"
               >
                 <p
                   class="text-tremor-default text-secondary dark:text-lighter mb-2"
                 >
+                  Weight
+                </p>
+                <input
+                  class="py-[12px] w-full text-tremor-default dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none border-gray focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  id="weight"
+                  placeholder="Weight"
+                  type="number"
+                  value="0"
+                />
+              </div>
+              <div
+                class="w-full mb-8 sm:max-w-auto"
+              >
+                <p
+                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
+                >
                   Quantity
                 </p>
-                <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                >
-                  <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="quantity"
-                    placeholder="Quantity"
-                    type="text"
-                    value=""
-                  />
-                </div>
+                <input
+                  class="py-[12px] w-full text-tremor-default dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none border-gray focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  id="quantity"
+                  placeholder="Quantity"
+                  type="number"
+                  value="0"
+                />
               </div>
               <div
                 class="w-full mb-7"
@@ -108,7 +103,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                   Category
                 </p>
                 <div
-                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                   data-headlessui-state=""
                   id="category"
                 >
@@ -179,7 +174,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 Name
               </p>
               <div
-                class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
               >
                 <input
                   class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
@@ -198,54 +193,49 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               <p
                 class="text-tremor-default text-secondary dark:text-lighter mb-2"
               >
-                Description ❪optional❫
+                Description 
+                <span
+                  class="text-xs pl-1"
+                >
+                  (optional)
+                </span>
               </p>
             </div>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-col justify-between items-center"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start"
           >
-            <div
-              class="w-full mb-6"
-            >
-              <p
-                class="text-tremor-default text-secondary dark:text-lighter mb-2"
-              >
-                Weight
-              </p>
-              <div
-                class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-              >
-                <input
-                  class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                  data-testid="base-input"
-                  id="weight"
-                  placeholder="Weight"
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
             <div
               class="w-full mb-8"
             >
               <p
                 class="text-tremor-default text-secondary dark:text-lighter mb-2"
               >
+                Weight
+              </p>
+              <input
+                class="py-[12px] w-full text-tremor-default dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none border-gray focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                id="weight"
+                placeholder="Weight"
+                type="number"
+                value="0"
+              />
+            </div>
+            <div
+              class="w-full mb-8 sm:max-w-auto"
+            >
+              <p
+                class="text-tremor-default text-secondary dark:text-lighter mb-2"
+              >
                 Quantity
               </p>
-              <div
-                class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-              >
-                <input
-                  class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                  data-testid="base-input"
-                  id="quantity"
-                  placeholder="Quantity"
-                  type="text"
-                  value=""
-                />
-              </div>
+              <input
+                class="py-[12px] w-full text-tremor-default dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none border-gray focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                id="quantity"
+                placeholder="Quantity"
+                type="number"
+                value="0"
+              />
             </div>
             <div
               class="w-full mb-7"
@@ -256,7 +246,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 Category
               </p>
               <div
-                class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                 data-headlessui-state=""
                 id="category"
               >

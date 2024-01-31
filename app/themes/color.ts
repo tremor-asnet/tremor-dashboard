@@ -185,6 +185,7 @@ export const backgroundImage = {
 
 export const borderColor = {
   primary: "#344767",
+  attention: "#f44335",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -241,8 +242,7 @@ export const boxShadow = {
   "item-pagination":
     "0rem 0.1875rem 0.1875rem 0rem rgba(52, 71, 103, 0.15),0rem 0.1875rem 0.0625rem -0.125rem rgba(52, 71, 103, 0.2),0rem 0.0625rem 0.3125rem 0rem rgba(52, 71, 103, 0.15)",
   // dark
-  "dark-tremor-input":
-    "rgba(52,71,103,0.15) 0rem 0.1875rem 0.1875rem 0rem,rgba(52,71,103,0.2) 0rem 0.1875rem 0.0625rem -0.125rem,rgba(52,71,103,0.15) 0rem 0.0625rem 0.3125rem 0rem",
+  "dark-tremor-input": "",
   "dark-tremor-card":
     "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
   "dark-tremor-dropdown":

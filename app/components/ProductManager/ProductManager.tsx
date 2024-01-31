@@ -7,9 +7,10 @@ import { useState } from "react";
 import Stepper from "@/components/common/Stepper/Stepper";
 import ProductInfoForm from "@/components/ProductManager/ProductInfoForm/ProductInfoForm";
 import MediaForm from "@/components/ProductManager/MediaForm/MediaForm";
+import SocialForm from "@/components/ProductManager/SocialForm/SocialForm";
 
 // Types
-import { IMedia, IProductInfo, NewProduct } from "@/types";
+import { IMedia, IProductInfo, ISocial, NewProduct } from "@/types";
 
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
@@ -59,6 +60,16 @@ const ProductManager = () => {
             onSubmit={handleSubmitMediaForm}
           />
         );
+      case 3:
+        return (
+          <SocialForm
+            shopifyUrl={newProduct.shopifyUrl}
+            facebookUrl={newProduct.facebookUrl}
+            instagramUrl={newProduct.instagramUrl}
+            onBack={onClickBackButton}
+            onSubmit={handleSubmitSocialForm}
+          />
+        );
       default:
         return null;
     }
@@ -78,6 +89,16 @@ const ProductManager = () => {
 
   const handleSubmitMediaForm = (media: IMedia) => {
     setNewProduct({ ...newProduct, image: media.image });
+    setCurrentStep(currentStep + 1);
+  };
+
+  const handleSubmitSocialForm = (social: ISocial) => {
+    setNewProduct({
+      ...newProduct,
+      shopifyUrl: social.shopifyUrl,
+      facebookUrl: social.facebookUrl,
+      instagramUrl: social.instagramUrl,
+    });
     setCurrentStep(currentStep + 1);
   };
 

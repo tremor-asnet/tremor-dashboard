@@ -1,13 +1,13 @@
 "use client";
 
 // Components
-import DataGrid from "@/components/common/DataGrid/DataGrid";
 import {
   CustomAvatarName,
   CustomCheckBoxField,
   CustomDateFormat,
   CustomNumberFormat,
 } from "@/components/Table/common";
+import { DataGrid } from "@/components";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -17,9 +17,15 @@ import { ROUTES } from "@/constants";
 
 interface TableProductProps {
   products: Product[];
+  isAvailable: string;
+  keyword: string;
 }
 
-const TableProduct = ({ products }: TableProductProps) => {
+const TableProduct = ({
+  products,
+  isAvailable,
+  keyword,
+}: TableProductProps) => {
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
@@ -70,7 +76,14 @@ const TableProduct = ({ products }: TableProductProps) => {
     },
   ];
 
-  return <DataGrid data={products} columns={columns} />;
+  return (
+    <DataGrid
+      data={products}
+      columns={columns}
+      filterBy={isAvailable}
+      keyword={keyword}
+    />
+  );
 };
 
 export default TableProduct;

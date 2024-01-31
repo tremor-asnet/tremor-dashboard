@@ -1,29 +1,65 @@
 "use client";
 
-// Components
-import { ColumnType } from "@/types";
 import { Card, Table } from "@tremor/react";
-import Pagination from "../Pagination";
-import DataGridHeader from "./DataGridHeader/DataGridHeader";
-import DataGridBody from "./DataGridBody/DataGridBody";
+
+// Components
+import {
+  Pagination,
+  DataGridHeader,
+  DataGridBody,
+  LoadingIndicator,
+} from "@/components";
+
+// Types
+import { ColumnType } from "@/types";
 
 // Hooks
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
+  filterBy: string;
+  keyword: string;
 }
 
-const DataGrid = <T,>({ data, columns, pageSize = 10 }: DataTableProps<T>) => {
+const DataGrid = <T,>({
+  data,
+  columns,
+  pageSize = 10,
+  filterBy,
+  keyword,
+}: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
     return data.slice(firstPageIndex, lastPageIndex);
   }, [currentPage]);
+
+  useEffect(() => {
+    setLoading(true);
+
+    // Delay to check show loading
+    setTimeout(() => {
+      setLoading(false);
+    }, 100);
+  }, [filterBy, keyword]);
+
+  if (loading === true) {
+    return (
+      <LoadingIndicator
+        additionalClass="flex justify-center items-center"
+        width={8}
+        height={8}
+        isFullWidth={false}
+        fillColor="river-bed-500"
+      />
+    );
+  }
 
   return (
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">

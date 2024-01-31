@@ -42,7 +42,7 @@ const Pagination = ({
     currentPage * pageSize >= totalCount ? totalCount : currentPage * pageSize;
 
   return (
-    <div className="antialiased font-primary flex gap-6 flex-col sm:flex-row items-start sm:items-center w-full justify-between px-4 py-3 sm:px-6">
+    <div className="antialiased font-primary flex gap-5 flex-col sm:flex-row items-start sm:items-center w-full justify-between p-6">
       {totalCount >= pageSize && (
         <div className="flex w-auto py-2">
           <p className="text-sm text-secondary">
@@ -55,7 +55,7 @@ const Pagination = ({
         </div>
       )}
 
-      <div className="flex gap-2 justify-end items-center m-auto md:m-0">
+      <div className="flex gap-2 justify-end items-center md:m-0">
         <button
           className={`btn-paginate ${currentPage === 1 ? "hidden" : ""}`}
           aria-label="Previous page button"

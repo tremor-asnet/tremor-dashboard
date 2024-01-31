@@ -13,6 +13,7 @@ export const color = {
     primary: "#ffffff",
     romance: "#ffffffcc",
     lighter: "rgba(255, 255, 255, 0.8)",
+    brightGray: "#6c757d",
   },
   // light mode
   tremor: {

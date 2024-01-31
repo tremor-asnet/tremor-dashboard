@@ -87,3 +87,8 @@ export interface EditProductData {
   currency: number;
   sku: string;
 }
+
+export interface IPricing
+  extends Pick<NewProduct, "price" | "currency" | "sku"> {
+  tags: string[];
+}

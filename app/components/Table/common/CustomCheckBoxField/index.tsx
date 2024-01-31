@@ -13,7 +13,7 @@ export const CustomCheckBoxField = ({
   link,
   onChange,
 }: CustomCheckboxFieldProps) => (
-  <div className="flex justify-start items-center ml-2">
+  <div className="flex justify-start items-center ml-2 w-16">
     <Checkbox onChange={onChange} />
     <Link
       href={link}

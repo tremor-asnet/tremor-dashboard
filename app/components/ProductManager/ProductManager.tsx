@@ -1,6 +1,7 @@
 "use client";
 
 // Libs
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 // Components
@@ -8,14 +9,19 @@ import Stepper from "@/components/common/Stepper/Stepper";
 import ProductInfoForm from "@/components/ProductManager/ProductInfoForm/ProductInfoForm";
 import MediaForm from "@/components/ProductManager/MediaForm/MediaForm";
 import SocialForm from "@/components/ProductManager/SocialForm/SocialForm";
+import PricingForm from "@/components/ProductManager/PricingForm/PricingForm";
 
 // Types
-import { IMedia, IProductInfo, ISocial, NewProduct } from "@/types";
+import { IMedia, IPricing, IProductInfo, ISocial, NewProduct } from "@/types";
 
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
+// Services
+import { addNewProduct } from "@/services";
+
 const ProductManager = () => {
+  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [newProduct, setNewProduct] = useState<NewProduct>({
     productName: "",
@@ -70,6 +76,17 @@ const ProductManager = () => {
             onSubmit={handleSubmitSocialForm}
           />
         );
+      case 4:
+        return (
+          <PricingForm
+            price={newProduct.price}
+            currency={newProduct.currency}
+            sku={newProduct.sku}
+            tags={newProduct.tags}
+            onBack={onClickBackButton}
+            onSubmit={handleSubmitPricingForm}
+          />
+        );
       default:
         return null;
     }
@@ -100,6 +117,25 @@ const ProductManager = () => {
       instagramUrl: social.instagramUrl,
     });
     setCurrentStep(currentStep + 1);
+  };
+
+  const handleSubmitPricingForm = async (pricing: IPricing) => {
+    setNewProduct({
+      ...newProduct,
+      price: pricing.price,
+      currency: pricing.currency,
+      sku: pricing.sku,
+      tags: pricing.tags?.map(Number),
+    });
+
+    try {
+      await addNewProduct(newProduct);
+
+      // TODO: display toast
+      router.push("product-list");
+    } catch (error) {
+      // TODO: handle Error here
+    }
   };
 
   return (

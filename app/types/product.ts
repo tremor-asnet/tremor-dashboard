@@ -72,6 +72,22 @@ export interface NewProduct {
 export interface ISocial
   extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
 
+export interface EditProductData {
+  productName: string;
+  price: string;
+  tags: number[];
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
+  quantity: string;
+  weight: string;
+  category: number;
+  description: string;
+  image: string;
+  currency: number;
+  sku: string;
+}
+
 export interface IPricing
   extends Pick<NewProduct, "price" | "currency" | "sku"> {
   tags: string[];

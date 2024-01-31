@@ -13,5 +13,4 @@ export const ROUTES = {
   SETTING: "/settings",
   ORDER_LIST: "/order-list",
   PRODUCT_LIST: "/product-list",
-  EDIT_PRODUCT: "/product-list/edit-product",
 };

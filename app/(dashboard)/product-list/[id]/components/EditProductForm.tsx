@@ -81,22 +81,27 @@ const EditProductForm = ({
   const { handleSubmit } = formHandler;
 
   const onSubmit = async (data: EditProductData) => {
-    setIsDisableButton(true);
-    const convertedTagsValue = data.tags.map(value => {
-      return Number(value);
-    });
+    try {
+      setIsDisableButton(true);
+      const convertedTagsValue = data.tags.map(value => {
+        return Number(value);
+      });
 
-    const newData = {
-      ...data,
-      category: +data.category,
-      currency: +data.currency,
-      tags: convertedTagsValue,
-    };
+      const newData = {
+        ...data,
+        category: +data.category,
+        currency: +data.currency,
+        tags: convertedTagsValue,
+      };
 
-    await editProduct(id, newData);
-    handleOpenToast();
-    setIsDisableButton(false);
-    router.refresh();
+      await editProduct(id, newData);
+
+      handleOpenToast();
+      setIsDisableButton(false);
+      router.refresh();
+    } catch (err: any) {
+      throw new Error("Failed to edit product!");
+    }
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormContext } from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Title, Flex, Card } from "@tremor/react";
@@ -8,17 +8,8 @@ import { Title, Flex, Card } from "@tremor/react";
 //Styles
 import "@/styles/products.css";
 
-interface SocialsData {
-  shoppifyUrl?: string;
-  facebookUrl?: string;
-  instagramUrl?: string;
-}
-
 const Socials = () => {
-  const { register } = useFormContext();
-  const handleSocials = () => {
-    // TODO: Handle change here
-  };
+  const { control } = useFormContext();
 
   return (
     <Card className="dark:bg-dark-tremor-primary">
@@ -26,9 +17,42 @@ const Socials = () => {
         Socials
       </Title>
       <Flex className="flex-col items-start justify-start mt-8">
-        <input className="input-text" {...register("shopifyUrl")} />
-        <input className="input-text" {...register("facebookUrl")} />
-        <input className="input-text" {...register("instagramUrl")} />
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="shoppify-handle"
+              placeholder="Shoppify Handle"
+              {...field}
+            />
+          )}
+          name="shopifyUrl"
+        />
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="facebook-account"
+              placeholder="Facebook Account"
+              {...field}
+            />
+          )}
+          name="facebookUrl"
+        />
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="instagram-account"
+              placeholder="Instagram Account"
+              {...field}
+            />
+          )}
+          name="instagramUrl"
+        />
       </Flex>
     </Card>
   );

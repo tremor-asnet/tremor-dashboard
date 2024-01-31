@@ -1,7 +1,12 @@
+import dynamic from "next/dynamic";
+
 // Components
 import { Flex, Text, Title } from "@tremor/react";
+const EditProductForm = dynamic(
+  () => import("@/components/Forms/EditProductForm"),
+);
 
-import EditProductForm from "@/components/Forms/EditProductForm";
+// Services
 import { getProductDetails } from "@/services";
 
 const EditProduct = async ({ params }: { params: { id: number } }) => {

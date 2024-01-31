@@ -1,10 +1,10 @@
 "use client";
+
 import dynamic from "next/dynamic";
+import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Button, Col, Grid, Text } from "@tremor/react";
-import { FormProvider, useForm } from "react-hook-form";
-import { editProduct } from "@/services";
 const ProductImage = dynamic(
   () => import("@/components/EditProduct/ProductImage/ProductImage"),
 );
@@ -17,6 +17,9 @@ const ProductInfo = dynamic(
 const PricingInfo = dynamic(
   () => import("@/components/NewProduct/PricingInfo/PricingInfo"),
 );
+
+// Services
+import { editProduct } from "@/services";
 
 export interface EditProductData {
   productName: string;
@@ -74,40 +77,47 @@ const EditProductForm = ({
       sku,
     },
   });
+
   const { handleSubmit } = formHandler;
   const onSubmit = async (data: EditProductData) => {
     await editProduct(id, data);
   };
 
   return (
-    <FormProvider {...formHandler}>
-      <form onSubmit={handleSubmit(onSubmit)} className="relative">
-        <div className="w-full text-end absolute -mt-24">
-          <Button
-            type="submit"
-            className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
-            size="xs">
-            <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
-              Save
-            </Text>
-          </Button>
-        </div>
-        <Grid numItemsSm={1} numItemsLg={3} className="gap-2 lg:gap-4">
-          <div className="w-full">
-            <ProductImage name={productName} desc={description} image={image} />
+    <>
+      <FormProvider {...formHandler}>
+        <form onSubmit={handleSubmit(onSubmit)} className="relative">
+          <div className="w-full text-end absolute -mt-24">
+            <Button
+              type="submit"
+              className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
+              size="xs">
+              <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+                Save
+              </Text>
+            </Button>
           </div>
-          <Col numColSpanSm={1} numColSpanLg={2}>
-            <ProductInfo />
-          </Col>
-          <Col numColSpan={1}>
-            <Socials />
-          </Col>
-          <Col numColSpanSm={1} numColSpanLg={2}>
-            <PricingInfo />
-          </Col>
-        </Grid>
-      </form>
-    </FormProvider>
+          <Grid numItemsSm={1} numItemsLg={3} className="gap-2 lg:gap-4">
+            <div className="w-full">
+              <ProductImage
+                name={productName}
+                desc={description}
+                image={image}
+              />
+            </div>
+            <Col numColSpanSm={1} numColSpanLg={2}>
+              <ProductInfo />
+            </Col>
+            <Col numColSpan={1}>
+              <Socials />
+            </Col>
+            <Col numColSpanSm={1} numColSpanLg={2}>
+              <PricingInfo />
+            </Col>
+          </Grid>
+        </form>
+      </FormProvider>
+    </>
   );
 };
 

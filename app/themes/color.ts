@@ -185,6 +185,7 @@ export const backgroundImage = {
 
 export const borderColor = {
   primary: "#344767",
+  attention: "#f44335",
 
   //TODO: Will update when implement light/dark themes
   // light mode

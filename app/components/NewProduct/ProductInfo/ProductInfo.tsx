@@ -140,8 +140,8 @@ const ProductInfo = ({
               control={control}
               render={({ field }) => (
                 <div className="w-full">
-                  <Text className="text-secondary dark:text-lighter mb-2">
-                    Description &#x276A;optional&#x276B;
+                  <Text className="text-sm text-secondary dark:text-lighter mb-2">
+                    Description <span className="text-xs">(optional)</span>
                   </Text>
                   <QuillEditor
                     placeholder="Content goes here..."

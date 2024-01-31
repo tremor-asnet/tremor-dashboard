@@ -48,9 +48,14 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 class="w-full"
               >
                 <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
+                  class="text-tremor-default text-sm text-secondary dark:text-lighter mb-2"
                 >
-                  Description ❪optional❫
+                  Description 
+                  <span
+                    class="text-xs"
+                  >
+                    (optional)
+                  </span>
                 </p>
               </div>
             </div>
@@ -196,9 +201,14 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               class="w-full"
             >
               <p
-                class="text-tremor-default text-secondary dark:text-lighter mb-2"
+                class="text-tremor-default text-sm text-secondary dark:text-lighter mb-2"
               >
-                Description ❪optional❫
+                Description 
+                <span
+                  class="text-xs"
+                >
+                  (optional)
+                </span>
               </p>
             </div>
           </div>

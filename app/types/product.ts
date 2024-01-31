@@ -69,3 +69,8 @@ export interface NewProduct {
 
 export interface ISocial
   extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
+
+export interface IPricing
+  extends Pick<NewProduct, "price" | "currency" | "sku"> {
+  tags: string[];
+}

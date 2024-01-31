@@ -45,52 +45,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-4 gap-4"
-              >
-                <div
-                  class="w-full"
-                >
-                  <p
-                    class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                  >
-                    Collection
-                  </p>
-                  <div
-                    class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  >
-                    <input
-                      class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                      data-testid="base-input"
-                      id="collection"
-                      placeholder="Summer"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                </div>
-                <div
-                  class="w-full"
-                >
-                  <p
-                    class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                  >
-                    Price
-                  </p>
-                  <div
-                    class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  >
-                    <input
-                      class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                      data-testid="base-input"
-                      id="price"
-                      placeholder="$90"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
                 class="w-full"
               >
                 <p
@@ -125,7 +79,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                 />
               </div>
               <div
-                class="w-full mb-8 sm:max-w-[147px]"
+                class="w-full mb-8 sm:max-w-auto"
               >
                 <p
                   class="text-tremor-default text-secondary dark:text-lighter mb-2"
@@ -165,53 +119,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                       class="w-[90%] block truncate"
                     >
                       Clothing
-                    </span>
-                    <span
-                      class="absolute inset-y-0 right-0 flex items-center mr-3"
-                    >
-                      <svg
-                        class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.5"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M19 9l-7 7-7-7"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="w-full mb-4"
-              >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Color
-                </p>
-                <div
-                  class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  data-headlessui-state=""
-                  id="color"
-                >
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                    data-headlessui-state=""
-                    id="headlessui-listbox-button-:r1:"
-                    type="button"
-                  >
-                    <span
-                      class="w-[90%] block truncate"
-                    >
-                      Black
                     </span>
                     <span
                       class="absolute inset-y-0 right-0 flex items-center mr-3"
@@ -281,52 +188,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-4 gap-4"
-            >
-              <div
-                class="w-full"
-              >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Collection
-                </p>
-                <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                >
-                  <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="collection"
-                    placeholder="Summer"
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div
-                class="w-full"
-              >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Price
-                </p>
-                <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                >
-                  <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="price"
-                    placeholder="$90"
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div
               class="w-full"
             >
               <p
@@ -361,7 +222,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               />
             </div>
             <div
-              class="w-full mb-8 sm:max-w-[147px]"
+              class="w-full mb-8 sm:max-w-auto"
             >
               <p
                 class="text-tremor-default text-secondary dark:text-lighter mb-2"
@@ -401,53 +262,6 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
                     class="w-[90%] block truncate"
                   >
                     Clothing
-                  </span>
-                  <span
-                    class="absolute inset-y-0 right-0 flex items-center mr-3"
-                  >
-                    <svg
-                      class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19 9l-7 7-7-7"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div
-              class="w-full mb-4"
-            >
-              <p
-                class="text-tremor-default text-secondary dark:text-lighter mb-2"
-              >
-                Color
-              </p>
-              <div
-                class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                data-headlessui-state=""
-                id="color"
-              >
-                <button
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
-                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                  data-headlessui-state=""
-                  id="headlessui-listbox-button-:r1:"
-                  type="button"
-                >
-                  <span
-                    class="w-[90%] block truncate"
-                  >
-                    Black
                   </span>
                   <span
                     class="absolute inset-y-0 right-0 flex items-center mr-3"

@@ -38,7 +38,7 @@ const ProductInfo = ({
   weight,
   category,
   quantity,
-  isEdit = true,
+  isEdit = false,
   collection,
   price,
   color,
@@ -62,7 +62,9 @@ const ProductInfo = ({
   });
 
   const nameErrorMessage = errors.productName?.message?.toString() || "";
-  const checkStyleEditProduct = isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto";
+  const checkStyleEditProduct = isEdit
+    ? "sm:max-w-[147px] mb-10"
+    : "sm:max-w-auto";
 
   const handleNext = () => {
     //TODO handle to check submit form with next button

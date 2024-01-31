@@ -33,6 +33,7 @@ export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";
 export { default as TextField } from "./common/TextField/TextField";
 export { default as SelectField } from "./common/SelectField/SelectField";
+export { default as NumberInput } from "./common/NumberInput/NumberInput";
 export { default as ProductFilter } from "./ProductFilter";
 export { default as TableProduct } from "./Table/TableProduct/TableProduct";
 export { default as SelectOption } from "./SelectOption";

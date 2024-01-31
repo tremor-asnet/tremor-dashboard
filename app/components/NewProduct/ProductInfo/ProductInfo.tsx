@@ -7,14 +7,14 @@ import { useForm, Controller } from "react-hook-form";
 
 // Components
 import { Text, Flex, Card } from "@tremor/react";
-import { TextField, SelectField } from "@/components";
+import { TextField, SelectField, NumberInput } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
 import { MESSAGES_ERROR, CATEGORY_PRODUCT, COLOR_PRODUCT } from "@/constants";
 
 // Types
-import { TProductInfo, SelectOptionData } from "@/types";
+import { TProductInfo } from "@/types";
 
 // Styles
 import "@/styles/form.css";
@@ -23,9 +23,9 @@ import "react-quill/dist/quill.snow.css"; // Import Quill styles
 interface ProductInfoData {
   productName?: string;
   description?: string;
-  weight?: string;
+  weight?: number;
   category?: string;
-  quantity?: string;
+  quantity?: number;
   isEdit?: boolean;
   collection?: string;
   price?: string;
@@ -38,7 +38,7 @@ const ProductInfo = ({
   weight,
   category,
   quantity,
-  isEdit = false,
+  isEdit = true,
   collection,
   price,
   color,
@@ -74,8 +74,8 @@ const ProductInfo = ({
         Product Information
       </Text>
       <form onSubmit={handleSubmit(handleNext)}>
-        <Flex className="items-start gap-6">
-          <Flex flexDirection="col" className="gap-4">
+        <Flex flexDirection="col" className="items-start gap-6 md:flex-row">
+          <Flex flexDirection="col" className="gap-6">
             <Controller
               control={control}
               rules={{
@@ -85,7 +85,7 @@ const ProductInfo = ({
                   message: MESSAGES_ERROR.NAME_MIN_LENGTH,
                 },
               }}
-              render={({ field }) => (
+              render={({ field: { value = "" } }) => (
                 <div className="w-full mb-2">
                   <TextField
                     id="name"
@@ -93,7 +93,7 @@ const ProductInfo = ({
                     placeholder="Name"
                     autoFocus={true}
                     required={true}
-                    value={field.value}
+                    value={value}
                   />
                   {nameErrorMessage && (
                     <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -108,13 +108,13 @@ const ProductInfo = ({
               <Flex className="mb-4 gap-4">
                 <Controller
                   control={control}
-                  render={({ field }) => (
+                  render={({ field: { value = "" } }) => (
                     <div className="w-full">
                       <TextField
                         id="collection"
                         label="Collection"
                         placeholder="Summer"
-                        value={field.value}
+                        value={value}
                       />
                     </div>
                   )}
@@ -122,13 +122,13 @@ const ProductInfo = ({
                 />
                 <Controller
                   control={control}
-                  render={({ field }) => (
+                  render={({ field: { value = "" } }) => (
                     <div className="w-full">
                       <TextField
                         id="price"
                         label="Price"
                         placeholder="$90"
-                        value={field.value}
+                        value={value}
                       />
                     </div>
                   )}
@@ -141,7 +141,7 @@ const ProductInfo = ({
               render={({ field }) => (
                 <div className="w-full">
                   <Text className="text-secondary dark:text-lighter mb-2">
-                    Description &#x276A;optional&#x276B;
+                    Description <span className="text-xs pl-1">(optional)</span>
                   </Text>
                   <QuillEditor
                     placeholder="Content goes here..."
@@ -153,16 +153,16 @@ const ProductInfo = ({
               name="description"
             />
           </Flex>
-          <Flex flexDirection="col">
+          <Flex flexDirection="col" className="items-start">
             <Controller
               control={control}
-              render={({ field }) => (
-                <div className="w-full mb-6">
-                  <TextField
+              render={({ field: { value = 0 } }) => (
+                <div className="w-full mb-8">
+                  <NumberInput
                     id="weight"
                     label="Weight"
                     placeholder="Weight"
-                    value={field.value}
+                    value={value}
                   />
                 </div>
               )}
@@ -171,13 +171,16 @@ const ProductInfo = ({
 
             <Controller
               control={control}
-              render={({ field }) => (
-                <div className="w-full mb-8">
-                  <TextField
+              render={({ field: { value = 0 } }) => (
+                <div
+                  className={`w-full mb-8 ${
+                    isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto"
+                  }`}>
+                  <NumberInput
                     id="quantity"
                     label="Quantity"
                     placeholder="Quantity"
-                    value={field.value}
+                    value={value}
                   />
                 </div>
               )}

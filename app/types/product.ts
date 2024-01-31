@@ -12,9 +12,9 @@ export type TProductInfo = {
   id: string;
   name: string;
   description?: string;
-  weight?: string;
+  weight?: number;
   category?: string;
-  quantity?: string;
+  quantity?: number;
   collection?: string;
   price?: string;
   color?: string;

@@ -12,7 +12,7 @@
 }
 
 .select-custom .translate-y-0 {
-  @apply bottom-[52px];
+  @apply bottom-8;
 }
 
 .select-custom ul div {

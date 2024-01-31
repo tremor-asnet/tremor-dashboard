@@ -1,6 +1,7 @@
 // Libs
 import { MultiSelect, MultiSelectItem } from "@tremor/react";
 import { Control, Controller } from "react-hook-form";
+import { KeyboardEvent } from "react";
 
 // Types
 import { IPricing } from "@/types";
@@ -16,63 +17,67 @@ interface PricingProps {
   control: Control<IPricing>;
 }
 
-const Pricing = ({ control }: PricingProps) => (
-  <div className="flex flex-col gap-6">
-    <Controller
-      name="price"
-      control={control}
-      render={({ field }) => (
-        <FormInputField label="Price" placeholder="" type="text" {...field} />
-      )}
-    />
+const Pricing = ({ control }: PricingProps) => {
+  const handleSkuKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    ["e", "E", "+", "-", "."].includes(e.key) && e.preventDefault();
+  };
 
-    <Controller
-      name="currency"
-      control={control}
-      render={({ field }) => (
-        <SelectField {...field}>
-          {TYPE_PRICE.map(item => (
-            <option
-              className="dark:bg-primary m-2"
-              key={item.value}
-              value={item.value}>
-              {item.option}
-            </option>
-          ))}
-        </SelectField>
-      )}
-    />
+  return (
+    <div className="flex flex-col gap-6">
+      <Controller
+        name="price"
+        control={control}
+        render={({ field }) => (
+          <FormInputField label="Price" placeholder="" type="text" {...field} />
+        )}
+      />
 
-    <Controller
-      name="sku"
-      control={control}
-      render={({ field }) => (
-        <FormInputField
-          label="SKU"
-          placeholder=""
-          type="number"
-          onKeyDown={e => {
-            ["e", "E", "+", "-", "."].includes(e.key) && e.preventDefault();
-          }}
-          {...field}
-        />
-      )}
-    />
+      <Controller
+        name="currency"
+        control={control}
+        render={({ field }) => (
+          <SelectField {...field}>
+            {TYPE_PRICE.map(item => (
+              <option
+                className="dark:bg-primary m-2"
+                key={item.value}
+                value={item.value}>
+                {item.option}
+              </option>
+            ))}
+          </SelectField>
+        )}
+      />
 
-    <Controller
-      name="tags"
-      control={control}
-      render={({ field }) => (
-        <MultiSelect {...field}>
-          {TAGS_PRICE.map(item => (
-            <MultiSelectItem key={item.value} value={item.value}>
-              {item.option}
-            </MultiSelectItem>
-          ))}
-        </MultiSelect>
-      )}
-    />
-  </div>
-);
+      <Controller
+        name="sku"
+        control={control}
+        render={({ field }) => (
+          <FormInputField
+            label="SKU"
+            placeholder=""
+            type="number"
+            onKeyDown={handleSkuKeyDown}
+            {...field}
+          />
+        )}
+      />
+
+      <Controller
+        name="tags"
+        control={control}
+        render={({ field }) => (
+          <MultiSelect {...field}>
+            {TAGS_PRICE.map(item => (
+              <MultiSelectItem key={item.value} value={item.value}>
+                {item.option}
+              </MultiSelectItem>
+            ))}
+          </MultiSelect>
+        )}
+      />
+    </div>
+  );
+};
 
 export default Pricing;

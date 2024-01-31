@@ -1,9 +1,11 @@
 // Constants
-import { EditProductData } from "@/components/Forms/EditProductForm";
 import { ROUTER_API_URL } from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
+
+// Types
+import { EditProductData } from "@/types";
 
 export const getProducts = async () => {
   const res = await fetch(`${ROUTER_API_URL}/products`, {

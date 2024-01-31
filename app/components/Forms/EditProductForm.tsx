@@ -22,21 +22,8 @@ const PricingInfo = dynamic(
 import { editProduct } from "@/services";
 import { useState } from "react";
 
-export interface EditProductData {
-  productName: string;
-  price: string;
-  tags: string[];
-  shopifyUrl: string;
-  facebookUrl: string;
-  instagramUrl: string;
-  quantity: string;
-  weight: string;
-  category: number;
-  description: string;
-  image: string;
-  currency: number;
-  sku: string;
-}
+// Types
+import { EditProductData } from "@/types";
 
 const EditProductForm = ({
   productData,
@@ -84,10 +71,15 @@ const EditProductForm = ({
 
   const onSubmit = async (data: EditProductData) => {
     setIsLoading(true);
+    const convertedTagsValue = data.tags.map(value => {
+      return Number(value);
+    });
+
     const newData = {
       ...data,
-      category: Number(data.category),
-      currency: Number(data.currency),
+      category: +data.category,
+      currency: +data.currency,
+      tags: convertedTagsValue,
     };
 
     await editProduct(id, newData);

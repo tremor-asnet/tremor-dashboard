@@ -87,23 +87,24 @@ const PricingInfo = () => {
 
             <Controller
               control={control}
-              render={() => (
-                <div className="w-full mb-4">
-                  <Text className="text-secondary dark:text-white">Tags</Text>
-                  <MultiSelect
-                    defaultValue={[
-                      PRODUCT_TAGS.IN_STOCK,
-                      PRODUCT_TAGS.OUT_OF_STOCK,
-                    ]}
-                    className="select-custom dark:text-white dark:border-light dark:focus:border-white">
-                    {TAGS_PRICE.map((item: SelectOptionData) => (
-                      <MultiSelectItem key={item.value} value={item.value}>
-                        {item.option}
-                      </MultiSelectItem>
-                    ))}
-                  </MultiSelect>
-                </div>
-              )}
+              render={({ field: { value, onChange } }) => {
+                const convertedValue = value.map(String);
+                return (
+                  <div className="w-full mb-4">
+                    <Text className="text-secondary dark:text-white">Tags</Text>
+                    <MultiSelect
+                      className="select-custom dark:text-white dark:border-light dark:focus:border-white"
+                      value={convertedValue}
+                      onValueChange={onChange}>
+                      {TAGS_PRICE.map((item: SelectOptionData) => (
+                        <MultiSelectItem key={item.value} value={item.value}>
+                          {item.option}
+                        </MultiSelectItem>
+                      ))}
+                    </MultiSelect>
+                  </div>
+                );
+              }}
               name="tags"
             />
           </Flex>

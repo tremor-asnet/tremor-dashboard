@@ -51,3 +51,19 @@ export interface IProductInfo {
   category?: number;
   quantity?: number;
 }
+
+export interface EditProductData {
+  productName: string;
+  price: string;
+  tags: number[];
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
+  quantity: string;
+  weight: string;
+  category: number;
+  description: string;
+  image: string;
+  currency: number;
+  sku: string;
+}

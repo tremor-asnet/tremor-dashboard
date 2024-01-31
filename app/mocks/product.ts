@@ -64,8 +64,8 @@ export const mockProductInfo = {
   productName: "Minimal Bar Stool",
   description:
     "Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.",
-  weight: "2",
-  quantity: "50",
+  weight: 2,
+  quantity: 50,
   category: "Clothing",
 };
 

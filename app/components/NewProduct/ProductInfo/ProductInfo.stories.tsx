@@ -20,8 +20,8 @@ export const NewProductInfo: Story = {
       <ProductInfo
         productName="Minimal Bar Stool"
         description="Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back."
-        weight="2"
-        quantity="50"
+        weight={2}
+        quantity={50}
         category="Clothing"
       />
     </Flex>
@@ -34,8 +34,8 @@ export const EditProductInfo: Story = {
       <ProductInfo
         productName="Minimal Bar Stool"
         description="Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back."
-        weight="2"
-        quantity="50"
+        weight={2}
+        quantity={50}
         category="Clothing"
         isEdit={true}
       />

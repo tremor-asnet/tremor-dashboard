@@ -7,25 +7,25 @@ import { useForm, Controller } from "react-hook-form";
 
 // Components
 import { Text, Flex, Card } from "@tremor/react";
-import { TextField, SelectField } from "@/components";
+import { TextField, SelectField, NumberField } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
 import { MESSAGES_ERROR, CATEGORY_PRODUCT, COLOR_PRODUCT } from "@/constants";
 
 // Types
-import { TProductInfo, SelectOptionData } from "@/types";
+import { TProductInfo } from "@/types";
 
 // Styles
 import "@/styles/form.css";
 import "react-quill/dist/quill.snow.css"; // Import Quill styles
 
 interface ProductInfoData {
-  productName?: string;
+  productName: string;
   description?: string;
-  weight?: string;
+  weight?: number;
   category?: string;
-  quantity?: string;
+  quantity?: number;
   isEdit?: boolean;
   collection?: string;
   price?: string;
@@ -49,7 +49,7 @@ const ProductInfo = ({
     handleSubmit,
   } = useForm<TProductInfo>({
     defaultValues: {
-      name: productName,
+      productName: productName || "",
       description: description,
       weight: weight,
       category: category,
@@ -61,8 +61,10 @@ const ProductInfo = ({
     mode: "onSubmit",
   });
 
-  const { name } = errors || {};
-  const nameErrorMessage = name?.message?.toString() || "";
+  const nameErrorMessage = errors.productName?.message?.toString() || "";
+  const checkStyleEditProduct = isEdit
+    ? "sm:max-w-[147px] mb-10"
+    : "sm:max-w-auto";
 
   const handleNext = () => {
     //TODO handle to check submit form with next button
@@ -85,7 +87,7 @@ const ProductInfo = ({
                   message: MESSAGES_ERROR.NAME_MIN_LENGTH,
                 },
               }}
-              render={({ field }) => (
+              render={() => (
                 <div className="w-full mb-2">
                   <TextField
                     id="name"
@@ -93,7 +95,7 @@ const ProductInfo = ({
                     placeholder="Name"
                     autoFocus={true}
                     required={true}
-                    value={field.value}
+                    value={productName}
                   />
                   {nameErrorMessage && (
                     <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -102,19 +104,19 @@ const ProductInfo = ({
                   )}
                 </div>
               )}
-              name="name"
+              name="productName"
             />
             {isEdit && (
               <Flex className="mb-4 gap-4">
                 <Controller
                   control={control}
-                  render={({ field }) => (
+                  render={({ field: { value = "" } }) => (
                     <div className="w-full">
                       <TextField
                         id="collection"
                         label="Collection"
                         placeholder="Summer"
-                        value={field.value}
+                        value={value}
                       />
                     </div>
                   )}
@@ -122,13 +124,13 @@ const ProductInfo = ({
                 />
                 <Controller
                   control={control}
-                  render={({ field }) => (
+                  render={({ field: { value = "" } }) => (
                     <div className="w-full">
                       <TextField
                         id="price"
                         label="Price"
                         placeholder="$90"
-                        value={field.value}
+                        value={value}
                       />
                     </div>
                   )}
@@ -140,8 +142,8 @@ const ProductInfo = ({
               control={control}
               render={({ field }) => (
                 <div className="w-full">
-                  <Text className="text-sm text-secondary dark:text-lighter mb-2">
-                    Description <span className="text-xs">(optional)</span>
+                  <Text className="text-secondary dark:text-lighter mb-2">
+                    Description <span className="text-xs pl-1">(optional)</span>
                   </Text>
                   <QuillEditor
                     placeholder="Content goes here..."
@@ -153,16 +155,16 @@ const ProductInfo = ({
               name="description"
             />
           </Flex>
-          <Flex flexDirection="col">
+          <Flex flexDirection="col" className="items-start">
             <Controller
               control={control}
-              render={({ field }) => (
-                <div className="w-full mb-6">
-                  <TextField
+              render={() => (
+                <div className="w-full mb-8">
+                  <NumberField
                     id="weight"
                     label="Weight"
                     placeholder="Weight"
-                    value={field.value}
+                    value={weight}
                   />
                 </div>
               )}
@@ -171,13 +173,13 @@ const ProductInfo = ({
 
             <Controller
               control={control}
-              render={({ field }) => (
-                <div className="w-full mb-8">
-                  <TextField
+              render={() => (
+                <div className={`w-full mb-8 ${checkStyleEditProduct}`}>
+                  <NumberField
                     id="quantity"
                     label="Quantity"
                     placeholder="Quantity"
-                    value={field.value}
+                    value={quantity}
                   />
                 </div>
               )}

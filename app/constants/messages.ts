@@ -16,4 +16,6 @@ export const SIGN_UP_MESSAGE = {
 
 export const EDIT_PRODUCT_MESSAGE = {
   SUCCESS: "Edit product successfully",
+  FAILED: "Failed to edit product",
+  PENDING: "Editing product",
 };

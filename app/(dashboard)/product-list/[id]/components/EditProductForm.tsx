@@ -21,6 +21,8 @@ const PricingInfo = dynamic(
 );
 import { Toast } from "@/components";
 import { FaCheckCircle } from "react-icons/fa";
+import { TbExclamationMark } from "react-icons/tb";
+import { RxCross2 } from "react-icons/rx";
 
 // Services
 import { editProduct } from "@/services";
@@ -59,6 +61,7 @@ const EditProductForm = ({
 
   const router = useRouter();
   const [isDisableButton, setIsDisableButton] = useState(false);
+  const [isPending, setIsPending] = useState(false);
   const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
   const formHandler = useForm<EditProductData>({
     defaultValues: {
@@ -94,27 +97,50 @@ const EditProductForm = ({
         tags: convertedTagsValue,
       };
 
+      setIsPending(true);
+      handleOpenToast();
       await editProduct(id, newData);
+      setIsPending(false);
 
       handleOpenToast();
       setIsDisableButton(false);
       router.refresh();
     } catch (err: any) {
-      throw new Error("Failed to edit product!");
+      handleOpenToast();
+      return (
+        <div className="flex justify-center fixed right-5 top-5">
+          <Toast
+            icon={<RxCross2 />}
+            color="red"
+            message={EDIT_PRODUCT_MESSAGE.FAILED}
+            onClose={handleCloseToast}
+          />
+        </div>
+      );
     }
   };
 
   return (
     <>
-      {isOpenToast && (
-        <div className="flex justify-center fixed right-5 top-5">
-          <Toast
-            icon={<FaCheckCircle />}
-            message={EDIT_PRODUCT_MESSAGE.SUCCESS}
-            onClose={handleCloseToast}
-          />
-        </div>
-      )}
+      {isOpenToast &&
+        (isPending ? (
+          <div className="flex justify-center fixed right-5 bottom-50">
+            <Toast
+              icon={<TbExclamationMark />}
+              color="yellow"
+              message={EDIT_PRODUCT_MESSAGE.PENDING}
+              onClose={handleCloseToast}
+            />
+          </div>
+        ) : (
+          <div className="flex justify-center fixed right-5 bottom-50">
+            <Toast
+              icon={<FaCheckCircle />}
+              message={EDIT_PRODUCT_MESSAGE.SUCCESS}
+              onClose={handleCloseToast}
+            />
+          </div>
+        ))}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <div className="w-full text-end absolute -mt-24">

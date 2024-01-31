@@ -20,6 +20,7 @@ const PricingInfo = dynamic(
 
 // Services
 import { editProduct } from "@/services";
+import { useState } from "react";
 
 export interface EditProductData {
   productName: string;
@@ -78,9 +79,13 @@ const EditProductForm = ({
     },
   });
 
+  const [isLoading, setIsLoading] = useState(false);
   const { handleSubmit } = formHandler;
+
   const onSubmit = async (data: EditProductData) => {
+    setIsLoading(true);
     await editProduct(id, data);
+    setIsLoading(false);
   };
 
   return (
@@ -91,7 +96,8 @@ const EditProductForm = ({
             <Button
               type="submit"
               className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
-              size="xs">
+              size="xs"
+              disabled={isLoading}>
               <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
                 Save
               </Text>

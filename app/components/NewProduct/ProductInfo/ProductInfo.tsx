@@ -73,7 +73,7 @@ const ProductInfo = ({
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </Text>
-      <form onSubmit={handleSubmit(handleNext)}>
+      <form onSubmit={handleSubmit(handleNext)} className="product-info">
         <Flex flexDirection="col" className="items-start gap-6 md:flex-row">
           <Flex flexDirection="col" className="gap-6">
             <Controller

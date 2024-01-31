@@ -40,9 +40,10 @@ const ProductImage = ({
           <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">
             {name}
           </Title>
-          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base">
-            {desc}
-          </Text>
+          <div
+            className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            dangerouslySetInnerHTML={{ __html: desc }}
+          />
         </Flex>
       </Flex>
     </Card>

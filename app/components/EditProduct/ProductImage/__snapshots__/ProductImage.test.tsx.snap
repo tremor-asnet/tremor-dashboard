@@ -65,11 +65,11 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             >
               Minimal Bar Stool 3
             </p>
-            <p
-              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            <div
+              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
             >
               The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -136,11 +136,11 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             Minimal Bar Stool 3
           </p>
-          <p
-            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+          <div
+            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
           >
             The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
-          </p>
+          </div>
         </div>
       </div>
     </div>

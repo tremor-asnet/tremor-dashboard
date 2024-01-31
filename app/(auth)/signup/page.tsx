@@ -95,7 +95,9 @@ const SignUp = () => {
           />
         </div>
       )}
-      <form onSubmit={handleSubmit(handleSignUp)} className="w-full p-2 sm:p-3">
+      <form
+        onSubmit={handleSubmit(handleSignUp)}
+        className="w-full p-2 sm:p-3 sign-up">
         <Controller
           control={control}
           rules={{
@@ -108,7 +110,7 @@ const SignUp = () => {
                 id="name"
                 placeholder="Name"
                 autoFocus
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 {...field}
               />
@@ -136,7 +138,7 @@ const SignUp = () => {
                 id="email"
                 placeholder="Email"
                 type="email"
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 tabIndex={0}
                 {...field}
@@ -164,7 +166,7 @@ const SignUp = () => {
                 id="password"
                 placeholder="Password"
                 type="password"
-                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent ring-0"
+                className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                 required
                 tabIndex={1}
                 {...field}
@@ -185,9 +187,11 @@ const SignUp = () => {
             handleCheckBox={handleCheckBox}
             tabIndex={2}
           />
-          <Text className="text-xs xs:text-sm text-primary text-secondary font-normal">
+          <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
             I agree the{" "}
-            <Link href="#" className="no-underline text-primary font-bold">
+            <Link
+              href="#"
+              className="no-underline text-primary dark:text-white font-bold">
               Terms and conditions
             </Link>
           </Text>
@@ -196,19 +200,21 @@ const SignUp = () => {
           tabIndex={3}
           aria-disabled={isDisableSubmit}
           type="submit"
-          className="w-full focus:ring-2 bg-gradient-primary py-[11px] mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+          className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
-          <Text className="font-bold text-xs text-white">Create account</Text>
+          <Text className="font-bold text-xs text-white dark:text-white">
+            Create account
+          </Text>
         </Button>
 
         <Flex className="mt-8 mb-2 justify-center items-center">
-          <Text className="text-secondary text-xs xs:text-sm font-light">
+          <Text className="text-secondary dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?
           </Text>
           <Link
             tabIndex={4}
-            className="text-primary font-semibold text-xs xs:text-sm ml-1"
+            className="text-primary dark:text-white font-semibold text-xs xs:text-sm ml-1"
             href={ROUTES.SIGN_IN}>
             Sign In
           </Link>

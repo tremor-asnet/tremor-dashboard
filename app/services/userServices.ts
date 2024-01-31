@@ -2,15 +2,17 @@
 import type { User } from "@/types";
 
 // Constants
-import { ROUTER_API_URL } from "@/constants";
+import { EMAIL_REGEX, ROUTER_API_URL } from "@/constants";
 
 /**
  * Handle get user's account by email
  * @param email: Email address
  * @returns: User's account if email is exist or undefined
  */
-const getUserByEmail = async (email: string): Promise<User | undefined> => {
-  if (!email) {
+export const getUserByEmail = async (
+  email: string,
+): Promise<User | undefined> => {
+  if (!email.match(EMAIL_REGEX)) {
     return undefined;
   }
 
@@ -24,7 +26,9 @@ const getUserByEmail = async (email: string): Promise<User | undefined> => {
 
   const users = await res.json();
 
+  if (users.length === 0) {
+    throw new Error("User not found!");
+  }
+
   return users[0];
 };
-
-export { getUserByEmail };

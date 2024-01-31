@@ -1,4 +1,4 @@
-import { BillingInfoProps, TrackOrderProps } from "@/types/orderDetails";
+import { BillingInfoData, TrackOrderData } from "@/types";
 
 export const mockInvoiceHeader = {
   id: 241342,
@@ -12,7 +12,7 @@ export const mockOrderSummary = {
   taxes: 1.95,
 };
 
-export const mockTrackOrder: TrackOrderProps = {
+export const mockTrackOrder: TrackOrderData = {
   id: "#1832412",
   generateOrderAt: "2024-01-11T02:48:52Z",
   deliveredAt: "2024-01-11T02:48:52Z",
@@ -20,7 +20,7 @@ export const mockTrackOrder: TrackOrderProps = {
   generateOrderId: "2024-01-11T02:48:52Z",
 };
 
-export const mockBillingInfo: BillingInfoProps = {
+export const mockBillingInfo: BillingInfoData = {
   ownerName: "Oliver Liam",
   companyName: "Viking Burrito",
   cardLast4Digit: "1234",

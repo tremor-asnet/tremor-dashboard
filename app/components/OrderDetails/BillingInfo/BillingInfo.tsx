@@ -1,15 +1,62 @@
 import { Bold, Flex } from "@tremor/react";
 
 // Types
-import { BillingInfoProps } from "@/types/orderDetails";
+import { BillingInfoData } from "@/types";
 
 const BillingInfo = ({
   billingData,
 }: {
-  billingData: Partial<BillingInfoProps>;
+  billingData: Partial<BillingInfoData>;
 }) => {
-  const listTitle = ["Company Name", "Email Address", "VAT Number"];
-  const { ownerName, cardLast4Digit, ...billingInfo } = billingData;
+  const { ownerName, companyName, email, vat } = billingData;
+
+  const billingInfoData = [
+    {
+      id: 1,
+      type: "companyName",
+      title: "Company Name",
+      value: companyName,
+    },
+    {
+      id: 2,
+      type: "email",
+      title: "Email Address",
+      value: email,
+    },
+    {
+      id: 3,
+      type: "vat",
+      title: "VAT Number",
+      value: vat,
+    },
+  ];
+
+  const checkRenderBillValue = (type: string, value?: string) => {
+    return type === "email" ? (
+      <a
+        href={`mailto: ${value}`}
+        className="text-xs text-primary font-bold dark:text-white ml-2.5">
+        {value}
+      </a>
+    ) : (
+      <p className="text-xs text-primary font-bold dark:text-white ml-2.5">
+        {value}
+      </p>
+    );
+  };
+
+  const renderBillInfoData = billingInfoData.map(
+    ({ id, type, title, value }) => {
+      return (
+        <Flex key={id} className="content-start justify-start">
+          <p className="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter">
+            {`${title}:`}
+          </p>
+          {checkRenderBillValue(type, value)}
+        </Flex>
+      );
+    },
+  );
 
   return (
     <>
@@ -21,44 +68,9 @@ const BillingInfo = ({
         alignItems="start"
         className="bg-greyish mt-4 rounded-lg p-6 dark:bg-dark-tremor-primary">
         <span className="text-primary text-tremor-default font-semibold dark:text-white">
-          {billingData.ownerName}
+          {ownerName}
         </span>
-        <Flex
-          className="mt-4 gap-3"
-          alignItems="baseline"
-          justifyContent="start">
-          <Flex
-            flexDirection="col"
-            alignItems="start"
-            className="max-w-[90px] text-secondary dark:text-dark-romance">
-            {listTitle.map(title => (
-              <p className="mb-2 text-xs dark:text-dark-lighter" key={title}>
-                {`${title}:`}
-              </p>
-            ))}
-          </Flex>
-          <Flex
-            flexDirection="col"
-            alignItems="start"
-            className="text-primary dark:text-white">
-            {Object.keys(billingInfo).map(item => {
-              const data =
-                billingInfo[
-                  item as keyof Omit<
-                    BillingInfoProps,
-                    "ownerName" | "cardLast4Digit"
-                  >
-                ];
-              return (
-                <p
-                  key={`${item}`}
-                  className="mb-2 font-bold text-xs dark:text-white">
-                  {data}
-                </p>
-              );
-            })}
-          </Flex>
-        </Flex>
+        <Flex className="flex-col mt-4 gap-3">{renderBillInfoData}</Flex>
       </Flex>
     </>
   );

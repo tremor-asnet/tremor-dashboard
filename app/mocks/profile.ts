@@ -1,4 +1,4 @@
-import { ConversationHistoryType } from "@/types/profile";
+import { Conversation } from "@/types";
 
 export const PROFILE_HEADER = {
   avatarUrl: "/images/avatar/avatar-lg.webp",
@@ -14,7 +14,7 @@ export const PROFILE_ITEM = {
   lastConversation: "Hi! I need more information..",
 };
 
-export const PROFILE_CONVERSATIONS: ConversationHistoryType[] = [
+export const PROFILE_CONVERSATIONS: Conversation[] = [
   {
     id: "1",
     avatar: "/images/avatar/avatar-md.webp",

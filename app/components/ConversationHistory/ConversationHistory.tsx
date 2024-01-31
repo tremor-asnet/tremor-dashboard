@@ -5,10 +5,10 @@ import { Text } from "@tremor/react";
 import { UserConversationHistory } from "@/components";
 
 // types
-import { ConversationHistoryType } from "@/types/profile";
+import { Conversation } from "@/types";
 
 interface ConversationHistoryProps {
-  conversationHistory: ConversationHistoryType[];
+  conversationHistory: Conversation[];
 }
 
 const ConversationHistory = ({

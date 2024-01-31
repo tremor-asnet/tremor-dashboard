@@ -1,6 +1,7 @@
-//Components
 import { DonutChart, Card, Flex, Text, Button } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
+
+//Components
 import { Popover } from "@/components";
 
 // Constants
@@ -12,24 +13,24 @@ import { numberWithCommas } from "@/helpers";
 //Styles
 import "@/styles/charts.css";
 
-type TData = {
+interface DataProps {
   id: number;
   name: string;
   percent: number;
-};
-
-type TChannelChartData = {
-  sale_total: number;
-  sale_social_media: number;
-  channels: TData[];
-};
-
-interface IChannelChartData {
-  title: string;
-  channelChartData: TChannelChartData;
 }
 
-const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
+interface ChannelChartDataProps {
+  sale_total: number;
+  sale_social_media: number;
+  channels: DataProps[];
+}
+
+interface ChannelChartProps {
+  title: string;
+  channelChartData: ChannelChartDataProps;
+}
+
+const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
   const { sale_total, sale_social_media, channels } = channelChartData;
 
   return (
@@ -94,7 +95,7 @@ const ChannelChart = ({ title, channelChartData }: IChannelChartData) => {
             </Text>
           </Flex>
           <Flex className="justify-end w-full md:w-2/3 md: mt-4">
-            <Button className="uppercase text-secondary font-bold bg-body hover:bg-primary hover:text-white hover:bg-opacity-80 border-transparent hover:border-primary px-6 py-2.5 tracking-[0.35px] dark:text-white">
+            <Button className="uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white">
               <span className="text-xs">read more</span>
             </Button>
           </Flex>

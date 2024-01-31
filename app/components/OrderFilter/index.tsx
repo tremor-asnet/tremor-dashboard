@@ -8,10 +8,13 @@ import { Button, Text } from "@tremor/react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 // Constants
-import { listOption } from "@/constants";
+import { orderListOption } from "@/constants";
 
 // Hooks
 import { useOutsideClick } from "@/hooks";
+
+// Components
+import { SelectOption } from "@/components";
 
 interface OrderFilterProps {
   title: string;
@@ -32,11 +35,14 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(false);
   });
 
-  const handleClickOption = () => {
+  const handleClickFilter = () => {
     setShowListOption(true);
   };
 
-  const handleClickItem = (status: string) => {
+  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const { value } = e.target as HTMLInputElement;
+    const status = value.toString();
+
     if (currentStatus !== status) {
       newParams.set("status", status);
     }
@@ -59,33 +65,22 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         icon={RiArrowDropDownLine}
         iconPosition="right"
         variant="secondary"
-        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary focus:opacity-75 hover:opacity-75 text-primary focus:text-white dark:text-white hover:bg-transparent active:bg-primary focus:bg-primary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent"
-        onClick={handleClickOption}>
+        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
+        onClick={handleClickFilter}>
         <Text className="uppercase text-xs text-inherit dark:text-inherit">
           {title}
         </Text>
       </Button>
       {showListOption && (
-        <div ref={selectRef as RefObject<HTMLDivElement>}>
-          <ul className="absolute z-[1] w-[160px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
-            {listOption.map(({ option, value }) => (
-              // TODO: split to component
-              <li
-                key={option}
-                value={value}
-                className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
-                onClick={() => handleClickItem(value.toString())}
-                data-testid="option">
-                Status: {option}
-              </li>
-            ))}
-            <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
-            <li
-              className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary"
-              onClick={handleRemoveFilter}>
-              Remove Filer
-            </li>
-          </ul>
+        <div
+          ref={selectRef as RefObject<HTMLDivElement>}
+          className="absolute z-[1] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+          <SelectOption
+            title="Status"
+            data={orderListOption}
+            onSelectItem={handleSelectFilter}
+            onSelectRemove={handleRemoveFilter}
+          />
         </div>
       )}
     </div>

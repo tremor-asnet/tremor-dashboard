@@ -44,7 +44,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             width="28"
           />
           <a
-            href="/dashboards/analytics"
+            href="/analytics"
           >
             <p
               class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
@@ -122,10 +122,10 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           >
             <a
               class="font-normal w-full py-3 px-7 xl:justify-center"
-              href="/dashboards/analytics"
+              href="/analytics"
             >
               <span>
-                A
+                AN
               </span>
               <span
                 class="xl:hidden pl-2"
@@ -139,7 +139,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           >
             <a
               class="font-normal w-full py-3 px-7 xl:justify-center"
-              href="/dashboards/sales"
+              href="/sales"
             >
               <span>
                 S
@@ -156,7 +156,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           >
             <a
               class="font-normal w-full py-3 px-7 xl:justify-center"
-              href="/pages/profile/all-projects"
+              href="/all-projects"
             >
               <span>
                 A
@@ -246,7 +246,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           width="28"
         />
         <a
-          href="/dashboards/analytics"
+          href="/analytics"
         >
           <p
             class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
@@ -324,10 +324,10 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         >
           <a
             class="font-normal w-full py-3 px-7 xl:justify-center"
-            href="/dashboards/analytics"
+            href="/analytics"
           >
             <span>
-              A
+              AN
             </span>
             <span
               class="xl:hidden pl-2"
@@ -341,7 +341,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         >
           <a
             class="font-normal w-full py-3 px-7 xl:justify-center"
-            href="/dashboards/sales"
+            href="/sales"
           >
             <span>
               S
@@ -358,7 +358,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         >
           <a
             class="font-normal w-full py-3 px-7 xl:justify-center"
-            href="/pages/profile/all-projects"
+            href="/all-projects"
           >
             <span>
               A

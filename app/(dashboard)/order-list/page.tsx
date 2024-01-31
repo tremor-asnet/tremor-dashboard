@@ -1,46 +1,50 @@
-// Components
+import { Suspense } from "react";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { OrderFilter, OrderSearch } from "@/components";
-import OrderTable from "@/components/OrderTable";
+import {
+  InputSearch,
+  LoadingIndicator,
+  OrderFilter,
+  TableOrder,
+} from "@/components";
 
 // Services
 import { getOrders } from "@/services";
 
 // Types
-import { TProductTable } from "@/types";
+import { Order, OrderProduct } from "@/types";
 
-type TSearchParams = {
-  query: string;
-  status: string;
+// Helpers
+import { filterOrderList, searchOrderDataByValue } from "@/helpers";
+
+type SearchParams = {
+  productName?: string;
+  status?: string;
 };
 
 const OrderListPage = async ({
   searchParams,
 }: {
-  searchParams?: TSearchParams;
+  searchParams?: SearchParams;
 }) => {
-  const orderListData: TProductTable[] = await getOrders();
+  const orderListData: Order[] = await getOrders();
 
-  const { query = "" } = searchParams as TSearchParams;
-  const { status = "" } = searchParams as TSearchParams;
+  const { productName = "", status = "" } = searchParams as SearchParams;
 
   let filteredData = orderListData;
 
-  if (query) {
-    filteredData = orderListData?.filter(
-      item =>
-        item.products?.find(product =>
-          product.name.toLowerCase().includes(query.toLowerCase()),
-        ),
+  if (productName) {
+    filteredData = searchOrderDataByValue<Order, OrderProduct>(
+      orderListData,
+      "products",
+      "name",
+      productName,
     );
   }
 
   filteredData = status
-    ? filteredData.filter(
-        (item: TProductTable) => item.status.toString() === status,
-      )
+    ? filterOrderList<Order>(filteredData, "status", status)
     : filteredData;
 
   return (
@@ -51,11 +55,28 @@ const OrderListPage = async ({
             new order
           </Text>
         </Button>
-        <OrderFilter title="Filter" />
+        <OrderFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <OrderSearch />
-        <OrderTable data={filteredData} />
+        <InputSearch />
+        <Suspense
+          key={`${productName}-${status}`}
+          fallback={
+            <LoadingIndicator
+              additionalClass="flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
+          }>
+          <TableOrder
+            key={`${productName}-${status}`}
+            orders={filteredData}
+            status={status}
+            keyword={productName}
+          />
+        </Suspense>
       </div>
     </Flex>
   );

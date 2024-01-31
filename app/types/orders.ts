@@ -1,25 +1,25 @@
-export type TOrderProduct = {
+export interface OrderProduct {
   id: number;
   name: string;
   count: number;
-  price: number;
-  url: string;
-};
+  price?: number;
+  url?: string;
+}
 
-export type TOrder = {
+export interface Order {
   id: number;
-  created_at: string;
+  createdAt: string;
   status: number;
   customer: {
     id: number;
-    full_name: string;
+    fullName: string;
     avatar?: string;
   };
-  products: TOrderProduct[];
+  products: OrderProduct[];
   revenue: number;
-};
+}
 
-export type TOrderDetail = {
+export type OrderDetail = {
   id: number;
   order_code: string;
   order_deliver_price: number;

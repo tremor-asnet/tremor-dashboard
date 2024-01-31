@@ -39,7 +39,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
             >
               Order was delivered 
-              13
+              18
                days ago.
             </p>
             <p
@@ -62,7 +62,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                  class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
                 >
                   contact us
                 </p>
@@ -71,10 +71,10 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <p
               class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
             >
-              Do you like the item? Leave us a review
+              Do you like the product? Leave us a review
                
               <a
-                class="font-semibold"
+                class="font-normal"
                 href="#"
               >
                 here
@@ -121,7 +121,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
           >
             Order was delivered 
-            13
+            18
              days ago.
           </p>
           <p
@@ -144,7 +144,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content py-[2px] text-xs font-bold text-white uppercase"
+                class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
               >
                 contact us
               </p>
@@ -153,10 +153,10 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           <p
             class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
           >
-            Do you like the item? Leave us a review
+            Do you like the product? Leave us a review
              
             <a
-              class="font-semibold"
+              class="font-normal"
               href="#"
             >
               here

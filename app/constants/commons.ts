@@ -1,3 +1,6 @@
+// Types
+import { ListOption, ProductListOption } from "@/types";
+
 export const ITEM_ACTION_PROJECT = [
   {
     key: "act",
@@ -50,8 +53,19 @@ export const SOCIAL_LINK = {
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
 
-export const listOption: ListOptionProps[] = [
+export const orderListOption: ListOption[] = [
   { option: "Paid", value: 0 },
   { option: "Refunded", value: 2 },
   { option: "Canceled", value: 1 },
 ];
+
+export const ProductList: ProductListOption[] = [
+  { option: "Yes", value: "true" },
+  { option: "No", value: "false" },
+];
+
+export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
+export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;
+export const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+export const NUMBER_REGEX = /^\d*[1-9]\d*$/;
+export const DECIMAL_REGEX = /^\d*[1-9]\d*$/;

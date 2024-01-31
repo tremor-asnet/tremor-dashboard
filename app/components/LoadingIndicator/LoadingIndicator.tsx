@@ -4,10 +4,14 @@ const LoadingIndicator = ({
   width,
   height,
   isFullWidth = false,
+  fillColor = "white",
+  additionalClass,
 }: {
   width: number;
   height: number;
   isFullWidth?: boolean;
+  fillColor?: string;
+  additionalClass?: string;
 }) =>
   isFullWidth ? (
     <div className="fixed bg-[rgba(0,0,0,0.5)] overflow-hidden w-full h-full inset-0 z-50 cursor-not-allowed">
@@ -29,10 +33,10 @@ const LoadingIndicator = ({
       </Flex>
     </div>
   ) : (
-    <div role="status">
+    <div role="status" className={additionalClass}>
       <svg
         aria-hidden="true"
-        className={`w-${width} h-${height} text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-white`}
+        className={`w-${width} h-${height} text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-${fillColor} dark:fill-white`}
         viewBox="0 0 22 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">

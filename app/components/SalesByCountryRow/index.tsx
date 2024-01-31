@@ -8,9 +8,9 @@ import { CURRENCY, FLAG_SRC } from "@/constants";
 import { formattedNumber } from "@/helpers";
 
 // Types
-import { ISalesByCountry } from "@/types";
+import { SalesByCountryData } from "@/types";
 
-interface SalesByCountryRowProps extends ISalesByCountry {
+interface SalesByCountryRowProps extends SalesByCountryData {
   isAnalytics: boolean;
 }
 

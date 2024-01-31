@@ -72,7 +72,9 @@ const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleSignIn)} className="w-full sm:p-3">
+    <form
+      onSubmit={handleSubmit(handleSignIn)}
+      className="w-full sm:p-3 sign-in">
       <Controller
         control={control}
         rules={{
@@ -89,7 +91,7 @@ const SignIn = () => {
               placeholder="Email"
               type="email"
               autoFocus
-              className="py-0.5 w-full"
+              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
               required
               {...field}
             />
@@ -116,7 +118,7 @@ const SignIn = () => {
               id="password"
               placeholder="Password"
               type="password"
-              className="py-0.5 w-full"
+              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
               required
               {...field}
             />
@@ -142,30 +144,34 @@ const SignIn = () => {
           className="flex justify-center items-center"
           onChange={handleSwitchChange}
         />
-        <Text className="text-secondary font-normal">Remember me</Text>
+        <Text className="text-secondary dark:text-dark-romance font-normal">
+          Remember me
+        </Text>
       </div>
 
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
-        className="min-h-[43px] flex w-full focus:ring-2 bg-gradient-primary opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] py-0 mt-9 uppercase border-transparent hover:border-transparent hover:shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem]"
+        className="min-h-[43px] flex w-full bg-gradient-primary dark:bg-gradient-pickled opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent"
         size="xs"
         type="submit"
         disabled={isDisableSubmit}>
         {formStatus.isPending ? (
           <LoadingIndicator width={7} height={7} />
         ) : (
-          <Text className="text-xs font-bold text-white">Sign In</Text>
+          <Text className="text-xs font-bold text-white dark:text-white">
+            Sign In
+          </Text>
         )}
       </Button>
 
       <Flex className="mt-8 mb-2 justify-center items-center">
-        <Text className="text-secondary font-light">
+        <Text className="text-secondary dark:text-dark-romance font-light">
           Don&rsquo;t have an account?
         </Text>
         <Link
           tabIndex={4}
-          className="text-primary font-semibold text-sm ml-1"
+          className="text-primary dark:text-white font-semibold text-sm ml-1"
           href={ROUTES.SIGN_UP}>
           Sign up
         </Link>

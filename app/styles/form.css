@@ -1,0 +1,112 @@
+.select-custom button {
+  @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
+}
+
+.select-custom li,
+.select-custom svg {
+  @apply cursor-pointer;
+}
+
+.select-custom ul {
+  @apply border-0 shadow-xl p-2;
+}
+
+.select-custom .translate-y-0 {
+  @apply bottom-8;
+}
+
+.select-custom ul div {
+  @apply rounded-md bg-gray-100 text-secondary;
+}
+
+.select-custom button div div {
+  @apply ml-0;
+}
+
+.select-custom button div div div {
+  @apply pr-1 rounded-full bg-gray-100 text-white bg-[#191919];
+}
+
+.select-custom button div div div div svg {
+  @apply w-2.5 h-2.5 ml-0.5 rounded-full bg-white text-black;
+}
+
+.dark .select-custom button div div div div svg {
+  @apply text-black;
+}
+
+.select-custom button span {
+  @apply text-secondary;
+}
+
+.select-custom ul li {
+  @apply px-4 py-2 border-0 text-secondary;
+}
+
+.select-custom ul li[data-headlessui-state="active"],
+.select-custom ul li[data-headlessui-state="active selected"] {
+  @apply rounded-md bg-gray-100 text-primary;
+}
+
+.divide-tremor-border > :not([hidden]) ~ :not([hidden]),
+:is(.dark .dark\:divide-dark-tremor-border) > :not([hidden]) ~ :not([hidden]) {
+  @apply border-transparent;
+}
+
+.select-custom button + button {
+  @apply  border-0 hidden;
+}
+
+.select-custom[data-headlessui-state="open"] button + button {
+  @apply inline;
+}
+
+.select-custom button:focus  {
+  @apply bg-transparent rounded-none border-0 border-b !border-b-[#344767] shadow-none outline-none ring-0;
+}
+
+.ql-container.ql-snow {
+  @apply rounded-b-md min-h-[130px] border-[#d2d6da];
+}
+
+.ql-toolbar.ql-snow {
+  @apply rounded-t-md border-[#d2d6da];
+}
+
+.dark .ql-formats span,
+.dark .select-custom svg,
+.dark .ql-editor.ql-blank::before {
+  @apply text-white;
+}
+
+.dark .ql-snow .ql-stroke {
+  stroke: white;
+}
+
+.ql-editor {
+  @apply text-base;
+}
+
+.dark button .text-tremor-content-emphasis {
+  @apply bg-[#1a2035];
+}
+
+form input.text-tremor-default,
+form button.text-tremor-content,
+form button.text-tremor-content-emphasis {
+  @apply pl-0;
+}
+
+form.product-info :is(.dark .dark\:shadow-dark-tremor-input):hover,
+form.pricing-info :is(.dark .dark\:shadow-dark-tremor-input):hover {
+  @apply bg-transparent;
+}
+
+form.sign-in input.text-tremor-default {
+  @apply pl-3 pr-4;
+}
+
+form.sign-in :is(.dark .dark\:shadow-dark-tremor-input),
+form.sign-up :is(.dark .dark\:shadow-dark-tremor-input) {
+  @apply shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem];
+}

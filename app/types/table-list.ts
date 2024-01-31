@@ -1,11 +1,11 @@
-export type ProductOrder = {
+export interface ProductOrder {
   id: number;
   name: string;
   count: number;
-};
+}
 
 // TODO: This type will be change to interface Order
-export type TProductTable = {
+export type ProductTableData = {
   id: number;
   createdAt: string;
   status: number;

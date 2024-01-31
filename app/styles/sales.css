@@ -22,3 +22,11 @@ path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .
 .sale-page .recharts-text.recharts-cartesian-axis-tick-value {
   @apply fill-[gray];
 }
+
+.dark .sale-page .recharts-text.recharts-cartesian-axis-tick-value {
+  @apply fill-[white];
+}
+
+.dark .recharts-wrapper .recharts-legend-wrapper p {
+  @apply text-[white];
+}

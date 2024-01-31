@@ -10,7 +10,7 @@ import { RxCross2 } from "react-icons/rx";
 import { RiRefund2Line } from "react-icons/ri";
 
 // Types
-import { TrackOrderProps } from "@/types/orderDetails";
+import { TrackOrderData } from "@/types";
 
 // Helpers
 import { formatDateTime } from "@/helpers";
@@ -22,7 +22,7 @@ const TrackOrder = ({
   deliveredAt,
   generateOrderAt,
   status = 0,
-}: TrackOrderProps) => {
+}: TrackOrderData) => {
   const trackingOrder = (status: number, date: string) => {
     switch (status) {
       case 0:
@@ -123,7 +123,7 @@ const TrackOrder = ({
             </span>
             <div className="flex flex-col">
               <span className="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary">
-                Generate order id {id}
+                Generate order id #{id}
               </span>
               <span className="text-tremor-label text-primary uppercase font-light dark:text-dark-romance">
                 {formatDateTime(generateOrderId)}

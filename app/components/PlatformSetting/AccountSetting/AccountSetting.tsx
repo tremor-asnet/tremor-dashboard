@@ -5,7 +5,7 @@ import { Switch, Text } from "@tremor/react";
 import { ACCOUNT_SETTING_FIELDS, ACCOUNT_SETTING_DATA } from "@/constants";
 
 // Types
-import { IPlatformSetting, AccountSettingType } from "@/types/profile";
+import { PlatformSetting, AccountSettingData } from "@/types";
 
 // Contexts
 import { useContext } from "react";
@@ -14,8 +14,8 @@ import { useContext } from "react";
 import { ThemeContext } from "@/context/theme";
 
 interface AccountSettingProps {
-  accountSettingFields: IPlatformSetting[];
-  accountSettingData: AccountSettingType;
+  accountSettingFields: PlatformSetting[];
+  accountSettingData: AccountSettingData;
 }
 
 const AccountSetting = ({
@@ -30,7 +30,7 @@ const AccountSetting = ({
       <Text className="text-xs leading-tight dark:text-dark-romance opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4">
         Account
       </Text>
-      {accountSettingFields.map(({ label, field }: IPlatformSetting) => (
+      {accountSettingFields.map(({ label, field }: PlatformSetting) => (
         <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
           <Switch
             tabIndex={2}

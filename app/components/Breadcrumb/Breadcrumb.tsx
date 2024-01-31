@@ -1,141 +1,101 @@
 // Libs
-import { memo, useMemo } from "react";
+import { useParams } from "next/navigation";
+import { memo } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+// Components
 import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ROUTES } from "../../constants";
-
-// Types
-import { IBreadcrumb } from "@/types";
+import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
 
 // Helpers
-import { isBrowser } from "@/helpers";
-
-/**
- * Primary UI component for BreadCrumb component
- */
+import { getCrumbName, isBrowser } from "@/helpers";
 
 export interface BreadcrumbProps {
   isScrolled?: boolean;
+  pathname: string;
 }
 
-const Breadcrumb = ({ isScrolled = false }: BreadcrumbProps): JSX.Element => {
-  const pathname = usePathname();
+const Breadcrumb = ({
+  isScrolled = false,
+  pathname,
+}: BreadcrumbProps): JSX.Element => {
+  const params = useParams();
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isProjectPage = pathname === ROUTES.PROJECTS;
   const isStickyHeader = !isScrolled && isProjectPage;
+  const newPath = pathname?.split("/").filter(path => path);
 
-  const links: IBreadcrumb[] = useMemo(() => {
-    switch (true) {
-      case pathname?.includes("/dashboards/"):
-        return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
-
-      case pathname?.includes("/pages/profile/"):
-        return [
-          { name: "pages", url: ROUTES.PROFILE },
-          { name: "profile", url: ROUTES.PROFILE },
-        ];
-
-      case pathname?.includes("/pages/account/"):
-        return [
-          { name: "pages", url: ROUTES.PROFILE },
-          { name: "account", url: ROUTES.PROFILE },
-        ];
-
-      default:
-        return [{ name: "dashboards", url: ROUTES.ANALYTICS }];
+  const renderTitle = (path?: string) => {
+    if (path) {
+      if (path.match(ORDER_LIST_REGEX)) return "Order Details";
+      if (path.match(PRODUCT_LIST_REGEX)) return "Product Details";
     }
-  }, [pathname]);
 
-  const pageName = useMemo(() => {
-    switch (pathname) {
-      case ROUTES.ANALYTICS:
-        return "analytics";
-      case ROUTES.SALES:
-        return "sales";
-      case ROUTES.PROFILE:
-        return "my profile";
-      case ROUTES.PROJECTS:
-        return "all projects";
-      case ROUTES.SETTING:
-        return "settings";
-      case ROUTES.ORDER_LIST:
-        return "order list";
-      case ROUTES.PRODUCT_LIST:
-        return "product list";
-      default:
-        return "analytics";
-    }
-  }, [pathname]);
+    return newPath?.pop()?.replace("-", " ");
+  };
 
-  const renderLinks = (): JSX.Element[] => {
-    return links.map(link => (
-      <li
-        key={link.name}
-        className={`flex items-center ${
-          isStickyHeader ? "text-white opacity-[0.8]" : "text-inherit"
-        }`}>
-        <div className="bc-link">
-          <Link
-            className={`text-sm capitalize tracking-[0.02857em] leading-[0] ${
-              isStickyHeader
-                ? "text-white opacity-[0.8]"
-                : "text-primary dark:text-dark-primary opacity-50"
-            }`}
-            href={link.url}>
-            {link.name}
-          </Link>
-        </div>
-        <div
-          aria-hidden="true"
-          className={`text-sm mx-2 ${
-            isStickyHeader ? "text-white" : "text-[#6c757d]"
-          }`}>
-          &#47;
-        </div>
-      </li>
-    ));
+  const renderCrumb = () => {
+    return (
+      <>
+        {newPath?.map((link, index) => {
+          const href = `/${newPath.slice(0, index + 1).join("/")}`;
+          const crumbItemTextWhite =
+            isProjectPage && isStickyHeader
+              ? "text-white dark:text-white"
+              : "text-primary";
+          const activeCrumb =
+            pathname === href
+              ? "text-tremor-content-title dark:text-dark-tremor-content-title  "
+              : "text-primary dark:text-dark-primary opacity-50  ";
+
+          return (
+            <>
+              <li
+                className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
+                <Link href={href}>
+                  {getCrumbName({
+                    name: link,
+                    path: href,
+                    params: params?.id,
+                  })}
+                </Link>
+                {newPath.length !== index + 1 && (
+                  <span className={`${isProjectPage && "text-white"}`}>
+                    &#47;
+                  </span>
+                )}
+              </li>
+            </>
+          );
+        })}
+      </>
+    );
   };
 
   return (
     <nav className={`${isProjectPage ? "pl-3 z-20" : isMobile ? "pl-3" : ""}`}>
-      <ol className="flex flex-wrap items-center text-gray-400">
-        <li>
-          <Link href={ROUTES.HOME} className="flex">
-            <MdHome
-              className={`bg-inherit border-0 py-0 hover:bg-transparent text-primary dark:text-dark-primary tracking-[0.01071em] leading-[0] ${
-                isStickyHeader
-                  ? "text-white opacity-[0.8]"
-                  : "text-inherit opacity-50"
-              }`}
-            />
+      <ol
+        className={`flex flex-wrap gap-2 items-center ${
+          isProjectPage && isStickyHeader
+            ? "text-lighter"
+            : "text-gray-400 dark:text-white"
+        }`}>
+        <li className="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]">
+          <Link href={ROUTES.HOME}>
+            <MdHome className="text-lg" />
           </Link>
-        </li>
-        <li
-          aria-hidden="true"
-          className={`text-sm mx-2 ${
-            isStickyHeader ? "text-white" : "text-[#6c757d]"
-          }`}>
           &#47;
         </li>
-
-        {renderLinks()}
-
-        <li
-          className={`text-sm text-tremor-content-title dark:text-dark-tremor-content-title capitalize tracking-[0.02857em] leading-[0] ${
-            isStickyHeader ? "text-white" : "text-inherit"
-          }`}>
-          {pageName}
-        </li>
+        {renderCrumb()}
       </ol>
       <Title
-        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] ${
+        className={`text-tremor-content-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 ${
           isStickyHeader ? "text-white" : "text-primary"
         }`}>
-        {pageName}
+        {renderTitle(pathname)}
       </Title>
     </nav>
   );

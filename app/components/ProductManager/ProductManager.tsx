@@ -8,9 +8,10 @@ import Stepper from "@/components/common/Stepper/Stepper";
 import ProductInfoForm from "@/components/ProductManager/ProductInfoForm/ProductInfoForm";
 import MediaForm from "@/components/ProductManager/MediaForm/MediaForm";
 import SocialForm from "@/components/ProductManager/SocialForm/SocialForm";
+import PricingForm from "@/components/ProductManager/PricingForm/PricingForm";
 
 // Types
-import { IMedia, IProductInfo, ISocial, NewProduct } from "@/types";
+import { IMedia, IPricing, IProductInfo, ISocial, NewProduct } from "@/types";
 
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
@@ -70,6 +71,17 @@ const ProductManager = () => {
             onSubmit={handleSubmitSocialForm}
           />
         );
+      case 4:
+        return (
+          <PricingForm
+            price={newProduct.price}
+            currency={newProduct.currency}
+            sku={newProduct.sku}
+            tags={newProduct.tags}
+            onBack={onClickBackButton}
+            onSubmit={handleSubmitPricingForm}
+          />
+        );
       default:
         return null;
     }
@@ -100,6 +112,18 @@ const ProductManager = () => {
       instagramUrl: social.instagramUrl,
     });
     setCurrentStep(currentStep + 1);
+  };
+
+  const handleSubmitPricingForm = (pricing: IPricing) => {
+    setNewProduct({
+      ...newProduct,
+      price: pricing.price,
+      currency: pricing.currency,
+      sku: pricing.sku,
+      tags: pricing.tags?.map(Number),
+    });
+
+    // TODO : Integrate add new product API here and redirect to product list page
   };
 
   return (

@@ -6,7 +6,15 @@ import dynamic from "next/dynamic";
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import { Text, Flex, Card, TextInput, Select, SelectItem } from "@tremor/react";
+import {
+  Text,
+  Flex,
+  Card,
+  TextInput,
+  Select,
+  SelectItem,
+  NumberInput,
+} from "@tremor/react";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -119,16 +127,16 @@ const ProductInfo = () => {
                 message: "Invalid quantity number",
               },
             }}
-            render={({ field }) => (
+            render={({ field: { onChange, value } }) => (
               <div className="w-full mb-4">
                 <Text className="text-secondary dark:text-lighter mb-2">
                   Quantity
                 </Text>
-                <TextInput
-                  id="quantity"
-                  placeholder="Quantity"
+                <NumberInput
+                  enableStepper={false}
+                  onValueChange={onChange}
+                  value={value}
                   className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  {...field}
                 />
               </div>
             )}

@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
@@ -29,9 +29,6 @@ import { editProduct } from "@/services";
 
 // Types
 import { EditProductData } from "@/types";
-
-// Custom hooks
-import { useToast } from "@/hooks";
 
 // Constants
 import { EDIT_PRODUCT_MESSAGE } from "@/constants";
@@ -61,8 +58,18 @@ const EditProductForm = ({
 
   const router = useRouter();
   const [isDisableButton, setIsDisableButton] = useState(false);
-  const [isPending, setIsPending] = useState(false);
-  const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
+  const [toastMsgController, setToastMsgController] = useState<{
+    isOpen: boolean;
+    message: string;
+    icon: ReactNode;
+    color: "green" | "red" | "yellow";
+  }>({
+    isOpen: false,
+    message: "",
+    icon: null,
+    color: "green",
+  });
+
   const formHandler = useForm<EditProductData>({
     defaultValues: {
       productName,
@@ -97,41 +104,51 @@ const EditProductForm = ({
         tags: convertedTagsValue,
       };
 
-      setIsPending(true);
-      handleOpenToast();
-      await editProduct(id, newData);
-      setIsPending(false);
+      setToastMsgController({
+        isOpen: true,
+        message: EDIT_PRODUCT_MESSAGE.PENDING,
+        icon: <TbExclamationMark />,
+        color: "yellow",
+      });
 
-      handleOpenToast();
+      await editProduct(id, newData);
+
+      setToastMsgController({
+        isOpen: true,
+        message: EDIT_PRODUCT_MESSAGE.SUCCESS,
+        icon: <FaCheckCircle />,
+        color: "green",
+      });
+
       setIsDisableButton(false);
       router.refresh();
     } catch (err: any) {
-      handleOpenToast();
-      return (
-        <div className="flex justify-center fixed right-5 top-5">
-          <Toast
-            icon={<RxCross2 />}
-            color="red"
-            message={EDIT_PRODUCT_MESSAGE.FAILED}
-            onClose={handleCloseToast}
-          />
-        </div>
-      );
+      setToastMsgController({
+        isOpen: true,
+        message: EDIT_PRODUCT_MESSAGE.FAILED,
+        icon: RxCross2,
+        color: "red",
+      });
     }
+  };
+
+  const handleCloseToast = () => {
+    setToastMsgController({
+      isOpen: false,
+      message: "",
+      icon: null,
+      color: "green",
+    });
   };
 
   return (
     <>
-      {isOpenToast && (
+      {toastMsgController.isOpen && (
         <div className="flex justify-center fixed right-5 bottom-50">
           <Toast
-            icon={isPending ? <TbExclamationMark /> : <FaCheckCircle />}
-            message={
-              isPending
-                ? EDIT_PRODUCT_MESSAGE.PENDING
-                : EDIT_PRODUCT_MESSAGE.SUCCESS
-            }
-            color={isPending ? "yellow" : "green"}
+            icon={<TbExclamationMark />}
+            color={toastMsgController.color}
+            message={toastMsgController.message}
             onClose={handleCloseToast}
           />
         </div>

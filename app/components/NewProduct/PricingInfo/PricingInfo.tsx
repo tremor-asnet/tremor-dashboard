@@ -18,7 +18,13 @@ import {
 import { SelectOptionData } from "@/types";
 
 // Constants
-import { TYPE_PRICE, TAGS_PRICE, PRODUCT_TAGS } from "@/constants";
+import {
+  TYPE_PRICE,
+  TAGS_PRICE,
+  PRODUCT_TAGS,
+  DECIMAL_REGEX,
+  NUMBER_REGEX,
+} from "@/constants";
 
 // Styles
 import "@/styles/form.css";
@@ -37,6 +43,9 @@ const PricingInfo = () => {
             <Flex className="flex-col sm:flex-row">
               <Controller
                 control={control}
+                rules={{
+                  pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
+                }}
                 render={({ field }) => (
                   <div className="h-[70px] w-full md:max-w-[25%]">
                     <TextInput
@@ -71,6 +80,12 @@ const PricingInfo = () => {
               />
               <Controller
                 control={control}
+                rules={{
+                  pattern: {
+                    value: NUMBER_REGEX,
+                    message: "Invalid SKU number",
+                  },
+                }}
                 render={({ field }) => (
                   <div className="h-[70px] w-full">
                     <TextInput

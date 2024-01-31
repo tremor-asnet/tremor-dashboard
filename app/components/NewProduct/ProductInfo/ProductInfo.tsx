@@ -10,7 +10,12 @@ import { Text, Flex, Card, TextInput, Select, SelectItem } from "@tremor/react";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
-import { MESSAGES_ERROR, CATEGORY_PRODUCT } from "@/constants";
+import {
+  MESSAGES_ERROR,
+  CATEGORY_PRODUCT,
+  NUMBER_REGEX,
+  DECIMAL_REGEX,
+} from "@/constants";
 
 // Types
 import { SelectOptionData } from "@/types";
@@ -87,6 +92,9 @@ const ProductInfo = () => {
         <Flex flexDirection="col">
           <Controller
             control={control}
+            rules={{
+              pattern: { value: DECIMAL_REGEX, message: "Invalid weight" },
+            }}
             render={({ field }) => (
               <div className="w-full mb-4">
                 <Text className="text-secondary dark:text-lighter mb-2">
@@ -105,6 +113,12 @@ const ProductInfo = () => {
 
           <Controller
             control={control}
+            rules={{
+              pattern: {
+                value: NUMBER_REGEX,
+                message: "Invalid quantity number",
+              },
+            }}
             render={({ field }) => (
               <div className="w-full mb-4">
                 <Text className="text-secondary dark:text-lighter mb-2">

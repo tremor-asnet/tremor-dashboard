@@ -9,8 +9,7 @@ export interface Product {
 }
 
 export type TProductInfo = {
-  id: string;
-  name: string;
+  productName: string;
   description?: string;
   weight?: number;
   category?: string;

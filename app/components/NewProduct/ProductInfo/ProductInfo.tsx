@@ -21,7 +21,7 @@ import "@/styles/form.css";
 import "react-quill/dist/quill.snow.css"; // Import Quill styles
 
 interface ProductInfoData {
-  productName?: string;
+  productName: string;
   description?: string;
   weight?: number;
   category?: string;
@@ -49,7 +49,7 @@ const ProductInfo = ({
     handleSubmit,
   } = useForm<TProductInfo>({
     defaultValues: {
-      name: productName,
+      productName: productName || "",
       description: description,
       weight: weight,
       category: category,
@@ -61,8 +61,7 @@ const ProductInfo = ({
     mode: "onSubmit",
   });
 
-  const { name } = errors || {};
-  const nameErrorMessage = name?.message?.toString() || "";
+  const nameErrorMessage = errors.productName?.message?.toString() || "";
 
   const handleNext = () => {
     //TODO handle to check submit form with next button
@@ -85,7 +84,7 @@ const ProductInfo = ({
                   message: MESSAGES_ERROR.NAME_MIN_LENGTH,
                 },
               }}
-              render={({ field: { value = "" } }) => (
+              render={() => (
                 <div className="w-full mb-2">
                   <TextField
                     id="name"
@@ -93,7 +92,7 @@ const ProductInfo = ({
                     placeholder="Name"
                     autoFocus={true}
                     required={true}
-                    value={value}
+                    value={productName}
                   />
                   {nameErrorMessage && (
                     <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -102,7 +101,7 @@ const ProductInfo = ({
                   )}
                 </div>
               )}
-              name="name"
+              name="productName"
             />
             {isEdit && (
               <Flex className="mb-4 gap-4">
@@ -156,13 +155,13 @@ const ProductInfo = ({
           <Flex flexDirection="col" className="items-start">
             <Controller
               control={control}
-              render={({ field: { value } }: TProductInfo) => (
+              render={() => (
                 <div className="w-full mb-8">
                   <NumberInput
                     id="weight"
                     label="Weight"
                     placeholder="Weight"
-                    value={value}
+                    value={weight}
                   />
                 </div>
               )}
@@ -171,7 +170,7 @@ const ProductInfo = ({
 
             <Controller
               control={control}
-              render={({ field: { value } }: TProductInfo) => (
+              render={() => (
                 <div
                   className={`w-full mb-8 ${
                     isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto"
@@ -180,7 +179,7 @@ const ProductInfo = ({
                     id="quantity"
                     label="Quantity"
                     placeholder="Quantity"
-                    value={value}
+                    value={quantity}
                   />
                 </div>
               )}

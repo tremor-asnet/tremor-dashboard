@@ -2,15 +2,14 @@ import dynamic from "next/dynamic";
 
 // Components
 import { Flex, Text, Title } from "@tremor/react";
-const EditProductForm = dynamic(
-  () => import("@/components/Forms/EditProductForm"),
-);
+const EditProductForm = dynamic(() => import("./components/EditProductForm"));
 
 // Services
 import { getProductDetails } from "@/services";
 
 const EditProduct = async ({ params }: { params: { id: number } }) => {
   const productData = await getProductDetails(params.id);
+
   return (
     <>
       <Flex className="mb-32 md:mb-16">

@@ -130,7 +130,6 @@ const EditProductForm = ({
         icon: RxCross2,
         color: "red",
       });
-      console.log(error);
     }
   };
 

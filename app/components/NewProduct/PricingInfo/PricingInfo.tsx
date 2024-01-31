@@ -80,12 +80,6 @@ const PricingInfo = () => {
               />
               <Controller
                 control={control}
-                rules={{
-                  pattern: {
-                    value: NUMBER_REGEX,
-                    message: "Invalid SKU number",
-                  },
-                }}
                 render={({ field }) => (
                   <div className="h-[70px] w-full">
                     <TextInput

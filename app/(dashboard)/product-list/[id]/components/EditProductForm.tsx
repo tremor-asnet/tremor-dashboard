@@ -122,25 +122,20 @@ const EditProductForm = ({
 
   return (
     <>
-      {isOpenToast &&
-        (isPending ? (
-          <div className="flex justify-center fixed right-5 bottom-50">
-            <Toast
-              icon={<TbExclamationMark />}
-              color="yellow"
-              message={EDIT_PRODUCT_MESSAGE.PENDING}
-              onClose={handleCloseToast}
-            />
-          </div>
-        ) : (
-          <div className="flex justify-center fixed right-5 bottom-50">
-            <Toast
-              icon={<FaCheckCircle />}
-              message={EDIT_PRODUCT_MESSAGE.SUCCESS}
-              onClose={handleCloseToast}
-            />
-          </div>
-        ))}
+      {isOpenToast && (
+        <div className="flex justify-center fixed right-5 bottom-50">
+          <Toast
+            icon={isPending ? <TbExclamationMark /> : <FaCheckCircle />}
+            message={
+              isPending
+                ? EDIT_PRODUCT_MESSAGE.PENDING
+                : EDIT_PRODUCT_MESSAGE.SUCCESS
+            }
+            color={isPending ? "yellow" : "green"}
+            onClose={handleCloseToast}
+          />
+        </div>
+      )}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <div className="w-full text-end absolute -mt-24">

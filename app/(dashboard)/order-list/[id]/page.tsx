@@ -81,7 +81,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <Grid numItems={1} numItemsMd={4} numItemsLg={9}>
               <Col numColSpan={1} numColSpanMd={2} numColSpanLg={2}>
                 <TrackOrder
-                  id={trackOrderInfo.id}
+                  id={id}
                   transmitedToCourierAt={transmitedToCourierAt}
                   deliveredAt={deliveredAt}
                   generateOrderAt={generateOrderAt}

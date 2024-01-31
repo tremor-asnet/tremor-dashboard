@@ -82,7 +82,7 @@ exports[`TrackOrder Component render TrackOrder component with snapshot correctl
           <span
             class="text-tremor-default text-primary font-semibold after:absolute after:flex after:text-[0.8rem] dark:text-dark-primary"
           >
-            Generate order id 
+            Generate order id #
             #1832412
           </span>
           <span

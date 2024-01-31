@@ -43,8 +43,8 @@ const OrderContact = ({
             </Text>
           </Button>
           <Text className="mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full">
-            Do you like the item? Leave us a review{" "}
-            <Link href="#" className="font-semibold">
+            Do you like the product? Leave us a review{" "}
+            <Link href="#" className="font-normal">
               here
             </Link>
             .

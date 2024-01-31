@@ -73,7 +73,7 @@ const ProductInfo = ({
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </Text>
-      <form onSubmit={handleSubmit(handleNext)}>
+      <form onSubmit={handleSubmit(handleNext)} className="product-info">
         <Flex flexDirection="col" className="items-start gap-6 md:flex-row">
           <Flex flexDirection="col" className="gap-6">
             <Controller
@@ -156,7 +156,7 @@ const ProductInfo = ({
           <Flex flexDirection="col" className="items-start">
             <Controller
               control={control}
-              render={({ field: { value = 0 } }) => (
+              render={({ field: { value } }: TProductInfo) => (
                 <div className="w-full mb-8">
                   <NumberInput
                     id="weight"
@@ -171,7 +171,7 @@ const ProductInfo = ({
 
             <Controller
               control={control}
-              render={({ field: { value = 0 } }) => (
+              render={({ field: { value } }: TProductInfo) => (
                 <div
                   className={`w-full mb-8 ${
                     isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto"

@@ -37,3 +37,5 @@ export { default as NumberInput } from "./common/NumberInput/NumberInput";
 export { default as ProductFilter } from "./ProductFilter";
 export { default as TableProduct } from "./Table/TableProduct/TableProduct";
 export { default as SelectOption } from "./SelectOption";
+export { default as TableOrder } from "./Table/TableOrder/TableOrder";
+export { default as DataGrid } from "./common/DataGrid/DataGrid";

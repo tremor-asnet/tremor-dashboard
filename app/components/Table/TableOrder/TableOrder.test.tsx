@@ -7,7 +7,9 @@ import { MOCK_ORDERS } from "@/mocks";
 
 describe("Order Table Testing", () => {
   it("should match snapshot", () => {
-    const { container } = render(<TableOrder orders={MOCK_ORDERS} />);
+    const { container } = render(
+      <TableOrder orders={MOCK_ORDERS} status="status" keyword="productName" />,
+    );
     expect(container).toMatchSnapshot();
   });
 });

@@ -68,4 +68,17 @@
   .stepper-dot-active {
     @apply shrink-0 w-4 h-4 bg-white rounded-full;
   }
+
+  /* New Product Form */
+  .new-product-stepper {
+    @apply absolute -translate-y-10 z-10 w-[calc(100%-32px)];
+  }
+
+  .product-info-input {
+    @apply w-full bg-transparent py-1 border-b text-sm outline-0 focus:outline;
+  }
+
+  .product-info-err-msg {
+    @apply pt-1 text-xs text-red-500;
+  }
 }

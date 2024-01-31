@@ -2,7 +2,8 @@
   @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
 }
 
-.select-custom li {
+.select-custom li,
+.select-custom svg {
   @apply cursor-pointer;
 }
 

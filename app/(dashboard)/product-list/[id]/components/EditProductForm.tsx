@@ -32,6 +32,7 @@ import { EditProductData } from "@/types";
 
 // Constants
 import { EDIT_PRODUCT_MESSAGE } from "@/constants";
+import { error } from "console";
 
 const EditProductForm = ({
   productData,
@@ -129,6 +130,7 @@ const EditProductForm = ({
         icon: RxCross2,
         color: "red",
       });
+      console.log(error);
     }
   };
 

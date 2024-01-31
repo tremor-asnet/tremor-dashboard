@@ -2,14 +2,13 @@
 
 // Libs
 import dynamic from "next/dynamic";
+import { Control, Controller, FieldErrors } from "react-hook-form";
 
 // Constants
 import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";
 
 // Types
 import { IProductInfo } from "@/types";
-
-import { Control, Controller, FieldErrors, FieldValue } from "react-hook-form";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 interface ProductInfoProps {
@@ -18,12 +17,12 @@ interface ProductInfoProps {
 }
 
 const ProductInfo = ({ control, errors }: ProductInfoProps) => {
-  const errorNameMsg = errors.name?.message;
+  const errorNameMsg = errors.productName?.message;
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       <Controller
-        name="name"
+        name="productName"
         control={control}
         rules={{
           required: MESSAGES_ERROR.FIELD_REQUIRED,

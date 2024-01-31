@@ -31,10 +31,10 @@ export interface EditProductData {
   instagramUrl: string;
   quantity: string;
   weight: string;
-  category: string;
+  category: number;
   description: string;
   image: string;
-  currency: string;
+  currency: number;
   sku: string;
 }
 
@@ -84,7 +84,13 @@ const EditProductForm = ({
 
   const onSubmit = async (data: EditProductData) => {
     setIsLoading(true);
-    await editProduct(id, data);
+    const newData = {
+      ...data,
+      category: Number(data.category),
+      currency: Number(data.currency),
+    };
+
+    await editProduct(id, newData);
     setIsLoading(false);
   };
 

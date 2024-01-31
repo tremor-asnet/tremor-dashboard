@@ -123,14 +123,16 @@ const ProductInfo = () => {
 
           <Controller
             control={control}
-            render={() => (
+            render={({ field: { value, onChange } }) => (
               <div className="w-full mb-4">
                 <Text className="text-secondary mb-3 dark:text-lighter mb-2">
                   Category
                 </Text>
                 <Select
                   placeholder="Clothing"
-                  className="select-custom dark:text-white dark:border-light dark:focus:border-white">
+                  className="select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  value={value.toString()}
+                  onValueChange={onChange}>
                   {CATEGORY_PRODUCT.map((item: SelectOptionData) => (
                     <SelectItem key={item.value} value={item.value}>
                       {item.option}

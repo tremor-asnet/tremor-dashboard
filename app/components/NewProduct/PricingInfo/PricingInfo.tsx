@@ -52,11 +52,13 @@ const PricingInfo = () => {
               />
               <Controller
                 control={control}
-                render={() => (
+                render={({ field: { value, onChange } }) => (
                   <div className="h-[70px] mx-6 w-full md:max-w-[30%]">
                     <Select
                       placeholder="USD"
-                      className="select-custom dark:text-white dark:border-light dark:focus:border-white">
+                      className="select-custom dark:text-white dark:border-light dark:focus:border-white"
+                      value={value.toString()}
+                      onValueChange={onChange}>
                       {TYPE_PRICE.map((item: SelectOptionData) => (
                         <SelectItem key={item.value} value={item.value}>
                           {item.option}
@@ -65,7 +67,7 @@ const PricingInfo = () => {
                     </Select>
                   </div>
                 )}
-                name="type"
+                name="currency"
               />
               <Controller
                 control={control}

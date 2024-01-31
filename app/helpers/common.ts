@@ -51,8 +51,9 @@ export const searchProductDataByValue = <T>(
   field: string,
   value: string,
 ) =>
-  data.filter(item =>
-    getObjectValue(item, field).toLowerCase().includes(value.toLowerCase()),
+  data.filter(
+    item =>
+      getObjectValue(item, field)?.toLowerCase().includes(value.toLowerCase()),
   );
 
 /**
@@ -69,12 +70,14 @@ export const searchOrderDataByValue = <T, Y>(
   fieldInner: string,
   value: string,
 ) =>
-  data.filter(item =>
-    (getObjectValue(item, fieldOuter) as unknown as Y[]).find(itemInner =>
-      getObjectValue(itemInner, fieldInner)
-        .toLowerCase()
-        .includes((value as string).toLowerCase()),
-    ),
+  data.filter(
+    item =>
+      (getObjectValue(item, fieldOuter) as unknown as Y[])?.find(
+        itemInner =>
+          getObjectValue(itemInner, fieldInner)
+            ?.toLowerCase()
+            .includes((value as string).toLowerCase()),
+      ),
   );
 
 /**

@@ -1,6 +1,6 @@
 import { Text } from "@tremor/react";
 
-interface NumberInputProps {
+interface NumberFieldProps {
   id: string;
   label: string;
   required?: boolean;
@@ -8,13 +8,13 @@ interface NumberInputProps {
   value?: number;
 }
 
-const NumberInput = ({
+const NumberField = ({
   id,
   label,
   required = false,
   placeholder = "",
   value = 0,
-}: NumberInputProps) => {
+}: NumberFieldProps) => {
   return (
     <>
       <Text className="text-secondary dark:text-lighter mb-2">{label}</Text>
@@ -30,4 +30,4 @@ const NumberInput = ({
   );
 };
 
-export default NumberInput;
+export default NumberField;

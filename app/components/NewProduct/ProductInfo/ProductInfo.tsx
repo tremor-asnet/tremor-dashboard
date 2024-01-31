@@ -7,7 +7,7 @@ import { useForm, Controller } from "react-hook-form";
 
 // Components
 import { Text, Flex, Card } from "@tremor/react";
-import { TextField, SelectField, NumberInput } from "@/components";
+import { TextField, SelectField, NumberField } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -62,6 +62,7 @@ const ProductInfo = ({
   });
 
   const nameErrorMessage = errors.productName?.message?.toString() || "";
+  const checkStyleEditProduct = isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto";
 
   const handleNext = () => {
     //TODO handle to check submit form with next button
@@ -157,7 +158,7 @@ const ProductInfo = ({
               control={control}
               render={() => (
                 <div className="w-full mb-8">
-                  <NumberInput
+                  <NumberField
                     id="weight"
                     label="Weight"
                     placeholder="Weight"
@@ -171,11 +172,8 @@ const ProductInfo = ({
             <Controller
               control={control}
               render={() => (
-                <div
-                  className={`w-full mb-8 ${
-                    isEdit ? "sm:max-w-[147px]" : "sm:max-w-auto"
-                  }`}>
-                  <NumberInput
+                <div className={`w-full mb-8 ${checkStyleEditProduct}`}>
+                  <NumberField
                     id="quantity"
                     label="Quantity"
                     placeholder="Quantity"

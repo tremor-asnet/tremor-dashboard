@@ -42,9 +42,27 @@ export type TEditProduct = {
 };
 
 export interface IProductInfo {
-  name?: string;
-  description?: string;
-  weight?: number;
-  category?: number;
-  quantity?: number;
+  productName: string;
+  description: string;
+  weight: number;
+  category: number;
+  quantity: number;
+}
+
+export interface NewProduct {
+  productName: string;
+  description: string;
+  weight: number;
+  category: number;
+  quantity: number;
+  price: number;
+  isAvailable: true;
+  providerName: string;
+  image: string;
+  currency: number;
+  sku: string;
+  tags: number[];
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
 }

@@ -10,15 +10,34 @@ import ProductInfo from "@/components/ProductManager/common/ProductInfo/ProductI
 import { IProductInfo } from "@/types";
 
 interface ProductInfoFormProps {
+  productName: string;
+  description: string;
+  weight: number;
+  category: number;
+  quantity: number;
   onSubmit: (data: IProductInfo) => void;
 }
 
-const ProductInfoForm = ({ onSubmit }: ProductInfoFormProps) => {
+const ProductInfoForm = ({
+  productName,
+  description,
+  weight,
+  category,
+  quantity,
+  onSubmit,
+}: ProductInfoFormProps) => {
   const {
     control,
     formState: { errors },
     handleSubmit,
   } = useForm<IProductInfo>({
+    defaultValues: {
+      productName,
+      description,
+      weight,
+      category,
+      quantity,
+    },
     mode: "onSubmit",
   });
 
@@ -30,7 +49,7 @@ const ProductInfoForm = ({ onSubmit }: ProductInfoFormProps) => {
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <input
-          className="float-right py-2.5 px-6 bg-black dark:bg-[#485976] text-white font-medium text-sm rounded-md"
+          className="float-right btn-form-primary"
           type="submit"
           value="NEXT"
         />

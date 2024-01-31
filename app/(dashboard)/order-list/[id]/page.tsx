@@ -78,35 +78,33 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <Flex className="justify-start items-start flex-wrap lg:flex-nowrap">
-              <Flex className="justify-start items-start flex-wrap mb-6 sm:flex-nowrap">
-                <div className="w-full lg:max-w-[190px]">
-                  <TrackOrder
-                    id={trackOrderInfo.id}
-                    transmitedToCourierAt={transmitedToCourierAt}
-                    deliveredAt={deliveredAt}
-                    generateOrderAt={generateOrderAt}
-                    generateOrderId={generateOrderId}
-                    status={status}
+            <Grid numItems={1} numItemsMd={4} numItemsLg={9}>
+              <Col numColSpan={1} numColSpanMd={2} numColSpanLg={2}>
+                <TrackOrder
+                  id={trackOrderInfo.id}
+                  transmitedToCourierAt={transmitedToCourierAt}
+                  deliveredAt={deliveredAt}
+                  generateOrderAt={generateOrderAt}
+                  generateOrderId={generateOrderId}
+                  status={status}
+                />
+              </Col>
+              <Col numColSpan={1} numColSpanMd={2} numColSpanLg={4}>
+                <div className="mb-6">
+                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
+                </div>
+                <BillingInfo billingData={billingInfo} />
+              </Col>
+              <Col numColSpan={1} numColSpanMd={4} numColSpanLg={3}>
+                <div className="lg:pl-20 pt-6 lg:pt-0">
+                  <OrderSummary
+                    productPrice={productPrice}
+                    delivery={orderDeliverPrice}
+                    taxes={orderTax}
                   />
                 </div>
-                <div className="w-full lg:min-w-[292px] lg:max-w-[292px]">
-                  <div className="mb-6">
-                    <PaymentDetails
-                      cardLast4Digit={billingInfo.cardLast4Digit}
-                    />
-                  </div>
-                  <BillingInfo billingData={billingInfo} />
-                </div>
-              </Flex>
-              <div className="w-full lg:max-w-[160px] lg:pl-6">
-                <OrderSummary
-                  productPrice={productPrice}
-                  delivery={orderDeliverPrice}
-                  taxes={orderTax}
-                />
-              </div>
-            </Flex>
+              </Col>
+            </Grid>
           </Col>
         </Grid>
       </Card>

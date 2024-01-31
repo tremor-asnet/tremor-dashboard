@@ -17,13 +17,12 @@ const ProductImage = ({
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <CustomImage
-            className="w-full h-[500px] rounded-xl shadow-lg z-10 object-cover"
+            className="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
             src={image}
             width={800}
             height={500}
             alt={name}
           />
-          <div className="w-full h-full absolute shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] bg-black blur-md bg-cover rounded-lg scale-[0.94] left-0 -bottom-1"></div>
         </Flex>
         <Flex className="flex-col pt-7 px-2">
           <Flex className="justify-center cursor-pointer -mt-16">
@@ -32,7 +31,7 @@ const ProductImage = ({
                 Edit
               </Text>
             </Button>
-            <Button className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 hover:bg-transparent hover:opacity-75 mx-2">
+            <Button className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-transparent dark:hover:border-transparent hover:bg-transparent hover:opacity-75 mx-2">
               <Text className="uppercase py-[1px] text-xs font-bold text-red-500 uppercase mx-2">
                 Remove
               </Text>

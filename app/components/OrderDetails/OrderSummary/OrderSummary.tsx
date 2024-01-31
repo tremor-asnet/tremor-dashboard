@@ -23,7 +23,9 @@ export const OrderSummary = (monies: OrderSummaryData) => {
         <Flex>
           <Flex className="flex-col items-start text-secondary dark:text-dark-romance">
             {listTitle.map(title => (
-              <Text className="dark:text-lighter leading-6 mb-2" key={title}>
+              <Text
+                className="dark:text-dark-romance leading-6 mb-2"
+                key={title}>
                 {title}&#58;
               </Text>
             ))}

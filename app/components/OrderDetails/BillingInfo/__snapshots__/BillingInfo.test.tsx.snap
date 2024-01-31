@@ -16,43 +16,47 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
       Oliver Liam
     </span>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-start items-baseline mt-4 gap-3"
+      class="tremor-Flex-root flex w-full justify-between items-center flex-col mt-4 gap-3"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-col justify-between items-start max-w-[90px] text-secondary dark:text-dark-romance"
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
       >
         <p
-          class="mb-2 text-xs dark:text-dark-lighter"
-        >
-          VAT Number:
-        </p>
-        <p
-          class="mb-2 text-xs dark:text-dark-lighter"
-        >
-          Email Address:
-        </p>
-        <p
-          class="mb-2 text-xs dark:text-dark-lighter"
+          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
         >
           Company Name:
         </p>
-      </div>
-      <div
-        class="tremor-Flex-root flex w-full flex-col justify-between items-start text-primary dark:text-white"
-      >
         <p
-          class="mb-2 font-bold text-xs dark:text-white"
+          class="text-xs text-primary font-bold dark:text-white ml-2.5"
         >
           Viking Burrito
         </p>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
+      >
+        <p
+          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
+        >
+          Email Address:
+        </p>
         <a
-          class="mb-2 font-bold text-xs dark:text-white"
+          class="text-xs text-primary font-bold dark:text-white ml-2.5"
           href="mailto: oliver@burrito.com"
         >
           oliver@burrito.com
         </a>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
+      >
         <p
-          class="mb-2 font-bold text-xs dark:text-white"
+          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
+        >
+          VAT Number:
+        </p>
+        <p
+          class="text-xs text-primary font-bold dark:text-white ml-2.5"
         >
           FRB1235476
         </p>

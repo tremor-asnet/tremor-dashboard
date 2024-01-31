@@ -15,6 +15,9 @@ export type TProductInfo = {
   weight?: string;
   category?: string;
   quantity?: string;
+  collection?: string;
+  price?: string;
+  color?: string;
 };
 
 export type TPricingInfo = {
@@ -40,3 +43,11 @@ export type TEditProduct = {
   facebookUrl: string;
   instagramUrl: string;
 };
+
+export interface IProductInfo {
+  name?: string;
+  description?: string;
+  weight?: number;
+  category?: number;
+  quantity?: number;
+}

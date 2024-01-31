@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import { TextInput, Text, Flex, Select, SelectItem, Card } from "@tremor/react";
+import { Text, Flex, Card, TextInput, Select, SelectItem } from "@tremor/react";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -28,7 +28,7 @@ const ProductInfo = () => {
   const nameErrorMessage = name?.message?.toString() || "";
 
   return (
-    <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default">
+    <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </Text>

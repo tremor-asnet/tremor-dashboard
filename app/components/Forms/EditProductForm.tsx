@@ -97,7 +97,7 @@ const EditProductForm = ({
               </Text>
             </Button>
           </div>
-          <Grid numItemsSm={1} numItemsLg={3} className="gap-2 lg:gap-4">
+          <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
               <ProductImage
                 name={productName}

@@ -1,15 +1,17 @@
 .select-custom button {
-  @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid;
+  @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
+}
+
+.select-custom li {
+  @apply cursor-pointer;
 }
 
 .select-custom button + button {
   @apply  border-0;
 }
 
-.select-custom button:hover,
-.select-custom button:active,
 .select-custom button:focus  {
-  @apply bg-transparent rounded-none border-0 !border-b-[#344767] shadow-none outline-none ring-0;
+  @apply bg-transparent rounded-none !border-b-[#344767] shadow-none outline-none ring-0;
 }
 
 .ql-container.ql-snow {
@@ -17,17 +19,7 @@
 }
 
 .ql-toolbar.ql-snow {
-  @apply rounded-t-md border-[#d2d6da] ;
-}
-
-.quill:focus .ql-toolbar.ql-snow,
-.quill:focus .ql-container.ql-snow {
-  @apply border-[#344767];
-}
-
-.quill:hover .ql-toolbar.ql-snow,
-.quill:hover .ql-container.ql-snow {
-  @apply border-[#344767];
+  @apply rounded-t-md border-[#d2d6da];
 }
 
 .dark .ql-formats span,
@@ -40,7 +32,21 @@
   stroke: white;
 }
 
+.ql-editor {
+  @apply text-base;
+}
 
 .dark button .text-tremor-content-emphasis {
   @apply bg-[#1a2035];
+}
+
+form input.text-tremor-default,
+form button.text-tremor-content,
+form button.text-tremor-content-emphasis {
+  @apply pl-0;
+}
+
+form.product-info :is(.dark .dark\:shadow-dark-tremor-input):hover,
+form.pricing-info :is(.dark .dark\:shadow-dark-tremor-input):hover {
+  @apply bg-transparent;
 }

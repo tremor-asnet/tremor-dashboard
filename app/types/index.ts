@@ -10,3 +10,4 @@ export * from "./product";
 export * from "./table";
 export * from "./select";
 export * from "./orderDetails";
+export * from "./common";

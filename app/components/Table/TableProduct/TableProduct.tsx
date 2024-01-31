@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 
 // Components
 import {
@@ -8,7 +7,7 @@ import {
   CustomDateFormat,
   CustomNumberFormat,
 } from "@/components/Table/common";
-import { DataGrid, LoadingIndicator } from "@/components";
+import { DataGrid } from "@/components";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -27,8 +26,6 @@ const TableProduct = ({
   isAvailable,
   keyword,
 }: TableProductProps) => {
-  const [loading, setLoading] = useState(false);
-
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
@@ -79,28 +76,14 @@ const TableProduct = ({
     },
   ];
 
-  useEffect(() => {
-    setLoading(true);
-
-    // Delay to check show loading
-    setTimeout(() => {
-      setLoading(false);
-    }, 100);
-  }, [isAvailable, keyword]);
-
-  if (loading === true) {
-    return (
-      <LoadingIndicator
-        additionalClass="flex justify-center items-center"
-        width={8}
-        height={8}
-        isFullWidth={false}
-        fillColor="river-bed-500"
-      />
-    );
-  }
-
-  return <DataGrid data={products} columns={columns} />;
+  return (
+    <DataGrid
+      data={products}
+      columns={columns}
+      filterBy={isAvailable}
+      keyword={keyword}
+    />
+  );
 };
 
 export default TableProduct;

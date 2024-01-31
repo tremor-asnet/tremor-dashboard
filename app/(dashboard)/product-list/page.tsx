@@ -61,7 +61,7 @@ const ProductListPage = async ({
             new product
           </Text>
         </Button>
-        <ProductFilter title="Filter" />
+        <ProductFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />

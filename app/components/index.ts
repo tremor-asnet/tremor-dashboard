@@ -38,3 +38,5 @@ export { default as TableProduct } from "./Table/TableProduct/TableProduct";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
 export { default as DataGrid } from "./common/DataGrid/DataGrid";
+export { default as DataGridHeader } from "./common/DataGrid/DataGridHeader/DataGridHeader";
+export { default as DataGridBody } from "./common/DataGrid/DataGridBody/DataGridBody";

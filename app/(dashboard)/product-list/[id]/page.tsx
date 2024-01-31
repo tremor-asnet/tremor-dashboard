@@ -34,8 +34,10 @@ const EditProduct = () => {
     <>
       <Flex className="mb-16">
         <div>
-          <Title>Make the changes below</Title>
-          <Text>
+          <Text className="text-[24px] font-bold text-primary mb-3">
+            Make the changes below
+          </Text>
+          <Text className="text-[16px]">
             We&apos;re constantly trying to express ourselves and actualize our
             dreams. If you have the opportunity to play.
           </Text>

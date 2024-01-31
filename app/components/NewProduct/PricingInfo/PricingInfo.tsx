@@ -48,7 +48,7 @@ const PricingInfo = ({ price, type, sku, tags }: PricingInfoData) => {
   return (
     <form
       onSubmit={handleSubmit(handleSend)}
-      className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default">
+      className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Pricing
       </Text>

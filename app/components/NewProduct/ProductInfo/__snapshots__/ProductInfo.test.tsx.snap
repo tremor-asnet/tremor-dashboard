@@ -13,7 +13,9 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
         >
           Product Information
         </p>
-        <form>
+        <form
+          class="product-info"
+        >
           <div
             class="tremor-Flex-root flex w-full flex-col justify-between items-start gap-6 md:flex-row"
           >
@@ -159,7 +161,9 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
       >
         Product Information
       </p>
-      <form>
+      <form
+        class="product-info"
+      >
         <div
           class="tremor-Flex-root flex w-full flex-col justify-between items-start gap-6 md:flex-row"
         >

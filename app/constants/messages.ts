@@ -13,3 +13,9 @@ export const MESSAGES_ERROR = {
 export const SIGN_UP_MESSAGE = {
   SUCCESS: "Create account successfully.",
 };
+
+export const EDIT_PRODUCT_MESSAGE = {
+  SUCCESS: "Edit product successfully",
+  FAILED: "Failed to edit product",
+  PENDING: "Editing product",
+};

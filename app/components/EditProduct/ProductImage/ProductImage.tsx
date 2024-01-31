@@ -17,18 +17,15 @@ const ProductImage = ({
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
           <CustomImage
-            className="relative w-full rounded-xl shadow-lg z-10  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+            className="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
             src={image}
             width={800}
-            height={533}
+            height={500}
             alt={name}
-            sizes="(min-width: 768px) 33vw, 70vw"
           />
         </Flex>
         <Flex className="flex-col pt-7 px-2">
           <Flex className="justify-center cursor-pointer -mt-16">
-            {/* <MdRefresh className="text-[#e91e63] text-xl mx-6" />
-            <MdEdit className="text-tremor-content-title text-xl mx-6" /> */}
             <Button className="antialiased py-[12px] text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-2 py-1.5 leading-[17px] tracking-[0.35px]">
               <Text className="uppercase py-[2px] text-xs font-bold text-white uppercase mx-2">
                 Edit
@@ -43,9 +40,10 @@ const ProductImage = ({
           <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">
             {name}
           </Title>
-          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base">
-            {desc}
-          </Text>
+          <div
+            className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            dangerouslySetInnerHTML={{ __html: desc }}
+          />
         </Flex>
       </Flex>
     </Card>

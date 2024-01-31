@@ -1,25 +1,15 @@
 "use client";
 
+import { Controller, useFormContext } from "react-hook-form";
+
 // Components
 import { Title, Flex, Card } from "@tremor/react";
 
 //Styles
 import "@/styles/products.css";
 
-interface SocialsData {
-  shoppifyUrl?: string;
-  facebookUrl?: string;
-  instagramUrl?: string;
-}
-
-const Socials = ({
-  shoppifyUrl = "",
-  facebookUrl = "",
-  instagramUrl = "",
-}: SocialsData) => {
-  const handleSocials = () => {
-    // TODO: Handle change here
-  };
+const Socials = () => {
+  const { control } = useFormContext();
 
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0">
@@ -27,26 +17,41 @@ const Socials = ({
         Socials
       </Title>
       <Flex className="flex-col items-start justify-start mt-8">
-        <input
-          className="input-text"
-          id="shoppify-handle"
-          placeholder="Shoppify Handle"
-          onChange={handleSocials}
-          value={shoppifyUrl}
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="shoppify-handle"
+              placeholder="Shoppify Handle"
+              {...field}
+            />
+          )}
+          name="shopifyUrl"
         />
-        <input
-          className="input-text"
-          id="facebook-account"
-          placeholder="Facebook Account"
-          onChange={handleSocials}
-          value={facebookUrl}
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="facebook-account"
+              placeholder="Facebook Account"
+              {...field}
+            />
+          )}
+          name="facebookUrl"
         />
-        <input
-          className="input-text"
-          id="instagram-account"
-          placeholder="Instagram Account"
-          onChange={handleSocials}
-          value={instagramUrl}
+        <Controller
+          control={control}
+          render={({ field }) => (
+            <input
+              className="input-text"
+              id="instagram-account"
+              placeholder="Instagram Account"
+              {...field}
+            />
+          )}
+          name="instagramUrl"
         />
       </Flex>
     </Card>

@@ -6,7 +6,7 @@ interface CustomAvatarNameProps {
 }
 
 export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
-  <div className="flex justify-start items-center w-auto">
+  <div className="flex justify-start items-center w-48">
     {avatar ? (
       <Image
         className="w-6 h-6 min-w-[24px] rounded-full mr-2"
@@ -21,7 +21,7 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
         {text.substring(0, 1)}
       </div>
     )}
-    <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
+    <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate">
       {text}
     </p>
   </div>

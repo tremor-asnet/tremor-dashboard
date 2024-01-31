@@ -5,15 +5,22 @@ interface ToastProps {
   icon: ReactNode;
   message: string;
   onClose?: () => void;
+  color?: "green" | "red" | "yellow";
 }
 
-export const Toast = ({ icon, message = "", onClose }: ToastProps) => {
+export const Toast = ({
+  icon,
+  message = "",
+  color = "green",
+  onClose,
+}: ToastProps) => {
   return (
     <div
       className="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
       role="alert"
       data-testid="toast">
-      <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+      <div
+        className={`inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-${color}-500 bg-${color}-100 rounded-lg dark:bg-${color}-800 dark:text-${color}-200`}>
         {icon}
       </div>
       <div className="ms-3 text-sm font-normal">{message}</div>

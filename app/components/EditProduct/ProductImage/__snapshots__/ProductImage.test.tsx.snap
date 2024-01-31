@@ -16,14 +16,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             <img
               alt="Minimal Bar Stool 3"
-              class="relative w-full rounded-xl shadow-lg z-10  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+              class="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
               data-nimg="1"
               decoding="async"
-              height="533"
+              height="500"
               loading="lazy"
-              sizes="(min-width: 768px) 33vw, 70vw"
-              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75 3840w"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
               style="color: transparent;"
               width="800"
             />
@@ -66,11 +65,11 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             >
               Minimal Bar Stool 3
             </p>
-            <p
-              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            <div
+              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
             >
               The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -88,14 +87,13 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         >
           <img
             alt="Minimal Bar Stool 3"
-            class="relative w-full rounded-xl shadow-lg z-10  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+            class="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
             data-nimg="1"
             decoding="async"
-            height="533"
+            height="500"
             loading="lazy"
-            sizes="(min-width: 768px) 33vw, 70vw"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=3840&q=75 3840w"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
             style="color: transparent;"
             width="800"
           />
@@ -138,11 +136,11 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             Minimal Bar Stool 3
           </p>
-          <p
-            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+          <div
+            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
           >
             The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
-          </p>
+          </div>
         </div>
       </div>
     </div>

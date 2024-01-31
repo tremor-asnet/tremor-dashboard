@@ -68,3 +68,6 @@ export interface NewProduct {
   facebookUrl: string;
   instagramUrl: string;
 }
+
+export interface ISocial
+  extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}

@@ -128,9 +128,14 @@ const ProductManager = () => {
       tags: pricing.tags?.map(Number),
     });
 
-    // TODO : Integrate add new product API here and redirect to product list page
-    await addNewProduct(newProduct);
-    router.push("product-list");
+    try {
+      await addNewProduct(newProduct);
+
+      // TODO: display toast
+      router.push("product-list");
+    } catch (error) {
+      // TODO: handle Error here
+    }
   };
 
   return (

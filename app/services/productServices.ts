@@ -34,6 +34,7 @@ export const addNewProduct = async (newProduct: NewProduct) => {
       revalidate: 60,
     },
   });
+
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
   return res.json();
 };

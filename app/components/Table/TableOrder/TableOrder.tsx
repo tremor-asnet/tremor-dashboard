@@ -78,6 +78,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
       columns={columns}
       filterBy={status}
       keyword={keyword}
+      onHeaderClick={() => {}}
     />
   );
 };

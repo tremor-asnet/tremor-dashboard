@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 // Components
 import {
   CustomAvatarName,
@@ -26,8 +28,26 @@ const TableProduct = ({
   isAvailable,
   keyword,
 }: TableProductProps) => {
+  const [sort, setSort] = useState<{ keyToSort: string; direction: string }>({
+    keyToSort: "product",
+    direction: "asc",
+  });
+
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
+  };
+
+  // Handle sort by categories
+  const handleHeaderClick = (column: ColumnType<Product>) => {
+    setSort({
+      keyToSort: column.key,
+      direction:
+        column.key === sort.keyToSort
+          ? sort.direction === "asc"
+            ? "desc"
+            : "asc"
+          : "desc",
+    });
   };
 
   // Product Table Props
@@ -81,6 +101,7 @@ const TableProduct = ({
       columns={columns}
       filterBy={isAvailable}
       keyword={keyword}
+      onHeaderClick={handleHeaderClick}
     />
   );
 };

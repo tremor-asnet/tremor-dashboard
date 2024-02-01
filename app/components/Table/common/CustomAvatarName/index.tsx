@@ -21,7 +21,7 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
         {text.substring(0, 1)}
       </div>
     )}
-    <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate">
+    <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
       {text}
     </p>
   </div>

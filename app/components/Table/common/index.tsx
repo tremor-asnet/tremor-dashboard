@@ -8,3 +8,4 @@ export * from "./CustomDateFormat";
 export * from "./CustomList";
 export * from "./CustomNumberFormat";
 export * from "./CustomStatus";
+export * from "./CustomQuantity";

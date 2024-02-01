@@ -16,14 +16,14 @@ const HeaderCellContents = ({ title }: HeaderCellContentsProps) => (
         <Button
           className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
           variant="light">
-          <MdArrowDropUp className="w-4 h-4" />
+          <MdArrowDropUp className="w-4 h-4 fill-secondary" />
         </Button>
       </Flex>
       <Flex className="absotule top-0 justify-end">
         <Button
           className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
           variant="light">
-          <MdArrowDropDown className="w-4 h-4" />
+          <MdArrowDropDown className="w-4 h-4 fill-secondary" />
         </Button>
       </Flex>
     </Flex>

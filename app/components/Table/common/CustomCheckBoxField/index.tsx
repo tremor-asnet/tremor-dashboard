@@ -17,7 +17,7 @@ export const CustomCheckBoxField = ({
     <Checkbox onChange={onChange} />
     <Link
       href={link}
-      className="ml-4 text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
+      className="ml-4 text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
       &#35;{id}
     </Link>
   </div>

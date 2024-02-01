@@ -46,7 +46,7 @@ const ProductInfo = () => {
         Product Information
       </Text>
 
-      <Flex className="items-start gap-2">
+      <Flex className="items-start gap-5">
         <Flex flexDirection="col" className="gap-4">
           <Controller
             control={control}
@@ -85,7 +85,7 @@ const ProductInfo = () => {
             render={({ field }) => (
               <div className="w-full">
                 <Text className="text-secondary dark:text-lighter mb-2">
-                  Description &#x276A;optional&#x276B;
+                  Description <span className="text-xs">(optional)</span>
                 </Text>
                 <QuillEditor
                   placeholder="Content goes here..."

@@ -8,6 +8,8 @@ export const color = {
   select: "#f0f2f5",
   attention: "#f44335",
   lighter: "rgba(255, 255, 255, 0.8)",
+  greyish: "rgba(255, 255, 255, 0.4)",
+  grayish: "rgba(240, 242, 245, 0.4)",
 
   dark: {
     primary: "#ffffff",

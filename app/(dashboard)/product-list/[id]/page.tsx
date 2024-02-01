@@ -14,7 +14,7 @@ const EditProduct = async ({ params }: { params: { id: number } }) => {
     <>
       <Flex className="mb-32 md:mb-16">
         <div>
-          <Text className="font-bold text-primary mb-3 !text-2xl ">
+          <Text className="font-bold text-primary mb-3 !text-2xl">
             Make the changes below
           </Text>
           <Text className="dark:text-dark-romance !text-base">

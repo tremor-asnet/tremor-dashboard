@@ -1,6 +1,7 @@
 // Components
 import { Suspense } from "react";
-import { Button, Flex, Text } from "@tremor/react";
+import { Flex } from "@tremor/react";
+import Link from "next/link";
 
 import {
   TableProduct,
@@ -17,6 +18,9 @@ import { Product } from "@/types";
 
 // Helpers
 import { filterProductList, searchProductDataByValue } from "@/helpers";
+
+// Constants
+import { ROUTES } from "@/constants";
 
 type SearchParamsProduct = {
   productName: string;
@@ -56,11 +60,11 @@ const ProductListPage = async ({
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
-        <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-          <Text className="uppercase text-xs text-white dark:text-white">
-            new product
-          </Text>
-        </Button>
+        <Link
+          href={ROUTES.NEW_PRODUCT}
+          className="uppercase text-xs text-white font-medium dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg">
+          new product
+        </Link>
         <ProductFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">

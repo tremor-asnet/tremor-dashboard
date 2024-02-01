@@ -14,8 +14,10 @@ const EditProduct = async ({ params }: { params: { id: number } }) => {
     <>
       <Flex className="mb-32 md:mb-16">
         <div>
-          <Title>Make the changes below</Title>
-          <Text>
+          <Text className="font-bold text-primary mb-3 !text-2xl">
+            Make the changes below
+          </Text>
+          <Text className="dark:text-dark-romance !text-base">
             We&apos;re constantly trying to express ourselves and actualize our
             dreams. If you have the opportunity to play.
           </Text>

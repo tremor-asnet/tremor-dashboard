@@ -4,15 +4,8 @@
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import {
-  TextInput,
-  Text,
-  Flex,
-  Select,
-  SelectItem,
-  MultiSelect,
-  MultiSelectItem,
-} from "@tremor/react";
+import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
+import { SelectField, TextField } from "@/components";
 
 // Types
 import { SelectOptionData } from "@/types";
@@ -48,11 +41,12 @@ const PricingInfo = () => {
                 }}
                 render={({ field }) => (
                   <div className="h-[70px] w-full md:max-w-[25%]">
-                    <TextInput
+                    <TextField
                       id="price"
-                      required
+                      label="Price"
                       placeholder="Price"
-                      className="w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                      autoFocus={true}
+                      required={true}
                       {...field}
                     />
                   </div>
@@ -63,17 +57,11 @@ const PricingInfo = () => {
                 control={control}
                 render={({ field: { value, onChange } }) => (
                   <div className="h-[70px] mx-6 w-full md:max-w-[30%]">
-                    <Select
+                    <SelectField
+                      id="usd"
                       placeholder="USD"
-                      className="select-custom dark:text-white dark:border-light dark:focus:border-white"
-                      value={value.toString()}
-                      onValueChange={onChange}>
-                      {TYPE_PRICE.map((item: SelectOptionData) => (
-                        <SelectItem key={item.value} value={item.value}>
-                          {item.option}
-                        </SelectItem>
-                      ))}
-                    </Select>
+                      selectData={TYPE_PRICE}
+                    />
                   </div>
                 )}
                 name="currency"
@@ -82,10 +70,12 @@ const PricingInfo = () => {
                 control={control}
                 render={({ field }) => (
                   <div className="h-[70px] w-full">
-                    <TextInput
+                    <TextField
                       id="sku"
+                      label="SKU"
                       placeholder="SKU"
-                      className="w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                      autoFocus={true}
+                      required={true}
                       {...field}
                     />
                   </div>
@@ -99,7 +89,7 @@ const PricingInfo = () => {
               render={({ field: { value, onChange } }) => {
                 const convertedValue = value.map(String);
                 return (
-                  <div className="w-full mb-4">
+                  <div className="w-full mb-4 mt-6">
                     <Text className="text-secondary dark:text-white">Tags</Text>
                     <MultiSelect
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white"

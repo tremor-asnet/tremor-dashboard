@@ -97,48 +97,52 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               <div
                 class="w-full mb-7"
               >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Category
-                </p>
                 <div
-                  class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  data-headlessui-state=""
-                  id="category"
+                  class="tremor-Flex-root flex w-full justify-between flex-col items-start"
                 >
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                    data-headlessui-state=""
-                    id="headlessui-listbox-button-:r0:"
-                    type="button"
+                  <p
+                    class="text-tremor-default text-secondary h-5 mb-3 dark:text-lighter"
                   >
-                    <span
-                      class="w-[90%] block truncate"
+                    Category
+                  </p>
+                  <div
+                    class="min-w-[10rem] relative text-tremor-default py-1 select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                    data-headlessui-state=""
+                    id="category"
+                  >
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                      data-headlessui-state=""
+                      id="headlessui-listbox-button-:r0:"
+                      type="button"
                     >
-                      Clothing
-                    </span>
-                    <span
-                      class="absolute inset-y-0 right-0 flex items-center mr-3"
-                    >
-                      <svg
-                        class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.5"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="w-[90%] block truncate"
                       >
-                        <path
-                          d="M19 9l-7 7-7-7"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </button>
+                        Clothing
+                      </span>
+                      <span
+                        class="absolute inset-y-0 right-0 flex items-center mr-3"
+                      >
+                        <svg
+                          class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19 9l-7 7-7-7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -240,48 +244,52 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
             <div
               class="w-full mb-7"
             >
-              <p
-                class="text-tremor-default text-secondary dark:text-lighter mb-2"
-              >
-                Category
-              </p>
               <div
-                class="min-w-[10rem] relative text-tremor-default select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                data-headlessui-state=""
-                id="category"
+                class="tremor-Flex-root flex w-full justify-between flex-col items-start"
               >
-                <button
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
-                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                  data-headlessui-state=""
-                  id="headlessui-listbox-button-:r0:"
-                  type="button"
+                <p
+                  class="text-tremor-default text-secondary h-5 mb-3 dark:text-lighter"
                 >
-                  <span
-                    class="w-[90%] block truncate"
+                  Category
+                </p>
+                <div
+                  class="min-w-[10rem] relative text-tremor-default py-1 select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  data-headlessui-state=""
+                  id="category"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                    data-headlessui-state=""
+                    id="headlessui-listbox-button-:r0:"
+                    type="button"
                   >
-                    Clothing
-                  </span>
-                  <span
-                    class="absolute inset-y-0 right-0 flex items-center mr-3"
-                  >
-                    <svg
-                      class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <span
+                      class="w-[90%] block truncate"
                     >
-                      <path
-                        d="M19 9l-7 7-7-7"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
+                      Clothing
+                    </span>
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center mr-3"
+                    >
+                      <svg
+                        class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

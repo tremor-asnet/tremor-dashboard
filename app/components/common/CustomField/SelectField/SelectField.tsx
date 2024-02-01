@@ -9,11 +9,14 @@ interface SelectFieldProps
 }
 
 const SelectField = ({ options, ...props }: SelectFieldProps) => {
-  const optionList = options.map(item => (
-    <option className="dark:bg-primary" key={item.value} value={item.value}>
-      {item.option}
-    </option>
-  ));
+  const optionList = options.map(item => {
+    const { value, option } = item;
+    return (
+      <option className="dark:bg-primary" key={value} value={value}>
+        {option}
+      </option>
+    );
+  });
 
   return (
     <div className="relative w-full">

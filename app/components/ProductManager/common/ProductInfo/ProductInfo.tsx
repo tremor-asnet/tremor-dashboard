@@ -11,6 +11,7 @@ import SelectField from "@/components/common/CustomField/SelectField/SelectField
 
 // Constants
 import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";
+import { EXCEPT_KEYS } from "@/constants/common";
 
 // Types
 import { NewInfo } from "@/types";
@@ -26,7 +27,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
   const errorNameMsg = errors.productName?.message;
 
   const handleWeightKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
+    EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
   };
 
   const handleQuantityKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -34,7 +35,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
       <Controller
         name="productName"
         control={control}
@@ -58,14 +59,12 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         name="weight"
         control={control}
         render={({ field }) => (
-          <div>
-            <InputField
-              type="number"
-              label="Weight"
-              {...field}
-              onKeyDown={handleWeightKeyDown}
-            />
-          </div>
+          <InputField
+            type="number"
+            label="Weight"
+            {...field}
+            onKeyDown={handleWeightKeyDown}
+          />
         )}
       />
 
@@ -105,14 +104,12 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           name="quantity"
           control={control}
           render={({ field }) => (
-            <div>
-              <InputField
-                type="number"
-                label="Quantity"
-                onKeyDown={handleQuantityKeyDown}
-                {...field}
-              />
-            </div>
+            <InputField
+              type="number"
+              label="Quantity"
+              onKeyDown={handleQuantityKeyDown}
+              {...field}
+            />
           )}
         />
 
@@ -120,9 +117,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           name="providerName"
           control={control}
           render={({ field }) => (
-            <div>
-              <InputField type="text" label="Provider Name" {...field} />
-            </div>
+            <InputField type="text" label="Provider Name" {...field} />
           )}
         />
       </div>

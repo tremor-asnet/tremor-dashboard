@@ -12,14 +12,19 @@ import { NewPricing } from "@/types";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
+import { EXCEPT_KEYS } from "@/constants/common";
 
 interface PricingProps {
   control: Control<NewPricing>;
 }
 
 const Pricing = ({ control }: PricingProps) => {
+  const handlePriceKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
+  };
+
   const handleSkuKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    ["e", "E", "+", "-", "."].includes(e.key) && e.preventDefault();
+    EXCEPT_KEYS.POSITIVE_INTEGER.includes(e.key) && e.preventDefault();
   };
 
   return (
@@ -28,7 +33,13 @@ const Pricing = ({ control }: PricingProps) => {
         name="price"
         control={control}
         render={({ field }) => (
-          <InputField label="Price" placeholder="" type="text" {...field} />
+          <InputField
+            label="Price"
+            placeholder=""
+            type="number"
+            {...field}
+            onKeyDown={handlePriceKeyDown}
+          />
         )}
       />
 

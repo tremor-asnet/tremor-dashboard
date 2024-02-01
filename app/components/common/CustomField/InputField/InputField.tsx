@@ -1,9 +1,8 @@
-interface FormInputFieldProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 
-const FormInputField = ({ label, ...props }: FormInputFieldProps) => (
+const InputField = ({ label, ...props }: InputFieldProps) => (
   <div className="relative w-full">
     <input
       className="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
@@ -16,4 +15,4 @@ const FormInputField = ({ label, ...props }: FormInputFieldProps) => (
   </div>
 );
 
-export default FormInputField;
+export default InputField;

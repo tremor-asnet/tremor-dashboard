@@ -13,10 +13,6 @@ export const getProducts = async () => {
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
-    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
@@ -59,10 +55,6 @@ export const addNewProduct = async (newProduct: NewProduct) => {
       "content-type": "application/json;charset=UTF-8",
     },
     body: JSON.stringify(newProduct),
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
-    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));

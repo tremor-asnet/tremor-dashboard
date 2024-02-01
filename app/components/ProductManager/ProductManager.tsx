@@ -12,7 +12,7 @@ import SocialForm from "@/components/ProductManager/SocialForm/SocialForm";
 import PricingForm from "@/components/ProductManager/PricingForm/PricingForm";
 
 // Types
-import { IMedia, IPricing, IProductInfo, ISocial, NewProduct } from "@/types";
+import { IMedia, NewPricing, NewInfo, NewSocial, NewProduct } from "@/types";
 
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
@@ -52,6 +52,7 @@ const ProductManager = () => {
           <ProductInfoForm
             productName={newProduct.productName}
             description={newProduct.description}
+            providerName={newProduct.providerName}
             weight={newProduct.weight}
             category={newProduct.category}
             quantity={newProduct.quantity}
@@ -92,14 +93,15 @@ const ProductManager = () => {
     }
   };
 
-  const handleSubmitProductInfoForm = (info: IProductInfo) => {
+  const handleSubmitProductInfoForm = (info: NewInfo) => {
     setNewProduct({
       ...newProduct,
       productName: info.productName,
       description: info.description,
-      weight: info.weight,
-      category: info.category,
-      quantity: info.quantity,
+      providerName: info.providerName,
+      weight: Number(info.weight),
+      category: Number(info.category),
+      quantity: Number(info.quantity),
     });
     setCurrentStep(currentStep + 1);
   };
@@ -109,7 +111,7 @@ const ProductManager = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const handleSubmitSocialForm = (social: ISocial) => {
+  const handleSubmitSocialForm = (social: NewSocial) => {
     setNewProduct({
       ...newProduct,
       shopifyUrl: social.shopifyUrl,
@@ -119,18 +121,17 @@ const ProductManager = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const handleSubmitPricingForm = async (pricing: IPricing) => {
-    setNewProduct({
+  const handleSubmitPricingForm = async (pricing: NewPricing) => {
+    const product: NewProduct = {
       ...newProduct,
-      price: pricing.price,
-      currency: pricing.currency,
+      price: Number(pricing.price),
+      currency: Number(pricing.currency),
       sku: pricing.sku,
       tags: pricing.tags?.map(Number),
-    });
+    };
 
     try {
-      await addNewProduct(newProduct);
-
+      await addNewProduct(product);
       // TODO: display toast
       router.push("product-list");
     } catch (error) {

@@ -115,6 +115,7 @@ export const DataTableDefault: Story = {
       columns={columns}
       filterBy="status"
       keyword="productName"
+      onHeaderClick={() => {}}
     />
   ),
 };

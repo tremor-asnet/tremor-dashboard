@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form";
 
 // Types
-import { IPricing } from "@/types";
+import { NewPricing } from "@/types";
 
 // Components
 import Pricing from "@/components/ProductManager/common/Pricing/Pricing";
@@ -13,7 +13,7 @@ interface PricingFormProps {
   currency: number;
   tags: number[];
   onBack: () => void;
-  onSubmit: (pricing: IPricing) => void;
+  onSubmit: (pricing: NewPricing) => void;
 }
 
 const PricingForm = ({
@@ -24,7 +24,7 @@ const PricingForm = ({
   onBack,
   onSubmit,
 }: PricingFormProps) => {
-  const { control, handleSubmit } = useForm<IPricing>({
+  const { control, handleSubmit } = useForm<NewPricing>({
     defaultValues: {
       price,
       sku,

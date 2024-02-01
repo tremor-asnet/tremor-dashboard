@@ -7,20 +7,22 @@ import { useForm } from "react-hook-form";
 import ProductInfo from "@/components/ProductManager/common/ProductInfo/ProductInfo";
 
 // Types
-import { IProductInfo } from "@/types";
+import { NewInfo } from "@/types";
 
 interface ProductInfoFormProps {
   productName: string;
   description: string;
+  providerName: string;
   weight: number;
   category: number;
   quantity: number;
-  onSubmit: (data: IProductInfo) => void;
+  onSubmit: (data: NewInfo) => void;
 }
 
 const ProductInfoForm = ({
   productName,
   description,
+  providerName,
   weight,
   category,
   quantity,
@@ -30,10 +32,11 @@ const ProductInfoForm = ({
     control,
     formState: { errors },
     handleSubmit,
-  } = useForm<IProductInfo>({
+  } = useForm<NewInfo>({
     defaultValues: {
       productName,
       description,
+      providerName,
       weight,
       category,
       quantity,

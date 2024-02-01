@@ -3,21 +3,35 @@
 // Libs
 import dynamic from "next/dynamic";
 import { Control, Controller, FieldErrors } from "react-hook-form";
+import { KeyboardEvent } from "react";
+
+// Components
+import InputField from "@/components/common/CustomField/InputField/InputField";
+import SelectField from "@/components/common/CustomField/SelectField/SelectField";
 
 // Constants
 import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";
 
 // Types
-import { IProductInfo } from "@/types";
+import { NewInfo } from "@/types";
+
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 interface ProductInfoProps {
-  control: Control<IProductInfo>;
-  errors: FieldErrors<IProductInfo>;
+  control: Control<NewInfo>;
+  errors: FieldErrors<NewInfo>;
 }
 
 const ProductInfo = ({ control, errors }: ProductInfoProps) => {
   const errorNameMsg = errors.productName?.message;
+
+  const handleWeightKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
+  };
+
+  const handleQuantityKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    ["e", "E", "+", "-", "."].includes(e.key) && e.preventDefault();
+  };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -33,13 +47,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         }}
         render={({ field }) => (
           <div>
-            <h3 className="text-sm text-[#7b809a] dark:text-white">Name</h3>
-            <input
-              className="product-info-input"
-              type="text"
-              placeholder="Name"
-              {...field}
-            />
+            <InputField type="text" label="Name" {...field} />
             <p className="product-info-err-msg">{errorNameMsg}</p>
           </div>
         )}
@@ -51,15 +59,11 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         control={control}
         render={({ field }) => (
           <div>
-            <h3 className="text-sm text-[#7b809a] dark:text-white">Weight</h3>
-            <input
-              className="product-info-input"
+            <InputField
               type="number"
-              placeholder="Weight"
-              onKeyDown={e => {
-                ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
-              }}
+              label="Weight"
               {...field}
+              onKeyDown={handleWeightKeyDown}
             />
           </div>
         )}
@@ -89,41 +93,35 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           control={control}
           render={({ field }) => (
             <div>
-              <h3 className="text-sm text-[#7b809a] dark:text-white">
+              <h3 className="text-xs text-[#7b809a] dark:text-white">
                 Category
               </h3>
-              <select
-                className="product-info-input mt-1 dark:text-white"
-                {...field}>
-                {CATEGORY_PRODUCT.map(item => (
-                  <option key={item.value} value={item.value}>
-                    {item.option}
-                  </option>
-                ))}
-              </select>
+              <SelectField options={CATEGORY_PRODUCT} {...field} />
             </div>
           )}
         />
 
-        {/* Prevent input e, E, +, - and . to quantity field */}
         <Controller
           name="quantity"
           control={control}
           render={({ field }) => (
             <div>
-              <h3 className="text-sm text-[#7b809a] dark:text-white">
-                Quantity
-              </h3>
-              <input
-                className="product-info-input"
+              <InputField
                 type="number"
-                placeholder="Quantity"
-                onKeyDown={e => {
-                  ["e", "E", "+", "-", "."].includes(e.key) &&
-                    e.preventDefault();
-                }}
+                label="Quantity"
+                onKeyDown={handleQuantityKeyDown}
                 {...field}
               />
+            </div>
+          )}
+        />
+
+        <Controller
+          name="providerName"
+          control={control}
+          render={({ field }) => (
+            <div>
+              <InputField type="text" label="Provider Name" {...field} />
             </div>
           )}
         />

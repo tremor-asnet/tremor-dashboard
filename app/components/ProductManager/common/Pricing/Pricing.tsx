@@ -3,18 +3,18 @@ import { MultiSelect, MultiSelectItem } from "@tremor/react";
 import { Control, Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
-// Types
-import { IPricing } from "@/types";
-
 // Components
-import SelectField from "@/components/ProductManager/common/SelectField/SelectField";
-import FormInputField from "@/components/ProductManager/common/FormInputField/FormInputField";
+import SelectField from "@/components/common/CustomField/SelectField/SelectField";
+import InputField from "@/components/common/CustomField/InputField/InputField";
+
+// Types
+import { NewPricing } from "@/types";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
 
 interface PricingProps {
-  control: Control<IPricing>;
+  control: Control<NewPricing>;
 }
 
 const Pricing = ({ control }: PricingProps) => {
@@ -28,32 +28,21 @@ const Pricing = ({ control }: PricingProps) => {
         name="price"
         control={control}
         render={({ field }) => (
-          <FormInputField label="Price" placeholder="" type="text" {...field} />
+          <InputField label="Price" placeholder="" type="text" {...field} />
         )}
       />
 
       <Controller
         name="currency"
         control={control}
-        render={({ field }) => (
-          <SelectField {...field}>
-            {TYPE_PRICE.map(item => (
-              <option
-                className="dark:bg-primary m-2"
-                key={item.value}
-                value={item.value}>
-                {item.option}
-              </option>
-            ))}
-          </SelectField>
-        )}
+        render={({ field }) => <SelectField options={TYPE_PRICE} {...field} />}
       />
 
       <Controller
         name="sku"
         control={control}
         render={({ field }) => (
-          <FormInputField
+          <InputField
             label="SKU"
             placeholder=""
             type="number"

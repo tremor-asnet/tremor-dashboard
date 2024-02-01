@@ -2,13 +2,13 @@
 import { Control, Controller } from "react-hook-form";
 
 // Components
-import FormInputField from "@/components/ProductManager/common/FormInputField/FormInputField";
+import InputField from "@/components/common/CustomField/InputField/InputField";
 
 // Types
-import { ISocial } from "@/types";
+import { NewSocial } from "@/types";
 
 interface SocialsProps {
-  control: Control<ISocial>;
+  control: Control<NewSocial>;
 }
 
 const Socials = ({ control }: SocialsProps) => (
@@ -17,7 +17,7 @@ const Socials = ({ control }: SocialsProps) => (
       name="shopifyUrl"
       control={control}
       render={({ field }) => (
-        <FormInputField
+        <InputField
           label="Shopify Handle"
           placeholder=""
           type="text"
@@ -30,7 +30,7 @@ const Socials = ({ control }: SocialsProps) => (
       name="facebookUrl"
       control={control}
       render={({ field }) => (
-        <FormInputField
+        <InputField
           label="Facebook Account"
           placeholder=""
           type="text"
@@ -43,7 +43,7 @@ const Socials = ({ control }: SocialsProps) => (
       name="instagramUrl"
       control={control}
       render={({ field }) => (
-        <FormInputField
+        <InputField
           label="Instagram Account"
           placeholder=""
           type="text"

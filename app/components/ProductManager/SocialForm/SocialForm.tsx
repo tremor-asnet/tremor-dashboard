@@ -5,14 +5,14 @@ import { useForm } from "react-hook-form";
 import Socials from "@/components/ProductManager/common/Socials/Socials";
 
 // Types
-import { ISocial } from "@/types";
+import { NewSocial } from "@/types";
 
 interface SocialFormProps {
   shopifyUrl: string;
   facebookUrl: string;
   instagramUrl: string;
   onBack: () => void;
-  onSubmit: (social: ISocial) => void;
+  onSubmit: (social: NewSocial) => void;
 }
 
 const SocialForm = ({
@@ -22,7 +22,7 @@ const SocialForm = ({
   onBack,
   onSubmit,
 }: SocialFormProps) => {
-  const { control, handleSubmit } = useForm<ISocial>({
+  const { control, handleSubmit } = useForm<NewSocial>({
     defaultValues: {
       shopifyUrl,
       facebookUrl,

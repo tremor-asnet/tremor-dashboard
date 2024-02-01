@@ -68,7 +68,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
     },
     {
       key: "count",
-      title: "count",
+      title: "quantity",
       customNode: (_, { products }) => <CustomQuantity quantity={products} />,
     },
     {

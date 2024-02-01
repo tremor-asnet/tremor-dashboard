@@ -19,6 +19,9 @@ import { Product } from "@/types";
 // Helpers
 import { filterProductList, searchProductDataByValue } from "@/helpers";
 
+// Constants
+import { ROUTES } from "@/constants";
+
 type SearchParamsProduct = {
   productName: string;
   isAvailable: string;
@@ -58,7 +61,7 @@ const ProductListPage = async ({
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
         <Link
-          href="new-product"
+          href={ROUTES.NEW_PRODUCT}
           className="uppercase text-xs text-white font-medium dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg">
           new product
         </Link>

@@ -103,6 +103,9 @@ const SignUp = () => {
           rules={{
             required: MESSAGES_ERROR.NAME_REQUIRED,
             minLength: { value: 4, message: MESSAGES_ERROR.NAME_MIN_LENGTH },
+            validate: value => {
+              return !!value.trim() || MESSAGES_ERROR.NAME_REQUIRED;
+            },
           }}
           render={({ field }) => (
             <div className="h-[70px] w-full">
@@ -111,7 +114,6 @@ const SignUp = () => {
                 placeholder="Name"
                 autoFocus
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
-                required
                 {...field}
               />
               {nameErrorMessage && (
@@ -139,7 +141,6 @@ const SignUp = () => {
                 placeholder="Email"
                 type="email"
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
-                required
                 tabIndex={0}
                 {...field}
               />
@@ -167,7 +168,6 @@ const SignUp = () => {
                 placeholder="Password"
                 type="password"
                 className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
-                required
                 tabIndex={1}
                 {...field}
               />

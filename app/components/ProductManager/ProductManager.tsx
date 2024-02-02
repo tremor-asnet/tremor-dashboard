@@ -62,7 +62,6 @@ const ProductManager = () => {
       case 2:
         return (
           <MediaForm
-            image={newProduct.image}
             onBack={onClickBackButton}
             onSubmit={handleSubmitMediaForm}
           />

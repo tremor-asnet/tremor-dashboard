@@ -23,13 +23,18 @@ interface TableProductProps {
   keyword: string;
 }
 
+interface SortItem {
+  key: string;
+  direction: string;
+}
+
 const TableProduct = ({
   products,
   isAvailable,
   keyword,
 }: TableProductProps) => {
-  const [sort, setSort] = useState<{ keyToSort: string; direction: string }>({
-    keyToSort: "product",
+  const [sort, setSort] = useState<SortItem>({
+    key: "",
     direction: "asc",
   });
 
@@ -39,15 +44,24 @@ const TableProduct = ({
 
   // Handle sort by categories
   const handleHeaderClick = (column: ColumnType<Product>) => {
-    setSort({
-      keyToSort: column.key,
+    setSort(prev => ({
+      ...prev,
+      key: column.key,
       direction:
-        column.key === sort.keyToSort
+        column.key === sort.key
           ? sort.direction === "asc"
             ? "desc"
             : "asc"
           : "desc",
-    });
+    }));
+  };
+
+  const getSortedArray = (arrayToSort: Product[], sortKey: keyof Product) => {
+    if (sort.direction === "asc") {
+      return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
+    } else {
+      return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? -1 : 1));
+    }
   };
 
   // Product Table Props
@@ -64,7 +78,7 @@ const TableProduct = ({
       ),
     },
     {
-      key: "product",
+      key: "productName",
       title: "Product",
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
@@ -97,7 +111,7 @@ const TableProduct = ({
 
   return (
     <DataGrid
-      data={products}
+      data={getSortedArray(products, sort.key as keyof Product)}
       columns={columns}
       filterBy={isAvailable}
       keyword={keyword}

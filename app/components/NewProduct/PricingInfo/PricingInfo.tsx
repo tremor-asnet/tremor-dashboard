@@ -57,19 +57,9 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 render={({ field }) => (
-                  // <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6">
-                  //   <SelectField
-                  //     id="usd"
-                  //     placeholder="USD"
-                  //     selectData={TYPE_PRICE}
-                  //   />
-                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6">
-                    <Text className="text-[#7b809a] dark:text-dark-romance">
-                      USD
-                    </Text>
+                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6 pt-5">
                     <SelectField options={TYPE_PRICE} {...field} />
                   </div>
-                  // </div>
                 )}
                 name="currency"
               />

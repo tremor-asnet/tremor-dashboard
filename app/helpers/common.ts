@@ -102,3 +102,15 @@ export const filterProductList = <T>(
   field: string,
   value: boolean,
 ) => data.filter(item => Boolean(getObjectValue(item, field)) === value);
+
+/**
+ * Convert number to array
+ * @param start number
+ * @param end number
+ * @returns [number]
+ */
+
+export const rangeNumber = (start: number, end: number) => {
+  const length = end - start + 1;
+  return Array.from({ length }, (_, idx) => idx + start);
+};

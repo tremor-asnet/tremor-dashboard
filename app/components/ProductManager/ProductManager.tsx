@@ -19,10 +19,12 @@ import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
 // Services
 import { addNewProduct } from "@/services";
+import { LoadingIndicator } from "..";
 
 const ProductManager = () => {
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const [newProduct, setNewProduct] = useState<NewProduct>({
     productName: "",
     description: "",
@@ -44,6 +46,10 @@ const ProductManager = () => {
   const onClickBackButton = () => {
     setCurrentStep(currentStep - 1);
   };
+
+  const spinner = isLoading ? (
+    <LoadingIndicator width={4} height={4} isFullWidth={true} />
+  ) : null;
 
   const formContent = () => {
     switch (currentStep) {
@@ -78,14 +84,17 @@ const ProductManager = () => {
         );
       case 4:
         return (
-          <PricingForm
-            price={newProduct.price}
-            currency={newProduct.currency}
-            sku={newProduct.sku}
-            tags={newProduct.tags}
-            onBack={onClickBackButton}
-            onSubmit={handleSubmitPricingForm}
-          />
+          <>
+            {spinner}
+            <PricingForm
+              price={newProduct.price}
+              currency={newProduct.currency}
+              sku={newProduct.sku}
+              tags={newProduct.tags}
+              onBack={onClickBackButton}
+              onSubmit={handleSubmitPricingForm}
+            />
+          </>
         );
       default:
         return null;
@@ -128,6 +137,7 @@ const ProductManager = () => {
       sku: pricing.sku,
       tags: pricing.tags?.map(Number),
     };
+    setIsLoading(true);
 
     try {
       await addNewProduct(product);
@@ -135,6 +145,8 @@ const ProductManager = () => {
       router.push("product-list");
     } catch (error) {
       // TODO: handle Error here
+    } finally {
+      setIsLoading(false);
     }
   };
 

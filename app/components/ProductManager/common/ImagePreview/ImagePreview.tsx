@@ -13,22 +13,22 @@ interface PreviewImageProps {
 const ImagePreview = ({ imageInfo, width, height }: PreviewImageProps) => {
   const { url, filename } = imageInfo;
 
+  if (!imageInfo.url) {
+    return null;
+  }
+
   return (
-    <>
-      {url ? (
-        <div className="my-4">
-          <p className="text-md font-bold dark:text-white">Preview Image</p>
-          <Image
-            className="max-w-full my-4"
-            src={url}
-            alt="Uploaded image"
-            width={width}
-            height={height}
-          />
-          <p className="dark:text-white">{filename}</p>
-        </div>
-      ) : null}
-    </>
+    <div className="my-4">
+      <p className="text-md font-bold dark:text-white">Preview Image</p>
+      <Image
+        className="max-w-full my-4"
+        src={url}
+        alt="Uploaded image"
+        width={width}
+        height={height}
+      />
+      <p className="dark:text-white">{filename}</p>
+    </div>
   );
 };
 

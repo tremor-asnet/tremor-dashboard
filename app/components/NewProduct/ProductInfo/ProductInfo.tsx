@@ -46,7 +46,7 @@ const ProductInfo = () => {
         Product Information
       </Text>
 
-      <Flex className="items-start gap-5">
+      <Flex flexDirection="col" className="md:flex-row items-start gap-6">
         <Flex flexDirection="col" className="gap-4">
           <Controller
             control={control}

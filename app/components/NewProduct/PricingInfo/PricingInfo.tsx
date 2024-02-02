@@ -5,7 +5,8 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
-import { SelectField, TextField } from "@/components";
+import { TextField } from "@/components";
+import SelectField from "@/components/common/CustomField/SelectField/SelectField";
 
 // Types
 import { SelectOptionData } from "@/types";
@@ -55,14 +56,20 @@ const PricingInfo = () => {
               />
               <Controller
                 control={control}
-                render={({ field: { value, onChange } }) => (
+                render={({ field }) => (
+                  // <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6">
+                  //   <SelectField
+                  //     id="usd"
+                  //     placeholder="USD"
+                  //     selectData={TYPE_PRICE}
+                  //   />
                   <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6">
-                    <SelectField
-                      id="usd"
-                      placeholder="USD"
-                      selectData={TYPE_PRICE}
-                    />
+                    <Text className="text-[#7b809a] dark:text-dark-romance">
+                      USD
+                    </Text>
+                    <SelectField options={TYPE_PRICE} {...field} />
                   </div>
+                  // </div>
                 )}
                 name="currency"
               />

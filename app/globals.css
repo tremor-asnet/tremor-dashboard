@@ -83,10 +83,10 @@
   }
 
   .btn-form-primary {
-    @apply py-2.5 px-6 bg-black dark:bg-[#485976] text-white font-medium text-sm rounded-md cursor-pointer;
+    @apply py-2.5 px-6 bg-black dark:bg-[#485976] text-white font-medium text-sm rounded-md cursor-pointer disabled:opacity-50 disabled:cursor-wait;
   }
 
   .btn-form-secondary {
-    @apply py-2.5 px-6 bg-[#ebeff4] text-black font-medium text-sm rounded-md cursor-pointer;
+    @apply py-2.5 px-6 bg-[#ebeff4] text-black font-medium text-sm rounded-md cursor-pointer disabled:opacity-50 disabled:cursor-wait;
   }
 }

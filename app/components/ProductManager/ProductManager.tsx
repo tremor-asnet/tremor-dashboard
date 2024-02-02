@@ -62,7 +62,6 @@ const ProductManager = () => {
       case 2:
         return (
           <MediaForm
-            image={newProduct.image}
             onBack={onClickBackButton}
             onSubmit={handleSubmitMediaForm}
           />
@@ -106,7 +105,7 @@ const ProductManager = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const handleSubmitMediaForm = (media: IMedia) => {
+  const handleSubmitMediaForm = async (media: IMedia) => {
     setNewProduct({ ...newProduct, image: media.image });
     setCurrentStep(currentStep + 1);
   };

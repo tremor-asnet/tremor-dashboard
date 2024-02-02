@@ -6,14 +6,15 @@ import { IMedia } from "@/types";
 
 interface MediaProps {
   control: Control<IMedia>;
+  handleUploadFile: (file: File) => void;
 }
 
-const Media = ({ control }: MediaProps) => {
+const Media = ({ control, handleUploadFile }: MediaProps) => {
   return (
     <Controller
       name="image"
       control={control}
-      render={({ field }) => (
+      render={() => (
         <div className="flex items-center justify-center w-full">
           <label className="flex flex-col items-center justify-center w-full h-36 border border-gray-300 rounded-lg">
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
@@ -26,7 +27,7 @@ const Media = ({ control }: MediaProps) => {
               type="file"
               className="hidden"
               accept="image/png, image/jpeg, image/webp"
-              {...field}
+              onChange={e => handleUploadFile(e.target.files![0])}
             />
           </label>
         </div>

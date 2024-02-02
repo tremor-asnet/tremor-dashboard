@@ -17,9 +17,11 @@ import { IMedia, NewPricing, NewInfo, NewSocial, NewProduct } from "@/types";
 // Constants
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
+// Components
+import { LoadingIndicator } from "@/components";
+
 // Services
 import { addNewProduct } from "@/services";
-import { LoadingIndicator } from "..";
 
 const ProductManager = () => {
   const router = useRouter();
@@ -47,7 +49,7 @@ const ProductManager = () => {
     setCurrentStep(currentStep - 1);
   };
 
-  const spinner = isLoading ? (
+  const renderLoading = isLoading ? (
     <LoadingIndicator width={4} height={4} isFullWidth={true} />
   ) : null;
 
@@ -85,7 +87,7 @@ const ProductManager = () => {
       case 4:
         return (
           <>
-            {spinner}
+            {renderLoading}
             <PricingForm
               price={newProduct.price}
               currency={newProduct.currency}

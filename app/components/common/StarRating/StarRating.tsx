@@ -1,5 +1,7 @@
 import { Flex } from "@tremor/react";
 
+import { rangeNumber } from "@/helpers";
+
 interface StarRatingProps {
   numberStar?: number;
   isFullRaring?: boolean;
@@ -9,18 +11,13 @@ const StarRating = ({
   numberStar = 5,
   isFullRaring = false,
 }: StarRatingProps) => {
-  const range = (start: number, end: number) => {
-    const length = end - start + 1;
-    return Array.from({ length }, (_, idx) => idx + start);
-  };
-
   const arrayStars = isFullRaring
-    ? range(1, numberStar)
-    : range(1, numberStar - 1);
+    ? rangeNumber(1, numberStar)
+    : rangeNumber(1, numberStar - 1);
 
   return (
     <Flex className="justify-start gap-1">
-      {arrayStars.map(star => (
+      {arrayStars.map((star: number) => (
         <svg
           key={star}
           xmlns="http://www.w3.org/2000/svg"

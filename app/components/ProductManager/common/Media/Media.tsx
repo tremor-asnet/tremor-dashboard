@@ -1,15 +1,22 @@
 // Libs
 import { Control, Controller } from "react-hook-form";
+import { ChangeEvent } from "react";
 
 //Types
 import { IMedia } from "@/types";
 
 interface MediaProps {
   control: Control<IMedia>;
-  handleUploadFile: (file: File) => void;
+  onUpload: (file: File) => void;
 }
 
-const Media = ({ control, handleUploadFile }: MediaProps) => {
+const Media = ({ control, onUpload }: MediaProps) => {
+  const handleUploadFile = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      onUpload(e.target.files[0]);
+    }
+  };
+
   return (
     <Controller
       name="image"
@@ -27,7 +34,7 @@ const Media = ({ control, handleUploadFile }: MediaProps) => {
               type="file"
               className="hidden"
               accept="image/png, image/jpeg, image/webp"
-              onChange={e => handleUploadFile(e.target.files![0])}
+              onChange={handleUploadFile}
             />
           </label>
         </div>

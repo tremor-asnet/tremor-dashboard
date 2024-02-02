@@ -35,7 +35,12 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
   const uploadContent = isUpload ? (
     <p className="my-4 text-md font-bold">Uploading ...</p>
   ) : (
-    <ImagePreview imageInfo={image} width={width} height={height} />
+    <ImagePreview
+      filename={image.filename}
+      url={image.url}
+      width={width}
+      height={height}
+    />
   );
 
   return (
@@ -43,7 +48,7 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Media
       </h6>
-      <Media control={control} handleUploadFile={upload} />
+      <Media control={control} onUpload={upload} />
       {uploadContent}
       <div className="mt-6">
         <input

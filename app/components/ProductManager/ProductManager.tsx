@@ -105,7 +105,7 @@ const ProductManager = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const handleSubmitMediaForm = async (media: IMedia) => {
+  const handleSubmitMediaForm = (media: IMedia) => {
     setNewProduct({ ...newProduct, image: media.image });
     setCurrentStep(currentStep + 1);
   };

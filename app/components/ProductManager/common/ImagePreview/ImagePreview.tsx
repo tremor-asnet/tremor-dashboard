@@ -1,19 +1,15 @@
 // Components
 import Image from "next/image";
 
-// Types
-import { ImageInfo } from "@/types";
-
 interface PreviewImageProps {
+  filename: string;
+  url: string;
   width: number;
   height: number;
-  imageInfo: ImageInfo;
 }
 
-const ImagePreview = ({ imageInfo, width, height }: PreviewImageProps) => {
-  const { url, filename } = imageInfo;
-
-  if (!imageInfo.url) {
+const ImagePreview = ({ filename, url, width, height }: PreviewImageProps) => {
+  if (!url) {
     return null;
   }
 

@@ -22,10 +22,17 @@ const StarRating = ({
   return (
     <Flex className="justify-start gap-2">
       {arrayStars.map((star: number) => (
-        <FaStar key={star} className="text-secondary" size={size} />
+        <FaStar
+          key={star}
+          className="text-secondary dark:text-lighter"
+          size={size}
+        />
       ))}
       {!isFullRaring && (
-        <FaStarHalfAlt className="text-secondary" size={size} />
+        <FaStarHalfAlt
+          className="text-secondary  dark:text-lighter"
+          size={size}
+        />
       )}
     </Flex>
   );

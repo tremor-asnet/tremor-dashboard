@@ -6,6 +6,8 @@ export interface Product {
   isAvailable: boolean;
   providerName: string;
   image: string;
+  description?: string;
+  quantity?: number;
 }
 
 export type TProductInfo = {
@@ -17,6 +19,14 @@ export type TProductInfo = {
   collection?: string;
   price?: string;
   color?: string;
+};
+
+export type TProductInfoDetail = {
+  id: number;
+  productName: string;
+  price: number;
+  description?: string;
+  quantity?: number;
 };
 
 export type TPricingInfo = {

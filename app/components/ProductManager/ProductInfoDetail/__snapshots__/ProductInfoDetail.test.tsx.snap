@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductInfoDetail Testing should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start md:w-[426px]"
+      >
+        <p
+          class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
+        >
+          Minimal Bar Stool
+        </p>
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
+        >
+          <svg
+            class="text-secondary dark:text-lighter"
+            fill="currentColor"
+            height="18"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 576 512"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            />
+          </svg>
+          <svg
+            class="text-secondary dark:text-lighter"
+            fill="currentColor"
+            height="18"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 576 512"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            />
+          </svg>
+          <svg
+            class="text-secondary dark:text-lighter"
+            fill="currentColor"
+            height="18"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 576 512"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            />
+          </svg>
+          <svg
+            class="text-secondary dark:text-lighter"
+            fill="currentColor"
+            height="18"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 576 512"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            />
+          </svg>
+          <svg
+            class="text-secondary  dark:text-lighter"
+            fill="currentColor"
+            height="18"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 536 512"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"
+            />
+          </svg>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
+        >
+          <p
+            class="text-tremor-title font-semibold text-primary dark:text-white"
+          >
+            Price
+          </p>
+          <div
+            class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
+            data-testid="total-price"
+          >
+            $1,419
+          </div>
+        </div>
+        <p
+          class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
+        >
+          In Stock
+        </p>
+        <div
+          class="tremor-Flex-root flex w-full justify-between flex-col items-start mt-10"
+        >
+          <p
+            class="text-tremor-default text-secondary dark:text-lighter mb-4"
+          >
+            Description
+          </p>
+          <ul
+            class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
+          >
+            <li>
+              The most beautiful curves of this swivel stool adds an elegant touch to any environment
+            </li>
+            <li>
+              Memory swivel seat returns to original seat position
+            </li>
+            <li>
+              Comfortable integrated layered chair seat cushion design
+            </li>
+            <li>
+              Fully assembled! No assembly required
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"
+        >
+          <div
+            class="relative w-full"
+          >
+            <label
+              class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
+            >
+              Quantity
+            </label>
+            <input
+              class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+              placeholder="Quantity"
+              type="number"
+              value="50"
+            />
+          </div>
+        </div>
+        <a
+          class="rounded-lg uppercase font-bold text-xs text-white dark:text-white py-3 px-5 mt-7 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white"
+          href="#"
+        >
+          Edit Product
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start md:w-[426px]"
+    >
+      <p
+        class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
+      >
+        Minimal Bar Stool
+      </p>
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
+      >
+        <svg
+          class="text-secondary dark:text-lighter"
+          fill="currentColor"
+          height="18"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 576 512"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+          />
+        </svg>
+        <svg
+          class="text-secondary dark:text-lighter"
+          fill="currentColor"
+          height="18"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 576 512"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+          />
+        </svg>
+        <svg
+          class="text-secondary dark:text-lighter"
+          fill="currentColor"
+          height="18"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 576 512"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+          />
+        </svg>
+        <svg
+          class="text-secondary dark:text-lighter"
+          fill="currentColor"
+          height="18"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 576 512"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+          />
+        </svg>
+        <svg
+          class="text-secondary  dark:text-lighter"
+          fill="currentColor"
+          height="18"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 536 512"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"
+          />
+        </svg>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
+      >
+        <p
+          class="text-tremor-title font-semibold text-primary dark:text-white"
+        >
+          Price
+        </p>
+        <div
+          class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
+          data-testid="total-price"
+        >
+          $1,419
+        </div>
+      </div>
+      <p
+        class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
+      >
+        In Stock
+      </p>
+      <div
+        class="tremor-Flex-root flex w-full justify-between flex-col items-start mt-10"
+      >
+        <p
+          class="text-tremor-default text-secondary dark:text-lighter mb-4"
+        >
+          Description
+        </p>
+        <ul
+          class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
+        >
+          <li>
+            The most beautiful curves of this swivel stool adds an elegant touch to any environment
+          </li>
+          <li>
+            Memory swivel seat returns to original seat position
+          </li>
+          <li>
+            Comfortable integrated layered chair seat cushion design
+          </li>
+          <li>
+            Fully assembled! No assembly required
+          </li>
+        </ul>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"
+      >
+        <div
+          class="relative w-full"
+        >
+          <label
+            class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
+          >
+            Quantity
+          </label>
+          <input
+            class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+            placeholder="Quantity"
+            type="number"
+            value="50"
+          />
+        </div>
+      </div>
+      <a
+        class="rounded-lg uppercase font-bold text-xs text-white dark:text-white py-3 px-5 mt-7 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white"
+        href="#"
+      >
+        Edit Product
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

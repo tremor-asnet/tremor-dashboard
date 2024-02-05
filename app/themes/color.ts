@@ -4,6 +4,7 @@ export const color = {
   secondary: "#7b809a",
   seldom: "#1a73e8",
   few: "#4caf50",
+  fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",

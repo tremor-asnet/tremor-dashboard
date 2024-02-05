@@ -41,3 +41,4 @@ export { default as DataGrid } from "./common/DataGrid/DataGrid";
 export { default as DataGridHeader } from "./common/DataGrid/DataGridHeader/DataGridHeader";
 export { default as DataGridBody } from "./common/DataGrid/DataGridBody/DataGridBody";
 export { default as StarRating } from "./common/StarRating/StarRating";
+export { default as ProductInfoDetail } from "./ProductManager/ProductInfoDetail/ProductInfoDetail";

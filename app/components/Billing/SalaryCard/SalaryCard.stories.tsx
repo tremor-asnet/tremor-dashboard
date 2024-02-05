@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { LuLandmark } from "react-icons/lu";
 
 // Components
 import SalaryCard from "./SalaryCard";
@@ -18,9 +17,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SalaryCardDefault: Story = {
-  render: () => <SalaryCard salaryData={mockSalaryData[0]} />,
+  render: () => <SalaryCard aggregation={mockSalaryData[0]} />,
 };
 
 export const SalaryCardPaypal: Story = {
-  render: () => <SalaryCard salaryData={mockSalaryData[1]} />,
+  render: () => <SalaryCard aggregation={mockSalaryData[1]} />,
 };

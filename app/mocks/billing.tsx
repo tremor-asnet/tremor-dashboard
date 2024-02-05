@@ -1,17 +1,13 @@
-import { GrPaypal } from "react-icons/gr";
+// Constants
+import { AGGREGATION_TYPE } from "@/constants";
 
 export const mockSalaryData = [
   {
-    id: "1",
-    title: "Paypal",
-    description: "Freelance Payment",
-    price: 45500,
-    icon: <GrPaypal color="white" size="18px" />,
+    type: AGGREGATION_TYPE.PAYPAL,
+    value: 45500,
   },
   {
-    id: "2",
-    title: "Salary",
-    description: "Belong Interactive",
-    price: 2000,
+    type: AGGREGATION_TYPE.SALARY,
+    value: 2000,
   },
 ];

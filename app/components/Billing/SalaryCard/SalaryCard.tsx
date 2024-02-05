@@ -1,6 +1,6 @@
 //Libs
-import { ReactNode } from "react";
 import { LuLandmark } from "react-icons/lu";
+import { GrPaypal } from "react-icons/gr";
 import { Card, Text, Flex } from "@tremor/react";
 
 //Components
@@ -10,28 +10,32 @@ import { IconBox } from "@/components";
 import { formattedNumber } from "@/helpers";
 
 // Constants
-import { CURRENCY } from "@/constants";
+import {
+  CURRENCY,
+  AGGREGATION_TYPE,
+  AGGREGATION_DESCRIPTION,
+} from "@/constants";
+
+interface SalaryCardData {
+  value: number;
+  type: AGGREGATION_TYPE;
+}
 
 interface SalaryCardDataProps {
-  id: string;
-  price: number;
-  title: string;
-  description: string;
-  icon?: ReactNode;
+  aggregation: SalaryCardData;
 }
 
-interface SalaryCardProps {
-  salaryData: SalaryCardDataProps;
-}
-
-const SalaryCard = ({ salaryData }: SalaryCardProps): JSX.Element => {
-  const {
-    title,
-    description = "Belong Interactive",
-    price,
-    icon = <LuLandmark color="white" size="20px" />,
-  } = salaryData;
-  const isSalary = title === "Paypay";
+const SalaryCard = ({ aggregation }: SalaryCardDataProps): JSX.Element => {
+  const { type = aggregation.type, value = aggregation.value } = aggregation;
+  const isSalary = type === AGGREGATION_TYPE.SALARY;
+  const description = isSalary
+    ? AGGREGATION_DESCRIPTION.SALARY
+    : AGGREGATION_DESCRIPTION.PAYPAL;
+  const icon = isSalary ? (
+    <LuLandmark color="white" size="20px" />
+  ) : (
+    <GrPaypal color="white" size="18px" />
+  );
 
   return (
     <div className="font-primary antialiased items-center justify-between py-1">
@@ -41,7 +45,7 @@ const SalaryCard = ({ salaryData }: SalaryCardProps): JSX.Element => {
             <IconBox className="shadow-box-icon-primary" icon={icon} />
             <Flex className="flex-col mt-4 mb-1">
               <Text className="mb-1 text-primary dark:text-lighter text-tremor-title leading-[33px] tracking-[0.1764px] font-semibold">
-                {title}
+                {type}
               </Text>
               <Text className="text-xs dark:text-dark-romance text-primary font-light">
                 {description}
@@ -57,7 +61,7 @@ const SalaryCard = ({ salaryData }: SalaryCardProps): JSX.Element => {
             )}
             <Text className="text-primary text-xl dark:text-lighter font-semibold">
               {formattedNumber({
-                value: price,
+                value: value,
                 currency: CURRENCY.DOLLAR,
               })}
             </Text>

@@ -20,6 +20,7 @@ interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
+  isSort?: string;
   filterBy: string;
   keyword: string;
   onHeaderClick: (column: ColumnType<T>) => void;
@@ -29,6 +30,7 @@ const DataGrid = <T,>({
   data,
   columns,
   pageSize = 10,
+  isSort,
   filterBy,
   keyword,
   onHeaderClick,
@@ -40,7 +42,7 @@ const DataGrid = <T,>({
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
     return data.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage]);
+  }, [currentPage, data, pageSize]);
 
   useEffect(() => {
     setLoading(true);
@@ -67,7 +69,11 @@ const DataGrid = <T,>({
     <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
-          <DataGridHeader columns={columns} onHeaderClick={onHeaderClick} />
+          <DataGridHeader
+            columns={columns}
+            onHeaderClick={onHeaderClick}
+            isSort={isSort}
+          />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
         <Pagination

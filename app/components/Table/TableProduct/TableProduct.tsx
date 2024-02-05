@@ -113,6 +113,7 @@ const TableProduct = ({
     <DataGrid
       data={getSortedArray(products, sort.key as keyof Product)}
       columns={columns}
+      isSort={sort.direction}
       filterBy={isAvailable}
       keyword={keyword}
       onHeaderClick={handleHeaderClick}

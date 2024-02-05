@@ -82,7 +82,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
         <p
           class="text-sm font-semibold text-[#F44335]"
         >
-          - $ 2500
+          - $ 2,500
         </p>
       </div>
       <div
@@ -125,7 +125,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
         <p
           class="text-sm font-semibold text-[#4CAF50]"
         >
-          + $ 2000
+          + $ 2,000
         </p>
       </div>
     </ul>
@@ -218,7 +218,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
         <p
           class="text-sm font-semibold text-[#4CAF50]"
         >
-          + $ 1000
+          + $ 1,000
         </p>
       </div>
       <div
@@ -261,7 +261,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
         <p
           class="text-sm font-semibold text-[#4CAF50]"
         >
-          + $ 2500
+          + $ 2,500
         </p>
       </div>
       <div

@@ -2,11 +2,11 @@
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
-import { Button, Col, Grid, Text } from "@tremor/react";
+import { Button, Col, Flex, Grid, Text } from "@tremor/react";
 const ProductImage = dynamic(
   () => import("../EditProduct/ProductImage/ProductImage"),
 );
@@ -17,7 +17,7 @@ const ProductInfo = dynamic(
 const PricingInfo = dynamic(
   () => import("../EditProduct/ProductPricing/PricingInfo"),
 );
-import { Toast } from "@/components";
+import { LoadingIndicator, Toast } from "@/components";
 import { FaCheckCircle } from "react-icons/fa";
 import { TbExclamationMark } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
@@ -56,6 +56,7 @@ const EditProductForm = ({
   } = productData;
 
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
   const [toastMsgController, setToastMsgController] = useState<{
     isOpen: boolean;
     message: string;
@@ -67,6 +68,18 @@ const EditProductForm = ({
     icon: null,
     color: "green",
   });
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setToastMsgController({
+        isOpen: false,
+        message: "",
+        icon: null,
+        color: "green",
+      });
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [toastMsgController.isOpen]);
 
   const formHandler = useForm<ProductData>({
     defaultValues: {
@@ -87,7 +100,7 @@ const EditProductForm = ({
     },
   });
 
-  const { handleSubmit, formState } = formHandler;
+  const { handleSubmit, formState, reset } = formHandler;
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -109,7 +122,15 @@ const EditProductForm = ({
         color: "yellow",
       });
 
+      setIsLoading(true);
+
       await editProduct(id, newData);
+
+      reset(data);
+
+      setIsLoading(false);
+
+      router.refresh();
 
       setToastMsgController({
         isOpen: true,
@@ -117,8 +138,6 @@ const EditProductForm = ({
         icon: <FaCheckCircle />,
         color: "green",
       });
-
-      router.refresh();
     } catch (err: any) {
       setToastMsgController({
         isOpen: true,
@@ -140,6 +159,23 @@ const EditProductForm = ({
 
   return (
     <>
+      {isLoading && (
+        <>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black cursor-not-allowed" />
+          <Flex className="grow w-full items-center justify-center">
+            <Flex
+              flexDirection="col"
+              className="grow w-full h-full items-center">
+              <LoadingIndicator
+                width={16}
+                height={16}
+                fillColor="river-bed-500"
+              />
+              <h2 className="mt-2 text-gray-400">Updating Product...</h2>
+            </Flex>
+          </Flex>
+        </>
+      )}
       {toastMsgController.isOpen && (
         <div className="flex justify-center fixed right-5 bottom-50">
           <Toast

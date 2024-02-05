@@ -43,27 +43,9 @@ export type TEditProduct = {
   instagramUrl: string;
 };
 
-export interface NewProduct {
-  productName: string;
-  description: string;
-  weight: number;
-  category: number;
-  quantity: number;
-  price: number;
-  isAvailable: true;
-  providerName: string;
-  image: string;
-  currency: number;
-  sku: string;
-  tags: number[];
-  shopifyUrl: string;
-  facebookUrl: string;
-  instagramUrl: string;
-}
-
 export interface NewInfo
   extends Pick<
-    NewProduct,
+    ProductData,
     | "productName"
     | "description"
     | "providerName"
@@ -73,22 +55,23 @@ export interface NewInfo
   > {}
 
 export interface NewSocial
-  extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
+  extends Pick<ProductData, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
 
 export interface NewPricing
-  extends Pick<NewProduct, "price" | "currency" | "sku"> {
+  extends Pick<ProductData, "price" | "currency" | "sku"> {
   tags: string[];
 }
 
-export interface EditProductData {
+export interface ProductData {
   productName: string;
-  price: string;
+  price: number;
   tags: number[];
+  providerName: string;
   shopifyUrl: string;
   facebookUrl: string;
   instagramUrl: string;
-  quantity: string;
-  weight: string;
+  quantity: number;
+  weight: number;
   category: number;
   description: string;
   image: string;

@@ -5,30 +5,33 @@ import { BsExclamationLg } from "react-icons/bs";
 // Helpers
 import { formattedNumber } from "@/helpers";
 
+// Constants
+import { TRANSACTION_COLOR } from "@/constants/colors";
+
 export const getContentByProps = (
   status: number,
   type: number,
   amount: number,
 ) => {
-  const formattedAmmount = formattedNumber({ value: amount });
+  const formattedAmount = formattedNumber({ value: amount });
   if (status === 0)
     return {
-      color: "#5d6c85",
-      classes: "text-[#5d6c85] border-[#5d6c85]",
+      color: `${TRANSACTION_COLOR.PENDING}`,
+      classes: `text-[${TRANSACTION_COLOR.PENDING}] border-[${TRANSACTION_COLOR.PENDING}]`,
       icon: <BsExclamationLg />,
       value: "Pending",
     };
   return type === 0
     ? {
-        color: "#4CAF50",
-        classes: "text-[#4CAF50] border-[#4CAF50]",
+        color: `${TRANSACTION_COLOR.INCREASE}`,
+        classes: `text-[${TRANSACTION_COLOR.INCREASE}] border-[${TRANSACTION_COLOR.INCREASE}]`,
         icon: <BiChevronUp />,
-        value: `+ $ ${formattedAmmount}`,
+        value: `+ $ ${formattedAmount}`,
       }
     : {
-        color: "#F44335",
-        classes: "text-[#F44335] border-[#F44335]",
+        color: `${TRANSACTION_COLOR.DECREASE}`,
+        classes: `text-[${TRANSACTION_COLOR.DECREASE}] border-[${TRANSACTION_COLOR.DECREASE}]`,
         icon: <BiChevronDown />,
-        value: `- $ ${formattedAmmount}`,
+        value: `- $ ${formattedAmount}`,
       };
 };

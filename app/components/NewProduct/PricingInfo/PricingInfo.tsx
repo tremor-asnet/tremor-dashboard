@@ -5,7 +5,8 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
-import { SelectField, TextField } from "@/components";
+import { TextField } from "@/components";
+import SelectField from "@/components/common/CustomField/SelectField/SelectField";
 
 // Types
 import { SelectOptionData } from "@/types";
@@ -40,7 +41,7 @@ const PricingInfo = () => {
                   pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
                 }}
                 render={({ field }) => (
-                  <div className="h-[70px] w-full md:max-w-[25%]">
+                  <div className="h-[70px] w-full md:max-w-[25%] mt-6">
                     <TextField
                       id="price"
                       label="Price"
@@ -55,13 +56,9 @@ const PricingInfo = () => {
               />
               <Controller
                 control={control}
-                render={({ field: { value, onChange } }) => (
-                  <div className="h-[70px] mx-6 w-full md:max-w-[30%]">
-                    <SelectField
-                      id="usd"
-                      placeholder="USD"
-                      selectData={TYPE_PRICE}
-                    />
+                render={({ field }) => (
+                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mt-6 pt-5">
+                    <SelectField options={TYPE_PRICE} {...field} />
                   </div>
                 )}
                 name="currency"
@@ -69,7 +66,7 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 render={({ field }) => (
-                  <div className="h-[70px] w-full">
+                  <div className="h-[70px] w-full mt-6">
                     <TextField
                       id="sku"
                       label="SKU"

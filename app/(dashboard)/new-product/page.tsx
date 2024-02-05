@@ -1,8 +1,5 @@
 // Components
-import ProductInfoDetail from "@/components/ProductManager/ProductInfoDetail/ProductInfoDetail";
-
-//Mocks
-import { mockProductInfoDetail } from "@/mocks";
+import ProductManager from "@/components/ProductManager/ProductManager";
 
 const AddProductPage = () => {
   return (
@@ -16,7 +13,7 @@ const AddProductPage = () => {
           This information will describe more about the product.
         </p>
       </div>
-      <ProductInfoDetail product={mockProductInfoDetail} />
+      <ProductManager />
     </div>
   );
 };

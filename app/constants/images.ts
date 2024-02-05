@@ -22,5 +22,5 @@ export const METADATA = {
 };
 
 export const PRODUCT = {
-  PRODUCT_DETAIL: "/assets/images/products/product-details.jpg",
+  DETAIL: "/assets/images/products/product-details.jpg",
 };

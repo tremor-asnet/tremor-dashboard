@@ -2,11 +2,6 @@
 
 exports[`Testing BillingInfo component Should match snapshot 1`] = `
 <div>
-  <b
-    class="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]"
-  >
-    Billing Information
-  </b>
   <div
     class="tremor-Flex-root flex w-full flex-col justify-between items-start bg-greyish mt-4 rounded-lg p-6 dark:bg-dark-tremor-primary"
   >

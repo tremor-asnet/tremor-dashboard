@@ -23,7 +23,7 @@ const ProductDetail = async ({ params }: { params: { id: number } }) => {
           <Flex>
             <CustomImage
               className="rounded-lg"
-              src={PRODUCT.PRODUCT_DETAIL}
+              src={PRODUCT.DETAIL}
               width={1424}
               height={950}
               alt="product-detail"

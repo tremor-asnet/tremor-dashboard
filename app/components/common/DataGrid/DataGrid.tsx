@@ -22,6 +22,9 @@ interface DataTableProps<T> {
   pageSize?: number;
   filterBy: string;
   keyword: string;
+  className?: string;
+  hasShowPagination?: boolean;
+  hasSort?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -30,6 +33,9 @@ const DataGrid = <T,>({
   pageSize = 10,
   filterBy,
   keyword,
+  className = "",
+  hasShowPagination = true,
+  hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -62,18 +68,21 @@ const DataGrid = <T,>({
   }
 
   return (
-    <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
+    <Card
+      className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
-          <DataGridHeader columns={columns} />
+          <DataGridHeader columns={columns} hasSort={hasSort} />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
-        <Pagination
-          currentPage={currentPage}
-          pageSize={pageSize}
-          totalCount={data.length}
-          onPageChange={setCurrentPage}
-        />
+        {hasShowPagination && (
+          <Pagination
+            currentPage={currentPage}
+            pageSize={pageSize}
+            totalCount={data.length}
+            onPageChange={setCurrentPage}
+          />
+        )}
       </div>
     </Card>
   );

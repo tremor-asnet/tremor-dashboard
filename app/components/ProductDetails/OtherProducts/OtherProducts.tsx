@@ -22,12 +22,18 @@ interface OtherProductsProps {
   products: Product[];
   isAvailable: string;
   keyword: string;
+  className?: string;
+  hasShowPagination?: boolean;
+  hasSort?: boolean;
 }
 
 const OtherProducts = ({
   products,
   isAvailable,
   keyword,
+  className = "",
+  hasShowPagination = true,
+  hasSort = true,
 }: OtherProductsProps) => {
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
@@ -84,6 +90,9 @@ const OtherProducts = ({
       columns={columns}
       filterBy={isAvailable}
       keyword={keyword}
+      className={className}
+      hasShowPagination={hasShowPagination}
+      hasSort={hasSort}
     />
   );
 };

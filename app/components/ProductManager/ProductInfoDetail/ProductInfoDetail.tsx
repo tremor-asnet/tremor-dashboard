@@ -69,11 +69,6 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
           defaultValue={quantity}
         />
       </Flex>
-      <Link
-        href="#"
-        className="rounded-lg uppercase font-bold text-xs text-white dark:text-white py-3 px-5 mt-7 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white">
-        Edit Product
-      </Link>
     </Flex>
   );
 };

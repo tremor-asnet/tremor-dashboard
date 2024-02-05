@@ -4,14 +4,26 @@ import { Button, Flex } from "@tremor/react";
 // Icons
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
+// Types
+import { SortItem } from "../Table/TableProduct/TableProduct";
+
 export interface HeaderCellContentsProps {
   title: string;
-  isSort?: string;
+  sortItem?: SortItem;
+  keyColumn?: string;
 }
 
-const HeaderCellContents = ({ title, isSort }: HeaderCellContentsProps) => {
-  const isFillUp = isSort === "asc" ? "text-secondary" : "";
-  const isFillDown = isSort === "desc" ? "text-secondary" : "";
+const HeaderCellContents = ({
+  title,
+  sortItem = { direction: "", key: "" },
+  keyColumn,
+}: HeaderCellContentsProps) => {
+  const { direction, key } = sortItem as SortItem;
+
+  const isFillUp = direction === "asc" && key === keyColumn ? "text-test" : "";
+
+  const isFillDown =
+    direction === "desc" && key === keyColumn ? "text-test" : "";
 
   return (
     <Flex>

@@ -23,7 +23,7 @@ interface TableProductProps {
   keyword: string;
 }
 
-interface SortItem {
+export interface SortItem {
   key: string;
   direction: string;
 }
@@ -118,7 +118,7 @@ const TableProduct = ({
     <DataGrid
       data={getSortedArray(products, sort.key as keyof Product)}
       columns={columns}
-      isSort={sort.direction}
+      sortItem={sort}
       filterBy={isAvailable}
       keyword={keyword}
       onHeaderClick={handleHeaderClick}

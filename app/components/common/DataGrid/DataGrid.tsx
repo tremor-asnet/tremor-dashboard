@@ -12,6 +12,7 @@ import {
 
 // Types
 import { ColumnType } from "@/types";
+import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 
 // Hooks
 import { useEffect, useMemo, useState } from "react";
@@ -20,7 +21,7 @@ interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
-  isSort?: string;
+  sortItem?: SortItem;
   filterBy: string;
   keyword: string;
   onHeaderClick: (column: ColumnType<T>) => void;
@@ -30,7 +31,7 @@ const DataGrid = <T,>({
   data,
   columns,
   pageSize = 10,
-  isSort,
+  sortItem,
   filterBy,
   keyword,
   onHeaderClick,
@@ -77,7 +78,7 @@ const DataGrid = <T,>({
           <DataGridHeader
             columns={columns}
             onHeaderClick={onHeaderClick}
-            isSort={isSort}
+            sortItem={sortItem}
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>

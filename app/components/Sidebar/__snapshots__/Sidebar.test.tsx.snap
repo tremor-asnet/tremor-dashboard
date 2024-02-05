@@ -207,6 +207,23 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           >
             <a
               class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/billing"
+            >
+              <span>
+                B
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Billing
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/product-details"
             >
               <span>
@@ -418,6 +435,23 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="xl:hidden pl-2"
             >
               Product List
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/billing"
+          >
+            <span>
+              B
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Billing
             </span>
           </a>
         </li>

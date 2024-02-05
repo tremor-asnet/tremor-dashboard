@@ -7,3 +7,4 @@ export * from "./sales";
 export * from "./table-list";
 export * from "./orders";
 export * from "./product";
+export * from "./billing";

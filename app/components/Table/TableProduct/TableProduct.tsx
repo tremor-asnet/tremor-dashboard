@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 // Components
 import {
@@ -44,25 +44,30 @@ const TableProduct = ({
 
   // Handle sort by categories
   const handleHeaderClick = (column: ColumnType<Product>) => {
+    const direction =
+      column.key === sort.key
+        ? sort.direction === "asc"
+          ? "desc"
+          : "asc"
+        : "desc";
+
     setSort(prev => ({
       ...prev,
       key: column.key,
-      direction:
-        column.key === sort.key
-          ? sort.direction === "asc"
-            ? "desc"
-            : "asc"
-          : "desc",
+      direction,
     }));
   };
 
-  const getSortedArray = (arrayToSort: Product[], sortKey: keyof Product) => {
-    if (sort.direction === "asc") {
-      return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
-    } else {
-      return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? -1 : 1));
-    }
-  };
+  const getSortedArray = useMemo(
+    () => (arrayToSort: Product[], sortKey: keyof Product) => {
+      if (sort.direction === "asc") {
+        return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
+      } else {
+        return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? -1 : 1));
+      }
+    },
+    [sort.direction],
+  );
 
   // Product Table Props
   const columns: ColumnType<Product>[] = [

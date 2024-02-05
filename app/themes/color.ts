@@ -241,7 +241,7 @@ export const boxShadow = {
   "box-header-sticky":
     "rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   "line-chart":
-    "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)",
+    "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)",
   "item-pagination":
     "0rem 0.1875rem 0.1875rem 0rem rgba(52, 71, 103, 0.15),0rem 0.1875rem 0.0625rem -0.125rem rgba(52, 71, 103, 0.2),0rem 0.0625rem 0.3125rem 0rem rgba(52, 71, 103, 0.15)",
   // dark
@@ -254,7 +254,8 @@ export const boxShadow = {
     "rgba(52, 71, 103, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   "select-option":
     "rgba(0, 0, 0, 0.14) 0rem 0.125rem 0.125rem 0rem, rgba(0, 0, 0, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(0, 0, 0, 0.12) 0rem 0.0625rem 0.3125rem 0rem",
-
+  "main-content":
+    "rgba(0,0,0,0.14)_0rem_0.125rem_0.125rem_0rem,rgba(0,0,0,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(0,0,0,0.12)_0rem_0.0625rem_0.3125rem_0rem",
   dark: {
     "item-pagination":
       "rgba(52, 71, 103, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(52, 71, 103, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(52, 71, 103, 0.15) 0rem 0.0625rem 0.3125rem 0rem",

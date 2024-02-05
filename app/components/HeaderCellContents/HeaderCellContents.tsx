@@ -10,8 +10,8 @@ export interface HeaderCellContentsProps {
 }
 
 const HeaderCellContents = ({ title, isSort }: HeaderCellContentsProps) => {
-  const isFillUp = isSort === "asc" ? "text-few" : "";
-  const isFillDown = isSort === "desc" ? "text-few" : "";
+  const isFillUp = isSort === "asc" ? "text-secondary" : "";
+  const isFillDown = isSort === "desc" ? "text-secondary" : "";
 
   return (
     <Flex>

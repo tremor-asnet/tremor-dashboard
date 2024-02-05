@@ -17,7 +17,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
         >
           <svg
-            class="text-secondary"
+            class="text-secondary dark:text-lighter"
             fill="currentColor"
             height="18"
             stroke="currentColor"
@@ -31,7 +31,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             />
           </svg>
           <svg
-            class="text-secondary"
+            class="text-secondary dark:text-lighter"
             fill="currentColor"
             height="18"
             stroke="currentColor"
@@ -45,7 +45,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             />
           </svg>
           <svg
-            class="text-secondary"
+            class="text-secondary dark:text-lighter"
             fill="currentColor"
             height="18"
             stroke="currentColor"
@@ -59,7 +59,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             />
           </svg>
           <svg
-            class="text-secondary"
+            class="text-secondary dark:text-lighter"
             fill="currentColor"
             height="18"
             stroke="currentColor"
@@ -73,7 +73,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             />
           </svg>
           <svg
-            class="text-secondary"
+            class="text-secondary  dark:text-lighter"
             fill="currentColor"
             height="18"
             stroke="currentColor"
@@ -91,7 +91,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
         >
           <p
-            class="text-tremor-title font-semibold text-primary dark:text-dark-romance"
+            class="text-tremor-title font-semibold text-primary dark:text-white"
           >
             Price
           </p>
@@ -103,7 +103,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-tremor-default dark:text-dark-tremor-content p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase"
+          class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
         >
           In Stock
         </p>
@@ -116,7 +116,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             Description
           </p>
           <ul
-            class="text-secondary pl-6 list-outside list-disc text-tremor-title"
+            class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
           >
             <li>
               The most beautiful curves of this swivel stool adds an elegant touch to any environment
@@ -138,17 +138,17 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           <div
             class="relative w-full"
           >
+            <label
+              class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
+            >
+              Quantity
+            </label>
             <input
               class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
               placeholder="Quantity"
               type="number"
               value="50"
             />
-            <label
-              class="after:content[''] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-gray-500 after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-xs peer-focus:leading-tight peer-focus:text-black dark:peer-focus:text-white peer-focus:after:scale-x-100 peer-focus:after:border-primary dark:peer-focus:after:border-white peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
-            >
-              Quantity
-            </label>
           </div>
         </div>
         <a
@@ -173,7 +173,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
       >
         <svg
-          class="text-secondary"
+          class="text-secondary dark:text-lighter"
           fill="currentColor"
           height="18"
           stroke="currentColor"
@@ -187,7 +187,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           />
         </svg>
         <svg
-          class="text-secondary"
+          class="text-secondary dark:text-lighter"
           fill="currentColor"
           height="18"
           stroke="currentColor"
@@ -201,7 +201,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           />
         </svg>
         <svg
-          class="text-secondary"
+          class="text-secondary dark:text-lighter"
           fill="currentColor"
           height="18"
           stroke="currentColor"
@@ -215,7 +215,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           />
         </svg>
         <svg
-          class="text-secondary"
+          class="text-secondary dark:text-lighter"
           fill="currentColor"
           height="18"
           stroke="currentColor"
@@ -229,7 +229,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           />
         </svg>
         <svg
-          class="text-secondary"
+          class="text-secondary  dark:text-lighter"
           fill="currentColor"
           height="18"
           stroke="currentColor"
@@ -247,7 +247,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
       >
         <p
-          class="text-tremor-title font-semibold text-primary dark:text-dark-romance"
+          class="text-tremor-title font-semibold text-primary dark:text-white"
         >
           Price
         </p>
@@ -259,7 +259,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         </div>
       </div>
       <p
-        class="text-tremor-default dark:text-dark-tremor-content p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase"
+        class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
       >
         In Stock
       </p>
@@ -272,7 +272,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           Description
         </p>
         <ul
-          class="text-secondary pl-6 list-outside list-disc text-tremor-title"
+          class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
         >
           <li>
             The most beautiful curves of this swivel stool adds an elegant touch to any environment
@@ -294,17 +294,17 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         <div
           class="relative w-full"
         >
+          <label
+            class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
+          >
+            Quantity
+          </label>
           <input
             class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
             placeholder="Quantity"
             type="number"
             value="50"
           />
-          <label
-            class="after:content[''] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-gray-500 after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-gray-500 peer-focus:text-xs peer-focus:leading-tight peer-focus:text-black dark:peer-focus:text-white peer-focus:after:scale-x-100 peer-focus:after:border-primary dark:peer-focus:after:border-white peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
-          >
-            Quantity
-          </label>
         </div>
       </div>
       <a

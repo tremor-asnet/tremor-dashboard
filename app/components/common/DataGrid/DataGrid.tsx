@@ -38,11 +38,16 @@ const DataGrid = <T,>({
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
-  const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * pageSize;
-    const lastPageIndex = firstPageIndex + pageSize;
-    return data.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, data, pageSize]);
+  // const currentTableData = useMemo(() => {
+  //   const firstPageIndex = (currentPage - 1) * pageSize;
+  //   const lastPageIndex = firstPageIndex + pageSize;
+  //   return data.slice(firstPageIndex, lastPageIndex);
+  // }, [currentPage]);
+
+  // FIXME: Check later
+  const firstPageIndex = (currentPage - 1) * pageSize;
+  const lastPageIndex = firstPageIndex + pageSize;
+  const currentTableData = data.slice(firstPageIndex, lastPageIndex);
 
   useEffect(() => {
     setLoading(true);

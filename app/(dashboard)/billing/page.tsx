@@ -3,14 +3,13 @@ import { Bold, Flex } from "@tremor/react";
 // Components
 import Invoices from "@/components/Invoices/Invoices";
 import BillingInfo from "@/components/OrderDetails/BillingInfo/BillingInfo";
-
+import BillingCard from "@/components/Billing/BillingCard/BillingCard";
+import SalaryCard from "@/components/Billing/SalaryCard/SalaryCard";
+import Transactions from "@/components/Transaction/Transactions";
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";
 import { mockBilling } from "@/mocks/orderDetails";
-import BillingCard from "@/components/Billing/BillingCard/BillingCard";
-import SalaryCard from "@/components/Billing/SalaryCard/SalaryCard";
 import { mockSalaryData } from "@/mocks";
-import Transactions from "@/components/Transaction/Transactions";
 import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
 export const metadata = {

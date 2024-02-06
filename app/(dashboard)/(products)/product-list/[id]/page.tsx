@@ -19,8 +19,8 @@ const ProductDetail = async ({ params }: { params: { id: number } }) => {
   const productListData: Product[] = await getProducts();
 
   return (
-    <div className="opacity-100 bg-secondary dark:bg-dark_blue text-primary rounded-xl p-6 shadow-box-icon-default dark:shadow-main-content">
-      <Bold className="text-primary text-tremor-primary dark:text-white">
+    <div className="opacity-100 mt-1 bg-secondary dark:bg-dark_blue text-primary rounded-xl p-6 shadow-box-icon-default dark:shadow-main-content">
+      <Bold className="text-primary text-tremor-primary font-semibold  dark:text-white">
         Product Details
       </Bold>
       <div className="pt-6">
@@ -38,17 +38,25 @@ const ProductDetail = async ({ params }: { params: { id: number } }) => {
             <ProductInfoDetail product={productData} />
             <Link
               href={`${ROUTES.PRODUCT_LIST}/${params.id}/edit-product`}
-              className="rounded-lg uppercase font-bold text-xs text-white dark:text-white py-3 px-5 mt-7 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white">
+              className="rounded-lg uppercase font-bold text-xs text-white dark:text-white dark:bg-gradient-pickled py-3 px-5 mt-8 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white w-full lg:w-auto text-center">
               Edit Product
             </Link>
           </Flex>
         </Flex>
         <div className="mt-16 mb-4 dark:text-white">
-          <OtherProducts
-            products={productListData.slice(0, 5)}
-            isAvailable="isAvailable"
-            keyword="productName"
-          />
+          <Bold className="text-primary text-tremor-primary font-semibold dark:text-white">
+            Other Products
+          </Bold>
+          <div className="mt-2">
+            <OtherProducts
+              products={productListData.slice(0, 5)}
+              isAvailable="isAvailable"
+              keyword="productName"
+              className="!shadow-none"
+              hasPagination={false}
+              hasSort={false}
+            />
+          </div>
         </div>
       </div>
     </div>

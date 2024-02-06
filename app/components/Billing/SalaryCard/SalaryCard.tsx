@@ -16,17 +16,12 @@ import {
   AGGREGATION_DESCRIPTION,
 } from "@/constants";
 
-interface SalaryCardData {
+interface SalaryCardDataProps {
   value: number;
   type: AGGREGATION_TYPE;
 }
 
-interface SalaryCardDataProps {
-  aggregation: SalaryCardData;
-}
-
-const SalaryCard = ({ aggregation }: SalaryCardDataProps): JSX.Element => {
-  const { type = aggregation.type, value = aggregation.value } = aggregation;
+const SalaryCard = ({ type, value }: SalaryCardDataProps): JSX.Element => {
   const isSalary = type === AGGREGATION_TYPE.SALARY;
   const description = isSalary
     ? AGGREGATION_DESCRIPTION.SALARY

@@ -17,9 +17,13 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SalaryCardDefault: Story = {
-  render: () => <SalaryCard aggregation={mockSalaryData[0]} />,
+  render: () => (
+    <SalaryCard type={mockSalaryData[0].type} value={mockSalaryData[0].value} />
+  ),
 };
 
 export const SalaryCardPaypal: Story = {
-  render: () => <SalaryCard aggregation={mockSalaryData[1]} />,
+  render: () => (
+    <SalaryCard type={mockSalaryData[1].type} value={mockSalaryData[1].value} />
+  ),
 };

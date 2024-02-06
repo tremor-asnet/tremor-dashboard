@@ -8,7 +8,12 @@ import { mockSalaryData } from "@/mocks";
 
 describe("SalaryCard Testing", () => {
   it("should match snapshot", () => {
-    const component = render(<SalaryCard aggregation={mockSalaryData[0]} />);
+    const component = render(
+      <SalaryCard
+        type={mockSalaryData[0].type}
+        value={mockSalaryData[0].value}
+      />,
+    );
     expect(component).toMatchSnapshot();
   });
 });

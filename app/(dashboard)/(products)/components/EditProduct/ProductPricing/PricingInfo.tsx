@@ -65,10 +65,11 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 render={({ field: { value, onChange } }) => (
-                  <div className="h-[70px] mx-6 w-full md:max-w-[30%]">
+                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mb-2 sm:mb-0">
                     <SelectField
                       id="usd"
                       placeholder="USD"
+                      label="Currency"
                       options={TYPE_PRICE}
                       onChange={onChange}
                       value={value.toString()}

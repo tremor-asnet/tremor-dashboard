@@ -16,6 +16,7 @@ import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
+import { DIRECTION } from "@/constants/common";
 
 interface TableProductProps {
   products: Product[];
@@ -35,7 +36,7 @@ const TableProduct = ({
 }: TableProductProps) => {
   const [sort, setSort] = useState<SortItem>({
     key: "",
-    direction: "asc",
+    direction: DIRECTION.ASC,
   });
 
   const handleCheckboxChange = () => {
@@ -46,10 +47,10 @@ const TableProduct = ({
   const handleHeaderClick = (column: ColumnType<Product>) => {
     const direction =
       column.key === sort.key
-        ? sort.direction === "asc"
-          ? "desc"
-          : "asc"
-        : "desc";
+        ? sort.direction === DIRECTION.ASC
+          ? DIRECTION.DESC
+          : DIRECTION.ASC
+        : DIRECTION.DESC;
 
     setSort(prev => ({
       ...prev,
@@ -60,7 +61,7 @@ const TableProduct = ({
 
   const getSortedArray = useMemo(
     () => (arrayToSort: Product[], sortKey: keyof Product) => {
-      const direction = sort?.direction === "asc" ? 1 : -1;
+      const direction = sort?.direction === DIRECTION.ASC ? 1 : -1;
 
       return arrayToSort
         .slice()

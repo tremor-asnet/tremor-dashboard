@@ -7,6 +7,9 @@ import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 // Types
 import { SortItem } from "../Table/TableProduct/TableProduct";
 
+// Constants
+import { DIRECTION } from "@/constants/common";
+
 export interface HeaderCellContentsProps {
   title: string;
   sortItem?: SortItem;
@@ -23,10 +26,14 @@ const HeaderCellContents = ({
   const { direction, key } = sortItem as SortItem;
 
   const isFillUp =
-    direction === "asc" && key === keyColumn ? "text-test" : "fill-secondary";
+    direction === DIRECTION.ASC && key === keyColumn
+      ? "text-test"
+      : "fill-secondary";
 
   const isFillDown =
-    direction === "desc" && key === keyColumn ? "text-test" : "fill-secondary";
+    direction === DIRECTION.DESC && key === keyColumn
+      ? "text-test"
+      : "fill-secondary";
 
   return (
     <Flex>

@@ -47,6 +47,7 @@ const TableProduct = ({
           onChange={handleCheckboxChange}
         />
       ),
+      sortable: true,
     },
     {
       key: "productName",
@@ -54,11 +55,13 @@ const TableProduct = ({
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
+      sortable: true,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
+      sortable: true,
     },
     {
       key: "isAvailable",
@@ -68,15 +71,18 @@ const TableProduct = ({
           {isAvailable ? "Yes" : "No"}
         </p>
       ),
+      sortable: true,
     },
     {
       key: "providerName",
       title: "Provider Name",
+      sortable: true,
     },
     {
       key: "createdAt",
       title: "Created Date",
       customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
+      sortable: true,
     },
   ];
 

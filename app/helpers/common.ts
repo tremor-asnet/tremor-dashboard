@@ -117,21 +117,32 @@ export const rangeNumber = (start: number, end: number) => {
 
 /**
  * Get sorted array
- * @param arrayToSort []
- * @param sortKey keyof T
- * @param sortDirection string
+ * @param array []
+ * @param key keyof T
+ * @param orderBy string
  * @returns []
  */
-export const getSortedArray = <T>(
-  arrayToSort: T[],
-  sortKey: keyof T,
-  sortDirection: string,
+export const sortArrayByKey = <T>(
+  array: T[],
+  key: keyof T,
+  orderBy: string,
 ) => {
-  const direction = sortDirection === DIRECTION.ASC ? 1 : -1;
+  // Define sort items
+  const sortItemCallback = (a: T, b: T) => {
+    const aValue = a[key];
+    const bValue = b[key];
 
-  return arrayToSort
-    .slice()
-    .sort((a, b) =>
-      (a[sortKey] ?? 0) > (b[sortKey] ?? 0) ? direction : -direction,
-    );
+    return aValue > bValue ? 1 : -1;
+  };
+
+  // Call toSorted() if array is an array
+  const arraySort = array.toSorted
+    ? array.toSorted(sortItemCallback)
+    : array.sort(sortItemCallback);
+
+  if (orderBy === DIRECTION.DESC) {
+    return arraySort.reverse();
+  }
+
+  return arraySort;
 };

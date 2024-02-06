@@ -21,7 +21,7 @@ import { useEffect, useMemo, useState } from "react";
 import { DIRECTION } from "@/constants/common";
 
 // Helpers
-import { getSortedArray } from "@/helpers";
+import { sortArrayByKey } from "@/helpers";
 
 interface DataTableProps<T> {
   data: T[];
@@ -51,24 +51,31 @@ const DataGrid = <T,>({
     direction: DIRECTION.ASC,
   });
 
-  // Handle sort by categories
-  const handleHeaderClick = (column: ColumnType<T>) => {
-    const direction =
-      column.key === sort.key
-        ? sort.direction === DIRECTION.ASC
-          ? DIRECTION.DESC
-          : DIRECTION.ASC
-        : DIRECTION.DESC;
+  // Handle sort by key column
+  const handleHeaderClick = (keyColumn: string) => {
+    // Define the sorting direction as either "DESC" or "ASC".
+    let sortDirection = sort.direction;
+
+    if (keyColumn === sort.key) {
+      // Revert direction onClick same column
+      if (sortDirection === DIRECTION.ASC) {
+        sortDirection = DIRECTION.DESC;
+      } else {
+        sortDirection = DIRECTION.ASC;
+      }
+    } else {
+      sortDirection = DIRECTION.DESC;
+    }
 
     setSort(prev => ({
       ...prev,
-      key: column.key,
-      direction,
+      key: keyColumn,
+      direction: sortDirection,
     }));
   };
 
   // The array has been sorted
-  const sortedArray = getSortedArray<T>(
+  const sortedArray = sortArrayByKey<T>(
     data,
     sort.key as keyof T,
     sort.direction,
@@ -77,7 +84,7 @@ const DataGrid = <T,>({
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
-    return sortedArray.slice(firstPageIndex, lastPageIndex);
+    return sortedArray?.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedArray, pageSize]);
 
   useEffect(() => {
@@ -109,7 +116,7 @@ const DataGrid = <T,>({
           <DataGridHeader
             columns={columns}
             onHeaderClick={handleHeaderClick}
-            sortItem={sort}
+            sortField={sort}
             hasSort={hasSort}
           />
           <DataGridBody columns={columns} data={currentTableData} />

@@ -8,34 +8,34 @@ import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
-  onHeaderClick?: (column: ColumnType<T>) => void;
-  sortItem?: SortItem;
+  onHeaderClick?: (keyColumn: string) => void;
+  sortField?: SortItem;
   hasSort?: boolean;
 }
 
 const DataGridHeader = <T,>({
   columns,
   onHeaderClick,
-  sortItem,
+  sortField,
   hasSort,
 }: DataTableHeaderProps<T>) => {
   return (
     <TableHead>
       <TableRow>
-        {columns.map(column => {
+        {columns.map(({ key, title, sortable }) => {
           const handleHeaderClick = () => {
-            onHeaderClick?.(column);
+            return sortable ? onHeaderClick?.(key) : null;
           };
 
           return (
             <TableHeaderCell
               onClick={handleHeaderClick}
-              key={column.key}
+              key={key}
               className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer">
               <HeaderCellContents
-                title={column.title}
-                keyColumn={column.key}
-                sortItem={sortItem}
+                title={title}
+                keyColumn={key}
+                sortField={sortField}
                 hasSort={hasSort}
               />
             </TableHeaderCell>

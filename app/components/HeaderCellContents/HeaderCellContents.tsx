@@ -25,12 +25,12 @@ const HeaderCellContents = ({
 }: HeaderCellContentsProps) => {
   const { direction, key } = sortItem as SortItem;
 
-  const isFillUp =
+  const fillUp =
     direction === DIRECTION.ASC && key === keyColumn
       ? "text-test"
       : "fill-secondary";
 
-  const isFillDown =
+  const fillDown =
     direction === DIRECTION.DESC && key === keyColumn
       ? "text-test"
       : "fill-secondary";
@@ -44,14 +44,14 @@ const HeaderCellContents = ({
             <Button
               className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
               variant="light">
-              <MdArrowDropUp className={`w-4 h-4 ${isFillUp}`} />
+              <MdArrowDropUp className={`w-4 h-4 ${fillUp}`} />
             </Button>
           </Flex>
           <Flex className="absotule top-0 justify-end">
             <Button
               className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
               variant="light">
-              <MdArrowDropDown className={`w-4 h-4 ${isFillDown}`} />
+              <MdArrowDropDown className={`w-4 h-4 ${fillDown}`} />
             </Button>
           </Flex>
         </Flex>

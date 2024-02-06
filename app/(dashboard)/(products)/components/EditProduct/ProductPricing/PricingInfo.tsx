@@ -45,7 +45,7 @@ const PricingInfo = () => {
                   pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
                 }}
                 render={({ field }) => (
-                  <div className="h-[70px] w-full md:max-w-[25%]">
+                  <div className="h-[70px] w-full md:max-w-[25%] mb-2 md:mb-0">
                     <TextField
                       id="price"
                       label="Price"
@@ -65,7 +65,7 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 render={({ field: { value, onChange } }) => (
-                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mb-2 sm:mb-0">
+                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mb-3 md:mb-0">
                     <SelectField
                       id="usd"
                       placeholder="USD"

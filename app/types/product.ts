@@ -6,6 +6,8 @@ export interface Product {
   isAvailable: boolean;
   providerName: string;
   image: string;
+  description?: string;
+  quantity?: number;
 }
 
 export type TProductInfo = {
@@ -17,6 +19,14 @@ export type TProductInfo = {
   collection?: string;
   price?: string;
   color?: string;
+};
+
+export type TProductInfoDetail = {
+  id: number;
+  productName: string;
+  price: number;
+  description?: string;
+  quantity?: number;
 };
 
 export type TPricingInfo = {
@@ -43,52 +53,38 @@ export type TEditProduct = {
   instagramUrl: string;
 };
 
-export interface IProductInfo {
-  productName: string;
-  description: string;
-  weight: number;
-  category: number;
-  quantity: number;
-}
+export interface NewInfo
+  extends Pick<
+    ProductData,
+    | "productName"
+    | "description"
+    | "providerName"
+    | "weight"
+    | "category"
+    | "quantity"
+  > {}
 
-export interface NewProduct {
-  productName: string;
-  description: string;
-  weight: number;
-  category: number;
-  quantity: number;
-  price: number;
-  isAvailable: true;
-  providerName: string;
-  image: string;
-  currency: number;
-  sku: string;
-  tags: number[];
-  shopifyUrl: string;
-  facebookUrl: string;
-  instagramUrl: string;
-}
+export interface NewSocial
+  extends Pick<ProductData, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
 
-export interface ISocial
-  extends Pick<NewProduct, "shopifyUrl" | "facebookUrl" | "instagramUrl"> {}
-
-export interface EditProductData {
-  productName: string;
-  price: string;
-  tags: number[];
-  shopifyUrl: string;
-  facebookUrl: string;
-  instagramUrl: string;
-  quantity: string;
-  weight: string;
-  category: number;
-  description: string;
-  image: string;
-  currency: number;
-  sku: string;
-}
-
-export interface IPricing
-  extends Pick<NewProduct, "price" | "currency" | "sku"> {
+export interface NewPricing
+  extends Pick<ProductData, "price" | "currency" | "sku"> {
   tags: string[];
+}
+
+export interface ProductData {
+  productName: string;
+  price: number;
+  tags: number[];
+  providerName: string;
+  shopifyUrl: string;
+  facebookUrl: string;
+  instagramUrl: string;
+  quantity: number;
+  weight: number;
+  category: number;
+  description: string;
+  image: string;
+  currency: number;
+  sku: string;
 }

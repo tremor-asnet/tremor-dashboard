@@ -20,10 +20,11 @@ const HeaderCellContents = ({
 }: HeaderCellContentsProps) => {
   const { direction, key } = sortItem as SortItem;
 
-  const isFillUp = direction === "asc" && key === keyColumn ? "text-test" : "";
+  const isFillUp =
+    direction === "asc" && key === keyColumn ? "text-test" : "fill-secondary";
 
   const isFillDown =
-    direction === "desc" && key === keyColumn ? "text-test" : "";
+    direction === "desc" && key === keyColumn ? "text-test" : "fill-secondary";
 
   return (
     <Flex>

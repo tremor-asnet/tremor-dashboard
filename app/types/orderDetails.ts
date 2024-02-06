@@ -20,6 +20,7 @@ export interface TrackOrderData {
 }
 
 export interface BillingInfoData {
+  id: string;
   ownerName: string;
   companyName: string;
   cardLast4Digit: string;

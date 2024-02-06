@@ -28,7 +28,6 @@ export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContac
 export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
-export { default as ProductInfo } from "./NewProduct/ProductInfo/ProductInfo";
 export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";
 export { default as TextField } from "./common/TextField/TextField";
@@ -41,3 +40,5 @@ export { default as TableOrder } from "./Table/TableOrder/TableOrder";
 export { default as DataGrid } from "./common/DataGrid/DataGrid";
 export { default as DataGridHeader } from "./common/DataGrid/DataGridHeader/DataGridHeader";
 export { default as DataGridBody } from "./common/DataGrid/DataGridBody/DataGridBody";
+export { default as StarRating } from "./common/StarRating/StarRating";
+export { default as ProductInfoDetail } from "./ProductManager/ProductInfoDetail/ProductInfoDetail";

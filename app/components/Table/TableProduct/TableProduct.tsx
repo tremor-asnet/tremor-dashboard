@@ -98,7 +98,7 @@ const TableProduct = ({
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { isAvailable }) => (
-        <p className="text-xs dark:text-white font-semibold">
+        <p className="text-xs dark:text-lighter font-semibold">
           {isAvailable ? "Yes" : "No"}
         </p>
       ),

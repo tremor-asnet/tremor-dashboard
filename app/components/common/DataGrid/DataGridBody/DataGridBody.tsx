@@ -23,11 +23,11 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
               {columns.map(column => (
                 <TableCell
                   key={`table-row-cell-${column.key}`}
-                  className="px-6 py-5 border-0 border-b border-gray-100">
+                  className="px-6 py-5 border-0 dark:border-grayish border-b border-gray-100">
                   {column.customNode ? (
                     column.customNode(column, item)
                   ) : (
-                    <p className="text-xs dark:text-white font-semibold">
+                    <p className="text-xs dark:text-lighter font-semibold">
                       {getObjectValue(item, column.key)}
                     </p>
                   )}

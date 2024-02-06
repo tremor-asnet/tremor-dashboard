@@ -20,3 +20,7 @@ export const METADATA = {
   HOME_PREVIEW: "/assets/images/home-preview.png",
   MASTERCARD: "/assets/images/mastercard.webp",
 };
+
+export const PRODUCT = {
+  DETAIL: "/assets/images/products/product-details.jpg",
+};

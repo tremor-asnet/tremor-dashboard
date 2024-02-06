@@ -11,3 +11,4 @@ export * from "./table";
 export * from "./select";
 export * from "./orderDetails";
 export * from "./common";
+export * from "./billing";

@@ -99,8 +99,8 @@ const columns: ColumnType<Order>[] = [
     key: "status",
     title: "Status",
     customNode: (_, { status }) => (
-      <div className="flex justify-start text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
-        <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+      <div className="flex justify-start text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
+        <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
           {STATUS_TEXT[status]}
         </p>
       </div>

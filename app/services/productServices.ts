@@ -5,17 +5,13 @@ import { ROUTER_API_URL } from "@/constants";
 import { getErrorMessage } from "@/helpers";
 
 // Types
-import { EditProductData, NewProduct } from "@/types";
+import { ProductData } from "@/types";
 
 export const getProducts = async () => {
   const res = await fetch(`${ROUTER_API_URL}/products`, {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",
-    },
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
     },
   });
 
@@ -38,7 +34,7 @@ export const getProductDetails = async (id: number) => {
   return res.json();
 };
 
-export const editProduct = async (id: number, formData: EditProductData) => {
+export const editProduct = async (id: number, formData: ProductData) => {
   const res = await fetch(`${ROUTER_API_URL}/products/${id}`, {
     method: "PATCH",
     headers: {
@@ -52,17 +48,13 @@ export const editProduct = async (id: number, formData: EditProductData) => {
   return res.json();
 };
 
-export const addNewProduct = async (newProduct: NewProduct) => {
+export const addNewProduct = async (newProduct: ProductData) => {
   const res = await fetch(`${ROUTER_API_URL}/products`, {
     method: "POST",
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
     body: JSON.stringify(newProduct),
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
-    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));

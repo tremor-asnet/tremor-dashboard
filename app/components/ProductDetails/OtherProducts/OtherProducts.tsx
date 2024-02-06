@@ -21,7 +21,7 @@ interface OtherProductsProps {
   isAvailable: string;
   keyword: string;
   className?: string;
-  hasShowPagination?: boolean;
+  hasPagination?: boolean;
   hasSort?: boolean;
 }
 
@@ -30,7 +30,7 @@ const OtherProducts = ({
   isAvailable,
   keyword,
   className = "",
-  hasShowPagination = true,
+  hasPagination = true,
   hasSort = true,
 }: OtherProductsProps) => {
   // Other Product Table Props
@@ -73,7 +73,7 @@ const OtherProducts = ({
       filterBy={isAvailable}
       keyword={keyword}
       className={className}
-      hasShowPagination={hasShowPagination}
+      hasPagination={hasPagination}
       hasSort={hasSort}
     />
   );

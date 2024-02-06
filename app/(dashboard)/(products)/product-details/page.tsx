@@ -48,7 +48,7 @@ const ProductDetail = async () => {
               isAvailable="isAvailable"
               keyword="productName"
               className="!shadow-none"
-              hasShowPagination={false}
+              hasPagination={false}
               hasSort={false}
             />
           </div>

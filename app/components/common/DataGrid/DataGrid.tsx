@@ -23,7 +23,7 @@ interface DataTableProps<T> {
   filterBy: string;
   keyword: string;
   className?: string;
-  hasShowPagination?: boolean;
+  hasPagination?: boolean;
   hasSort?: boolean;
 }
 
@@ -34,7 +34,7 @@ const DataGrid = <T,>({
   filterBy,
   keyword,
   className = "",
-  hasShowPagination = true,
+  hasPagination = true,
   hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -75,7 +75,7 @@ const DataGrid = <T,>({
           <DataGridHeader columns={columns} hasSort={hasSort} />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
-        {hasShowPagination && (
+        {hasPagination && (
           <Pagination
             currentPage={currentPage}
             pageSize={pageSize}

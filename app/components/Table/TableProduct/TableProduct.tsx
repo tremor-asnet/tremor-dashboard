@@ -60,13 +60,15 @@ const TableProduct = ({
 
   const getSortedArray = useMemo(
     () => (arrayToSort: Product[], sortKey: keyof Product) => {
-      if (sort.direction === "asc") {
-        return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
-      } else {
-        return arrayToSort.sort((a, b) => (a[sortKey] > b[sortKey] ? -1 : 1));
-      }
+      const direction = sort?.direction === "asc" ? 1 : -1;
+
+      return arrayToSort
+        .slice()
+        .sort((a, b) =>
+          (a[sortKey] ?? 0) > (b[sortKey] ?? 0) ? direction : -direction,
+        );
     },
-    [sort.direction],
+    [sort],
   );
 
   // Product Table Props

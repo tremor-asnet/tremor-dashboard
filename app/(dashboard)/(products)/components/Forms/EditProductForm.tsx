@@ -7,6 +7,10 @@ import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Button, Col, Flex, Grid, Text } from "@tremor/react";
+import { LoadingIndicator, Toast } from "@/components";
+import { FaCheckCircle } from "react-icons/fa";
+import { TbExclamationMark } from "react-icons/tb";
+import { RxCross2 } from "react-icons/rx";
 const ProductImage = dynamic(
   () => import("../EditProduct/ProductImage/ProductImage"),
 );
@@ -17,10 +21,6 @@ const ProductInfo = dynamic(
 const PricingInfo = dynamic(
   () => import("../EditProduct/ProductPricing/PricingInfo"),
 );
-import { LoadingIndicator, Toast } from "@/components";
-import { FaCheckCircle } from "react-icons/fa";
-import { TbExclamationMark } from "react-icons/tb";
-import { RxCross2 } from "react-icons/rx";
 
 // Services
 import { editProduct } from "@/services";
@@ -108,15 +108,18 @@ const EditProductForm = ({
   });
 
   const { handleSubmit, formState, reset } = formHandler;
-  const [isDisabledSave, setDisabledSave] = useState(!formState.isDirty);
   const { cdnResponse, upload } = useImageUploader();
   const { image: newImage } = cdnResponse.data;
 
   useEffect(() => {
     if (isEmpty(newImage.url)) return;
+
     setImageValue(newImage.url);
-    formHandler.setValue("image", imageValue, { shouldDirty: true });
   }, [cdnResponse]);
+
+  useEffect(() => {
+    formHandler.setValue("image", imageValue, { shouldDirty: true });
+  }, [imageValue]);
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -176,7 +179,6 @@ const EditProductForm = ({
 
   const onRemoveImage = () => {
     setImageValue("");
-    setDisabledSave(false);
   };
 
   if (isLoading) {
@@ -197,6 +199,8 @@ const EditProductForm = ({
     );
   }
 
+  console.log("test", formState.isDirty);
+
   return (
     <>
       <FormProvider {...formHandler}>
@@ -206,7 +210,7 @@ const EditProductForm = ({
               type="submit"
               className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
               size="xs"
-              disabled={isDisabledSave}>
+              disabled={!formState.isDirty}>
               <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
                 Save
               </Text>

@@ -1,0 +1,22 @@
+.ql-toolbar {
+  @apply rounded-t-lg;
+}
+.ql-container {
+  @apply rounded-b-lg;
+}
+
+.ql-toolbar .ql-stroke {
+  @apply fill-none stroke-black dark:stroke-white;
+}
+
+.ql-toolbar .ql-fill {
+  @apply fill-white stroke-none;
+}
+
+.ql-toolbar .ql-picker {
+  @apply text-black dark:text-white;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  @apply text-sm text-[#7b809a];
+}

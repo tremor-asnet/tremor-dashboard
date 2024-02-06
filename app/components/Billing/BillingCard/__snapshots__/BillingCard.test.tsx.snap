@@ -3,7 +3,7 @@
 exports[`Testing BillingCard component Should match snapshot 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full flex-row justify-between items-center relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg"
+    class="tremor-Flex-root flex w-full flex-row justify-between items-center relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg min-h-[234px]"
   >
     <div
       class="w-full h-full absolute top-0 left-0 opacity-20 bg-cover bg-billing-card"
@@ -15,7 +15,7 @@ exports[`Testing BillingCard component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
         <svg
-          class="text-2xl m-2 mb-8"
+          class="text-2xl m-2"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -34,18 +34,18 @@ exports[`Testing BillingCard component Should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl text-white font-bold mb-12"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl text-white font-bold mt-6 mb-10"
       >
         4562 1122 4594 7852
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center 2xl:py-[5px]"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-col justify-between items-start"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start min-w-[105px] mr-6"
           >
             <p
               class="text-tremor-default dark:text-dark-tremor-content text-whtie opacity-80 tracking-[0.4px]"

@@ -2,6 +2,10 @@
   @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
 }
 
+.select-custom button span {
+  @apply dark:text-lighter;
+}
+
 .select-custom li,
 .select-custom svg {
   @apply cursor-pointer;
@@ -16,7 +20,11 @@
 }
 
 .select-custom ul div {
-  @apply rounded-md bg-gray-100 text-secondary;
+  @apply rounded-md text-secondary;
+}
+
+.dark .select-custom ul div {
+  @apply text-white;
 }
 
 .select-custom button div div {
@@ -43,9 +51,20 @@
   @apply px-4 py-2 border-0 text-secondary;
 }
 
-.select-custom ul li[data-headlessui-state="active"],
+.select-custom ul li[data-headlessui-state="active"] {
+  @apply rounded-md bg-gray-50 text-primary;
+}
+
 .select-custom ul li[data-headlessui-state="active selected"] {
   @apply rounded-md bg-gray-100 text-primary;
+}
+
+.dark .select-custom ul li[data-headlessui-state="active"] {
+  @apply rounded-md bg-dark-tremor-primary;
+}
+
+.dark .select-custom ul li[data-headlessui-state="active selected"] {
+  @apply bg-dark-gradient-primary;
 }
 
 .divide-tremor-border > :not([hidden]) ~ :not([hidden]),

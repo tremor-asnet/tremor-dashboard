@@ -14,5 +14,4 @@ export const ITEMS_DASHBOARD = [
   { label: "Order List", href: ROUTES.ORDER_LIST, content: "O" },
   { label: "Product List", href: ROUTES.PRODUCT_LIST, content: "P" },
   { label: "Billing", href: ROUTES.BILLING, content: "B" },
-  { label: "Product Details", href: ROUTES.PRODUCT_DETAILS, content: "P" },
 ];

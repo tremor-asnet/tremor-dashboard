@@ -6,7 +6,7 @@ exports[`Test InvoiceHeader component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center invoice"
       >
         <div>
           <b
@@ -47,7 +47,7 @@ exports[`Test InvoiceHeader component Should match snapshot 1`] = `
           </div>
         </div>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white hover:shadow-btn-primary-hover"
+          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white"
         >
           <span
             class="tremor-Button-text text-sm whitespace-nowrap"
@@ -64,7 +64,7 @@ exports[`Test InvoiceHeader component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center invoice"
     >
       <div>
         <b
@@ -105,7 +105,7 @@ exports[`Test InvoiceHeader component Should match snapshot 1`] = `
         </div>
       </div>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white hover:shadow-btn-primary-hover"
+        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white"
       >
         <span
           class="tremor-Button-text text-sm whitespace-nowrap"

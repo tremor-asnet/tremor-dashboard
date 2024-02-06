@@ -18,6 +18,9 @@ import { Product, ColumnType } from "@/types";
 import { ROUTES } from "@/constants";
 import { DIRECTION } from "@/constants/common";
 
+// Helpers
+import { getSortedArray } from "@/helpers";
+
 interface TableProductProps {
   products: Product[];
   isAvailable: string;
@@ -59,17 +62,10 @@ const TableProduct = ({
     }));
   };
 
-  const getSortedArray = useMemo(
-    () => (arrayToSort: Product[], sortKey: keyof Product) => {
-      const direction = sort?.direction === DIRECTION.ASC ? 1 : -1;
-
-      return arrayToSort
-        .slice()
-        .sort((a, b) =>
-          (a[sortKey] ?? 0) > (b[sortKey] ?? 0) ? direction : -direction,
-        );
-    },
-    [sort],
+  const sortedArray = getSortedArray<Product>(
+    products,
+    sort.key as keyof Product,
+    sort.direction,
   );
 
   // Product Table Props
@@ -119,7 +115,7 @@ const TableProduct = ({
 
   return (
     <DataGrid
-      data={getSortedArray(products, sort.key as keyof Product)}
+      data={sortedArray}
       columns={columns}
       sortItem={sort}
       filterBy={isAvailable}

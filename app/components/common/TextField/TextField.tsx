@@ -21,7 +21,7 @@ const TextField = ({
 }: TextFieldProps) => {
   return (
     <>
-      <Text className="text-secondary dark:text-lighter mb-0">{label}</Text>
+      <Text className="text-secondary dark:text-lighter mb-2">{label}</Text>
       <TextInput
         id={id}
         required={required}

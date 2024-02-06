@@ -31,6 +31,12 @@ import { ProductData } from "@/types";
 // Constants
 import { EDIT_PRODUCT_MESSAGE } from "@/constants";
 
+// Hooks
+import useImageUploader from "@/hooks/useImageUploader";
+
+// Helpers
+import { isEmpty } from "@/helpers";
+
 const EditProductForm = ({
   productData,
   id,
@@ -56,6 +62,7 @@ const EditProductForm = ({
   } = productData;
 
   const router = useRouter();
+  const [imageValue, setImageValue] = useState(image);
   const [isLoading, setIsLoading] = useState(false);
   const [toastMsgController, setToastMsgController] = useState<{
     isOpen: boolean;
@@ -101,6 +108,15 @@ const EditProductForm = ({
   });
 
   const { handleSubmit, formState, reset } = formHandler;
+  const [isDisabledSave, setDisabledSave] = useState(!formState.isDirty);
+  const { cdnResponse, upload } = useImageUploader();
+  const { image: newImage } = cdnResponse.data;
+
+  useEffect(() => {
+    if (isEmpty(newImage.url)) return;
+    setImageValue(newImage.url);
+    formHandler.setValue("image", imageValue, { shouldDirty: true });
+  }, [cdnResponse]);
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -113,6 +129,7 @@ const EditProductForm = ({
         category: +data.category,
         currency: +data.currency,
         tags: convertedTagsValue,
+        image: imageValue,
       };
 
       setToastMsgController({
@@ -157,35 +174,31 @@ const EditProductForm = ({
     });
   };
 
+  const onRemoveImage = () => {
+    setImageValue("");
+    setDisabledSave(false);
+  };
+
+  if (isLoading) {
+    return (
+      <>
+        <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
+        <Flex className="grow w-full items-center justify-center">
+          <Flex flexDirection="col" className="grow w-full h-full items-center">
+            <LoadingIndicator
+              width={16}
+              height={16}
+              fillColor="river-bed-500"
+            />
+            <h2 className="mt-2 text-gray-400">Updating Product...</h2>
+          </Flex>
+        </Flex>
+      </>
+    );
+  }
+
   return (
     <>
-      {isLoading && (
-        <>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black cursor-not-allowed" />
-          <Flex className="grow w-full items-center justify-center">
-            <Flex
-              flexDirection="col"
-              className="grow w-full h-full items-center">
-              <LoadingIndicator
-                width={16}
-                height={16}
-                fillColor="river-bed-500"
-              />
-              <h2 className="mt-2 text-gray-400">Updating Product...</h2>
-            </Flex>
-          </Flex>
-        </>
-      )}
-      {toastMsgController.isOpen && (
-        <div className="flex justify-center fixed right-5 bottom-50">
-          <Toast
-            icon={<TbExclamationMark />}
-            color={toastMsgController.color}
-            message={toastMsgController.message}
-            onClose={handleCloseToast}
-          />
-        </div>
-      )}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <div className="w-full text-end absolute -mt-24">
@@ -193,7 +206,7 @@ const EditProductForm = ({
               type="submit"
               className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
               size="xs"
-              disabled={!formState.isDirty}>
+              disabled={isDisabledSave}>
               <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
                 Save
               </Text>
@@ -204,7 +217,9 @@ const EditProductForm = ({
               <ProductImage
                 name={productName}
                 desc={description}
-                image={image}
+                image={imageValue}
+                onRemoveImage={onRemoveImage}
+                onUpload={upload}
               />
             </div>
             <Col numColSpanSm={1} numColSpanLg={2}>
@@ -219,6 +234,17 @@ const EditProductForm = ({
           </Grid>
         </form>
       </FormProvider>
+
+      {toastMsgController.isOpen && (
+        <div className="flex justify-center fixed right-5 bottom-50 z-30">
+          <Toast
+            icon={<FaCheckCircle />}
+            color={toastMsgController.color}
+            message={toastMsgController.message}
+            onClose={handleCloseToast}
+          />
+        </div>
+      )}
     </>
   );
 };

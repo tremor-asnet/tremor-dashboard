@@ -49,7 +49,11 @@ const AddProductForm = () => {
   };
 
   const renderLoading = isLoading ? (
-    <LoadingIndicator width={4} height={4} isFullWidth={true} />
+    <LoadingIndicator
+      width={16}
+      height={16}
+      additionalClass="light-loading-indicator"
+    />
   ) : null;
 
   const formContent = () => {

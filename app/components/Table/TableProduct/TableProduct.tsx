@@ -1,7 +1,5 @@
 "use client";
 
-import { useMemo, useState } from "react";
-
 // Components
 import {
   CustomAvatarName,
@@ -16,10 +14,6 @@ import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
-import { DIRECTION } from "@/constants/common";
-
-// Helpers
-import { getSortedArray } from "@/helpers";
 
 interface TableProductProps {
   products: Product[];
@@ -37,36 +31,9 @@ const TableProduct = ({
   isAvailable,
   keyword,
 }: TableProductProps) => {
-  const [sort, setSort] = useState<SortItem>({
-    key: "",
-    direction: DIRECTION.ASC,
-  });
-
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
-
-  // Handle sort by categories
-  const handleHeaderClick = (column: ColumnType<Product>) => {
-    const direction =
-      column.key === sort.key
-        ? sort.direction === DIRECTION.ASC
-          ? DIRECTION.DESC
-          : DIRECTION.ASC
-        : DIRECTION.DESC;
-
-    setSort(prev => ({
-      ...prev,
-      key: column.key,
-      direction,
-    }));
-  };
-
-  const sortedArray = getSortedArray<Product>(
-    products,
-    sort.key as keyof Product,
-    sort.direction,
-  );
 
   // Product Table Props
   const columns: ColumnType<Product>[] = [
@@ -115,12 +82,10 @@ const TableProduct = ({
 
   return (
     <DataGrid
-      data={sortedArray}
+      data={products}
       columns={columns}
-      sortItem={sort}
       filterBy={isAvailable}
       keyword={keyword}
-      onHeaderClick={handleHeaderClick}
     />
   );
 };

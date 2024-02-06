@@ -17,14 +17,18 @@ import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 // Hooks
 import { useEffect, useMemo, useState } from "react";
 
+// Constants
+import { DIRECTION } from "@/constants/common";
+
+// Helpers
+import { getSortedArray } from "@/helpers";
+
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
-  sortItem?: SortItem;
   filterBy: string;
   keyword: string;
-  onHeaderClick?: (column: ColumnType<T>) => void;
   className?: string;
   hasPagination?: boolean;
   hasSort?: boolean;
@@ -34,22 +38,47 @@ const DataGrid = <T,>({
   data,
   columns,
   pageSize = 10,
-  sortItem,
   filterBy,
   keyword,
-  onHeaderClick,
   className = "",
   hasPagination = true,
   hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [sort, setSort] = useState<SortItem>({
+    key: "",
+    direction: DIRECTION.ASC,
+  });
+
+  // Handle sort by categories
+  const handleHeaderClick = (column: ColumnType<T>) => {
+    const direction =
+      column.key === sort.key
+        ? sort.direction === DIRECTION.ASC
+          ? DIRECTION.DESC
+          : DIRECTION.ASC
+        : DIRECTION.DESC;
+
+    setSort(prev => ({
+      ...prev,
+      key: column.key,
+      direction,
+    }));
+  };
+
+  // The array has been sorted
+  const sortedArray = getSortedArray<T>(
+    data,
+    sort.key as keyof T,
+    sort.direction,
+  );
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
-    return data.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, data, pageSize]);
+    return sortedArray.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, sortedArray, pageSize]);
 
   useEffect(() => {
     setLoading(true);
@@ -79,8 +108,8 @@ const DataGrid = <T,>({
         <Table className="w-full">
           <DataGridHeader
             columns={columns}
-            onHeaderClick={onHeaderClick}
-            sortItem={sortItem}
+            onHeaderClick={handleHeaderClick}
+            sortItem={sort}
             hasSort={hasSort}
           />
           <DataGridBody columns={columns} data={currentTableData} />

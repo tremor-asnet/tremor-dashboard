@@ -199,8 +199,6 @@ const EditProductForm = ({
     );
   }
 
-  console.log("test", formState.isDirty);
-
   return (
     <>
       <FormProvider {...formHandler}>

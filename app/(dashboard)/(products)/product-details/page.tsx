@@ -30,9 +30,9 @@ const ProductDetail = async () => {
           </Flex>
           <Flex className="flex-col items-start justify-start lg:px-[50px] xl:px-[90px] 2xl:px-[185px] pt-6 lg:pt-0">
             <ProductInfoDetail product={mockProductInfoDetail} />
-            {/* TODO: Only mock will update href */}
+            {/* TODO: Only mock id will update href */}
             <Link
-              href={`${ROUTES.PRODUCT_LIST}/${MOCK_PRODUCTS[0].id}`}
+              href={`${ROUTES.PRODUCT_LIST}/${mockProductInfoDetail.id}`}
               className="rounded-lg uppercase font-bold text-xs text-white dark:text-white dark:bg-gradient-pickled py-3 px-5 mt-8 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white w-full lg:w-auto text-center">
               Edit Product
             </Link>

@@ -3,16 +3,14 @@
 // Components
 import {
   CustomAvatarName,
-  CustomCheckBoxField,
   CustomNumberFormat,
 } from "@/components/Table/common";
-import { DataGrid, StarRating } from "@/components";
+import { DataGrid } from "@/components";
 
 // Types
 import { Product, ColumnType } from "@/types";
 
 // Constants
-import { ROUTES } from "@/constants";
 import { ProgressBar } from "@tremor/react";
 
 //Styles
@@ -35,10 +33,6 @@ const OtherProducts = ({
   hasShowPagination = true,
   hasSort = true,
 }: OtherProductsProps) => {
-  const handleCheckboxChange = () => {
-    // TODO: Handle checkbox change here
-  };
-
   // Other Product Table Props
   const columns: ColumnType<Product>[] = [
     {
@@ -52,11 +46,6 @@ const OtherProducts = ({
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
-    },
-    {
-      key: "review",
-      title: "Review",
-      customNode: (_, {}) => <StarRating isFullRaring={true} />,
     },
     {
       key: "isAvailable",
@@ -74,13 +63,6 @@ const OtherProducts = ({
     {
       key: "id",
       title: "Id",
-      customNode: (_, { id }) => (
-        <CustomCheckBoxField
-          id={id}
-          link={`${ROUTES.PRODUCT_LIST}/${id}`}
-          onChange={handleCheckboxChange}
-        />
-      ),
     },
   ];
 

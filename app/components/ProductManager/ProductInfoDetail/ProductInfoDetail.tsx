@@ -26,7 +26,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
   const { productName, price, quantity } = product;
 
   return (
-    <Flex className="antialiased font-primary flex-col items-start md:w-[426px]">
+    <Flex className="antialiased font-primary flex-col items-start lg:w-[426px]">
       <Text className="text-primary dark:text-white font-bold !text-3xl mb-3">
         {productName}
       </Text>

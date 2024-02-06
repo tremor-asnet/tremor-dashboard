@@ -25,6 +25,9 @@ interface DataTableProps<T> {
   filterBy: string;
   keyword: string;
   onHeaderClick?: (column: ColumnType<T>) => void;
+  className?: string;
+  hasPagination?: boolean;
+  hasSort?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -35,6 +38,9 @@ const DataGrid = <T,>({
   filterBy,
   keyword,
   onHeaderClick,
+  className = "",
+  hasPagination = true,
+  hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -67,22 +73,26 @@ const DataGrid = <T,>({
   }
 
   return (
-    <Card className="p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto">
+    <Card
+      className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
           <DataGridHeader
             columns={columns}
             onHeaderClick={onHeaderClick}
             sortItem={sortItem}
+            hasSort={hasSort}
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
-        <Pagination
-          currentPage={currentPage}
-          pageSize={pageSize}
-          totalCount={data.length}
-          onPageChange={setCurrentPage}
-        />
+        {hasPagination && (
+          <Pagination
+            currentPage={currentPage}
+            pageSize={pageSize}
+            totalCount={data.length}
+            onPageChange={setCurrentPage}
+          />
+        )}
       </div>
     </Card>
   );

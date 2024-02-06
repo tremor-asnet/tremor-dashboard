@@ -10,12 +10,14 @@ interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
   onHeaderClick?: (column: ColumnType<T>) => void;
   sortItem?: SortItem;
+  hasSort?: boolean;
 }
 
 const DataGridHeader = <T,>({
   columns,
   onHeaderClick,
   sortItem,
+  hasSort,
 }: DataTableHeaderProps<T>) => (
   <TableHead>
     <TableRow>
@@ -28,6 +30,7 @@ const DataGridHeader = <T,>({
             title={column.title}
             keyColumn={column.key}
             sortItem={sortItem}
+            hasSort={hasSort}
           />
         </TableHeaderCell>
       ))}

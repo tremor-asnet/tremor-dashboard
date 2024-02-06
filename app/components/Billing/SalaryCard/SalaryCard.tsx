@@ -19,9 +19,14 @@ import {
 interface SalaryCardDataProps {
   value: number;
   type: AGGREGATION_TYPE;
+  currency?: string;
 }
 
-const SalaryCard = ({ type, value }: SalaryCardDataProps): JSX.Element => {
+const SalaryCard = ({
+  type,
+  value,
+  currency = CURRENCY.DOLLAR,
+}: SalaryCardDataProps): JSX.Element => {
   const isSalary = type === AGGREGATION_TYPE.SALARY;
   const description = isSalary
     ? AGGREGATION_DESCRIPTION.SALARY
@@ -57,7 +62,7 @@ const SalaryCard = ({ type, value }: SalaryCardDataProps): JSX.Element => {
             <Text className="text-primary text-xl dark:text-lighter font-semibold">
               {formattedNumber({
                 value: value,
-                currency: CURRENCY.DOLLAR,
+                currency: currency,
               })}
             </Text>
           </Flex>

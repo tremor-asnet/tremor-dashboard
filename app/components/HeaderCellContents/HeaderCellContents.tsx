@@ -24,16 +24,18 @@ const HeaderCellContents = ({
   hasSort = true,
 }: HeaderCellContentsProps) => {
   const { direction, key } = sortItem as SortItem;
+  const activeFill = "text-test";
+  const inActiveFill = "fill-secondary";
 
   const fillUp =
     direction === DIRECTION.ASC && key === keyColumn
-      ? "text-test"
-      : "fill-secondary";
+      ? activeFill
+      : inActiveFill;
 
   const fillDown =
     direction === DIRECTION.DESC && key === keyColumn
-      ? "text-test"
-      : "fill-secondary";
+      ? activeFill
+      : inActiveFill;
 
   return (
     <Flex>

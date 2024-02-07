@@ -86,9 +86,13 @@ const TableProduct = ({
     },
   ];
 
+  const sortedProducts = products.sort((a, b) =>
+    a.createdAt.localeCompare(b.createdAt),
+  );
+
   return (
     <DataGrid
-      data={products}
+      data={sortedProducts}
       columns={columns}
       filterBy={isAvailable}
       keyword={keyword}

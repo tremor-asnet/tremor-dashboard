@@ -39,6 +39,7 @@ export const getProductDetails = async (id: number) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
+  revalidateTag(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 

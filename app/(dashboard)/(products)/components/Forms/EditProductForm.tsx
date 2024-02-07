@@ -53,6 +53,7 @@ const EditProductForm = ({
     currency,
     sku,
     providerName,
+    createdAt,
   } = productData;
 
   const router = useRouter();
@@ -97,6 +98,7 @@ const EditProductForm = ({
       currency,
       sku,
       providerName,
+      createdAt,
     },
   });
 
@@ -113,6 +115,7 @@ const EditProductForm = ({
         category: +data.category,
         currency: +data.currency,
         tags: convertedTagsValue,
+        createdAt: new Date().toISOString(),
       };
 
       setToastMsgController({

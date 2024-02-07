@@ -12,3 +12,11 @@ export interface Transaction {
   type: number;
   status: number;
 }
+export interface BillingCardData {
+  id: number;
+  type: string;
+  expire: string;
+  cardNumber: string;
+  holderFullName: string;
+  cardLast4Digit: string;
+}

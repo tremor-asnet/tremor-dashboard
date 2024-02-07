@@ -1,4 +1,5 @@
 import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX } from "@/constants";
+import { DIRECTION } from "@/constants/common";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -109,8 +110,39 @@ export const filterProductList = <T>(
  * @param end number
  * @returns [number]
  */
-
 export const rangeNumber = (start: number, end: number) => {
   const length = end - start + 1;
   return Array.from({ length }, (_, idx) => idx + start);
+};
+
+/**
+ * Get sorted array
+ * @param array []
+ * @param key keyof T
+ * @param orderBy string
+ * @returns []
+ */
+export const sortArrayByKey = <T>(
+  array: T[],
+  key: keyof T,
+  orderBy: string,
+) => {
+  // Define sort items
+  const sortItemCallback = (a: T, b: T) => {
+    const aValue = a[key];
+    const bValue = b[key];
+
+    return aValue > bValue ? 1 : -1;
+  };
+
+  // Call toSorted() if array is an array
+  const arraySort = array.toSorted
+    ? array.toSorted(sortItemCallback)
+    : array.sort(sortItemCallback);
+
+  if (orderBy === DIRECTION.DESC) {
+    return arraySort.reverse();
+  }
+
+  return arraySort;
 };

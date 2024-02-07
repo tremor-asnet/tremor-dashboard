@@ -54,7 +54,6 @@ const ProductDetail = async ({ params }: { params: { id: number } }) => {
               keyword="productName"
               className="!shadow-none"
               hasPagination={false}
-              hasSort={false}
             />
           </div>
         </div>

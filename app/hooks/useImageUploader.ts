@@ -9,7 +9,8 @@ import { CdnResponse } from "@/types";
 // Services
 import { uploadImage } from "@/services/imageService";
 
-const useImageUploader = () => {
+const useImageUploader = (image: string) => {
+  const [imageValue, setImageValue] = useState(image);
   const [isUpload, setIsUpload] = useState(false);
   const [cdnResponse, setCdnResponse] = useState<CdnResponse>({
     data: {
@@ -29,6 +30,7 @@ const useImageUploader = () => {
 
       const response = await uploadImage(file);
       setCdnResponse(response);
+      setImageValue(response.data.image.url);
       setError(null);
     } catch (error) {
       setError(error as Error);
@@ -37,11 +39,27 @@ const useImageUploader = () => {
     }
   };
 
+  const removeImage = () => {
+    setImageValue("");
+    setCdnResponse({
+      data: {
+        width: 0,
+        height: 0,
+        image: {
+          filename: "",
+          url: "",
+        },
+      },
+    });
+  };
+
   return {
     isUpload,
     cdnResponse,
+    imageValue,
     error,
     upload,
+    removeImage,
   };
 };
 

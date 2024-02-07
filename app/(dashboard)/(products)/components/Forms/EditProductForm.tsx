@@ -34,9 +34,6 @@ import { EDIT_PRODUCT_MESSAGE } from "@/constants";
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
 
-// Helpers
-import { isEmpty } from "@/helpers";
-
 const EditProductForm = ({
   productData,
   id,
@@ -62,7 +59,6 @@ const EditProductForm = ({
   } = productData;
 
   const router = useRouter();
-  const [imageValue, setImageValue] = useState(image);
   const [isLoading, setIsLoading] = useState(false);
   const [toastMsgController, setToastMsgController] = useState<{
     isOpen: boolean;
@@ -108,15 +104,11 @@ const EditProductForm = ({
   });
 
   const { handleSubmit, formState, reset } = formHandler;
-  const { cdnResponse, upload } = useImageUploader();
-  const { image: newImage } = cdnResponse.data;
+  const { upload, imageValue, removeImage } = useImageUploader(image);
 
   useEffect(() => {
-    if (isEmpty(newImage.url)) return;
-
-    setImageValue(newImage.url);
-    formHandler.setValue("image", newImage.url, { shouldDirty: true });
-  }, [cdnResponse]);
+    formHandler.setValue("image", imageValue, { shouldDirty: true });
+  }, [imageValue]);
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -175,7 +167,7 @@ const EditProductForm = ({
   };
 
   const onRemoveImage = () => {
-    setImageValue("");
+    removeImage();
     formHandler.setValue("image", "", { shouldDirty: true });
   };
 

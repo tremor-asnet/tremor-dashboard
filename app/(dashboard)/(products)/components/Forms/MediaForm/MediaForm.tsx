@@ -25,7 +25,7 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
   const { control, handleSubmit, setValue } = useForm<IMedia>({
     mode: "onSubmit",
   });
-  const { isUpload, cdnResponse, upload } = useImageUploader();
+  const { isUpload, cdnResponse, upload } = useImageUploader("");
   const { width, height, image } = cdnResponse.data;
 
   useEffect(() => {

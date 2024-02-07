@@ -72,3 +72,14 @@ export const NUMBER_REGEX = /^\d*[0-9]\d*$/;
 export const DECIMAL_REGEX = /^\d*[1-9]\d*$/;
 
 export const CDN_KEY = process.env.NEXT_PUBLIC_CDN_KEY;
+
+export const DRAG_ZONE = {
+  DEFAULT: {
+    TEXT: "Drop file here to upload",
+    STYLE: "border-gray-300",
+  },
+  ON_DRAG: {
+    TEXT: "Release the mouse click to upload the photo",
+    STYLE: "outline outline-2 outline-[#ebeff4]",
+  },
+};

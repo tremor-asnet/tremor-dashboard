@@ -42,8 +42,8 @@ const Media = ({ control, onUpload }: MediaProps) => {
 
   const handleDragLeave = () => {
     setInputStyle({
-      text: "Drop file here to upload",
-      style: "border-gray-300",
+      text: DRAG_ZONE.DEFAULT.TEXT,
+      style: DRAG_ZONE.DEFAULT.STYLE,
     });
   };
 

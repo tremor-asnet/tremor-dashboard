@@ -11,6 +11,7 @@ import { LoadingIndicator, Toast } from "@/components";
 import { FaCheckCircle } from "react-icons/fa";
 import { TbExclamationMark } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
+
 const ProductImage = dynamic(
   () => import("../EditProduct/ProductImage/ProductImage"),
 );
@@ -56,6 +57,7 @@ const EditProductForm = ({
     currency,
     sku,
     providerName,
+    createdAt,
   } = productData;
 
   const router = useRouter();
@@ -100,6 +102,7 @@ const EditProductForm = ({
       currency,
       sku,
       providerName,
+      createdAt,
     },
   });
 
@@ -121,6 +124,7 @@ const EditProductForm = ({
         category: +data.category,
         currency: +data.currency,
         tags: convertedTagsValue,
+        createdAt: new Date().toISOString(),
         image: imageValue,
       };
 

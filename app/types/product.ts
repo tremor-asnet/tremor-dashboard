@@ -87,4 +87,5 @@ export interface ProductData {
   image: string;
   currency: number;
   sku: string;
+  createdAt?: string;
 }

@@ -22,7 +22,6 @@ interface OtherProductsProps {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
-  hasSort?: boolean;
 }
 
 const OtherProducts = ({
@@ -31,7 +30,6 @@ const OtherProducts = ({
   keyword,
   className = "",
   hasPagination = true,
-  hasSort = true,
 }: OtherProductsProps) => {
   // Other Product Table Props
   const columns: ColumnType<Product>[] = [
@@ -74,7 +72,6 @@ const OtherProducts = ({
       keyword={keyword}
       className={className}
       hasPagination={hasPagination}
-      hasSort={hasSort}
     />
   );
 };

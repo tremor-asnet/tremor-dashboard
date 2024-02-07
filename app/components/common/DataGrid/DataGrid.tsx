@@ -31,7 +31,6 @@ interface DataTableProps<T> {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
-  hasSort?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -42,7 +41,6 @@ const DataGrid = <T,>({
   keyword,
   className = "",
   hasPagination = true,
-  hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -117,7 +115,6 @@ const DataGrid = <T,>({
             columns={columns}
             onHeaderClick={handleHeaderClick}
             sortField={sort}
-            hasSort={hasSort}
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>

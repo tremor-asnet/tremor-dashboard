@@ -14,14 +14,14 @@ export interface HeaderCellContentsProps {
   title: string;
   sortField?: SortItem;
   keyColumn?: string;
-  hasSort?: boolean;
+  sortable?: boolean;
 }
 
 const HeaderCellContents = ({
   title,
   sortField = { direction: "", key: "" },
   keyColumn,
-  hasSort = true,
+  sortable = true,
 }: HeaderCellContentsProps) => {
   const { direction, key } = sortField as SortItem;
   const activeFill = "text-test";
@@ -47,7 +47,7 @@ const HeaderCellContents = ({
   return (
     <Flex>
       <Flex>{title}</Flex>
-      {hasSort && (
+      {sortable && (
         <Flex className="relative flex-col ml-4">
           <Flex className="absotule top-0 justify-end">
             <Button

@@ -49,7 +49,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#F44335] border-[#F44335]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-attention border-attention"
             type="button"
           >
             <svg
@@ -80,7 +80,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#F44335]"
+          class="text-sm font-semibold text-attention"
         >
           - $ 2,500
         </p>
@@ -92,7 +92,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#4CAF50] border-[#4CAF50]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-few border-few"
             type="button"
           >
             <svg
@@ -123,7 +123,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#4CAF50]"
+          class="text-sm font-semibold text-few"
         >
           + $ 2,000
         </p>
@@ -142,7 +142,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#4CAF50] border-[#4CAF50]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-few border-few"
             type="button"
           >
             <svg
@@ -173,7 +173,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#4CAF50]"
+          class="text-sm font-semibold text-few"
         >
           + $ 750
         </p>
@@ -185,7 +185,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#4CAF50] border-[#4CAF50]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-few border-few"
             type="button"
           >
             <svg
@@ -216,7 +216,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#4CAF50]"
+          class="text-sm font-semibold text-few"
         >
           + $ 1,000
         </p>
@@ -228,7 +228,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#4CAF50] border-[#4CAF50]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-few border-few"
             type="button"
           >
             <svg
@@ -259,7 +259,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#4CAF50]"
+          class="text-sm font-semibold text-few"
         >
           + $ 2,500
         </p>
@@ -271,7 +271,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#5d6c85] border-[#5d6c85]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-secondary border-secondary"
             type="button"
           >
             <svg
@@ -302,7 +302,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#5d6c85]"
+          class="text-sm font-semibold text-secondary"
         >
           Pending
         </p>
@@ -314,7 +314,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           class="flex gap-4 items-center"
         >
           <button
-            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-[#4CAF50] border-[#4CAF50]"
+            class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-few border-few"
             type="button"
           >
             <svg
@@ -345,7 +345,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           </div>
         </div>
         <p
-          class="text-sm font-semibold text-[#4CAF50]"
+          class="text-sm font-semibold text-few"
         >
           + $ 90
         </p>

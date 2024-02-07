@@ -14,7 +14,7 @@ export const CHANNELS_CHART_COLOR: ColorChannelsChartType = {
 };
 
 export const TRANSACTION_COLOR = {
-  INCREASE: "#4CAF50",
-  DECREASE: "#F44335",
-  PENDING: "#5d6c85",
+  INCREASE: "few",
+  DECREASE: "attention",
+  PENDING: "secondary",
 };

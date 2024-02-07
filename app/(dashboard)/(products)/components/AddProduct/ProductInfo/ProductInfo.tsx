@@ -6,6 +6,7 @@ import { Control, Controller, FieldErrors } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
+import { Text } from "@tremor/react";
 import InputField from "@/components/common/CustomField/InputField/InputField";
 import SelectField from "@/components/common/CustomField/SelectField/SelectField";
 
@@ -17,6 +18,7 @@ import { EXCEPT_KEYS } from "@/constants/common";
 import { NewInfo } from "@/types";
 
 // Css
+import "@/styles/form.css";
 import "react-quill/dist/quill.snow.css";
 import "@/styles/quill.css";
 
@@ -61,7 +63,12 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         }}
         render={({ field }) => (
           <div>
-            <InputField type="text" label="Name" {...field} />
+            <InputField
+              type="text"
+              isLabelTransform={true}
+              label="Name"
+              {...field}
+            />
             <p className="product-info-err-msg">{errorNameMsg}</p>
           </div>
         )}
@@ -75,6 +82,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           <InputField
             type="number"
             label="Weight"
+            isLabelTransform={true}
             {...field}
             onKeyDown={handleWeightKeyDown}
           />
@@ -86,9 +94,9 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         control={control}
         render={({ field }) => (
           <div className="w-full flex flex-col h-48">
-            <h3 className="text-sm text-[#7b809a] dark:text-white">
+            <Text className="text-secondary dark:text-lighter mb-2">
               Description <span className="text-xs">(optional)</span>
-            </h3>
+            </Text>
             <QuillEditor
               theme="snow"
               placeholder="Some initial bold text"
@@ -105,7 +113,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           control={control}
           render={({ field }) => (
             <div>
-              <h3 className="text-xs text-[#7b809a] dark:text-white">
+              <h3 className="text-tremor-default text-secondary dark:text-white">
                 Category
               </h3>
               <SelectField options={CATEGORY_PRODUCT} {...field} />
@@ -119,6 +127,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           render={({ field }) => (
             <InputField
               type="number"
+              isLabelTransform={true}
               label="Quantity"
               onKeyDown={handleQuantityKeyDown}
               {...field}
@@ -130,7 +139,12 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           name="providerName"
           control={control}
           render={({ field }) => (
-            <InputField type="text" label="Provider Name" {...field} />
+            <InputField
+              type="text"
+              label="Provider Name"
+              isLabelTransform={true}
+              {...field}
+            />
           )}
         />
       </div>

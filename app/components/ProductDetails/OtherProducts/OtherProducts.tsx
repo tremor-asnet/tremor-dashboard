@@ -22,7 +22,6 @@ interface OtherProductsProps {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
-  hasSort?: boolean;
 }
 
 const OtherProducts = ({
@@ -31,7 +30,6 @@ const OtherProducts = ({
   keyword,
   className = "",
   hasPagination = true,
-  hasSort = true,
 }: OtherProductsProps) => {
   // Other Product Table Props
   const columns: ColumnType<Product>[] = [
@@ -41,11 +39,13 @@ const OtherProducts = ({
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
+      sortable: false,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
+      sortable: false,
     },
     {
       key: "isAvailable",
@@ -59,10 +59,12 @@ const OtherProducts = ({
           )}
         </p>
       ),
+      sortable: false,
     },
     {
       key: "id",
       title: "Id",
+      sortable: false,
     },
   ];
 
@@ -74,7 +76,6 @@ const OtherProducts = ({
       keyword={keyword}
       className={className}
       hasPagination={hasPagination}
-      hasSort={hasSort}
     />
   );
 };

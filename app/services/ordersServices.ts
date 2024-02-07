@@ -1,5 +1,9 @@
+"use server";
+
+import { revalidateTag } from "next/cache";
+
 // Constants
-import { ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
@@ -11,8 +15,8 @@ export const getOrders = async () => {
       "content-type": "application/json;charset=UTF-8",
     },
     next: {
-      // Re-validate every minute
       revalidate: 60,
+      tags: [ROUTES.ORDER_LIST],
     },
   });
 
@@ -35,5 +39,6 @@ export const getOrderDetails = async (id: number) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
+  revalidateTag(ROUTES.PRODUCT_LIST);
   return res.json();
 };

@@ -6,9 +6,16 @@ interface PreviewImageProps {
   url: string;
   width: number;
   height: number;
+  onRemove: () => void;
 }
 
-const ImagePreview = ({ filename, url, width, height }: PreviewImageProps) => {
+const ImagePreview = ({
+  filename,
+  url,
+  width,
+  height,
+  onRemove,
+}: PreviewImageProps) => {
   if (!url) {
     return null;
   }
@@ -24,6 +31,11 @@ const ImagePreview = ({ filename, url, width, height }: PreviewImageProps) => {
         height={height}
       />
       <p className="dark:text-white">{filename}</p>
+      <button
+        className="mt-2 text-sm text-white dark:text-[#485976] px-4 py-2 bg-[#485976] dark:bg-white rounded hover:bg-[#1a2035]"
+        onClick={onRemove}>
+        Remove photo
+      </button>
     </div>
   );
 };

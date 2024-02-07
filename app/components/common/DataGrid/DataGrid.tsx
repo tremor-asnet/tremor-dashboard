@@ -52,7 +52,7 @@ const DataGrid = <T,>({
     // Delay to check show loading
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 100);
   }, [filterBy, keyword]);
 
   if (loading === true) {

@@ -129,3 +129,15 @@ form.sign-in :is(.dark .dark\:shadow-dark-tremor-input),
 form.sign-up :is(.dark .dark\:shadow-dark-tremor-input) {
   @apply shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem];
 }
+
+form .select-custom button.text-tremor-content-emphasis {
+  @apply pl-1;
+}
+
+input:-webkit-autofill {
+  @apply bg-clip-text;
+}
+
+.dark input:-webkit-autofill {
+  -webkit-text-fill-color:white;
+}

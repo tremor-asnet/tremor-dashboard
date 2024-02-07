@@ -1,6 +1,6 @@
 "use server";
 
-import { revalidateTag } from "next/cache";
+import { revalidatePath } from "next/cache";
 
 // Constants
 import { ROUTER_API_URL, ROUTES } from "@/constants";
@@ -39,7 +39,7 @@ export const getProductDetails = async (id: number) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
-  revalidateTag(ROUTES.PRODUCT_LIST);
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 
@@ -54,7 +54,7 @@ export const editProduct = async (id: number, formData: ProductData) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
-  revalidateTag(ROUTES.PRODUCT_LIST);
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 
@@ -69,6 +69,6 @@ export const addNewProduct = async (newProduct: ProductData) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
-  revalidateTag(ROUTES.PRODUCT_LIST);
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };

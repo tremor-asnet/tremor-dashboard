@@ -39,8 +39,6 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     cardInfo,
   } = orderDetails;
 
-  console.log(orderDetails.cardInfo.cardLast4Digit);
-
   const {
     transmitedToCourierAt,
     generateOrderId,

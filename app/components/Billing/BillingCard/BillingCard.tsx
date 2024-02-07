@@ -10,18 +10,18 @@ import { MdWifi } from "react-icons/md";
 // Constants
 import { METADATA } from "@/constants";
 
+// Types
+import { BillingCardData } from "@/types";
+
 //Styles
 import "@/styles/billing.css";
 
 const BillingCard = ({
-  cardNumber,
-  holderFullName,
-  expires,
+  billingCardData,
 }: {
-  cardNumber: string;
-  holderFullName: string;
-  expires: string;
-}) => {
+  billingCardData: Partial<BillingCardData>;
+}): JSX.Element => {
+  const { expire, cardNumber, holderFullName } = billingCardData;
   return (
     <Flex
       alignItems="center"
@@ -56,7 +56,7 @@ const BillingCard = ({
                 Expires
               </Text>
               <Title className="text-white font-semibold tracking-[0.12px]">
-                {expires}
+                {expire}
               </Title>
             </Flex>
           </Flex>

@@ -11,3 +11,12 @@ export const mockSalaryData = [
     value: 2000,
   },
 ];
+
+export const mockBillingCard = {
+  id: 1,
+  type: "Mastercard",
+  expire: "11/24",
+  cardNumber: "4562 1122 4594 7866",
+  holderFullName: "Jack Peterson",
+  cardLast4Digit: "7866",
+};

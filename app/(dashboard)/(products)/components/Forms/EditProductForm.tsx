@@ -115,11 +115,8 @@ const EditProductForm = ({
     if (isEmpty(newImage.url)) return;
 
     setImageValue(newImage.url);
+    formHandler.setValue("image", newImage.url, { shouldDirty: true });
   }, [cdnResponse]);
-
-  useEffect(() => {
-    formHandler.setValue("image", imageValue, { shouldDirty: true });
-  }, [imageValue]);
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -179,6 +176,7 @@ const EditProductForm = ({
 
   const onRemoveImage = () => {
     setImageValue("");
+    formHandler.setValue("image", "", { shouldDirty: true });
   };
 
   if (isLoading) {

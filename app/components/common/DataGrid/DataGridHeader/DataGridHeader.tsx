@@ -24,7 +24,7 @@ const DataGridHeader = <T,>({
       <TableRow>
         {columns.map(({ key, title, sortable }) => {
           const handleHeaderClick = () => {
-            return sortable ? onHeaderClick?.(key) : null;
+            sortable ? onHeaderClick?.(key) : null;
           };
 
           return (

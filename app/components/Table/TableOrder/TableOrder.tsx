@@ -78,6 +78,10 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
     },
   ];
 
+  const sortedProducts = orders.sort((a, b) =>
+    a.createdAt.localeCompare(b.createdAt),
+  );
+
   return (
     <DataGrid
       data={orders}

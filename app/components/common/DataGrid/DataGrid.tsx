@@ -99,7 +99,7 @@ const DataGrid = <T,>({
   if (loading === true) {
     return (
       <LoadingIndicator
-        additionalClass="flex justify-center items-center"
+        additionalClass="min-h-[500px] flex justify-center items-center"
         width={8}
         height={8}
         isFullWidth={false}

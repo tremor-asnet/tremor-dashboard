@@ -14,18 +14,18 @@ import { METADATA } from "@/constants";
 import "@/styles/billing.css";
 
 const BillingCard = ({
-  cardDigit,
-  cardHolder,
+  cardNumber,
+  holderFullName,
   expires,
 }: {
-  cardDigit: string;
-  cardHolder: string;
+  cardNumber: string;
+  holderFullName: string;
   expires: string;
 }) => {
   return (
     <Flex
       alignItems="center"
-      className="relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg">
+      className="relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg min-h-[234px]">
       <div className="w-full h-full absolute top-0 left-0 opacity-20 bg-cover bg-billing-card"></div>
       <Flex
         flexDirection="col"
@@ -33,17 +33,22 @@ const BillingCard = ({
         alignItems="center"
         className="p-4">
         <Flex>
-          <MdWifi className="text-2xl m-2 mb-8" />
+          <MdWifi className="text-2xl m-2" />
         </Flex>
-        <Flex className="text-xl text-white font-bold mb-12">{cardDigit}</Flex>
-        <Flex>
+        <Flex className="text-xl text-white font-bold mt-6 mb-10">
+          {cardNumber}
+        </Flex>
+        <Flex className="2xl:py-[5px]">
           <Flex>
-            <Flex flexDirection="col" alignItems="start">
-              <Text className="text-whtie opacity-80 tracking-[0.4px]">
+            <Flex
+              flexDirection="col"
+              alignItems="start"
+              className="min-w-[105px] mr-6">
+              <Text className="text-whtie opacity-80 tracking-[0.4px] ">
                 Card Holder
               </Text>
               <Title className="text-white font-semibold tracking-[0.12px]">
-                {cardHolder}
+                {holderFullName}
               </Title>
             </Flex>
             <Flex flexDirection="col" alignItems="start">

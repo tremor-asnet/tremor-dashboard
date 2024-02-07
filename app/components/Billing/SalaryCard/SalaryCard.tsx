@@ -38,9 +38,9 @@ const SalaryCard = ({
   );
 
   return (
-    <div className="font-primary antialiased items-center justify-between py-1">
+    <div className="w-full font-primary antialiased items-center justify-between">
       <div className="flex items-center">
-        <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
           <Flex className="flex-col">
             <IconBox className="shadow-box-icon-primary" icon={icon} />
             <Flex className="flex-col mt-4 mb-1">

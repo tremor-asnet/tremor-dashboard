@@ -6,7 +6,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start lg:w-[426px]"
+        class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
@@ -156,7 +156,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start lg:w-[426px]"
+      class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"

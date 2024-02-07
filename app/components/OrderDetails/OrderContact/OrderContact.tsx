@@ -4,6 +4,9 @@ import { CustomImage } from "@/components";
 import Link from "next/link";
 import { orderStatus } from "@/helpers";
 
+//Styles
+import "@/styles/order.css";
+
 const OrderContact = ({
   name,
   url,
@@ -16,7 +19,7 @@ const OrderContact = ({
   status?: number;
 }) => {
   return (
-    <Flex className="flex-wrap sm:flex-nowrap">
+    <Flex className="flex-wrap sm:flex-nowrap order-contact">
       <Flex justifyContent="start">
         <div className="mr-4">
           <CustomImage
@@ -37,7 +40,7 @@ const OrderContact = ({
       </Flex>
       <Flex>
         <Flex className="flex-col items-end">
-          <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-2 py-1.5 leading-[17px] tracking-[0.35px]">
+          <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]">
             <Text className="uppercase py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase">
               contact us
             </Text>

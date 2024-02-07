@@ -7,8 +7,8 @@ describe("Testing BillingCard component", () => {
   it("Should match snapshot", () => {
     const { container } = render(
       <BillingCard
-        cardDigit="4562 1122 4594 7852"
-        cardHolder="Jack Peterson"
+        cardNumber="4562 1122 4594 7852"
+        holderFullName="Jack Peterson"
         expires="11/22"
       />,
     );

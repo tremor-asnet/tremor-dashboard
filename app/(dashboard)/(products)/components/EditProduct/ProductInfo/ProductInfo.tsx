@@ -67,7 +67,7 @@ const ProductInfo = () => {
                 <TextInput
                   id="name"
                   placeholder="Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                   autoFocus
                   {...field}
                 />
@@ -113,7 +113,7 @@ const ProductInfo = () => {
                   enableStepper={false}
                   onValueChange={onChange}
                   value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                 />
                 {weightErrorMessage && (
                   <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -142,7 +142,7 @@ const ProductInfo = () => {
                   enableStepper={false}
                   onValueChange={onChange}
                   value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                 />
                 {quantityErrorMessage && (
                   <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -187,7 +187,7 @@ const ProductInfo = () => {
                 <TextInput
                   id="provider-name"
                   placeholder="Provider Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                   {...field}
                 />
               </div>

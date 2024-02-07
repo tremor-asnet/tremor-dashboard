@@ -16,7 +16,20 @@ import { EXCEPT_KEYS } from "@/constants/common";
 // Types
 import { NewInfo } from "@/types";
 
-const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
+// Css
+import "react-quill/dist/quill.snow.css";
+import "@/styles/quill.css";
+
+const QuillEditor = dynamic(() => import("react-quill"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex justify-center items-center h-44 w-full">
+      <p className="text-sm font-semibold text-[#7b809a] dark:text-white">
+        Loading Quill Editor ...
+      </p>
+    </div>
+  ),
+});
 
 interface ProductInfoProps {
   control: Control<NewInfo>;
@@ -72,14 +85,14 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         name="description"
         control={control}
         render={({ field }) => (
-          <div className="w-full">
+          <div className="w-full flex flex-col h-48">
             <h3 className="text-sm text-[#7b809a] dark:text-white">
-              Description{" "}
-              <span className="text-xs">&#x276A;optional&#x276B;</span>
+              Description <span className="text-xs">(optional)</span>
             </h3>
             <QuillEditor
-              placeholder="Content goes here..."
-              className="mt-1 rounded-md text-secondary dark:text-white"
+              theme="snow"
+              placeholder="Some initial bold text"
+              className="mt-2 dark:text-white"
               {...field}
             />
           </div>

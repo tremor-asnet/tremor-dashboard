@@ -87,8 +87,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         render={({ field }) => (
           <div className="w-full flex flex-col h-48">
             <h3 className="text-sm text-[#7b809a] dark:text-white">
-              Description{" "}
-              <span className="text-xs">&#x276A;optional&#x276B;</span>
+              Description <span className="text-xs">(optional)</span>
             </h3>
             <QuillEditor
               theme="snow"

@@ -82,4 +82,10 @@ export const DRAG_ZONE = {
     TEXT: "Release the mouse click to upload the photo",
     STYLE: "outline outline-2 outline-[#ebeff4]",
   },
+
+export const TRANSACTION_CLASS = {
+  INCREASE: "text-few border-few",
+  DECREASE: "text-attention border-attention",
+  PENDING: "text-secondary border-secondary",
+
 };

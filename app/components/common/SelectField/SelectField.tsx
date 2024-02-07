@@ -22,7 +22,7 @@ const SelectField = ({
 }: SelectFieldProps) => {
   return (
     <Flex className="flex-col items-start">
-      <Text className="text-secondary h-5 mb-0 md:mb-1 dark:text-lighter">
+      <Text className="text-secondary h-5 mb-0 md:mb-3 dark:text-lighter">
         {label}
       </Text>
       <Select

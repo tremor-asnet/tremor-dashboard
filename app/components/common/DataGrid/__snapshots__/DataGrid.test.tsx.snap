@@ -3,7 +3,7 @@
 exports[`Data Table Testing should match snapshot 1`] = `
 <div>
   <div
-    class="flex justify-center items-center"
+    class="min-h-[500px] flex justify-center items-center"
     role="status"
   >
     <svg

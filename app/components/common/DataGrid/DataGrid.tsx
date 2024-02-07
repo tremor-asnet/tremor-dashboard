@@ -52,13 +52,13 @@ const DataGrid = <T,>({
     // Delay to check show loading
     setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 1000);
   }, [filterBy, keyword]);
 
   if (loading === true) {
     return (
       <LoadingIndicator
-        additionalClass="flex justify-center items-center"
+        additionalClass="min-h-[500px] flex justify-center items-center"
         width={8}
         height={8}
         isFullWidth={false}

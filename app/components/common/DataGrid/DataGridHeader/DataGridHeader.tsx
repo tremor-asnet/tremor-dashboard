@@ -9,13 +9,15 @@ import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
   onHeaderClick?: (keyColumn: string) => void;
-  sortField?: SortItem;
+  sortKey?: string;
+  sortDirection?: string;
 }
 
 const DataGridHeader = <T,>({
   columns,
   onHeaderClick,
-  sortField,
+  sortKey,
+  sortDirection,
 }: DataTableHeaderProps<T>) => {
   return (
     <TableHead>
@@ -33,7 +35,8 @@ const DataGridHeader = <T,>({
               <HeaderCellContents
                 title={title}
                 keyColumn={key}
-                sortField={sortField}
+                sortKey={sortKey}
+                sortDirection={sortDirection}
                 sortable={sortable}
               />
             </TableHeaderCell>

@@ -12,30 +12,31 @@ import { DIRECTION } from "@/constants/common";
 
 export interface HeaderCellContentsProps {
   title: string;
-  sortField?: SortItem;
   keyColumn?: string;
+  sortKey?: string;
+  sortDirection?: string;
   sortable?: boolean;
 }
 
 const HeaderCellContents = ({
   title,
-  sortField = { direction: "", key: "" },
   keyColumn,
+  sortKey,
+  sortDirection,
   sortable = true,
 }: HeaderCellContentsProps) => {
-  const { direction, key } = sortField as SortItem;
   const activeFill = "text-test";
   const inActiveFill = "fill-secondary";
 
   const checkFill = (type: string) => {
     switch (type) {
       case DIRECTION.ASC:
-        return direction === DIRECTION.ASC && key === keyColumn
+        return sortDirection === DIRECTION.ASC && sortKey === keyColumn
           ? activeFill
           : inActiveFill;
 
       case DIRECTION.DESC:
-        return direction === DIRECTION.DESC && key === keyColumn
+        return sortDirection === DIRECTION.DESC && sortKey === keyColumn
           ? activeFill
           : inActiveFill;
 

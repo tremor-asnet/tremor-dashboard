@@ -49,12 +49,14 @@ const DataGrid = <T,>({
     direction: DIRECTION.ASC,
   });
 
+  const { direction, key } = sort;
+
   // Handle sort by key column
   const handleHeaderClick = (keyColumn: string) => {
     // Define the sorting direction as either "DESC" or "ASC".
-    let sortDirection = sort.direction;
+    let sortDirection = direction;
 
-    if (keyColumn === sort.key) {
+    if (keyColumn === key) {
       // Revert direction onClick same column
       if (sortDirection === DIRECTION.ASC) {
         sortDirection = DIRECTION.DESC;
@@ -73,11 +75,7 @@ const DataGrid = <T,>({
   };
 
   // The array has been sorted
-  const sortedArray = sortArrayByKey<T>(
-    data,
-    sort.key as keyof T,
-    sort.direction,
-  );
+  const sortedArray = sortArrayByKey<T>(data, key as keyof T, direction);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -114,7 +112,8 @@ const DataGrid = <T,>({
           <DataGridHeader
             columns={columns}
             onHeaderClick={handleHeaderClick}
-            sortField={sort}
+            sortKey={key}
+            sortDirection={direction}
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>

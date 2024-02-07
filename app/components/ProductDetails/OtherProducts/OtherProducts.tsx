@@ -39,11 +39,13 @@ const OtherProducts = ({
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
+      sortable: false,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
+      sortable: false,
     },
     {
       key: "isAvailable",
@@ -57,10 +59,12 @@ const OtherProducts = ({
           )}
         </p>
       ),
+      sortable: false,
     },
     {
       key: "id",
       title: "Id",
+      sortable: false,
     },
   ];
 

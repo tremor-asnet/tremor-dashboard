@@ -1,5 +1,9 @@
+"use server";
+
+import { revalidateTag } from "next/cache";
+
 // Constants
-import { ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
@@ -12,6 +16,10 @@ export const getProducts = async () => {
     method: "GET",
     headers: {
       "content-type": "application/json;charset=UTF-8",
+    },
+    next: {
+      revalidate: 60,
+      tags: [ROUTES.PRODUCT_LIST],
     },
   });
 
@@ -45,6 +53,7 @@ export const editProduct = async (id: number, formData: ProductData) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
+  revalidateTag(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 
@@ -58,5 +67,7 @@ export const addNewProduct = async (newProduct: ProductData) => {
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
+
+  revalidateTag(ROUTES.PRODUCT_LIST);
   return res.json();
 };

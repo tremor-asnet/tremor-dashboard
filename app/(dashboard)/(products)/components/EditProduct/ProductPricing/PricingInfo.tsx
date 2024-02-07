@@ -4,7 +4,13 @@
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
+import {
+  Text,
+  Flex,
+  MultiSelect,
+  MultiSelectItem,
+  NumberInput,
+} from "@tremor/react";
 import { SelectField, TextField } from "@/components";
 
 // Types
@@ -44,14 +50,16 @@ const PricingInfo = () => {
                 rules={{
                   pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
                 }}
-                render={({ field }) => (
+                render={({ field: { value, onChange } }) => (
                   <div className="h-[70px] w-full md:max-w-[25%] mb-2 md:mb-0">
-                    <TextField
-                      id="price"
-                      label="Price"
-                      placeholder="Price"
-                      required={true}
-                      {...field}
+                    <Text className="text-secondary dark:text-lighter mb-2">
+                      Price
+                    </Text>
+                    <NumberInput
+                      enableStepper={false}
+                      onValueChange={onChange}
+                      value={value || 0}
+                      className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
                     />
                     {priceErrorMessage && (
                       <p className="pt-1 text-[11px] xs:text-xs text-red-500">

@@ -84,7 +84,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
 
   return (
     <DataGrid
-      data={orders}
+      data={sortedProducts}
       columns={columns}
       filterBy={status}
       keyword={keyword}

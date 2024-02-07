@@ -9,7 +9,7 @@ describe("Testing BillingCard component", () => {
       <BillingCard
         cardNumber="4562 1122 4594 7852"
         holderFullName="Jack Peterson"
-        expires="11/22"
+        expire="11/24"
       />,
     );
     expect(container).toMatchSnapshot();

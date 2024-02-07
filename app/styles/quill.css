@@ -20,3 +20,7 @@
 .quill > .ql-container > .ql-editor.ql-blank::before {
   @apply text-sm text-[#7b809a];
 }
+
+.dark .ql-picker-options {
+  @apply bg-dark-tremor-background;
+}

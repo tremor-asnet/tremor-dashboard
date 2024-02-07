@@ -18,6 +18,7 @@ const Socials = ({ control }: SocialsProps) => (
           label="Shopify Handle"
           placeholder=""
           type="text"
+          isLabelTransform={true}
           {...field}
         />
       )}
@@ -29,6 +30,7 @@ const Socials = ({ control }: SocialsProps) => (
       render={({ field }) => (
         <InputField
           label="Facebook Account"
+          isLabelTransform={true}
           placeholder=""
           type="text"
           {...field}
@@ -43,6 +45,7 @@ const Socials = ({ control }: SocialsProps) => (
         <InputField
           label="Instagram Account"
           placeholder=""
+          isLabelTransform={true}
           type="text"
           {...field}
         />

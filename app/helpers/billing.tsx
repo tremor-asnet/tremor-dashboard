@@ -6,7 +6,7 @@ import { BsExclamationLg } from "react-icons/bs";
 import { formattedNumber } from "@/helpers";
 
 // Constants
-import { TRANSACTION_COLOR } from "@/constants/colors";
+import { TRANSACTION_CLASS, TRANSACTION_COLOR } from "@/constants";
 
 export const getContentByProps = (
   status: number,
@@ -17,20 +17,20 @@ export const getContentByProps = (
   if (status === 0)
     return {
       color: `${TRANSACTION_COLOR.PENDING}`,
-      classes: `text-[${TRANSACTION_COLOR.PENDING}] border-[${TRANSACTION_COLOR.PENDING}]`,
+      classes: `${TRANSACTION_CLASS.PENDING}`,
       icon: <BsExclamationLg />,
       value: "Pending",
     };
   return type === 0
     ? {
         color: `${TRANSACTION_COLOR.INCREASE}`,
-        classes: `text-[${TRANSACTION_COLOR.INCREASE}] border-[${TRANSACTION_COLOR.INCREASE}]`,
+        classes: `${TRANSACTION_CLASS.INCREASE}`,
         icon: <BiChevronUp />,
         value: `+ $ ${formattedAmount}`,
       }
     : {
         color: `${TRANSACTION_COLOR.DECREASE}`,
-        classes: `text-[${TRANSACTION_COLOR.DECREASE}] border-[${TRANSACTION_COLOR.DECREASE}]`,
+        classes: `${TRANSACTION_CLASS.DECREASE}`,
         icon: <BiChevronDown />,
         value: `- $ ${formattedAmount}`,
       };

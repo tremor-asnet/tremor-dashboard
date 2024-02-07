@@ -72,3 +72,9 @@ export const NUMBER_REGEX = /^\d*[0-9]\d*$/;
 export const DECIMAL_REGEX = /^\d*[1-9]\d*$/;
 
 export const CDN_KEY = process.env.NEXT_PUBLIC_CDN_KEY;
+
+export const TRANSACTION_CLASS = {
+  INCREASE: "text-few border-few",
+  DECREASE: "text-attention border-attention",
+  PENDING: "text-secondary border-secondary",
+};

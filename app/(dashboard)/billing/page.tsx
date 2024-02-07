@@ -9,7 +9,7 @@ import Transactions from "@/components/Transaction/Transactions";
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";
 import { mockBilling } from "@/mocks/orderDetails";
-import { mockBillingCard, mockSalaryData } from "@/mocks";
+import { mockSalaryData, mockBillingCard } from "@/mocks";
 import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
 export const metadata = {
@@ -17,12 +17,17 @@ export const metadata = {
 };
 
 const Billing = () => {
+  const { cardNumber, holderFullName, expire } = mockBillingCard;
   return (
     <div>
       <Flex className="pb-6 flex-col lg:flex-row items-start">
         <Flex className="flex-col basis-2/3 xl:flex-row items-start">
           <div className="w-full mr-0 xl:mr-6">
-            <BillingCard billingCardData={mockBillingCard} />
+            <BillingCard
+              cardNumber={cardNumber}
+              holderFullName={holderFullName}
+              expire={expire}
+            />
           </div>
           <Flex className="w-full gap-6  mt-6 xl:mt-0">
             {mockSalaryData.map(item => (

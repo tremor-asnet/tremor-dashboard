@@ -36,7 +36,7 @@ exports[`Testing BillingCard component Should match snapshot 1`] = `
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl text-white font-bold mt-6 mb-10"
       >
-        4562 1122 4594 7866
+        4562 1122 4594 7852
       </div>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center 2xl:py-[5px]"

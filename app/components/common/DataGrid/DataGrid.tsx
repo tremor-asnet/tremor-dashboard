@@ -12,9 +12,16 @@ import {
 
 // Types
 import { ColumnType } from "@/types";
+import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 
 // Hooks
 import { useEffect, useMemo, useState } from "react";
+
+// Constants
+import { DIRECTION } from "@/constants/common";
+
+// Helpers
+import { sortArrayByKey } from "@/helpers";
 
 interface DataTableProps<T> {
   data: T[];
@@ -24,7 +31,6 @@ interface DataTableProps<T> {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
-  hasSort?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -35,16 +41,47 @@ const DataGrid = <T,>({
   keyword,
   className = "",
   hasPagination = true,
-  hasSort = true,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [sort, setSort] = useState<SortItem>({
+    key: "",
+    direction: DIRECTION.ASC,
+  });
+
+  const { direction, key } = sort;
+
+  // Handle sort by key column
+  const handleHeaderClick = (keyColumn: string) => {
+    // Define the sorting direction as either "DESC" or "ASC".
+    let sortDirection = direction;
+
+    if (keyColumn === key) {
+      // Revert direction onClick same column
+      if (sortDirection === DIRECTION.ASC) {
+        sortDirection = DIRECTION.DESC;
+      } else {
+        sortDirection = DIRECTION.ASC;
+      }
+    } else {
+      sortDirection = DIRECTION.DESC;
+    }
+
+    setSort(prev => ({
+      ...prev,
+      key: keyColumn,
+      direction: sortDirection,
+    }));
+  };
+
+  // The array has been sorted
+  const sortedArray = sortArrayByKey<T>(data, key as keyof T, direction);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
-    return data.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage]);
+    return sortedArray?.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, sortedArray, pageSize]);
 
   useEffect(() => {
     setLoading(true);
@@ -72,7 +109,12 @@ const DataGrid = <T,>({
       className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
-          <DataGridHeader columns={columns} hasSort={hasSort} />
+          <DataGridHeader
+            columns={columns}
+            onHeaderClick={handleHeaderClick}
+            sortKey={key}
+            sortDirection={direction}
+          />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
         {hasPagination && (

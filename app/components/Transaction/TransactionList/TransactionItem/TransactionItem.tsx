@@ -38,7 +38,7 @@ const TransactionItem = ({
           <p className="text-xs text-[#7b809a]">{formatDateTime(createdAt)}</p>
         </div>
       </div>
-      <p className={`text-sm font-semibold text-[${color}]`}>{value}</p>
+      <p className={`text-sm font-semibold text-${color}`}>{value}</p>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 // Libs
-import { MultiSelect, MultiSelectItem } from "@tremor/react";
+import { MultiSelect, MultiSelectItem, Text } from "@tremor/react";
 import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
@@ -10,6 +10,9 @@ import InputField from "@/components/common/CustomField/InputField/InputField";
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
+
+// Types
+import { SelectOptionData } from "@/types";
 
 interface PricingProps {
   control: any;
@@ -34,6 +37,7 @@ const Pricing = ({ control }: PricingProps) => {
             label="Price"
             placeholder=""
             type="number"
+            isLabelTransform={true}
             {...field}
             onKeyDown={handlePriceKeyDown}
           />
@@ -54,6 +58,7 @@ const Pricing = ({ control }: PricingProps) => {
             label="SKU"
             placeholder=""
             type="number"
+            isLabelTransform={true}
             onKeyDown={handleSkuKeyDown}
             {...field}
           />
@@ -63,15 +68,24 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="tags"
         control={control}
-        render={({ field }) => (
-          <MultiSelect {...field}>
-            {TAGS_PRICE.map(item => (
-              <MultiSelectItem key={item.value} value={item.value}>
-                {item.option}
-              </MultiSelectItem>
-            ))}
-          </MultiSelect>
-        )}
+        render={({ field: { value, onChange } }) => {
+          const convertedValue = value.map(String);
+          return (
+            <div className="w-full">
+              <Text className="text-secondary dark:text-white">Tags</Text>
+              <MultiSelect
+                className="select-custom dark:text-white dark:border-light dark:focus:border-white"
+                value={convertedValue}
+                onValueChange={onChange}>
+                {TAGS_PRICE.map((item: SelectOptionData) => (
+                  <MultiSelectItem key={item.value} value={item.value}>
+                    {item.option}
+                  </MultiSelectItem>
+                ))}
+              </MultiSelect>
+            </div>
+          );
+        }}
       />
     </div>
   );

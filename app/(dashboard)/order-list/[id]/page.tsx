@@ -36,6 +36,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     createdAt,
     products,
     status,
+    cardInfo,
   } = orderDetails;
 
   const {
@@ -91,7 +92,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               </Col>
               <Col numColSpan={1} numColSpanMd={2} numColSpanLg={4}>
                 <div className="mb-6">
-                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
+                  <PaymentDetails cardLast4Digit={cardInfo.cardLast4Digit} />
                 </div>
                 <div>
                   <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">

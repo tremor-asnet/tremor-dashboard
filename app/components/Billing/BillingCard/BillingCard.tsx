@@ -16,16 +16,16 @@ import "@/styles/billing.css";
 const BillingCard = ({
   cardNumber,
   holderFullName,
-  expires,
+  expire,
 }: {
   cardNumber: string;
   holderFullName: string;
-  expires: string;
+  expire: string;
 }) => {
   return (
     <Flex
       alignItems="center"
-      className="relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg min-h-[234px]">
+      className="relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg min-h-[234px] shadow-[rgba(0,0,0,0.1)_0rem_1.25rem_1.5625rem_-0.3125rem,rgba(0,0,0,0.04)_0rem_0.625rem_0.625rem_-0.3125rem]">
       <div className="w-full h-full absolute top-0 left-0 opacity-20 bg-cover bg-billing-card"></div>
       <Flex
         flexDirection="col"
@@ -56,7 +56,7 @@ const BillingCard = ({
                 Expires
               </Text>
               <Title className="text-white font-semibold tracking-[0.12px]">
-                {expires}
+                {expire}
               </Title>
             </Flex>
           </Flex>

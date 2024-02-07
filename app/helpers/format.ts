@@ -97,7 +97,7 @@ export const formatDotsToCommasNumber = ({
   positionFraction?: number;
 }): string =>
   `${currency}${value
-    .toLocaleString("en-US", {
+    ?.toLocaleString("en-US", {
       minimumFractionDigits: positionFraction,
     })
     .replace(/\./, ",")}`;

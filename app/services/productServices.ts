@@ -1,11 +1,15 @@
+"use server";
+
+import { revalidatePath } from "next/cache";
+
 // Constants
-import { ROUTER_API_URL } from "@/constants";
+import { ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
 
 // Types
-import { EditProductData, NewProduct } from "@/types";
+import { ProductData } from "@/types";
 
 export const getProducts = async () => {
   const res = await fetch(`${ROUTER_API_URL}/products`, {
@@ -14,8 +18,8 @@ export const getProducts = async () => {
       "content-type": "application/json;charset=UTF-8",
     },
     next: {
-      // Re-validate every minute
       revalidate: 60,
+      tags: [ROUTES.PRODUCT_LIST],
     },
   });
 
@@ -35,10 +39,11 @@ export const getProductDetails = async (id: number) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 
-export const editProduct = async (id: number, formData: EditProductData) => {
+export const editProduct = async (id: number, formData: ProductData) => {
   const res = await fetch(`${ROUTER_API_URL}/products/${id}`, {
     method: "PATCH",
     headers: {
@@ -49,22 +54,21 @@ export const editProduct = async (id: number, formData: EditProductData) => {
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };
 
-export const addNewProduct = async (newProduct: NewProduct) => {
+export const addNewProduct = async (newProduct: ProductData) => {
   const res = await fetch(`${ROUTER_API_URL}/products`, {
     method: "POST",
     headers: {
       "content-type": "application/json;charset=UTF-8",
     },
     body: JSON.stringify(newProduct),
-    next: {
-      // Re-validate every minute
-      revalidate: 60,
-    },
   });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
+
+  revalidatePath(ROUTES.PRODUCT_LIST);
   return res.json();
 };

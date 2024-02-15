@@ -3,13 +3,16 @@ import { Flex, Bold, Text, Button } from "@tremor/react";
 // Types
 import { InvoiceHeaderData } from "@/types";
 
+//Styles
+import "@/styles/order.css";
+
 export const InvoiceHeader = ({
   id,
   createdAt,
   orderCode,
 }: InvoiceHeaderData) => {
   return (
-    <Flex>
+    <Flex className="invoice">
       <div>
         <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
           Order Details
@@ -26,7 +29,7 @@ export const InvoiceHeader = ({
           </Text>
         </div>
       </div>
-      <Button className="py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white hover:shadow-btn-primary-hover">
+      <Button className="py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
         <Text className="uppercase font-bold text-xs text-white dark:text-white">
           invoice
         </Text>

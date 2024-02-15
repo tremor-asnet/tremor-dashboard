@@ -13,4 +13,6 @@ export const ROUTES = {
   SETTING: "/settings",
   ORDER_LIST: "/order-list",
   PRODUCT_LIST: "/product-list",
+  NEW_PRODUCT: "/new-product",
+  BILLING: "/billing",
 };

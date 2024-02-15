@@ -21,9 +21,37 @@ export const mockTrackOrder: TrackOrderData = {
 };
 
 export const mockBillingInfo: BillingInfoData = {
+  id: "1",
   ownerName: "Oliver Liam",
   companyName: "Viking Burrito",
   cardLast4Digit: "1234",
   email: "oliver@burrito.com",
   vat: "FRB1235476",
 };
+
+export const mockBilling: BillingInfoData[] = [
+  {
+    id: "1",
+    ownerName: "Oliver Liam",
+    companyName: "Viking Burrito",
+    cardLast4Digit: "1234",
+    email: "oliver@burrito.com",
+    vat: "FRB1235476",
+  },
+  {
+    id: "2",
+    ownerName: "Oliver Liam",
+    companyName: "Viking Burrito",
+    cardLast4Digit: "1234",
+    email: "oliver@burrito.com",
+    vat: "FRB1235476",
+  },
+  {
+    id: "3",
+    ownerName: "Oliver Liam",
+    companyName: "Viking Burrito",
+    cardLast4Digit: "1234",
+    email: "oliver@burrito.com",
+    vat: "FRB1235476",
+  },
+];

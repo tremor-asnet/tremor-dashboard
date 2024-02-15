@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BillingCard component Should match snapshot 1`] = `
+<div>
+  <div
+    class="tremor-Flex-root flex w-full flex-row justify-between items-center relative text-white bg-gradient-primary dark:bg-gradient-pickled p-0 rounded-lg min-h-[234px] shadow-[rgba(0,0,0,0.1)_0rem_1.25rem_1.5625rem_-0.3125rem,rgba(0,0,0,0.04)_0rem_0.625rem_0.625rem_-0.3125rem]"
+  >
+    <div
+      class="w-full h-full absolute top-0 left-0 opacity-20 bg-cover bg-billing-card"
+    />
+    <div
+      class="tremor-Flex-root flex w-full flex-col justify-start items-center p-4"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      >
+        <svg
+          class="text-2xl m-2"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z"
+          />
+        </svg>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center text-xl text-white font-bold mt-6 mb-10"
+      >
+        4562 1122 4594 7852
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center 2xl:py-[5px]"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start min-w-[105px] mr-6"
+          >
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-whtie opacity-80 tracking-[0.4px]"
+            >
+              Card Holder
+            </p>
+            <p
+              class="text-tremor-title dark:text-dark-tremor-content-emphasis text-white font-semibold tracking-[0.12px]"
+            >
+              Jack Peterson
+            </p>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start"
+          >
+            <p
+              class="text-tremor-default dark:text-dark-tremor-content text-whtie opacity-80 tracking-[0.4px]"
+            >
+              Expires
+            </p>
+            <p
+              class="text-tremor-title dark:text-dark-tremor-content-emphasis text-white font-semibold tracking-[0.12px]"
+            >
+              11/24
+            </p>
+          </div>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-end items-center"
+        >
+          <img
+            alt="master card icon"
+            data-nimg="1"
+            decoding="async"
+            height="41"
+            loading="lazy"
+            src="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=128&q=75"
+            srcset="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=64&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=128&q=75 2x"
+            style="color: transparent;"
+            width="55"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

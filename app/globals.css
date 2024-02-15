@@ -83,10 +83,20 @@
   }
 
   .btn-form-primary {
-    @apply py-2.5 px-6 bg-black dark:bg-[#485976] text-white font-medium text-sm rounded-md cursor-pointer;
+    @apply py-2.5 px-6 bg-black dark:bg-[#485976] text-white font-medium text-sm rounded-md cursor-pointer disabled:opacity-50 disabled:cursor-wait;
   }
 
   .btn-form-secondary {
-    @apply py-2.5 px-6 bg-[#ebeff4] text-black font-medium text-sm rounded-md cursor-pointer;
+    @apply py-2.5 px-6 bg-[#ebeff4] text-black font-medium text-sm rounded-md cursor-pointer disabled:opacity-50 disabled:cursor-wait;
+  }
+
+  /* Transaction */
+  .transaction-list-heading {
+    @apply font-semibold text-xs text-[#7b809a] my-6;
+  }
+
+  /* Loading Indicator */
+  .light-loading-indicator {
+    @apply flex justify-center items-center fixed bg-[rgba(0,0,0,0.1)] overflow-hidden w-full h-full inset-0 z-50 cursor-not-allowed;
   }
 }

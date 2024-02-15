@@ -19,7 +19,7 @@ const OrderContact = dynamic(
 const TrackOrder = dynamic(
   () => import("@/components/OrderDetails/TrackOrder/TrackOrder"),
 );
-import { Card, Col, Flex, Grid } from "@tremor/react";
+import { Bold, Card, Col, Flex, Grid } from "@tremor/react";
 
 // Services
 import { getOrderDetails } from "@/services/ordersServices";
@@ -36,6 +36,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
     createdAt,
     products,
     status,
+    cardInfo,
   } = orderDetails;
 
   const {
@@ -91,9 +92,14 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               </Col>
               <Col numColSpan={1} numColSpanMd={2} numColSpanLg={4}>
                 <div className="mb-6">
-                  <PaymentDetails cardLast4Digit={billingInfo.cardLast4Digit} />
+                  <PaymentDetails cardLast4Digit={cardInfo.cardLast4Digit} />
                 </div>
-                <BillingInfo billingData={billingInfo} />
+                <div>
+                  <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
+                    Billing Information
+                  </Bold>
+                  <BillingInfo billingData={billingInfo} />
+                </div>
               </Col>
               <Col numColSpan={1} numColSpanMd={4} numColSpanLg={3}>
                 <div className="lg:pl-20 pt-6 lg:pt-0">

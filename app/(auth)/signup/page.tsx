@@ -4,10 +4,12 @@
 import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // Components
 import { CheckBox, Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
+import { LoadingIndicator } from "@/components";
 
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
@@ -51,6 +53,7 @@ const SignUp = () => {
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
   const isDisableSubmit = !checked || formStatus.isPending;
+  const router = useRouter();
 
   const handleCheckBox = () => {
     setChecked(!checked);
@@ -76,6 +79,8 @@ const SignUp = () => {
       });
 
       handleOpenToast();
+
+      !formStatus.isPending && !isOpenToast && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
       setFormStatus({
         isPending: false,
@@ -206,11 +211,14 @@ const SignUp = () => {
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
-          <Text className="font-bold text-xs text-white dark:text-white">
-            Create account
-          </Text>
+          {formStatus.isPending ? (
+            <LoadingIndicator width={5} height={5} />
+          ) : (
+            <Text className="font-bold text-xs text-white dark:text-white">
+              Create account
+            </Text>
+          )}
         </Button>
-
         <Flex className="mt-8 mb-2 justify-center items-center">
           <Text className="text-secondary dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?

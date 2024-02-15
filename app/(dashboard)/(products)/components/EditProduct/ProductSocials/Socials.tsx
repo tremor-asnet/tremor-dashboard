@@ -4,6 +4,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Title, Flex, Card } from "@tremor/react";
+import { InputField } from "@/components";
 
 //Styles
 import "@/styles/products.css";
@@ -25,7 +26,7 @@ const Socials = () => {
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
         Socials
       </Title>
-      <Flex className="flex-col items-start justify-start mt-8">
+      <Flex className="flex-col items-start justify-start mt-4 gap-6">
         <Controller
           control={control}
           rules={{
@@ -36,11 +37,11 @@ const Socials = () => {
             },
           }}
           render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="shoppify-handle"
-                placeholder="Shoppify Handle"
+            <div className="w-full mb-4">
+              <InputField
+                id="edit-shopify"
+                label="Shopify Handle"
+                type="text"
                 {...field}
               />
               {shopifyErrorMsg && (
@@ -48,7 +49,7 @@ const Socials = () => {
                   {shopifyErrorMsg}
                 </p>
               )}
-            </>
+            </div>
           )}
           name="shopifyUrl"
         />
@@ -62,11 +63,11 @@ const Socials = () => {
             },
           }}
           render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="facebook-account"
-                placeholder="Facebook Account"
+            <div className="w-full mb-4">
+              <InputField
+                id="edit-fb"
+                label="Facebook Account"
+                type="text"
                 {...field}
               />
               {facebookErrorMsg && (
@@ -74,7 +75,7 @@ const Socials = () => {
                   {facebookErrorMsg}
                 </p>
               )}
-            </>
+            </div>
           )}
           name="facebookUrl"
         />
@@ -88,11 +89,11 @@ const Socials = () => {
             },
           }}
           render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="instagram-account"
-                placeholder="Instagram Account"
+            <div className="w-full mb-4">
+              <InputField
+                id="edit-ig"
+                label="Instagram Account"
+                type="text"
                 {...field}
               />
               {instagramErrorMsg && (
@@ -100,7 +101,7 @@ const Socials = () => {
                   {instagramErrorMsg}
                 </p>
               )}
-            </>
+            </div>
           )}
           name="instagramUrl"
         />

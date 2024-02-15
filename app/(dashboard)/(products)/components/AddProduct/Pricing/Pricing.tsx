@@ -4,8 +4,7 @@ import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
-import SelectField from "@/components/common/CustomField/SelectField/SelectField";
-import InputField from "@/components/common/CustomField/InputField/InputField";
+import { SelectField, InputField } from "@/components";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
@@ -34,10 +33,9 @@ const Pricing = ({ control }: PricingProps) => {
         control={control}
         render={({ field }) => (
           <InputField
+            id="add-product-price"
             label="Price"
-            placeholder=""
             type="number"
-            isLabelTransform={true}
             {...field}
             onKeyDown={handlePriceKeyDown}
           />
@@ -47,7 +45,9 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="currency"
         control={control}
-        render={({ field }) => <SelectField options={TYPE_PRICE} {...field} />}
+        render={({ field }) => (
+          <SelectField label="Currency" options={TYPE_PRICE} {...field} />
+        )}
       />
 
       <Controller
@@ -55,10 +55,9 @@ const Pricing = ({ control }: PricingProps) => {
         control={control}
         render={({ field }) => (
           <InputField
+            id="add-product-sky"
             label="SKU"
-            placeholder=""
             type="number"
-            isLabelTransform={true}
             onKeyDown={handleSkuKeyDown}
             {...field}
           />

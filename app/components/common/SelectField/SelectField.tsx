@@ -1,43 +1,42 @@
-import { Text, Select, SelectItem, Flex } from "@tremor/react";
+"use client";
 
 // Types
 import { SelectOptionData } from "@/types";
 
-interface SelectFieldProps {
-  id: string;
-  label?: string;
-  placeholder?: string;
+interface SelectFieldProps
+  extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  label: string;
   options: SelectOptionData[];
-  value: string;
-  onChange: () => void;
+  className?: string;
 }
 
 const SelectField = ({
-  id,
   label,
-  placeholder = "",
-  options = [],
-  value,
-  onChange,
+  options,
+  className,
+  ...props
 }: SelectFieldProps) => {
+  const optionList = options.map(item => {
+    const { value, option } = item;
+    return (
+      <option className="dark:bg-primary" key={value} value={value}>
+        {option}
+      </option>
+    );
+  });
+
+  const defaultClass =
+    "peer h-full w-full border-b-2 border-gray-300 bg-transparent font-sans text-sm font-normal text-blue-gray-700 dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100";
+
   return (
-    <Flex className="flex-col items-start">
-      <Text className="text-secondary h-5 mb-0 md:mb-3 dark:text-lighter">
+    <div className="relative w-full">
+      <h3 className="text-tremor-default text-secondary dark:text-white">
         {label}
-      </Text>
-      <Select
-        id={id}
-        placeholder={placeholder}
-        className="py-2 md:py-1 select-custom dark:text-white dark:border-light dark:focus:border-white w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:border-black  focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-        onValueChange={onChange}
-        value={value}>
-        {options?.map(({ value, option }: SelectOptionData) => (
-          <SelectItem className="select-position" key={value} value={value}>
-            {option}
-          </SelectItem>
-        ))}
-      </Select>
-    </Flex>
+      </h3>
+      <select {...props} className={`${defaultClass} ${className}`}>
+        {optionList}
+      </select>
+    </div>
   );
 };
 

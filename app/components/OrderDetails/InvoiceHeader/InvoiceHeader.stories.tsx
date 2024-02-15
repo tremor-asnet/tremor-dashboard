@@ -17,7 +17,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const PopoverDefault: Story = {
+export const Default: Story = {
   render: () => (
     <Card className="w-2/3 dark:bg-dark_blue">
       <InvoiceHeader {...mockInvoiceHeader} />

@@ -4,4 +4,5 @@ export interface ColumnType<T> {
   key: string;
   title: string;
   customNode?: (column: ColumnType<T>, item: T) => ReactNode;
+  sortable?: boolean;
 }

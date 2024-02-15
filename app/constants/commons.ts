@@ -67,5 +67,25 @@ export const ProductList: ProductListOption[] = [
 export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
 export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;
 export const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-export const NUMBER_REGEX = /^\d*[1-9]\d*$/;
+export const NUMBER_REGEX_WITHOUT_0 = /^\d*[1-9]\d*$/;
+export const NUMBER_REGEX = /^\d*[0-9]\d*$/;
 export const DECIMAL_REGEX = /^\d*[1-9]\d*$/;
+
+export const CDN_KEY = process.env.NEXT_PUBLIC_CDN_KEY;
+
+export const DRAG_ZONE = {
+  DEFAULT: {
+    TEXT: "Drop file here to upload",
+    STYLE: "border-gray-300",
+  },
+  ON_DRAG: {
+    TEXT: "Release the mouse click to upload the photo",
+    STYLE: "outline outline-2 outline-[#ebeff4]",
+  },
+};
+
+export const TRANSACTION_CLASS = {
+  INCREASE: "text-few border-few",
+  DECREASE: "text-attention border-attention",
+  PENDING: "text-secondary border-secondary",
+};

@@ -60,9 +60,6 @@ const BillingInfo = ({
 
   return (
     <>
-      <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
-        Billing Information
-      </Bold>
       <Flex
         flexDirection="col"
         alignItems="start"

@@ -4,10 +4,13 @@ export const color = {
   secondary: "#7b809a",
   seldom: "#1a73e8",
   few: "#4caf50",
+  fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
   lighter: "rgba(255, 255, 255, 0.8)",
+  greyish: "rgba(255, 255, 255, 0.4)",
+  grayish: "rgba(240, 242, 245, 0.4)",
 
   dark: {
     primary: "#ffffff",
@@ -98,6 +101,8 @@ export const backgroundColor = {
   border: "#dee2e6",
   dark_blue: "rgb(32, 41, 64)",
   greyish: "#f8f9fa",
+  "green-500": "#43A047",
+  "orange-500": "#FB8C00",
 
   dark: {
     primary: "#111827",
@@ -239,7 +244,7 @@ export const boxShadow = {
   "box-header-sticky":
     "rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   "line-chart":
-    "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)",
+    "0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)",
   "item-pagination":
     "0rem 0.1875rem 0.1875rem 0rem rgba(52, 71, 103, 0.15),0rem 0.1875rem 0.0625rem -0.125rem rgba(52, 71, 103, 0.2),0rem 0.0625rem 0.3125rem 0rem rgba(52, 71, 103, 0.15)",
   // dark
@@ -252,7 +257,8 @@ export const boxShadow = {
     "rgba(52, 71, 103, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem",
   "select-option":
     "rgba(0, 0, 0, 0.14) 0rem 0.125rem 0.125rem 0rem, rgba(0, 0, 0, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(0, 0, 0, 0.12) 0rem 0.0625rem 0.3125rem 0rem",
-
+  "main-content":
+    "rgba(0,0,0,0.14)_0rem_0.125rem_0.125rem_0rem,rgba(0,0,0,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(0,0,0,0.12)_0rem_0.0625rem_0.3125rem_0rem",
   dark: {
     "item-pagination":
       "rgba(52, 71, 103, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(52, 71, 103, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(52, 71, 103, 0.15) 0rem 0.0625rem 0.3125rem 0rem",

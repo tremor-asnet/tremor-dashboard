@@ -12,6 +12,7 @@ module.exports = withPlugins([], {
         port: "",
       },
     ],
+    domains: ["i.ibb.co"],
   },
 
   async headers() {

@@ -8,8 +8,9 @@ import {
   CustomList,
   CustomNumberFormat,
   CustomStatus,
+  CustomQuantity,
 } from "@/components/Table/common";
-import { DataGrid, LoadingIndicator } from "@/components";
+import { DataGrid } from "@/components";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -66,15 +67,24 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
       customNode: (_, { products }) => <CustomList products={products} />,
     },
     {
+      key: "count",
+      title: "quantity",
+      customNode: (_, { products }) => <CustomQuantity products={products} />,
+    },
+    {
       key: "revenue",
       title: "Revenue",
       customNode: (_, { revenue }) => <CustomNumberFormat value={revenue} />,
     },
   ];
 
+  const sortedProducts = orders.sort((a, b) =>
+    a.createdAt.localeCompare(b.createdAt),
+  );
+
   return (
     <DataGrid
-      data={orders}
+      data={sortedProducts}
       columns={columns}
       filterBy={status}
       keyword={keyword}

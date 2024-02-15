@@ -12,3 +12,9 @@ export const CHANNELS_CHART_COLOR: ColorChannelsChartType = {
   3: "primary",
   4: "gray-500",
 };
+
+export const TRANSACTION_COLOR = {
+  INCREASE: "few",
+  DECREASE: "attention",
+  PENDING: "secondary",
+};

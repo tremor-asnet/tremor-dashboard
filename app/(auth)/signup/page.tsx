@@ -103,6 +103,9 @@ const SignUp = () => {
           rules={{
             required: MESSAGES_ERROR.NAME_REQUIRED,
             minLength: { value: 4, message: MESSAGES_ERROR.NAME_MIN_LENGTH },
+            validate: value => {
+              return !!value.trim() || MESSAGES_ERROR.NAME_REQUIRED;
+            },
           }}
           render={({ field }) => (
             <div className="h-[70px] w-full">

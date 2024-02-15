@@ -9,7 +9,7 @@ interface CustomNumberFormatProps {
 }
 
 export const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
-  <p className="text-xs dark:text-white font-semibold leading-[15px] tracking-[0.4px] order-revenue">
+  <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue">
     {formatDotsToCommasNumber({
       value,
       currency: CURRENCY.DOLLAR,

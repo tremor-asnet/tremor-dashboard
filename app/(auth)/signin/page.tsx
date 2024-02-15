@@ -66,7 +66,7 @@ const SignIn = () => {
     );
 
     setFormStatus({
-      isPending: false,
+      isPending: !res?.errorMessage,
       errorMessage: res?.errorMessage || "",
     });
   };

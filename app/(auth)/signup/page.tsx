@@ -54,7 +54,7 @@ const SignUp = () => {
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
   const resErrorMessage = formStatus.errorMessage?.toString();
-  const isResErrorMessage = resErrorMessage.length > 0;
+  const hasErrorMessage = resErrorMessage.length > 0;
   const isSignUpSuccess = formStatus.isSuccess;
   const isDisableSubmit = !checked || formStatus.isPending;
   const router = useRouter();
@@ -64,6 +64,7 @@ const SignUp = () => {
   };
 
   const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
+  const isShowToast = isSignUpSuccess && isOpenToast && !hasErrorMessage;
 
   const handleSignUp = async (value: User) => {
     try {
@@ -97,7 +98,7 @@ const SignUp = () => {
 
   return (
     <div>
-      {isSignUpSuccess && isOpenToast && !isResErrorMessage && (
+      {isShowToast && (
         <div className="flex justify-center fixed right-5 top-5">
           <Toast
             icon={<FaCheckCircle />}
@@ -194,7 +195,7 @@ const SignUp = () => {
           )}
           name="password"
         />
-        {isResErrorMessage && (
+        {hasErrorMessage && (
           <p className="text-xs xs:text-xs leading-3 text-red-500">
             {resErrorMessage}
           </p>

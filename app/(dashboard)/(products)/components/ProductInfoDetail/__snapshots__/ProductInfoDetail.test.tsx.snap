@@ -138,17 +138,19 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           <div
             class="relative w-full"
           >
-            <label
-              class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
-            >
-              Quantity
-            </label>
             <input
-              class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:!text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
-              placeholder="Quantity"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+              id="details-quantity"
+              placeholder=""
               type="number"
               value="50"
             />
+            <label
+              class="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+              for="details-quantity"
+            >
+              Quantity
+            </label>
           </div>
         </div>
       </div>
@@ -288,17 +290,19 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         <div
           class="relative w-full"
         >
-          <label
-            class="pointer-events-none text-tremor-default text-secondary dark:text-lighter flex h-full w-full select-none truncate font-normal leading-tight"
-          >
-            Quantity
-          </label>
           <input
-            class="peer h-full w-full border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 dark:!text-white outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
-            placeholder="Quantity"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            id="details-quantity"
+            placeholder=""
             type="number"
             value="50"
           />
+          <label
+            class="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+            for="details-quantity"
+          >
+            Quantity
+          </label>
         </div>
       </div>
     </div>

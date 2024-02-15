@@ -4,10 +4,9 @@
 import Link from "next/link";
 
 // Components
-import InputField from "@/components/common/CustomField/InputField/InputField";
 
 import { Text, Flex } from "@tremor/react";
-import { StarRating } from "@/components";
+import { StarRating, InputField } from "@/components";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -63,9 +62,9 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
       </Flex>
       <Flex className="mt-6">
         <InputField
+          id="details-quantity"
           type="number"
           label="Quantity"
-          isLabelTransform={true}
           defaultValue={quantity}
         />
       </Flex>

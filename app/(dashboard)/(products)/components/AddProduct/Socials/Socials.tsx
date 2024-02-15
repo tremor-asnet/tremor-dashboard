@@ -2,7 +2,7 @@
 import { Controller, FieldErrors } from "react-hook-form";
 
 // Components
-import InputField from "@/components/common/CustomField/InputField/InputField";
+import { InputField } from "@/components";
 
 // Constants
 import { MESSAGES_ERROR, REGEX } from "@/constants";
@@ -35,10 +35,9 @@ const Socials = ({ control, errors }: SocialsProps) => {
         render={({ field }) => (
           <>
             <InputField
+              id="add-product-shopify"
               label="Shopify Handle"
-              placeholder=""
               type="text"
-              isLabelTransform={true}
               {...field}
             />
             <p className="text-[11px] xs:text-xs text-red-500">
@@ -61,9 +60,8 @@ const Socials = ({ control, errors }: SocialsProps) => {
         render={({ field }) => (
           <>
             <InputField
+              id="add-product-fb"
               label="Facebook Account"
-              isLabelTransform={true}
-              placeholder=""
               type="text"
               {...field}
             />
@@ -87,9 +85,8 @@ const Socials = ({ control, errors }: SocialsProps) => {
         render={({ field }) => (
           <>
             <InputField
+              id="add-product-ig"
               label="Instagram Account"
-              isLabelTransform={true}
-              placeholder=""
               type="text"
               {...field}
             />

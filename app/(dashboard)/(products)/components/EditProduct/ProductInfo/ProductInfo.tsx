@@ -1,20 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { KeyboardEvent } from "react";
 
 // Libs
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import {
-  Text,
-  Flex,
-  Card,
-  TextInput,
-  Select,
-  SelectItem,
-  NumberInput,
-} from "@tremor/react";
+import { Text, Flex, Card } from "@tremor/react";
+import { SelectField, InputField } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -24,9 +18,7 @@ import {
   NUMBER_REGEX_WITHOUT_0,
   DECIMAL_REGEX,
 } from "@/constants";
-
-// Types
-import { SelectOptionData } from "@/types";
+import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";
@@ -41,6 +33,10 @@ const ProductInfo = () => {
   const nameErrorMessage = productName?.message?.toString() || "";
   const weightErrorMessage = weight?.message?.toString() || "";
   const quantityErrorMessage = quantity?.message?.toString();
+
+  const handleOnKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
+  };
 
   return (
     <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0">
@@ -60,17 +56,8 @@ const ProductInfo = () => {
               },
             }}
             render={({ field }) => (
-              <div className="w-full">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Name
-                </Text>
-                <TextInput
-                  id="name"
-                  placeholder="Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  autoFocus
-                  {...field}
-                />
+              <div className="w-full mb-4">
+                <InputField id="edit-name" label="Name" {...field} />
                 {nameErrorMessage && (
                   <p className="pt-1 text-[11px] xs:text-xs text-red-500">
                     {nameErrorMessage}
@@ -98,22 +85,20 @@ const ProductInfo = () => {
             name="description"
           />
         </Flex>
-        <Flex flexDirection="col">
+        <Flex flexDirection="col" className="gap-6">
           <Controller
             control={control}
             rules={{
               pattern: { value: DECIMAL_REGEX, message: "Invalid weight" },
             }}
-            render={({ field: { value, onChange } }) => (
+            render={({ field }) => (
               <div className="w-full mb-4">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Weight
-                </Text>
-                <NumberInput
-                  enableStepper={false}
-                  onValueChange={onChange}
-                  value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                <InputField
+                  id="edit-weight"
+                  type="number"
+                  label="Weight"
+                  {...field}
+                  onKeyDown={handleOnKeyDown}
                 />
                 {weightErrorMessage && (
                   <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -133,16 +118,14 @@ const ProductInfo = () => {
                 message: "Invalid quantity number",
               },
             }}
-            render={({ field: { onChange, value } }) => (
+            render={({ field }) => (
               <div className="w-full mb-4">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Quantity
-                </Text>
-                <NumberInput
-                  enableStepper={false}
-                  onValueChange={onChange}
-                  value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                <InputField
+                  id="edit-quantity"
+                  type="number"
+                  label="Quantity"
+                  onKeyDown={handleOnKeyDown}
+                  {...field}
                 />
                 {quantityErrorMessage && (
                   <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -156,22 +139,13 @@ const ProductInfo = () => {
 
           <Controller
             control={control}
-            render={({ field: { value, onChange } }) => (
+            render={({ field }) => (
               <div className="w-full mb-4">
-                <Text className="text-secondary mb-3 dark:text-lighter mb-2">
-                  Category
-                </Text>
-                <Select
-                  placeholder="Clothing"
-                  className="select-custom dark:text-white dark:border-light dark:focus:border-white"
-                  value={value.toString()}
-                  onValueChange={onChange}>
-                  {CATEGORY_PRODUCT.map((item: SelectOptionData) => (
-                    <SelectItem key={item.value} value={item.value}>
-                      {item.option}
-                    </SelectItem>
-                  ))}
-                </Select>
+                <SelectField
+                  label="Category"
+                  options={CATEGORY_PRODUCT}
+                  {...field}
+                />
               </div>
             )}
             name="category"
@@ -180,14 +154,10 @@ const ProductInfo = () => {
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Prodvider Name
-                </Text>
-                <TextInput
-                  id="provider-name"
-                  placeholder="Provider Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+              <div className="w-full mb-4">
+                <InputField
+                  id="edit-provider"
+                  label="Provider Name"
                   {...field}
                 />
               </div>

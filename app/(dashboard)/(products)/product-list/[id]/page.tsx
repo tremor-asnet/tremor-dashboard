@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 // Constants
-import { PRODUCT, ROUTES } from "@/constants";
+import { ROUTES } from "@/constants";
 
 // Components
-import { CustomImage, ProductInfoDetail } from "@/components";
+import { CustomImage } from "@/components";
 import { Bold, Flex } from "@tremor/react";
 import OtherProducts from "@/components/ProductDetails/OtherProducts/OtherProducts";
+import ProductInfoDetail from "../../components/ProductInfoDetail/ProductInfoDetail";
 
 // Services
 import { getProductDetails, getProducts } from "@/services";

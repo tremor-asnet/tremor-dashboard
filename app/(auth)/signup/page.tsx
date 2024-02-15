@@ -44,6 +44,7 @@ const SignUp = () => {
   const [formStatus, setFormStatus] = useState({
     isPending: false,
     errorMessage: "",
+    isSuccess: false,
   });
 
   const [checked, setChecked] = useState(false);
@@ -52,6 +53,9 @@ const SignUp = () => {
   const nameErrorMessage = name?.message?.toString();
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
+  const resErrorMessage = formStatus.errorMessage?.toString();
+  const hasErrorMessage = resErrorMessage.length > 0;
+  const isSignUpSuccess = formStatus.isSuccess;
   const isDisableSubmit = !checked || formStatus.isPending;
   const router = useRouter();
 
@@ -60,12 +64,14 @@ const SignUp = () => {
   };
 
   const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
+  const isShowToast = isSignUpSuccess && isOpenToast && !hasErrorMessage;
 
   const handleSignUp = async (value: User) => {
     try {
       setFormStatus({
         isPending: true,
         errorMessage: "",
+        isSuccess: false,
       });
 
       const res = await createNewAccount(
@@ -76,22 +82,23 @@ const SignUp = () => {
       setFormStatus({
         isPending: false,
         errorMessage: res?.errorMessage || "",
+        isSuccess: res?.isSuccess || false,
       });
 
       handleOpenToast();
-
-      !formStatus.isPending && !isOpenToast && router.replace(ROUTES.SIGN_IN);
+      res?.isSuccess && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
       setFormStatus({
         isPending: false,
         errorMessage: error?.errorMessage || "",
+        isSuccess: false,
       });
     }
   };
 
   return (
     <div>
-      {isOpenToast && (
+      {isShowToast && (
         <div className="flex justify-center fixed right-5 top-5">
           <Toast
             icon={<FaCheckCircle />}
@@ -188,7 +195,11 @@ const SignUp = () => {
           )}
           name="password"
         />
-
+        {hasErrorMessage && (
+          <p className="text-xs xs:text-xs leading-3 text-red-500">
+            {resErrorMessage}
+          </p>
+        )}
         <div className="flex items-center space-x-3 pt-3">
           <CheckBox
             checked={checked}

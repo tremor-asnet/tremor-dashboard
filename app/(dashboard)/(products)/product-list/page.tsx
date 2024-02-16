@@ -67,7 +67,7 @@ const ProductListPage = async ({
         </Link>
         <ProductFilter title="Filters" />
       </Flex>
-      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
+      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary min-h-[calc(100vh-12rem)]">
         <InputSearch />
         <Suspense
           key={`${productName}-${isAvailable}`}

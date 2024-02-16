@@ -26,12 +26,12 @@ export const getContentByProps = (
         color: `${TRANSACTION_COLOR.INCREASE}`,
         classes: `${TRANSACTION_CLASS.INCREASE}`,
         icon: <BiChevronUp />,
-        value: `+ $ ${formattedAmount}`,
+        value: `+ $${formattedAmount}`,
       }
     : {
         color: `${TRANSACTION_COLOR.DECREASE}`,
         classes: `${TRANSACTION_CLASS.DECREASE}`,
         icon: <BiChevronDown />,
-        value: `- $ ${formattedAmount}`,
+        value: `- $${formattedAmount}`,
       };
 };

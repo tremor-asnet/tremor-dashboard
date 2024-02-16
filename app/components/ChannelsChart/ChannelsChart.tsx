@@ -80,7 +80,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             </ul>
           </Flex>
         </Flex>
-        <Flex className="flex-col md:flex-row">
+        <Flex className="flex-col xl:flex-row pr-1 items-end">
           <Flex>
             <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
               More than
@@ -91,11 +91,11 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
               <span className="font-bold mx-1">
                 {numberWithCommas(sale_social_media)}
               </span>
-              from social media.
+              are from social media.
             </Text>
           </Flex>
-          <Flex className="justify-end w-full md:w-2/3 md: mt-4">
-            <Button className="uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white">
+          <Flex className="justify-end w-full md:w-2/3 md:mt-4">
+            <Button className="uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white">
               <span className="text-xs">read more</span>
             </Button>
           </Flex>

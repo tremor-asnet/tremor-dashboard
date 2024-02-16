@@ -18,7 +18,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start mb-2"
+          class="tremor-Flex-root flex w-full flex-row items-start justify-start pb-2"
         >
           <div
             class="tremor-Table-root overflow-auto w-full"
@@ -30,10 +30,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
               >
                 <tr
-                  class="tremor-TableRow-row border-0 border-b border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
                 >
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     product
                   </th>
@@ -58,7 +58,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last:!border-transparent"
               >
                 <tr
-                  class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
                 >
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -91,7 +91,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Nike v22 Running
                         </p>
                         <p
-                          class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
                             class="text-few"
@@ -159,7 +159,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
                 >
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -192,7 +192,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Business Kit (Mug + Notebook)
                         </p>
                         <p
-                          class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
                             class="text-few"
@@ -260,7 +260,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
                 >
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -293,7 +293,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Black Chair
                         </p>
                         <p
-                          class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
                             class="text-few"
@@ -361,7 +361,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
                 >
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -394,7 +394,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Wireless Charger
                         </p>
                         <p
-                          class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
                             class="text-few"
@@ -462,7 +462,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                  class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
                 >
                   <td
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -495,7 +495,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Mountain Trip Kit (Camera + Backpack)
                         </p>
                         <p
-                          class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
                             class="text-few"
@@ -583,7 +583,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         </p>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row items-start justify-start mb-2"
+        class="tremor-Flex-root flex w-full flex-row items-start justify-start pb-2"
       >
         <div
           class="tremor-Table-root overflow-auto w-full"
@@ -595,10 +595,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
             >
               <tr
-                class="tremor-TableRow-row border-0 border-b border-gray-100"
+                class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
               >
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   product
                 </th>
@@ -623,7 +623,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last:!border-transparent"
             >
               <tr
-                class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
               >
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -656,7 +656,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Nike v22 Running
                       </p>
                       <p
-                        class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
                           class="text-few"
@@ -724,7 +724,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 </td>
               </tr>
               <tr
-                class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
               >
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -757,7 +757,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Business Kit (Mug + Notebook)
                       </p>
                       <p
-                        class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
                           class="text-few"
@@ -825,7 +825,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 </td>
               </tr>
               <tr
-                class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
               >
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -858,7 +858,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Black Chair
                       </p>
                       <p
-                        class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
                           class="text-few"
@@ -926,7 +926,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 </td>
               </tr>
               <tr
-                class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
               >
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -959,7 +959,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Wireless Charger
                       </p>
                       <p
-                        class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
                           class="text-few"
@@ -1027,7 +1027,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 </td>
               </tr>
               <tr
-                class="tremor-TableRow-row border-0 border-b !border-gray-100"
+                class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
               >
                 <td
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1060,7 +1060,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Mountain Trip Kit (Camera + Backpack)
                       </p>
                       <p
-                        class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
                           class="text-few"
@@ -1202,7 +1202,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
       </p>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row items-start justify-start mb-2"
+      class="tremor-Flex-root flex w-full flex-row items-start justify-start pb-2"
     >
       <div
         class="tremor-Table-root overflow-auto w-full"
@@ -1214,10 +1214,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
           >
             <tr
-              class="tremor-TableRow-row border-0 border-b border-gray-100"
+              class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
               >
                 product
               </th>
@@ -1242,7 +1242,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
             class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last:!border-transparent"
           >
             <tr
-              class="tremor-TableRow-row border-0 border-b !border-gray-100"
+              class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
             >
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1275,7 +1275,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Nike v22 Running
                     </p>
                     <p
-                      class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
                         class="text-few"
@@ -1343,7 +1343,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               </td>
             </tr>
             <tr
-              class="tremor-TableRow-row border-0 border-b !border-gray-100"
+              class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
             >
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1376,7 +1376,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Business Kit (Mug + Notebook)
                     </p>
                     <p
-                      class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
                         class="text-few"
@@ -1444,7 +1444,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               </td>
             </tr>
             <tr
-              class="tremor-TableRow-row border-0 border-b !border-gray-100"
+              class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
             >
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1477,7 +1477,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Black Chair
                     </p>
                     <p
-                      class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
                         class="text-few"
@@ -1545,7 +1545,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               </td>
             </tr>
             <tr
-              class="tremor-TableRow-row border-0 border-b !border-gray-100"
+              class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
             >
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1578,7 +1578,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Wireless Charger
                     </p>
                     <p
-                      class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
                         class="text-few"
@@ -1646,7 +1646,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
               </td>
             </tr>
             <tr
-              class="tremor-TableRow-row border-0 border-b !border-gray-100"
+              class="tremor-TableRow-row border-0 border-b !border-gray-100 dark:!border-grayish"
             >
               <td
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
@@ -1679,7 +1679,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Mountain Trip Kit (Camera + Backpack)
                     </p>
                     <p
-                      class="text-tremor-default dark:text-dark-tremor-content text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
                         class="text-few"

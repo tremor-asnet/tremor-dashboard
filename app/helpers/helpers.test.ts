@@ -157,14 +157,14 @@ describe("formatDateTime function", () => {
   it("should format date and time without separator", () => {
     const dateValue = "2022-01-23T12:34:56";
     const formattedDate = formatDateTime(dateValue);
-    expect(formattedDate).toBe("23 Jan 12:34 PM");
+    expect(formattedDate).toBe("23 Jan 2022, at 12:34 PM");
   });
 
   it("should format date and time with a separator", () => {
     const dateValue = "2022-01-23T12:34:56";
     const separator = ",";
     const formattedDate = formatDateTime(dateValue, separator);
-    expect(formattedDate).toBe("23 Jan, 12:34 PM");
+    expect(formattedDate).toBe("23 Jan, 2022, at 12:34 PM");
   });
 });
 

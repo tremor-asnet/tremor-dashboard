@@ -20,4 +20,4 @@ export const formatDate = (date: Date) => {
  * @returns string
  */
 export const formatDateTime = (value: string, separator: string = "") =>
-  dayjs(value).format(`DD MMM${separator} hh:mm A`);
+  dayjs(value).format(`DD MMM${separator} YYYY, [at] hh:mm A`);

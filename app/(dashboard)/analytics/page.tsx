@@ -61,7 +61,6 @@ const Analytics = async () => {
       {/* Sales card  */}
       <SalesByCountry
         title="Sales by Country"
-        chart={CHART_SRC.analytics}
         isAnalytics={true}
         data={sale_by_country}
       />

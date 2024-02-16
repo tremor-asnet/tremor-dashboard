@@ -48,7 +48,7 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
             {description}
           </Text>
         </Flex>
-        <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
+        <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6" />
         <Flex className="p-2 pt-0">
           <Flex>
             <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">

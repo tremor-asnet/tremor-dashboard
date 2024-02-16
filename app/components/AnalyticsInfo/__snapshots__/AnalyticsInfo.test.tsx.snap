@@ -86,7 +86,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6"
+            class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6"
           />
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center p-2 pt-0"
@@ -225,7 +225,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6"
+          class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6"
         />
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center p-2 pt-0"
@@ -418,7 +418,7 @@ exports[`Testing analytics sale chart component testing component analytics info
         </p>
       </div>
       <div
-        class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6"
+        class="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6"
       />
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center p-2 pt-0"

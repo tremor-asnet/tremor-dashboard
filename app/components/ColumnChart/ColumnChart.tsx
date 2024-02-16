@@ -57,7 +57,7 @@ const ColumnChart = ({ webChartData }: WebChartDataProps) => {
               </Subtitle>
             </Popover>
           </div>
-          <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
+          <div className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4" />
           <Flex className="justify-start">
             <FaRegClock
               size={12}

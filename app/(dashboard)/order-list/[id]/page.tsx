@@ -67,7 +67,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               createdAt={createdAt}
               orderCode={orderCode}
             />
-            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
+            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <OrderContact
@@ -76,7 +76,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
               date={period}
               status={status}
             />
-            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-6" />
+            <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
             <Grid numItems={1} numItemsMd={4} numItemsLg={9}>

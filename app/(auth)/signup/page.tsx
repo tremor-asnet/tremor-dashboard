@@ -206,7 +206,7 @@ const SignUp = () => {
             checked={checked}
             handleCheckBox={handleCheckBox}
             tabIndex={2}
-            disabled={isStatusPending}
+            isDisable={isStatusPending}
           />
           <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
             I agree the{" "}

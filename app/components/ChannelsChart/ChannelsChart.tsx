@@ -94,7 +94,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
               are from social media.
             </Text>
           </Flex>
-          <Flex className="justify-end w-full md:w-2/3 md:mt-4">
+          <Flex className="justify-end w-full md:w-2/3 mt-6 md:mt-4">
             <Button className="uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white">
               <span className="text-xs">read more</span>
             </Button>

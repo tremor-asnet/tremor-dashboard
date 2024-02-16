@@ -90,9 +90,9 @@ const DataGrid = <T,>({
     setTimeout(() => {
       setLoading(false);
     }, 100);
-  }, [filterBy, keyword]);
+  }, [filterBy, keyword, currentPage, pageSize]);
 
-  if (loading === true) {
+  if (loading) {
     return (
       <LoadingIndicator
         additionalClass="min-h-[500px] flex justify-center items-center"

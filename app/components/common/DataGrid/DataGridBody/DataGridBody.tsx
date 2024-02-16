@@ -38,7 +38,7 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
         })
       ) : (
         <TableRow className="w-full">
-          <TableCell colSpan={6} className="h-32 text-center">
+          <TableCell colSpan={7} className="h-32 text-center">
             <p className="text-xl dark:text-white font-semibold">
               Result Not Found
             </p>

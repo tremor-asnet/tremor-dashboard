@@ -10,7 +10,11 @@ import { formattedNumber } from "@/helpers";
 // Types
 import { SalesByCountryData } from "@/types";
 
-interface SalesByCountryRowProps extends SalesByCountryData {
+interface SalesByCountryRowProps
+  extends Pick<
+    SalesByCountryData,
+    "id" | "country" | "sales" | "value" | "bounce"
+  > {
   isAnalytics: boolean;
 }
 
@@ -23,13 +27,15 @@ const SalesByCountryRow = ({
   bounce,
 }: SalesByCountryRowProps) => {
   return (
-    <TableRow key={id} className="border-solid">
-      <TableCell className="px-4 py-3 w-6/12 sm:w-[30%] border-gray-500">
+    <TableRow
+      key={id}
+      className="border-solid border-b !border-gray-100 dark:!border-grayish">
+      <TableCell className="px-4 py-3 w-6/12 sm:w-[50%]">
         <Flex className="items-center">
           <Image
             src={FLAG_SRC[id]}
-            width="24"
-            height="18"
+            width="34"
+            height="28"
             alt={country}
             priority
           />

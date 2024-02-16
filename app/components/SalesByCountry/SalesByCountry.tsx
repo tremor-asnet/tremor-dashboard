@@ -52,7 +52,6 @@ const SalesByCountry = ({
                     key={`${item.id}`}
                     isAnalytics={isAnalytics}
                     id={item.id}
-                    flag={item.flag}
                     country={item.country}
                     sales={item.sales}
                     value={item.value}

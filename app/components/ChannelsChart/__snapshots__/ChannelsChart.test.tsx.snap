@@ -188,10 +188,10 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col xl:flex-row pr-1 items-end"
+        class="tremor-Flex-root flex w-full justify-between flex-col xl:flex-row items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center pr-1"
         >
           <p
             class="text-tremor-default font-light text-secondary dark:text-white tracking-[0.4px]"

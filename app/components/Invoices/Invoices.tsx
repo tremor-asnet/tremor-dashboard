@@ -13,7 +13,7 @@ interface InvoicesProps {
 const Invoices = ({ invoices }: InvoicesProps) => {
   const handleOnClick = () => {};
 
-  const invoiceList = invoices.map(invoice => {
+  const invoiceList = invoices.slice(0, 2).map(invoice => {
     const { date, code, price } = invoice;
     return (
       <InvoiceItem
@@ -27,7 +27,7 @@ const Invoices = ({ invoices }: InvoicesProps) => {
   });
 
   return (
-    <div className="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md w-full">
+    <div className="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md w-full min-h-[234px]">
       <div className="text-[#344767] dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
         <button className="text-xs font-semibold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md">

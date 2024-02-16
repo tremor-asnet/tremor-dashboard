@@ -74,7 +74,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
       {showListOption && (
         <div
           ref={selectRef as RefObject<HTMLDivElement>}
-          className="absolute z-[1] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+          className="absolute z-[2] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
           <SelectOption
             title="Status"
             data={orderListOption}

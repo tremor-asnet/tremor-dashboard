@@ -18,6 +18,8 @@ const InputSearch = () => {
   const { replace } = useRouter();
   const params = new URLSearchParams(searchParams);
   const inputSearchRef = useRef<HTMLInputElement>(null);
+  // @ts-ignore (us this comment if typescript raises an error)
+  const hasValueInputSearch = inputSearchRef?.current?.value;
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -49,10 +51,10 @@ const InputSearch = () => {
         onChange={debounce(handleSearch, 1000)}
         placeholder="Search..."
       />
-      {params.toString() && (
+      {hasValueInputSearch && (
         <MdClose
           onClick={resetSearch}
-          className="text-xs text-white -ml-5 bg-black p-[2px] cursor-pointer rounded-full z-10"
+          className="text-xs text-white bg-black dark:text-black dark:bg-white -ml-5 p-[2px] cursor-pointer rounded-full z-[1]"
         />
       )}
     </Flex>

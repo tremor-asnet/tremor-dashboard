@@ -188,10 +188,10 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row"
+        class="tremor-Flex-root flex w-full justify-between flex-col xl:flex-row items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center pr-1"
         >
           <p
             class="text-tremor-default font-light text-secondary dark:text-white tracking-[0.4px]"
@@ -208,14 +208,14 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
             >
               700,000
             </span>
-            from social media.
+            are from social media.
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-end w-full md:w-2/3 md: mt-4"
+          class="tremor-Flex-root flex flex-row items-center justify-end w-full md:w-2/3 md:mt-4"
         >
           <button
-            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm uppercase text-secondary font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white"
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white"
           >
             <span
               class="tremor-Button-text text-sm whitespace-nowrap"

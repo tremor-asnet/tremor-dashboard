@@ -38,8 +38,8 @@ const Sales = async () => {
         </Grid>
       </Col>
       <Col numColSpan={1} numColSpanMd={3}>
-        <Grid numItemsMd={4} className="gap-5">
-          <Col numColSpan={2}>
+        <Grid numItemsMd={3} className="gap-5">
+          <Col numColSpan={1}>
             <ChannelChart
               title="Channels"
               channelChartData={saleData.channels}

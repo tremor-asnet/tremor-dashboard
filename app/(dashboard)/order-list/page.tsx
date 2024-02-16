@@ -59,24 +59,26 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch />
-        <Suspense
-          key={`${productName}-${status}`}
-          fallback={
-            <LoadingIndicator
-              additionalClass="flex justify-center items-center"
-              width={8}
-              height={8}
-              isFullWidth={false}
-              fillColor="river-bed-500"
-            />
-          }>
-          <TableOrder
+        <div className="w-full relative min-h-[183px] bg-white rounded-lg">
+          <Suspense
             key={`${productName}-${status}`}
-            orders={filteredData}
-            status={status}
-            keyword={productName}
-          />
-        </Suspense>
+            fallback={
+              <LoadingIndicator
+                additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
+                width={8}
+                height={8}
+                isFullWidth={false}
+                fillColor="river-bed-500"
+              />
+            }>
+            <TableOrder
+              key={`${productName}-${status}`}
+              orders={filteredData}
+              status={status}
+              keyword={productName}
+            />
+          </Suspense>
+        </div>
       </div>
     </Flex>
   );

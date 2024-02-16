@@ -23,7 +23,6 @@ export const AnalyticsSalesByCountry: Story = {
   render: () => (
     <SalesByCountry
       title="Sales by Country"
-      chart={CHART_SRC.analytics}
       isAnalytics={true}
       data={SALES_BY_COUNTRY}
     />

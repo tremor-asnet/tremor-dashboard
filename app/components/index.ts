@@ -28,6 +28,7 @@ export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContac
 export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
+export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";
 export { default as ProductFilter } from "./ProductFilter";

@@ -110,7 +110,7 @@ const ProjectCard = ({
           <Text className="text-md text-secondary my-4 font-light dark:text-dark-tremor-content-romance">
             {description}
           </Text>
-          <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
+          <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4" />
           <Flex className="my-4">
             <div>
               <Text className="text-primary font-semibold dark:text-dark-tremor-content-title">

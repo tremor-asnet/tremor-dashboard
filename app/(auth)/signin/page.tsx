@@ -141,7 +141,8 @@ const SignIn = () => {
           name="switch"
           checked={isRememberedMe}
           color="zinc"
-          className="flex justify-center items-center"
+          disabled={isDisableSubmit}
+          className="switch flex justify-center items-center"
           onChange={handleSwitchChange}
         />
         <Text className="text-secondary dark:text-dark-romance font-normal">

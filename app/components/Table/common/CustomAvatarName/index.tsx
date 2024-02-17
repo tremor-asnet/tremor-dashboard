@@ -17,9 +17,9 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
         src={avatar}
       />
     ) : (
-      <div className="w-6 h-6 flex justify-center items-center text-white text-xs bg-primary rounded-full mr-2">
+      <p className="w-6 h-6 flex justify-center items-center text-white text-xs bg-primary rounded-full mr-2">
         {text.substring(0, 1)}
-      </div>
+      </p>
     )}
     <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer">
       {text}

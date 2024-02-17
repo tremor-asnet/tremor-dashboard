@@ -3,8 +3,7 @@ import { HeaderCellContents } from "@/components";
 import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 
 // Types
-import { ColumnType } from "@/types";
-import { SortItem } from "@/components/Table/TableProduct/TableProduct";
+import { ColumnType, SortItem } from "@/types";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];

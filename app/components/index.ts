@@ -31,8 +31,6 @@ export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as Pagination } from "./common/Pagination";
 export { default as Checkbox } from "./common/Checkbox";
-export { default as ProductFilter } from "./ProductFilter";
-export { default as TableProduct } from "./Table/TableProduct/TableProduct";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
 export { default as DataGrid } from "./common/DataGrid/DataGrid";

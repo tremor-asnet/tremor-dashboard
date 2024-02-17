@@ -52,23 +52,22 @@ const Breadcrumb = ({
               : "text-primary dark:text-dark-primary opacity-50  ";
 
           return (
-            <>
-              <li
-                className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
-                <Link href={href}>
-                  {getCrumbName({
-                    name: link,
-                    path: href,
-                    params: params?.id,
-                  })}
-                </Link>
-                {newPath.length !== index + 1 && (
-                  <span className={`${isProjectPage && "text-white"}`}>
-                    &#47;
-                  </span>
-                )}
-              </li>
-            </>
+            <li
+              key={href}
+              className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
+              <Link href={href}>
+                {getCrumbName({
+                  name: link,
+                  path: href,
+                  params: params?.id,
+                })}
+              </Link>
+              {newPath.length !== index + 1 && (
+                <span className={`${isProjectPage && "text-white"}`}>
+                  &#47;
+                </span>
+              )}
+            </li>
           );
         })}
       </>

@@ -6,31 +6,19 @@ import {
   CustomNumberFormat,
 } from "@/components/Table/common";
 import { DataGrid } from "@/components";
+import Link from "next/link";
+import { ProgressBar } from "@tremor/react";
 
 // Types
 import { Product, ColumnType } from "@/types";
 
 // Constants
-import { ProgressBar } from "@tremor/react";
+import { ROUTES } from "@/constants";
 
-//Styles
+// Styles
 import "@/styles/products.css";
 
-interface OtherProductsProps {
-  products: Product[];
-  isAvailable: string;
-  keyword: string;
-  className?: string;
-  hasPagination?: boolean;
-}
-
-const OtherProducts = ({
-  products,
-  isAvailable,
-  keyword,
-  className = "",
-  hasPagination = true,
-}: OtherProductsProps) => {
+export const OtherProducts = ({ products }: { products: Product[] }) => {
   // Other Product Table Props
   const columns: ColumnType<Product>[] = [
     {
@@ -64,18 +52,25 @@ const OtherProducts = ({
     {
       key: "id",
       title: "Id",
+      customNode: (_, { id }) => (
+        <Link
+          prefetch={true}
+          href={`${ROUTES.PRODUCT_LIST}/${id}`}
+          className="ml-4 text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
+          &#35;{id}
+        </Link>
+      ),
       sortable: false,
     },
   ];
-
   return (
     <DataGrid
       data={products}
       columns={columns}
-      filterBy={isAvailable}
-      keyword={keyword}
-      className={className}
-      hasPagination={hasPagination}
+      filterBy="isAvailable"
+      keyword="productName"
+      className="!shadow-none"
+      hasPagination={false}
     />
   );
 };

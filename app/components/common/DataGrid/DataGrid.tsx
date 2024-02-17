@@ -11,8 +11,7 @@ import {
 } from "@/components";
 
 // Types
-import { ColumnType } from "@/types";
-import { SortItem } from "@/components/Table/TableProduct/TableProduct";
+import { ColumnType, SortItem } from "@/types";
 
 // Hooks
 import { useEffect, useMemo, useState } from "react";

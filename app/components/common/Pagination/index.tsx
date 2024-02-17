@@ -70,8 +70,15 @@ const Pagination = ({
               currentPage === pageNumber
                 ? "btn-paginate-active dark:bg-gradient-pickled shadow-btn-primary"
                 : "btn-paginate dark:border-greyish hover:bg-select";
-            if (pageNumber === DOTS)
-              return <RxDotsHorizontal className="dark:text-secondary" />;
+
+            if (pageNumber === DOTS) {
+              return (
+                <RxDotsHorizontal
+                  className="dark:text-secondary"
+                  key={pageNumber}
+                />
+              );
+            }
 
             return (
               <button

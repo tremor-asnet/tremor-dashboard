@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Components
+import { CustomImage } from "@/components";
+
 interface CustomAvatarNameProps {
   avatar?: string;
   text: string;
@@ -8,7 +11,7 @@ interface CustomAvatarNameProps {
 export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-48">
     {avatar ? (
-      <Image
+      <CustomImage
         className="w-6 h-6 min-w-[24px] rounded-full mr-2"
         alt={text}
         width={24}

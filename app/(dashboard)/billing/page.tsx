@@ -15,7 +15,7 @@ import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 import { getBillings } from "@/services";
 
 // Types
-import { SalaryCardData } from "@/types";
+import { BillingInfoData, SalaryCardData } from "@/types";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
@@ -57,7 +57,7 @@ const Billing = async () => {
           <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
             Billing Information
           </Bold>
-          {mockBilling.map(item => (
+          {billingData.billingInfos.map((item: BillingInfoData) => (
             <BillingInfo key={`${item.id}`} billingData={item} />
           ))}
         </div>

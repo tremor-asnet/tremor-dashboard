@@ -1,6 +1,7 @@
+//Components
 import { Flex } from "@tremor/react";
+import InvoiceLogo from "@/components/Invoice/InvoiceLogo/InvoiceLogo";
 
-//Icons
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 export const InvoiceHeader = () => {
@@ -10,17 +11,7 @@ export const InvoiceHeader = () => {
         flexDirection="col"
         alignItems="start"
         className="md:max-w-[33.333333%]">
-        <div className="w-16 h-16 m-2 text-center">
-          <div className="inline-block border-[3px] border-black dark:border-white rounded-[3px] w-[30px] h-[30px] -mr-[1.5px]">
-            <FaAngleUp className="inline-block text-xl dark:text-white" />
-          </div>
-          <div className="inline-block border-[3px] border-black dark:border-white rounded-[3px] w-[30px] h-[30px] -ml-[1.5px]">
-            <FaAngleUp className="inline-block text-xl dark:text-white" />
-          </div>
-          <div className="inline-block border-[3px] border-black dark:border-white rounded-[3px] w-[30px] h-[30px] -mt-[3px]">
-            <FaAngleDown className="inline-block text-xl dark:text-white" />
-          </div>
-        </div>
+        <InvoiceLogo width={16} height={16} />
         <p className="text-primary dark:text-white font-bold leading-[26px] tracking-[0.12px] mt-3">
           St. Independence Embankment, 050105 Bucharest, Romania
         </p>

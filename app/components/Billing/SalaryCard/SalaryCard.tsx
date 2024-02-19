@@ -16,17 +16,14 @@ import {
   AGGREGATION_DESCRIPTION,
 } from "@/constants";
 
-interface SalaryCardDataProps {
-  value: number;
-  type: AGGREGATION_TYPE;
-  currency?: string;
-}
+// Types
+import { SalaryCardData } from "@/types";
 
 const SalaryCard = ({
   type,
   value,
   currency = CURRENCY.DOLLAR,
-}: SalaryCardDataProps): JSX.Element => {
+}: SalaryCardData): JSX.Element => {
   const isSalary = type === AGGREGATION_TYPE.SALARY;
   const description = isSalary
     ? AGGREGATION_DESCRIPTION.SALARY

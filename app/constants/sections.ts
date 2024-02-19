@@ -14,4 +14,6 @@ export const ITEMS_DASHBOARD = [
   { label: "Order List", href: ROUTES.ORDER_LIST, content: "O" },
   { label: "Product List", href: ROUTES.PRODUCT_LIST, content: "P" },
   { label: "Billing", href: ROUTES.BILLING, content: "B" },
+  // Remove after implementing billing
+  { label: "Invoice Details", href: ROUTES.INVOICE, content: "I" },
 ];

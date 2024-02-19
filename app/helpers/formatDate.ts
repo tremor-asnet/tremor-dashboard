@@ -20,4 +20,13 @@ export const formatDate = (date: Date) => {
  * @returns string
  */
 export const formatDateTime = (value: string, separator: string = "") =>
-  dayjs(value).format(`DD MMM${separator} YYYY, [at] hh:mm A`);
+  dayjs(value).format(`DD MMM${separator} hh:mm A`);
+
+/**
+ * Format by date year
+ * Ex: 2024-02-05T02:50:02.319095+00:00 --> 05 Feb 2024, at 09:50 AM
+ * @param value string
+ * @returns string
+ */
+export const formatDateYear = (value: string) =>
+  dayjs(value).format(`DD MMM YYYY, [at] hh:mm A`);

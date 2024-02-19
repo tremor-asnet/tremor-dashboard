@@ -4,7 +4,7 @@ exports[`CheckBox Component renders Checkbox component snapshot correctly 1`] = 
 <div>
   <input
     checked=""
-    class="form-checkbox text-[#344767] h-5 w-5 border-[#dee2e6] rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px]"
+    class="form-checkbox text-primary h-5 w-5 border-rarely rounded-md checked:bg-[length:90%_90%] border-[1px] checked:bg-[length:80%_80%] border-[1px] checked:bg-[length:50%_50%] border-[1px] opacity-100"
     data-testid="checkbox"
     tabindex="3"
     type="checkbox"

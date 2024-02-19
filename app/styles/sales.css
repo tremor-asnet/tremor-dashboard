@@ -4,19 +4,19 @@
 
 .recharts-dot.recharts-line-dot {
   stroke-opacity: inherit;
-  r: 6;
+  r: 5;
 }
 
 .recharts-legend-wrapper > div {
   @apply justify-start;
 }
 
-path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
-  @apply fill-[blue];
+.sale-page path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-tremor-content-seldom;
 }
 
-path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
-  @apply fill-[gray];
+.sale-page path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+  @apply fill-primary;
 }
 
 .sale-page .recharts-text.recharts-cartesian-axis-tick-value {
@@ -28,5 +28,25 @@ path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .
 }
 
 .dark .recharts-wrapper .recharts-legend-wrapper p {
-  @apply text-[white];
+  @apply text-[white] text-xs;
+}
+
+.recharts-legend-wrapper ol li:first-child svg {
+  @apply text-tremor-content-seldom;
+}
+
+.recharts-legend-wrapper ol li:last-child svg {
+  @apply text-primary;
+}
+
+path[name="Facebook Ads"] {
+  @apply stroke-tremor-content-seldom;
+}
+
+path[name="Google Ads"] {
+  @apply stroke-primary;
+}
+
+.sale-page .recharts-dot.recharts-line-dot {
+  @apply stroke-[4] stroke-transparent font-thin;
 }

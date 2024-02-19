@@ -44,7 +44,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             content="See traffic channels"
             className="text-center !bg-black !bottom-[-50px] rounded-md !text-white right-[-34px] md:right-[-55px] min-w-[140px] before:content-['▲'] before:absolute before:top-[-17px] before:left-[85px] md:before:left-[65px] before:text-[black]">
             <Button
-              className="!rounded-full border-[#7B809A] text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+              className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
               variant="secondary">
               <MdOutlinePriorityHigh className="text-xs text-secondary" />
             </Button>

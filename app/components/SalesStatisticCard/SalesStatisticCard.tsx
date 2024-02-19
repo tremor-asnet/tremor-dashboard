@@ -79,7 +79,9 @@ const SalesStatisticCard = ({
     }[type] || "";
 
   const totalAmountColor =
-    type === SALES_STATISTIC_TYPE.AVG_REVENUE ? "text-secondary" : "text-few";
+    type === SALES_STATISTIC_TYPE.AVG_REVENUE
+      ? "text-secondary dark:!text-secondary"
+      : "text-few";
 
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">

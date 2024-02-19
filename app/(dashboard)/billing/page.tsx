@@ -9,15 +9,22 @@ import Transactions from "@/components/Transaction/Transactions";
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";
 import { mockBilling } from "@/mocks/orderDetails";
-import { mockSalaryData, mockBillingCard } from "@/mocks";
 import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
+
+// Services
+import { getBillings } from "@/services";
+
+// Types
+import { SalaryCardData } from "@/types";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
 };
 
-const Billing = () => {
-  const { cardNumber, holderFullName, expire } = mockBillingCard;
+const Billing = async () => {
+  const billingData = await getBillings();
+  const { cardNumber, holderFullName, expire } = billingData.cardInfo;
+
   return (
     <div>
       <Flex className="pb-6 flex-col lg:flex-row items-start">
@@ -30,7 +37,7 @@ const Billing = () => {
             />
           </div>
           <Flex className="w-full gap-6  mt-6 xl:mt-0">
-            {mockSalaryData.map(item => (
+            {billingData.aggregation.map((item: SalaryCardData) => (
               <>
                 <SalaryCard
                   key={`${item.type}`}

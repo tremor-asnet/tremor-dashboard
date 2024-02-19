@@ -25,13 +25,11 @@ const BillingDetail = async () => {
       </div>
       <Flex className="w-full gap-6 mt-6 xl:mt-0">
         {billingData.aggregation.map((item: SalaryCardData) => (
-          <>
-            <SalaryCard
-              key={`${item.type}`}
-              type={item.type}
-              value={item.value}
-            />
-          </>
+          <SalaryCard
+            key={`${item.type}`}
+            type={item.type}
+            value={item.value}
+          />
         ))}
       </Flex>
     </>

@@ -49,8 +49,9 @@ exports[`Invoices Testing should match snapshot 1`] = `
             $
             180
           </p>
-          <button
+          <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
+            href="/invoice"
           >
             <svg
               fill="currentColor"
@@ -70,7 +71,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
               />
             </svg>
             PDF
-          </button>
+          </a>
         </div>
       </li>
       <li
@@ -100,8 +101,9 @@ exports[`Invoices Testing should match snapshot 1`] = `
             $
             180
           </p>
-          <button
+          <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
+            href="/invoice"
           >
             <svg
               fill="currentColor"
@@ -121,7 +123,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
               />
             </svg>
             PDF
-          </button>
+          </a>
         </div>
       </li>
     </ul>

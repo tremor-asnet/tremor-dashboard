@@ -23,32 +23,34 @@ exports[`Invoices Testing should match snapshot 1`] = `
       class="flex flex-col gap-2 mt-6"
     >
       <li
-        class="w-full flex justify-between p-2"
+        class="w-full flex justify-between py-2 pr-2"
       >
         <div>
           <p
-            class="text-sm font-semibold text-[#344767] dark:text-white"
+            class="text-sm font-semibold text-primary dark:text-white"
           >
             March, 21, 2021
           </p>
           <p
-            class="text-xs mt-1 text-[#7b809a]"
+            class="text-xs mt-1 text-secondary"
           >
             #
-            MS-123456
+            AR
+            -
+            804322
           </p>
         </div>
         <div
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-[#7b809a]"
+            class="text-sm text-secondary"
           >
             $
             180
           </p>
           <button
-            class="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+            class="flex gap-1 items-center text-primary dark:text-white font-semibold"
           >
             <svg
               fill="currentColor"
@@ -72,32 +74,34 @@ exports[`Invoices Testing should match snapshot 1`] = `
         </div>
       </li>
       <li
-        class="w-full flex justify-between p-2"
+        class="w-full flex justify-between py-2 pr-2"
       >
         <div>
           <p
-            class="text-sm font-semibold text-[#344767] dark:text-white"
+            class="text-sm font-semibold text-primary dark:text-white"
           >
-            Apr, 22, 2022
+            April, 22, 2022
           </p>
           <p
-            class="text-xs mt-1 text-[#7b809a]"
+            class="text-xs mt-1 text-secondary"
           >
             #
-            MS-123457
+            AR
+            -
+            8908543
           </p>
         </div>
         <div
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-[#7b809a]"
+            class="text-sm text-secondary"
           >
             $
             180
           </p>
           <button
-            class="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+            class="flex gap-1 items-center text-primary dark:text-white font-semibold"
           >
             <svg
               fill="currentColor"

@@ -1,5 +1,5 @@
 // Components
-import { Transactions } from "@/components";
+import Transactions from "./Transaction/Transactions";
 
 // Services
 import { getTransactions } from "@/services";

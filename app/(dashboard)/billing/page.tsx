@@ -2,14 +2,11 @@ import { Bold, Flex } from "@tremor/react";
 import { Suspense } from "react";
 
 // Components
-import Invoices from "@/components/Invoices/Invoices";
 import { LoadingIndicator } from "@/components";
-import BillingDetail from "./BillingDetail";
-import BillingInfoDetail from "./BillingInfoDetail";
-import TransactionDetail from "./TransactionDetail";
-
-// Mocks
-import { MOCK_INVOICES } from "@/mocks/invoices";
+import BillingDetail from "./components/BillingDetail";
+import InvoiceDetail from "./components/InvoiceDetail";
+import BillingInfoDetail from "./components/BillingInfoDetail";
+import TransactionDetail from "./components/TransactionDetail";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
@@ -34,10 +31,21 @@ const Billing = async () => {
           </Suspense>
         </Flex>
         <Flex className="basis-1/3 pt-6 lg:pt-0 lg:pl-6">
-          <Invoices invoices={MOCK_INVOICES} />
+          <Suspense
+            fallback={
+              <LoadingIndicator
+                additionalClass="flex justify-center items-center"
+                width={8}
+                height={8}
+                isFullWidth={false}
+                fillColor="river-bed-500"
+              />
+            }>
+            <InvoiceDetail />
+          </Suspense>
         </Flex>
       </Flex>
-      <Flex className="md:flex-row flex-col">
+      <Flex className="md:flex-row flex-col items-start">
         <div className="w-full md:min-h-[640px] max-w-[2042px] bg-white dark:bg-dark-tremor-primary px-4 pt-6 pb-4 rounded-xl shadow-box-icon-default dark:shadow-main-content mr-0 md:mr-6">
           <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
             Billing Information

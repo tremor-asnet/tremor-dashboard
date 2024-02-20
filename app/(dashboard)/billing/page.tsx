@@ -3,14 +3,13 @@ import { Suspense } from "react";
 
 // Components
 import Invoices from "@/components/Invoices/Invoices";
-import Transactions from "@/components/Transaction/Transactions";
 import { LoadingIndicator } from "@/components";
 import BillingDetail from "./BillingDetail";
 import BillingInfoDetail from "./BillingInfoDetail";
+import TransactionDetail from "./TransactionDetail";
 
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";
-import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
@@ -39,7 +38,7 @@ const Billing = async () => {
         </Flex>
       </Flex>
       <Flex className="md:flex-row flex-col">
-        <div className="w-full md:min-h-[705px] max-w-[2042px] bg-white dark:bg-dark-tremor-primary px-4 pt-6 pb-4 rounded-xl shadow-box-icon-default dark:shadow-main-content mr-0 md:mr-6">
+        <div className="w-full md:min-h-[640px] max-w-[2042px] bg-white dark:bg-dark-tremor-primary px-4 pt-6 pb-4 rounded-xl shadow-box-icon-default dark:shadow-main-content mr-0 md:mr-6">
           <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
             Billing Information
           </Bold>
@@ -56,12 +55,19 @@ const Billing = async () => {
             <BillingInfoDetail />
           </Suspense>
         </div>
-        <div className="w-full md:min-h-[705px] 2xl:max-w-[1450px] mt-6 md:mt-0">
-          <Transactions
-            newest={MOCK_TRANSACTIONS.slice(0, 2)}
-            yesterday={MOCK_TRANSACTIONS.slice(2)}
-            date="23 - 30 March 2020"
-          />
+        <div className="w-full md:min-h-[640px] 2xl:max-w-[1450px] mt-6 md:mt-0">
+          <Suspense
+            fallback={
+              <LoadingIndicator
+                additionalClass="flex justify-center items-center"
+                width={8}
+                height={8}
+                isFullWidth={false}
+                fillColor="river-bed-500"
+              />
+            }>
+            <TransactionDetail />
+          </Suspense>
         </div>
       </Flex>
     </div>

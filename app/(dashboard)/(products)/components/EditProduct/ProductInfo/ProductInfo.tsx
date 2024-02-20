@@ -145,6 +145,7 @@ const ProductInfo = () => {
                   label="Category"
                   options={CATEGORY_PRODUCT}
                   {...field}
+                  className="py-2.5"
                 />
               </div>
             )}

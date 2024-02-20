@@ -12,12 +12,12 @@ exports[`Testing InvoiceHeader component Should match snapshot 1`] = `
         class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')]"
       />
       <p
-        class="text-primary dark:text-white font-bold leading-[26px] tracking-[0.12px] mt-3"
+        class="text-primary dark:text-white font-bold leading-6 tracking-wide mt-6"
       >
         St. Independence Embankment, 050105 Bucharest, Romania
       </p>
       <p
-        class="text-secondary dark:text-dark-romance font-primary font-light leading-[25.6px] tracking-[0.17136px] mt-2 mb-4"
+        class="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-4"
       >
         tel: +4 (074) 1090873
       </p>
@@ -26,12 +26,12 @@ exports[`Testing InvoiceHeader component Should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:items-end mt-10 md:mt-0"
     >
       <p
-        class="text-primary dark:text-white font-bold leading-[26px] tracking-[0.12px]"
+        class="text-primary dark:text-white font-bold leading-6 tracking-wide"
       >
         Billed to: John Doe
       </p>
       <p
-        class="text-secondary dark:text-dark-romance font-primary font-light leading-[25.6px] tracking-[0.17136px] md:text-right"
+        class="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right"
       >
         4006 Locust View Drive
         <br />

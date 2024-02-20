@@ -1,6 +1,6 @@
 export const INVOICE_DATA = {
   id: 230220,
-  created_at: "06/03/2019",
+  createdAt: "06/03/2019",
   dueDate: "11/03/2019",
   details: [
     {

@@ -5,11 +5,11 @@ import Link from "next/link";
 
 interface InfoInvoiceProps {
   id: number;
-  created_at: string;
+  createdAt: string;
   dueDate: string;
 }
 
-const InfoInvoice = ({ id, created_at, dueDate }: InfoInvoiceProps) => (
+const InfoInvoice = ({ id, createdAt, dueDate }: InfoInvoiceProps) => (
   <Flex className="my-7 flex-col md:flex-row items-start md:items-center">
     <div className="mb-6 md:mb-0">
       <Text className="!text-base font-light font-normal dark:text-lighter text-secondary">
@@ -27,7 +27,7 @@ const InfoInvoice = ({ id, created_at, dueDate }: InfoInvoiceProps) => (
           Invoice date:
         </Text>
         <Text className="!text-base font-semibold dark:!text-lighter text-primary">
-          {created_at}
+          {createdAt}
         </Text>
       </Flex>
       <Flex className="flex-col md:flex-row items-start md:items-center">

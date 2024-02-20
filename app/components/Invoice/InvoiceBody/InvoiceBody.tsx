@@ -5,7 +5,7 @@ import { Flex } from "@tremor/react";
 
 // Components
 import InfoInvoiceBody from "./InfoInvoiceBody/InfoInvoiceBody";
-import TableInvoiceBody from "./TableInvoiceBody/TableInvoiceBody";
+import TableInvoice from "./TableInvoice/TableInvoice";
 
 // Types
 import { TInvoice } from "@/types";
@@ -13,10 +13,10 @@ import { TInvoice } from "@/types";
 // Styles
 import "@/styles/invoice.css";
 
-const InvoiceBody = ({ id, created_at, dueDate, details }: TInvoice) => (
+const InvoiceBody = ({ id, createdAt, dueDate, details }: TInvoice) => (
   <Flex className="invoice-body flex-col items-end">
-    <InfoInvoiceBody id={id} created_at={created_at} dueDate={dueDate} />
-    <TableInvoiceBody details={details} />
+    <InfoInvoiceBody id={id} createdAt={createdAt} dueDate={dueDate} />
+    <TableInvoice details={details} />
   </Flex>
 );
 

@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import TableInvoiceBody from "./TableInvoiceBody";
+import TableInvoice from "./TableInvoice";
 
 // Constants
 import { INVOICE_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/TableInvoiceBody",
-  component: TableInvoiceBody,
+  title: "Components/TableInvoice",
+  component: TableInvoice,
   tags: ["autodocs"],
-} as Meta<typeof TableInvoiceBody>;
+} as Meta<typeof TableInvoice>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <TableInvoiceBody details={INVOICE_DATA.details} />,
+  render: () => <TableInvoice details={INVOICE_DATA.details} />,
 };

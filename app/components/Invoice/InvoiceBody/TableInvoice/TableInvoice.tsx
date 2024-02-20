@@ -16,11 +16,7 @@ import { CURRENCY } from "@/constants";
 // Styles
 import "@/styles/products.css";
 
-export const TableInvoiceBody = ({
-  details,
-}: {
-  details: TInvoiceDetail[];
-}) => {
+export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
   // Invoice Body Table Props
   const columns: ColumnType<TInvoiceDetail>[] = [
     {
@@ -89,4 +85,4 @@ export const TableInvoiceBody = ({
   );
 };
 
-export default TableInvoiceBody;
+export default TableInvoice;

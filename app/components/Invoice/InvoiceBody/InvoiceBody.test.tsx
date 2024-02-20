@@ -11,7 +11,7 @@ describe("InvoiceBody Testing", () => {
     const component = render(
       <InvoiceBody
         id={INVOICE_DATA.id}
-        created_at={INVOICE_DATA.created_at}
+        createdAt={INVOICE_DATA.createdAt}
         dueDate={INVOICE_DATA.dueDate}
         details={INVOICE_DATA.details}
       />,

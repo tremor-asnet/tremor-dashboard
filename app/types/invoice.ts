@@ -8,7 +8,7 @@ export type TInvoiceDetail = {
 
 export type TInvoice = {
   id: number;
-  created_at: string;
+  createdAt: string;
   dueDate: string;
   details: TInvoiceDetail[];
 };

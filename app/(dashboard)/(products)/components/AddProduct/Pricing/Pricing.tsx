@@ -71,7 +71,9 @@ const Pricing = ({ control }: PricingProps) => {
           const convertedValue = value.map(String);
           return (
             <div className="w-full">
-              <Text className="text-secondary dark:text-white">Tags</Text>
+              <label className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
+                Tags
+              </label>
               <MultiSelect
                 className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                 value={convertedValue}

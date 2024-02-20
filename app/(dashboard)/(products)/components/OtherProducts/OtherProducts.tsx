@@ -39,13 +39,13 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       key: "isAvailable",
       title: "Availability",
       customNode: (_, { isAvailable }) => (
-        <p className="text-xs dark:text-lighter font-semibold product-availability">
+        <div className="text-xs dark:text-lighter font-semibold product-availability">
           {isAvailable ? (
             <ProgressBar value={80} color="green" className="w-32" />
           ) : (
             <ProgressBar value={60} color="orange" className="w-32" />
           )}
-        </p>
+        </div>
       ),
       sortable: false,
     },

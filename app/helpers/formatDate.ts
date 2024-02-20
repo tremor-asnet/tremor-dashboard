@@ -19,6 +19,7 @@ export const formatDate = (date: Date) => {
  * @param separator string
  * @returns string
  */
+
 export const formatDateTime = (value: string, separator: string = "") =>
   dayjs(value).format(`DD MMM${separator} hh:mm A`);
 
@@ -30,3 +31,5 @@ export const formatDateTime = (value: string, separator: string = "") =>
  */
 export const formatDateTimeForTransaction = (value: string) =>
   dayjs(value).format(`DD MMM YYYY, [at] hh:mm A`);
+export const formatNewDate = (value: string, separator: string = "") =>
+  dayjs(value).format(`MMMM${separator} DD${separator} YYYY`);

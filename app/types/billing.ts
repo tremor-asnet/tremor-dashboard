@@ -1,9 +1,10 @@
 import { AGGREGATION_TYPE } from "@/constants";
 
 export interface Invoice {
-  date: string;
-  code: string;
-  price: number;
+  id: number;
+  createdAt: string;
+  invoicePrefix: string;
+  totalCost: number;
 }
 
 export interface Transaction {

@@ -71,13 +71,14 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 render={({ field }) => (
-                  <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0">
+                  <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6">
                     <SelectField
                       id="usd"
                       placeholder="USD"
                       label="Currency"
                       options={TYPE_PRICE}
                       {...field}
+                      className="py-2.5"
                     />
                   </div>
                 )}

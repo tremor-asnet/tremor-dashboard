@@ -4,7 +4,7 @@
 import StatusButton from "@/components/common/StatusButton/StatusButton";
 
 // Helpers
-import { formatDateYear, getContentByProps } from "@/helpers";
+import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";
 
 interface TransactionItemProps {
   createdAt: string;
@@ -35,7 +35,9 @@ const TransactionItem = ({
           <h6 className="text-sm font-semibold text-[#344767] dark:text-white mb-1">
             {service}
           </h6>
-          <p className="text-xs text-[#7b809a]">{formatDateYear(createdAt)}</p>
+          <p className="text-xs text-[#7b809a]">
+            {formatDateTimeForTransaction(createdAt)}
+          </p>
         </div>
       </div>
       <p className={`text-sm font-semibold text-${color}`}>{value}</p>

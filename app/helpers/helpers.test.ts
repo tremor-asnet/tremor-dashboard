@@ -7,7 +7,7 @@ import {
   isEmpty,
   formattedNumber,
   formatDateTime,
-  formatDateYear,
+  formatDateTimeForTransaction,
   getCrumbName,
   searchOrderDataByValue,
   searchProductDataByValue,
@@ -169,10 +169,10 @@ describe("formatDateTime function", () => {
   });
 });
 
-describe("formatDateYear function", () => {
+describe("formatDateTimeForTransaction function", () => {
   it("should format date and time", () => {
     const dateValue = "2024-02-05T02:50:02.319095+00:00";
-    const formattedDate = formatDateYear(dateValue);
+    const formattedDate = formatDateTimeForTransaction(dateValue);
     expect(formattedDate).toBe("05 Feb 2024, at 09:50 AM");
   });
 });

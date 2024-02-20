@@ -1,5 +1,5 @@
 // Components
-import TransactionItem from "@/components/Transaction/TransactionList/TransactionItem/TransactionItem";
+import TransactionItem from "../TransactionItem/TransactionItem";
 
 // Types
 import { Transaction } from "@/types";

@@ -9,6 +9,8 @@ import { getProductDetails } from "@/services";
 
 // Constants
 import { ROUTES } from "@/constants";
+
+// Types
 import { Product } from "@/types";
 
 const ProductDetail = async ({ id }: { id: Product["id"] }) => {

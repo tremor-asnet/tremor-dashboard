@@ -1,7 +1,8 @@
 import { Flex } from "@tremor/react";
 
 // Components
-import { BillingCard, SalaryCard } from "@/components";
+import BillingCard from "./BillingCard/BillingCard";
+import SalaryCard from "./SalaryCard/SalaryCard";
 
 // Services
 import { getBillings } from "@/services";

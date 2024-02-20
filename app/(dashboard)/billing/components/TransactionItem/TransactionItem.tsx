@@ -28,14 +28,14 @@ const TransactionItem = ({
   );
 
   return (
-    <div className="flex p-4 justify-between items-center">
+    <div className="flex pr-4 py-4 justify-between items-center">
       <div className="flex gap-4 items-center">
         <StatusButton extendedClass={classes} icon={icon} />
         <div>
           <h6 className="text-sm font-semibold text-[#344767] dark:text-white mb-1">
             {service}
           </h6>
-          <p className="text-xs text-[#7b809a]">{formatDateTime(createdAt)}</p>
+          <p className="text-xs text-secondary">{formatDateTime(createdAt)}</p>
         </div>
       </div>
       <p className={`text-sm font-semibold text-${color}`}>{value}</p>

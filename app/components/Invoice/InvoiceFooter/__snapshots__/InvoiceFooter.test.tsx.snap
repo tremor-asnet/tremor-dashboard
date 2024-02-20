@@ -3,7 +3,7 @@
 exports[`InvoiceFooter Testing should match snapshot 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full justify-between items-start md:items-end flex-col md:flex-row invoice"
+    class="tremor-Flex-root flex w-full justify-between items-start md:items-end flex-col md:flex-row mt-14 invoice"
   >
     <div
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[40%]"

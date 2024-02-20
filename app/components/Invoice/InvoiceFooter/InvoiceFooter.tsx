@@ -8,14 +8,14 @@ export const InvoiceFooter = () => {
   return (
     <Flex className="items-start md:items-end flex-col md:flex-row invoice">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[40%]">
-        <p className="text-primary dark:text-white text-lg font-semibold leading-[27.5px]">
+        <p className="text-primary dark:text-white text-lg font-semibold leading-7">
           Thank you!
         </p>
-        <p className="text-sm dark:text-dark-romance font-light text-secondary leading-[21px] my-2">
+        <p className="text-sm dark:text-dark-romance font-light text-secondary leading-5 my-2">
           If you encounter any issues related to the invoice you can contact us
           at:
         </p>
-        <p className="dark:text-dark-romance text-secondary leading-[21px] my-4">
+        <p className="dark:text-dark-romance text-secondary leading-5 my-4">
           email:{" "}
           <a
             className="text-primary dark:text-white"

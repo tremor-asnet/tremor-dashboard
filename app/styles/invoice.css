@@ -1,0 +1,24 @@
+.invoice-body tr:last-child td p.total{
+  @apply block;
+}
+
+.invoice-body tr:last-child td {
+  @apply align-top;
+}
+
+.invoice-body tr td {
+  @apply px-3 py-3;
+}
+
+.invoice-body tr td p {
+  @apply !text-base font-light font-normal;
+}
+
+.invoice-body th {
+  @apply px-3 py-4 capitalize font-semibold text-base text-secondary opacity-100 border-0 border-b;
+}
+
+.invoice-body tr td .total,
+.invoice-body tr td .total-price {
+  @apply  !text-tremor-primary font-bold text-primary;
+} 

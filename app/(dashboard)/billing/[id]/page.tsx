@@ -14,7 +14,6 @@ const InvoiceHeader = dynamic(
 import { getInvoiceDetails } from "@/services/invoiceServices";
 
 const InvoiceDetailsPage = async ({ params }: { params: { id: number } }) => {
-  // TODO: Mock id to integrate API
   const invoiceDetails = await getInvoiceDetails(params.id);
 
   const { id, createdAt, dueAt, products, totalCost, bankInfo, customer } =

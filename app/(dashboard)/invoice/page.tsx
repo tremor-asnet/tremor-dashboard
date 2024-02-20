@@ -1,5 +1,10 @@
+import dynamic from "next/dynamic";
+
 // Components
 import { Card, Col, Flex, Grid } from "@tremor/react";
+const InvoiceFooter = dynamic(
+  () => import("@/components/Invoice/InvoiceFooter/InvoiceFooter"),
+);
 
 const Invoice = () => {
   return (
@@ -12,8 +17,8 @@ const Invoice = () => {
           <Col numColSpan={1} className="h-48">
             Invoice Body
           </Col>
-          <Col numColSpan={1} className="h-48">
-            Invoice Footer
+          <Col numColSpan={1}>
+            <InvoiceFooter />
           </Col>
         </Grid>
       </Card>

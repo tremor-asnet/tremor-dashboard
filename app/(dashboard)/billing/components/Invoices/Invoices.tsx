@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import InvoiceItem from "@/components/Invoices/InvoiceItem/InvoiceItem";
+import InvoiceItem from "../InvoiceItem/InvoiceItem";
 
 // Types
 import { Invoice } from "@/types";
@@ -14,13 +14,14 @@ const Invoices = ({ invoices }: InvoicesProps) => {
   const handleOnClick = () => {};
 
   const invoiceList = invoices.slice(0, 2).map(invoice => {
-    const { date, code, price } = invoice;
+    const { id, invoicePrefix, createdAt, totalCost } = invoice;
     return (
       <InvoiceItem
-        key={code}
-        date={date}
-        code={code}
-        price={price}
+        key={id}
+        id={id}
+        date={createdAt}
+        invoicePrefix={invoicePrefix}
+        price={totalCost}
         onClick={handleOnClick}
       />
     );

@@ -2,7 +2,7 @@
 import { render } from "@testing-library/react";
 
 // Components
-import Invoices from "@/components/Invoices/Invoices";
+import Invoices from "./Invoices";
 
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";

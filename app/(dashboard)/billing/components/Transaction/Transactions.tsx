@@ -2,7 +2,7 @@
 import { FaCalendarAlt } from "react-icons/fa";
 
 // Components
-import { TransactionList } from "@/components";
+import TransactionList from "../TransactionList/TransactionList";
 
 // Types
 import { Transaction } from "@/types";
@@ -25,7 +25,7 @@ const Transactions = ({ newest, date }: TransactionsProps) => {
         </div>
       </div>
       <h6 className="transaction-list-heading">NEWEST</h6>
-      <div className="overflow-y-auto max-h-[520px]">
+      <div className="overflow-y-auto max-h-[505px]">
         <TransactionList transactions={newest} />
       </div>
     </div>

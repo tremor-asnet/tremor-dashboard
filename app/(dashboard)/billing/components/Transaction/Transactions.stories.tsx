@@ -10,13 +10,11 @@ export default {
   tags: ["autodocs"],
 };
 
-const newest = MOCK_TRANSACTIONS.slice(0, 2);
-const yesterday = MOCK_TRANSACTIONS.slice(2);
+const newest = MOCK_TRANSACTIONS;
 
 export const DefaultTransactions = {
   args: {
     newest: newest,
-    yesterday: yesterday,
     date: "23 - 30 March 2020",
   },
 };

@@ -25,6 +25,3 @@ export const formatDateTime = (value: string, separator: string = "") =>
 
 export const formatNewDate = (value: string, separator: string = "") =>
   dayjs(value).format(`MMMM${separator} DD${separator} YYYY`);
-
-export const formatNewDate3 = (value: string) =>
-  dayjs(value).format("MM/DD/YYYY");

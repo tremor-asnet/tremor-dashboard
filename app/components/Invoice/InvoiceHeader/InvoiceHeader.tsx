@@ -2,28 +2,30 @@
 import { Flex } from "@tremor/react";
 import InvoiceLogo from "@/components/Invoice/InvoiceLogo/InvoiceLogo";
 
-interface BankInfo {
-  address: string;
-  city: string;
-  state: string;
-  phone: string;
-}
-
-interface Customer {
-  fullName: string;
-  address: string;
-  city: string;
-  stateCode: string;
-  state: string;
-}
-
 interface InvoiceHeaderProps {
-  bankInfo: BankInfo;
-  customer: Customer;
+  addressBank: string;
+  cityBank: string;
+  stateBank: string;
+  phoneBank: string;
+  fullName: string;
+  addressCustomer: string;
+  cityCustomer: string;
+  stateCode: string;
+  stateCustomer: string;
 }
 
-export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
-  const renderAddressBankInfo = `${bankInfo.address} ${bankInfo.city}, ${bankInfo.state}`;
+export const InvoiceHeader = ({
+  addressBank,
+  cityBank,
+  stateBank,
+  phoneBank,
+  fullName,
+  addressCustomer,
+  cityCustomer,
+  stateCode,
+  stateCustomer,
+}: InvoiceHeaderProps) => {
+  const renderAddressBankInfo = `${addressBank} ${cityBank}, ${stateBank}`;
 
   return (
     <Flex className="flex-col md:flex-row">
@@ -33,19 +35,19 @@ export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
           {renderAddressBankInfo}
         </p>
         <p className="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-4">
-          {bankInfo.phone}
+          {phoneBank}
         </p>
       </Flex>
       <Flex
         flexDirection="col"
         className="items-start md:items-end mt-10 md:mt-0">
         <p className="text-primary dark:text-white font-bold leading-6 tracking-wide">
-          Billed to: {customer.fullName}
+          Billed to: {fullName}
         </p>
         <p className="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right">
-          {customer.address}
-          <br /> {customer.city} {customer.stateCode}
-          <br /> {customer.state}
+          {addressCustomer}
+          <br /> {cityCustomer} {stateCode}
+          <br /> {stateCustomer}
         </p>
       </Flex>
     </Flex>

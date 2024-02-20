@@ -3,7 +3,7 @@
 import Link from "next/link";
 import dayjs from "dayjs";
 
-// Helpers
+// Components
 import { Text, Flex } from "@tremor/react";
 
 interface InfoInvoiceProps {

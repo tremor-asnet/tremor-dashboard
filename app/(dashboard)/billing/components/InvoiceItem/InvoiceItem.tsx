@@ -35,7 +35,7 @@ const InvoiceItem = ({
     <div className="flex gap-6 items-center">
       <p className="text-sm text-secondary">&#36;{price}</p>
       <Link
-        className="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+        className="flex gap-1 items-center text-primary dark:text-white font-semibold"
         href={ROUTES.INVOICE} // TODO will update /invoice-list/{id} instead /invoice for now
       >
         <MdPictureAsPdf />

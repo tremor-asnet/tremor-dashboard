@@ -90,7 +90,8 @@ const SideBar = ({
           isCollapse
             ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
             : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
-        }`}>
+        }`}
+        data-testid="sideBar">
         <Flex className="justify-end">
           <div
             className="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"

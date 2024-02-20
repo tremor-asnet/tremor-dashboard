@@ -56,7 +56,8 @@ const SignUp = () => {
   const resErrorMessage = formStatus.errorMessage?.toString();
   const hasErrorMessage = resErrorMessage.length > 0;
   const isSignUpSuccess = formStatus.isSuccess;
-  const isDisableSubmit = !checked || formStatus.isPending;
+  const isStatusPending = formStatus.isPending;
+  const isDisableSubmit = !checked || isStatusPending;
   const router = useRouter();
 
   const handleCheckBox = () => {
@@ -205,6 +206,7 @@ const SignUp = () => {
             checked={checked}
             handleCheckBox={handleCheckBox}
             tabIndex={2}
+            isDisable={isStatusPending}
           />
           <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
             I agree the{" "}
@@ -222,7 +224,7 @@ const SignUp = () => {
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
-          {formStatus.isPending ? (
+          {isStatusPending ? (
             <LoadingIndicator width={5} height={5} />
           ) : (
             <Text className="font-bold text-xs text-white dark:text-white">

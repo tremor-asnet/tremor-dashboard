@@ -2,13 +2,9 @@
 import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 import Link from "next/link";
-
-import {
-  TableProduct,
-  InputSearch,
-  ProductFilter,
-  LoadingIndicator,
-} from "@/components";
+import { InputSearch, LoadingIndicator } from "@/components";
+import ProductFilter from "../components/ProductFilter";
+import TableProduct from "../components/TableProduct/TableProduct";
 
 // Services
 import { getProducts } from "@/services";

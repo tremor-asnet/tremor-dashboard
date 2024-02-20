@@ -4,9 +4,6 @@ import { Button, Flex } from "@tremor/react";
 // Icons
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
-// Types
-import { SortItem } from "../Table/TableProduct/TableProduct";
-
 // Constants
 import { DIRECTION } from "@/constants/common";
 
@@ -50,7 +47,7 @@ const HeaderCellContents = ({
       <Flex>{title}</Flex>
       {sortable && (
         <Flex className="relative flex-col ml-4">
-          <Flex className="absotule top-0 justify-end">
+          <Flex className="absolute top-0 justify-end">
             <Button
               className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
               variant="light">
@@ -59,7 +56,7 @@ const HeaderCellContents = ({
               />
             </Button>
           </Flex>
-          <Flex className="absotule top-0 justify-end">
+          <Flex className="absolute top-0 justify-end">
             <Button
               className="w-1.5 h-1.5 justify-center items-center opacity-50 dark:opacity-100"
               variant="light">

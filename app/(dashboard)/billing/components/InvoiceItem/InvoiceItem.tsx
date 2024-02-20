@@ -1,7 +1,9 @@
+// Libs
+import Link from "next/link";
 import { MdPictureAsPdf } from "react-icons/md";
 
 // Constants
-import { SEPARATOR } from "@/constants";
+import { SEPARATOR, ROUTES } from "@/constants";
 
 // Helpers
 import { formatNewDate } from "@/helpers";
@@ -32,12 +34,13 @@ const InvoiceItem = ({
     </div>
     <div className="flex gap-6 items-center">
       <p className="text-sm text-secondary">&#36;{price}</p>
-      <button
-        className="flex gap-1 items-center text-primary dark:text-white font-semibold"
-        onClick={onClick}>
+      <Link
+        className="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+        href={ROUTES.INVOICE} // TODO will update /invoice-list/{id} instead /invoice for now
+      >
         <MdPictureAsPdf />
         PDF
-      </button>
+      </Link>
     </div>
   </li>
 );

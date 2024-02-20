@@ -6,7 +6,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end max-w-[70%]"
+        class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
       >
         <div
           class="tremor-Flex-root flex w-full justify-between my-4 flex-col md:flex-row items-start md:items-center"
@@ -34,12 +34,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full justify-between flex-col md:flex-row mb-1 md:mb-0 items-start md:items-center"
             >
               <p
-                class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+                class="text-tremor-default dark:text-dark-tremor-content !text-base font-normal dark:!text-lighter text-secondary"
               >
                 Invoice date:
               </p>
               <p
-                class="text-tremor-default !text-base font-semibold dark:text-lighter text-primary"
+                class="text-tremor-default dark:text-dark-tremor-content !text-base font-semibold dark:!text-lighter text-primary"
               >
                 06/03/2019
               </p>
@@ -48,12 +48,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full justify-between flex-col md:flex-row items-start md:items-center"
             >
               <p
-                class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+                class="text-tremor-default dark:text-dark-tremor-content !text-base font-normal dark:!text-lighter text-secondary"
               >
                 Due date:
               </p>
               <p
-                class="text-tremor-default !text-base font-semibold dark:text-lighter text-primary"
+                class="text-tremor-default dark:text-dark-tremor-content !text-base font-semibold dark:!text-lighter text-primary"
               >
                 11/03/2019
               </p>
@@ -87,7 +87,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end max-w-[70%]"
+      class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
     >
       <div
         class="tremor-Flex-root flex w-full justify-between my-4 flex-col md:flex-row items-start md:items-center"
@@ -115,12 +115,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col md:flex-row mb-1 md:mb-0 items-start md:items-center"
           >
             <p
-              class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+              class="text-tremor-default dark:text-dark-tremor-content !text-base font-normal dark:!text-lighter text-secondary"
             >
               Invoice date:
             </p>
             <p
-              class="text-tremor-default !text-base font-semibold dark:text-lighter text-primary"
+              class="text-tremor-default dark:text-dark-tremor-content !text-base font-semibold dark:!text-lighter text-primary"
             >
               06/03/2019
             </p>
@@ -129,12 +129,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col md:flex-row items-start md:items-center"
           >
             <p
-              class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+              class="text-tremor-default dark:text-dark-tremor-content !text-base font-normal dark:!text-lighter text-secondary"
             >
               Due date:
             </p>
             <p
-              class="text-tremor-default !text-base font-semibold dark:text-lighter text-primary"
+              class="text-tremor-default dark:text-dark-tremor-content !text-base font-semibold dark:!text-lighter text-primary"
             >
               11/03/2019
             </p>

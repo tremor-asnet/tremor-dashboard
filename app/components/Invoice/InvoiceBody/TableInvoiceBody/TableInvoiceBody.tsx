@@ -48,7 +48,7 @@ export const TableInvoiceBody = ({
               currency: CURRENCY.DOLLAR,
             })}
           </Text>
-          <Text className="total hidden mt-6 dark:text-white">Total</Text>
+          <Text className="total hidden mt-6 dark:!text-white">Total</Text>
         </div>
       ),
       sortable: false,
@@ -65,10 +65,10 @@ export const TableInvoiceBody = ({
             })}
           </Text>
           <Text
-            className="total hidden mt-6 flex-col items-end dark:text-white"
+            className="total hidden mt-6 flex-col items-end dark:!text-white"
             data-testid="total-price">
             {formattedNumber({
-              value: 2341, // TODO will count sum rate or amount
+              value: 698, // TODO will count sum rate or amount
               currency: CURRENCY.DOLLAR,
             })}
           </Text>

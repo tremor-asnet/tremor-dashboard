@@ -18,6 +18,10 @@
   @apply px-3 py-4 capitalize font-semibold text-base text-secondary opacity-100 border-0 border-b;
 }
 
+.dark .invoice-body th {
+  @apply text-lighter;
+}
+
 .invoice-body tr td .total,
 .invoice-body tr td .total-price {
   @apply  !text-tremor-primary font-bold text-primary;

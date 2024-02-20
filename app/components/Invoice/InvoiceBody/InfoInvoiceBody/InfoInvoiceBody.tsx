@@ -23,18 +23,18 @@ const InfoInvoice = ({ id, created_at, dueDate }: InfoInvoiceProps) => (
     </div>
     <div className="min-w-[290px]">
       <Flex className="flex-col md:flex-row mb-1 md:mb-0 items-start md:items-center">
-        <Text className="!text-base font-light font-normal dark:text-lighter text-secondary">
+        <Text className="!text-base font-light font-normal dark:!text-lighter text-secondary">
           Invoice date:
         </Text>
-        <Text className="!text-base font-semibold dark:text-lighter text-primary">
+        <Text className="!text-base font-semibold dark:!text-lighter text-primary">
           {created_at}
         </Text>
       </Flex>
       <Flex className="flex-col md:flex-row items-start md:items-center">
-        <Text className="!text-base font-light font-normal dark:text-lighter text-secondary">
+        <Text className="!text-base font-light font-normal dark:!text-lighter text-secondary">
           Due date:
         </Text>
-        <Text className="!text-base font-semibold dark:text-lighter text-primary">
+        <Text className="!text-base font-semibold dark:!text-lighter text-primary">
           {dueDate}
         </Text>
       </Flex>

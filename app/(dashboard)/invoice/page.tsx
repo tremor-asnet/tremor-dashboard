@@ -1,5 +1,9 @@
 // Components
 import { Card, Col, Flex, Grid } from "@tremor/react";
+import { InvoiceBody } from "@/components";
+
+// Constants
+import { INVOICE_DATA } from "@/mocks";
 
 const Invoice = () => {
   return (
@@ -10,7 +14,12 @@ const Invoice = () => {
             Invoice Header
           </Col>
           <Col numColSpan={1} className="h-48">
-            Invoice Body
+            <InvoiceBody
+              id={INVOICE_DATA.id}
+              created_at={INVOICE_DATA.created_at}
+              dueDate={INVOICE_DATA.dueDate}
+              details={INVOICE_DATA.details}
+            />
           </Col>
           <Col numColSpan={1} className="h-48">
             Invoice Footer

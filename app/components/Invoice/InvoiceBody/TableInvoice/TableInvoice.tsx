@@ -42,6 +42,7 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
             {formattedNumber({
               value: rate,
               currency: CURRENCY.DOLLAR,
+              delimiter: " ",
             })}
           </Text>
           <Text className="total hidden mt-6 dark:!text-white">Total</Text>
@@ -58,6 +59,7 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
             {formattedNumber({
               value: amount,
               currency: CURRENCY.DOLLAR,
+              delimiter: " ",
             })}
           </Text>
           <Text

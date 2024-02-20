@@ -76,9 +76,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Netflix
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:50 AM
+                05 Feb 2024, at 09:50 AM
               </p>
             </div>
           </div>
@@ -119,9 +119,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Apple
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:50 AM
+                05 Feb 2024, at 09:50 AM
               </p>
             </div>
           </div>
@@ -162,9 +162,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Stripe
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:51 AM
+                05 Feb 2024, at 09:51 AM
               </p>
             </div>
           </div>
@@ -205,9 +205,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 HubSpot
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Jan 09:51 AM
+                05 Jan 2024, at 09:51 AM
               </p>
             </div>
           </div>
@@ -248,9 +248,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Creative Tim
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:52 AM
+                05 Feb 2024, at 09:52 AM
               </p>
             </div>
           </div>
@@ -291,9 +291,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Webflow
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:52 AM
+                05 Feb 2024, at 09:52 AM
               </p>
             </div>
           </div>
@@ -334,9 +334,9 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 Momo
               </h6>
               <p
-                class="text-xs text-secondary"
+                class="text-xs text-[#7b809a]"
               >
-                05 Feb 09:52 AM
+                05 Feb 2024, at 09:52 AM
               </p>
             </div>
           </div>

@@ -44,13 +44,13 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-[#7b809a]"
+            class="text-sm text-secondary"
           >
             $
             180
           </p>
           <a
-            class="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+            class="flex gap-1 items-center text-primary dark:text-white font-semibold"
             href="/billing/804322"
           >
             <svg
@@ -96,13 +96,13 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-[#7b809a]"
+            class="text-sm text-secondary"
           >
             $
             180
           </p>
           <a
-            class="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+            class="flex gap-1 items-center text-primary dark:text-white font-semibold"
             href="/billing/8908543"
           >
             <svg

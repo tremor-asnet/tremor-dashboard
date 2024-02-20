@@ -1,5 +1,6 @@
-import { MdPictureAsPdf } from "react-icons/md";
+// Libs
 import Link from "next/link";
+import { MdPictureAsPdf } from "react-icons/md";
 
 // Constants
 import { ROUTES, SEPARATOR } from "@/constants";
@@ -25,9 +26,9 @@ const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
       </p>
     </div>
     <div className="flex gap-6 items-center">
-      <p className="text-sm text-[#7b809a]">&#36;{price}</p>
+      <p className="text-sm text-secondary">&#36;{price}</p>
       <Link
-        className="flex gap-1 items-center text-[#344767] dark:text-white font-semibold"
+        className="flex gap-1 items-center text-primary dark:text-white font-semibold"
         href={`${ROUTES.BILLING}/${id}`}>
         <MdPictureAsPdf />
         PDF

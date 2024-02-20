@@ -15,7 +15,7 @@
 }
 
 .invoice-body th {
-  @apply px-3 py-4 capitalize font-semibold text-base text-secondary opacity-100 border-0 border-b;
+  @apply px-3 py-4 capitalize font-semibold text-base text-secondary opacity-100 border-b dark:border-grayish border-gray-100;
 }
 
 .dark .invoice-body th {

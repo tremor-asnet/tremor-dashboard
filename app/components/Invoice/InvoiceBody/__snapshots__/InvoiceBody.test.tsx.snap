@@ -9,7 +9,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full justify-between my-4 flex-col md:flex-row items-start md:items-center"
+          class="tremor-Flex-root flex w-full justify-between my-7 flex-col md:flex-row items-start md:items-center"
         >
           <div
             class="mb-6 md:mb-0"
@@ -90,7 +90,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
     >
       <div
-        class="tremor-Flex-root flex w-full justify-between my-4 flex-col md:flex-row items-start md:items-center"
+        class="tremor-Flex-root flex w-full justify-between my-7 flex-col md:flex-row items-start md:items-center"
       >
         <div
           class="mb-6 md:mb-0"

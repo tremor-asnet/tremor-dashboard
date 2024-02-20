@@ -10,7 +10,7 @@ interface InfoInvoiceProps {
 }
 
 const InfoInvoice = ({ id, created_at, dueDate }: InfoInvoiceProps) => (
-  <Flex className="my-4 flex-col md:flex-row items-start md:items-center">
+  <Flex className="my-7 flex-col md:flex-row items-start md:items-center">
     <div className="mb-6 md:mb-0">
       <Text className="!text-base font-light font-normal dark:text-lighter text-secondary">
         Invoice no

@@ -42,3 +42,5 @@ export { default as InputField } from "./common/InputField/InputField";
 export { default as BillingCard } from "./Billing/BillingCard/BillingCard";
 export { default as SalaryCard } from "./Billing/SalaryCard/SalaryCard";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";
+export { default as Transactions } from "./Transaction/Transactions";
+export { default as TransactionList } from "./Transaction/TransactionList/TransactionList";

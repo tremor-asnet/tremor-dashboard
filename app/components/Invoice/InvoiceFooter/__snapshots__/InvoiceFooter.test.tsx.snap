@@ -9,7 +9,7 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[40%]"
     >
       <p
-        class="text-primary dark:text-white text-lg font-semibold leading-7"
+        class="text-primary dark:text-white text-tremor-primary font-semibold leading-7"
       >
         Thank you!
       </p>

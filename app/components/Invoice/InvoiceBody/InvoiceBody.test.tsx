@@ -12,8 +12,9 @@ describe("InvoiceBody Testing", () => {
       <InvoiceBody
         id={INVOICE_DATA.id}
         createdAt={INVOICE_DATA.createdAt}
-        dueDate={INVOICE_DATA.dueDate}
-        details={INVOICE_DATA.details}
+        dueAt={INVOICE_DATA.dueAt}
+        products={INVOICE_DATA.products}
+        totalCost={INVOICE_DATA.totalCost}
       />,
     );
     expect(component).toMatchSnapshot();

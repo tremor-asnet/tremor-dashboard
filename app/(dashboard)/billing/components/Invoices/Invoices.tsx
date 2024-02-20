@@ -11,8 +11,6 @@ interface InvoicesProps {
 }
 
 const Invoices = ({ invoices }: InvoicesProps) => {
-  const handleOnClick = () => {};
-
   const invoiceList = invoices.slice(0, 2).map(invoice => {
     const { id, invoicePrefix, createdAt, totalCost } = invoice;
     return (
@@ -22,7 +20,6 @@ const Invoices = ({ invoices }: InvoicesProps) => {
         date={createdAt}
         invoicePrefix={invoicePrefix}
         price={totalCost}
-        onClick={handleOnClick}
       />
     );
   });

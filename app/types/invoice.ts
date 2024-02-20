@@ -1,14 +1,14 @@
 export type TInvoiceDetail = {
   id: number;
-  name: string;
+  productName: string;
   quantity: number;
-  rate: number;
-  amount: number;
+  price: number;
 };
 
 export type TInvoice = {
   id: number;
   createdAt: string;
-  dueDate: string;
-  details: TInvoiceDetail[];
+  dueAt: string;
+  products: TInvoiceDetail[];
+  totalCost: number;
 };

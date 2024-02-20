@@ -74,7 +74,7 @@ export const formattedNumber = ({
   isDecimalNumber?: boolean;
   delimiter?: string;
 }): string => {
-  let formattedNumber = value.toLocaleString("en-US");
+  let formattedNumber = value?.toLocaleString("en-US");
 
   if (isDecimalNumber) {
     formattedNumber = formattedNumber.split(",").join(".");

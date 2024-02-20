@@ -6,7 +6,7 @@ exports[`Testing InvoiceHeader component Should match snapshot 1`] = `
     class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row"
   >
     <div
-      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[33.333333%]"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[33%]"
     >
       <div
         class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')]"

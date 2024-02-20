@@ -7,10 +7,7 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 export const InvoiceHeader = () => {
   return (
     <Flex className="flex-col md:flex-row">
-      <Flex
-        flexDirection="col"
-        alignItems="start"
-        className="md:max-w-[33.333333%]">
+      <Flex flexDirection="col" alignItems="start" className="md:max-w-[33%]">
         <InvoiceLogo width={16} height={16} />
         <p className="text-primary dark:text-white font-bold leading-6 tracking-wide mt-6">
           St. Independence Embankment, 050105 Bucharest, Romania

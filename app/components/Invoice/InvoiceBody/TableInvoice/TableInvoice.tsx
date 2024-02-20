@@ -23,14 +23,16 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
       key: "name",
       title: "Item",
       customNode: (_, { name }) => (
-        <Text className="md:min-w-[250px]">{name}</Text>
+        <Text className="md:min-w-[250px] dark:text-lighter">{name}</Text>
       ),
       sortable: false,
     },
     {
       key: "quantity",
       title: "Qty",
-      customNode: (_, { quantity }) => <Text>{quantity}</Text>,
+      customNode: (_, { quantity }) => (
+        <Text className="dark:text-lighter">{quantity}</Text>
+      ),
       sortable: false,
     },
     {
@@ -38,7 +40,7 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
       title: "Rate",
       customNode: (_, { rate }) => (
         <div>
-          <Text>
+          <Text className="dark:text-lighter">
             {formattedNumber({
               value: rate,
               currency: CURRENCY.DOLLAR,
@@ -55,7 +57,7 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
       title: "Amount",
       customNode: (_, { amount }) => (
         <div>
-          <Text>
+          <Text className="dark:text-lighter">
             {formattedNumber({
               value: amount,
               currency: CURRENCY.DOLLAR,

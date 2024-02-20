@@ -1,4 +1,4 @@
-.invoice-body tr:last-child td p.total{
+.invoice-body tr:last-child td p.total {
   @apply block;
 }
 
@@ -7,7 +7,7 @@
 }
 
 .invoice-body tr td {
-  @apply px-3 py-3;
+  @apply px-3 py-2;
 }
 
 .invoice-body tr td p {
@@ -24,5 +24,5 @@
 
 .invoice-body tr td .total,
 .invoice-body tr td .total-price {
-  @apply  !text-tremor-primary font-bold text-primary;
+  @apply !text-tremor-primary font-bold text-primary;
 } 

@@ -8,7 +8,8 @@ export const MESSAGES_ERROR = {
     "Password must have at least 8 characters, 1 special character and 1 number",
   FIELD_REQUIRED: "This field is required.",
   MIN_LENGTH_4: "This field must have more than 4 characters.",
-  URL_REQUIRED: "Url is required",
+  URL_REQUIRED: "URL is required",
+  INVALID_URL: "URL is invalid",
 };
 
 export const SIGN_UP_MESSAGE = {

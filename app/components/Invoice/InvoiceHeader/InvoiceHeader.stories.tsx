@@ -4,6 +4,9 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import InvoiceHeader from "./InvoiceHeader";
 
+// Mocks
+import { INVOICE_DATA } from "@/mocks";
+
 const meta = {
   title: "Components/Invoice/InvoiceHeader",
   tags: ["autodocs"],
@@ -15,5 +18,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <InvoiceHeader />,
+  render: () => <InvoiceHeader {...INVOICE_DATA} />,
 };

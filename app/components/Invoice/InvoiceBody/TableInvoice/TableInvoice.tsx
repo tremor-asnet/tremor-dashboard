@@ -16,14 +16,20 @@ import { CURRENCY } from "@/constants";
 // Styles
 import "@/styles/products.css";
 
-export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
+export const TableInvoice = ({
+  details,
+  totalCost,
+}: {
+  details: TInvoiceDetail[];
+  totalCost: number;
+}) => {
   // Invoice Body Table Props
   const columns: ColumnType<TInvoiceDetail>[] = [
     {
       key: "name",
       title: "Item",
-      customNode: (_, { name }) => (
-        <Text className="md:min-w-[250px] dark:text-lighter">{name}</Text>
+      customNode: (_, { productName }) => (
+        <Text className="md:min-w-[250px]">{productName}</Text>
       ),
       sortable: false,
     },
@@ -38,11 +44,11 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
     {
       key: "rate",
       title: "Rate",
-      customNode: (_, { rate }) => (
+      customNode: (_, { price }) => (
         <div>
           <Text className="dark:text-lighter">
             {formattedNumber({
-              value: rate,
+              value: price,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
             })}
@@ -55,11 +61,11 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
     {
       key: "amount",
       title: "Amount",
-      customNode: (_, { amount }) => (
+      customNode: (_, { price, quantity }) => (
         <div>
           <Text className="dark:text-lighter">
             {formattedNumber({
-              value: amount,
+              value: price * quantity,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
             })}
@@ -68,7 +74,7 @@ export const TableInvoice = ({ details }: { details: TInvoiceDetail[] }) => {
             className="total hidden mt-6 flex-col items-end dark:!text-white"
             data-testid="total-price">
             {formattedNumber({
-              value: 698, // TODO will count sum rate or amount
+              value: totalCost,
               currency: CURRENCY.DOLLAR,
             })}
           </Text>

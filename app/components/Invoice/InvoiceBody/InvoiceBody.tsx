@@ -13,10 +13,16 @@ import { TInvoice } from "@/types";
 // Styles
 import "@/styles/invoice.css";
 
-const InvoiceBody = ({ id, createdAt, dueDate, details }: TInvoice) => (
+const InvoiceBody = ({
+  id,
+  createdAt,
+  dueAt,
+  products,
+  totalCost,
+}: TInvoice) => (
   <Flex className="invoice-body flex-col items-end">
-    <InfoInvoiceBody id={id} createdAt={createdAt} dueDate={dueDate} />
-    <TableInvoice details={details} />
+    <InfoInvoiceBody id={id} createdAt={createdAt} dueAt={dueAt} />
+    <TableInvoice details={products} totalCost={totalCost} />
   </Flex>
 );
 

@@ -17,5 +17,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <TableInvoice details={INVOICE_DATA.details} />,
+  render: () => (
+    <TableInvoice
+      details={INVOICE_DATA.products}
+      totalCost={INVOICE_DATA.totalCost}
+    />
+  ),
 };

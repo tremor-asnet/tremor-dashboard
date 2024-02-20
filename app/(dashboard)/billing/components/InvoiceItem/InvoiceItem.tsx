@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MdPictureAsPdf } from "react-icons/md";
 
 // Constants
-import { SEPARATOR, ROUTES } from "@/constants";
+import { ROUTES, SEPARATOR } from "@/constants";
 
 // Helpers
 import { formatNewDate } from "@/helpers";
@@ -13,16 +13,9 @@ interface InvoiceItemProps {
   date: string;
   invoicePrefix: string;
   price: number;
-  onClick: () => void;
 }
 
-const InvoiceItem = ({
-  id,
-  date,
-  invoicePrefix,
-  price,
-  onClick,
-}: InvoiceItemProps) => (
+const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
   <li className="w-full flex justify-between py-2 pr-2">
     <div>
       <p className="text-sm font-semibold text-primary dark:text-white">
@@ -36,8 +29,7 @@ const InvoiceItem = ({
       <p className="text-sm text-secondary">&#36;{price}</p>
       <Link
         className="flex gap-1 items-center text-primary dark:text-white font-semibold"
-        href={ROUTES.INVOICE} // TODO will update /invoice-list/{id} instead /invoice for now
-      >
+        href={`${ROUTES.BILLING}/${id}`}>
         <MdPictureAsPdf />
         PDF
       </Link>

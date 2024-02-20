@@ -1,28 +1,39 @@
 export const INVOICE_DATA = {
   id: 230220,
   createdAt: "06/03/2019",
-  dueDate: "11/03/2019",
-  details: [
+  dueAt: "11/03/2019",
+  bankInfo: {
+    address: "St. Independence Embankment, 050105",
+    city: "Bucharest",
+    state: "Romania",
+    phone: "+4 (074) 1090873",
+  },
+  customer: {
+    fullName: "John Doe",
+    address: "4006 Locust View Drive",
+    city: "San Francisco",
+    stateCode: "CA",
+    state: "California",
+  },
+  products: [
     {
       id: 1,
-      name: "Premium Support",
+      productName: "Premium Support",
       quantity: 1,
-      rate: 9,
-      amount: 89,
+      price: 9,
     },
     {
       id: 2,
-      name: "Metror Dashboard",
+      productName: "Metror Dashboard",
       quantity: 3,
-      rate: 100,
-      amount: 90,
+      price: 100,
     },
     {
       id: 3,
-      name: "Parts for service",
+      productName: "Parts for service",
       quantity: 2,
-      rate: 10,
-      amount: 60,
+      price: 10,
     },
   ],
+  totalCost: 345,
 };

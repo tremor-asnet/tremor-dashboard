@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const InfoInvoiceBodyDefault: Story = {
   render: () => (
-    <InfoInvoiceBody id={230220} createdAt="06/03/2019" dueDate="11/03/2019" />
+    <InfoInvoiceBody id={230220} createdAt="06/03/2019" dueAt="11/03/2019" />
   ),
 };

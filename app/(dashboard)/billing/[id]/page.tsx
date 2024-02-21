@@ -3,13 +3,13 @@ import dynamic from "next/dynamic";
 // Components
 import { Card, Col, Flex, Grid } from "@tremor/react";
 const InvoiceFooter = dynamic(
-  () => import("@/components/Invoice/InvoiceFooter/InvoiceFooter"),
+  () => import("./components/InvoiceFooter/InvoiceFooter"),
 );
 const InvoiceBody = dynamic(
-  () => import("@/components/Invoice/InvoiceBody/InvoiceBody"),
+  () => import("./components/InvoiceBody/InvoiceBody"),
 );
 const InvoiceHeader = dynamic(
-  () => import("@/components/Invoice/InvoiceHeader/InvoiceHeader"),
+  () => import("./components/InvoiceHeader/InvoiceHeader"),
 );
 
 // Services

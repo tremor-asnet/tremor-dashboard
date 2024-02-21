@@ -8,7 +8,12 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
+import {
+  INVOICE_REGEX,
+  ORDER_LIST_REGEX,
+  PRODUCT_LIST_REGEX,
+  ROUTES,
+} from "@/constants";
 
 // Helpers
 import { getCrumbName, isBrowser } from "@/helpers";
@@ -32,6 +37,7 @@ const Breadcrumb = ({
     if (path) {
       if (path.match(ORDER_LIST_REGEX)) return "Order Details";
       if (path.match(PRODUCT_LIST_REGEX)) return "Product Details";
+      if (path.match(INVOICE_REGEX)) return "Invoice Details";
     }
 
     return newPath?.pop()?.replace("-", " ");

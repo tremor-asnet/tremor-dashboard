@@ -1,6 +1,6 @@
 //Components
 import { Flex } from "@tremor/react";
-import InvoiceLogo from "@/components/Invoice/InvoiceLogo/InvoiceLogo";
+import InvoiceLogo from "../InvoiceLogo/InvoiceLogo";
 
 interface InvoiceHeaderProps {
   addressBank: string;

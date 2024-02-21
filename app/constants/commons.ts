@@ -64,6 +64,7 @@ export const ProductList: ProductListOption[] = [
   { option: "No", value: "false" },
 ];
 
+export const INVOICE_REGEX = /billing\/\w+/gm;
 export const ORDER_LIST_REGEX = /order-list\/\w+/gm;
 export const PRODUCT_LIST_REGEX = /product-list\/\w+/gm;
 export const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;

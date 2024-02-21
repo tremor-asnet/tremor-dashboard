@@ -75,13 +75,6 @@ const SideBar = ({
     };
   }, [isCollapse, toggleSidebar]);
 
-  // Handle case close sidebar in smaller than a desktop screen
-  const handleClickSidebarItem = () => {
-    if (isBrowser && window.innerWidth < BREAKPOINTS.XL) {
-      toggleSidebar();
-    }
-  };
-
   return (
     <>
       <div
@@ -90,8 +83,7 @@ const SideBar = ({
           isCollapse
             ? "translate-x-0 xl:w-[100px] delay-10 duration-300"
             : "translate-x-[-20rem] xl:translate-x-0 xl:w-[260px] delay-10 duration-300"
-        }`}
-        data-testid="sideBar">
+        }`}>
         <Flex className="justify-end">
           <div
             className="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
@@ -149,10 +141,7 @@ const SideBar = ({
                   ].join("");
 
                   return (
-                    <ListItem
-                      className={menuItemClass}
-                      key={label}
-                      onClick={handleClickSidebarItem}>
+                    <ListItem className={menuItemClass} key={label}>
                       <Link href={href}>
                         <Flex
                           className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
@@ -198,10 +187,7 @@ const SideBar = ({
             const linkClass = `font-normal w-full py-3 px-7 ${centerOpenClass}`;
 
             return (
-              <li
-                key={label}
-                className={menuItemClass}
-                onClick={handleClickSidebarItem}>
+              <li key={label} className={menuItemClass}>
                 <Link className={linkClass} href={href}>
                   <span>{content}</span>
                   <span className={`${hiddenOpenClass} pl-2`}>{label}</span>

@@ -1,12 +1,12 @@
-import { render } from "@testing-library/react";
-
-// Components
-import Sidebar from "./Sidebar";
+import { fireEvent, render } from "@testing-library/react";
 
 // Constants
 import { ROUTES } from "@/constants";
 
-describe("Sidebar component", () => {
+// Component
+import { SideBar } from "..";
+
+describe("SideBar component", () => {
   const mockFunction = jest.fn();
 
   const propsDefault = {
@@ -19,7 +19,7 @@ describe("Sidebar component", () => {
   };
 
   const sidebar = () => {
-    return render(<Sidebar {...propsDefault} />);
+    return render(<SideBar {...propsDefault} />);
   };
 
   it("Should render Sidebar snapshot correctly", () => {
@@ -27,50 +27,33 @@ describe("Sidebar component", () => {
   });
 
   it("Should render correctly name with display Sidebar", () => {
-    const { getByText } = render(<Sidebar {...propsDefault} />);
+    const { getByText } = render(<SideBar {...propsDefault} />);
 
     const name = getByText("Brooklyn Alice");
 
     expect(name).toBeTruthy;
   });
 
-  it("Should render correctly name with display Sidebar", () => {
-    const { getByText } = render(<Sidebar {...propsDefault} />);
-
-    const name = getByText("Brooklyn Alice");
-
-    expect(name).toBeTruthy;
-  });
-
-  it("Should render correctly with display Sidebar is open", () => {
-    const propsNotShowDefault = {
-      avatarUrl: "/images/avatar/avatar-sm.webp",
-      name: "Brooklyn Alice",
-      pathname: ROUTES.PROJECTS,
-      isCollapse: false,
-      toggleSidebar: mockFunction,
-      onSignOut: mockFunction,
-    };
-
-    const { getByTestId } = render(<Sidebar {...propsNotShowDefault} />);
-    expect(
-      getByTestId("sideBar").getAttribute("class")?.includes("xl:w-[260px]"),
+  it("should call toggleSidebar when clicked outside", () => {
+    const toggleSidebar = jest.fn();
+    const onSignOut = jest.fn();
+    const { container } = render(
+      <div>
+        <div id="outside-element">Outside Element</div>
+        <SideBar
+          avatarUrl=""
+          name=""
+          isCollapse={true}
+          toggleSidebar={toggleSidebar}
+          pathname=""
+          onSignOut={onSignOut}
+        />
+      </div>,
     );
-  });
 
-  it("Should render correctly with display Sidebar is close", () => {
-    const propsNotShowDefault = {
-      avatarUrl: "/images/avatar/avatar-sm.webp",
-      name: "Brooklyn Alice",
-      pathname: ROUTES.PROJECTS,
-      isCollapse: true,
-      toggleSidebar: mockFunction,
-      onSignOut: mockFunction,
-    };
+    const outsideElement = container.querySelector("#outside-element");
+    fireEvent.mouseDown(outsideElement!);
 
-    const { getByTestId } = render(<Sidebar {...propsNotShowDefault} />);
-    expect(
-      getByTestId("sideBar").getAttribute("class")?.includes("xl:w-[100px]"),
-    );
+    expect(toggleSidebar).toHaveBeenCalledTimes(1);
   });
 });

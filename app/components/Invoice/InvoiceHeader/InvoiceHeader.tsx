@@ -42,7 +42,7 @@ export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide">
           Billed to: {customer.fullName}
         </p>
-        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right">
+        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right max-w-full md:max-w-sm truncate">
           {customer.address}
           <br /> {customer.city} {customer.stateCode}
           <br /> {customer.state}

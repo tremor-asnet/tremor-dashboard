@@ -28,7 +28,7 @@ export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
   return (
     <Flex className="flex-col md:flex-row mb-[40px] md:mb-20">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[35%]">
-        <InvoiceLogo className="w-20 h-20 md:w-10 md:h-10" />
+        <InvoiceLogo additionalClasses="w-20 h-20 md:w-10 md:h-10" />
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7">
           {renderAddressBankInfo}
         </p>

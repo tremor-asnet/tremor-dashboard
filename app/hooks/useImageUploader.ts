@@ -9,6 +9,9 @@ import { CdnResponse } from "@/types";
 // Services
 import { uploadImage } from "@/services/imageService";
 
+// Constants
+import { NOT_FOUND_LINK } from "@/constants";
+
 const useImageUploader = (image: string) => {
   const [imageValue, setImageValue] = useState(image);
   const [isUpload, setIsUpload] = useState(false);
@@ -40,7 +43,7 @@ const useImageUploader = (image: string) => {
   };
 
   const removeImage = () => {
-    setImageValue("");
+    setImageValue(NOT_FOUND_LINK.SRC);
     setCdnResponse({
       data: {
         width: 0,

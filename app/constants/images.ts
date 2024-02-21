@@ -1,6 +1,9 @@
 export const NOT_FOUND = {
   SRC: "/images/placeholder-image.png",
 };
+export const NOT_FOUND_LINK = {
+  SRC: "https://i.ibb.co/f0bFP6p/placeholder-image.png",
+};
 export const LOGO_SRC = {
   logo: "/assets/images/sidebar-logo.webp",
 };

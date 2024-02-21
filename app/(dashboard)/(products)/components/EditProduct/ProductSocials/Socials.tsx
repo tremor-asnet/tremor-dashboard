@@ -60,7 +60,7 @@ const Socials = () => {
             },
           }}
           render={({ field, formState: { errors } }) => {
-            const facebookUrlErrorMessage = errors.facebookUrl;
+            const facebookUrlErrorMessage = errors.facebookUrl?.message || "";
 
             return (
               <div className="w-full mb-4">
@@ -85,7 +85,7 @@ const Socials = () => {
             },
           }}
           render={({ field, formState: { errors } }) => {
-            const instagramUrlErrorMessage = errors.instagramUrl;
+            const instagramUrlErrorMessage = errors.instagramUrl?.message || "";
 
             return (
               <div className="w-full mb-4">

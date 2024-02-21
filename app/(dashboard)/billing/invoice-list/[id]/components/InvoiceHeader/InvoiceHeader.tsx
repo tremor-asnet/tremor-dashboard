@@ -35,7 +35,7 @@ export const InvoiceHeader = ({
           {renderAddressBankInfo}
         </p>
         <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4">
-          {phoneBank}
+          tel: {phoneBank}
         </p>
       </Flex>
       <Flex

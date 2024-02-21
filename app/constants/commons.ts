@@ -88,5 +88,5 @@ export const DRAG_ZONE = {
 export const TRANSACTION_CLASS = {
   INCREASE: "text-few border-few",
   DECREASE: "text-attention border-attention",
-  PENDING: "text-secondary border-secondary",
+  PENDING: "text-primary border-primary",
 };

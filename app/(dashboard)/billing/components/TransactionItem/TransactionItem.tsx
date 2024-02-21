@@ -32,10 +32,10 @@ const TransactionItem = ({
       <div className="flex gap-4 items-center">
         <StatusButton extendedClass={classes} icon={icon} />
         <div>
-          <h6 className="text-sm font-semibold text-[#344767] dark:text-white mb-1">
+          <h6 className="text-sm font-semibold text-primary dark:text-white mb-1">
             {service}
           </h6>
-          <p className="text-xs text-[#7b809a]">
+          <p className="text-xs text-secondary dark:text-lighter">
             {formatDateTimeForTransaction(createdAt)}
           </p>
         </div>

@@ -29,7 +29,9 @@ export const TableInvoice = ({
       key: "name",
       title: "Item",
       customNode: (_, { productName }) => (
-        <Text className="md:min-w-[250px]">{productName}</Text>
+        <Text className="max-w-[250px] md:max-w-sm truncate">
+          {productName}
+        </Text>
       ),
       sortable: false,
     },

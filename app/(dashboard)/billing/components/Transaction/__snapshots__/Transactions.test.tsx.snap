@@ -9,14 +9,15 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
       class="flex justify-between"
     >
       <h6
-        class="font-semibold text-[#344767] dark:text-white"
+        class="font-semibold text-primary dark:text-white"
       >
-        Your Transactions
+        Your Transaction's
       </h6>
       <div
-        class="flex items-center text-[#7b809a]"
+        class="flex items-center text-secondary"
       >
         <svg
+          class="dark:text-lighter"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -26,18 +27,18 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
+            d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
           />
         </svg>
         <p
-          class="text-sm ml-2"
+          class="text-sm dark:text-lighter ml-2"
         >
           23 - 30 March 2020
         </p>
       </div>
     </div>
     <h6
-      class="transaction-list-heading"
+      class="transaction-list-heading dark:text-lighter"
     >
       NEWEST
     </h6>
@@ -71,12 +72,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Netflix
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:50 AM
               </p>
@@ -114,12 +115,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Apple
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:50 AM
               </p>
@@ -157,12 +158,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Stripe
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:51 AM
               </p>
@@ -200,12 +201,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 HubSpot
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Jan 2024, at 09:51 AM
               </p>
@@ -243,12 +244,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Creative Tim
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:52 AM
               </p>
@@ -267,7 +268,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             class="flex gap-4 items-center"
           >
             <button
-              class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-secondary border-secondary"
+              class="flex shrink-0 w-9 h-9 justify-center items-center border rounded-full text-primary border-primary"
               type="button"
             >
               <svg
@@ -286,19 +287,19 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Webflow
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:52 AM
               </p>
             </div>
           </div>
           <p
-            class="text-sm font-semibold text-secondary"
+            class="text-sm font-semibold text-primary"
           >
             Pending
           </p>
@@ -329,12 +330,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
             </button>
             <div>
               <h6
-                class="text-sm font-semibold text-[#344767] dark:text-white mb-1"
+                class="text-sm font-semibold text-primary dark:text-white mb-1"
               >
                 Momo
               </h6>
               <p
-                class="text-xs text-[#7b809a]"
+                class="text-xs text-secondary dark:text-lighter"
               >
                 05 Feb 2024, at 09:52 AM
               </p>

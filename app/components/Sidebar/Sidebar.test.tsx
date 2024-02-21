@@ -4,9 +4,9 @@ import { fireEvent, render } from "@testing-library/react";
 import { ROUTES } from "@/constants";
 
 // Component
-import { SideBar } from "..";
+import Sidebar from "./Sidebar";
 
-describe("SideBar component", () => {
+describe("Sidebar component", () => {
   const mockFunction = jest.fn();
 
   const propsDefault = {
@@ -19,7 +19,7 @@ describe("SideBar component", () => {
   };
 
   const sidebar = () => {
-    return render(<SideBar {...propsDefault} />);
+    return render(<Sidebar {...propsDefault} />);
   };
 
   it("Should render Sidebar snapshot correctly", () => {
@@ -27,7 +27,7 @@ describe("SideBar component", () => {
   });
 
   it("Should render correctly name with display Sidebar", () => {
-    const { getByText } = render(<SideBar {...propsDefault} />);
+    const { getByText } = render(<Sidebar {...propsDefault} />);
 
     const name = getByText("Brooklyn Alice");
 
@@ -40,7 +40,7 @@ describe("SideBar component", () => {
     const { container } = render(
       <div>
         <div id="outside-element">Outside Element</div>
-        <SideBar
+        <Sidebar
           avatarUrl=""
           name=""
           isCollapse={true}

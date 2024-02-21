@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SideBar component Should render Sidebar snapshot correctly 1`] = `
+exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

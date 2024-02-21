@@ -6,7 +6,7 @@ import "@/styles/order.css";
 
 export const InvoiceFooter = () => {
   return (
-    <Flex className="items-start md:items-end flex-col md:flex-row mt-14 invoice">
+    <Flex className="items-start md:items-end flex-col md:flex-row mt-20 invoice">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[40%]">
         <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7">
           Thank you!
@@ -15,7 +15,7 @@ export const InvoiceFooter = () => {
           If you encounter any issues related to the invoice you can contact us
           at:
         </p>
-        <p className="dark:text-dark-romance text-secondary leading-5 my-4">
+        <p className="dark:text-dark-romance text-secondary leading-5 mt-4">
           email:{" "}
           <a
             className="text-primary dark:text-white"
@@ -24,7 +24,7 @@ export const InvoiceFooter = () => {
           </a>
         </p>
       </Flex>
-      <Button className="py-3 px-6 my-2 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
+      <Button className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
         <Text className="uppercase font-bold text-xs text-white dark:text-white">
           print
         </Text>

@@ -3,7 +3,7 @@
 exports[`InvoiceFooter Testing should match snapshot 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full justify-between items-start md:items-end flex-col md:flex-row mt-14 invoice"
+    class="tremor-Flex-root flex w-full justify-between items-start md:items-end flex-col md:flex-row mt-20 invoice"
   >
     <div
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[40%]"
@@ -19,7 +19,7 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
         If you encounter any issues related to the invoice you can contact us at:
       </p>
       <p
-        class="dark:text-dark-romance text-secondary leading-5 my-4"
+        class="dark:text-dark-romance text-secondary leading-5 mt-4"
       >
         email:
          
@@ -32,7 +32,7 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
       </p>
     </div>
     <button
-      class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 my-2 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white"
+      class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white"
     >
       <span
         class="tremor-Button-text text-sm whitespace-nowrap"

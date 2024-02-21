@@ -51,7 +51,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/804322"
+            href="/billing/invoice-list/804322"
           >
             <svg
               fill="currentColor"
@@ -103,7 +103,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/8908543"
+            href="/billing/invoice-list/8908543"
           >
             <svg
               fill="currentColor"
@@ -159,7 +159,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/804322"
+            href="/billing/invoice-list/804322"
           >
             <svg
               fill="currentColor"
@@ -211,7 +211,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/8908543"
+            href="/billing/invoice-list/8908543"
           >
             <svg
               fill="currentColor"
@@ -263,7 +263,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/415645"
+            href="/billing/invoice-list/415645"
           >
             <svg
               fill="currentColor"
@@ -315,7 +315,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/103578"
+            href="/billing/invoice-list/103578"
           >
             <svg
               fill="currentColor"
@@ -367,7 +367,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
-            href="/billing/126749"
+            href="/billing/invoice-list/126749"
           >
             <svg
               fill="currentColor"

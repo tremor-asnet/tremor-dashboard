@@ -3,30 +3,32 @@ import Link from "next/link";
 
 //Components
 import { Flex } from "@tremor/react";
-import InvoiceLogo from "@/components/Invoice/InvoiceLogo/InvoiceLogo";
-
-interface BankInfo {
-  address: string;
-  city: string;
-  state: string;
-  phone: string;
-}
-
-interface Customer {
-  fullName: string;
-  address: string;
-  city: string;
-  stateCode: string;
-  state: string;
-}
+import InvoiceLogo from "../InvoiceLogo/InvoiceLogo";
 
 interface InvoiceHeaderProps {
-  bankInfo: BankInfo;
-  customer: Customer;
+  addressBank: string;
+  cityBank: string;
+  stateBank: string;
+  phoneBank: string;
+  fullName: string;
+  addressCustomer: string;
+  cityCustomer: string;
+  stateCode: string;
+  stateCustomer: string;
 }
 
-export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
-  const renderAddressBankInfo = `${bankInfo.address} ${bankInfo.city}, ${bankInfo.state}`;
+export const InvoiceHeader = ({
+  addressBank,
+  cityBank,
+  stateBank,
+  phoneBank,
+  fullName,
+  addressCustomer,
+  cityCustomer,
+  stateCode,
+  stateCustomer,
+}: InvoiceHeaderProps) => {
+  const renderAddressBankInfo = `${addressBank} ${cityBank}, ${stateBank}`;
 
   return (
     <Flex className="flex-col md:flex-row mb-[40px] md:mb-20">
@@ -36,21 +38,21 @@ export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
           {renderAddressBankInfo}
         </p>
         <Link
-          href={`tel:${bankInfo.phone}`}
+          href={`tel:${phoneBank}`}
           className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4">
-          tel: {bankInfo.phone}
+          tel: {phoneBank}
         </Link>
       </Flex>
       <Flex
         flexDirection="col"
         className="items-start md:items-end mt-11 md:mt-0">
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide">
-          Billed to: {customer.fullName}
+          Billed to: {fullName}
         </p>
-        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right max-w-full md:max-w-sm truncate">
-          {customer.address}
-          <br /> {customer.city} {customer.stateCode}
-          <br /> {customer.state}
+        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right">
+          {addressCustomer}
+          <br /> {cityCustomer} {stateCode}
+          <br /> {stateCustomer}
         </p>
       </Flex>
     </Flex>

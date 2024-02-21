@@ -15,5 +15,5 @@ export const ROUTES = {
   PRODUCT_LIST: "/product-list",
   NEW_PRODUCT: "/new-product",
   BILLING: "/billing",
-  INVOICE: "/invoice",
+  INVOICE_LIST: "/billing/invoice-list",
 };

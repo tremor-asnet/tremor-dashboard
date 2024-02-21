@@ -40,4 +40,3 @@ export { default as StarRating } from "./common/StarRating/StarRating";
 export { default as SelectField } from "./common/SelectField/SelectField";
 export { default as InputField } from "./common/InputField/InputField";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";
-export { default as InvoiceBody } from "./Invoice/InvoiceBody/InvoiceBody";

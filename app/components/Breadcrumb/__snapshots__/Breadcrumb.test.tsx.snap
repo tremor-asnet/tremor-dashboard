@@ -47,9 +47,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
     </ol>
     <p
       class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-primary"
-    >
-      analytics
-    </p>
+    />
   </nav>
 </div>
 `;

@@ -156,24 +156,22 @@ export const sortArrayByKey = <T>(
  * @param path string
  * @returns
  */
-export const handleMatchPath = (path?: string) => {
-  if (path) {
-    let orderMatch = path.match(ORDER_LIST_REGEX) !== null;
-    let productMatch = path.match(PRODUCT_LIST_REGEX) !== null;
-    let invoiceMatch = path.match(INVOICE_REGEX) !== null;
+export const handleMatchPath = (path: string) => {
+  let orderMatch = path.match(ORDER_LIST_REGEX);
+  let productMatch = path.match(PRODUCT_LIST_REGEX);
+  let invoiceMatch = path.match(INVOICE_REGEX);
 
-    switch (true) {
-      case orderMatch:
-        return "Order Details";
+  switch (true) {
+    case orderMatch !== null:
+      return "Order Details";
 
-      case productMatch:
-        return "Product Details";
+    case productMatch !== null:
+      return "Product Details";
 
-      case invoiceMatch:
-        return "Invoice Details";
+    case invoiceMatch !== null:
+      return "Invoice Details";
 
-      default:
-        return null;
-    }
+    default:
+      return null;
   }
 };

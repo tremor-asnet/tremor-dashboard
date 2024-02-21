@@ -34,7 +34,11 @@ const Breadcrumb = ({
   const newPath = pathname?.split("/").filter(path => path);
 
   const renderTitle = (path?: string) => {
-    handleMatchPath(path);
+    if (path) {
+      const matchPath = handleMatchPath(path);
+
+      return matchPath;
+    }
 
     return newPath?.pop()?.replace("-", " ");
   };

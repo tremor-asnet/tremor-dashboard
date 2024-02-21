@@ -24,7 +24,7 @@ const BillingDetail = async () => {
           expire={expire}
         />
       </div>
-      <Flex className="w-full gap-6 mt-6 xl:mt-0">
+      <Flex className="w-full gap-6 mt-6 xl:mt-0 flex-col md:flex-row">
         {billingData.aggregation.map((item: SalaryCardData) => (
           <SalaryCard
             key={`${item.type}`}

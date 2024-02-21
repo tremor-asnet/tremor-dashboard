@@ -17,6 +17,7 @@ import {
   TAGS_PRICE,
   DECIMAL_REGEX,
   NUMBER_REGEX,
+  MESSAGES_ERROR,
 } from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
 
@@ -47,17 +48,18 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 rules={{
+                  required: MESSAGES_ERROR.FIELD_REQUIRED,
                   pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
                 }}
                 render={({ field, formState: { errors } }) => {
-                  const priceErrorMessage = errors.price;
+                  const priceErrorMessage = errors.price?.message || "";
 
                   return (
                     <div className="w-full mb-2 md:mb-0">
                       <InputField
-                        id="edit-quantity"
+                        id="edit-price"
                         type="number"
-                        label="Quantity"
+                        label="Price"
                         errorMessage={priceErrorMessage}
                         onKeyDown={handleOnKeyDown}
                         {...field}
@@ -92,7 +94,7 @@ const PricingInfo = () => {
                   },
                 }}
                 render={({ field, formState: { errors } }) => {
-                  const skuErrorMessage = errors.sku;
+                  const skuErrorMessage = errors.sku?.message || "";
 
                   return (
                     <div className="w-full">

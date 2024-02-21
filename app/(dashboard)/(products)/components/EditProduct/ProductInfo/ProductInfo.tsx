@@ -54,7 +54,7 @@ const ProductInfo = () => {
               },
             }}
             render={({ field, formState: { errors } }) => {
-              const productNameErrorMessage = errors.productName;
+              const productNameErrorMessage = errors.productName?.message || "";
 
               return (
                 <div className="w-full mb-4">
@@ -91,10 +91,11 @@ const ProductInfo = () => {
           <Controller
             control={control}
             rules={{
+              required: MESSAGES_ERROR.FIELD_REQUIRED,
               pattern: { value: DECIMAL_REGEX, message: "Invalid weight" },
             }}
             render={({ field, formState: { errors } }) => {
-              const weightErrorMessage = errors.weight;
+              const weightErrorMessage = errors.weight?.message || "";
 
               return (
                 <div className="w-full mb-4">
@@ -115,13 +116,14 @@ const ProductInfo = () => {
           <Controller
             control={control}
             rules={{
+              required: MESSAGES_ERROR.FIELD_REQUIRED,
               pattern: {
                 value: NUMBER_REGEX_WITHOUT_0,
                 message: "Invalid quantity number",
               },
             }}
             render={({ field, formState: { errors } }) => {
-              const quantityErrorMessage = errors.quantity;
+              const quantityErrorMessage = errors.quantity?.message || "";
 
               return (
                 <div className="w-full mb-4">

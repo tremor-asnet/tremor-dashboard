@@ -1,3 +1,6 @@
+// Libs
+import Link from "next/link";
+
 //Components
 import { Flex } from "@tremor/react";
 import InvoiceLogo from "@/components/Invoice/InvoiceLogo/InvoiceLogo";
@@ -32,9 +35,11 @@ export const InvoiceHeader = ({ bankInfo, customer }: InvoiceHeaderProps) => {
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7">
           {renderAddressBankInfo}
         </p>
-        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4">
+        <Link
+          href={`tel:${bankInfo.phone}`}
+          className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4">
           tel: {bankInfo.phone}
-        </p>
+        </Link>
       </Flex>
       <Flex
         flexDirection="col"

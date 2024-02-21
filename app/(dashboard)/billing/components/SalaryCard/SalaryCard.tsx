@@ -1,5 +1,5 @@
 //Libs
-import { LuLandmark } from "react-icons/lu";
+import { MdAccountBalance } from "react-icons/md";
 import { GrPaypal } from "react-icons/gr";
 import { Card, Text, Flex } from "@tremor/react";
 
@@ -29,7 +29,7 @@ const SalaryCard = ({
     ? AGGREGATION_DESCRIPTION.SALARY
     : AGGREGATION_DESCRIPTION.PAYPAL;
   const icon = isSalary ? (
-    <LuLandmark color="white" size="20px" />
+    <MdAccountBalance color="white" size="23px" />
   ) : (
     <GrPaypal color="white" size="18px" />
   );

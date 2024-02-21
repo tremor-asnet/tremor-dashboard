@@ -11,7 +11,20 @@ interface InvoicesProps {
 }
 
 const Invoices = ({ invoices }: InvoicesProps) => {
-  const invoiceList = invoices.slice(0, 2).map(invoice => {
+  const invoiceListDeskTop = invoices.slice(0, 2).map(invoice => {
+    const { id, invoicePrefix, createdAt, totalCost } = invoice;
+    return (
+      <InvoiceItem
+        key={id}
+        id={id}
+        date={createdAt}
+        invoicePrefix={invoicePrefix}
+        price={totalCost}
+      />
+    );
+  });
+
+  const invoiceList = invoices.map(invoice => {
     const { id, invoicePrefix, createdAt, totalCost } = invoice;
     return (
       <InvoiceItem
@@ -32,7 +45,10 @@ const Invoices = ({ invoices }: InvoicesProps) => {
           VIEW ALL
         </button>
       </div>
-      <ul className="flex flex-col gap-2 mt-6">{invoiceList}</ul>
+      <ul className="flex flex-col gap-2 mt-6 hidden xl:block">
+        {invoiceListDeskTop}
+      </ul>
+      <ul className="flex flex-col gap-2 mt-6 xl:hidden">{invoiceList}</ul>
     </div>
   );
 };

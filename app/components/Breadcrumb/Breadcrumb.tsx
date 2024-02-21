@@ -16,7 +16,7 @@ import {
 } from "@/constants";
 
 // Helpers
-import { getCrumbName, isBrowser } from "@/helpers";
+import { getCrumbName, handleMatchPath, isBrowser } from "@/helpers";
 
 export interface BreadcrumbProps {
   isScrolled?: boolean;
@@ -34,11 +34,7 @@ const Breadcrumb = ({
   const newPath = pathname?.split("/").filter(path => path);
 
   const renderTitle = (path?: string) => {
-    if (path) {
-      if (path.match(ORDER_LIST_REGEX)) return "Order Details";
-      if (path.match(PRODUCT_LIST_REGEX)) return "Product Details";
-      if (path.match(INVOICE_REGEX)) return "Invoice Details";
-    }
+    handleMatchPath(path);
 
     return newPath?.pop()?.replace("-", " ");
   };

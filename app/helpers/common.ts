@@ -1,4 +1,8 @@
-import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX } from "@/constants";
+import {
+  INVOICE_REGEX,
+  ORDER_LIST_REGEX,
+  PRODUCT_LIST_REGEX,
+} from "@/constants";
 import { DIRECTION } from "@/constants/common";
 
 export const isBrowser = typeof window !== "undefined";
@@ -145,4 +149,31 @@ export const sortArrayByKey = <T>(
   }
 
   return arraySort;
+};
+
+/**
+ * Handle match path
+ * @param path string
+ * @returns
+ */
+export const handleMatchPath = (path?: string) => {
+  if (path) {
+    let orderMatch = path.match(ORDER_LIST_REGEX) !== null;
+    let productMatch = path.match(PRODUCT_LIST_REGEX) !== null;
+    let invoiceMatch = path.match(INVOICE_REGEX) !== null;
+
+    switch (true) {
+      case orderMatch:
+        return "Order Details";
+
+      case productMatch:
+        return "Product Details";
+
+      case invoiceMatch:
+        return "Invoice Details";
+
+      default:
+        return null;
+    }
+  }
 };

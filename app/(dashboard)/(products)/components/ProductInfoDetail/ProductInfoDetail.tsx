@@ -65,6 +65,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
           id="details-quantity"
           type="number"
           label="Quantity"
+          readOnly={true}
           defaultValue={quantity}
         />
       </Flex>

@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-postcss",
     "@storybook/addon-knobs",
+    "storybook-tailwind-dark-mode",
   ],
   staticDirs: ["../public"],
   framework: {

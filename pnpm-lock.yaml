@@ -166,6 +166,9 @@ devDependencies:
   storybook-addon-next:
     specifier: ^1.8.0
     version: 1.8.0(@storybook/addon-actions@7.6.0)(@storybook/addons@7.6.7)(next@14.0.4)(postcss@8.4.32)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack@5.89.0)
+  storybook-tailwind-dark-mode:
+    specifier: ^1.0.22
+    version: 1.0.22(@storybook/addons@7.6.7)(@storybook/api@7.6.7)(@storybook/components@7.6.0)(@storybook/core-events@7.6.7)(@storybook/theming@7.6.7)(react-dom@18.2.0)(react@18.2.0)
   tailwindcss:
     specifier: ^3.3.0
     version: 3.3.6(ts-node@10.9.2)
@@ -3451,7 +3454,6 @@ packages:
     transitivePeerDependencies:
       - react
       - react-dom
-    dev: false
 
   /@storybook/blocks@7.6.0(@types/react-dom@18.2.14)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-S5g0h9dJevngPXnsFAjxQryOU/rQuA4cet40hIH0qRKesFwaXDFrsYHMZfxg6uGKygpeGbIEBoXckL8DT3SofA==}
@@ -14308,6 +14310,31 @@ packages:
       - sass-embedded
       - typescript
       - webpack
+    dev: true
+
+  /storybook-tailwind-dark-mode@1.0.22(@storybook/addons@7.6.7)(@storybook/api@7.6.7)(@storybook/components@7.6.0)(@storybook/core-events@7.6.7)(@storybook/theming@7.6.7)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-I0HSVCuvo3OkaGDnCjLM7V1OYmQccrUCAGZ5ZaJfl9s3e93WA6DKFpQRbuoSidci+PTy+KvgrINgE08rA16bWA==}
+    peerDependencies:
+      '@storybook/addons': ^7.0.0
+      '@storybook/api': ^7.0.0
+      '@storybook/components': ^7.0.0
+      '@storybook/core-events': ^7.0.0
+      '@storybook/theming': ^7.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/addons': 7.6.7(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/api': 7.6.7(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.6.0(@types/react-dom@18.2.14)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/core-events': 7.6.7
+      '@storybook/theming': 7.6.7(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: true
 
   /storybook@7.6.0:

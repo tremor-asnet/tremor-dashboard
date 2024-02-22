@@ -48,11 +48,12 @@ const DataGrid = <T,>({
     const lastPageIndex = firstPageIndex + pageSize;
 
     // Check if tableData is an array before slicing
+    let dataSorted: T[] = [];
     if (Array.isArray(tableData)) {
-      return tableData.slice(firstPageIndex, lastPageIndex);
-    } else {
-      return [];
+      dataSorted = tableData.slice(firstPageIndex, lastPageIndex);
     }
+
+    return dataSorted;
   }, [currentPage, tableData, pageSize]);
 
   useEffect(() => {

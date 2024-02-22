@@ -114,7 +114,7 @@ const PricingInfo = () => {
             <Controller
               control={control}
               render={({ field: { value, onChange } }) => {
-                const convertedValue = value.map(String);
+                const convertedValue = value?.map(String);
                 return (
                   <div className="w-full mb-4 mt-6 relative">
                     <label className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">

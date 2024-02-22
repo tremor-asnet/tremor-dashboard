@@ -18,6 +18,9 @@ import { ColumnType, Order } from "@/types";
 // Constants
 import { ROUTES } from "@/constants";
 
+// Helpers
+import { handleSortOrders } from "@/helpers";
+
 interface TableOrderProps {
   orders: Order[];
   status: string;
@@ -85,34 +88,17 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
     },
   ];
 
-  let sortedProducts = orders.sort((a, b) =>
+  // Arrange newly added items at the top of the table.
+  let sortedOrders = orders.sort((a, b) =>
     a.createdAt.localeCompare(b.createdAt),
   );
 
-  /**
-   * Field "Count" and "Customer" are currently inside the object
-   * So move the field inside the object need to sort to the outside
-   */
-  sortedProducts = sortedProducts.map(item => {
-    const { customer, products } = item;
-    let countKey = 0;
-
-    if (products?.length) {
-      products.forEach(({ count }) => {
-        countKey = countKey + count;
-      });
-    }
-
-    return {
-      ...item,
-      count: countKey,
-      customerName: customer.fullName || "",
-    };
-  });
+  // Handle sort with field inside the object nested
+  sortedOrders = handleSortOrders(sortedOrders);
 
   return (
     <DataGrid
-      data={sortedProducts}
+      data={sortedOrders}
       columns={columns}
       filterBy={status}
       keyword={keyword}

@@ -1,9 +1,13 @@
+// Constants
 import {
   INVOICE_REGEX,
   ORDER_LIST_REGEX,
   PRODUCT_LIST_REGEX,
 } from "@/constants";
 import { DIRECTION } from "@/constants/common";
+
+// Types
+import { Order } from "@/types";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -174,4 +178,28 @@ export const handleMatchPath = (path: string) => {
     default:
       return null;
   }
+};
+
+/**
+ * Field "Count" and "Customer" are currently inside the object
+ * So move the field inside the object need to sort to the outside
+ * @param sortedOrders []
+ */
+export const handleSortOrders = (sortedOrders: Order[]) => {
+  return sortedOrders.map(item => {
+    const { customer, products } = item;
+    let countKey = 0;
+
+    if (products?.length) {
+      products.forEach(({ count }) => {
+        countKey = countKey + count;
+      });
+    }
+
+    return {
+      ...item,
+      count: countKey,
+      customerName: customer.fullName || "",
+    };
+  });
 };

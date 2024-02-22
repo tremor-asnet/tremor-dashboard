@@ -29,7 +29,7 @@ const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
       <p className="text-sm text-secondary">&#36;{price}</p>
       <Link
         className="flex gap-1 items-center text-primary dark:text-white font-semibold"
-        href={`${ROUTES.BILLING}/${id}`}>
+        href={`${ROUTES.INVOICE_LIST}/${id}`}>
         <MdPictureAsPdf />
         PDF
       </Link>

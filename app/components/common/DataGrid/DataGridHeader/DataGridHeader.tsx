@@ -1,29 +1,48 @@
+"use client";
+
+import { useState } from "react";
+
 // Components
 import { HeaderCellContents } from "@/components";
 import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 
 // Types
-import { ColumnType, SortItem } from "@/types";
+import { ColumnType } from "@/types";
+
+// Constants
+import { DIRECTION } from "@/constants/common";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
-  onHeaderClick?: (keyColumn: string) => void;
-  sortKey?: string;
-  sortDirection?: string;
+  handleSorting: (sortField: string, sortOrder: string) => void;
 }
 
 const DataGridHeader = <T,>({
   columns,
-  onHeaderClick,
-  sortKey,
-  sortDirection,
+  handleSorting,
 }: DataTableHeaderProps<T>) => {
+  const [sortField, setSortField] = useState<string>("");
+  const [order, setOrder] = useState<string>(DIRECTION.ASC);
+
+  const handleSortingChange = (key: string) => {
+    const sortOrder =
+      key === sortField && order === DIRECTION.ASC
+        ? DIRECTION.DESC
+        : DIRECTION.ASC;
+
+    setSortField(key);
+    setOrder(sortOrder);
+
+    handleSorting(key, sortOrder);
+  };
+
   return (
     <TableHead>
       <TableRow>
         {columns.map(({ key, title, sortable }) => {
+          // The column that has sortable set to true will execute handleSortingChange function
           const handleHeaderClick = () => {
-            sortable ? onHeaderClick?.(key) : null;
+            sortable ? handleSortingChange(key) : null;
           };
 
           return (
@@ -34,8 +53,8 @@ const DataGridHeader = <T,>({
               <HeaderCellContents
                 title={title}
                 keyColumn={key}
-                sortKey={sortKey}
-                sortDirection={sortDirection}
+                sortKey={sortField}
+                sortDirection={order}
                 sortable={sortable}
               />
             </TableHeaderCell>

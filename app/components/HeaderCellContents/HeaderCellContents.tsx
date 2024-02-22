@@ -22,7 +22,7 @@ const HeaderCellContents = ({
   sortDirection,
   sortable = true,
 }: HeaderCellContentsProps) => {
-  const activeFill = "text-test";
+  const activeFill = "text-primary";
   const inActiveFill = "fill-secondary";
 
   const checkFill = (type: string) => {

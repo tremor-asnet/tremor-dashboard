@@ -1,6 +1,6 @@
 import { fireEvent, render } from "@testing-library/react";
 
-// // Components
+// Components
 import DashboardHeader from "./DashboardHeader";
 
 describe("DashboardHeader component", () => {

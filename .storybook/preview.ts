@@ -12,6 +12,11 @@ const preview: Preview = {
       },
     },
   },
+  globalTypes: {
+    darkMode: {
+      defaultValue: true, // Enable dark mode by default on all stories
+    },
+  },
 };
 
 export default preview;

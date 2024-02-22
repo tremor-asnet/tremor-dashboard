@@ -64,7 +64,7 @@ const ProductListPage = async ({
         <ProductFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary min-h-[calc(100vh-12rem)]">
-        <InputSearch />
+        <InputSearch field="productName" />
         <Suspense
           key={`${productName}-${isAvailable}`}
           fallback={

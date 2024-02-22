@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 // Components
 import {
   CustomAvatarName,
@@ -10,7 +12,7 @@ import {
   CustomStatus,
   CustomQuantity,
 } from "@/components/Table/common";
-import { DataGrid } from "@/components";
+import { DataGrid, Pagination } from "@/components";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -22,11 +24,29 @@ interface TableOrderProps {
   orders: Order[];
   status: string;
   keyword: string;
+  total: number;
+  currentPage: number;
 }
 
-const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
+const TableOrder = ({
+  orders,
+  status,
+  keyword,
+  total,
+  currentPage,
+}: TableOrderProps) => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathName = usePathname();
+  const newParams = new URLSearchParams(searchParams.toString());
+
   const handleChangeCheckbox = () => {
     // TODO: handle checkbox here
+  };
+
+  const handlePageChange = (page: number) => {
+    newParams.set("page", page.toString());
+    router.push(`${pathName}?${newParams}`);
   };
 
   // Table Columns
@@ -83,12 +103,20 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
   );
 
   return (
-    <DataGrid
-      data={sortedProducts}
-      columns={columns}
-      filterBy={status}
-      keyword={keyword}
-    />
+    <>
+      <DataGrid
+        data={sortedProducts}
+        columns={columns}
+        filterBy={status}
+        keyword={keyword}
+      />
+      <Pagination
+        currentPage={currentPage}
+        pageSize={10}
+        totalCount={total}
+        onPageChange={handlePageChange}
+      />
+    </>
   );
 };
 

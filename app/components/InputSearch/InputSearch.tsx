@@ -12,7 +12,11 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 // Helpers
 import { debounce } from "@/helpers/debounce";
 
-const InputSearch = () => {
+interface InputSearchProps {
+  field: string;
+}
+
+const InputSearch = ({ field }: InputSearchProps) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -27,16 +31,18 @@ const InputSearch = () => {
     const value = e.target.value.trim();
 
     if (value) {
-      params.set("productName", value);
+      params.set(field, value);
+      params.set("page", "1");
     } else {
-      params.delete("productName");
+      params.delete(field);
+      params.set("page", "1");
     }
 
     replace(`${pathname}?${params.toString()}`);
   };
 
   const resetSearch = () => {
-    params.delete("productName");
+    params.delete(field);
     // @ts-ignore (us this comment if typescript raises an error)
     inputSearchRef.current.value = "";
     replace(`${pathname}?${params.toString()}`);

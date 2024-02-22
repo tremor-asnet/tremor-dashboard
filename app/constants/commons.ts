@@ -90,3 +90,7 @@ export const TRANSACTION_CLASS = {
   DECREASE: "text-attention border-attention",
   PENDING: "text-primary border-primary",
 };
+
+export const PAGE_SIZE = {
+  SIZE: 10,
+};

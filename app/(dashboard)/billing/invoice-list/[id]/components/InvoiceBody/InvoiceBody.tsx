@@ -20,10 +20,12 @@ const InvoiceBody = ({
   products,
   totalCost,
 }: TInvoice) => (
-  <Flex className="invoice-body flex-col items-end">
+  // <Flex className="invoice-body flex-col items-end">
+  <div className="block">
     <InfoInvoiceBody id={id} createdAt={createdAt} dueAt={dueAt} />
     <TableInvoice details={products} totalCost={totalCost} />
-  </Flex>
+  </div>
+  // </Flex>
 );
 
 export default InvoiceBody;

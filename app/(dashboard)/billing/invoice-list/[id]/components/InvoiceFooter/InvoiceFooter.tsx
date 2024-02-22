@@ -1,3 +1,5 @@
+"use client";
+
 //Components
 import { Button, Text, Flex } from "@tremor/react";
 
@@ -5,8 +7,12 @@ import { Button, Text, Flex } from "@tremor/react";
 import "@/styles/order.css";
 
 export const InvoiceFooter = () => {
+  const handlePrintInvoice = () => {
+    window.print();
+  };
+
   return (
-    <Flex className="items-start md:items-end flex-col md:flex-row mt-20 invoice">
+    <Flex className="items-start md:items-end flex-col md:flex-row mt-10 md:mt-20 invoice">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[40%]">
         <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7">
           Thank you!
@@ -24,7 +30,9 @@ export const InvoiceFooter = () => {
           </a>
         </p>
       </Flex>
-      <Button className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
+      <Button
+        className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white print:hidden"
+        onClick={handlePrintInvoice}>
         <Text className="uppercase font-bold text-xs text-white dark:text-white">
           print
         </Text>

@@ -27,3 +27,5 @@ export const METADATA = {
 export const PRODUCT = {
   DETAIL: "/assets/images/products/product-details.jpg",
 };
+
+export const IMAGE_TO_PRINT = "https://i.ibb.co/87R6BcQ/logo-td-dark.webp";

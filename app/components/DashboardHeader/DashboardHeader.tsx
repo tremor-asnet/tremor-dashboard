@@ -65,57 +65,61 @@ const DashboardHeader = ({
     : "text-tremor-content";
 
   return (
-    <div
-      className={`${activeStickyScroll} h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 ${
-        isAllProjectPage && `pl-1 pr-2`
-      }`}>
-      <div className="flex items-center">
-        <div
-          className={`block xl:hidden cursor-pointer ${
-            isAllProjectPage ? "z-20" : "mr-2"
-          }`}
-          onClick={toggleSidebar}>
-          {isCollapseSidebar ? (
-            <MdMenuOpen
-              className="text-2xl text-secondary dark:text-white"
-              color={colorIconCaseProject}
-            />
-          ) : (
-            <MdMenu
-              className="text-2xl text-secondary dark:text-white"
-              color={colorIconCaseProject}
-            />
-          )}
-        </div>
-        <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
-      </div>
-      <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
-        <div className="flex flex-wrap item-center gap-y-1">
-          <div className="relative p-2 flex items-center" onClick={toggleTheme}>
-            {theme ? (
-              <IoSunny
-                className={`${activeIconColor} text-xl cursor-pointer`}
+    <div className="print:hidden">
+      <div
+        className={`${activeStickyScroll} h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 ${
+          isAllProjectPage && `pl-1 pr-2`
+        } print:hidden`}>
+        <div className="flex items-center">
+          <div
+            className={`block xl:hidden cursor-pointer ${
+              isAllProjectPage ? "z-20" : "mr-2"
+            }`}
+            onClick={toggleSidebar}>
+            {isCollapseSidebar ? (
+              <MdMenuOpen
+                className="text-2xl text-secondary dark:text-white"
                 color={colorIconCaseProject}
               />
             ) : (
-              <HiMiniMoon
-                className={`${activeIconColor} text-xl cursor-pointer`}
+              <MdMenu
+                className="text-2xl text-secondary dark:text-white"
                 color={colorIconCaseProject}
               />
             )}
           </div>
-          <div className="relative p-2 flex items-center">
-            <MdNotifications
-              className={`${activeIconColor} text-xl cursor-pointer`}
-              color={colorIconCaseProject}
-            />
+          <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
+        </div>
+        <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
+          <div className="flex flex-wrap item-center gap-y-1">
             <div
-              className={`absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
-                isAllProjectPage && !isMobile
-                  ? "text-white opacity-[0.8]"
-                  : "text-inherit"
-              }`}>
-              9
+              className="relative p-2 flex items-center"
+              onClick={toggleTheme}>
+              {theme ? (
+                <IoSunny
+                  className={`${activeIconColor} text-xl cursor-pointer`}
+                  color={colorIconCaseProject}
+                />
+              ) : (
+                <HiMiniMoon
+                  className={`${activeIconColor} text-xl cursor-pointer`}
+                  color={colorIconCaseProject}
+                />
+              )}
+            </div>
+            <div className="relative p-2 flex items-center">
+              <MdNotifications
+                className={`${activeIconColor} text-xl cursor-pointer`}
+                color={colorIconCaseProject}
+              />
+              <div
+                className={`absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
+                  isAllProjectPage && !isMobile
+                    ? "text-white opacity-[0.8]"
+                    : "text-inherit"
+                }`}>
+                9
+              </div>
             </div>
           </div>
         </div>

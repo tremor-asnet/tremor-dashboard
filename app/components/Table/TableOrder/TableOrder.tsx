@@ -41,16 +41,19 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
           onChange={handleChangeCheckbox}
         />
       ),
+      sortable: true,
     },
     {
       key: "createdAt",
       title: "Date",
       customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
+      sortable: true,
     },
     {
       key: "status",
       title: "Status",
       customNode: (_, { status }) => <CustomStatus status={status} />,
+      sortable: true,
     },
     {
       key: "customer",
@@ -60,21 +63,25 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
           <CustomAvatarName avatar={customer.avatar} text={customer.fullName} />
         );
       },
+      sortable: true,
     },
     {
       key: "products",
       title: "Products",
       customNode: (_, { products }) => <CustomList products={products} />,
+      sortable: true,
     },
     {
       key: "count",
       title: "quantity",
       customNode: (_, { products }) => <CustomQuantity products={products} />,
+      sortable: true,
     },
     {
       key: "revenue",
       title: "Revenue",
       customNode: (_, { revenue }) => <CustomNumberFormat value={revenue} />,
+      sortable: true,
     },
   ];
 

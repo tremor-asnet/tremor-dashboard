@@ -41,7 +41,7 @@ const DataGrid = <T,>({
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
-  const [tableData, handleSorting] = useSortableTable<T>(data, columns);
+  const [tableData, handleSorting] = useSortableTable<T>(data);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -55,6 +55,14 @@ const DataGrid = <T,>({
 
     return dataSorted;
   }, [currentPage, tableData, pageSize]);
+
+  useEffect(() => {
+    const column = columns.find(item => item.sortbyOrder);
+
+    if (column) {
+      handleSorting(column.key, column.sortbyOrder);
+    }
+  }, [columns, handleSorting]);
 
   useEffect(() => {
     setLoading(true);

@@ -56,7 +56,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
       sortable: true,
     },
     {
-      key: "customer",
+      key: "customerName",
       title: "Customer",
       customNode: (_, { customer }) => {
         return (
@@ -85,9 +85,29 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
     },
   ];
 
-  const sortedProducts = orders.sort((a, b) =>
+  let sortedProducts = orders.sort((a, b) =>
     a.createdAt.localeCompare(b.createdAt),
   );
+
+  /**
+   * Field "Count" and "Customer" are currently inside the object
+   * So move the field inside the object need to sort to the outside
+   */
+  sortedProducts = sortedProducts.map(item => {
+    let count = 0;
+
+    if (item.products?.length) {
+      item.products.forEach(product => {
+        count = count + product.count;
+      });
+    }
+
+    return {
+      ...item,
+      count: count,
+      customerName: item?.customer.fullName || "",
+    };
+  });
 
   return (
     <DataGrid

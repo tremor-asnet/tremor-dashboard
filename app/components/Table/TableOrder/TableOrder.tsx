@@ -94,18 +94,19 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
    * So move the field inside the object need to sort to the outside
    */
   sortedProducts = sortedProducts.map(item => {
-    let count = 0;
+    const { customer, products } = item;
+    let countKey = 0;
 
-    if (item.products?.length) {
-      item.products.forEach(product => {
-        count = count + product.count;
+    if (products?.length) {
+      products.forEach(({ count }) => {
+        countKey = countKey + count;
       });
     }
 
     return {
       ...item,
-      count: count,
-      customerName: item?.customer.fullName || "",
+      count: countKey,
+      customerName: customer.fullName || "",
     };
   });
 

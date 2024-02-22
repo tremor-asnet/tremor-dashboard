@@ -19,7 +19,7 @@ import { ColumnType, Order } from "@/types";
 import { ROUTES } from "@/constants";
 
 // Helpers
-import { handleSortOrders } from "@/helpers";
+import { transformOrders } from "@/helpers";
 
 interface TableOrderProps {
   orders: Order[];
@@ -94,7 +94,7 @@ const TableOrder = ({ orders, status, keyword }: TableOrderProps) => {
   );
 
   // Handle sort with field inside the object nested
-  sortedOrders = handleSortOrders(sortedOrders);
+  sortedOrders = transformOrders(sortedOrders);
 
   return (
     <DataGrid

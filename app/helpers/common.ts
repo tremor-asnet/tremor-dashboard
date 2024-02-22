@@ -185,7 +185,7 @@ export const handleMatchPath = (path: string) => {
  * So move the field inside the object need to sort to the outside
  * @param sortedOrders []
  */
-export const handleSortOrders = (sortedOrders: Order[]) => {
+export const transformOrders = (sortedOrders: Order[]) => {
   return sortedOrders.map(item => {
     const { customer, products } = item;
     let countKey = 0;

@@ -74,9 +74,9 @@ const ProductInfo = () => {
             control={control}
             render={({ field }) => (
               <div className="w-full relative">
-                <label className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
+                <Text className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
                   Description <span className="text-xs">(optional)</span>
-                </label>
+                </Text>
                 <QuillEditor
                   placeholder="Content goes here..."
                   className="w-full rounded-md text-secondary dark:text-white pt-2.5"

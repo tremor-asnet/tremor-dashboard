@@ -45,20 +45,20 @@ export const InvoiceHeader = ({
           className="hidden print:block"
         />
         <InvoiceLogo additionalClasses="w-20 h-20 md:w-10 md:h-10 print:hidden" />
-        <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7">
+        <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary">
           {renderAddressBankInfo}
         </p>
         <Link
           href={`tel:${phoneBank}`}
-          className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4">
+          className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-secondary">
           tel: {phoneBank}
         </Link>
       </Flex>
       <Flex flexDirection="col" className="items-start md:items-end md:mt-0">
-        <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide">
+        <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary">
           Billed to: {fullName}
         </p>
-        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right">
+        <p className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary">
           {addressCustomer}
           <br /> {cityCustomer} {stateCode}
           <br /> {stateCustomer}

@@ -6,7 +6,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="block"
+        class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between mb-7 md:flex-row items-start md:items-center"
@@ -15,12 +15,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="w-full md:mb-0"
           >
             <p
-              class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+              class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary dark:print:!text-secondary"
             >
               Invoice no
             </p>
             <a
-              class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline"
+              class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline dark:print:text-primary"
               href="#"
             >
               #
@@ -34,12 +34,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary"
+                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
               >
                 Invoice date:
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-semibold dark:!text-white text-primary"
+                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
               >
                 03/06/2019
               </p>
@@ -48,12 +48,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary"
+                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
               >
                 Due date:
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-semibold dark:!text-white text-primary"
+                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
               >
                 03/11/2019
               </p>
@@ -87,7 +87,7 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="block"
+      class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between mb-7 md:flex-row items-start md:items-center"
@@ -96,12 +96,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
           class="w-full md:mb-0"
         >
           <p
-            class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary"
+            class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary dark:print:!text-secondary"
           >
             Invoice no
           </p>
           <a
-            class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline"
+            class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline dark:print:text-primary"
             href="#"
           >
             #
@@ -115,12 +115,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary"
+              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
             >
               Invoice date:
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-semibold dark:!text-white text-primary"
+              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
             >
               03/06/2019
             </p>
@@ -129,12 +129,12 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary"
+              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
             >
               Due date:
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-semibold dark:!text-white text-primary"
+              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
             >
               03/11/2019
             </p>

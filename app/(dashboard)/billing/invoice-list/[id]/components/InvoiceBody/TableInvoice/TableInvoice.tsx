@@ -29,7 +29,7 @@ export const TableInvoice = ({
       key: "name",
       title: "Item",
       customNode: (_, { productName }) => (
-        <Text className="max-w-[250px] md:max-w-sm truncate">
+        <Text className="max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-secondary">
           {productName}
         </Text>
       ),
@@ -39,7 +39,9 @@ export const TableInvoice = ({
       key: "quantity",
       title: "Qty",
       customNode: (_, { quantity }) => (
-        <Text className="dark:text-lighter">{quantity}</Text>
+        <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
+          {quantity}
+        </Text>
       ),
       sortable: false,
     },
@@ -48,14 +50,16 @@ export const TableInvoice = ({
       title: "Rate",
       customNode: (_, { price }) => (
         <div>
-          <Text className="dark:text-lighter">
+          <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
             {formattedNumber({
               value: price,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
             })}
           </Text>
-          <Text className="total hidden mt-6 dark:!text-white">Total</Text>
+          <Text className="total hidden mt-6 dark:!text-white dark:print:!text-primary">
+            Total
+          </Text>
         </div>
       ),
       sortable: false,
@@ -65,7 +69,7 @@ export const TableInvoice = ({
       title: "Amount",
       customNode: (_, { price, quantity }) => (
         <div>
-          <Text className="dark:text-lighter">
+          <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
             {formattedNumber({
               value: price * quantity,
               currency: CURRENCY.DOLLAR,
@@ -73,7 +77,7 @@ export const TableInvoice = ({
             })}
           </Text>
           <Text
-            className="total hidden mt-6 flex-col items-end dark:!text-white"
+            className="total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
             data-testid="total-price">
             {formattedNumber({
               value: totalCost,

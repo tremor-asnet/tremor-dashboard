@@ -25,8 +25,8 @@ const ApplicationSetting = ({
   applicationSettingFields = APPLICATION_SETTING_FIELDS,
   applicationSettingData = APPLICATION_SETTING_DATA,
 }: ApplicationSettingProps) => {
-  const { theme } = useContext(ThemeContext);
-  const color = theme ? "white" : "zinc";
+  const { isDarkTheme } = useContext(ThemeContext);
+  const color = isDarkTheme ? "white" : "zinc";
 
   return (
     <>

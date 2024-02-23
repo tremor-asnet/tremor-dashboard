@@ -3,7 +3,7 @@
 import React, { createContext, useEffect, useState } from "react";
 
 interface ThemeContext {
-  theme: boolean;
+  isDarkTheme: boolean;
   toggleTheme: () => void;
 }
 
@@ -12,30 +12,30 @@ interface ThemeProviderProps {
 }
 
 const ThemeContext = createContext<ThemeContext>({
-  theme: false,
+  isDarkTheme: false,
   toggleTheme: () => {},
 });
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState<boolean>(false);
+  const [isDarkTheme, setTheme] = useState<boolean>(false);
 
   useEffect(() => {
-    const savedTheme = JSON.parse(localStorage.getItem("theme")!);
+    const savedTheme = JSON.parse(localStorage.getItem("isDarkTheme")!);
     if (savedTheme) {
       setTheme(savedTheme);
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(theme));
-  }, [theme]);
+    localStorage.setItem("isDarkTheme", JSON.stringify(isDarkTheme));
+  }, [isDarkTheme]);
 
   const toggleTheme = () => {
-    setTheme(!theme);
+    setTheme(!isDarkTheme);
   };
 
   const value = {
-    theme,
+    isDarkTheme,
     toggleTheme,
   };
 

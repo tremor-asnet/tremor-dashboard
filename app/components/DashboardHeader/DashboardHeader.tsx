@@ -32,7 +32,7 @@ const DashboardHeader = ({
   toggleSidebar,
 }: DashboardHeaderProps): JSX.Element => {
   const pathname = usePathname();
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isAllProjectPage = pathname === ROUTES.PROJECTS;
@@ -95,7 +95,7 @@ const DashboardHeader = ({
             <div
               className="relative p-2 flex items-center"
               onClick={toggleTheme}>
-              {theme ? (
+              {isDarkTheme ? (
                 <IoSunny
                   className={`${activeIconColor} text-xl cursor-pointer`}
                   color={colorIconCaseProject}

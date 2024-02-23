@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const inter = Inter({ subsets: ["latin"] });
 
 const ClientRootLayout = ({ children }: ClientRootLayoutProps) => {
-  const { theme } = useContext(ThemeContext);
+  const { isDarkTheme } = useContext(ThemeContext);
 
   return (
     <html lang="en">
@@ -36,7 +36,7 @@ const ClientRootLayout = ({ children }: ClientRootLayoutProps) => {
         />
       </head>
       {/* TODO: Add class to custom theme dark or light */}
-      <body className={`${inter.className} ${theme ? "dark" : "light"}`}>
+      <body className={`${inter.className} ${isDarkTheme ? "dark" : "light"}`}>
         {children}
       </body>
     </html>

@@ -53,6 +53,7 @@ const AnalyticsLineChart = ({
           <main className="w-full mx-auto">
             <div className="-mt-10">
               <Card
+                data-testid="card"
                 className={`${
                   type === CHART_TYPE.PERFORMANCE
                     ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"

@@ -1,13 +1,13 @@
 "use client";
 
-import { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 interface ThemeContext {
   theme: boolean;
   toggleTheme: () => void;
 }
 
-interface ThemeProvider {
+interface ThemeProviderProps {
   children: React.ReactNode;
 }
 
@@ -16,8 +16,19 @@ const ThemeContext = createContext<ThemeContext>({
   toggleTheme: () => {},
 });
 
-const ThemeProvider = ({ children }: ThemeProvider) => {
+const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<boolean>(false);
+
+  useEffect(() => {
+    const savedTheme = JSON.parse(localStorage.getItem("theme")!);
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(theme));
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme(!theme);

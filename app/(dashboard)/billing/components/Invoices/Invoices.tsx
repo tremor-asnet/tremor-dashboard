@@ -24,7 +24,7 @@ const Invoices = ({ invoices }: InvoicesProps) => {
     );
   });
 
-  const invoiceList = invoices.map(invoice => {
+  const invoiceList = invoices.slice(0, 5).map(invoice => {
     const { id, invoicePrefix, createdAt, totalCost } = invoice;
     return (
       <InvoiceItem

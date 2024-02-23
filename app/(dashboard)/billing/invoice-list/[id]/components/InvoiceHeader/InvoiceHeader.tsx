@@ -1,9 +1,13 @@
 // Libs
 import Link from "next/link";
+import Image from "next/image";
 
 //Components
 import { Flex } from "@tremor/react";
 import InvoiceLogo from "../InvoiceLogo/InvoiceLogo";
+
+// Constants
+import { IMAGE_TO_PRINT } from "@/constants";
 
 interface InvoiceHeaderProps {
   addressBank: string;
@@ -31,9 +35,16 @@ export const InvoiceHeader = ({
   const renderAddressBankInfo = `${addressBank} ${cityBank}, ${stateBank}`;
 
   return (
-    <Flex className="flex-col md:flex-row mb-[40px] md:mb-20">
+    <Flex className="flex-col md:flex-row mb-10 md:mb-20">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[35%]">
-        <InvoiceLogo additionalClasses="w-20 h-20 md:w-10 md:h-10" />
+        <Image
+          src={IMAGE_TO_PRINT}
+          alt="print-logo"
+          width={80}
+          height={80}
+          className="hidden print:block"
+        />
+        <InvoiceLogo additionalClasses="w-20 h-20 md:w-10 md:h-10 print:hidden" />
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7">
           {renderAddressBankInfo}
         </p>
@@ -43,9 +54,7 @@ export const InvoiceHeader = ({
           tel: {phoneBank}
         </Link>
       </Flex>
-      <Flex
-        flexDirection="col"
-        className="items-start md:items-end mt-11 md:mt-0">
+      <Flex flexDirection="col" className="items-start md:items-end md:mt-0">
         <p className="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide">
           Billed to: {fullName}
         </p>

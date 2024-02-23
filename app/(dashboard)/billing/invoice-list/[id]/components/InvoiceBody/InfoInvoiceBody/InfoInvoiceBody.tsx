@@ -17,8 +17,8 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
   const formattedDueAt = dayjs(dueAt).format("DD/MM/YYYY");
 
   return (
-    <Flex className="mb-7 flex-col md:flex-row items-start md:items-center">
-      <div className="mb-6 md:mb-0">
+    <Flex className="mb-7 md:flex-row items-start md:items-center">
+      <div className="w-full md:mb-0">
         <Text className="!text-base font-light font-normal dark:text-lighter text-secondary">
           Invoice no
         </Text>
@@ -28,20 +28,20 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
           #{id}
         </Link>
       </div>
-      <div className="min-w-[290px]">
-        <Flex className="flex-col md:flex-row mb-1 md:mb-0 items-start md:items-center">
-          <Text className="!text-base font-light font-normal dark:!text-lighter text-secondary">
+      <div className="w-full">
+        <Flex>
+          <Text className="w-full text-end !text-base font-light font-normal dark:!text-lighter text-secondary">
             Invoice date:
           </Text>
-          <Text className="!text-base font-semibold dark:!text-white text-primary">
+          <Text className="w-full text-end !text-base font-semibold dark:!text-white text-primary">
             {formattedCreateAt}
           </Text>
         </Flex>
-        <Flex className="flex-col md:flex-row items-start md:items-center">
-          <Text className="!text-base font-light font-normal dark:!text-lighter text-secondary">
+        <Flex>
+          <Text className="w-full text-end !text-base font-light font-normal dark:!text-lighter text-secondary">
             Due date:
           </Text>
-          <Text className="!text-base font-semibold dark:!text-white text-primary">
+          <Text className="w-full text-end !text-base font-semibold dark:!text-white text-primary">
             {formattedDueAt}
           </Text>
         </Flex>

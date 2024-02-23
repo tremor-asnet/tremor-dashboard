@@ -1,3 +1,6 @@
+// Libs
+import dayjs from "dayjs";
+
 // Components
 import Transactions from "./Transaction/Transactions";
 
@@ -6,7 +9,11 @@ import { getTransactions } from "@/services";
 
 const TransactionDetail = async () => {
   const transactionsData = await getTransactions();
-  return <Transactions newest={transactionsData} date="23 - 30 March 2020" />;
+  const transactionDate = dayjs(transactionsData[0].createdAt).format(
+    "MMM YYYY",
+  );
+
+  return <Transactions newest={transactionsData} date={transactionDate} />;
 };
 
 export default TransactionDetail;

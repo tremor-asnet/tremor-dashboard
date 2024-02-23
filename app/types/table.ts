@@ -5,4 +5,5 @@ export interface ColumnType<T> {
   title: string;
   customNode?: (column: ColumnType<T>, item: T) => ReactNode;
   sortable?: boolean;
+  sortbyOrder?: string;
 }

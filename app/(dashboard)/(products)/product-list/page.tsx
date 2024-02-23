@@ -45,22 +45,6 @@ const ProductListPage = async ({
 
   const { results, total, skip } = response;
 
-  // if (productName) {
-  //   filteredData = searchProductDataByValue<Product>(
-  //     productListData,
-  //     "productName",
-  //     productName,
-  //   );
-  // }
-
-  // filteredData = isAvailable
-  //   ? filterProductList(
-  //       filteredData,
-  //       "isAvailable",
-  //       String(isAvailable).toLowerCase() === "true",
-  //     )
-  //   : filteredData;
-
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
@@ -71,7 +55,7 @@ const ProductListPage = async ({
         </Link>
         <ProductFilter title="Filters" />
       </Flex>
-      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary min-h-[calc(100vh-12rem)]">
+      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="productName" />
         <Suspense
           key={`${productName}-${isAvailable}`}

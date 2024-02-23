@@ -117,17 +117,15 @@ const TableOrder = ({
   sortedOrders = transformOrders(sortedOrders);
 
   return (
-    <>
-      <DataGrid
-        data={sortedOrders}
-        columns={columns}
-        filterBy={status}
-        keyword={keyword}
-        currentPageNumber={currentPage}
-        total={total}
-        onPageChange={handlePageChange}
-      />
-    </>
+    <DataGrid
+      data={sortedOrders}
+      columns={columns}
+      filterBy={status}
+      keyword={keyword}
+      currentPageNumber={currentPage}
+      total={total}
+      onPageChange={handlePageChange}
+    />
   );
 };
 

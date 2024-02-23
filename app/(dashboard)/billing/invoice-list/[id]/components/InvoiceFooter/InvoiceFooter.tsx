@@ -14,17 +14,17 @@ export const InvoiceFooter = () => {
   return (
     <Flex className="items-start md:items-end flex-col md:flex-row mt-10 md:mt-20 invoice">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[40%]">
-        <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7">
+        <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7 dark:print:text-primary">
           Thank you!
         </p>
-        <p className="text-sm dark:text-dark-romance font-light text-secondary leading-5 my-2">
+        <p className="text-sm dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary">
           If you encounter any issues related to the invoice you can contact us
           at:
         </p>
-        <p className="dark:text-dark-romance text-secondary leading-5 mt-4">
+        <p className="dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary">
           email:{" "}
           <a
-            className="text-primary dark:text-white"
+            className="text-primary dark:text-white dark:print:text-secondary"
             href="mailto:support@creative-tim.com">
             support@creative-tim.com
           </a>

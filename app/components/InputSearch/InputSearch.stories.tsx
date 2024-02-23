@@ -14,5 +14,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const InputSearchDefault: Story = {
-  render: () => <InputSearch />,
+  render: () => <InputSearch field="id" />,
 };

@@ -10,6 +10,14 @@ const meta = {
   title: "Components/TransactionList",
   component: TransactionList,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "TransactionList is a component use for transactions component",
+      },
+    },
+  },
 } as Meta<typeof TransactionList>;
 
 export default meta;

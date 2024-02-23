@@ -10,20 +10,30 @@ const meta = {
   title: "Components/TransactionItem",
   component: TransactionItem,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "TransactionItem is a component use for TransactionList component",
+      },
+    },
+  },
 } as Meta<typeof TransactionItem>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+const { createdAt, service, amount, type, status } = MOCK_TRANSACTIONS[0];
+
 export const Default: Story = {
   render: () => (
     <TransactionItem
-      createdAt={MOCK_TRANSACTIONS[0].createdAt}
-      service={MOCK_TRANSACTIONS[0].service}
-      amount={MOCK_TRANSACTIONS[0].amount}
-      type={MOCK_TRANSACTIONS[0].type}
-      status={MOCK_TRANSACTIONS[0].status}
+      createdAt={createdAt}
+      service={service}
+      amount={amount}
+      type={type}
+      status={status}
     />
   ),
 };

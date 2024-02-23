@@ -22,6 +22,8 @@ export const Primary: Story = {
       products={MOCK_PRODUCTS}
       isAvailable="isAvailable"
       keyword="productName"
+      total={50}
+      currentPage={0}
     />
   ),
 };

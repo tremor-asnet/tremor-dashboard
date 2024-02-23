@@ -44,7 +44,7 @@ const OrderListPage = async ({
         </Button>
         <OrderFilter title="Filters" />
       </Flex>
-      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
+      <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary  shadow-box-icon-default">
         <InputSearch field="id" />
         <div className="w-full relative min-h-[183px] bg-white rounded-lg">
           <Suspense

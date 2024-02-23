@@ -109,6 +109,7 @@ const TableOrder = ({
         columns={columns}
         filterBy={status}
         keyword={keyword}
+        className="!shadow-none rounded-none"
       />
       <Pagination
         currentPage={currentPage}

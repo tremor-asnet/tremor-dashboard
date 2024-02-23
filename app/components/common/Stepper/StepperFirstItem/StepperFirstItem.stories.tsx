@@ -7,6 +7,11 @@ const meta = {
   title: "Components/common/StepperFirstItem",
   component: StepperFirstItem,
   tags: ["autodocs"],
+  argTypes: {
+    index: { description: "Index of step. (1)" },
+    content: { description: "Content of step 1. (Product Info)" },
+    isFirstStep: { description: "Check if it is first step." },
+  },
 } as Meta<typeof StepperFirstItem>;
 
 export default meta;

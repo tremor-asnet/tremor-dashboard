@@ -7,6 +7,11 @@ const meta = {
   title: "Components/common/StepperLastItem",
   component: StepperLastItem,
   tags: ["autodocs"],
+  argTypes: {
+    index: { description: "Index of step. (4)" },
+    content: { description: "Content of step 4. (Pricing)" },
+    isFirstStep: { description: "Check if it is last step." },
+  },
 } as Meta<typeof StepperLastItem>;
 
 export default meta;

@@ -11,6 +11,11 @@ const meta = {
   title: "Components/common/StepperBodyItem",
   tags: ["autodocs"],
   component: StepperBodyItem,
+  argTypes: {
+    index: { description: "Index of step. (2, ...,4)" },
+    content: { description: "Content of step. (Media, ...)" },
+    currentStep: { description: "Current step. (2)" },
+  },
 } as Meta<typeof StepperBodyItem>;
 
 export default meta;

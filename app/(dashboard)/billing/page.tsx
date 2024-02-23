@@ -6,13 +6,17 @@ import { LoadingIndicator } from "@/components";
 import BillingDetail from "./components/BillingDetail";
 import InvoiceDetail from "./components/InvoiceDetail";
 import BillingInfoDetail from "./components/BillingInfoDetail";
-import TransactionDetail from "./components/TransactionDetail";
+import TransactionDetail from "./components/TransactionDetail/TransactionDetail";
+
+// Services
+import { getTransactions } from "@/services";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
 };
 
 const Billing = async () => {
+  const transactionsData = await getTransactions();
   return (
     <div>
       <Flex className="pb-6 flex-col lg:flex-row items-start">
@@ -74,7 +78,7 @@ const Billing = async () => {
                 fillColor="river-bed-500"
               />
             }>
-            <TransactionDetail />
+            <TransactionDetail transactionsData={transactionsData} />
           </Suspense>
         </div>
       </Flex>

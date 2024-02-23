@@ -387,22 +387,6 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
                           width="60"
                         />
                       </g>
-                      <g
-                        class="recharts-layer recharts-line cursor-pointer"
-                      >
-                        <path
-                          class="recharts-curve recharts-line-curve"
-                          d="M55,59.99999999999999L57.5,61L60,35L62.5,33L65,14.999999999999996L67.5,30L70,45L72.5,42L75,14.999999999999996"
-                          fill="none"
-                          height="60"
-                          name="Mobile apps"
-                          stroke="transparent"
-                          stroke-dasharray="0px 0px"
-                          stroke-opacity="0"
-                          stroke-width="12"
-                          width="60"
-                        />
-                      </g>
                     </svg>
                     <div
                       class="recharts-tooltip-wrapper"

@@ -2,13 +2,16 @@
 import dayjs from "dayjs";
 
 // Components
-import Transactions from "./Transaction/Transactions";
+import Transactions from "../Transaction/Transactions";
 
-// Services
-import { getTransactions } from "@/services";
+// Types
+import { Transaction } from "@/types";
 
-const TransactionDetail = async () => {
-  const transactionsData = await getTransactions();
+interface TransactionDetailProps {
+  transactionsData: Transaction[];
+}
+
+const TransactionDetail = ({ transactionsData }: TransactionDetailProps) => {
   const transactionDate = dayjs(transactionsData[0].createdAt).format(
     "MMM YYYY",
   );

@@ -12,16 +12,16 @@ import { getErrorMessage } from "@/helpers";
 import { ProductData } from "@/types";
 
 export const getProducts = async (
-  pageNum: number,
-  isAvailable: number,
-  productName: number,
+  pageNum?: number,
+  isAvailable?: number,
+  productName?: number,
 ) => {
-  const isAvailableFilter = isAvailable >= 0 ? "&status=" + isAvailable : "";
-  const productNameFilter = productName >= 0 ? "&query=" + productName : "";
+  const isAvailableFilter = isAvailable! >= 0 ? "&status=" + isAvailable : "";
+  const productNameFilter = productName! >= 0 ? "&query=" + productName : "";
   const filter = isAvailableFilter + productNameFilter;
 
   const res = await fetch(
-    `${ROUTER_API_URL}/products?page=${pageNum - 1}&size=${
+    `${ROUTER_API_URL}/products?page=${pageNum! - 1}&size=${
       PAGE_SIZE.SIZE
     }${filter}`,
     {

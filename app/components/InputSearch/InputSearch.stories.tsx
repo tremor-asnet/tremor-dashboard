@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 export const InputSearchDefault: Story = {
   render: () => (
     <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-      <InputSearch />
+      <InputSearch field="id" />
     </div>
   ),
 };

@@ -45,6 +45,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
 
     if (currentStatus !== status) {
       newParams.set("status", status);
+      newParams.set("page", "1");
     }
 
     const query = newParams ? `${newParams}` : "";

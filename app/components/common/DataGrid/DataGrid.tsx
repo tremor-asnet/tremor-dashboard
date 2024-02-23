@@ -27,6 +27,9 @@ interface DataTableProps<T> {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
+  currentPageNumber?: number;
+  total?: number;
+  onPageChange?: (page: number) => void;
 }
 
 const DataGrid = <T,>({
@@ -37,6 +40,9 @@ const DataGrid = <T,>({
   keyword,
   className = "",
   hasPagination = true,
+  total,
+  currentPageNumber,
+  onPageChange,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -100,10 +106,10 @@ const DataGrid = <T,>({
         </Table>
         {hasPagination && (
           <Pagination
-            currentPage={currentPage}
+            currentPage={currentPageNumber!}
             pageSize={pageSize}
-            totalCount={data.length}
-            onPageChange={setCurrentPage}
+            totalCount={total!}
+            onPageChange={onPageChange!}
           />
         )}
       </div>

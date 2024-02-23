@@ -14,11 +14,14 @@ import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface TableProductProps {
   products: Product[];
   isAvailable: string;
   keyword: string;
+  total: number;
+  currentPage: number;
 }
 
 export interface SortItem {
@@ -30,9 +33,21 @@ const TableProduct = ({
   products,
   isAvailable,
   keyword,
+  total,
+  currentPage,
 }: TableProductProps) => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathName = usePathname();
+  const newParams = new URLSearchParams(searchParams.toString());
+
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
+  };
+
+  const handlePageChange = (page: number) => {
+    newParams.set("page", page.toString());
+    router.push(`${pathName}?${newParams}`);
   };
 
   // Product Table Props
@@ -96,6 +111,9 @@ const TableProduct = ({
       columns={columns}
       filterBy={isAvailable}
       keyword={keyword}
+      currentPageNumber={currentPage}
+      total={total}
+      onPageChange={handlePageChange}
     />
   );
 };

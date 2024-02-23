@@ -3,22 +3,35 @@
 import { revalidateTag } from "next/cache";
 
 // Constants
-import { ROUTER_API_URL, ROUTES } from "@/constants";
+import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
 
-export const getOrders = async () => {
-  const res = await fetch(`${ROUTER_API_URL}/orders`, {
-    method: "GET",
-    headers: {
-      "content-type": "application/json;charset=UTF-8",
+export const getOrders = async (
+  pageNum: number,
+  status: number,
+  query: number,
+) => {
+  const statusFilter = status >= 0 ? "&status=" + status : "";
+  const queryFilter = query >= 0 ? "&query=" + query : "";
+  const filter = statusFilter + queryFilter;
+
+  const res = await fetch(
+    `${ROUTER_API_URL}/orders?page=${pageNum - 1}&size=${
+      PAGE_SIZE.SIZE
+    }${filter}`,
+    {
+      method: "GET",
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+      },
+      next: {
+        revalidate: 60,
+        tags: [ROUTES.ORDER_LIST],
+      },
     },
-    next: {
-      revalidate: 60,
-      tags: [ROUTES.ORDER_LIST],
-    },
-  });
+  );
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 

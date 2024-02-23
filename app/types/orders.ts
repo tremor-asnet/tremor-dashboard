@@ -39,3 +39,9 @@ export type OrderDetail = {
     vat: string;
   };
 };
+
+export interface OrderResponse {
+  results: Order[];
+  total: number;
+  skip: number;
+}

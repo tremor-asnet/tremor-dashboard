@@ -13,14 +13,12 @@ import {
 import { getOrders } from "@/services";
 
 // Types
-import { Order, OrderProduct } from "@/types";
-
-// Helpers
-import { filterOrderList, searchOrderDataByValue } from "@/helpers";
+import { OrderResponse } from "@/types";
 
 type SearchParams = {
-  productName?: string;
-  status?: string;
+  id?: number;
+  status?: number;
+  page?: number;
 };
 
 const OrderListPage = async ({
@@ -28,24 +26,11 @@ const OrderListPage = async ({
 }: {
   searchParams?: SearchParams;
 }) => {
-  const orderListData: Order[] = await getOrders();
+  const { id = -1, status = -1, page = 1 } = searchParams as SearchParams;
 
-  const { productName = "", status = "" } = searchParams as SearchParams;
+  const response: OrderResponse = await getOrders(page, status, id);
 
-  let filteredData = orderListData;
-
-  if (productName) {
-    filteredData = searchOrderDataByValue<Order, OrderProduct>(
-      orderListData,
-      "products",
-      "name",
-      productName,
-    );
-  }
-
-  filteredData = status
-    ? filterOrderList<Order>(filteredData, "status", status)
-    : filteredData;
+  const { results, total, skip } = response;
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -58,10 +43,10 @@ const OrderListPage = async ({
         <OrderFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch />
+        <InputSearch field="id" />
         <div className="w-full relative min-h-[183px] bg-white rounded-lg">
           <Suspense
-            key={`${productName}-${status}`}
+            key={`${id}-${status}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -72,10 +57,12 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${productName}-${status}`}
-              orders={filteredData}
-              status={status}
-              keyword={productName}
+              key={`${id}-${status}-${page}`}
+              orders={results}
+              status={status.toString()}
+              keyword={id.toString()}
+              total={total}
+              currentPage={skip / 10 + 1}
             />
           </Suspense>
         </div>

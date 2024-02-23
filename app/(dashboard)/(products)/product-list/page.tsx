@@ -10,7 +10,7 @@ import TableProduct from "../components/TableProduct/TableProduct";
 import { getProducts } from "@/services";
 
 // Types
-import { Product } from "@/types";
+import { Product, ProductResponse } from "@/types";
 
 // Helpers
 import { filterProductList, searchProductDataByValue } from "@/helpers";
@@ -19,8 +19,9 @@ import { filterProductList, searchProductDataByValue } from "@/helpers";
 import { ROUTES } from "@/constants";
 
 type SearchParamsProduct = {
-  productName: string;
-  isAvailable: string;
+  productName: number;
+  isAvailable: number;
+  page?: number;
 };
 
 const ProductListPage = async ({
@@ -30,28 +31,35 @@ const ProductListPage = async ({
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const productListData: Product[] = await getProducts();
+  const {
+    productName = -1,
+    isAvailable = -1,
+    page = 1,
+  } = searchParams as SearchParamsProduct;
 
-  const { productName = "", isAvailable = "" } =
-    searchParams as SearchParamsProduct;
+  const response: ProductResponse = await getProducts(
+    page,
+    isAvailable,
+    productName,
+  );
 
-  let filteredData = productListData;
+  const { results, total, skip } = response;
 
-  if (productName) {
-    filteredData = searchProductDataByValue<Product>(
-      productListData,
-      "productName",
-      productName,
-    );
-  }
+  // if (productName) {
+  //   filteredData = searchProductDataByValue<Product>(
+  //     productListData,
+  //     "productName",
+  //     productName,
+  //   );
+  // }
 
-  filteredData = isAvailable
-    ? filterProductList(
-        filteredData,
-        "isAvailable",
-        String(isAvailable).toLowerCase() === "true",
-      )
-    : filteredData;
+  // filteredData = isAvailable
+  //   ? filterProductList(
+  //       filteredData,
+  //       "isAvailable",
+  //       String(isAvailable).toLowerCase() === "true",
+  //     )
+  //   : filteredData;
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -77,10 +85,12 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${productName}-${isAvailable}`}
-            products={filteredData}
-            isAvailable={isAvailable}
-            keyword={productName}
+            key={`${productName}-${isAvailable}-${page}`}
+            products={results}
+            isAvailable={isAvailable.toString()}
+            keyword={productName.toString()}
+            total={total}
+            currentPage={skip / 10 + 1}
           />
         </Suspense>
       </div>

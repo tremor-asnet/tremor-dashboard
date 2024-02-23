@@ -30,12 +30,12 @@ const InputSearch = ({ field }: InputSearchProps) => {
 
     const value = e.target.value.trim();
 
+    params.set("page", "1");
+
     if (value) {
       params.set(field, value);
-      params.set("page", "1");
     } else {
       params.delete(field);
-      params.set("page", "1");
     }
 
     replace(`${pathname}?${params.toString()}`);

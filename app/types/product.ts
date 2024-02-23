@@ -10,6 +10,12 @@ export interface Product {
   quantity?: number;
 }
 
+export interface ProductResponse {
+  results: Product[];
+  total: number;
+  skip: number;
+}
+
 export type TProductInfo = {
   productName: string;
   description?: string;

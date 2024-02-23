@@ -3,7 +3,12 @@
 import { Card, Table } from "@tremor/react";
 
 // Components
-import { DataGridHeader, DataGridBody, LoadingIndicator } from "@/components";
+import {
+  Pagination,
+  DataGridHeader,
+  DataGridBody,
+  LoadingIndicator,
+} from "@/components";
 
 // Types
 import { ColumnType } from "@/types";
@@ -21,6 +26,10 @@ interface DataTableProps<T> {
   filterBy: string;
   keyword: string;
   className?: string;
+  hasPagination?: boolean;
+  currentPageNumber?: number;
+  total?: number;
+  onPageChange?: (page: number) => void;
 }
 
 const DataGrid = <T,>({
@@ -30,6 +39,10 @@ const DataGrid = <T,>({
   filterBy,
   keyword,
   className = "",
+  hasPagination = true,
+  total,
+  currentPageNumber,
+  onPageChange,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -91,6 +104,14 @@ const DataGrid = <T,>({
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
+        {hasPagination && (
+          <Pagination
+            currentPage={currentPageNumber!}
+            pageSize={pageSize}
+            totalCount={total!}
+            onPageChange={onPageChange!}
+          />
+        )}
       </div>
     </Card>
   );

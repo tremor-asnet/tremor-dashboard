@@ -12,7 +12,7 @@ import {
   CustomStatus,
   CustomQuantity,
 } from "@/components/Table/common";
-import { DataGrid, Pagination } from "@/components";
+import { DataGrid } from "@/components";
 
 //Types
 import { ColumnType, Order } from "@/types";
@@ -123,12 +123,8 @@ const TableOrder = ({
         columns={columns}
         filterBy={status}
         keyword={keyword}
-        className="!shadow-none rounded-none"
-      />
-      <Pagination
-        currentPage={currentPage}
-        pageSize={10}
-        totalCount={total}
+        currentPageNumber={currentPage}
+        total={total}
         onPageChange={handlePageChange}
       />
     </>

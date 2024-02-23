@@ -92,6 +92,7 @@ export const TableInvoice = ({
       filterBy="isAvailable"
       keyword="invoice"
       className="!shadow-none"
+      hasPagination={false}
     />
   );
 };

@@ -70,6 +70,7 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       filterBy="isAvailable"
       keyword="productName"
       className="!shadow-none"
+      hasPagination={false}
     />
   );
 };

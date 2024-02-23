@@ -77,7 +77,7 @@ export const formattedNumber = ({
   let formattedNumber = value?.toLocaleString("en-US");
 
   if (isDecimalNumber) {
-    formattedNumber = formattedNumber.split(",").join(".");
+    formattedNumber = formattedNumber.split(",").join(",");
   }
 
   return currency

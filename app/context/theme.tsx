@@ -1,30 +1,41 @@
 "use client";
 
-import { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 interface ThemeContext {
-  theme: boolean;
+  isDarkTheme: boolean;
   toggleTheme: () => void;
 }
 
-interface ThemeProvider {
+interface ThemeProviderProps {
   children: React.ReactNode;
 }
 
 const ThemeContext = createContext<ThemeContext>({
-  theme: false,
+  isDarkTheme: false,
   toggleTheme: () => {},
 });
 
-const ThemeProvider = ({ children }: ThemeProvider) => {
-  const [theme, setTheme] = useState<boolean>(false);
+const ThemeProvider = ({ children }: ThemeProviderProps) => {
+  const [isDarkTheme, setTheme] = useState<boolean>(false);
+
+  useEffect(() => {
+    const savedTheme = JSON.parse(localStorage.getItem("isDarkTheme")!);
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("isDarkTheme", JSON.stringify(isDarkTheme));
+  }, [isDarkTheme]);
 
   const toggleTheme = () => {
-    setTheme(!theme);
+    setTheme(!isDarkTheme);
   };
 
   const value = {
-    theme,
+    isDarkTheme,
     toggleTheme,
   };
 

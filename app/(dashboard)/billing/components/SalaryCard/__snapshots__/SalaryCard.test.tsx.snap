@@ -18,7 +18,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full justify-between items-center flex-col"
             >
               <div
-                class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-gradient-arsenic shadow-box-icon-primary"
+                class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-gradient-pickled"
               >
                 <svg
                   color="white"
@@ -91,7 +91,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between items-center flex-col"
           >
             <div
-              class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-gradient-arsenic shadow-box-icon-primary"
+              class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-gradient-pickled"
             >
               <svg
                 color="white"

@@ -2,12 +2,24 @@
 
 exports[`ClientRootLayout matches snapshot with dark theme 1`] = `
 <DocumentFragment>
-  <div
-    class="className light"
-  >
-    <div>
-      Tremor Dashboard
-    </div>
+  <link
+    href="/assets/images/favicon.ico"
+    rel="icon"
+  />
+  <link
+    href="https://fonts.googleapis.com"
+    rel="preconnect"
+  />
+  <link
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <div>
+    Tremor Dashboard
   </div>
 </DocumentFragment>
 `;

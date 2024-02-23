@@ -22,8 +22,8 @@ const AccountSetting = ({
   accountSettingFields = ACCOUNT_SETTING_FIELDS,
   accountSettingData = ACCOUNT_SETTING_DATA,
 }: AccountSettingProps) => {
-  const { theme } = useContext(ThemeContext);
-  const color = theme ? "white" : "zinc";
+  const { isDarkTheme } = useContext(ThemeContext);
+  const color = isDarkTheme ? "white" : "zinc";
 
   return (
     <>

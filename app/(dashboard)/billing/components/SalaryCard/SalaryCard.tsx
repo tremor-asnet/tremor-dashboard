@@ -39,7 +39,7 @@ const SalaryCard = ({
       <div className="flex items-center">
         <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
           <Flex className="flex-col">
-            <IconBox className="shadow-box-icon-primary" icon={icon} />
+            <IconBox className="bg-gradient-pickled" icon={icon} />
             <Flex className="flex-col mt-4 mb-1">
               <Text className="mb-1 text-primary dark:text-lighter text-tremor-title leading-[33px] tracking-[0.1764px] font-semibold">
                 {type}

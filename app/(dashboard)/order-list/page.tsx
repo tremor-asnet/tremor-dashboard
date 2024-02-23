@@ -32,8 +32,6 @@ const OrderListPage = async ({
 
   const { results, total, skip } = response;
 
-  let filteredData = results;
-
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
@@ -59,8 +57,8 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${id}-${status}`}
-              orders={filteredData}
+              key={`${id}-${status}-${page}`}
+              orders={results}
               status={status.toString()}
               keyword={id.toString()}
               total={total}

@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Bold } from "@tremor/react";
 import OtherProductList from "./OtherProductList";
 import ProductDetail from "./ProductDetail";
+import { LoadingIndicator } from "@/components";
 
 export default async function Page({ params }: { params: { id: number } }) {
   return (
@@ -14,8 +15,13 @@ export default async function Page({ params }: { params: { id: number } }) {
         {/* Streaming data */}
         <Suspense
           fallback={
-            // TODO: Replace with skeleton that prevent layout shift
-            <p>Loading product detail...</p>
+            <LoadingIndicator
+              additionalClass="flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
           }>
           <ProductDetail id={params.id} />
         </Suspense>
@@ -23,8 +29,13 @@ export default async function Page({ params }: { params: { id: number } }) {
         {/* Streaming data */}
         <Suspense
           fallback={
-            // TODO: Replace with skeleton that prevent layout shift
-            <p>Loading other products...</p>
+            <LoadingIndicator
+              additionalClass="flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
           }>
           <div className="mt-16 mb-4 dark:text-white">
             <Bold className="text-primary text-tremor-primary font-semibold dark:text-white">

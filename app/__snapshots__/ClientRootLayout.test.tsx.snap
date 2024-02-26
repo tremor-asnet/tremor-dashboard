@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientRootLayout matches snapshot with dark theme 1`] = `
+<DocumentFragment>
+  <link
+    href="/assets/images/favicon.ico"
+    rel="icon"
+  />
+  <div>
+    Tremor Dashboard
+  </div>
+</DocumentFragment>
+`;

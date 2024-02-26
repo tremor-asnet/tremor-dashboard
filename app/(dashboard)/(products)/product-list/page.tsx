@@ -10,16 +10,13 @@ import TableProduct from "../components/TableProduct/TableProduct";
 import { getProducts } from "@/services";
 
 // Types
-import { Product, ProductResponse } from "@/types";
-
-// Helpers
-import { filterProductList, searchProductDataByValue } from "@/helpers";
+import { ProductResponse } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
 
 type SearchParamsProduct = {
-  productName: number;
+  query: string;
   isAvailable: number;
   page?: number;
 };
@@ -32,16 +29,12 @@ const ProductListPage = async ({
   // TODO: Update key whenever the filter data change
 
   const {
-    productName = -1,
+    query = "",
     isAvailable = -1,
     page = 1,
   } = searchParams as SearchParamsProduct;
 
-  const response: ProductResponse = await getProducts(
-    page,
-    isAvailable,
-    productName,
-  );
+  const response: ProductResponse = await getProducts(page, isAvailable, query);
 
   const { results, total, skip } = response;
 
@@ -56,9 +49,8 @@ const ProductListPage = async ({
         <ProductFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="productName" />
+        <InputSearch field="query" />
         <Suspense
-          key={`${productName}-${isAvailable}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -69,10 +61,10 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${productName}-${isAvailable}-${page}`}
+            key={`${query}-${isAvailable}-${page}`}
             products={results}
             isAvailable={isAvailable.toString()}
-            keyword={productName.toString()}
+            keyword={query}
             total={total}
             currentPage={skip / 10 + 1}
           />

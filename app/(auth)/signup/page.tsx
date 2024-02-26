@@ -111,6 +111,9 @@ const SignUp = () => {
       <form
         onSubmit={handleSubmit(handleSignUp)}
         className="w-full p-2 sm:p-3 sign-up">
+        {isStatusPending && (
+          <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
+        )}
         <Controller
           control={control}
           rules={{

@@ -7,6 +7,7 @@ import {
   isEmpty,
   formattedNumber,
   formatDateTime,
+  formatDateTimeForTransaction,
   getCrumbName,
   searchOrderDataByValue,
   searchProductDataByValue,
@@ -125,7 +126,7 @@ describe("formattedNumber function", () => {
       currency: CURRENCY.DOLLAR,
       isDecimalNumber: true,
     });
-    expect(result).toBe("$23.000");
+    expect(result).toBe("$23,000");
   });
 
   test("formats number with commas currency", () => {
@@ -144,7 +145,7 @@ describe("formattedNumber function", () => {
 
   test("formats number with decimal", () => {
     const result = formattedNumber({ value: 23000, isDecimalNumber: true });
-    expect(result).toBe("23.000");
+    expect(result).toBe("23,000");
   });
 
   test("formats number without currency and decimal", () => {
@@ -165,6 +166,14 @@ describe("formatDateTime function", () => {
     const separator = ",";
     const formattedDate = formatDateTime(dateValue, separator);
     expect(formattedDate).toBe("23 Jan, 12:34 PM");
+  });
+});
+
+describe("formatDateTimeForTransaction function", () => {
+  it("should format date and time", () => {
+    const dateValue = "2024-02-05T02:50:02.319095+00:00";
+    const formattedDate = formatDateTimeForTransaction(dateValue);
+    expect(formattedDate).toBe("05 Feb 2024, at 09:50 AM");
   });
 });
 

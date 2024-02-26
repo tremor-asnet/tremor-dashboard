@@ -1,7 +1,10 @@
+import { AGGREGATION_TYPE } from "@/constants";
+
 export interface Invoice {
-  date: string;
-  code: string;
-  price: number;
+  id: number;
+  createdAt: string;
+  invoicePrefix: string;
+  totalCost: number;
 }
 
 export interface Transaction {
@@ -19,4 +22,10 @@ export interface BillingCardData {
   cardNumber: string;
   holderFullName: string;
   cardLast4Digit: string;
+}
+
+export interface SalaryCardData {
+  value: number;
+  type: AGGREGATION_TYPE;
+  currency?: string;
 }

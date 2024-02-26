@@ -1,27 +1,18 @@
 // Components
 import { Card, Flex, Table, TableBody, Title } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
-import Image from "next/image";
-
-// Components
-import { SalesByCountryRow } from "@/components";
+import { SalesByCountryRow, WorldMapCanvas } from "@/components";
 
 // Types
 import { SalesByCountryData } from "@/types";
 
 export interface SalesByCountryProps {
   title: string;
-  chart?: string;
   isAnalytics: boolean;
   data: SalesByCountryData[];
 }
 
-const SalesByCountry = ({
-  title,
-  chart,
-  isAnalytics,
-  data,
-}: SalesByCountryProps) => {
+const SalesByCountry = ({ title, isAnalytics, data }: SalesByCountryProps) => {
   const listData = isAnalytics ? data.slice(0, -1) : data;
   const titleClass = isAnalytics ? "ml-[6.5rem]" : "ml-4";
   const tableContainerClass = isAnalytics ? "px-4 md:py-5" : "px-0 md:py-4";
@@ -52,7 +43,6 @@ const SalesByCountry = ({
                     key={`${item.id}`}
                     isAnalytics={isAnalytics}
                     id={item.id}
-                    flag={item.flag}
                     country={item.country}
                     sales={item.sales}
                     value={item.value}
@@ -63,16 +53,9 @@ const SalesByCountry = ({
             </Table>
           </Flex>
         </Flex>
-        {isAnalytics && chart && (
-          <Flex className="justify-center pb-6 px-16 md:p-0 map">
-            <Image
-              className="mt-0 lg:-mt-10"
-              src={chart}
-              width="380"
-              height="250"
-              alt="chart"
-              priority
-            />
+        {isAnalytics && (
+          <Flex className="justify-center pb-6 px-12 md:p-0 map">
+            <WorldMapCanvas />
           </Flex>
         )}
       </Flex>

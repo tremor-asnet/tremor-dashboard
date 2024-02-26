@@ -67,18 +67,22 @@ export const formattedNumber = ({
   value,
   currency = "",
   isDecimalNumber = false,
+  delimiter = "",
 }: {
   value: number;
   currency?: string;
   isDecimalNumber?: boolean;
+  delimiter?: string;
 }): string => {
-  let formattedNumber = value.toLocaleString("en-US");
+  let formattedNumber = value?.toLocaleString("en-US");
 
   if (isDecimalNumber) {
-    formattedNumber = formattedNumber.split(",").join(".");
+    formattedNumber = formattedNumber.split(",").join(",");
   }
 
-  return currency ? `${currency}${formattedNumber}` : formattedNumber;
+  return currency
+    ? `${currency}${delimiter}${formattedNumber}`
+    : formattedNumber;
 };
 
 /**

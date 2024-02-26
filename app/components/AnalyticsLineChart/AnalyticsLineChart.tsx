@@ -46,8 +46,6 @@ const AnalyticsLineChart = ({
   colors = [],
   isDailyChart = true,
 }: LineChartProps) => {
-  const [setValue] = useState<any>(null);
-
   return (
     <div className="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
       <div className="p-4">
@@ -55,6 +53,7 @@ const AnalyticsLineChart = ({
           <main className="w-full mx-auto">
             <div className="-mt-10">
               <Card
+                data-testid="card"
                 className={`${
                   type === CHART_TYPE.PERFORMANCE
                     ? "bg-[linear-gradient(195deg,rgb(73,163,241),rgb(26,115,232))]"
@@ -72,7 +71,6 @@ const AnalyticsLineChart = ({
                   yAxisWidth={30}
                   colors={colors}
                   showAnimation={true}
-                  onValueChange={(v: Event) => setValue(v)}
                   showLegend={false}
                 />
               </Card>
@@ -95,7 +93,7 @@ const AnalyticsLineChart = ({
               </Subtitle>
             </Popover>
           </div>
-          <hr className="bg-gradient-line h-px opacity-25 mx-0 my-4 border-b-[none] border-solid" />
+          <div className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4" />
           <Flex className="justify-start">
             <FaRegClock
               size={12}

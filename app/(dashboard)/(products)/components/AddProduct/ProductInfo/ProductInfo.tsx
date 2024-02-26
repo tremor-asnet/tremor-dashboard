@@ -7,8 +7,7 @@ import { KeyboardEvent } from "react";
 
 // Components
 import { Text } from "@tremor/react";
-import InputField from "@/components/common/CustomField/InputField/InputField";
-import SelectField from "@/components/common/CustomField/SelectField/SelectField";
+import { InputField, SelectField } from "@/components";
 
 // Constants
 import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";
@@ -63,12 +62,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         }}
         render={({ field }) => (
           <div>
-            <InputField
-              type="text"
-              isLabelTransform={true}
-              label="Name"
-              {...field}
-            />
+            <InputField id="add-product-name" label="Name" {...field} />
             <p className="product-info-err-msg">{errorNameMsg}</p>
           </div>
         )}
@@ -80,9 +74,9 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         control={control}
         render={({ field }) => (
           <InputField
+            id="add-product-weight"
             type="number"
             label="Weight"
-            isLabelTransform={true}
             {...field}
             onKeyDown={handleWeightKeyDown}
           />
@@ -94,7 +88,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         control={control}
         render={({ field }) => (
           <div className="w-full flex flex-col h-48">
-            <Text className="text-secondary dark:text-lighter mb-2">
+            <Text className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
               Description <span className="text-xs">(optional)</span>
             </Text>
             <QuillEditor
@@ -108,45 +102,52 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
       />
 
       <div className="flex flex-col gap-6">
-        <Controller
-          name="category"
-          control={control}
-          render={({ field }) => (
-            <div>
-              <h3 className="text-tremor-default text-secondary dark:text-white">
-                Category
-              </h3>
-              <SelectField options={CATEGORY_PRODUCT} {...field} />
-            </div>
-          )}
-        />
+        <div className="mb-4">
+          <Controller
+            name="category"
+            control={control}
+            render={({ field }) => (
+              <div>
+                <SelectField
+                  label="Category"
+                  options={CATEGORY_PRODUCT}
+                  {...field}
+                  className="py-2.5"
+                />
+              </div>
+            )}
+          />
+        </div>
 
-        <Controller
-          name="quantity"
-          control={control}
-          render={({ field }) => (
-            <InputField
-              type="number"
-              isLabelTransform={true}
-              label="Quantity"
-              onKeyDown={handleQuantityKeyDown}
-              {...field}
-            />
-          )}
-        />
+        <div className="mb-4">
+          <Controller
+            name="quantity"
+            control={control}
+            render={({ field }) => (
+              <InputField
+                id="add-product-quantity"
+                type="number"
+                label="Quantity"
+                onKeyDown={handleQuantityKeyDown}
+                {...field}
+              />
+            )}
+          />
+        </div>
 
-        <Controller
-          name="providerName"
-          control={control}
-          render={({ field }) => (
-            <InputField
-              type="text"
-              label="Provider Name"
-              isLabelTransform={true}
-              {...field}
-            />
-          )}
-        />
+        <div className="mb-4">
+          <Controller
+            name="providerName"
+            control={control}
+            render={({ field }) => (
+              <InputField
+                id="add-product-provider"
+                label="Provider Name"
+                {...field}
+              />
+            )}
+          />
+        </div>
       </div>
     </div>
   );

@@ -16,5 +16,5 @@ export const CHANNELS_CHART_COLOR: ColorChannelsChartType = {
 export const TRANSACTION_COLOR = {
   INCREASE: "few",
   DECREASE: "attention",
-  PENDING: "secondary",
+  PENDING: "primary",
 };

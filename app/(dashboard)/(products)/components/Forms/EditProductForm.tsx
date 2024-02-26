@@ -175,26 +175,11 @@ const EditProductForm = ({
     formHandler.setValue("image", "", { shouldDirty: true });
   };
 
-  if (isLoading) {
-    return (
-      <>
-        <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
-        <Flex className="grow w-full items-center justify-center">
-          <Flex flexDirection="col" className="grow w-full h-full items-center">
-            <LoadingIndicator
-              width={16}
-              height={16}
-              fillColor="river-bed-500"
-            />
-            <h2 className="mt-2 text-gray-400">Updating Product...</h2>
-          </Flex>
-        </Flex>
-      </>
-    );
-  }
-
   return (
     <>
+      {isLoading && (
+        <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
+      )}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <div className="w-full text-end absolute -mt-24">
@@ -203,9 +188,17 @@ const EditProductForm = ({
               className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
               size="xs"
               disabled={!formState.isDirty}>
-              <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
-                Save
-              </Text>
+              {isLoading ? (
+                <LoadingIndicator
+                  width={4}
+                  height={5}
+                  additionalClass="px-1.5"
+                />
+              ) : (
+                <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+                  Save
+                </Text>
+              )}
             </Button>
           </div>
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">

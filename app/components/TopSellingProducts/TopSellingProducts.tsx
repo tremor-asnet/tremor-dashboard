@@ -38,11 +38,11 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
         {title}
       </Title>
     </Flex>
-    <Flex className="items-start justify-start mb-2">
+    <Flex className="items-start justify-start pb-2">
       <Table className="w-full">
         <TableHead>
-          <TableRow className="border-0 border-b border-gray-100">
-            <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+          <TableRow className="border-0 border-b border-gray-100 dark:border-grayish">
+            <TableHeaderCell className="px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
               product
             </TableHeaderCell>
             <TableHeaderCell className="px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
@@ -70,7 +70,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
             return (
               <TableRow
                 key={productId}
-                className="border-0 border-b !border-gray-100">
+                className="border-0 border-b !border-gray-100 dark:!border-grayish">
                 <TableCell className="px-6 py-3">
                   <Flex>
                     <Flex className="w-16 mr-3 md:mr-1">
@@ -87,7 +87,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title font-bold leading-[21px] tracking-[0.4px] truncate max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[800px] min-w-[200px] product-name">
                         {name}
                       </Text>
-                      <Text className="text-secondary leading-[21px] tracking-[0.4px] product-orders">
+                      <Text className="text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders">
                         <span className="text-few">
                           {formattedNumber({
                             value: orders,

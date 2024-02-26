@@ -16,6 +16,7 @@ export const CustomCheckBoxField = ({
   <div className="flex justify-start items-center ml-2 w-16">
     <Checkbox onChange={onChange} />
     <Link
+      prefetch={true}
       href={link}
       className="ml-4 text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline">
       &#35;{id}

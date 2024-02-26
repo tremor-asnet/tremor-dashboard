@@ -8,10 +8,15 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX, ROUTES } from "@/constants";
+import {
+  INVOICE_REGEX,
+  ORDER_LIST_REGEX,
+  PRODUCT_LIST_REGEX,
+  ROUTES,
+} from "@/constants";
 
 // Helpers
-import { getCrumbName, isBrowser } from "@/helpers";
+import { getCrumbName, handleMatchPath, isBrowser } from "@/helpers";
 
 export interface BreadcrumbProps {
   isScrolled?: boolean;
@@ -30,8 +35,9 @@ const Breadcrumb = ({
 
   const renderTitle = (path?: string) => {
     if (path) {
-      if (path.match(ORDER_LIST_REGEX)) return "Order Details";
-      if (path.match(PRODUCT_LIST_REGEX)) return "Product Details";
+      const matchPath = handleMatchPath(path);
+
+      return matchPath;
     }
 
     return newPath?.pop()?.replace("-", " ");
@@ -52,23 +58,22 @@ const Breadcrumb = ({
               : "text-primary dark:text-dark-primary opacity-50  ";
 
           return (
-            <>
-              <li
-                className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
-                <Link href={href}>
-                  {getCrumbName({
-                    name: link,
-                    path: href,
-                    params: params?.id,
-                  })}
-                </Link>
-                {newPath.length !== index + 1 && (
-                  <span className={`${isProjectPage && "text-white"}`}>
-                    &#47;
-                  </span>
-                )}
-              </li>
-            </>
+            <li
+              key={href}
+              className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
+              <Link href={href}>
+                {getCrumbName({
+                  name: link,
+                  path: href,
+                  params: params?.id,
+                })}
+              </Link>
+              {newPath.length !== index + 1 && (
+                <span className={`${isProjectPage && "text-white"}`}>
+                  &#47;
+                </span>
+              )}
+            </li>
           );
         })}
       </>

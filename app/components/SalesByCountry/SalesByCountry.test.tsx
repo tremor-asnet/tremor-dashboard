@@ -7,13 +7,9 @@ import SalesByCountry from "./SalesByCountry";
 // Mock data
 import { SALES_BY_COUNTRY } from "@/mocks/analytics";
 
-// Constants
-import { CHART_SRC } from "@/constants";
-
 describe("Testing analytics sale chart component", () => {
   const propsDefault = {
     title: "Sales by Country",
-    chart: CHART_SRC.analytics,
     isAnalytics: true,
     data: SALES_BY_COUNTRY,
   };

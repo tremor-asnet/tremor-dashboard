@@ -1,20 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { KeyboardEvent } from "react";
 
 // Libs
 import { Controller, useFormContext } from "react-hook-form";
 
 // Components
-import {
-  Text,
-  Flex,
-  Card,
-  TextInput,
-  Select,
-  SelectItem,
-  NumberInput,
-} from "@tremor/react";
+import { Text, Flex, Card } from "@tremor/react";
+import { SelectField, InputField } from "@/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -24,23 +18,23 @@ import {
   NUMBER_REGEX_WITHOUT_0,
   DECIMAL_REGEX,
 } from "@/constants";
-
-// Types
-import { SelectOptionData } from "@/types";
+import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";
 import "react-quill/dist/quill.snow.css"; // Import Quill styles
 
+// Hooks
+import useFocusFieldError from "@/hooks/useFocusFieldError";
+
 const ProductInfo = () => {
-  const {
-    control,
-    formState: { errors },
-  } = useFormContext();
-  const { productName, weight, quantity } = errors || {};
-  const nameErrorMessage = productName?.message?.toString() || "";
-  const weightErrorMessage = weight?.message?.toString() || "";
-  const quantityErrorMessage = quantity?.message?.toString();
+  const { control, formState } = useFormContext();
+
+  useFocusFieldError(formState);
+
+  const handleOnKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
+  };
 
   return (
     <Card className="w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0">
@@ -59,38 +53,33 @@ const ProductInfo = () => {
                 message: MESSAGES_ERROR.NAME_MIN_LENGTH,
               },
             }}
-            render={({ field }) => (
-              <div className="w-full">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Name
-                </Text>
-                <TextInput
-                  id="name"
-                  placeholder="Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                  autoFocus
-                  {...field}
-                />
-                {nameErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                    {nameErrorMessage}
-                  </p>
-                )}
-              </div>
-            )}
+            render={({ field, formState: { errors } }) => {
+              const productNameErrorMessage = errors.productName?.message || "";
+
+              return (
+                <div className="w-full mb-4">
+                  <InputField
+                    id="edit-name"
+                    label="Name"
+                    errorMessage={productNameErrorMessage}
+                    {...field}
+                  />
+                </div>
+              );
+            }}
             name="productName"
           />
 
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full">
-                <Text className="text-secondary dark:text-lighter mb-2">
+              <div className="w-full relative">
+                <Text className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
                   Description <span className="text-xs">(optional)</span>
                 </Text>
                 <QuillEditor
                   placeholder="Content goes here..."
-                  className="w-full rounded-md text-secondary dark:text-white"
+                  className="w-full rounded-md text-secondary dark:text-white pt-2.5"
                   {...field}
                 />
               </div>
@@ -98,80 +87,70 @@ const ProductInfo = () => {
             name="description"
           />
         </Flex>
-        <Flex flexDirection="col">
+        <Flex flexDirection="col" className="gap-6">
           <Controller
             control={control}
             rules={{
+              required: MESSAGES_ERROR.FIELD_REQUIRED,
               pattern: { value: DECIMAL_REGEX, message: "Invalid weight" },
             }}
-            render={({ field: { value, onChange } }) => (
-              <div className="w-full mb-4">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Weight
-                </Text>
-                <NumberInput
-                  enableStepper={false}
-                  onValueChange={onChange}
-                  value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                />
-                {weightErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                    {weightErrorMessage}
-                  </p>
-                )}
-              </div>
-            )}
+            render={({ field, formState: { errors } }) => {
+              const weightErrorMessage = errors.weight?.message || "";
+
+              return (
+                <div className="w-full mb-4">
+                  <InputField
+                    id="edit-weight"
+                    type="number"
+                    label="Weight"
+                    errorMessage={weightErrorMessage}
+                    onKeyDown={handleOnKeyDown}
+                    {...field}
+                  />
+                </div>
+              );
+            }}
             name="weight"
           />
 
           <Controller
             control={control}
             rules={{
+              required: MESSAGES_ERROR.FIELD_REQUIRED,
               pattern: {
                 value: NUMBER_REGEX_WITHOUT_0,
                 message: "Invalid quantity number",
               },
             }}
-            render={({ field: { onChange, value } }) => (
-              <div className="w-full mb-4">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Quantity
-                </Text>
-                <NumberInput
-                  enableStepper={false}
-                  onValueChange={onChange}
-                  value={value || 0}
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                />
-                {quantityErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                    {quantityErrorMessage}
-                  </p>
-                )}
-              </div>
-            )}
+            render={({ field, formState: { errors } }) => {
+              const quantityErrorMessage = errors.quantity?.message || "";
+
+              return (
+                <div className="w-full mb-4">
+                  <InputField
+                    id="edit-quantity"
+                    type="number"
+                    label="Quantity"
+                    errorMessage={quantityErrorMessage}
+                    onKeyDown={handleOnKeyDown}
+                    {...field}
+                  />
+                </div>
+              );
+            }}
             name="quantity"
           />
 
           <Controller
             control={control}
-            render={({ field: { value, onChange } }) => (
+            render={({ field }) => (
               <div className="w-full mb-4">
-                <Text className="text-secondary mb-3 dark:text-lighter mb-2">
-                  Category
-                </Text>
-                <Select
-                  placeholder="Clothing"
-                  className="select-custom dark:text-white dark:border-light dark:focus:border-white"
-                  value={value.toString()}
-                  onValueChange={onChange}>
-                  {CATEGORY_PRODUCT.map((item: SelectOptionData) => (
-                    <SelectItem key={item.value} value={item.value}>
-                      {item.option}
-                    </SelectItem>
-                  ))}
-                </Select>
+                <SelectField
+                  label="Category"
+                  options={CATEGORY_PRODUCT}
+                  {...field}
+                  className="py-2.5"
+                />
               </div>
             )}
             name="category"
@@ -180,14 +159,10 @@ const ProductInfo = () => {
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full">
-                <Text className="text-secondary dark:text-lighter mb-2">
-                  Prodvider Name
-                </Text>
-                <TextInput
-                  id="provider-name"
-                  placeholder="Provider Name"
-                  className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent dark:hover:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+              <div className="w-full mb-4">
+                <InputField
+                  id="edit-provider"
+                  label="Provider Name"
                   {...field}
                 />
               </div>

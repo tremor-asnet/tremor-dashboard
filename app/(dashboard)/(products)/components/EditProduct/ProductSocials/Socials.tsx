@@ -4,6 +4,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Title, Flex, Card } from "@tremor/react";
+import { InputField } from "@/components";
 
 //Styles
 import "@/styles/products.css";
@@ -11,97 +12,93 @@ import "@/styles/products.css";
 // Constants
 import { MESSAGES_ERROR, REGEX } from "@/constants";
 
+// Hooks
+import useFocusFieldError from "@/hooks/useFocusFieldError";
+
 const Socials = () => {
-  const {
-    control,
-    formState: { errors },
-  } = useFormContext();
-  const facebookErrorMsg = errors.facebookUrl?.message?.toString();
-  const instagramErrorMsg = errors.instagramUrl?.message?.toString();
-  const shopifyErrorMsg = errors.shopifyUrl?.message?.toString();
+  const { control, formState } = useFormContext();
+
+  useFocusFieldError(formState);
 
   return (
     <Card className="dark:bg-dark-tremor-primary ring-0">
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
         Socials
       </Title>
-      <Flex className="flex-col items-start justify-start mt-8">
+      <Flex className="flex-col items-start justify-start mt-4 gap-6">
         <Controller
           control={control}
           rules={{
-            required: MESSAGES_ERROR.URL_REQUIRED,
             pattern: {
               value: REGEX.URL,
-              message: MESSAGES_ERROR.URL_REQUIRED,
+              message: MESSAGES_ERROR.INVALID_URL,
             },
           }}
-          render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="shoppify-handle"
-                placeholder="Shoppify Handle"
-                {...field}
-              />
-              {shopifyErrorMsg && (
-                <p className="text-[11px] xs:text-xs text-red-500">
-                  {shopifyErrorMsg}
-                </p>
-              )}
-            </>
-          )}
+          render={({ field, formState: { errors } }) => {
+            const shopifyUrlErrorMessage = errors.shopifyUrl?.message || "";
+
+            return (
+              <div className="w-full mb-4">
+                <InputField
+                  id="edit-shopify"
+                  label="Shopify Handle"
+                  type="text"
+                  errorMessage={shopifyUrlErrorMessage}
+                  {...field}
+                />
+              </div>
+            );
+          }}
           name="shopifyUrl"
         />
         <Controller
           control={control}
           rules={{
-            required: MESSAGES_ERROR.URL_REQUIRED,
             pattern: {
               value: REGEX.URL,
-              message: MESSAGES_ERROR.URL_REQUIRED,
+              message: MESSAGES_ERROR.INVALID_URL,
             },
           }}
-          render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="facebook-account"
-                placeholder="Facebook Account"
-                {...field}
-              />
-              {facebookErrorMsg && (
-                <p className="text-[11px] xs:text-xs text-red-500">
-                  {facebookErrorMsg}
-                </p>
-              )}
-            </>
-          )}
+          render={({ field, formState: { errors } }) => {
+            const facebookUrlErrorMessage = errors.facebookUrl?.message || "";
+
+            return (
+              <div className="w-full mb-4">
+                <InputField
+                  id="edit-fb"
+                  label="Facebook Account"
+                  type="text"
+                  errorMessage={facebookUrlErrorMessage}
+                  {...field}
+                />
+              </div>
+            );
+          }}
           name="facebookUrl"
         />
         <Controller
           control={control}
           rules={{
-            required: MESSAGES_ERROR.URL_REQUIRED,
             pattern: {
               value: REGEX.URL,
-              message: MESSAGES_ERROR.URL_REQUIRED,
+              message: MESSAGES_ERROR.INVALID_URL,
             },
           }}
-          render={({ field }) => (
-            <>
-              <input
-                className="input-text"
-                id="instagram-account"
-                placeholder="Instagram Account"
-                {...field}
-              />
-              {instagramErrorMsg && (
-                <p className="text-[11px] xs:text-xs text-red-500">
-                  {instagramErrorMsg}
-                </p>
-              )}
-            </>
-          )}
+          render={({ field, formState: { errors } }) => {
+            const instagramUrlErrorMessage = errors.instagramUrl?.message || "";
+
+            return (
+              <div className="w-full mb-4">
+                <InputField
+                  id="edit-ig"
+                  label="Instagram Account"
+                  type="text"
+                  errorMessage={instagramUrlErrorMessage}
+                  {...field}
+                />
+              </div>
+            );
+          }}
           name="instagramUrl"
         />
       </Flex>

@@ -1,8 +1,16 @@
+// Libs
+import { ReactNode, FC } from "react";
+import { FormProvider, useForm } from "react-hook-form";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
 import { Flex } from "@tremor/react";
 import PricingInfo from "./PricingInfo";
+
+const StorybookFormProvider: FC<{ children: ReactNode }> = ({ children }) => {
+  const methods = useForm();
+  return <FormProvider {...methods}>{children}</FormProvider>;
+};
 
 const meta = {
   title: "Components/PricingInfo",
@@ -16,8 +24,10 @@ type Story = StoryObj<typeof meta>;
 
 export const PricingInfoDefault: Story = {
   render: () => (
-    <Flex className="w-full justify-center mt-10">
-      <PricingInfo />
-    </Flex>
+    <StorybookFormProvider>
+      <Flex className="w-full justify-center mt-10">
+        <PricingInfo />
+      </Flex>
+    </StorybookFormProvider>
   ),
 };

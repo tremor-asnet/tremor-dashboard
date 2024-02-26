@@ -66,7 +66,7 @@ const SignIn = () => {
     );
 
     setFormStatus({
-      isPending: false,
+      isPending: !res?.errorMessage,
       errorMessage: res?.errorMessage || "",
     });
   };
@@ -75,6 +75,9 @@ const SignIn = () => {
     <form
       onSubmit={handleSubmit(handleSignIn)}
       className="w-full sm:p-3 sign-in">
+      {isDisableSubmit && (
+        <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
+      )}
       <Controller
         control={control}
         rules={{
@@ -141,7 +144,8 @@ const SignIn = () => {
           name="switch"
           checked={isRememberedMe}
           color="zinc"
-          className="flex justify-center items-center"
+          disabled={isDisableSubmit}
+          className="switch flex justify-center items-center"
           onChange={handleSwitchChange}
         />
         <Text className="text-secondary dark:text-dark-romance font-normal">

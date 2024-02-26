@@ -121,7 +121,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
               If everything I did failed - which it doesn't, I think that it actually succeeds.
             </p>
             <div
-              class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+              class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4"
             />
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center my-4"
@@ -273,7 +273,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
             If everything I did failed - which it doesn't, I think that it actually succeeds.
           </p>
           <div
-            class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+            class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4"
           />
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center my-4"

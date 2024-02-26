@@ -2,29 +2,23 @@
 import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 import Link from "next/link";
-
-import {
-  TableProduct,
-  InputSearch,
-  ProductFilter,
-  LoadingIndicator,
-} from "@/components";
+import { InputSearch, LoadingIndicator } from "@/components";
+import ProductFilter from "../components/ProductFilter";
+import TableProduct from "../components/TableProduct/TableProduct";
 
 // Services
 import { getProducts } from "@/services";
 
 // Types
-import { Product } from "@/types";
-
-// Helpers
-import { filterProductList, searchProductDataByValue } from "@/helpers";
+import { ProductResponse } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
 
 type SearchParamsProduct = {
-  productName: string;
-  isAvailable: string;
+  query: string;
+  isAvailable: number;
+  page?: number;
 };
 
 const ProductListPage = async ({
@@ -34,28 +28,15 @@ const ProductListPage = async ({
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const productListData: Product[] = await getProducts();
+  const {
+    query = "",
+    isAvailable = -1,
+    page = 1,
+  } = searchParams as SearchParamsProduct;
 
-  const { productName = "", isAvailable = "" } =
-    searchParams as SearchParamsProduct;
+  const response: ProductResponse = await getProducts(page, isAvailable, query);
 
-  let filteredData = productListData;
-
-  if (productName) {
-    filteredData = searchProductDataByValue<Product>(
-      productListData,
-      "productName",
-      productName,
-    );
-  }
-
-  filteredData = isAvailable
-    ? filterProductList(
-        filteredData,
-        "isAvailable",
-        String(isAvailable).toLowerCase() === "true",
-      )
-    : filteredData;
+  const { results, total, skip } = response;
 
   return (
     <Flex flexDirection="col" className="gap-4">
@@ -68,9 +49,8 @@ const ProductListPage = async ({
         <ProductFilter title="Filters" />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch />
+        <InputSearch field="query" />
         <Suspense
-          key={`${productName}-${isAvailable}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -81,10 +61,12 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${productName}-${isAvailable}`}
-            products={filteredData}
-            isAvailable={isAvailable}
-            keyword={productName}
+            key={`${query}-${isAvailable}-${page}`}
+            products={results}
+            isAvailable={isAvailable.toString()}
+            keyword={query}
+            total={total}
+            currentPage={skip / 10 + 1}
           />
         </Suspense>
       </div>

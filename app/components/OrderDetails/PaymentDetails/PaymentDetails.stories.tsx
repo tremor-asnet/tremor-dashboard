@@ -13,6 +13,6 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const PopoverDefault: Story = {
+export const Default: Story = {
   render: () => <PaymentDetails cardLast4Digit="7852" />,
 };

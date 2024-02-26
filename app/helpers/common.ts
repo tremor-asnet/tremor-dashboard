@@ -1,5 +1,13 @@
-import { ORDER_LIST_REGEX, PRODUCT_LIST_REGEX } from "@/constants";
+// Constants
+import {
+  INVOICE_REGEX,
+  ORDER_LIST_REGEX,
+  PRODUCT_LIST_REGEX,
+} from "@/constants";
 import { DIRECTION } from "@/constants/common";
+
+// Types
+import { Order } from "@/types";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -145,4 +153,53 @@ export const sortArrayByKey = <T>(
   }
 
   return arraySort;
+};
+
+/**
+ * Handle match path
+ * @param path string
+ * @returns
+ */
+export const handleMatchPath = (path: string) => {
+  let orderMatch = path.match(ORDER_LIST_REGEX);
+  let productMatch = path.match(PRODUCT_LIST_REGEX);
+  let invoiceMatch = path.match(INVOICE_REGEX);
+
+  switch (true) {
+    case orderMatch !== null:
+      return "Order Details";
+
+    case productMatch !== null:
+      return "Product Details";
+
+    case invoiceMatch !== null:
+      return "Invoice Details";
+
+    default:
+      return null;
+  }
+};
+
+/**
+ * Field "Count" and "Customer" are currently inside the object
+ * So move the field inside the object need to sort to the outside
+ * @param sortedOrders []
+ */
+export const transformOrders = (sortedOrders: Order[]) => {
+  return sortedOrders.map(item => {
+    const { customer, products } = item;
+    let countKey = 0;
+
+    if (products?.length) {
+      products.forEach(({ count }) => {
+        countKey = countKey + count;
+      });
+    }
+
+    return {
+      ...item,
+      count: countKey,
+      customerName: customer.fullName || "",
+    };
+  });
 };

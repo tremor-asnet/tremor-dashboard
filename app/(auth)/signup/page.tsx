@@ -4,10 +4,12 @@
 import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // Components
 import { CheckBox, Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
+import { LoadingIndicator } from "@/components";
 
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
@@ -42,6 +44,7 @@ const SignUp = () => {
   const [formStatus, setFormStatus] = useState({
     isPending: false,
     errorMessage: "",
+    isSuccess: false,
   });
 
   const [checked, setChecked] = useState(false);
@@ -50,19 +53,26 @@ const SignUp = () => {
   const nameErrorMessage = name?.message?.toString();
   const emailErrorMessage = email?.message?.toString();
   const passwordErrorMessage = password?.message?.toString();
-  const isDisableSubmit = !checked || formStatus.isPending;
+  const resErrorMessage = formStatus.errorMessage?.toString();
+  const hasErrorMessage = resErrorMessage.length > 0;
+  const isSignUpSuccess = formStatus.isSuccess;
+  const isStatusPending = formStatus.isPending;
+  const isDisableSubmit = !checked || isStatusPending;
+  const router = useRouter();
 
   const handleCheckBox = () => {
     setChecked(!checked);
   };
 
   const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
+  const isShowToast = isSignUpSuccess && isOpenToast && !hasErrorMessage;
 
   const handleSignUp = async (value: User) => {
     try {
       setFormStatus({
         isPending: true,
         errorMessage: "",
+        isSuccess: false,
       });
 
       const res = await createNewAccount(
@@ -73,20 +83,23 @@ const SignUp = () => {
       setFormStatus({
         isPending: false,
         errorMessage: res?.errorMessage || "",
+        isSuccess: res?.isSuccess || false,
       });
 
       handleOpenToast();
+      res?.isSuccess && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
       setFormStatus({
         isPending: false,
         errorMessage: error?.errorMessage || "",
+        isSuccess: false,
       });
     }
   };
 
   return (
     <div>
-      {isOpenToast && (
+      {isShowToast && (
         <div className="flex justify-center fixed right-5 top-5">
           <Toast
             icon={<FaCheckCircle />}
@@ -98,6 +111,9 @@ const SignUp = () => {
       <form
         onSubmit={handleSubmit(handleSignUp)}
         className="w-full p-2 sm:p-3 sign-up">
+        {isStatusPending && (
+          <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
+        )}
         <Controller
           control={control}
           rules={{
@@ -183,12 +199,17 @@ const SignUp = () => {
           )}
           name="password"
         />
-
+        {hasErrorMessage && (
+          <p className="text-xs xs:text-xs leading-3 text-red-500">
+            {resErrorMessage}
+          </p>
+        )}
         <div className="flex items-center space-x-3 pt-3">
           <CheckBox
             checked={checked}
             handleCheckBox={handleCheckBox}
             tabIndex={2}
+            isDisable={isStatusPending}
           />
           <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
             I agree the{" "}
@@ -206,11 +227,14 @@ const SignUp = () => {
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
-          <Text className="font-bold text-xs text-white dark:text-white">
-            Create account
-          </Text>
+          {isStatusPending ? (
+            <LoadingIndicator width={5} height={5} />
+          ) : (
+            <Text className="font-bold text-xs text-white dark:text-white">
+              Create account
+            </Text>
+          )}
         </Button>
-
         <Flex className="mt-8 mb-2 justify-center items-center">
           <Text className="text-secondary dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?

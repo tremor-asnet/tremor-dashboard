@@ -12,16 +12,12 @@ import {
 
 // Types
 import { ColumnType } from "@/types";
-import { SortItem } from "@/components/Table/TableProduct/TableProduct";
 
 // Hooks
 import { useEffect, useMemo, useState } from "react";
 
-// Constants
-import { DIRECTION } from "@/constants/common";
-
 // Helpers
-import { sortArrayByKey } from "@/helpers";
+import { useSortableTable } from "@/hooks/useSortableTable";
 
 interface DataTableProps<T> {
   data: T[];
@@ -31,6 +27,9 @@ interface DataTableProps<T> {
   keyword: string;
   className?: string;
   hasPagination?: boolean;
+  currentPageNumber?: number;
+  total?: number;
+  onPageChange?: (page: number) => void;
 }
 
 const DataGrid = <T,>({
@@ -41,47 +40,35 @@ const DataGrid = <T,>({
   keyword,
   className = "",
   hasPagination = true,
+  total,
+  currentPageNumber,
+  onPageChange,
 }: DataTableProps<T>) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [sort, setSort] = useState<SortItem>({
-    key: "",
-    direction: DIRECTION.ASC,
-  });
 
-  const { direction, key } = sort;
-
-  // Handle sort by key column
-  const handleHeaderClick = (keyColumn: string) => {
-    // Define the sorting direction as either "DESC" or "ASC".
-    let sortDirection = direction;
-
-    if (keyColumn === key) {
-      // Revert direction onClick same column
-      if (sortDirection === DIRECTION.ASC) {
-        sortDirection = DIRECTION.DESC;
-      } else {
-        sortDirection = DIRECTION.ASC;
-      }
-    } else {
-      sortDirection = DIRECTION.DESC;
-    }
-
-    setSort(prev => ({
-      ...prev,
-      key: keyColumn,
-      direction: sortDirection,
-    }));
-  };
-
-  // The array has been sorted
-  const sortedArray = sortArrayByKey<T>(data, key as keyof T, direction);
+  const [tableData, handleSorting] = useSortableTable<T>(data);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
-    return sortedArray?.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, sortedArray, pageSize]);
+
+    // Check if tableData is an array before slicing
+    let dataSorted: T[] = [];
+    if (Array.isArray(tableData)) {
+      dataSorted = tableData.slice(firstPageIndex, lastPageIndex);
+    }
+
+    return dataSorted;
+  }, [currentPage, tableData, pageSize]);
+
+  useEffect(() => {
+    const column = columns.find(item => item.sortbyOrder);
+
+    if (column) {
+      handleSorting(column.key, column.sortbyOrder);
+    }
+  }, [columns, handleSorting]);
 
   useEffect(() => {
     setLoading(true);
@@ -90,9 +77,9 @@ const DataGrid = <T,>({
     setTimeout(() => {
       setLoading(false);
     }, 100);
-  }, [filterBy, keyword]);
+  }, [filterBy, keyword, currentPage, pageSize]);
 
-  if (loading === true) {
+  if (loading) {
     return (
       <LoadingIndicator
         additionalClass="min-h-[500px] flex justify-center items-center"
@@ -111,18 +98,18 @@ const DataGrid = <T,>({
         <Table className="w-full">
           <DataGridHeader
             columns={columns}
-            onHeaderClick={handleHeaderClick}
-            sortKey={key}
-            sortDirection={direction}
+            handleSorting={
+              handleSorting as (sortField: string, sortOrder: string) => void
+            }
           />
           <DataGridBody columns={columns} data={currentTableData} />
         </Table>
         {hasPagination && (
           <Pagination
-            currentPage={currentPage}
+            currentPage={currentPageNumber!}
             pageSize={pageSize}
-            totalCount={data.length}
-            onPageChange={setCurrentPage}
+            totalCount={total!}
+            onPageChange={onPageChange!}
           />
         )}
       </div>

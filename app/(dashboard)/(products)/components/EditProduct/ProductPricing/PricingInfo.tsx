@@ -2,16 +2,11 @@
 
 // Libs
 import { Controller, useFormContext } from "react-hook-form";
+import { KeyboardEvent } from "react";
 
 // Components
-import {
-  Text,
-  Flex,
-  MultiSelect,
-  MultiSelectItem,
-  NumberInput,
-} from "@tremor/react";
-import { SelectField, TextField } from "@/components";
+import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
+import { SelectField, InputField } from "@/components";
 
 // Types
 import { SelectOptionData } from "@/types";
@@ -22,19 +17,24 @@ import {
   TAGS_PRICE,
   DECIMAL_REGEX,
   NUMBER_REGEX,
+  MESSAGES_ERROR,
 } from "@/constants";
+import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";
 
+// Hooks
+import useFocusFieldError from "@/hooks/useFocusFieldError";
+
 const PricingInfo = () => {
-  const {
-    control,
-    formState: { errors },
-  } = useFormContext();
-  const { price, sku } = errors || {};
-  const priceErrorMessage = price?.message?.toString() || "";
-  const skuErrorMessage = sku?.message?.toString() || "";
+  const { control, formState } = useFormContext();
+
+  useFocusFieldError(formState);
+
+  const handleOnKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
+  };
 
   return (
     <div className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info">
@@ -48,39 +48,38 @@ const PricingInfo = () => {
               <Controller
                 control={control}
                 rules={{
+                  required: MESSAGES_ERROR.FIELD_REQUIRED,
                   pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
                 }}
-                render={({ field: { value, onChange } }) => (
-                  <div className="h-[70px] w-full md:max-w-[25%] mb-2 md:mb-0">
-                    <Text className="text-secondary dark:text-lighter mb-2">
-                      Price
-                    </Text>
-                    <NumberInput
-                      enableStepper={false}
-                      onValueChange={onChange}
-                      value={value || 0}
-                      className="py-1 w-full dark:text-white hover:bg-transparent bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
-                    />
-                    {priceErrorMessage && (
-                      <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                        {priceErrorMessage}
-                      </p>
-                    )}
-                  </div>
-                )}
+                render={({ field, formState: { errors } }) => {
+                  const priceErrorMessage = errors.price?.message || "";
+
+                  return (
+                    <div className="w-full mb-2 md:mb-0">
+                      <InputField
+                        id="edit-price"
+                        type="number"
+                        label="Price"
+                        errorMessage={priceErrorMessage}
+                        onKeyDown={handleOnKeyDown}
+                        {...field}
+                      />
+                    </div>
+                  );
+                }}
                 name="price"
               />
               <Controller
                 control={control}
-                render={({ field: { value, onChange } }) => (
-                  <div className="h-[70px] mx-6 w-full md:max-w-[30%] mb-3 md:mb-0">
+                render={({ field }) => (
+                  <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6">
                     <SelectField
                       id="usd"
                       placeholder="USD"
                       label="Currency"
                       options={TYPE_PRICE}
-                      onChange={onChange}
-                      value={value.toString()}
+                      {...field}
+                      className="py-2.5"
                     />
                   </div>
                 )}
@@ -94,22 +93,20 @@ const PricingInfo = () => {
                     message: "Invalid SKU number",
                   },
                 }}
-                render={({ field }) => (
-                  <div className="h-[70px] w-full">
-                    <TextField
-                      id="sku"
-                      label="SKU"
-                      placeholder="SKU"
-                      required={true}
-                      {...field}
-                    />
-                    {skuErrorMessage && (
-                      <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-                        {skuErrorMessage}
-                      </p>
-                    )}
-                  </div>
-                )}
+                render={({ field, formState: { errors } }) => {
+                  const skuErrorMessage = errors.sku?.message || "";
+
+                  return (
+                    <div className="w-full">
+                      <InputField
+                        id="edit-sku"
+                        label="SKU"
+                        errorMessage={skuErrorMessage}
+                        {...field}
+                      />
+                    </div>
+                  );
+                }}
                 name="sku"
               />
             </Flex>
@@ -117,10 +114,12 @@ const PricingInfo = () => {
             <Controller
               control={control}
               render={({ field: { value, onChange } }) => {
-                const convertedValue = value.map(String);
+                const convertedValue = value?.map(String);
                 return (
-                  <div className="w-full mb-4 mt-6">
-                    <Text className="text-secondary dark:text-white">Tags</Text>
+                  <div className="w-full mb-4 mt-6 relative">
+                    <label className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
+                      Tags
+                    </label>
                     <MultiSelect
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                       value={convertedValue}

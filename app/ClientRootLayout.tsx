@@ -22,21 +22,15 @@ export const metadata: Metadata = {
 const inter = Inter({ subsets: ["latin"] });
 
 const ClientRootLayout = ({ children }: ClientRootLayoutProps) => {
-  const { theme } = useContext(ThemeContext);
+  const { isDarkTheme } = useContext(ThemeContext);
 
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/assets/images/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
       </head>
       {/* TODO: Add class to custom theme dark or light */}
-      <body className={`${inter.className} ${theme ? "dark" : "light"}`}>
+      <body className={`${inter.className} ${isDarkTheme ? "dark" : "light"}`}>
         {children}
       </body>
     </html>

@@ -4,8 +4,7 @@ import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
-import SelectField from "@/components/common/CustomField/SelectField/SelectField";
-import InputField from "@/components/common/CustomField/InputField/InputField";
+import { SelectField, InputField } from "@/components";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
@@ -34,10 +33,9 @@ const Pricing = ({ control }: PricingProps) => {
         control={control}
         render={({ field }) => (
           <InputField
+            id="add-product-price"
             label="Price"
-            placeholder=""
             type="number"
-            isLabelTransform={true}
             {...field}
             onKeyDown={handlePriceKeyDown}
           />
@@ -47,7 +45,9 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="currency"
         control={control}
-        render={({ field }) => <SelectField options={TYPE_PRICE} {...field} />}
+        render={({ field }) => (
+          <SelectField label="Currency" options={TYPE_PRICE} {...field} />
+        )}
       />
 
       <Controller
@@ -55,10 +55,9 @@ const Pricing = ({ control }: PricingProps) => {
         control={control}
         render={({ field }) => (
           <InputField
+            id="add-product-sky"
             label="SKU"
-            placeholder=""
             type="number"
-            isLabelTransform={true}
             onKeyDown={handleSkuKeyDown}
             {...field}
           />
@@ -71,8 +70,10 @@ const Pricing = ({ control }: PricingProps) => {
         render={({ field: { value, onChange } }) => {
           const convertedValue = value.map(String);
           return (
-            <div className="w-full">
-              <Text className="text-secondary dark:text-white">Tags</Text>
+            <div className="w-full relative">
+              <label className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
+                Tags
+              </label>
               <MultiSelect
                 className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                 value={convertedValue}

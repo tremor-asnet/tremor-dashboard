@@ -69,7 +69,7 @@ const AnalyticsStatisticCard = ({
               </Text>
             </Flex>
           </Flex>
-          <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4" />
+          <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4" />
           <Flex>
             <Flex className="justify-start items-start tracking-[0.4px]">
               <Text className="text-few dark:text-few leading-[21px] font-bold">

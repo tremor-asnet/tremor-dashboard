@@ -19,3 +19,8 @@ export interface ImageInfo {
   filename: string;
   url: string;
 }
+
+export interface SortItem {
+  key: string;
+  direction: string;
+}

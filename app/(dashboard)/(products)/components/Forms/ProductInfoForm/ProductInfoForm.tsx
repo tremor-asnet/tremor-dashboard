@@ -52,9 +52,9 @@ const ProductInfoForm = ({
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <input
-          className="float-right btn-form-primary"
+          className="float-right btn-form-primary px-6 rounded-lg uppercase font-bold text-xs text-white dark:text-white dark:bg-gradient-pickled py-3 px-5 mt-8 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white w-full !w-auto text-center"
           type="submit"
-          value="NEXT"
+          value="Next"
         />
       </div>
     </form>

@@ -98,20 +98,20 @@ const SideBar = ({
             {isCollapse ? <FaAngleLeft /> : <FaAngleRight />}
           </div>
         </Flex>
-        <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
-          <CustomImage
-            src={LOGO_SRC.logo}
-            width={28}
-            height={28}
-            alt="Tremor Dashboard"
-          />
-          <Link href={ROUTES.HOME}>
+        <Link href={ROUTES.HOME}>
+          <Flex className="justify-normal pl-5 gap-1 pb-2 flex-nowrap relative">
+            <CustomImage
+              src={LOGO_SRC.logo}
+              width={28}
+              height={28}
+              alt="Tremor Dashboard"
+            />
             <Metric
               className={`text-white text-tremor-default min-w-[200px] flex flex-nowrap ${hiddenOpenClass} delay-300 duration-500`}>
               Tremor Dashboard PRO
             </Metric>
-          </Link>
-        </Flex>
+          </Flex>
+        </Link>
         <div className="h-px bg-gradient-divider my-4 opacity-25" />
         <AccordionList>
           <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md">

@@ -4,7 +4,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 
 // Components
-import { Text, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
 
 interface InfoInvoiceProps {
   id: number;
@@ -17,33 +17,33 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
   const formattedDueAt = dayjs(dueAt).format("DD/MM/YYYY");
 
   return (
-    <Flex className="mb-7 md:flex-row items-start md:items-center">
-      <div className="w-full md:mb-0">
-        <Text className="!text-base font-light font-normal dark:text-lighter text-secondary dark:print:!text-secondary">
+    <Flex className="mb-7 flex-col md:flex-row items-start md:items-center">
+      <div className="w-full mb-5 md:mb-0">
+        <p className="text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
           Invoice no
-        </Text>
+        </p>
         <Link
           href="#"
-          className="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline dark:print:text-primary">
+          className="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-primary">
           #{id}
         </Link>
       </div>
       <div className="w-full">
-        <Flex>
-          <Text className="w-full text-end !text-base font-light font-normal dark:!text-lighter text-secondary dark:print:!text-secondary">
+        <Flex className="flex-col md:flex-row mb-1 md:mb-0">
+          <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Invoice date:
-          </Text>
-          <Text className="w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary">
+          </p>
+          <p className="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary">
             {formattedCreateAt}
-          </Text>
+          </p>
         </Flex>
-        <Flex>
-          <Text className="w-full text-end !text-base font-light font-normal dark:!text-lighter text-secondary dark:print:!text-secondary">
+        <Flex className="flex-col md:flex-row">
+          <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Due date:
-          </Text>
-          <Text className="w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary">
+          </p>
+          <p className="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary">
             {formattedDueAt}
-          </Text>
+          </p>
         </Flex>
       </div>
     </Flex>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, Table } from "@tremor/react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
 import {
@@ -29,7 +30,7 @@ interface DataTableProps<T> {
   hasPagination?: boolean;
   currentPageNumber?: number;
   total?: number;
-  onPageChange?: (page: number) => void;
+  defaultCurrentPage?: number;
 }
 
 const DataGrid = <T,>({
@@ -42,12 +43,31 @@ const DataGrid = <T,>({
   hasPagination = true,
   total,
   currentPageNumber,
-  onPageChange,
+  defaultCurrentPage = 1,
 }: DataTableProps<T>) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  const [currentPage, setCurrentPage] = useState(defaultCurrentPage);
+
   const [loading, setLoading] = useState(false);
 
   const [tableData, handleSorting] = useSortableTable<T>(data);
+
+  // Handle page in pagination changed
+  const handlePageChange = (page: number) => {
+    const params = new URLSearchParams(searchParams);
+
+    if (page === 1) {
+      params.delete("page");
+    } else {
+      params.set("page", page.toString());
+    }
+
+    replace(`${pathname}?${params.toString()}`);
+    setCurrentPage(page);
+  };
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
@@ -109,7 +129,7 @@ const DataGrid = <T,>({
             currentPage={currentPageNumber!}
             pageSize={pageSize}
             totalCount={total!}
-            onPageChange={onPageChange!}
+            onPageChange={handlePageChange}
           />
         )}
       </div>

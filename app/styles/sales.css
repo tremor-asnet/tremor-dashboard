@@ -11,6 +11,18 @@
   @apply justify-start;
 }
 
+.recharts-surface {
+  @apply mt-3;
+}
+
+.recharts-legend-wrapper {
+  @apply !-top-3 !-left-1.5;
+}
+
+.recharts-legend-wrapper p.text-tremor-content {
+  @apply text-xs text-primary tracking-wide;
+}
+
 .sale-page path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
   @apply fill-tremor-content-seldom;
 }

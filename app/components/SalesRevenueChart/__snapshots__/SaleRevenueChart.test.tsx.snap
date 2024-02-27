@@ -63,7 +63,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="w-full h-72 mt-2"
+          class="w-full h-72"
         >
           <div>
             <div
@@ -616,7 +616,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="w-full h-72 mt-2"
+        class="w-full h-72"
       >
         <div>
           <div

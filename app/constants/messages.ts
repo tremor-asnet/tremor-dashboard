@@ -10,6 +10,8 @@ export const MESSAGES_ERROR = {
   MIN_LENGTH_4: "This field must have more than 4 characters.",
   URL_REQUIRED: "URL is required",
   INVALID_URL: "URL is invalid",
+  PASSWORD_WRONG:
+    "Please make sure your email address and password are correct.",
 };
 
 export const SIGN_UP_MESSAGE = {

@@ -108,10 +108,10 @@ const SignIn = () => {
       <Controller
         control={control}
         rules={{
-          required: MESSAGES_ERROR.PASSWORD_REQUIRED,
+          required: MESSAGES_ERROR.PASSWORD_INVALID,
           pattern: {
             value: REGEX.PASSWORD,
-            message: MESSAGES_ERROR.PASSWORD_INVALID,
+            message: MESSAGES_ERROR.PASSWORD_WRONG,
           },
         }}
         render={({ field }) => (
@@ -125,7 +125,7 @@ const SignIn = () => {
               required
               {...field}
             />
-            <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
+            <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
               {passwordErrorMessage
                 ? passwordErrorMessage
                 : formStatus.errorMessage}
@@ -137,7 +137,7 @@ const SignIn = () => {
 
       {/* {renderErrorMessage(formStatus.errorMessage)} */}
 
-      <div className="flex items-center space-x-3 mt-1">
+      <div className="flex items-center space-x-3 mt-6">
         <Switch
           tabIndex={2}
           id="switch"

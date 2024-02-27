@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 
 // Components
 import ProductInfo from "../../AddProduct/ProductInfo/ProductInfo";
+import { Button, Text } from "@tremor/react";
 
 // Types
 import { NewInfo } from "@/types";
@@ -51,11 +52,13 @@ const ProductInfoForm = ({
       </h6>
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
-        <input
-          className="float-right btn-form-primary"
-          type="submit"
-          value="NEXT"
-        />
+        <Button
+          className="float-right btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary !shadow-btn-primary hover:!shadow-btn-primary-hover hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          type="submit">
+          <Text className="uppercase font-bold text-xs text-white dark:text-white">
+            Next
+          </Text>
+        </Button>
       </div>
     </form>
   );

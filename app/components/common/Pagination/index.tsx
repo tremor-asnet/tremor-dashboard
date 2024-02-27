@@ -32,9 +32,9 @@ const Pagination = ({
     onPageChange(currentPage - 1);
   };
 
-  const paginationRangeLength = paginationRange!.length;
+  const paginationRangeLength = paginationRange.length;
   const showItemsPagination = currentPage !== 0 && paginationRangeLength > 2;
-  const lastPage = paginationRange![paginationRangeLength - 1];
+  const lastPage = paginationRange[paginationRangeLength - 1];
   const firstItemCurrentPage = currentPage * pageSize - pageSize + 1;
   const lastItemCurrentPage =
     currentPage * pageSize >= totalCount ? totalCount : currentPage * pageSize;
@@ -65,7 +65,7 @@ const Pagination = ({
             <HiMiniChevronLeft />
           </button>
 
-          {paginationRange?.map(pageNumber => {
+          {paginationRange.map(pageNumber => {
             const currentPageActive =
               currentPage === pageNumber
                 ? "btn-paginate-active dark:bg-gradient-pickled shadow-btn-primary"

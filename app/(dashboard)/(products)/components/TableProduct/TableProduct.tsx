@@ -14,7 +14,6 @@ import { Product, ColumnType } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface TableProductProps {
   products: Product[];
@@ -36,18 +35,8 @@ const TableProduct = ({
   total,
   currentPage,
 }: TableProductProps) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const pathName = usePathname();
-  const newParams = new URLSearchParams(searchParams.toString());
-
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
-  };
-
-  const handlePageChange = (page: number) => {
-    newParams.set("page", page.toString());
-    router.push(`${pathName}?${newParams}`);
   };
 
   // Product Table Props
@@ -113,7 +102,6 @@ const TableProduct = ({
       keyword={keyword}
       currentPageNumber={currentPage}
       total={total}
-      onPageChange={handlePageChange}
     />
   );
 };

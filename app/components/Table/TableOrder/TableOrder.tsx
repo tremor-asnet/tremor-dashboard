@@ -1,7 +1,5 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-
 // Components
 import {
   CustomAvatarName,
@@ -38,18 +36,8 @@ const TableOrder = ({
   total,
   currentPage,
 }: TableOrderProps) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const pathName = usePathname();
-  const newParams = new URLSearchParams(searchParams.toString());
-
   const handleChangeCheckbox = () => {
     // TODO: handle checkbox here
-  };
-
-  const handlePageChange = (page: number) => {
-    newParams.set("page", page.toString());
-    router.push(`${pathName}?${newParams}`);
   };
 
   // Table Columns
@@ -124,7 +112,6 @@ const TableOrder = ({
       keyword={keyword}
       currentPageNumber={currentPage}
       total={total}
-      onPageChange={handlePageChange}
     />
   );
 };

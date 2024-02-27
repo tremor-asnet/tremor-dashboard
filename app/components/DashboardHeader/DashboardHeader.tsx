@@ -65,11 +65,11 @@ const DashboardHeader = ({
     : "text-tremor-content";
 
   return (
-    <div className="print:hidden">
-      <div
-        className={`${activeStickyScroll} h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 ${
-          isAllProjectPage && `pl-1 pr-2`
-        } print:hidden`}>
+    <div
+      className={`print:hidden ${activeStickyScroll} ${
+        isAllProjectPage && `pl-1 pr-2`
+      }`}>
+      <div className="h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1">
         <div className="flex items-center">
           <div
             className={`block xl:hidden cursor-pointer ${

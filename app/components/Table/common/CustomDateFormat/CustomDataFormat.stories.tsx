@@ -7,6 +7,9 @@ const meta = {
   title: "Components/CustomDateFormat",
   component: CustomDateFormat,
   tags: ["autodocs"],
+  argTypes: {
+    date: { description: "Date format" },
+  },
 } as Meta<typeof CustomDateFormat>;
 
 export default meta;

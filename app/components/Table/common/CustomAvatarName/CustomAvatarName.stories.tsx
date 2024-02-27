@@ -10,6 +10,10 @@ const meta = {
   title: "Components/CustomAvatarName",
   component: CustomAvatarName,
   tags: ["autodocs"],
+  argTypes: {
+    text: { description: "Name of avatar" },
+    avatar: { description: "The image source" },
+  },
 } as Meta<typeof CustomAvatarName>;
 
 export default meta;

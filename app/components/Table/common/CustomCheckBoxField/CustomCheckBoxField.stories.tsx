@@ -10,6 +10,11 @@ const meta = {
   title: "Components/CustomCheckBoxField",
   component: CustomCheckBoxField,
   tags: ["autodocs"],
+  argTypes: {
+    id: { description: "Id of checkbox field" },
+    link: { description: "Link to another place by Id" },
+    onChange: { description: "Handle checkbox change" },
+  },
 } as Meta<typeof CustomCheckBoxField>;
 
 export default meta;

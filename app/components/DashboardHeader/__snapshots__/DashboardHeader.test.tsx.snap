@@ -6,10 +6,10 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
   "baseElement": <body>
     <div>
       <div
-        class="print:hidden"
+        class="print:hidden transition-all duration-300 ease-in delay-20 false"
       >
         <div
-          class="transition-all duration-300 ease-in delay-20 h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 false print:hidden"
+          class="h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1"
         >
           <div
             class="flex items-center"
@@ -136,10 +136,10 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
   </body>,
   "container": <div>
     <div
-      class="print:hidden"
+      class="print:hidden transition-all duration-300 ease-in delay-20 false"
     >
       <div
-        class="transition-all duration-300 ease-in delay-20 h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1 false print:hidden"
+        class="h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1"
       >
         <div
           class="flex items-center"

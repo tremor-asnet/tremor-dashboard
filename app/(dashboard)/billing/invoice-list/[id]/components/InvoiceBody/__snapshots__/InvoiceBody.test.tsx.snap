@@ -9,18 +9,18 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between mb-7 md:flex-row items-start md:items-center"
+          class="tremor-Flex-root flex w-full justify-between mb-7 flex-col md:flex-row items-start md:items-center"
         >
           <div
-            class="w-full md:mb-0"
+            class="w-full mb-5 md:mb-0"
           >
             <p
-              class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary dark:print:!text-secondary"
+              class="text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
             >
               Invoice no
             </p>
             <a
-              class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline dark:print:text-primary"
+              class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-primary"
               href="#"
             >
               #
@@ -31,29 +31,29 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
             class="w-full"
           >
             <div
-              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row mb-1 md:mb-0"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
+                class="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
               >
                 Invoice date:
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
+                class="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary"
               >
                 03/06/2019
               </p>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+              class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
+                class="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
               >
                 Due date:
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
+                class="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary"
               >
                 03/11/2019
               </p>
@@ -90,18 +90,18 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-7 md:flex-row items-start md:items-center"
+        class="tremor-Flex-root flex w-full justify-between mb-7 flex-col md:flex-row items-start md:items-center"
       >
         <div
-          class="w-full md:mb-0"
+          class="w-full mb-5 md:mb-0"
         >
           <p
-            class="text-tremor-default !text-base font-normal dark:text-lighter text-secondary dark:print:!text-secondary"
+            class="text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
           >
             Invoice no
           </p>
           <a
-            class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-[0.0075em] no-underline dark:print:text-primary"
+            class="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-primary"
             href="#"
           >
             #
@@ -112,29 +112,29 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
           class="w-full"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row mb-1 md:mb-0"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
+              class="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
             >
               Invoice date:
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
+              class="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary"
             >
               03/06/2019
             </p>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row"
           >
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base font-normal dark:!text-lighter text-secondary dark:print:!text-secondary"
+              class="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary"
             >
               Due date:
             </p>
             <p
-              class="text-tremor-default dark:text-dark-tremor-content w-full text-end !text-base text-primary font-semibold dark:!text-white dark:print:!text-primary"
+              class="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary"
             >
               03/11/2019
             </p>

@@ -75,6 +75,13 @@ const SideBar = ({
     };
   }, [isCollapse, toggleSidebar]);
 
+  // Handle case close sidebar in smaller than a desktop screen
+  const handleClickSidebarItem = () => {
+    if (isBrowser && window.innerWidth <= BREAKPOINTS.XL) {
+      toggleSidebar();
+    }
+  };
+
   return (
     <>
       <div
@@ -141,7 +148,10 @@ const SideBar = ({
                   ].join("");
 
                   return (
-                    <ListItem className={menuItemClass} key={label}>
+                    <ListItem
+                      className={menuItemClass}
+                      key={label}
+                      onClick={handleClickSidebarItem}>
                       <Link href={href}>
                         <Flex
                           className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
@@ -187,7 +197,10 @@ const SideBar = ({
             const linkClass = `font-normal w-full py-3 px-7 ${centerOpenClass}`;
 
             return (
-              <li key={label} className={menuItemClass}>
+              <li
+                key={label}
+                className={menuItemClass}
+                onClick={handleClickSidebarItem}>
                 <Link className={linkClass} href={href}>
                   <span>{content}</span>
                   <span className={`${hiddenOpenClass} pl-2`}>{label}</span>

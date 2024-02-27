@@ -56,4 +56,43 @@ describe("Sidebar component", () => {
 
     expect(toggleSidebar).toHaveBeenCalledTimes(1);
   });
+
+  // Mock window.innerWidth
+  const originalInnerWidth = window.innerWidth;
+  beforeAll(() => {
+    Object.defineProperty(window, "innerWidth", {
+      writable: true,
+      configurable: true,
+      value: 800, // Set a value greater than BREAKPOINTS === 1280
+    });
+  });
+
+  it("closes sidebar when window width is smaller than or equal to BREAKPOINTS === 1280", () => {
+    const toggleSidebar = jest.fn();
+
+    const { container } = render(
+      <Sidebar
+        avatarUrl=""
+        name=""
+        isCollapse={true}
+        toggleSidebar={toggleSidebar}
+        pathname=""
+        onSignOut={() => Promise.resolve()}
+      />,
+    );
+
+    const sidebar = container.querySelector(".sidebar");
+    fireEvent.click(sidebar!);
+
+    expect(toggleSidebar).toHaveBeenCalledTimes(0);
+  });
+
+  // Restore window.innerWidth
+  afterAll(() => {
+    Object.defineProperty(window, "innerWidth", {
+      writable: true,
+      configurable: true,
+      value: originalInnerWidth,
+    });
+  });
 });

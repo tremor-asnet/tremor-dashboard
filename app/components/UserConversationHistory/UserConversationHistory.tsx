@@ -16,12 +16,12 @@ const UserConversationHistory = ({
   name,
   lastConversation,
 }: UserConversationHistoryProps) => (
-  <Flex className="mb-2 py-2 flex-wrap xs:flex-nowrap">
+  <Flex className="mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]">
     <Flex className="justify-start flex-wrap sm:flex-nowrap">
       <div className="w-12 h-12">
         <Avatar src={avatar} width={48} height={48} alt={name} />
       </div>
-      <div className="max-w-[180px] font-medium dark:text-white pl-4">
+      <div className="max-w-[180px] font-medium dark:text-white pl-4 w-1/2">
         <Text className="text-sm text-primary dark:text-dark-primary font-semibold">
           {name}
         </Text>

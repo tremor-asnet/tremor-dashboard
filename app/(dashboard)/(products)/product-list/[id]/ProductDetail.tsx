@@ -18,12 +18,12 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
 
   return (
     <Flex className="items-start flex-col lg:flex-row">
-      <Flex>
+      <Flex alignItems="center">
         <CustomImage
           className="rounded-lg"
           src={productData.image}
-          width={1424}
-          height={950}
+          width={800}
+          height={500}
           alt="product-detail"
         />
       </Flex>

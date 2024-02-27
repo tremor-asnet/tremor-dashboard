@@ -64,11 +64,11 @@ const DashboardHeader = ({
     ? "text-primary dark:text-dark-primary"
     : "text-tremor-content";
 
+  const activeAllProjectPage = isAllProjectPage && `pl-1 pr-2`;
+
   return (
     <div
-      className={`print:hidden ${activeStickyScroll} ${
-        isAllProjectPage && `pl-1 pr-2`
-      }`}>
+      className={`print:hidden ${activeStickyScroll} ${activeAllProjectPage}`}>
       <div className="h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1">
         <div className="flex items-center">
           <div

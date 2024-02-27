@@ -84,34 +84,45 @@ const SalesStatisticCard = ({
       : "text-few";
 
   return (
-    <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+    <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-sm 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
-        <Flex className="flex-col w-2/3 md:w-1/2">
+        <Flex className="flex-col w-7/12 lg:w-1/2">
           <Flex className="flex-col justify-start items-start">
-            <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
+            <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-wide">
               {type}
             </Text>
-            <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold">
+            <Text className="text-primary dark:text-dark-primary text-xl leading-8 font-bold">
               {formattedAmount}
             </Text>
+            <Flex className="justify-start items-start">
+              {amountChange && (
+                <Text
+                  className={`${totalAmountColor} dark:text-few leading-5 font-bold`}>
+                  {formattedTotalAmount}
+                  <span className="ml-1 font-normal text-secondary dark:text-dark-romance leading-5 tracking-wide">
+                    {duration}
+                  </span>
+                </Text>
+              )}
+            </Flex>
           </Flex>
         </Flex>
         <Flex
-          className="justify-end items-end w-1/3 md:w-1/2 cursor-pointer"
+          className="justify-end items-end w-5/12 lg:w-1/2 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
-          <Text className="!text-xs text-secondary dark:text-secondary leading-[21px] tracking-[0.4px]">
+          <Text className="!text-xs text-secondary dark:text-secondary leading-5 tracking-wide">
             {currentSalesDate}
           </Text>
         </Flex>
         {openActionSalesDate && (
-          <div className="absolute p-2 -right-2 top-8 z-10 bg-white rounded-lg shadow-md">
+          <div className="absolute p-2 -right-2 top-8 z-10 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md">
             {ITEM_ACTION_SALES_DATE.map(item => (
               <Flex key={item.key} flex-col>
                 <Button
-                  className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-4 py-1.5"
+                  className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-primary hover:rounded-md px-4 py-1.5"
                   variant="light"
                   onClick={() => handleSelectSalesDate(item.label)}>
-                  <Text className="font-normal text-sm text-secondary hover:text-primary leading-[21px] tracking-[0.13px]">
+                  <Text className="font-normal text-sm text-secondary hover:text-primary leading-5 tracking-wide">
                     {item.label}
                   </Text>
                 </Button>
@@ -119,17 +130,6 @@ const SalesStatisticCard = ({
             ))}
           </div>
         )}
-      </Flex>
-      <Flex className="justify-start items-start">
-        {amountChange && (
-          <Text
-            className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>
-            {formattedTotalAmount}
-          </Text>
-        )}
-        <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">
-          {duration}
-        </Text>
       </Flex>
     </Card>
   );

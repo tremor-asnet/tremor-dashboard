@@ -32,7 +32,7 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
 
   return (
     <ul
-      className={`grid grid-cols-${total} pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg rounded-lg ${extendClass}`}>
+      className={`grid grid-cols-${total} pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg shadow-box-icon-primary rounded-lg ${extendClass}`}>
       {/* First Item */}
       <StepperFirstItem isFirstStep={isFirstStep} step={firstStep} />
       {/* Body Items */}

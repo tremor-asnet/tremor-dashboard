@@ -1,6 +1,6 @@
 export const ProductDetailsSkeleton = () => (
   <div className="flex flex-col md:flex-row w-full h-[800px] rounded-lg animate-pulse gap-2 justify-between mb-10">
-    <div className="w-full h-2/3">
+    <div className="w-full h-2/3 lg:h-full">
       <div className="w-full h-full bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
     </div>
     <div className="md:pl-2 xl:pl-24 w-full h-full">

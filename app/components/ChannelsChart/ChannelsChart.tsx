@@ -80,7 +80,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             </ul>
           </Flex>
         </Flex>
-        <Flex className="flex-col xl:flex-row items-end">
+        <Flex className="flex-col sm:flex-row items-end">
           <Flex className="pr-1">
             <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
               More than

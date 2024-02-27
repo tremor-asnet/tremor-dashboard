@@ -3,13 +3,13 @@ import { Suspense } from "react";
 
 // Components
 import { LoadingIndicator } from "@/components";
-import BillingDetail from "./components/BillingDetail";
-import InvoiceDetail from "./components/InvoiceDetail";
-import BillingInfoDetail from "./components/BillingInfoDetail";
+import BillingDetail from "./components/BillingDetail/BillingDetail";
+import InvoiceDetail from "./components/InvoiceDetail/InvoiceDetail";
+import BillingInfoDetail from "./components/BillingInfoDetail/BillingInfoDetail";
 import TransactionDetail from "./components/TransactionDetail/TransactionDetail";
 
 // Services
-import { getTransactions } from "@/services";
+import { getBillings, getTransactions, getInvoices } from "@/services";
 
 export const metadata = {
   title: "Billing - Tremor Dashboard",
@@ -17,6 +17,9 @@ export const metadata = {
 
 const Billing = async () => {
   const transactionsData = await getTransactions();
+  const invoicesData = await getInvoices();
+  const billingData = await getBillings();
+  const { billingInfos, cardInfo, aggregation } = billingData;
   return (
     <div>
       <Flex className="pb-6 flex-col lg:flex-row items-start">
@@ -31,7 +34,7 @@ const Billing = async () => {
                 fillColor="river-bed-500"
               />
             }>
-            <BillingDetail />
+            <BillingDetail cardInfo={cardInfo} aggregation={aggregation} />
           </Suspense>
         </Flex>
         <Flex className="basis-1/3 pt-6 lg:pt-0 lg:pl-6">
@@ -45,7 +48,7 @@ const Billing = async () => {
                 fillColor="river-bed-500"
               />
             }>
-            <InvoiceDetail />
+            <InvoiceDetail invoices={invoicesData} />
           </Suspense>
         </Flex>
       </Flex>
@@ -64,7 +67,7 @@ const Billing = async () => {
                 fillColor="river-bed-500"
               />
             }>
-            <BillingInfoDetail />
+            <BillingInfoDetail billingInfos={billingInfos} />
           </Suspense>
         </div>
         <div className="w-full md:min-h-[640px] 2xl:max-w-[1450px] mt-6 md:mt-0">

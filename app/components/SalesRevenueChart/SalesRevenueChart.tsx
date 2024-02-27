@@ -42,7 +42,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
         </Popover>
       </Flex>
       <LineChart
-        className="h-72 mt-2"
+        className="h-72"
         data={dataChart}
         index="month"
         categories={["Facebook Ads", "Google Ads"]}

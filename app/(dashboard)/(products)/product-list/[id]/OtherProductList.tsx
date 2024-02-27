@@ -5,9 +5,10 @@ import { getProducts } from "@/services";
 import OtherProducts from "../../components/OtherProducts/OtherProducts";
 
 const OtherProductList = async () => {
-  const data = await getProducts();
+  const { results } = await getProducts();
+  const otherProductList = results.slice(0, 4);
 
-  return <OtherProducts products={data.results} />;
+  return <OtherProducts products={otherProductList} />;
 };
 
 export default OtherProductList;

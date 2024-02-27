@@ -34,8 +34,8 @@ const Profile = async () => {
             />
           </Flex>
           {/* Main content */}
-          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-nowrap lg:gap-5">
-            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:w-[68%] lg:gap-6">
+          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-wrap lg:gap-5 xl:flex-nowrap">
+            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:gap-10">
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
@@ -58,7 +58,7 @@ const Profile = async () => {
               <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />
             </Flex>
             {/* Profile Conversations */}
-            <div className="w-full mt-6 lg:mt-0 lg:basis-1/3">
+            <div className="w-full mt-6 lg:mt-0 xl:w-[50%]">
               <ConversationHistory
                 conversationHistory={profileData?.conversations || []}
               />

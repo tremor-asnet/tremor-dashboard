@@ -1,14 +1,14 @@
 import { Flex } from "@tremor/react";
 
 const LoadingIndicator = ({
-  width,
-  height,
+  width = 16,
+  height = 16,
   isFullWidth = false,
   fillColor = "white",
   additionalClass,
 }: {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   isFullWidth?: boolean;
   fillColor?: string;
   additionalClass?: string;

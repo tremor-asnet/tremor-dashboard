@@ -1,4 +1,4 @@
-export const orderStatus = (status: number, period: number) => {
+export const OrderStatus = (status: number, period: number) => {
   switch (status) {
     // When data response status === 0, the order status is delivered
     case 0:

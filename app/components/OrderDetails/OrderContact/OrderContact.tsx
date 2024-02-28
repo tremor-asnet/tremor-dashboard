@@ -3,7 +3,7 @@ import Link from "next/link";
 // Components
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import { orderStatus } from "./orderStatus";
+import { OrderStatus } from "./orderStatus";
 
 //Styles
 import "@/styles/order.css";
@@ -36,7 +36,7 @@ const OrderContact = ({
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-6 tracking-wide truncate max-w-[200px] md:max-w-[240px] xl:max-w-xs 2xl:max-w-sm">
             {name}
           </Title>
-          {orderStatus(status, date)}
+          {OrderStatus(status, date)}
         </Flex>
       </Flex>
       <Flex>

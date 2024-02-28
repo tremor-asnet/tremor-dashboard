@@ -2,7 +2,7 @@
 import { STATUS_TEXT } from "@/constants";
 
 // Components
-import { ProductStatus } from "./productStatus";
+import { ProductStatus } from "./ProductStatus";
 
 interface CustomStatusProps {
   status: number;

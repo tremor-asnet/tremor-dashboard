@@ -1,8 +1,3 @@
-"use client";
-
-// Libs
-import Link from "next/link";
-
 // Components
 
 import { Text, Flex } from "@tremor/react";
@@ -22,7 +17,7 @@ interface ProductInfoDetailProps {
 }
 
 const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
-  const { productName, price, quantity } = product;
+  const { productName, price, quantity, description } = product;
 
   return (
     <Flex className="antialiased font-primary flex-col items-start">
@@ -50,15 +45,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
         <Text className="text-secondary dark:text-lighter mb-4">
           Description
         </Text>
-        <ul className="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter">
-          <li>
-            The most beautiful curves of this swivel stool adds an elegant touch
-            to any environment
-          </li>
-          <li>Memory swivel seat returns to original seat position</li>
-          <li>Comfortable integrated layered chair seat cushion design</li>
-          <li>Fully assembled! No assembly required</li>
-        </ul>
+        <div dangerouslySetInnerHTML={{ __html: description! }} />
       </Flex>
       <Flex className="mt-6">
         <InputField

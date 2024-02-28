@@ -115,22 +115,9 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           >
             Description
           </p>
-          <ul
-            class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
-          >
-            <li>
-              The most beautiful curves of this swivel stool adds an elegant touch to any environment
-            </li>
-            <li>
-              Memory swivel seat returns to original seat position
-            </li>
-            <li>
-              Comfortable integrated layered chair seat cushion design
-            </li>
-            <li>
-              Fully assembled! No assembly required
-            </li>
-          </ul>
+          <div>
+            Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.
+          </div>
         </div>
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"
@@ -268,22 +255,9 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         >
           Description
         </p>
-        <ul
-          class="text-secondary pl-6 list-outside list-disc text-tremor-title dark:text-lighter"
-        >
-          <li>
-            The most beautiful curves of this swivel stool adds an elegant touch to any environment
-          </li>
-          <li>
-            Memory swivel seat returns to original seat position
-          </li>
-          <li>
-            Comfortable integrated layered chair seat cushion design
-          </li>
-          <li>
-            Fully assembled! No assembly required
-          </li>
-        </ul>
+        <div>
+          Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.
+        </div>
       </div>
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"

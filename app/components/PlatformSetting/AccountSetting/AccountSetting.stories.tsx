@@ -11,6 +11,15 @@ const meta = {
   title: "Components/AccountSetting",
   tags: ["autodocs"],
   component: AccountSetting,
+  argTypes: {
+    accountSettingFields: {
+      label: { description: "Email label of account setting" },
+      field: { description: "Email field of account setting" },
+    },
+    accountSettingData: {
+      emailMentions: { description: "Email status field of account setting" },
+    },
+  },
 } as Meta<typeof AccountSetting>;
 
 export default meta;
@@ -19,9 +28,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <AccountSetting
-      accountSettingFields={ACCOUNT_SETTING_FIELDS}
-      accountSettingData={ACCOUNT_SETTING_DATA}
-    />
+    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
+      <AccountSetting
+        accountSettingFields={ACCOUNT_SETTING_FIELDS}
+        accountSettingData={ACCOUNT_SETTING_DATA}
+      />
+    </div>
   ),
 };

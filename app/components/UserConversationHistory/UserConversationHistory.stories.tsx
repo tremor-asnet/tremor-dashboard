@@ -9,6 +9,13 @@ const meta = {
   title: "Components/UserConversationHistory",
   tags: ["autodocs"],
   component: UserConversationHistory,
+  argTypes: {
+    avatar: { description: "User avatar of conversation history" },
+    name: { description: "User name of conversation history" },
+    lastConversation: {
+      description: "User last conersation of conversation history",
+    },
+  },
 } as Meta<typeof UserConversationHistory>;
 
 export default meta;
@@ -17,10 +24,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <UserConversationHistory
-      avatar={PROFILE_ITEM.avatar}
-      name={PROFILE_ITEM.name}
-      lastConversation={PROFILE_ITEM.lastConversation}
-    />
+    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
+      <UserConversationHistory
+        avatar={PROFILE_ITEM.avatar}
+        name={PROFILE_ITEM.name}
+        lastConversation={PROFILE_ITEM.lastConversation}
+      />
+    </div>
   ),
 };

@@ -87,14 +87,14 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         name="description"
         control={control}
         render={({ field }) => (
-          <div className="w-full relative">
-            <Text className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
+          <div className="w-full">
+            <Text className="text-gray-500 text-sm dark:text-gray-400">
               Description <span className="text-xs">(optional)</span>
             </Text>
             <QuillEditor
               theme="snow"
               placeholder="Some initial bold text"
-              className="mt-4 dark:text-white"
+              className="mt-3 dark:text-white"
               {...field}
             />
           </div>
@@ -102,7 +102,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
       />
 
       <div className="flex flex-col gap-6">
-        <div className="mb-4">
+        <div className="mb-2">
           <Controller
             name="category"
             control={control}
@@ -119,7 +119,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           />
         </div>
 
-        <div className="mb-4">
+        <div className="mb-2">
           <Controller
             name="quantity"
             control={control}
@@ -135,7 +135,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           />
         </div>
 
-        <div className="mb-4">
+        <div className="mb-2">
           <Controller
             name="providerName"
             control={control}

@@ -73,8 +73,8 @@ const ProductInfo = () => {
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full relative">
-                <Text className="absolute text-gray-500 text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:start-0 peer-focus:text-gray-600">
+              <div className="w-full">
+                <Text className="text-gray-500 text-sm dark:text-gray-400">
                   Description <span className="text-xs">(optional)</span>
                 </Text>
                 <QuillEditor
@@ -98,7 +98,7 @@ const ProductInfo = () => {
               const weightErrorMessage = errors.weight?.message || "";
 
               return (
-                <div className="w-full mb-4">
+                <div className="w-full mb-1">
                   <InputField
                     id="edit-weight"
                     type="number"
@@ -126,7 +126,7 @@ const ProductInfo = () => {
               const quantityErrorMessage = errors.quantity?.message || "";
 
               return (
-                <div className="w-full mb-4">
+                <div className="w-full mb-2">
                   <InputField
                     id="edit-quantity"
                     type="number"
@@ -144,7 +144,7 @@ const ProductInfo = () => {
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full mb-4">
+              <div className="w-full mb-2">
                 <SelectField
                   label="Category"
                   options={CATEGORY_PRODUCT}
@@ -159,7 +159,7 @@ const ProductInfo = () => {
           <Controller
             control={control}
             render={({ field }) => (
-              <div className="w-full mb-4">
+              <div className="w-full mb-2">
                 <InputField
                   id="edit-provider"
                   label="Provider Name"

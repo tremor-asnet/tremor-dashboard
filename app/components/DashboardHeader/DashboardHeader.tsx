@@ -68,8 +68,8 @@ const DashboardHeader = ({
 
   return (
     <div
-      className={`print:hidden ${activeStickyScroll} ${activeAllProjectPage}`}>
-      <div className="h-32 sm:h-20 mb-3.5 sm:flex items-center justify-between px-2 sm:px-4 py-1">
+      className={`print:hidden mb-4 ${activeStickyScroll} ${activeAllProjectPage}`}>
+      <div className="h-28 sm:h-16 sm:flex items-center justify-between px-2 sm:px-4">
         <div className="flex items-center">
           <div
             className={`block xl:hidden cursor-pointer ${

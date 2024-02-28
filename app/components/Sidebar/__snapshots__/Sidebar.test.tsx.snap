@@ -29,30 +29,30 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             </svg>
           </div>
         </div>
-        <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
+        <a
+          href="/analytics"
         >
-          <img
-            alt="Tremor Dashboard"
-            data-nimg="1"
-            decoding="async"
-            height="28"
-            loading="lazy"
-            src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
-            srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
-            style="color: transparent;"
-            width="28"
-          />
-          <a
-            href="/analytics"
+          <div
+            class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
           >
+            <img
+              alt="Tremor Dashboard"
+              data-nimg="1"
+              decoding="async"
+              height="28"
+              loading="lazy"
+              src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="28"
+            />
             <p
               class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
             >
               Tremor Dashboard PRO
             </p>
-          </a>
-        </div>
+          </div>
+        </a>
         <div
           class="h-px bg-gradient-divider my-4 opacity-25"
         />
@@ -248,30 +248,30 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           </svg>
         </div>
       </div>
-      <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
+      <a
+        href="/analytics"
       >
-        <img
-          alt="Tremor Dashboard"
-          data-nimg="1"
-          decoding="async"
-          height="28"
-          loading="lazy"
-          src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
-          srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
-          style="color: transparent;"
-          width="28"
-        />
-        <a
-          href="/analytics"
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
         >
+          <img
+            alt="Tremor Dashboard"
+            data-nimg="1"
+            decoding="async"
+            height="28"
+            loading="lazy"
+            src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
+            srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
+            style="color: transparent;"
+            width="28"
+          />
           <p
             class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
           >
             Tremor Dashboard PRO
           </p>
-        </a>
-      </div>
+        </div>
+      </a>
       <div
         class="h-px bg-gradient-divider my-4 opacity-25"
       />

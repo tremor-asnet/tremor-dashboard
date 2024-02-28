@@ -73,6 +73,7 @@ const SignIn = () => {
 
   return (
     <form
+      noValidate
       onSubmit={handleSubmit(handleSignIn)}
       className="w-full sm:p-3 sign-in">
       {isDisableSubmit && (
@@ -95,7 +96,6 @@ const SignIn = () => {
               type="email"
               autoFocus
               className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
-              required
               {...field}
             />
             <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -108,7 +108,7 @@ const SignIn = () => {
       <Controller
         control={control}
         rules={{
-          required: MESSAGES_ERROR.PASSWORD_INVALID,
+          required: MESSAGES_ERROR.PASSWORD_REQUIRED,
           pattern: {
             value: REGEX.PASSWORD,
             message: MESSAGES_ERROR.PASSWORD_WRONG,
@@ -122,7 +122,6 @@ const SignIn = () => {
               placeholder="Password"
               type="password"
               className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
-              required
               {...field}
             />
             <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
@@ -134,9 +133,7 @@ const SignIn = () => {
         )}
         name="password"
       />
-
       {/* {renderErrorMessage(formStatus.errorMessage)} */}
-
       <div className="flex items-center space-x-3 mt-6">
         <Switch
           tabIndex={2}
@@ -152,7 +149,6 @@ const SignIn = () => {
           Remember me
         </Text>
       </div>
-
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
@@ -168,7 +164,6 @@ const SignIn = () => {
           </Text>
         )}
       </Button>
-
       <Flex className="mt-8 mb-2 justify-center items-center">
         <Text className="text-secondary dark:text-dark-romance font-light">
           Don&rsquo;t have an account?

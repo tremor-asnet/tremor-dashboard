@@ -141,3 +141,11 @@ input:-webkit-autofill {
 .dark input:-webkit-autofill {
   -webkit-text-fill-color:white;
 }
+
+.sign-in button.shadow-tremor-input, .sign-up button.shadow-tremor-input {
+  @apply shadow-[rgba(52,71,103,0.15)_0rem_0.1875rem_0.1875rem_0rem,rgba(52,71,103,0.2)_0rem_0.1875rem_0.0625rem_-0.125rem,rgba(52,71,103,0.15)_0rem_0.0625rem_0.3125rem_0rem];
+}
+
+.sign-in button.shadow-tremor-input:hover, .sign-up button.shadow-tremor-input:hover {
+  @apply shadow-[0rem_0.875rem_1.625rem_-0.75rem_rgba(52,71,103,0.4),0rem_0.25rem_1.4375rem_0rem_rgba(52,71,103,0.15),0rem_0.5rem_0.625rem_-0.3125rem_rgba(52,71,103,0.2)];
+}

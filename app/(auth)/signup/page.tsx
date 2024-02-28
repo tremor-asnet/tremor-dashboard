@@ -27,6 +27,9 @@ import { FaCheckCircle } from "react-icons/fa";
 // Hooks
 import { useToast } from "@/hooks/useToastMessage";
 
+//Styles
+import "@/styles/form.css";
+
 const SignUp = () => {
   const {
     control,
@@ -110,7 +113,7 @@ const SignUp = () => {
       )}
       <form
         onSubmit={handleSubmit(handleSignUp)}
-        className="w-full p-2 sm:p-3 sign-up">
+        className="w-full p-2 sign-up">
         {isStatusPending && (
           <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
         )}
@@ -224,7 +227,7 @@ const SignUp = () => {
           tabIndex={3}
           aria-disabled={isDisableSubmit}
           type="submit"
-          className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
+          className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
           disabled={isDisableSubmit}>
           {isStatusPending ? (

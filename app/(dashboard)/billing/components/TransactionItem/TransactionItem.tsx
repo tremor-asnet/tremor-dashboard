@@ -2,9 +2,10 @@
 
 // Components
 import StatusButton from "@/components/common/StatusButton/StatusButton";
+import { getContentByProps } from "./billing";
 
 // Helpers
-import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";
+import { formatDateTimeForTransaction } from "@/helpers";
 
 interface TransactionItemProps {
   createdAt: string;

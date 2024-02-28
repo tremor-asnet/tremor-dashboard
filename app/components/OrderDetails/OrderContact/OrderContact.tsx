@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 // Components
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import Link from "next/link";
-import { orderStatus } from "@/helpers";
+import { orderStatus } from "./orderStatus";
 
 //Styles
 import "@/styles/order.css";

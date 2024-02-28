@@ -1,8 +1,8 @@
 // Constants
 import { STATUS_TEXT } from "@/constants";
 
-// Helpers
-import { ProductStatus } from "@/helpers";
+// Components
+import { ProductStatus } from "./productStatus";
 
 interface CustomStatusProps {
   status: number;

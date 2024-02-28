@@ -72,9 +72,7 @@ const SignIn = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(handleSignIn)}
-      className="w-full sm:p-3 sign-in">
+    <form onSubmit={handleSubmit(handleSignIn)} className="w-full p-2 sign-in">
       {isDisableSubmit && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}

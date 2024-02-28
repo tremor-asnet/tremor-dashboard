@@ -102,7 +102,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
       />
 
       <div className="flex flex-col gap-6">
-        <div className="mb-4">
+        <div className="mb-4 mt-2">
           <Controller
             name="category"
             control={control}
@@ -112,7 +112,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
                   label="Category"
                   options={CATEGORY_PRODUCT}
                   {...field}
-                  className="py-2.5"
+                  className="py-2.5 appearance-none rounded-none"
                 />
               </div>
             )}

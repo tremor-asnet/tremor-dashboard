@@ -79,7 +79,7 @@ const PricingInfo = () => {
                       label="Currency"
                       options={TYPE_PRICE}
                       {...field}
-                      className="py-2.5"
+                      className="py-2.5 appearance-none rounded-none"
                     />
                   </div>
                 )}

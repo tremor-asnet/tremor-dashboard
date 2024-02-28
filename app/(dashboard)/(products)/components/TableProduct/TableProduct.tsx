@@ -72,7 +72,7 @@ const TableProduct = ({
       title: "Is Available",
       customNode: (_, { quantity }) => (
         <p className="text-xs dark:text-lighter font-semibold">
-          {quantity && quantity > 0 ? "Yes" : "No"}
+          {quantity ? "Yes" : "No"}
         </p>
       ),
       sortable: true,

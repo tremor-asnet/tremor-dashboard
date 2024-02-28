@@ -2,10 +2,9 @@
 
 // Components
 import StatusButton from "@/components/common/StatusButton/StatusButton";
-import { getContentByProps } from "./billing";
 
 // Helpers
-import { formatDateTimeForTransaction } from "@/helpers";
+import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";
 
 interface TransactionItemProps {
   createdAt: string;
@@ -22,16 +21,12 @@ const TransactionItem = ({
   type,
   status,
 }: TransactionItemProps) => {
-  const { color, classes, icon, value } = getContentByProps(
-    status,
-    type,
-    amount,
-  );
+  const { color, classes, value } = getContentByProps(status, type, amount);
 
   return (
     <div className="flex pr-4 py-4 justify-between items-center">
       <div className="flex gap-4 items-center">
-        <StatusButton extendedClass={classes} icon={icon} />
+        <StatusButton extendedClass={classes} status={0} type={0} />
         <div>
           <h6 className="text-sm font-semibold text-primary dark:text-white mb-1">
             {service}

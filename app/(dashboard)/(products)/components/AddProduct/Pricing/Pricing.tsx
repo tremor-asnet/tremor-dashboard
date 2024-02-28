@@ -46,7 +46,12 @@ const Pricing = ({ control }: PricingProps) => {
         name="currency"
         control={control}
         render={({ field }) => (
-          <SelectField label="Currency" options={TYPE_PRICE} {...field} />
+          <SelectField
+            label="Currency"
+            options={TYPE_PRICE}
+            {...field}
+            className="appearance-none rounded-none"
+          />
         )}
       />
 

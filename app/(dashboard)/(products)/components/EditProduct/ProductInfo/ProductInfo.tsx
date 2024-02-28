@@ -149,7 +149,7 @@ const ProductInfo = () => {
                   label="Category"
                   options={CATEGORY_PRODUCT}
                   {...field}
-                  className="py-2.5"
+                  className="py-2.5 appearance-none rounded-none"
                 />
               </div>
             )}

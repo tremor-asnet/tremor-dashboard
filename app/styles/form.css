@@ -1,8 +1,8 @@
 .select-custom button {
-  @apply bg-transparent rounded-none border-0 border-b-[#d2d6da] border-b-[2px] border-solid cursor-text shadow-transparent;
+  @apply !bg-transparent rounded-none border-0 border-b-[#d2d6da] border-b-[2px] border-solid cursor-text shadow-transparent;
 }
 
-.select-custom button:hover {
+.select-custom button:hover  {
   @apply bg-transparent shadow-transparent;
 }
 

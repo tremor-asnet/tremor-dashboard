@@ -6,13 +6,13 @@ exports[`Test InputField component Should match snapshot 1`] = `
     class="w-full"
   >
     <label
-      class="text-gray-500 text-sm dark:text-gray-400"
+      class="text-secondary text-sm dark:text-lighter"
       for="test-input-field"
     >
       Test InputField
     </label>
     <input
-      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+      class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
       id="test-input-field"
       placeholder=""
     />

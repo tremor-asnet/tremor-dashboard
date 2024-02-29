@@ -88,7 +88,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         control={control}
         render={({ field }) => (
           <div className="w-full">
-            <Text className="text-gray-500 text-sm dark:text-gray-400">
+            <Text className="text-secondary text-sm dark:text-lighter">
               Description <span className="text-xs">(optional)</span>
             </Text>
             <QuillEditor

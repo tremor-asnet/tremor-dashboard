@@ -99,7 +99,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
             data-testid="total-price"
           >
-            $1,419
+            $1,419,00
           </div>
         </div>
         <p
@@ -115,7 +115,9 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           >
             Description
           </p>
-          <div>
+          <div
+            class="text-secondary dark:text-lighter"
+          >
             Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.
           </div>
         </div>
@@ -126,13 +128,13 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             class="w-full"
           >
             <label
-              class="text-gray-500 text-sm dark:text-gray-400"
+              class="text-secondary text-sm dark:text-lighter"
               for="details-quantity"
             >
               Quantity
             </label>
             <input
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+              class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
               id="details-quantity"
               placeholder=""
               readonly=""
@@ -239,7 +241,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price"
         >
-          $1,419
+          $1,419,00
         </div>
       </div>
       <p
@@ -255,7 +257,9 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         >
           Description
         </p>
-        <div>
+        <div
+          class="text-secondary dark:text-lighter"
+        >
           Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.
         </div>
       </div>
@@ -266,13 +270,13 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="w-full"
         >
           <label
-            class="text-gray-500 text-sm dark:text-gray-400"
+            class="text-secondary text-sm dark:text-lighter"
             for="details-quantity"
           >
             Quantity
           </label>
           <input
-            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
             id="details-quantity"
             placeholder=""
             readonly=""

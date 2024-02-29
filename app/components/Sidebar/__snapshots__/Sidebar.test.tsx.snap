@@ -124,7 +124,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/analytics"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 AN
               </span>
               <span
@@ -141,7 +143,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/sales"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 S
               </span>
               <span
@@ -158,7 +162,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/all-projects"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 A
               </span>
               <span
@@ -175,7 +181,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/order-list"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 O
               </span>
               <span
@@ -192,7 +200,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/product-list"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 P
               </span>
               <span
@@ -209,7 +219,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
               class="font-normal w-full py-3 px-7 xl:justify-center"
               href="/billing"
             >
-              <span>
+              <span
+                class="w-5"
+              >
                 B
               </span>
               <span
@@ -343,7 +355,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/analytics"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               AN
             </span>
             <span
@@ -360,7 +374,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/sales"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               S
             </span>
             <span
@@ -377,7 +393,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/all-projects"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               A
             </span>
             <span
@@ -394,7 +412,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/order-list"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               O
             </span>
             <span
@@ -411,7 +431,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/product-list"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               P
             </span>
             <span
@@ -428,7 +450,9 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
             class="font-normal w-full py-3 px-7 xl:justify-center"
             href="/billing"
           >
-            <span>
+            <span
+              class="w-5"
+            >
               B
             </span>
             <span

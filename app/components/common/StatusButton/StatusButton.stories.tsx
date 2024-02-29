@@ -28,7 +28,12 @@ type Story = StoryObj<typeof meta>;
 
 export const ButtonIncrease: Story = {
   render: () => (
-    <StatusButton extendedClass="text-few border-few" status={0} type={0} />
+    <StatusButton
+      extendedClass="text-few border-few"
+      type={0}
+      status={1}
+      value={"+ 1234"}
+    />
   ),
 };
 
@@ -36,8 +41,9 @@ export const ButtonDecrease: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-attention border-attention"
-      type={0}
-      status={0}
+      type={1}
+      status={1}
+      value={"- 1234"}
     />
   ),
 };
@@ -46,8 +52,8 @@ export const ButtonPending: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-primary border-primary"
-      status={1}
-      type={1}
+      status={0}
+      value={"Pending"}
     />
   ),
 };

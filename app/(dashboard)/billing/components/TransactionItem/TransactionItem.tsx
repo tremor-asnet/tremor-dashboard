@@ -26,7 +26,12 @@ const TransactionItem = ({
   return (
     <div className="flex pr-4 py-4 justify-between items-center">
       <div className="flex gap-4 items-center">
-        <StatusButton extendedClass={classes} status={0} type={0} />
+        <StatusButton
+          extendedClass={classes}
+          type={0}
+          status={1}
+          value={value}
+        />
         <div>
           <h6 className="text-sm font-semibold text-primary dark:text-white mb-1">
             {service}

@@ -1,32 +1,34 @@
+import { formattedNumber } from "@/helpers";
 import { ReactNode } from "react";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { BsExclamationLg } from "react-icons/bs";
 
 interface StatusButtonProps {
   extendedClass: string;
-  status: number;
-  type: number;
+  status?: number;
+  type?: number;
+  value: string;
 }
 
-const StatusButton = ({ extendedClass, status, type }: StatusButtonProps) => {
-  let icon = <BiChevronDown />;
-
-  switch (true) {
-    case status === 0:
-      icon = <BsExclamationLg />;
-      break;
-    case type === 0:
-      icon = <BiChevronUp />;
-      break;
-    default:
-      break;
-  }
-
+const StatusButton = ({
+  extendedClass,
+  type,
+  status,
+  value,
+}: StatusButtonProps) => {
+  const renderIcon =
+    value === "Pending" ? (
+      <BsExclamationLg />
+    ) : value.includes("+") ? (
+      <BiChevronUp />
+    ) : (
+      <BiChevronDown />
+    );
   return (
     <button
       type="button"
       className={`flex shrink-0 w-9 h-9 justify-center items-center border rounded-full ${extendedClass}`}>
-      {icon}
+      {renderIcon}
     </button>
   );
 };

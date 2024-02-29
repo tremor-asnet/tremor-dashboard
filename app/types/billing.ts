@@ -29,3 +29,7 @@ export interface SalaryCardData {
   type: AGGREGATION_TYPE;
   currency?: string;
 }
+
+export enum STATUS_LIST {
+  ERROR = 0,
+}

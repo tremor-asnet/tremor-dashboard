@@ -1,8 +1,3 @@
-// Components
-import StepperBodyItem from "@/components/common/Stepper/StepperBodyItem/StepperBodyItem";
-import StepperFirstItem from "@/components/common/Stepper/StepperFirstItem/StepperFirstItem";
-import StepperLastItem from "@/components/common/Stepper/StepperLastItem/StepperLastItem";
-
 // Types
 import { Step } from "@/types";
 
@@ -20,13 +15,47 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
   const lastStep = steps[total - 1];
   const bodySteps = steps.slice(1, total - 1);
 
+  // Fist Item class
+  const firstItemRightLineClass = `1234 h-0.5 w-full ${
+    isFirstStep ? "bg-zinc-400" : "bg-white"
+  }`;
+
+  // Last Item class
+  const lastItemLeftLineClass = `h-0.5 w-[50%] ${
+    isLastStep ? "bg-white" : "bg-zinc-400"
+  }`;
+  const lastItemDotClass = isLastStep ? "stepper-dot-active" : "stepper-dot";
+  const lastItemTextClass = `stepper-text-content mt-2 ${
+    isLastStep ? "text-white" : "text-zinc-400"
+  }`;
+
+  // Body Item
   const bodyItems = bodySteps.map(step => {
+    const stepIndex = step.index;
+    const leftLineClass = `h-0.5 w-[50%] ${
+      currentStep >= stepIndex ? "bg-white" : "bg-zinc-400"
+    }`;
+    const dotClass =
+      currentStep >= stepIndex ? "stepper-dot-active" : "stepper-dot";
+    const rightLineClass = `h-0.5 w-[50%] ${
+      currentStep > stepIndex ? "bg-white" : "bg-zinc-400"
+    }`;
+    const textClass = `stepper-text-content mt-2 ${
+      currentStep >= stepIndex ? "text-white" : "text-zinc-400"
+    }`;
+
     return (
-      <StepperBodyItem
-        key={step.content}
-        currentStep={currentStep}
-        step={step}
-      />
+      <li key={step.content}>
+        <div className="flex items-center w-full h-4">
+          {/* Left line */}
+          <span className={leftLineClass}></span>
+          {/* Dot */}
+          <span className={dotClass}></span>
+          {/* Right line */}
+          <span className={rightLineClass}></span>
+        </div>
+        <p className={textClass}>{`${step.index}. ${step.content}`}</p>
+      </li>
     );
   });
 
@@ -34,11 +63,26 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
     <ul
       className={`grid grid-cols-${total} pt-6 pb-4 bg-zinc-700 dark:stepper-dark-bg shadow-box-icon-primary rounded-lg ${extendClass}`}>
       {/* First Item */}
-      <StepperFirstItem isFirstStep={isFirstStep} step={firstStep} />
+      <li>
+        <div className="flex items-center w-full h-4 pl-[50%]">
+          <span className="stepper-dot-active"></span>
+          <span className={firstItemRightLineClass}></span>
+        </div>
+        <p className="stepper-text-content text-white mt-2">{`${firstStep.index}. ${firstStep.content}`}</p>
+      </li>
       {/* Body Items */}
       {bodyItems}
       {/* Last Item */}
-      <StepperLastItem isLastStep={isLastStep} step={lastStep} />
+      <li>
+        <div className="flex items-center w-full h-4">
+          <span className={lastItemLeftLineClass}></span>
+          <span className={lastItemDotClass}></span>
+        </div>
+        <p
+          className={
+            lastItemTextClass
+          }>{`${lastStep.index}. ${lastStep.content}`}</p>
+      </li>
     </ul>
   );
 };

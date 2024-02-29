@@ -34,6 +34,7 @@ interface DataTableProps<T> {
   currentPageNumber?: number;
   total?: number;
   defaultCurrentPage?: number;
+  disableLoading?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -47,6 +48,7 @@ const DataGrid = <T,>({
   total,
   currentPageNumber,
   defaultCurrentPage = 1,
+  disableLoading = false,
 }: DataTableProps<T>) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -57,8 +59,6 @@ const DataGrid = <T,>({
   const [loading, setLoading] = useState(false);
 
   const [tableData, handleSorting] = useSortableTable<T>(data);
-
-  const loadingTableInvoice = pathname.includes(ROUTES.INVOICE_LIST);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
@@ -104,8 +104,7 @@ const DataGrid = <T,>({
     }, 100);
   }, [filterBy, keyword, currentPage, pageSize]);
 
-  // Do not show loading in table invoice
-  if (loading && !loadingTableInvoice) {
+  if (loading && !disableLoading) {
     return (
       <LoadingIndicator
         additionalClass="min-h-[500px] flex justify-center items-center"

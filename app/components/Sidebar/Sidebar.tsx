@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 // lib
 import Link from "next/link";
@@ -202,7 +202,7 @@ const SideBar = ({
                 className={menuItemClass}
                 onClick={handleClickSidebarItem}>
                 <Link className={linkClass} href={href}>
-                  <span>{content}</span>
+                  <span className="w-5">{content}</span>
                   <span className={`${hiddenOpenClass} pl-2`}>{label}</span>
                 </Link>
               </li>

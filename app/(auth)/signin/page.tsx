@@ -3,9 +3,9 @@
 // Libs
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
+import Link from "next/link";
 
 // Components
-import Link from "next/link";
 import { TextInput, Button, Flex, Switch, Text } from "@tremor/react";
 import { LoadingIndicator } from "@/components";
 
@@ -72,7 +72,10 @@ const SignIn = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleSignIn)} className="w-full p-2 sign-in">
+    <form
+      noValidate
+      onSubmit={handleSubmit(handleSignIn)}
+      className="w-full sm:p-3 sign-in">
       {isDisableSubmit && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}
@@ -93,7 +96,6 @@ const SignIn = () => {
               type="email"
               autoFocus
               className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
-              required
               {...field}
             />
             <p className="pt-1 text-[11px] xs:text-xs text-red-500">
@@ -109,7 +111,7 @@ const SignIn = () => {
           required: MESSAGES_ERROR.PASSWORD_REQUIRED,
           pattern: {
             value: REGEX.PASSWORD,
-            message: MESSAGES_ERROR.PASSWORD_INVALID,
+            message: MESSAGES_ERROR.PASSWORD_WRONG,
           },
         }}
         render={({ field }) => (
@@ -120,10 +122,9 @@ const SignIn = () => {
               placeholder="Password"
               type="password"
               className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
-              required
               {...field}
             />
-            <p className="pt-1 leading-3 text-[11px] xs:text-xs text-red-500">
+            <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
               {passwordErrorMessage
                 ? passwordErrorMessage
                 : formStatus.errorMessage}
@@ -132,10 +133,8 @@ const SignIn = () => {
         )}
         name="password"
       />
-
       {/* {renderErrorMessage(formStatus.errorMessage)} */}
-
-      <div className="flex items-center space-x-3 mt-1">
+      <div className="flex items-center space-x-3 mt-6">
         <Switch
           tabIndex={2}
           id="switch"
@@ -150,7 +149,6 @@ const SignIn = () => {
           Remember me
         </Text>
       </div>
-
       <Button
         tabIndex={3}
         aria-disabled={isDisableSubmit}
@@ -166,7 +164,6 @@ const SignIn = () => {
           </Text>
         )}
       </Button>
-
       <Flex className="mt-8 mb-2 justify-center items-center">
         <Text className="text-secondary dark:text-dark-romance font-light">
           Don&rsquo;t have an account?

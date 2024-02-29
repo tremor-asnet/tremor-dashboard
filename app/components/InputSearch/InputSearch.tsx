@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useRef } from "react";
+import { ChangeEvent, useCallback, useEffect, useRef, useState } from "react";
 
 // Components
 import { Flex, TextInput } from "@tremor/react";
@@ -25,23 +25,43 @@ const InputSearch = ({ field }: InputSearchProps) => {
   // @ts-ignore (us this comment if typescript raises an error)
   const hasValueInputSearch = inputSearchRef?.current?.value;
 
+  const [searchValue, setSearchValue] = useState<string>(() => {
+    const paramsValue = params.get(field);
+
+    return paramsValue || "";
+  });
+
+  const debouncedHandler = useCallback(
+    (
+      value: string,
+      fieldParam: string,
+      pathnameParam: string,
+      urlParams: URLSearchParams,
+    ) => {
+      return debounce(() => {
+        urlParams.set("page", "1");
+
+        if (value) {
+          urlParams.set(fieldParam, value);
+        } else {
+          urlParams.delete(fieldParam);
+        }
+
+        replace(`${pathnameParam}?${urlParams.toString()}`);
+      }, 1000);
+    },
+    [replace],
+  );
+
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-
     const value = e.target.value.trim();
-
-    params.set("page", "1");
-
-    if (value) {
-      params.set(field, value);
-    } else {
-      params.delete(field);
-    }
-
-    replace(`${pathname}?${params.toString()}`);
+    setSearchValue(value);
+    debouncedHandler(value, field, pathname, params)();
   };
 
   const resetSearch = () => {
+    setSearchValue("");
+
     params.delete(field);
     // @ts-ignore (us this comment if typescript raises an error)
     inputSearchRef.current.value = "";
@@ -54,10 +74,11 @@ const InputSearch = ({ field }: InputSearchProps) => {
         ref={inputSearchRef}
         id="search_order"
         className="w-auto dark:bg-transparent dark:border-white"
-        onChange={debounce(handleSearch, 1000)}
+        onChange={handleSearch}
         placeholder="Search..."
+        value={searchValue}
       />
-      {hasValueInputSearch && (
+      {(hasValueInputSearch || searchValue) && (
         <MdClose
           onClick={resetSearch}
           className="text-xs text-white bg-black dark:text-black dark:bg-white -ml-5 p-[2px] cursor-pointer rounded-full z-[1]"

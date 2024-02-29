@@ -10,7 +10,7 @@ import { CURRENCY } from "@/constants";
 import { TProductInfoDetail } from "@/types";
 
 // Helpers
-import { formatDotsToCommasNumber } from "@/helpers";
+import { formattedNumber } from "@/helpers";
 
 interface ProductInfoDetailProps {
   product: TProductInfoDetail;
@@ -19,6 +19,10 @@ interface ProductInfoDetailProps {
 const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
   const { productName, price, quantity, description } = product;
   const quantityValue = quantity === 0 ? "Out Of Stock" : "In Stock";
+  const quantityStyle =
+    quantity === 0
+      ? "text-white bg-red-500 dark:text-lighter"
+      : "text-fewter bg-seldom dark:text-fewter";
 
   return (
     <Flex className="antialiased font-primary flex-col items-start">
@@ -33,14 +37,14 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
         <Flex
           className="flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price">
-          {formatDotsToCommasNumber({
+          {formattedNumber({
             value: price,
             currency: CURRENCY.DOLLAR,
-            positionFraction: 2,
           })}
         </Flex>
       </Flex>
-      <Text className="p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter">
+      <Text
+        className={`p-2 mt-4 font-bold text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase ${quantityStyle}`}>
         {quantityValue}
       </Text>
       <Flex className="flex-col items-start mt-10">

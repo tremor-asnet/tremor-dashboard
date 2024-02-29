@@ -99,11 +99,11 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
             data-testid="total-price"
           >
-            $1,419,00
+            $1,419
           </div>
         </div>
         <p
-          class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
+          class="text-tremor-default p-2 mt-4 font-bold text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase text-fewter bg-seldom dark:text-fewter"
         >
           In Stock
         </p>
@@ -241,11 +241,11 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price"
         >
-          $1,419,00
+          $1,419
         </div>
       </div>
       <p
-        class="text-tremor-default p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter"
+        class="text-tremor-default p-2 mt-4 font-bold text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase text-fewter bg-seldom dark:text-fewter"
       >
         In Stock
       </p>

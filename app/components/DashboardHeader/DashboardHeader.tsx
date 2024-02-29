@@ -69,7 +69,7 @@ const DashboardHeader = ({
   return (
     <div
       className={`print:hidden mb-4 ${activeStickyScroll} ${activeAllProjectPage}`}>
-      <div className="h-28 sm:h-16 sm:flex items-center justify-between px-2 sm:px-4">
+      <div className="h-16 flex items-center justify-between px-2 px-4">
         <div className="flex items-center">
           <div
             className={`block xl:hidden cursor-pointer ${
@@ -90,7 +90,7 @@ const DashboardHeader = ({
           </div>
           <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
         </div>
-        <div className="flex items-center justify-between md:items-center mt-4 md:mt-0 md:justify-end pl-6 xl:pl-0">
+        <div className="flex items-center justify-between md:items-center pl-6 xl:pl-0">
           <div className="flex flex-wrap item-center gap-y-1">
             <div
               className="relative p-2 flex items-center"

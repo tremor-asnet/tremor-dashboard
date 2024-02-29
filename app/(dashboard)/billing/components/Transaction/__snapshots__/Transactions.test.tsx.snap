@@ -61,12 +61,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
                 />
               </svg>
             </button>
@@ -104,12 +104,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
                 />
               </svg>
             </button>
@@ -147,12 +147,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
                 />
               </svg>
             </button>
@@ -190,12 +190,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
                 />
               </svg>
             </button>
@@ -233,12 +233,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
                 />
               </svg>
             </button>
@@ -319,12 +319,12 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
-                viewBox="0 0 16 16"
+                viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                  d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
                 />
               </svg>
             </button>

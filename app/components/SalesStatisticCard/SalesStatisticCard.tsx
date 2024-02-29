@@ -104,14 +104,14 @@ const SalesStatisticCard = ({
           </Text>
         </Flex>
         {openActionSalesDate && (
-          <div className="absolute p-2 -right-2 top-8 z-10 bg-white rounded-lg shadow-md">
+          <div className="absolute p-2 -right-2 top-8 z-10 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md">
             {ITEM_ACTION_SALES_DATE.map(item => (
               <Flex key={item.key} flex-col>
                 <Button
-                  className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-4 py-1.5"
+                  className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
                   variant="light"
                   onClick={() => handleSelectSalesDate(item.label)}>
-                  <Text className="font-normal text-sm text-secondary hover:text-primary leading-[21px] tracking-[0.13px]">
+                  <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
                     {item.label}
                   </Text>
                 </Button>

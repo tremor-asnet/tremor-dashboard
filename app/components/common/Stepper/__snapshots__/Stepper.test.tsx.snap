@@ -13,7 +13,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
           class="stepper-dot-active"
         />
         <span
-          class="h-0.5 w-full bg-white"
+          class="1234 h-0.5 w-full bg-white"
         />
       </div>
       <p

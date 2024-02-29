@@ -6,15 +6,13 @@ import { ReactNode, useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
-import { Button, Col, Flex, Grid, Text } from "@tremor/react";
+import { Button, Col, Grid, Text } from "@tremor/react";
 import { LoadingIndicator, Toast } from "@/components";
 import { FaCheckCircle } from "react-icons/fa";
 import { TbExclamationMark } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
 
-const ProductImage = dynamic(
-  () => import("../EditProduct/ProductImage/ProductImage"),
-);
+import ProductImage from "../EditProduct/ProductImage/ProductImage";
 const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
 const ProductInfo = dynamic(
   () => import("../EditProduct/ProductInfo/ProductInfo"),
@@ -30,7 +28,7 @@ import { editProduct } from "@/services";
 import { ProductData } from "@/types";
 
 // Constants
-import { EDIT_PRODUCT_MESSAGE } from "@/constants";
+import { EDIT_PRODUCT_MESSAGE, NOT_FOUND_IMAGE } from "@/constants";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
@@ -107,7 +105,7 @@ const EditProductForm = ({
   });
 
   const { handleSubmit, formState, reset } = formHandler;
-  const { upload, imageValue, removeImage } = useImageUploader(image);
+  const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
 
   useEffect(() => {
     formHandler.setValue("image", imageValue, { shouldDirty: true });
@@ -209,6 +207,8 @@ const EditProductForm = ({
                 image={imageValue}
                 onRemoveImage={onRemoveImage}
                 onUpload={upload}
+                disabled={imageValue === NOT_FOUND_IMAGE ? true : false}
+                isUpload={isUpload}
               />
             </div>
             <Col numColSpanSm={1} numColSpanLg={2}>

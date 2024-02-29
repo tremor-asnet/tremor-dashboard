@@ -10,6 +10,12 @@ import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 const meta = {
   title: "Components/ConversationHistory",
   tags: ["autodocs"],
+  argTypes: {
+    id: { description: "Id of conversation" },
+    avatar: { description: "User avatar of conversation" },
+    name: { description: "User name of conversation" },
+    lastConversation: { description: "Last conversation of user" },
+  },
   component: ConversationHistory,
 } as Meta<typeof ConversationHistory>;
 
@@ -19,6 +25,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <ConversationHistory conversationHistory={PROFILE_CONVERSATIONS} />
+    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
+      <ConversationHistory conversationHistory={PROFILE_CONVERSATIONS} />
+    </div>
   ),
 };

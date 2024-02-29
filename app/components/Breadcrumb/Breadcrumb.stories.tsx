@@ -12,6 +12,10 @@ const meta = {
   title: "Components/Breadcrumb",
   component: Breadcrumb,
   tags: ["autodocs"],
+  argTypes: {
+    isScrolled: { description: "Scrolled for sticky header or not" },
+    pathname: { description: "Path name of page" },
+  },
 } as Meta<typeof Breadcrumb>;
 
 export default meta;
@@ -19,5 +23,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Dashboard: Story = {
-  render: () => <Breadcrumb {...mockProps} />,
+  render: () => (
+    <div className="bg-body dark:bg-dark-primary p-6 rounded-xl">
+      <Breadcrumb {...mockProps} />
+    </div>
+  ),
 };

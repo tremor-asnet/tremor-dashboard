@@ -18,6 +18,19 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    title: {
+      description: "Collapse or expand sidebar of select option",
+    },
+    onSelectItem: { description: "On select of select option" },
+    onSelectRemove: { description: "On remove of select option" },
+    data: [
+      {
+        option: { description: "opgtion of select option" },
+        value: { description: "value of select option" },
+      },
+    ],
+  },
 } as Meta<typeof SelectOption>;
 
 export default meta;
@@ -26,11 +39,13 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <SelectOption
-      title="Is Available"
-      data={ProductList}
-      onSelectItem={() => {}}
-      onSelectRemove={() => {}}
-    />
+    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
+      <SelectOption
+        title="Is Available"
+        data={ProductList}
+        onSelectItem={() => {}}
+        onSelectRemove={() => {}}
+      />
+    </div>
   ),
 };

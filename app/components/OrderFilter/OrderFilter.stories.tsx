@@ -8,6 +8,10 @@ const meta = {
   title: "Components/OrderFilter",
   tags: ["autodocs"],
   component: OrderFilter,
+  argTypes: {
+    statusFilter: { description: "Status of order filter" },
+    removeFilter: { description: "Return back default status of order list" },
+  },
 } as Meta<typeof OrderFilter>;
 
 export default meta;
@@ -15,5 +19,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <OrderFilter title="Filter" />,
+  render: () => (
+    <div className="relative text-right bg-body dark:bg-dark-primary p-6 rounded-xl">
+      <OrderFilter title="Filter" />
+    </div>
+  ),
 };

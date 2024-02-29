@@ -7,6 +7,12 @@ const meta = {
   title: "Components/DashboardHeader",
   component: DashboardHeader,
   tags: ["autodocs"],
+  argTypes: {
+    isCollapseSidebar: {
+      description: "Collapse or expand sidebar of dashboard header",
+    },
+    toggleSidebar: { description: "Toggle sidebar of dashboard header" },
+  },
 } as Meta<typeof DashboardHeader>;
 
 export default meta;
@@ -15,6 +21,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Dashboard: Story = {
   render: () => (
-    <DashboardHeader toggleSidebar={() => {}} isCollapseSidebar={false} />
+    <div className="bg-body dark:bg-dark-primary rounded-xl shadow-md">
+      <DashboardHeader toggleSidebar={() => {}} isCollapseSidebar={false} />
+    </div>
   ),
 };

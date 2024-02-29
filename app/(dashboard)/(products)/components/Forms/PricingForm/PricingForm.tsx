@@ -6,6 +6,7 @@ import { NewPricing } from "@/types";
 
 // Components
 import Pricing from "../../AddProduct/Pricing/Pricing";
+import { Button, Flex, Text } from "@tremor/react";
 
 interface PricingFormProps {
   price: number;
@@ -40,19 +41,23 @@ const PricingForm = ({
         Pricing
       </h6>
       <Pricing control={control} />
-      <div className="mt-6">
-        <input
-          className="float-left btn-form-secondary"
-          type="button"
-          value="BACK"
-          onClick={onBack}
-        />
-        <input
-          className="float-right btn-form-primary"
+      <Flex className="mt-6">
+        <Button
+          className="items-start btn-form-secondary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-btn-back hover:dark:!bg-gradient-pickled border-none dark:text-white text-center box-shadow-transparent"
           type="submit"
-          value="SEND"
-        />
-      </div>
+          onClick={onBack}>
+          <Text className="uppercase font-bold text-xs text-gray-900 dark:text-white tracking-wide">
+            Back
+          </Text>
+        </Button>
+        <Button
+          className="items-end btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          type="submit">
+          <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
+            Send
+          </Text>
+        </Button>
+      </Flex>
     </form>
   );
 };

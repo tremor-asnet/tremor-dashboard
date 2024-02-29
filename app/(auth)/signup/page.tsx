@@ -27,9 +27,6 @@ import { FaCheckCircle } from "react-icons/fa";
 // Hooks
 import { useToast } from "@/hooks/useToastMessage";
 
-//Styles
-import "@/styles/form.css";
-
 const SignUp = () => {
   const {
     control,

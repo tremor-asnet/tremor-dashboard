@@ -107,4 +107,17 @@
   .switch input {
     @apply hidden;
   }
+
+  button.shadow-tremor-input {
+    @apply shadow-btn-primary;
+  }
+
+  button.shadow-tremor-input:hover {
+    @apply shadow-btn-primary-hover;
+  }
+
+  button.shadow-tremor-input.box-shadow-transparent,
+  button.shadow-tremor-input.box-shadow-transparent:hover {
+    @apply shadow-transparent;
+  }
 }

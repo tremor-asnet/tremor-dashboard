@@ -33,7 +33,7 @@ export const InvoiceFooter = () => {
       <Button
         className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white print:hidden"
         onClick={handlePrintInvoice}>
-        <Text className="uppercase font-bold text-xs text-white dark:text-white">
+        <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
           print
         </Text>
       </Button>

@@ -41,8 +41,8 @@ const Invoices = ({ invoices }: InvoicesProps) => {
     <div className="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md w-full min-h-[234px]">
       <div className="text-[#344767] dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
-        <button className="text-xs font-semibold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md">
-          VIEW ALL
+        <button className="uppercase text-xs font-bold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md tracking-wide">
+          view all
         </button>
       </div>
       <ul className="flex flex-col gap-2 mt-6 hidden xl:block">

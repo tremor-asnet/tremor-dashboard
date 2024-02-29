@@ -14,9 +14,9 @@ exports[`Invoices Testing should match snapshot 1`] = `
         Invoices
       </h3>
       <button
-        class="text-xs font-semibold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md"
+        class="uppercase text-xs font-bold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md tracking-wide"
       >
-        VIEW ALL
+        view all
       </button>
     </div>
     <ul

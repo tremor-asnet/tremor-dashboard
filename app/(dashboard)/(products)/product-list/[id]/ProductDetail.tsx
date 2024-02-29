@@ -31,7 +31,7 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
         <ProductInfoDetail product={productData} />
         <Link
           href={`${ROUTES.PRODUCT_LIST}/${id}/edit-product`}
-          className="rounded-lg uppercase font-bold text-xs text-white dark:text-white dark:bg-gradient-pickled py-3 px-5 mt-8 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white w-full lg:w-auto text-center">
+          className="rounded-lg uppercase font-bold text-xs text-white dark:text-white dark:bg-gradient-pickled py-3 px-5 mt-8 bg-gradient-primary shadow-btn-primary hover:shadow-btn-primary-hover hover:dark:bg-gradient-pickled border-none dark:text-white w-full lg:w-auto text-center  tracking-wide">
           Edit Product
         </Link>
       </Flex>

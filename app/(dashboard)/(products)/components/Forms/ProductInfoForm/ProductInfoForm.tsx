@@ -53,9 +53,9 @@ const ProductInfoForm = ({
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <Button
-          className="float-right btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary !shadow-btn-primary hover:!shadow-btn-primary-hover hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          className="float-right btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
           type="submit">
-          <Text className="uppercase font-bold text-xs text-white dark:text-white">
+          <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
             Next
           </Text>
         </Button>

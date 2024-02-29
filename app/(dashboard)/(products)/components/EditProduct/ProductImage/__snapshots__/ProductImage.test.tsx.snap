@@ -34,7 +34,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row items-center justify-center -mt-16"
             >
               <div
-                class="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]"
+                class="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 shadow-btn-primary hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]"
               >
                 <label
                   class="uppercase text-xs font-bold text-white uppercase mx-2 cursor-pointer"
@@ -48,7 +48,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </label>
               </div>
               <button
-                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 box-shadow-transparent"
                 type="button"
               >
                 <span
@@ -107,7 +107,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row items-center justify-center -mt-16"
           >
             <div
-              class="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]"
+              class="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 shadow-btn-primary hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]"
             >
               <label
                 class="uppercase text-xs font-bold text-white uppercase mx-2 cursor-pointer"
@@ -121,7 +121,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </label>
             </div>
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 box-shadow-transparent"
               type="button"
             >
               <span

@@ -150,6 +150,8 @@ export const backgroundImage = {
   "gradient-item-page": "linear-gradient(195deg, #42424a, #191919)",
   "gradient-select":
     "linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
+  "gradient-btn-back":
+    "linear-gradient(195deg, rgb(235, 239, 244), rgb(206, 212, 218))",
 
   //TODO: Will update when implement light/dark themes
   // light mode

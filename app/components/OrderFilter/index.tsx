@@ -66,9 +66,9 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         icon={RiArrowDropDownLine}
         iconPosition="right"
         variant="secondary"
-        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg hover:!shadow-btn-primary-hover dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
+        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
         onClick={handleClickFilter}>
-        <Text className="uppercase text-xs text-inherit dark:text-inherit">
+        <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
           {title}
         </Text>
       </Button>

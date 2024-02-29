@@ -72,14 +72,10 @@ const SignIn = () => {
   };
 
   return (
-<<<<<<< ca6e761aacf6e319674a8503f44fa012863645f8
     <form
       noValidate
       onSubmit={handleSubmit(handleSignIn)}
       className="w-full sm:p-3 sign-in">
-=======
-    <form onSubmit={handleSubmit(handleSignIn)} className="w-full p-2 sign-in">
->>>>>>> 8df9063f0ffce502037f4941979c3ac40311b08b
       {isDisableSubmit && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}

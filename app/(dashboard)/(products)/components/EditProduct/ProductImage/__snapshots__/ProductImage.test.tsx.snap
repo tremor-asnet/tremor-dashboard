@@ -12,7 +12,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all"
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all z-10"
           >
             <img
               alt="Minimal Bar Stool 3"
@@ -48,18 +48,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
                 </label>
               </div>
               <button
-                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
+                class="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50 "
                 type="button"
               >
-                <span
-                  class="tremor-Button-text text-sm whitespace-nowrap"
+                <p
+                  class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
                 >
-                  <p
-                    class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
-                  >
-                    Remove
-                  </p>
-                </span>
+                  Remove
+                </p>
               </button>
             </div>
             <p
@@ -85,7 +81,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all z-10"
         >
           <img
             alt="Minimal Bar Stool 3"
@@ -121,18 +117,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               </label>
             </div>
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
+              class="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50 "
               type="button"
             >
-              <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+              <p
+                class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
               >
-                <p
-                  class="text-tremor-default py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2"
-                >
-                  Remove
-                </p>
-              </span>
+                Remove
+              </p>
             </button>
           </div>
           <p

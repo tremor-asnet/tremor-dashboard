@@ -1,19 +1,23 @@
 import { ChangeEvent } from "react";
 
 // Components
-import { CustomImage } from "@/components";
-import { Title, Text, Flex, Card, Button } from "@tremor/react";
+import { CustomImage, LoadingIndicator } from "@/components";
+import { Title, Text, Flex, Card } from "@tremor/react";
 
 const ProductImage = ({
   name,
   desc,
   image,
+  disabled = false,
   onRemoveImage,
   onUpload,
+  isUpload = false,
 }: {
   name: string;
   desc: string;
   image: string;
+  disabled?: boolean;
+  isUpload?: boolean;
   onRemoveImage: () => void;
   onUpload: (file: File) => void;
 }): JSX.Element => {
@@ -26,14 +30,25 @@ const ProductImage = ({
   return (
     <Card className="w-full bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 border-none ring-0 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info">
       <Flex className="justify-start flex-col items-start -mt-10">
-        <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all">
-          <CustomImage
-            className="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
-            src={image}
-            width={800}
-            height={500}
-            alt={name}
-          />
+        <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all z-10">
+          {isUpload ? (
+            <div className="w-full h-[500px] rounded-lg bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center">
+              <LoadingIndicator
+                width={5}
+                height={5}
+                fillColor="river-bed-500"
+              />
+              <span className="mt-3 dark:text-white">Loading...</span>
+            </div>
+          ) : (
+            <CustomImage
+              className="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+              src={image}
+              width={800}
+              height={500}
+              alt={name}
+            />
+          )}
         </Flex>
         <Flex className="flex-col pt-7 px-2">
           <Flex className="justify-center -mt-16">
@@ -49,14 +64,15 @@ const ProductImage = ({
               </label>
             </div>
 
-            <Button
+            <button
               type="button"
-              className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2"
-              onClick={onRemoveImage}>
+              className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50 "
+              onClick={onRemoveImage}
+              disabled={disabled}>
               <Text className="py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2">
                 Remove
               </Text>
-            </Button>
+            </button>
           </Flex>
 
           <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">

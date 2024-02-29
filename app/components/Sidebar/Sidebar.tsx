@@ -19,7 +19,7 @@ import {
 } from "@tremor/react";
 
 // Components
-import { Avatar, LoadingIndicator, CustomImage } from "@/components";
+import { Avatar, CustomImage } from "@/components";
 
 // Constants
 import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
@@ -113,7 +113,7 @@ const SideBar = ({
           </Flex>
         </Link>
         <div className="h-px bg-gradient-divider my-4 opacity-25" />
-        <AccordionList>
+        <AccordionList className="bg-transparent shadow-none border-0">
           <Accordion className="bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md">
             <AccordionHeader
               className={`min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 ${

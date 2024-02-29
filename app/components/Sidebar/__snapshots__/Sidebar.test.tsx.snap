@@ -57,7 +57,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
           class="h-px bg-gradient-divider my-4 opacity-25"
         />
         <div
-          class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card"
+          class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card bg-transparent shadow-none border-0"
         >
           <div
             class="tremor-Accordion-root overflow-hidden border-tremor-border dark:border-dark-tremor-border rounded-t-tremor-default bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md"
@@ -276,7 +276,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         class="h-px bg-gradient-divider my-4 opacity-25"
       />
       <div
-        class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card"
+        class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card bg-transparent shadow-none border-0"
       >
         <div
           class="tremor-Accordion-root overflow-hidden border-tremor-border dark:border-dark-tremor-border rounded-t-tremor-default bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md"

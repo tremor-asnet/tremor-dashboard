@@ -3,9 +3,9 @@
 // Libs
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
+import Link from "next/link";
 
 // Components
-import Link from "next/link";
 import { TextInput, Button, Flex, Switch, Text } from "@tremor/react";
 import { LoadingIndicator } from "@/components";
 

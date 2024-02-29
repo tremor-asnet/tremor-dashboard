@@ -3,10 +3,10 @@ import Link from "next/link";
 import { MdPictureAsPdf } from "react-icons/md";
 
 // Constants
-import { ROUTES, SEPARATOR } from "@/constants";
+import { CURRENCY, ROUTES, SEPARATOR } from "@/constants";
 
 // Helpers
-import { formatNewDate } from "@/helpers";
+import { formatNewDate, moneyFormat } from "@/helpers";
 
 interface InvoiceItemProps {
   id: number;
@@ -26,7 +26,12 @@ const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
       </p>
     </div>
     <div className="flex gap-6 items-center">
-      <p className="text-sm text-secondary">&#36;{price}</p>
+      <p className="text-sm text-secondary">
+        {moneyFormat({
+          value: price,
+          currency: CURRENCY.DOLLAR,
+        })}
+      </p>
       <Link
         className="flex gap-1 items-center text-primary dark:text-white font-semibold"
         href={`${ROUTES.INVOICE_LIST}/${id}`}>

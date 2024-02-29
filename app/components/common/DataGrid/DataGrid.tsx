@@ -20,6 +20,9 @@ import { useEffect, useMemo, useState } from "react";
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
 
+// Constants
+import { ROUTES } from "@/constants";
+
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
@@ -54,6 +57,8 @@ const DataGrid = <T,>({
   const [loading, setLoading] = useState(false);
 
   const [tableData, handleSorting] = useSortableTable<T>(data);
+
+  const loadingTableInvoice = pathname.includes(ROUTES.INVOICE_LIST);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
@@ -99,7 +104,8 @@ const DataGrid = <T,>({
     }, 100);
   }, [filterBy, keyword, currentPage, pageSize]);
 
-  if (loading) {
+  // Do not show loading in table invoice
+  if (loading && !loadingTableInvoice) {
     return (
       <LoadingIndicator
         additionalClass="min-h-[500px] flex justify-center items-center"

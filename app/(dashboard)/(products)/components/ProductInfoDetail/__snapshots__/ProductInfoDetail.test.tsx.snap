@@ -99,7 +99,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
             data-testid="total-price"
           >
-            $1,419
+            $1,419.00
           </div>
         </div>
         <p
@@ -241,7 +241,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price"
         >
-          $1,419
+          $1,419.00
         </div>
       </div>
       <p

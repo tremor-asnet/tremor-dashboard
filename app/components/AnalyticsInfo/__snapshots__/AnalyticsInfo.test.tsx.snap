@@ -97,7 +97,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               <p
                 class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
               >
-                $899
+                $899.00
                 /night
               </p>
             </div>
@@ -236,7 +236,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             <p
               class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
             >
-              $899
+              $899.00
               /night
             </p>
           </div>
@@ -429,7 +429,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           <p
             class="text-tremor-content flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center"
           >
-            $899
+            $899.00
             /night
           </p>
         </div>

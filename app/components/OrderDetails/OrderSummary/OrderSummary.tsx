@@ -7,7 +7,7 @@ import { OrderSummaryData } from "@/types";
 import { CURRENCY } from "@/constants";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 export const OrderSummary = (monies: OrderSummaryData) => {
   const { productPrice, delivery, taxes } = monies;
@@ -38,10 +38,9 @@ export const OrderSummary = (monies: OrderSummaryData) => {
                   className="font-semibold mb-2"
                   key={`${item}`}
                   data-testid={`${item}`}>
-                  {formattedNumber({
+                  {moneyFormat({
                     value: money,
                     currency: CURRENCY.DOLLAR,
-                    isDecimalNumber: true,
                   })}
                 </p>
               );
@@ -55,7 +54,7 @@ export const OrderSummary = (monies: OrderSummaryData) => {
           <Flex
             className="flex-col items-end text-xl font-semibold text-primary dark:text-white"
             data-testid="total-price">
-            {formattedNumber({
+            {moneyFormat({
               value: totalPayment,
               currency: CURRENCY.DOLLAR,
             })}

@@ -8,7 +8,7 @@ import { Text } from "@tremor/react";
 import { TInvoiceDetail, ColumnType } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -51,7 +51,7 @@ export const TableInvoice = ({
       customNode: (_, { price }) => (
         <div>
           <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
-            {formattedNumber({
+            {moneyFormat({
               value: price,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
@@ -70,7 +70,7 @@ export const TableInvoice = ({
       customNode: (_, { price, quantity }) => (
         <div>
           <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
-            {formattedNumber({
+            {moneyFormat({
               value: price * quantity,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
@@ -79,7 +79,7 @@ export const TableInvoice = ({
           <Text
             className="total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
             data-testid="total-price">
-            {formattedNumber({
+            {moneyFormat({
               value: totalCost,
               currency: CURRENCY.DOLLAR,
             })}

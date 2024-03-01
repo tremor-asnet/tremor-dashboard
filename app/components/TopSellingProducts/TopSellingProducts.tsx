@@ -24,7 +24,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { TopSellingProductsData } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { formattedNumber, moneyFormat } from "@/helpers";
 
 export interface TopSellingProductsProps {
   title: string;
@@ -102,10 +102,9 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                 <TableCell className="px-6 py-3">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value">
                     <span>
-                      {formattedNumber({
+                      {moneyFormat({
                         value,
                         currency: CURRENCY.DOLLAR,
-                        isDecimalNumber: true,
                       })}
                     </span>
                   </Text>
@@ -113,10 +112,9 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                 <TableCell className="px-6 py-3 text-center">
                   <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent">
                     <span>
-                      {formattedNumber({
-                        value: adsSpent,
+                      {moneyFormat({
+                        value,
                         currency: CURRENCY.DOLLAR,
-                        isDecimalNumber: true,
                       })}
                     </span>
                   </Text>

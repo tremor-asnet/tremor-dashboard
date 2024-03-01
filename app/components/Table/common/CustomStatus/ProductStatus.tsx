@@ -31,10 +31,10 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
     case 2:
       return (
         <Button
-          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-primary dark:border-white mr-2 text-tremor-content-title hover:text-tremor-content-title"
+          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-primary dark:border-primary mr-2 text-tremor-content-title hover:text-tremor-content-title"
           variant="light"
           onClick={() => {}}>
-          <MdReplay className="text-xs text-primary dark:text-dark-romance" />
+          <MdReplay className="text-xs text-primary dark:text-primary" />
         </Button>
       );
     default:

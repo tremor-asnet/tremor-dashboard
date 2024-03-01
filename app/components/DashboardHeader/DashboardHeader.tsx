@@ -57,7 +57,7 @@ const DashboardHeader = ({
   }, []);
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll = isScrolled
-    ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
+    ? `sticky top-0 py-4 sm:py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
     : `${stickyTransition}`;
 
   const activeIconColor = isScrolled

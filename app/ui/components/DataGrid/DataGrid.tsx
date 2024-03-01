@@ -4,7 +4,13 @@ import { Card, Table } from "@tremor/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
-import { Pagination, DataGridHeader, DataGridBody } from "@/components";
+
+import {
+  DataGridBody,
+  DataGridHeader,
+  LoadingIndicator,
+  Pagination,
+} from "@/ui/components";
 
 // Types
 import { ColumnType } from "@/types";
@@ -14,7 +20,6 @@ import { useEffect, useMemo, useState } from "react";
 
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
-import { LoadingIndicator } from "@/ui/components";
 
 interface DataTableProps<T> {
   data: T[];

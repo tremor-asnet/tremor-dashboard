@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import { DataGrid } from "@/components";
+import { DataGrid } from "@/ui/components";
 import { Text } from "@tremor/react";
 
 // Types

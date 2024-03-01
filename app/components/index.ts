@@ -26,12 +26,8 @@ export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContac
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
-export { default as Pagination } from "./common/Pagination";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
-export { default as DataGrid } from "./common/DataGrid/DataGrid";
-export { default as DataGridHeader } from "./common/DataGrid/DataGridHeader/DataGridHeader";
-export { default as DataGridBody } from "./common/DataGrid/DataGridBody/DataGridBody";
 export { default as StarRating } from "./common/StarRating/StarRating";
 export { default as SelectField } from "./common/SelectField/SelectField";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";

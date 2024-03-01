@@ -8,7 +8,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
       <p
         class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
       >
-        Platform Setting
+        Platform Settings
       </p>
       <div
         class="tremor-Flex-root flex w-full justify-between flex-col items-start"
@@ -288,7 +288,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
     <p
       class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
     >
-      Platform Setting
+      Platform Settings
     </p>
     <div
       class="tremor-Flex-root flex w-full justify-between flex-col items-start"

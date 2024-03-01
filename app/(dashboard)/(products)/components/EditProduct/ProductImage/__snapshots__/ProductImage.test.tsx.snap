@@ -16,7 +16,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           >
             <img
               alt="Minimal Bar Stool 3"
-              class="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+              class="relative w-full h-52 md:h-80 rounded-xl rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
               data-nimg="1"
               decoding="async"
               height="500"
@@ -85,7 +85,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
         >
           <img
             alt="Minimal Bar Stool 3"
-            class="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+            class="relative w-full h-52 md:h-80 rounded-xl rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
             data-nimg="1"
             decoding="async"
             height="500"

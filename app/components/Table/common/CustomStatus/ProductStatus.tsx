@@ -4,7 +4,11 @@ import { Button } from "@tremor/react";
 // Icons
 import { MdDone, MdReplay, MdClose } from "react-icons/md";
 
-export const ProductStatus = (status: number) => {
+interface ProductStatusProps {
+  status: number;
+}
+
+export const ProductStatus = ({ status }: ProductStatusProps) => {
   switch (status) {
     case 0:
       return (

@@ -32,7 +32,7 @@ const ProductImage = ({
       <Flex className="justify-start flex-col items-start -mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all z-10">
           {isUpload ? (
-            <div className="w-full h-[500px] rounded-lg bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center">
+            <div className="w-full h-52 md:h-80 rounded-lg bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center">
               <LoadingIndicator
                 width={5}
                 height={5}
@@ -42,7 +42,7 @@ const ProductImage = ({
             </div>
           ) : (
             <CustomImage
-              className="relative w-full rounded-xl h-[500px] rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
+              className="relative w-full h-52 md:h-80 rounded-xl rounded-xl shadow-lg z-10 object-cover  shadow-[0rem_0.3125rem_0.625rem_0rem_rgba(0,0,0,0.12)]"
               src={image}
               width={800}
               height={500}

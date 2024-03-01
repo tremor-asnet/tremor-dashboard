@@ -6,3 +6,4 @@ export { default as Pagination } from "./Pagination";
 export { default as DataGrid } from "./DataGrid/DataGrid";
 export { default as DataGridHeader } from "./DataGrid/DataGridHeader/DataGridHeader";
 export { default as DataGridBody } from "./DataGrid/DataGridBody/DataGridBody";
+export { default as SelectField } from "./SelectField/SelectField";

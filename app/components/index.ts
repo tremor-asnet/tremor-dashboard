@@ -29,5 +29,4 @@ export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
 export { default as StarRating } from "./common/StarRating/StarRating";
-export { default as SelectField } from "./common/SelectField/SelectField";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";

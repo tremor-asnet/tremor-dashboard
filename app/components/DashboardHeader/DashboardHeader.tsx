@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Components
-import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import { Breadcrumb } from "@/ui/components";
 
 // Icons
 import { MdMenu, MdMenuOpen, MdNotifications } from "react-icons/md";

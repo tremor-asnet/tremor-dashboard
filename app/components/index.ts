@@ -12,7 +12,6 @@ export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
 export { default as CustomImage } from "./CustomImage/CustomImage";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
-export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
 export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as SideBar } from "./Sidebar/Sidebar";
 export { default as SalesRevenueChart } from "./SalesRevenueChart/SalesRevenueChart";

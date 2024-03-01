@@ -6,7 +6,8 @@ import { KeyboardEvent } from "react";
 
 // Components
 import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
-import { SelectField, InputField } from "@/components";
+import { SelectField } from "@/components";
+import { InputField } from "@/ui/components";
 
 // Types
 import { SelectOptionData } from "@/types";

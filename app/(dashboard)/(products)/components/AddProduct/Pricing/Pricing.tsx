@@ -4,7 +4,8 @@ import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
-import { SelectField, InputField } from "@/components";
+import { SelectField } from "@/components";
+import { InputField } from "@/ui/components";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";

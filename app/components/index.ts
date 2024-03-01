@@ -34,5 +34,4 @@ export { default as DataGridHeader } from "./common/DataGrid/DataGridHeader/Data
 export { default as DataGridBody } from "./common/DataGrid/DataGridBody/DataGridBody";
 export { default as StarRating } from "./common/StarRating/StarRating";
 export { default as SelectField } from "./common/SelectField/SelectField";
-export { default as InputField } from "./common/InputField/InputField";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";

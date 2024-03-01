@@ -7,7 +7,8 @@ import { KeyboardEvent } from "react";
 
 // Components
 import { Text } from "@tremor/react";
-import { InputField, SelectField } from "@/components";
+import { SelectField } from "@/components";
+import { InputField } from "@/ui/components";
 
 // Constants
 import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";

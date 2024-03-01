@@ -1,10 +1,10 @@
 // Libs
-import { MultiSelect, MultiSelectItem, Text } from "@tremor/react";
+import { MultiSelect, MultiSelectItem } from "@tremor/react";
 import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
-import { SelectField, InputField } from "@/components";
+import { InputField, SelectField } from "@/ui/components";
 
 // Constants
 import { TAGS_PRICE, TYPE_PRICE } from "@/constants";

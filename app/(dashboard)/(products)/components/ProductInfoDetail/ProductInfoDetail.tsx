@@ -1,7 +1,7 @@
 // Components
 
+import { InputField, StarRating } from "@/ui/components";
 import { Text, Flex } from "@tremor/react";
-import { StarRating, InputField } from "@/components";
 
 // Constants
 import { CURRENCY } from "@/constants";

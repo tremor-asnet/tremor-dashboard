@@ -1,5 +1,5 @@
 // Components
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/ui/components";
 
 interface CustomAvatarNameProps {
   avatar?: string;

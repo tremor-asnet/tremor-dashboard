@@ -7,10 +7,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 // Components
-import { CheckBox, Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/components";
-
+import { LoadingIndicator, Checkbox, Toast } from "@/ui/components";
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 
@@ -208,11 +206,11 @@ const SignUp = () => {
           </p>
         )}
         <div className="flex items-center space-x-3 pt-3">
-          <CheckBox
+          <Checkbox
+            onChange={handleCheckBox}
             checked={checked}
-            handleCheckBox={handleCheckBox}
             tabIndex={2}
-            isDisable={isStatusPending}
+            disabled={isStatusPending}
           />
           <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
             I agree the{" "}

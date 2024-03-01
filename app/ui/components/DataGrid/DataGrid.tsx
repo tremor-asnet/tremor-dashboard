@@ -4,12 +4,13 @@ import { Card, Table } from "@tremor/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
+
 import {
-  Pagination,
-  DataGridHeader,
   DataGridBody,
+  DataGridHeader,
   LoadingIndicator,
-} from "@/components";
+  Pagination,
+} from "@/ui/components";
 
 // Types
 import { ColumnType } from "@/types";

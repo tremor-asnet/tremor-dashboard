@@ -1,5 +1,4 @@
 export { default as Avatar } from "./Avatar/Avatar";
-export { default as CheckBox } from "./Checkbox/Checkbox";
 export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
@@ -28,7 +27,6 @@ export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as Pagination } from "./common/Pagination";
-export { default as Checkbox } from "./common/Checkbox";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
 export { default as DataGrid } from "./common/DataGrid/DataGrid";

@@ -7,11 +7,7 @@ import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Button, Col, Grid, Text } from "@tremor/react";
-import { LoadingIndicator, Toast } from "@/components";
-import { FaCheckCircle } from "react-icons/fa";
-import { TbExclamationMark } from "react-icons/tb";
-import { RxCross2 } from "react-icons/rx";
-
+import { LoadingIndicator, Toast } from "@/ui/components";
 import ProductImage from "../EditProduct/ProductImage/ProductImage";
 const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
 const ProductInfo = dynamic(
@@ -20,6 +16,11 @@ const ProductInfo = dynamic(
 const PricingInfo = dynamic(
   () => import("../EditProduct/ProductPricing/PricingInfo"),
 );
+
+// Icons
+import { FaCheckCircle } from "react-icons/fa";
+import { TbExclamationMark } from "react-icons/tb";
+import { RxCross2 } from "react-icons/rx";
 
 // Services
 import { editProduct } from "@/services";

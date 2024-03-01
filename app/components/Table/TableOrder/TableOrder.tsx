@@ -10,7 +10,7 @@ import {
   CustomStatus,
   CustomQuantity,
 } from "@/components/Table/common";
-import { DataGrid } from "@/components";
+import { DataGrid } from "@/ui/components";
 
 //Types
 import { ColumnType, Order } from "@/types";

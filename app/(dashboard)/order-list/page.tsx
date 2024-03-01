@@ -2,12 +2,8 @@ import { Suspense } from "react";
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import {
-  InputSearch,
-  LoadingIndicator,
-  OrderFilter,
-  TableOrder,
-} from "@/components";
+import { OrderFilter, TableOrder } from "@/components";
+import { InputSearch, LoadingIndicator } from "@/ui/components";
 
 // Services
 import { getOrders } from "@/services";

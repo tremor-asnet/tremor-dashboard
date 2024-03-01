@@ -15,7 +15,7 @@ import useImageUploader from "@/hooks/useImageUploader";
 
 // Components
 import ImagePreview from "../../ImagePreview/ImagePreview";
-import { LoadingIndicator } from "@/components";
+import { LoadingIndicator } from "@/ui/components";
 import { Button, Flex, Text } from "@tremor/react";
 
 interface MediaFormProps {

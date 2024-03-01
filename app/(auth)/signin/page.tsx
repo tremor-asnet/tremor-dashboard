@@ -7,7 +7,7 @@ import Link from "next/link";
 
 // Components
 import { TextInput, Button, Flex, Switch, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/components";
+import { LoadingIndicator } from "@/ui/components";
 
 // Constants
 import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";

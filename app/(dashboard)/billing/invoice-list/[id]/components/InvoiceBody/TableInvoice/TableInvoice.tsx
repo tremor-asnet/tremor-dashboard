@@ -1,17 +1,19 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 // Components
-import { DataGrid } from "@/components";
+import { DataGrid } from "@/ui/components";
 import { Text } from "@tremor/react";
 
 // Types
 import { TInvoiceDetail, ColumnType } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
-import { CURRENCY } from "@/constants";
+import { CURRENCY, ROUTES } from "@/constants";
 
 // Styles
 import "@/styles/products.css";
@@ -23,6 +25,10 @@ export const TableInvoice = ({
   details: TInvoiceDetail[];
   totalCost: number;
 }) => {
+  const pathname = usePathname();
+
+  const isLoadingTableInvoice = pathname.includes(ROUTES.INVOICE_LIST);
+
   // Invoice Body Table Props
   const columns: ColumnType<TInvoiceDetail>[] = [
     {
@@ -51,7 +57,7 @@ export const TableInvoice = ({
       customNode: (_, { price }) => (
         <div>
           <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
-            {formattedNumber({
+            {moneyFormat({
               value: price,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
@@ -70,7 +76,7 @@ export const TableInvoice = ({
       customNode: (_, { price, quantity }) => (
         <div>
           <Text className="dark:text-lighter print:text-black dark:print:!text-secondary">
-            {formattedNumber({
+            {moneyFormat({
               value: price * quantity,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
@@ -79,7 +85,7 @@ export const TableInvoice = ({
           <Text
             className="total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
             data-testid="total-price">
-            {formattedNumber({
+            {moneyFormat({
               value: totalCost,
               currency: CURRENCY.DOLLAR,
             })}
@@ -97,6 +103,7 @@ export const TableInvoice = ({
       keyword="invoice"
       className="!shadow-none"
       hasPagination={false}
+      disableLoading={isLoadingTableInvoice}
     />
   );
 };

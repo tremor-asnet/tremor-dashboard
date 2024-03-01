@@ -4,8 +4,8 @@
 import { usePathname } from "next/navigation";
 
 // Components
-import Avatar from "@/components/Avatar/Avatar";
 import { Title, Text } from "@tremor/react";
+import { Avatar } from "@/ui/components";
 
 // Constants
 import { ROUTES } from "@/constants";

@@ -1,13 +1,16 @@
 "use client";
 
 //Libs
-import { useState } from "react";
+import { useState, RefObject } from "react";
 
 //Components
 import { Card, Text, Flex, Button } from "@tremor/react";
 
 //Types
 import { SalesStatisticData } from "@/types";
+
+// Hooks
+import { useOutsideClick } from "@/hooks";
 
 //Constants
 import {
@@ -18,7 +21,7 @@ import {
 } from "@/constants";
 
 // Helpers
-import { formatAdjustNumber, formattedNumber } from "@/helpers";
+import { formatAdjustNumber, formattedNumber, moneyFormat } from "@/helpers";
 
 interface SalesStatisticProp {
   statisticsData: SalesStatisticData;
@@ -33,6 +36,10 @@ const SalesStatisticCard = ({
   const [currentSalesDate, setCurrentSalesDate] = useState("6 May - 7 May");
   const openActionSalesDate = isOpenAction;
 
+  const salesCardRef = useOutsideClick(() => {
+    setOpenAction(false);
+  });
+
   const handleSelectSalesDate = (labelDate: string) => {
     setOpenAction(false);
     setCurrentSalesDate(labelDate);
@@ -44,7 +51,7 @@ const SalesStatisticCard = ({
 
   const formattedAmount =
     {
-      [SALES_STATISTIC_TYPE.SALES]: formattedNumber({
+      [SALES_STATISTIC_TYPE.SALES]: moneyFormat({
         value: amount,
         currency: CURRENCY.DOLLAR,
       }),
@@ -52,10 +59,9 @@ const SalesStatisticCard = ({
         value: amount,
         isDecimalNumber: true,
       }),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formattedNumber({
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: moneyFormat({
         value: amount,
         currency: CURRENCY.DOLLAR,
-        isDecimalNumber: true,
       }),
     }[type] || "";
 
@@ -84,7 +90,9 @@ const SalesStatisticCard = ({
       : "text-few";
 
   return (
-    <Card className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+    <Card
+      ref={salesCardRef as RefObject<HTMLDivElement>}
+      className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
         <Flex className="flex-col w-2/3 md:w-1/2">
           <Flex className="flex-col justify-start items-start">

@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in translate-x-0 xl:w-[100px] delay-10 duration-300"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+        >
+          <div
+            class="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 256 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+              />
+            </svg>
+          </div>
+        </div>
+        <a
+          href="/analytics"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
+          >
+            <img
+              alt="Tremor Dashboard"
+              data-nimg="1"
+              decoding="async"
+              height="28"
+              loading="lazy"
+              src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="28"
+            />
+            <p
+              class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
+            >
+              Tremor Dashboard PRO
+            </p>
+          </div>
+        </a>
+        <div
+          class="h-px bg-gradient-divider my-4 opacity-25"
+        />
+        <div
+          class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card bg-transparent shadow-none border-0"
+        >
+          <div
+            class="tremor-Accordion-root overflow-hidden border-tremor-border dark:border-dark-tremor-border rounded-t-tremor-default bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md"
+            data-headlessui-state=""
+          >
+            <button
+              aria-expanded="false"
+              class="tremor-AccordionHeader-root w-full items-center justify-between dark:text-dark-tremor-content-emphasis px-4 min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
+              data-headlessui-state=""
+              id="headlessui-disclosure-button-:r0:"
+              type="button"
+            >
+              <div
+                class="tremor-AccordionHeader-children flex flex-1 text-inherit mr-4"
+              >
+                <div
+                  class="inline-flex rounded-full overflow-hidden flex items-center justify-center"
+                >
+                  <img
+                    alt="Avatar small"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="36"
+                    src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
+                    style="color: transparent;"
+                    width="36"
+                  />
+                </div>
+                <p
+                  class="text-tremor-default leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] xl:hidden"
+                >
+                  Brooklyn Alice
+                </p>
+              </div>
+              <div>
+                <svg
+                  class="tremor-AccordionHeader-arrowIcon text-tremor-content-subtle dark:text-dark-tremor-content-subtle -mr-1 h-4 w-4 transition-all -rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15l7-7 7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          class="h-px bg-gradient-divider my-4 opacity-25"
+        />
+        <ul>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/analytics"
+            >
+              <span
+                class="w-5"
+              >
+                AN
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Analytics
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/sales"
+            >
+              <span
+                class="w-5"
+              >
+                S
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Sales
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center bg-primary hover:!bg-primary !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/all-projects"
+            >
+              <span
+                class="w-5"
+              >
+                A
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                All Projects
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/order-list"
+            >
+              <span
+                class="w-5"
+              >
+                O
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Order List
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/product-list"
+            >
+              <span
+                class="w-5"
+              >
+                P
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Product List
+              </span>
+            </a>
+          </li>
+          <li
+            class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+          >
+            <a
+              class="font-normal w-full py-3 px-7 xl:justify-center"
+              href="/billing"
+            >
+              <span
+                class="w-5"
+              >
+                B
+              </span>
+              <span
+                class="xl:hidden pl-2"
+              >
+                Billing
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in translate-x-0 xl:w-[100px] delay-10 duration-300"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+      >
+        <div
+          class="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 256 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        href="/analytics"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row items-center justify-normal pl-5 gap-1 pb-2 flex-nowrap relative"
+        >
+          <img
+            alt="Tremor Dashboard"
+            data-nimg="1"
+            decoding="async"
+            height="28"
+            loading="lazy"
+            src="http://localhost/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75"
+            srcset="/_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=32&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fsidebar-logo.webp&w=64&q=75 2x"
+            style="color: transparent;"
+            width="28"
+          />
+          <p
+            class="font-semibold dark:text-dark-tremor-content-emphasis text-white text-tremor-default min-w-[200px] flex flex-nowrap xl:hidden delay-300 duration-500"
+          >
+            Tremor Dashboard PRO
+          </p>
+        </div>
+      </a>
+      <div
+        class="h-px bg-gradient-divider my-4 opacity-25"
+      />
+      <div
+        class="tremor-AccordionList-root rounded-tremor-default shadow-tremor-card dark:shadow-dark-tremor-card bg-transparent shadow-none border-0"
+      >
+        <div
+          class="tremor-Accordion-root overflow-hidden border-tremor-border dark:border-dark-tremor-border rounded-t-tremor-default bg-inherit dark:bg-none dark:bg-dark-gradient-primary border-0 rounded-md"
+          data-headlessui-state=""
+        >
+          <button
+            aria-expanded="false"
+            class="tremor-AccordionHeader-root w-full items-center justify-between dark:text-dark-tremor-content-emphasis px-4 min-w-[210px] flex text-[rgba(255,255,255,0.5)] py-2 xl:w-[200%]"
+            data-headlessui-state=""
+            id="headlessui-disclosure-button-:r0:"
+            type="button"
+          >
+            <div
+              class="tremor-AccordionHeader-children flex flex-1 text-inherit mr-4"
+            >
+              <div
+                class="inline-flex rounded-full overflow-hidden flex items-center justify-center"
+              >
+                <img
+                  alt="Avatar small"
+                  data-nimg="1"
+                  decoding="async"
+                  fetchpriority="high"
+                  height="36"
+                  src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75"
+                  srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=48&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-sm.webp&w=96&q=75 2x"
+                  style="color: transparent;"
+                  width="36"
+                />
+              </div>
+              <p
+                class="text-tremor-default leading-0 dark:text-dark-primary min-w-[100px] flex flex-nowrap text-white self-center ml-[7px] xl:hidden"
+              >
+                Brooklyn Alice
+              </p>
+            </div>
+            <div>
+              <svg
+                class="tremor-AccordionHeader-arrowIcon text-tremor-content-subtle dark:text-dark-tremor-content-subtle -mr-1 h-4 w-4 transition-all -rotate-180"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 15l7-7 7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="h-px bg-gradient-divider my-4 opacity-25"
+      />
+      <ul>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/analytics"
+          >
+            <span
+              class="w-5"
+            >
+              AN
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Analytics
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/sales"
+          >
+            <span
+              class="w-5"
+            >
+              S
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Sales
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center bg-primary hover:!bg-primary !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/all-projects"
+          >
+            <span
+              class="w-5"
+            >
+              A
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              All Projects
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/order-list"
+          >
+            <span
+              class="w-5"
+            >
+              O
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Order List
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/product-list"
+          >
+            <span
+              class="w-5"
+            >
+              P
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Product List
+            </span>
+          </a>
+        </li>
+        <li
+          class="tremor-ListItem-root w-full flex justify-between items-center truncate text-tremor-default !p-0 leading-[26px] rounded-md my-[3px] text-center hover:bg-none !p-0 leading-[26px] mt-1 rounded-md transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20"
+        >
+          <a
+            class="font-normal w-full py-3 px-7 xl:justify-center"
+            href="/billing"
+          >
+            <span
+              class="w-5"
+            >
+              B
+            </span>
+            <span
+              class="xl:hidden pl-2"
+            >
+              Billing
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

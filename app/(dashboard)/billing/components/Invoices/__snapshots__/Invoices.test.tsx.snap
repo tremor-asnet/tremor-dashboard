@@ -46,8 +46,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -98,8 +97,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -154,8 +152,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -206,8 +203,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -258,8 +254,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -310,8 +305,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"
@@ -362,8 +356,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           <p
             class="text-sm text-secondary"
           >
-            $
-            180
+            $180.00
           </p>
           <a
             class="flex gap-1 items-center text-primary dark:text-white font-semibold"

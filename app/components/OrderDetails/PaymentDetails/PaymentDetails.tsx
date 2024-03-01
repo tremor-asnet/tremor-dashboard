@@ -6,7 +6,7 @@ import { Flex } from "@tremor/react";
 import Image from "next/image";
 
 // Components
-import { Popover } from "@/components";
+import { Popover } from "@/ui/components";
 
 const PaymentDetails = ({ cardLast4Digit }: { cardLast4Digit: string }) => {
   return (

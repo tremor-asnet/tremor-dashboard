@@ -5,13 +5,13 @@ import { MdEdit, MdRefresh } from "react-icons/md";
 import { PiMapPinFill } from "react-icons/pi";
 
 // Components
-import { CustomImage, Popover } from "@/components";
+import { CustomImage, Popover } from "@/ui/components";
 
 //Types
 import { AnalyticsInfoData } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -52,10 +52,9 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
         <Flex className="p-2 pt-0">
           <Flex>
             <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
-              {formattedNumber({
+              {moneyFormat({
                 value: price,
                 currency: CURRENCY.DOLLAR,
-                isDecimalNumber: true,
               })}
               /night
             </Text>

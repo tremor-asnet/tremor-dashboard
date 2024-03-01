@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Event, RevenueChartData } from "@/types";
 
 // Components
-import { Popover } from "@/components";
+import { Popover } from "@/ui/components";
 
 //Styles
 import "@/styles/sales.css";

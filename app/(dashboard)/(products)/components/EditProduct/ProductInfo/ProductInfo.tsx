@@ -8,7 +8,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Text, Flex, Card } from "@tremor/react";
-import { SelectField, InputField } from "@/components";
+import { InputField, SelectField } from "@/ui/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
@@ -74,7 +74,7 @@ const ProductInfo = () => {
             control={control}
             render={({ field }) => (
               <div className="w-full">
-                <Text className="text-gray-500 text-sm dark:text-gray-400">
+                <Text className="text-secondary text-sm dark:text-lighter">
                   Description <span className="text-xs">(optional)</span>
                 </Text>
                 <QuillEditor

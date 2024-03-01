@@ -1,7 +1,7 @@
 // Components
 
+import { InputField, StarRating } from "@/ui/components";
 import { Text, Flex } from "@tremor/react";
-import { StarRating, InputField } from "@/components";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -10,7 +10,7 @@ import { CURRENCY } from "@/constants";
 import { TProductInfoDetail } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 interface ProductInfoDetailProps {
   product: TProductInfoDetail;
@@ -18,6 +18,11 @@ interface ProductInfoDetailProps {
 
 const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
   const { productName, price, quantity, description } = product;
+  const quantityValue = quantity === 0 ? "Out Of Stock" : "In Stock";
+  const quantityStyle =
+    quantity === 0
+      ? "text-white bg-red-500 dark:text-lighter"
+      : "text-fewter bg-seldom dark:text-fewter";
 
   return (
     <Flex className="antialiased font-primary flex-col items-start">
@@ -32,20 +37,24 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
         <Flex
           className="flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price">
-          {formattedNumber({
+          {moneyFormat({
             value: price,
             currency: CURRENCY.DOLLAR,
           })}
         </Flex>
       </Flex>
-      <Text className="p-2 mt-4 font-bold text-fewter bg-seldom text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase dark:text-fewter">
-        In Stock
+      <Text
+        className={`p-2 mt-4 font-bold text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase ${quantityStyle}`}>
+        {quantityValue}
       </Text>
       <Flex className="flex-col items-start mt-10">
         <Text className="text-secondary dark:text-lighter mb-4">
           Description
         </Text>
-        <div dangerouslySetInnerHTML={{ __html: description! }} />
+        <div
+          className="text-secondary dark:text-lighter"
+          dangerouslySetInnerHTML={{ __html: description! }}
+        />
       </Flex>
       <Flex className="mt-6">
         <InputField

@@ -1,6 +1,6 @@
 // Components
 import Link from "next/link";
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/ui/components";
 import { Flex } from "@tremor/react";
 import ProductInfoDetail from "../../components/ProductInfoDetail/ProductInfoDetail";
 

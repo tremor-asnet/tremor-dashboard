@@ -3,7 +3,7 @@ import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { BsExclamationLg } from "react-icons/bs";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
 import { TRANSACTION_CLASS, TRANSACTION_COLOR } from "@/constants";
@@ -13,7 +13,7 @@ export const getContentByProps = (
   type: number,
   amount: number,
 ) => {
-  const formattedAmount = formattedNumber({ value: amount });
+  const formattedAmount = moneyFormat({ value: amount });
   if (status === 0)
     return {
       color: `${TRANSACTION_COLOR.PENDING}`,

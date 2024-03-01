@@ -1,6 +1,6 @@
 // Components
 import { Button, Flex, Title, Text } from "@tremor/react";
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/ui/components";
 import Link from "next/link";
 import { orderStatus } from "@/helpers";
 
@@ -32,7 +32,7 @@ const OrderContact = ({
           />
         </div>
         <Flex flexDirection="col" alignItems="start" className="py-4">
-          <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-[26px] tracking-[0.12px] truncate max-w-[100px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] min-w-[100px]">
+          <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-6 tracking-wide truncate max-w-[200px] md:max-w-[240px] xl:max-w-xs 2xl:max-w-sm">
             {name}
           </Title>
           {orderStatus(status, date)}

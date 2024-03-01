@@ -7,7 +7,7 @@ import { Card, Text, Flex } from "@tremor/react";
 import { IconBox } from "@/components";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
 import {
@@ -57,7 +57,7 @@ const SalaryCard = ({
               </Text>
             )}
             <Text className="text-primary text-xl dark:text-lighter font-semibold">
-              {formattedNumber({
+              {moneyFormat({
                 value: value,
                 currency: currency,
               })}

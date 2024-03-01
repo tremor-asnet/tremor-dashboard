@@ -40,9 +40,9 @@ export const getCrumbName = ({
   params?: string | string[];
 }) => {
   if (ORDER_LIST_REGEX.test(path)) {
-    return `Order Details ${params && "#" + params}`;
+    return `${params && "#" + params}`;
   } else if (PRODUCT_LIST_REGEX.test(path)) {
-    return `Product Details ${params && "#" + params}`;
+    return `${params && "#" + params}`;
   } else {
     return name.replace("-", " ");
   }

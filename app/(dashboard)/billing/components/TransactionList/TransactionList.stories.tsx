@@ -18,6 +18,13 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    createdAt: { description: "Created date of transaction item" },
+    service: { description: "Service of transaction item" },
+    amount: { description: "Amount of transaction item" },
+    type: { description: "Type of transaction item" },
+    status: { description: "Status of transaction item" },
+  },
 } as Meta<typeof TransactionList>;
 
 export default meta;
@@ -25,5 +32,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <TransactionList transactions={MOCK_TRANSACTIONS} />,
+  render: () => (
+    <div className="dark:bg-dark_blue text-primary rounded-xl p-6 shadow-box-icon-default dark:shadow-main-content">
+      <TransactionList transactions={MOCK_TRANSACTIONS} />
+    </div>
+  ),
 };

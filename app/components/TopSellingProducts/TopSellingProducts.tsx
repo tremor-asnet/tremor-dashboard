@@ -15,7 +15,7 @@ import {
 import { CURRENCY, TOP_SELLING_PRODUCTS_SRC } from "@/constants";
 
 // Components
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/ui/components";
 
 // Icons
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";

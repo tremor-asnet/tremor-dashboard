@@ -4,7 +4,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Title, Flex, Card } from "@tremor/react";
-import { InputField } from "@/components";
+import { InputField } from "@/ui/components";
 
 //Styles
 import "@/styles/products.css";

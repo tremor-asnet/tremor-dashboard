@@ -2,7 +2,7 @@
 import { Controller, FieldErrors } from "react-hook-form";
 
 // Components
-import { InputField } from "@/components";
+import { InputField } from "@/ui/components";
 
 // Constants
 import { MESSAGES_ERROR, REGEX } from "@/constants";

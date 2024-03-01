@@ -1,7 +1,7 @@
 "use client";
 
 // Components
-import StatusButton from "@/components/common/StatusButton/StatusButton";
+import { StatusButton } from "@/ui/components";
 
 // Helpers
 import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";

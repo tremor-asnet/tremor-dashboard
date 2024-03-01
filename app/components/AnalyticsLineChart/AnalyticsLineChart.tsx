@@ -1,11 +1,10 @@
 "use client";
 
 //Libs
-import { useState } from "react";
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
 //Components
-import { Popover } from "@/components";
+import { Popover } from "@/ui/components";
 
 //Icons
 import { FaRegClock } from "react-icons/fa";
@@ -15,7 +14,7 @@ import "@/styles/charts.css";
 
 //Types
 import { type Color } from "@tremor/react";
-import { Event, LineChartData } from "@/types";
+import { LineChartData } from "@/types";
 
 // Constants
 import { CHART_TYPE } from "@/constants";

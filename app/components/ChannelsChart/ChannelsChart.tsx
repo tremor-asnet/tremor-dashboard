@@ -2,7 +2,7 @@ import { DonutChart, Card, Flex, Text, Button } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 
 //Components
-import { Popover } from "@/components";
+import { Popover } from "@/ui/components";
 
 // Constants
 import { CHANNELS_CHART_COLOR } from "@/constants";

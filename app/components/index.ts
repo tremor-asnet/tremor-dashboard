@@ -1,6 +1,5 @@
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
-export { default as Popover } from "./Popover/Popover";
 export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProjectInfoCard } from "./ProjectInfoCard/ProjectInfoCard";
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";
@@ -22,5 +21,4 @@ export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
-export { default as StarRating } from "./common/StarRating/StarRating";
 export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 // Components
-import Stepper from "@/components/common/Stepper/Stepper";
+import { Stepper } from "@/ui/components";
 import ProductInfoForm from "./ProductInfoForm/ProductInfoForm";
 import MediaForm from "./MediaForm/MediaForm";
 import SocialForm from "./SocialForm/SocialForm";

@@ -13,3 +13,7 @@ export { default as SideBar } from "./Sidebar/Sidebar";
 export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as Toast } from "./Toast/Toast";
 export { default as CustomImage } from "./CustomImage/CustomImage";
+export { default as Popover } from "./Popover/Popover";
+export { default as Stepper } from "./Stepper/Stepper";
+export { default as StatusButton } from "./StatusButton/StatusButton";
+export { default as StarRating } from "./StarRating/StarRating";

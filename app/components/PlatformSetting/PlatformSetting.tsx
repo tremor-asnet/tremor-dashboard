@@ -26,7 +26,7 @@ const PlatformSetting = ({
   return (
     <>
       <Text className="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
-        Platform Setting
+        Platform Settings
       </Text>
       <Flex className="flex-col items-start">
         <AccountSetting

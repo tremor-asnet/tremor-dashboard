@@ -43,9 +43,7 @@ const ContactCard = ({
         <Text className="font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance uppercase opacity-100 normal-case tracking-[0.02857em]">
           {information}
         </Text>
-        <div className="w-full opacity-30 bg-transparent">
-          <hr className="bg-transparent bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] h-px opacity-25 mx-0 my-4 border-b-[thin] border-b-[none] border-0 border-solid border-[rgba(0,0,0,0.12)]" />
-        </div>
+        <div className="h-px w-full dark:bg-gradient-divider bg-gradient-line my-4 opacity-25" />
         {/* TODO: Refactor code */}
         <Flex className="justify-start gap-3">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">

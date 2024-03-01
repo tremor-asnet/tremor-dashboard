@@ -169,8 +169,6 @@ export const backgroundImage = {
       "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
     "gradient-primary":
       "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-    "gradient-line":
-      "linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
   },
   // dark mode
   "dark-tremor": {
@@ -185,8 +183,6 @@ export const backgroundImage = {
       "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
     "gradient-primary":
       "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-    "gradient-line":
-      "linear-gradient(linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
   },
   dark: {
     "gradient-item-page":

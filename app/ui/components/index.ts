@@ -8,3 +8,5 @@ export { default as DataGrid } from "./DataGrid/DataGrid";
 export { default as DataGridHeader } from "./DataGrid/DataGridHeader/DataGridHeader";
 export { default as DataGridBody } from "./DataGrid/DataGridBody/DataGridBody";
 export { default as SelectField } from "./SelectField/SelectField";
+export { default as SideBar } from "./Sidebar/Sidebar";
+export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";

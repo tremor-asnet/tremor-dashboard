@@ -6,8 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 // Components
 import { Flex } from "@tremor/react";
-import { SideBar, DashboardHeader } from "@/components";
-import { LoadingIndicator } from "@/ui/components";
+import { LoadingIndicator, SideBar, DashboardHeader } from "@/ui/components";
 
 // Constants
 import { ROUTES } from "@/constants";

@@ -5,7 +5,8 @@ import { MdEdit, MdRefresh } from "react-icons/md";
 import { PiMapPinFill } from "react-icons/pi";
 
 // Components
-import { CustomImage, Popover } from "@/components";
+import { Popover } from "@/components";
+import { CustomImage } from "@/ui/components";
 
 //Types
 import { AnalyticsInfoData } from "@/types";

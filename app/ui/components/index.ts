@@ -1,3 +1,4 @@
+export { default as Avatar } from "./Avatar/Avatar";
 export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
 export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";
@@ -10,3 +11,5 @@ export { default as DataGridBody } from "./DataGrid/DataGridBody/DataGridBody";
 export { default as SelectField } from "./SelectField/SelectField";
 export { default as SideBar } from "./Sidebar/Sidebar";
 export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
+export { default as Toast } from "./Toast/Toast";
+export { default as CustomImage } from "./CustomImage/CustomImage";

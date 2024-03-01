@@ -1,5 +1,3 @@
-export { default as Avatar } from "./Avatar/Avatar";
-export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
 export { default as Popover } from "./Popover/Popover";
@@ -10,7 +8,6 @@ export { default as AccountSetting } from "./PlatformSetting/AccountSetting/Acco
 export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSetting/ApplicationSetting";
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
-export { default as CustomImage } from "./CustomImage/CustomImage";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as SalesRevenueChart } from "./SalesRevenueChart/SalesRevenueChart";
 export { default as ChannelChart } from "./ChannelsChart/ChannelsChart";

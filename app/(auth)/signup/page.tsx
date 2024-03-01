@@ -7,9 +7,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 // Components
-import { Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
-import { LoadingIndicator, Checkbox } from "@/ui/components";
+import { LoadingIndicator, Checkbox, Toast } from "@/ui/components";
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 

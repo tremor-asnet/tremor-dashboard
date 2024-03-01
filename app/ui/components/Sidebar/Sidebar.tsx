@@ -19,7 +19,7 @@ import {
 } from "@tremor/react";
 
 // Components
-import { Avatar, CustomImage } from "@/components";
+import { Avatar, CustomImage } from "@/ui/components";
 
 // Constants
 import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";

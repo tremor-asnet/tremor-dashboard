@@ -1,9 +1,8 @@
 import { ChangeEvent } from "react";
 
 // Components
-import { CustomImage } from "@/components";
 import { Title, Text, Flex, Card } from "@tremor/react";
-import { LoadingIndicator } from "@/ui/components";
+import { LoadingIndicator, CustomImage } from "@/ui/components";
 
 const ProductImage = ({
   name,

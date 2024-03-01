@@ -6,10 +6,10 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
     class=""
   >
     <ol
-      class="flex flex-wrap gap-2 items-center text-gray-400 dark:text-white"
+      class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"
     >
       <li
-        class="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
+        class="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
       >
         <a
           href="/analytics"
@@ -36,7 +36,7 @@ exports[`Testing breadcrumb component Should match snapshot 1`] = `
         /
       </li>
       <li
-        class="flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] text-primary text-tremor-content-title dark:text-dark-tremor-content-title  "
+        class="flex gap-1 sm:gap-2 bc-link text-sm capitalize tracking-[0.02857em] text-primary text-tremor-content-title dark:text-dark-tremor-content-title"
       >
         <a
           href="/analytics"

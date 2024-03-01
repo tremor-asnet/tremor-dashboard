@@ -57,7 +57,7 @@ const DashboardHeader = ({
   }, []);
   const stickyTransition = "transition-all duration-300 ease-in delay-20";
   const activeStickyScroll = isScrolled
-    ? `sticky top-0 py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
+    ? `sticky top-0 py-4 sm:py-2 z-40 bg-lighter dark:bg-dark-gradient-primary/30 dark:bg-dark-gradient-primary/80 box-header-sticky ${stickyTransition} backdrop-saturate-[200%] backdrop-blur-[1.875rem] bg-[rgba(255,255,255,0.8)] min-h-[5rem] rounded-xl top-3 shadow-box-header-sticky dark:shadow-box-header`
     : `${stickyTransition}`;
 
   const activeIconColor = isScrolled
@@ -90,7 +90,7 @@ const DashboardHeader = ({
           </div>
           <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
         </div>
-        <div className="flex items-center justify-between md:items-center pl-6 xl:pl-0">
+        <div className="flex items-center justify-end md:items-center pl-6 xl:pl-0 min-w-[100px]">
           <div className="flex flex-wrap item-center gap-y-1">
             <div
               className="relative p-2 flex items-center"

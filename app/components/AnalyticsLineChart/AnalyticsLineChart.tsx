@@ -20,7 +20,7 @@ import { Event, LineChartData } from "@/types";
 // Constants
 import { CHART_TYPE } from "@/constants";
 
-enum CHART_CATEGORIES {
+export enum CHART_CATEGORIES {
   DESKTOP = "Desktop apps",
   MOBILE = "Mobile apps",
 }
@@ -44,7 +44,7 @@ const AnalyticsLineChart = ({
   scheduleText,
   descValue,
   colors = [],
-  isDailyChart = true,
+  isDailyChart,
 }: LineChartProps) => {
   return (
     <div className="w-full bg-white dark:bg-dark-tremor-primary bg-clip-border shadow-[0rem_0.25rem_0.375rem_-0.0625rem_rgba(0,0,0,0.1),0rem_0.125rem_0.25rem_-0.0625rem_rgba(0,0,0,0.06)] overflow-visible h-full rounded-xl border-0 border-solid border-[rgba(0,0,0,0.125)]">
@@ -86,7 +86,11 @@ const AnalyticsLineChart = ({
               <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]">
                 {isDailyChart && (
                   <>
-                    (<span className="font-bold">{descValue}</span>)
+                    (
+                    <span data-testid="percent" className="font-bold">
+                      {descValue}
+                    </span>
+                    )
                   </>
                 )}{" "}
                 {subTitle}

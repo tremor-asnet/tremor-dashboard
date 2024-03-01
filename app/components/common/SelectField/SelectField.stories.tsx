@@ -17,6 +17,11 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    options: { description: "Option of select field" },
+    className: { description: "Class name of select field" },
+    label: { description: "Label of select field" },
+  },
   component: SelectField,
 } as Meta<typeof SelectField>;
 
@@ -26,6 +31,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <SelectField label="Currency" options={TYPE_PRICE} className="py-2.5" />
+    <div className="dark:bg-dark_blue text-primary rounded-xl p-6 shadow-box-icon-default dark:shadow-main-content">
+      <SelectField label="Currency" options={TYPE_PRICE} className="py-2.5" />
+    </div>
   ),
 };

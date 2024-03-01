@@ -116,13 +116,17 @@ const ProjectCard = ({
               <Text className="text-primary font-semibold dark:text-dark-tremor-content-title">
                 {participantNumber}
               </Text>
-              <Text className="text-secondary font-normal">Participants</Text>
+              <Text className="text-secondary dark:text-secondary font-normal">
+                Participants
+              </Text>
             </div>
             <div>
               <Text className="text-primary font-semibold dark:text-dark-tremor-content-title">
                 {duaDateFormat}
               </Text>
-              <Text className="text-secondary font-normal">Due date</Text>
+              <Text className="text-secondary dark:text-secondary font-normal">
+                Due date
+              </Text>
             </div>
           </Flex>
         </Card>

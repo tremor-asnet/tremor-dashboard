@@ -8,12 +8,7 @@ import { Title } from "@tremor/react";
 import { MdHome } from "react-icons/md";
 
 // Constants
-import {
-  INVOICE_REGEX,
-  ORDER_LIST_REGEX,
-  PRODUCT_LIST_REGEX,
-  ROUTES,
-} from "@/constants";
+import { ROUTES } from "@/constants";
 
 // Helpers
 import { getCrumbName, handleMatchPath, isBrowser } from "@/helpers";
@@ -54,13 +49,13 @@ const Breadcrumb = ({
               : "text-primary";
           const activeCrumb =
             pathname === href
-              ? "text-tremor-content-title dark:text-dark-tremor-content-title  "
-              : "text-primary dark:text-dark-primary opacity-50  ";
+              ? "text-tremor-content-title dark:text-dark-tremor-content-title"
+              : "text-primary dark:text-dark-primary opacity-50";
 
           return (
             <li
               key={href}
-              className={`flex gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
+              className={`flex gap-1 sm:gap-2 bc-link text-sm capitalize tracking-[0.02857em] ${crumbItemTextWhite} ${activeCrumb}`}>
               <Link href={href}>
                 {getCrumbName({
                   name: link,
@@ -83,12 +78,12 @@ const Breadcrumb = ({
   return (
     <nav className={`${isProjectPage ? "pl-3 z-20" : isMobile ? "pl-3" : ""}`}>
       <ol
-        className={`flex flex-wrap gap-2 items-center ${
+        className={`flex flex-wrap gap-1 sm:gap-2 items-center ${
           isProjectPage && isStickyHeader
             ? "text-lighter"
             : "text-gray-400 dark:text-white"
         }`}>
-        <li className="text-sm flex items-center gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]">
+        <li className="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]">
           <Link href={ROUTES.HOME}>
             <MdHome className="text-lg" />
           </Link>

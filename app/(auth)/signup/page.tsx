@@ -2,7 +2,7 @@
 
 // Libs
 import { useForm, Controller } from "react-hook-form";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -24,11 +24,11 @@ import { User } from "@/types";
 import { getFormData } from "@/helpers";
 import { FaCheckCircle } from "react-icons/fa";
 
-// Hooks
-import { useToast } from "@/hooks/useToastMessage";
-
 //Styles
 import "@/styles/form.css";
+
+// Context
+import { ToastContext } from "@/context/toast";
 
 const SignUp = () => {
   const {
@@ -67,8 +67,9 @@ const SignUp = () => {
     setChecked(!checked);
   };
 
-  const { isOpenToast, handleCloseToast, handleOpenToast } = useToast();
-  const isShowToast = isSignUpSuccess && isOpenToast && !hasErrorMessage;
+  const { openToast, isOpen, icon, message, color } = useContext(ToastContext);
+
+  const isShowToast = isSignUpSuccess && isOpen && !hasErrorMessage;
 
   const handleSignUp = async (value: User) => {
     try {
@@ -89,7 +90,12 @@ const SignUp = () => {
         isSuccess: res?.isSuccess || false,
       });
 
-      handleOpenToast();
+      openToast({
+        isOpen: true,
+        message: SIGN_UP_MESSAGE.SUCCESS,
+        icon: <FaCheckCircle />,
+        color: "green",
+      });
       res?.isSuccess && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
       setFormStatus({
@@ -100,13 +106,23 @@ const SignUp = () => {
     }
   };
 
+  const handleCloseToast = () => {
+    openToast({
+      isOpen: false,
+      message: "",
+      icon: null,
+      color: "green",
+    });
+  };
+
   return (
     <div>
       {isShowToast && (
         <div className="flex justify-center fixed right-5 top-5">
           <Toast
-            icon={<FaCheckCircle />}
-            message={SIGN_UP_MESSAGE.SUCCESS}
+            icon={icon}
+            message={message}
+            color={color}
             onClose={handleCloseToast}
           />
         </div>

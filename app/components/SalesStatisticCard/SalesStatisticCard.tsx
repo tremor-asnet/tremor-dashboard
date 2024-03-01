@@ -1,13 +1,16 @@
 "use client";
 
 //Libs
-import { useState, useRef, useEffect } from "react";
+import { useState, RefObject } from "react";
 
 //Components
 import { Card, Text, Flex, Button } from "@tremor/react";
 
 //Types
 import { SalesStatisticData } from "@/types";
+
+// Hooks
+import { useOutsideClick } from "@/hooks";
 
 //Constants
 import {
@@ -33,25 +36,9 @@ const SalesStatisticCard = ({
   const [currentSalesDate, setCurrentSalesDate] = useState("6 May - 7 May");
   const openActionSalesDate = isOpenAction;
 
-  const salesCardRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutsideSalesCard = (event: Event) => {
-      const currentRef = salesCardRef.current;
-
-      if (currentRef && !currentRef.contains(event.target as Node)) {
-        setOpenAction(false);
-      }
-    };
-
-    // Add event listener to the document object
-    document.addEventListener("mousedown", handleClickOutsideSalesCard);
-
-    // Remove event listener when the component unmounts
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutsideSalesCard);
-    };
-  }, [isOpenAction]);
+  const salesCardRef = useOutsideClick(() => {
+    setOpenAction(false);
+  });
 
   const handleSelectSalesDate = (labelDate: string) => {
     setOpenAction(false);
@@ -105,7 +92,7 @@ const SalesStatisticCard = ({
 
   return (
     <Card
-      ref={salesCardRef}
+      ref={salesCardRef as RefObject<HTMLDivElement>}
       className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
         <Flex className="flex-col w-2/3 md:w-1/2">

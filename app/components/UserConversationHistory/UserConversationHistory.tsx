@@ -24,7 +24,7 @@ const UserConversationHistory = ({
           width={48}
           height={48}
           alt={name}
-          className="min-w-[48px]"
+          className="min-w-[48px] shadow-md"
         />
       </div>
       <div className="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4">

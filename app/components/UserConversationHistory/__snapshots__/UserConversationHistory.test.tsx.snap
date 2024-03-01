@@ -15,7 +15,7 @@ exports[`UserConversationHistory component Should render UserConversationHistory
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Sophie.B"
@@ -72,7 +72,7 @@ exports[`UserConversationHistory component Should render UserConversationHistory
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Sophie.B"

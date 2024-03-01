@@ -20,7 +20,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Anne Marie"
@@ -74,7 +74,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Ivanna"
@@ -128,7 +128,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Peterson"
@@ -182,7 +182,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Sophie.B"
@@ -236,7 +236,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
             >
               <img
                 alt="Nick Daniel"
@@ -298,7 +298,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Anne Marie"
@@ -352,7 +352,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Ivanna"
@@ -406,7 +406,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Peterson"
@@ -460,7 +460,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Sophie.B"
@@ -514,7 +514,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px] shadow-md"
           >
             <img
               alt="Nick Daniel"

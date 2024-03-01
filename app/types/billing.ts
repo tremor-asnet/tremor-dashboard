@@ -32,4 +32,5 @@ export interface SalaryCardData {
 
 export enum STATUS_LIST {
   ERROR = 0,
+  SUCCESS = 1,
 }

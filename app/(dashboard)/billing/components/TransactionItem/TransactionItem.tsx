@@ -5,6 +5,7 @@ import StatusButton from "@/components/common/StatusButton/StatusButton";
 
 // Helpers
 import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";
+import { STATUS_LIST } from "@/types";
 
 interface TransactionItemProps {
   createdAt: string;
@@ -28,8 +29,8 @@ const TransactionItem = ({
       <div className="flex gap-4 items-center">
         <StatusButton
           extendedClass={classes}
-          type={0}
-          status={1}
+          type={STATUS_LIST.ERROR}
+          status={STATUS_LIST.SUCCESS}
           value={value}
         />
         <div>

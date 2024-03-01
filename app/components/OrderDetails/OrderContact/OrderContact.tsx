@@ -36,7 +36,7 @@ const OrderContact = ({
           <Title className="text-tremor-content-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-6 tracking-wide truncate max-w-[200px] md:max-w-[240px] xl:max-w-xs 2xl:max-w-sm">
             {name}
           </Title>
-          {OrderStatus(status, date)}
+          <OrderStatus status={status} period={date} />
         </Flex>
       </Flex>
       <Flex>

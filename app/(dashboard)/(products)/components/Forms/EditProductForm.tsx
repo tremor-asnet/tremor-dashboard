@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { ReactNode, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
@@ -33,6 +33,9 @@ import { EDIT_PRODUCT_MESSAGE, NOT_FOUND_IMAGE } from "@/constants";
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
 
+// Contexts
+import { ToastContext } from "@/context/toast";
+
 const EditProductForm = ({
   productData,
   id,
@@ -60,29 +63,6 @@ const EditProductForm = ({
 
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
-  const [toastMsgController, setToastMsgController] = useState<{
-    isOpen: boolean;
-    message: string;
-    icon: ReactNode;
-    color: "green" | "red" | "yellow";
-  }>({
-    isOpen: false,
-    message: "",
-    icon: null,
-    color: "green",
-  });
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setToastMsgController({
-        isOpen: false,
-        message: "",
-        icon: null,
-        color: "green",
-      });
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, [toastMsgController.isOpen]);
 
   const formHandler = useForm<ProductData>({
     defaultValues: {
@@ -111,6 +91,8 @@ const EditProductForm = ({
     formHandler.setValue("image", imageValue, { shouldDirty: true });
   }, [imageValue]);
 
+  const { openToast, isOpen, icon, message, color } = useContext(ToastContext);
+
   const onSubmit = async (data: ProductData) => {
     try {
       const convertedTagsValue = data.tags.map(value => {
@@ -126,7 +108,7 @@ const EditProductForm = ({
         image: imageValue,
       };
 
-      setToastMsgController({
+      openToast({
         isOpen: true,
         message: EDIT_PRODUCT_MESSAGE.PENDING,
         icon: <TbExclamationMark />,
@@ -143,14 +125,14 @@ const EditProductForm = ({
 
       router.refresh();
 
-      setToastMsgController({
+      openToast({
         isOpen: true,
         message: EDIT_PRODUCT_MESSAGE.SUCCESS,
         icon: <FaCheckCircle />,
         color: "green",
       });
     } catch (err: any) {
-      setToastMsgController({
+      openToast({
         isOpen: true,
         message: EDIT_PRODUCT_MESSAGE.FAILED,
         icon: RxCross2,
@@ -159,18 +141,18 @@ const EditProductForm = ({
     }
   };
 
+  const onRemoveImage = () => {
+    removeImage();
+    formHandler.setValue("image", "", { shouldDirty: true });
+  };
+
   const handleCloseToast = () => {
-    setToastMsgController({
+    openToast({
       isOpen: false,
       message: "",
       icon: null,
       color: "green",
     });
-  };
-
-  const onRemoveImage = () => {
-    removeImage();
-    formHandler.setValue("image", "", { shouldDirty: true });
   };
 
   return (
@@ -224,12 +206,12 @@ const EditProductForm = ({
         </form>
       </FormProvider>
 
-      {toastMsgController.isOpen && (
+      {isOpen && (
         <div className="flex justify-center fixed right-5 bottom-50 z-30">
           <Toast
-            icon={<FaCheckCircle />}
-            color={toastMsgController.color}
-            message={toastMsgController.message}
+            icon={icon}
+            color={color}
+            message={message}
             onClose={handleCloseToast}
           />
         </div>

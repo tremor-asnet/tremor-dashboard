@@ -90,7 +90,7 @@ const DashboardHeader = ({
           </div>
           <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
         </div>
-        <div className="flex items-center justify-between md:items-center pl-6 xl:pl-0">
+        <div className="flex items-center justify-end md:items-center pl-6 xl:pl-0 min-w-[100px]">
           <div className="flex flex-wrap item-center gap-y-1">
             <div
               className="relative p-2 flex items-center"

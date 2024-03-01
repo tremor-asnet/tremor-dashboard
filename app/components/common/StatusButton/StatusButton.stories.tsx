@@ -4,10 +4,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import StatusButton from "./StatusButton";
 
-// Icons
-import { BiChevronUp, BiChevronDown } from "react-icons/bi";
-import { BsExclamationLg } from "react-icons/bs";
-
 const meta = {
   title: "Components/StatusButton",
   tags: ["autodocs"],

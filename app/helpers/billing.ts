@@ -1,9 +1,5 @@
-// Icons
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
-import { BsExclamationLg } from "react-icons/bs";
-
 // Helpers
-import { formattedNumber, moneyFormat } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 // Constants
 import { TRANSACTION_CLASS, TRANSACTION_COLOR } from "@/constants";

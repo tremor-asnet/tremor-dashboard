@@ -1,4 +1,4 @@
-import { LoadingIndicator } from "@/components";
+import { LoadingIndicator } from "@/ui/components";
 import { Flex } from "@tremor/react";
 
 const Loading = () => {

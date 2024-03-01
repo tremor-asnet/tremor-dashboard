@@ -6,7 +6,7 @@ import { Card, Text, Flex, Title, Button } from "@tremor/react";
 import { FaEllipsisV } from "react-icons/fa";
 
 //Components
-import { Avatar, CustomImage } from "@/components";
+import { CustomImage, Avatar } from "@/ui/components";
 
 //Types
 import { Project, AvatarCard } from "@/types";

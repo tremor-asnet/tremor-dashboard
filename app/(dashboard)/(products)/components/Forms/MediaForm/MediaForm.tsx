@@ -15,8 +15,7 @@ import useImageUploader from "@/hooks/useImageUploader";
 
 // Components
 import ImagePreview from "../../ImagePreview/ImagePreview";
-import { LoadingIndicator } from "@/components";
-
+import { LoadingIndicator } from "@/ui/components";
 interface MediaFormProps {
   onBack: () => void;
   onSubmit: (data: IMedia) => void;

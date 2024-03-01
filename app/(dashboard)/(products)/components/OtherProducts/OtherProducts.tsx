@@ -5,9 +5,8 @@ import {
   CustomAvatarName,
   CustomNumberFormat,
 } from "@/components/Table/common";
-import { DataGrid } from "@/components";
+import { DataGrid } from "@/ui/components";
 import Link from "next/link";
-import { ProgressBar } from "@tremor/react";
 
 // Types
 import { Product, ColumnType } from "@/types";

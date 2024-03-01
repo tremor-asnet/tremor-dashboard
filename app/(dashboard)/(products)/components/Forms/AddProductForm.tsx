@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 // Components
-import Stepper from "@/components/common/Stepper/Stepper";
+import { Stepper } from "@/ui/components";
 import ProductInfoForm from "./ProductInfoForm/ProductInfoForm";
 import MediaForm from "./MediaForm/MediaForm";
 import SocialForm from "./SocialForm/SocialForm";
@@ -18,8 +18,7 @@ import { IMedia, NewPricing, NewInfo, NewSocial, ProductData } from "@/types";
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
 // Components
-import { LoadingIndicator } from "@/components";
-
+import { LoadingIndicator } from "@/ui/components";
 // Services
 import { addNewProduct } from "@/services";
 

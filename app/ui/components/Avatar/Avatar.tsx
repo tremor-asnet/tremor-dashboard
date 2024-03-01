@@ -3,7 +3,7 @@
 import { memo } from "react";
 
 // Components
-import { CustomImage } from "@/components";
+import { CustomImage } from "@/ui/components";
 
 // Define the props for the Input component
 interface AvatarProps {

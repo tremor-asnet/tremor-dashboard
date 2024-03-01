@@ -1,8 +1,8 @@
 // Components
 import Link from "next/link";
 import Image from "next/image";
-import Avatar from "@/components/Avatar/Avatar";
 import { Title, Text, Flex, Button } from "@tremor/react";
+import { Avatar } from "@/ui/components";
 
 // Constants
 import { ROUTES } from "@/constants/routes";

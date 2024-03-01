@@ -45,13 +45,13 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
               class="font-semibold mb-2"
               data-testid="productPrice"
             >
-              $90
+              $90.00
             </p>
             <p
               class="font-semibold mb-2"
               data-testid="delivery"
             >
-              $14
+              $14.00
             </p>
             <p
               class="font-semibold mb-2"
@@ -120,13 +120,13 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
             class="font-semibold mb-2"
             data-testid="productPrice"
           >
-            $90
+            $90.00
           </p>
           <p
             class="font-semibold mb-2"
             data-testid="delivery"
           >
-            $14
+            $14.00
           </p>
           <p
             class="font-semibold mb-2"

@@ -1,7 +1,7 @@
 // Components
 
+import { InputField, StarRating } from "@/ui/components";
 import { Text, Flex } from "@tremor/react";
-import { StarRating, InputField } from "@/components";
 
 // Constants
 import { CURRENCY } from "@/constants";
@@ -10,7 +10,7 @@ import { CURRENCY } from "@/constants";
 import { TProductInfoDetail } from "@/types";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { moneyFormat } from "@/helpers";
 
 interface ProductInfoDetailProps {
   product: TProductInfoDetail;
@@ -37,7 +37,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
         <Flex
           className="flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price">
-          {formattedNumber({
+          {moneyFormat({
             value: price,
             currency: CURRENCY.DOLLAR,
           })}

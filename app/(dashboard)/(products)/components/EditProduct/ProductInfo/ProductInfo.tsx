@@ -8,7 +8,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 // Components
 import { Text, Flex, Card } from "@tremor/react";
-import { SelectField, InputField } from "@/components";
+import { InputField, SelectField } from "@/ui/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants

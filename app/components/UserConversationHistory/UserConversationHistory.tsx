@@ -3,7 +3,7 @@
 import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { Avatar } from "@/components";
+import { Avatar } from "@/ui/components";
 
 interface UserConversationHistoryProps {
   avatar: string;

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CURRENCY, FLAG_SRC } from "@/constants";
 
 // Helpers
-import { formattedNumber } from "@/helpers";
+import { formattedNumber, moneyFormat } from "@/helpers";
 
 // Types
 import { SalesByCountryData } from "@/types";
@@ -65,9 +65,9 @@ const SalesByCountryRow = ({
           <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25]">
             Value:
           </Text>
-          <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[70px] xl:max-w-[105px]">
+          <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5] truncate max-w-[60px] xs:max-w-[80px] xl:max-w-[105px]">
             <span>
-              {formattedNumber({
+              {moneyFormat({
                 value,
                 currency: CURRENCY.DOLLAR,
               })}

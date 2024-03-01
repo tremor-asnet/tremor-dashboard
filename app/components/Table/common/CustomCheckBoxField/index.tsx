@@ -1,5 +1,6 @@
 // Components
-import { Checkbox } from "@/components";
+
+import { Checkbox } from "@/ui/components";
 import Link from "next/link";
 
 interface CustomCheckboxFieldProps {

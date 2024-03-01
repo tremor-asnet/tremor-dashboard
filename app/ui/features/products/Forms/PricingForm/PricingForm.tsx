@@ -1,36 +1,35 @@
 // Libs
 import { useForm } from "react-hook-form";
 
-// Components
-import Socials from "../../AddProduct/Socials/Socials";
-
 // Types
-import { NewSocial } from "@/types";
+import { NewPricing } from "@/types";
 
-interface SocialFormProps {
-  shopifyUrl: string;
-  facebookUrl: string;
-  instagramUrl: string;
+// Components
+import { Pricing } from "@/ui/features";
+
+interface PricingFormProps {
+  price: number;
+  sku: string;
+  currency: number;
+  tags: number[];
   onBack: () => void;
-  onSubmit: (social: NewSocial) => void;
+  onSubmit: (pricing: NewPricing) => void;
 }
 
-const SocialForm = ({
-  shopifyUrl,
-  facebookUrl,
-  instagramUrl,
+const PricingForm = ({
+  price,
+  sku,
+  currency,
+  tags,
   onBack,
   onSubmit,
-}: SocialFormProps) => {
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<NewSocial>({
+}: PricingFormProps) => {
+  const { control, handleSubmit } = useForm<NewPricing>({
     defaultValues: {
-      shopifyUrl,
-      facebookUrl,
-      instagramUrl,
+      price,
+      sku,
+      currency,
+      tags: tags?.map(String),
     },
     mode: "onSubmit",
   });
@@ -38,9 +37,9 @@ const SocialForm = ({
   return (
     <form className="w-full mt-20" onSubmit={handleSubmit(onSubmit)}>
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
-        Socials
+        Pricing
       </h6>
-      <Socials control={control} errors={errors} />
+      <Pricing control={control} />
       <div className="mt-6">
         <input
           className="float-left btn-form-secondary"
@@ -51,11 +50,11 @@ const SocialForm = ({
         <input
           className="float-right btn-form-primary"
           type="submit"
-          value="NEXT"
+          value="SEND"
         />
       </div>
     </form>
   );
 };
 
-export default SocialForm;
+export default PricingForm;

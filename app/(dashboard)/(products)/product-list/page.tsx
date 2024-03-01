@@ -1,9 +1,21 @@
+import dynamic from "next/dynamic";
+
 // Components
 import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 import Link from "next/link";
-import { InputSearch, LoadingIndicator } from "@/ui/components";
-import { ProductFilter, TableProduct } from "@/ui/features";
+import { LoadingIndicator } from "@/ui/components";
+
+const InputSearch = dynamic(
+  () => import("@/ui/components/InputSearch/InputSearch"),
+);
+
+const ProductFilter = dynamic(
+  () => import("@/ui/features/products/ProductFilter"),
+);
+const TableProduct = dynamic(
+  () => import("@/ui/features/products/TableProduct/TableProduct"),
+);
 
 // Services
 import { getProducts } from "@/services";

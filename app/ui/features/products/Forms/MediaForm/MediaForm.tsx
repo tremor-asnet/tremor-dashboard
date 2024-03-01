@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
 // Components
-import Media from "../../AddProduct/Media/Media";
+import { ImagePreview, Media } from "@/ui/features";
+import { LoadingIndicator } from "@/ui/components";
 
 // Types
 import { IMedia } from "@/types";
@@ -13,9 +14,6 @@ import { IMedia } from "@/types";
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
 
-// Components
-import ImagePreview from "../../ImagePreview/ImagePreview";
-import { LoadingIndicator } from "@/ui/components";
 interface MediaFormProps {
   onBack: () => void;
   onSubmit: (data: IMedia) => void;

@@ -1,8 +1,8 @@
 // Components
 import Link from "next/link";
-import { CustomImage } from "@/ui/components";
 import { Flex } from "@tremor/react";
-import ProductInfoDetail from "../../components/ProductInfoDetail/ProductInfoDetail";
+import { CustomImage } from "@/ui/components";
+import { ProductInfoDetail } from "@/ui/features";
 
 // Services
 import { getProductDetails } from "@/services";

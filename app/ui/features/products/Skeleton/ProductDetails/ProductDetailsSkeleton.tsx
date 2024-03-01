@@ -1,4 +1,4 @@
-export const ProductDetailsSkeleton = () => (
+const ProductDetailsSkeleton = () => (
   <div className="flex flex-col md:flex-row w-full h-[800px] rounded-lg animate-pulse gap-2 justify-between mb-10">
     <div className="w-full h-2/3 lg:h-full">
       <div className="w-full h-full bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
@@ -18,3 +18,5 @@ export const ProductDetailsSkeleton = () => (
     </div>
   </div>
 );
+
+export default ProductDetailsSkeleton;

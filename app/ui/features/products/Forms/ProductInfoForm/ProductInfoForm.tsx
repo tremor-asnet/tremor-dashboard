@@ -4,7 +4,7 @@
 import { useForm } from "react-hook-form";
 
 // Components
-import ProductInfo from "../../AddProduct/ProductInfo/ProductInfo";
+import { ProductInfo } from "@/ui/features";
 import { Button, Text } from "@tremor/react";
 
 // Types

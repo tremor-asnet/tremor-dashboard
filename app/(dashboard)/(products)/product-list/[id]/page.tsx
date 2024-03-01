@@ -1,10 +1,12 @@
 // Components
 import { Suspense } from "react";
 import { Bold } from "@tremor/react";
-import OtherProductList from "./OtherProductList";
-import ProductDetail from "./ProductDetail";
-import { ProductDetailsSkeleton } from "../../components/Skeleton/ProductDetails/ProductDetailsSkeleton";
-import { OtherProductSkeleton } from "../../components/Skeleton/OtherProducts/OtherProductSkeleton";
+import {
+  OtherProductList,
+  OtherProductSkeleton,
+  ProductDetail,
+  ProductDetailsSkeleton,
+} from "@/ui/features";
 
 export default async function Page({ params }: { params: { id: number } }) {
   return (

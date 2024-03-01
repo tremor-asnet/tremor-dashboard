@@ -6,10 +6,12 @@ import { useState } from "react";
 
 // Components
 import { Stepper } from "@/ui/components";
-import ProductInfoForm from "./ProductInfoForm/ProductInfoForm";
-import MediaForm from "./MediaForm/MediaForm";
-import SocialForm from "./SocialForm/SocialForm";
-import PricingForm from "./PricingForm/PricingForm";
+import {
+  MediaForm,
+  PricingForm,
+  ProductInfoForm,
+  SocialForm,
+} from "@/ui/features";
 
 // Types
 import { IMedia, NewPricing, NewInfo, NewSocial, ProductData } from "@/types";

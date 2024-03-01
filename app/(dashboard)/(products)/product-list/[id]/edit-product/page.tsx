@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 
 // Components
-import { Flex, Text, Title } from "@tremor/react";
+import { Flex, Text } from "@tremor/react";
 const EditProductForm = dynamic(
-  () => import("../../../components/Forms/EditProductForm"),
+  () => import("@/ui/features/products/Forms/EditProductForm"),
 );
 
 // Services

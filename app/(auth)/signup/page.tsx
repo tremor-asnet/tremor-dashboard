@@ -9,8 +9,7 @@ import { useRouter } from "next/navigation";
 // Components
 import { CheckBox, Toast } from "@/components";
 import { TextInput, Button, Flex, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/components";
-
+import { LoadingIndicator } from "@/ui/components";
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
 

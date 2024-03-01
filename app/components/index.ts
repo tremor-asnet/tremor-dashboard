@@ -11,7 +11,6 @@ export { default as AccountSetting } from "./PlatformSetting/AccountSetting/Acco
 export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSetting/ApplicationSetting";
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
-export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";
 export { default as CustomImage } from "./CustomImage/CustomImage";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
@@ -25,7 +24,6 @@ export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatist
 export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
-export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";

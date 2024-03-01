@@ -18,8 +18,7 @@ import { IMedia, NewPricing, NewInfo, NewSocial, ProductData } from "@/types";
 import { NEW_PRODUCT_FORM_STEPS } from "@/constants/steps";
 
 // Components
-import { LoadingIndicator } from "@/components";
-
+import { LoadingIndicator } from "@/ui/components";
 // Services
 import { addNewProduct } from "@/services";
 

@@ -20,6 +20,9 @@ import { useEffect, useMemo, useState } from "react";
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
 
+// Constants
+import { ROUTES } from "@/constants";
+
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
@@ -31,6 +34,7 @@ interface DataTableProps<T> {
   currentPageNumber?: number;
   total?: number;
   defaultCurrentPage?: number;
+  disableLoading?: boolean;
 }
 
 const DataGrid = <T,>({
@@ -44,6 +48,7 @@ const DataGrid = <T,>({
   total,
   currentPageNumber,
   defaultCurrentPage = 1,
+  disableLoading = false,
 }: DataTableProps<T>) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -99,7 +104,7 @@ const DataGrid = <T,>({
     }, 100);
   }, [filterBy, keyword, currentPage, pageSize]);
 
-  if (loading) {
+  if (loading && !disableLoading) {
     return (
       <LoadingIndicator
         additionalClass="min-h-[500px] flex justify-center items-center"

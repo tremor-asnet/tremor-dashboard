@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 // Components
 import { DataGrid } from "@/components";
 import { Text } from "@tremor/react";
@@ -11,7 +13,7 @@ import { TInvoiceDetail, ColumnType } from "@/types";
 import { moneyFormat } from "@/helpers";
 
 // Constants
-import { CURRENCY } from "@/constants";
+import { CURRENCY, ROUTES } from "@/constants";
 
 // Styles
 import "@/styles/products.css";
@@ -23,6 +25,10 @@ export const TableInvoice = ({
   details: TInvoiceDetail[];
   totalCost: number;
 }) => {
+  const pathname = usePathname();
+
+  const isLoadingTableInvoice = pathname.includes(ROUTES.INVOICE_LIST);
+
   // Invoice Body Table Props
   const columns: ColumnType<TInvoiceDetail>[] = [
     {
@@ -97,6 +103,7 @@ export const TableInvoice = ({
       keyword="invoice"
       className="!shadow-none"
       hasPagination={false}
+      disableLoading={isLoadingTableInvoice}
     />
   );
 };

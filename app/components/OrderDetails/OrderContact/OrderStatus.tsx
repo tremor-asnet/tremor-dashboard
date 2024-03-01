@@ -1,4 +1,9 @@
-export const orderStatus = (status: number, period: number) => {
+interface OrderStatusProps {
+  status: number;
+  period: number;
+}
+
+export const OrderStatus = ({ status, period }: OrderStatusProps) => {
   switch (status) {
     // When data response status === 0, the order status is delivered
     case 0:

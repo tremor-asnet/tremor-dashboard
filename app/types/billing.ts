@@ -29,3 +29,12 @@ export interface SalaryCardData {
   type: AGGREGATION_TYPE;
   currency?: string;
 }
+
+export enum STATUS_LIST {
+  ERROR = 0,
+  SUCCESS = 1,
+}
+
+export enum TYPE_LIST {
+  DEPOSIT = 0,
+}

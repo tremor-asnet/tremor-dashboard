@@ -14,13 +14,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden shadow-md"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
             >
               <img
                 alt="Anne Marie"
@@ -36,7 +36,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             </div>
           </div>
           <div
-            class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+            class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -44,7 +44,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
               Anne Marie
             </p>
             <p
-              class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+              class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
             >
               Awesome work, can you..
             </p>
@@ -68,13 +68,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden shadow-md"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
             >
               <img
                 alt="Ivanna"
@@ -90,7 +90,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             </div>
           </div>
           <div
-            class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+            class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -98,7 +98,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
               Ivanna
             </p>
             <p
-              class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+              class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
             >
               About files I can..
             </p>
@@ -122,13 +122,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden shadow-md"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
             >
               <img
                 alt="Peterson"
@@ -144,7 +144,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             </div>
           </div>
           <div
-            class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+            class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -152,7 +152,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
               Peterson
             </p>
             <p
-              class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+              class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
             >
               Have a great afternoon..
             </p>
@@ -176,13 +176,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden shadow-md"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
             >
               <img
                 alt="Sophie.B"
@@ -198,7 +198,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             </div>
           </div>
           <div
-            class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+            class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -206,7 +206,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
               Sophie.B
             </p>
             <p
-              class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+              class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
             >
               Hi! I need more information..
             </p>
@@ -230,13 +230,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
           >
             <div
-              class="inline-flex rounded-full overflow-hidden shadow-md"
+              class="inline-flex rounded-full overflow-hidden min-w-[48px]"
             >
               <img
                 alt="Nick Daniel"
@@ -252,7 +252,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             </div>
           </div>
           <div
-            class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+            class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
           >
             <p
               class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -260,7 +260,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
               Nick Daniel
             </p>
             <p
-              class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+              class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
             >
               Hi! I need more information..
             </p>
@@ -292,13 +292,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
           >
             <img
               alt="Anne Marie"
@@ -314,7 +314,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           </div>
         </div>
         <div
-          class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+          class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -322,7 +322,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             Anne Marie
           </p>
           <p
-            class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+            class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
           >
             Awesome work, can you..
           </p>
@@ -346,13 +346,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
           >
             <img
               alt="Ivanna"
@@ -368,7 +368,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           </div>
         </div>
         <div
-          class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+          class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -376,7 +376,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             Ivanna
           </p>
           <p
-            class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+            class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
           >
             About files I can..
           </p>
@@ -400,13 +400,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
           >
             <img
               alt="Peterson"
@@ -422,7 +422,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           </div>
         </div>
         <div
-          class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+          class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -430,7 +430,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             Peterson
           </p>
           <p
-            class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+            class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
           >
             Have a great afternoon..
           </p>
@@ -454,13 +454,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
           >
             <img
               alt="Sophie.B"
@@ -476,7 +476,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           </div>
         </div>
         <div
-          class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+          class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -484,7 +484,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             Sophie.B
           </p>
           <p
-            class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+            class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
           >
             Hi! I need more information..
           </p>
@@ -508,13 +508,13 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start flex-wrap sm:flex-nowrap"
+        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
         >
           <div
-            class="inline-flex rounded-full overflow-hidden shadow-md"
+            class="inline-flex rounded-full overflow-hidden min-w-[48px]"
           >
             <img
               alt="Nick Daniel"
@@ -530,7 +530,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
           </div>
         </div>
         <div
-          class="max-w-[180px] font-medium dark:text-white pl-4 w-1/2"
+          class="max-w-[calc(100%-40px)] sm:max-w-[calc(100%-70px)] font-medium dark:text-white pl-4"
         >
           <p
             class="text-tremor-default text-sm text-primary dark:text-dark-primary font-semibold"
@@ -538,7 +538,7 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
             Nick Daniel
           </p>
           <p
-            class="text-tremor-default text-xs text-secondary font-light truncate dark:text-dark-romance"
+            class="text-tremor-default text-xs text-secondary font-light dark:text-dark-romance line-clamp-2"
           >
             Hi! I need more information..
           </p>

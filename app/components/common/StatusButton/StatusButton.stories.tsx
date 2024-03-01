@@ -4,6 +4,9 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import StatusButton from "./StatusButton";
 
+// Types
+import { STATUS_LIST, TYPE_LIST } from "@/types";
+
 const meta = {
   title: "Components/StatusButton",
   tags: ["autodocs"],
@@ -26,8 +29,8 @@ export const ButtonIncrease: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-few border-few"
-      type={0}
-      status={1}
+      type={STATUS_LIST.ERROR}
+      status={STATUS_LIST.SUCCESS}
       value={"+ 1234"}
     />
   ),
@@ -37,8 +40,8 @@ export const ButtonDecrease: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-attention border-attention"
-      type={1}
-      status={1}
+      type={TYPE_LIST.DEPOSIT}
+      status={STATUS_LIST.SUCCESS}
       value={"- 1234"}
     />
   ),
@@ -48,7 +51,7 @@ export const ButtonPending: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-primary border-primary"
-      status={0}
+      status={STATUS_LIST.ERROR}
       value={"Pending"}
     />
   ),

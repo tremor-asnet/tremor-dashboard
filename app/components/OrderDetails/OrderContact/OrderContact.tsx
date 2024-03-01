@@ -3,7 +3,7 @@ import Link from "next/link";
 // Components
 import { Button, Flex, Title, Text } from "@tremor/react";
 import { CustomImage } from "@/components";
-import { OrderStatus } from "./orderStatus";
+import { OrderStatus } from "./OrderStatus";
 
 //Styles
 import "@/styles/order.css";

@@ -77,9 +77,8 @@ const SalesStatisticCard = ({
         isPositive: amountChangeType,
         unit: UNIT.PERCENT,
       }),
-      [SALES_STATISTIC_TYPE.AVG_REVENUE]: formatAdjustNumber({
+      [SALES_STATISTIC_TYPE.AVG_REVENUE]: moneyFormat({
         value: amountChange,
-        isPositive: amountChangeType,
         currency: CURRENCY.DOLLAR,
       }),
     }[type] || "";

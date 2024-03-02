@@ -24,3 +24,5 @@ export { default as SalesByCountry } from "./analytics/SalesByCountry/SalesByCou
 export { default as PlatformSetting } from "./my-profile/PlatformSetting/PlatformSetting";
 export { default as ContactCard } from "./my-profile/ContactCard/ContactCard";
 export { default as ProjectInfoCard } from "./my-profile/ProjectInfoCard/ProjectInfoCard";
+export { default as TopSellingProducts } from "./sales/TopSellingProducts/TopSellingProducts";
+export { default as ChannelChart } from "./sales/ChannelsChart/ChannelsChart";

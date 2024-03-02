@@ -1,10 +1,5 @@
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as IconBox } from "./IconBox/IconBox";
-export { default as SalesRevenueChart } from "./SalesRevenueChart/SalesRevenueChart";
-export { default as ChannelChart } from "./ChannelsChart/ChannelsChart";
-export { default as SalesByAge } from "./SalesByAge/index";
-export { default as SalesStatisticCard } from "./SalesStatisticCard/SalesStatisticCard";
-export { default as TopSellingProducts } from "./TopSellingProducts/TopSellingProducts";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
 export { default as OrderFilter } from "./OrderFilter";

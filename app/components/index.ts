@@ -1,13 +1,11 @@
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as ConversationHistory } from "./ConversationHistory/ConversationHistory";
-export { default as ProfileInfo } from "./ProfileInfo/ProfileInfo";
 export { default as ProjectInfoCard } from "./ProjectInfoCard/ProjectInfoCard";
 export { default as PlatformSetting } from "./PlatformSetting/PlatformSetting";
 export { default as AccountSetting } from "./PlatformSetting/AccountSetting/AccountSetting";
 export { default as ApplicationSetting } from "./PlatformSetting/ApplicationSetting/ApplicationSetting";
 export { default as ContactCard } from "./ProfileContactCard/ContactCard";
 export { default as IconBox } from "./IconBox/IconBox";
-export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as SalesRevenueChart } from "./SalesRevenueChart/SalesRevenueChart";
 export { default as ChannelChart } from "./ChannelsChart/ChannelsChart";
 export { default as SalesByAge } from "./SalesByAge/index";

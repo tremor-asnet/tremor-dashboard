@@ -17,3 +17,7 @@ export { default as OtherProductSkeleton } from "./products/Skeleton/OtherProduc
 export { default as ProductDetailsSkeleton } from "./products/Skeleton/ProductDetails/ProductDetailsSkeleton";
 export { default as OtherProductList } from "./products/OtherProductList/OtherProductList";
 export { default as ProductDetail } from "./products/ProductDetail/ProductDetail";
+export { default as AnalyticsInfo } from "./analytics/AnalyticsInfo/AnalyticsInfo";
+export { default as AnalyticsStatisticCard } from "./analytics/AnalyticsStatisticCard/AnalyticsStatisticCard";
+export { default as ColumnChart } from "./analytics/ColumnChart/ColumnChart";
+export { default as SalesByCountry } from "./analytics/SalesByCountry/SalesByCountry";

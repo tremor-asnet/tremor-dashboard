@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import ProjectInfoCard from "@/components/ProjectInfoCard/ProjectInfoCard";
+import ProjectInfoCard from "./ProjectInfoCard";
 
 //Mocks
 import { PROFILE_INFO_PROJECT_CARD } from "@/mocks";

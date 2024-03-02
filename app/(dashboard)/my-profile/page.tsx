@@ -1,13 +1,16 @@
-import { Flex, Card, Text } from "@tremor/react";
+import dynamic from "next/dynamic";
 
 // Components
-import {
-  ConversationHistory,
-  ProfileInfo,
-  ProjectInfoCard,
-  ContactCard,
-  PlatformSetting,
-} from "@/components";
+import { Flex, Card, Text } from "@tremor/react";
+
+import { PlatformSetting, ContactCard, ProjectInfoCard } from "@/ui/features";
+const ProfileInfo = dynamic(
+  () => import("@/ui/features/all-projects/ProfileInfo/ProfileInfo"),
+);
+const ConversationHistory = dynamic(
+  () =>
+    import("@/ui/features/my-profile/ConversationHistory/ConversationHistory"),
+);
 
 // Actions
 import { getProfile, getProfileProject } from "@/services";

@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 // Components
-import { ConversationHistory } from "..";
+import ConversationHistory from "./ConversationHistory";
 
 // Mocks
 import { PROFILE_CONVERSATIONS } from "@/mocks/profile";

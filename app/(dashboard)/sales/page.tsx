@@ -5,10 +5,10 @@ import {
   SalesRevenueChart,
   ChannelChart,
   SalesByAge,
-  SalesByCountry,
   SalesStatisticCard,
   TopSellingProducts,
 } from "@/components";
+import { SalesByCountry } from "@/ui/features";
 
 import { REVENUE_CHART_DATA } from "@/mocks";
 

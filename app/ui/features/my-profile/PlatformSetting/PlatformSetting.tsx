@@ -10,9 +10,16 @@ import {
   APPLICATION_SETTING_FIELDS,
   APPLICATION_SETTING_DATA,
 } from "@/constants";
+import dynamic from "next/dynamic";
 
 // Components
-import { AccountSetting, ApplicationSetting } from "@/components";
+const AccountSetting = dynamic(
+  () => import("@/ui/features/my-profile/AccountSetting/AccountSetting"),
+);
+const ApplicationSetting = dynamic(
+  () =>
+    import("@/ui/features/my-profile/ApplicationSetting/ApplicationSetting"),
+);
 
 interface PlatformSettingProps {
   accountSettingData: AccountSettingData;

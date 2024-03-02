@@ -21,3 +21,6 @@ export { default as AnalyticsInfo } from "./analytics/AnalyticsInfo/AnalyticsInf
 export { default as AnalyticsStatisticCard } from "./analytics/AnalyticsStatisticCard/AnalyticsStatisticCard";
 export { default as ColumnChart } from "./analytics/ColumnChart/ColumnChart";
 export { default as SalesByCountry } from "./analytics/SalesByCountry/SalesByCountry";
+export { default as PlatformSetting } from "./my-profile/PlatformSetting/PlatformSetting";
+export { default as ContactCard } from "./my-profile/ContactCard/ContactCard";
+export { default as ProjectInfoCard } from "./my-profile/ProjectInfoCard/ProjectInfoCard";

@@ -65,7 +65,8 @@ const SignUp = () => {
     setChecked(!checked);
   };
 
-  const { openToast, isOpen, icon, message, color } = useContext(ToastContext);
+  const { openToast, isOpen, closeToast, toastType } = useContext(ToastContext);
+  const { icon, message, color } = toastType;
 
   const isShowToast = isSignUpSuccess && isOpen && !hasErrorMessage;
 
@@ -90,9 +91,11 @@ const SignUp = () => {
 
       openToast({
         isOpen: true,
-        message: SIGN_UP_MESSAGE.SUCCESS,
-        icon: <FaCheckCircle />,
-        color: "green",
+        toastType: {
+          message: SIGN_UP_MESSAGE.SUCCESS,
+          icon: <FaCheckCircle />,
+          color: "green",
+        },
       });
       res?.isSuccess && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
@@ -104,15 +107,6 @@ const SignUp = () => {
     }
   };
 
-  const handleCloseToast = () => {
-    openToast({
-      isOpen: false,
-      message: "",
-      icon: null,
-      color: "green",
-    });
-  };
-
   return (
     <div>
       {isShowToast && (
@@ -121,7 +115,7 @@ const SignUp = () => {
             icon={icon}
             message={message}
             color={color}
-            onClose={handleCloseToast}
+            onClose={closeToast}
           />
         </div>
       )}

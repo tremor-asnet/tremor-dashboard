@@ -17,11 +17,6 @@ const PricingInfo = dynamic(
   () => import("../EditProduct/ProductPricing/PricingInfo"),
 );
 
-// Icons
-import { FaCheckCircle } from "react-icons/fa";
-import { TbExclamationMark } from "react-icons/tb";
-import { RxCross2 } from "react-icons/rx";
-
 // Services
 import { editProduct } from "@/services";
 
@@ -29,13 +24,13 @@ import { editProduct } from "@/services";
 import { ProductData } from "@/types";
 
 // Constants
-import { EDIT_PRODUCT_MESSAGE, NOT_FOUND_IMAGE } from "@/constants";
+import { NOT_FOUND_IMAGE, TOAST_TYPES } from "@/constants";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
 
 // Contexts
-import { ToastContext } from "@/context/toast";
+import { ToastMessageType, ToastContext } from "@/context/toast";
 
 const EditProductForm = ({
   productData,
@@ -92,7 +87,9 @@ const EditProductForm = ({
     formHandler.setValue("image", imageValue, { shouldDirty: true });
   }, [imageValue]);
 
-  const { openToast, isOpen, icon, message, color } = useContext(ToastContext);
+  const { openToast, closeToast, isOpen, toastType } = useContext(ToastContext);
+
+  const { icon, message, color } = toastType;
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -111,9 +108,7 @@ const EditProductForm = ({
 
       openToast({
         isOpen: true,
-        message: EDIT_PRODUCT_MESSAGE.PENDING,
-        icon: <TbExclamationMark />,
-        color: "yellow",
+        toastType: ToastMessageType(TOAST_TYPES.WARNING),
       });
 
       setIsLoading(true);
@@ -128,16 +123,12 @@ const EditProductForm = ({
 
       openToast({
         isOpen: true,
-        message: EDIT_PRODUCT_MESSAGE.SUCCESS,
-        icon: <FaCheckCircle />,
-        color: "green",
+        toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
       });
     } catch (err: any) {
       openToast({
         isOpen: true,
-        message: EDIT_PRODUCT_MESSAGE.FAILED,
-        icon: RxCross2,
-        color: "red",
+        toastType: ToastMessageType(TOAST_TYPES.ERROR),
       });
     }
   };
@@ -145,15 +136,6 @@ const EditProductForm = ({
   const onRemoveImage = () => {
     removeImage();
     formHandler.setValue("image", "", { shouldDirty: true });
-  };
-
-  const handleCloseToast = () => {
-    openToast({
-      isOpen: false,
-      message: "",
-      icon: null,
-      color: "green",
-    });
   };
 
   return (
@@ -213,7 +195,7 @@ const EditProductForm = ({
             icon={icon}
             color={color}
             message={message}
-            onClose={handleCloseToast}
+            onClose={closeToast}
           />
         </div>
       )}

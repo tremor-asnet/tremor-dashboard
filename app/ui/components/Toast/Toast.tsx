@@ -1,11 +1,13 @@
 import { IoClose } from "react-icons/io5";
 import { ReactNode } from "react";
 
+export type ToastColor = "green" | "red" | "yellow";
+
 interface ToastProps {
   icon: ReactNode;
   message: string;
   onClose?: () => void;
-  color?: "green" | "red" | "yellow";
+  color?: ToastColor;
 }
 
 export const Toast = ({

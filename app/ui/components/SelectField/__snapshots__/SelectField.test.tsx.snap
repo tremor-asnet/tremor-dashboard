@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
+exports[`SelectField Component Should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -15,6 +15,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         </p>
         <select
           class="peer h-full w-full appearance-none rounded-none border-b-2 border-gray-300 bg-transparent font-sans text-sm font-normal text-primary dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100 undefined"
+          data-testid="select-field"
         >
           <option
             class="dark:bg-primary"
@@ -67,6 +68,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
       </p>
       <select
         class="peer h-full w-full appearance-none rounded-none border-b-2 border-gray-300 bg-transparent font-sans text-sm font-normal text-primary dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100 undefined"
+        data-testid="select-field"
       >
         <option
           class="dark:bg-primary"

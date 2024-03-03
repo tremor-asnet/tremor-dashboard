@@ -1,23 +1,18 @@
 import dynamic from "next/dynamic";
 
 // Components
-import { BillingInfo } from "@/ui/components";
-const InvoiceHeader = dynamic(
-  () => import("@/components/OrderDetails/InvoiceHeader"),
-);
-const OrderSummary = dynamic(
-  () => import("@/components/OrderDetails/OrderSummary/OrderSummary"),
-);
-const PaymentDetails = dynamic(
-  () => import("@/components/OrderDetails/PaymentDetails/PaymentDetails"),
-);
-const OrderContact = dynamic(
-  () => import("@/components/OrderDetails/OrderContact/OrderContact"),
-);
-const TrackOrder = dynamic(
-  () => import("@/components/OrderDetails/TrackOrder/TrackOrder"),
-);
 import { Bold, Card, Col, Flex, Grid } from "@tremor/react";
+import { BillingInfo } from "@/ui/components";
+import {
+  OrderHeader,
+  OrderSummary,
+  OrderContact,
+  TrackOrder,
+} from "@/ui/features";
+
+const PaymentDetails = dynamic(
+  () => import("@/ui/features/orders/PaymentDetails/PaymentDetails"),
+);
 
 // Services
 import { getOrderDetails } from "@/services/ordersServices";
@@ -60,11 +55,7 @@ const OrderDetailsPage = async ({ params }: { params: { id: number } }) => {
       <Card className="w-full lg:w-2/3 dark:bg-dark_blue p-4 ring-0 rounded-xl shadow-md">
         <Grid numItems={1} numItemsMd={2} numItemsLg={3} className="gap-2">
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>
-            <InvoiceHeader
-              id={id}
-              createdAt={createdAt}
-              orderCode={orderCode}
-            />
+            <OrderHeader id={id} createdAt={createdAt} orderCode={orderCode} />
             <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6" />
           </Col>
           <Col numColSpan={1} numColSpanMd={2} numColSpanLg={3}>

@@ -31,3 +31,7 @@ export { default as BillingInfoDetail } from "./billing/BillingInfoDetail/Billin
 export { default as InvoiceDetail } from "./billing/InvoiceDetail/InvoiceDetail";
 export { default as TransactionDetail } from "./billing/TransactionDetail/TransactionDetail";
 export { default as InvoiceHeader } from "./invoices/InvoiceHeader/InvoiceHeader";
+export { default as OrderHeader } from "./orders/InvoiceHeader";
+export { default as OrderSummary } from "./orders/OrderSummary/OrderSummary";
+export { default as OrderContact } from "./orders/OrderContact/OrderContact";
+export { default as TrackOrder } from "./orders/TrackOrder/TrackOrder";

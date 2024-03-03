@@ -1,9 +1,6 @@
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as IconBox } from "./IconBox/IconBox";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
-export { default as OrderContact } from "./OrderDetails/OrderContact/OrderContact";
-export { default as OrderFilter } from "./OrderFilter";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as SelectOption } from "./SelectOption";
-export { default as TableOrder } from "./Table/TableOrder/TableOrder";

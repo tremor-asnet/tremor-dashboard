@@ -1,7 +1,7 @@
 // Components
-import { Card, Flex, Table, TableBody, Title } from "@tremor/react";
 import { MdLanguage } from "react-icons/md";
-import { SalesByCountryRow, WorldMapCanvas } from "@/components";
+import { Card, Flex, Table, TableBody, Title } from "@tremor/react";
+import { SalesByCountryRow, WorldMapCanvas } from "@/ui/components";
 
 // Types
 import { SalesByCountryData } from "@/types";

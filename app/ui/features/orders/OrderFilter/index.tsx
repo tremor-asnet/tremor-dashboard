@@ -2,7 +2,10 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { RefObject, useState } from "react";
+
+// Components
 import { Button, Text } from "@tremor/react";
+import { SelectOption } from "@/ui/components";
 
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -12,9 +15,6 @@ import { orderListOption } from "@/constants";
 
 // Hooks
 import { useOutsideClick } from "@/hooks";
-
-// Components
-import { SelectOption } from "@/components";
 
 interface OrderFilterProps {
   title: string;

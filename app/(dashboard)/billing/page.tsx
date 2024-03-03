@@ -1,7 +1,7 @@
-import { Bold, Flex } from "@tremor/react";
 import { Suspense } from "react";
 
 // Components
+import { Bold, Flex } from "@tremor/react";
 import { LoadingIndicator } from "@/ui/components";
 import {
   BillingDetail,

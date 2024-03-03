@@ -15,3 +15,5 @@ export const CustomList = ({ products }: CustomListProps) => (
     ))}
   </>
 );
+
+export default CustomList;

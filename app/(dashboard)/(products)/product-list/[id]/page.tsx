@@ -1,5 +1,6 @@
-// Components
 import { Suspense } from "react";
+
+// Components
 import { Bold } from "@tremor/react";
 import {
   OtherProductList,

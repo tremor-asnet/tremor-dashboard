@@ -27,3 +27,5 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
     </p>
   </div>
 );
+
+export default CustomAvatarName;

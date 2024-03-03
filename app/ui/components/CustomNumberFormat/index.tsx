@@ -16,3 +16,5 @@ export const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
     })}
   </p>
 );
+
+export default CustomNumberFormat;

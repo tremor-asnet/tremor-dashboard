@@ -2,10 +2,10 @@
 
 // Components
 import {
+  DataGrid,
   CustomAvatarName,
   CustomNumberFormat,
-} from "@/components/Table/common";
-import { DataGrid } from "@/ui/components";
+} from "@/ui/components";
 import Link from "next/link";
 
 // Types

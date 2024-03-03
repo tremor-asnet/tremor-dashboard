@@ -2,7 +2,7 @@
 
 import { Text } from "@tremor/react";
 // Components
-import { UserConversationHistory } from "@/components";
+import { UserConversationHistory } from "@/ui/components";
 
 // types
 import { Conversation } from "@/types";

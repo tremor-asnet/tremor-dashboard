@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 
 // Components
 import { Flex, Card, Text } from "@tremor/react";
-
 import { PlatformSetting, ContactCard, ProjectInfoCard } from "@/ui/features";
 const ProfileInfo = dynamic(
   () => import("@/ui/features/all-projects/ProfileInfo/ProfileInfo"),

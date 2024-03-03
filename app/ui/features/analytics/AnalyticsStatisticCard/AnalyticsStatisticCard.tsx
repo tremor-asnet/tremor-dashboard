@@ -2,7 +2,7 @@
 import { Card, Text, Flex } from "@tremor/react";
 
 //Components
-import { IconBox } from "@/components";
+import { IconBox } from "@/ui/components";
 
 // Helpers
 import {

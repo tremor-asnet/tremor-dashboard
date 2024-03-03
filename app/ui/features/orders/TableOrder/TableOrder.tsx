@@ -2,14 +2,14 @@
 
 // Components
 import {
-  CustomAvatarName,
   CustomCheckBoxField,
   CustomDateFormat,
   CustomList,
   CustomNumberFormat,
   CustomStatus,
   CustomQuantity,
-} from "@/components/Table/common";
+  CustomAvatarName,
+} from "@/ui/components";
 import { DataGrid } from "@/ui/components";
 
 //Types

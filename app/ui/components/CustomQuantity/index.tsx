@@ -15,3 +15,5 @@ export const CustomQuantity = ({ products }: QuantityProps) => (
     ))}
   </>
 );
+
+export default CustomQuantity;

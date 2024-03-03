@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // Components
-import { HeaderCellContents } from "@/components";
+import { HeaderCellContents } from "@/ui/components";
 import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 
 // Types

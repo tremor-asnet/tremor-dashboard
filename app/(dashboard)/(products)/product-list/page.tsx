@@ -1,15 +1,13 @@
+import Link from "next/link";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
 // Components
-import { Suspense } from "react";
 import { Flex } from "@tremor/react";
-import Link from "next/link";
 import { LoadingIndicator } from "@/ui/components";
-
 const InputSearch = dynamic(
   () => import("@/ui/components/InputSearch/InputSearch"),
 );
-
 const ProductFilter = dynamic(
   () => import("@/ui/features/products/ProductFilter"),
 );

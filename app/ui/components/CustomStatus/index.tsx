@@ -16,3 +16,5 @@ export const CustomStatus = ({ status }: CustomStatusProps) => (
     </p>
   </div>
 );
+
+export default CustomStatus;

@@ -24,3 +24,5 @@ export const CustomCheckBoxField = ({
     </Link>
   </div>
 );
+
+export default CustomCheckBoxField;

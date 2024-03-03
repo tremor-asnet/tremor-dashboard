@@ -13,3 +13,5 @@ export const CustomDateFormat = ({ date }: CustomDateFormatProps) => (
     {formatDateTime(date, SEPARATOR.COMMAS)}
   </p>
 );
+
+export default CustomDateFormat;

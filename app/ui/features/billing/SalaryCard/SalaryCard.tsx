@@ -1,10 +1,10 @@
 //Libs
 import { MdAccountBalance } from "react-icons/md";
-import { GrPaypal } from "react-icons/gr";
-import { Card, Text, Flex } from "@tremor/react";
 
 //Components
-import { IconBox } from "@/components";
+import { GrPaypal } from "react-icons/gr";
+import { Card, Text, Flex } from "@tremor/react";
+import { IconBox } from "@/ui/components";
 
 // Helpers
 import { moneyFormat } from "@/helpers";

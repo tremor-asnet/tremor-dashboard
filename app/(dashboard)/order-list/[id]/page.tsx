@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 
 // Components
+import { BillingInfo } from "@/ui/components";
 const InvoiceHeader = dynamic(
   () => import("@/components/OrderDetails/InvoiceHeader"),
 );
@@ -9,9 +10,6 @@ const OrderSummary = dynamic(
 );
 const PaymentDetails = dynamic(
   () => import("@/components/OrderDetails/PaymentDetails/PaymentDetails"),
-);
-const BillingInfo = dynamic(
-  () => import("@/components/OrderDetails/BillingInfo/BillingInfo"),
 );
 const OrderContact = dynamic(
   () => import("@/components/OrderDetails/OrderContact/OrderContact"),

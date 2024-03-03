@@ -1,5 +1,9 @@
+import dynamic from "next/dynamic";
+
 // Components
-import TransactionItem from "../TransactionItem/TransactionItem";
+const TransactionItem = dynamic(
+  () => import("../TransactionItem/TransactionItem"),
+);
 
 // Types
 import { Transaction } from "@/types";

@@ -7,4 +7,3 @@ export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as SelectOption } from "./SelectOption";
 export { default as TableOrder } from "./Table/TableOrder/TableOrder";
-export { default as BillingInfo } from "./OrderDetails/BillingInfo/BillingInfo";

@@ -1,5 +1,5 @@
 // Components
-import { BillingInfo } from "@/components";
+import { BillingInfo } from "@/ui/components";
 
 // Types
 import { BillingInfoData } from "@/types";

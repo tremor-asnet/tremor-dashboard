@@ -17,3 +17,4 @@ export { default as Popover } from "./Popover/Popover";
 export { default as Stepper } from "./Stepper/Stepper";
 export { default as StatusButton } from "./StatusButton/StatusButton";
 export { default as StarRating } from "./StarRating/StarRating";
+export { default as BillingInfo } from "./BillingInfo/BillingInfo";

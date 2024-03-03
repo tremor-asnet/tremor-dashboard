@@ -26,3 +26,8 @@ export { default as ContactCard } from "./my-profile/ContactCard/ContactCard";
 export { default as ProjectInfoCard } from "./my-profile/ProjectInfoCard/ProjectInfoCard";
 export { default as TopSellingProducts } from "./sales/TopSellingProducts/TopSellingProducts";
 export { default as ChannelChart } from "./sales/ChannelsChart/ChannelsChart";
+export { default as BillingDetail } from "./billing/BillingDetail/BillingDetail";
+export { default as BillingInfoDetail } from "./billing/BillingInfoDetail/BillingInfoDetail";
+export { default as InvoiceDetail } from "./billing/InvoiceDetail/InvoiceDetail";
+export { default as TransactionDetail } from "./billing/TransactionDetail/TransactionDetail";
+export { default as InvoiceHeader } from "./invoices/InvoiceHeader/InvoiceHeader";

@@ -1,6 +1,5 @@
-import { Flex } from "@tremor/react";
-
 // Components
+import { Flex } from "@tremor/react";
 import BillingCard from "../BillingCard/BillingCard";
 import SalaryCard from "../SalaryCard/SalaryCard";
 

@@ -4,14 +4,17 @@
 import { Flex } from "@tremor/react";
 
 // Components
-import InfoInvoiceBody from "./InfoInvoiceBody/InfoInvoiceBody";
-import TableInvoice from "./TableInvoice/TableInvoice";
+const InfoInvoiceBody = dynamic(
+  () => import("../InfoInvoiceBody/InfoInvoiceBody"),
+);
+const TableInvoice = dynamic(() => import("../TableInvoice/TableInvoice"));
 
 // Types
 import { TInvoice } from "@/types";
 
 // Styles
 import "@/styles/invoice.css";
+import dynamic from "next/dynamic";
 
 const InvoiceBody = ({
   id,

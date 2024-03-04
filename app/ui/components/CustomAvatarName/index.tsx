@@ -6,6 +6,20 @@ interface CustomAvatarNameProps {
   text: string;
 }
 
+const getRandomColor = () => {
+  const colors = [
+    "bg-red-500",
+    "bg-yellow-500",
+    "bg-green-500",
+    "bg-blue-500",
+    "bg-indigo-500",
+    "bg-purple-500",
+    "bg-pink-500",
+  ];
+  return colors[Math.floor(Math.random() * colors.length)];
+};
+const colorRandom = getRandomColor();
+
 export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-48">
     {avatar ? (
@@ -18,7 +32,8 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
         src={avatar}
       />
     ) : (
-      <p className="w-6 h-6 min-w-[24px] flex justify-center items-center text-white text-xs bg-primary rounded-full mr-2">
+      <p
+        className={`w-6 h-6 min-w-[24px] flex justify-center items-center text-white text-xs ${colorRandom} rounded-full mr-2`}>
         {text.substring(0, 1)}
       </p>
     )}

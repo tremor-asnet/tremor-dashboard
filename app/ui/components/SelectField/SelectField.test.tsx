@@ -26,23 +26,15 @@ describe("SelectField Component", () => {
 
   it("renders correct number of options", () => {
     const { getByTestId } = render(
-      <SelectField
-        label="Currency"
-        options={TYPE_PRICE}
-        dataTestId="currency"
-      />,
+      <SelectField label="Currency" options={TYPE_PRICE} name="category" />,
     );
-    const selectElement = getByTestId("select-field");
+    const selectElement = getByTestId("category");
     expect(selectElement.children).toHaveLength(TYPE_PRICE.length);
   });
 
   it("renders correct name of options", () => {
     const { getByText } = render(
-      <SelectField
-        label="Currency"
-        options={TYPE_PRICE}
-        dataTestId="currency"
-      />,
+      <SelectField label="Currency" options={TYPE_PRICE} />,
     );
     expect(getByText("GBP")).toBeTruthy();
   });

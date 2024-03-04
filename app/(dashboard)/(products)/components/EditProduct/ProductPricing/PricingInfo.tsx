@@ -80,7 +80,6 @@ const PricingInfo = () => {
                       options={TYPE_PRICE}
                       {...field}
                       className="py-2.5"
-                      dataTestId="currency"
                     />
                   </div>
                 )}

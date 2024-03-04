@@ -9,14 +9,14 @@ interface SelectFieldProps
   label: string;
   options: SelectOptionData[];
   className?: string;
-  dataTestId?: string;
+  name?: string;
 }
 
 const SelectField = ({
   label,
   options,
   className,
-  dataTestId,
+  name,
   ...props
 }: SelectFieldProps) => {
   const optionList = options.map(item => {
@@ -41,7 +41,7 @@ const SelectField = ({
       <select
         {...props}
         className={`${defaultClass} ${className}`}
-        data-testid="select-field">
+        data-testid={name}>
         {optionList}
       </select>
     </div>

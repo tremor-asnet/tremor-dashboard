@@ -5,6 +5,7 @@ import { Button, Text, Flex } from "@tremor/react";
 
 //Styles
 import "@/styles/order.css";
+import "@/styles/billing.css";
 
 export const InvoiceFooter = () => {
   const handlePrintInvoice = () => {
@@ -13,7 +14,10 @@ export const InvoiceFooter = () => {
 
   return (
     <Flex className="items-start md:items-end flex-col md:flex-row mt-10 md:mt-20 invoice">
-      <Flex flexDirection="col" alignItems="start" className="md:max-w-[40%]">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        className="print-footer md:max-w-[40%]">
         <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7 dark:print:text-primary">
           Thank you!
         </p>

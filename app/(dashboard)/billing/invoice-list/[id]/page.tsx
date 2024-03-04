@@ -2,14 +2,12 @@ import dynamic from "next/dynamic";
 
 // Components
 import { Card, Col, Flex, Grid } from "@tremor/react";
-const InvoiceFooter = dynamic(
-  () => import("./components/InvoiceFooter/InvoiceFooter"),
-);
+import { InvoiceHeader } from "@/ui/features/invoices";
 const InvoiceBody = dynamic(
-  () => import("./components/InvoiceBody/InvoiceBody"),
+  () => import("@/ui/features/invoices/InvoiceBody/InvoiceBody"),
 );
-const InvoiceHeader = dynamic(
-  () => import("./components/InvoiceHeader/InvoiceHeader"),
+const InvoiceFooter = dynamic(
+  () => import("@/ui/features/invoices/InvoiceFooter/InvoiceFooter"),
 );
 
 // Services

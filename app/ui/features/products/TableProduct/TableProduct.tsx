@@ -2,12 +2,12 @@
 
 // Components
 import {
-  CustomAvatarName,
   CustomCheckBoxField,
   CustomDateFormat,
   CustomNumberFormat,
-} from "@/components/Table/common";
-import { DataGrid } from "@/ui/components";
+  CustomAvatarName,
+  DataGrid,
+} from "@/ui/components";
 
 // Types
 import { Product, ColumnType } from "@/types";

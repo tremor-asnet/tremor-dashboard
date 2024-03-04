@@ -1,20 +1,16 @@
-import { lazy } from "react";
+import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
+import {
+  AnalyticsInfo,
+  AnalyticsStatisticCard,
+  ColumnChart,
+  SalesByCountry,
+} from "@/ui/features/analytics";
 
-const AnalyticsInfo = lazy(
-  () => import("@/components/AnalyticsInfo/AnalyticsInfo"),
-);
-const AnalyticsStatisticCard = lazy(
-  () => import("@/components/AnalyticsStatisticCard/AnalyticsStatisticCard"),
-);
-const ColumnChart = lazy(() => import("@/components/ColumnChart/ColumnChart"));
-const AnalyticsLineChart = lazy(
-  () => import("@/components/AnalyticsLineChart/AnalyticsLineChart"),
-);
-const SalesByCountry = lazy(
-  () => import("@/components/SalesByCountry/SalesByCountry"),
+const AnalyticsLineChart = dynamic(
+  () => import("@/ui/features/analytics/AnalyticsLineChart/AnalyticsLineChart"),
 );
 
 //Types
@@ -27,7 +23,7 @@ import { getAnalytics } from "@/services";
 import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 // Constants
-import { CHART_SRC, CHART_TYPE } from "@/constants";
+import { CHART_TYPE } from "@/constants";
 
 export const metadata = {
   title: "Analytics - Tremor Dashboard",

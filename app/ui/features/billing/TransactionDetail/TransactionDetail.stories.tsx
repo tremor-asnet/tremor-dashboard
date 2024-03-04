@@ -7,7 +7,7 @@ import TransactionDetail from "./TransactionDetail";
 import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
 const meta = {
-  title: "Components/TransactionDetail",
+  title: "Components/Billing/TransactionDetail",
   component: TransactionDetail,
   tags: ["autodocs"],
   parameters: {

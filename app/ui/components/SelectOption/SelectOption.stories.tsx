@@ -8,7 +8,7 @@ import SelectOption from "./";
 import { ProductList } from "@/constants";
 
 const meta = {
-  title: "Components/SelectOption",
+  title: "Components/Common/SelectOption",
   tags: ["autodocs"],
   component: SelectOption,
   parameters: {

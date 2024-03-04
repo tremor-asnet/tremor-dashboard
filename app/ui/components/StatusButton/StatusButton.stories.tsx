@@ -8,7 +8,7 @@ import StatusButton from "./StatusButton";
 import { STATUS_LIST, TYPE_LIST } from "@/types";
 
 const meta = {
-  title: "Components/StatusButton",
+  title: "Components/Billing/StatusButton",
   tags: ["autodocs"],
   component: StatusButton,
   argTypes: {

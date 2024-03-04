@@ -2,13 +2,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import Invoices from "./Invoices";
+import Invoices from "./InvoiceList";
 
 // Mocks
 import { MOCK_INVOICES } from "@/mocks/invoices";
 
 const meta = {
-  title: "Components/Invoices",
+  title: "Components/Billing/InvoiceList",
   tags: ["autodocs"],
   component: Invoices,
 } as Meta<typeof Invoices>;

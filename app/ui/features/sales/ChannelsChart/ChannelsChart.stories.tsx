@@ -8,7 +8,7 @@ import ChannelsChart from "./ChannelsChart";
 import { CHANNELS_CHART_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/ChannelsChart",
+  title: "Components/Sales/ChannelsChart",
   tags: ["autodocs"],
   component: ChannelsChart,
 } as Meta<typeof ChannelsChart>;

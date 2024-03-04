@@ -6,7 +6,7 @@ import WorldMapCanvas from "./";
 import { Card } from "@tremor/react";
 
 const meta = {
-  title: "Components/WorldMapCanvas",
+  title: "Components/Images/WorldMapCanvas",
   tags: ["autodocs"],
   component: WorldMapCanvas,
   argTypes: {

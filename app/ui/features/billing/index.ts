@@ -3,7 +3,7 @@ export { default as BillingDetail } from "./BillingDetail/BillingDetail";
 export { default as BillingInfoDetail } from "./BillingInfoDetail/BillingInfoDetail";
 export { default as InvoiceDetail } from "./InvoiceDetail/InvoiceDetail";
 export { default as InvoiceItem } from "./InvoiceItem/InvoiceItem";
-export { default as Invoices } from "./Invoices/Invoices";
+export { default as Invoices } from "./InvoiceList/InvoiceList";
 export { default as SalaryCard } from "./SalaryCard/SalaryCard";
 export { default as Transactions } from "./Transaction/Transactions";
 export { default as TransactionDetail } from "./TransactionDetail/TransactionDetail";

@@ -7,7 +7,7 @@ import SideBar from "./Sidebar";
 import { ROUTES } from "@/constants";
 
 const meta = {
-  title: "Components/SideBar",
+  title: "Components/Common/SideBar",
   component: SideBar,
   tags: ["autodocs"],
 } as Meta<typeof SideBar>;

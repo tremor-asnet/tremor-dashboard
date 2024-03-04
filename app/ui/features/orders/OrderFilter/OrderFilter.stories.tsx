@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import OrderFilter from "../OrderFilter";
 
 const meta = {
-  title: "Components/OrderFilter",
+  title: "Components/Orders/OrderFilter",
   tags: ["autodocs"],
   component: OrderFilter,
   argTypes: {

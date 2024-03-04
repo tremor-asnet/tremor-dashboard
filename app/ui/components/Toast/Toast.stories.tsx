@@ -6,7 +6,7 @@ import Toast from "./Toast";
 import { SIGN_UP_MESSAGE } from "@/constants";
 
 const meta = {
-  title: "Components/Toast",
+  title: "Components/Common/Toast",
   component: Toast,
   tags: ["autodocs"],
 } as Meta<typeof Toast>;

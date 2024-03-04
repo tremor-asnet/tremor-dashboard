@@ -7,7 +7,7 @@ import SalesByAge from ".";
 import { SALES_AGE_CHART } from "@/mocks";
 
 const meta = {
-  title: "Components/SalesByAge",
+  title: "Components/Sales/SalesByAge",
   component: SalesByAge,
   tags: ["autodocs"],
   argTypes: {

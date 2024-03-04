@@ -8,7 +8,7 @@ import { Card } from "@tremor/react";
 import { mockInvoiceHeader } from "@/mocks/orderDetails";
 
 const meta = {
-  title: "Components/InvoiceHeader",
+  title: "Components/Orders/OrderDetails/InvoiceHeader",
   component: InvoiceHeader,
   tags: ["autodocs"],
 } as Meta<typeof InvoiceHeader>;

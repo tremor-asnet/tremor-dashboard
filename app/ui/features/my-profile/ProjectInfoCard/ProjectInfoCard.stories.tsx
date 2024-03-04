@@ -7,7 +7,7 @@ import ProjectInfoCard from "./ProjectInfoCard";
 import { PROFILE_INFO_PROJECT_CARD } from "@/mocks";
 
 const meta = {
-  title: "Components/ProjectInfoCard",
+  title: "Components/Profiles/ProjectInfoCard",
   component: ProjectInfoCard,
   tags: ["autodocs"],
   argTypes: {

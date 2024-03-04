@@ -5,7 +5,7 @@ import { Text, Flex } from "@tremor/react";
 import Popover from "./Popover";
 
 const meta = {
-  title: "Components/Popover",
+  title: "Components/Common/Popover",
   component: Popover,
   tags: ["autodocs"],
   argTypes: {

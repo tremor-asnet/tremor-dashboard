@@ -1,5 +1,5 @@
 // Components
-import Invoices from "../Invoices/Invoices";
+import Invoices from "../InvoiceList/InvoiceList";
 
 // Types
 import { Invoice } from "@/types";

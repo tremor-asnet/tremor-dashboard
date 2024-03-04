@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { CustomDateFormat } from ".";
 
 const meta = {
-  title: "Components/CustomDateFormat",
+  title: "Components/Tables/CustomDateFormat",
   component: CustomDateFormat,
   tags: ["autodocs"],
   argTypes: {

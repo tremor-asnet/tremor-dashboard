@@ -7,7 +7,7 @@ import SalaryCard from "./SalaryCard";
 import { mockSalaryData } from "@/mocks";
 
 const meta = {
-  title: "Components/SalaryCard",
+  title: "Components/Billing/SalaryCard",
   component: SalaryCard,
   tags: ["autodocs"],
 } as Meta<typeof SalaryCard>;

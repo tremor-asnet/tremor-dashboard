@@ -7,7 +7,7 @@ import Avatar from "./Avatar";
 import { AVATAR_SRC } from "@/constants";
 
 const meta = {
-  title: "Components/Avatar",
+  title: "Components/Common/Avatar",
   component: Avatar,
   tags: ["autodocs"],
 } as Meta<typeof Avatar>;

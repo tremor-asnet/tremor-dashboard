@@ -6,11 +6,8 @@ import SalesByCountry from "./SalesByCountry";
 // Mock data
 import { SALES_BY_COUNTRY } from "@/mocks/analytics";
 
-// Constants
-import { CHART_SRC } from "@/constants";
-
 const meta = {
-  title: "Components/SalesByCountry",
+  title: "Components/Common/SalesByCountry",
   component: SalesByCountry,
   tags: ["autodocs"],
 } as Meta<typeof SalesByCountry>;

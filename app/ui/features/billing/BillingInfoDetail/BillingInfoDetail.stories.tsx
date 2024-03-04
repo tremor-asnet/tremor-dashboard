@@ -7,7 +7,7 @@ import BillingInfoDetail from "./BillingInfoDetail";
 import { mockBilling } from "@/mocks/orderDetails";
 
 const meta = {
-  title: "Components/BillingInfoDetail",
+  title: "Components/Billing/BillingInfoDetail",
   tags: ["autodocs"],
   component: BillingInfoDetail,
   argTypes: {

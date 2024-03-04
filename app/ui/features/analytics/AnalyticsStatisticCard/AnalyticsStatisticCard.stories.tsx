@@ -7,7 +7,7 @@ import AnalyticsStatisticCard from "./AnalyticsStatisticCard";
 import { STATISTICAL_DATA } from "@/mocks/analytics";
 
 const meta = {
-  title: "Components/ AnalyticsStatisticCard",
+  title: "Components/Analytics/AnalyticsStatisticCard",
   component: AnalyticsStatisticCard,
   tags: ["autodocs"],
 } as Meta<typeof AnalyticsStatisticCard>;

@@ -9,7 +9,7 @@ const mockProps = {
 };
 
 const meta = {
-  title: "Components/Breadcrumb",
+  title: "Components/Common/Breadcrumb",
   component: Breadcrumb,
   tags: ["autodocs"],
   argTypes: {

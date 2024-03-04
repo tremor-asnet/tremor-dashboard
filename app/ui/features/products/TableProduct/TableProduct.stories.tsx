@@ -7,7 +7,7 @@ import TableProduct from "./TableProduct";
 import { MOCK_PRODUCTS } from "@/mocks";
 
 const meta = {
-  title: "Components/Tables/TableProduct",
+  title: "Components/Products/Tables/TableProduct",
   component: TableProduct,
   tags: ["autodocs"],
 } as Meta<typeof TableProduct>;

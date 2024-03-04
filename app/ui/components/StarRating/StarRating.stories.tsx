@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import StarRating from "./StarRating";
 
 const meta = {
-  title: "Components/StarRating",
+  title: "Components/Products/Detail/StarRating",
   component: StarRating,
   tags: ["autodocs"],
   argTypes: {

@@ -6,7 +6,7 @@ import HeaderCellContents from "./HeaderCellContents";
 import { Card } from "@tremor/react";
 
 const meta = {
-  title: "Components/HeaderCellContents",
+  title: "Components/Tables/HeaderCellContents",
   tags: ["autodocs"],
   component: HeaderCellContents,
   argTypes: {

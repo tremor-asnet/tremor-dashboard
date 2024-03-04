@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import DashboardHeader from "./DashboardHeader";
 
 const meta = {
-  title: "Components/DashboardHeader",
+  title: "Components/Common/DashboardHeader",
   component: DashboardHeader,
   tags: ["autodocs"],
   argTypes: {

@@ -7,7 +7,7 @@ import TableOrder from "./TableOrder";
 import { MOCK_ORDERS } from "@/mocks";
 
 const meta = {
-  title: "Components/Tables/TableOrder",
+  title: "Components/Orders/Tables/TableOrder",
   component: TableOrder,
   tags: ["autodocs"],
 } as Meta<typeof TableOrder>;

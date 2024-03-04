@@ -8,7 +8,7 @@ import { Card } from "@tremor/react";
 import { INVOICE_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/InvoiceBody",
+  title: "Components/Billing/Invoices/InvoiceBody",
   component: InvoiceBody,
   tags: ["autodocs"],
   argTypes: {

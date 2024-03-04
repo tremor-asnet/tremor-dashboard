@@ -46,7 +46,7 @@ const OrderListPage = async ({
         <InputSearch field="id" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${id}-${status}`}
+            key={`${id}-${status}-${page}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"

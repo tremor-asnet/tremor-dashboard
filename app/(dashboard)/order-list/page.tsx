@@ -40,7 +40,7 @@ const OrderListPage = async ({
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="id" />
-        <div className="w-full relative min-h-[183px] bg-white rounded-lg">
+        <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
             key={`${id}-${status}`}
             fallback={

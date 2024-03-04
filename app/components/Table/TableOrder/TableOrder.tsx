@@ -77,7 +77,7 @@ const TableOrder = ({
       sortable: true,
     },
     {
-      key: "products",
+      key: "productName",
       title: "Products",
       customNode: (_, { products }) => <CustomList products={products} />,
       sortable: true,
@@ -103,6 +103,8 @@ const TableOrder = ({
 
   // Handle sort with field inside the object nested
   sortedOrders = transformOrders(sortedOrders);
+
+  console.log("sortedOrders", sortedOrders);
 
   return (
     <DataGrid

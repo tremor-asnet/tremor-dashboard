@@ -107,7 +107,6 @@ const EditProductForm = ({
       };
 
       openToast({
-        isOpen: true,
         toastType: ToastMessageType(TOAST_TYPES.WARNING),
       });
 
@@ -122,12 +121,10 @@ const EditProductForm = ({
       router.refresh();
 
       openToast({
-        isOpen: true,
         toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
       });
     } catch (err: any) {
       openToast({
-        isOpen: true,
         toastType: ToastMessageType(TOAST_TYPES.ERROR),
       });
     }

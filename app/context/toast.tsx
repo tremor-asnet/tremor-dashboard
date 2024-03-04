@@ -24,12 +24,12 @@ interface ToastType {
 }
 
 interface ToastProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   toastType: ToastType;
 }
 
 interface ToastContextProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   toastType: ToastType;
   openToast: ({ isOpen, toastType }: ToastProps) => void;
   closeToast: () => void;
@@ -68,7 +68,6 @@ export const ToastMessageType = (type: string): ToastType => {
 };
 
 const ToastContext = createContext<ToastContextProps>({
-  isOpen: true,
   toastType: { icon: "", message: "", color: "green" },
   openToast: ({ isOpen, toastType }: ToastProps) => {},
   closeToast: () => {},
@@ -113,10 +112,10 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
     });
   };
 
-  const openToast = ({ isOpen, toastType }: ToastProps) => {
+  const openToast = ({ toastType }: ToastProps) => {
     const { icon, message, color } = toastType;
 
-    setToast({ isOpen, toastType: { icon, message, color } });
+    setToast({ isOpen: true, toastType: { icon, message, color } });
   };
 
   const value = {

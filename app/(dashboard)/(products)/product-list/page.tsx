@@ -59,6 +59,7 @@ const ProductListPage = async ({
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="query" />
         <Suspense
+          key={`${query}-${isAvailable}-${page}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"

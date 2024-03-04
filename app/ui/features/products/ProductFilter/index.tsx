@@ -45,6 +45,7 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
 
     if (currentIsAvailable !== isAvailable) {
       newParams.set("isAvailable", isAvailable);
+      newParams.set("page", "1");
     }
 
     const query = newParams ? `${newParams}` : "";

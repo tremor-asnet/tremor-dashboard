@@ -1,9 +1,18 @@
-// Components
-import { Suspense } from "react";
-import { Flex } from "@tremor/react";
 import Link from "next/link";
-import { InputSearch, LoadingIndicator } from "@/ui/components";
-import { ProductFilter, TableProduct } from "@/ui/features";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+// Components
+import { Flex } from "@tremor/react";
+import { LoadingIndicator, InputSearch } from "@/ui/components";
+
+const ProductFilter = dynamic(
+  () => import("@/ui/features/products/ProductFilter"),
+);
+
+const TableProduct = dynamic(
+  () => import("@/ui/features/products/TableProduct/TableProduct"),
+);
 
 // Services
 import { getProducts } from "@/services";

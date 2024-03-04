@@ -1,9 +1,13 @@
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import { OrderFilter, TableOrder } from "@/components";
+import { Button, Flex, Text } from "@tremor/react";
 import { InputSearch, LoadingIndicator } from "@/ui/components";
+const OrderFilter = dynamic(() => import("@/ui/features/orders/OrderFilter"));
+const TableOrder = dynamic(
+  () => import("@/ui/features/orders/TableOrder/TableOrder"),
+);
 
 // Services
 import { getOrders } from "@/services";

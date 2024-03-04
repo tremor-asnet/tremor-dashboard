@@ -10,6 +10,9 @@ const InvoiceFooter = dynamic(
   () => import("@/ui/features/invoices/InvoiceFooter/InvoiceFooter"),
 );
 
+// Styles
+import "@/styles/billing.css";
+
 // Services
 import { getInvoiceDetails } from "@/services";
 
@@ -33,9 +36,11 @@ const InvoiceDetailsPage = async ({ params }: { params: { id: number } }) => {
   } = customer;
 
   return (
-    <Flex justifyContent="center" className="w-full bg-transparent">
+    <Flex
+      justifyContent="center"
+      className="w-full bg-transparent print-invoice">
       <Card
-        className="w-full lg:w-2/3 dark:bg-dark_blue px-6 py-7 ring-0 rounded-xl shadow-md print:shadow-none dark:print:shadow-none"
+        className="print-content w-full lg:w-2/3 dark:bg-dark_blue px-6 py-7 ring-0 rounded-xl shadow-md print:shadow-none dark:print:shadow-none"
         id="print-content">
         <Grid numItems={1} className="gap-2">
           <Col numColSpan={1}>

@@ -99,7 +99,7 @@
   .light-loading-indicator {
     @apply flex justify-center items-center fixed bg-[rgba(0,0,0,0.1)] overflow-hidden w-full h-full inset-0 z-50 cursor-not-allowed;
   }
-  
+
   .switch button {
     @apply opacity-100;
   }

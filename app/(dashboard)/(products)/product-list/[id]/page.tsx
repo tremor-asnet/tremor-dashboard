@@ -7,7 +7,7 @@ import {
   OtherProductSkeleton,
   ProductDetail,
   ProductDetailsSkeleton,
-} from "@/ui/features";
+} from "@/ui/features/products";
 
 export default async function Page({ params }: { params: { id: number } }) {
   return (

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Flex } from "@tremor/react";
 import { CustomImage } from "@/ui/components";
-import { ProductInfoDetail } from "@/ui/features";
+import { ProductInfoDetail } from "@/ui/features/products";
 
 // Services
 import { getProductDetails } from "@/services";

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { NewPricing } from "@/types";
 
 // Components
-import { Pricing } from "@/ui/features";
+import { Pricing } from "@/ui/features/products/AddProduct";
 
 interface PricingFormProps {
   price: number;

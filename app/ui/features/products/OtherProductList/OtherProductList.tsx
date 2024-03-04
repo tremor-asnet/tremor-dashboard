@@ -2,7 +2,7 @@
 import { getProducts } from "@/services";
 
 // Components
-import { OtherProducts } from "@/ui/features";
+import { OtherProducts } from "@/ui/features/products";
 
 const OtherProductList = async () => {
   const { results } = await getProducts();

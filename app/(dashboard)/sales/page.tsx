@@ -2,11 +2,8 @@ import dynamic from "next/dynamic";
 
 // Components
 import { Col, Grid } from "@tremor/react";
-import {
-  SalesByCountry,
-  TopSellingProducts,
-  ChannelChart,
-} from "@/ui/features";
+import { SalesByCountry } from "@/ui/features/analytics";
+import { TopSellingProducts, ChannelChart } from "@/ui/features/sales";
 const SalesStatisticCard = dynamic(
   () => import("@/ui/features/sales/SalesStatisticCard/SalesStatisticCard"),
 );

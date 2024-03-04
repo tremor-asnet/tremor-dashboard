@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 
 // Components
 import { Card, Col, Flex, Grid } from "@tremor/react";
-import { InvoiceHeader } from "@/ui/features";
+import { InvoiceHeader } from "@/ui/features/invoices";
 const InvoiceBody = dynamic(
   () => import("@/ui/features/invoices/InvoiceBody/InvoiceBody"),
 );

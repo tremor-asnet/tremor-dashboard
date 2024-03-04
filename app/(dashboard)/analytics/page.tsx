@@ -7,7 +7,7 @@ import {
   AnalyticsStatisticCard,
   ColumnChart,
   SalesByCountry,
-} from "@/ui/features";
+} from "@/ui/features/analytics";
 
 const AnalyticsLineChart = dynamic(
   () => import("@/ui/features/analytics/AnalyticsLineChart/AnalyticsLineChart"),

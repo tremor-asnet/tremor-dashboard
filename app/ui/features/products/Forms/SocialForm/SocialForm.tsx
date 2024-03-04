@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form";
 
 // Components
-import { Socials } from "@/ui/features";
+import { Socials } from "@/ui/features/products/AddProduct";
 
 // Types
 import { NewSocial } from "@/types";

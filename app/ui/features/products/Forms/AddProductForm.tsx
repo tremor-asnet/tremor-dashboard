@@ -11,7 +11,7 @@ import {
   PricingForm,
   ProductInfoForm,
   SocialForm,
-} from "@/ui/features";
+} from "@/ui/features/products/Forms";
 
 // Types
 import { IMedia, NewPricing, NewInfo, NewSocial, ProductData } from "@/types";

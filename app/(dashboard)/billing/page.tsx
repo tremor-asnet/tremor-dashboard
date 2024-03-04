@@ -8,7 +8,7 @@ import {
   BillingInfoDetail,
   InvoiceDetail,
   TransactionDetail,
-} from "@/ui/features";
+} from "@/ui/features/billing";
 
 // Services
 import { getBillings, getTransactions, getInvoices } from "@/services";

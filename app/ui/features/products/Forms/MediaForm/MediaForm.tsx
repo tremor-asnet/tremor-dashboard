@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
 // Components
-import { ImagePreview, Media } from "@/ui/features";
+import { Media } from "@/ui/features/products/AddProduct";
+import { ImagePreview } from "@/ui/features/products";
 import { LoadingIndicator } from "@/ui/components";
 
 // Types

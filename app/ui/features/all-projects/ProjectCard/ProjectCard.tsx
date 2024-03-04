@@ -1,7 +1,7 @@
 "use client";
 
 //Libs
-import { useState } from "react";
+import { useState, RefObject } from "react";
 import { Card, Text, Flex, Title, Button } from "@tremor/react";
 import { FaEllipsisV } from "react-icons/fa";
 
@@ -19,6 +19,9 @@ import { PROJECT_DATA } from "@/mocks/project";
 
 //Helpers
 import { formatDate } from "@/helpers";
+
+// Hooks
+import { useOutsideClick } from "@/hooks";
 
 interface ActionCardProps {
   key: string;
@@ -41,6 +44,10 @@ const ProjectCard = ({
   const [currentProjectId, setCurrentProjectId] = useState("");
   const openActionProject = isOpenAction && id === currentProjectId;
 
+  const projectCardRef = useOutsideClick(() => {
+    setOpenAction(false);
+  });
+
   const handleItemActionProject = () => {
     setOpenAction(false);
   };
@@ -53,7 +60,9 @@ const ProjectCard = ({
   return (
     <div className="antialiased items-center justify-between pb-1">
       <div className="flex items-center">
-        <Card className="dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
+        <Card
+          className="dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
+          ref={projectCardRef as RefObject<HTMLDivElement>}>
           <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled">
             <CustomImage
               src={cover}
@@ -90,14 +99,14 @@ const ProjectCard = ({
                 <FaEllipsisV className="text-secondary dark:text-dark-romance" />
               </Flex>
               {openActionProject && (
-                <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white rounded-md shadow-md">
+                <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
                   {actions.map(item => (
                     <Flex key={item.key} flex-col>
                       <Button
-                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-[#f0f2f5] hover:rounded-md px-1 py-[6px]"
+                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-1 py-[6px]"
                         variant="light"
                         onClick={() => handleItemActionProject()}>
-                        <Text className="font-normal text-sm text-secondary">
+                        <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
                           {item.label}
                         </Text>
                       </Button>

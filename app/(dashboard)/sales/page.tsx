@@ -1,14 +1,16 @@
-import { Col, Grid } from "@tremor/react";
+import dynamic from "next/dynamic";
 
 // Components
-import {
-  SalesRevenueChart,
-  ChannelChart,
-  SalesByAge,
-  SalesByCountry,
-  SalesStatisticCard,
-  TopSellingProducts,
-} from "@/components";
+import { Col, Grid } from "@tremor/react";
+import { SalesByCountry } from "@/ui/features/analytics";
+import { TopSellingProducts, ChannelChart } from "@/ui/features/sales";
+const SalesStatisticCard = dynamic(
+  () => import("@/ui/features/sales/SalesStatisticCard/SalesStatisticCard"),
+);
+const SalesByAge = dynamic(() => import("@/ui/features/sales/SalesByAge"));
+const SalesRevenueChart = dynamic(
+  () => import("@/ui/features/sales/SalesRevenueChart/SalesRevenueChart"),
+);
 
 import { REVENUE_CHART_DATA } from "@/mocks";
 

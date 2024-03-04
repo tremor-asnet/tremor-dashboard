@@ -1,8 +1,16 @@
-import { Flex, Card, Text, Title, Button } from "@tremor/react";
+import dynamic from "next/dynamic";
+
+// Icons
 import { MdAdd } from "react-icons/md";
 
 // Components
-import { ProfileInfo, ProjectCard } from "@/components";
+import { Flex, Card, Text, Title, Button } from "@tremor/react";
+const ProfileInfo = dynamic(
+  () => import("@/ui/features/all-projects/ProfileInfo/ProfileInfo"),
+);
+const ProjectCard = dynamic(
+  () => import("@/ui/features/all-projects/ProjectCard/ProjectCard"),
+);
 
 // Types
 import { Project } from "@/types";

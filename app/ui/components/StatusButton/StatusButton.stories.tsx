@@ -4,9 +4,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 // Components
 import StatusButton from "./StatusButton";
 
-// Icons
-import { BiChevronUp, BiChevronDown } from "react-icons/bi";
-import { BsExclamationLg } from "react-icons/bs";
+// Types
+import { STATUS_LIST, TYPE_LIST } from "@/types";
 
 const meta = {
   title: "Components/StatusButton",
@@ -28,7 +27,12 @@ type Story = StoryObj<typeof meta>;
 
 export const ButtonIncrease: Story = {
   render: () => (
-    <StatusButton extendedClass="text-few border-few" icon={<BiChevronUp />} />
+    <StatusButton
+      extendedClass="text-few border-few"
+      type={STATUS_LIST.ERROR}
+      status={STATUS_LIST.SUCCESS}
+      value={"+ 1234"}
+    />
   ),
 };
 
@@ -36,7 +40,9 @@ export const ButtonDecrease: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-attention border-attention"
-      icon={<BiChevronDown />}
+      type={TYPE_LIST.DEPOSIT}
+      status={STATUS_LIST.SUCCESS}
+      value={"- 1234"}
     />
   ),
 };
@@ -45,7 +51,8 @@ export const ButtonPending: Story = {
   render: () => (
     <StatusButton
       extendedClass="text-primary border-primary"
-      icon={<BsExclamationLg />}
+      status={STATUS_LIST.ERROR}
+      value={"Pending"}
     />
   ),
 };

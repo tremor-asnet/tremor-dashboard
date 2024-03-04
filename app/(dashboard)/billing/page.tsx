@@ -1,12 +1,14 @@
-import { Bold, Flex } from "@tremor/react";
 import { Suspense } from "react";
 
 // Components
+import { Bold, Flex } from "@tremor/react";
 import { LoadingIndicator } from "@/ui/components";
-import BillingDetail from "./components/BillingDetail/BillingDetail";
-import InvoiceDetail from "./components/InvoiceDetail/InvoiceDetail";
-import BillingInfoDetail from "./components/BillingInfoDetail/BillingInfoDetail";
-import TransactionDetail from "./components/TransactionDetail/TransactionDetail";
+import {
+  BillingDetail,
+  BillingInfoDetail,
+  InvoiceDetail,
+  TransactionDetail,
+} from "@/ui/features/billing";
 
 // Services
 import { getBillings, getTransactions, getInvoices } from "@/services";

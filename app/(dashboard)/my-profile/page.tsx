@@ -1,13 +1,19 @@
-import { Flex, Card, Text } from "@tremor/react";
+import dynamic from "next/dynamic";
 
 // Components
+import { Flex, Card, Text } from "@tremor/react";
 import {
-  ConversationHistory,
-  ProfileInfo,
-  ProjectInfoCard,
-  ContactCard,
   PlatformSetting,
-} from "@/components";
+  ContactCard,
+  ProjectInfoCard,
+} from "@/ui/features/my-profile";
+const ProfileInfo = dynamic(
+  () => import("@/ui/features/all-projects/ProfileInfo/ProfileInfo"),
+);
+const ConversationHistory = dynamic(
+  () =>
+    import("@/ui/features/my-profile/ConversationHistory/ConversationHistory"),
+);
 
 // Actions
 import { getProfile, getProfileProject } from "@/services";
@@ -43,7 +49,7 @@ const Profile = async () => {
                   applicationSettingData={profileData.application_setting}
                 />
               </div>
-              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />
+              <hr className="hidden rounded h-[400px] w-px bg-gradient-lighter dark:bg-gradient-dark my-4 border-0 opacity-25 md:flex" />
               {/* Profile Information */}
               <Flex className="w-full md:basis-2/4">
                 <ContactCard
@@ -55,7 +61,7 @@ const Profile = async () => {
                   socials={profileData.socials}
                 />
               </Flex>
-              <hr className="hidden rounded h-[400px] w-px bg-gray-100 bg-[linear-gradient(to_bottom,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] my-4 border-0 bg-transparent opacity-25 md:flex" />
+              <hr className="hidden rounded h-[400px] w-px bg-gradient-lighter dark:bg-gradient-dark my-4 border-0 opacity-25 md:flex" />
             </Flex>
             {/* Profile Conversations */}
             <div className="w-full mt-6 lg:mt-0 xl:w-[50%]">

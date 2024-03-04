@@ -1,5 +1,9 @@
+import dynamic from "next/dynamic";
+
 // Components
-import AddProductForm from "../components/Forms/AddProductForm";
+const AddProductForm = dynamic(
+  () => import("@/ui/features/products/Forms/AddProductForm"),
+);
 
 const AddProductPage = () => {
   return (
@@ -13,7 +17,6 @@ const AddProductPage = () => {
           This information will describe more about the product.
         </p>
       </div>
-      {/* <ProductManager /> */}
       <AddProductForm />
     </div>
   );

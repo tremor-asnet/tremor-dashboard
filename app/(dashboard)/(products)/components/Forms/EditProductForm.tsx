@@ -28,9 +28,10 @@ import { NOT_FOUND_IMAGE, TOAST_TYPES } from "@/constants";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
+import { useToast } from "@/hooks";
 
 // Contexts
-import { ToastMessageType, ToastContext } from "@/context/toast";
+import { ToastMessageType } from "@/context/toast";
 
 const EditProductForm = ({
   productData,
@@ -87,7 +88,7 @@ const EditProductForm = ({
     formHandler.setValue("image", imageValue, { shouldDirty: true });
   }, [imageValue]);
 
-  const { openToast, closeToast, isOpen, toastType } = useContext(ToastContext);
+  const { openToast, closeToast, isOpen, toastType } = useToast();
 
   const { icon, message, color } = toastType;
 

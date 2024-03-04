@@ -26,7 +26,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import "@/styles/form.css";
 
 // Context
-import { ToastContext } from "@/context/toast";
+import { useToast } from "@/hooks";
 
 const SignUp = () => {
   const {
@@ -65,7 +65,7 @@ const SignUp = () => {
     setChecked(!checked);
   };
 
-  const { openToast, isOpen, closeToast, toastType } = useContext(ToastContext);
+  const { openToast, isOpen, closeToast, toastType } = useToast();
   const { icon, message, color } = toastType;
 
   const isShowToast = isSignUpSuccess && isOpen && !hasErrorMessage;

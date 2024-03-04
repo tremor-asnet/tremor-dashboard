@@ -38,10 +38,7 @@ const SelectField = ({
   return (
     <div className="w-full">
       <Text className="text-secondary text-sm dark:text-lighter">{label}</Text>
-      <select
-        {...props}
-        className={`${defaultClass} ${className}`}
-        data-testid={name}>
+      <select {...props} className={`${defaultClass} ${className}`} id={name}>
         {optionList}
       </select>
     </div>

@@ -1,4 +1,4 @@
-import { render, fireEvent } from "@testing-library/react";
+import { render, fireEvent, queryByAttribute } from "@testing-library/react";
 
 // Constants
 import { TYPE_PRICE } from "@/constants";
@@ -25,11 +25,13 @@ describe("SelectField Component", () => {
   });
 
   it("renders correct number of options", () => {
-    const { getByTestId } = render(
+    const getById = queryByAttribute.bind(null, "id");
+
+    const { container } = render(
       <SelectField label="Currency" options={TYPE_PRICE} name="category" />,
     );
-    const selectElement = getByTestId("category");
-    expect(selectElement.children).toHaveLength(TYPE_PRICE.length);
+    const selectElement = getById(container, "category");
+    expect(selectElement?.children).toHaveLength(TYPE_PRICE.length);
   });
 
   it("renders correct name of options", () => {

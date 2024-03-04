@@ -104,8 +104,6 @@ const TableOrder = ({
   // Handle sort with field inside the object nested
   sortedOrders = transformOrders(sortedOrders);
 
-  console.log("sortedOrders", sortedOrders);
-
   return (
     <DataGrid
       data={sortedOrders}

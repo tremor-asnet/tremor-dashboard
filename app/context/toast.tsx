@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, createContext, useState } from "react";
+import { ReactNode, createContext, useEffect, useState } from "react";
 
 // Icons
 import { FaCheckCircle } from "react-icons/fa";
@@ -87,6 +87,20 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
     isOpen,
     toastType: { icon, message, color },
   } = toast;
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    if (isOpen) {
+      timeout = setTimeout(() => {
+        closeToast();
+      }, 3000);
+    }
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isOpen]);
 
   const closeToast = () => {
     setToast({

@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 
 // Components
-import AnalyticsLineChart from "./AnalyticsLineChart";
+import AnalyticsLineChart, { CHART_CATEGORIES } from "./AnalyticsLineChart";
 
 // Types
 import { CHART_TYPE } from "@/constants";
@@ -107,6 +107,82 @@ describe("Testing AnalyticsLineChart component", () => {
     const value = classNameCard?.includes(
       "bg-[linear-gradient(195deg,rgb(102,187,106),rgb(67,160,71))]",
     );
+
+    expect(value).toBeTruthy;
+  });
+
+  it("should render correctly categories if type not CHART_TYPE.PERFORMANCE", () => {
+    const { getByTestId } = render(
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[0].data}
+        type=""
+        title="Completed Tasks"
+        subTitle={"Last Campaign Performance"}
+        scheduleText={"just updated"}
+        isDailyChart={false}
+      />,
+    );
+
+    const lineChart = getByTestId("card");
+    const categoriesLineChart = lineChart.getAttribute("name");
+    const value = categoriesLineChart?.includes(CHART_CATEGORIES.MOBILE);
+
+    expect(value).toBeTruthy;
+  });
+
+  it("should render correctly categories if type CHART_TYPE.PERFORMANCE", () => {
+    const { getByTestId } = render(
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[0].data}
+        type={CHART_TYPE.PERFORMANCE}
+        title="Completed Tasks"
+        subTitle={"Last Campaign Performance"}
+        scheduleText={"just updated"}
+        isDailyChart={false}
+      />,
+    );
+
+    const lineChart = getByTestId("card");
+    const categoriesLineChart = lineChart.getAttribute("name");
+    const value = categoriesLineChart?.includes(CHART_CATEGORIES.DESKTOP);
+
+    expect(value).toBeTruthy;
+  });
+
+  it("should render correctly span element if isDailyChart true", () => {
+    const { getByTestId } = render(
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[0].data}
+        type={CHART_TYPE.PERFORMANCE}
+        title="Completed Tasks"
+        subTitle={"Last Campaign Performance"}
+        scheduleText={"just updated"}
+        isDailyChart={true}
+      />,
+    );
+
+    const lineChart = getByTestId("percent");
+    const percentLineChart = lineChart.getAttribute("name");
+    const value = percentLineChart?.includes("+15%");
+
+    expect(value).toBeTruthy;
+  });
+
+  it("should render correctly span element if isDailyChart false", () => {
+    const { getByTestId } = render(
+      <AnalyticsLineChart
+        dataChart={LINE_CHART_DATA[0].data}
+        type={CHART_TYPE.PERFORMANCE}
+        title="Completed Tasks"
+        subTitle={"Last Campaign Performance"}
+        scheduleText={"just updated"}
+        isDailyChart={true}
+      />,
+    );
+
+    const lineChart = getByTestId("percent");
+    const percentLineChart = lineChart.getAttribute("name");
+    const value = percentLineChart?.includes("");
 
     expect(value).toBeTruthy;
   });

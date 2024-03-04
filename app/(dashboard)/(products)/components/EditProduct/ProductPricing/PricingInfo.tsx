@@ -37,7 +37,7 @@ const PricingInfo = () => {
   };
 
   return (
-    <div className="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info">
+    <div className="w-full h-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info">
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Pricing
       </Text>

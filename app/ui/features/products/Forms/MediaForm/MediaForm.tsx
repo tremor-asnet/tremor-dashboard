@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { Media } from "@/ui/features/products/AddProduct";
 import { ImagePreview } from "@/ui/features/products";
 import { LoadingIndicator } from "@/ui/components";
+import { Button, Flex, Text } from "@tremor/react";
 
 // Types
 import { IMedia } from "@/types";
@@ -66,21 +67,25 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
       </h6>
       {dragZone}
       {uploadContent}
-      <div className="mt-6">
-        <input
-          className="float-left btn-form-secondary"
-          type="button"
-          value="BACK"
-          onClick={onBack}
-          disabled={isUpload}
-        />
-        <input
-          className="float-right btn-form-primary"
+      <Flex className="mt-6">
+        <Button
+          className="items-start btn-form-secondary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-btn-back hover:dark:!bg-gradient-pickled border-none dark:text-white text-center box-shadow-transparent"
           type="submit"
-          value="NEXT"
-          disabled={isUpload}
-        />
-      </div>
+          onClick={onBack}
+          disabled={isUpload}>
+          <Text className="uppercase font-bold text-xs text-gray-900 dark:text-white tracking-wide">
+            Back
+          </Text>
+        </Button>
+        <Button
+          className="items-end btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          type="submit"
+          disabled={isUpload}>
+          <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
+            Next
+          </Text>
+        </Button>
+      </Flex>
     </form>
   );
 };

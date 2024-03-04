@@ -36,8 +36,8 @@ const UserConversationHistory = ({
         </Text>
       </div>
     </Flex>
-    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none]">
-      <Text className="text-primary text-xs text-center font-bold uppercase leading-[17px]">
+    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none] box-shadow-transparent">
+      <Text className="text-primary text-xs text-center font-bold uppercase leading-[17px] tracking-wide">
         Reply
       </Text>
     </Button>

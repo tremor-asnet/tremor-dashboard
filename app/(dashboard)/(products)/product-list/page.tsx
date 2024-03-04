@@ -51,7 +51,7 @@ const ProductListPage = async ({
       <Flex className="relative">
         <Link
           href={ROUTES.NEW_PRODUCT}
-          className="uppercase text-xs text-white font-medium dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg">
+          className="uppercase text-xs font-bold text-white dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg shadow-btn-primary hover:shadow-btn-primary-hover tracking-wide">
           new product
         </Link>
         <ProductFilter title="Filters" />

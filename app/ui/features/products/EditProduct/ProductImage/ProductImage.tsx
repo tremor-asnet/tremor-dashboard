@@ -52,7 +52,7 @@ const ProductImage = ({
         </Flex>
         <Flex className="flex-col pt-7 px-2">
           <Flex className="justify-center -mt-16">
-            <div className="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]">
+            <div className="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 shadow-btn-primary hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]">
               <label className="uppercase text-xs font-bold text-white uppercase mx-2 cursor-pointer">
                 Edit
                 <input
@@ -66,7 +66,7 @@ const ProductImage = ({
 
             <button
               type="button"
-              className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50 "
+              className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
               onClick={onRemoveImage}
               disabled={disabled}>
               <Text className="py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2">

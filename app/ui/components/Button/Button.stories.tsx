@@ -62,8 +62,8 @@ export const Disable: Story = {
 
 export const NewOder: Story = {
   render: () => (
-    <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary px-6 py-2.5 rounded-lg border-0 hover:!shadow-btn-primary-hover">
-      <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+    <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-[21px] bg-gradient-primary dark:bg-gradient-pickled px-6 py-2.5 rounded-lg border-0">
+      <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title tracking-wide">
         New Order
       </Text>
     </Button>

@@ -30,7 +30,7 @@ export const InvoiceHeader = ({
         </div>
       </div>
       <Button className="py-3 px-6 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-        <Text className="uppercase font-bold text-xs text-white dark:text-white">
+        <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
           invoice
         </Text>
       </Button>

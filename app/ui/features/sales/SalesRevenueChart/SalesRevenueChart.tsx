@@ -35,7 +35,7 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
           content="See which ads perform better"
           className="text-center !bg-black !bottom-[-18px] rounded-md !text-white right-[38px] min-w-[170px] before:content-['▶'] before:absolute before:top-[16px] before:right-[-12px] before:text-[black]">
           <Button
-            className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px]"
+            className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
             variant="secondary">
             <MdOutlinePriorityHigh className="text-xs text-secondary" />
           </Button>

@@ -36,7 +36,7 @@ const OrderListPage = async ({
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
         <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-          <Text className="uppercase text-xs text-white dark:text-white">
+          <Text className="uppercase text-xs font-bold text-white dark:text-white tracking-wide">
             new order
           </Text>
         </Button>

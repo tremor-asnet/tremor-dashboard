@@ -51,7 +51,7 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
           <Flex className="flex flex-wrap">
             <Link href={ROUTES.PROJECTS}>
               <Button
-                className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+                className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
                 variant="secondary">
                 <Text className="font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom">
                   View Project

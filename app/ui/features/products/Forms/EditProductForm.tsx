@@ -146,7 +146,7 @@ const EditProductForm = ({
           <div className="w-full text-end absolute -mt-24">
             <Button
               type="submit"
-              className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled !shadow-btn-primary rounded-lg border-0 hover:!shadow-btn-primary-hover items-end"
+              className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 items-end"
               size="xs"
               disabled={!formState.isDirty}>
               {isLoading ? (

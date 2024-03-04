@@ -9,18 +9,24 @@ interface SelectFieldProps
   label: string;
   options: SelectOptionData[];
   className?: string;
+  name?: string;
 }
 
 const SelectField = ({
   label,
   options,
   className,
+  name,
   ...props
 }: SelectFieldProps) => {
   const optionList = options.map(item => {
     const { value, option } = item;
     return (
-      <option className="dark:bg-primary" key={value} value={value}>
+      <option
+        data-testid="select-option"
+        className="dark:bg-primary"
+        key={value}
+        value={value}>
         {option}
       </option>
     );
@@ -32,7 +38,10 @@ const SelectField = ({
   return (
     <div className="w-full">
       <Text className="text-secondary text-sm dark:text-lighter">{label}</Text>
-      <select {...props} className={`${defaultClass} ${className}`}>
+      <select
+        {...props}
+        className={`${defaultClass} ${className}`}
+        data-testid={name}>
         {optionList}
       </select>
     </div>

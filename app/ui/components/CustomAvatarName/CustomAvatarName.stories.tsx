@@ -7,7 +7,7 @@ import { CustomAvatarName } from ".";
 import { AVATAR_SRC } from "@/constants";
 
 const meta = {
-  title: "Components/CustomAvatarName",
+  title: "Components/Tables/CustomAvatarName",
   component: CustomAvatarName,
   tags: ["autodocs"],
   argTypes: {

@@ -8,7 +8,7 @@ import AccountSetting from "./AccountSetting";
 import { ACCOUNT_SETTING_FIELDS, ACCOUNT_SETTING_DATA } from "@/constants";
 
 const meta = {
-  title: "Components/AccountSetting",
+  title: "Components/Profiles/AccountSetting",
   tags: ["autodocs"],
   component: AccountSetting,
   argTypes: {

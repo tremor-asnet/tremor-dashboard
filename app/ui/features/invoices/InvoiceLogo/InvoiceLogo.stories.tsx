@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import InvoiceLogo from "./InvoiceLogo";
 
 const meta = {
-  title: "Components/InvoiceLogo",
+  title: "Components/Billing/Invoices/InvoiceLogo",
   component: InvoiceLogo,
   tags: ["autodocs"],
   argTypes: {

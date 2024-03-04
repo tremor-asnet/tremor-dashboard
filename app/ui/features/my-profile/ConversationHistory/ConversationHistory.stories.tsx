@@ -8,7 +8,7 @@ import ConversationHistory from "./ConversationHistory";
 import { PROFILE_CONVERSATIONS } from "@/mocks/profile";
 
 const meta = {
-  title: "Components/ConversationHistory",
+  title: "Components/Profiles/ConversationHistory",
   tags: ["autodocs"],
   argTypes: {
     id: { description: "Id of conversation" },

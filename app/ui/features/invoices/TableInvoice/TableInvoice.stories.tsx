@@ -7,7 +7,7 @@ import TableInvoice from "./TableInvoice";
 import { INVOICE_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/TableInvoice",
+  title: "Components/Billing/Invoices/TableInvoice",
   component: TableInvoice,
   tags: ["autodocs"],
 } as Meta<typeof TableInvoice>;

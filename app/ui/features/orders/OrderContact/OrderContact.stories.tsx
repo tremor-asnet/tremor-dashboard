@@ -11,7 +11,7 @@ const propsDefault = {
 };
 
 const meta = {
-  title: "Components/OrderContact",
+  title: "Components/Orders/OrderDetails/OrderContact",
   component: OrderContact,
   tags: ["autodocs"],
   argTypes: {

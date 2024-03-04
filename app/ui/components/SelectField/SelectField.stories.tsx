@@ -8,7 +8,7 @@ import SelectField from "./SelectField";
 import { TYPE_PRICE } from "@/constants";
 
 const meta = {
-  title: "Components/SelectField",
+  title: "Components/Common/SelectField",
   tags: ["autodocs"],
   parameters: {
     docs: {

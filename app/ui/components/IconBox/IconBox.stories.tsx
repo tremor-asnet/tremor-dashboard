@@ -5,7 +5,7 @@ import { MdLanguage } from "react-icons/md";
 import IconBox from "./IconBox";
 
 const meta = {
-  title: "Components/ IconBox",
+  title: "Components/Common/IconBox",
   component: IconBox,
   tags: ["autodocs"],
 } as Meta<typeof IconBox>;

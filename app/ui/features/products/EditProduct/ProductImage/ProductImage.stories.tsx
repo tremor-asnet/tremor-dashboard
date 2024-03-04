@@ -13,7 +13,7 @@ const propsDefault = {
 };
 
 const meta = {
-  title: "Components/ProductImage",
+  title: "Components/Products/EditProduct/ProductImage",
   component: ProductImage,
   tags: ["autodocs"],
 } as Meta<typeof ProductImage>;

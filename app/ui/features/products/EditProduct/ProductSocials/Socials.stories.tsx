@@ -12,7 +12,7 @@ const StorybookFormProvider: FC<{ children: ReactNode }> = ({ children }) => {
 };
 
 const meta = {
-  title: "Components/Socials",
+  title: "Components/Products/EditProduct/Socials",
   component: Socials,
   tags: ["autodocs"],
 } as Meta<typeof Socials>;

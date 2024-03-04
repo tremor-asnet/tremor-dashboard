@@ -8,7 +8,7 @@ import { Card } from "@tremor/react";
 import { mockOrderSummary } from "@/mocks/orderDetails";
 
 const meta = {
-  title: "Components/OrderSummary",
+  title: "Components/Orders/OrderDetails/OrderSummary",
   component: OrderSummary,
   tags: ["autodocs"],
 } as Meta<typeof OrderSummary>;

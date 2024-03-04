@@ -7,7 +7,7 @@ import TopSellingProducts from "./TopSellingProducts";
 import { TOP_SELLING_PRODUCTS_DATA } from "@/mocks";
 
 const meta = {
-  title: "Components/TopSellingProducts",
+  title: "Components/Sales/TopSellingProducts",
   component: TopSellingProducts,
   tags: ["autodocs"],
 } as Meta<typeof TopSellingProducts>;

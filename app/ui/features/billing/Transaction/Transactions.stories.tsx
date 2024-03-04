@@ -6,7 +6,7 @@ import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
 export default {
   component: Transactions,
-  title: "Components/Transactions",
+  title: "Components/Billing/Transactions",
   tags: ["autodocs"],
 };
 

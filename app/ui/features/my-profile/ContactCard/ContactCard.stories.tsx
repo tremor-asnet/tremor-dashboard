@@ -10,7 +10,7 @@ import ContactCard from "./ContactCard";
 import { SOCIAL_LINK } from "@/constants";
 
 const meta = {
-  title: "Components/ContactCard",
+  title: "Components/Profiles/ContactCard",
   component: ContactCard,
   tags: ["autodocs"],
   argTypes: {

@@ -10,7 +10,7 @@ import { mockTrackOrder } from "@/mocks/orderDetails";
 // Mock data
 
 const meta = {
-  title: "Components/TrackOrder",
+  title: "Components/Orders/OrderDetails/TrackOrder",
   component: TrackOrder,
   tags: ["autodocs"],
   argTypes: {

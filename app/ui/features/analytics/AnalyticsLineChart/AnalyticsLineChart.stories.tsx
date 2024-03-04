@@ -10,7 +10,7 @@ import { LINE_CHART_DATA } from "@/mocks/charts";
 import { CHART_TYPE } from "@/constants";
 
 const meta = {
-  title: "Components/AnalyticsLineChart",
+  title: "Components/Analytics/AnalyticsLineChart",
   component: AnalyticsLineChart,
   tags: ["autodocs"],
 } as Meta<typeof AnalyticsLineChart>;

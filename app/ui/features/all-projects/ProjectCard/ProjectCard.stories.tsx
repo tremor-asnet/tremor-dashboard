@@ -10,7 +10,7 @@ import { ITEM_ACTION_PROJECT } from "@/constants";
 import { PROJECT_DATA } from "@/mocks/project";
 
 const meta = {
-  title: "Components/ProjectCard",
+  title: "Components/Projects/ProjectCard",
   component: ProjectCard,
   tags: ["autodocs"],
 } as Meta<typeof ProjectCard>;

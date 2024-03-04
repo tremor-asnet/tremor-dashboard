@@ -8,7 +8,7 @@ import PlatformSetting from "./PlatformSetting";
 import { APPLICATION_SETTING_DATA, ACCOUNT_SETTING_DATA } from "@/constants";
 
 const meta = {
-  title: "Components/PlatformSetting",
+  title: "Components/Profiles/PlatformSetting",
   tags: ["autodocs"],
   component: PlatformSetting,
   argTypes: {

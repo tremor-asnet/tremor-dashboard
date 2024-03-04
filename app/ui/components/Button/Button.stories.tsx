@@ -4,7 +4,7 @@ import { TiHome } from "react-icons/ti";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const meta = {
-  title: "Components/Button",
+  title: "Components/Common/Button",
   tags: ["autodocs"],
   component: Button,
 } as Meta<typeof Button>;

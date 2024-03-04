@@ -7,7 +7,7 @@ import AnalyticsInfo from "./AnalyticsInfo";
 import { ANALYTIC_INFO } from "@/mocks/analytics";
 
 const meta = {
-  title: "Components/AnalyticsInfo",
+  title: "Components/Analytics/AnalyticsInfo",
   component: AnalyticsInfo,
   tags: ["autodocs"],
 } as Meta<typeof AnalyticsInfo>;

@@ -5,7 +5,7 @@ import PaymentDetails from "./PaymentDetails";
 import { Card } from "@tremor/react";
 
 const meta = {
-  title: "Components/PaymentDetails",
+  title: "Components/Orders/OrderDetails/PaymentDetails",
   component: PaymentDetails,
   tags: ["autodocs"],
   argTypes: {

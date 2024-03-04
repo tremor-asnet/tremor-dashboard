@@ -11,7 +11,7 @@ import {
 } from "@/constants";
 
 const meta = {
-  title: "Components/ApplicationSetting",
+  title: "Components/Profiles/ApplicationSetting",
   tags: ["autodocs"],
   argTypes: {
     applicationSettingFields: {

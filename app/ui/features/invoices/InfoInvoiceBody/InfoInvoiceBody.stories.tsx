@@ -5,7 +5,7 @@ import { Card } from "@tremor/react";
 import InfoInvoiceBody from "./InfoInvoiceBody";
 
 const meta = {
-  title: "Components/InfoInvoiceBody",
+  title: "Components/Billing/Invoices/InfoInvoiceBody",
   component: InfoInvoiceBody,
   tags: ["autodocs"],
   argTypes: {

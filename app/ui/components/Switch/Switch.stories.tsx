@@ -4,7 +4,7 @@ import { Switch } from "@tremor/react";
 import { withKnobs } from "@storybook/addon-knobs";
 
 const meta = {
-  title: "Components/Switch",
+  title: "Components/Common/Switch",
   decorators: [withKnobs],
   tags: ["autodocs"],
   component: Switch,

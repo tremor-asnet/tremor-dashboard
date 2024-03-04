@@ -17,7 +17,7 @@ const InvoiceHeaderProps = {
 };
 
 const meta = {
-  title: "Components/Invoice/InvoiceHeader",
+  title: "Components/Billing/Invoices/InvoiceHeader",
   tags: ["autodocs"],
   component: InvoiceHeader,
   argTypes: {

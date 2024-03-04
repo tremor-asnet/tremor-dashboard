@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import BillingCard from "./BillingCard";
 
 const meta = {
-  title: "Components/BillingCard",
+  title: "Components/Billing/BillingCard",
   tags: ["autodocs"],
   component: BillingCard,
 } as Meta<typeof BillingCard>;

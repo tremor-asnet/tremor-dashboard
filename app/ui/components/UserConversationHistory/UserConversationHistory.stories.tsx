@@ -6,7 +6,7 @@ import UserConversationHistory from "./UserConversationHistory";
 import { PROFILE_ITEM } from "@/mocks/profile";
 
 const meta = {
-  title: "Components/UserConversationHistory",
+  title: "Components/Profiles/UserConversationHistory",
   tags: ["autodocs"],
   component: UserConversationHistory,
   argTypes: {

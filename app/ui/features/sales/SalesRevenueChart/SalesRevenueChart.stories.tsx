@@ -7,7 +7,7 @@ import SalesRevenueChart from "./SalesRevenueChart";
 import { REVENUE_CHART_DATA } from "@/mocks/sales";
 
 const meta = {
-  title: "Components/SalesRevenueChart",
+  title: "Components/Sales/SalesRevenueChart",
   component: SalesRevenueChart,
   tags: ["autodocs"],
 } as Meta<typeof SalesRevenueChart>;

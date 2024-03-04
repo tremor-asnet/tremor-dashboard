@@ -11,7 +11,7 @@ import { ColumnType, Order } from "@/types";
 import { STATUS_TEXT } from "@/constants";
 
 const meta = {
-  title: "Components/common/DataGrid",
+  title: "Components/Tables/DataGrid",
   tags: ["autodocs"],
   component: DataGrid,
 } as Meta<typeof DataGrid>;

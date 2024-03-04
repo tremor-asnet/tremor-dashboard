@@ -7,7 +7,7 @@ import ProfileInfo from "./ProfileInfo";
 import { PROFILE_HEADER } from "@/mocks";
 
 const meta = {
-  title: "Components/ProfileInfo",
+  title: "Components/Common/ProfileInfo",
   component: ProfileInfo,
   tags: ["autodocs"],
   argTypes: {

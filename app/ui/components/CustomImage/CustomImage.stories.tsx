@@ -7,7 +7,7 @@ import CustomImage from "./CustomImage";
 import { mockBillingCard, mockSalaryData } from "@/mocks/billing";
 
 const meta = {
-  title: "Components/CustomImage",
+  title: "Components/Images/CustomImage",
   tags: ["autodocs"],
   component: CustomImage,
   argTypes: {

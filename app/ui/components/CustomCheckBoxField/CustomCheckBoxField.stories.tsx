@@ -7,7 +7,7 @@ import { CustomCheckBoxField } from ".";
 import { ROUTES } from "@/constants";
 
 const meta = {
-  title: "Components/CustomCheckBoxField",
+  title: "Components/Tables/CustomCheckBoxField",
   component: CustomCheckBoxField,
   tags: ["autodocs"],
   argTypes: {

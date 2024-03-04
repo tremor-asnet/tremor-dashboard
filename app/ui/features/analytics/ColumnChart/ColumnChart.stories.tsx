@@ -8,7 +8,7 @@ import ColumnChart from "./ColumnChart";
 import { WEBSITE_CHART } from "@/mocks/analytics";
 
 const meta = {
-  title: "Components/ColumnChart",
+  title: "Components/Analytics/ColumnChart",
   tags: ["autodocs"],
   component: ColumnChart,
 } as Meta<typeof ColumnChart>;

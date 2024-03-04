@@ -30,14 +30,21 @@ const Avatar = ({
 }: AvatarProps): JSX.Element => {
   return (
     <div className={`inline-flex rounded-full overflow-hidden ${className}`}>
-      <CustomImage
-        src={src}
-        width={width}
-        height={height}
-        alt={alt}
-        sizes={sizes}
-        priority={priority}
-      />
+      {src ? (
+        <CustomImage
+          src={src}
+          width={width}
+          height={height}
+          alt={alt}
+          sizes={sizes}
+          priority={priority}
+        />
+      ) : (
+        <p
+          className={`w-6 flex justify-center items-center text-white text-xs bg-gray-500 rounded-full`}>
+          {alt.substring(0, 1)}
+        </p>
+      )}
     </div>
   );
 };

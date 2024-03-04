@@ -117,17 +117,6 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
     const { icon, message, color } = toastType;
 
     setToast({ isOpen, toastType: { icon, message, color } });
-
-    setTimeout(() => {
-      setToast({
-        isOpen: false,
-        toastType: {
-          message: "",
-          icon: null,
-          color: "green",
-        },
-      });
-    }, 3000);
   };
 
   const value = {

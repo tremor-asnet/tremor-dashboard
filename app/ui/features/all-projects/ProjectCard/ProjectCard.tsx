@@ -82,7 +82,7 @@ const ProjectCard = ({
                   <Avatar
                     key={`Avatar ${index} of ${name} by ${id}`}
                     alt="Avatar extra small"
-                    className="border-2 border-white border-solid ml-[-10px]"
+                    className="border-2 border-white border-solid ml-[-10px] w-6 h-6 min-w-[24px]"
                     height={20}
                     priority
                     src={participant?.avatar}

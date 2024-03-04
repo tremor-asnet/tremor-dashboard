@@ -77,7 +77,7 @@ const TableOrder = ({
       sortable: true,
     },
     {
-      key: "products",
+      key: "productName",
       title: "Products",
       customNode: (_, { products }) => <CustomList products={products} />,
       sortable: true,

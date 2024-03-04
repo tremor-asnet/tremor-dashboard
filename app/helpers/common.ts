@@ -189,10 +189,12 @@ export const transformOrders = (sortedOrders: Order[]) => {
   return sortedOrders.map(item => {
     const { customer, products } = item;
     let countKey = 0;
+    let productName = "";
 
     if (products?.length) {
-      products.forEach(({ count }) => {
+      products.forEach(({ count, name }) => {
         countKey = countKey + count;
+        productName = name;
       });
     }
 
@@ -200,6 +202,7 @@ export const transformOrders = (sortedOrders: Order[]) => {
       ...item,
       count: countKey,
       customerName: customer.fullName || "",
+      productName,
     };
   });
 };

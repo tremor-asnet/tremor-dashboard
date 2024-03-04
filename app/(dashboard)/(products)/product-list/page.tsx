@@ -4,13 +4,12 @@ import { Suspense } from "react";
 
 // Components
 import { Flex } from "@tremor/react";
-import { LoadingIndicator } from "@/ui/components";
-const InputSearch = dynamic(
-  () => import("@/ui/components/InputSearch/InputSearch"),
-);
+import { LoadingIndicator, InputSearch } from "@/ui/components";
+
 const ProductFilter = dynamic(
   () => import("@/ui/features/products/ProductFilter"),
 );
+
 const TableProduct = dynamic(
   () => import("@/ui/features/products/TableProduct/TableProduct"),
 );

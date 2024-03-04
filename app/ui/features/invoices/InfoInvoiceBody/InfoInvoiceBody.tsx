@@ -17,7 +17,7 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
   const formattedDueAt = dayjs(dueAt).format("DD/MM/YYYY");
 
   return (
-    <Flex className="mb-7 flex-col md:flex-row items-start md:items-center">
+    <Flex className="mb-7 flex-col md:flex-row items-start md:items-center print:flex-row">
       <div className="w-full mb-5 md:mb-0">
         <p className="text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
           Invoice no
@@ -29,7 +29,7 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
         </Link>
       </div>
       <div className="w-full">
-        <Flex className="flex-col md:flex-row mb-1 md:mb-0">
+        <Flex className="flex-col md:flex-row mb-1 md:mb-0 print:flex-row">
           <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Invoice date:
           </p>
@@ -37,7 +37,7 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
             {formattedCreateAt}
           </p>
         </Flex>
-        <Flex className="flex-col md:flex-row">
+        <Flex className="flex-col md:flex-row print:flex-row">
           <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Due date:
           </p>

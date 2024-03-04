@@ -80,6 +80,7 @@ const InputSearch = ({ field }: InputSearchProps) => {
       />
       {(hasValueInputSearch || searchValue) && (
         <MdClose
+          data-testid="close-button"
           onClick={resetSearch}
           className="text-xs text-white bg-black dark:text-black dark:bg-white -ml-5 p-[2px] cursor-pointer rounded-full z-[1]"
         />

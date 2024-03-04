@@ -9,18 +9,24 @@ interface SelectFieldProps
   label: string;
   options: SelectOptionData[];
   className?: string;
+  dataTestId?: string;
 }
 
 const SelectField = ({
   label,
   options,
   className,
+  dataTestId,
   ...props
 }: SelectFieldProps) => {
   const optionList = options.map(item => {
     const { value, option } = item;
     return (
-      <option className="dark:bg-primary" key={value} value={value}>
+      <option
+        data-testid="select-option"
+        className="dark:bg-primary"
+        key={value}
+        value={value}>
         {option}
       </option>
     );

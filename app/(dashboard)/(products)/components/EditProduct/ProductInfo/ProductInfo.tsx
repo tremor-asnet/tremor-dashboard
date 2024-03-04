@@ -150,6 +150,7 @@ const ProductInfo = () => {
                   options={CATEGORY_PRODUCT}
                   {...field}
                   className="py-2.5"
+                  dataTestId="category"
                 />
               </div>
             )}

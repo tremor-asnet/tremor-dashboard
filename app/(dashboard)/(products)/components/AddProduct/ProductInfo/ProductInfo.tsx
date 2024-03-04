@@ -109,6 +109,7 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
             render={({ field }) => (
               <div>
                 <SelectField
+                  dataTestId="category"
                   label="Category"
                   options={CATEGORY_PRODUCT}
                   {...field}

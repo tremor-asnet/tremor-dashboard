@@ -23,3 +23,9 @@ export const EDIT_PRODUCT_MESSAGE = {
   FAILED: "Failed to edit product",
   PENDING: "Editing product",
 };
+
+export const TOAST_TYPES = {
+  SUCCESS: "success",
+  WARNING: "warning",
+  ERROR: "error",
+};

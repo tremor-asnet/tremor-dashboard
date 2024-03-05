@@ -3,10 +3,10 @@
 exports[`Invoices Testing should match snapshot 1`] = `
 <div>
   <div
-    class="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md w-full min-h-[234px]"
+    class="p-6 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md w-full min-h-[234px]"
   >
     <div
-      class="text-[#344767] dark:text-white flex justify-between items-center"
+      class="text-primary dark:text-white flex justify-between items-center"
     >
       <h3
         class="font-semibold"
@@ -14,7 +14,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
         Invoices
       </h3>
       <button
-        class="uppercase text-xs font-bold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md tracking-wide"
+        class="uppercase text-primary text-xs font-bold px-4 py-1.5 border border-primary rounded-md tracking-wide"
       >
         view all
       </button>
@@ -32,7 +32,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             March, 21, 2021
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -44,7 +44,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -53,6 +53,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/804322"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -83,7 +84,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             April, 22, 2022
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -95,7 +96,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -104,6 +105,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/8908543"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -138,7 +140,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             March, 21, 2021
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -150,7 +152,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -159,6 +161,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/804322"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -189,7 +192,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             April, 22, 2022
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -201,7 +204,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -210,6 +213,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/8908543"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -240,7 +244,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             May, 23, 2023
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             MS
@@ -252,7 +256,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -261,6 +265,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/415645"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -291,7 +296,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             June, 24, 2024
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             QW
@@ -303,7 +308,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -312,6 +317,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/103578"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -342,7 +348,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             July, 25, 2025
           </p>
           <p
-            class="text-xs mt-1 text-secondary"
+            class="text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             RV
@@ -354,7 +360,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary"
+            class="text-sm text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -363,6 +369,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
             href="/billing/invoice-list/126749"
           >
             <svg
+              class="text-xl dark:text-primary"
               fill="currentColor"
               height="1em"
               stroke="currentColor"

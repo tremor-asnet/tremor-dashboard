@@ -29,16 +29,18 @@ const SalesByCountryRow = ({
   return (
     <TableRow
       key={id}
-      className="border-solid border-b !border-gray-100 dark:!border-grayish">
-      <TableCell className="px-4 py-3 w-6/12 sm:w-[50%]">
+      className="border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]">
+      <TableCell className="px-4 py-3 w-6/12 w-[25%]">
         <Flex className="items-center">
-          <Image
-            src={FLAG_SRC[id]}
-            width="34"
-            height="28"
-            alt={country}
-            priority
-          />
+          <div className="w-[34px]">
+            <Image
+              src={FLAG_SRC[id]}
+              width="34"
+              height="28"
+              alt={country}
+              priority
+            />
+          </div>
           <Flex className="items-start flex-col ml-6">
             <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25] tracking-[0.03333em]">
               Country:
@@ -49,7 +51,7 @@ const SalesByCountryRow = ({
           </Flex>
         </Flex>
       </TableCell>
-      <TableCell className="px-4 py-3 text-left">
+      <TableCell className="px-4 py-3 text-left w-[25%]">
         <Text className="text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]">
           Sales:
         </Text>
@@ -61,7 +63,7 @@ const SalesByCountryRow = ({
         </Text>
       </TableCell>
       {isAnalytics && (
-        <TableCell className="px-4 py-3 text-left value">
+        <TableCell className="px-4 py-3 text-left value w-[25%]">
           <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25]">
             Value:
           </Text>
@@ -76,7 +78,7 @@ const SalesByCountryRow = ({
         </TableCell>
       )}
       <TableCell
-        className={`px-4 py-3 text-left bounce ${
+        className={`w-[25%] px-4 py-3 text-left bounce ${
           isAnalytics && "hidden md:table-cell"
         }`}>
         <Text className="text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]">

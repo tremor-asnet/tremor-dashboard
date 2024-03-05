@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import SelectOption from "./";
+import SelectOption from "./SelectOption";
 
 // Constants
 import { ProductList } from "@/constants";

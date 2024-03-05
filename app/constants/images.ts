@@ -5,6 +5,7 @@ export const NOT_FOUND_IMAGE = "/images/no-image.jpg";
 export const LOGO_SRC = {
   logo: "/assets/images/sidebar-logo.webp",
 };
+export const PLACEHOLDER_IMAGE = "/images/not-found-image.png";
 
 export const AVATAR_SRC = {
   xs: "/images/avatar/avatar-xs.webp",

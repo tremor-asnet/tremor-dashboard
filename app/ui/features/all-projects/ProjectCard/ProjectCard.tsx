@@ -12,7 +12,7 @@ import { CustomImage, Avatar } from "@/ui/components";
 import { Project, AvatarCard } from "@/types";
 
 //Constants
-import { ITEM_ACTION_PROJECT } from "@/constants";
+import { ITEM_ACTION_PROJECT, PLACEHOLDER_IMAGE } from "@/constants";
 
 //Mocks
 import { PROJECT_DATA } from "@/mocks/project";
@@ -39,6 +39,7 @@ const ProjectCard = ({
   const { cover, name, dueDate, participants, description, id } = projectData;
   const participantNumber = participants?.length;
   const duaDateFormat = formatDate(new Date(dueDate));
+  const srcImageCard = cover ? cover : PLACEHOLDER_IMAGE;
 
   const [isOpenAction, setOpenAction] = useState(false);
   const [currentProjectId, setCurrentProjectId] = useState("");
@@ -65,11 +66,12 @@ const ProjectCard = ({
           ref={projectCardRef as RefObject<HTMLDivElement>}>
           <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled">
             <CustomImage
-              src={cover}
+              src={srcImageCard}
               width={60}
               height={60}
               alt={`${name}-cover`}
               priority
+              className="rounded-md"
             />
           </Flex>
           <Flex className="pl-[90px] mb-6 mt-1 relative">
@@ -96,17 +98,17 @@ const ProjectCard = ({
               <Flex
                 className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
                 onClick={() => handleToggleAction(projectData.id)}>
-                <FaEllipsisV className="text-secondary dark:text-dark-romance" />
+                <FaEllipsisV className="text-secondary dark:text-secondary" />
               </Flex>
               {openActionProject && (
-                <div className="absolute px-[18px] py-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
+                <div className="absolute p-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
                   {actions.map(item => (
                     <Flex key={item.key} flex-col>
                       <Button
-                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-1 py-[6px]"
+                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md py-[6px]"
                         variant="light"
                         onClick={() => handleItemActionProject()}>
-                        <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
+                        <Text className="px-3 font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
                           {item.label}
                         </Text>
                       </Button>

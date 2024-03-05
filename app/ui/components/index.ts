@@ -23,7 +23,7 @@ export { default as Pagination } from "./Pagination";
 export { default as Popover } from "./Popover/Popover";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as SelectField } from "./SelectField/SelectField";
-export { default as SelectOption } from "./SelectOption/";
+export { default as SelectOption } from "./SelectOption/SelectOption";
 export { default as SideBar } from "./Sidebar/Sidebar";
 export { default as StarRating } from "./StarRating/StarRating";
 export { default as StatusButton } from "./StatusButton/StatusButton";

@@ -61,25 +61,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
                   >
                     <tr
-                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                         >
-                          <img
-                            alt="United State"
-                            data-nimg="1"
-                            decoding="async"
-                            fetchpriority="high"
-                            height="28"
-                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
-                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
-                            style="color: transparent;"
-                            width="34"
-                          />
+                          <div
+                            class="w-[34px]"
+                          >
+                            <img
+                              alt="United State"
+                              data-nimg="1"
+                              decoding="async"
+                              fetchpriority="high"
+                              height="28"
+                              src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
+                              srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
+                              style="color: transparent;"
+                              width="34"
+                            />
+                          </div>
                           <div
                             class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                           >
@@ -97,7 +101,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -111,7 +115,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -127,7 +131,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -145,25 +149,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                         >
-                          <img
-                            alt="Germany"
-                            data-nimg="1"
-                            decoding="async"
-                            fetchpriority="high"
-                            height="28"
-                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
-                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
-                            style="color: transparent;"
-                            width="34"
-                          />
+                          <div
+                            class="w-[34px]"
+                          >
+                            <img
+                              alt="Germany"
+                              data-nimg="1"
+                              decoding="async"
+                              fetchpriority="high"
+                              height="28"
+                              src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
+                              srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
+                              style="color: transparent;"
+                              width="34"
+                            />
+                          </div>
                           <div
                             class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                           >
@@ -181,7 +189,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -195,7 +203,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -211,7 +219,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -229,25 +237,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                         >
-                          <img
-                            alt="Great Britain"
-                            data-nimg="1"
-                            decoding="async"
-                            fetchpriority="high"
-                            height="28"
-                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
-                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
-                            style="color: transparent;"
-                            width="34"
-                          />
+                          <div
+                            class="w-[34px]"
+                          >
+                            <img
+                              alt="Great Britain"
+                              data-nimg="1"
+                              decoding="async"
+                              fetchpriority="high"
+                              height="28"
+                              src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
+                              srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
+                              style="color: transparent;"
+                              width="34"
+                            />
+                          </div>
                           <div
                             class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                           >
@@ -265,7 +277,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -279,7 +291,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -295,7 +307,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -313,25 +325,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </td>
                     </tr>
                     <tr
-                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                      class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                         >
-                          <img
-                            alt="Brasil"
-                            data-nimg="1"
-                            decoding="async"
-                            fetchpriority="high"
-                            height="28"
-                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
-                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
-                            style="color: transparent;"
-                            width="34"
-                          />
+                          <div
+                            class="w-[34px]"
+                          >
+                            <img
+                              alt="Brasil"
+                              data-nimg="1"
+                              decoding="async"
+                              fetchpriority="high"
+                              height="28"
+                              src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
+                              srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
+                              style="color: transparent;"
+                              width="34"
+                            />
+                          </div>
                           <div
                             class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                           >
@@ -349,7 +365,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -363,7 +379,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -379,7 +395,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2115,25 +2131,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
                 >
                   <tr
-                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        <img
-                          alt="United State"
-                          data-nimg="1"
-                          decoding="async"
-                          fetchpriority="high"
-                          height="28"
-                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
-                          style="color: transparent;"
-                          width="34"
-                        />
+                        <div
+                          class="w-[34px]"
+                        >
+                          <img
+                            alt="United State"
+                            data-nimg="1"
+                            decoding="async"
+                            fetchpriority="high"
+                            height="28"
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
+                            style="color: transparent;"
+                            width="34"
+                          />
+                        </div>
                         <div
                           class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                         >
@@ -2151,7 +2171,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2165,7 +2185,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2181,7 +2201,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2199,25 +2219,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     </td>
                   </tr>
                   <tr
-                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        <img
-                          alt="Germany"
-                          data-nimg="1"
-                          decoding="async"
-                          fetchpriority="high"
-                          height="28"
-                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
-                          style="color: transparent;"
-                          width="34"
-                        />
+                        <div
+                          class="w-[34px]"
+                        >
+                          <img
+                            alt="Germany"
+                            data-nimg="1"
+                            decoding="async"
+                            fetchpriority="high"
+                            height="28"
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
+                            style="color: transparent;"
+                            width="34"
+                          />
+                        </div>
                         <div
                           class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                         >
@@ -2235,7 +2259,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2249,7 +2273,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2265,7 +2289,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2283,25 +2307,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     </td>
                   </tr>
                   <tr
-                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        <img
-                          alt="Great Britain"
-                          data-nimg="1"
-                          decoding="async"
-                          fetchpriority="high"
-                          height="28"
-                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
-                          style="color: transparent;"
-                          width="34"
-                        />
+                        <div
+                          class="w-[34px]"
+                        >
+                          <img
+                            alt="Great Britain"
+                            data-nimg="1"
+                            decoding="async"
+                            fetchpriority="high"
+                            height="28"
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
+                            style="color: transparent;"
+                            width="34"
+                          />
+                        </div>
                         <div
                           class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                         >
@@ -2319,7 +2347,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2333,7 +2361,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2349,7 +2377,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2367,25 +2395,29 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     </td>
                   </tr>
                   <tr
-                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                    class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                       >
-                        <img
-                          alt="Brasil"
-                          data-nimg="1"
-                          decoding="async"
-                          fetchpriority="high"
-                          height="28"
-                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
-                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
-                          style="color: transparent;"
-                          width="34"
-                        />
+                        <div
+                          class="w-[34px]"
+                        >
+                          <img
+                            alt="Brasil"
+                            data-nimg="1"
+                            decoding="async"
+                            fetchpriority="high"
+                            height="28"
+                            src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
+                            srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
+                            style="color: transparent;"
+                            width="34"
+                          />
+                        </div>
                         <div
                           class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                         >
@@ -2403,7 +2435,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2417,7 +2449,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2433,7 +2465,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4202,25 +4234,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                 class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
               >
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="United State"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="United State"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4238,7 +4274,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4252,7 +4288,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4270,25 +4306,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Germany"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Germany"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4306,7 +4346,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4320,7 +4360,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4338,25 +4378,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Great Britain"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Great Britain"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4374,7 +4418,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4388,7 +4432,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4406,25 +4450,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Brasil"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Brasil"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4442,7 +4490,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4456,7 +4504,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4474,25 +4522,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Australia"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Australia"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FAU.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4510,7 +4562,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4524,7 +4576,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4609,25 +4661,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                 class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
               >
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="United State"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="United State"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FUS.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4645,7 +4701,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4659,7 +4715,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4675,7 +4731,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4693,25 +4749,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Germany"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Germany"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FDE.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4729,7 +4789,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4743,7 +4803,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4759,7 +4819,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4777,25 +4837,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Great Britain"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Great Britain"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FGB.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4813,7 +4877,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4827,7 +4891,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4843,7 +4907,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4861,25 +4925,29 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   </td>
                 </tr>
                 <tr
-                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish"
+                  class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-6/12 sm:w-[50%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
                     >
-                      <img
-                        alt="Brasil"
-                        data-nimg="1"
-                        decoding="async"
-                        fetchpriority="high"
-                        height="28"
-                        src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
-                        srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
-                        style="color: transparent;"
-                        width="34"
-                      />
+                      <div
+                        class="w-[34px]"
+                      >
+                        <img
+                          alt="Brasil"
+                          data-nimg="1"
+                          decoding="async"
+                          fetchpriority="high"
+                          height="28"
+                          src="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75"
+                          srcset="/_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fflags%2FBR.webp&w=96&q=75 2x"
+                          style="color: transparent;"
+                          width="34"
+                        />
+                      </div>
                       <div
                         class="tremor-Flex-root flex w-full justify-between items-start flex-col ml-6"
                       >
@@ -4897,7 +4965,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4911,7 +4979,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-xs dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4927,7 +4995,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left bounce hidden md:table-cell"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
                       class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"

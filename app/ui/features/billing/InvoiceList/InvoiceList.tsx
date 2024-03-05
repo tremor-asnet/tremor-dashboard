@@ -38,10 +38,10 @@ const Invoices = ({ invoices }: InvoicesProps) => {
   });
 
   return (
-    <div className="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md w-full min-h-[234px]">
-      <div className="text-[#344767] dark:text-white flex justify-between items-center">
+    <div className="p-6 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md w-full min-h-[234px]">
+      <div className="text-primary dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
-        <button className="uppercase text-xs font-bold px-[18px] py-[6px] border border-[#344767] dark:border-white rounded-md tracking-wide">
+        <button className="uppercase text-primary text-xs font-bold px-4 py-1.5 border border-primary rounded-md tracking-wide">
           view all
         </button>
       </div>

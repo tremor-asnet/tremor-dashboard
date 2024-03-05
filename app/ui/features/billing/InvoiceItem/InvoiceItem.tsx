@@ -21,12 +21,12 @@ const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
       <p className="text-sm font-semibold text-primary dark:text-white">
         {formatNewDate(date, SEPARATOR.COMMAS)}
       </p>
-      <p className="text-xs mt-1 text-secondary">
+      <p className="text-xs mt-1 text-secondary dark:text-lighter">
         &#35;{invoicePrefix}-{id}
       </p>
     </div>
     <div className="flex gap-6 items-center">
-      <p className="text-sm text-secondary">
+      <p className="text-sm text-secondary dark:text-lighter">
         {moneyFormat({
           value: price,
           currency: CURRENCY.DOLLAR,
@@ -35,7 +35,7 @@ const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
       <Link
         className="flex gap-1 items-center text-primary dark:text-white font-semibold"
         href={`${ROUTES.INVOICE_LIST}/${id}`}>
-        <MdPictureAsPdf />
+        <MdPictureAsPdf className="text-xl dark:text-primary" />
         PDF
       </Link>
     </div>

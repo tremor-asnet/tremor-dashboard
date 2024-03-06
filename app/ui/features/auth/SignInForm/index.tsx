@@ -34,17 +34,13 @@ const SignInForm = () => {
     mode: "onSubmit",
   });
 
+  const [isRememberedMe, setIsRememberedMe] = useState<boolean>(false);
   const [formStatus, setFormStatus] = useState({
     isPending: false,
     errorMessage: "",
   });
 
-  const { email, password } = errors;
-  const emailErrorMessage = email?.message?.toString();
-  const passwordErrorMessage = password?.message?.toString();
-  const isDisableSubmit = formStatus.isPending;
-
-  const [isRememberedMe, setIsRememberedMe] = useState<boolean>(false);
+  const { isPending, errorMessage } = formStatus;
 
   // Handle to change value is (true or false) for attr checked switch
   const handleSwitchChange = (value: boolean) => {
@@ -76,7 +72,7 @@ const SignInForm = () => {
       noValidate
       onSubmit={handleSubmit(handleSignIn)}
       className="w-full sm:p-3 sign-in">
-      {isDisableSubmit && (
+      {isPending && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}
       <Controller
@@ -88,23 +84,30 @@ const SignInForm = () => {
             message: MESSAGES_ERROR.EMAIL_INVALID,
           },
         }}
-        render={({ field }) => (
-          <div className="h-[68px] w-full">
-            <TextInput
-              id="email"
-              placeholder="Email"
-              type="email"
-              autoFocus
-              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
-              {...field}
-            />
-            <p className="pt-1 text-[11px] xs:text-xs text-red-500">
-              {emailErrorMessage}
-            </p>
-          </div>
-        )}
+        render={({ field }) => {
+          const emailErrorMessage = errors.email?.message || "";
+
+          return (
+            <div className="h-[68px] w-full">
+              <TextInput
+                id="email"
+                placeholder="Email"
+                type="email"
+                autoFocus
+                className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent dark:focus:bg-transparent"
+                {...field}
+              />
+              {emailErrorMessage && (
+                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                  {emailErrorMessage}
+                </p>
+              )}
+            </div>
+          );
+        }}
         name="email"
       />
+
       <Controller
         control={control}
         rules={{
@@ -114,26 +117,28 @@ const SignInForm = () => {
             message: MESSAGES_ERROR.PASSWORD_WRONG,
           },
         }}
-        render={({ field }) => (
-          <div className="h-[70px] w-full">
-            <TextInput
-              tabIndex={1}
-              id="password"
-              placeholder="Password"
-              type="password"
-              className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
-              {...field}
-            />
-            <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
-              {passwordErrorMessage
-                ? passwordErrorMessage
-                : formStatus.errorMessage}
-            </p>
-          </div>
-        )}
+        render={({ field }) => {
+          const passwordErrorMessage = errors.password?.message || "";
+
+          return (
+            <div className="h-[70px] w-full">
+              <TextInput
+                tabIndex={1}
+                id="password"
+                placeholder="Password"
+                type="password"
+                className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
+                {...field}
+              />
+              <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
+                {passwordErrorMessage ? passwordErrorMessage : errorMessage}
+              </p>
+            </div>
+          );
+        }}
         name="password"
       />
-      {/* {renderErrorMessage(formStatus.errorMessage)} */}
+
       <div className="flex items-center space-x-3 mt-6">
         <Switch
           tabIndex={2}
@@ -141,7 +146,7 @@ const SignInForm = () => {
           name="switch"
           checked={isRememberedMe}
           color="zinc"
-          disabled={isDisableSubmit}
+          disabled={isPending}
           className="switch flex justify-center items-center"
           onChange={handleSwitchChange}
         />
@@ -151,11 +156,11 @@ const SignInForm = () => {
       </div>
       <Button
         tabIndex={3}
-        aria-disabled={isDisableSubmit}
+        aria-disabled={isPending}
         className="min-h-[43px] flex w-full bg-gradient-primary dark:bg-gradient-pickled opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent"
         size="xs"
         type="submit"
-        disabled={isDisableSubmit}>
+        disabled={isPending}>
         {formStatus.isPending ? (
           <LoadingIndicator width={7} height={7} />
         ) : (

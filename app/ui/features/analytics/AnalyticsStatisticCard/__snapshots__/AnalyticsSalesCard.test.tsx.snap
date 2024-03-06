@@ -12,13 +12,13 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
           class="flex items-center"
         >
           <div
-            class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-total mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
+            class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
           >
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
             >
               <div
-                class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)] absolute top-[-22px] shadow-box-icon-primary"
+                class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-gradient-arsenic absolute top-[-22px] shadow-box-icon-primary"
               >
                 <svg
                   color="white"
@@ -40,19 +40,19 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-full justify-between pl-[90px] flex-col mb-1 items-end"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-md text-secondary font-light"
+                  class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"
                 >
                   Bookings
                 </p>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content !text-primary text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold"
+                  class="text-tremor-default dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold"
                 >
                   281
                 </p>
               </div>
             </div>
             <div
-              class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+              class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4"
             />
             <div
               class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -61,15 +61,14 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-row justify-start items-start tracking-[0.4px]"
               >
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content text-few leading-[21px] font-bold"
+                  class="text-tremor-default text-few dark:text-few leading-[21px] font-bold"
                 >
                   +55%
                 </p>
                 <p
-                  class="text-tremor-default dark:text-dark-tremor-content ml-1 text-secondary leading-[21px] font-light"
+                  class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light"
                 >
                   than last week
-                   hellooo
                 </p>
               </div>
             </div>
@@ -86,13 +85,13 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
         class="flex items-center"
       >
         <div
-          class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:bg-dark-tremor-background dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-total mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
+          class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
           >
             <div
-              class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-[linear-gradient(195deg,#42424a,#191919)] absolute top-[-22px] shadow-box-icon-primary"
+              class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl w-16 h-16 bg-gradient-arsenic absolute top-[-22px] shadow-box-icon-primary"
             >
               <svg
                 color="white"
@@ -114,19 +113,19 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full justify-between pl-[90px] flex-col mb-1 items-end"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-md text-secondary font-light"
+                class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"
               >
                 Bookings
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content !text-primary text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold"
+                class="text-tremor-default dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold"
               >
                 281
               </p>
             </div>
           </div>
           <div
-            class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 my-4"
+            class="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4"
           />
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -135,15 +134,14 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-start items-start tracking-[0.4px]"
             >
               <p
-                class="text-tremor-default dark:text-dark-tremor-content text-few leading-[21px] font-bold"
+                class="text-tremor-default text-few dark:text-few leading-[21px] font-bold"
               >
                 +55%
               </p>
               <p
-                class="text-tremor-default dark:text-dark-tremor-content ml-1 text-secondary leading-[21px] font-light"
+                class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light"
               >
                 than last week
-                 hellooo
               </p>
             </div>
           </div>

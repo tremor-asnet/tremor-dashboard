@@ -25,7 +25,7 @@ import { ROUTES } from "@/constants";
 
 type SearchParamsProduct = {
   query: string;
-  isAvailable: number;
+  isAvailable: string;
   page?: number;
 };
 
@@ -38,7 +38,7 @@ const ProductListPage = async ({
 
   const {
     query = "",
-    isAvailable = -1,
+    isAvailable = "",
     page = 1,
   } = searchParams as SearchParamsProduct;
 

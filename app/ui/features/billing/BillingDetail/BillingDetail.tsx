@@ -21,15 +21,15 @@ const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
   const billingCardNumber = cardNumber.match(/.{1,4}/g).join(" ");
 
   return (
-    <>
-      <div className="w-full mr-0 xl:mr-6">
+    <div className="w-full flex flex-col md:flex-row">
+      <div className="w-full mr-0 md:mr-6">
         <BillingCard
           cardNumber={billingCardNumber}
           holderFullName={holderFullName}
           expire={expire}
         />
       </div>
-      <Flex className="w-full gap-6 mt-6 xl:mt-0 flex-col md:flex-row">
+      <Flex className="w-full gap-6 mt-6 md:mt-0 flex-col md:flex-row">
         {aggregation.map((item: SalaryCardData) => (
           <SalaryCard
             key={`${item.type}`}
@@ -38,7 +38,7 @@ const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
           />
         ))}
       </Flex>
-    </>
+    </div>
   );
 };
 

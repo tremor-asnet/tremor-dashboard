@@ -30,9 +30,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Dashboard: Story = {
-  render: () => (
-    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
-      <ProjectInfoCard links={PROFILE_INFO_PROJECT_CARD} />
-    </div>
-  ),
+  args: {
+    links: PROFILE_INFO_PROJECT_CARD,
+  },
 };

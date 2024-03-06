@@ -10,7 +10,7 @@ const meta = {
   argTypes: {
     products: {
       description:
-        "This is an array include products with a product have type OrderProduct(id: number; name: string; count?: number; price?: number; url?: string)",
+        "This is an array include products with a product have type OrderProduct(id: number; name: string; count: number; price?: number; url?: string)",
     },
   },
 } as Meta<typeof CustomList>;
@@ -23,14 +23,17 @@ const products = [
   {
     id: 1,
     name: "Premium Support",
+    count: 2,
   },
   {
     id: 2,
     name: "Metror Dashboard",
+    count: 5,
   },
   {
     id: 3,
     name: "Parts for service",
+    count: 2,
   },
 ];
 

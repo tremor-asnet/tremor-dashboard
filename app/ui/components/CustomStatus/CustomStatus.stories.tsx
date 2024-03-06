@@ -9,7 +9,8 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     status: {
-      description: "This is a number with 3 status are 0, 1 and 2",
+      description:
+        "This is a number with 3 status are 0, 1 and 2. In which 0 is for Paid status, 1 is for Canceled status and 3 for Refunded",
     },
   },
 } as Meta<typeof CustomStatus>;

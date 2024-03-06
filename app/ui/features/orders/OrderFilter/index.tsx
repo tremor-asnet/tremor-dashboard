@@ -18,15 +18,12 @@ import { useOutsideClick } from "@/hooks";
 
 const OrderFilter = () => {
   const searchParams = useSearchParams();
-  const demo = searchParams.toString();
-  // console.log("====================================");
-  // console.log(searchParams, "usePathname");
-  // console.log("====================================");
+
   const [showListOption, setShowListOption] = useState(false);
 
   const router = useRouter();
 
-  const newParams = new URLSearchParams(demo);
+  const newParams = new URLSearchParams(searchParams.toString());
   const pathName = usePathname();
   const currentStatus = newParams.get("status");
 

@@ -16,7 +16,7 @@ import {
 import { ColumnType } from "@/types";
 
 // Hooks
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
@@ -66,6 +66,19 @@ const DataGrid = <T,>({
 
   const [tableData, handleSorting] = useSortableTable<T>(data);
 
+  let [isPending, startTransition] = useTransition();
+
+  startTransition(() => {
+    setLoading(true);
+  });
+
+  useEffect(() => {
+    if (isPending) return;
+
+    // THIS CODE WILL RUN AFTER THE SERVER ACTION
+    setLoading(false);
+  }, [isPending]);
+
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
     if (page === 1) {
@@ -100,22 +113,6 @@ const DataGrid = <T,>({
     }
   }, [columns, handleSorting]);
 
-  useEffect(() => {
-    setLoading(true);
-
-    // Delay to check show loading
-    setTimeout(() => {
-      setLoading(false);
-    }, 200);
-  }, [fullPathname]);
-  console.log("pathname", fullPathname);
-
-  // if (loading) {
-  //   return (
-
-  //   );
-  // }
-
   return (
     <Card
       className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
@@ -127,7 +124,7 @@ const DataGrid = <T,>({
               handleSorting as (sortField: string, sortOrder: string) => void
             }
           />
-          {loading ? (
+          {loading || isPending ? (
             <LoadingIndicator
               additionalClass="min-h-[500px] flex justify-center items-center"
               width={8}

@@ -8,10 +8,7 @@ const meta = {
   component: InputSearch,
   tags: ["autodocs"],
   argTypes: {
-    id: { description: "Id of input search" },
-    className: { description: "Class name of input search" },
-    onChange: { description: "Handle input search" },
-    placeholder: { description: "Placeholder input search" },
+    field: { description: "keyword of input search" },
   },
 } as Meta<typeof InputSearch>;
 
@@ -20,9 +17,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const InputSearchDefault: Story = {
-  render: () => (
-    <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-      <InputSearch field="id" />
-    </div>
-  ),
+  args: {
+    field: "Product",
+  },
 };

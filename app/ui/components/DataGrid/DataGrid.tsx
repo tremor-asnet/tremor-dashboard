@@ -54,24 +54,28 @@ const DataGrid = <T,>({
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+  const params = new URLSearchParams(searchParams);
 
   const [currentPage, setCurrentPage] = useState(defaultCurrentPage);
 
   const [loading, setLoading] = useState(false);
 
+  const [fullPathname, setFullPathname] = useState(
+    `${pathname}?${params.toString()}`,
+  );
+
   const [tableData, handleSorting] = useSortableTable<T>(data);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
-    const params = new URLSearchParams(searchParams);
-
     if (page === 1) {
       params.delete("page");
     } else {
       params.set("page", page.toString());
     }
-
-    replace(`${pathname}?${params.toString()}`);
+    const newFullPathname = `${pathname}?${params.toString()}`;
+    setFullPathname(newFullPathname);
+    replace(newFullPathname);
     setCurrentPage(page);
   };
 
@@ -102,20 +106,15 @@ const DataGrid = <T,>({
     // Delay to check show loading
     setTimeout(() => {
       setLoading(false);
-    }, 100);
-  }, [filterBy, keyword, currentPage, pageSize]);
+    }, 200);
+  }, [fullPathname]);
+  console.log("pathname", fullPathname);
 
-  if (loading && !disableLoading) {
-    return (
-      <LoadingIndicator
-        additionalClass="min-h-[500px] flex justify-center items-center"
-        width={8}
-        height={8}
-        isFullWidth={false}
-        fillColor="river-bed-500"
-      />
-    );
-  }
+  // if (loading) {
+  //   return (
+
+  //   );
+  // }
 
   return (
     <Card
@@ -128,7 +127,17 @@ const DataGrid = <T,>({
               handleSorting as (sortField: string, sortOrder: string) => void
             }
           />
-          <DataGridBody columns={columns} data={currentTableData} />
+          {loading ? (
+            <LoadingIndicator
+              additionalClass="min-h-[500px] flex justify-center items-center"
+              width={8}
+              height={8}
+              isFullWidth={false}
+              fillColor="river-bed-500"
+            />
+          ) : (
+            <DataGridBody columns={columns} data={currentTableData} />
+          )}
         </Table>
         {hasPagination && (
           <Pagination

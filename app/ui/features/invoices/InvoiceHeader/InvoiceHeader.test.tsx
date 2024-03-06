@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 import InvoiceHeader from "./InvoiceHeader";
 
 const InvoiceHeaderProps = {
-  addressBank: "St. Independence Embankment, 050105",
+  addressBank: "123 Bank Street",
   cityBank: "Bucharest",
   stateBank: "Romania",
   phoneBank: "+4 (074) 1090873",
@@ -15,9 +15,31 @@ const InvoiceHeaderProps = {
   stateCustomer: "California",
 };
 
-describe("Testing InvoiceHeader component", () => {
-  it.skip("Should match snapshot", () => {
+describe("InvoiceHeader component", () => {
+  it("should render snapshot correctly", () => {
     const { container } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
     expect(container).toMatchSnapshot();
+  });
+
+  it("should renders the component with provided props", () => {
+    const { getByText } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
+
+    expect(getByText("123 Bank Street Bucharest, Romania")).toBeTruthy();
+    expect(getByText("tel: +4 (074) 1090873")).toBeTruthy();
+    expect(getByText("Billed to: John Doe")).toBeTruthy();
+  });
+
+  it("should correctly renders the combined address information", () => {
+    const { getByText } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
+
+    expect(getByText(/4006 Locust View Drive/)).toBeTruthy();
+    expect(getByText(/San Francisco CA/)).toBeTruthy();
+    expect(getByText(/California/)).toBeTruthy();
+  });
+
+  it("renders image", () => {
+    const { getByAltText } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
+
+    expect(getByAltText("print-logo")).toBeTruthy();
   });
 });

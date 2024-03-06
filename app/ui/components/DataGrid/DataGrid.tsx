@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Table } from "@tremor/react";
+import { Card, Table, TableBody, TableCell, TableRow } from "@tremor/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
@@ -68,10 +68,6 @@ const DataGrid = <T,>({
 
   let [isPending, startTransition] = useTransition();
 
-  startTransition(() => {
-    setLoading(true);
-  });
-
   useEffect(() => {
     if (isPending) return;
 
@@ -81,6 +77,10 @@ const DataGrid = <T,>({
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
+    startTransition(() => {
+      setLoading(true);
+    });
+
     if (page === 1) {
       params.delete("page");
     } else {
@@ -124,14 +124,20 @@ const DataGrid = <T,>({
               handleSorting as (sortField: string, sortOrder: string) => void
             }
           />
-          {loading || isPending ? (
-            <LoadingIndicator
-              additionalClass="min-h-[500px] flex justify-center items-center"
-              width={8}
-              height={8}
-              isFullWidth={false}
-              fillColor="river-bed-500"
-            />
+          {!loading || !isPending ? (
+            <TableBody>
+              <TableRow>
+                <TableCell colSpan={6} className="">
+                  <LoadingIndicator
+                    additionalClass="min-h-[500px] flex justify-center items-center"
+                    width={8}
+                    height={8}
+                    isFullWidth={false}
+                    fillColor="river-bed-500"
+                  />
+                </TableCell>
+              </TableRow>
+            </TableBody>
           ) : (
             <DataGridBody columns={columns} data={currentTableData} />
           )}

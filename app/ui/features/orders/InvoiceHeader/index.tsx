@@ -3,9 +3,6 @@ import { Flex, Bold, Text, Button } from "@tremor/react";
 // Types
 import { InvoiceHeaderData } from "@/types";
 
-//Styles
-import "@/styles/order.css";
-
 export const InvoiceHeader = ({
   id,
   createdAt,

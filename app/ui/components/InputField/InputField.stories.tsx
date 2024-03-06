@@ -7,20 +7,31 @@ const meta = {
   title: "Components/Common/InputField",
   component: InputField,
   tags: ["autodocs"],
+  argTypes: {
+    id: {
+      description: "Id of input field",
+    },
+    label: { description: "Label of input field" },
+    type: { description: "Type of input field" },
+  },
 } as Meta<typeof InputField>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const InputFieldNumberType: Story = {
-  render: () => (
-    <InputField id="add-product-price" label="Price" type="number" />
-  ),
+export const InputFieldTextType: Story = {
+  args: {
+    id: "edit-fb",
+    label: "Facebook Account",
+    type: "text",
+  },
 };
 
-export const InputFieldTextType: Story = {
-  render: () => (
-    <InputField id="edit-fb" label="Facebook Account" type="text" />
-  ),
+export const InputFieldNumberType: Story = {
+  args: {
+    id: "add-product-price",
+    label: "Price",
+    type: "number",
+  },
 };

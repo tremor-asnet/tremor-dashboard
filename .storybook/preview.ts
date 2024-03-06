@@ -14,7 +14,7 @@ const preview: Preview = {
   },
   globalTypes: {
     darkMode: {
-      defaultValue: true, // Enable dark mode by default on all stories
+      defaultValue: false, // Enable light mode by default on all stories
     },
   },
 };

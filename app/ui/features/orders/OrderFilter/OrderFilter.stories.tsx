@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <div className="relative text-right bg-body dark:bg-dark-primary p-6 rounded-xl">
-      <OrderFilter title="Filter" />
+      <OrderFilter />
     </div>
   ),
 };

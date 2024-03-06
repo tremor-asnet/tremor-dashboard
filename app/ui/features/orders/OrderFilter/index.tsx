@@ -16,18 +16,17 @@ import { orderListOption } from "@/constants";
 // Hooks
 import { useOutsideClick } from "@/hooks";
 
-interface OrderFilterProps {
-  title: string;
-}
-
-const OrderFilter = ({ title }: OrderFilterProps) => {
+const OrderFilter = () => {
   const searchParams = useSearchParams();
-
+  const demo = searchParams.toString();
+  // console.log("====================================");
+  // console.log(searchParams, "usePathname");
+  // console.log("====================================");
   const [showListOption, setShowListOption] = useState(false);
 
   const router = useRouter();
 
-  const newParams = new URLSearchParams(searchParams.toString());
+  const newParams = new URLSearchParams(demo);
   const pathName = usePathname();
   const currentStatus = newParams.get("status");
 
@@ -60,6 +59,10 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(false);
   };
 
+  const titleFilter = orderListOption.find(
+    ({ value }) => currentStatus && value === Number(currentStatus),
+  )?.option;
+
   return (
     <div>
       <Button
@@ -69,7 +72,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
         onClick={handleClickFilter}>
         <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
-          {title}
+          {titleFilter ? `Status: ${titleFilter}` : "Filter"}
         </Text>
       </Button>
       {showListOption && (

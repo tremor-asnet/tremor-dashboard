@@ -16,11 +16,7 @@ import { orderListOption } from "@/constants";
 // Hooks
 import { useOutsideClick } from "@/hooks";
 
-interface OrderFilterProps {
-  title: string;
-}
-
-const OrderFilter = ({ title }: OrderFilterProps) => {
+const OrderFilter = () => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
@@ -60,6 +56,10 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
     setShowListOption(false);
   };
 
+  const titleOption = orderListOption.find(
+    ({ value }) => currentStatus && value === Number(currentStatus),
+  )?.option;
+
   return (
     <div>
       <Button
@@ -69,7 +69,7 @@ const OrderFilter = ({ title }: OrderFilterProps) => {
         className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
         onClick={handleClickFilter}>
         <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
-          {title}
+          {titleOption ? `Status: ${titleOption}` : "Filters"}
         </Text>
       </Button>
       {showListOption && (

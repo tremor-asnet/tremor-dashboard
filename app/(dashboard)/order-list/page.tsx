@@ -40,7 +40,7 @@ const OrderListPage = async ({
             new order
           </Text>
         </Button>
-        <OrderFilter title="Filters" />
+        <OrderFilter />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="id" />

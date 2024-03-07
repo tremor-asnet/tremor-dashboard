@@ -21,15 +21,10 @@ import { useEffect, useMemo, useState, useTransition } from "react";
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
 
-// Constants
-import { ROUTES } from "@/constants";
-
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
-  filterBy: string;
-  keyword: string;
   className?: string;
   hasPagination?: boolean;
   currentPageNumber?: number;
@@ -42,8 +37,6 @@ const DataGrid = <T,>({
   data,
   columns,
   pageSize = 10,
-  filterBy,
-  keyword,
   className = "",
   hasPagination = true,
   total,
@@ -124,10 +117,10 @@ const DataGrid = <T,>({
               handleSorting as (sortField: string, sortOrder: string) => void
             }
           />
-          {!loading || !isPending ? (
+          {(loading || isPending) && !disableLoading ? (
             <TableBody>
               <TableRow>
-                <TableCell colSpan={6} className="">
+                <TableCell colSpan={6}>
                   <LoadingIndicator
                     additionalClass="min-h-[500px] flex justify-center items-center"
                     width={8}

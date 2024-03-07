@@ -17,8 +17,6 @@ import { ROUTES } from "@/constants";
 
 interface TableProductProps {
   products: Product[];
-  isAvailable: string;
-  keyword: string;
   total: number;
   currentPage: number;
 }
@@ -28,13 +26,7 @@ export interface SortItem {
   direction: string;
 }
 
-const TableProduct = ({
-  products,
-  isAvailable,
-  keyword,
-  total,
-  currentPage,
-}: TableProductProps) => {
+const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
@@ -98,8 +90,6 @@ const TableProduct = ({
     <DataGrid
       data={sortedProducts}
       columns={columns}
-      filterBy={isAvailable}
-      keyword={keyword}
       currentPageNumber={currentPage}
       total={total}
     />

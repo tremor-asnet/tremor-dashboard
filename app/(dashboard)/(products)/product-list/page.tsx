@@ -72,8 +72,6 @@ const ProductListPage = async ({
           <TableProduct
             key={`${query}-${isAvailable}-${page}`}
             products={results}
-            isAvailable={isAvailable.toString()}
-            keyword={query}
             total={total}
             currentPage={skip / 10 + 1}
           />

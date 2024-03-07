@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Table } from "@tremor/react";
+import { Card, Table, TableBody, TableCell, TableRow } from "@tremor/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
@@ -16,20 +16,15 @@ import {
 import { ColumnType } from "@/types";
 
 // Hooks
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 
 // Helpers
 import { useSortableTable } from "@/hooks/useSortableTable";
-
-// Constants
-import { ROUTES } from "@/constants";
 
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnType<T>[];
   pageSize?: number;
-  filterBy: string;
-  keyword: string;
   className?: string;
   hasPagination?: boolean;
   currentPageNumber?: number;
@@ -42,8 +37,6 @@ const DataGrid = <T,>({
   data,
   columns,
   pageSize = 10,
-  filterBy,
-  keyword,
   className = "",
   hasPagination = true,
   total,
@@ -54,24 +47,41 @@ const DataGrid = <T,>({
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+  const params = new URLSearchParams(searchParams);
 
   const [currentPage, setCurrentPage] = useState(defaultCurrentPage);
 
   const [loading, setLoading] = useState(false);
 
+  const [fullPathname, setFullPathname] = useState(
+    `${pathname}?${params.toString()}`,
+  );
+
   const [tableData, handleSorting] = useSortableTable<T>(data);
+
+  let [isPending, startTransition] = useTransition();
+
+  useEffect(() => {
+    if (isPending) return;
+
+    // THIS CODE WILL RUN AFTER THE SERVER ACTION
+    setLoading(false);
+  }, [isPending]);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
-    const params = new URLSearchParams(searchParams);
+    startTransition(() => {
+      setLoading(true);
+    });
 
     if (page === 1) {
       params.delete("page");
     } else {
       params.set("page", page.toString());
     }
-
-    replace(`${pathname}?${params.toString()}`);
+    const newFullPathname = `${pathname}?${params.toString()}`;
+    setFullPathname(newFullPathname);
+    replace(newFullPathname);
     setCurrentPage(page);
   };
 
@@ -96,27 +106,6 @@ const DataGrid = <T,>({
     }
   }, [columns, handleSorting]);
 
-  useEffect(() => {
-    setLoading(true);
-
-    // Delay to check show loading
-    setTimeout(() => {
-      setLoading(false);
-    }, 100);
-  }, [filterBy, keyword, currentPage, pageSize]);
-
-  if (loading && !disableLoading) {
-    return (
-      <LoadingIndicator
-        additionalClass="min-h-[500px] flex justify-center items-center"
-        width={8}
-        height={8}
-        isFullWidth={false}
-        fillColor="river-bed-500"
-      />
-    );
-  }
-
   return (
     <Card
       className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
@@ -128,7 +117,23 @@ const DataGrid = <T,>({
               handleSorting as (sortField: string, sortOrder: string) => void
             }
           />
-          <DataGridBody columns={columns} data={currentTableData} />
+          {(loading || isPending) && !disableLoading ? (
+            <TableBody>
+              <TableRow>
+                <TableCell colSpan={6}>
+                  <LoadingIndicator
+                    additionalClass="min-h-[500px] flex justify-center items-center"
+                    width={8}
+                    height={8}
+                    isFullWidth={false}
+                    fillColor="river-bed-500"
+                  />
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          ) : (
+            <DataGridBody columns={columns} data={currentTableData} />
+          )}
         </Table>
         {hasPagination && (
           <Pagination

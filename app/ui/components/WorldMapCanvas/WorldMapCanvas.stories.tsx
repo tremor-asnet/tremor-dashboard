@@ -21,9 +21,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <Card className="h-full bg-tremor-primary dark:bg-dark-tremor-primary p-0 border-none ring-0">
-      <WorldMapCanvas />
-    </Card>
-  ),
+  render: () => <WorldMapCanvas />,
 };

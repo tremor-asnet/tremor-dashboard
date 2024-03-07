@@ -38,7 +38,7 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
             alt={primaryName}
           />
         </Flex>
-        <Flex className="justify-start flex-col items-start pt-4 px-2">
+        <Flex className="justify-start flex-col items-start pt-4 pl-2">
           <Text className="capitalize font-normal dark:text-dark-tremor-content-romance">
             {secondaryName}
           </Text>
@@ -48,7 +48,7 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
           <Text className="flex-wrap font-light mb-6 dark:text-dark-tremor-content-romance">
             {description}
           </Text>
-          <Flex className="flex flex-wrap">
+          <Flex>
             <Link href={ROUTES.PROJECTS}>
               <Button
                 className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
@@ -58,7 +58,7 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
                 </Text>
               </Button>
             </Link>
-            <div className="container-avatars min-w-[56px] flex flex-nowrap ml-3">
+            <div className="container-avatars min-w-[56px] flex justify-end flex-nowrap ml-3">
               {participants.map(({ name, avatar }) => (
                 <Avatar
                   key={`${name}-${id}`}

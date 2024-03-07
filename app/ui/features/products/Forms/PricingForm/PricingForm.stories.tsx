@@ -18,7 +18,8 @@ const meta = {
       description: "This is sku type string",
     },
     tags: {
-      description: "This is tags type array number",
+      description:
+        "This is tags type array number with value by SelectOptionData:{value: number; option: string;} with value 1: option is Black Friday, 2: Expired, 3: Out of Stock, 4: In Stock, 5: Sale",
     },
     onBack: {
       description: "This is func to back step prev",

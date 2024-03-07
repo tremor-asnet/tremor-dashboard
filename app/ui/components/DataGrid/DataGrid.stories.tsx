@@ -109,12 +109,5 @@ const columns: ColumnType<Order>[] = [
 ];
 
 export const DataTableDefault: Story = {
-  render: () => (
-    <DataGrid
-      data={data}
-      columns={columns}
-      filterBy="status"
-      keyword="productName"
-    />
-  ),
+  render: () => <DataGrid data={data} columns={columns} />,
 };

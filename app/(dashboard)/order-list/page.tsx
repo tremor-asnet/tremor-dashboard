@@ -59,8 +59,6 @@ const OrderListPage = async ({
             <TableOrder
               key={`${id}-${status}-${page}`}
               orders={results}
-              status={status.toString()}
-              keyword={id.toString()}
               total={total}
               currentPage={skip / 10 + 1}
             />

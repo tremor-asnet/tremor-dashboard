@@ -10,6 +10,11 @@ const meta = {
   title: "Components/Products/Tables/TableProduct",
   component: TableProduct,
   tags: ["autodocs"],
+  argTypes: {
+    products: { description: "Product data of table product" },
+    total: { description: "Total item of table product" },
+    currentPage: { description: "Current page of table product" },
+  },
 } as Meta<typeof TableProduct>;
 
 export default meta;
@@ -17,7 +22,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => (
-    <TableProduct products={MOCK_PRODUCTS} total={50} currentPage={0} />
-  ),
+  args: {
+    products: MOCK_PRODUCTS,
+    total: 50,
+    currentPage: 2,
+  },
 };

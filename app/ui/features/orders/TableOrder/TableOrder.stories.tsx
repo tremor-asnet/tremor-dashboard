@@ -10,6 +10,11 @@ const meta = {
   title: "Components/Orders/Tables/TableOrder",
   component: TableOrder,
   tags: ["autodocs"],
+  argTypes: {
+    orders: { description: "Order data of table order" },
+    total: { description: "Total item of table order" },
+    currentPage: { description: "Current page of table order" },
+  },
 } as Meta<typeof TableOrder>;
 
 export default meta;
@@ -17,5 +22,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  render: () => <TableOrder orders={MOCK_ORDERS} total={10} currentPage={0} />,
+  args: {
+    orders: MOCK_ORDERS,
+    total: 50,
+    currentPage: 1,
+  },
 };

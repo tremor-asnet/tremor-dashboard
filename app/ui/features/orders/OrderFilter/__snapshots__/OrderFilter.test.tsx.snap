@@ -15,7 +15,7 @@ exports[`Testing OrderFilter component Should match snapshot 1`] = `
             <p
               class="text-tremor-default uppercase text-xs text-inherit dark:text-inherit tracking-wide"
             >
-              Filter
+              Filters
             </p>
           </span>
           <svg
@@ -47,7 +47,7 @@ exports[`Testing OrderFilter component Should match snapshot 1`] = `
           <p
             class="text-tremor-default uppercase text-xs text-inherit dark:text-inherit tracking-wide"
           >
-            Filter
+            Filters
           </p>
         </span>
         <svg

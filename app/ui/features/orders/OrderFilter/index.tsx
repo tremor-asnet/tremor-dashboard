@@ -56,7 +56,7 @@ const OrderFilter = () => {
     setShowListOption(false);
   };
 
-  const titleFilter = orderListOption.find(
+  const titleOption = orderListOption.find(
     ({ value }) => currentStatus && value === Number(currentStatus),
   )?.option;
 
@@ -69,7 +69,7 @@ const OrderFilter = () => {
         className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
         onClick={handleClickFilter}>
         <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
-          {titleFilter ? `Status: ${titleFilter}` : "Filter"}
+          {titleOption ? `Status: ${titleOption}` : "Filters"}
         </Text>
       </Button>
       {showListOption && (

@@ -4,7 +4,6 @@
 import { Button, Text, Flex } from "@tremor/react";
 
 //Styles
-import "@/styles/order.css";
 import "@/styles/billing.css";
 
 const InvoiceFooter = () => {

@@ -4,7 +4,7 @@ interface QuantityProps {
   products: OrderProduct[];
 }
 
-export const CustomQuantity = ({ products }: QuantityProps) => (
+const CustomQuantity = ({ products }: QuantityProps) => (
   <>
     {products?.map(product => (
       <p

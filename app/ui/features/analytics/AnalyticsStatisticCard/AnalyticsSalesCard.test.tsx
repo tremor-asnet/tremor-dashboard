@@ -18,7 +18,7 @@ describe("Testing AnalyticsStatisticCard component", () => {
   });
 
   it("Should return null when value of type not belong statisticalData", () => {
-    const getById = queryByAttribute.bind("", "id");
+    const getByTestId = queryByAttribute.bind("", "id");
 
     const { container } = render(
       <AnalyticsStatisticCard
@@ -26,7 +26,7 @@ describe("Testing AnalyticsStatisticCard component", () => {
       />,
     );
 
-    const selectElement = getById(container, "123");
+    const selectElement = getByTestId(container, "123");
     expect(selectElement).toBeNull();
   });
 

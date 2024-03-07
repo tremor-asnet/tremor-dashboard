@@ -65,7 +65,7 @@ const AnalyticsStatisticCard = ({
                 {type}
               </Text>
               <Text
-                id={type}
+                data-testid={type}
                 className="text-tremor-content-title dark:text-dark-tremor-content-title text-tremor-normal leading-[33px] tracking-[0.1764px] font-bold">
                 {formattedAmount}
               </Text>

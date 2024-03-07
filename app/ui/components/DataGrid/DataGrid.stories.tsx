@@ -116,6 +116,6 @@ const columns: ColumnType<Order>[] = [
 
 export const DataTableDefault: Story = {
   render: () => (
-    <DataGrid data={data} columns={columns} total={3} currentPageNumber={1} />
+    <DataGrid data={data} columns={columns} total={50} currentPageNumber={1} />
   ),
 };

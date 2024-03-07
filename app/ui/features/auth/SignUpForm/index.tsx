@@ -2,7 +2,7 @@
 
 // Libs
 import { useForm, Controller } from "react-hook-form";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -39,6 +39,7 @@ const SignUpForm = () => {
       name: "",
       email: "",
       password: "",
+      termsAndConditions: false,
     },
     mode: "onSubmit",
   });
@@ -48,11 +49,6 @@ const SignUpForm = () => {
     errorMessage: "",
     isSuccess: false,
   });
-
-  const [checked, setChecked] = useState(false);
-  const handleCheckBox = () => {
-    setChecked(!checked);
-  };
 
   const { openToast, isOpen, closeToast, toastType } = useToast();
   const { icon, message, color } = toastType;
@@ -221,28 +217,36 @@ const SignUpForm = () => {
             {formStatus.errorMessage?.toString()}
           </p>
         )}
-        <div className="flex items-center space-x-3 pt-3">
-          <Checkbox
-            onChange={handleCheckBox}
-            checked={checked}
-            tabIndex={2}
-            disabled={isPending}
-          />
-          <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
-            I agree the{" "}
-            <Link
-              href="#"
-              className="no-underline text-primary dark:text-white font-bold">
-              Terms and conditions
-            </Link>
-          </Text>
-        </div>
+
+        <Controller
+          control={control}
+          render={({ field: { value, onChange } }) => (
+            <div className="flex items-center space-x-3 pt-3">
+              <Checkbox
+                id="termsAndConditions"
+                onChange={onChange}
+                checked={value}
+                tabIndex={2}
+                disabled={isPending}
+              />
+              <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
+                I agree the{" "}
+                <Link
+                  href="#"
+                  className="no-underline text-primary dark:text-white font-bold">
+                  Terms and conditions
+                </Link>
+              </Text>
+            </div>
+          )}
+          name="termsAndConditions"
+        />
         <Button
           tabIndex={3}
           type="submit"
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
-          disabled={!checked || isPending}>
+          disabled={isPending}>
           {isPending ? (
             <LoadingIndicator width={5} height={5} />
           ) : (

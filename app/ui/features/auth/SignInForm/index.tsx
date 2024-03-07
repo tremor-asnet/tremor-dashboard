@@ -30,11 +30,11 @@ const SignInForm = () => {
     defaultValues: {
       email: "",
       password: "",
+      remember: false,
     },
     mode: "onSubmit",
   });
 
-  const [isRememberedMe, setIsRememberedMe] = useState<boolean>(false);
   const [formStatus, setFormStatus] = useState({
     isPending: false,
     errorMessage: "",
@@ -42,24 +42,13 @@ const SignInForm = () => {
 
   const { isPending, errorMessage } = formStatus;
 
-  // Handle to change value is (true or false) for attr checked switch
-  const handleSwitchChange = (value: boolean) => {
-    setIsRememberedMe(value);
-  };
-
   const handleSignIn = async (value: User) => {
     setFormStatus({
       isPending: true,
       errorMessage: "",
     });
 
-    const res = await authenticate(
-      { errorMessage: "" },
-      getFormData({
-        ...value,
-        remember: isRememberedMe,
-      }),
-    );
+    const res = await authenticate({ errorMessage: "" }, getFormData(value));
 
     setFormStatus({
       isPending: !res?.errorMessage,
@@ -139,21 +128,27 @@ const SignInForm = () => {
         name="password"
       />
 
-      <div className="flex items-center space-x-3 mt-6">
-        <Switch
-          tabIndex={2}
-          id="switch"
-          name="switch"
-          checked={isRememberedMe}
-          color="zinc"
-          disabled={isPending}
-          className="switch flex justify-center items-center"
-          onChange={handleSwitchChange}
-        />
-        <Text className="text-secondary dark:text-dark-romance font-normal">
-          Remember me
-        </Text>
-      </div>
+      <Controller
+        control={control}
+        render={({ field: { value, onChange } }) => (
+          <div className="flex items-center space-x-3 mt-6">
+            <Switch
+              id="remember"
+              tabIndex={2}
+              checked={value}
+              color="zinc"
+              disabled={isPending}
+              className="switch flex justify-center items-center"
+              onChange={onChange}
+            />
+            <Text className="text-secondary dark:text-dark-romance font-normal">
+              Remember me
+            </Text>
+          </div>
+        )}
+        name="remember"
+      />
+
       <Button
         tabIndex={3}
         aria-disabled={isPending}

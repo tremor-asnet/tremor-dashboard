@@ -94,7 +94,9 @@ const SalesStatisticCard = ({
       className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex className="items-start">
         <Flex className="flex-col w-2/3 md:w-1/2">
-          <Flex className="flex-col justify-start items-start">
+          <Flex
+            data-testid="formatted-amount"
+            className="flex-col justify-start items-start">
             <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
               {type}
             </Text>
@@ -111,7 +113,9 @@ const SalesStatisticCard = ({
           </Text>
         </Flex>
         {openActionSalesDate && (
-          <div className="absolute p-2 -right-2 top-8 z-10 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md">
+          <div
+            data-testid="sales-date-options"
+            className="absolute p-2 -right-2 top-8 z-10 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md">
             {ITEM_ACTION_SALES_DATE.map(item => (
               <Flex key={item.key} flex-col>
                 <Button
@@ -127,7 +131,7 @@ const SalesStatisticCard = ({
           </div>
         )}
       </Flex>
-      <Flex className="justify-start items-start">
+      <Flex data-testid="total-amount" className="justify-start items-start">
         {amountChange && (
           <Text
             className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>

@@ -9,9 +9,6 @@ import Pricing from "./Pricing";
 // Types
 import { NewPricing } from "@/types";
 
-// constants
-import { TAGS_PRICE } from "@/constants";
-
 const meta = {
   title: "Components/Products/AddProduct/Pricing",
   component: Pricing,

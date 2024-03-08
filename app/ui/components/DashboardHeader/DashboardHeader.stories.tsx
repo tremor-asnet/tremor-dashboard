@@ -20,9 +20,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Dashboard: Story = {
-  render: () => (
-    <div className="bg-body dark:bg-dark-primary rounded-xl shadow-md">
-      <DashboardHeader toggleSidebar={() => {}} isCollapseSidebar={false} />
-    </div>
-  ),
+  args: {
+    toggleSidebar: () => {},
+    isCollapseSidebar: false,
+  },
 };

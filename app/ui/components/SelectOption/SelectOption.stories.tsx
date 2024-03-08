@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import SelectOption from "./SelectOption";
 
 // Constants
-import { ProductList } from "@/constants";
+import { productList } from "@/constants";
 
 const meta = {
   title: "Components/Common/SelectOption",
@@ -42,7 +42,7 @@ export const Default: Story = {
     <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
       <SelectOption
         title="Is Available"
-        data={ProductList}
+        data={productList}
         onSelectItem={() => {}}
         onSelectRemove={() => {}}
       />

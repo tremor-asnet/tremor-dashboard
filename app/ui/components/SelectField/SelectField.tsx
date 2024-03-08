@@ -2,12 +2,12 @@
 import { Text } from "@tremor/react";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 interface SelectFieldProps
   extends React.SelectHTMLAttributes<HTMLSelectElement> {
   label: string;
-  options: SelectOptionData[];
+  options: OptionType[];
   className?: string;
   name?: string;
 }

@@ -9,7 +9,7 @@ import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 // Constants
 import {
@@ -124,7 +124,7 @@ const PricingInfo = () => {
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                       value={convertedValue}
                       onValueChange={onChange}>
-                      {TAGS_PRICE.map((item: SelectOptionData) => (
+                      {TAGS_PRICE.map((item: OptionType) => (
                         <MultiSelectItem key={item.value} value={item.value}>
                           {item.option}
                         </MultiSelectItem>

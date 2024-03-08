@@ -17,21 +17,21 @@ const InvoiceFooter = () => {
         flexDirection="col"
         alignItems="start"
         className="print-footer md:max-w-[40%]">
-        <p className="text-primary dark:text-white text-tremor-primary font-semibold leading-7 dark:print:text-primary">
+        <Text className="text-primary dark:text-white text-xl font-semibold leading-7 dark:print:text-primary">
           Thank you!
-        </p>
-        <p className="text-sm dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary">
+        </Text>
+        <Text className="dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary">
           If you encounter any issues related to the invoice you can contact us
           at:
-        </p>
-        <p className="dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary">
+        </Text>
+        <Text className="text-tremor-title dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary">
           email:{" "}
           <a
             className="text-primary dark:text-white dark:print:text-secondary"
             href="mailto:support@creative-tim.com">
             support@creative-tim.com
           </a>
-        </p>
+        </Text>
       </Flex>
       <Button
         className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white print:hidden"

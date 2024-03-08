@@ -4,7 +4,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 
 // Components
-import { Flex } from "@tremor/react";
+import { Flex, Title, Text } from "@tremor/react";
 
 interface InfoInvoiceProps {
   id: number;
@@ -19,9 +19,9 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
   return (
     <Flex className="mb-7 flex-col md:flex-row items-start md:items-center print:flex-row">
       <div className="w-full mb-5 md:mb-0">
-        <p className="text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+        <Title className="font-normal dark:text-lighter text-secondary dark:print:text-secondary">
           Invoice no
-        </p>
+        </Title>
         <Link
           href="#"
           className="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-primary">
@@ -30,20 +30,20 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
       </div>
       <div className="w-full">
         <Flex className="flex-col md:flex-row mb-1 md:mb-0 print:flex-row">
-          <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Invoice date:
-          </p>
-          <p className="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary">
+          </Title>
+          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-primary">
             {formattedCreateAt}
-          </p>
+          </Text>
         </Flex>
         <Flex className="flex-col md:flex-row print:flex-row">
-          <p className="w-full mb-1 md:mb-0 text-left md:text-end text-base font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-secondary">
             Due date:
-          </p>
-          <p className="w-full text-left md:text-end text-base text-primary font-semibold dark:text-white dark:print:text-primary">
+          </Title>
+          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-primary">
             {formattedDueAt}
-          </p>
+          </Text>
         </Flex>
       </div>
     </Flex>

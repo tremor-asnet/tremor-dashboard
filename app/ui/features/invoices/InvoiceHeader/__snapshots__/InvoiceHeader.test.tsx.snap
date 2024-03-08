@@ -24,7 +24,7 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
         class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] w-20 h-20 md:w-10 md:h-10 print:hidden"
       />
       <p
-        class="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary"
       >
         123 Bank Street Bucharest, Romania
       </p>
@@ -40,13 +40,13 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:items-end md:mt-0"
     >
       <p
-        class="text-primary text-base dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary"
       >
         Billed to: 
         John Doe
       </p>
       <p
-        class="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary"
+        class="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary"
       >
         4006 Locust View Drive
         <br />

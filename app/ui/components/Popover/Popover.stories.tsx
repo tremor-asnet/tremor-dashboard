@@ -20,10 +20,8 @@ type Story = StoryObj<typeof meta>;
 
 export const PopoverDefault: Story = {
   render: () => (
-    <Flex className="w-full justify-center mt-10 bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
-      <Popover content="Content popover" className="min-w-[200px]">
-        <Text>Hover to show content</Text>
-      </Popover>
-    </Flex>
+    <Popover content="Content popover" className="left-0 min-w-[200px]">
+      <Text>Hover to show content</Text>
+    </Popover>
   ),
 };

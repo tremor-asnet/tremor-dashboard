@@ -87,9 +87,9 @@ const SignInForm = () => {
                 {...field}
               />
               {emailErrorMessage && (
-                <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
                   {emailErrorMessage}
-                </p>
+                </Text>
               )}
             </div>
           );
@@ -119,9 +119,9 @@ const SignInForm = () => {
                 className="py-0.5 w-full dark:border-white dark:bg-transparent dark:hover:bg-transparent"
                 {...field}
               />
-              <p className="pt-1 ml-1 leading-3 text-[11px] xs:text-xs text-red-500">
+              <Text className="pt-1 ml-1 leading-3 text-xs text-red-500 dark:text-red-500">
                 {passwordErrorMessage ? passwordErrorMessage : errorMessage}
-              </p>
+              </Text>
             </div>
           );
         }}

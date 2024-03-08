@@ -143,9 +143,9 @@ const SignUpForm = () => {
                   {...field}
                 />
                 {nameErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                  <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
                     {nameErrorMessage}
-                  </p>
+                  </Text>
                 )}
               </div>
             );
@@ -177,9 +177,9 @@ const SignUpForm = () => {
                 />
 
                 {emailErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs text-red-500">
+                  <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
                     {emailErrorMessage}
-                  </p>
+                  </Text>
                 )}
               </div>
             );
@@ -210,9 +210,9 @@ const SignUpForm = () => {
                   {...field}
                 />
                 {passwordErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                  <Text className="pt-1 text-xs leading-3 text-red-500 dark:text-red-500">
                     {passwordErrorMessage}
-                  </p>
+                  </Text>
                 )}
               </div>
             );
@@ -220,9 +220,9 @@ const SignUpForm = () => {
           name="password"
         />
         {hasError && (
-          <p className="text-xs xs:text-xs leading-3 text-red-500">
+          <Text className="text-xs leading-3 text-red-500 dark:text-red-500">
             {formStatus.errorMessage?.toString()}
-          </p>
+          </Text>
         )}
 
         <Controller
@@ -253,9 +253,9 @@ const SignUpForm = () => {
                   </Text>
                 </div>
                 {termErrorMessage && (
-                  <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                  <Text className="pt-1 text-xs leading-3 text-red-500 dark:text-red-500">
                     {termErrorMessage}
-                  </p>
+                  </Text>
                 )}
               </div>
             );

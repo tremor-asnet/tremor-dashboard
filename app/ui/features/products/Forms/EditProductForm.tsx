@@ -2,12 +2,12 @@
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Button, Col, Grid, Text } from "@tremor/react";
-import { LoadingIndicator, Toast } from "@/ui/components";
+import { LoadingIndicator } from "@/ui/components";
 import ProductImage from "../EditProduct/ProductImage/ProductImage";
 const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
 const ProductInfo = dynamic(
@@ -86,11 +86,9 @@ const EditProductForm = ({
 
   useEffect(() => {
     formHandler.setValue("image", imageValue, { shouldDirty: true });
-  }, [imageValue]);
+  }, [imageValue, formHandler]);
 
-  const { openToast, closeToast, isOpen, toastType } = useToast();
-
-  const { icon, message, color } = toastType;
+  const { openToast } = useToast();
 
   const onSubmit = async (data: ProductData) => {
     try {
@@ -186,17 +184,6 @@ const EditProductForm = ({
           </Grid>
         </form>
       </FormProvider>
-
-      {isOpen && (
-        <div className="flex justify-center fixed right-5 bottom-50 z-30">
-          <Toast
-            icon={icon}
-            color={color}
-            message={message}
-            onClose={closeToast}
-          />
-        </div>
-      )}
     </>
   );
 };

@@ -18,7 +18,7 @@ export const Toast = ({
 }: ToastProps) => {
   return (
     <div
-      className="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+      className="fixed right-5 top-5 flex items-center w-full max-w-xs p-4 mb-4 z-40 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
       role="alert"
       data-testid="toast">
       <div

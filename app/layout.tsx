@@ -49,9 +49,9 @@ export default function RootLayout({
 }) {
   return (
     <ThemeProvider>
-      <ToastProvider>
-        <ClientRootLayout>{children}</ClientRootLayout>
-      </ToastProvider>
+      <ClientRootLayout>
+        <ToastProvider>{children}</ToastProvider>
+      </ClientRootLayout>
     </ThemeProvider>
   );
 }

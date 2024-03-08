@@ -2,7 +2,7 @@
 
 // Components
 import {
-  CustomCheckBoxField,
+  IdentifyField,
   CustomDateFormat,
   CustomList,
   CustomNumberFormat,
@@ -29,21 +29,13 @@ interface TableOrderProps {
 }
 
 const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
-  const handleChangeCheckbox = () => {
-    // TODO: handle checkbox here
-  };
-
   // Table Columns
   const columns: ColumnType<Order>[] = [
     {
       key: "id",
       title: "Id",
       customNode: (_, { id }) => (
-        <CustomCheckBoxField
-          id={id}
-          link={`${ROUTES.ORDER_LIST}/${id}`}
-          onChange={handleChangeCheckbox}
-        />
+        <IdentifyField id={id} link={`${ROUTES.ORDER_LIST}/${id}`} />
       ),
       sortable: true,
     },

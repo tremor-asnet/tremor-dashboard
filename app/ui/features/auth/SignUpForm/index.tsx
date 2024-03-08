@@ -8,7 +8,12 @@ import { useRouter } from "next/navigation";
 
 // Components
 import { TextInput, Button, Flex, Text } from "@tremor/react";
-import { LoadingIndicator, Checkbox, Toast } from "@/ui/components";
+import { LoadingIndicator, Checkbox } from "@/ui/components";
+
+// Icons
+import { TbExclamationMark } from "react-icons/tb";
+import { FaCheckCircle } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 // Constants
 import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
@@ -21,7 +26,6 @@ import { User } from "@/types";
 
 // Helpers
 import { getFormData } from "@/helpers";
-import { FaCheckCircle } from "react-icons/fa";
 
 //Styles
 import "@/styles/form.css";
@@ -32,7 +36,7 @@ import { useToast } from "@/hooks";
 const SignUpForm = () => {
   const {
     control,
-    formState: { errors },
+    formState: { errors, isDirty, isValid },
     handleSubmit,
   } = useForm<User>({
     defaultValues: {
@@ -50,13 +54,10 @@ const SignUpForm = () => {
     isSuccess: false,
   });
 
-  const { openToast, isOpen, closeToast, toastType } = useToast();
-  const { icon, message, color } = toastType;
-  const { isSuccess, isPending } = formStatus;
+  const { openToast } = useToast();
+  const { isPending } = formStatus;
   const hasError = !!(formStatus.errorMessage?.toString()).length;
   const router = useRouter();
-
-  const isShowToast = isSuccess && isOpen && !hasError;
 
   const handleSignUp = async (value: User) => {
     try {
@@ -64,6 +65,14 @@ const SignUpForm = () => {
         isPending: true,
         errorMessage: "",
         isSuccess: false,
+      });
+
+      openToast({
+        toastType: {
+          icon: <TbExclamationMark />,
+          message: SIGN_UP_MESSAGE.PENDING,
+          color: "yellow",
+        },
       });
 
       const res = await createNewAccount(
@@ -78,13 +87,13 @@ const SignUpForm = () => {
       });
 
       openToast({
-        isOpen: true,
         toastType: {
-          message: SIGN_UP_MESSAGE.SUCCESS,
           icon: <FaCheckCircle />,
+          message: SIGN_UP_MESSAGE.SUCCESS,
           color: "green",
         },
       });
+
       res?.isSuccess && router.replace(ROUTES.SIGN_IN);
     } catch (error: any) {
       setFormStatus({
@@ -92,21 +101,19 @@ const SignUpForm = () => {
         errorMessage: error?.errorMessage || "",
         isSuccess: false,
       });
+
+      openToast({
+        toastType: {
+          icon: <RxCross2 />,
+          message: SIGN_UP_MESSAGE.FAILED,
+          color: "red",
+        },
+      });
     }
   };
 
   return (
     <div>
-      {isShowToast && (
-        <div className="flex justify-center fixed right-5 top-5">
-          <Toast
-            icon={icon}
-            message={message}
-            color={color}
-            onClose={closeToast}
-          />
-        </div>
-      )}
       <form
         onSubmit={handleSubmit(handleSignUp)}
         className="w-full p-2 sign-up">
@@ -220,25 +227,39 @@ const SignUpForm = () => {
 
         <Controller
           control={control}
-          render={({ field: { value, onChange } }) => (
-            <div className="flex items-center space-x-3 pt-3">
-              <Checkbox
-                id="termsAndConditions"
-                onChange={onChange}
-                checked={value}
-                tabIndex={2}
-                disabled={isPending}
-              />
-              <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
-                I agree the{" "}
-                <Link
-                  href="#"
-                  className="no-underline text-primary dark:text-white font-bold">
-                  Terms and conditions
-                </Link>
-              </Text>
-            </div>
-          )}
+          rules={{
+            required: MESSAGES_ERROR.TERMS_REQUIRED,
+          }}
+          render={({ field: { value, onChange } }) => {
+            const termErrorMessage = errors.termsAndConditions?.message || "";
+
+            return (
+              <div>
+                <div className="flex items-center space-x-3 pt-3">
+                  <Checkbox
+                    id="termsAndConditions"
+                    onChange={onChange}
+                    checked={value}
+                    tabIndex={2}
+                    disabled={isPending}
+                  />
+                  <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
+                    I agree the{" "}
+                    <Link
+                      href="#"
+                      className="no-underline text-primary dark:text-white font-bold">
+                      Terms and conditions
+                    </Link>
+                  </Text>
+                </div>
+                {termErrorMessage && (
+                  <p className="pt-1 text-[11px] xs:text-xs leading-3 text-red-500">
+                    {termErrorMessage}
+                  </p>
+                )}
+              </div>
+            );
+          }}
           name="termsAndConditions"
         />
         <Button
@@ -246,7 +267,7 @@ const SignUpForm = () => {
           type="submit"
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
-          disabled={isPending}>
+          disabled={!isDirty}>
           {isPending ? (
             <LoadingIndicator width={5} height={5} />
           ) : (

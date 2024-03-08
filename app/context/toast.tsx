@@ -11,7 +11,7 @@ import { RxCross2 } from "react-icons/rx";
 import { EDIT_PRODUCT_MESSAGE, TOAST_TYPES } from "@/constants";
 
 // Types
-import { ToastColor } from "@/ui/components/Toast/Toast";
+import Toast, { ToastColor } from "@/ui/components/Toast/Toast";
 
 interface ToastProviderProps {
   children: React.ReactNode;
@@ -75,13 +75,14 @@ const ToastContext = createContext<ToastContextProps>({
 
 const ToastProvider = ({ children }: ToastProviderProps) => {
   const [toast, setToast] = useState<ToastProps>({
-    isOpen: true,
+    isOpen: false,
     toastType: {
       icon: <FaCheckCircle />,
       message: "",
       color: "green",
     },
   });
+
   const {
     isOpen,
     toastType: { icon, message, color },
@@ -115,7 +116,10 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
   const openToast = ({ toastType }: ToastProps) => {
     const { icon, message, color } = toastType;
 
-    setToast({ isOpen: true, toastType: { icon, message, color } });
+    setToast({ isOpen: false, toastType: { icon, message, color } });
+    setTimeout(() =>
+      setToast({ isOpen: true, toastType: { icon, message, color } }),
+    );
   };
 
   const value = {
@@ -126,7 +130,17 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
   };
 
   return (
-    <ToastContext.Provider value={value}>{children}</ToastContext.Provider>
+    <ToastContext.Provider value={value}>
+      {children}
+      {toast.isOpen && (
+        <Toast
+          icon={icon}
+          message={message}
+          color={color}
+          onClose={closeToast}
+        />
+      )}
+    </ToastContext.Provider>
   );
 };
 

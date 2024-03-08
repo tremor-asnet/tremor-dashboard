@@ -1,4 +1,5 @@
-import { render } from "@testing-library/react";
+import { queryByAttribute, render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 
 //Components
 import AnalyticsStatisticCard from "./AnalyticsStatisticCard";
@@ -11,9 +12,29 @@ describe("Testing AnalyticsStatisticCard component", () => {
     statisticalData: STATISTICAL_DATA[0],
   };
 
-  // TODO: Will update soon
-  it.skip("Should match snapshot", () => {
+  it("Should match snapshot", () => {
     const component = render(<AnalyticsStatisticCard {...propsDefault} />);
     expect(component).toMatchSnapshot();
+  });
+
+  it("Should return null when value of type not belong statisticalData", () => {
+    const getByTestId = queryByAttribute.bind("", "id");
+
+    const { container } = render(
+      <AnalyticsStatisticCard
+        statisticalData={{ ...STATISTICAL_DATA[0], type: "123" }}
+      />,
+    );
+
+    const selectElement = getByTestId(container, "123");
+    expect(selectElement).toBeNull();
+  });
+
+  it("Should renders with correct statistical data", () => {
+    const { getByText } = render(<AnalyticsStatisticCard {...propsDefault} />);
+
+    expect(getByText(STATISTICAL_DATA[0].amount)).toBeInTheDocument();
+    expect(getByText(STATISTICAL_DATA[0].duration)).toBeInTheDocument();
+    expect(getByText(STATISTICAL_DATA[0].type)).toBeInTheDocument();
   });
 });

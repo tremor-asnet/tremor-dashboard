@@ -30,7 +30,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <BillingDetail cardInfo={mockBillingCard} aggregation={mockSalaryData} />
-  ),
+  args: {
+    cardInfo: mockBillingCard,
+    aggregation: mockSalaryData,
+  },
 };

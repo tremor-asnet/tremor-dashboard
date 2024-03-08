@@ -7,6 +7,13 @@ const meta = {
   title: "Components/Common/Button",
   tags: ["autodocs"],
   component: Button,
+  argTypes: {
+    className: { description: "Class name of the button" },
+    variant: { description: "Sets the style of the button" },
+    icon: { description: "Icon of button" },
+    iconPosition: { description: "Controls the position of an icon" },
+    disabled: { description: "Set the state of the button to disabled" },
+  },
 } as Meta<typeof Button>;
 
 export default meta;

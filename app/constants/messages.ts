@@ -12,10 +12,13 @@ export const MESSAGES_ERROR = {
   INVALID_URL: "URL is invalid",
   PASSWORD_WRONG:
     "Please make sure your email address and password are correct.",
+  TERMS_REQUIRED: "Please agree with the terms and conditions to continue",
 };
 
 export const SIGN_UP_MESSAGE = {
-  SUCCESS: "Create account successfully.",
+  SUCCESS: "Sign up successfully.",
+  PENDING: "Creating account",
+  FAILED: "Failed to Sign up",
 };
 
 export const EDIT_PRODUCT_MESSAGE = {

@@ -25,7 +25,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
+        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -47,7 +47,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           As Uber works through a huge amount of internal management turmoil.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <a
             href="/all-projects"
@@ -67,7 +67,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             </button>
           </a>
           <div
-            class="container-avatars min-w-[56px] flex flex-nowrap ml-3"
+            class="container-avatars min-w-[56px] flex justify-end flex-nowrap ml-3"
           >
             <div
               class="inline-flex rounded-full overflow-hidden relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
@@ -125,7 +125,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
+        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -147,7 +147,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           As Uber works through a huge amount of internal management turmoil.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <a
             href="/all-projects"
@@ -167,7 +167,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             </button>
           </a>
           <div
-            class="container-avatars min-w-[56px] flex flex-nowrap ml-3"
+            class="container-avatars min-w-[56px] flex justify-end flex-nowrap ml-3"
           >
             <div
               class="inline-flex rounded-full overflow-hidden relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
@@ -225,7 +225,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
+        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -247,7 +247,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           Different people have different taste, and various types of music.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <a
             href="/all-projects"
@@ -267,7 +267,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             </button>
           </a>
           <div
-            class="container-avatars min-w-[56px] flex flex-nowrap ml-3"
+            class="container-avatars min-w-[56px] flex justify-end flex-nowrap ml-3"
           >
             <div
               class="inline-flex rounded-full overflow-hidden relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"
@@ -325,7 +325,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 px-2"
+        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -347,7 +347,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
           Why would anyone pick blue over pink? Pink is obviously a better color.
         </p>
         <div
-          class="tremor-Flex-root w-full flex-row justify-between items-center flex flex-wrap"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <a
             href="/all-projects"
@@ -367,7 +367,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             </button>
           </a>
           <div
-            class="container-avatars min-w-[56px] flex flex-nowrap ml-3"
+            class="container-avatars min-w-[56px] flex justify-end flex-nowrap ml-3"
           >
             <div
               class="inline-flex rounded-full overflow-hidden relative border-2 border-white border-solid ml-[-10px] cursor-pointer hover:z-10"

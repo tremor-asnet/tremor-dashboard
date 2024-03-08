@@ -1,5 +1,5 @@
 // Components
-import { TableBody, TableCell, TableRow } from "@tremor/react";
+import { Text, TableBody, TableCell, TableRow } from "@tremor/react";
 
 // Types
 import { ColumnType } from "@/types";
@@ -27,9 +27,9 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
                   {column.customNode ? (
                     column.customNode(column, item)
                   ) : (
-                    <p className="text-xs dark:text-lighter font-semibold">
+                    <Text className="text-xs dark:text-lighter font-semibold">
                       {getObjectValue(item, column.key)}
-                    </p>
+                    </Text>
                   )}
                 </TableCell>
               ))}
@@ -39,9 +39,9 @@ const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
       ) : (
         <TableRow className="w-full">
           <TableCell colSpan={7} className="h-32 text-center">
-            <p className="text-xl dark:text-white font-semibold">
+            <Text className="text-xl dark:text-white font-semibold">
               Result Not Found
-            </p>
+            </Text>
           </TableCell>
         </TableRow>
       )}

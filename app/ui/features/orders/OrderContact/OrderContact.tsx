@@ -5,9 +5,6 @@ import { Button, Flex, Title, Text } from "@tremor/react";
 import { OrderStatus } from "./OrderStatus";
 import { CustomImage } from "@/ui/components";
 
-//Styles
-import "@/styles/order.css";
-
 const OrderContact = ({
   name,
   url,

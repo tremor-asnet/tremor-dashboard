@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Order detail contact section Should match snapshot 1`] = `
+exports[`ProductImage component should render snapshot correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -21,8 +21,8 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               decoding="async"
               height="500"
               loading="lazy"
-              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=1920&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=1920&q=75 2x"
               style="color: transparent;"
               width="800"
             />
@@ -66,7 +66,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             <div
               class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
             >
-              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
+              Description
             </div>
           </div>
         </div>
@@ -90,8 +90,8 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             decoding="async"
             height="500"
             loading="lazy"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fproduct-11.b01b2346.jpg&w=1920&q=75 2x"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=1920&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPGcBzMv%2Fa-high-detail-shot-of-a-cat-we.png&w=1920&q=75 2x"
             style="color: transparent;"
             width="800"
           />
@@ -135,7 +135,7 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
           <div
             class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
           >
-            The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to “Naviglio” where you can enjoy the main night life in Barcelona.
+            Description
           </div>
         </div>
       </div>

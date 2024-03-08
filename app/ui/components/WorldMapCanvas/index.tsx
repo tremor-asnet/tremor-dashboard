@@ -1,8 +1,8 @@
 const WorldMapCanvas = () => (
-  <svg className="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[740px] lg:h-[245px] mt-0 lg:-mt-10 ">
+  <svg className="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 ">
     <g
       id="jvm-regions-group"
-      className="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] lg:translate-x-1/4 translate-y-0">
+      className="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] md:translate-x-2 lg:translate-x-16 translate-y-0">
       <path
         d="M651.84,359.63l-0.6,-2.05l-1.36,-1.76l-2.31,-0.11l-0.41,0.48l0.2,0.98l-0.54,1.03l-0.71,-0.37l-0.68,0.36l-1.19,-0.37l-0.37,-2.06l-0.81,-1.92l0.39,-1.52l-0.21,-0.46l-1.16,-0.55l0.3,-0.55l1.48,-0.98l0.03,-0.64l-1.56,-1.27l0.56,-1.2l1.6,0.97l1.04,0.16l0.18,1.62l0.33,0.35l5.65,0.65l-0.86,1.73l-1.21,0.35l-0.77,1.56l0.07,0.46l1.37,1.41l0.68,-0.19l0.42,-1.44l1.21,3.96l-0.03,1.26l-0.32,-0.15l-0.41,0.28Z"
         data-code="BD"

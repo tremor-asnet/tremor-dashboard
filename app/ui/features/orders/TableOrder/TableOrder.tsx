@@ -23,19 +23,11 @@ import { transformOrders } from "@/helpers";
 
 interface TableOrderProps {
   orders: Order[];
-  status: string;
-  keyword: string;
   total: number;
   currentPage: number;
 }
 
-const TableOrder = ({
-  orders,
-  status,
-  keyword,
-  total,
-  currentPage,
-}: TableOrderProps) => {
+const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
   const handleChangeCheckbox = () => {
     // TODO: handle checkbox here
   };
@@ -108,8 +100,6 @@ const TableOrder = ({
     <DataGrid
       data={sortedOrders}
       columns={columns}
-      filterBy={status}
-      keyword={keyword}
       currentPageNumber={currentPage}
       total={total}
     />

@@ -2,6 +2,7 @@
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 // Components
+import { Text } from "@tremor/react";
 import TransactionList from "../TransactionList/TransactionList";
 
 // Types
@@ -21,7 +22,7 @@ const Transactions = ({ newest, date }: TransactionsProps) => {
         </h6>
         <div className="flex items-center text-secondary">
           <FaRegCalendarAlt className="dark:text-lighter" />
-          <p className="text-sm dark:text-lighter ml-2">{date}</p>
+          <Text className="dark:text-lighter ml-2">{date}</Text>
         </div>
       </div>
       <h6 className="transaction-list-heading dark:text-lighter">NEWEST</h6>

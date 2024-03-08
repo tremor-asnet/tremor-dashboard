@@ -69,7 +69,7 @@ const InputSearch = ({ field }: InputSearchProps) => {
   };
 
   return (
-    <Flex className="p-6 items-center justify-end">
+    <Flex className="p-6 items-center justify-end relative">
       <TextInput
         ref={inputSearchRef}
         id="search_order"
@@ -82,7 +82,7 @@ const InputSearch = ({ field }: InputSearchProps) => {
         <MdClose
           data-testid="close-button"
           onClick={resetSearch}
-          className="text-xs text-white bg-black dark:text-black dark:bg-white -ml-5 p-[2px] cursor-pointer rounded-full z-[1]"
+          className="text-xs text-white bg-black dark:text-black dark:bg-white absolute right-8 p-[2px] cursor-pointer rounded-full z-[1]"
         />
       )}
     </Flex>

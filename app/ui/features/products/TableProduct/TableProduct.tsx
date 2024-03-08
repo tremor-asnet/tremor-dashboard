@@ -8,6 +8,7 @@ import {
   CustomAvatarName,
   DataGrid,
 } from "@/ui/components";
+import { Text } from "@tremor/react";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -17,8 +18,6 @@ import { ROUTES } from "@/constants";
 
 interface TableProductProps {
   products: Product[];
-  isAvailable: string;
-  keyword: string;
   total: number;
   currentPage: number;
 }
@@ -28,13 +27,7 @@ export interface SortItem {
   direction: string;
 }
 
-const TableProduct = ({
-  products,
-  isAvailable,
-  keyword,
-  total,
-  currentPage,
-}: TableProductProps) => {
+const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
   const handleCheckboxChange = () => {
     // TODO: Handle checkbox change here
   };
@@ -71,9 +64,9 @@ const TableProduct = ({
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { quantity }) => (
-        <p className="text-xs dark:text-lighter font-semibold">
+        <Text className="text-xs dark:text-lighter font-semibold">
           {quantity ? "Yes" : "No"}
-        </p>
+        </Text>
       ),
       sortable: true,
     },
@@ -98,8 +91,6 @@ const TableProduct = ({
     <DataGrid
       data={sortedProducts}
       columns={columns}
-      filterBy={isAvailable}
-      keyword={keyword}
       currentPageNumber={currentPage}
       total={total}
     />

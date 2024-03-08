@@ -1,3 +1,6 @@
+// Components
+import { Text } from "@tremor/react";
+
 // Constants
 import { CURRENCY } from "@/constants";
 
@@ -9,12 +12,12 @@ interface CustomNumberFormatProps {
 }
 
 export const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
-  <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue">
+  <Text className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue">
     {moneyFormat({
       value,
       currency: CURRENCY.DOLLAR,
     })}
-  </p>
+  </Text>
 );
 
 export default CustomNumberFormat;

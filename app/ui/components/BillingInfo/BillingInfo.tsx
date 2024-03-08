@@ -1,4 +1,4 @@
-import { Bold, Flex } from "@tremor/react";
+import { Text, Flex } from "@tremor/react";
 
 // Types
 import { BillingInfoData } from "@/types";
@@ -39,9 +39,9 @@ const BillingInfo = ({
         {value}
       </a>
     ) : (
-      <p className="text-xs text-primary font-bold dark:text-white ml-2.5">
+      <Text className="text-xs text-primary font-bold dark:text-white ml-2.5">
         {value}
-      </p>
+      </Text>
     );
   };
 
@@ -49,9 +49,9 @@ const BillingInfo = ({
     ({ id, type, title, value }) => {
       return (
         <Flex key={id} className="content-start justify-start">
-          <p className="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter">
+          <Text className="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter">
             {`${title}:`}
-          </p>
+          </Text>
           {checkRenderBillValue(type, value)}
         </Flex>
       );

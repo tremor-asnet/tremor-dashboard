@@ -2,6 +2,7 @@
 
 // Components
 import { StatusButton } from "@/ui/components";
+import { Text } from "@tremor/react";
 
 // Helpers
 import { formatDateTimeForTransaction, getContentByProps } from "@/helpers";
@@ -37,12 +38,12 @@ const TransactionItem = ({
           <h6 className="text-sm font-semibold text-primary dark:text-white mb-1">
             {service}
           </h6>
-          <p className="text-xs text-secondary dark:text-lighter">
+          <Text className="text-xs text-secondary dark:text-lighter">
             {formatDateTimeForTransaction(createdAt)}
-          </p>
+          </Text>
         </div>
       </div>
-      <p className={`text-sm font-semibold text-${color}`}>{value}</p>
+      <Text className={`font-semibold text-${color}`}>{value}</Text>
     </div>
   );
 };

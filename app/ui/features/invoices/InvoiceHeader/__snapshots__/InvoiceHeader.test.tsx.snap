@@ -1,43 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing InvoiceHeader component Should match snapshot 1`] = `
+exports[`InvoiceHeader component should render snapshot correctly 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row"
+    class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row mb-10 md:mb-20"
   >
     <div
-      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[33%]"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[35%]"
     >
+      <img
+        alt="print-logo"
+        class="hidden print:block"
+        data-nimg="1"
+        decoding="async"
+        height="80"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=256&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=256&q=75 2x"
+        style="color: transparent;"
+        width="80"
+      />
       <div
-        class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')]"
+        class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] w-20 h-20 md:w-10 md:h-10 print:hidden"
       />
       <p
-        class="text-primary dark:text-white font-bold leading-6 tracking-wide mt-6"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary"
       >
-        St. Independence Embankment, 050105 Bucharest, Romania
+        123 Bank Street Bucharest, Romania
       </p>
-      <p
-        class="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-4"
+      <a
+        class="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-secondary"
+        href="tel:+4 (074) 1090873"
       >
-        tel: +4 (074) 1090873
-      </p>
+        tel: 
+        +4 (074) 1090873
+      </a>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:items-end mt-10 md:mt-0"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start md:items-end md:mt-0"
     >
       <p
-        class="text-primary dark:text-white font-bold leading-6 tracking-wide"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary"
       >
-        Billed to: John Doe
+        Billed to: 
+        John Doe
       </p>
       <p
-        class="text-secondary dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right"
+        class="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary"
       >
         4006 Locust View Drive
         <br />
-         San Francisco CA
+         
+        San Francisco
+         
+        CA
         <br />
-         California
+         
+        California
       </p>
     </div>
   </div>

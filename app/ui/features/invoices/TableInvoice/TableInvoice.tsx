@@ -99,8 +99,6 @@ export const TableInvoice = ({
     <DataGrid
       data={details}
       columns={columns}
-      filterBy="isAvailable"
-      keyword="invoice"
       className="!shadow-none"
       hasPagination={false}
       disableLoading={isLoadingTableInvoice}

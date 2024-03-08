@@ -27,12 +27,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             March, 21, 2021
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -44,7 +44,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -79,12 +79,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             April, 22, 2022
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -96,7 +96,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -135,12 +135,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             March, 21, 2021
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -152,7 +152,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -187,12 +187,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             April, 22, 2022
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             AR
@@ -204,7 +204,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -239,12 +239,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             May, 23, 2023
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             MS
@@ -256,7 +256,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -291,12 +291,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             June, 24, 2024
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             QW
@@ -308,7 +308,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>
@@ -343,12 +343,12 @@ exports[`Invoices Testing should match snapshot 1`] = `
       >
         <div>
           <p
-            class="text-sm font-semibold text-primary dark:text-white"
+            class="text-tremor-default font-semibold text-primary dark:text-white"
           >
             July, 25, 2025
           </p>
           <p
-            class="text-xs mt-1 text-secondary dark:text-lighter"
+            class="text-tremor-default text-xs mt-1 text-secondary dark:text-lighter"
           >
             #
             RV
@@ -360,7 +360,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
           class="flex gap-6 items-center"
         >
           <p
-            class="text-sm text-secondary dark:text-lighter"
+            class="text-tremor-default text-secondary dark:text-lighter"
           >
             $180.00
           </p>

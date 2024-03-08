@@ -1,8 +1,11 @@
 import { render } from "@testing-library/react";
 import { useState } from "react";
 
+// Constants
+import { orderListOption } from "@/constants";
+
 // Components
-import OrderFilter from ".";
+import Filter from "./Filter";
 
 let mockSearchParam = "";
 
@@ -21,9 +24,11 @@ jest.mock("next/navigation", () => ({
   usePathname: jest.fn(),
 }));
 
-describe("Testing OrderFilter component", () => {
+describe("Testing Filter component", () => {
   it("Should match snapshot", () => {
-    const component = render(<OrderFilter />);
+    const component = render(
+      <Filter title="Status" listOption={orderListOption} />,
+    );
     expect(component).toMatchSnapshot();
   });
 });

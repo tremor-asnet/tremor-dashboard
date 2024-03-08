@@ -31,3 +31,4 @@ export { default as Stepper } from "./Stepper/Stepper";
 export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
+export { default as Filter } from "./Filter/Filter";

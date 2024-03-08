@@ -17,12 +17,12 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
       >
         <p
-          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
         >
           Company Name:
         </p>
         <p
-          class="text-xs text-primary font-bold dark:text-white ml-2.5"
+          class="text-tremor-default text-xs text-primary font-bold dark:text-white ml-2.5"
         >
           Viking Burrito
         </p>
@@ -31,7 +31,7 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
       >
         <p
-          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
         >
           Email Address:
         </p>
@@ -46,12 +46,12 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
       >
         <p
-          class="text-secondary dark:text-dark-romance text-xs dark:text-dark-lighter"
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
         >
           VAT Number:
         </p>
         <p
-          class="text-xs text-primary font-bold dark:text-white ml-2.5"
+          class="text-tremor-default text-xs text-primary font-bold dark:text-white ml-2.5"
         >
           FRB1235476
         </p>

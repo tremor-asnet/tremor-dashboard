@@ -2,11 +2,11 @@
 import { Select, SelectItem } from "@tremor/react";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 interface SelectFieldProps {
   label: string;
-  options: SelectOptionData[];
+  options: OptionType[];
   className?: string;
   value?: string;
   onChange?: () => void;

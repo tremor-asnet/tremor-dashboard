@@ -9,17 +9,17 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
       class="tremor-Flex-root flex w-full flex-col justify-between items-start print-footer md:max-w-[40%]"
     >
       <p
-        class="text-primary dark:text-white text-tremor-primary font-semibold leading-7 dark:print:text-primary"
+        class="text-tremor-default text-primary dark:text-white text-xl font-semibold leading-7 dark:print:text-primary"
       >
         Thank you!
       </p>
       <p
-        class="text-sm dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary"
+        class="text-tremor-default dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary"
       >
         If you encounter any issues related to the invoice you can contact us at:
       </p>
       <p
-        class="dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary"
+        class="text-tremor-title dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary"
       >
         email:
          

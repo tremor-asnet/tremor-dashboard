@@ -6,6 +6,7 @@ import {
   CustomAvatarName,
   CustomNumberFormat,
 } from "@/ui/components";
+import { Text } from "@tremor/react";
 import Link from "next/link";
 
 // Types
@@ -51,9 +52,9 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { isAvailable }) => (
-        <p className="text-xs dark:text-lighter font-semibold">
+        <Text className="text-xs dark:text-lighter font-semibold">
           {isAvailable ? "Yes" : "No"}
-        </p>
+        </Text>
       ),
       sortable: false,
     },

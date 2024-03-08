@@ -1,5 +1,6 @@
 // Components
 import { CustomImage } from "@/ui/components";
+import { Text } from "@tremor/react";
 
 interface CustomAvatarNameProps {
   avatar?: string;
@@ -32,14 +33,14 @@ export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
         src={avatar}
       />
     ) : (
-      <p
+      <Text
         className={`w-6 h-6 min-w-[24px] flex justify-center items-center text-white text-xs ${colorRandom} rounded-full mr-2`}>
         {text.substring(0, 1)}
-      </p>
+      </Text>
     )}
-    <p className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate">
+    <Text className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate">
       {text}
-    </p>
+    </Text>
   </div>
 );
 

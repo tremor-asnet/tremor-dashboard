@@ -8,6 +8,7 @@ import {
   CustomAvatarName,
   DataGrid,
 } from "@/ui/components";
+import { Text } from "@tremor/react";
 
 // Types
 import { Product, ColumnType } from "@/types";
@@ -63,9 +64,9 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
       key: "isAvailable",
       title: "Is Available",
       customNode: (_, { quantity }) => (
-        <p className="text-xs dark:text-lighter font-semibold">
+        <Text className="text-xs dark:text-lighter font-semibold">
           {quantity ? "Yes" : "No"}
-        </p>
+        </Text>
       ),
       sortable: true,
     },

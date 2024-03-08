@@ -2,6 +2,9 @@ import { DOTS, usePagination } from "@/hooks/usePagination";
 import { HiMiniChevronLeft, HiMiniChevronRight } from "react-icons/hi2";
 import { RxDotsHorizontal } from "react-icons/rx";
 
+// Components
+import { Text } from "@tremor/react";
+
 interface PaginationProps {
   onPageChange: (page: number) => void;
   totalCount: number;
@@ -43,13 +46,13 @@ const Pagination = ({
   return (
     <div className="antialiased font-primary flex gap-5 flex-col sm:flex-row items-start sm:items-center w-full justify-between p-6">
       <div className="flex w-auto py-2">
-        <p className="text-sm text-secondary">
+        <Text className="text-secondary">
           Showing&nbsp;
           <span className="font-normal">{firstItemCurrentPage}</span>&nbsp;
           to&nbsp;
           <span className="font-normal">{totalItems}</span>&nbsp; of{" "}
           <span className="font-normal">{totalCount}</span> entries
-        </p>
+        </Text>
       </div>
 
       {showItemsPagination && (

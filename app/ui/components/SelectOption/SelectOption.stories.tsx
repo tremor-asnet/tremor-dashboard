@@ -38,14 +38,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div className="bg-white dark:bg-dark-primary p-6 rounded-xl shadow-md">
-      <SelectOption
-        title="Is Available"
-        data={ProductList}
-        onSelectItem={() => {}}
-        onSelectRemove={() => {}}
-      />
-    </div>
-  ),
+  args: {
+    title: "Is Available",
+    onSelectItem: () => {},
+    onSelectRemove: () => {},
+    data: ProductList,
+  },
 };

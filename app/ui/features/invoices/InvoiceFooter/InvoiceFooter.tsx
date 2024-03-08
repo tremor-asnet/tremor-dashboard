@@ -4,10 +4,9 @@
 import { Button, Text, Flex } from "@tremor/react";
 
 //Styles
-import "@/styles/order.css";
 import "@/styles/billing.css";
 
-export const InvoiceFooter = () => {
+const InvoiceFooter = () => {
   const handlePrintInvoice = () => {
     window.print();
   };

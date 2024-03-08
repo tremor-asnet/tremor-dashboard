@@ -85,14 +85,7 @@ describe("Data Table Testing", () => {
   ];
 
   it.skip("should match snapshot", () => {
-    const { container } = render(
-      <DataGrid
-        data={data}
-        columns={columns}
-        filterBy="status"
-        keyword="productName"
-      />,
-    );
+    const { container } = render(<DataGrid data={data} columns={columns} />);
     expect(container).toMatchSnapshot();
   });
 });

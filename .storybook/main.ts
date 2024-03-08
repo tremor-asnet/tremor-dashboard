@@ -31,6 +31,7 @@ const config: StorybookConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       "@": path.resolve(__dirname, "../app"),
+      "@opentelemetry/api": "next/dist/compiled/@opentelemetry/api",
     };
 
     return config;

@@ -62,8 +62,6 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
     <DataGrid
       data={products}
       columns={columns}
-      filterBy="isAvailable"
-      keyword="productName"
       className="!shadow-none"
       hasPagination={false}
     />

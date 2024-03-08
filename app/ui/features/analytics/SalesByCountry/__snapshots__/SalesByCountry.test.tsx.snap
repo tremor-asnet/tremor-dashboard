@@ -421,10 +421,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
           >
             <svg
-              class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[740px] lg:h-[245px] mt-0 lg:-mt-10 "
+              class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "
             >
               <g
-                class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] lg:translate-x-1/4 translate-y-0"
+                class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] md:translate-x-2 lg:translate-x-16 translate-y-0"
                 id="jvm-regions-group"
               >
                 <path
@@ -2491,10 +2491,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
         >
           <svg
-            class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[740px] lg:h-[245px] mt-0 lg:-mt-10 "
+            class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "
           >
             <g
-              class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] lg:translate-x-1/4 translate-y-0"
+              class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] md:translate-x-2 lg:translate-x-16 translate-y-0"
               id="jvm-regions-group"
             >
               <path
@@ -5021,10 +5021,10 @@ exports[`Testing analytics sale chart component testing component analytics sale
         class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
       >
         <svg
-          class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[740px] lg:h-[245px] mt-0 lg:-mt-10 "
+          class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "
         >
           <g
-            class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] lg:translate-x-1/4 translate-y-0"
+            class="scale-[22%] md:scale-[32%] lg:scale-[42%] translate-x-[5%] md:translate-x-2 lg:translate-x-16 translate-y-0"
             id="jvm-regions-group"
           >
             <path

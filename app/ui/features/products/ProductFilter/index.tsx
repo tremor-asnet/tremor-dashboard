@@ -61,7 +61,7 @@ const ProductFilter = ({ title }: ProductFilterProps) => {
   };
 
   return (
-    <div>
+    <div className="relative max-w-[220px]">
       <Button
         icon={RiArrowDropDownLine}
         iconPosition="right"

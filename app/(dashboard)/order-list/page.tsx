@@ -40,7 +40,7 @@ const OrderListPage = async ({
             new order
           </Text>
         </Button>
-        <OrderFilter title="Filters" />
+        <OrderFilter />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="id" />
@@ -59,8 +59,6 @@ const OrderListPage = async ({
             <TableOrder
               key={`${id}-${status}-${page}`}
               orders={results}
-              status={status.toString()}
-              keyword={id.toString()}
               total={total}
               currentPage={skip / 10 + 1}
             />

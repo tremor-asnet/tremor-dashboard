@@ -4,7 +4,7 @@ interface CustomListProps {
   products: OrderProduct[];
 }
 
-export const CustomList = ({ products }: CustomListProps) => (
+const CustomList = ({ products }: CustomListProps) => (
   <>
     {products?.map(product => (
       <p

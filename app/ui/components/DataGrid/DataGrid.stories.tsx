@@ -14,6 +14,12 @@ const meta = {
   title: "Components/Tables/DataGrid",
   tags: ["autodocs"],
   component: DataGrid,
+  argTypes: {
+    data: { description: "Data of data grid" },
+    columns: { description: "Columns of data grid" },
+    total: { description: "Total item of data grid" },
+    currentPage: { description: "Current page of data grid" },
+  },
 } as Meta<typeof DataGrid>;
 
 export default meta;
@@ -110,11 +116,6 @@ const columns: ColumnType<Order>[] = [
 
 export const DataTableDefault: Story = {
   render: () => (
-    <DataGrid
-      data={data}
-      columns={columns}
-      filterBy="status"
-      keyword="productName"
-    />
+    <DataGrid data={data} columns={columns} total={50} currentPageNumber={1} />
   ),
 };

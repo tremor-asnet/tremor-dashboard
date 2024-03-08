@@ -46,7 +46,7 @@ const Pagination = ({
   return (
     <div className="antialiased font-primary flex gap-5 flex-col sm:flex-row items-start sm:items-center w-full justify-between p-6">
       <div className="flex w-auto py-2">
-        <Text className="text-secondary">
+        <Text className="text-secondary dark:text-secondary">
           Showing&nbsp;
           <span className="font-normal">{firstItemCurrentPage}</span>&nbsp;
           to&nbsp;

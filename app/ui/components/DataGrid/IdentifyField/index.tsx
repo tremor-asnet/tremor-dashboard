@@ -2,17 +2,12 @@
 
 import Link from "next/link";
 
-interface CustomCheckboxFieldProps {
+interface IdentifyFieldProps {
   id: number;
   link: string;
-  onChange: () => void;
 }
 
-export const CustomCheckBoxField = ({
-  id,
-  link,
-  onChange,
-}: CustomCheckboxFieldProps) => (
+export const IdentifyField = ({ id, link }: IdentifyFieldProps) => (
   <div className="flex justify-start items-center ml-2 w-16">
     <Link
       prefetch={true}
@@ -23,4 +18,4 @@ export const CustomCheckBoxField = ({
   </div>
 );
 
-export default CustomCheckBoxField;
+export default IdentifyField;

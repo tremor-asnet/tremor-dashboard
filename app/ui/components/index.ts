@@ -3,7 +3,7 @@ export { default as BillingInfo } from "./BillingInfo/BillingInfo";
 export { default as Breadcrumb } from "./Breadcrumb/Breadcrumb";
 export { default as Checkbox } from "./Checkbox";
 export { default as CustomAvatarName } from "./DataGrid/CustomAvatarName";
-export { default as CustomCheckBoxField } from "./DataGrid/CustomCheckBoxField";
+export { default as IdentifyField } from "./DataGrid/IdentifyField";
 export { default as CustomDateFormat } from "./DataGrid/CustomDateFormat";
 export { default as CustomImage } from "./DataGrid/CustomImage/CustomImage";
 export { default as CustomList } from "./DataGrid/CustomList";

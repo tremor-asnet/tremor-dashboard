@@ -2,7 +2,7 @@
 
 // Components
 import {
-  CustomCheckBoxField,
+  IdentifyField,
   CustomDateFormat,
   CustomNumberFormat,
   CustomAvatarName,
@@ -27,21 +27,13 @@ export interface SortItem {
 }
 
 const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
-  const handleCheckboxChange = () => {
-    // TODO: Handle checkbox change here
-  };
-
   // Product Table Props
   const columns: ColumnType<Product>[] = [
     {
       key: "id",
       title: "Id",
       customNode: (_, { id }) => (
-        <CustomCheckBoxField
-          id={id}
-          link={`${ROUTES.PRODUCT_LIST}/${id}`}
-          onChange={handleCheckboxChange}
-        />
+        <IdentifyField id={id} link={`${ROUTES.PRODUCT_LIST}/${id}`} />
       ),
       sortable: true,
     },

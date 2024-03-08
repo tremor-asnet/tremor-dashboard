@@ -88,20 +88,6 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
     toastType: { icon, message, color },
   } = toast;
 
-  useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (isOpen) {
-      timeout = setTimeout(() => {
-        closeToast();
-      }, 3000);
-    }
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, [isOpen]);
-
   const closeToast = () => {
     setToast({
       isOpen: false,
@@ -116,10 +102,10 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
   const openToast = ({ toastType }: ToastProps) => {
     const { icon, message, color } = toastType;
 
-    setToast({ isOpen: false, toastType: { icon, message, color } });
-    setTimeout(() =>
-      setToast({ isOpen: true, toastType: { icon, message, color } }),
-    );
+    setToast({ isOpen: true, toastType: { icon, message, color } });
+    setTimeout(() => {
+      closeToast();
+    }, 3000);
   };
 
   const value = {

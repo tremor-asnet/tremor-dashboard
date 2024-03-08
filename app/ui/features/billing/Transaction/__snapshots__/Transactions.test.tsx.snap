@@ -31,7 +31,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           />
         </svg>
         <p
-          class="text-sm dark:text-lighter ml-2"
+          class="text-tremor-default text-tremor-content dark:text-lighter ml-2"
         >
           23 - 30 March 2020
         </p>

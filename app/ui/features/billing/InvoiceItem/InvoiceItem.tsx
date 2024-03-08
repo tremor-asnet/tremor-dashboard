@@ -2,6 +2,9 @@
 import Link from "next/link";
 import { MdPictureAsPdf } from "react-icons/md";
 
+// Components
+import { Text } from "@tremor/react";
+
 // Constants
 import { CURRENCY, ROUTES, SEPARATOR } from "@/constants";
 
@@ -18,20 +21,20 @@ interface InvoiceItemProps {
 const InvoiceItem = ({ id, date, invoicePrefix, price }: InvoiceItemProps) => (
   <li className="w-full flex justify-between py-2 pr-2">
     <div>
-      <p className="text-sm font-semibold text-primary dark:text-white">
+      <Text className="font-semibold text-primary dark:text-white">
         {formatNewDate(date, SEPARATOR.COMMAS)}
-      </p>
-      <p className="text-xs mt-1 text-secondary dark:text-lighter">
+      </Text>
+      <Text className="text-xs mt-1 text-secondary dark:text-lighter">
         &#35;{invoicePrefix}-{id}
-      </p>
+      </Text>
     </div>
     <div className="flex gap-6 items-center">
-      <p className="text-sm text-secondary dark:text-lighter">
+      <Text className="text-secondary dark:text-lighter">
         {moneyFormat({
           value: price,
           currency: CURRENCY.DOLLAR,
         })}
-      </p>
+      </Text>
       <Link
         className="flex gap-1 items-center text-primary dark:text-white font-semibold"
         href={`${ROUTES.INVOICE_LIST}/${id}`}>

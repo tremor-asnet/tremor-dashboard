@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import ProductFilter from "./index";
+import { ProductFilter } from "@/ui/features/products";
 
 const meta = {
   title: "Components/Products/ProductFilter",

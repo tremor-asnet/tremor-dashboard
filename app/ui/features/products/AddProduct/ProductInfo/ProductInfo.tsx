@@ -108,16 +108,17 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
           <Controller
             name="category"
             control={control}
-            render={({ field }) => (
-              <div>
+            render={({ field: { value, onChange } }) => {
+              const convertedValue = value.toString();
+              return (
                 <SelectField
                   label="Category"
                   options={CATEGORY_PRODUCT}
-                  {...field}
-                  className="py-2.5"
+                  value={convertedValue}
+                  onChange={onChange}
                 />
-              </div>
-            )}
+              );
+            }}
           />
         </div>
 

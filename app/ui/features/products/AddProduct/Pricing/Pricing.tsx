@@ -45,9 +45,17 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="currency"
         control={control}
-        render={({ field }) => (
-          <SelectField label="Currency" options={TYPE_PRICE} {...field} />
-        )}
+        render={({ field: { value, onChange } }) => {
+          const convertedValue = value.toString();
+          return (
+            <SelectField
+              label="Currency"
+              options={TYPE_PRICE}
+              value={convertedValue}
+              onChange={onChange}
+            />
+          );
+        }}
       />
 
       <Controller

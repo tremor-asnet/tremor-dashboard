@@ -6,7 +6,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
@@ -88,7 +88,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
+          class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-5"
         >
           <p
             class="text-tremor-title font-semibold text-primary dark:text-white"
@@ -96,7 +96,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
             Price
           </p>
           <div
-            class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start text-xl font-semibold font-primary text-primary dark:text-white"
             data-testid="total-price"
           >
             $1,419.00
@@ -108,7 +108,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           In Stock
         </p>
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col items-start mt-10"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start mt-10"
         >
           <p
             class="text-tremor-default text-secondary dark:text-lighter mb-4"
@@ -148,7 +148,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full justify-between antialiased font-primary flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
@@ -230,7 +230,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="tremor-Flex-root flex w-full mt-5 flex-col items-start justify-start"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-5"
       >
         <p
           class="text-tremor-title font-semibold text-primary dark:text-white"
@@ -238,7 +238,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           Price
         </p>
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price"
         >
           $1,419.00
@@ -250,7 +250,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         In Stock
       </p>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col items-start mt-10"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start mt-10"
       >
         <p
           class="text-tremor-default text-secondary dark:text-lighter mb-4"

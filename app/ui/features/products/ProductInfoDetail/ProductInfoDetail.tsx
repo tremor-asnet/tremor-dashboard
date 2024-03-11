@@ -25,17 +25,26 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
       : "text-fewter bg-seldom dark:text-fewter";
 
   return (
-    <Flex className="antialiased font-primary flex-col items-start">
+    <Flex
+      flexDirection="col"
+      alignItems="start"
+      className="antialiased font-primary">
       <Text className="text-primary dark:text-white font-bold !text-3xl mb-3">
         {productName}
       </Text>
       <StarRating />
-      <Flex className="mt-5 flex-col items-start justify-start">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        justifyContent="start"
+        className="mt-5">
         <Text className="text-tremor-title font-semibold text-primary dark:text-white">
           Price
         </Text>
         <Flex
-          className="flex-col items-start text-xl font-semibold font-primary text-primary dark:text-white"
+          flexDirection="col"
+          alignItems="start"
+          className="text-xl font-semibold font-primary text-primary dark:text-white"
           data-testid="total-price">
           {moneyFormat({
             value: price,
@@ -47,7 +56,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
         className={`p-2 mt-4 font-bold text-xs rounded-tremor-small leading-[9px] tracking-[0.18px] uppercase ${quantityStyle}`}>
         {quantityValue}
       </Text>
-      <Flex className="flex-col items-start mt-10">
+      <Flex flexDirection="col" alignItems="start" className="mt-10">
         <Text className="text-secondary dark:text-lighter mb-4">
           Description
         </Text>

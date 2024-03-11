@@ -38,7 +38,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
         {title}
       </Title>
     </Flex>
-    <Flex className="items-start justify-start pb-2">
+    <Flex justifyContent="start" alignItems="start" className="pb-2">
       <Table className="w-full">
         <TableHead>
           <TableRow className="border-0 border-b border-gray-100 dark:border-grayish">
@@ -58,15 +58,8 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
         </TableHead>
         <TableBody className="last:!border-transparent">
           {data.map(item => {
-            const {
-              productId,
-              name,
-              orders,
-              value,
-              adsSpent,
-              refunds,
-              refundsType,
-            } = item;
+            const { productId, name, orders, value, refunds, refundsType } =
+              item;
             return (
               <TableRow
                 key={productId}
@@ -83,7 +76,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                         priority
                       />
                     </Flex>
-                    <Flex className="items-start flex-col">
+                    <Flex alignItems="start" flexDirection="col">
                       <Text className="text-tremor-content-title dark:text-dark-tremor-content-title font-bold leading-[21px] tracking-[0.4px] truncate max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[800px] min-w-[200px] product-name">
                         {name}
                       </Text>
@@ -120,7 +113,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                   </Text>
                 </TableCell>
                 <TableCell className="px-6 py-3">
-                  <Flex className="justify-center">
+                  <Flex justifyContent="center">
                     <Text className="text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds">
                       {refunds}
                     </Text>

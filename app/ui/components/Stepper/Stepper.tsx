@@ -1,3 +1,6 @@
+// Components
+import { Text } from "@tremor/react";
+
 // Types
 import { Step } from "@/types";
 
@@ -26,7 +29,7 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
   }`;
   const lastItemDotClass = isLastStep ? "stepper-dot-active" : "stepper-dot";
   const lastItemTextClass = `stepper-text-content mt-2 ${
-    isLastStep ? "text-white" : "text-zinc-400"
+    isLastStep ? "text-white" : "text-zinc-400 dark:text-zinc-400"
   }`;
 
   // Body Item
@@ -41,7 +44,9 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
       currentStep > stepIndex ? "bg-white" : "bg-zinc-400"
     }`;
     const textClass = `stepper-text-content mt-2 ${
-      currentStep >= stepIndex ? "text-white" : "text-zinc-400"
+      currentStep >= stepIndex
+        ? "text-white"
+        : "text-zinc-400 dark:text-zinc-400"
     }`;
 
     return (
@@ -54,7 +59,8 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
           {/* Right line */}
           <span className={rightLineClass}></span>
         </div>
-        <p className={textClass}>{`${step.index}. ${step.content}`}</p>
+        <Text
+          className={`${textClass} text-xs`}>{`${step.index}. ${step.content}`}</Text>
       </li>
     );
   });
@@ -68,7 +74,7 @@ const Stepper = ({ currentStep, steps, total, extendClass }: StepperProps) => {
           <span className="stepper-dot-active"></span>
           <span className={firstItemRightLineClass}></span>
         </div>
-        <p className="stepper-text-content text-white mt-2">{`${firstStep.index}. ${firstStep.content}`}</p>
+        <Text className="stepper-text-content text-xs text-white mt-2">{`${firstStep.index}. ${firstStep.content}`}</Text>
       </li>
       {/* Body Items */}
       {bodyItems}

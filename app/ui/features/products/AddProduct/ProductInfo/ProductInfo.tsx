@@ -25,9 +25,9 @@ const QuillEditor = dynamic(() => import("react-quill"), {
   ssr: false,
   loading: () => (
     <div className="flex justify-center items-center h-44 w-full">
-      <p className="text-sm font-semibold text-[#7b809a] dark:text-white">
+      <Text className="font-semibold text-secondary dark:text-white">
         Loading Quill Editor ...
-      </p>
+      </Text>
     </div>
   ),
 });
@@ -63,7 +63,9 @@ const ProductInfo = ({ control, errors }: ProductInfoProps) => {
         render={({ field }) => (
           <div>
             <InputField id="add-product-name" label="Name" {...field} />
-            <p className="product-info-err-msg">{errorNameMsg}</p>
+            <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
+              {errorNameMsg}
+            </Text>
           </div>
         )}
       />

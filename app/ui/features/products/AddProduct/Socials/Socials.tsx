@@ -3,6 +3,7 @@ import { Controller, FieldErrors } from "react-hook-form";
 
 // Components
 import { InputField } from "@/ui/components";
+import { Text } from "@tremor/react";
 
 // Constants
 import { MESSAGES_ERROR, REGEX } from "@/constants";
@@ -40,9 +41,9 @@ const Socials = ({ control, errors }: SocialsProps) => {
               type="text"
               {...field}
             />
-            <p className="text-[11px] xs:text-xs text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500">
               {shopifyErrorMsg}
-            </p>
+            </Text>
           </>
         )}
       />
@@ -65,9 +66,9 @@ const Socials = ({ control, errors }: SocialsProps) => {
               type="text"
               {...field}
             />
-            <p className="text-[11px] xs:text-xs text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500">
               {facebookErrorMsg}
-            </p>
+            </Text>
           </>
         )}
       />
@@ -90,9 +91,9 @@ const Socials = ({ control, errors }: SocialsProps) => {
               type="text"
               {...field}
             />
-            <p className="text-[11px] xs:text-xs text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500">
               {instagramErrorMsg}
-            </p>
+            </Text>
           </>
         )}
       />

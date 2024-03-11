@@ -1,4 +1,8 @@
+// Libs
 import { FieldError, FieldErrorsImpl, Merge } from "react-hook-form";
+
+// Components
+import { Text } from "@tremor/react";
 
 interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
@@ -26,9 +30,9 @@ const InputField = ({
         {...props}
       />
       {errorMessage && (
-        <p className="text-[11px] xs:text-xs text-red-500">
+        <Text className="text-xs text-red-500 dark:text-red-500">
           {errorMessage.toString()}
-        </p>
+        </Text>
       )}
     </div>
   );

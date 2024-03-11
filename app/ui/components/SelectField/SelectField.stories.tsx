@@ -30,9 +30,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <div className="dark:bg-dark_blue text-primary rounded-xl p-6 shadow-box-icon-default dark:shadow-main-content">
-      <SelectField label="Currency" options={TYPE_PRICE} className="py-2.5" />
-    </div>
-  ),
+  args: {
+    options: TYPE_PRICE,
+    className: "py-2.5",
+    label: "Currency",
+  },
 };

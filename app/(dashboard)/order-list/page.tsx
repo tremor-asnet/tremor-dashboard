@@ -14,9 +14,9 @@ import { getOrders } from "@/services";
 
 // Types
 import { OrderResponse } from "@/types";
-import { orderListOption, productList } from "@/constants";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+
+// Constants
+import { orderListOption } from "@/constants";
 
 type SearchParams = {
   id?: number;

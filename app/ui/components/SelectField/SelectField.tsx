@@ -2,11 +2,11 @@
 import { Select, SelectItem } from "@tremor/react";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 interface SelectFieldProps {
   label: string;
-  options: SelectOptionData[];
+  options: OptionType[];
   className?: string;
   value?: string;
   onChange?: () => void;
@@ -34,7 +34,7 @@ const SelectField = ({
         enableClear={false}
         id={name}
         {...props}>
-        {options.map((item: SelectOptionData) => (
+        {options.map((item: OptionType) => (
           <SelectItem
             key={item.value}
             value={item.value}

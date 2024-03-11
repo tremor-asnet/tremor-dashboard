@@ -23,7 +23,6 @@ import { transformOrders } from "@/helpers";
 
 interface TableOrderProps {
   orders: Order[];
-
   total: number;
   currentPage: number;
 }

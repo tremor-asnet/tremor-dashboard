@@ -3,8 +3,8 @@ import { Suspense } from "react";
 
 // Components
 import { Button, Flex, Text } from "@tremor/react";
-import { InputSearch, LoadingIndicator } from "@/ui/components";
-const OrderFilter = dynamic(() => import("@/ui/features/orders/OrderFilter"));
+import { Filter, InputSearch, LoadingIndicator } from "@/ui/components";
+
 const TableOrder = dynamic(
   () => import("@/ui/features/orders/TableOrder/TableOrder"),
 );
@@ -15,9 +15,12 @@ import { getOrders } from "@/services";
 // Types
 import { OrderResponse } from "@/types";
 
+// Constants
+import { orderListOption } from "@/constants";
+
 type SearchParams = {
   id?: number;
-  status?: number;
+  filter?: number;
   page?: number;
 };
 
@@ -26,9 +29,9 @@ const OrderListPage = async ({
 }: {
   searchParams?: SearchParams;
 }) => {
-  const { id = -1, status = -1, page = 1 } = searchParams as SearchParams;
+  const { id = -1, filter = -1, page = 1 } = searchParams as SearchParams;
 
-  const response: OrderResponse = await getOrders(page, status, id);
+  const response: OrderResponse = await getOrders(page, filter, id);
 
   const { results, total, skip } = response;
 
@@ -40,13 +43,13 @@ const OrderListPage = async ({
             new order
           </Text>
         </Button>
-        <OrderFilter />
+        <Filter title="Status" listOption={orderListOption} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="id" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${id}-${status}-${page}`}
+            key={`${id}-${filter}-${page}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -57,7 +60,7 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${id}-${status}-${page}`}
+              key={`${id}-${filter}-${page}`}
               orders={results}
               total={total}
               currentPage={skip / 10 + 1}

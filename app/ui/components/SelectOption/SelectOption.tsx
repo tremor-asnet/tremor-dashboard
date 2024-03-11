@@ -1,8 +1,9 @@
-import { ListOption, ProductListOption } from "@/types";
+// Types
+import { OptionType } from "@/types";
 
 interface SelectOptionProps {
   title: string;
-  data: ListOption[] | ProductListOption[];
+  data: OptionType[];
   onSelectItem: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onSelectRemove: () => void;
 }

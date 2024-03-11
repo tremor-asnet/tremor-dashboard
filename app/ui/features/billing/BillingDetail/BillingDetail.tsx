@@ -29,7 +29,9 @@ const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
           expire={expire}
         />
       </div>
-      <Flex className="w-full gap-6 mt-6 md:mt-0 flex-col md:flex-row">
+      <Flex
+        flexDirection="col"
+        className="w-full gap-6 mt-6 md:mt-0 md:flex-row">
         {aggregation.map((item: SalaryCardData) => (
           <SalaryCard
             key={`${item.type}`}

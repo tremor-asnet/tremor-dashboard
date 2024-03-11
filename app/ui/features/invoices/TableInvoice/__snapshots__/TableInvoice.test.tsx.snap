@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableInvoice Component should match snapshot 1`] = `
+<div>
+  <div
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto !shadow-none"
+  >
+    <div
+      class="flex flex-col items-start justify-start my-2"
+    >
+      <div
+        class="tremor-Table-root overflow-auto w-full"
+      >
+        <table
+          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+        >
+          <thead
+            class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
+          >
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-primary dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Item
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-primary dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Qty
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-primary dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Rate
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-primary dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Amount
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+          >
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-secondary"
+                >
+                  Product 1
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                >
+                  2
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                  >
+                    $ 10.00
+                  </p>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-primary"
+                  >
+                    Total
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                  >
+                    $ 20.00
+                  </p>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
+                  >
+                    $25.00
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-secondary"
+                >
+                  Product 2
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                >
+                  1
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                  >
+                    $ 5.00
+                  </p>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-primary"
+                  >
+                    Total
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-secondary"
+                  >
+                    $ 5.00
+                  </p>
+                  <p
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
+                  >
+                    $25.00
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

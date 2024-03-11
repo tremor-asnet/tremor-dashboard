@@ -17,7 +17,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
         />
       </div>
       <p
-        class="stepper-text-content text-white mt-2"
+        class="text-tremor-default dark:text-dark-tremor-content stepper-text-content text-xs text-white mt-2"
       >
         1. Product Info
       </p>
@@ -37,7 +37,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
         />
       </div>
       <p
-        class="stepper-text-content mt-2 text-white"
+        class="text-tremor-default dark:text-dark-tremor-content stepper-text-content mt-2 text-white text-xs"
       >
         2. Media
       </p>
@@ -57,7 +57,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
         />
       </div>
       <p
-        class="stepper-text-content mt-2 text-zinc-400"
+        class="text-tremor-default stepper-text-content mt-2 text-zinc-400 dark:text-zinc-400 text-xs"
       >
         3. Social
       </p>
@@ -74,7 +74,7 @@ exports[`Stepper component testing should match snapshot 1`] = `
         />
       </div>
       <p
-        class="stepper-text-content mt-2 text-zinc-400"
+        class="stepper-text-content mt-2 text-zinc-400 dark:text-zinc-400"
       >
         4. Pricing
       </p>

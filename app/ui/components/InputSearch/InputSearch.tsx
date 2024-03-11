@@ -54,7 +54,8 @@ const InputSearch = ({ field }: InputSearchProps) => {
   );
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.trim();
+    const value = e.target.value;
+
     setSearchValue(value);
     debouncedHandler(value, field, pathname, params)();
   };

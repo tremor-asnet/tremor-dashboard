@@ -36,14 +36,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
               Leather Wallet
             </p>
             <p
-              class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
+              class="text-tremor-default dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
             >
               Order was delivered 
               18
                days ago.
             </p>
             <p
-              class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+              class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
             >
               delivered
             </p>
@@ -118,14 +118,14 @@ exports[`Testing Order detail contact section Should match snapshot 1`] = `
             Leather Wallet
           </p>
           <p
-            class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
+            class="text-tremor-default dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
           >
             Order was delivered 
             18
              days ago.
           </p>
           <p
-            class="p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+            class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
           >
             delivered
           </p>

@@ -10,6 +10,9 @@ import { IMedia } from "@/types";
 // Constants
 import { DRAG_ZONE } from "@/constants";
 
+// Components
+import { Text } from "@tremor/react";
+
 interface MediaProps {
   control: Control<IMedia>;
   onUpload: (file: File) => void;
@@ -65,9 +68,9 @@ const Media = ({ control, onUpload }: MediaProps) => {
             onDrop={handleDropFile}
             className={`flex flex-col items-center justify-center w-full h-36 border ${inputStyle.style} rounded-lg hover:cursor-pointer`}>
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <Text className="text-gray-500 dark:text-gray-400">
                 {inputStyle.text}
-              </p>
+              </Text>
             </div>
             <input
               id="dropzone-file"

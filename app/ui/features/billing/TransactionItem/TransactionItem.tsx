@@ -43,7 +43,9 @@ const TransactionItem = ({
           </Text>
         </div>
       </div>
-      <Text className={`font-semibold text-${color}`}>{value}</Text>
+      <Text className={`font-semibold text-${color} dark:text-${color}`}>
+        {value}
+      </Text>
     </div>
   );
 };

@@ -276,7 +276,7 @@ const SignUpForm = () => {
             </Text>
           )}
         </Button>
-        <Flex className="mt-8 mb-2 justify-center items-center">
+        <Flex justifyContent="center" className="mt-8 mb-2">
           <Text className="text-secondary dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?
           </Text>

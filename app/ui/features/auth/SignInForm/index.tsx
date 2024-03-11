@@ -164,7 +164,7 @@ const SignInForm = () => {
           </Text>
         )}
       </Button>
-      <Flex className="mt-8 mb-2 justify-center items-center">
+      <Flex justifyContent="center" className="mt-8 mb-2">
         <Text className="text-secondary dark:text-dark-romance font-light">
           Don&rsquo;t have an account?
         </Text>

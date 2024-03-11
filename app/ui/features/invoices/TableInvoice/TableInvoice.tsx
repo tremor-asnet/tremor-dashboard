@@ -18,7 +18,7 @@ import { CURRENCY, ROUTES } from "@/constants";
 // Styles
 import "@/styles/products.css";
 
-export const TableInvoice = ({
+const TableInvoice = ({
   details,
   totalCost,
 }: {

@@ -34,7 +34,7 @@ const SelectField = ({
         enableClear={false}
         id={name}
         {...props}>
-        {options.map((item: SelectOptionData) => (
+        {options.map((item: OptionType) => (
           <SelectItem
             key={item.value}
             value={item.value}

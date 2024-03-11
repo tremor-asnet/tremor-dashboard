@@ -41,10 +41,10 @@ const PricingInfo = () => {
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Pricing
       </Text>
-      <Flex className="flex-col items-end">
-        <Flex className="items-start flex-col sm:flex-row">
-          <Flex className="flex-col">
-            <Flex className="flex-col sm:flex-row">
+      <Flex flexDirection="col" alignItems="end">
+        <Flex alignItems="start" flexDirection="col" className="sm:flex-row">
+          <Flex flexDirection="col">
+            <Flex flexDirection="col" className="sm:flex-row">
               <Controller
                 control={control}
                 rules={{

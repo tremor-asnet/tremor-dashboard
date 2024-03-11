@@ -17,7 +17,7 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
   const productData = await getProductDetails(id);
 
   return (
-    <Flex className="items-start flex-col lg:flex-row">
+    <Flex alignItems="start" flexDirection="col" className="lg:flex-row">
       <Flex alignItems="center">
         <CustomImage
           className="rounded-lg"
@@ -27,7 +27,11 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
           alt="product-detail"
         />
       </Flex>
-      <Flex className="flex-col items-start justify-start lg:px-[50px] xl:px-[90px] 2xl:px-[185px] pt-6 lg:pt-0">
+      <Flex
+        alignItems="start"
+        justifyContent="start"
+        flexDirection="col"
+        className="lg:px-[50px] xl:px-[90px] 2xl:px-[185px] pt-6 lg:pt-0">
         <ProductInfoDetail product={productData} />
         <Link
           href={`${ROUTES.PRODUCT_LIST}/${id}/edit-product`}

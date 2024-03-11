@@ -29,7 +29,11 @@ const ProductImage = ({
 
   return (
     <Card className="w-full bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 border-none ring-0 md:even:mr-0 md:last:mr-0 lg:even:mr-6 analytics-info">
-      <Flex className="justify-start flex-col items-start -mt-10">
+      <Flex
+        alignItems="start"
+        flexDirection="col"
+        justifyContent="start"
+        className="-mt-10">
         <Flex className="relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all z-10">
           {isUpload ? (
             <div className="w-full h-52 md:h-80 rounded-lg bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center">
@@ -50,8 +54,8 @@ const ProductImage = ({
             />
           )}
         </Flex>
-        <Flex className="flex-col pt-7 px-2">
-          <Flex className="justify-center -mt-16">
+        <Flex flexDirection="col" className="pt-7 px-2">
+          <Flex justifyContent="center" className="-mt-16">
             <div className="antialiased text-center uppercase bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 shadow-btn-primary hover:shadow-btn-primary-hover px-3 py-2 cursor-pointer leading-[17px] tracking-[0.35px]">
               <label className="uppercase text-xs font-bold text-white uppercase mx-2 cursor-pointer">
                 Edit

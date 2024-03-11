@@ -6,7 +6,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
     class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-5 ring-0 border-none rounded-xl shadow-md dark:bg-dark-tremor-primary"
   >
     <div
-      class="tremor-Flex-root flex w-full justify-between items-start flex-col"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center relative"
@@ -188,7 +188,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col sm:flex-row items-end"
+        class="tremor-Flex-root flex w-full justify-between items-end flex-col sm:flex-row"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center pr-1"
@@ -212,7 +212,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-end w-full md:w-2/3 mt-6 md:mt-4"
+          class="tremor-Flex-root flex flex-row justify-end items-center w-full md:w-2/3 mt-6 md:mt-4"
         >
           <button
             class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white box-shadow-transparent"

@@ -92,11 +92,13 @@ const SalesStatisticCard = ({
     <Card
       ref={salesCardRef as RefObject<HTMLDivElement>}
       className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
-      <Flex className="items-start">
+      <Flex alignItems="start">
         <Flex className="flex-col w-2/3 md:w-1/2">
           <Flex
-            data-testid="formatted-amount"
-            className="flex-col justify-start items-start">
+            alignItems="start"
+            justifyContent="start"
+            flexDirection="col"
+            data-testid="formatted-amount">
             <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
               {type}
             </Text>
@@ -106,7 +108,9 @@ const SalesStatisticCard = ({
           </Flex>
         </Flex>
         <Flex
-          className="justify-end items-end w-1/3 md:w-1/2 cursor-pointer"
+          alignItems="end"
+          justifyContent="end"
+          className="w-1/3 md:w-1/2 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
           <Text className="!text-xs text-secondary dark:text-secondary leading-[21px] tracking-[0.4px]">
             {currentSalesDate}
@@ -117,7 +121,7 @@ const SalesStatisticCard = ({
             data-testid="sales-date-options"
             className="absolute p-2 -right-2 top-8 z-10 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md">
             {ITEM_ACTION_SALES_DATE.map(item => (
-              <Flex key={item.key} flex-col>
+              <Flex key={item.key}>
                 <Button
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
                   variant="light"
@@ -131,7 +135,10 @@ const SalesStatisticCard = ({
           </div>
         )}
       </Flex>
-      <Flex data-testid="total-amount" className="justify-start items-start">
+      <Flex
+        alignItems="start"
+        justifyContent="start"
+        data-testid="total-amount">
         {amountChange && (
           <Text
             className={`${totalAmountColor} dark:text-few leading-[22px] font-bold`}>

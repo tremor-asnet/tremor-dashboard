@@ -35,7 +35,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
 
   return (
     <Card className="p-5 ring-0 border-none rounded-xl shadow-md dark:bg-dark-tremor-primary">
-      <Flex className="items-start flex-col">
+      <Flex alignItems="start" flexDirection="col">
         <Flex className="relative">
           <Text className="text-tremor-title dark:text-dark-tremor-content-title font-bold text-primary font-bold tracking-[0.12px]">
             {title}
@@ -80,7 +80,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             </ul>
           </Flex>
         </Flex>
-        <Flex className="flex-col sm:flex-row items-end">
+        <Flex alignItems="end" className="flex-col sm:flex-row">
           <Flex className="pr-1">
             <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
               More than
@@ -94,7 +94,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
               are from social media.
             </Text>
           </Flex>
-          <Flex className="justify-end w-full md:w-2/3 mt-6 md:mt-4">
+          <Flex justifyContent="end" className="w-full md:w-2/3 mt-6 md:mt-4">
             <Button className="uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white box-shadow-transparent">
               <span className="text-xs tracking-wide">read more</span>
             </Button>

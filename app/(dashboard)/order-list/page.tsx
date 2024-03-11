@@ -14,9 +14,6 @@ import { getOrders } from "@/services";
 
 // Types
 import { OrderResponse } from "@/types";
-import { orderListOption, productList } from "@/constants";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
 
 // Constants
 import { orderListOption } from "@/constants";
@@ -65,8 +62,6 @@ const OrderListPage = async ({
             <TableOrder
               key={`${id}-${filter}-${page}`}
               orders={results}
-              // status={filter.toString()}
-              // keyword={id.toString()}
               total={total}
               currentPage={skip / 10 + 1}
             />

@@ -42,7 +42,10 @@ const ProductInfo = () => {
         Product Information
       </Text>
 
-      <Flex flexDirection="col" className="md:flex-row items-start gap-6">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        className="md:flex-row gap-6">
         <Flex flexDirection="col" className="gap-4">
           <Controller
             control={control}

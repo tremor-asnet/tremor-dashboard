@@ -37,7 +37,7 @@ const OrderContact = ({
         </Flex>
       </Flex>
       <Flex>
-        <Flex className="flex-col items-end">
+        <Flex flexDirection="col" alignItems="end">
           <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]">
             <Text className="uppercase py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase">
               contact us

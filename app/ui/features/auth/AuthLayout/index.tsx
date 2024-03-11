@@ -1,7 +1,7 @@
 "use client";
 
 import { ROUTES } from "@/constants";
-import { Flex } from "@tremor/react";
+import { Flex, Text } from "@tremor/react";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
@@ -17,12 +17,12 @@ const renderPathHeading = (path: string) => {
 
   return (
     <>
-      <p className="font-semibold pt-8 pb-2 px-8 text-2xl text-white tracking-wide">
+      <Text className="font-semibold pt-8 pb-2 px-8 !text-tremor-normal text-white tracking-wide">
         {title[path]}
-      </p>
-      <p className="text-white text-sm tracking-wide font-light max-w-xs px-8 text-center 2xl:px-0">
+      </Text>
+      <Text className="text-white tracking-wide font-light max-w-xs px-8 text-center 2xl:px-0">
         {subText[path]}
-      </p>
+      </Text>
     </>
   );
 };

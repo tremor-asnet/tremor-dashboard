@@ -75,11 +75,14 @@ const ProjectCard = ({
             />
           </Flex>
           <Flex className="pl-[90px] mb-6 mt-1 relative">
-            <Flex className="flex-col items-start justify-start ">
+            <Flex flexDirection="col" alignItems="start" justifyContent="start">
               <Title className="text-xl text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5">
                 {name}
               </Title>
-              <Flex className="mt-1 items-start justify-start ml-[10px]">
+              <Flex
+                justifyContent="start"
+                alignItems="start"
+                className="mt-1 ml-[10px]">
                 {participants?.map((participant: AvatarCard, index: number) => (
                   <Avatar
                     key={`Avatar ${index} of ${name} by ${id}`}
@@ -94,16 +97,17 @@ const ProjectCard = ({
                 ))}
               </Flex>
             </Flex>
-            <Flex className="flex-col w-auto justify-end">
+            <Flex flexDirection="col" justifyContent="end" className="w-auto">
               <Flex
-                className="cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                flexDirection="col"
+                className="cursor-pointer w-[30px] h-[16px]"
                 onClick={() => handleToggleAction(projectData.id)}>
                 <FaEllipsisV className="text-secondary dark:text-secondary" />
               </Flex>
               {openActionProject && (
                 <div className="absolute p-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
                   {actions.map(item => (
-                    <Flex key={item.key} flex-col>
+                    <Flex key={item.key}>
                       <Button
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md py-[6px]"
                         variant="light"

@@ -9,7 +9,7 @@ import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 // Constants
 import {
@@ -41,10 +41,10 @@ const PricingInfo = () => {
       <Text className="text-primary dark:text-white font-bold text-xl mb-8">
         Pricing
       </Text>
-      <Flex className="flex-col items-end">
-        <Flex className="items-start flex-col sm:flex-row">
-          <Flex className="flex-col">
-            <Flex className="flex-col sm:flex-row">
+      <Flex flexDirection="col" alignItems="end">
+        <Flex alignItems="start" flexDirection="col" className="sm:flex-row">
+          <Flex flexDirection="col">
+            <Flex flexDirection="col" className="sm:flex-row">
               <Controller
                 control={control}
                 rules={{
@@ -70,20 +70,22 @@ const PricingInfo = () => {
                 name="price"
               />
               <Controller
-                control={control}
-                render={({ field }) => (
-                  <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6">
-                    <SelectField
-                      id="usd"
-                      placeholder="USD"
-                      label="Currency"
-                      options={TYPE_PRICE}
-                      {...field}
-                      className="py-2.5"
-                    />
-                  </div>
-                )}
                 name="currency"
+                control={control}
+                render={({ field: { value, onChange } }) => {
+                  const convertedValue = value.toString();
+                  return (
+                    <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6">
+                      <SelectField
+                        label="Currency"
+                        options={TYPE_PRICE}
+                        value={convertedValue}
+                        onChange={onChange}
+                        className="py-2.5"
+                      />
+                    </div>
+                  );
+                }}
               />
               <Controller
                 control={control}
@@ -124,7 +126,7 @@ const PricingInfo = () => {
                       className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                       value={convertedValue}
                       onValueChange={onChange}>
-                      {TAGS_PRICE.map((item: SelectOptionData) => (
+                      {TAGS_PRICE.map((item: OptionType) => (
                         <MultiSelectItem key={item.value} value={item.value}>
                           {item.option}
                         </MultiSelectItem>

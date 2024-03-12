@@ -42,7 +42,10 @@ const ProductInfo = () => {
         Product Information
       </Text>
 
-      <Flex flexDirection="col" className="md:flex-row items-start gap-6">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        className="md:flex-row gap-6">
         <Flex flexDirection="col" className="gap-4">
           <Controller
             control={control}
@@ -142,18 +145,22 @@ const ProductInfo = () => {
           />
 
           <Controller
-            control={control}
-            render={({ field }) => (
-              <div className="w-full mb-2">
-                <SelectField
-                  label="Category"
-                  options={CATEGORY_PRODUCT}
-                  {...field}
-                  className="py-2.5"
-                />
-              </div>
-            )}
             name="category"
+            control={control}
+            render={({ field: { value, onChange } }) => {
+              const convertedValue = value.toString();
+              return (
+                <div className="w-full mb-2">
+                  <SelectField
+                    label="Category"
+                    options={CATEGORY_PRODUCT}
+                    value={convertedValue}
+                    onChange={onChange}
+                    className="py-2.5"
+                  />
+                </div>
+              );
+            }}
           />
 
           <Controller

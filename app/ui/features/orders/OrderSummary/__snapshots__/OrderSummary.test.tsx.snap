@@ -17,7 +17,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
         >
           <div
-            class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start text-secondary dark:text-dark-romance"
           >
             <p
               class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
@@ -39,7 +39,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="tremor-Flex-root flex w-full justify-between flex-col items-end text-primary dark:text-white"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-end text-primary dark:text-white"
           >
             <p
               class="font-semibold mb-2"
@@ -92,7 +92,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
       >
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col items-start text-secondary dark:text-dark-romance"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start text-secondary dark:text-dark-romance"
         >
           <p
             class="text-tremor-default text-tremor-content dark:text-dark-romance leading-6 mb-2"
@@ -114,7 +114,7 @@ exports[`Test OderSummary component Should match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col items-end text-primary dark:text-white"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-end text-primary dark:text-white"
         >
           <p
             class="font-semibold mb-2"

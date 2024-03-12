@@ -14,10 +14,8 @@ const PaymentDetails = ({ cardLast4Digit }: { cardLast4Digit: string }) => {
       <h6 className="text-tremor-content-title dark:text-dark-primary font-bold">
         Payment Details
       </h6>
-      <Flex
-        alignItems="center"
-        className="p-6 mt-4 border-[#dee2e6] rounded-lg border">
-        <Flex justifyContent="start" alignItems="center">
+      <Flex className="p-6 mt-4 border-[#dee2e6] rounded-lg border">
+        <Flex justifyContent="start">
           <Image
             className="mr-4"
             src={METADATA.MASTERCARD}

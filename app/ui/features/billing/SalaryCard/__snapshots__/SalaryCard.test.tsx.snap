@@ -15,7 +15,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
             class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md"
           >
             <div
-              class="tremor-Flex-root flex w-full justify-between items-center flex-col"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center"
             >
               <div
                 class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-gradient-pickled"
@@ -41,7 +41,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="tremor-Flex-root flex w-full justify-between items-center flex-col mt-4 mb-1"
+                class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-4 mb-1"
               >
                 <p
                   class="mb-1 text-primary dark:text-lighter text-tremor-title leading-[33px] tracking-[0.1764px] font-semibold"
@@ -88,7 +88,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
           class="tremor-Card-root w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md"
         >
           <div
-            class="tremor-Flex-root flex w-full justify-between items-center flex-col"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center"
           >
             <div
               class="tremor-Flex-root flex flex-row items-center p-1 justify-center rounded-xl shadow-box-icon-default w-16 h-16 bg-gradient-pickled"
@@ -114,7 +114,7 @@ exports[`SalaryCard Testing should match snapshot 1`] = `
               </svg>
             </div>
             <div
-              class="tremor-Flex-root flex w-full justify-between items-center flex-col mt-4 mb-1"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-4 mb-1"
             >
               <p
                 class="mb-1 text-primary dark:text-lighter text-tremor-title leading-[33px] tracking-[0.1764px] font-semibold"

@@ -11,7 +11,7 @@ import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
 
 // Types
-import { SelectOptionData } from "@/types";
+import { OptionType } from "@/types";
 
 interface PricingProps {
   control: any;
@@ -45,9 +45,17 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="currency"
         control={control}
-        render={({ field }) => (
-          <SelectField label="Currency" options={TYPE_PRICE} {...field} />
-        )}
+        render={({ field: { value, onChange } }) => {
+          const convertedValue = value.toString();
+          return (
+            <SelectField
+              label="Currency"
+              options={TYPE_PRICE}
+              value={convertedValue}
+              onChange={onChange}
+            />
+          );
+        }}
       />
 
       <Controller
@@ -78,7 +86,7 @@ const Pricing = ({ control }: PricingProps) => {
                 className="select-custom dark:text-white dark:border-light dark:focus:border-white"
                 value={convertedValue}
                 onValueChange={onChange}>
-                {TAGS_PRICE.map((item: SelectOptionData) => (
+                {TAGS_PRICE.map((item: OptionType) => (
                   <MultiSelectItem key={item.value} value={item.value}>
                     {item.option}
                   </MultiSelectItem>

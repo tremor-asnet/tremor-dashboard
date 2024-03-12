@@ -21,7 +21,10 @@ export const OrderSummary = (monies: OrderSummaryData) => {
       </Bold>
       <Flex flexDirection="col" className="mt-2 tracking-[0.4px]">
         <Flex>
-          <Flex className="flex-col items-start text-secondary dark:text-dark-romance">
+          <Flex
+            alignItems="start"
+            flexDirection="col"
+            className="text-secondary dark:text-dark-romance">
             {listTitle.map(title => (
               <Text
                 className="dark:text-dark-romance leading-6 mb-2"
@@ -30,7 +33,10 @@ export const OrderSummary = (monies: OrderSummaryData) => {
               </Text>
             ))}
           </Flex>
-          <Flex className="flex-col items-end text-primary dark:text-white">
+          <Flex
+            alignItems="end"
+            flexDirection="col"
+            className="text-primary dark:text-white">
             {Object.keys(monies).map(item => {
               const money = monies[item as keyof OrderSummaryData];
               return (

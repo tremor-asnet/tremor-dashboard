@@ -33,7 +33,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </svg>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-4 ml-[6.5rem]"
+            class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
           >
             <p
               class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
@@ -46,10 +46,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 py-0 flex-col md:flex-row px-4 md:py-5"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
+            class="tremor-Flex-root flex w-full flex-col justify-start items-start mb-6 lg:mb-0"
           >
             <div
-              class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
+              class="tremor-Flex-root flex w-full flex-row justify-start items-start border-0 border-b border-gray-100 last:border-transparent"
             >
               <div
                 class="tremor-Table-root overflow-auto w-full"
@@ -418,7 +418,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
+            class="tremor-Flex-root flex w-full flex-row justify-center items-center pb-6 px-12 md:p-0 map"
           >
             <svg
               class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "
@@ -2103,7 +2103,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-4 ml-[6.5rem]"
+          class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
         >
           <p
             class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
@@ -2116,10 +2116,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 py-0 flex-col md:flex-row px-4 md:py-5"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
+          class="tremor-Flex-root flex w-full flex-col justify-start items-start mb-6 lg:mb-0"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-start border-0 border-b border-gray-100 last:border-transparent"
           >
             <div
               class="tremor-Table-root overflow-auto w-full"
@@ -2488,7 +2488,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
+          class="tremor-Flex-root flex w-full flex-row justify-center items-center pb-6 px-12 md:p-0 map"
         >
           <svg
             class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "
@@ -4206,7 +4206,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-4 ml-4"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-4"
       >
         <p
           class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
@@ -4219,10 +4219,10 @@ exports[`Testing analytics sale chart component testing component analytics sale
       class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 py-0 flex-col md:flex-row px-0 md:py-4"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start mb-6 lg:mb-0"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-start border-0 border-b border-gray-100 last:border-transparent"
         >
           <div
             class="tremor-Table-root overflow-auto w-full"
@@ -4633,7 +4633,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
         </svg>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-4 ml-[6.5rem]"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
       >
         <p
           class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
@@ -4646,10 +4646,10 @@ exports[`Testing analytics sale chart component testing component analytics sale
       class="tremor-Flex-root flex w-full justify-between items-center relative mt-6 md:mt-0 py-0 flex-col md:flex-row px-4 md:py-5"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mb-6 lg:mb-0"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start mb-6 lg:mb-0"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-start justify-start border-0 border-b border-gray-100 last:border-transparent"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-start border-0 border-b border-gray-100 last:border-transparent"
         >
           <div
             class="tremor-Table-root overflow-auto w-full"
@@ -5018,7 +5018,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-center pb-6 px-12 md:p-0 map"
+        class="tremor-Flex-root flex w-full flex-row justify-center items-center pb-6 px-12 md:p-0 map"
       >
         <svg
           class="flex justify-center items-center w-[310px] h-[136px] md:w-[360px] md:h-[175px] lg:w-[480px] lg:h-[245px] mt-0 md:-mt-10 "

@@ -37,7 +37,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 </svg>
               </div>
               <div
-                class="tremor-Flex-root flex w-full justify-between pl-[90px] flex-col mb-1 items-end"
+                class="tremor-Flex-root flex w-full flex-col justify-between items-end pl-[90px] mb-1"
               >
                 <p
                   class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"
@@ -110,7 +110,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
               </svg>
             </div>
             <div
-              class="tremor-Flex-root flex w-full justify-between pl-[90px] flex-col mb-1 items-end"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-end pl-[90px] mb-1"
             >
               <p
                 class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"

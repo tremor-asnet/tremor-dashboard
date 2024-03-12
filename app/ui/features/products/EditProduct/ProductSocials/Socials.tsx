@@ -25,7 +25,11 @@ const Socials = () => {
       <Title className="font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize">
         Socials
       </Title>
-      <Flex className="flex-col items-start justify-start mt-4 gap-6">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        justifyContent="start"
+        className="mt-4 gap-6">
         <Controller
           control={control}
           rules={{

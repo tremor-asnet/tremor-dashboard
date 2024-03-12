@@ -31,7 +31,7 @@ export const InvoiceHeader = ({
   const renderAddressBankInfo = `${addressBank} ${cityBank}, ${stateBank}`;
 
   return (
-    <Flex className="flex-col md:flex-row mb-10 md:mb-20">
+    <Flex flexDirection="col" className="md:flex-row mb-10 md:mb-20">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[35%]">
         <InvoiceLogo additionalClasses="w-20 h-20 md:w-10 md:h-10" />{" "}
         <Title className="text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-white">
@@ -43,7 +43,10 @@ export const InvoiceHeader = ({
           tel: {phoneBank}
         </Link>
       </Flex>
-      <Flex flexDirection="col" className="items-start md:items-end md:mt-0">
+      <Flex
+        flexDirection="col"
+        alignItems="start"
+        className="md:items-end md:mt-0">
         <Title className="text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-white">
           Billed to: {fullName}
         </Title>

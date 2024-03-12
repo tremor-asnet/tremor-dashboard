@@ -7,7 +7,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
     <div>
       <div>
         <div
-          class="tremor-Flex-root w-full flex-row justify-between items-center text-secondary mb-4 flex flex-wrap xs:flex-nowrap"
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center text-secondary mb-4 flex-wrap xs:flex-nowrap"
         >
           <p
             class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
@@ -34,7 +34,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           </a>
         </div>
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col flex-wrap items-baseline xs:flex-nowrap"
+          class="tremor-Flex-root flex w-full flex-col justify-between flex-wrap items-baseline xs:flex-nowrap"
         >
           <p
             class="text-tremor-default font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance opacity-100 normal-case tracking-[0.02857em]"
@@ -45,7 +45,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             class="h-px w-full dark:bg-gradient-divider bg-gradient-line my-4 opacity-25"
           />
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
           >
             <p
               class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -57,7 +57,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             />
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
           >
             <p
               class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -69,7 +69,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             />
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
           >
             <p
               class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -85,7 +85,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             </a>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
           >
             <p
               class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -97,7 +97,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             />
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2 pr-4 py-2"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-2 pr-4 py-2"
           >
             <p
               class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize"
@@ -105,7 +105,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
               Social:
             </p>
             <div
-              class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+              class="tremor-Flex-root flex w-full flex-row justify-start items-center"
             >
               <a
                 class="pl-1 pr-2"
@@ -176,7 +176,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
   "container": <div>
     <div>
       <div
-        class="tremor-Flex-root w-full flex-row justify-between items-center text-secondary mb-4 flex flex-wrap xs:flex-nowrap"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center text-secondary mb-4 flex-wrap xs:flex-nowrap"
       >
         <p
           class="text-tremor-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4"
@@ -203,7 +203,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
         </a>
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col flex-wrap items-baseline xs:flex-nowrap"
+        class="tremor-Flex-root flex w-full flex-col justify-between flex-wrap items-baseline xs:flex-nowrap"
       >
         <p
           class="text-tremor-default font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance opacity-100 normal-case tracking-[0.02857em]"
@@ -214,7 +214,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           class="h-px w-full dark:bg-gradient-divider bg-gradient-line my-4 opacity-25"
         />
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
         >
           <p
             class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -226,7 +226,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           />
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
         >
           <p
             class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -238,7 +238,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           />
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
         >
           <p
             class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -254,7 +254,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           </a>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-3"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-3"
         >
           <p
             class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2"
@@ -266,7 +266,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
           />
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2 pr-4 py-2"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-2 pr-4 py-2"
         >
           <p
             class="text-tremor-default font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize"
@@ -274,7 +274,7 @@ exports[`ContactCard component Should render ContactCard snapshot correctly 1`] 
             Social:
           </p>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center"
           >
             <a
               class="pl-1 pr-2"

@@ -8,57 +8,48 @@ exports[`SelectField Component Should match snapshot 1`] = `
       <div
         class="w-full"
       >
-        <p
-          class="text-tremor-default text-secondary text-sm dark:text-lighter"
+        <label
+          class="text-secondary text-sm dark:text-lighter"
         >
           Currency
-        </p>
-        <select
-          class="peer h-full w-full appearance-none rounded-none border-b-2 border-gray-300 bg-transparent font-sans text-sm font-normal text-primary dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100 undefined"
+        </label>
+        <div
+          class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+          data-headlessui-state=""
         >
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="1"
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+            data-headlessui-state=""
+            id="headlessui-listbox-button-:r0:"
+            type="button"
           >
-            BTC
-          </option>
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="2"
-          >
-            CNY
-          </option>
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="3"
-          >
-            EUR
-          </option>
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="4"
-          >
-            GBP
-          </option>
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="5"
-          >
-            INR
-          </option>
-          <option
-            class="dark:bg-primary"
-            data-testid="select-option"
-            value="6"
-          >
-            USD
-          </option>
-        </select>
+            <span
+              class="w-[90%] block truncate"
+            >
+              Select...
+            </span>
+            <span
+              class="absolute inset-y-0 right-0 flex items-center mr-3"
+            >
+              <svg
+                class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </body>,
@@ -66,57 +57,48 @@ exports[`SelectField Component Should match snapshot 1`] = `
     <div
       class="w-full"
     >
-      <p
-        class="text-tremor-default text-secondary text-sm dark:text-lighter"
+      <label
+        class="text-secondary text-sm dark:text-lighter"
       >
         Currency
-      </p>
-      <select
-        class="peer h-full w-full appearance-none rounded-none border-b-2 border-gray-300 bg-transparent font-sans text-sm font-normal text-primary dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100 undefined"
+      </label>
+      <div
+        class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+        data-headlessui-state=""
       >
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="1"
+        <button
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+          data-headlessui-state=""
+          id="headlessui-listbox-button-:r0:"
+          type="button"
         >
-          BTC
-        </option>
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="2"
-        >
-          CNY
-        </option>
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="3"
-        >
-          EUR
-        </option>
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="4"
-        >
-          GBP
-        </option>
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="5"
-        >
-          INR
-        </option>
-        <option
-          class="dark:bg-primary"
-          data-testid="select-option"
-          value="6"
-        >
-          USD
-        </option>
-      </select>
+          <span
+            class="w-[90%] block truncate"
+          >
+            Select...
+          </span>
+          <span
+            class="absolute inset-y-0 right-0 flex items-center mr-3"
+          >
+            <svg
+              class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

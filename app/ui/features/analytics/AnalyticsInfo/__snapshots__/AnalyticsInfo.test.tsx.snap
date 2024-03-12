@@ -9,7 +9,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
         class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
       >
         <div
-          class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
+          class="tremor-Flex-root flex w-full flex-col justify-start items-start -mt-10"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all"
@@ -32,10 +32,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             />
           </div>
           <div
-            class="tremor-Flex-root flex w-full justify-between items-center flex-col pt-7 px-2"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center pt-7 px-2"
           >
             <div
-              class="tremor-Flex-root flex w-full flex-row items-center justify-center cursor-pointer -mt-14"
+              class="tremor-Flex-root flex w-full flex-row justify-center items-center cursor-pointer -mt-14"
             >
               <svg
                 class="text-[#e91e63] text-xl mx-6"
@@ -102,7 +102,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               </p>
             </div>
             <div
-              class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
+              class="tremor-Flex-root flex w-full flex-row justify-end items-center font-primary text-secondary font-light"
             >
               <svg
                 class="text-tremor-content text-xl mr-1"
@@ -148,7 +148,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
       class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
     >
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start -mt-10"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all"
@@ -171,10 +171,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           />
         </div>
         <div
-          class="tremor-Flex-root flex w-full justify-between items-center flex-col pt-7 px-2"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-center pt-7 px-2"
         >
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-center cursor-pointer -mt-14"
+            class="tremor-Flex-root flex w-full flex-row justify-center items-center cursor-pointer -mt-14"
           >
             <svg
               class="text-[#e91e63] text-xl mx-6"
@@ -241,7 +241,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
+            class="tremor-Flex-root flex w-full flex-row justify-end items-center font-primary text-secondary font-light"
           >
             <svg
               class="text-tremor-content text-xl mr-1"
@@ -341,7 +341,7 @@ exports[`Testing analytics sale chart component testing component analytics info
     class="tremor-Card-root relative w-full text-left rounded-tremor-default ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand bg-tremor-primary dark:bg-dark-tremor-primary group overflow-visible p-4 mb-12 border-none ring-0 md:w-[calc(50%-0.75rem)] md:mr-6 md:even:mr-0 md:last:mr-0 lg:even:mr-6 hover:cursor-pointer analytics-info"
   >
     <div
-      class="tremor-Flex-root flex w-full justify-start flex-col items-start -mt-10"
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start -mt-10"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center relative duration-500 ease-[cubic-bezier(0.34,1.61,0.7,1)] translate-y-0 group-hover:-translate-y-12 transition-all"
@@ -364,10 +364,10 @@ exports[`Testing analytics sale chart component testing component analytics info
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-between items-center flex-col pt-7 px-2"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-center pt-7 px-2"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-center cursor-pointer -mt-14"
+          class="tremor-Flex-root flex w-full flex-row justify-center items-center cursor-pointer -mt-14"
         >
           <svg
             class="text-[#e91e63] text-xl mx-6"
@@ -434,7 +434,7 @@ exports[`Testing analytics sale chart component testing component analytics info
           </p>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-end font-primary text-secondary font-light"
+          class="tremor-Flex-root flex w-full flex-row justify-end items-center font-primary text-secondary font-light"
         >
           <svg
             class="text-tremor-content text-xl mr-1"

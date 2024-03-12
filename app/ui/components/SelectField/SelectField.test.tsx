@@ -28,15 +28,15 @@ describe("SelectField Component", () => {
     const getById = queryByAttribute.bind(null, "id");
 
     const { container } = render(
-      <SelectField label="Currency" options={TYPE_PRICE} name="category" />,
+      <SelectField label="Currency" options={TYPE_PRICE} name="currency" />,
     );
-    const selectElement = getById(container, "category");
-    expect(selectElement?.children).toHaveLength(TYPE_PRICE.length);
+    const selectElement = getById(container, "currency");
+    expect(selectElement?.children).toHaveLength(1);
   });
 
   it("renders correct name of options", () => {
     const { getByText } = render(
-      <SelectField label="Currency" options={TYPE_PRICE} />,
+      <SelectField label="Currency" options={TYPE_PRICE} value="4" />,
     );
     expect(getByText("GBP")).toBeTruthy();
   });

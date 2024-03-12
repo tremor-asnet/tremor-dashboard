@@ -12,7 +12,10 @@ const InvoiceFooter = () => {
   };
 
   return (
-    <Flex className="items-start md:items-end flex-col md:flex-row mt-10 md:mt-20 invoice">
+    <Flex
+      alignItems="start"
+      flexDirection="col"
+      className="md:items-end md:flex-row mt-10 md:mt-20 invoice">
       <Flex
         flexDirection="col"
         alignItems="start"

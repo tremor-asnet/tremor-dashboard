@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import CustomQuantity from "./index";
 
 // Mocks
-import { mockProductQuantity } from "@/mocks";
+import { MOCK_ORDERS } from "@/mocks";
 
 const meta = {
   title: "Components/Tables/CustomQuantity",
@@ -24,6 +24,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    products: mockProductQuantity,
+    products: MOCK_ORDERS[0].products,
   },
 };

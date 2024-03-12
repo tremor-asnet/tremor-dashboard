@@ -4,10 +4,10 @@ import { render } from "@testing-library/react";
 import CustomQuantity from ".";
 
 // Mocks
-import { mockProductQuantity } from "@/mocks";
+import { MOCK_ORDERS } from "@/mocks";
 
 const CustomQuantityComponent = () =>
-  render(<CustomQuantity products={mockProductQuantity} />);
+  render(<CustomQuantity products={MOCK_ORDERS[0].products} />);
 
 describe("CustomQuantity component", () => {
   it("should render snapshot correctly", () => {
@@ -19,7 +19,7 @@ describe("CustomQuantity component", () => {
   it("should renders list with correct products", () => {
     const { getByText } = CustomQuantityComponent();
 
-    mockProductQuantity.forEach(({ count }) => {
+    MOCK_ORDERS[0].products.forEach(({ count }) => {
       const productCountText = getByText(count.toString());
       expect(productCountText).toBeTruthy();
     });

@@ -90,21 +90,3 @@ export const mockProductInfoDetail = {
   price: 1419,
   quantity: 50,
 };
-
-export const mockProductQuantity = [
-  {
-    id: 1,
-    name: "Premium Support",
-    count: 10,
-  },
-  {
-    id: 2,
-    name: "Metror Dashboard",
-    count: 8,
-  },
-  {
-    id: 3,
-    name: "Parts for service",
-    count: 15,
-  },
-];

@@ -36,10 +36,4 @@ describe("InvoiceHeader component", () => {
     expect(getByText(/San Francisco CA/)).toBeTruthy();
     expect(getByText(/California/)).toBeTruthy();
   });
-
-  it("renders image", () => {
-    const { getByAltText } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
-
-    expect(getByAltText("print-logo")).toBeTruthy();
-  });
 });

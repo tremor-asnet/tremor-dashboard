@@ -6,13 +6,13 @@ exports[`InvoiceLogo component Should render InvoiceLogo snapshot correctly 1`] 
   "baseElement": <body>
     <div>
       <div
-        class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] "
+        class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] print:dark:bg-[url('/assets/images/logo/logo-td-light.webp')] "
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] "
+      class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] print:dark:bg-[url('/assets/images/logo/logo-td-light.webp')] "
     />
   </div>,
   "debug": [Function],

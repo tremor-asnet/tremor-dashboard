@@ -49,7 +49,7 @@ const DataGridHeader = <T,>({
             <TableHeaderCell
               onClick={handleHeaderClick}
               key={key}
-              className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-primary dark:print:opacity-100">
+              className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100">
               <HeaderCellContents
                 title={title}
                 keyColumn={key}

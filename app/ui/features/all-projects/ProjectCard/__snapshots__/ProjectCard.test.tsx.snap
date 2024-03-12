@@ -33,7 +33,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-between items-center pl-[90px] mb-6 mt-1 relative"
             >
               <div
-                class="tremor-Flex-root flex w-full flex-col items-start justify-start"
+                class="tremor-Flex-root flex w-full flex-col justify-start items-start"
               >
                 <p
                   class="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5"
@@ -41,7 +41,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                   Slack Bot
                 </p>
                 <div
-                  class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
+                  class="tremor-Flex-root flex w-full flex-row justify-start items-start mt-1 ml-[10px]"
                 >
                   <div
                     class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px] w-6 h-6 min-w-[24px]"
@@ -94,10 +94,10 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="tremor-Flex-root flex items-center flex-col w-auto justify-end"
+                class="tremor-Flex-root flex flex-col justify-end items-center w-auto"
               >
                 <div
-                  class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                  class="tremor-Flex-root flex flex-col justify-between items-center cursor-pointer w-[30px] h-[16px]"
                 >
                   <svg
                     class="text-secondary dark:text-secondary"
@@ -186,7 +186,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-row justify-between items-center pl-[90px] mb-6 mt-1 relative"
           >
             <div
-              class="tremor-Flex-root flex w-full flex-col items-start justify-start"
+              class="tremor-Flex-root flex w-full flex-col justify-start items-start"
             >
               <p
                 class="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-base leading-5"
@@ -194,7 +194,7 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
                 Slack Bot
               </p>
               <div
-                class="tremor-Flex-root flex w-full flex-row mt-1 items-start justify-start ml-[10px]"
+                class="tremor-Flex-root flex w-full flex-row justify-start items-start mt-1 ml-[10px]"
               >
                 <div
                   class="inline-flex rounded-full overflow-hidden border-2 border-white border-solid ml-[-10px] w-6 h-6 min-w-[24px]"
@@ -247,10 +247,10 @@ exports[`Testing ProjectCard component Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="tremor-Flex-root flex items-center flex-col w-auto justify-end"
+              class="tremor-Flex-root flex flex-col justify-end items-center w-auto"
             >
               <div
-                class="tremor-Flex-root flex items-center cursor-pointer flex-col w-[30px] h-[16px] justify-between"
+                class="tremor-Flex-root flex flex-col justify-between items-center cursor-pointer w-[30px] h-[16px]"
               >
                 <svg
                   class="text-secondary dark:text-secondary"

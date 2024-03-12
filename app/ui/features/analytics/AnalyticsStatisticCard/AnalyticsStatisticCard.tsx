@@ -60,7 +60,10 @@ const AnalyticsStatisticCard = ({
               bgBox={SALE_STATISTICAL[id]?.bgIcon}
               icon={SALE_STATISTICAL[id]?.icon}
             />
-            <Flex className="pl-[90px] flex-col mb-1 items-end">
+            <Flex
+              flexDirection="col"
+              alignItems="end"
+              className="pl-[90px] mb-1">
               <Text className="text-md dark:text-dark-romance text-secondary font-light">
                 {type}
               </Text>
@@ -73,7 +76,10 @@ const AnalyticsStatisticCard = ({
           </Flex>
           <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-4" />
           <Flex>
-            <Flex className="justify-start items-start tracking-[0.4px]">
+            <Flex
+              justifyContent="start"
+              alignItems="start"
+              className="tracking-[0.4px]">
               <Text className="text-few dark:text-few leading-[21px] font-bold">
                 {formatAdjustNumber({
                   value: amountChange,

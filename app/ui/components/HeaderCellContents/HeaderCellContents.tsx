@@ -46,8 +46,8 @@ const HeaderCellContents = ({
     <Flex>
       <Flex>{title}</Flex>
       {sortable && (
-        <Flex className="relative flex-col ml-4 -mt-6">
-          <Flex className="absolute top-0 justify-end">
+        <Flex flexDirection="col" className="relative ml-4 -mt-6">
+          <Flex justifyContent="end" className="absolute top-0">
             <Button
               className="justify-center items-center opacity-50 dark:opacity-100"
               variant="light">
@@ -56,7 +56,7 @@ const HeaderCellContents = ({
               />
             </Button>
           </Flex>
-          <Flex className="absolute top-1.5 justify-end">
+          <Flex justifyContent="end" className="absolute top-1.5">
             <Button
               className="justify-center items-center opacity-50 dark:opacity-100"
               variant="light">

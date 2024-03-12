@@ -14,7 +14,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           Minimal Bar Stool
         </p>
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-2"
         >
           <svg
             class="text-secondary dark:text-lighter"
@@ -156,7 +156,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         Minimal Bar Stool
       </p>
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-start gap-2"
+        class="tremor-Flex-root flex w-full flex-row justify-start items-center gap-2"
       >
         <svg
           class="text-secondary dark:text-lighter"

@@ -11,7 +11,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
         Platform Settings
       </p>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start"
       />
     </div>
   </body>,
@@ -22,7 +22,7 @@ exports[`PlatformSetting component Should render PlatformSetting snapshot correc
       Platform Settings
     </p>
     <div
-      class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start"
     />
   </div>,
   "debug": [Function],

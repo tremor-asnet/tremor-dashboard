@@ -3,10 +3,10 @@
 exports[`ProjectInfoCard Component render ProjectInfoCard component with snapshot correctly 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full flex-wrap justify-start flex-row items-start gap-y-12 md:grid md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-4"
+    class="tremor-Flex-root flex w-full flex-row justify-start items-start flex-wrap gap-y-12 md:grid md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-4"
   >
     <div
-      class="tremor-Flex-root flex w-full justify-start flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -25,7 +25,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -106,7 +106,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       </div>
     </div>
     <div
-      class="tremor-Flex-root flex w-full justify-start flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -125,7 +125,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -206,7 +206,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       </div>
     </div>
     <div
-      class="tremor-Flex-root flex w-full justify-start flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -225,7 +225,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"
@@ -306,7 +306,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
       </div>
     </div>
     <div
-      class="tremor-Flex-root flex w-full justify-start flex-col items-start"
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -325,7 +325,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
         />
       </div>
       <div
-        class="tremor-Flex-root flex w-full justify-start flex-col items-start pt-4 pl-2"
+        class="tremor-Flex-root flex w-full flex-col justify-start items-start pt-4 pl-2"
       >
         <p
           class="text-tremor-default text-tremor-content capitalize font-normal dark:text-dark-tremor-content-romance"

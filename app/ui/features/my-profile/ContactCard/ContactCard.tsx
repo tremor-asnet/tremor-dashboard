@@ -31,7 +31,7 @@ const ContactCard = ({
 
   return (
     <div>
-      <Flex className="text-secondary mb-4 flex flex-wrap xs:flex-nowrap">
+      <Flex className="text-secondary mb-4 flex-wrap xs:flex-nowrap">
         <Text className="text-tremor-title text-tremor-content-title dark:text-dark-tremor-content-title leading-relaxed font-bold tracking-[0.0075em] opacity-100 capitalize no-underline text-primary py-4">
           Profile Information
         </Text>
@@ -39,13 +39,15 @@ const ContactCard = ({
           <FaPen />
         </Link>
       </Flex>
-      <Flex className="flex-col flex-wrap items-baseline xs:flex-nowrap">
+      <Flex
+        flexDirection="col"
+        className="flex-wrap items-baseline xs:flex-nowrap">
         <Text className="font-light leading-normal text-tremor-content-title dark:text-dark-tremor-content-romance uppercase opacity-100 normal-case tracking-[0.02857em]">
           {information}
         </Text>
         <div className="h-px w-full dark:bg-gradient-divider bg-gradient-line my-4 opacity-25" />
         {/* TODO: Refactor code */}
-        <Flex className="justify-start gap-3">
+        <Flex justifyContent="start" className="gap-3">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Full Name:
           </Text>
@@ -53,7 +55,7 @@ const ContactCard = ({
             {fullName}
           </Text>
         </Flex>
-        <Flex className="justify-start gap-3">
+        <Flex justifyContent="start" className="gap-3">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Mobile:
           </Text>
@@ -61,7 +63,7 @@ const ContactCard = ({
             {phone}
           </Text>
         </Flex>
-        <Flex className="justify-start gap-3">
+        <Flex justifyContent="start" className="gap-3">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Email:
           </Text>
@@ -71,7 +73,7 @@ const ContactCard = ({
             </Text>
           </Link>
         </Flex>
-        <Flex className="justify-start gap-3">
+        <Flex justifyContent="start" className="gap-3">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize my-2">
             Location:
           </Text>
@@ -79,11 +81,11 @@ const ContactCard = ({
             {location}
           </Text>
         </Flex>
-        <Flex className="justify-start gap-3 gap-2 pr-4 py-2">
+        <Flex justifyContent="start" className="gap-3 gap-2 pr-4 py-2">
           <Text className="font-bold text-primary dark:text-dark-primary tracking-[0.02857em] capitalize">
             Social:
           </Text>
-          <Flex className="justify-start">
+          <Flex justifyContent="start">
             <Link href={facebook} className="pl-1 pr-2">
               <IoLogoFacebook
                 size={18}

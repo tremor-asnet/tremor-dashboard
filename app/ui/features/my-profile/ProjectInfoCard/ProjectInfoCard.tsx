@@ -28,7 +28,11 @@ interface ProjectInfoCardProps {
 export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
   const renderProjectCards = links.map(
     ({ id, cover, description, participants, primaryName, secondaryName }) => (
-      <Flex key={id} className="justify-start flex-col items-start">
+      <Flex
+        key={id}
+        justifyContent="start"
+        flexDirection="col"
+        alignItems="start">
         <Flex>
           <Image
             className="w-full rounded-xl shadow-lg"
@@ -38,7 +42,11 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
             alt={primaryName}
           />
         </Flex>
-        <Flex className="justify-start flex-col items-start pt-4 pl-2">
+        <Flex
+          justifyContent="start"
+          flexDirection="col"
+          alignItems="start"
+          className="pt-4 pl-2">
           <Text className="capitalize font-normal dark:text-dark-tremor-content-romance">
             {secondaryName}
           </Text>
@@ -79,7 +87,10 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
   );
 
   return (
-    <Flex className="flex-wrap justify-start flex-row items-start gap-y-12 md:grid md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-4">
+    <Flex
+      justifyContent="start"
+      alignItems="start"
+      className="flex-wrap gap-y-12 md:grid md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-8 2xl:grid-cols-4">
       {renderProjectCards}
     </Flex>
   );

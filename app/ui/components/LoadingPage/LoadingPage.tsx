@@ -8,9 +8,7 @@ const LoadingPage = ({
 }: {
   width?: number;
   height?: number;
-  isFullWidth?: boolean;
   fillColor?: string;
-  additionalClass?: string;
 }) => (
   <Flex justifyContent="center" className="grow w-full">
     <Flex flexDirection="col" className="grow w-full h-full">

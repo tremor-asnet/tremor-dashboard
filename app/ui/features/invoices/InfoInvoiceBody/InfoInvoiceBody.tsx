@@ -19,29 +19,29 @@ const InfoInvoice = ({ id, createdAt, dueAt }: InfoInvoiceProps) => {
   return (
     <Flex className="mb-7 flex-col md:flex-row items-start md:items-center print:flex-row">
       <div className="w-full mb-5 md:mb-0">
-        <Title className="font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+        <Title className="font-normal dark:text-lighter text-secondary dark:print:text-lighter">
           Invoice no
         </Title>
         <Link
           href="#"
-          className="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-primary">
+          className="text-tremor-primary text-primary dark:text-white leading-relaxed font-bold tracking-wide no-underline dark:print:text-white">
           #{id}
         </Link>
       </div>
       <div className="w-full">
         <Flex className="flex-col md:flex-row mb-1 md:mb-0 print:flex-row">
-          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-lighter">
             Invoice date:
           </Title>
-          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-primary">
+          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-white">
             {formattedCreateAt}
           </Text>
         </Flex>
         <Flex className="flex-col md:flex-row print:flex-row">
-          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-secondary">
+          <Title className="w-full mb-1 md:mb-0 text-left md:text-end font-normal dark:text-lighter text-secondary dark:print:text-lighter">
             Due date:
           </Title>
-          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-primary">
+          <Text className="w-full text-left md:text-end text-tremor-title text-primary font-semibold dark:text-white dark:print:text-white">
             {formattedDueAt}
           </Text>
         </Flex>

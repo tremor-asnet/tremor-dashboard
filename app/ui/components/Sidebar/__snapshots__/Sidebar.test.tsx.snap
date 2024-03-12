@@ -9,7 +9,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
         class="sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in translate-x-0 xl:w-[100px] delay-10 duration-300"
       >
         <div
-          class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+          class="tremor-Flex-root flex w-full flex-row justify-end items-center"
         >
           <div
             class="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"
@@ -240,7 +240,7 @@ exports[`Sidebar component Should render Sidebar snapshot correctly 1`] = `
       class="sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in translate-x-0 xl:w-[100px] delay-10 duration-300"
     >
       <div
-        class="tremor-Flex-root flex w-full flex-row items-center justify-end"
+        class="tremor-Flex-root flex w-full flex-row justify-end items-center"
       >
         <div
           class="border p-1 rounded-s-md -mr-4 bg-white cursor-pointer"

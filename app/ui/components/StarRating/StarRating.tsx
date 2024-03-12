@@ -20,7 +20,7 @@ const StarRating = ({
     : rangeNumber(1, numberStar - 1);
 
   return (
-    <Flex className="justify-start gap-2">
+    <Flex justifyContent="start" className="gap-2">
       {arrayStars.map((star: number) => (
         <FaStar
           key={star}

@@ -15,7 +15,7 @@ const LoadingIndicator = ({
 }) =>
   isFullWidth ? (
     <div className="fixed bg-[rgba(0,0,0,0.5)] overflow-hidden w-full h-full inset-0 z-50 cursor-not-allowed">
-      <Flex className="justify-center items-center h-full">
+      <Flex justifyContent="center" className="h-full">
         <div role="status">
           <svg
             aria-hidden="true"

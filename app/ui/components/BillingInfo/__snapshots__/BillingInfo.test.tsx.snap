@@ -11,7 +11,7 @@ exports[`Testing BillingInfo component Should match snapshot 1`] = `
       Oliver Liam
     </span>
     <div
-      class="tremor-Flex-root flex w-full justify-between items-center flex-col mt-4 gap-3"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-4 gap-3"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"

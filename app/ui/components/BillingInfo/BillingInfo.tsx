@@ -67,7 +67,9 @@ const BillingInfo = ({
         <span className="text-primary text-tremor-default font-semibold dark:text-white">
           {ownerName}
         </span>
-        <Flex className="flex-col mt-4 gap-3">{renderBillInfoData}</Flex>
+        <Flex flexDirection="col" className="mt-4 gap-3">
+          {renderBillInfoData}
+        </Flex>
       </Flex>
     </>
   );

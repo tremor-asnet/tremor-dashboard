@@ -6,13 +6,13 @@ exports[`InvoiceBody Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-end invoice-body"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full justify-between invoice-body flex-col items-end"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-end invoice-body"
     />
   </div>,
   "debug": [Function],

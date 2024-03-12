@@ -8,7 +8,7 @@ const InvoiceLogo = ({
   height?: number;
 }) => (
   <div
-    className={`w-${width} h-${height} bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] ${additionalClasses}`}></div>
+    className={`w-${width} h-${height} bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] print:dark:bg-[url('/assets/images/logo/logo-td-light.webp')] ${additionalClasses}`}></div>
 );
 
 export default InvoiceLogo;

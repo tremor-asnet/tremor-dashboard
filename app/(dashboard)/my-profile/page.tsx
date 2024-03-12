@@ -31,7 +31,10 @@ const Profile = async () => {
       <div className='bg-[linear-gradient(195deg,rgba(73,163,241,0.6),rgba(26,115,232,0.6)),url("/images/backgrounds/bg-profile.webp")] bg-cover bg-no-repeat bg-center min-h-[300px] pb-8 md:min-w-[320px] overflow-hidden p-4 rounded-xl'></div>
       <div className="mx-6 -mt-16">
         <Card className="dark:bg-dark-tremor-primary ring-0">
-          <Flex className="flex-col md:flex-row items-start md:items-center">
+          <Flex
+            flexDirection="col"
+            alignItems="start"
+            className="md:flex-row md:items-center">
             {/* Header */}
             <ProfileInfo
               name={profileData.name}
@@ -40,8 +43,14 @@ const Profile = async () => {
             />
           </Flex>
           {/* Main content */}
-          <Flex className="flex-col items-start my-6 md:flex-row md:flex-wrap lg:flex-wrap lg:gap-5 xl:flex-nowrap">
-            <Flex className="flex-col items-start md:flex-row md:gap-4 lg:gap-10">
+          <Flex
+            flexDirection="col"
+            alignItems="start"
+            className="my-6 md:flex-row md:flex-wrap lg:flex-wrap lg:gap-5 xl:flex-nowrap">
+            <Flex
+              flexDirection="col"
+              alignItems="start"
+              className="md:flex-row md:gap-4 lg:gap-10">
               {/* Platform Setting */}
               <div className="w-full md:basis-2/4">
                 <PlatformSetting
@@ -71,7 +80,7 @@ const Profile = async () => {
             </div>
           </Flex>
           {/* Projects */}
-          <Flex className="flex-col items-start">
+          <Flex flexDirection="col" alignItems="start">
             <Text className="text-tremor-content-title dark:text-dark-tremor-content-title font-semibold text-tremor-title">
               Projects
             </Text>

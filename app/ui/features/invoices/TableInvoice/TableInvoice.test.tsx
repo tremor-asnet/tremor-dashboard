@@ -16,24 +16,21 @@ jest.mock("next/navigation", () => ({
 }));
 
 describe("TableInvoice Component", () => {
+  const { products, totalCost } = INVOICE_DATA;
+
+  const mockProps = {
+    details: products,
+    totalCost: totalCost,
+  };
+
   it("should match snapshot", () => {
-    const { container } = render(
-      <TableInvoice
-        details={INVOICE_DATA.products}
-        totalCost={INVOICE_DATA.totalCost}
-      />,
-    );
+    const { container } = render(<TableInvoice {...mockProps} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it("renders table with correct data", () => {
-    const container = render(
-      <TableInvoice
-        details={INVOICE_DATA.products}
-        totalCost={INVOICE_DATA.totalCost}
-      />,
-    );
+    const container = render(<TableInvoice {...mockProps} />);
 
     INVOICE_DATA.products.forEach(detail => {
       expect(container.getByText(detail.productName)).toBeInTheDocument();

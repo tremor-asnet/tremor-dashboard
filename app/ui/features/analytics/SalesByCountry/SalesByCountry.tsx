@@ -26,7 +26,10 @@ const SalesByCountry = ({ title, isAnalytics, data }: SalesByCountryProps) => {
           </Flex>
         )}
         <Flex
-          className={`flex-col items-start justify-start mt-4 ${titleClass}`}>
+          flexDirection="col"
+          alignItems="start"
+          justifyContent="start"
+          className={`mt-4 ${titleClass}`}>
           <Title className="text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]">
             {title}
           </Title>
@@ -34,8 +37,15 @@ const SalesByCountry = ({ title, isAnalytics, data }: SalesByCountryProps) => {
       </Flex>
       <Flex
         className={`relative mt-6 md:mt-0 py-0 flex-col md:flex-row ${tableContainerClass}`}>
-        <Flex className="flex-col items-start justify-start mb-6 lg:mb-0">
-          <Flex className="items-start justify-start border-0 border-b border-gray-100 last:border-transparent">
+        <Flex
+          flexDirection="col"
+          alignItems="start"
+          justifyContent="start"
+          className="mb-6 lg:mb-0">
+          <Flex
+            alignItems="start"
+            justifyContent="start"
+            className="border-0 border-b border-gray-100 last:border-transparent">
             <Table className="w-full">
               <TableBody className="last-child:border-black">
                 {listData.map(item => (
@@ -54,7 +64,7 @@ const SalesByCountry = ({ title, isAnalytics, data }: SalesByCountryProps) => {
           </Flex>
         </Flex>
         {isAnalytics && (
-          <Flex className="justify-center pb-6 px-12 md:p-0 map">
+          <Flex justifyContent="center" className="pb-6 px-12 md:p-0 map">
             <WorldMapCanvas />
           </Flex>
         )}

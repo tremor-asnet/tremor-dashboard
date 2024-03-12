@@ -478,7 +478,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4"
             />
             <div
-              class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+              class="tremor-Flex-root flex w-full flex-row justify-start items-center"
             >
               <svg
                 class="text-secondary dark:text-dark-romance"
@@ -986,7 +986,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
             class="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4"
           />
           <div
-            class="tremor-Flex-root flex w-full flex-row items-center justify-start"
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center"
           >
             <svg
               class="text-secondary dark:text-dark-romance"

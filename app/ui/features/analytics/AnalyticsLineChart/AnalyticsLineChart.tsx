@@ -97,7 +97,7 @@ const AnalyticsLineChart = ({
             </Popover>
           </div>
           <div className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4" />
-          <Flex className="justify-start">
+          <Flex justifyContent="start">
             <FaRegClock
               size={12}
               className="text-secondary dark:text-dark-romance"

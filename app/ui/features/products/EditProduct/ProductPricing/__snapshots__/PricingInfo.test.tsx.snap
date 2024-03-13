@@ -5,8 +5,8 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <form
-        class="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info"
+      <div
+        class="w-full h-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
@@ -14,52 +14,52 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
           Pricing
         </p>
         <div
-          class="tremor-Flex-root flex w-full justify-between flex-col items-end"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-end"
         >
           <div
-            class="tremor-Flex-root flex w-full justify-between items-start flex-col sm:flex-row"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start sm:flex-row"
           >
             <div
-              class="tremor-Flex-root flex w-full justify-between items-center flex-col"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center"
             >
               <div
-                class="tremor-Flex-root flex w-full justify-between items-center flex-col sm:flex-row"
+                class="tremor-Flex-root flex w-full flex-col justify-between items-center sm:flex-row"
               >
                 <div
-                  class="h-[70px] w-full md:max-w-[25%]"
+                  class="w-full mb-2 md:mb-0"
                 >
-                  <p
-                    class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                  >
-                    Price
-                  </p>
                   <div
-                    class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                    class="w-full"
                   >
+                    <label
+                      class="text-secondary text-sm dark:text-lighter"
+                      for="edit-price"
+                    >
+                      Price
+                    </label>
                     <input
-                      class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                      data-testid="base-input"
-                      id="price"
-                      placeholder="Price"
-                      required=""
-                      type="text"
+                      class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                      id="edit-price"
+                      placeholder=""
+                      type="number"
                       value=""
                     />
                   </div>
                 </div>
                 <div
-                  class="h-[70px] mx-6 w-full md:max-w-[30%]"
+                  class="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6"
                 >
                   <div
-                    class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+                    class="w-full"
                   >
-                    <p
-                      class="text-tremor-default text-secondary h-5 mb-3 dark:text-lighter"
-                    />
+                    <label
+                      class="text-secondary text-sm dark:text-lighter"
+                    >
+                      Currency
+                    </label>
                     <div
-                      class="min-w-[10rem] relative text-tremor-default py-1 select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                      class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
                       data-headlessui-state=""
-                      id="usd"
                     >
                       <button
                         aria-expanded="false"
@@ -72,7 +72,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                         <span
                           class="w-[90%] block truncate"
                         >
-                          USD
+                          Select...
                         </span>
                         <span
                           class="absolute inset-y-0 right-0 flex items-center mr-3"
@@ -97,23 +97,21 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="h-[70px] w-full"
+                  class="w-full"
                 >
-                  <p
-                    class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                  >
-                    SKU
-                  </p>
                   <div
-                    class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                    class="w-full"
                   >
+                    <label
+                      class="text-secondary text-sm dark:text-lighter"
+                      for="edit-sku"
+                    >
+                      SKU
+                    </label>
                     <input
-                      class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                      data-testid="base-input"
-                      id="sku"
-                      placeholder="SKU"
-                      required=""
-                      type="text"
+                      class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                      id="edit-sku"
+                      placeholder=""
                       value=""
                     />
                   </div>
@@ -122,11 +120,11 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
               <div
                 class="w-full mb-4 mt-6"
               >
-                <p
-                  class="text-tremor-default text-secondary dark:text-white"
+                <label
+                  class="text-gray-500 text-sm dark:text-gray-400"
                 >
                   Tags
-                </p>
+                </label>
                 <div
                   class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                   data-headlessui-state=""
@@ -134,7 +132,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   <button
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
+                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
                     data-headlessui-state=""
                     id="headlessui-listbox-button-:r1:"
                     type="button"
@@ -142,9 +140,9 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     <div
                       class="h-6 flex items-center"
                     >
-                      <div
-                        class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
-                      />
+                      <span>
+                        Select...
+                      </span>
                     </div>
                     <span
                       class="absolute inset-y-0 right-0 flex items-center mr-2.5"
@@ -165,34 +163,17 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                       </svg>
                     </span>
                   </button>
-                  <button
-                    class="absolute inset-y-0 right-0 flex items-center mr-8"
-                    type="button"
-                  >
-                    <svg
-                      class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <form
-      class="w-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info"
+    <div
+      class="w-full h-full p-4 bg-white dark:bg-dark-tremor-primary rounded-lg w-[67%] shadow-box-icon-default pricing-info"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
@@ -200,52 +181,52 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
         Pricing
       </p>
       <div
-        class="tremor-Flex-root flex w-full justify-between flex-col items-end"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-end"
       >
         <div
-          class="tremor-Flex-root flex w-full justify-between items-start flex-col sm:flex-row"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start sm:flex-row"
         >
           <div
-            class="tremor-Flex-root flex w-full justify-between items-center flex-col"
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center"
           >
             <div
-              class="tremor-Flex-root flex w-full justify-between items-center flex-col sm:flex-row"
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center sm:flex-row"
             >
               <div
-                class="h-[70px] w-full md:max-w-[25%]"
+                class="w-full mb-2 md:mb-0"
               >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  Price
-                </p>
                 <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-border border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  class="w-full"
                 >
+                  <label
+                    class="text-secondary text-sm dark:text-lighter"
+                    for="edit-price"
+                  >
+                    Price
+                  </label>
                   <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="price"
-                    placeholder="Price"
-                    required=""
-                    type="text"
+                    class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                    id="edit-price"
+                    placeholder=""
+                    type="number"
                     value=""
                   />
                 </div>
               </div>
               <div
-                class="h-[70px] mx-6 w-full md:max-w-[30%]"
+                class="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6"
               >
                 <div
-                  class="tremor-Flex-root flex w-full justify-between flex-col items-start"
+                  class="w-full"
                 >
-                  <p
-                    class="text-tremor-default text-secondary h-5 mb-3 dark:text-lighter"
-                  />
+                  <label
+                    class="text-secondary text-sm dark:text-lighter"
+                  >
+                    Currency
+                  </label>
                   <div
-                    class="min-w-[10rem] relative text-tremor-default py-1 select-custom w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-gray hover:border-black active:border-black focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
                     data-headlessui-state=""
-                    id="usd"
                   >
                     <button
                       aria-expanded="false"
@@ -258,7 +239,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                       <span
                         class="w-[90%] block truncate"
                       >
-                        USD
+                        Select...
                       </span>
                       <span
                         class="absolute inset-y-0 right-0 flex items-center mr-3"
@@ -283,23 +264,21 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="h-[70px] w-full"
+                class="w-full"
               >
-                <p
-                  class="text-tremor-default text-secondary dark:text-lighter mb-2"
-                >
-                  SKU
-                </p>
                 <div
-                  class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input dark:hover:bg-dark-tremor-background-muted text-tremor-content border-tremor-brand-subtle ring-tremor-brand-muted dark:ring-dark-tremor-brand-muted border py-1 w-full dark:text-white bg-transparent dark:bg-transparent focus:bg-transparent rounded-b-none border-l-0 border-r-0 border-t-0 border-b focus:outline-none focus:border-tremor-brand-subtle dark:border-light dark:focus:border-white shadow-none hover:bg-transparent ring-0"
+                  class="w-full"
                 >
+                  <label
+                    class="text-secondary text-sm dark:text-lighter"
+                    for="edit-sku"
+                  >
+                    SKU
+                  </label>
                   <input
-                    class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
-                    data-testid="base-input"
-                    id="sku"
-                    placeholder="SKU"
-                    required=""
-                    type="text"
+                    class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                    id="edit-sku"
+                    placeholder=""
                     value=""
                   />
                 </div>
@@ -308,11 +287,11 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
             <div
               class="w-full mb-4 mt-6"
             >
-              <p
-                class="text-tremor-default text-secondary dark:text-white"
+              <label
+                class="text-gray-500 text-sm dark:text-gray-400"
               >
                 Tags
-              </p>
+              </label>
               <div
                 class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
                 data-headlessui-state=""
@@ -320,7 +299,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                 <button
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border dark:border-dark-tremor-border"
+                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
                   data-headlessui-state=""
                   id="headlessui-listbox-button-:r1:"
                   type="button"
@@ -328,9 +307,9 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   <div
                     class="h-6 flex items-center"
                   >
-                    <div
-                      class="flex flex-nowrap overflow-x-scroll [&::-webkit-scrollbar]:hidden [scrollbar-width:none] gap-x-1 mr-5 -ml-1.5 relative"
-                    />
+                    <span>
+                      Select...
+                    </span>
                   </div>
                   <span
                     class="absolute inset-y-0 right-0 flex items-center mr-2.5"
@@ -351,29 +330,12 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     </svg>
                   </span>
                 </button>
-                <button
-                  class="absolute inset-y-0 right-0 flex items-center mr-8"
-                  type="button"
-                >
-                  <svg
-                    class="tremor-MultiSelect-clearIconAllItems flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
-                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </form>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

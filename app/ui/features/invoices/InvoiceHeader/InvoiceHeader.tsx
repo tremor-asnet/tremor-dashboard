@@ -67,7 +67,7 @@ export const InvoiceHeader = ({
         </Title>
         <Link
           href={`tel:${phoneBank}`}
-          className="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-secondary">
+          className="text-secondary print:text-black text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-black">
           tel: {phoneBank}
         </Link>
       </Flex>
@@ -78,7 +78,7 @@ export const InvoiceHeader = ({
         <Title className="text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary">
           Billed to: {fullName}
         </Title>
-        <Text className="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary">
+        <Text className="text-secondary print:text-black text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-black">
           {addressCustomer}
           <br /> {cityCustomer} {stateCode}
           <br /> {stateCustomer}

@@ -38,7 +38,7 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
         123 Bank Street Bucharest, Romania
       </p>
       <a
-        class="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-secondary"
+        class="text-secondary print:text-black text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-black"
         href="tel:+4 (074) 1090873"
       >
         tel: 
@@ -55,7 +55,7 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
         John Doe
       </p>
       <p
-        class="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary"
+        class="text-secondary print:text-black text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-black"
       >
         4006 Locust View Drive
         <br />

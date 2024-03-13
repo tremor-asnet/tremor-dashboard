@@ -14,12 +14,12 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
         Thank you!
       </p>
       <p
-        class="text-tremor-default dark:text-dark-romance font-light text-secondary leading-5 my-2 dark:print:text-secondary"
+        class="text-tremor-default dark:text-dark-romance font-light text-secondary leading-5 my-2 print:text-black dark:print:text-black"
       >
         If you encounter any issues related to the invoice you can contact us at:
       </p>
       <p
-        class="text-tremor-title dark:text-dark-romance text-secondary leading-5 mt-4 dark:print:text-secondary"
+        class="text-tremor-title dark:text-dark-romance text-secondary leading-5 mt-4 print:text-black dark:print:text-black"
       >
         email:
          

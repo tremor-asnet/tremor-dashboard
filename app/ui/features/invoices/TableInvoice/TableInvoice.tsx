@@ -35,7 +35,7 @@ const TableInvoice = ({
       key: "name",
       title: "Item",
       customNode: (_, { productName }) => (
-        <Text className="max-w-[250px] md:max-w-sm truncate print:text-secondary dark:print:!text-secondary">
+        <Text className="max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black">
           {productName}
         </Text>
       ),
@@ -45,7 +45,7 @@ const TableInvoice = ({
       key: "quantity",
       title: "Qty",
       customNode: (_, { quantity }) => (
-        <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
+        <Text className="dark:text-lighter print:text-black dark:print:!text-black">
           {quantity}
         </Text>
       ),
@@ -56,7 +56,7 @@ const TableInvoice = ({
       title: "Rate",
       customNode: (_, { price }) => (
         <div>
-          <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
+          <Text className="dark:text-lighter print:text-black dark:print:!text-black">
             {moneyFormat({
               value: price,
               currency: CURRENCY.DOLLAR,
@@ -75,7 +75,7 @@ const TableInvoice = ({
       title: "Amount",
       customNode: (_, { price, quantity }) => (
         <div>
-          <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
+          <Text className="dark:text-lighter print:text-black dark:print:!text-black">
             {moneyFormat({
               value: price * quantity,
               currency: CURRENCY.DOLLAR,

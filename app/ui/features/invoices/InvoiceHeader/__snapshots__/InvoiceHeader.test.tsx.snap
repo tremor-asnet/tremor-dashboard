@@ -3,22 +3,42 @@
 exports[`InvoiceHeader component should render snapshot correctly 1`] = `
 <div>
   <div
-    class="tremor-Flex-root flex w-full flex-col justify-between items-center md:flex-row mb-10 md:mb-20"
+    class="tremor-Flex-root flex w-full justify-between items-center flex-col md:flex-row mb-10 md:mb-20"
   >
     <div
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:max-w-[35%]"
     >
-      <div
-        class="w-16 h-16 bg-contain bg-[url('/assets/images/logo/logo-td-dark.webp')] dark:bg-[url('/assets/images/logo/logo-td-light.webp')] print:dark:bg-[url('/assets/images/logo/logo-td-light.webp')] w-20 h-20 md:w-10 md:h-10"
+      <img
+        alt="print-logo"
+        class="block print:hidden"
+        data-nimg="1"
+        decoding="async"
+        height="50"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=128&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=64&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=128&q=75 2x"
+        style="color: transparent;"
+        width="50"
       />
-       
+      <img
+        alt="print-logo"
+        class="print-logo hidden"
+        data-nimg="1"
+        decoding="async"
+        height="50"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=128&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=64&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F87R6BcQ%2Flogo-td-dark.webp&w=128&q=75 2x"
+        style="color: transparent;"
+        width="50"
+      />
       <p
-        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-white"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary"
       >
         123 Bank Street Bucharest, Romania
       </p>
       <a
-        class="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-dark-romance"
+        class="text-secondary text-base dark:text-dark-romance font-primary font-light leading-6 tracking-wide mt-2 mb-6 md:mb-4 dark:print:text-secondary"
         href="tel:+4 (074) 1090873"
       >
         tel: 
@@ -29,13 +49,13 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
       class="tremor-Flex-root flex w-full flex-col justify-between items-start md:items-end md:mt-0"
     >
       <p
-        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-white"
+        class="text-tremor-title text-primary dark:text-white font-semibold leading-6 tracking-wide dark:print:text-primary"
       >
         Billed to: 
         John Doe
       </p>
       <p
-        class="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-dark-romance"
+        class="text-secondary text-tremor-title dark:text-dark-romance font-primary font-light leading-6 tracking-wide md:text-right dark:print:text-secondary"
       >
         4006 Locust View Drive
         <br />

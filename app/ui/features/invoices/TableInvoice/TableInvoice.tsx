@@ -35,7 +35,7 @@ const TableInvoice = ({
       key: "name",
       title: "Item",
       customNode: (_, { productName }) => (
-        <Text className="max-w-[250px] md:max-w-sm truncate dark:text-lighter print:text-secondary dark:print:text-lighter">
+        <Text className="max-w-[250px] md:max-w-sm truncate print:text-secondary dark:print:!text-secondary">
           {productName}
         </Text>
       ),
@@ -45,7 +45,7 @@ const TableInvoice = ({
       key: "quantity",
       title: "Qty",
       customNode: (_, { quantity }) => (
-        <Text className="dark:text-lighter print:text-secondary dark:print:text-lighter">
+        <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
           {quantity}
         </Text>
       ),
@@ -56,14 +56,14 @@ const TableInvoice = ({
       title: "Rate",
       customNode: (_, { price }) => (
         <div>
-          <Text className="dark:text-lighter print:text-secondary dark:print:text-lighter">
+          <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
             {moneyFormat({
               value: price,
               currency: CURRENCY.DOLLAR,
               delimiter: " ",
             })}
           </Text>
-          <Text className="total hidden mt-6 dark:!text-white dark:print:!text-white">
+          <Text className="total hidden mt-6 dark:!text-white dark:print:!text-primary">
             Total
           </Text>
         </div>
@@ -75,7 +75,7 @@ const TableInvoice = ({
       title: "Amount",
       customNode: (_, { price, quantity }) => (
         <div>
-          <Text className="dark:text-lighter print:text-secondary dark:print:text-lighter">
+          <Text className="dark:text-lighter print:text-secondary dark:print:!text-secondary">
             {moneyFormat({
               value: price * quantity,
               currency: CURRENCY.DOLLAR,
@@ -83,7 +83,7 @@ const TableInvoice = ({
             })}
           </Text>
           <Text
-            className="total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-white"
+            className="total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
             data-testid="total-price">
             {moneyFormat({
               value: totalCost,

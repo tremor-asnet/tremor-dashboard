@@ -24,7 +24,9 @@ jest.mock("react-hook-form", () => {
       return (
         <>
           {props.render({
-            field: {},
+            field: {
+              value: [],
+            },
             formState: {
               errors: {},
             },

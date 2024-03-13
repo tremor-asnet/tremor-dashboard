@@ -11,10 +11,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         Conversations
       </p>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+          class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
@@ -65,10 +65,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+          class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
@@ -119,10 +119,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+          class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
@@ -173,10 +173,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+          class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
@@ -227,10 +227,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
         </button>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
       >
         <div
-          class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+          class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
         >
           <div
             class="w-12 h-12"
@@ -289,10 +289,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       Conversations
     </p>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+        class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
@@ -343,10 +343,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+        class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
@@ -397,10 +397,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+        class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
@@ -451,10 +451,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+        class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"
@@ -505,10 +505,10 @@ exports[`ConversationHistory component Should render ConversationHistory snapsho
       </button>
     </div>
     <div
-      class="tremor-Flex-root flex w-full flex-row justify-between mb-2 py-2 items-center xs:flex-nowrap max-w-[100%]"
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center mb-2 py-2 xs:flex-nowrap max-w-[100%]"
     >
       <div
-        class="tremor-Flex-root flex flex-row items-center justify-start w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
+        class="tremor-Flex-root flex flex-row justify-start items-center w-[calc(100%-40px)] sm:w-[calc(100%-70px)]"
       >
         <div
           class="w-12 h-12"

@@ -2,7 +2,7 @@
 
 import { METADATA } from "@/constants";
 // Import libs
-import { Flex } from "@tremor/react";
+import { Flex, Button } from "@tremor/react";
 import Image from "next/image";
 
 // Components
@@ -31,9 +31,11 @@ const PaymentDetails = ({ cardLast4Digit }: { cardLast4Digit: string }) => {
           <Popover
             content="We do not store card details"
             className="text-center !bg-black !bottom-[-50px] min-w-[200px] rounded-md text-white right-[-50px] sm:right-[-60px] lg:right-[-82px] before:content-['▲'] before:absolute before:top-[-15px] before:right-[54px] sm:before:right-[64px] lg:before:right-[86px] before:text-[black]">
-            <button className="w-6 h-6 text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content">
+            <Button
+              variant="light"
+              className="w-6 h-6 text-dark-tremor-content-slate dark:text-dark-tremor-content-slate dark:hover:text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content">
               !
-            </button>
+            </Button>
           </Popover>
         </div>
       </Flex>

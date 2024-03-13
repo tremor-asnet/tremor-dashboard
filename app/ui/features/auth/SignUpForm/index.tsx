@@ -206,7 +206,7 @@ const SignUpForm = () => {
                   type="password"
                   className="py-1 w-full rounded-b-none border-l-0 border-r-0 border-t-0 border-b-1 dark:border-white focus:border-b-2 focus:outline-none focus:border-tremor-brand-subtle shadow-none hover:bg-transparent dark:bg-transparent dark:hover:bg-transparent ring-0"
                   required
-                  tabIndex={1}
+                  tabIndex={0}
                   {...field}
                 />
                 {passwordErrorMessage && (
@@ -240,12 +240,14 @@ const SignUpForm = () => {
                     id="termsAndConditions"
                     onChange={onChange}
                     checked={value}
-                    tabIndex={2}
+                    tabIndex={0}
                     disabled={isPending}
+                    aria-label="Terms And Conditions"
                   />
-                  <Text className="text-xs xs:text-sm text-secondary dark:text-dark-romance font-normal">
+                  <Text className="text-xs xs:text-sm text-purple dark:text-dark-romance font-normal">
                     I agree the{" "}
                     <Link
+                      tabIndex={0}
                       href="#"
                       className="no-underline text-primary dark:text-white font-bold">
                       Terms and conditions
@@ -263,7 +265,7 @@ const SignUpForm = () => {
           name="termsAndConditions"
         />
         <Button
-          tabIndex={3}
+          tabIndex={0}
           type="submit"
           className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
@@ -277,11 +279,11 @@ const SignUpForm = () => {
           )}
         </Button>
         <Flex justifyContent="center" className="mt-8 mb-2">
-          <Text className="text-secondary dark:text-dark-romance text-xs xs:text-sm font-light">
+          <Text className="text-purple dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?
           </Text>
           <Link
-            tabIndex={4}
+            tabIndex={0}
             className="text-primary dark:text-white font-semibold text-xs xs:text-sm ml-1"
             href={ROUTES.SIGN_IN}>
             Sign In

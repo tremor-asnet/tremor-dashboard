@@ -11,9 +11,11 @@
     "build-storybook": "storybook build",
     "test": "jest --passWithNoTests",
     "test:update": "jest --passWithNoTests --updateSnapshot",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@milahu/patch-package": "^6.4.14",
     "@storybook/addon-knobs": "^7.0.2",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tremor/react": "^3.11.1",
@@ -21,6 +23,7 @@
     "dayjs": "^1.11.10",
     "next": "14.0.5-canary.53",
     "next-auth": "5.0.0-beta.4",
+    "postinstall-postinstall": "^2.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.48.2",

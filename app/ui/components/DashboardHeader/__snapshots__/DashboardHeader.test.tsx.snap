@@ -47,6 +47,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                   class="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
                 >
                   <a
+                    aria-label="Home Route"
                     href="/analytics"
                   >
                     <svg
@@ -177,6 +178,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                 class="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
               >
                 <a
+                  aria-label="Home Route"
                   href="/analytics"
                 >
                   <svg

@@ -16,6 +16,7 @@ import {
   List,
   ListItem,
   Text,
+  Button,
 } from "@tremor/react";
 
 // Components
@@ -169,11 +170,12 @@ const SideBar = ({
                   <Flex
                     className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
                     <span className="w-5">L</span>
-                    <button
+                    <Button
                       onClick={onSignOut}
-                      className={`${hiddenOpenClass} w-full text-start`}>
+                      className={`${hiddenOpenClass} w-full text-start pl-2 justify-start text-lighter hover:text-lighter dark:text-white dark:hover:text-white`}
+                      variant="light">
                       Logout
-                    </button>
+                    </Button>
                   </Flex>
                 </ListItem>
               </List>

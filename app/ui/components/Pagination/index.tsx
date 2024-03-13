@@ -3,7 +3,7 @@ import { HiMiniChevronLeft, HiMiniChevronRight } from "react-icons/hi2";
 import { RxDotsHorizontal } from "react-icons/rx";
 
 // Components
-import { Text } from "@tremor/react";
+import { Text, Button } from "@tremor/react";
 
 interface PaginationProps {
   onPageChange: (page: number) => void;
@@ -57,8 +57,8 @@ const Pagination = ({
 
       {showItemsPagination && (
         <div className="flex gap-2 justify-end items-center md:m-0">
-          <button
-            className={`btn-paginate dark:border-greyish hover:bg-select dark:hover:bg-grayish ${
+          <Button
+            className={`text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
               currentPage === 1 ? "hidden" : ""
             }`}
             aria-label="Previous page button"
@@ -66,13 +66,13 @@ const Pagination = ({
             onClick={onClickPreviousButton}
             disabled={currentPage === 1}>
             <HiMiniChevronLeft />
-          </button>
+          </Button>
 
           {paginationRange.map(pageNumber => {
             const currentPageActive =
               currentPage === pageNumber
-                ? "btn-paginate-active dark:bg-gradient-pickled shadow-btn-primary"
-                : "btn-paginate dark:border-greyish hover:bg-select";
+                ? "text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
+                : "text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish";
 
             if (pageNumber === DOTS) {
               return (
@@ -84,19 +84,19 @@ const Pagination = ({
             }
 
             return (
-              <button
+              <Button
                 className={`dark:hover:bg-grayish ${currentPageActive}`}
                 aria-label={"Page button " + pageNumber}
                 key={pageNumber}
                 disabled={currentPage === pageNumber}
                 onClick={() => onPageChange(pageNumber as number)}>
                 {pageNumber}
-              </button>
+              </Button>
             );
           })}
 
-          <button
-            className={`btn-paginate dark:border-greyish dark:hover:bg-grayish ${
+          <Button
+            className={`text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
               currentPage === lastPage ? "hidden" : ""
             }`}
             aria-label="Next page button"
@@ -104,7 +104,7 @@ const Pagination = ({
             onClick={onClickNextButton}
             disabled={currentPage === lastPage}>
             <HiMiniChevronRight />
-          </button>
+          </Button>
         </div>
       )}
     </div>

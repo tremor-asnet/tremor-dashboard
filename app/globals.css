@@ -61,15 +61,6 @@
     @apply content-[''];
   }
 
-  /* Pagination */
-  .btn-paginate {
-    @apply text-sm text-gray-400 w-9 h-9 inline-flex justify-center items-center rounded-full border border-gray-300 hover:bg-gray-200;
-  }
-
-  .btn-paginate-active {
-    @apply text-sm w-9 h-9 inline-flex justify-center items-center rounded-full bg-black text-white dark:bg-primary shadow-sm shadow-white;
-  }
-
   /* Stepper */
   .stepper-dark-bg {
     @apply bg-gradient-to-b from-[#323a54] to-[#1a2035];

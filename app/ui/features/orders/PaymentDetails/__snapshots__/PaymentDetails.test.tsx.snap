@@ -43,9 +43,13 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
               class="w-fit h-fit relative flex justify-center"
             >
               <button
-                class="w-6 h-6 text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium text-sm hover:text-tremor-brand-emphasis w-6 h-6 text-dark-tremor-content-slate dark:text-dark-tremor-content-slate dark:hover:text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
               >
-                !
+                <span
+                  class="tremor-Button-text text-sm whitespace-nowrap"
+                >
+                  !
+                </span>
               </button>
               <div
                 class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[-50px] min-w-[200px] rounded-md text-white right-[-50px] sm:right-[-60px] lg:right-[-82px] before:content-['▲'] before:absolute before:top-[-15px] before:right-[54px] sm:before:right-[64px] lg:before:right-[86px] before:text-[black]"
@@ -102,9 +106,13 @@ exports[`Payment Details Components Testing Should match snapshot 1`] = `
             class="w-fit h-fit relative flex justify-center"
           >
             <button
-              class="w-6 h-6 text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium text-sm hover:text-tremor-brand-emphasis w-6 h-6 text-dark-tremor-content-slate dark:text-dark-tremor-content-slate dark:hover:text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
             >
-              !
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                !
+              </span>
             </button>
             <div
               class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[-50px] min-w-[200px] rounded-md text-white right-[-50px] sm:right-[-60px] lg:right-[-82px] before:content-['▲'] before:absolute before:top-[-15px] before:right-[54px] sm:before:right-[64px] lg:before:right-[86px] before:text-[black]"

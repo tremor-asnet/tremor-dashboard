@@ -8,6 +8,7 @@ export const color = {
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
+  grayter: "#485976",
   rarely: "#dee2e6",
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",

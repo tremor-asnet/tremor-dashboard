@@ -1,6 +1,6 @@
 // Components
 import Image from "next/image";
-import { Text, Title } from "@tremor/react";
+import { Text, Title, Button } from "@tremor/react";
 
 interface PreviewImageProps {
   filename: string;
@@ -34,11 +34,12 @@ const ImagePreview = ({
       <Text className="text-tremor-title text-black dark:text-white">
         {filename}
       </Text>
-      <button
-        className="mt-2 text-sm text-white dark:text-[#485976] px-4 py-2 bg-[#485976] dark:bg-white rounded hover:bg-[#1a2035]"
-        onClick={onRemove}>
+      <Button
+        className="mt-2 text-sm text-white hover:text-white  dark:text-grayter dark:hover:text-grayter px-4 py-2 bg-grayter dark:bg-white rounded hover:bg-[#1a2035]"
+        onClick={onRemove}
+        variant="light">
         Remove photo
-      </button>
+      </Button>
     </div>
   );
 };

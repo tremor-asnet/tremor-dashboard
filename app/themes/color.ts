@@ -9,6 +9,7 @@ export const color = {
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
+  grayter: "#485976",
   rarely: "#dee2e6",
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",
@@ -105,6 +106,7 @@ export const backgroundColor = {
   greyish: "#f8f9fa",
   "green-500": "#43A047",
   "orange-500": "#FB8C00",
+  graydark: "#1a2035",
 
   dark: {
     primary: "#111827",

@@ -32,7 +32,7 @@ describe("TableInvoice Component", () => {
   it("renders table with correct data", () => {
     const container = render(<TableInvoice {...mockProps} />);
 
-    INVOICE_DATA.products.forEach(detail => {
+    products.forEach(detail => {
       expect(container.getByText(detail.productName)).toBeInTheDocument();
       expect(
         container.getByText(detail.quantity.toString()),

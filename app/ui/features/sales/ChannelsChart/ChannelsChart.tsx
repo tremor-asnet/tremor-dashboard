@@ -45,7 +45,8 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             className="text-center !bg-black !bottom-[-50px] rounded-md !text-white right-[-34px] md:right-[-55px] min-w-[140px] before:content-['▲'] before:absolute before:top-[-17px] before:left-[85px] md:before:left-[65px] before:text-[black]">
             <Button
               className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
-              variant="secondary">
+              variant="secondary"
+              aria-label="Traffic Channels Button">
               <MdOutlinePriorityHigh className="text-xs text-secondary" />
             </Button>
           </Popover>

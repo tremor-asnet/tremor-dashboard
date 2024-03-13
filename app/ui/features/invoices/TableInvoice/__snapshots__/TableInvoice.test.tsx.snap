@@ -93,7 +93,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                 >
                   1
                 </p>
@@ -103,12 +103,12 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               >
                 <div>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                   >
                     $ 9.00
                   </p>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-white"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-primary"
                   >
                     Total
                   </p>
@@ -119,12 +119,12 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               >
                 <div>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                   >
                     $ 9.00
                   </p>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-white"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
                   >
                     $345.00
                   </p>
@@ -138,7 +138,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
-                  class="text-tremor-default text-tremor-content max-w-[250px] md:max-w-sm truncate dark:text-lighter print:text-secondary dark:print:text-lighter"
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black"
                 >
                   Metror Dashboard
                 </p>
@@ -147,7 +147,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                  class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                 >
                   3
                 </p>
@@ -157,12 +157,12 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               >
                 <div>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                   >
                     $ 100.00
                   </p>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-white"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 dark:!text-white dark:print:!text-primary"
                   >
                     Total
                   </p>
@@ -173,12 +173,12 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               >
                 <div>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-secondary dark:print:text-lighter"
+                    class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
                   >
                     $ 300.00
                   </p>
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-white"
+                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content total hidden mt-6 flex-col items-end dark:!text-white dark:print:!text-primary"
                   >
                     $345.00
                   </p>
@@ -192,7 +192,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
-                  class="text-tremor-default text-tremor-content max-w-[250px] md:max-w-sm truncate dark:text-lighter print:text-secondary dark:print:text-lighter"
+                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black"
                 >
                   Parts for service
                 </p>

@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render, waitFor } from "@testing-library/react";
 
 //Components
 import ProjectCard from "./ProjectCard";
@@ -13,14 +13,45 @@ describe("Testing ProjectCard component", () => {
   const propsDefault = {
     projectData: PROJECT_DATA[0],
     actions: ITEM_ACTION_PROJECT,
-    isOpenAction: false,
-    projectId: "1",
-    onToggleAction: jest.fn(),
-    onActionProject: jest.fn(),
   };
 
+  const renderWrapper = () => render(<ProjectCard {...propsDefault} />);
+
   it("Should match snapshot", () => {
-    const component = render(<ProjectCard {...propsDefault} />);
+    const component = renderWrapper();
+
     expect(component).toMatchSnapshot();
+  });
+
+  it("Should toggle action menu when ellipsis icon is clicked", async () => {
+    const { findByTestId } = renderWrapper();
+
+    fireEvent.click(await findByTestId("toggle-icon"));
+
+    expect(await findByTestId("menu-action")).toBeTruthy();
+  });
+
+  it("Should close action menu when clicking outside the component", async () => {
+    const renderWrapperWithOutSide = () =>
+      render(
+        <div data-testid="outside">
+          <ProjectCard {...propsDefault} />
+        </div>,
+      );
+    const { findByTestId } = renderWrapperWithOutSide();
+
+    fireEvent.click(await findByTestId("toggle-icon"));
+    fireEvent.click(await findByTestId("outside"));
+
+    waitFor(() => expect(findByTestId("menu-action")).toBeFalsy());
+  });
+
+  it("Should close action menu when an action is clicked", async () => {
+    const { findByTestId } = renderWrapper();
+
+    fireEvent.click(await findByTestId("toggle-icon"));
+    fireEvent.click(await findByTestId(ITEM_ACTION_PROJECT[0].key));
+
+    waitFor(() => expect(findByTestId("menu-action")).toBeFalsy());
   });
 });

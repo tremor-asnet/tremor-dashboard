@@ -15,7 +15,6 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@milahu/patch-package": "^6.4.14",
     "@storybook/addon-knobs": "^7.0.2",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tremor/react": "^3.11.1",
@@ -33,6 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^18.4.3",
+    "@milahu/patch-package": "^6.4.14",
     "@storybook/addon-essentials": "7.6.0",
     "@storybook/addon-interactions": "7.6.0",
     "@storybook/addon-links": "7.6.0",

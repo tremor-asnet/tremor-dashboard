@@ -24,8 +24,11 @@ const Billing = async () => {
   const { billingInfos, cardInfo, aggregation } = billingData;
   return (
     <div>
-      <Flex className="pb-6 flex-col lg:flex-row items-start">
-        <Flex className="flex-col basis-2/3 xl:flex-row items-start">
+      <Flex flexDirection="col" alignItems="start" className="pb-6 lg:flex-row">
+        <Flex
+          flexDirection="col"
+          alignItems="start"
+          className="basis-2/3 xl:flex-row">
           <Suspense
             fallback={
               <LoadingIndicator
@@ -54,7 +57,7 @@ const Billing = async () => {
           </Suspense>
         </Flex>
       </Flex>
-      <Flex className="md:flex-row flex-col items-start">
+      <Flex flexDirection="col" alignItems="start" className="md:flex-row">
         <div className="w-full md:min-h-[640px] max-w-[2042px] bg-white dark:bg-dark-tremor-primary px-4 pt-6 pb-4 rounded-xl shadow-box-icon-default dark:shadow-main-content mr-0 md:mr-6">
           <Bold className="text-primary font-semibold capitalize dark:text-white tracking-[0.12px]">
             Billing Information

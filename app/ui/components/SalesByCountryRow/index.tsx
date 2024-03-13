@@ -31,7 +31,7 @@ const SalesByCountryRow = ({
       key={id}
       className="border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]">
       <TableCell className="px-4 py-3 w-6/12 w-[25%]">
-        <Flex className="items-center">
+        <Flex>
           <div className="w-[34px]">
             <Image
               src={FLAG_SRC[id]}
@@ -41,7 +41,7 @@ const SalesByCountryRow = ({
               priority
             />
           </div>
-          <Flex className="items-start flex-col ml-6">
+          <Flex alignItems="start" className="flex-col ml-6">
             <Text className="text-xs dark:text-dark-romance font-semibold leading-[1.25] tracking-[0.03333em]">
               Country:
             </Text>

@@ -70,7 +70,7 @@ const InputSearch = ({ field }: InputSearchProps) => {
   };
 
   return (
-    <Flex className="p-6 items-center justify-end relative">
+    <Flex justifyContent="end" className="p-6 relative">
       <TextInput
         ref={inputSearchRef}
         id="search_order"

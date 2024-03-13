@@ -75,13 +75,9 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
     },
   ];
 
-  const sortedProducts = products.sort((a, b) =>
-    a.createdAt.localeCompare(b.createdAt),
-  );
-
   return (
     <DataGrid
-      data={sortedProducts}
+      data={products}
       columns={columns}
       currentPageNumber={currentPage}
       total={total}

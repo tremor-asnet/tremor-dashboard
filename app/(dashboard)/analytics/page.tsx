@@ -53,7 +53,10 @@ const Analytics = async () => {
     [daily_sale_statistic, performance_statistic] || LINE_CHART_DATA;
 
   return (
-    <Flex className="flex-col flex-wrap justify-start analytics-page">
+    <Flex
+      justifyContent="start"
+      flexDirection="col"
+      className="flex-wrap analytics-page">
       {/* Sales card  */}
       <SalesByCountry
         title="Sales by Country"
@@ -88,7 +91,11 @@ const Analytics = async () => {
         ))}
       </Flex>
       {/* Info cards */}
-      <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
+      <Flex
+        justifyContent="start"
+        alignItems="start"
+        flexDirection="col"
+        className="flex-wrap lg:flex-nowrap md:flex-row mt-12">
         {apartment_statistic?.map((item: AnalyticsInfoData) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}

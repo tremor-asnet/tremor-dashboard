@@ -37,8 +37,4 @@ module.exports = {
     },
   },
   safelist: safelist,
-  plugins: [
-    require("@headlessui/tailwindcss"),
-    require("@tailwindcss/custom-forms"),
-  ],
 };

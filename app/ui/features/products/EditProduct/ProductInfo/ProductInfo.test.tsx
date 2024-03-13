@@ -58,7 +58,7 @@ describe("Testing ProductInfo component", () => {
     expect(getByLabelText("Provider Name")).toBeInTheDocument();
   });
 
-  it("should call preventDefault when key is in EXCEPT_KEYS.POSITIVE_DOUBLE", async () => {
+  it("should call preventDefault when key is in except key", async () => {
     const mockEvent = {
       key: EXCEPT_KEYS.POSITIVE_DOUBLE[0],
       preventDefault: jest.fn(),
@@ -73,7 +73,7 @@ describe("Testing ProductInfo component", () => {
     expect(weightInput).toBeInTheDocument();
   });
 
-  it("should not call preventDefault when key is not in EXCEPT_KEYS.POSITIVE_DOUBLE", () => {
+  it("should not call preventDefault when key is not in except key", () => {
     const mockEvent = {
       key: "b",
       preventDefault: jest.fn(),

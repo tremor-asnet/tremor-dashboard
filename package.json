@@ -12,6 +12,7 @@
     "test": "jest --passWithNoTests",
     "test:update": "jest --passWithNoTests --updateSnapshot",
     "prepare": "husky install",
+    "postinstall": "patch-package",
     "minify-static": "terser .next/static/chunks/**/*.js -o .next/static/chunks/**/*.js",
     "minify-static-pages": "terser .next/static/chunks/pages/*.js -o .next/static/chunks/pages/*.js",
     "minify-static-app": "terser .next/static/chunks/app/*.js -o .next/static/chunks/app/*.js",
@@ -100,5 +101,10 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@tremor/react@3.11.1": "patches/@tremor__react@3.11.1.patch"
+    }
   }
 }

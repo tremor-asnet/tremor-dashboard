@@ -51,11 +51,9 @@ const ColumnChart = ({ webChartData }: WebChartDataProps) => {
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
-            <Popover content={desc} className="min-w-[200px]">
-              <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]">
-                {desc}
-              </Subtitle>
-            </Popover>
+            <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]">
+              {desc}
+            </Subtitle>
           </div>
           <div className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4" />
           <Flex justifyContent="start">

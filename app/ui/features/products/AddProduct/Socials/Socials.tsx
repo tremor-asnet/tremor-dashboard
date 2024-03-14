@@ -22,7 +22,7 @@ const Socials = ({ control, errors }: SocialsProps) => {
   const shopifyErrorMsg = errors.shopifyUrl?.message;
 
   return (
-    <div className="flex flex-col gap-6">
+    <>
       <Controller
         name="shopifyUrl"
         control={control}
@@ -34,17 +34,17 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <>
+          <div className="mb-3">
             <InputField
               id="add-product-shopify"
               label="Shopify Handle"
               type="text"
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
               {shopifyErrorMsg}
             </Text>
-          </>
+          </div>
         )}
       />
 
@@ -59,17 +59,17 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <>
+          <div className="mb-3">
             <InputField
               id="add-product-fb"
               label="Facebook Account"
               type="text"
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
               {facebookErrorMsg}
             </Text>
-          </>
+          </div>
         )}
       />
 
@@ -84,20 +84,20 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <>
+          <div className="mb-3">
             <InputField
               id="add-product-ig"
               label="Instagram Account"
               type="text"
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500">
+            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
               {instagramErrorMsg}
             </Text>
-          </>
+          </div>
         )}
       />
-    </div>
+    </>
   );
 };
 

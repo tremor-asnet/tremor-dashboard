@@ -411,26 +411,12 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
           >
             Daily Sales
           </p>
-          <div
-            class="w-fit h-fit relative flex justify-center"
+          <p
+            class="text-sm text-tertiary dark:text-dark-romance font-light opacity-100"
           >
-            <p
-              class="text-sm text-tertiary dark:text-dark-romance font-light opacity-100"
-            >
-               
-              increase in today sales.
-            </p>
-            <div
-              class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all min-w-[200px]"
-              hidden=""
-            >
-              <div
-                class="text-sm font-light rounded p-2"
-              >
-                increase in today sales.
-              </div>
-            </div>
-          </div>
+             
+            increase in today sales.
+          </p>
         </div>
         <div
           class="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4"

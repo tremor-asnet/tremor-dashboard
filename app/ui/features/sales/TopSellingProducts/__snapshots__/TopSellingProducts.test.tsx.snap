@@ -33,22 +33,22 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
                 >
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     product
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     value
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                   >
                     ads spent
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                   >
                     refunds
                   </th>
@@ -91,10 +91,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Nike v22 Running
                         </p>
                         <p
-                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-few"
+                            class="text-green dark:text-few"
                           >
                             8,232
                           </span>
@@ -108,7 +108,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
                         $130,992.00
@@ -119,7 +119,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
                         $130,992.00
@@ -133,12 +133,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                        class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                       >
                         13
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-green dark:text-few"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -192,10 +192,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Business Kit (Mug + Notebook)
                         </p>
                         <p
-                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-few"
+                            class="text-green dark:text-few"
                           >
                             12,821
                           </span>
@@ -209,7 +209,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
                         $80,250.00
@@ -220,7 +220,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
                         $80,250.00
@@ -234,7 +234,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                        class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                       >
                         40
                       </p>
@@ -293,10 +293,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Black Chair
                         </p>
                         <p
-                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-few"
+                            class="text-green dark:text-few"
                           >
                             2,421
                           </span>
@@ -310,7 +310,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
                         $40,600.00
@@ -321,7 +321,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
                         $40,600.00
@@ -335,12 +335,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                        class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                       >
                         54
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-green dark:text-few"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -394,10 +394,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Wireless Charger
                         </p>
                         <p
-                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-few"
+                            class="text-green dark:text-few"
                           >
                             5,921
                           </span>
@@ -411,7 +411,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
                         $91,300.00
@@ -422,7 +422,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
                         $91,300.00
@@ -436,7 +436,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                        class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                       >
                         5
                       </p>
@@ -495,10 +495,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           Mountain Trip Kit (Camera + Backpack)
                         </p>
                         <p
-                          class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                          class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-few"
+                            class="text-green dark:text-few"
                           >
                             921
                           </span>
@@ -512,7 +512,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                     >
                       <span>
                         $140,925.00
@@ -523,7 +523,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                     >
                       <span>
                         $140,925.00
@@ -537,12 +537,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                        class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                       >
                         121
                       </p>
                       <svg
-                        class="text-xl text-few"
+                        class="text-xl text-green dark:text-few"
                         fill="currentColor"
                         height="1em"
                         stroke="currentColor"
@@ -598,22 +598,22 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
               >
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   product
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   value
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                 >
                   ads spent
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                 >
                   refunds
                 </th>
@@ -656,10 +656,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Nike v22 Running
                       </p>
                       <p
-                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-few"
+                          class="text-green dark:text-few"
                         >
                           8,232
                         </span>
@@ -673,7 +673,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
                       $130,992.00
@@ -684,7 +684,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
                       $130,992.00
@@ -698,12 +698,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                     >
                       13
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-green dark:text-few"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -757,10 +757,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Business Kit (Mug + Notebook)
                       </p>
                       <p
-                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-few"
+                          class="text-green dark:text-few"
                         >
                           12,821
                         </span>
@@ -774,7 +774,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
                       $80,250.00
@@ -785,7 +785,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
                       $80,250.00
@@ -799,7 +799,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                     >
                       40
                     </p>
@@ -858,10 +858,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Black Chair
                       </p>
                       <p
-                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-few"
+                          class="text-green dark:text-few"
                         >
                           2,421
                         </span>
@@ -875,7 +875,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
                       $40,600.00
@@ -886,7 +886,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
                       $40,600.00
@@ -900,12 +900,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                     >
                       54
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-green dark:text-few"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -959,10 +959,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Wireless Charger
                       </p>
                       <p
-                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-few"
+                          class="text-green dark:text-few"
                         >
                           5,921
                         </span>
@@ -976,7 +976,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
                       $91,300.00
@@ -987,7 +987,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
                       $91,300.00
@@ -1001,7 +1001,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                     >
                       5
                     </p>
@@ -1060,10 +1060,10 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         Mountain Trip Kit (Camera + Backpack)
                       </p>
                       <p
-                        class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                        class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-few"
+                          class="text-green dark:text-few"
                         >
                           921
                         </span>
@@ -1077,7 +1077,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                   >
                     <span>
                       $140,925.00
@@ -1088,7 +1088,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                   >
                     <span>
                       $140,925.00
@@ -1102,12 +1102,12 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                      class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                     >
                       121
                     </p>
                     <svg
-                      class="text-xl text-few"
+                      class="text-xl text-green dark:text-few"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -1217,22 +1217,22 @@ exports[`Testing analytics sale chart component testing component top selling pr
               class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
               >
                 product
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
               >
                 value
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
               >
                 ads spent
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
               >
                 refunds
               </th>
@@ -1275,10 +1275,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Nike v22 Running
                     </p>
                     <p
-                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-few"
+                        class="text-green dark:text-few"
                       >
                         8,232
                       </span>
@@ -1292,7 +1292,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
                     $130,992.00
@@ -1303,7 +1303,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
                     $130,992.00
@@ -1317,12 +1317,12 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                   >
                     13
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-green dark:text-few"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -1376,10 +1376,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Business Kit (Mug + Notebook)
                     </p>
                     <p
-                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-few"
+                        class="text-green dark:text-few"
                       >
                         12,821
                       </span>
@@ -1393,7 +1393,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
                     $80,250.00
@@ -1404,7 +1404,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
                     $80,250.00
@@ -1418,7 +1418,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                   >
                     40
                   </p>
@@ -1477,10 +1477,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Black Chair
                     </p>
                     <p
-                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-few"
+                        class="text-green dark:text-few"
                       >
                         2,421
                       </span>
@@ -1494,7 +1494,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
                     $40,600.00
@@ -1505,7 +1505,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
                     $40,600.00
@@ -1519,12 +1519,12 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                   >
                     54
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-green dark:text-few"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"
@@ -1578,10 +1578,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Wireless Charger
                     </p>
                     <p
-                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-few"
+                        class="text-green dark:text-few"
                       >
                         5,921
                       </span>
@@ -1595,7 +1595,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
                     $91,300.00
@@ -1606,7 +1606,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
                     $91,300.00
@@ -1620,7 +1620,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                   >
                     5
                   </p>
@@ -1679,10 +1679,10 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       Mountain Trip Kit (Camera + Backpack)
                     </p>
                     <p
-                      class="text-tremor-default text-secondary dark:text-secondary leading-[21px] tracking-[0.4px] product-orders"
+                      class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-few"
+                        class="text-green dark:text-few"
                       >
                         921
                       </span>
@@ -1696,7 +1696,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-3"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-value"
                 >
                   <span>
                     $140,925.00
@@ -1707,7 +1707,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                 class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-6 py-3 text-center"
               >
                 <p
-                  class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
+                  class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-ads-spent"
                 >
                   <span>
                     $140,925.00
@@ -1721,12 +1721,12 @@ exports[`Testing analytics sale chart component testing component top selling pr
                   class="tremor-Flex-root flex w-full flex-row justify-center items-center"
                 >
                   <p
-                    class="text-tremor-default text-tremor-content dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
+                    class="text-tremor-default text-tremor-content-emphasis dark:text-dark-tremor-content-romance leading-[21px] tracking-[0.4px] product-refunds"
                   >
                     121
                   </p>
                   <svg
-                    class="text-xl text-few"
+                    class="text-xl text-green dark:text-few"
                     fill="currentColor"
                     height="1em"
                     stroke="currentColor"

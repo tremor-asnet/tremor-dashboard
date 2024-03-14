@@ -3,7 +3,12 @@
 import { revalidatePath } from "next/cache";
 
 // Constants
-import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
+import {
+  PAGE_SIZE,
+  PRODUCT_DETAILS_TAG,
+  ROUTER_API_URL,
+  ROUTES,
+} from "@/constants";
 
 // Helpers
 import { getErrorMessage } from "@/helpers";
@@ -33,7 +38,7 @@ export const getProducts = async (
       },
       next: {
         revalidate: 60,
-        tags: [ROUTES.PRODUCT_LIST],
+        tags: [ROUTES.PRODUCT_LIST, PRODUCT_DETAILS_TAG],
       },
     },
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { RefObject, useEffect, useRef } from "react";
 
 // lib
 import Link from "next/link";
@@ -37,6 +37,7 @@ import "./styles.css";
 
 // Helpers
 import { isBrowser } from "@/helpers";
+import { useOutsideClick } from "@/hooks";
 
 interface SideBarProps {
   avatarUrl: string;
@@ -55,36 +56,21 @@ const SideBar = ({
   pathname,
   onSignOut,
 }: SideBarProps) => {
-  const sideBarRef = useRef<HTMLDivElement>(null);
   const hiddenOpenClass = isCollapse && "xl:hidden";
   const centerOpenClass = isCollapse && "xl:justify-center";
   const transitionBgClass =
     "transition-[background-color] duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20";
+  const isSmallerScreenSize = isBrowser && window.innerWidth <= BREAKPOINTS.XL;
 
-  useEffect(() => {
-    const handleClickOutside = (event: Event) => {
-      const currentRef = sideBarRef.current;
-
-      if (currentRef && !currentRef.contains(event.target as Node)) {
-        // Clicked outside the side navigation bar, close it
-        if (isCollapse) {
-          toggleSidebar();
-        }
-      }
-    };
-
-    // Add event listener to the document object
-    document.addEventListener("mousedown", handleClickOutside);
-
-    // Remove event listener when the component unmounts
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isCollapse, toggleSidebar]);
+  const sideBarRef = useOutsideClick(() => {
+    if (isSmallerScreenSize && isCollapse) {
+      toggleSidebar();
+    }
+  });
 
   // Handle case close sidebar in smaller than a desktop screen
   const handleClickSidebarItem = () => {
-    if (isBrowser && window.innerWidth <= BREAKPOINTS.XL) {
+    if (isSmallerScreenSize) {
       toggleSidebar();
     }
   };
@@ -92,7 +78,7 @@ const SideBar = ({
   return (
     <>
       <div
-        ref={sideBarRef}
+        ref={sideBarRef as RefObject<HTMLDivElement>}
         className={`sidebar antialiased shadow-box-sidebar bg-gradient-primary dark:bg-none dark:bg-dark-gradient-primary w-[250px] rounded-xl z-50 px-4 pt-6 overflow-y-auto overflow-x-hidden fixed top-4 left-4 h-[calc(100vh-2rem)] transition-all ease-in ${
           isCollapse
             ? "translate-x-0 xl:w-[100px] delay-10 duration-300"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing ProductInfo component should match snapshot 1`] = `
+exports[`Testing ProductInfo component Should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -34,6 +34,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
                 <input
                   class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   id="edit-name"
+                  name="productName"
                   placeholder=""
                   value=""
                 />
@@ -72,6 +73,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
                 <input
                   class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   id="edit-weight"
+                  name="weight"
                   placeholder=""
                   type="number"
                   value=""
@@ -93,6 +95,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
                 <input
                   class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   id="edit-quantity"
+                  name="quantity"
                   placeholder=""
                   type="number"
                   value=""
@@ -164,6 +167,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
                 <input
                   class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                   id="edit-provider"
+                  name="providerName"
                   placeholder=""
                   value=""
                 />
@@ -204,6 +208,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
               <input
                 class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                 id="edit-name"
+                name="productName"
                 placeholder=""
                 value=""
               />
@@ -242,6 +247,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
               <input
                 class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                 id="edit-weight"
+                name="weight"
                 placeholder=""
                 type="number"
                 value=""
@@ -263,6 +269,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
               <input
                 class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                 id="edit-quantity"
+                name="quantity"
                 placeholder=""
                 type="number"
                 value=""
@@ -334,6 +341,7 @@ exports[`Testing ProductInfo component should match snapshot 1`] = `
               <input
                 class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                 id="edit-provider"
+                name="providerName"
                 placeholder=""
                 value=""
               />

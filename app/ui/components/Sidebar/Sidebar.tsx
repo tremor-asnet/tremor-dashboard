@@ -174,10 +174,10 @@ const SideBar = ({
                 })}
                 <ListItem className="leading-[26px] relative !p-0 mt-1">
                   <Flex
+                    onClick={onSignOut}
                     className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
-                    <span className="w-5">L</span>
+                    <span className="cursor-pointer w-5">L</span>
                     <Button
-                      onClick={onSignOut}
                       className={`${hiddenOpenClass} w-full text-start pl-2 justify-start text-lighter hover:text-lighter dark:text-white dark:hover:text-white`}
                       variant={VARIANT_BUTTON.LIGHT}>
                       Logout

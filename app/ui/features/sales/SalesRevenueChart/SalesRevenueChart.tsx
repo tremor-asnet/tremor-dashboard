@@ -19,7 +19,7 @@ interface RevenueChartProps {
 }
 
 const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
-  const [setValue] = useState<any>(null);
+  const [value, setValue] = useState<any>(null);
 
   const chartValueChange = (v: Event) => {
     setValue(v);
@@ -36,7 +36,8 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
           className="text-center !bg-black !bottom-[-18px] rounded-md !text-white right-[38px] min-w-[170px] before:content-['▶'] before:absolute before:top-[16px] before:right-[-12px] before:text-[black]">
           <Button
             className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
-            variant="secondary">
+            variant="secondary"
+            aria-label="Which Ads Perform Better Button">
             <MdOutlinePriorityHigh className="text-xs text-secondary" />
           </Button>
         </Popover>

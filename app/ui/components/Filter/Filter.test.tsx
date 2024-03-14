@@ -29,7 +29,7 @@ jest.mock("next/navigation", () => ({
 describe("Testing Filter component", () => {
   const propsDefault = {
     title: "Status",
-    listOption: orderListOption
+    listOption: orderListOption,
   };
 
   const renderWrapper = () => render(<Filter {...propsDefault} />);
@@ -74,7 +74,6 @@ describe("Testing Filter component", () => {
     waitFor(() => expect(findByTestId("list-option")).toBeFalsy());
   });
 
-  
   it("Should toggle list-option when fillter is clicked next click item filter and close list-option", async () => {
     const { findByTestId } = renderWrapper();
 

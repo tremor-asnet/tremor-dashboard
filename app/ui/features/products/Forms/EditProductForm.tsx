@@ -117,7 +117,7 @@ const EditProductForm = ({
 
       setIsLoading(false);
 
-      router.refresh();
+      router.back();
 
       openToast({
         toastType: ToastMessageType(TOAST_TYPES.SUCCESS),

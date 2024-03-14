@@ -2,9 +2,10 @@ export const color = {
   test: "#000",
   primary: "#344767",
   secondary: "#7b809a",
-  purple: "#55576D",
+  tertiary: "#55576d",
   seldom: "#1a73e8",
   few: "#4caf50",
+  green: "#2a652b",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
@@ -15,6 +16,8 @@ export const color = {
   greyish: "rgba(255, 255, 255, 0.4)",
   grayish: "rgba(240, 242, 245, 0.4)",
   black: "#000",
+  grey: "#4d4e61",
+  greyer: "#b0b5bf",
 
   dark: {
     primary: "#ffffff",
@@ -52,6 +55,7 @@ export const color = {
       DEFAULT: "#7b809a", // Waterloo
       emphasis: "#374151", // Fruit Salad
       seldom: "#1a73e8", // fruitRoyal Blue
+      bold: "#333",
     },
   },
   // dark mode
@@ -105,8 +109,8 @@ export const backgroundColor = {
   border: "#dee2e6",
   dark_blue: "rgb(32, 41, 64)",
   greyish: "#f8f9fa",
-  "green-500": "#43A047",
-  "orange-500": "#FB8C00",
+  "green-500": "#43a047",
+  "orange-500": "#fb8c00",
   graydark: "#1a2035",
 
   dark: {

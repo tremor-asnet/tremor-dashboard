@@ -40,6 +40,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     <input
                       class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                       id="edit-price"
+                      name="price"
                       placeholder=""
                       type="number"
                       value=""
@@ -111,6 +112,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     <input
                       class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                       id="edit-sku"
+                      name="sku"
                       placeholder=""
                       value=""
                     />
@@ -207,6 +209,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   <input
                     class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                     id="edit-price"
+                    name="price"
                     placeholder=""
                     type="number"
                     value=""
@@ -278,6 +281,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   <input
                     class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
                     id="edit-sku"
+                    name="sku"
                     placeholder=""
                     value=""
                   />

@@ -64,7 +64,7 @@ const AnalyticsStatisticCard = ({
               flexDirection="col"
               alignItems="end"
               className="pl-[90px] mb-1">
-              <Text className="text-md dark:text-dark-romance text-secondary font-light">
+              <Text className="text-md text-tertiary dark:text-dark-romance font-light">
                 {type}
               </Text>
               <Text
@@ -80,14 +80,14 @@ const AnalyticsStatisticCard = ({
               justifyContent="start"
               alignItems="start"
               className="tracking-[0.4px]">
-              <Text className="text-few dark:text-few leading-[21px] font-bold">
+              <Text className="text-green dark:text-few leading-[21px] font-bold">
                 {formatAdjustNumber({
                   value: amountChange,
                   isPositive: amountChangeType,
                   unit: UNIT.PERCENT,
                 })}
               </Text>
-              <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">
+              <Text className="ml-1 text-tertiary dark:text-dark-romance leading-[21px] font-light">
                 {duration}
               </Text>
             </Flex>

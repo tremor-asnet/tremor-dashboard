@@ -140,3 +140,5 @@ export const PRODUCT_TAGS = {
   SALE: "Sale",
   EXPIRED: "Expired",
 };
+
+export const PRODUCT_DETAILS_TAG = "product-details";

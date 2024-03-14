@@ -17,7 +17,6 @@ export const color = {
   greyish: "rgba(255, 255, 255, 0.4)",
   grayish: "rgba(240, 242, 245, 0.4)",
   grey: "#4D4E61",
-  greyer: "#B0B5BF",
 
   dark: {
     primary: "#ffffff",
@@ -55,6 +54,7 @@ export const color = {
       DEFAULT: "#7b809a", // Waterloo
       emphasis: "#374151", // Fruit Salad
       seldom: "#1a73e8", // fruitRoyal Blue
+      bold: "#B0B5BF",
     },
   },
   // dark mode

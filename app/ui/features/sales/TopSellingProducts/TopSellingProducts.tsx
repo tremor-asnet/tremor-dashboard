@@ -42,16 +42,16 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
       <Table className="w-full">
         <TableHead>
           <TableRow className="border-0 border-b border-gray-100 dark:border-grayish">
-            <TableHeaderCell className="px-6 pt-2 pb-3 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+            <TableHeaderCell className="px-6 pt-2 pb-3 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
               product
             </TableHeaderCell>
-            <TableHeaderCell className="px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
+            <TableHeaderCell className="px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase">
               value
             </TableHeaderCell>
-            <TableHeaderCell className="px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center">
+            <TableHeaderCell className="px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center">
               ads spent
             </TableHeaderCell>
-            <TableHeaderCell className="px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center">
+            <TableHeaderCell className="px-6 py-2 text-tremor-content-bold dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center">
               refunds
             </TableHeaderCell>
           </TableRow>

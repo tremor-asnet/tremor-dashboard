@@ -20,7 +20,10 @@ const SelectOption = ({
         <li
           className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
           key={option}>
-          <button onClick={onSelectItem} value={value}>
+          <button
+            onClick={onSelectItem}
+            value={value}
+            data-testid={`item-filter-${value}`}>
             {title}: {option}
           </button>
         </li>
@@ -28,6 +31,7 @@ const SelectOption = ({
     </ul>
     <div className="h-px bg-gradient-select my-2 opacity-25 dark:bg-gradient-divider" />
     <button
+      data-testid="remove-filter"
       className="w-full text-tremor-default cursor-pointer text-attention px-4 py-[0.3rem] hover:bg-body hover:rounded-md min-h-[auto] dark:hover:bg-dark-secondary text-left"
       onClick={onSelectRemove}>
       Remove Filter

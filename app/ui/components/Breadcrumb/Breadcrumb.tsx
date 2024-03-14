@@ -84,7 +84,7 @@ const Breadcrumb = ({
             : "text-gray-400 dark:text-white"
         }`}>
         <li className="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]">
-          <Link href={ROUTES.HOME} aria-label="Home Route">
+          <Link href={ROUTES.HOME} aria-label="Home icon">
             <MdHome className="text-lg" />
           </Link>
           &#47;

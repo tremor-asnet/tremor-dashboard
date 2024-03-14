@@ -48,7 +48,7 @@ const ColumnChart = ({ webChartData }: WebChartDataProps) => {
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {display}
             </Title>
-            <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]">
+            <Subtitle className="text-sm text-tertiary dark:text-dark-romance font-light opacity-100 truncate max-w-[310px]">
               {desc}
             </Subtitle>
           </div>
@@ -58,7 +58,7 @@ const ColumnChart = ({ webChartData }: WebChartDataProps) => {
               size={12}
               className="text-secondary dark:text-dark-romance"
             />
-            <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1">
+            <Text className="text-sm text-tertiary dark:text-dark-romance font-light opacity-100 ml-1">
               {modified}
             </Text>
           </Flex>

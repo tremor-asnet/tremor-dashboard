@@ -244,7 +244,7 @@ const SignUpForm = () => {
                     disabled={isPending}
                     aria-label="Terms And Conditions"
                   />
-                  <Text className="text-xs xs:text-sm text-purple dark:text-dark-romance font-normal">
+                  <Text className="text-xs xs:text-sm text-tertiary dark:text-dark-romance font-normal">
                     I agree the{" "}
                     <Link
                       tabIndex={0}
@@ -279,7 +279,7 @@ const SignUpForm = () => {
           )}
         </Button>
         <Flex justifyContent="center" className="mt-8 mb-2">
-          <Text className="text-purple dark:text-dark-romance text-xs xs:text-sm font-light">
+          <Text className="text-tertiary dark:text-dark-romance text-xs xs:text-sm font-light">
             Already have an account?
           </Text>
           <Link

@@ -40,7 +40,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-col justify-between items-end pl-[90px] mb-1"
               >
                 <p
-                  class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"
+                  class="text-tremor-default text-md text-tertiary dark:text-dark-romance font-light"
                 >
                   Bookings
                 </p>
@@ -66,7 +66,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                   +55%
                 </p>
                 <p
-                  class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light"
+                  class="text-tremor-default ml-1 text-tertiary dark:text-dark-romance leading-[21px] font-light"
                 >
                   than last week
                 </p>
@@ -113,7 +113,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-col justify-between items-end pl-[90px] mb-1"
             >
               <p
-                class="text-tremor-default text-md dark:text-dark-romance text-secondary font-light"
+                class="text-tremor-default text-md text-tertiary dark:text-dark-romance font-light"
               >
                 Bookings
               </p>
@@ -139,7 +139,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 +55%
               </p>
               <p
-                class="text-tremor-default ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light"
+                class="text-tremor-default ml-1 text-tertiary dark:text-dark-romance leading-[21px] font-light"
               >
                 than last week
               </p>

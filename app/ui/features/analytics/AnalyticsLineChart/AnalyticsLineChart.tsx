@@ -78,14 +78,16 @@ const AnalyticsLineChart = ({
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {title}
             </Title>
-            <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary">
+            <Subtitle className="text-sm text-tertiary dark:text-dark-romance font-light opacity-100">
               {isDailyChart && (
                 <>
-                  (
-                  <span data-testid="percent" className="font-bold">
+                  &#40;
+                  <span
+                    data-testid="percent"
+                    className="font-bold text-tertiary dark:text-dark-romance">
                     {descValue}
                   </span>
-                  )
+                  &#41;
                 </>
               )}{" "}
               {subTitle}
@@ -95,9 +97,9 @@ const AnalyticsLineChart = ({
           <Flex justifyContent="start">
             <FaRegClock
               size={12}
-              className="text-secondary dark:text-dark-romance"
+              className="text-tertiary dark:text-dark-romance"
             />
-            <Text className="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a] ml-1">
+            <Text className="text-sm text-tertiary dark:text-dark-romance font-light opacity-100 ml-1">
               {scheduleText}
             </Text>
           </Flex>

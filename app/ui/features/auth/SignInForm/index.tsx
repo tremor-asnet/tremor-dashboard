@@ -141,7 +141,7 @@ const SignInForm = () => {
               className="switch flex justify-center items-center"
               onChange={onChange}
             />
-            <Text className="text-purple dark:text-dark-romance font-normal">
+            <Text className="text-tertiary dark:text-dark-romance font-normal">
               Remember me
             </Text>
           </div>
@@ -165,7 +165,7 @@ const SignInForm = () => {
         )}
       </Button>
       <Flex justifyContent="center" className="mt-8 mb-2">
-        <Text className="text-purple dark:text-dark-romance font-light">
+        <Text className="text-tertiary dark:text-dark-romance font-light">
           Don&rsquo;t have an account?
         </Text>
         <Link

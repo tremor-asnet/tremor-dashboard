@@ -33,22 +33,22 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                   class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
                 >
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     product
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                   >
                     value
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                   >
                     ads spent
                   </th>
                   <th
-                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                    class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                   >
                     refunds
                   </th>
@@ -598,22 +598,22 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
               >
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   product
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
                 >
                   value
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                 >
                   ads spent
                 </th>
                 <th
-                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                  class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
                 >
                   refunds
                 </th>
@@ -1217,22 +1217,22 @@ exports[`Testing analytics sale chart component testing component top selling pr
               class="tremor-TableRow-row border-0 border-b border-gray-100 dark:border-grayish"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 py-3.5 px-6 pt-2 pb-3 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
               >
                 product
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase"
               >
                 value
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
               >
                 ads spent
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap top-0 px-6 py-2 text-purpler dark:text-dark-tremor-content-title text-[10.4px] leading-[17px] tracking-[0.2px] font-bold opacity-70 uppercase text-center"
               >
                 refunds
               </th>

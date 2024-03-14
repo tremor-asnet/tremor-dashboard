@@ -86,9 +86,11 @@ export const DRAG_ZONE = {
 };
 
 export const TRANSACTION_CLASS = {
-  INCREASE: "text-few border-few",
-  DECREASE: "text-attention border-attention",
-  PENDING: "text-primary border-primary",
+  INCREASE: "text-few dark:text-few dark:hove:text-few border-few",
+  DECREASE:
+    "text-attention dark:text-attention dark:hover:text-attention border-attention",
+  PENDING:
+    "text-primary dark:text-primary dark:hover:text-primary border-primary",
 };
 
 export const PAGE_SIZE = {

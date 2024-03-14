@@ -10,6 +10,14 @@ const meta = {
   title: "Components/Common/SideBar",
   component: SideBar,
   tags: ["autodocs"],
+  argTypes: {
+    avatarUrl: { description: "Src of user avatar on side bar" },
+    name: { description: "User name on side bar" },
+    pathname: { description: "Path name of page on side bar" },
+    toggleSidebar: { description: "Function toogle icon of side bar" },
+    isCollapse: { description: "Set state collapse for side bar" },
+    onSignOut: { description: "Function logout user on side bar" },
+  },
 } as Meta<typeof SideBar>;
 
 export default meta;
@@ -17,18 +25,14 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SideBarDashboard: Story = {
-  render: () => (
-    <div className="min-h-screen">
-      <SideBar
-        avatarUrl="/images/avatar/avatar-sm.webp"
-        name="Brooklyn Alice"
-        pathname={ROUTES.PROJECTS}
-        toggleSidebar={() => {}}
-        isCollapse={true}
-        onSignOut={function (): Promise<void> {
-          throw new Error("Function not implemented.");
-        }}
-      />
-    </div>
-  ),
+  args: {
+    avatarUrl: "/images/avatar/avatar-sm.webp",
+    name: "Brooklyn Alice",
+    pathname: ROUTES.PROJECTS,
+    toggleSidebar: () => {},
+    isCollapse: true,
+    onSignOut: function (): Promise<void> {
+      throw new Error("Function not implemented.");
+    },
+  },
 };

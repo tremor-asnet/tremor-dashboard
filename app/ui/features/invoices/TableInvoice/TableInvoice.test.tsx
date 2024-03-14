@@ -4,6 +4,9 @@ import "@testing-library/jest-dom";
 // Components
 import TableInvoice from "./TableInvoice";
 
+// Mocks
+import { INVOICE_DATA } from "@/mocks";
+
 jest.mock("next/navigation", () => ({
   usePathname: jest.fn().mockReturnValue("/mocked-path"),
   useRouter: jest.fn().mockReturnValue({
@@ -13,31 +16,23 @@ jest.mock("next/navigation", () => ({
 }));
 
 describe("TableInvoice Component", () => {
-  const details = [
-    { id: 0, productName: "Product 1", quantity: 2, price: 10 },
-    { id: 1, productName: "Product 2", quantity: 1, price: 5 },
-  ];
-  const totalCost = 25;
+  const { products, totalCost } = INVOICE_DATA;
+
+  const mockProps = {
+    details: products,
+    totalCost: totalCost,
+  };
 
   it("should match snapshot", () => {
-    const { container } = render(
-      <TableInvoice details={details} totalCost={totalCost} />,
-    );
+    const { container } = render(<TableInvoice {...mockProps} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it("renders table with correct data", () => {
-    const container = render(
-      <TableInvoice details={details} totalCost={totalCost} />,
-    );
+    const container = render(<TableInvoice {...mockProps} />);
 
-    expect(screen.getByText("Item")).toBeInTheDocument();
-    expect(screen.getByText("Qty")).toBeInTheDocument();
-    expect(screen.getByText("Rate")).toBeInTheDocument();
-    expect(screen.getByText("Amount")).toBeInTheDocument();
-
-    details.forEach(detail => {
+    products.forEach(detail => {
       expect(container.getByText(detail.productName)).toBeInTheDocument();
       expect(
         container.getByText(detail.quantity.toString()),

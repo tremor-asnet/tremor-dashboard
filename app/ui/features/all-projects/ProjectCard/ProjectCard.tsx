@@ -103,19 +103,23 @@ const ProjectCard = ({
             </Flex>
             <Flex flexDirection="col" justifyContent="end" className="w-auto">
               <Flex
+                data-testid="toggle-icon"
                 flexDirection="col"
                 className="cursor-pointer w-[30px] h-[16px]"
                 onClick={() => handleToggleAction(projectData.id)}>
                 <FaEllipsisV className="text-secondary dark:text-secondary" />
               </Flex>
               {openActionProject && (
-                <div className="absolute p-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
+                <div
+                  data-testid="menu-action"
+                  className="absolute p-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
                   {actions.map(item => (
                     <Flex key={item.key}>
                       <Button
+                        data-testid={item.key}
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md py-[6px]"
                         variant={VARIANT_BUTTON.LIGHT}
-                        onClick={() => handleItemActionProject()}>
+                        onClick={handleItemActionProject}>
                         <Text className="px-3 font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
                           {item.label}
                         </Text>

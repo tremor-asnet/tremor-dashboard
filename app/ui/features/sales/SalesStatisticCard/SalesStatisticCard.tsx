@@ -85,8 +85,8 @@ const SalesStatisticCard = ({
 
   const totalAmountColor =
     type === SALES_STATISTIC_TYPE.AVG_REVENUE
-      ? "text-secondary dark:!text-secondary"
-      : "text-few";
+      ? "text-purple dark:!text-greyer"
+      : "text-green dark:text-few";
 
   return (
     <Card
@@ -99,10 +99,10 @@ const SalesStatisticCard = ({
             justifyContent="start"
             flexDirection="col"
             data-testid="formatted-amount">
-            <Text className="text-md text-secondary dark:text-dark-romance font-semibold tracking-[0.4px]">
+            <Text className="text-md text-purple dark:text-dark-romance font-semibold tracking-[0.4px]">
               {type}
             </Text>
-            <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold">
+            <Text className="text-primary dark:text-dark-primary text-xl leading-[33px] font-bold w-full">
               {formattedAmount}
             </Text>
           </Flex>
@@ -112,7 +112,7 @@ const SalesStatisticCard = ({
           justifyContent="end"
           className="w-1/3 md:w-1/2 cursor-pointer"
           onClick={() => handleToggleAction(id)}>
-          <Text className="!text-xs text-secondary dark:text-secondary leading-[21px] tracking-[0.4px]">
+          <Text className="!text-xs text-purple dark:text-greyer leading-[21px] tracking-[0.4px]">
             {currentSalesDate}
           </Text>
         </Flex>
@@ -126,7 +126,7 @@ const SalesStatisticCard = ({
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
                   variant="light"
                   onClick={() => handleSelectSalesDate(item.label)}>
-                  <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
+                  <Text className="font-normal text-sm text-purple dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
                     {item.label}
                   </Text>
                 </Button>
@@ -145,7 +145,7 @@ const SalesStatisticCard = ({
             {formattedTotalAmount}
           </Text>
         )}
-        <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] tracking-[0.4px]">
+        <Text className="ml-1 text-purple dark:text-dark-romance leading-[21px] tracking-[0.4px]">
           {duration}
         </Text>
       </Flex>

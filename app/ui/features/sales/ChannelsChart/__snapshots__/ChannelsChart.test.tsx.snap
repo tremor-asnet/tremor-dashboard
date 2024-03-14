@@ -195,7 +195,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-between items-center pr-1"
         >
           <p
-            class="text-tremor-default font-light text-secondary dark:text-white tracking-[0.4px]"
+            class="text-tremor-default font-light text-purple dark:text-white tracking-[0.4px]"
           >
             More than
             <span
@@ -222,7 +222,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
               class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <span
-                class="text-xs tracking-wide"
+                class="text-xs text-grey tracking-wide"
               >
                 read more
               </span>

@@ -19,7 +19,7 @@ interface RevenueChartProps {
 }
 
 const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
-  const [setValue] = useState<any>(null);
+  const [value, setValue] = useState<any>(null);
 
   const chartValueChange = (v: Event) => {
     setValue(v);

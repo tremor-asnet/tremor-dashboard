@@ -83,7 +83,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
         </Flex>
         <Flex alignItems="end" className="flex-col sm:flex-row">
           <Flex className="pr-1">
-            <Text className="font-light text-secondary dark:text-white tracking-[0.4px]">
+            <Text className="font-light text-purple dark:text-white tracking-[0.4px]">
               More than
               <span className="font-bold mx-1">
                 {numberWithCommas(sale_total)}
@@ -97,7 +97,7 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
           </Flex>
           <Flex justifyContent="end" className="w-full md:w-2/3 mt-6 md:mt-4">
             <Button className="uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white box-shadow-transparent">
-              <span className="text-xs tracking-wide">read more</span>
+              <span className="text-xs text-grey tracking-wide">read more</span>
             </Button>
           </Flex>
         </Flex>

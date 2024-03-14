@@ -3,8 +3,10 @@ export const color = {
   primary: "#344767",
   secondary: "#7b809a",
   purple: "#55576D",
+  purpler: "#333",
   seldom: "#1a73e8",
   few: "#4caf50",
+  green: "#2A652B",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
@@ -14,6 +16,8 @@ export const color = {
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",
   grayish: "rgba(240, 242, 245, 0.4)",
+  grey: "#4D4E61",
+  greyer: "#B0B5BF",
 
   dark: {
     primary: "#ffffff",

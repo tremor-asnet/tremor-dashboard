@@ -101,5 +101,10 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@tremor/react@3.11.1": "patches/@tremor__react@3.11.1.patch"
+    }
   }
 }

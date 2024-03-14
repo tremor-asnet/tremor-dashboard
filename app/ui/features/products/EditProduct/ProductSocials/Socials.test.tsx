@@ -6,6 +6,14 @@ import { MESSAGES_ERROR } from "@/constants";
 // Components
 import Socials from "./Socials";
 
+const mockControllerNonError = (name: string, rule: Object) => ({
+  field: {
+    name: name,
+    rules: rule,
+  },
+  formState: { errors: {} },
+});
+
 // Mock react-hook-form module
 jest.mock("react-hook-form", () => ({
   ...jest.requireActual("react-hook-form"),
@@ -17,13 +25,7 @@ jest.mock("react-hook-form", () => ({
   })),
   // Mock the Controller component
   Controller: (props: any) => {
-    return props.render({
-      field: {
-        name: props.name,
-        rules: props.rule,
-      },
-      formState: { errors: {} },
-    });
+    return props.render(mockControllerNonError(props.name, props.rule));
   },
 }));
 
@@ -71,13 +73,7 @@ describe("Socials Component", () => {
             errors: {},
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: { errors: {} },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, queryByText } = render(<Socials />);
@@ -101,13 +97,7 @@ describe("Socials Component", () => {
             errors: {},
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: { errors: {} },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, queryByText } = render(<Socials />);
@@ -131,13 +121,7 @@ describe("Socials Component", () => {
             errors: {},
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: { errors: {} },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, queryByText } = render(<Socials />);
@@ -163,15 +147,7 @@ describe("Socials Component", () => {
             },
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: {
-          errors: {},
-        },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, getAllByText } = render(<Socials />);
@@ -205,15 +181,7 @@ describe("Socials Component", () => {
             },
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: {
-          errors: {},
-        },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, getAllByText } = render(<Socials />);
@@ -247,15 +215,7 @@ describe("Socials Component", () => {
             },
           },
         });
-      return props.render({
-        field: {
-          name: props.name,
-          rules: props.rule,
-        },
-        formState: {
-          errors: {},
-        },
-      });
+      return props.render(mockControllerNonError(props.name, props.rule));
     };
 
     const { getAllByDisplayValue, getAllByText } = render(<Socials />);

@@ -2,6 +2,10 @@
   @apply bg-[url(https://demos.creative-tim.com/nextjs-material-dashboard-pro//\_next/static/media/pattern-tree.5f0101e0.svg)];
 }
 
+.print-logo {
+  display: none;
+}
+
 @media print {
   @page {
     size: A4;
@@ -30,5 +34,9 @@
     display: block;
     width: 5rem;
     height: 5rem;
+  }
+
+  .browser-logo {
+    display: none;
   }
 }

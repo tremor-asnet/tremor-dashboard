@@ -3,9 +3,6 @@
 //Libs
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
-//Components
-import { Popover } from "@/ui/components";
-
 //Icons
 import { FaRegClock } from "react-icons/fa";
 

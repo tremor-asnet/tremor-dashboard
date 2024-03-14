@@ -1,9 +1,6 @@
 import { BarChart, Card, Flex, Subtitle, Text, Title } from "@tremor/react";
 import { FaRegClock } from "react-icons/fa";
 
-//Components
-import { Popover } from "@/ui/components";
-
 interface DataProps {
   description: string;
   sales: number;

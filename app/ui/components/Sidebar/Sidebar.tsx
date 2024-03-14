@@ -23,7 +23,13 @@ import {
 import { Avatar, CustomImage } from "@/ui/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
+import {
+  ITEMS_PROFILE,
+  ITEMS_DASHBOARD,
+  ROUTES,
+  LOGO_SRC,
+  VARIANT_BUTTON,
+} from "@/constants";
 import { BREAKPOINTS } from "@/constants/breakpoints";
 
 // Styles
@@ -173,7 +179,7 @@ const SideBar = ({
                     <Button
                       onClick={onSignOut}
                       className={`${hiddenOpenClass} w-full text-start pl-2 justify-start text-lighter hover:text-lighter dark:text-white dark:hover:text-white`}
-                      variant="light">
+                      variant={VARIANT_BUTTON.LIGHT}>
                       Logout
                     </Button>
                   </Flex>

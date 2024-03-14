@@ -94,3 +94,9 @@ export const TRANSACTION_CLASS = {
 export const PAGE_SIZE = {
   SIZE: 10,
 };
+
+export const enum VARIANT_BUTTON {
+  LIGHT = "light",
+  SECONDARY = "secondary",
+  PRIMARY = "primary",
+}

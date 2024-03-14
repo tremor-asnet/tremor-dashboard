@@ -18,6 +18,7 @@ import {
   ITEM_ACTION_SALES_DATE,
   SALES_STATISTIC_TYPE,
   UNIT,
+  VARIANT_BUTTON,
 } from "@/constants";
 
 // Helpers
@@ -124,7 +125,7 @@ const SalesStatisticCard = ({
               <Flex key={item.key}>
                 <Button
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
-                  variant="light"
+                  variant={VARIANT_BUTTON.LIGHT}
                   onClick={() => handleSelectSalesDate(item.label)}>
                   <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
                     {item.label}

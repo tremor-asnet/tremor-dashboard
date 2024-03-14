@@ -27,4 +27,7 @@ export const PRODUCT = {
   DETAIL: "/assets/images/products/product-details.jpg",
 };
 
-export const IMAGE_TO_PRINT = "https://i.ibb.co/87R6BcQ/logo-td-dark.webp";
+export const IMAGE_TO_PRINT = {
+  LIGHT_MODE: "https://i.ibb.co/87R6BcQ/logo-td-dark.webp",
+  DARK_MODE: "https://i.ibb.co/k8TVzJ1/logo-td-light.webp",
+};

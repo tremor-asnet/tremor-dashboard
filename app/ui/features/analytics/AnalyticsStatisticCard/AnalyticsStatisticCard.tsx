@@ -64,7 +64,7 @@ const AnalyticsStatisticCard = ({
               flexDirection="col"
               alignItems="end"
               className="pl-[90px] mb-1">
-              <Text className="text-md dark:text-dark-romance text-secondary font-light">
+              <Text className="text-md text-tertiary dark:text-dark-romance font-light">
                 {type}
               </Text>
               <Text
@@ -87,7 +87,7 @@ const AnalyticsStatisticCard = ({
                   unit: UNIT.PERCENT,
                 })}
               </Text>
-              <Text className="ml-1 text-secondary dark:text-dark-romance leading-[21px] font-light">
+              <Text className="ml-1 text-tertiary dark:text-dark-romance leading-[21px] font-light">
                 {duration}
               </Text>
             </Flex>

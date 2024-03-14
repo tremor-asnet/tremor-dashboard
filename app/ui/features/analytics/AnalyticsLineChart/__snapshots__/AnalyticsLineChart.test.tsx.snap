@@ -415,7 +415,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             class="w-fit h-fit relative flex justify-center"
           >
             <p
-              class="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]"
+              class="text-sm text-tertiary dark:text-dark-romance font-light opacity-100"
             >
                
               increase in today sales.
@@ -439,7 +439,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-row justify-start items-center"
         >
           <svg
-            class="text-secondary dark:text-dark-romance"
+            class="text-tertiary dark:text-dark-romance"
             fill="currentColor"
             height="12"
             stroke="currentColor"
@@ -453,7 +453,7 @@ exports[`Testing AnalyticsLineChart component Should match snapshot 1`] = `
             />
           </svg>
           <p
-            class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a] ml-1"
+            class="text-tremor-default text-sm text-tertiary dark:text-dark-romance font-light opacity-100 ml-1"
           >
             updated 4 mins ago
           </p>

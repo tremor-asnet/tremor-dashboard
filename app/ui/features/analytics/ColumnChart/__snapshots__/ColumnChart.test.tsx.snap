@@ -458,7 +458,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 class="w-fit h-fit relative flex justify-center"
               >
                 <p
-                  class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]"
+                  class="text-sm text-tertiary dark:text-dark-romance font-light opacity-100 truncate max-w-[310px]"
                 >
                   Last Campaign Performance
                 </p>
@@ -495,7 +495,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
                 />
               </svg>
               <p
-                class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1"
+                class="text-tremor-default text-sm text-tertiary dark:text-dark-romance font-light opacity-100 ml-1"
               >
                 campaign sent 2 days ago
               </p>
@@ -966,7 +966,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               class="w-fit h-fit relative flex justify-center"
             >
               <p
-                class="text-sm dark:text-dark-romance font-light opacity-100 text-secondary truncate max-w-[310px]"
+                class="text-sm text-tertiary dark:text-dark-romance font-light opacity-100 truncate max-w-[310px]"
               >
                 Last Campaign Performance
               </p>
@@ -1003,7 +1003,7 @@ exports[`ColumnChart component Should render ColumnChart snapshot correctly 1`] 
               />
             </svg>
             <p
-              class="text-tremor-default text-sm dark:text-dark-romance font-light opacity-100 text-secondary ml-1"
+              class="text-tremor-default text-sm text-tertiary dark:text-dark-romance font-light opacity-100 ml-1"
             >
               campaign sent 2 days ago
             </p>

@@ -48,14 +48,14 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
           <Title className="w-full font-primary font-normal tracking-normal text-primary dark:text-dark-primary text-xl text-center leading-snug capitalize mt-8 mb-2">
             {name}
           </Title>
-          <Text className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center">
+          <Text className="text-tertiary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center">
             {description}
           </Text>
         </Flex>
         <div className="w-full h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider opacity-25 my-6" />
         <Flex className="p-2 pt-0">
           <Flex>
-            <Text className="flex-wrap font-primary font-normal text-tremor-title dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
+            <Text className="flex-wrap font-primary font-normal text-tertiary dark:text-dark-romance leading-[26px] tracking-[0.17136px] text-center">
               {moneyFormat({
                 value: price,
                 currency: CURRENCY.DOLLAR,
@@ -65,10 +65,10 @@ const AnalyticsInfo = ({ infoData }: AnalyticsInfoProps): JSX.Element => {
           </Flex>
           <Flex
             justifyContent="end"
-            className="font-primary text-secondary font-light">
+            className="font-primary text-tertiary font-light">
             <PiMapPinFill className="text-tremor-content text-xl mr-1" />
             <Popover content={location} className="min-w-[200px]">
-              <Text className="dark:text-dark-romance tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]">
+              <Text className="text-tertiary dark:text-dark-romance tracking-[0.4px] leading-[21px] truncate max-w-[120px] xs:max-w-[150px] xl:max-w-[200px]">
                 {location}
               </Text>
             </Popover>

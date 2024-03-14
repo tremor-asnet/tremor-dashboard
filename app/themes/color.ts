@@ -2,7 +2,7 @@ export const color = {
   test: "#000",
   primary: "#344767",
   secondary: "#7b809a",
-  purple: "#55576D",
+  tertiary: "#55576D",
   seldom: "#1a73e8",
   few: "#4caf50",
   fewter: "#339537",

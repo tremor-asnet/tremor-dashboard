@@ -3,9 +3,6 @@
 //Libs
 import { Card, LineChart, Subtitle, Flex, Text, Title } from "@tremor/react";
 
-//Components
-import { Popover } from "@/ui/components";
-
 //Icons
 import { FaRegClock } from "react-icons/fa";
 
@@ -81,20 +78,18 @@ const AnalyticsLineChart = ({
             <Title className="text-base dark:text-dark-primary font-bold opacity-100 capitalize text-[#344767]">
               {title}
             </Title>
-            <Popover content={subTitle} className="min-w-[200px]">
-              <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-[#7b809a]">
-                {isDailyChart && (
-                  <>
-                    (
-                    <span data-testid="percent" className="font-bold">
-                      {descValue}
-                    </span>
-                    )
-                  </>
-                )}{" "}
-                {subTitle}
-              </Subtitle>
-            </Popover>
+            <Subtitle className="text-sm dark:text-dark-romance font-light opacity-100 text-secondary">
+              {isDailyChart && (
+                <>
+                  (
+                  <span data-testid="percent" className="font-bold">
+                    {descValue}
+                  </span>
+                  )
+                </>
+              )}{" "}
+              {subTitle}
+            </Subtitle>
           </div>
           <div className="bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] dark:bg-gradient-divider h-px opacity-25 mx-0 my-4" />
           <Flex justifyContent="start">

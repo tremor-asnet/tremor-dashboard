@@ -91,7 +91,7 @@ const SalesStatisticCard = ({
   return (
     <Card
       ref={salesCardRef as RefObject<HTMLDivElement>}
-      className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+      className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex alignItems="start">
         <Flex className="flex-col w-2/3 md:w-1/2">
           <Flex

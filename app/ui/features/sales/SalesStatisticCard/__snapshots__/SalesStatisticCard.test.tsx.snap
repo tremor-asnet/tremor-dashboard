@@ -6,7 +6,7 @@ exports[`SalesStatisticCard Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md"
+        class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand dark:bg-dark-tremor-primary ring-0 max-w-full p-4 2xl:max-w-full border-none relative rounded-xl shadow-md"
       >
         <div
           class="tremor-Flex-root flex w-full flex-row justify-between items-start"
@@ -60,7 +60,7 @@ exports[`SalesStatisticCard Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md"
+      class="tremor-Card-root w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand dark:bg-dark-tremor-primary ring-0 max-w-full p-4 2xl:max-w-full border-none relative rounded-xl shadow-md"
     >
       <div
         class="tremor-Flex-root flex w-full flex-row justify-between items-start"

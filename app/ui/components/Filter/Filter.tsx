@@ -10,9 +10,6 @@ import { SelectOption } from "@/ui/components";
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-// Constants
-import { orderListOption, productList } from "@/constants";
-
 // Hooks
 import { useOutsideClick } from "@/hooks";
 
@@ -77,15 +74,17 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
         iconPosition="right"
         variant="secondary"
         className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
-        onClick={handleClickFilter}>
+        onClick={handleClickFilter}
+        data-testid="toggle-filter">
         <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
           {titleOption ? `${title}: ${titleOption}` : "Filters"}
         </Text>
       </Button>
       {showListOption && (
         <div
+          data-testid="list-option"
           ref={selectRef as RefObject<HTMLDivElement>}
-          className="absolute z-[2] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+          className="absolute z-[2] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
           <SelectOption
             title={title}
             data={listOption}

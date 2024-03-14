@@ -6,6 +6,7 @@ import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 // Constants
 import { DIRECTION } from "@/constants/common";
+import { VARIANT_BUTTON } from "@/constants";
 
 export interface HeaderCellContentsProps {
   title: string;
@@ -50,7 +51,7 @@ const HeaderCellContents = ({
           <Flex justifyContent="end" className="absolute top-0">
             <Button
               className="justify-center items-center opacity-50 dark:opacity-100"
-              variant="light">
+              variant={VARIANT_BUTTON.LIGHT}>
               <MdArrowDropUp
                 className={`w-4 h-4 ${checkFill(DIRECTION.ASC)}`}
               />
@@ -59,7 +60,7 @@ const HeaderCellContents = ({
           <Flex justifyContent="end" className="absolute top-1.5">
             <Button
               className="justify-center items-center opacity-50 dark:opacity-100"
-              variant="light">
+              variant={VARIANT_BUTTON.LIGHT}>
               <MdArrowDropDown
                 className={`w-4 h-4 ${checkFill(DIRECTION.DESC)}`}
               />

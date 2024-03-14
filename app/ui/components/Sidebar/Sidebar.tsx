@@ -16,13 +16,20 @@ import {
   List,
   ListItem,
   Text,
+  Button,
 } from "@tremor/react";
 
 // Components
 import { Avatar, CustomImage } from "@/ui/components";
 
 // Constants
-import { ITEMS_PROFILE, ITEMS_DASHBOARD, ROUTES, LOGO_SRC } from "@/constants";
+import {
+  ITEMS_PROFILE,
+  ITEMS_DASHBOARD,
+  ROUTES,
+  LOGO_SRC,
+  VARIANT_BUTTON,
+} from "@/constants";
 import { BREAKPOINTS } from "@/constants/breakpoints";
 
 // Styles
@@ -170,9 +177,11 @@ const SideBar = ({
                     onClick={onSignOut}
                     className={`w-full gap-6 font-normal py-3 px-7 ${centerOpenClass}`}>
                     <span className="cursor-pointer w-5">L</span>
-                    <button className={`${hiddenOpenClass} w-full text-start`}>
+                    <Button
+                      className={`${hiddenOpenClass} w-full text-start pl-2 justify-start text-lighter hover:text-lighter dark:text-white dark:hover:text-white`}
+                      variant={VARIANT_BUTTON.LIGHT}>
                       Logout
-                    </button>
+                    </Button>
                   </Flex>
                 </ListItem>
               </List>

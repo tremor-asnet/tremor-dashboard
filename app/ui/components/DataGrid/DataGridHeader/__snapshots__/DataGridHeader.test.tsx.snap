@@ -10,7 +10,7 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
         class="tremor-TableRow-row"
       >
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -87,7 +87,7 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"

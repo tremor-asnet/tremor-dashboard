@@ -1,126 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Order detail contact section Should match snapshot 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
+exports[`Socials Component Should match snapshot 1`] = `
+<div>
+  <div
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary ring-0"
+  >
+    <p
+      class="text-tremor-title font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize"
+    >
+      Socials
+    </p>
+    <div
+      class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 gap-6"
+    >
       <div
-        class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary ring-0"
+        class="w-full mb-4"
       >
-        <p
-          class="text-tremor-title font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize"
-        >
-          Socials
-        </p>
         <div
-          class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8"
+          class="w-full"
         >
+          <label
+            class="text-secondary text-sm dark:text-lighter"
+            for="edit-shopify"
+          >
+            Shopify Handle
+          </label>
           <input
-            class="input-text"
-            id="shoppify-handle"
-            placeholder="Shoppify Handle"
-            value=""
+            class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            id="edit-shopify"
+            name="shopifyUrl"
+            placeholder=""
+            type="text"
           />
+        </div>
+      </div>
+      <div
+        class="w-full mb-4"
+      >
+        <div
+          class="w-full"
+        >
+          <label
+            class="text-secondary text-sm dark:text-lighter"
+            for="edit-fb"
+          >
+            Facebook Account
+          </label>
           <input
-            class="input-text"
-            id="facebook-account"
-            placeholder="Facebook Account"
-            value=""
+            class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            id="edit-fb"
+            name="facebookUrl"
+            placeholder=""
+            type="text"
           />
+        </div>
+      </div>
+      <div
+        class="w-full mb-4"
+      >
+        <div
+          class="w-full"
+        >
+          <label
+            class="text-secondary text-sm dark:text-lighter"
+            for="edit-ig"
+          >
+            Instagram Account
+          </label>
           <input
-            class="input-text"
-            id="instagram-account"
-            placeholder="Instagram Account"
-            value=""
+            class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            id="edit-ig"
+            name="instagramUrl"
+            placeholder=""
+            type="text"
           />
         </div>
       </div>
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 dark:bg-dark-tremor-primary ring-0"
-    >
-      <p
-        class="text-tremor-title font-primary font-bold text-primary dark:text-dark-primary text-xl leading-snug capitalize"
-      >
-        Socials
-      </p>
-      <div
-        class="tremor-Flex-root flex w-full flex-col items-start justify-start mt-8"
-      >
-        <input
-          class="input-text"
-          id="shoppify-handle"
-          placeholder="Shoppify Handle"
-          value=""
-        />
-        <input
-          class="input-text"
-          id="facebook-account"
-          placeholder="Facebook Account"
-          value=""
-        />
-        <input
-          class="input-text"
-          id="instagram-account"
-          placeholder="Instagram Account"
-          value=""
-        />
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+  </div>
+</div>
 `;

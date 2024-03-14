@@ -25,4 +25,10 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .print-logo {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
 }

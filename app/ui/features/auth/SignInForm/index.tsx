@@ -112,7 +112,7 @@ const SignInForm = () => {
           return (
             <div className="h-[70px] w-full">
               <TextInput
-                tabIndex={1}
+                tabIndex={0}
                 id="password"
                 placeholder="Password"
                 type="password"
@@ -134,14 +134,14 @@ const SignInForm = () => {
           <div className="flex items-center space-x-3 mt-6">
             <Switch
               id="remember"
-              tabIndex={2}
+              tabIndex={0}
               checked={value}
               color="zinc"
               disabled={isPending}
               className="switch flex justify-center items-center"
               onChange={onChange}
             />
-            <Text className="text-secondary dark:text-dark-romance font-normal">
+            <Text className="text-purple dark:text-dark-romance font-normal">
               Remember me
             </Text>
           </div>
@@ -150,7 +150,7 @@ const SignInForm = () => {
       />
 
       <Button
-        tabIndex={3}
+        tabIndex={0}
         aria-disabled={isPending}
         className="min-h-[43px] flex w-full bg-gradient-primary dark:bg-gradient-pickled opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent"
         size="xs"
@@ -165,11 +165,11 @@ const SignInForm = () => {
         )}
       </Button>
       <Flex justifyContent="center" className="mt-8 mb-2">
-        <Text className="text-secondary dark:text-dark-romance font-light">
+        <Text className="text-purple dark:text-dark-romance font-light">
           Don&rsquo;t have an account?
         </Text>
         <Link
-          tabIndex={4}
+          tabIndex={0}
           className="text-primary dark:text-white font-semibold text-sm ml-1"
           href={ROUTES.SIGN_UP}>
           Sign up

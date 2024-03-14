@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@testing-library/react";
+import { RenderResult, fireEvent, render } from "@testing-library/react";
 
 // Types
 import { ColumnType, Product } from "@/types";
@@ -26,8 +26,10 @@ const mockColumns: ColumnType<Product>[] = [
 const mockHandleSorting = jest.fn();
 
 describe("DataGridHeader component", () => {
-  it("Should matches snapshot", () => {
-    const { container } = render(
+  let renderedComponent: RenderResult;
+
+  beforeEach(() => {
+    renderedComponent = render(
       <table>
         <DataGridHeader
           columns={mockColumns}
@@ -35,21 +37,16 @@ describe("DataGridHeader component", () => {
         />
       </table>,
     );
+  });
 
+  it("Should matches snapshot", () => {
+    const { container } = renderedComponent;
     // Take a snapshot of the rendered component
     expect(container).toMatchSnapshot();
   });
 
   it("Should be call handleSorting function when sortable column header is clicked", () => {
-    const { getByText } = render(
-      <table>
-        <DataGridHeader
-          columns={mockColumns}
-          handleSorting={mockHandleSorting}
-        />
-      </table>,
-    );
-
+    const { getByText } = renderedComponent;
     // Click on a sortable column header
     fireEvent.click(getByText(mockColumns[0].title));
     expect(mockHandleSorting).toHaveBeenCalledWith(
@@ -66,15 +63,7 @@ describe("DataGridHeader component", () => {
   });
 
   it("Should not call handleSorting function when non-sortable column header is clicked", () => {
-    const { getByText } = render(
-      <table>
-        <DataGridHeader
-          columns={mockColumns}
-          handleSorting={mockHandleSorting}
-        />
-      </table>,
-    );
-
+    const { getByText } = renderedComponent;
     // Click on a non-sortable column header
     fireEvent.click(getByText(mockColumns[1].title));
     expect(mockHandleSorting).not.toHaveBeenCalledWith();

@@ -2,12 +2,14 @@ export const color = {
   test: "#000",
   primary: "#344767",
   secondary: "#7b809a",
+  purple: "#55576D",
   seldom: "#1a73e8",
   few: "#4caf50",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
+  grayter: "#485976",
   rarely: "#dee2e6",
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",
@@ -104,6 +106,7 @@ export const backgroundColor = {
   greyish: "#f8f9fa",
   "green-500": "#43A047",
   "orange-500": "#FB8C00",
+  graydark: "#1a2035",
 
   dark: {
     primary: "#111827",

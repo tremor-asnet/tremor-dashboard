@@ -1,6 +1,7 @@
 "use client";
 
 // Components
+import { Button, Text } from "@tremor/react";
 import InvoiceItem from "../InvoiceItem/InvoiceItem";
 
 // Types
@@ -41,9 +42,11 @@ const Invoices = ({ invoices }: InvoicesProps) => {
     <div className="p-6 bg-white dark:bg-dark-tremor-primary rounded-lg shadow-md w-full min-h-[234px]">
       <div className="text-primary dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
-        <button className="uppercase text-primary text-xs font-bold px-4 py-1.5 border border-primary rounded-md tracking-wide">
-          view all
-        </button>
+        <Button
+          variant="light"
+          className="uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide">
+          <Text className="text-xs text-primary">view all</Text>
+        </Button>
       </div>
       <ul className="flex flex-col gap-2 mt-6 hidden xl:block">
         {invoiceListDeskTop}

@@ -3,26 +3,374 @@
 exports[`Other Products Table Testing should match snapshot 1`] = `
 <div>
   <div
-    class="min-h-[500px] flex justify-center items-center"
-    role="status"
+    class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto !shadow-none"
   >
-    <svg
-      aria-hidden="true"
-      class="w-8 h-8 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-river-bed-500 dark:fill-white"
-      fill="none"
-      viewBox="0 0 22 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="flex flex-col items-start justify-start my-2"
     >
-      <path
-        d="M11 3C11 2.44772 11.4477 2 12 2C17.5228 2 22 6.47715 22 12C22 14.7175 20.9147 17.1835 19.1562 18.9849C18.7704 19.3801 18.1373 19.3878 17.7421 19.002C17.3469 18.6162 17.3392 17.983 17.725 17.5879C19.1336 16.1449 20 14.1746 20 12C20 7.58172 16.4183 4 12 4C11.4477 4 11 3.55228 11 3Z"
-        fill="currentFill"
-      />
-    </svg>
-    <span
-      class="sr-only"
-    >
-      Loading...
-    </span>
+      <div
+        class="tremor-Table-root overflow-auto w-full"
+      >
+        <table
+          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+        >
+          <thead
+            class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
+          >
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Id
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Product
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Price
+                  </div>
+                </div>
+              </th>
+              <th
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer dark:print:!text-lighter dark:print:opacity-100"
+              >
+                <div
+                  class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                >
+                  <div
+                    class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+                  >
+                    Is Available
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+          >
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <a
+                  class="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                  href="/product-list/230019"
+                >
+                  #
+                  230019
+                </a>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div
+                  class="flex justify-start items-center w-48"
+                >
+                  <img
+                    alt="Christopher Knight Home"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="24"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 2x"
+                    style="color: transparent;"
+                    width="24"
+                  />
+                  <p
+                    class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
+                  >
+                    Christopher Knight Home
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                >
+                  $89.53
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  Yes
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <a
+                  class="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                  href="/product-list/87120"
+                >
+                  #
+                  87120
+                </a>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div
+                  class="flex justify-start items-center w-48"
+                >
+                  <img
+                    alt="Bar Height Swivel Barstool"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="24"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 2x"
+                    style="color: transparent;"
+                    width="24"
+                  />
+                  <p
+                    class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
+                  >
+                    Bar Height Swivel Barstool
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                >
+                  $99.99
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  Yes
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <a
+                  class="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                  href="/product-list/2456772"
+                >
+                  #
+                  2456772
+                </a>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div
+                  class="flex justify-start items-center w-48"
+                >
+                  <img
+                    alt="Christopher Knight Home"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="24"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 2x"
+                    style="color: transparent;"
+                    width="24"
+                  />
+                  <p
+                    class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
+                  >
+                    Christopher Knight Home
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                >
+                  $89.53
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  Yes
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <a
+                  class="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                  href="/product-list/1992"
+                >
+                  #
+                  1992
+                </a>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div
+                  class="flex justify-start items-center w-48"
+                >
+                  <img
+                    alt="Modern Square"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="24"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 2x"
+                    style="color: transparent;"
+                    width="24"
+                  />
+                  <p
+                    class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
+                  >
+                    Modern Square
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                >
+                  $59.99
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  No
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <a
+                  class="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-id hover:underline"
+                  href="/product-list/412301"
+                >
+                  #
+                  412301
+                </a>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <div
+                  class="flex justify-start items-center w-48"
+                >
+                  <img
+                    alt="Signature Design by Ashley"
+                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="24"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 2x"
+                    style="color: transparent;"
+                    width="24"
+                  />
+                  <p
+                    class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
+                  >
+                    Signature Design by Ashley
+                  </p>
+                </div>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue"
+                >
+                  $129.00
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  Yes
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 `;

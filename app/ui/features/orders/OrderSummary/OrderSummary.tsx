@@ -11,7 +11,10 @@ import { moneyFormat } from "@/helpers";
 
 export const OrderSummary = (monies: OrderSummaryData) => {
   const { productPrice, delivery, taxes } = monies;
-  const totalPayment = productPrice + delivery + taxes;
+  const totalPayment =
+    (productPrice ? productPrice : 0) +
+    (delivery ? delivery : 0) +
+    (taxes ? taxes : 0);
   const listTitle = ["Product Price", "Delivery", "Taxes"];
 
   return (

@@ -3,7 +3,6 @@ import { Controller, FieldErrors } from "react-hook-form";
 
 // Components
 import { InputField } from "@/ui/components";
-import { Text } from "@tremor/react";
 
 // Constants
 import { MESSAGES_ERROR, REGEX } from "@/constants";
@@ -34,16 +33,14 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <div className="mb-3">
+          <div className="mb-6">
             <InputField
               id="add-product-shopify"
               label="Shopify Handle"
               type="text"
+              errorMessage={shopifyErrorMsg}
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
-              {shopifyErrorMsg}
-            </Text>
           </div>
         )}
       />
@@ -59,16 +56,14 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <div className="mb-3">
+          <div className="mb-6">
             <InputField
               id="add-product-fb"
               label="Facebook Account"
               type="text"
+              errorMessage={facebookErrorMsg}
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
-              {facebookErrorMsg}
-            </Text>
           </div>
         )}
       />
@@ -84,16 +79,14 @@ const Socials = ({ control, errors }: SocialsProps) => {
           },
         }}
         render={({ field }) => (
-          <div className="mb-3">
+          <div className="mb-6">
             <InputField
               id="add-product-ig"
               label="Instagram Account"
               type="text"
+              errorMessage={instagramErrorMsg}
               {...field}
             />
-            <Text className="text-xs text-red-500 dark:text-red-500 mt-1">
-              {instagramErrorMsg}
-            </Text>
           </div>
         )}
       />

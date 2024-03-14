@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 // Constants
-import { NOT_FOUND } from "@/constants";
+import { NOT_FOUND, NOT_FOUND_IMAGE } from "@/constants";
 
 interface ImageProps {
   className?: string;
@@ -34,7 +34,7 @@ const CustomImage = ({
     <>
       <Image
         className={className}
-        src={fallbackSrc ? NOT_FOUND.SRC : src}
+        src={fallbackSrc ? NOT_FOUND_IMAGE : src}
         width={width}
         height={height}
         sizes={sizes}

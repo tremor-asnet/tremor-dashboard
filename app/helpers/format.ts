@@ -117,7 +117,8 @@ export const moneyFormat = ({
   delimiter?: string;
   positionFraction?: number;
 }): string => {
-  let formattedNumber = value?.toLocaleString("en-US", {
+  const valuePrice = value ? value : 0;
+  let formattedNumber = valuePrice?.toLocaleString("en-US", {
     minimumFractionDigits: positionFraction,
   });
 

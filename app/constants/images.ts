@@ -1,7 +1,7 @@
 export const NOT_FOUND = {
   SRC: "/images/placeholder-image.png",
 };
-export const NOT_FOUND_IMAGE = "/images/no-image.jpg";
+export const NOT_FOUND_IMAGE = "/images/no_image_square.jpg";
 export const LOGO_SRC = {
   logo: "/assets/images/sidebar-logo.webp",
 };

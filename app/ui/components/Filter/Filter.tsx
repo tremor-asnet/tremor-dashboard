@@ -84,7 +84,7 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
         <div
           data-testid="list-option"
           ref={selectRef as RefObject<HTMLDivElement>}
-          className="absolute z-[2] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-dark-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
+          className="absolute z-[2] w-[176px] right-0 shadow-tremor-cardImage dark:shadow-select-option bg-secondary p-2 rounded-md dark:bg-dark-tremor-primary">
           <SelectOption
             title={title}
             data={listOption}

@@ -18,6 +18,7 @@ import {
   ITEM_ACTION_SALES_DATE,
   SALES_STATISTIC_TYPE,
   UNIT,
+  VARIANT_BUTTON,
 } from "@/constants";
 
 // Helpers
@@ -91,7 +92,7 @@ const SalesStatisticCard = ({
   return (
     <Card
       ref={salesCardRef as RefObject<HTMLDivElement>}
-      className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+      className="dark:bg-dark-tremor-primary ring-0 max-w-full p-4 2xl:max-w-full border-none relative rounded-xl shadow-md">
       <Flex alignItems="start">
         <Flex className="flex-col w-2/3 md:w-1/2">
           <Flex
@@ -124,7 +125,7 @@ const SalesStatisticCard = ({
               <Flex key={item.key}>
                 <Button
                   className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
-                  variant="light"
+                  variant={VARIANT_BUTTON.LIGHT}
                   onClick={() => handleSelectSalesDate(item.label)}>
                   <Text className="font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
                     {item.label}

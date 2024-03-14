@@ -2,17 +2,17 @@
 
 // Libs
 import Link from "next/link";
-import Image from "next/image";
 import { useContext } from "react";
 
 //Components
 import { Flex, Title, Text } from "@tremor/react";
-
-// Constants
-import { IMAGE_TO_PRINT } from "@/constants";
+import { InvoiceLogo } from "..";
 
 // Contexts
 import { ThemeContext } from "@/context/theme";
+
+// Themes
+import { color } from "@/themes";
 
 interface InvoiceHeaderProps {
   addressBank: string;
@@ -26,7 +26,7 @@ interface InvoiceHeaderProps {
   stateCustomer: string;
 }
 
-export const InvoiceHeader = ({
+const InvoiceHeader = ({
   addressBank,
   cityBank,
   stateBank,
@@ -40,28 +40,16 @@ export const InvoiceHeader = ({
   const { isDarkTheme } = useContext(ThemeContext);
 
   const renderAddressBankInfo = `${addressBank} ${cityBank}, ${stateBank}`;
-  const srcImg = isDarkTheme
-    ? IMAGE_TO_PRINT.DARK_MODE
-    : IMAGE_TO_PRINT.LIGHT_MODE;
 
   return (
     <Flex className="flex-col md:flex-row mb-10 md:mb-20">
       <Flex flexDirection="col" alignItems="start" className="md:max-w-[35%]">
-        <Image
-          src={srcImg}
-          alt="print-logo"
-          width={50}
-          height={50}
-          className="block print:hidden"
+        <InvoiceLogo
+          color={isDarkTheme ? color.dark.primary : color.black}
+          additionalClasses="browser-logo"
         />
         {/* Show this image when in print preview mode */}
-        <Image
-          src={IMAGE_TO_PRINT.LIGHT_MODE}
-          alt="print-logo"
-          width={50}
-          height={50}
-          className="print-logo hidden"
-        />
+        <InvoiceLogo color={color.black} additionalClasses="print-logo" />
         <Title className="text-primary dark:text-white font-semibold leading-6 tracking-wide mt-7 dark:print:text-primary">
           {renderAddressBankInfo}
         </Title>

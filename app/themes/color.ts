@@ -16,7 +16,7 @@ export const color = {
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",
   grayish: "rgba(240, 242, 245, 0.4)",
-  grey: "#4D4E61",
+  grey: "#4d4e61",
 
   dark: {
     primary: "#ffffff",

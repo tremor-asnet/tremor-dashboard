@@ -80,6 +80,10 @@
 }
 
 .dark .select-custom ul li[data-headlessui-state="active"] {
+  @apply text-lighter;
+}
+
+.dark .select-custom ul li[data-headlessui-state="active"] {
   @apply rounded-md bg-dark-tremor-primary;
 }
 

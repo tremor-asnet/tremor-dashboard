@@ -35,10 +35,12 @@ const ImagePreview = ({
         {filename}
       </Text>
       <Button
-        className="mt-2 text-sm text-white hover:text-white dark:text-grayter dark:hover:text-grayter px-4 py-2 bg-grayter dark:bg-white rounded hover:bg-graydark"
+        className="mt-2 rounded-lg dark:bg-gradient-pickled py-3 px-6 bg-gradient-btn-back hover:dark:bg-gradient-pickled border-none dark:text-white dark:hover:text-white text-center box-shadow-transparent"
         onClick={onRemove}
         variant="light">
-        Remove photo
+        <Text className="uppercase font-bold text-xs text-gray-900 dark:text-white tracking-wide">
+          Remove photo
+        </Text>
       </Button>
     </div>
   );

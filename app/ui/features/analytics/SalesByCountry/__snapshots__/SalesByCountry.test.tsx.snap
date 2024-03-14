@@ -36,7 +36,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
             class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
           >
             <p
-              class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
+              class="text-sm md:text-base font-bold text-primary dark:text-dark-primary"
             >
               Sales by Country
             </p>
@@ -134,7 +134,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
@@ -222,7 +222,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
@@ -310,7 +310,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
@@ -398,7 +398,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
-                          class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                          class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                         >
                           Bounce:
                         </p>
@@ -2106,7 +2106,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
           class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
         >
           <p
-            class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
+            class="text-sm md:text-base font-bold text-primary dark:text-dark-primary"
           >
             Sales by Country
           </p>
@@ -2204,7 +2204,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
@@ -2292,7 +2292,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
@@ -2380,7 +2380,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
@@ -2468,7 +2468,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
-                        class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                        class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                       >
                         Bounce:
                       </p>
@@ -4209,7 +4209,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
         class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-4"
       >
         <p
-          class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
+          class="text-sm md:text-base font-bold text-primary dark:text-dark-primary"
         >
           Sales by Country
         </p>
@@ -4291,7 +4291,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4363,7 +4363,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4435,7 +4435,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4507,7 +4507,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4579,7 +4579,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4636,7 +4636,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
         class="tremor-Flex-root flex w-full flex-col justify-start items-start mt-4 ml-[6.5rem]"
       >
         <p
-          class="text-tremor-title text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]"
+          class="text-sm md:text-base font-bold text-primary dark:text-dark-primary"
         >
           Sales by Country
         </p>
@@ -4734,7 +4734,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4822,7 +4822,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4910,7 +4910,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>
@@ -4998,7 +4998,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                   >
                     <p
-                      class="text-tremor-default text-tremor-content text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]"
+                      class="text-tremor-default text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]"
                     >
                       Bounce:
                     </p>

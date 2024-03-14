@@ -30,9 +30,9 @@ const SalesByCountry = ({ title, isAnalytics, data }: SalesByCountryProps) => {
           alignItems="start"
           justifyContent="start"
           className={`mt-4 ${titleClass}`}>
-          <Title className="text-lg font-bold text-primary dark:text-dark-primary tracking-[0.0075em]">
+          <p className="text-sm md:text-base font-bold text-primary dark:text-dark-primary">
             {title}
-          </Title>
+          </p>
         </Flex>
       </Flex>
       <Flex

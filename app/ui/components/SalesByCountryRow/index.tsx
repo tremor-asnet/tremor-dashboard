@@ -81,7 +81,7 @@ const SalesByCountryRow = ({
         className={`w-[25%] px-4 py-3 text-left bounce ${
           isAnalytics && "hidden md:table-cell"
         }`}>
-        <Text className="text-left text-xs dark:text-dark-romance font-semibold leading-[1.25]">
+        <Text className="text-left text-xs text-tertiary dark:text-dark-romance font-semibold leading-[1.25]">
           Bounce:
         </Text>
         <Text className="text-left text-tremor-content-title dark:text-dark-tremor-content-title leading-[1.5]">

@@ -12,7 +12,11 @@ import { CustomImage, Avatar } from "@/ui/components";
 import { Project, AvatarCard } from "@/types";
 
 //Constants
-import { ITEM_ACTION_PROJECT, PLACEHOLDER_IMAGE } from "@/constants";
+import {
+  ITEM_ACTION_PROJECT,
+  PLACEHOLDER_IMAGE,
+  VARIANT_BUTTON,
+} from "@/constants";
 
 //Mocks
 import { PROJECT_DATA } from "@/mocks/project";
@@ -114,7 +118,7 @@ const ProjectCard = ({
                       <Button
                         data-testid={item.key}
                         className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md py-[6px]"
-                        variant="light"
+                        variant={VARIANT_BUTTON.LIGHT}
                         onClick={handleItemActionProject}>
                         <Text className="px-3 font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
                           {item.label}

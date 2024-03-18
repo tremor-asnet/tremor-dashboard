@@ -87,7 +87,7 @@ const SalesStatisticCard = ({
   const totalAmountColor =
     type === SALES_STATISTIC_TYPE.AVG_REVENUE
       ? "text-purple dark:!text-greyer"
-      : "text-green dark:text-few";
+      : "text-greenter dark:text-few";
 
   return (
     <Card

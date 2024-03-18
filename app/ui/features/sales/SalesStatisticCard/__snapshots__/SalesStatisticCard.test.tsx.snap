@@ -45,7 +45,7 @@ exports[`SalesStatisticCard Should match snapshot 1`] = `
           data-testid="total-amount"
         >
           <p
-            class="text-tremor-default text-green dark:text-few leading-[22px] font-bold"
+            class="text-tremor-default text-greenter dark:text-few leading-[22px] font-bold"
           >
             +213%
           </p>
@@ -99,7 +99,7 @@ exports[`SalesStatisticCard Should match snapshot 1`] = `
         data-testid="total-amount"
       >
         <p
-          class="text-tremor-default text-green dark:text-few leading-[22px] font-bold"
+          class="text-tremor-default text-greenter dark:text-few leading-[22px] font-bold"
         >
           +213%
         </p>

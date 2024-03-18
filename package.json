@@ -13,15 +13,7 @@
     "test:update": "jest --passWithNoTests --updateSnapshot",
     "prepare": "husky install",
     "postinstall": "patch-package",
-    "minify-static": "terser .next/static/chunks/**/*.js -o .next/static/chunks/**/*.js",
-    "minify-static-pages": "terser .next/static/chunks/pages/*.js -o .next/static/chunks/pages/*.js",
-    "minify-static-app": "terser .next/static/chunks/app/*.js -o .next/static/chunks/app/*.js",
-    "minify-server": "pnpm run minify-server-app && pnpm run minify-server-chunks && pnpm run minify-server-pages",
-    "minify-server-app": "terser .next/server/app/**/*.js -o .next/server/app/**/*.js",
-    "minify-server-chunks": "terser .next/server/chunks/*.js -o .next/server/chunks/*.js",
-    "minify-server-pages": "terser .next/server/pages/*.js -o .next/server/pages/*.js",
-    "minify-middleware": "terser .next/server/middleware.js -o .next/server/middleware.js",
-    "minify": "pnpm run minify-static && pnpm run minify-server"
+    "minify": "sh scripts/minify.sh"
   },
   "dependencies": {
     "@storybook/addon-knobs": "^7.0.2",

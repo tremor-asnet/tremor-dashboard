@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-// Componenents
+// Components
 import StarRating from "./StarRating";
 
 describe("StarRating Testing", () => {

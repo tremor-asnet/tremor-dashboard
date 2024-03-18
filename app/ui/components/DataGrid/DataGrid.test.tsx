@@ -1,91 +1,112 @@
-import { render } from "@testing-library/react";
-
-//Components
-import DataGrid from "./DataGrid";
+import {
+  RenderResult,
+  fireEvent,
+  render,
+  waitFor,
+} from "@testing-library/react";
 
 // Types
-import { Order, ColumnType } from "@/types";
+import { ColumnType, Order } from "@/types";
 
-describe("Data Table Testing", () => {
-  const data: Order[] = [
-    {
-      id: 10425,
-      createdAt: "2023-11-01T10:20:00+00:00",
-      status: 1,
-      customer: {
-        id: 15,
-        avatar:
-          "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
-        fullName: "Orlando Imieto",
-      },
-      revenue: 44.9,
-      products: [
-        {
-          id: 6,
-          name: "Phone Case Pink",
-          count: 2,
-          url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
-          price: 90,
-        },
-      ],
-    },
-    {
-      id: 12345,
-      createdAt: "2023-11-01T03:20:00+00:00",
-      status: 0,
-      customer: {
-        id: 1,
-        avatar:
-          "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
-        fullName: "Orlando Imieto",
-      },
-      revenue: 140.2,
-      products: [
-        {
-          id: 12,
-          name: "Office Papers",
-          count: 1,
-          url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
-          price: 77,
-        },
-      ],
-    },
-    {
-      id: 12350,
-      createdAt: "2023-11-01T11:03:00+00:00",
-      status: 0,
-      customer: {
-        id: 9,
-        avatar:
-          "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/team-2.1593fb7f.jpg",
-        fullName: "Orlando Imieto",
-      },
-      revenue: 112.5,
-      products: [
-        {
-          id: 10,
-          name: "Watter Bottle India",
-          count: 3,
-          url: "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/black-chair.b2719b4f.jpeg",
-          price: 7,
-        },
-      ],
-    },
-  ];
+// Constants
+import { MOCK_ORDERS } from "@/mocks";
 
-  const columns: ColumnType<Order>[] = [
-    {
-      key: "id",
-      title: "Id",
-    },
-    {
-      key: "createdAt",
-      title: "Date",
-    },
-  ];
+// Components
+import DataGrid from "./DataGrid";
 
-  it.skip("should match snapshot", () => {
-    const { container } = render(<DataGrid data={data} columns={columns} />);
+// Mock next
+jest.mock("next/navigation", () => ({
+  useSearchParams: jest.fn(),
+  usePathname: jest.fn(),
+  useRouter: () => ({ replace: jest.fn() }),
+}));
+
+const columns: ColumnType<Order>[] = [
+  {
+    key: "id",
+    title: "Id",
+    sortable: false,
+  },
+  {
+    key: "createdAt",
+    title: "Date",
+    sortable: true,
+  },
+  {
+    key: "status",
+    title: "Status",
+    sortable: true,
+  },
+  {
+    key: "customerName",
+    title: "Customer",
+    sortable: true,
+  },
+  {
+    key: "productName",
+    title: "Products",
+    sortable: true,
+  },
+  {
+    key: "count",
+    title: "quantity",
+    sortable: true,
+  },
+  {
+    key: "revenue",
+    title: "Revenue",
+    sortable: true,
+  },
+];
+
+describe("DataGrid", () => {
+  const mockProps = {
+    data: MOCK_ORDERS,
+    columns: columns,
+    pageSize: 2,
+    currentPageNumber: 1,
+    total: MOCK_ORDERS.length,
+  };
+
+  let renderResult: RenderResult;
+  const dataGridComponent = <DataGrid {...mockProps} />;
+
+  beforeEach(() => {
+    renderResult = render(dataGridComponent);
+  });
+
+  it("Should matches snapshot", async () => {
+    const { container } = render(
+      <DataGrid {...mockProps} pageSize={undefined} />,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("Calls handlePageChange correctly on next button click", async () => {
+    const { container, rerender, getByTestId } = renderResult;
+
+    fireEvent.click(getByTestId("next-page-button"));
+    await waitFor(() => {
+      rerender(<DataGrid {...mockProps} currentPageNumber={2} />);
+    });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("Calls handlePageChange correctly on page one button click", async () => {
+    const { container, rerender, getByTestId } = renderResult;
+
+    fireEvent.click(getByTestId("next-page-button"));
+    await waitFor(() => {
+      rerender(<DataGrid {...mockProps} currentPageNumber={2} />);
+    });
+
+    fireEvent.click(getByTestId("prev-page-button"));
+    await waitFor(() => {
+      rerender(dataGridComponent);
+    });
+
     expect(container).toMatchSnapshot();
   });
 });

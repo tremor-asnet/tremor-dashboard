@@ -53,10 +53,6 @@ const DataGrid = <T,>({
 
   const [loading, setLoading] = useState(false);
 
-  const [fullPathname, setFullPathname] = useState(
-    `${pathname}?${params.toString()}`,
-  );
-
   const [tableData, handleSorting] = useSortableTable<T>(data);
 
   let [isPending, startTransition] = useTransition();
@@ -80,7 +76,6 @@ const DataGrid = <T,>({
       params.set("page", page.toString());
     }
     const newFullPathname = `${pathname}?${params.toString()}`;
-    setFullPathname(newFullPathname);
     replace(newFullPathname);
     setCurrentPage(page);
   };
@@ -97,14 +92,6 @@ const DataGrid = <T,>({
 
     return dataSorted;
   }, [currentPage, tableData, pageSize]);
-
-  useEffect(() => {
-    const column = columns.find(item => item.sortbyOrder);
-
-    if (column) {
-      handleSorting(column.key, column.sortbyOrder);
-    }
-  }, [columns, handleSorting]);
 
   return (
     <Card

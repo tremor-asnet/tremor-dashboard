@@ -1,12 +1,11 @@
 export const NOT_FOUND = {
   SRC: "/images/placeholder-image.png",
 };
-export const NOT_FOUND_LINK = {
-  SRC: "https://i.ibb.co/f0bFP6p/placeholder-image.png",
-};
+export const NOT_FOUND_IMAGE = "/images/no_image_square.jpg";
 export const LOGO_SRC = {
   logo: "/assets/images/sidebar-logo.webp",
 };
+export const PLACEHOLDER_IMAGE = "/images/not-found-image.png";
 
 export const AVATAR_SRC = {
   xs: "/images/avatar/avatar-xs.webp",
@@ -28,4 +27,7 @@ export const PRODUCT = {
   DETAIL: "/assets/images/products/product-details.jpg",
 };
 
-export const IMAGE_TO_PRINT = "https://i.ibb.co/87R6BcQ/logo-td-dark.webp";
+export const IMAGE_TO_PRINT = {
+  LIGHT_MODE: "https://i.ibb.co/87R6BcQ/logo-td-dark.webp",
+  DARK_MODE: "https://i.ibb.co/k8TVzJ1/logo-td-light.webp",
+};

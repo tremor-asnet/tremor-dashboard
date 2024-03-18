@@ -1,20 +1,16 @@
-import { lazy } from "react";
+import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
+import {
+  AnalyticsInfo,
+  AnalyticsStatisticCard,
+  ColumnChart,
+  SalesByCountry,
+} from "@/ui/features/analytics";
 
-const AnalyticsInfo = lazy(
-  () => import("@/components/AnalyticsInfo/AnalyticsInfo"),
-);
-const AnalyticsStatisticCard = lazy(
-  () => import("@/components/AnalyticsStatisticCard/AnalyticsStatisticCard"),
-);
-const ColumnChart = lazy(() => import("@/components/ColumnChart/ColumnChart"));
-const AnalyticsLineChart = lazy(
-  () => import("@/components/AnalyticsLineChart/AnalyticsLineChart"),
-);
-const SalesByCountry = lazy(
-  () => import("@/components/SalesByCountry/SalesByCountry"),
+const AnalyticsLineChart = dynamic(
+  () => import("@/ui/features/analytics/AnalyticsLineChart/AnalyticsLineChart"),
 );
 
 //Types
@@ -27,7 +23,7 @@ import { getAnalytics } from "@/services";
 import { LINE_CHART_DATA, WEBSITE_CHART } from "@/mocks";
 
 // Constants
-import { CHART_SRC, CHART_TYPE } from "@/constants";
+import { CHART_TYPE } from "@/constants";
 
 export const metadata = {
   title: "Analytics - Tremor Dashboard",
@@ -57,7 +53,10 @@ const Analytics = async () => {
     [daily_sale_statistic, performance_statistic] || LINE_CHART_DATA;
 
   return (
-    <Flex className="flex-col flex-wrap justify-start analytics-page">
+    <Flex
+      justifyContent="start"
+      flexDirection="col"
+      className="flex-wrap analytics-page">
       {/* Sales card  */}
       <SalesByCountry
         title="Sales by Country"
@@ -92,7 +91,11 @@ const Analytics = async () => {
         ))}
       </Flex>
       {/* Info cards */}
-      <Flex className="justify-start flex-wrap lg:flex-nowrap flex-col md:flex-row items-start mt-12">
+      <Flex
+        justifyContent="start"
+        alignItems="start"
+        flexDirection="col"
+        className="flex-wrap lg:flex-nowrap md:flex-row mt-12">
         {apartment_statistic?.map((item: AnalyticsInfoData) => (
           <AnalyticsInfo key={item.id} infoData={item} />
         ))}

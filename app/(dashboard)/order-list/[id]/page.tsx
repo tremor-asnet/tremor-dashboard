@@ -1,25 +1,18 @@
 import dynamic from "next/dynamic";
 
 // Components
-const InvoiceHeader = dynamic(
-  () => import("@/components/OrderDetails/InvoiceHeader"),
-);
-const OrderSummary = dynamic(
-  () => import("@/components/OrderDetails/OrderSummary/OrderSummary"),
-);
-const PaymentDetails = dynamic(
-  () => import("@/components/OrderDetails/PaymentDetails/PaymentDetails"),
-);
-const BillingInfo = dynamic(
-  () => import("@/components/OrderDetails/BillingInfo/BillingInfo"),
-);
-const OrderContact = dynamic(
-  () => import("@/components/OrderDetails/OrderContact/OrderContact"),
-);
-const TrackOrder = dynamic(
-  () => import("@/components/OrderDetails/TrackOrder/TrackOrder"),
-);
 import { Bold, Card, Col, Flex, Grid } from "@tremor/react";
+import { BillingInfo } from "@/ui/components";
+import {
+  InvoiceHeader,
+  OrderSummary,
+  OrderContact,
+  TrackOrder,
+} from "@/ui/features/orders";
+
+const PaymentDetails = dynamic(
+  () => import("@/ui/features/orders/PaymentDetails/PaymentDetails"),
+);
 
 // Services
 import { getOrderDetails } from "@/services/ordersServices";

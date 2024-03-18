@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment Details Components Testing Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <h6
+          class="text-tremor-content-title dark:text-dark-primary font-bold"
+        >
+          Payment Details
+        </h6>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center p-6 mt-4 border-[#dee2e6] rounded-lg border"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-start items-center"
+          >
+            <img
+              alt="master card icon"
+              class="mr-4"
+              data-nimg="1"
+              decoding="async"
+              height="28"
+              loading="lazy"
+              src="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75"
+              srcset="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75 2x"
+              style="color: transparent;"
+              width="38"
+            />
+            <h6
+              class="text-tremor-content-title dark:text-dark-primary font-bold"
+            >
+              **** **** **** 
+              7852
+            </h6>
+          </div>
+          <div
+            class="group relative"
+          >
+            <div
+              class="w-fit h-fit relative flex justify-center"
+            >
+              <button
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium text-sm hover:text-tremor-brand-emphasis w-6 h-6 text-dark-tremor-content-slate dark:text-dark-tremor-content-slate dark:hover:text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
+              >
+                <span
+                  class="tremor-Button-text text-sm whitespace-nowrap"
+                >
+                  !
+                </span>
+              </button>
+              <div
+                class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[-50px] min-w-[200px] rounded-md text-white right-[-50px] sm:right-[-60px] lg:right-[-82px] before:content-['▲'] before:absolute before:top-[-15px] before:right-[54px] sm:before:right-[64px] lg:before:right-[86px] before:text-[black]"
+                hidden=""
+              >
+                <div
+                  class="text-sm font-light rounded p-2"
+                >
+                  We do not store card details
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <h6
+        class="text-tremor-content-title dark:text-dark-primary font-bold"
+      >
+        Payment Details
+      </h6>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center p-6 mt-4 border-[#dee2e6] rounded-lg border"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center"
+        >
+          <img
+            alt="master card icon"
+            class="mr-4"
+            data-nimg="1"
+            decoding="async"
+            height="28"
+            loading="lazy"
+            src="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75"
+            srcset="/_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=48&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmastercard.webp&w=96&q=75 2x"
+            style="color: transparent;"
+            width="38"
+          />
+          <h6
+            class="text-tremor-content-title dark:text-dark-primary font-bold"
+          >
+            **** **** **** 
+            7852
+          </h6>
+        </div>
+        <div
+          class="group relative"
+        >
+          <div
+            class="w-fit h-fit relative flex justify-center"
+          >
+            <button
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium text-sm hover:text-tremor-brand-emphasis w-6 h-6 text-dark-tremor-content-slate dark:text-dark-tremor-content-slate dark:hover:text-dark-tremor-content-slate bg-transparent border border-dark-tremor-content-slate rounded-full outline outline-2 outline-transparent focus:outline-dark-tremor-content"
+            >
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                !
+              </span>
+            </button>
+            <div
+              class="h-fit absolute bottom-[100%] right-0 shadow-md z-50 text-secondary bg-white rounded transition-all text-center !bg-black !bottom-[-50px] min-w-[200px] rounded-md text-white right-[-50px] sm:right-[-60px] lg:right-[-82px] before:content-['▲'] before:absolute before:top-[-15px] before:right-[54px] sm:before:right-[64px] lg:before:right-[86px] before:text-[black]"
+              hidden=""
+            >
+              <div
+                class="text-sm font-light rounded p-2"
+              >
+                We do not store card details
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,14 +1,4 @@
-export interface ListOption {
-  option: string;
-  value: number;
-}
-
-export interface ProductListOption {
-  option: string;
-  value: string;
-}
-
-export interface SelectOptionData {
+export interface OptionType {
   option: string;
   value: string;
 }

@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataGridHeader component Should matches snapshot 1`] = `
+<div>
+  <table>
+    <thead
+      class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
+    >
+      <tr
+        class="tremor-TableRow-row"
+      >
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              Id
+            </div>
+            <div
+              class="tremor-Flex-root flex w-full flex-col justify-between items-center relative ml-4 -mt-6"
+            >
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4 fill-secondary"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
+              >
+                <button
+                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                >
+                  <span
+                    class="tremor-Button-text text-sm whitespace-nowrap"
+                  >
+                    <svg
+                      class="w-4 h-4 fill-secondary"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th
+          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+          >
+            <div
+              class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+            >
+              Product
+            </div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+  </table>
+</div>
+`;

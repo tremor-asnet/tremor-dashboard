@@ -1,14 +1,16 @@
-import { Col, Grid } from "@tremor/react";
+import dynamic from "next/dynamic";
 
 // Components
-import {
-  SalesRevenueChart,
-  ChannelChart,
-  SalesByAge,
-  SalesByCountry,
-  SalesStatisticCard,
-  TopSellingProducts,
-} from "@/components";
+import { Col, Grid } from "@tremor/react";
+import { SalesByCountry } from "@/ui/features/analytics";
+import { TopSellingProducts, ChannelChart } from "@/ui/features/sales";
+const SalesStatisticCard = dynamic(
+  () => import("@/ui/features/sales/SalesStatisticCard/SalesStatisticCard"),
+);
+const SalesByAge = dynamic(() => import("@/ui/features/sales/SalesByAge"));
+const SalesRevenueChart = dynamic(
+  () => import("@/ui/features/sales/SalesRevenueChart/SalesRevenueChart"),
+);
 
 import { REVENUE_CHART_DATA } from "@/mocks";
 
@@ -53,16 +55,20 @@ const Sales = async () => {
           </Col>
         </Grid>
       </Col>
-      <Col numColSpan={1} numColSpanMd={2}>
-        <SalesByAge title="Sales by age" data={saleData.sales_by_age} />
+      <Col numColSpan={1} numColSpanMd={3}>
+        <Grid numItems={1} numItemsLg={3} className="gap-5">
+          <Col numColSpan={1} numColSpanMd={1} numColSpanLg={2}>
+            <SalesByAge title="Sales by age" data={saleData.sales_by_age} />
+          </Col>
+          <Col numColSpan={1}>
+            <SalesByCountry
+              title="Sales by Country"
+              isAnalytics={false}
+              data={analyticsData.sale_by_country}
+            />
+          </Col>
+        </Grid>
       </Col>
-
-      <SalesByCountry
-        title="Sales by Country"
-        isAnalytics={false}
-        data={analyticsData.sale_by_country}
-      />
-
       <Col numColSpan={1} numColSpanMd={3}>
         <TopSellingProducts
           title="Top Selling Products"

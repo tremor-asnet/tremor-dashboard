@@ -11,19 +11,35 @@
   @apply justify-start;
 }
 
-.sale-page path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+.recharts-surface {
+  @apply mt-3;
+}
+
+.recharts-legend-wrapper {
+  @apply !-top-3 !-left-1.5;
+}
+
+.recharts-legend-wrapper p.text-tremor-content {
+  @apply text-xs text-primary tracking-wide;
+}
+
+.sales-revenue-chart path[name="Facebook Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
   @apply fill-tremor-content-seldom;
 }
 
-.sale-page path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
+.sales-revenue-chart path[name="Google Ads"] ~ .recharts-layer  ~.recharts-layer.recharts-line-dots .recharts-dot.recharts-line-dot {
   @apply fill-primary;
 }
 
-.sale-page .recharts-text.recharts-cartesian-axis-tick-value {
+.sales-revenue-chart .recharts-text.recharts-cartesian-axis-tick-value {
   @apply fill-[gray];
 }
 
-.dark .sale-page .recharts-text.recharts-cartesian-axis-tick-value {
+.sales-revenue-chart .recharts-dot.recharts-line-dot {
+  @apply stroke-[4] stroke-transparent font-thin;
+}
+
+.dark .sales-revenue-chart .recharts-text.recharts-cartesian-axis-tick-value {
   @apply fill-[white];
 }
 
@@ -45,8 +61,4 @@ path[name="Facebook Ads"] {
 
 path[name="Google Ads"] {
   @apply stroke-primary;
-}
-
-.sale-page .recharts-dot.recharts-line-dot {
-  @apply stroke-[4] stroke-transparent font-thin;
 }

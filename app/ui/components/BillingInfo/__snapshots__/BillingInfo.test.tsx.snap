@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing BillingInfo component Should match snapshot 1`] = `
+<div>
+  <div
+    class="tremor-Flex-root flex w-full flex-col justify-between items-start bg-greyish mt-4 rounded-lg p-6 dark:bg-dark-tremor-primary"
+  >
+    <span
+      class="text-primary text-tremor-default font-semibold dark:text-white"
+    >
+      Oliver Liam
+    </span>
+    <div
+      class="tremor-Flex-root flex w-full flex-col justify-between items-center mt-4 gap-3"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
+      >
+        <p
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
+        >
+          Company Name:
+        </p>
+        <p
+          class="text-tremor-default text-xs text-primary font-bold dark:text-white ml-2.5"
+        >
+          Viking Burrito
+        </p>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
+      >
+        <p
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
+        >
+          Email Address:
+        </p>
+        <a
+          class="text-xs text-primary font-bold dark:text-white ml-2.5"
+          href="mailto: oliver@burrito.com"
+        >
+          oliver@burrito.com
+        </a>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row items-center content-start justify-start"
+      >
+        <p
+          class="text-tremor-default text-secondary text-xs dark:text-dark-lighter"
+        >
+          VAT Number:
+        </p>
+        <p
+          class="text-tremor-default text-xs text-primary font-bold dark:text-white ml-2.5"
+        >
+          FRB1235476
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

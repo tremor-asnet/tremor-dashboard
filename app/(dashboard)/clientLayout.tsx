@@ -6,10 +6,13 @@ import { usePathname, useRouter } from "next/navigation";
 
 // Components
 import { Flex } from "@tremor/react";
-import { SideBar, DashboardHeader, LoadingIndicator } from "@/components";
+import { LoadingIndicator, SideBar, DashboardHeader } from "@/ui/components";
 
 // Constants
 import { ROUTES } from "@/constants";
+
+// Styles
+import "@/styles/billing.css";
 
 interface DashboardLayoutProp {
   profileData: {
@@ -55,7 +58,7 @@ export default function DashboardLayout({
           onSignOut={signOutAction}
         />
         <div
-          className={`flex flex-col w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20 ${
+          className={`print-layout flex flex-col w-full min-h-screen p-4 sm:p-5 md:p-6 pt-6 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.6,1)] delay-20 ${
             isCollapseSidebar ? "ml-0 xl:ml-28" : "xl:ml-[270px]"
           }`}>
           <DashboardHeader

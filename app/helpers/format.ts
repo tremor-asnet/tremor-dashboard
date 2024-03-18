@@ -105,3 +105,24 @@ export const formatDotsToCommasNumber = ({
       minimumFractionDigits: positionFraction,
     })
     .replace(/\./, ",")}`;
+
+export const moneyFormat = ({
+  value,
+  currency = "",
+  delimiter = "",
+  positionFraction = 2,
+}: {
+  value: number;
+  currency?: string;
+  delimiter?: string;
+  positionFraction?: number;
+}): string => {
+  const valuePrice = value ? value : 0;
+  let formattedNumber = valuePrice?.toLocaleString("en-US", {
+    minimumFractionDigits: positionFraction,
+  });
+
+  return currency
+    ? `${currency}${delimiter}${formattedNumber}`
+    : formattedNumber;
+};

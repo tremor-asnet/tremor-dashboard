@@ -1,5 +1,5 @@
 // Types
-import { ListOption, ProductListOption } from "@/types";
+import { OptionType } from "@/types";
 
 export const ITEM_ACTION_PROJECT = [
   {
@@ -53,13 +53,13 @@ export const SOCIAL_LINK = {
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
 
-export const orderListOption: ListOption[] = [
-  { option: "Paid", value: 0 },
-  { option: "Refunded", value: 2 },
-  { option: "Canceled", value: 1 },
+export const orderListOption: OptionType[] = [
+  { option: "Paid", value: "0" },
+  { option: "Refunded", value: "2" },
+  { option: "Canceled", value: "1" },
 ];
 
-export const ProductList: ProductListOption[] = [
+export const productList: OptionType[] = [
   { option: "Yes", value: "true" },
   { option: "No", value: "false" },
 ];
@@ -86,11 +86,19 @@ export const DRAG_ZONE = {
 };
 
 export const TRANSACTION_CLASS = {
-  INCREASE: "text-few border-few",
-  DECREASE: "text-attention border-attention",
-  PENDING: "text-primary border-primary",
+  INCREASE: "text-few dark:text-few dark:hove:text-few border-few",
+  DECREASE:
+    "text-attention dark:text-attention dark:hover:text-attention border-attention",
+  PENDING:
+    "text-primary dark:text-primary dark:hover:text-primary border-primary",
 };
 
 export const PAGE_SIZE = {
   SIZE: 10,
 };
+
+export const enum VARIANT_BUTTON {
+  LIGHT = "light",
+  SECONDARY = "secondary",
+  PRIMARY = "primary",
+}

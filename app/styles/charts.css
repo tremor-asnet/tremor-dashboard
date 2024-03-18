@@ -7,7 +7,15 @@
   @apply stroke-none fill-[white] font-thin text-sm;
 }
 
-.analytics-page .recharts-curve.recharts-line-curve,
+.sale-by-age .recharts-text.recharts-cartesian-axis-tick-value {
+  @apply fill-[gray];
+}
+
+.dark .sale-by-age .recharts-text.recharts-cartesian-axis-tick-value {
+  @apply fill-[white];
+}
+
+.analytics-line-chart .recharts-curve.recharts-line-curve,
 .recharts-dot.recharts-line-dot {
   @apply stroke-white font-thin;
 }

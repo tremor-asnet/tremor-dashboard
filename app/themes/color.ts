@@ -2,16 +2,22 @@ export const color = {
   test: "#000",
   primary: "#344767",
   secondary: "#7b809a",
+  tertiary: "#55576d",
   seldom: "#1a73e8",
   few: "#4caf50",
+  green: "#2a652b",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
   attention: "#f44335",
+  grayter: "#485976",
   rarely: "#dee2e6",
   lighter: "rgba(255, 255, 255, 0.8)",
   greyish: "rgba(255, 255, 255, 0.4)",
   grayish: "rgba(240, 242, 245, 0.4)",
+  black: "#000",
+  grey: "#4d4e61",
+  greyer: "#b0b5bf",
 
   dark: {
     primary: "#ffffff",
@@ -49,6 +55,7 @@ export const color = {
       DEFAULT: "#7b809a", // Waterloo
       emphasis: "#374151", // Fruit Salad
       seldom: "#1a73e8", // fruitRoyal Blue
+      bold: "#333",
     },
   },
   // dark mode
@@ -102,8 +109,9 @@ export const backgroundColor = {
   border: "#dee2e6",
   dark_blue: "rgb(32, 41, 64)",
   greyish: "#f8f9fa",
-  "green-500": "#43A047",
-  "orange-500": "#FB8C00",
+  "green-500": "#43a047",
+  "orange-500": "#fb8c00",
+  graydark: "#1a2035",
 
   dark: {
     primary: "#111827",
@@ -141,7 +149,7 @@ export const backgroundImage = {
   "gradient-primary":
     "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
   "gradient-line":
-    "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
+    "linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
   "gradient-pickled":
     "linear-gradient(195deg, rgb(50, 58, 84), rgb(26, 32, 53))",
   "gradient-arsenic": "linear-gradient(195deg, #42424a, #191919)",
@@ -150,6 +158,12 @@ export const backgroundImage = {
   "gradient-item-page": "linear-gradient(195deg, #42424a, #191919)",
   "gradient-select":
     "linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
+  "gradient-btn-back":
+    "linear-gradient(195deg, rgb(235, 239, 244), rgb(206, 212, 218))",
+  "gradient-dark":
+    "linear-gradient(rgba(52, 71, 103, 0), rgb(255, 255, 255), rgba(52, 71, 103, 0))",
+  "gradient-lighter":
+    "linear-gradient(rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))",
 
   //TODO: Will update when implement light/dark themes
   // light mode
@@ -165,8 +179,6 @@ export const backgroundImage = {
       "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
     "gradient-primary":
       "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-    "gradient-line":
-      "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
   },
   // dark mode
   "dark-tremor": {
@@ -181,8 +193,6 @@ export const backgroundImage = {
       "linear-gradient(195deg, rgb(239, 83, 80), rgb(229, 57, 53))",
     "gradient-primary":
       "linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))",
-    "gradient-line":
-      "linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))",
   },
   dark: {
     "gradient-item-page":

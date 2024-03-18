@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingPage component Should render LoadingPage snapshot correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Flex-root flex flex-row justify-center items-center grow w-full"
+      >
+        <div
+          class="tremor-Flex-root flex flex-col justify-between items-center grow w-full h-full"
+        >
+          <div
+            role="status"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-river-bed-500 dark:fill-white"
+              fill="none"
+              viewBox="0 0 22 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 3C11 2.44772 11.4477 2 12 2C17.5228 2 22 6.47715 22 12C22 14.7175 20.9147 17.1835 19.1562 18.9849C18.7704 19.3801 18.1373 19.3878 17.7421 19.002C17.3469 18.6162 17.3392 17.983 17.725 17.5879C19.1336 16.1449 20 14.1746 20 12C20 7.58172 16.4183 4 12 4C11.4477 4 11 3.55228 11 3Z"
+                fill="river-bed-500"
+              />
+            </svg>
+            <span
+              class="sr-only"
+            >
+              Loading...
+            </span>
+          </div>
+          <h2
+            class="mt-2 text-gray-400"
+          >
+            Loading
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Flex-root flex flex-row justify-center items-center grow w-full"
+    >
+      <div
+        class="tremor-Flex-root flex flex-col justify-between items-center grow w-full h-full"
+      >
+        <div
+          role="status"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-10 h-10 text-transparent animate-[spin_0.4s_linear_infinite] dark:text-gray-600 fill-river-bed-500 dark:fill-white"
+            fill="none"
+            viewBox="0 0 22 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 3C11 2.44772 11.4477 2 12 2C17.5228 2 22 6.47715 22 12C22 14.7175 20.9147 17.1835 19.1562 18.9849C18.7704 19.3801 18.1373 19.3878 17.7421 19.002C17.3469 18.6162 17.3392 17.983 17.725 17.5879C19.1336 16.1449 20 14.1746 20 12C20 7.58172 16.4183 4 12 4C11.4477 4 11 3.55228 11 3Z"
+              fill="river-bed-500"
+            />
+          </svg>
+          <span
+            class="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+        <h2
+          class="mt-2 text-gray-400"
+        >
+          Loading
+        </h2>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ProductInfo component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Card-root relative text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0"
+      >
+        <p
+          class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
+        >
+          Product Information
+        </p>
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start md:flex-row gap-6"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-4"
+          >
+            <div
+              class="w-full mb-4"
+            >
+              <div
+                class="w-full"
+              >
+                <label
+                  class="text-secondary text-sm dark:text-lighter"
+                  for="edit-name"
+                >
+                  Name
+                </label>
+                <input
+                  class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                  id="edit-name"
+                  name="productName"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="w-full"
+            >
+              <p
+                class="text-tremor-default text-secondary text-sm dark:text-lighter"
+              >
+                Description 
+                <span
+                  class="text-xs"
+                >
+                  (optional)
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-6"
+          >
+            <div
+              class="w-full mb-1"
+            >
+              <div
+                class="w-full"
+              >
+                <label
+                  class="text-secondary text-sm dark:text-lighter"
+                  for="edit-weight"
+                >
+                  Weight
+                </label>
+                <input
+                  class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                  id="edit-weight"
+                  name="weight"
+                  placeholder=""
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="w-full mb-2"
+            >
+              <div
+                class="w-full"
+              >
+                <label
+                  class="text-secondary text-sm dark:text-lighter"
+                  for="edit-quantity"
+                >
+                  Quantity
+                </label>
+                <input
+                  class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                  id="edit-quantity"
+                  name="quantity"
+                  placeholder=""
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="w-full mb-2"
+            >
+              <div
+                class="w-full"
+              >
+                <label
+                  class="text-secondary text-sm dark:text-lighter"
+                >
+                  Category
+                </label>
+                <div
+                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+                  data-headlessui-state=""
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                    data-headlessui-state=""
+                    id="headlessui-listbox-button-:r0:"
+                    type="button"
+                  >
+                    <span
+                      class="w-[90%] block truncate"
+                    >
+                      Select...
+                    </span>
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center mr-3"
+                    >
+                      <svg
+                        class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full mb-2"
+            >
+              <div
+                class="w-full"
+              >
+                <label
+                  class="text-secondary text-sm dark:text-lighter"
+                  for="edit-provider"
+                >
+                  Provider Name
+                </label>
+                <input
+                  class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                  id="edit-provider"
+                  name="providerName"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Card-root relative text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 w-full dark:bg-dark-tremor-primary rounded-lg shadow-box-icon-default ring-0"
+    >
+      <p
+        class="text-tremor-default text-primary dark:text-white font-bold text-xl mb-8"
+      >
+        Product Information
+      </p>
+      <div
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start md:flex-row gap-6"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-4"
+        >
+          <div
+            class="w-full mb-4"
+          >
+            <div
+              class="w-full"
+            >
+              <label
+                class="text-secondary text-sm dark:text-lighter"
+                for="edit-name"
+              >
+                Name
+              </label>
+              <input
+                class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                id="edit-name"
+                name="productName"
+                placeholder=""
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="w-full"
+          >
+            <p
+              class="text-tremor-default text-secondary text-sm dark:text-lighter"
+            >
+              Description 
+              <span
+                class="text-xs"
+              >
+                (optional)
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-center gap-6"
+        >
+          <div
+            class="w-full mb-1"
+          >
+            <div
+              class="w-full"
+            >
+              <label
+                class="text-secondary text-sm dark:text-lighter"
+                for="edit-weight"
+              >
+                Weight
+              </label>
+              <input
+                class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                id="edit-weight"
+                name="weight"
+                placeholder=""
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="w-full mb-2"
+          >
+            <div
+              class="w-full"
+            >
+              <label
+                class="text-secondary text-sm dark:text-lighter"
+                for="edit-quantity"
+              >
+                Quantity
+              </label>
+              <input
+                class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                id="edit-quantity"
+                name="quantity"
+                placeholder=""
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="w-full mb-2"
+          >
+            <div
+              class="w-full"
+            >
+              <label
+                class="text-secondary text-sm dark:text-lighter"
+              >
+                Category
+              </label>
+              <div
+                class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+                data-headlessui-state=""
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                  data-headlessui-state=""
+                  id="headlessui-listbox-button-:r0:"
+                  type="button"
+                >
+                  <span
+                    class="w-[90%] block truncate"
+                  >
+                    Select...
+                  </span>
+                  <span
+                    class="absolute inset-y-0 right-0 flex items-center mr-3"
+                  >
+                    <svg
+                      class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full mb-2"
+          >
+            <div
+              class="w-full"
+            >
+              <label
+                class="text-secondary text-sm dark:text-lighter"
+                for="edit-provider"
+              >
+                Provider Name
+              </label>
+              <input
+                class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                id="edit-provider"
+                name="providerName"
+                placeholder=""
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Order detail contact section Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center flex-wrap sm:flex-nowrap order-contact"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-start items-center"
+        >
+          <div
+            class="mr-4"
+          >
+            <img
+              alt="Leather Wallet"
+              class="rounded-full"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="110"
+              src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
+              style="color: transparent;"
+              width="110"
+            />
+          </div>
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-start py-4"
+          >
+            <p
+              class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-6 tracking-wide truncate max-w-[200px] md:max-w-[240px] xl:max-w-xs 2xl:max-w-sm"
+            >
+              Leather Wallet
+            </p>
+            <p
+              class="text-tremor-default dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
+            >
+              Order was delivered 
+              18
+               days ago.
+            </p>
+            <p
+              class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+            >
+              delivered
+            </p>
+          </div>
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+        >
+          <div
+            class="tremor-Flex-root flex w-full flex-col justify-between items-end"
+          >
+            <button
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[64px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]"
+            >
+              <span
+                class="tremor-Button-text text-sm whitespace-nowrap"
+              >
+                <p
+                  class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
+                >
+                  contact us
+                </p>
+              </span>
+            </button>
+            <p
+              class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
+            >
+              Do you like the product? Leave us a review
+               
+              <a
+                class="font-normal"
+                href="#"
+              >
+                here
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="tremor-Flex-root flex w-full flex-row justify-between items-center flex-wrap sm:flex-nowrap order-contact"
+    >
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-start items-center"
+      >
+        <div
+          class="mr-4"
+        >
+          <img
+            alt="Leather Wallet"
+            class="rounded-full"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="110"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="110"
+          />
+        </div>
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start py-4"
+        >
+          <p
+            class="text-tremor-title dark:text-dark-tremor-content-title text-primary font-semibold capitalize leading-6 tracking-wide truncate max-w-[200px] md:max-w-[240px] xl:max-w-xs 2xl:max-w-sm"
+          >
+            Leather Wallet
+          </p>
+          <p
+            class="text-tremor-default dark:text-dark-romance font-light opacity-100 text-secondary leading-[21px] w-full"
+          >
+            Order was delivered 
+            18
+             days ago.
+          </p>
+          <p
+            class="text-tremor-default p-2 mt-4 font-bold text-white dark:text-white bg-green-500 text-xs rounded-tremor-small leading-[10.5px] tracking-[0.18px] uppercase"
+          >
+            delivered
+          </p>
+        </div>
+      </div>
+      <div
+        class="tremor-Flex-root flex w-full flex-row justify-between items-center"
+      >
+        <div
+          class="tremor-Flex-root flex w-full flex-col justify-between items-end"
+        >
+          <button
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis antialiased min-w-[64px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]"
+          >
+            <span
+              class="tremor-Button-text text-sm whitespace-nowrap"
+            >
+              <p
+                class="text-tremor-default py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase"
+              >
+                contact us
+              </p>
+            </span>
+          </button>
+          <p
+            class="text-tremor-default mt-3 text-sm dark:text-dark-romance font-light opacity-100 text-secondary text-right leading-[21px] w-full"
+          >
+            Do you like the product? Leave us a review
+             
+            <a
+              class="font-normal"
+              href="#"
+            >
+              here
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

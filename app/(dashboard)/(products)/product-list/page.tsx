@@ -1,10 +1,14 @@
-// Components
+import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { Flex } from "@tremor/react";
-import Link from "next/link";
-import { InputSearch, LoadingIndicator } from "@/components";
-import ProductFilter from "../components/ProductFilter";
-import TableProduct from "../components/TableProduct/TableProduct";
+
+// Components
+import { LoadingIndicator, InputSearch, Filter } from "@/ui/components";
+
+const TableProduct = dynamic(
+  () => import("@/ui/features/products/TableProduct/TableProduct"),
+);
 
 // Services
 import { getProducts } from "@/services";
@@ -13,11 +17,11 @@ import { getProducts } from "@/services";
 import { ProductResponse } from "@/types";
 
 // Constants
-import { ROUTES } from "@/constants";
+import { ROUTES, productList } from "@/constants";
 
 type SearchParamsProduct = {
   query: string;
-  isAvailable: number;
+  filter: string;
   page?: number;
 };
 
@@ -30,11 +34,11 @@ const ProductListPage = async ({
 
   const {
     query = "",
-    isAvailable = -1,
+    filter = "",
     page = 1,
   } = searchParams as SearchParamsProduct;
 
-  const response: ProductResponse = await getProducts(page, isAvailable, query);
+  const response: ProductResponse = await getProducts(page, filter, query);
 
   const { results, total, skip } = response;
 
@@ -43,14 +47,15 @@ const ProductListPage = async ({
       <Flex className="relative">
         <Link
           href={ROUTES.NEW_PRODUCT}
-          className="uppercase text-xs text-white font-medium dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg">
+          className="uppercase text-xs font-bold text-white dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg shadow-btn-primary hover:shadow-btn-primary-hover tracking-wide">
           new product
         </Link>
-        <ProductFilter title="Filters" />
+        <Filter title="Is Available" listOption={productList} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="query" />
         <Suspense
+          key={`${query}-${filter}-${page}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -61,10 +66,8 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${query}-${isAvailable}-${page}`}
+            key={`${query}-${filter}-${page}`}
             products={results}
-            isAvailable={isAvailable.toString()}
-            keyword={query}
             total={total}
             currentPage={skip / 10 + 1}
           />

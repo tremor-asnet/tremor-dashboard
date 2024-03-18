@@ -1,5 +1,25 @@
 .select-custom button {
-  @apply !bg-transparent rounded-none border-0 !border-b-[#d2d6da] border-b border-solid cursor-text;
+  @apply !bg-transparent rounded-none border-0 !border-b-gray-300 border-b-[2px] border-solid cursor-text shadow-transparent;
+}
+
+.select-custom button:hover  {
+  @apply bg-transparent shadow-transparent;
+}
+
+.select-custom button:focus {
+  @apply !border-b-[2px];
+}
+
+.select-custom button.border-tremor-border {
+  @apply !border-b-gray-300;
+}
+
+.dark .select-custom button {
+  @apply !border-b-gray-600;
+}
+
+.dark .select-custom button:focus {
+  @apply !border-b-gray-500;
 }
 
 .select-custom button span {
@@ -57,6 +77,10 @@
 
 .select-custom ul li[data-headlessui-state="active selected"] {
   @apply rounded-md bg-gray-100 text-primary;
+}
+
+.dark .select-custom ul li[data-headlessui-state="active"] {
+  @apply text-lighter;
 }
 
 .dark .select-custom ul li[data-headlessui-state="active"] {

@@ -1,13 +1,13 @@
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import { Button, Flex, Text } from "@tremor/react";
 
 // Components
-import {
-  InputSearch,
-  LoadingIndicator,
-  OrderFilter,
-  TableOrder,
-} from "@/components";
+import { Button, Flex, Text } from "@tremor/react";
+import { Filter, InputSearch, LoadingIndicator } from "@/ui/components";
+
+const TableOrder = dynamic(
+  () => import("@/ui/features/orders/TableOrder/TableOrder"),
+);
 
 // Services
 import { getOrders } from "@/services";
@@ -15,9 +15,12 @@ import { getOrders } from "@/services";
 // Types
 import { OrderResponse } from "@/types";
 
+// Constants
+import { orderListOption } from "@/constants";
+
 type SearchParams = {
   id?: number;
-  status?: number;
+  filter?: number;
   page?: number;
 };
 
@@ -26,9 +29,9 @@ const OrderListPage = async ({
 }: {
   searchParams?: SearchParams;
 }) => {
-  const { id = -1, status = -1, page = 1 } = searchParams as SearchParams;
+  const { id = -1, filter = -1, page = 1 } = searchParams as SearchParams;
 
-  const response: OrderResponse = await getOrders(page, status, id);
+  const response: OrderResponse = await getOrders(page, filter, id);
 
   const { results, total, skip } = response;
 
@@ -36,17 +39,17 @@ const OrderListPage = async ({
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative">
         <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-          <Text className="uppercase text-xs text-white dark:text-white">
+          <Text className="uppercase text-xs font-bold text-white dark:text-white tracking-wide">
             new order
           </Text>
         </Button>
-        <OrderFilter title="Filters" />
+        <Filter title="Status" listOption={orderListOption} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="id" />
-        <div className="w-full relative min-h-[183px] bg-white rounded-lg">
+        <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${id}-${status}`}
+            key={`${id}-${filter}-${page}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -57,10 +60,8 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${id}-${status}-${page}`}
+              key={`${id}-${filter}-${page}`}
               orders={results}
-              status={status.toString()}
-              keyword={id.toString()}
               total={total}
               currentPage={skip / 10 + 1}
             />

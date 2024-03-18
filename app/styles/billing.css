@@ -1,3 +1,42 @@
 .bg-billing-card {
   @apply bg-[url(https://demos.creative-tim.com/nextjs-material-dashboard-pro//\_next/static/media/pattern-tree.5f0101e0.svg)];
 }
+
+.print-logo {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0 !important;
+  }
+  body,
+  html {
+    height: 100%;
+    padding: 0 !important;
+  }
+  .sidebar {
+    display: none;
+  }
+  .print-invoice,
+  .print-content,
+  .print-footer {
+    width: 100% !important;
+  }
+  .print-layout {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-logo {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .browser-logo {
+    display: none;
+  }
+}

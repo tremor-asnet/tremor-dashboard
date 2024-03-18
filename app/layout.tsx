@@ -6,6 +6,7 @@ import "./globals.css";
 
 // Context
 import { ThemeProvider } from "@/context/theme";
+import { ToastProvider } from "@/context/toast";
 
 // Components
 import ClientRootLayout from "./ClientRootLayout";
@@ -48,7 +49,9 @@ export default function RootLayout({
 }) {
   return (
     <ThemeProvider>
-      <ClientRootLayout>{children}</ClientRootLayout>
+      <ClientRootLayout>
+        <ToastProvider>{children}</ToastProvider>
+      </ClientRootLayout>
     </ThemeProvider>
   );
 }

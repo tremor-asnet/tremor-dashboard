@@ -61,7 +61,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-row justify-start items-start tracking-[0.4px]"
               >
                 <p
-                  class="text-tremor-default text-green dark:text-few leading-[21px] font-bold"
+                  class="text-tremor-default text-greenter dark:text-few leading-[21px] font-bold"
                 >
                   +55%
                 </p>
@@ -134,7 +134,7 @@ exports[`Testing AnalyticsStatisticCard component Should match snapshot 1`] = `
               class="tremor-Flex-root flex w-full flex-row justify-start items-start tracking-[0.4px]"
             >
               <p
-                class="text-tremor-default text-green dark:text-few leading-[21px] font-bold"
+                class="text-tremor-default text-greenter dark:text-few leading-[21px] font-bold"
               >
                 +55%
               </p>

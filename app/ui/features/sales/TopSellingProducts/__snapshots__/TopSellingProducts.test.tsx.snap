@@ -94,7 +94,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-green dark:text-few"
+                            class="text-greenter dark:text-few"
                           >
                             8,232
                           </span>
@@ -195,7 +195,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-green dark:text-few"
+                            class="text-greenter dark:text-few"
                           >
                             12,821
                           </span>
@@ -296,7 +296,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-green dark:text-few"
+                            class="text-greenter dark:text-few"
                           >
                             2,421
                           </span>
@@ -397,7 +397,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-green dark:text-few"
+                            class="text-greenter dark:text-few"
                           >
                             5,921
                           </span>
@@ -498,7 +498,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                           class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                         >
                           <span
-                            class="text-green dark:text-few"
+                            class="text-greenter dark:text-few"
                           >
                             921
                           </span>
@@ -659,7 +659,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-green dark:text-few"
+                          class="text-greenter dark:text-few"
                         >
                           8,232
                         </span>
@@ -760,7 +760,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-green dark:text-few"
+                          class="text-greenter dark:text-few"
                         >
                           12,821
                         </span>
@@ -861,7 +861,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-green dark:text-few"
+                          class="text-greenter dark:text-few"
                         >
                           2,421
                         </span>
@@ -962,7 +962,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-green dark:text-few"
+                          class="text-greenter dark:text-few"
                         >
                           5,921
                         </span>
@@ -1063,7 +1063,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                       >
                         <span
-                          class="text-green dark:text-few"
+                          class="text-greenter dark:text-few"
                         >
                           921
                         </span>
@@ -1278,7 +1278,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-green dark:text-few"
+                        class="text-greenter dark:text-few"
                       >
                         8,232
                       </span>
@@ -1379,7 +1379,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-green dark:text-few"
+                        class="text-greenter dark:text-few"
                       >
                         12,821
                       </span>
@@ -1480,7 +1480,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-green dark:text-few"
+                        class="text-greenter dark:text-few"
                       >
                         2,421
                       </span>
@@ -1581,7 +1581,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-green dark:text-few"
+                        class="text-greenter dark:text-few"
                       >
                         5,921
                       </span>
@@ -1682,7 +1682,7 @@ exports[`Testing analytics sale chart component testing component top selling pr
                       class="text-tremor-default text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders"
                     >
                       <span
-                        class="text-green dark:text-few"
+                        class="text-greenter dark:text-few"
                       >
                         921
                       </span>

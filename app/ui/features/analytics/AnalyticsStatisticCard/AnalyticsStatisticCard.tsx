@@ -80,7 +80,7 @@ const AnalyticsStatisticCard = ({
               justifyContent="start"
               alignItems="start"
               className="tracking-[0.4px]">
-              <Text className="text-green dark:text-few leading-[21px] font-bold">
+              <Text className="text-greenter dark:text-few leading-[21px] font-bold">
                 {formatAdjustNumber({
                   value: amountChange,
                   isPositive: amountChangeType,

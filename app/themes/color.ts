@@ -5,7 +5,7 @@ export const color = {
   tertiary: "#55576d",
   seldom: "#1a73e8",
   few: "#4caf50",
-  green: "#2a652b",
+  greenter: "#2a652b",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",

@@ -81,7 +81,7 @@ const TopSellingProducts = ({ title, data }: TopSellingProductsProps) => (
                         {name}
                       </Text>
                       <Text className="text-purple dark:text-greyer leading-[21px] tracking-[0.4px] product-orders">
-                        <span className="text-green dark:text-few">
+                        <span className="text-greenter dark:text-few">
                           {formattedNumber({
                             value: orders,
                             isDecimalNumber: true,

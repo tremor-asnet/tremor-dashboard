@@ -10,6 +10,10 @@ import { signIn } from "@/auth";
 // Constants
 import { ROUTER_API_URL } from "@/constants";
 
+import { User } from "@/types";
+
+import { addDataFirestore } from "@/services";
+
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
   formData: FormData,
@@ -59,9 +63,12 @@ export async function createNewAccount(
     if (!res.ok) {
       throw new Error("Failed to create new account. Please try again!");
     } else {
-      return {
-        isSuccess: true,
-      };
+      const data: User[] = await res.json();
+      const { email, id, name } = data[0];
+
+      await addDataFirestore("users", { email, id, name });
+
+      return { isSuccess: true };
     }
   } catch (error: unknown) {
     if (error instanceof Error) {

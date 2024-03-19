@@ -23,7 +23,6 @@ const Breadcrumb = ({
   pathname,
 }: BreadcrumbProps): JSX.Element => {
   const params = useParams();
-  const isMobile = isBrowser && window.innerWidth <= 768;
   const isProjectPage = pathname === ROUTES.PROJECTS;
   const isStickyHeader = !isScrolled && isProjectPage;
   const newPath = pathname?.split("/").filter(path => path);
@@ -76,7 +75,7 @@ const Breadcrumb = ({
   };
 
   return (
-    <nav className={`${isProjectPage ? "pl-3 z-20" : isMobile ? "pl-3" : ""}`}>
+    <nav className={`${isProjectPage ? "pl-3 z-20" : "pl-3 md:pl-0"}`}>
       <ol
         className={`flex flex-wrap gap-1 sm:gap-2 items-center ${
           isProjectPage && isStickyHeader

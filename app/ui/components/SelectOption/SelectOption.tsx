@@ -21,7 +21,7 @@ const SelectOption = ({
   onSelectItem,
   onSelectRemove,
 }: SelectOptionProps) => {
-  const handleSelectItem = (option: string, value: string) =>
+  const handleSelectItem = (option: string, value: string) => () =>
     onSelectItem(option, value);
 
   return (
@@ -33,7 +33,7 @@ const SelectOption = ({
               className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
               key={option}>
               <Button
-                onClick={() => handleSelectItem(option, value)}
+                onClick={handleSelectItem(option, value)}
                 value={value}
                 variant={VARIANT_BUTTON.LIGHT}
                 data-testid={`item-filter-${value}`}

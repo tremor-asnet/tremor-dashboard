@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 
 // Components
-import { LoadingIndicator, InputSearch, Filter } from "@/ui/components";
+import { LoadingIndicator, DataGridInputSearch, Filter } from "@/ui/components";
 
 const TableProduct = dynamic(
   () => import("@/ui/features/products/TableProduct/TableProduct"),
@@ -53,7 +53,7 @@ const ProductListPage = async ({
         <Filter title="Is Available" listOption={productList} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="query" />
+        <DataGridInputSearch field="query" />
         <Suspense
           key={`${query}-${filter}-${page}`}
           fallback={

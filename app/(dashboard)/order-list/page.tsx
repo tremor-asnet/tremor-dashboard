@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 // Components
 import { Button, Flex, Text } from "@tremor/react";
-import { Filter, InputSearch, LoadingIndicator } from "@/ui/components";
+import { Filter, DataGridInputSearch, LoadingIndicator } from "@/ui/components";
 
 const TableOrder = dynamic(
   () => import("@/ui/features/orders/TableOrder/TableOrder"),
@@ -46,7 +46,7 @@ const OrderListPage = async ({
         <Filter title="Status" listOption={orderListOption} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="id" />
+        <DataGridInputSearch field="id" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
             key={`${id}-${filter}-${page}`}

@@ -25,6 +25,7 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
+  const [filterSelected, setFilterSelected] = useState("");
 
   const router = useRouter();
 
@@ -43,12 +44,11 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const { value } = e.target as HTMLInputElement;
-    const currentValue = value.toString();
+  const handleSelectFilter = (option: string, value: string) => {
+    setFilterSelected(option);
 
-    if (currentStatus !== currentValue) {
-      newParams.set(currentOption, currentValue);
+    if (currentStatus !== value) {
+      newParams.set(currentOption, value);
       newParams.set("page", "1");
     }
 
@@ -59,13 +59,11 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
   };
 
   const handleRemoveFilter = () => {
+    setFilterSelected("");
     newParams.delete(currentOption);
     router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
   };
-
-  const titleOption = listOption.find(({ value }) => currentStatus === value)
-    ?.option;
 
   return (
     <div className="relative max-w-[220px]">
@@ -73,12 +71,10 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
         icon={RiArrowDropDownLine}
         iconPosition="right"
         variant="secondary"
-        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
+        className="uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
         onClick={handleClickFilter}
         data-testid="toggle-filter">
-        <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
-          {titleOption ? `${title}: ${titleOption}` : "Filters"}
-        </Text>
+        {filterSelected ? `${title}: ${filterSelected}` : "Filters"}
       </Button>
       {showListOption && (
         <div

@@ -10,7 +10,7 @@ import { VARIANT_BUTTON } from "@/constants";
 interface SelectOptionProps {
   title: string;
   data: OptionType[];
-  onSelectItem: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onSelectItem: (option: string, value: string) => void;
   onSelectRemove: () => void;
 }
 
@@ -27,7 +27,7 @@ const SelectOption = ({
           className="w-full text-tremor-default cursor-pointer text-secondary px-4 py-[0.3rem] hover:bg-body hover:text-tremor-brand-subtle hover:rounded-md min-h-[auto] dark:text-dark-romance dark:hover:bg-dark-secondary"
           key={option}>
           <Button
-            onClick={onSelectItem}
+            onClick={() => onSelectItem(option, value)}
             value={value}
             variant={VARIANT_BUTTON.LIGHT}
             data-testid={`item-filter-${value}`}

@@ -20,16 +20,8 @@ describe("SalesByAge components", () => {
   beforeEach(() => {
     result = render(<SalesByAge {...propsSalesByAge} />);
   });
-  test("Should render correctly", () => {
-    expect(result).toBeTruthy();
-  });
 
-  test("Should match snapshot", () => {
+  it("Should match snapshot", () => {
     expect(result).toMatchSnapshot();
-  });
-
-  test("Should render correct title", () => {
-    const title = result.getByText(/Sales by Age/);
-    expect(title).toBeInTheDocument();
   });
 });

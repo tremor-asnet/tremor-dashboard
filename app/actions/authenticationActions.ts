@@ -12,7 +12,7 @@ import { ROUTER_API_URL } from "@/constants";
 
 import { User } from "@/types";
 
-import { addDataFirestore } from "@/services";
+import { updateDataFirestore } from "@/services";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -60,16 +60,21 @@ export async function createNewAccount(
       throw new Error("Account with this email already exists!");
     }
 
-    if (!res.ok) {
+    const data: User[] = await res.json();
+
+    if (!res.ok || data.length < 1) {
       throw new Error("Failed to create new account. Please try again!");
-    } else {
-      const data: User[] = await res.json();
-      const { email, id, name } = data[0];
-
-      await addDataFirestore("users", { email, id, name });
-
-      return { isSuccess: true };
     }
+
+    const { email, id, name } = data[0];
+
+    await updateDataFirestore({
+      data: { email, name },
+      entity: "users",
+      id,
+    });
+
+    return { isSuccess: true };
   } catch (error: unknown) {
     if (error instanceof Error) {
       return {

@@ -40,14 +40,15 @@ export async function createNewAccount(
   prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,
   formData: FormData,
 ) {
-  try {
-    const formPassword = formData.get("password")?.toString();
+  const formPassword = formData.get("password")?.toString();
 
-    const hashPassword = await bcrypt.hash(formPassword as string, 10);
-    formData.set("password", hashPassword);
+  const hashPassword = await bcrypt.hash(formPassword as string, 10);
+  formData.set("password", hashPassword);
 
-    const { email, id, name } = await addNewUser(formData);
+  const { user, errorMessage } = await addNewUser(formData);
 
+  if (user) {
+    const { email, id, name } = user;
     await updateDataFirestore({
       data: { email, name },
       entity: "users",
@@ -55,13 +56,7 @@ export async function createNewAccount(
     });
 
     return { isSuccess: true };
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      return {
-        errorMessage: `${error.message}`,
-      };
-    }
-
-    throw error;
   }
+
+  return { errorMessage };
 }

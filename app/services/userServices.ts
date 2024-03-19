@@ -32,27 +32,34 @@ const getUserByEmail = async (email: string): Promise<User | undefined> => {
 };
 
 const addNewUser = async (formData: FormData) => {
-  const res = await fetch(`${ROUTER_API_URL}/user`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    },
-    cache: "no-store",
-    // @ts-ignore
-    body: new URLSearchParams(formData),
-  });
+  let errorMessage;
 
-  if (res.status === 403) {
-    throw new Error(ADD_USER_MESSAGE.MAIL_EXISTS);
+  try {
+    const res = await fetch(`${ROUTER_API_URL}/user`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      },
+      cache: "no-store",
+      // @ts-ignore
+      body: new URLSearchParams(formData),
+    });
+
+    if (res.status === 403) {
+      errorMessage = ADD_USER_MESSAGE.MAIL_EXISTS;
+    }
+
+    const data: User[] = await res.json();
+
+    if (!res.ok || !data || data.length <= 0) {
+      errorMessage = ADD_USER_MESSAGE.ADD_FAILED;
+    }
+
+    return { user: data[0], errorMessage };
+  } catch (error) {
+    errorMessage = error instanceof Error ? `${error.message}` : `${error}`;
+    return { user: null, errorMessage };
   }
-
-  const data: User[] = await res.json();
-
-  if (!res.ok || !data || data.length <= 0) {
-    throw new Error(ADD_USER_MESSAGE.ADD_FAILED);
-  }
-
-  return data[0];
 };
 
 export { addNewUser, getUserByEmail };

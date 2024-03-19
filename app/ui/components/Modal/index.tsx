@@ -9,16 +9,18 @@ import React, {
 } from "react";
 import { createPortal } from "react-dom";
 
-import { RiCloseLine } from "@remixicon/react";
-
 import { twMerge } from "tailwind-merge";
+
 import { Button, Flex } from "@tremor/react";
+import { GrClose } from "react-icons/gr";
+
+import { ModalActions } from "@/types";
 
 type ModalAction = {
   label: string;
-  type?: "cancel" | "confirm" | "custom";
+  type?: ModalActions;
   onClick?: () => void;
-  className: string;
+  className?: string;
 };
 
 interface IModal {
@@ -31,6 +33,13 @@ interface IModal {
   open?: boolean;
   onConfirm?: () => void;
 }
+
+const styleActions: { [key in ModalActions]?: string } = {
+  [ModalActions.confirm]:
+    "bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500",
+  [ModalActions.cancel]:
+    "bg-orange-500 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500",
+};
 
 export default function Modal({
   title,
@@ -71,20 +80,22 @@ export default function Modal({
         ref={dialogRef}
         onClose={handleDismiss}
         className={twMerge(
-          "py-5 px-4 rounded-md flex flex-col gap-5",
+          "py-5 px-4 rounded-md border-none outline-none flex flex-col gap-5 sm:min-w-[80%] md:min-w-[500px] bg-tremor-primary dark:bg-dark-tremor-primary",
           className,
         )}>
-        <h2 className="font-bold text-2xl text-center text-tertiary">
+        <h2 className="font-bold text-2xl text-center text-tertiary dark:text-dark-romance">
           {title}
         </h2>
 
         {showCloseButton && (
-          <button
-            className="absolute top-5 right-5 border-none outline-none rounded-full p-2 hover:bg-blackAlpha"
-            aria-label="Close Button"
-            onClick={handleDismiss}>
-            <RiCloseLine className="h-5 w-5 shrink-0" />
-          </button>
+          <Button
+            type="button"
+            variant="light"
+            onClick={handleDismiss}
+            className="absolute top-5 right-5 ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 outline-none border-none rounded-full focus:ring-2 focus:ring-gray-300 p-3 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+            aria-label="Close">
+            <GrClose className="h-5 w-5 shrink-0 text-xl text-tertiary dark:text-white" />
+          </Button>
         )}
 
         {children}
@@ -92,13 +103,19 @@ export default function Modal({
         <Flex className="gap-5">
           {actions.map(
             (
-              { label, className: style, onClick, type = "custom", ...others },
+              {
+                label,
+                className: style,
+                onClick,
+                type = ModalActions.custom,
+                ...others
+              },
               index,
             ) => {
               const handleClick =
-                type === "cancel"
+                type === ModalActions.cancel
                   ? handleDismiss
-                  : type === "confirm"
+                  : type === ModalActions.confirm
                     ? onConfirm
                     : onClick;
 
@@ -107,7 +124,8 @@ export default function Modal({
                   key={index}
                   onClick={handleClick}
                   className={twMerge(
-                    "outline-none border-none px-6 py-4 text-xl hover:opacity-70 font-bold flex-1",
+                    "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
+                    styleActions[type] || "",
                     style,
                   )}
                   {...others}>

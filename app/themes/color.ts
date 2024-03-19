@@ -114,6 +114,7 @@ export const backgroundColor = {
   graydark: "#1a2035",
   backdrop: "rgba(0, 0, 0, 0.7)",
   blackAlpha: "rgba(0, 0, 0, 0.07)",
+  whiteAlpha: "rgba(255, 255, 255, 0.07)",
 
   dark: {
     primary: "#111827",

@@ -27,7 +27,7 @@ const DataGridInputSearch = ({ field }: InputSearchProps) => {
       pathnameParam: string,
       urlParams: URLSearchParams,
     ) => {
-      return debounce(() => {
+      const handleUrlParams = () => {
         urlParams.set("page", "1");
 
         if (value) {
@@ -37,7 +37,9 @@ const DataGridInputSearch = ({ field }: InputSearchProps) => {
         }
 
         replace(`${pathnameParam}?${urlParams.toString()}`);
-      }, 1000);
+      };
+
+      return debounce(handleUrlParams, 1000);
     },
     [replace],
   );

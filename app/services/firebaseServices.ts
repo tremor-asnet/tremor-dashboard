@@ -3,6 +3,7 @@ import {
   collection,
   doc,
   addDoc,
+  getDoc,
   setDoc,
   WithFieldValue,
   DocumentData,
@@ -11,12 +12,24 @@ import {
 async function addDataFirestore<
   T extends WithFieldValue<DocumentData> & { id?: string },
 >(entity: string, data: T) {
-  if (data.id) {
-    await setDoc(doc(db, entity, `${data.id}`), data);
-    return;
-  }
-
-  await addDoc(collection(db, entity), data);
+  const ref = await addDoc(collection(db, entity), data);
+  const docSnap = await getDoc(ref);
+  return { ...docSnap.data(), id: ref.id } as T;
 }
 
-export { addDataFirestore };
+async function updateDataFirestore<T extends WithFieldValue<DocumentData>>({
+  data,
+  entity,
+  id,
+}: {
+  entity: string;
+  data: T;
+  id: string;
+}) {
+  const ref = doc(db, entity, `${id}`);
+  await setDoc(ref, data);
+  const docSnap = await getDoc(ref);
+  return docSnap.data() as T;
+}
+
+export { addDataFirestore, updateDataFirestore };

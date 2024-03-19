@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { RefObject, useState } from "react";
+import { RefObject, useCallback, useMemo, useState } from "react";
 
 // Components
 import { Button, Text } from "@tremor/react";
@@ -29,7 +29,11 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
 
   const router = useRouter();
 
-  const newParams = new URLSearchParams(searchParams.toString());
+  const newParams = useMemo(
+    () => new URLSearchParams(searchParams.toString()),
+    [searchParams],
+  );
+
   const pathName = usePathname();
 
   let currentOption = "filter";
@@ -44,26 +48,29 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleSelectFilter = (option: string, value: string) => {
-    setFilterSelected(option);
+  const handleSelectFilter = useCallback(
+    (option: string, value: string) => {
+      setFilterSelected(option);
 
-    if (currentStatus !== value) {
-      newParams.set(currentOption, value);
-      newParams.set("page", "1");
-    }
+      if (currentStatus !== value) {
+        newParams.set(currentOption, value);
+        newParams.set("page", "1");
+      }
 
-    const query = newParams ? `${newParams}` : "";
-    router.push(`${pathName}?${query}`);
+      const query = newParams ? `${newParams}` : "";
+      router.push(`${pathName}?${query}`);
 
-    setShowListOption(false);
-  };
+      setShowListOption(false);
+    },
+    [currentOption, currentStatus, newParams, pathName, router],
+  );
 
-  const handleRemoveFilter = () => {
+  const handleRemoveFilter = useCallback(() => {
     setFilterSelected("");
     newParams.delete(currentOption);
     router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
-  };
+  }, [currentOption, newParams, pathName, router]);
 
   return (
     <div className="relative max-w-[220px]">

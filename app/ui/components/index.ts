@@ -14,7 +14,7 @@ export { default as DashboardHeader } from "./DashboardHeader/DashboardHeader";
 export { default as DataGrid } from "./DataGrid/DataGrid";
 export { default as DataGridBody } from "./DataGrid/DataGridBody/DataGridBody";
 export { default as DataGridHeader } from "./DataGrid/DataGridHeader/DataGridHeader";
-export { default as DataGridInputSearch } from "./DataGrid/DataGridInputSearch/DataGridInputSearch";
+export { default as InputDebounce } from "./InputDebounce/InputDebounce";
 export { default as HeaderCellContents } from "./HeaderCellContents/HeaderCellContents";
 export { default as IconBox } from "./IconBox/IconBox";
 export { default as InputField } from "./InputField/InputField";

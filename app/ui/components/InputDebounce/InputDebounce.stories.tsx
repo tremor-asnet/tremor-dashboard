@@ -1,23 +1,25 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import DataGridInputSearch from "./DataGridInputSearch";
+import InputDebounce from "./InputDebounce";
 
 const meta = {
-  title: "Components/Common/DataGridInputSearch",
-  component: DataGridInputSearch,
+  title: "Components/Common/InputDebounce",
+  component: InputDebounce,
   tags: ["autodocs"],
   argTypes: {
     field: { description: "keyword of input search" },
   },
-} as Meta<typeof DataGridInputSearch>;
+} as Meta<typeof InputDebounce>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DataGridInputSearchDefault: Story = {
+export const InputDebounceDefault: Story = {
   args: {
     field: "Product",
+    param: "page",
+    valueParam: "1",
   },
 };

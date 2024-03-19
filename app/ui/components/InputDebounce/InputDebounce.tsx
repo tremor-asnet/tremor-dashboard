@@ -11,9 +11,17 @@ import { debounce } from "@/helpers/debounce";
 
 interface InputSearchProps {
   field: string;
+  debounceTime?: number;
+  param: string;
+  valueParam: string;
 }
 
-const DataGridInputSearch = ({ field }: InputSearchProps) => {
+const InputDebounce = ({
+  field,
+  debounceTime = 1000,
+  param,
+  valueParam,
+}: InputSearchProps) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -28,7 +36,7 @@ const DataGridInputSearch = ({ field }: InputSearchProps) => {
       urlParams: URLSearchParams,
     ) => {
       const handleUrlParams = () => {
-        urlParams.set("page", "1");
+        urlParams.set(param, valueParam);
 
         if (value) {
           urlParams.set(fieldParam, value);
@@ -39,7 +47,7 @@ const DataGridInputSearch = ({ field }: InputSearchProps) => {
         replace(`${pathnameParam}?${urlParams.toString()}`);
       };
 
-      return debounce(handleUrlParams, 1000);
+      return debounce(handleUrlParams, debounceTime);
     },
     [replace],
   );
@@ -62,4 +70,4 @@ const DataGridInputSearch = ({ field }: InputSearchProps) => {
   );
 };
 
-export default DataGridInputSearch;
+export default InputDebounce;

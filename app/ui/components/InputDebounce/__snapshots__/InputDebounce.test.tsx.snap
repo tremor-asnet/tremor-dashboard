@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataGridInputSearch component should clear the search value and delete the parameter 1`] = `
+exports[`InputDebounce component should clear the search value and delete the parameter 1`] = `
 <div>
   <div
     class="tremor-Flex-root flex w-full flex-row justify-end items-center p-6 relative"
@@ -21,7 +21,7 @@ exports[`DataGridInputSearch component should clear the search value and delete 
 </div>
 `;
 
-exports[`DataGridInputSearch component should matches snapshot 1`] = `
+exports[`InputDebounce component should matches snapshot 1`] = `
 <div>
   <div
     class="tremor-Flex-root flex w-full flex-row justify-end items-center p-6 relative"
@@ -42,7 +42,7 @@ exports[`DataGridInputSearch component should matches snapshot 1`] = `
 </div>
 `;
 
-exports[`DataGridInputSearch component should reset search and update URL parameters when reset is clicked 1`] = `
+exports[`InputDebounce component should reset search and update URL parameters when reset is clicked 1`] = `
 <div>
   <div
     class="tremor-Flex-root flex w-full flex-row justify-end items-center p-6 relative"

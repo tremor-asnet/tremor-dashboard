@@ -1,7 +1,7 @@
 import { RenderResult, fireEvent, render } from "@testing-library/react";
 
 // Components
-import DataGridInputSearch from "./DataGridInputSearch";
+import InputDebounce from "./InputDebounce";
 
 // Mock the necessary modules
 jest.mock("next/navigation", () => ({
@@ -17,13 +17,15 @@ jest.mock("next/navigation", () => ({
   }),
 }));
 
-describe("DataGridInputSearch component", () => {
+describe("InputDebounce component", () => {
   let renderComponent: RenderResult;
 
   beforeEach(() => {
     jest.useFakeTimers();
 
-    renderComponent = render(<DataGridInputSearch field="query" />);
+    renderComponent = render(
+      <InputDebounce field="query" param="page" valueParam="1" />,
+    );
   });
 
   afterEach(() => {

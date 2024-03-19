@@ -12,7 +12,7 @@ import { ROUTER_API_URL } from "@/constants";
 
 import { User } from "@/types";
 
-import { updateDataFirestore } from "@/services";
+import { addNewUser, updateDataFirestore } from "@/services";
 
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
@@ -46,27 +46,7 @@ export async function createNewAccount(
     const hashPassword = await bcrypt.hash(formPassword as string, 10);
     formData.set("password", hashPassword);
 
-    const res = await fetch(`${ROUTER_API_URL}/user`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-      },
-      cache: "no-store",
-      // @ts-ignore
-      body: new URLSearchParams(formData),
-    });
-
-    if (res.status === 403) {
-      throw new Error("Account with this email already exists!");
-    }
-
-    const data: User[] = await res.json();
-
-    if (!res.ok || data.length < 1) {
-      throw new Error("Failed to create new account. Please try again!");
-    }
-
-    const { email, id, name } = data[0];
+    const { email, id, name } = await addNewUser(formData);
 
     await updateDataFirestore({
       data: { email, name },

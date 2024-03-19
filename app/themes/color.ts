@@ -112,6 +112,7 @@ export const backgroundColor = {
   "green-500": "#43a047",
   "orange-500": "#fb8c00",
   graydark: "#1a2035",
+  backdrop: "rgba(0, 0, 0, 0.7)",
 
   dark: {
     primary: "#111827",

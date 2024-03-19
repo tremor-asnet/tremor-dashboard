@@ -2,7 +2,7 @@
 import type { User } from "@/types";
 
 // Constants
-import { EMAIL_REGEX, ROUTER_API_URL } from "@/constants";
+import { ADD_USER_MESSAGE, EMAIL_REGEX, ROUTER_API_URL } from "@/constants";
 
 /**
  * Handle get user's account by email
@@ -43,13 +43,13 @@ const addNewUser = async (formData: FormData) => {
   });
 
   if (res.status === 403) {
-    throw new Error("Account with this email already exists!");
+    throw new Error(ADD_USER_MESSAGE.MAIL_EXISTS);
   }
 
   const data: User[] = await res.json();
 
   if (!res.ok || !data || data.length === 0) {
-    throw new Error("Failed to create new account. Please try again!");
+    throw new Error(ADD_USER_MESSAGE.ADD_FAILED);
   }
 
   return data[0];

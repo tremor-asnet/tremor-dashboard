@@ -3,7 +3,7 @@ import { fireEvent, render, waitFor } from "@testing-library/react";
 //Components
 import ProjectCard from "./ProjectCard";
 
-//Constans
+//Constants
 import { ITEM_ACTION_PROJECT } from "@/constants";
 
 //Mocks

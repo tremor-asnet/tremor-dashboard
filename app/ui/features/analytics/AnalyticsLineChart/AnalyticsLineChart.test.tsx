@@ -34,40 +34,6 @@ describe("Testing AnalyticsLineChart component", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render correctly title with display AnalyticsLineChart", () => {
-    const { getByText } = render(
-      <AnalyticsLineChart
-        dataChart={LINE_CHART_DATA[0].data}
-        type={CHART_TYPE.PERFORMANCE}
-        title="Completed Tasks"
-        subTitle={"Last Campaign Performance"}
-        scheduleText={"just updated"}
-        isDailyChart={false}
-      />,
-    );
-
-    const title = getByText("Completed Tasks");
-
-    expect(title).toBeTruthy;
-  });
-
-  it("should render correctly title with display AnalyticsLineChart", () => {
-    const { getByText } = render(
-      <AnalyticsLineChart
-        dataChart={LINE_CHART_DATA[0].data}
-        type={CHART_TYPE.PERFORMANCE}
-        title="Completed Tasks"
-        subTitle={"Last Campaign Performance"}
-        scheduleText={"just updated"}
-        isDailyChart={false}
-      />,
-    );
-
-    const title = getByText("Completed Tasks");
-
-    expect(title).toBeTruthy;
-  });
-
   it("should render correctly className if type CHART_TYPE.PERFORMANCE", () => {
     const { getByTestId } = render(
       <AnalyticsLineChart

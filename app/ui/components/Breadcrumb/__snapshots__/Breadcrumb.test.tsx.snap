@@ -3,7 +3,7 @@
 exports[`Testing breadcrumb component Should match snapshot 1`] = `
 <div>
   <nav
-    class=""
+    class="pl-3 md:pl-0"
   >
     <ol
       class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"

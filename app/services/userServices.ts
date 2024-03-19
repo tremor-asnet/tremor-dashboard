@@ -48,7 +48,7 @@ const addNewUser = async (formData: FormData) => {
 
   const data: User[] = await res.json();
 
-  if (!res.ok || !data || data.length === 0) {
+  if (!res.ok || !data || data.length <= 0) {
     throw new Error(ADD_USER_MESSAGE.ADD_FAILED);
   }
 

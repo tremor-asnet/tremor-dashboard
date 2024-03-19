@@ -16,7 +16,6 @@
     "minify": "sh scripts/minify.sh"
   },
   "dependencies": {
-    "@remixicon/react": "^4.2.0",
     "@storybook/addon-knobs": "^7.0.2",
     "@tremor/react": "^3.11.1",
     "bcrypt": "^5.1.1",

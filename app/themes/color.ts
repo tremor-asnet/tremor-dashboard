@@ -113,6 +113,7 @@ export const backgroundColor = {
   "orange-500": "#fb8c00",
   graydark: "#1a2035",
   backdrop: "rgba(0, 0, 0, 0.7)",
+  blackAlpha: "rgba(0, 0, 0, 0.07)",
 
   dark: {
     primary: "#111827",

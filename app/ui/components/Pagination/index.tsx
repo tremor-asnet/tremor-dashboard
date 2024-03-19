@@ -36,7 +36,7 @@ const Pagination = ({
   };
 
   const paginationRangeLength = paginationRange.length;
-  const showItemsPagination = currentPage !== 0 && paginationRangeLength > 2;
+  const showItemsPagination = paginationRangeLength > 1;
   const lastPage = paginationRange[paginationRangeLength - 1];
   const firstItemCurrentPage = currentPage * pageSize - pageSize + 1;
   const lastItemCurrentPage =

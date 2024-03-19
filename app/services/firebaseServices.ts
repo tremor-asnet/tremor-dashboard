@@ -28,8 +28,6 @@ async function updateDataFirestore<T extends WithFieldValue<DocumentData>>({
 }) {
   const ref = doc(db, entity, `${id}`);
   await setDoc(ref, data);
-  const docSnap = await getDoc(ref);
-  return docSnap.data() as T;
 }
 
 export { addDataFirestore, updateDataFirestore };

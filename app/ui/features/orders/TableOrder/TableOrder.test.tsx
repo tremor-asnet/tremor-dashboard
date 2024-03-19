@@ -1,5 +1,6 @@
-// Components
 import { render } from "@testing-library/react";
+
+// Components
 import TableOrder from "./TableOrder";
 
 // Mocks

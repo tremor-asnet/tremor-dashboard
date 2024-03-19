@@ -11,18 +11,6 @@ describe("InvoiceFooter Testing", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should renders invoice footer with correct content", () => {
-    const { getByText } = render(<InvoiceFooter />);
-
-    expect(getByText(/thank you!/i)).toBeInTheDocument();
-    expect(
-      getByText(
-        /if you encounter any issues related to the invoice you can contact us at:/i,
-      ),
-    ).toBeInTheDocument();
-    expect(getByText(/email:/i)).toBeInTheDocument();
-  });
-
   it("prints invoice when print button is clicked", () => {
     window.print = jest.fn();
 

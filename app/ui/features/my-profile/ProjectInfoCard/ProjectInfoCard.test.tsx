@@ -1,5 +1,5 @@
 // ProjectInfoCard.test.tsx
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 // Components
 import ProjectInfoCard from "./ProjectInfoCard";
@@ -15,13 +15,13 @@ const ProjectInfoCardComponent = () =>
   render(<ProjectInfoCard {...ProjectInfoCardProps} />);
 
 describe("ProjectInfoCard Component", () => {
-  test("render ProjectInfoCard component with snapshot correctly", () => {
+  it("render ProjectInfoCard component with snapshot correctly", () => {
     const { container } = ProjectInfoCardComponent();
 
     expect(container).toMatchSnapshot();
   });
 
-  test("renders ProjectInfoCard component with mock data", () => {
+  it("renders ProjectInfoCard component with mock data", () => {
     const { getByText } = ProjectInfoCardComponent();
 
     const projectNames = PROFILE_INFO_PROJECT_CARD.map(({ primaryName }) =>

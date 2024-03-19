@@ -4,13 +4,6 @@ exports[`SalesByAge components Should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <span
-      aria-hidden="true"
-      id="recharts_measurement_span"
-      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre;"
-    >
-      36-40
-    </span>
     <div>
       <div
         class="tremor-Card-root relative w-full text-left rounded-tremor-default bg-tremor-background ring-tremor-ring shadow-tremor-card dark:ring-dark-tremor-ring dark:shadow-dark-tremor-card border-tremor-brand dark:border-dark-tremor-brand p-6 sale-by-age dark:bg-dark-tremor-primary ring-0"
@@ -40,7 +33,7 @@ exports[`SalesByAge components Should match snapshot 1`] = `
                 <desc />
                 <defs>
                   <clippath
-                    id="recharts4-clip"
+                    id="recharts1-clip"
                   >
                     <rect
                       height="60"
@@ -369,6 +362,13 @@ exports[`SalesByAge components Should match snapshot 1`] = `
         </div>
       </div>
     </div>
+    <span
+      aria-hidden="true"
+      id="recharts_measurement_span"
+      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre;"
+    >
+      36-40
+    </span>
   </body>,
   "container": <div>
     <div
@@ -399,7 +399,7 @@ exports[`SalesByAge components Should match snapshot 1`] = `
               <desc />
               <defs>
                 <clippath
-                  id="recharts4-clip"
+                  id="recharts1-clip"
                 >
                   <rect
                     height="60"

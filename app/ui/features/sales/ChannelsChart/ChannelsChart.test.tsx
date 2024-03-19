@@ -15,16 +15,6 @@ describe("Testing ChannelsChart component", () => {
       unobserve: jest.fn(),
     }));
 
-  it("should render correctly title with display ChannelsChart", () => {
-    const { getByText } = render(
-      <ChannelsChart title="Channels" channelChartData={CHANNELS_CHART_DATA} />,
-    );
-
-    const title = getByText("Channels");
-
-    expect(title).toBeTruthy;
-  });
-
   it("Should match snapshot", () => {
     const { container } = render(
       <ChannelsChart title="Channels" channelChartData={CHANNELS_CHART_DATA} />,

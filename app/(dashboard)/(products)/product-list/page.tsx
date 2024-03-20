@@ -22,7 +22,8 @@ import { ROUTES, productList } from "@/constants";
 type SearchParamsProduct = {
   query: string;
   filter: string;
-  page?: number;
+  page: number;
+  sortBy: string;
 };
 
 const ProductListPage = async ({
@@ -36,9 +37,15 @@ const ProductListPage = async ({
     query = "",
     filter = "",
     page = 1,
+    sortBy = "",
   } = searchParams as SearchParamsProduct;
 
-  const response: ProductResponse = await getProducts(page, filter, query);
+  let response: ProductResponse = await getProducts(
+    page,
+    filter,
+    query,
+    sortBy,
+  );
 
   const { results, total, skip } = response;
 
@@ -55,7 +62,7 @@ const ProductListPage = async ({
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputSearch field="query" />
         <Suspense
-          key={`${query}-${filter}-${page}`}
+          key={`${query}-${filter}-${page}-${sortBy}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -66,7 +73,7 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${query}-${filter}-${page}`}
+            key={`${query}-${filter}-${page}-${sortBy}`}
             products={results}
             total={total}
             currentPage={skip / 10 + 1}

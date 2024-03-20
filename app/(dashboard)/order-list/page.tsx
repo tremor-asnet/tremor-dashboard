@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 // Components
-import { Button, Flex, Text } from "@tremor/react";
+import { Flex } from "@tremor/react";
 import { Filter, InputSearch, LoadingIndicator } from "@/ui/components";
 
 const TableOrder = dynamic(
@@ -18,20 +18,26 @@ import { OrderResponse } from "@/types";
 // Constants
 import { orderListOption } from "@/constants";
 
-type SearchParams = {
-  id?: number;
-  filter?: number;
-  page?: number;
+type SearchParamsOrder = {
+  query: string;
+  filter: string;
+  page: number;
+  sortBy: string;
 };
 
 const OrderListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParams;
+  searchParams?: SearchParamsOrder;
 }) => {
-  const { id = -1, filter = -1, page = 1 } = searchParams as SearchParams;
+  const {
+    query = "",
+    filter = "",
+    page = 1,
+    sortBy = "",
+  } = searchParams as SearchParamsOrder;
 
-  const response: OrderResponse = await getOrders(page, filter, id);
+  const response: OrderResponse = await getOrders(page, filter, query, sortBy);
 
   const { results, total, skip } = response;
 
@@ -44,7 +50,7 @@ const OrderListPage = async ({
         <InputSearch field="id" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${id}-${filter}-${page}`}
+            key={`${query}-${filter}-${page}-${sortBy}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -55,7 +61,7 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${id}-${filter}-${page}`}
+              key={`${query}-${filter}-${page}-${sortBy}`}
               orders={results}
               total={total}
               currentPage={skip / 10 + 1}

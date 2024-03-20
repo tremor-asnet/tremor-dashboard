@@ -7,7 +7,10 @@ import { Button as ButtonTremor, Size } from "@tremor/react";
 import { VARIANT_BUTTON } from "@/constants";
 
 interface ButtonProps {
-  variant: "primary" | "secondary" | "light";
+  variant:
+    | VARIANT_BUTTON.PRIMARY
+    | VARIANT_BUTTON.SECONDARY
+    | VARIANT_BUTTON.LIGHT;
   additionalClass?: string;
   children?: string | ReactNode;
   disabled?: boolean;
@@ -19,7 +22,7 @@ interface ButtonProps {
 
 const Button = ({
   additionalClass,
-  variant = "light",
+  variant,
   children,
   disabled,
   type,

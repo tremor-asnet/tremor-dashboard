@@ -14,22 +14,15 @@ const TableProduct = dynamic(
 import { getProducts } from "@/services";
 
 // Types
-import { ProductResponse } from "@/types";
+import { ProductResponse, TSearchParams } from "@/types";
 
 // Constants
 import { ROUTES, productList } from "@/constants";
 
-type SearchParamsProduct = {
-  query: string;
-  filter: string;
-  page: number;
-  sortBy: string;
-};
-
 const ProductListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParamsProduct;
+  searchParams?: TSearchParams;
 }) => {
   // TODO: Update key whenever the filter data change
 
@@ -38,7 +31,7 @@ const ProductListPage = async ({
     filter = "",
     page = 1,
     sortBy = "",
-  } = searchParams as SearchParamsProduct;
+  } = searchParams as TSearchParams;
 
   let response: ProductResponse = await getProducts(
     page,

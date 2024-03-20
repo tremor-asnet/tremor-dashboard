@@ -13,29 +13,22 @@ const TableOrder = dynamic(
 import { getOrders } from "@/services";
 
 // Types
-import { OrderResponse } from "@/types";
+import { OrderResponse, TSearchParams } from "@/types";
 
 // Constants
 import { orderListOption } from "@/constants";
 
-type SearchParamsOrder = {
-  query: string;
-  filter: string;
-  page: number;
-  sortBy: string;
-};
-
 const OrderListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParamsOrder;
+  searchParams?: TSearchParams;
 }) => {
   const {
     query = "",
     filter = "",
     page = 1,
     sortBy = "",
-  } = searchParams as SearchParamsOrder;
+  } = searchParams as TSearchParams;
 
   const response: OrderResponse = await getOrders(page, filter, query, sortBy);
 

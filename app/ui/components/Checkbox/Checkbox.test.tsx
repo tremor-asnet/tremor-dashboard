@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-// Componenents
+// Components
 import Checkbox from ".";
 
 describe("Checkbox Testing", () => {

@@ -34,3 +34,4 @@ export { default as Toast } from "./Toast/Toast";
 export { default as UserConversationHistory } from "./UserConversationHistory/UserConversationHistory";
 export { default as WorldMapCanvas } from "./WorldMapCanvas";
 export { default as Filter } from "./Filter/Filter";
+export { default as Button } from "./Button/Button";

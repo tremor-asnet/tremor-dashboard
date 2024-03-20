@@ -8,17 +8,24 @@ import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
 // Helpers
 import { getErrorMessage } from "@/helpers";
 
-export const getOrders = async (
-  pageNum: number,
-  status: number,
-  query: number,
-) => {
-  const statusFilter = status >= 0 ? "&status=" + status : "";
-  const queryFilter = query >= 0 ? "&query=" + query : "";
-  const filter = statusFilter + queryFilter;
+export const getOrders = async ({
+  pageNum,
+  status,
+  query,
+  sortBy,
+}: {
+  pageNum?: number;
+  status?: string;
+  query?: string;
+  sortBy?: string;
+}) => {
+  const statusFilter = status ? `&status=${status}` : "";
+  const queryFilter = query ? `&query=${query}` : "";
+  const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
+  const filter = statusFilter + queryFilter + sortByFilter;
 
   const res = await fetch(
-    `${ROUTER_API_URL}/orders?page=${pageNum - 1}&size=${
+    `${ROUTER_API_URL}/orders?page=${pageNum! - 1}&size=${
       PAGE_SIZE.SIZE
     }${filter}`,
     {

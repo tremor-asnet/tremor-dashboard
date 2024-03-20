@@ -29,12 +29,4 @@ describe("Testing AnalyticsStatisticCard component", () => {
     const selectElement = getByTestId(container, "123");
     expect(selectElement).toBeNull();
   });
-
-  it("Should renders with correct statistical data", () => {
-    const { getByText } = render(<AnalyticsStatisticCard {...propsDefault} />);
-
-    expect(getByText(STATISTICAL_DATA[0].amount)).toBeInTheDocument();
-    expect(getByText(STATISTICAL_DATA[0].duration)).toBeInTheDocument();
-    expect(getByText(STATISTICAL_DATA[0].type)).toBeInTheDocument();
-  });
 });

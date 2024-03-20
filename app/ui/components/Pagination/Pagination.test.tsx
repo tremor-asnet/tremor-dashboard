@@ -6,7 +6,7 @@ import Pagination from ".";
 describe("Pagination component", () => {
   const props = {
     onPageChange: jest.fn(),
-    totalCount: 100,
+    totalCount: 15,
     currentPage: 1,
     pageSize: 10,
   };
@@ -51,7 +51,7 @@ describe("Pagination component", () => {
   });
 
   it("Disables next button on last page", () => {
-    const { getByTestId } = render(<Pagination {...props} currentPage={10} />);
+    const { getByTestId } = render(<Pagination {...props} currentPage={2} />);
     const nextButton = getByTestId("next-page-button");
 
     expect(nextButton.classList.contains("hidden")).toBeTruthy();

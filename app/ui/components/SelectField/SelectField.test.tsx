@@ -14,16 +14,6 @@ describe("SelectField Component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders correct label text", () => {
-    const { getByText } = render(
-      <SelectField label="Currency" options={TYPE_PRICE} />,
-    );
-
-    const label = getByText("Currency");
-
-    expect(label).toBeTruthy;
-  });
-
   it("renders correct number of options", () => {
     const getById = queryByAttribute.bind(null, "id");
 

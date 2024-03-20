@@ -10,6 +10,10 @@ import { signIn } from "@/auth";
 // Constants
 import { ROUTER_API_URL } from "@/constants";
 
+import { User } from "@/types";
+
+import { addNewUser, updateDataFirestore } from "@/services";
+
 export const authenticate = async (
   prevState: { errorMessage: string } | undefined,
   formData: FormData,
@@ -33,43 +37,26 @@ export const authenticate = async (
 };
 
 export async function createNewAccount(
-  prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,
+  prevState: { errorMessage?: string; isSuccess?: boolean } | undefined,
   formData: FormData,
 ) {
-  try {
-    const formPassword = formData.get("password")?.toString();
+  const formPassword = formData.get("password")?.toString();
 
-    const hashPassword = await bcrypt.hash(formPassword as string, 10);
-    formData.set("password", hashPassword);
+  const hashPassword = await bcrypt.hash(formPassword as string, 10);
+  formData.set("password", hashPassword);
 
-    const res = await fetch(`${ROUTER_API_URL}/user`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-      },
-      cache: "no-store",
-      // @ts-ignore
-      body: new URLSearchParams(formData),
+  const { user, errorMessage } = await addNewUser(formData);
+
+  if (user) {
+    const { email, id, name } = user;
+    await updateDataFirestore({
+      data: { email, name },
+      entity: "users",
+      id,
     });
 
-    if (res.status === 403) {
-      throw new Error("Account with this email already exists!");
-    }
-
-    if (!res.ok) {
-      throw new Error("Failed to create new account. Please try again!");
-    } else {
-      return {
-        isSuccess: true,
-      };
-    }
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      return {
-        errorMessage: `${error.message}`,
-      };
-    }
-
-    throw error;
+    return { isSuccess: true };
   }
+
+  return { errorMessage };
 }

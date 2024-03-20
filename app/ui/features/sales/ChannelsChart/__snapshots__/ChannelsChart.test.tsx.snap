@@ -91,7 +91,7 @@ exports[`Testing ChannelsChart component Should match snapshot 1`] = `
                   <desc />
                   <defs>
                     <clippath
-                      id="recharts3-clip"
+                      id="recharts1-clip"
                     >
                       <rect
                         height="100"

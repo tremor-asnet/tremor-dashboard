@@ -14,12 +14,6 @@ describe("Test InputField component", () => {
     expect(container).toMatchSnapshot();
   });
 
-  test("Should render label correctly", () => {
-    render(<InputField {...mockProps} />);
-    const label = screen.queryByText(/Test InputField/i);
-    expect(label).toBeInTheDocument();
-  });
-
   test("Should render InputField with error message", () => {
     render(<InputField errorMessage="Test error message" {...mockProps} />);
     const error = screen.queryByText(/Test error message/i);

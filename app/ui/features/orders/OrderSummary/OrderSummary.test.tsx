@@ -14,12 +14,7 @@ import { formattedNumber } from "@/helpers";
 import { CURRENCY } from "@/constants";
 
 describe("Test OderSummary component", () => {
-  test("Should render correctly", () => {
-    const result = render(<OrderSummary {...mockOrderSummary} />);
-    expect(result).toBeTruthy();
-  });
-
-  test("Should match snapshot", () => {
+  it("Should match snapshot", () => {
     const result = render(<OrderSummary {...mockOrderSummary} />);
     expect(result).toMatchSnapshot();
   });

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
 import { HeaderCellContents } from "@/ui/components";
@@ -14,26 +15,31 @@ import { DIRECTION } from "@/constants/common";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
-  handleSorting: (sortField: string, sortOrder: string) => void;
 }
 
-const DataGridHeader = <T,>({
-  columns,
-  handleSorting,
-}: DataTableHeaderProps<T>) => {
+const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const [sortField, setSortField] = useState<string>("");
-  const [order, setOrder] = useState<string>(DIRECTION.ASC);
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+  const params = new URLSearchParams(searchParams);
+  const [order, setOrder] = useState<string>("");
 
   const handleSortingChange = (key: string) => {
-    const sortOrder =
-      key === sortField && order === DIRECTION.ASC
-        ? DIRECTION.DESC
-        : DIRECTION.ASC;
-
     setSortField(key);
-    setOrder(sortOrder);
 
-    handleSorting(key, sortOrder);
+    const sortBy = params.get("sortBy");
+
+    params.set("page", "1");
+    if (sortBy?.includes("-") || sortBy === null) {
+      params.set("sortBy", key);
+      setOrder(DIRECTION.ASC);
+    } else {
+      params.set("sortBy", `-${key}`);
+      setOrder(DIRECTION.DESC);
+    }
+
+    replace(`${pathname}?${params.toString()}`);
   };
 
   return (

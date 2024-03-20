@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 // Components
-import { Button, Col, Grid, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/ui/components";
+import { Col, Grid, Text } from "@tremor/react";
+import { Button, LoadingIndicator } from "@/ui/components";
 import ProductImage from "../EditProduct/ProductImage/ProductImage";
 const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
 const ProductInfo = dynamic(
@@ -24,7 +24,7 @@ import { editProduct } from "@/services";
 import { ProductData } from "@/types";
 
 // Constants
-import { NOT_FOUND_IMAGE, TOAST_TYPES } from "@/constants";
+import { NOT_FOUND_IMAGE, TOAST_TYPES, VARIANT_BUTTON } from "@/constants";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
@@ -143,6 +143,24 @@ const EditProductForm = ({
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <div className="w-full text-end absolute -mt-24">
             <Button
+              variant={VARIANT_BUTTON.PRIMARY}
+              type="submit"
+              size="xs"
+              disabled={!formState.isDirty}
+              additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
+              {isLoading ? (
+                <LoadingIndicator
+                  width={4}
+                  height={5}
+                  additionalClass="px-1.5"
+                />
+              ) : (
+                <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+                  Save
+                </Text>
+              )}
+            </Button>
+            {/* <Button
               type="submit"
               className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 items-end"
               size="xs"
@@ -158,7 +176,7 @@ const EditProductForm = ({
                   Save
                 </Text>
               )}
-            </Button>
+            </Button> */}
           </div>
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">

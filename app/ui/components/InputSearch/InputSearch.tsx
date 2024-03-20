@@ -1,72 +1,33 @@
 "use client";
 
-import { ChangeEvent, useCallback, useEffect, useRef, useState } from "react";
+import { ChangeEvent, useRef, useState } from "react";
 
 // Components
 import { Flex, TextInput } from "@tremor/react";
 import { MdClose } from "react-icons/md";
 
-// Types
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-
-// Helpers
-import { debounce } from "@/helpers/debounce";
-
 interface InputSearchProps {
-  field: string;
+  value: string;
+  onChange: (value: string) => void;
+  onReset: () => void;
 }
 
-const InputSearch = ({ field }: InputSearchProps) => {
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const { replace } = useRouter();
-  const params = new URLSearchParams(searchParams);
+const InputSearch = ({ value, onChange, onReset }: InputSearchProps) => {
   const inputSearchRef = useRef<HTMLInputElement>(null);
-  // @ts-ignore (us this comment if typescript raises an error)
   const hasValueInputSearch = inputSearchRef?.current?.value;
 
-  const [searchValue, setSearchValue] = useState<string>(() => {
-    const paramsValue = params.get(field);
-
-    return paramsValue || "";
-  });
-
-  const debouncedHandler = useCallback(
-    (
-      value: string,
-      fieldParam: string,
-      pathnameParam: string,
-      urlParams: URLSearchParams,
-    ) => {
-      return debounce(() => {
-        urlParams.set("page", "1");
-
-        if (value) {
-          urlParams.set(fieldParam, value);
-        } else {
-          urlParams.delete(fieldParam);
-        }
-
-        replace(`${pathnameParam}?${urlParams.toString()}`);
-      }, 1000);
-    },
-    [replace],
-  );
+  const [searchValue, setSearchValue] = useState<string>(value);
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-
     setSearchValue(value);
-    debouncedHandler(value, field, pathname, params)();
+    onChange(value);
   };
 
   const resetSearch = () => {
     setSearchValue("");
-
-    params.delete(field);
-    // @ts-ignore (us this comment if typescript raises an error)
-    inputSearchRef.current.value = "";
-    replace(`${pathname}?${params.toString()}`);
+    onReset();
+    if (inputSearchRef.current) inputSearchRef.current.value = "";
   };
 
   return (

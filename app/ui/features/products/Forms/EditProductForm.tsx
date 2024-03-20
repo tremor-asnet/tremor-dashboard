@@ -160,23 +160,6 @@ const EditProductForm = ({
                 </Text>
               )}
             </Button>
-            {/* <Button
-              type="submit"
-              className="antialiased text-center uppercase px-6 py-2.5 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 items-end"
-              size="xs"
-              disabled={!formState.isDirty}>
-              {isLoading ? (
-                <LoadingIndicator
-                  width={4}
-                  height={5}
-                  additionalClass="px-1.5"
-                />
-              ) : (
-                <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
-                  Save
-                </Text>
-              )}
-            </Button> */}
           </div>
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">

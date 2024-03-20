@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
@@ -25,7 +25,7 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const params = new URLSearchParams(searchParams);
   const [order, setOrder] = useState<string>("");
 
-  const handleSortingChange = (key: string, sortable: boolean | undefined) => {
+  const handleSortingChange = useCallback((key: string, sortable: boolean) => {
     if (!sortable) return;
 
     setSortField(key);
@@ -42,15 +42,19 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
     }
 
     replace(`${pathname}?${params.toString()}`);
-  };
+  }, []);
 
   return (
     <TableHead>
       <TableRow>
         {columns.map(({ key, title, sortable }) => {
+          const handleClick = () => {
+            handleSortingChange(key, !!sortable);
+          };
+
           return (
             <TableHeaderCell
-              onClick={() => handleSortingChange(key, sortable)}
+              onClick={handleClick}
               key={key}
               className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100">
               <HeaderCellContents

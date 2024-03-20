@@ -32,3 +32,8 @@ export const TOAST_TYPES = {
   WARNING: "warning",
   ERROR: "error",
 };
+
+export const ADD_USER_MESSAGE = {
+  MAIL_EXISTS: "Account with this email already exists!",
+  ADD_FAILED: "Failed to create new account. Please try again!",
+};

@@ -7,14 +7,17 @@ import { useForm } from "react-hook-form";
 // Components
 import { Media } from "@/ui/features/products/AddProduct";
 import { ImagePreview } from "@/ui/features/products";
-import { LoadingIndicator } from "@/ui/components";
-import { Button, Flex, Text } from "@tremor/react";
+import { Button, LoadingIndicator } from "@/ui/components";
+import { Flex, Text } from "@tremor/react";
 
 // Types
 import { IMedia } from "@/types";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface MediaFormProps {
   onBack: () => void;
@@ -69,7 +72,7 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
       {uploadContent}
       <Flex className="mt-6">
         <Button
-          className="items-start btn-form-secondary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-btn-back hover:dark:!bg-gradient-pickled border-none dark:text-white text-center box-shadow-transparent"
+          variant={VARIANT_BUTTON.SURFACE}
           type="submit"
           onClick={onBack}
           disabled={isUpload}>
@@ -78,7 +81,8 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
           </Text>
         </Button>
         <Button
-          className="items-end btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          variant={VARIANT_BUTTON.PRIMARY}
+          additionalClass="items-end btn-form-primary rounded-lg py-3 px-6 mt-8 hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
           type="submit"
           disabled={isUpload}>
           <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">

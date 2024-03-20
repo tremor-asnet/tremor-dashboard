@@ -5,10 +5,14 @@ import { useForm } from "react-hook-form";
 
 // Components
 import { ProductInfo } from "@/ui/features/products/AddProduct";
-import { Button, Text } from "@tremor/react";
+import { Text } from "@tremor/react";
 
 // Types
 import { NewInfo } from "@/types";
+import { Button } from "@/ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface ProductInfoFormProps {
   productName: string;
@@ -53,7 +57,8 @@ const ProductInfoForm = ({
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <Button
-          className="float-right btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          variant={VARIANT_BUTTON.PRIMARY}
+          additionalClass="float-right btn-form-primary rounded-lg py-3 px-6 mt-8  hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
           type="submit">
           <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
             Next

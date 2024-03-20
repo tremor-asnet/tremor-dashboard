@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 
 // Components
-import { LoadingIndicator, InputSearch, Filter } from "@/ui/components";
+import { LoadingIndicator, InputDebounce, Filter } from "@/ui/components";
 
 const TableProduct = dynamic(
   () => import("@/ui/features/products/TableProduct/TableProduct"),
@@ -14,21 +14,15 @@ const TableProduct = dynamic(
 import { getProducts } from "@/services";
 
 // Types
-import { ProductResponse } from "@/types";
+import { ProductResponse, TSearchParams } from "@/types";
 
 // Constants
 import { ROUTES, productList } from "@/constants";
 
-type SearchParamsProduct = {
-  query: string;
-  filter: string;
-  page?: number;
-};
-
 const ProductListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParamsProduct;
+  searchParams?: TSearchParams;
 }) => {
   // TODO: Update key whenever the filter data change
 
@@ -36,9 +30,15 @@ const ProductListPage = async ({
     query = "",
     filter = "",
     page = 1,
-  } = searchParams as SearchParamsProduct;
+    sortBy = "",
+  } = searchParams as TSearchParams;
 
-  const response: ProductResponse = await getProducts(page, filter, query);
+  let response: ProductResponse = await getProducts({
+    pageNum: page,
+    available: filter,
+    query: query,
+    sortBy: sortBy,
+  });
 
   const { results, total, skip } = response;
 
@@ -53,9 +53,9 @@ const ProductListPage = async ({
         <Filter title="Is Available" listOption={productList} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="query" />
+        <InputDebounce field="query" param="page" valueParam="1" />
         <Suspense
-          key={`${query}-${filter}-${page}`}
+          key={`${query}-${filter}-${page}-${sortBy}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -66,7 +66,7 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${query}-${filter}-${page}`}
+            key={`${query}-${filter}-${page}-${sortBy}`}
             products={results}
             total={total}
             currentPage={skip / 10 + 1}

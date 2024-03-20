@@ -18,6 +18,10 @@ type Story = StoryObj<typeof meta>;
 
 export const InputSearchDefault: Story = {
   args: {
-    field: "Product",
+    value: "Product",
+  },
+  argTypes: {
+    onChange: { action: "onChange" },
+    onReset: { action: "onClick" },
   },
 };

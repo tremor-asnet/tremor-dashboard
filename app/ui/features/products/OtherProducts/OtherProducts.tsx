@@ -59,6 +59,7 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       sortable: false,
     },
   ];
+
   return (
     <DataGrid
       data={products}

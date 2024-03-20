@@ -22,11 +22,6 @@ interface TableProductProps {
   currentPage: number;
 }
 
-export interface SortItem {
-  key: string;
-  direction: string;
-}
-
 const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
   // Product Table Props
   const columns: ColumnType<Product>[] = [

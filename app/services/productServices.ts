@@ -16,12 +16,17 @@ import { getErrorMessage } from "@/helpers";
 // Types
 import { ProductData } from "@/types";
 
-export const getProducts = async (
-  pageNum?: number,
-  available?: string,
-  query?: string,
-  sortBy?: string,
-) => {
+export const getProducts = async ({
+  pageNum,
+  available,
+  query,
+  sortBy,
+}: {
+  pageNum?: number;
+  available?: string;
+  query?: string;
+  sortBy?: string;
+}) => {
   const isAvailableFilter = available ? `&isAvailable=${available}` : "";
   const productNameFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";

@@ -30,7 +30,12 @@ const OrderListPage = async ({
     sortBy = "",
   } = searchParams as TSearchParams;
 
-  const response: OrderResponse = await getOrders(page, filter, query, sortBy);
+  const response: OrderResponse = await getOrders({
+    pageNum: page,
+    status: filter,
+    query: query,
+    sortBy: sortBy,
+  });
 
   const { results, total, skip } = response;
 

@@ -33,12 +33,12 @@ const ProductListPage = async ({
     sortBy = "",
   } = searchParams as TSearchParams;
 
-  let response: ProductResponse = await getProducts(
-    page,
-    filter,
-    query,
-    sortBy,
-  );
+  let response: ProductResponse = await getProducts({
+    pageNum: page,
+    available: filter,
+    query: query,
+    sortBy: sortBy,
+  });
 
   const { results, total, skip } = response;
 

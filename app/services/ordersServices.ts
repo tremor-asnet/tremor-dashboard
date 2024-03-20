@@ -8,12 +8,17 @@ import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
 // Helpers
 import { getErrorMessage } from "@/helpers";
 
-export const getOrders = async (
-  pageNum?: number,
-  status?: string,
-  query?: string,
-  sortBy?: string,
-) => {
+export const getOrders = async ({
+  pageNum,
+  status,
+  query,
+  sortBy,
+}: {
+  pageNum?: number;
+  status?: string;
+  query?: string;
+  sortBy?: string;
+}) => {
   const statusFilter = status ? `&status=${status}` : "";
   const queryFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";

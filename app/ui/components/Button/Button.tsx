@@ -14,7 +14,7 @@ interface ButtonProps {
   additionalClass?: string;
   children?: string | ReactNode;
   disabled?: boolean;
-  type?: "submit" | "reset" | "button" | undefined;
+  type?: "submit" | "reset" | "button";
   size?: Size;
   tabIndex?: number;
   onClick?: () => void;

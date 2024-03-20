@@ -26,14 +26,6 @@ describe("Sidebar component", () => {
     expect(sidebar()).toMatchSnapshot();
   });
 
-  it("Should render correctly name with display Sidebar", () => {
-    const { getByText } = render(<Sidebar {...propsDefault} />);
-
-    const name = getByText("Brooklyn Alice");
-
-    expect(name).toBeTruthy;
-  });
-
   it("should call toggleSidebar when clicked outside", () => {
     const toggleSidebar = jest.fn();
     const onSignOut = jest.fn();

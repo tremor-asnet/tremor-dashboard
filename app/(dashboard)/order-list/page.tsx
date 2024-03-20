@@ -37,12 +37,7 @@ const OrderListPage = async ({
 
   return (
     <Flex flexDirection="col" className="gap-4">
-      <Flex className="relative">
-        <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-          <Text className="uppercase text-xs font-bold text-white dark:text-white tracking-wide">
-            new order
-          </Text>
-        </Button>
+      <Flex className="relative justify-end">
         <Filter title="Status" listOption={orderListOption} />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">

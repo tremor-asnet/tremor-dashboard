@@ -17,7 +17,7 @@ const props = {
 const TrackOrderComponent = () => render(<TrackOrder {...props} />);
 
 describe("TrackOrder Component", () => {
-  test("render TrackOrder component with snapshot correctly", () => {
+  it("render TrackOrder component with snapshot correctly", () => {
     const { container } = TrackOrderComponent();
 
     expect(container).toMatchSnapshot();

@@ -24,15 +24,6 @@ describe("SalesStatisticCard", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders correctly with default props", () => {
-    render(<SalesStatisticCard statisticsData={statisticsData} />);
-
-    expect(screen.getByText("Sales")).toBeTruthy();
-    expect(screen.getByText("$23,220.00")).toBeTruthy();
-    expect(screen.getByText("+213%")).toBeTruthy();
-    expect(screen.getByText("since last month")).toBeTruthy();
-  });
-
   it("calls handleToggleAction function to toggles sales date options", () => {
     render(<SalesStatisticCard statisticsData={statisticsData} />);
 

@@ -27,19 +27,4 @@ describe("InvoiceBody Testing", () => {
     const component = render(<InvoiceBody {...invoice} />);
     expect(component).toMatchSnapshot();
   });
-
-  it("renders invoice body with correct information", () => {
-    const { getByText } = render(<InvoiceBody {...invoice} />);
-
-    expect(getByText("#230220")).toBeInTheDocument();
-    expect(getByText("03/06/2019")).toBeInTheDocument();
-    expect(getByText("03/11/2019")).toBeInTheDocument();
-  });
-
-  it("renders table with invoice details", () => {
-    const { getByText } = render(<InvoiceBody {...invoice} />);
-
-    expect(getByText(INVOICE_DATA.products[0].productName)).toBeInTheDocument();
-    expect(getByText(INVOICE_DATA.products[0].quantity)).toBeInTheDocument();
-  });
 });

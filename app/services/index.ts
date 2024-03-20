@@ -8,3 +8,4 @@ export * from "./productServices";
 export * from "./billingServices";
 export * from "./transactionsServices";
 export * from "./invoicesServices";
+export * from "./firebaseServices";

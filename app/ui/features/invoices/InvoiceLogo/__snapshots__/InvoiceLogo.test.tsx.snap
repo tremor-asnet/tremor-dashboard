@@ -15,6 +15,7 @@ exports[`InvoiceLogo component Should render InvoiceLogo snapshot correctly 1`] 
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
+          fill="#000"
           stroke="none"
           transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
         >
@@ -45,6 +46,7 @@ exports[`InvoiceLogo component Should render InvoiceLogo snapshot correctly 1`] 
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
+        fill="#000"
         stroke="none"
         transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
       >

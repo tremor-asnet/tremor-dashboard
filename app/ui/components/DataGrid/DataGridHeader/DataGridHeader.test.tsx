@@ -3,11 +3,15 @@ import { RenderResult, fireEvent, render } from "@testing-library/react";
 // Types
 import { ColumnType, Product } from "@/types";
 
-// Constants
-import { DIRECTION } from "@/constants/common";
-
 // Components
 import DataGridHeader from "./DataGridHeader";
+
+// Mock next
+jest.mock("next/navigation", () => ({
+  useSearchParams: jest.fn(),
+  usePathname: jest.fn(),
+  useRouter: () => ({ replace: jest.fn() }),
+}));
 
 const mockColumns: ColumnType<Product>[] = [
   {
@@ -22,19 +26,13 @@ const mockColumns: ColumnType<Product>[] = [
   },
 ];
 
-// Mocking handleSorting function
-const mockHandleSorting = jest.fn();
-
 describe("DataGridHeader component", () => {
   let renderedComponent: RenderResult;
 
   beforeEach(() => {
     renderedComponent = render(
       <table>
-        <DataGridHeader
-          columns={mockColumns}
-          handleSorting={mockHandleSorting}
-        />
+        <DataGridHeader columns={mockColumns} />
       </table>,
     );
   });
@@ -46,26 +44,19 @@ describe("DataGridHeader component", () => {
   });
 
   it("Should be call handleSorting function when sortable column header is clicked", () => {
-    const { getByText } = renderedComponent;
+    const { container, getByText } = renderedComponent;
     // Click on a sortable column header
     fireEvent.click(getByText(mockColumns[0].title));
-    expect(mockHandleSorting).toHaveBeenCalledWith(
-      mockColumns[0].key,
-      DIRECTION.ASC,
-    );
 
     // Click on a sortable column header again
     fireEvent.click(getByText(mockColumns[0].title));
-    expect(mockHandleSorting).toHaveBeenCalledWith(
-      mockColumns[0].key,
-      DIRECTION.DESC,
-    );
-  });
 
-  it("Should not call handleSorting function when non-sortable column header is clicked", () => {
-    const { getByText } = renderedComponent;
+    // Click on a sortable column header again
+    fireEvent.click(getByText(mockColumns[0].title));
+
     // Click on a non-sortable column header
     fireEvent.click(getByText(mockColumns[1].title));
-    expect(mockHandleSorting).not.toHaveBeenCalledWith();
+
+    expect(container).toMatchSnapshot();
   });
 });

@@ -1,9 +1,12 @@
 import Link from "next/link";
 
 // Components
-import { Button, Flex, Title, Text } from "@tremor/react";
+import { Flex, Title, Text } from "@tremor/react";
 import { OrderStatus } from "./OrderStatus";
-import { CustomImage } from "@/ui/components";
+import { Button, CustomImage } from "@/ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 const OrderContact = ({
   name,
@@ -38,7 +41,9 @@ const OrderContact = ({
       </Flex>
       <Flex>
         <Flex flexDirection="col" alignItems="end">
-          <Button className="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 bg-gradient-primary dark:bg-gradient-pickled rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]">
+          <Button
+            variant={VARIANT_BUTTON.PRIMARY}
+            additionalClass="antialiased min-w-[64px] py-[12px] text-center uppercase sm:px-4 rounded-lg border-0 px-2 py-1.5 leading-[17px] tracking-[0.35px]">
             <Text className="uppercase py-[2px] text-xs font-bold text-white dark:text-dark-primary uppercase">
               contact us
             </Text>

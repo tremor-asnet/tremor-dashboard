@@ -32,9 +32,11 @@ const Button = ({
       case VARIANT_BUTTON.PRIMARY:
         return "bg-gradient-primary dark:bg-gradient-pickled";
 
+      // TODO: Collect style later
       case VARIANT_BUTTON.SECONDARY:
         return "";
 
+      // TODO: Collect style later
       case VARIANT_BUTTON.LIGHT:
         return "";
 
@@ -49,7 +51,8 @@ const Button = ({
       tabIndex={tabIndex}
       size={size}
       type={type}
-      disabled={disabled}>
+      disabled={disabled}
+      onClick={onClick}>
       {children}
     </ButtonTremor>
   );

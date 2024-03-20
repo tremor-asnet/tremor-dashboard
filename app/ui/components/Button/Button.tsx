@@ -31,20 +31,16 @@ const Button = ({
   onClick,
 }: ButtonProps) => {
   const renderTypeVariant = (variant: string) => {
-    switch (variant) {
-      case VARIANT_BUTTON.PRIMARY:
-        return "bg-gradient-primary dark:bg-gradient-pickled";
-
+    if (variant === VARIANT_BUTTON.PRIMARY) {
+      return "bg-gradient-primary dark:bg-gradient-pickled";
+    } else if (variant === VARIANT_BUTTON.SECONDARY) {
       // TODO: Collect style later
-      case VARIANT_BUTTON.SECONDARY:
-        return "";
-
+      return "";
+    } else if (variant === VARIANT_BUTTON.LIGHT) {
       // TODO: Collect style later
-      case VARIANT_BUTTON.LIGHT:
-        return "";
-
-      default:
-        return "";
+      return "";
+    } else {
+      return "";
     }
   };
 

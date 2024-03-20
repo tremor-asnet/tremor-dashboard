@@ -42,11 +42,12 @@ describe("Test useFocusFieldError hook", () => {
   it("Should show error message when has error message and focus to it", async () => {
     // Override the mock implementation of Controller
     jest.requireMock("react-hook-form").Controller = (props: any) => {
-      if (props.name === "price")
+      const { name, rule } = props;
+      if (name === "price")
         return props.render({
           field: {
-            name: props.name,
-            rules: props.rule,
+            name: name,
+            rules: rule,
             onChange: jest.fn(),
             value: "",
           },

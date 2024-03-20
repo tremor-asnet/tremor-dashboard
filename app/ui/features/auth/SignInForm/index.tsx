@@ -6,11 +6,11 @@ import { useForm, Controller } from "react-hook-form";
 import Link from "next/link";
 
 // Components
-import { TextInput, Button, Flex, Switch, Text } from "@tremor/react";
-import { LoadingIndicator } from "@/ui/components";
+import { TextInput, Flex, Switch, Text } from "@tremor/react";
+import { Button, LoadingIndicator } from "@/ui/components";
 
 // Constants
-import { ROUTES, REGEX, MESSAGES_ERROR } from "@/constants";
+import { ROUTES, REGEX, MESSAGES_ERROR, VARIANT_BUTTON } from "@/constants";
 
 // Types
 import { User } from "@/types";
@@ -152,10 +152,11 @@ const SignInForm = () => {
       <Button
         tabIndex={0}
         aria-disabled={isPending}
-        className="min-h-[43px] flex w-full bg-gradient-primary dark:bg-gradient-pickled opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent"
-        size="xs"
+        variant={VARIANT_BUTTON.PRIMARY}
         type="submit"
-        disabled={isPending}>
+        size="xs"
+        disabled={isPending}
+        additionalClass="min-h-[43px] flex w-full opacity-100 disabled:opacity-100 disabled:bg-[linear-gradient(195deg,#c1c1c3,#bebebf)] dark:disabled:bg-[linear-gradient(195deg,#283046,#1e263c)] py-0 mt-9 uppercase border-0 border-transparent hover:border-transparent">
         {formStatus.isPending ? (
           <LoadingIndicator width={7} height={7} />
         ) : (

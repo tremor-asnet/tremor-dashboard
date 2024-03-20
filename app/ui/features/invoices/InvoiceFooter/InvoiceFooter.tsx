@@ -1,10 +1,14 @@
 "use client";
 
 //Components
-import { Button, Text, Flex } from "@tremor/react";
+import { Text, Flex } from "@tremor/react";
 
 //Styles
 import "@/styles/billing.css";
+import { Button } from "@/ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 const InvoiceFooter = () => {
   const handlePrintInvoice = () => {
@@ -36,8 +40,10 @@ const InvoiceFooter = () => {
           </a>
         </Text>
       </Flex>
+
       <Button
-        className="py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white print:hidden"
+        variant={VARIANT_BUTTON.PRIMARY}
+        additionalClass="py-3 px-6 mt-6 md:mt-0 border-none dark:text-white print:hidden"
         onClick={handlePrintInvoice}>
         <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">
           print

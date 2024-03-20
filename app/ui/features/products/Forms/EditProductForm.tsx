@@ -134,6 +134,15 @@ const EditProductForm = ({
     formHandler.setValue("image", "", { shouldDirty: true });
   };
 
+  const renderContentButton = () =>
+    isLoading ? (
+      <LoadingIndicator width={4} height={5} additionalClass="px-1.5" />
+    ) : (
+      <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
+        Save
+      </Text>
+    );
+
   return (
     <>
       {isLoading && (
@@ -148,17 +157,7 @@ const EditProductForm = ({
               size="xs"
               disabled={!formState.isDirty}
               additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
-              {isLoading ? (
-                <LoadingIndicator
-                  width={4}
-                  height={5}
-                  additionalClass="px-1.5"
-                />
-              ) : (
-                <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
-                  Save
-                </Text>
-              )}
+              {renderContentButton()}
             </Button>
           </div>
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">

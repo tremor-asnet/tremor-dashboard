@@ -50,6 +50,13 @@ describe("DataGridHeader component", () => {
 
     // Click on a sortable column header again
     fireEvent.click(getByText(mockColumns[0].title));
+
+    // Click on a sortable column header again
+    fireEvent.click(getByText(mockColumns[0].title));
+
+    // Click on a non-sortable column header
+    fireEvent.click(getByText(mockColumns[1].title));
+
     expect(container).toMatchSnapshot();
   });
 });

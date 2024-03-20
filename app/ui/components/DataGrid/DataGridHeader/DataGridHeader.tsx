@@ -25,7 +25,9 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const params = new URLSearchParams(searchParams);
   const [order, setOrder] = useState<string>("");
 
-  const handleSortingChange = (key: string) => {
+  const handleSortingChange = (key: string, sortable: boolean | undefined) => {
+    if (!sortable) return;
+
     setSortField(key);
 
     const sortBy = params.get("sortBy");
@@ -46,14 +48,9 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
     <TableHead>
       <TableRow>
         {columns.map(({ key, title, sortable }) => {
-          // The column that has sortable set to true will execute handleSortingChange function
-          const handleHeaderClick = () => {
-            sortable ? handleSortingChange(key) : null;
-          };
-
           return (
             <TableHeaderCell
-              onClick={handleHeaderClick}
+              onClick={() => handleSortingChange(key, sortable)}
               key={key}
               className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100">
               <HeaderCellContents

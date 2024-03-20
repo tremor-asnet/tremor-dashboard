@@ -23,7 +23,7 @@ export default function GlobalError({
           <Button
             variant={VARIANT_BUTTON.PRIMARY}
             additionalClass="py-3 px-5 border-none dark:text-white"
-            onClick={() => reset()}>
+            onClick={reset}>
             Try again
           </Button>
         </main>

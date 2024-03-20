@@ -37,7 +37,7 @@ export const authenticate = async (
 };
 
 export async function createNewAccount(
-  prevState: { errorMessage?: String; isSuccess?: boolean } | undefined,
+  prevState: { errorMessage?: string; isSuccess?: boolean } | undefined,
   formData: FormData,
 ) {
   const formPassword = formData.get("password")?.toString();

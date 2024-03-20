@@ -1,4 +1,4 @@
-import { db } from "@/utils";
+import { db } from "@/firebase.config";
 import {
   collection,
   doc,
@@ -14,6 +14,7 @@ async function addDataFirestore<
 >(entity: string, data: T) {
   const ref = await addDoc(collection(db, entity), data);
   const docSnap = await getDoc(ref);
+
   return { ...docSnap.data(), id: ref.id } as T;
 }
 

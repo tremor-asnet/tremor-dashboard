@@ -9,47 +9,39 @@ import React, {
 } from "react";
 import { createPortal } from "react-dom";
 
-import { twMerge } from "tailwind-merge";
-
 import { Button, Flex } from "@tremor/react";
 import { GrClose } from "react-icons/gr";
 
-import { ModalActions } from "@/types";
-
-type ModalAction = {
-  label: string;
-  type?: ModalActions;
-  onClick?: () => void;
-  className?: string;
-};
+import { twMerge } from "tailwind-merge";
 
 interface IModal {
   title: string;
   children: ReactNode;
   className?: string;
   showCloseButton?: boolean;
-  actions?: ModalAction[];
-  onClose?: () => void;
   open?: boolean;
   onConfirm?: () => void;
+  labelClose?: string;
+  labelPrimary?: string;
+  labelSecondary?: string;
+  onClose?: () => void;
+  onPrimaryBtn?: () => void;
+  onSecondaryBtn?: () => void;
 }
-
-const styleActions: { [key in ModalActions]?: string } = {
-  [ModalActions.confirm]:
-    "bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500",
-  [ModalActions.cancel]:
-    "bg-orange-500 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500",
-};
 
 export default function Modal({
   title,
   children,
-  actions = [],
-  className,
-  showCloseButton,
-  onClose,
+  className = "",
   open = true,
-  onConfirm,
+  showCloseButton = false,
+  labelClose = "Cancel",
+  labelPrimary = "Submit",
+  labelSecondary = "Done",
+
+  onPrimaryBtn,
+  onSecondaryBtn,
+  onClose,
 }: IModal) {
   const [isOpen, setOpen] = useState(open);
   const dialogRef = useRef<ElementRef<"dialog">>(null);
@@ -65,6 +57,16 @@ export default function Modal({
     dialogRef.current?.close();
     setOpen(false);
     onClose?.();
+  };
+
+  const handlePrimary = () => {
+    onPrimaryBtn?.();
+    handleDismiss();
+  };
+
+  const handleSecondary = () => {
+    onSecondaryBtn?.();
+    handleDismiss();
   };
 
   if (!isOpen) {
@@ -101,39 +103,33 @@ export default function Modal({
         {children}
 
         <Flex className="gap-5">
-          {actions.map(
-            (
-              {
-                label,
-                className: style,
-                onClick,
-                type = ModalActions.custom,
-                ...others
-              },
-              index,
-            ) => {
-              const handleClick =
-                type === ModalActions.cancel
-                  ? handleDismiss
-                  : type === ModalActions.confirm
-                    ? onConfirm
-                    : onClick;
-
-              return (
-                <Button
-                  key={index}
-                  onClick={handleClick}
-                  className={twMerge(
-                    "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
-                    styleActions[type] || "",
-                    style,
-                  )}
-                  {...others}>
-                  {label}
-                </Button>
-              );
-            },
+          {onPrimaryBtn && (
+            <Button
+              onClick={handlePrimary}
+              className={twMerge(
+                "bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
+              )}>
+              {labelPrimary}
+            </Button>
           )}
+
+          {onSecondaryBtn && (
+            <Button
+              onClick={handleSecondary}
+              className={twMerge(
+                "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
+              )}>
+              {labelSecondary}
+            </Button>
+          )}
+
+          <Button
+            onClick={handleDismiss}
+            className={twMerge(
+              "bg-orange-500 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
+            )}>
+            {labelClose}
+          </Button>
         </Flex>
       </dialog>
     </Flex>,

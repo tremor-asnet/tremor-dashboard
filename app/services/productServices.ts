@@ -18,11 +18,11 @@ import { ProductData } from "@/types";
 
 export const getProducts = async (
   pageNum?: number,
-  isAvailable?: string,
+  available?: string,
   query?: string,
   sortBy?: string,
 ) => {
-  const isAvailableFilter = isAvailable ? `&isAvailable=${isAvailable}` : "";
+  const isAvailableFilter = available ? `&isAvailable=${available}` : "";
   const productNameFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
   const filter = isAvailableFilter + productNameFilter + sortByFilter;

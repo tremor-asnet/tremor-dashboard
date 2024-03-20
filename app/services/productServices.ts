@@ -27,10 +27,10 @@ export const getProducts = async ({
   query?: string;
   sortBy?: string;
 }) => {
-  const isAvailableFilter = available ? `&isAvailable=${available}` : "";
+  const availableFilter = available ? `&isAvailable=${available}` : "";
   const productNameFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
-  const filter = isAvailableFilter + productNameFilter + sortByFilter;
+  const filter = availableFilter + productNameFilter + sortByFilter;
 
   const res = await fetch(
     `${ROUTER_API_URL}/products?page=${pageNum! - 1}&size=${

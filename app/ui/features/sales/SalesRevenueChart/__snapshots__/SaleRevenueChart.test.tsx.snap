@@ -21,7 +21,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
           >
             <button
               aria-label="Which Ads Perform Better Button"
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent undefined"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"
@@ -575,7 +575,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         >
           <button
             aria-label="Which Ads Perform Better Button"
-            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent undefined"
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
           >
             <span
               class="tremor-Button-text text-sm whitespace-nowrap"

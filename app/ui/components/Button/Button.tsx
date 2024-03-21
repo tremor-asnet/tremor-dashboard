@@ -33,7 +33,7 @@ interface ButtonProps {
 }
 
 const Button = ({
-  additionalClass,
+  additionalClass = "",
   variant = "",
   variantTremor,
   icon,

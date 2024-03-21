@@ -4,8 +4,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { RefObject, useCallback, useMemo, useState } from "react";
 
 // Components
-import { Button, Text } from "@tremor/react";
-import { SelectOption } from "@/ui/components";
+import { Button, SelectOption } from "@/ui/components";
 
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -15,6 +14,9 @@ import { useOutsideClick } from "@/hooks";
 
 // Types
 import { OptionType } from "@/types";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface ProductFilterProps {
   title: string;
@@ -77,8 +79,9 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
       <Button
         icon={RiArrowDropDownLine}
         iconPosition="right"
-        variant="secondary"
-        className="uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
+        variant={VARIANT_BUTTON.SECONDARY_SHADOW}
+        variantTremor={VARIANT_BUTTON.SECONDARY}
+        additionalClass="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
         onClick={handleClickFilter}
         data-testid="toggle-filter">
         {filterSelected ? `${title}: ${filterSelected}` : "Filters"}

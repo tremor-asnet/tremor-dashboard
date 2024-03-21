@@ -100,6 +100,7 @@ export const PAGE_SIZE = {
 export const enum VARIANT_BUTTON {
   LIGHT = "light",
   SECONDARY = "secondary",
+  SECONDARY_SHADOW = "secondaryShadow",
   PRIMARY = "primary",
   PRIMARY_CENTER = "primaryCenter",
   SURFACE = "surface",

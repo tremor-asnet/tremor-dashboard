@@ -25,6 +25,20 @@ const mockControllerHasError = (name: string, rule: Object) => ({
   },
 });
 
+const mockControllerNoneError = (name: string, rule: Object) => ({
+  field: {
+    name: name,
+    rules: rule,
+    onChange: jest.fn(),
+    value: "",
+  },
+  formState: {
+    errors: {
+      price: { message: "" },
+    },
+  },
+});
+
 // Mock react-hook-form module
 jest.mock("react-hook-form", () => ({
   ...jest.requireActual("react-hook-form"),
@@ -39,6 +53,64 @@ jest.mock("react-hook-form", () => ({
 }));
 
 describe("Test useFocusFieldError hook", () => {
+  it("Should check none error message and no focus to input filed", async () => {
+    // Override the mock implementation of Controller
+    jest.requireMock("react-hook-form").Controller = (props: any) => {
+      const { name, rule } = props;
+      if (name === "nameProduct")
+        return props.render({
+          field: {
+            name: name,
+            rules: rule,
+            onChange: jest.fn(),
+            value: "",
+          },
+          formState: {
+            errors: { message: "" },
+          },
+        });
+      return props.render(mockControllerNoneError(props.name, props.rule));
+    };
+
+    const { control, formState } = useFormContext();
+
+    const { queryByText } = render(
+      <Controller
+        control={control}
+        rules={{
+          required: MESSAGES_ERROR.FIELD_REQUIRED,
+        }}
+        render={({ field, formState: { errors } }) => {
+          const errorMessage = errors.message || "";
+
+          return (
+            <InputField
+              id="name-product"
+              data-testid="name-product"
+              type="string"
+              label="Name Product"
+              errorMessage={errorMessage}
+              {...field}
+            />
+          );
+        }}
+        name="nameProduct"
+      />,
+    );
+
+    renderHook(() => useFocusFieldError(formState));
+
+    expect(queryByText(MESSAGES_ERROR.FIELD_REQUIRED)).toBeNull();
+
+    // Assert that document have element focused the is incorrect
+    const focusedElement = document.hasFocus();
+    expect(focusedElement).toEqual(false);
+
+    // Assert that input with id focused the is incorrect
+    const focusedInput = document.activeElement;
+    expect(focusedInput?.id).toHaveLength(0);
+  });
+
   it("Should show error message when has error message and focus to it", async () => {
     // Override the mock implementation of Controller
     jest.requireMock("react-hook-form").Controller = (props: any) => {
@@ -70,16 +142,14 @@ describe("Test useFocusFieldError hook", () => {
           const priceErrorMessage = errors.message || "";
 
           return (
-            <div className="w-full mb-2 md:mb-0">
-              <InputField
-                id="edit-price"
-                data-testid="edit-price"
-                type="number"
-                label="Price"
-                errorMessage={priceErrorMessage}
-                {...field}
-              />
-            </div>
+            <InputField
+              id="edit-price"
+              data-testid="edit-price"
+              type="number"
+              label="Price"
+              errorMessage={priceErrorMessage}
+              {...field}
+            />
           );
         }}
         name="price"
@@ -89,6 +159,10 @@ describe("Test useFocusFieldError hook", () => {
     renderHook(() => useFocusFieldError(formState));
 
     expect(getAllByText(MESSAGES_ERROR.FIELD_REQUIRED)).toHaveLength(1);
+
+    //Assert that document have element focused the is correct
+    const focusedElement = document.hasFocus();
+    expect(focusedElement).toEqual(true);
 
     // Assert that input with id focused the is correct
     const focusedInput = document.activeElement;

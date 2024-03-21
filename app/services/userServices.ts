@@ -35,7 +35,7 @@ const addNewUser = async (formData: FormData) => {
   let errorMessage;
 
   try {
-    const res = await fetch(`${ROUTER_API_URL}/user`, {
+    const res = await fetch(`${ROUTER_API_URL}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",

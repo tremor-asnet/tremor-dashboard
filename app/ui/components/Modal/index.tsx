@@ -34,6 +34,7 @@ export default function Modal({
   btnPrimaryLabel = "Submit",
   btnSecondaryLabel = "Done",
   disabledPrimaryBtn,
+  disabledSecondaryBtn,
 
   onPrimaryBtn,
   onSecondaryBtn,
@@ -96,9 +97,7 @@ export default function Modal({
           {onPrimaryBtn && (
             <Button
               onClick={handlePrimary}
-              className={twMerge(
-                "bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
-              )}
+              className="bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1"
               disabled={disabledPrimaryBtn}>
               {btnPrimaryLabel}
             </Button>
@@ -109,7 +108,8 @@ export default function Modal({
               onClick={handleSecondary}
               className={twMerge(
                 "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
-              )}>
+              )}
+              disabled={disabledSecondaryBtn}>
               {btnSecondaryLabel}
             </Button>
           )}

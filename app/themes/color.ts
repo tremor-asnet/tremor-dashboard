@@ -112,7 +112,6 @@ export const backgroundColor = {
   "green-500": "#43a047",
   "orange-500": "#fb8c00",
   graydark: "#1a2035",
-  greyer: "#EDF2F7",
   backdrop: "rgba(0, 0, 0, 0.7)",
   blackAlpha: "rgba(0, 0, 0, 0.07)",
   whiteAlpha: "rgba(255, 255, 255, 0.07)",

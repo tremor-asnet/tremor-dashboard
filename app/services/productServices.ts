@@ -16,16 +16,21 @@ import { getErrorMessage } from "@/helpers";
 // Types
 import { ProductData } from "@/types";
 
-export const getProducts = async (
-  pageNum?: number,
-  isAvailable?: string,
-  query?: string,
-) => {
-  const isAvailableFilter = !!`${isAvailable}`.length
-    ? `&isAvailable=${isAvailable}`
-    : "";
-  const productNameFilter = query ? "&query=" + query : "";
-  const filter = isAvailableFilter + productNameFilter;
+export const getProducts = async ({
+  pageNum,
+  available,
+  query,
+  sortBy,
+}: {
+  pageNum?: number;
+  available?: string;
+  query?: string;
+  sortBy?: string;
+}) => {
+  const availableFilter = available ? `&isAvailable=${available}` : "";
+  const productNameFilter = query ? `&query=${query}` : "";
+  const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
+  const filter = availableFilter + productNameFilter + sortByFilter;
 
   const res = await fetch(
     `${ROUTER_API_URL}/products?page=${pageNum! - 1}&size=${

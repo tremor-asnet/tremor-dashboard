@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataGridHeader component Should be call handleSorting function when sortable column header is clicked 1`] = `
+exports[`DataGridHeader component Should be call handleSorting function when isSortable column header is clicked 1`] = `
 <div>
   <table>
     <thead
@@ -33,7 +33,7 @@ exports[`DataGridHeader component Should be call handleSorting function when sor
                     class="tremor-Button-text text-sm whitespace-nowrap"
                   >
                     <svg
-                      class="w-4 h-4 text-primary"
+                      class="w-4 h-4 fill-secondary"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -63,7 +63,7 @@ exports[`DataGridHeader component Should be call handleSorting function when sor
                     class="tremor-Button-text text-sm whitespace-nowrap"
                   >
                     <svg
-                      class="w-4 h-4 fill-secondary"
+                      class="w-4 h-4 text-primary"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"

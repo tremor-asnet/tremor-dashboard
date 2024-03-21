@@ -1,5 +1,10 @@
-import { DEFAULT_CODE } from "@/constants";
+"use client";
+
 import { ChangeEvent, KeyboardEvent, forwardRef, memo, useState } from "react";
+
+import { DEFAULT_CODE } from "@/constants";
+
+import "./styles.css";
 
 interface IPinCodeField {
   index: number;

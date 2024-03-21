@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { PinCode } from "./PinCode";
 import dynamic from "next/dynamic";
+
+import { PinCode } from "./PinCode";
 
 const Modal = dynamic(() => import("@/ui/components/Modal"), { ssr: false });
 

@@ -1,12 +1,12 @@
 "use client";
 
-import { rangeNumber } from "@/helpers";
+import React, { createRef, useCallback, useMemo, useState } from "react";
+
 import { Flex } from "@tremor/react";
-
-import React, { createRef, useCallback, useState } from "react";
-
-import "./styles.css";
 import { PinCodeField } from "./PinCodeField";
+
+import { rangeNumber } from "@/helpers";
+
 import { DEFAULT_CODE } from "@/constants";
 
 interface IPinCode {
@@ -16,7 +16,10 @@ interface IPinCode {
 }
 
 export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
-  const initValue = value || Array(length).fill(DEFAULT_CODE).join("");
+  const initValue = useMemo(
+    () => value || Array(length).fill(DEFAULT_CODE).join(""),
+    [length, value],
+  );
 
   const [codes, setCodes] = useState(initValue);
 

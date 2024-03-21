@@ -28,7 +28,7 @@ describe("InvoiceBody Testing", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders table with correct data", () => {
+  it("renders invoice body with default data show text Result Not Found", () => {
     const { getAllByText } = render(<InvoiceBody />);
 
     expect(getAllByText("Result Not Found")).toHaveLength(1);

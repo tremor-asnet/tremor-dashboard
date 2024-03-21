@@ -17,3 +17,4 @@ export * from "./saleStatistical";
 export * from "./analytics";
 export * from "./breakpoints";
 export * from "./billing";
+export * from "./pincode";

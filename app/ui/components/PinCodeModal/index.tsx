@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 import { PinCode } from "./PinCode";
 
-import { isValidatePinCode } from "@/utils";
+import { isValidPinCode } from "@/utils";
 
 const Modal = dynamic(() => import("@/ui/components/Modal"), { ssr: false });
 
@@ -27,8 +27,8 @@ const PinCodeModal = ({ onSubmit }: IPinCodeModal) => {
   return (
     <Modal
       title="Please enter your PIN code"
-      additionalClasses="md:min-w-[390px]"
-      primaryBtnDisabled={!isValidatePinCode(codes, 4)}
+      additionalClasses="md:min-w-[390px] min-w-full"
+      primaryBtnDisabled={!isValidPinCode(codes, 4)}
       onPrimaryBtn={handleSubmit}>
       <PinCode length={4} onChange={setCodes} value={codes} />
     </Modal>

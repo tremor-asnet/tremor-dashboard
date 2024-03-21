@@ -24,15 +24,14 @@ function formatPinCode({
   }
 
   if (value) {
-    format = format =
-      format.substring(0, index) + value + format.substring(index + 1);
+    format = format.substring(0, index) + value + format.substring(index + 1);
   }
 
   return format;
 }
 
-function isValidatePinCode(codes: string, length: number) {
+function isValidPinCode(codes: string, length: number) {
   return codes.length === length && !codes.includes(DEFAULT_CODE);
 }
 
-export { formatPinCode, isValidatePinCode };
+export { formatPinCode, isValidPinCode };

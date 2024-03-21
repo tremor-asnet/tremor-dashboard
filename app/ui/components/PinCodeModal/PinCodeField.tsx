@@ -59,7 +59,7 @@ export const PinCodeField = memo(
         setCurrentValue(value);
       };
 
-      const isSecurity = currentValue !== DEFAULT_CODE && currentValue !== "";
+      const isSecurity = currentValue !== DEFAULT_CODE && !!currentValue;
 
       return (
         <input
@@ -71,7 +71,7 @@ export const PinCodeField = memo(
           placeholder="○"
           min="0"
           max="9"
-          className="w-10 h-10 border-2 rounded-md outline-none border-secondary focus:border-[3px] focus:border-tremor-secondary text-center font-bold text-2xl text-secondary placeholder-secondary focus:placeholder-transparent"
+          className="w-10 h-10 border-2 rounded-md outline-none border-secondary focus:border-[3px] focus:border-tremor-secondary text-center font-bold text-2xl text-secondary placeholder-secondary focus:placeholder-transparent dark:bg-transparent"
           onFocus={handleFocus}
           onChange={handleChange}
           onKeyDown={handleKeydown}
@@ -81,5 +81,3 @@ export const PinCodeField = memo(
     },
   ),
 );
-
-PinCodeField.displayName = "PinCodeField";

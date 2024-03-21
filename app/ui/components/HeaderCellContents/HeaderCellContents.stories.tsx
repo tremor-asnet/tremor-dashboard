@@ -22,8 +22,8 @@ const meta = {
     sortDirection: {
       description: "Sort direction by increase or decrease",
     },
-    sortable: {
-      description: "Have or not sortable by set it as true or false",
+    isSortable: {
+      description: "Have or not isSortable by set it as true or false",
     },
   },
 } as Meta<typeof HeaderCellContents>;
@@ -35,7 +35,7 @@ type Story = StoryObj<typeof meta>;
 export const HeaderCellContentsHaveSortDefault: Story = {
   render: () => (
     <Card className="h-full dark:text-lighter bg-tremor-primary dark:bg-dark-tremor-primary p-6 border-none ring-0">
-      <HeaderCellContents title="Product" sortable={true} />
+      <HeaderCellContents title="Product" isSortable={true} />
     </Card>
   ),
 };
@@ -43,7 +43,7 @@ export const HeaderCellContentsHaveSortDefault: Story = {
 export const HeaderCellContentsHaveSortIncrese: Story = {
   render: () => (
     <Card className="h-full dark:text-lighter bg-tremor-primary dark:bg-dark-tremor-primary p-6 border-none ring-0">
-      <HeaderCellContents title="Product" sortDirection="asc" sortable={true} />
+      <HeaderCellContents title="Product" sortType="asc" isSortable={true} />
     </Card>
   ),
 };
@@ -51,11 +51,7 @@ export const HeaderCellContentsHaveSortIncrese: Story = {
 export const HeaderCellContentsHaveSortDecrease: Story = {
   render: () => (
     <Card className="h-full dark:text-lighter bg-tremor-primary dark:bg-dark-tremor-primary p-6 border-none ring-0">
-      <HeaderCellContents
-        title="Product"
-        sortDirection="desc"
-        sortable={true}
-      />
+      <HeaderCellContents title="Product" sortType="desc" isSortable={true} />
     </Card>
   ),
 };
@@ -63,7 +59,7 @@ export const HeaderCellContentsHaveSortDecrease: Story = {
 export const HeaderCellContentsHaveNoSort: Story = {
   render: () => (
     <Card className="h-full dark:text-lighter bg-tremor-primary dark:bg-dark-tremor-primary p-6 border-none ring-0">
-      <HeaderCellContents title="Product" sortable={false} />
+      <HeaderCellContents title="Product" isSortable={false} />
     </Card>
   ),
 };

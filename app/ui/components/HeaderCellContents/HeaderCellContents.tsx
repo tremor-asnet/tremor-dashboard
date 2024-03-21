@@ -11,17 +11,17 @@ import { VARIANT_BUTTON } from "@/constants";
 export interface HeaderCellContentsProps {
   title: string;
   keyColumn?: string;
-  sortKey?: string;
-  sortDirection?: string;
-  sortable?: boolean;
+  sortField?: string;
+  sortType?: string;
+  isSortable?: boolean;
 }
 
 const HeaderCellContents = ({
   title,
   keyColumn,
-  sortKey,
-  sortDirection,
-  sortable = true,
+  sortField,
+  sortType,
+  isSortable,
 }: HeaderCellContentsProps) => {
   const activeFill = "text-primary";
   const inActiveFill = "fill-secondary";
@@ -29,12 +29,12 @@ const HeaderCellContents = ({
   const checkFill = (type: string) => {
     switch (type) {
       case DIRECTION.ASC:
-        return sortDirection === DIRECTION.ASC && sortKey === keyColumn
+        return sortType === DIRECTION.ASC && sortField === keyColumn
           ? activeFill
           : inActiveFill;
 
       case DIRECTION.DESC:
-        return sortDirection === DIRECTION.DESC && sortKey === keyColumn
+        return sortType === DIRECTION.DESC && sortField === keyColumn
           ? activeFill
           : inActiveFill;
 
@@ -46,7 +46,7 @@ const HeaderCellContents = ({
   return (
     <Flex>
       <Flex>{title}</Flex>
-      {sortable && (
+      {isSortable && (
         <Flex flexDirection="col" className="relative ml-4 -mt-6">
           <Flex justifyContent="end" className="absolute top-0">
             <Button

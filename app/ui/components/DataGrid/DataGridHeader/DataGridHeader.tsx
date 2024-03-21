@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
@@ -19,37 +19,43 @@ interface DataTableHeaderProps<T> {
 
 const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const [sortField, setSortField] = useState<string>("");
+  const [sortType, setSortType] = useState<string>("");
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
   const params = new URLSearchParams(searchParams);
-  const [order, setOrder] = useState<string>("");
 
-  const handleSortingChange = useCallback((key: string, sortable: boolean) => {
-    if (!sortable) return;
+  const handleSortingChange = (key: string, isSortable: boolean) => {
+    // Not support sort
+    if (!isSortable) return;
 
+    // Set key and type sort
     setSortField(key);
 
-    const sortBy = params.get("sortBy");
+    const DEFAULT_SORT_BY = "-createdAt";
+    const sortByParam = params.get("sortBy") ?? DEFAULT_SORT_BY;
 
-    params.set("page", "1");
-    if (sortBy?.includes("-") || sortBy === null) {
+    if (sortByParam.startsWith("-")) {
+      console.log(params.get("page"));
+
       params.set("sortBy", key);
-      setOrder(DIRECTION.ASC);
+      setSortType(DIRECTION.ASC);
     } else {
       params.set("sortBy", `-${key}`);
-      setOrder(DIRECTION.DESC);
+      console.log(params.get("page"));
+      setSortType(DIRECTION.DESC);
     }
 
+    // Update url param
     replace(`${pathname}?${params.toString()}`);
-  }, []);
+  };
 
   return (
     <TableHead>
       <TableRow>
-        {columns.map(({ key, title, sortable }) => {
+        {columns.map(({ key, title, isSortable }) => {
           const handleClick = () => {
-            handleSortingChange(key, !!sortable);
+            handleSortingChange(key, !!isSortable);
           };
 
           return (
@@ -60,9 +66,9 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
               <HeaderCellContents
                 title={title}
                 keyColumn={key}
-                sortKey={sortField}
-                sortDirection={order}
-                sortable={sortable}
+                sortField={sortField}
+                sortType={sortType}
+                isSortable={isSortable}
               />
             </TableHeaderCell>
           );

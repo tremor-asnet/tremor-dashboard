@@ -114,6 +114,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                       id="edit-sku"
                       name="sku"
                       placeholder=""
+                      type="number"
                       value=""
                     />
                   </div>
@@ -283,6 +284,7 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     id="edit-sku"
                     name="sku"
                     placeholder=""
+                    type="number"
                     value=""
                   />
                 </div>

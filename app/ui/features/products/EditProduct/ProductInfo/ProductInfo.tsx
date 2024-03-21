@@ -12,12 +12,7 @@ import { InputField, SelectField } from "@/ui/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
-import {
-  MESSAGES_ERROR,
-  CATEGORY_PRODUCT,
-  NUMBER_REGEX_WITHOUT_0,
-  DECIMAL_REGEX,
-} from "@/constants";
+import { MESSAGES_ERROR, CATEGORY_PRODUCT, NAME_REGEX } from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
@@ -51,6 +46,10 @@ const ProductInfo = () => {
             control={control}
             rules={{
               required: MESSAGES_ERROR.NAME_REQUIRED,
+              pattern: {
+                value: NAME_REGEX,
+                message: MESSAGES_ERROR.INVALID_NAME,
+              },
               minLength: {
                 value: 4,
                 message: MESSAGES_ERROR.NAME_MIN_LENGTH,
@@ -95,7 +94,10 @@ const ProductInfo = () => {
             control={control}
             rules={{
               required: MESSAGES_ERROR.FIELD_REQUIRED,
-              pattern: { value: DECIMAL_REGEX, message: "Invalid weight" },
+              min: {
+                value: 0,
+                message: MESSAGES_ERROR.NEGATIVE_NUMBER,
+              },
             }}
             render={({ field, formState: { errors } }) => {
               const weightErrorMessage = errors.weight?.message || "";
@@ -120,9 +122,9 @@ const ProductInfo = () => {
             control={control}
             rules={{
               required: MESSAGES_ERROR.FIELD_REQUIRED,
-              pattern: {
-                value: NUMBER_REGEX_WITHOUT_0,
-                message: "Invalid quantity number",
+              min: {
+                value: 0,
+                message: MESSAGES_ERROR.NEGATIVE_NUMBER,
               },
             }}
             render={({ field, formState: { errors } }) => {

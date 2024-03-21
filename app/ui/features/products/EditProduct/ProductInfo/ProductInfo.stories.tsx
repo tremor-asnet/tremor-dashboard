@@ -1,6 +1,6 @@
 // Libs
 import { ReactNode, FC } from "react";
-import { FormProvider, useForm } from "react-hook-form";
+import { FormProvider, useForm, useFormContext } from "react-hook-form";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
@@ -22,22 +22,30 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const NewProductInfo: Story = {
-  render: () => (
-    <StorybookFormProvider>
-      <Flex className="w-full justify-center mt-10">
-        <ProductInfo />
-      </Flex>
-    </StorybookFormProvider>
-  ),
-};
+// export const NewProductInfo: Story = {
+//   render: () => (
+//     <StorybookFormProvider>
+//       <Flex className="w-full justify-center mt-10">
+//         <ProductInfo />
+//       </Flex>
+//     </StorybookFormProvider>
+//   ),
+// };
 
-export const EditProductInfo: Story = {
+// export const EditProductInfo: Story = {
+//   render: () => (
+//     <StorybookFormProvider>
+//       <Flex className="w-full justify-center mt-10">
+//         <ProductInfo />
+//       </Flex>
+//     </StorybookFormProvider>
+//   ),
+// };
+
+export const Primary: Story = {
   render: () => (
     <StorybookFormProvider>
-      <Flex className="w-full justify-center mt-10">
-        <ProductInfo />
-      </Flex>
+      <ProductInfo />
     </StorybookFormProvider>
   ),
 };

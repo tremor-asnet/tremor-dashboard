@@ -20,8 +20,8 @@ interface IModal {
   onClose?: () => void;
   onPrimaryBtn?: () => void;
   onSecondaryBtn?: () => void;
-  disabledPrimaryBtn?: boolean;
-  disabledSecondaryBtn?: boolean;
+  primaryBtnDisabled?: boolean;
+  secondaryBtnDisabled?: boolean;
 }
 
 export default function Modal({
@@ -33,9 +33,8 @@ export default function Modal({
   btnCloseLabel = "Cancel",
   btnPrimaryLabel = "Submit",
   btnSecondaryLabel = "Done",
-  disabledPrimaryBtn,
-  disabledSecondaryBtn,
-
+  primaryBtnDisabled,
+  secondaryBtnDisabled,
   onPrimaryBtn,
   onSecondaryBtn,
   onClose,
@@ -79,7 +78,6 @@ export default function Modal({
         <h2 className="font-bold text-2xl text-center text-tertiary dark:text-dark-romance">
           {title}
         </h2>
-
         {showCloseIconBtn && (
           <Button
             type="button"
@@ -90,30 +88,26 @@ export default function Modal({
             <GrClose className="h-5 w-5 shrink-0 text-xl text-tertiary dark:text-white" />
           </Button>
         )}
-
         {children}
-
         <Flex className="gap-5">
           {onPrimaryBtn && (
             <Button
               onClick={handlePrimary}
               className="bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1"
-              disabled={disabledPrimaryBtn}>
+              disabled={primaryBtnDisabled}>
               {btnPrimaryLabel}
             </Button>
           )}
-
           {onSecondaryBtn && (
             <Button
               onClick={handleSecondary}
               className={twMerge(
                 "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
               )}
-              disabled={disabledSecondaryBtn}>
+              disabled={secondaryBtnDisabled}>
               {btnSecondaryLabel}
             </Button>
           )}
-
           <Button
             onClick={handleClose}
             className={twMerge(

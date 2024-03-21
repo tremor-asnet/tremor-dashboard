@@ -81,8 +81,8 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
           </Text>
         </Button>
         <Button
-          variant={VARIANT_BUTTON.PRIMARY}
-          additionalClass="items-end btn-form-primary rounded-lg py-3 px-6 mt-8 hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+          variant={VARIANT_BUTTON.PRIMARY_CONTAINER}
+          additionalClass="items-end"
           type="submit"
           disabled={isUpload}>
           <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">

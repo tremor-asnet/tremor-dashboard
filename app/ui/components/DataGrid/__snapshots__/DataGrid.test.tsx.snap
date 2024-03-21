@@ -1441,6 +1441,128 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
+                  10425
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  2023-11-01T10:20:00+00:00
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  1
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  44.9
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  12345
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  2023-11-01T03:20:00+00:00
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  0
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  140.2
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
                   12350
                 </p>
               </td>
@@ -1551,6 +1673,67 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
                   23.9
+                </p>
+              </td>
+            </tr>
+            <tr
+              class="tremor-TableRow-row"
+            >
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  12352
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  2023-11-01T16:05:00+00:00
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  0
+                </p>
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                />
+              </td>
+              <td
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+              >
+                <p
+                  class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
+                >
+                  350
                 </p>
               </td>
             </tr>

@@ -12,10 +12,10 @@ interface DataTableBodyProps<T> {
   columns: ColumnType<T>[];
 }
 
-const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
+const DataGridBody = <T,>({ data = [], columns }: DataTableBodyProps<T>) => {
   return (
     <TableBody>
-      {data?.length ? (
+      {data.length ? (
         data.map(item => {
           const id = getObjectValue(item, "id");
           return (

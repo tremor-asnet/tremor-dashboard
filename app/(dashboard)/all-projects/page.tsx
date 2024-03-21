@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 import { MdAdd } from "react-icons/md";
 
 // Components
-import { Flex, Card, Text, Title, Button } from "@tremor/react";
+import { Flex, Card, Text, Title } from "@tremor/react";
+import { Button } from "@/ui/components";
 const ProfileInfo = dynamic(
   () => import("@/ui/features/all-projects/ProfileInfo/ProfileInfo"),
 );
@@ -16,7 +17,7 @@ const ProjectCard = dynamic(
 import { Project } from "@/types";
 
 //Constants
-import { ITEM_ACTION_PROJECT } from "@/constants/commons";
+import { ITEM_ACTION_PROJECT, VARIANT_BUTTON } from "@/constants/commons";
 
 // Services
 import { getAllProjects, getProfile } from "@/services";
@@ -60,7 +61,9 @@ const Projects = async () => {
             projects. Keep you user engaged by providing meaningful information.
           </Text>
         </div>
-        <Button className="min-w-[64px] text-center uppercase sm:px-[22px] bg-gradient-primary dark:bg-gradient-pickled px-6 py-2.5 rounded-lg border-0">
+        <Button
+          variant={VARIANT_BUTTON.PRIMARY}
+          additionalClass="min-w-[64px] text-center uppercase sm:px-[22px] px-6 py-2.5 rounded-lg border-0">
           <Text className="flex items-center uppercase py-[2px] text-xs font-bold text-white dark:text-dark-tremor-content-title tracking-wide">
             <MdAdd size="16" className="mr-2" />
             Add New

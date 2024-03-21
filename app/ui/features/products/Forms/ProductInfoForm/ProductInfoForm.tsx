@@ -29,11 +29,7 @@ const ProductInfoForm = ({
   quantity,
   onSubmit,
 }: ProductInfoFormProps) => {
-  const {
-    control,
-    formState: { errors },
-    handleSubmit,
-  } = useForm<NewInfo>({
+  const { control, handleSubmit } = useForm<NewInfo>({
     defaultValues: {
       productName,
       description,
@@ -50,7 +46,7 @@ const ProductInfoForm = ({
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </h6>
-      <ProductInfo control={control} errors={errors} />
+      <ProductInfo control={control} />
       <div className="mt-6">
         <Button
           className="float-right btn-form-primary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-primary hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"

@@ -4,7 +4,6 @@ import { FormProvider, useForm } from "react-hook-form";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { Flex } from "@tremor/react";
 import ProductInfo from "./ProductInfo";
 
 const StorybookFormProvider: FC<{ children: ReactNode }> = ({ children }) => {
@@ -22,22 +21,10 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const NewProductInfo: Story = {
+export const Primary: Story = {
   render: () => (
     <StorybookFormProvider>
-      <Flex className="w-full justify-center mt-10">
-        <ProductInfo />
-      </Flex>
-    </StorybookFormProvider>
-  ),
-};
-
-export const EditProductInfo: Story = {
-  render: () => (
-    <StorybookFormProvider>
-      <Flex className="w-full justify-center mt-10">
-        <ProductInfo />
-      </Flex>
+      <ProductInfo />
     </StorybookFormProvider>
   ),
 };

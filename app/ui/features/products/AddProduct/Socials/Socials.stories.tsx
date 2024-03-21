@@ -30,10 +30,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const SocialsFormProvider = () => {
-  const {
-    control,
-    formState: { errors },
-  } = useForm<NewSocial>({
+  const { control } = useForm<NewSocial>({
     defaultValues: {
       shopifyUrl: "https://shoppify-url.com",
       facebookUrl: "https://facebook-url.com",
@@ -41,7 +38,7 @@ const SocialsFormProvider = () => {
     },
   });
 
-  return <Socials control={control} errors={errors} />;
+  return <Socials control={control} />;
 };
 
 export const Default: Story = {

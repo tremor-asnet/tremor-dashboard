@@ -52,7 +52,7 @@ const PricingForm = ({
           </Text>
         </Button>
         <Button
-          variant={VARIANT_BUTTON.PRIMARY_CONTAINER}
+          variant={VARIANT_BUTTON.PRIMARY_CENTER}
           additionalClass="items-end"
           type="submit">
           <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">

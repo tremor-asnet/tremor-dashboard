@@ -57,7 +57,7 @@ const ProductInfoForm = ({
       <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <Button
-          variant={VARIANT_BUTTON.PRIMARY_CONTAINER}
+          variant={VARIANT_BUTTON.PRIMARY_CENTER}
           additionalClass="float-right"
           type="submit">
           <Text className="uppercase font-bold text-xs text-white dark:text-white tracking-wide">

@@ -81,7 +81,7 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
           </Text>
         </Button>
         <Button
-          variant={VARIANT_BUTTON.PRIMARY_CONTAINER}
+          variant={VARIANT_BUTTON.PRIMARY_CENTER}
           additionalClass="items-end"
           type="submit"
           disabled={isUpload}>

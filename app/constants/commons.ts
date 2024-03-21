@@ -1,6 +1,16 @@
 // Types
 import { OptionType } from "@/types";
 
+export const EXCEPT_KEYS = {
+  POSITIVE_INTEGER: ["e", "E", "+", "-", "."],
+  POSITIVE_DOUBLE: ["e", "E", "+", "-"],
+};
+
+export const DIRECTION = {
+  ASC: "asc",
+  DESC: "desc",
+};
+
 export const ITEM_ACTION_PROJECT = [
   {
     key: "act",

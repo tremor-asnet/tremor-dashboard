@@ -1,10 +1,10 @@
 // Constants
 import {
+  DIRECTION,
   INVOICE_REGEX,
   ORDER_LIST_REGEX,
   PRODUCT_LIST_REGEX,
 } from "@/constants";
-import { DIRECTION } from "@/constants/common";
 
 // Types
 import { Order } from "@/types";

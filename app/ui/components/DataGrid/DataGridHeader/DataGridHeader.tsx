@@ -11,7 +11,7 @@ import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 import { ColumnType } from "@/types";
 
 // Constants
-import { DIRECTION } from "@/constants/common";
+import { DIRECTION } from "@/constants";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];

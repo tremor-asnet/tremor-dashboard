@@ -93,6 +93,7 @@ const DashboardHeader = ({
           <div className="flex flex-wrap item-center gap-y-1">
             <div
               className="relative p-2 flex items-center"
+              data-testid="toggle-theme"
               onClick={toggleTheme}>
               {isDarkTheme ? (
                 <IoSunny

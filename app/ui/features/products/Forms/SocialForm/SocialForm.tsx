@@ -23,11 +23,7 @@ const SocialForm = ({
   onBack,
   onSubmit,
 }: SocialFormProps) => {
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<NewSocial>({
+  const { control, handleSubmit } = useForm<NewSocial>({
     defaultValues: {
       shopifyUrl,
       facebookUrl,
@@ -41,7 +37,7 @@ const SocialForm = ({
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Socials
       </h6>
-      <Socials control={control} errors={errors} />
+      <Socials control={control} />
       <Flex className="mt-6">
         <Button
           className="items-start btn-form-secondary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-btn-back hover:dark:!bg-gradient-pickled border-none dark:text-white text-center box-shadow-transparent"

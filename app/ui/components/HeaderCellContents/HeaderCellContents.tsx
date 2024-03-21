@@ -13,7 +13,7 @@ export interface HeaderCellContentsProps {
   keyColumn?: string;
   sortField?: string;
   sortType?: string;
-  isSortable?: boolean;
+  isSortable: boolean;
 }
 
 const HeaderCellContents = ({
@@ -21,7 +21,7 @@ const HeaderCellContents = ({
   keyColumn,
   sortField,
   sortType,
-  isSortable,
+  isSortable = false,
 }: HeaderCellContentsProps) => {
   const activeFill = "text-primary";
   const inActiveFill = "fill-secondary";

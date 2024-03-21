@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
@@ -25,38 +25,32 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const { replace } = useRouter();
   const params = new URLSearchParams(searchParams);
 
-  const handleSortingChange = (key: string, isSortable: boolean) => {
-    // Not support sort
-    if (!isSortable) return;
-
+  const handleSortingChange = useCallback((key: string, urlParams: any) => {
     // Set key and type sort
     setSortField(key);
 
     const DEFAULT_SORT_BY = "-createdAt";
-    const sortByParam = params.get("sortBy") ?? DEFAULT_SORT_BY;
+    const sortByParam = urlParams.get("sortBy") ?? DEFAULT_SORT_BY;
 
     if (sortByParam.startsWith("-")) {
-      console.log(params.get("page"));
-
-      params.set("sortBy", key);
+      urlParams.set("sortBy", key);
       setSortType(DIRECTION.ASC);
     } else {
-      params.set("sortBy", `-${key}`);
-      console.log(params.get("page"));
+      urlParams.set("sortBy", `-${key}`);
       setSortType(DIRECTION.DESC);
     }
 
     // Update url param
-    replace(`${pathname}?${params.toString()}`);
-  };
+    replace(`${pathname}?${urlParams.toString()}`);
+  }, []);
 
   return (
     <TableHead>
       <TableRow>
-        {columns.map(({ key, title, isSortable }) => {
-          const handleClick = () => {
-            handleSortingChange(key, !!isSortable);
-          };
+        {columns.map(({ key, title, isSortable = false }) => {
+          const handleClick = isSortable
+            ? () => handleSortingChange(key, params)
+            : undefined;
 
           return (
             <TableHeaderCell

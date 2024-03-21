@@ -23,18 +23,13 @@ const OrderListPage = async ({
 }: {
   searchParams?: TSearchParams;
 }) => {
-  const {
-    query = "",
-    filter = "",
-    page = 1,
-    sortBy = "",
-  } = searchParams as TSearchParams;
+  const { query, filter, page, sortBy } = searchParams as TSearchParams;
 
   const response: OrderResponse = await getOrders({
     pageNum: page,
     status: filter,
-    query: query,
-    sortBy: sortBy,
+    query,
+    sortBy,
   });
 
   const { results, total, skip } = response;
@@ -48,7 +43,6 @@ const OrderListPage = async ({
         <InputDebounce field="id" param="page" valueParam="1" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${query}-${filter}-${page}-${sortBy}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -59,7 +53,6 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${query}-${filter}-${page}-${sortBy}`}
               orders={results}
               total={total}
               currentPage={skip / 10 + 1}

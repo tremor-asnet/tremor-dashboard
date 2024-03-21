@@ -19,15 +19,14 @@ export const getOrders = async ({
   query?: string;
   sortBy?: string;
 }) => {
+  const page = pageNum ? pageNum - 1 : 0;
   const statusFilter = status ? `&status=${status}` : "";
   const queryFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
   const filter = statusFilter + queryFilter + sortByFilter;
 
   const res = await fetch(
-    `${ROUTER_API_URL}/orders?page=${pageNum! - 1}&size=${
-      PAGE_SIZE.SIZE
-    }${filter}`,
+    `${ROUTER_API_URL}/orders?page=${page}&size=${PAGE_SIZE.SIZE}${filter}`,
     {
       method: "GET",
       headers: {

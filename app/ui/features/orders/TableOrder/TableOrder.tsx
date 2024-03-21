@@ -36,19 +36,19 @@ const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
       customNode: (_, { id }) => (
         <IdentifyField id={id} link={`${ROUTES.ORDER_LIST}/${id}`} />
       ),
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "createdAt",
       title: "Date",
       customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "status",
       title: "Status",
       customNode: (_, { status }) => <CustomStatus status={status} />,
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "customerName",
@@ -58,25 +58,22 @@ const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
           <CustomAvatarName avatar={customer.avatar} text={customer.fullName} />
         );
       },
-      sortable: false,
     },
     {
       key: "productName",
       title: "Products",
       customNode: (_, { products }) => <CustomList products={products} />,
-      sortable: false,
     },
     {
       key: "count",
       title: "quantity",
       customNode: (_, { products }) => <CustomQuantity products={products} />,
-      sortable: false,
     },
     {
       key: "revenue",
       title: "Revenue",
       customNode: (_, { revenue }) => <CustomNumberFormat value={revenue} />,
-      sortable: true,
+      isSortable: true,
     },
   ];
 

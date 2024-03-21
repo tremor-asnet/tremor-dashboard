@@ -26,18 +26,13 @@ const ProductListPage = async ({
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const {
-    query = "",
-    filter = "",
-    page = 1,
-    sortBy = "",
-  } = searchParams as TSearchParams;
+  const { query, filter, page, sortBy } = searchParams as TSearchParams;
 
   let response: ProductResponse = await getProducts({
     pageNum: page,
     available: filter,
-    query: query,
-    sortBy: sortBy,
+    query,
+    sortBy,
   });
 
   const { results, total, skip } = response;
@@ -55,7 +50,6 @@ const ProductListPage = async ({
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputDebounce field="query" param="page" valueParam="1" />
         <Suspense
-          key={`${query}-${filter}-${page}-${sortBy}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -66,7 +60,6 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${query}-${filter}-${page}-${sortBy}`}
             products={results}
             total={total}
             currentPage={skip / 10 + 1}

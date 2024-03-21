@@ -17,12 +17,11 @@ const mockColumns: ColumnType<Product>[] = [
   {
     key: "id",
     title: "Id",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "productName",
     title: "Product",
-    sortable: false,
   },
 ];
 
@@ -43,18 +42,18 @@ describe("DataGridHeader component", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("Should be call handleSorting function when sortable column header is clicked", () => {
+  it("Should be call handleSorting function when isSortable column header is clicked", () => {
     const { container, getByText } = renderedComponent;
-    // Click on a sortable column header
+    // Click on a isSortable column header
     fireEvent.click(getByText(mockColumns[0].title));
 
-    // Click on a sortable column header again
+    // Click on a isSortable column header again
     fireEvent.click(getByText(mockColumns[0].title));
 
-    // Click on a sortable column header again
+    // Click on a isSortable column header again
     fireEvent.click(getByText(mockColumns[0].title));
 
-    // Click on a non-sortable column header
+    // Click on a non-isSortable column header
     fireEvent.click(getByText(mockColumns[1].title));
 
     expect(container).toMatchSnapshot();

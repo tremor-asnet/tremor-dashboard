@@ -31,7 +31,7 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
       customNode: (_, { id }) => (
         <IdentifyField id={id} link={`${ROUTES.PRODUCT_LIST}/${id}`} />
       ),
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "productName",
@@ -39,13 +39,13 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "isAvailable",
@@ -55,18 +55,18 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
           {quantity ? "Yes" : "No"}
         </Text>
       ),
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "providerName",
       title: "Provider Name",
-      sortable: true,
+      isSortable: true,
     },
     {
       key: "createdAt",
       title: "Created Date",
       customNode: (_, { createdAt }) => <CustomDateFormat date={createdAt} />,
-      sortable: true,
+      isSortable: true,
     },
   ];
 

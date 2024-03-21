@@ -32,7 +32,7 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
           &#35;{id}
         </Link>
       ),
-      sortable: false,
+      isSortable: false,
     },
     {
       key: "product",
@@ -40,13 +40,13 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
-      sortable: false,
+      isSortable: false,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
-      sortable: false,
+      isSortable: false,
     },
     {
       key: "isAvailable",
@@ -56,7 +56,7 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
           {isAvailable ? "Yes" : "No"}
         </Text>
       ),
-      sortable: false,
+      isSortable: false,
     },
   ];
 
@@ -71,3 +71,4 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
 };
 
 export default OtherProducts;
+

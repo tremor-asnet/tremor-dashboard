@@ -25,37 +25,37 @@ const columns: ColumnType<Order>[] = [
   {
     key: "id",
     title: "Id",
-    sortable: false,
+    isSortable: false,
   },
   {
     key: "createdAt",
     title: "Date",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "status",
     title: "Status",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "customerName",
     title: "Customer",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "productName",
     title: "Products",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "count",
     title: "quantity",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "revenue",
     title: "Revenue",
-    sortable: true,
+    isSortable: true,
   },
 ];
 

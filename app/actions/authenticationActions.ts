@@ -42,7 +42,7 @@ export async function createNewAccount(
     const hashPassword = await bcrypt.hash(formPassword as string, 10);
     formData.set("password", hashPassword);
 
-    const res = await fetch(`${ROUTER_API_URL}/user`, {
+    const res = await fetch(`${ROUTER_API_URL}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",

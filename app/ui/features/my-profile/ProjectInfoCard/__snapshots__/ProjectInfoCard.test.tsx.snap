@@ -53,7 +53,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary p-[5.5px] box-shadow-transparent font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"
@@ -153,7 +153,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary p-[5.5px] box-shadow-transparent font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"
@@ -253,7 +253,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary p-[5.5px] box-shadow-transparent font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"
@@ -353,7 +353,7 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary p-[5.5px] box-shadow-transparent font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
                 class="tremor-Button-text text-sm whitespace-nowrap"

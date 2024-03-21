@@ -18,8 +18,8 @@ interface IModal {
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
   onClose?: () => void;
-  onPrimaryBtn?: () => void;
-  onSecondaryBtn?: () => void;
+  onPrimaryBtn?: () => boolean;
+  onSecondaryBtn?: () => boolean;
   primaryBtnDisabled?: boolean;
   secondaryBtnDisabled?: boolean;
 }
@@ -49,13 +49,11 @@ export default function Modal({
   };
 
   const handlePrimary = () => {
-    onPrimaryBtn?.();
-    handleClose();
+    onPrimaryBtn?.() && handleClose();
   };
 
   const handleSecondary = () => {
-    onSecondaryBtn?.();
-    handleClose();
+    onSecondaryBtn?.() && handleClose();
   };
 
   if (!isOpen) {

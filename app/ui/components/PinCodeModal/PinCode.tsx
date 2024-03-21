@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createRef, useCallback, useMemo, useState } from "react";
+import React, { createRef, useCallback, useMemo } from "react";
 
 import { Flex } from "@tremor/react";
 import { PinCodeField } from "./PinCodeField";
@@ -8,7 +8,8 @@ import { PinCodeField } from "./PinCodeField";
 import { rangeNumber } from "@/helpers";
 
 import { DEFAULT_CODE } from "@/constants";
-import { formatPinCode } from "@/utils/pincode";
+
+import { formatPinCode } from "@/utils";
 
 interface IPinCode {
   length?: number;
@@ -17,16 +18,15 @@ interface IPinCode {
 }
 
 export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
-  const [codes, setCodes] = useState(formatPinCode({ length: 4 }));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const codes = useMemo(() => formatPinCode({ length, codes: value }), [value]);
 
   const refs = rangeNumber(1, length).map(() => createRef<HTMLInputElement>());
 
   const handleChange = useCallback(
     (value: string, index: number) => {
       const currentCodes = formatPinCode({ codes, index, value });
-
       onChange(currentCodes);
-      setCodes(currentCodes);
 
       if (value === DEFAULT_CODE) {
         if (index > 0) {

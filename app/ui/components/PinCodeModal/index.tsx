@@ -4,21 +4,24 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 
 import { PinCode } from "./PinCode";
-import { isValidatePinCode } from "@/utils/pincode";
+
+import { isValidatePinCode } from "@/utils";
 
 const Modal = dynamic(() => import("@/ui/components/Modal"), { ssr: false });
 
 interface IPinCodeModal {
-  onSubmit?: (codes: string) => void;
+  onSubmit?: (codes: string) => boolean;
 }
 
 const PinCodeModal = ({ onSubmit }: IPinCodeModal) => {
   const [codes, setCodes] = useState("");
 
   const handleSubmit = () => {
-    onSubmit?.(codes);
-    // Only test UI and behavior will remove before merge
-    console.log(codes);
+    const isSuccess = !!onSubmit?.(codes);
+
+    !isSuccess && setCodes("");
+
+    return isSuccess;
   };
 
   return (
@@ -27,7 +30,7 @@ const PinCodeModal = ({ onSubmit }: IPinCodeModal) => {
       additionalClasses="md:min-w-[390px]"
       primaryBtnDisabled={!isValidatePinCode(codes, 4)}
       onPrimaryBtn={handleSubmit}>
-      <PinCode length={4} onChange={setCodes} />
+      <PinCode length={4} onChange={setCodes} value={codes} />
     </Modal>
   );
 };

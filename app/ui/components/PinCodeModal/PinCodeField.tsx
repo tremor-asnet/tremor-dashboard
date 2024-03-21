@@ -1,6 +1,13 @@
 "use client";
 
-import { ChangeEvent, KeyboardEvent, forwardRef, memo, useState } from "react";
+import {
+  ChangeEvent,
+  KeyboardEvent,
+  forwardRef,
+  memo,
+  useEffect,
+  useState,
+} from "react";
 
 import { DEFAULT_CODE } from "@/constants";
 
@@ -17,6 +24,11 @@ export const PinCodeField = memo(
     ({ index, value = "", onChange }, ref) => {
       const [currentValue, setCurrentValue] = useState(value);
 
+      useEffect(() => {
+        setCurrentValue(value);
+      }, [value]);
+
+      // Auto clear when focus
       const handleFocus = () => {
         setCurrentValue("");
       };

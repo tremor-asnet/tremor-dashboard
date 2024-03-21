@@ -61,7 +61,7 @@ const Button = ({
         return "!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent";
 
       case VARIANT_BUTTON.SECONDARY_SHADOW:
-        return "!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent";
+        return "box-shadow-transparent uppercase";
 
       // TODO: Collect style later
       case VARIANT_BUTTON.LIGHT:

@@ -22,7 +22,6 @@ const mockColumns: ColumnType<Product>[] = [
   {
     key: "productName",
     title: "Product",
-    isSortable: false,
   },
 ];
 

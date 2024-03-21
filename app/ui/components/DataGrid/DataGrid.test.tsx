@@ -25,7 +25,6 @@ const columns: ColumnType<Order>[] = [
   {
     key: "id",
     title: "Id",
-    isSortable: false,
   },
   {
     key: "createdAt",

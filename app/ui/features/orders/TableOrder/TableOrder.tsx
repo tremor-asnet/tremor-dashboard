@@ -58,19 +58,16 @@ const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
           <CustomAvatarName avatar={customer.avatar} text={customer.fullName} />
         );
       },
-      isSortable: false,
     },
     {
       key: "productName",
       title: "Products",
       customNode: (_, { products }) => <CustomList products={products} />,
-      isSortable: false,
     },
     {
       key: "count",
       title: "quantity",
       customNode: (_, { products }) => <CustomQuantity products={products} />,
-      isSortable: false,
     },
     {
       key: "revenue",
@@ -99,4 +96,3 @@ const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
 };
 
 export default TableOrder;
-

@@ -39,7 +39,6 @@ const TableInvoice = ({
           {productName}
         </Text>
       ),
-      isSortable: false,
     },
     {
       key: "quantity",
@@ -49,7 +48,6 @@ const TableInvoice = ({
           {quantity}
         </Text>
       ),
-      isSortable: false,
     },
     {
       key: "rate",
@@ -68,7 +66,6 @@ const TableInvoice = ({
           </Text>
         </div>
       ),
-      isSortable: false,
     },
     {
       key: "amount",
@@ -92,7 +89,6 @@ const TableInvoice = ({
           </Text>
         </div>
       ),
-      isSortable: false,
     },
   ];
   return (
@@ -107,4 +103,3 @@ const TableInvoice = ({
 };
 
 export default TableInvoice;
-

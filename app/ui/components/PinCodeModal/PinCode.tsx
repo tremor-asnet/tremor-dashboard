@@ -8,6 +8,7 @@ import { PinCodeField } from "./PinCodeField";
 import { rangeNumber } from "@/helpers";
 
 import { DEFAULT_CODE } from "@/constants";
+import { formatPinCode } from "@/utils/pincode";
 
 interface IPinCode {
   length?: number;
@@ -16,20 +17,15 @@ interface IPinCode {
 }
 
 export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
-  const initValue = useMemo(
-    () => value || Array(length).fill(DEFAULT_CODE).join(""),
-    [length, value],
-  );
-
-  const [codes, setCodes] = useState(initValue);
+  const [codes, setCodes] = useState(formatPinCode({ length: 4 }));
 
   const refs = rangeNumber(1, length).map(() => createRef<HTMLInputElement>());
 
   const handleChange = useCallback(
     (value: string, index: number) => {
-      const currentCodes =
-        codes.substring(0, index) + value + codes.substring(index + 1);
-      onChange(currentCodes.replaceAll("*", ""));
+      const currentCodes = formatPinCode({ codes, index, value });
+
+      onChange(currentCodes);
       setCodes(currentCodes);
 
       if (value === DEFAULT_CODE) {
@@ -48,7 +44,7 @@ export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
       refs[index].current?.blur();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [refs, codes],
+    [refs, codes, onchange],
   );
 
   return (

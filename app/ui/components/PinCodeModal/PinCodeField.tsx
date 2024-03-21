@@ -22,8 +22,10 @@ export const PinCodeField = memo(
       };
 
       const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange(e.target.value, index);
-        setCurrentValue(e.target.value);
+        const { value } = e.target;
+
+        onChange(value, index);
+        setCurrentValue(value);
       };
 
       const handleKeydown = (e: KeyboardEvent<HTMLInputElement>) => {

@@ -27,15 +27,14 @@ export const getProducts = async ({
   query?: string;
   sortBy?: string;
 }) => {
+  const page = pageNum ? pageNum - 1 : 0;
   const availableFilter = available ? `&isAvailable=${available}` : "";
   const productNameFilter = query ? `&query=${query}` : "";
   const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
   const filter = availableFilter + productNameFilter + sortByFilter;
 
   const res = await fetch(
-    `${ROUTER_API_URL}/products?page=${pageNum! - 1}&size=${
-      PAGE_SIZE.SIZE
-    }${filter}`,
+    `${ROUTER_API_URL}/products?page=${page}&size=${PAGE_SIZE.SIZE}${filter}`,
     {
       method: "GET",
       headers: {

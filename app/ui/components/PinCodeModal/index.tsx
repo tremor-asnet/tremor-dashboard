@@ -27,7 +27,7 @@ const PinCodeModal = ({ onSubmit }: IPinCodeModal) => {
   return (
     <Modal
       title="Please enter your PIN code"
-      additionalClasses="md:min-w-[390px] min-w-full"
+      additionalClasses="md:min-w-[390px] w-[calc(100%-8px)] md:max-w-[390px]"
       primaryBtnDisabled={!isValidPinCode(codes, 4)}
       onPrimaryBtn={handleSubmit}>
       <PinCode length={4} onChange={setCodes} value={codes} />

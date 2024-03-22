@@ -18,8 +18,8 @@ import {
   DECIMAL_REGEX,
   NUMBER_REGEX,
   MESSAGES_ERROR,
+  EXCEPT_KEYS,
 } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";

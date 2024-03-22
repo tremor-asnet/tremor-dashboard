@@ -5,8 +5,7 @@ import { Button, Flex } from "@tremor/react";
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 // Constants
-import { DIRECTION } from "@/constants/common";
-import { VARIANT_BUTTON } from "@/constants";
+import { VARIANT_BUTTON, DIRECTION } from "@/constants";
 
 export interface HeaderCellContentsProps {
   title: string;

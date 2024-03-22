@@ -17,8 +17,8 @@ import {
   CATEGORY_PRODUCT,
   NUMBER_REGEX_WITHOUT_0,
   DECIMAL_REGEX,
+  EXCEPT_KEYS,
 } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";

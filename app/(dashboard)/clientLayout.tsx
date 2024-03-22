@@ -3,10 +3,14 @@
 // Libs
 import { ReactNode, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
 import { LoadingIndicator, SideBar, DashboardHeader } from "@/ui/components";
+
+// Features
+const PinCode = dynamic(() => import("@/ui/features/pin-code"), { ssr: false });
 
 // Constants
 import { ROUTES } from "@/constants";
@@ -71,6 +75,8 @@ export default function DashboardLayout({
       {isPending && (
         <LoadingIndicator width={10} height={10} isFullWidth={true} />
       )}
+
+      <PinCode />
     </>
   );
 }

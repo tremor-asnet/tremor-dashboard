@@ -61,6 +61,7 @@ export const SOCIAL_LINK = {
 };
 
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
+export const UID_KEY = "uid";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
 
 export const orderListOption: OptionType[] = [

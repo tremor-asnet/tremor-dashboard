@@ -1,1 +1,4 @@
-export const DEFAULT_CODE = "*";
+const DEFAULT_PIN_CODE = "*";
+const PIN_CODE_LENGTH = 6;
+
+export { DEFAULT_PIN_CODE, PIN_CODE_LENGTH };

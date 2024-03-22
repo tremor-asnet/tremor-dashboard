@@ -11,7 +11,7 @@ import {
 } from "@/constants";
 
 // Helpers
-import { getErrorMessage } from "@/helpers";
+import { buildSearchUrl, getErrorMessage } from "@/helpers";
 
 // Types
 import { ProductData } from "@/types";
@@ -28,24 +28,25 @@ export const getProducts = async ({
   sortBy?: string;
 }) => {
   const page = pageNum ? pageNum - 1 : 0;
-  const availableFilter = available ? `&isAvailable=${available}` : "";
-  const productNameFilter = query ? `&query=${query}` : "";
-  const sortByFilter = sortBy ? `&sortBy=${sortBy}` : "";
-  const filter = availableFilter + productNameFilter + sortByFilter;
 
-  const res = await fetch(
-    `${ROUTER_API_URL}/products?page=${page}&size=${PAGE_SIZE.SIZE}${filter}`,
-    {
-      method: "GET",
-      headers: {
-        "content-type": "application/json;charset=UTF-8",
-      },
-      next: {
-        revalidate: 60,
-        tags: [ROUTES.PRODUCT_LIST, PRODUCT_DETAILS_TAG],
-      },
+  const params = buildSearchUrl({
+    page: page,
+    size: PAGE_SIZE.SIZE,
+    isAvailable: available,
+    query: query,
+    sortBy: sortBy,
+  });
+
+  const res = await fetch(`${ROUTER_API_URL}/products?${params}`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json;charset=UTF-8",
     },
-  );
+    next: {
+      revalidate: 60,
+      tags: [ROUTES.PRODUCT_LIST, PRODUCT_DETAILS_TAG],
+    },
+  });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 

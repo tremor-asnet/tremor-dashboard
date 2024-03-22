@@ -25,36 +25,38 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const { replace } = useRouter();
   const params = new URLSearchParams(searchParams);
 
-  const handleSortingChange = useCallback((key: string, urlParams: any) => {
-    // Set key and type sort
-    setSortField(key);
+  const handleSortingChange = useCallback(
+    (key: string, urlParams: URLSearchParams) => {
+      return () => {
+        setSortField(key);
 
-    const DEFAULT_SORT_BY = "-createdAt";
-    const sortByParam = urlParams.get("sortBy") ?? DEFAULT_SORT_BY;
+        const DEFAULT_SORT_BY = "-createdAt";
+        const sortByParam = urlParams.get("sortBy") ?? DEFAULT_SORT_BY;
 
-    if (sortByParam.startsWith("-")) {
-      urlParams.set("sortBy", key);
-      setSortType(DIRECTION.ASC);
-    } else {
-      urlParams.set("sortBy", `-${key}`);
-      setSortType(DIRECTION.DESC);
-    }
+        if (sortByParam.startsWith("-")) {
+          urlParams.set("sortBy", key);
+          setSortType(DIRECTION.ASC);
+        } else {
+          urlParams.set("sortBy", `-${key}`);
+          setSortType(DIRECTION.DESC);
+        }
 
-    // Update url param
-    replace(`${pathname}?${urlParams.toString()}`);
-  }, []);
+        // Update url param
+        replace(`${pathname}?${urlParams.toString()}`);
+      };
+    },
+    [],
+  );
 
   return (
     <TableHead>
       <TableRow>
         {columns.map(({ key, title, isSortable = false }) => {
-          const handleClick = isSortable
-            ? () => handleSortingChange(key, params)
-            : undefined;
-
           return (
             <TableHeaderCell
-              onClick={handleClick}
+              onClick={
+                isSortable ? handleSortingChange(key, params) : undefined
+              }
               key={key}
               className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100">
               <HeaderCellContents

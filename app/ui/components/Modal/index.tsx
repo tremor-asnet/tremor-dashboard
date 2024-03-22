@@ -8,7 +8,7 @@ import { Button, Flex } from "@tremor/react";
 
 import { twMerge } from "tailwind-merge";
 
-interface IModal {
+export interface IModal {
   title: string;
   children: ReactNode;
   additionalClasses?: string;
@@ -18,8 +18,8 @@ interface IModal {
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
   onClose?: () => void;
-  onPrimaryBtn?: () => boolean;
-  onSecondaryBtn?: () => boolean;
+  onPrimaryBtn?: () => boolean | Promise<boolean>;
+  onSecondaryBtn?: () => boolean | Promise<boolean>;
   primaryBtnDisabled?: boolean;
   secondaryBtnDisabled?: boolean;
 }
@@ -48,12 +48,12 @@ export default function Modal({
     onClose?.();
   };
 
-  const handlePrimary = () => {
-    onPrimaryBtn?.() && handleClose();
+  const handlePrimary = async () => {
+    (await onPrimaryBtn?.()) && handleClose();
   };
 
-  const handleSecondary = () => {
-    onSecondaryBtn?.() && handleClose();
+  const handleSecondary = async () => {
+    (await onSecondaryBtn?.()) && handleClose();
   };
 
   if (!isOpen) {

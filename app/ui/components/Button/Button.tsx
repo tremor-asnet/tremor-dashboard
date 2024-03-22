@@ -1,19 +1,29 @@
-import { ReactNode } from "react";
+import { ElementType, ReactNode } from "react";
 
 // Components
-import { Button as ButtonTremor, Size } from "@tremor/react";
+import {
+  Button as ButtonTremor,
+  ButtonVariant,
+  HorizontalPosition,
+  Size,
+} from "@tremor/react";
 
 // Constant
 import { VARIANT_BUTTON } from "@/constants";
 
 interface ButtonProps {
-  variant:
+  variant?:
     | VARIANT_BUTTON.PRIMARY
     | VARIANT_BUTTON.PRIMARY_CENTER
     | VARIANT_BUTTON.SECONDARY
+    | VARIANT_BUTTON.SECONDARY_SHADOW
     | VARIANT_BUTTON.LIGHT
-    | VARIANT_BUTTON.SURFACE;
+    | VARIANT_BUTTON.SURFACE
+    | "";
+  variantTremor?: ButtonVariant;
   additionalClass?: string;
+  icon?: ElementType;
+  iconPosition?: HorizontalPosition;
   children?: string | ReactNode;
   disabled?: boolean;
   type?: "submit" | "reset" | "button";
@@ -23,14 +33,18 @@ interface ButtonProps {
 }
 
 const Button = ({
-  additionalClass,
-  variant,
+  additionalClass = "",
+  variant = "",
+  variantTremor,
+  icon,
+  iconPosition,
   children,
   disabled,
   type,
   size,
   tabIndex,
   onClick,
+  ...otherProps
 }: ButtonProps) => {
   const renderTypeVariant = (variant: string) => {
     switch (variant) {
@@ -43,9 +57,11 @@ const Button = ({
       case VARIANT_BUTTON.PRIMARY_CENTER:
         return "btn-form-primary rounded-lg py-3 px-6 mt-8 bg-gradient-primary dark:bg-gradient-pickled hover:dark:!bg-gradient-pickled border-none dark:text-white text-center";
 
-      // TODO: Collect style later
       case VARIANT_BUTTON.SECONDARY:
-        return "";
+        return "!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent";
+
+      case VARIANT_BUTTON.SECONDARY_SHADOW:
+        return "box-shadow-transparent uppercase";
 
       // TODO: Collect style later
       case VARIANT_BUTTON.LIGHT:
@@ -59,11 +75,15 @@ const Button = ({
   return (
     <ButtonTremor
       className={`${renderTypeVariant(variant)} ${additionalClass}`}
+      variant={variantTremor}
+      icon={icon}
+      iconPosition={iconPosition}
       tabIndex={tabIndex}
       size={size}
       type={type}
       disabled={disabled}
-      onClick={onClick}>
+      onClick={onClick}
+      {...otherProps}>
       {children}
     </ButtonTremor>
   );

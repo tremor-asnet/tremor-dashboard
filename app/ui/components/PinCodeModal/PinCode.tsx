@@ -7,7 +7,7 @@ import { PinCodeField } from "./PinCodeField";
 
 import { rangeNumber } from "@/helpers";
 
-import { DEFAULT_CODE } from "@/constants";
+import { DEFAULT_PIN_CODE, PIN_CODE_LENGTH } from "@/constants";
 
 import { formatPinCode } from "@/utils";
 
@@ -17,7 +17,11 @@ interface IPinCode {
   value?: string;
 }
 
-export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
+export const PinCode = ({
+  length = PIN_CODE_LENGTH,
+  value,
+  onChange,
+}: IPinCode) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const codes = useMemo(() => formatPinCode({ length, codes: value }), [value]);
 
@@ -28,7 +32,7 @@ export const PinCode = ({ length = 4, value, onChange }: IPinCode) => {
       const currentCodes = formatPinCode({ codes, index, value });
       onChange(currentCodes);
 
-      if (value === DEFAULT_CODE) {
+      if (value === DEFAULT_PIN_CODE) {
         if (index > 0) {
           refs[index - 1].current?.focus();
         }

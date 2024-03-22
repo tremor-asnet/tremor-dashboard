@@ -26,13 +26,15 @@ const ProductListPage = async ({
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const { query, filter, page, sortBy } = searchParams as TSearchParams;
+  const { query, filter, page, sortBy, orderBy } =
+    searchParams as TSearchParams;
 
   let response: ProductResponse = await getProducts({
     pageNum: page,
     available: filter,
     query,
     sortBy,
+    orderBy,
   });
 
   const { results, total, skip } = response;

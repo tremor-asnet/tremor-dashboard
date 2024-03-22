@@ -1,8 +1,16 @@
+"use server";
+
 // Types
 import type { User } from "@/types";
 
 // Constants
-import { ADD_USER_MESSAGE, EMAIL_REGEX, ROUTER_API_URL } from "@/constants";
+import {
+  ADD_USER_MESSAGE,
+  EMAIL_REGEX,
+  ROUTER_API_URL,
+  UID_KEY,
+} from "@/constants";
+import { cookies } from "next/headers";
 
 /**
  * Handle get user's account by email
@@ -62,4 +70,53 @@ const addNewUser = async (formData: FormData) => {
   }
 };
 
-export { addNewUser, getUserByEmail };
+const updatePinCode = async (codes: number) => {
+  const id = cookies().get(UID_KEY)?.value;
+
+  if (!id) {
+    throw new Error("Not found User!");
+  }
+
+  const res = await fetch(`${ROUTER_API_URL}/users/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    cache: "no-store",
+    body: JSON.stringify({ pinCode: codes }),
+  });
+
+  const { message } = await res.json();
+
+  if (res.ok) {
+    return { isSuccess: true };
+  }
+
+  return { errorMessage: message };
+};
+
+const getUserById = async (id: number): Promise<User> => {
+  const res = await fetch(`${ROUTER_API_URL}/users/${id}`, {
+    method: "GET",
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error("Failed to fetch user.");
+  }
+  const user: User = await res.json();
+  return user;
+};
+
+const getPinCode = async () => {
+  const id = cookies().get(UID_KEY)?.value;
+
+  if (!id) {
+    throw new Error("Not found User!");
+  }
+
+  const { pinCode } = await getUserById(parseInt(id));
+
+  return pinCode;
+};
+
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode };

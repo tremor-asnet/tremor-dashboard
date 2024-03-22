@@ -30,7 +30,7 @@ describe("SalesByAge components", () => {
     expect(result).toMatchSnapshot();
   });
 
-  it("Should SalesByAge - if data prop is empty array then show text no data", () => {
+  it("Should show No Data if the data is empty", () => {
     const { getAllByText } = render(<SalesByAge {...propsNoDataSalesByAge} />);
 
     expect(getAllByText("No data")).toHaveLength(1);

@@ -27,7 +27,7 @@ describe("Testing TopSellingProducts component", () => {
     expect(result).toMatchSnapshot();
   });
 
-  it("Should TopSellingProducts - if data prop is empty array then show text no data", () => {
+  it("Should show No Data if the data is empty", () => {
     const { getAllByText } = render(
       <TopSellingProducts {...propsNoDataSellingProduct} />,
     );

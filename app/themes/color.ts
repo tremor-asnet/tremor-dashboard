@@ -211,6 +211,7 @@ export const borderColor = {
   // light mode
   tremor: {
     primary: "#344767",
+    secondary: "#60a5fa",
   },
   // dark mode
   "dark-tremor": {

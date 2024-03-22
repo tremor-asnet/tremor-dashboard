@@ -30,4 +30,5 @@ export type TSearchParams = {
   filter?: string;
   page?: number;
   sortBy?: string;
+  orderBy?: string;
 };

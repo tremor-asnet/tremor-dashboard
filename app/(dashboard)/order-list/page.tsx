@@ -23,13 +23,15 @@ const OrderListPage = async ({
 }: {
   searchParams?: TSearchParams;
 }) => {
-  const { query, filter, page, sortBy } = searchParams as TSearchParams;
+  const { query, filter, page, sortBy, orderBy } =
+    searchParams as TSearchParams;
 
   const response: OrderResponse = await getOrders({
     pageNum: page,
     status: filter,
     query,
     sortBy,
+    orderBy,
   });
 
   const { results, total, skip } = response;

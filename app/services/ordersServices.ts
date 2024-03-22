@@ -3,7 +3,7 @@
 import { revalidateTag } from "next/cache";
 
 // Constants
-import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
+import { DIRECTION, PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
 import { buildSearchUrl, getErrorMessage } from "@/helpers";
@@ -13,20 +13,27 @@ export const getOrders = async ({
   status,
   query,
   sortBy,
+  orderBy,
 }: {
   pageNum?: number;
   status?: string;
   query?: string;
   sortBy?: string;
+  orderBy?: string;
 }) => {
   const page = pageNum ? pageNum - 1 : 0;
+  const filerSort = sortBy
+    ? orderBy === DIRECTION.ASC
+      ? sortBy
+      : `-${sortBy}`
+    : "";
 
   const params = buildSearchUrl({
     page: page,
     size: PAGE_SIZE.SIZE,
-    status: status,
-    query: query,
-    sortBy: sortBy,
+    status: status ?? "",
+    query: query ?? "",
+    sortBy: filerSort,
   });
 
   const res = await fetch(`${ROUTER_API_URL}/orders?${params}`, {

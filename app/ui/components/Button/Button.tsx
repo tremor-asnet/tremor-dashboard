@@ -18,6 +18,9 @@ interface ButtonProps {
     | VARIANT_BUTTON.SECONDARY
     | VARIANT_BUTTON.SECONDARY_SHADOW
     | VARIANT_BUTTON.LIGHT
+    | VARIANT_BUTTON.LIGHT_CARD
+    | VARIANT_BUTTON.LIGHT_STATUS
+    | VARIANT_BUTTON.LIGHT_CENTER
     | VARIANT_BUTTON.SURFACE
     | "";
   variantTremor?: ButtonVariant;
@@ -63,9 +66,14 @@ const Button = ({
       case VARIANT_BUTTON.SECONDARY_SHADOW:
         return "box-shadow-transparent uppercase";
 
-      // TODO: Collect style later
-      case VARIANT_BUTTON.LIGHT:
-        return "";
+      case VARIANT_BUTTON.LIGHT_CARD:
+        return "justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md";
+
+      case VARIANT_BUTTON.LIGHT_CENTER:
+        return "justify-center items-center opacity-50 dark:opacity-100";
+
+      case VARIANT_BUTTON.LIGHT_STATUS:
+        return "w-[25px] h-[25px] justify-center items-center rounded-full border border mr-2 text-tremor-content-title hover:text-tremor-content-title";
 
       default:
         return "";

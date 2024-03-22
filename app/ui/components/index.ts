@@ -21,7 +21,7 @@ export { default as InputField } from "./InputField/InputField";
 export { default as InputSearch } from "./InputSearch/InputSearch";
 export { default as LoadingIndicator } from "./LoadingIndicator/LoadingIndicator";
 export { default as LoadingPage } from "./LoadingPage/LoadingPage";
-export { default as Pagination } from "./Pagination";
+export { default as Pagination } from "./Pagination/Pagination";
 export { default as Popover } from "./Popover/Popover";
 export { default as SalesByCountryRow } from "./SalesByCountryRow";
 export { default as SelectField } from "./SelectField/SelectField";

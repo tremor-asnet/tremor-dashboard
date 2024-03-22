@@ -51,10 +51,12 @@ const DataGrid = <T,>({
 
   useEffect(() => {
     if (isPending) return;
-
     // THIS CODE WILL RUN AFTER THE SERVER ACTION
     setLoading(false);
-  }, [isPending]);
+
+    const page = params.get("page");
+    setCurrentPage(page ? parseInt(page) : currentPageNumber);
+  }, [isPending, params]);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {

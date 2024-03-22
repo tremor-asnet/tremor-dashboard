@@ -257,12 +257,12 @@ describe("buildSearchUrl function", () => {
   const mockObject = {
     page: 0,
     size: 10,
-    query: undefined,
+    query: "",
   };
 
   test("build correctly params", () => {
     const result = buildSearchUrl(mockObject);
 
-    expect(result).toBe("page=0&size=10");
+    expect(result).toBe("page=0&size=10&query=");
   });
 });

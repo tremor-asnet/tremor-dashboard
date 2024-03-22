@@ -212,13 +212,11 @@ export const transformOrders = (sortedOrders: Order[]) => {
  * @param object key: string, value: string
  * @returns string
  */
-export const buildSearchUrl = (object: {
-  [key: string]: string | number | undefined;
-}) => {
+export const buildSearchUrl = (object: { [key: string]: string | number }) => {
   const searchParams = new URLSearchParams();
 
   for (const [key, value] of Object.entries(object)) {
-    if (value !== undefined) searchParams.append(key, String(value));
+    searchParams.append(key, String(value));
   }
 
   return searchParams.toString();

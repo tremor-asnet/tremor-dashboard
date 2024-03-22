@@ -1,11 +1,15 @@
 "use client";
 
 // Components
-import { Button, Text } from "@tremor/react";
+import { Text } from "@tremor/react";
 import InvoiceItem from "../InvoiceItem/InvoiceItem";
 
 // Types
 import { Invoice } from "@/types";
+import { Button } from "@/ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface InvoicesProps {
   invoices: Invoice[];
@@ -43,8 +47,8 @@ const Invoices = ({ invoices }: InvoicesProps) => {
       <div className="text-primary dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
         <Button
-          variant="light"
-          className="uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide">
+          variant={VARIANT_BUTTON.LIGHT}
+          additionalClass="uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide">
           <Text className="text-xs text-primary">view all</Text>
         </Button>
       </div>

@@ -9,7 +9,7 @@ import {
   useState,
 } from "react";
 
-import { DEFAULT_CODE } from "@/constants";
+import { DEFAULT_PIN_CODE } from "@/constants";
 
 import "./styles.css";
 
@@ -43,7 +43,7 @@ export const PinCodeField = memo(
       const handleKeydown = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.code === "Backspace") {
           e.preventDefault();
-          onChange(DEFAULT_CODE, index);
+          onChange(DEFAULT_PIN_CODE, index);
           setCurrentValue("");
           return;
         }
@@ -59,7 +59,7 @@ export const PinCodeField = memo(
         setCurrentValue(value);
       };
 
-      const isSecurity = currentValue !== DEFAULT_CODE && !!currentValue;
+      const isSecurity = currentValue !== DEFAULT_PIN_CODE && !!currentValue;
 
       return (
         <input

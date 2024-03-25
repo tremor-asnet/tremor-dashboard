@@ -1,8 +1,17 @@
+"use server";
+
 // Types
 import type { User } from "@/types";
 
 // Constants
-import { ADD_USER_MESSAGE, EMAIL_REGEX, ROUTER_API_URL } from "@/constants";
+import {
+  USER_MESSAGES,
+  EMAIL_REGEX,
+  ROUTER_API_URL,
+  UID_KEY,
+  API_ROUTES,
+} from "@/constants";
+import { cookies } from "next/headers";
 
 /**
  * Handle get user's account by email
@@ -14,7 +23,7 @@ const getUserByEmail = async (email: string): Promise<User | undefined> => {
     return undefined;
   }
 
-  const res = await fetch(`${ROUTER_API_URL}/users?email=${email}`, {
+  const res = await fetch(`${API_ROUTES.USERS}?email=${email}`, {
     cache: "no-store",
   });
 
@@ -35,7 +44,7 @@ const addNewUser = async (formData: FormData) => {
   let errorMessage;
 
   try {
-    const res = await fetch(`${ROUTER_API_URL}/users`, {
+    const res = await fetch(`${API_ROUTES.USERS}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
@@ -46,13 +55,13 @@ const addNewUser = async (formData: FormData) => {
     });
 
     if (res.status === 403) {
-      errorMessage = ADD_USER_MESSAGE.MAIL_EXISTS;
+      errorMessage = USER_MESSAGES.MAIL_EXISTS;
     }
 
     const data: User[] = await res.json();
 
     if (!res.ok || !data || data.length <= 0) {
-      errorMessage = ADD_USER_MESSAGE.ADD_FAILED;
+      errorMessage = USER_MESSAGES.ADD_FAILED;
     }
 
     return { user: data[0], errorMessage };
@@ -62,4 +71,52 @@ const addNewUser = async (formData: FormData) => {
   }
 };
 
-export { addNewUser, getUserByEmail };
+const updatePinCode = async (codes: number) => {
+  const id = cookies().get(UID_KEY)?.value;
+
+  if (!id) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+  }
+
+  const res = await fetch(`${API_ROUTES.USERS}/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    cache: "no-store",
+    body: JSON.stringify({ pinCode: codes }),
+  });
+
+  const { message } = await res.json();
+
+  if (res.ok) {
+    return { isSuccess: true, errorMessage: null };
+  }
+
+  return { errorMessage: message, isSuccess: false };
+};
+
+const getUserById = async (id: number): Promise<User> => {
+  const res = await fetch(`${API_ROUTES.USERS}/${id}`, {
+    method: "GET",
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+  }
+  return (await res.json()) as User;
+};
+
+const getPinCode = async () => {
+  const id = cookies().get(UID_KEY)?.value;
+
+  if (!id) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+  }
+
+  const { pinCode } = await getUserById(parseInt(id));
+
+  return pinCode;
+};
+
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode };

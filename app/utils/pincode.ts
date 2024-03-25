@@ -1,9 +1,9 @@
-import { DEFAULT_CODE } from "@/constants";
+import { DEFAULT_PIN_CODE, PIN_CODE_LENGTH } from "@/constants";
 
 function formatPinCode({
   codes = "",
   index = 0,
-  length = 4,
+  length = PIN_CODE_LENGTH,
   value = "",
 }: {
   codes?: string;
@@ -11,7 +11,7 @@ function formatPinCode({
   length?: number;
   index?: number;
 }) {
-  let format = Array(length).fill(DEFAULT_CODE).join("");
+  let format = Array(length).fill(DEFAULT_PIN_CODE).join("");
 
   let currentLen = codes.length;
 
@@ -31,7 +31,7 @@ function formatPinCode({
 }
 
 function isValidPinCode(codes: string, length: number) {
-  return codes.length === length && !codes.includes(DEFAULT_CODE);
+  return codes.length === length && !codes.includes(DEFAULT_PIN_CODE);
 }
 
 export { formatPinCode, isValidPinCode };

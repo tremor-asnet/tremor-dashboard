@@ -5,4 +5,5 @@ export interface User {
   password: string;
   remember: boolean;
   termsAndConditions: boolean;
+  pinCode?: number;
 }

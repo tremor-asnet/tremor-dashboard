@@ -1,4 +1,4 @@
-import { render, queryAllByAttribute } from "@testing-library/react";
+import { render, queryAllByAttribute, fireEvent } from "@testing-library/react";
 
 // Constants
 import { TYPE_PRICE } from "@/constants";
@@ -29,5 +29,24 @@ describe("SelectField Component", () => {
       <SelectField label="Currency" options={TYPE_PRICE} value="4" />,
     );
     expect(getAllByText("GBP")).toBeTruthy();
+  });
+
+  it("should call onChange handler with selected value", () => {
+    const onChangeMock = jest.fn(); // Mock the onChange handler
+
+    const { getByText } = render(
+      <SelectField
+        label="Test Select"
+        options={TYPE_PRICE}
+        onChange={onChangeMock}
+        name="testSelect"
+      />,
+    );
+
+    fireEvent.click(getByText("Select..."));
+    fireEvent.click(getByText(TYPE_PRICE[2].option));
+
+    expect(onChangeMock).toHaveBeenCalledTimes(1);
+    expect(onChangeMock).toHaveBeenCalledWith(TYPE_PRICE[2].value);
   });
 });

@@ -35,7 +35,7 @@ exports[`Testing profile info component Should match snapshot 1`] = `
             data-testid="profile-info-lg"
           >
             <p
-              class="text-tremor-title text-tremor-content-strong font-semibold text-xl dark:text-dark-primary"
+              class="text-tremor-title text-tremor-content-emphasis font-semibold text-xl dark:text-dark-primary"
             >
               Richard Davis
             </p>
@@ -80,7 +80,7 @@ exports[`Testing profile info component Should match snapshot 1`] = `
           data-testid="profile-info-lg"
         >
           <p
-            class="text-tremor-title text-tremor-content-strong font-semibold text-xl dark:text-dark-primary"
+            class="text-tremor-title text-tremor-content-emphasis font-semibold text-xl dark:text-dark-primary"
           >
             Richard Davis
           </p>

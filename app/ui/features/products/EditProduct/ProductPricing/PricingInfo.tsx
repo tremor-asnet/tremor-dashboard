@@ -9,14 +9,12 @@ import { Text, Flex, MultiSelect, MultiSelectItem } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Types
-import { OptionType } from "@/types";
+import { NewPricing, OptionType } from "@/types";
 
 // Constants
 import {
   TYPE_PRICE,
   TAGS_PRICE,
-  DECIMAL_REGEX,
-  NUMBER_REGEX,
   MESSAGES_ERROR,
   EXCEPT_KEYS,
 } from "@/constants";
@@ -28,7 +26,7 @@ import "@/styles/form.css";
 import useFocusFieldError from "@/hooks/useFocusFieldError";
 
 const PricingInfo = () => {
-  const { control, formState } = useFormContext();
+  const { control, formState } = useFormContext<NewPricing>();
 
   useFocusFieldError(formState);
 
@@ -49,7 +47,10 @@ const PricingInfo = () => {
                 control={control}
                 rules={{
                   required: MESSAGES_ERROR.FIELD_REQUIRED,
-                  pattern: { value: DECIMAL_REGEX, message: "Invalid price" },
+                  min: {
+                    value: 0,
+                    message: MESSAGES_ERROR.NEGATIVE_NUMBER,
+                  },
                 }}
                 render={({ field, formState: { errors } }) => {
                   const priceErrorMessage = errors.price?.message || "";
@@ -73,7 +74,7 @@ const PricingInfo = () => {
                 name="currency"
                 control={control}
                 render={({ field: { value, onChange } }) => {
-                  const convertedValue = value.toString();
+                  const convertedValue = value?.toString();
                   return (
                     <div className="mx-6 w-full md:max-w-[30%] mb-3 md:mb-0 py-6">
                       <SelectField
@@ -87,12 +88,14 @@ const PricingInfo = () => {
                   );
                 }}
               />
+
               <Controller
                 control={control}
                 rules={{
-                  pattern: {
-                    value: NUMBER_REGEX,
-                    message: "Invalid SKU number",
+                  required: MESSAGES_ERROR.FIELD_REQUIRED,
+                  min: {
+                    value: 0,
+                    message: MESSAGES_ERROR.NEGATIVE_NUMBER,
                   },
                 }}
                 render={({ field, formState: { errors } }) => {
@@ -103,6 +106,7 @@ const PricingInfo = () => {
                       <InputField
                         id="edit-sku"
                         label="SKU"
+                        type="number"
                         errorMessage={skuErrorMessage}
                         {...field}
                       />

@@ -122,3 +122,5 @@ export const enum VARIANT_BUTTON {
 }
 
 export const NO_IMAGE = "No Image";
+
+export const RESULT_NOT_FOUND = "Result Not Found";

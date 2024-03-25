@@ -14,10 +14,10 @@ exports[`Invoices Testing should match snapshot 1`] = `
         Invoices
       </h3>
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide"
+        class="tremor-Button-root shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input text-sm bg-tremor-brand dark:bg-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide"
       >
         <span
-          class="tremor-Button-text text-sm whitespace-nowrap"
+          class="tremor-Button-text text-tremor-default whitespace-nowrap"
         >
           <p
             class="text-tremor-default dark:text-dark-tremor-content text-xs text-primary"

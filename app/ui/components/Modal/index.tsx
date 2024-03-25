@@ -1,6 +1,6 @@
 "use client";
 
-import { ElementRef, ReactNode, useRef, useState } from "react";
+import { ElementRef, ReactNode, useEffect, useRef, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
 // Tremor
@@ -9,7 +9,7 @@ import { Button, Flex, Dialog, DialogPanel } from "@tremor/react";
 // Tailwind
 import { twMerge } from "tailwind-merge";
 
-interface IModal {
+export interface IModal {
   title: string;
   children: ReactNode;
   open?: boolean;
@@ -19,8 +19,8 @@ interface IModal {
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
   onClose?: () => void;
-  onPrimaryBtn?: () => boolean;
-  onSecondaryBtn?: () => boolean;
+  onClickPrimaryBtn?: () => void | Promise<void>;
+  onClickSecondaryBtn?: () => void | Promise<void>;
   primaryBtnDisabled?: boolean;
   secondaryBtnDisabled?: boolean;
 }
@@ -36,12 +36,16 @@ export default function Modal({
   btnSecondaryLabel = "Done",
   primaryBtnDisabled,
   secondaryBtnDisabled,
-  onPrimaryBtn,
-  onSecondaryBtn,
+  onClickPrimaryBtn,
+  onClickSecondaryBtn,
   onClose,
 }: Readonly<IModal>) {
   const [isOpen, setIsOpen] = useState(open);
   const dialogRef = useRef<ElementRef<"dialog">>(null);
+
+  useEffect(() => {
+    setIsOpen(open);
+  }, [open]);
 
   const handleClose = () => {
     dialogRef.current?.close();
@@ -49,12 +53,12 @@ export default function Modal({
     onClose?.();
   };
 
-  const handlePrimary = () => {
-    onPrimaryBtn?.() && handleClose();
+  const handlePrimary = async () => {
+    await onClickPrimaryBtn?.();
   };
 
-  const handleSecondary = () => {
-    onSecondaryBtn?.() && handleClose();
+  const handleSecondary = async () => {
+    await onClickSecondaryBtn?.();
   };
 
   return (
@@ -82,7 +86,7 @@ export default function Modal({
         {children}
 
         <Flex className="gap-5">
-          {onPrimaryBtn && (
+          {onClickPrimaryBtn && (
             <Button
               onClick={handlePrimary}
               className={twMerge(
@@ -93,7 +97,7 @@ export default function Modal({
             </Button>
           )}
 
-          {onSecondaryBtn && (
+          {onClickSecondaryBtn && (
             <Button
               onClick={handleSecondary}
               className={twMerge(

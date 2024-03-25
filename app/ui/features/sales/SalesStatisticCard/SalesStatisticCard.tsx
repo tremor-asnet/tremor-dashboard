@@ -4,7 +4,8 @@
 import { useState, RefObject } from "react";
 
 //Components
-import { Card, Text, Flex, Button } from "@tremor/react";
+import { Card, Text, Flex } from "@tremor/react";
+import { Button } from "@/ui/components";
 
 //Types
 import { SalesStatisticData } from "@/types";
@@ -124,8 +125,9 @@ const SalesStatisticCard = ({
             {ITEM_ACTION_SALES_DATE.map(item => (
               <Flex key={item.key}>
                 <Button
-                  className="w-40 justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md px-4 py-1.5"
-                  variant={VARIANT_BUTTON.LIGHT}
+                  additionalClass="w-40 px-4 py-1.5"
+                  variant={VARIANT_BUTTON.LIGHT_CARD}
+                  variantTremor={VARIANT_BUTTON.LIGHT}
                   onClick={() => handleSelectSalesDate(item.label)}>
                   <Text className="font-normal text-sm text-purple dark:text-lighter hover:text-primary dark:hover:text-white leading-[21px] tracking-[0.13px]">
                     {item.label}

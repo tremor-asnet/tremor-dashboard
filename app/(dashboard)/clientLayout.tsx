@@ -3,10 +3,14 @@
 // Libs
 import { ReactNode, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
 import { LoadingIndicator, SideBar, DashboardHeader } from "@/ui/components";
+
+// Features
+import PinCode from "@/ui/features/pin-code";
 
 // Constants
 import { ROUTES } from "@/constants";
@@ -18,6 +22,7 @@ interface DashboardLayoutProp {
   profileData: {
     avatar: string;
     name: string;
+    pinCode?: number;
   };
   children: ReactNode;
 }
@@ -35,7 +40,7 @@ export default function DashboardLayout({
     setIsCollapseSidebar(isCollapseSidebar => !isCollapseSidebar);
   };
 
-  const { avatar, name } = profileData;
+  const { avatar, name, pinCode } = profileData;
 
   const signOutAction = async () => {
     setIsPending(true);
@@ -71,6 +76,7 @@ export default function DashboardLayout({
       {isPending && (
         <LoadingIndicator width={10} height={10} isFullWidth={true} />
       )}
+      <PinCode pinCode={pinCode} />
     </>
   );
 }

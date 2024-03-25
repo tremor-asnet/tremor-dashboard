@@ -2,11 +2,11 @@
 
 //Libs
 import { useState, RefObject } from "react";
-import { Card, Text, Flex, Title, Button } from "@tremor/react";
+import { Card, Text, Flex, Title } from "@tremor/react";
 import { FaEllipsisV } from "react-icons/fa";
 
 //Components
-import { CustomImage, Avatar } from "@/ui/components";
+import { CustomImage, Avatar, Button } from "@/ui/components";
 
 //Types
 import { Project, AvatarCard } from "@/types";
@@ -117,8 +117,9 @@ const ProjectCard = ({
                     <Flex key={item.key}>
                       <Button
                         data-testid={item.key}
-                        className="w-full justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md py-[6px]"
-                        variant={VARIANT_BUTTON.LIGHT}
+                        additionalClass="w-full py-[6px]"
+                        variant={VARIANT_BUTTON.LIGHT_CARD}
+                        variantTremor={VARIANT_BUTTON.LIGHT}
                         onClick={handleItemActionProject}>
                         <Text className="px-3 font-normal text-sm text-secondary dark:text-lighter hover:text-primary dark:hover:text-white">
                           {item.label}

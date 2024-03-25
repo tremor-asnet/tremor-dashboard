@@ -1,38 +1,37 @@
 "use client";
 
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
+import React, { memo, useCallback, useState } from "react";
 
 import { PinCode } from "./PinCode";
+import Modal, { IModal } from "../Modal";
 
 import { isValidPinCode } from "@/utils";
 
-const Modal = dynamic(() => import("@/ui/components/Modal"), { ssr: false });
+import { PIN_CODE_LENGTH } from "@/constants";
 
-interface IPinCodeModal {
-  onSubmit?: (codes: string) => boolean;
+interface IPinCodeModal extends Omit<IModal, "children"> {
+  onSubmit: (codes: number) => void | Promise<void>;
+  open: boolean;
+  onClose?: () => void;
 }
 
-const PinCodeModal = ({ onSubmit }: IPinCodeModal) => {
+const PinCodeModal = ({ onSubmit, ...others }: IPinCodeModal) => {
   const [codes, setCodes] = useState("");
 
-  const handleSubmit = () => {
-    const isSuccess = !!onSubmit?.(codes);
-
-    !isSuccess && setCodes("");
-
-    return isSuccess;
-  };
+  const handleSubmit = useCallback(async () => {
+    await onSubmit(parseFloat(codes));
+    setCodes("");
+  }, [codes, onSubmit]);
 
   return (
     <Modal
-      title="Please enter your PIN code"
       additionalClasses="md:min-w-[390px] w-[calc(100%-8px)] md:max-w-[390px]"
-      primaryBtnDisabled={!isValidPinCode(codes, 4)}
-      onPrimaryBtn={handleSubmit}>
-      <PinCode length={4} onChange={setCodes} value={codes} />
+      primaryBtnDisabled={!isValidPinCode(codes, PIN_CODE_LENGTH)}
+      onClickPrimaryBtn={handleSubmit}
+      {...others}>
+      <PinCode length={PIN_CODE_LENGTH} onChange={setCodes} value={codes} />
     </Modal>
   );
 };
 
-export default PinCodeModal;
+export default memo(PinCodeModal);

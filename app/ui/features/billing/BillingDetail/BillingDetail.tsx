@@ -11,12 +11,13 @@ interface BillingDataProps {
     expire: string;
     cardNumber: string;
     holderFullName: string;
+    cardLast4Digit: string;
   };
   aggregation: SalaryCardData[];
 }
 
 const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
-  const { cardNumber, holderFullName, expire } = cardInfo;
+  const { cardNumber, holderFullName, expire, cardLast4Digit } = cardInfo;
   // @ts-ignore: Object is possibly 'null'.
   const billingCardNumber = cardNumber.match(/.{1,4}/g).join(" ");
 
@@ -27,6 +28,7 @@ const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
           cardNumber={billingCardNumber}
           holderFullName={holderFullName}
           expire={expire}
+          cardLast4Digit={cardLast4Digit}
         />
       </div>
       <Flex

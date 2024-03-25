@@ -19,12 +19,14 @@ import { OptionType } from "@/types";
 import { VARIANT_BUTTON } from "@/constants";
 
 interface ProductFilterProps {
+  field?: string;
   value?: string;
   title: string;
   listOption: OptionType[];
 }
 
-const Filter = ({ value, title, listOption }: ProductFilterProps) => {
+// Currently, It only support one filed
+const Filter = ({ field, value, title, listOption }: ProductFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
@@ -39,7 +41,7 @@ const Filter = ({ value, title, listOption }: ProductFilterProps) => {
 
   const pathName = usePathname();
 
-  let currentOption = "filter";
+  let currentOption = field ?? "";
 
   const currentStatus = newParams.get(currentOption);
 
@@ -56,7 +58,7 @@ const Filter = ({ value, title, listOption }: ProductFilterProps) => {
       setFilterSelected(option);
 
       if (currentStatus !== value) {
-        newParams.set(currentOption, value);
+        newParams.set(currentOption, option?.toLowerCase());
         newParams.set("page", "1");
       }
 

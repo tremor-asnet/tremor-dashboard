@@ -10,21 +10,21 @@ import { isValidPinCode } from "@/utils";
 import { PIN_CODE_LENGTH } from "@/constants";
 
 interface IPinCodeModal extends Omit<IModal, "children"> {
-  onSubmit: (codes: number) => boolean | Promise<boolean>;
+  onSubmit: (codes: number) => void | Promise<void>;
+  open: boolean;
+  onClose?: () => void;
 }
 
-const PinCodeModal = ({ onSubmit, title, ...others }: IPinCodeModal) => {
+const PinCodeModal = ({ onSubmit, ...others }: IPinCodeModal) => {
   const [codes, setCodes] = useState("");
 
   const handleSubmit = useCallback(async () => {
-    const isSuccess = !!(await onSubmit(parseFloat(codes)));
+    await onSubmit(parseFloat(codes));
     setCodes("");
-    return isSuccess;
   }, [codes, onSubmit]);
 
   return (
     <Modal
-      title={title}
       additionalClasses="md:min-w-[390px] w-[calc(100%-8px)] md:max-w-[390px]"
       primaryBtnDisabled={!isValidPinCode(codes, PIN_CODE_LENGTH)}
       onPrimaryBtn={handleSubmit}

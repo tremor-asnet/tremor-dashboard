@@ -16,6 +16,7 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
 
 export default function PinCode({ pinCode }: { pinCode?: number }) {
   const {
+    isConfirm,
     pinCode: currentPinCode,
     isShowPinCodeModal,
     confirmPinCode,
@@ -40,9 +41,9 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
   const handleSubmit = useCallback(
     async (code: number) => {
       if (pinCode) {
-        const isSuccess = confirmPinCode(code);
+        confirmPinCode(code);
 
-        isSuccess &&
+        isConfirm &&
           openToast({
             toastType: {
               icon: <FaCheckCircle />,
@@ -51,23 +52,24 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
             },
           });
 
-        return isSuccess;
+        return;
       }
 
       const { isSuccess } = await updatePinCode(code);
 
-      !!isSuccess &&
-        openToast({
-          toastType: {
-            icon: <FaCheckCircle />,
-            message: PIN_CODE_MESSAGES.SETUP_SUCCESS,
-            color: "green",
-          },
-        });
+      isSuccess && setPinCode(code);
 
-      return !!isSuccess;
+      const { SETUP_FAILED, SETUP_SUCCESS } = PIN_CODE_MESSAGES;
+
+      openToast({
+        toastType: {
+          icon: <FaCheckCircle />,
+          message: isSuccess ? SETUP_SUCCESS : SETUP_FAILED,
+          color: isSuccess ? "green" : "red",
+        },
+      });
     },
-    [confirmPinCode, openToast, pinCode],
+    [confirmPinCode, isConfirm, openToast, pinCode, setPinCode],
   );
 
   const modalProps = useMemo(() => {
@@ -90,6 +92,7 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
     <PinCodeModal
       onSubmit={handleSubmit}
       onClose={hidePinCodeModal}
+      open={!isConfirm}
       {...modalProps}
     />
   );

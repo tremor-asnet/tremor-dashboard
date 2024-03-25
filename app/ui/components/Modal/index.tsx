@@ -1,6 +1,6 @@
 "use client";
 
-import { ElementRef, ReactNode, useRef, useState } from "react";
+import { ElementRef, ReactNode, useEffect, useRef, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
 // Tremor
@@ -19,8 +19,8 @@ export interface IModal {
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
   onClose?: () => void;
-  onPrimaryBtn?: () => boolean | Promise<boolean>;
-  onSecondaryBtn?: () => boolean | Promise<boolean>;
+  onPrimaryBtn?: () => void | Promise<void>;
+  onSecondaryBtn?: () => void | Promise<void>;
   primaryBtnDisabled?: boolean;
   secondaryBtnDisabled?: boolean;
 }
@@ -43,6 +43,10 @@ export default function Modal({
   const [isOpen, setIsOpen] = useState(open);
   const dialogRef = useRef<ElementRef<"dialog">>(null);
 
+  useEffect(() => {
+    setIsOpen(open);
+  }, [open]);
+
   const handleClose = () => {
     dialogRef.current?.close();
     setIsOpen(false);
@@ -50,11 +54,11 @@ export default function Modal({
   };
 
   const handlePrimary = async () => {
-    (await onPrimaryBtn?.()) && handleClose();
+    await onPrimaryBtn?.();
   };
 
   const handleSecondary = async () => {
-    (await onSecondaryBtn?.()) && handleClose();
+    await onSecondaryBtn?.();
   };
 
   return (

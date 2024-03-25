@@ -8,6 +8,7 @@ const EditProductForm = dynamic(
 
 // Services
 import { getProductDetails } from "@/services";
+import { Suspense } from "react";
 
 const EditProduct = async ({ params }: { params: { id: number } }) => {
   const productData = await getProductDetails(params.id);
@@ -25,7 +26,9 @@ const EditProduct = async ({ params }: { params: { id: number } }) => {
           </Text>
         </div>
       </Flex>
-      <EditProductForm id={params.id} productData={productData} />
+      <Suspense fallback={<>Loading...</>}>
+        <EditProductForm id={params.id} productData={productData} />
+      </Suspense>
     </>
   );
 };

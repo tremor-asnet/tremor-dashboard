@@ -1,10 +1,16 @@
-//Libs
-import { MdAccountBalance } from "react-icons/md";
+"use client";
+
+import { useState } from "react";
 
 //Components
 import { GrPaypal } from "react-icons/gr";
-import { Card, Text, Flex } from "@tremor/react";
+import { Card, Text, Flex, Button, Divider } from "@tremor/react";
 import { IconBox } from "@/ui/components";
+
+// Icons
+import { MdAccountBalance } from "react-icons/md";
+import { FaRegEye } from "react-icons/fa6";
+import { FaRegEyeSlash } from "react-icons/fa6";
 
 // Helpers
 import { moneyFormat } from "@/helpers";
@@ -24,6 +30,7 @@ const SalaryCard = ({
   value,
   currency = CURRENCY.DOLLAR,
 }: SalaryCardData): JSX.Element => {
+  const [isShowAmount, setIsShowAmount] = useState(false);
   const isSalary = type === AGGREGATION_TYPE.SALARY;
   const description = isSalary
     ? AGGREGATION_DESCRIPTION.SALARY
@@ -33,6 +40,10 @@ const SalaryCard = ({
   ) : (
     <GrPaypal color="white" size="18px" />
   );
+
+  const toggleShowHide = () => {
+    setIsShowAmount(!isShowAmount);
+  };
 
   return (
     <div className="w-full font-primary antialiased items-center justify-between">
@@ -49,19 +60,33 @@ const SalaryCard = ({
               </Text>
             </Flex>
           </Flex>
-          <div className="h-px bg-[linear-gradient(to_right,rgba(52,71,103,0),rgba(52,71,103,0.4),rgba(52,71,103,0))] opacity-25 dark:opacity-95 my-4" />
-          <Flex justifyContent="center" className="mt-5 mb-1">
-            {isSalary && (
-              <Text className="text-primary text-xl h-[30px] pr-0.5 dark:text-lighter font-semibold">
-                +
+          <Divider className="opacity-25 dark:opacity-15 my-4" />
+          <Flex flexDirection="col" className="gap-4">
+            <Button
+              variant="light"
+              icon={isShowAmount ? FaRegEyeSlash : FaRegEye}
+              onClick={toggleShowHide}
+              className="text-primary hover:text-primary dark:text-lighter dark:hover:text-lighter"
+            />
+            {isShowAmount ? (
+              <Flex justifyContent="center">
+                {isSalary && (
+                  <Text className="text-primary text-xl dark:text-lighter font-semibold">
+                    +
+                  </Text>
+                )}
+                <Text className="text-primary text-xl dark:text-lighter font-semibold">
+                  {moneyFormat({
+                    value: value,
+                    currency: currency,
+                  })}
+                </Text>
+              </Flex>
+            ) : (
+              <Text className="text-primary text-xl dark:text-lighter font-semibold">
+                *****
               </Text>
             )}
-            <Text className="text-primary text-xl dark:text-lighter font-semibold">
-              {moneyFormat({
-                value: value,
-                currency: currency,
-              })}
-            </Text>
           </Flex>
         </Card>
       </div>

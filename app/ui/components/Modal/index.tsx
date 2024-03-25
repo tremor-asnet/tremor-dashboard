@@ -1,19 +1,20 @@
 "use client";
 
-import { createPortal } from "react-dom";
-import React, { ElementRef, ReactNode, useRef, useState } from "react";
-
+import { ElementRef, ReactNode, useRef, useState } from "react";
 import { GrClose } from "react-icons/gr";
-import { Button, Flex } from "@tremor/react";
 
+// Tremor
+import { Button, Flex, Dialog, DialogPanel } from "@tremor/react";
+
+// Tailwind
 import { twMerge } from "tailwind-merge";
 
 export interface IModal {
   title: string;
   children: ReactNode;
-  additionalClasses?: string;
-  showCloseIconBtn?: boolean;
   open?: boolean;
+  showCloseIconBtn?: boolean;
+  additionalClasses?: string;
   btnCloseLabel?: string;
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
@@ -27,9 +28,9 @@ export interface IModal {
 export default function Modal({
   title,
   children,
-  additionalClasses = "",
   open = true,
   showCloseIconBtn = false,
+  additionalClasses = "",
   btnCloseLabel = "Cancel",
   btnPrimaryLabel = "Submit",
   btnSecondaryLabel = "Done",
@@ -38,13 +39,13 @@ export default function Modal({
   onPrimaryBtn,
   onSecondaryBtn,
   onClose,
-}: IModal) {
-  const [isOpen, setOpen] = useState(open);
+}: Readonly<IModal>) {
+  const [isOpen, setIsOpen] = useState(open);
   const dialogRef = useRef<ElementRef<"dialog">>(null);
 
   const handleClose = () => {
     dialogRef.current?.close();
-    setOpen(false);
+    setIsOpen(false);
     onClose?.();
   };
 
@@ -56,19 +57,9 @@ export default function Modal({
     (await onSecondaryBtn?.()) && handleClose();
   };
 
-  if (!isOpen) {
-    return null;
-  }
-
-  return createPortal(
-    <Flex
-      className="absolute inset-0 z-[1000] bg-backdrop"
-      justifyContent="center"
-      alignItems="center">
-      <dialog
-        ref={dialogRef}
-        onClose={handleClose}
-        open={isOpen}
+  return (
+    <Dialog open={isOpen} onClose={handleClose}>
+      <DialogPanel
         className={twMerge(
           "py-5 px-4 rounded-md border-none outline-none flex flex-col gap-5 sm:min-w-[80%] md:min-w-[500px] bg-tremor-primary dark:bg-dark-tremor-primary",
           additionalClasses,
@@ -76,6 +67,7 @@ export default function Modal({
         <h2 className="font-bold text-2xl text-center text-tertiary dark:text-dark-romance">
           {title}
         </h2>
+
         {showCloseIconBtn && (
           <Button
             type="button"
@@ -86,36 +78,41 @@ export default function Modal({
             <GrClose className="h-5 w-5 shrink-0 text-xl text-tertiary dark:text-white" />
           </Button>
         )}
+
         {children}
+
         <Flex className="gap-5">
           {onPrimaryBtn && (
             <Button
               onClick={handlePrimary}
-              className="bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1"
+              className={twMerge(
+                "bg-green-500 dark:bg-green-500 hover:bg-green-500 dark:hover:bg-green-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
+              )}
               disabled={primaryBtnDisabled}>
               {btnPrimaryLabel}
             </Button>
           )}
+
           {onSecondaryBtn && (
             <Button
               onClick={handleSecondary}
               className={twMerge(
                 "text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
-              )}
-              disabled={secondaryBtnDisabled}>
+              )}>
               {btnSecondaryLabel}
             </Button>
           )}
+
           <Button
             onClick={handleClose}
             className={twMerge(
               "bg-orange-500 dark:bg-orange-500 hover:bg-orange-500 dark:hover:bg-orange-500 text-white dark:text-white outline-none border-none px-6 py-4 text-xl font-bold flex-1",
-            )}>
+            )}
+            disabled={secondaryBtnDisabled}>
             {btnCloseLabel}
           </Button>
         </Flex>
-      </dialog>
-    </Flex>,
-    document.getElementById("modal-root")!,
+      </DialogPanel>
+    </Dialog>
   );
 }

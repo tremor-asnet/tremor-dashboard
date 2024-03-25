@@ -2,6 +2,9 @@
 
 import { ChangeEvent, useRef, useState } from "react";
 
+// Themes
+import { spacing } from "@/themes";
+
 // Components
 import { Flex, TextInput } from "@tremor/react";
 import { MdClose } from "react-icons/md";
@@ -39,6 +42,9 @@ const InputSearch = ({ value, onChange, onReset }: InputSearchProps) => {
         onChange={handleSearch}
         placeholder="Search..."
         value={searchValue}
+        style={{
+          paddingRight: spacing["4"],
+        }}
       />
       {(hasValueInputSearch || searchValue) && (
         <MdClose

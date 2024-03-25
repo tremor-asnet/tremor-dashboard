@@ -50,7 +50,7 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       title: "Is Available",
       customNode: (_, { quantity }) => (
         <Text className="text-xs dark:text-lighter font-semibold">
-          {quantity ? "Yes" : "No"}
+          {quantity && quantity > 0 ? "Yes" : "No"}
         </Text>
       ),
     },

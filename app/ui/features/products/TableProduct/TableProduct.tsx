@@ -52,7 +52,7 @@ const TableProduct = ({ products, total, currentPage }: TableProductProps) => {
       title: "Is Available",
       customNode: (_, { quantity }) => (
         <Text className="text-xs dark:text-lighter font-semibold">
-          {quantity ? "Yes" : "No"}
+          {quantity && quantity > 0 ? "Yes" : "No"}
         </Text>
       ),
       isSortable: true,

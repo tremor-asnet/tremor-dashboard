@@ -114,4 +114,5 @@ export const enum VARIANT_BUTTON {
   PRIMARY = "primary",
   PRIMARY_CENTER = "primaryCenter",
   SURFACE = "surface",
+  DARK = "dark",
 }

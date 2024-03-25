@@ -1,9 +1,9 @@
 "use client";
 
-import { Button, Flex, Text } from "@tremor/react";
+import { Flex, Text } from "@tremor/react";
 
 // Components
-import { Avatar } from "@/ui/components";
+import { Avatar, Button } from "@/ui/components";
 
 interface UserConversationHistoryProps {
   avatar: string;
@@ -38,7 +38,7 @@ const UserConversationHistory = ({
         </Text>
       </div>
     </Flex>
-    <Button className="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none] box-shadow-transparent">
+    <Button additionalClass="min-w-[64px] m-0 border-0 hover:bg-[none] bg-transparent dark:bg-transparent dark:hover:bg-[none] box-shadow-transparent">
       <Text className="text-primary text-xs text-center font-bold uppercase leading-[17px] tracking-wide">
         Reply
       </Text>

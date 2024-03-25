@@ -4,8 +4,11 @@ import "@testing-library/jest-dom";
 // Components
 import InvoiceBody from "./InvoiceBody";
 
-// Constants
+// Mocks
 import { INVOICE_DATA } from "@/mocks";
+
+// Constants
+import { RESULT_NOT_FOUND } from "@/constants";
 
 jest.mock("next/navigation", () => ({
   usePathname: jest.fn().mockReturnValue("/mocked-path"),
@@ -31,6 +34,6 @@ describe("InvoiceBody Testing", () => {
   it("renders invoice body with default data show text Result Not Found", () => {
     const { getAllByText } = render(<InvoiceBody />);
 
-    expect(getAllByText("Result Not Found")).toHaveLength(1);
+    expect(getAllByText(RESULT_NOT_FOUND)).toHaveLength(1);
   });
 });

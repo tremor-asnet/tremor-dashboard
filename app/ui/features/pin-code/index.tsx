@@ -15,13 +15,8 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
 });
 
 export default function PinCode({ pinCode }: { pinCode?: number }) {
-  const {
-    isConfirm,
-    isShowPinCodeModal,
-    confirmPinCode,
-    hidePinCodeModal,
-    setPinCode,
-  } = usePinCode();
+  const { isShowPinCodeModal, confirmPinCode, hidePinCodeModal, setPinCode } =
+    usePinCode();
 
   const { openToast } = useToast();
 
@@ -32,9 +27,9 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
   const handleSubmit = useCallback(
     async (code: number) => {
       if (pinCode) {
-        confirmPinCode(code);
+        const isMatch = confirmPinCode(code);
 
-        isConfirm &&
+        isMatch &&
           openToast({
             toastType: {
               icon: <FaCheckCircle />,
@@ -60,16 +55,16 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
         },
       });
     },
-    [confirmPinCode, isConfirm, openToast, pinCode, setPinCode],
+    [confirmPinCode, openToast, pinCode, setPinCode],
   );
 
   const modalProps = pinCode
-    ? {
+    ? { title: "Please enter your PIN code" }
+    : {
         title: "Please set the PIN code to your account",
         btnCloseLabel: "Skip",
         btnPrimaryLabel: "Set",
-      }
-    : { title: "Please enter your PIN code" };
+      };
 
   if (!isShowPinCodeModal) {
     return null;

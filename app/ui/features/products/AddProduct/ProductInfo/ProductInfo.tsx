@@ -12,10 +12,10 @@ import { InputField, SelectField } from "@/ui/components";
 // Constants
 import {
   CATEGORY_PRODUCT,
+  EXCEPT_KEYS,
   MESSAGES_ERROR,
   PRODUCT_NAME_REGEX,
 } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
 
 // Types
 import { NewInfo } from "@/types";

@@ -21,10 +21,10 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
           >
             <button
               aria-label="Which Ads Perform Better Button"
-              class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
             >
               <span
-                class="tremor-Button-text text-tremor-default whitespace-nowrap"
+                class="tremor-Button-text text-sm whitespace-nowrap"
               >
                 <svg
                   class="text-xs text-secondary"
@@ -499,7 +499,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
                         class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                       >
                         <svg
-                          class="flex-none h-2 w-2 mr-1.5 text-indigo-500 opacity-100"
+                          class="flex-none text-indigo-500 h-2 w-2 mr-1.5 opacity-100"
                           fill="currentColor"
                           viewBox="0 0 8 8"
                         >
@@ -519,7 +519,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
                         class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                       >
                         <svg
-                          class="flex-none h-2 w-2 mr-1.5 text-neutral-500 opacity-100"
+                          class="flex-none text-neutral-500 h-2 w-2 mr-1.5 opacity-100"
                           fill="currentColor"
                           viewBox="0 0 8 8"
                         >
@@ -575,10 +575,10 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
         >
           <button
             aria-label="Which Ads Perform Better Button"
-            class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
+            class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm dark:text-dark-tremor-brand bg-transparent dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
           >
             <span
-              class="tremor-Button-text text-tremor-default whitespace-nowrap"
+              class="tremor-Button-text text-sm whitespace-nowrap"
             >
               <svg
                 class="text-xs text-secondary"
@@ -1053,7 +1053,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
                       class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                     >
                       <svg
-                        class="flex-none h-2 w-2 mr-1.5 text-indigo-500 opacity-100"
+                        class="flex-none text-indigo-500 h-2 w-2 mr-1.5 opacity-100"
                         fill="currentColor"
                         viewBox="0 0 8 8"
                       >
@@ -1073,7 +1073,7 @@ exports[`Testing SalesRevenueChart component Should match snapshot 1`] = `
                       class="tremor-Legend-legendItem group inline-flex items-center px-2 py-0.5 rounded-tremor-small transition whitespace-nowrap cursor-pointer text-tremor-content hover:bg-tremor-background-subtle dark:text-dark-tremor-content dark:hover:bg-dark-tremor-background-subtle"
                     >
                       <svg
-                        class="flex-none h-2 w-2 mr-1.5 text-neutral-500 opacity-100"
+                        class="flex-none text-neutral-500 h-2 w-2 mr-1.5 opacity-100"
                         fill="currentColor"
                         viewBox="0 0 8 8"
                       >

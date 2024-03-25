@@ -12,8 +12,12 @@ import { InputField, SelectField } from "@/ui/components";
 import { NewPricing, OptionType } from "@/types";
 
 // Constants
-import { TYPE_PRICE, TAGS_PRICE, MESSAGES_ERROR } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
+import {
+  TYPE_PRICE,
+  TAGS_PRICE,
+  MESSAGES_ERROR,
+  EXCEPT_KEYS,
+} from "@/constants";
 
 // Styles
 import "@/styles/form.css";

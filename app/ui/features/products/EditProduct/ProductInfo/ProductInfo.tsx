@@ -16,8 +16,8 @@ import {
   MESSAGES_ERROR,
   CATEGORY_PRODUCT,
   PRODUCT_NAME_REGEX,
+  EXCEPT_KEYS,
 } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
 import "@/styles/form.css";

@@ -120,3 +120,5 @@ export const enum VARIANT_BUTTON {
   SURFACE = "surface",
   DARK = "dark",
 }
+
+export const NO_IMAGE = "No Image";

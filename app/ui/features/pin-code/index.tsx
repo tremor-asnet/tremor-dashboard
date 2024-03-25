@@ -6,8 +6,10 @@ import React, { useCallback, useEffect } from "react";
 import { usePinCode } from "@/context/pincode";
 
 import { updatePinCode } from "@/services";
-import { useToast } from "@/hooks";
 import { FaCheckCircle } from "react-icons/fa";
+
+import { useToast } from "@/hooks";
+
 import { PIN_CODE_MESSAGES } from "@/constants";
 
 const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {

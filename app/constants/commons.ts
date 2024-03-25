@@ -116,3 +116,7 @@ export const enum VARIANT_BUTTON {
   PRIMARY_CENTER = "primaryCenter",
   SURFACE = "surface",
 }
+
+export const EMPTY_IMAGE = {
+  NO_IMAGE: "No Image",
+};

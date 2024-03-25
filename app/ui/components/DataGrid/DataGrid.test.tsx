@@ -25,37 +25,36 @@ const columns: ColumnType<Order>[] = [
   {
     key: "id",
     title: "Id",
-    sortable: false,
   },
   {
     key: "createdAt",
     title: "Date",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "status",
     title: "Status",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "customerName",
     title: "Customer",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "productName",
     title: "Products",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "count",
     title: "quantity",
-    sortable: true,
+    isSortable: true,
   },
   {
     key: "revenue",
     title: "Revenue",
-    sortable: true,
+    isSortable: true,
   },
 ];
 
@@ -94,7 +93,7 @@ describe("DataGrid", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("Calls handlePageChange correctly on page one button click", async () => {
+  it("Calls handlePageChange correctly on prev button click", async () => {
     const { container, rerender, getByTestId } = renderResult;
 
     fireEvent.click(getByTestId("next-page-button"));
@@ -105,6 +104,18 @@ describe("DataGrid", () => {
     fireEvent.click(getByTestId("prev-page-button"));
     await waitFor(() => {
       rerender(dataGridComponent);
+    });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("Calls handlePageChange correctly on page button click", async () => {
+    const { container, rerender, getByLabelText } = renderResult;
+
+    fireEvent.click(getByLabelText("Page button 2"));
+
+    await waitFor(() => {
+      rerender(<DataGrid {...mockProps} currentPageNumber={2} />);
     });
 
     expect(container).toMatchSnapshot();

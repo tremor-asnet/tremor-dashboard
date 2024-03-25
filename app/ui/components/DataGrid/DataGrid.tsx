@@ -3,23 +3,19 @@
 import { Card, Table, TableBody, TableCell, TableRow } from "@tremor/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-// Components
+// Hooks
+import { useEffect, useState, useTransition } from "react";
 
+// Types
+import { ColumnType } from "@/types";
+
+// Components
 import {
   DataGridBody,
   DataGridHeader,
   LoadingIndicator,
   Pagination,
 } from "@/ui/components";
-
-// Types
-import { ColumnType } from "@/types";
-
-// Hooks
-import { useEffect, useMemo, useState, useTransition } from "react";
-
-// Helpers
-import { useSortableTable } from "@/hooks/useSortableTable";
 
 interface DataTableProps<T> {
   data: T[];
@@ -29,7 +25,6 @@ interface DataTableProps<T> {
   hasPagination?: boolean;
   currentPageNumber?: number;
   total?: number;
-  defaultCurrentPage?: number;
   disableLoading?: boolean;
 }
 
@@ -40,8 +35,7 @@ const DataGrid = <T,>({
   className = "",
   hasPagination = true,
   total,
-  currentPageNumber,
-  defaultCurrentPage = 1,
+  currentPageNumber = 1,
   disableLoading = false,
 }: DataTableProps<T>) => {
   const searchParams = useSearchParams();
@@ -49,20 +43,20 @@ const DataGrid = <T,>({
   const { replace } = useRouter();
   const params = new URLSearchParams(searchParams);
 
-  const [currentPage, setCurrentPage] = useState(defaultCurrentPage);
+  const [currentPage, setCurrentPage] = useState(currentPageNumber);
 
   const [loading, setLoading] = useState(false);
-
-  const [tableData, handleSorting] = useSortableTable<T>(data);
 
   let [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     if (isPending) return;
-
     // THIS CODE WILL RUN AFTER THE SERVER ACTION
     setLoading(false);
-  }, [isPending]);
+
+    const page = params.get("page");
+    setCurrentPage(page ? parseInt(page) : currentPageNumber);
+  }, [isPending, params]);
 
   // Handle page in pagination changed
   const handlePageChange = (page: number) => {
@@ -80,30 +74,12 @@ const DataGrid = <T,>({
     setCurrentPage(page);
   };
 
-  const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * pageSize;
-    const lastPageIndex = firstPageIndex + pageSize;
-
-    // Check if tableData is an array before slicing
-    let dataSorted: T[] = [];
-    if (Array.isArray(tableData)) {
-      dataSorted = tableData.slice(firstPageIndex, lastPageIndex);
-    }
-
-    return dataSorted;
-  }, [currentPage, tableData, pageSize]);
-
   return (
     <Card
       className={`p-0 border-none ring-0 dark:bg-dark-tremor-primary overflow-x-auto ${className}`}>
       <div className="flex flex-col items-start justify-start my-2">
         <Table className="w-full">
-          <DataGridHeader
-            columns={columns}
-            handleSorting={
-              handleSorting as (sortField: string, sortOrder: string) => void
-            }
-          />
+          <DataGridHeader columns={columns} />
           {(loading || isPending) && !disableLoading ? (
             <TableBody>
               <TableRow>
@@ -119,12 +95,12 @@ const DataGrid = <T,>({
               </TableRow>
             </TableBody>
           ) : (
-            <DataGridBody columns={columns} data={currentTableData} />
+            <DataGridBody columns={columns} data={data} />
           )}
         </Table>
         {hasPagination && (
           <Pagination
-            currentPage={currentPageNumber!}
+            currentPage={currentPage}
             pageSize={pageSize}
             totalCount={total!}
             onPageChange={handlePageChange}

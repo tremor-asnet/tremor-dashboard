@@ -5,8 +5,7 @@ import "@testing-library/jest-dom";
 import PricingInfo from "./PricingInfo";
 
 // Constants
-import { EXCEPT_KEYS } from "@/constants/common";
-import { MESSAGES_ERROR } from "@/constants";
+import { MESSAGES_ERROR, EXCEPT_KEYS } from "@/constants";
 
 const mockControllerNonError = (name: string, rule: Object) => ({
   field: {

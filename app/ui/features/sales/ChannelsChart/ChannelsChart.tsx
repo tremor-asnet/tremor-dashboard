@@ -1,11 +1,11 @@
-import { DonutChart, Card, Flex, Text, Button } from "@tremor/react";
+import { DonutChart, Card, Flex, Text } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 
 //Components
-import { Popover } from "@/ui/components";
+import { Button, Popover } from "@/ui/components";
 
 // Constants
-import { CHANNELS_CHART_COLOR } from "@/constants";
+import { CHANNELS_CHART_COLOR, VARIANT_BUTTON } from "@/constants";
 
 //Helpers
 import { numberWithCommas } from "@/helpers";
@@ -44,8 +44,8 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             content="See traffic channels"
             className="text-center !bg-black !bottom-[-50px] rounded-md !text-white right-[-34px] md:right-[-55px] min-w-[140px] before:content-['▲'] before:absolute before:top-[-17px] before:left-[85px] md:before:left-[65px] before:text-[black]">
             <Button
-              className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
-              variant="secondary"
+              variant={VARIANT_BUTTON.SECONDARY}
+              variantTremor={VARIANT_BUTTON.SECONDARY}
               aria-label="Traffic Channels Button">
               <MdOutlinePriorityHigh className="text-xs text-secondary" />
             </Button>
@@ -96,7 +96,9 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
             </Text>
           </Flex>
           <Flex justifyContent="end" className="w-full md:w-2/3 mt-6 md:mt-4">
-            <Button className="uppercase text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white box-shadow-transparent">
+            <Button
+              variant={VARIANT_BUTTON.SECONDARY_SHADOW}
+              additionalClass="text-secondary sm:max-w-[117px] font-bold bg-body hover:bg-body border-transparent hover:border-transparent px-6 py-2.5 tracking-[0.35px] dark:hover:bg-brightGray dark:bg-white dark:text-brightGray dark:border-white dark:hover:border-white">
               <span className="text-xs text-grey tracking-wide">read more</span>
             </Button>
           </Flex>

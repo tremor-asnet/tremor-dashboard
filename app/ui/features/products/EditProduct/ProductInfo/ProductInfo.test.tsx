@@ -2,8 +2,7 @@ import { fireEvent, render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 // Constants
-import { EXCEPT_KEYS } from "@/constants/common";
-import { MESSAGES_ERROR } from "@/constants";
+import { MESSAGES_ERROR, EXCEPT_KEYS } from "@/constants";
 
 // Components
 import ProductInfo from "./ProductInfo";

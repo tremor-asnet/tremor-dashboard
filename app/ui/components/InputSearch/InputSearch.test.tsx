@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@testing-library/react";
+import { RenderResult, fireEvent, render } from "@testing-library/react";
 
 // Components
 import InputSearch from "./InputSearch";
@@ -13,19 +13,33 @@ jest.mock("next/navigation", () => ({
 }));
 
 describe("InputSearch component", () => {
+  const mockHandleChange = jest.fn();
+  const mockHandleReset = jest.fn();
+  let renderComponent: RenderResult;
+
+  beforeEach(() => {
+    renderComponent = render(
+      <InputSearch
+        value="query"
+        onChange={mockHandleChange}
+        onReset={mockHandleReset}
+      />,
+    );
+  });
+
   it("should matches snapshot", () => {
-    const component = render(<InputSearch field="query" />);
+    const component = renderComponent;
     expect(component).toMatchSnapshot();
   });
 
   it("renders with initial value", () => {
-    const component = render(<InputSearch field="query" />);
+    const component = renderComponent;
     const inputElement = component.getByPlaceholderText("Search...");
     expect(inputElement).toBeTruthy();
   });
 
   it("updates search value on user input", () => {
-    const component = render(<InputSearch field="query" />);
+    const component = renderComponent;
     const inputElement = component.getByPlaceholderText(
       "Search...",
     ) as HTMLInputElement;
@@ -34,7 +48,7 @@ describe("InputSearch component", () => {
   });
 
   it("clears search value on close button click", () => {
-    const component = render(<InputSearch field="query" />);
+    const component = renderComponent;
     const inputElement = component.getByPlaceholderText(
       "Search...",
     ) as HTMLInputElement;

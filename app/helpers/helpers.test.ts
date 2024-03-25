@@ -11,6 +11,7 @@ import {
   getCrumbName,
   searchOrderDataByValue,
   searchProductDataByValue,
+  buildSearchUrl,
 } from ".";
 
 describe("Test isEmpty function", () => {
@@ -249,5 +250,19 @@ describe("searchProductDataByValue function", () => {
 
     expect(result.length).toBe(1);
     expect(result[0].productName).toBe("ProductA");
+  });
+});
+
+describe("buildSearchUrl function", () => {
+  const mockObject = {
+    page: 0,
+    size: 10,
+    query: "",
+  };
+
+  test("build correctly params", () => {
+    const result = buildSearchUrl(mockObject);
+
+    expect(result).toBe("page=0&size=10&query=");
   });
 });

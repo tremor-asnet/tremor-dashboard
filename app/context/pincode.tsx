@@ -38,6 +38,7 @@ const PinCodeProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     pinCode && !isConfirm && setIsConfirm(true);
+    setIsShowPinCodeModal(!isConfirm);
   }, [pinCode, isConfirm]);
 
   const handleConfirmPinCode = useCallback(

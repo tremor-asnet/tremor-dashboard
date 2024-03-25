@@ -17,26 +17,13 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
 export default function PinCode({ pinCode }: { pinCode?: number }) {
   const {
     isConfirm,
-    pinCode: currentPinCode,
     isShowPinCodeModal,
     confirmPinCode,
     hidePinCodeModal,
-    showPinCodeModal,
     setPinCode,
   } = usePinCode();
 
   const { openToast } = useToast();
-
-  useEffect(() => {
-    if (!currentPinCode) {
-      if (pinCode) {
-        setPinCode(pinCode);
-        hidePinCodeModal();
-      }
-
-      showPinCodeModal();
-    }
-  }, [pinCode, showPinCodeModal, hidePinCodeModal, currentPinCode, setPinCode]);
 
   const handleSubmit = useCallback(
     async (code: number) => {

@@ -12,7 +12,11 @@ import { InputField, SelectField } from "@/ui/components";
 const QuillEditor = dynamic(() => import("react-quill"), { ssr: false });
 
 // Constants
-import { MESSAGES_ERROR, CATEGORY_PRODUCT, NAME_REGEX } from "@/constants";
+import {
+  MESSAGES_ERROR,
+  CATEGORY_PRODUCT,
+  PRODUCT_NAME_REGEX,
+} from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
 
 // Styles
@@ -47,8 +51,8 @@ const ProductInfo = () => {
             rules={{
               required: MESSAGES_ERROR.NAME_REQUIRED,
               pattern: {
-                value: NAME_REGEX,
-                message: MESSAGES_ERROR.INVALID_NAME,
+                value: PRODUCT_NAME_REGEX,
+                message: MESSAGES_ERROR.INVALID_PRODUCT_NAME,
               },
               minLength: {
                 value: 4,

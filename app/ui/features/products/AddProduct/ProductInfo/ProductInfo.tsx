@@ -10,7 +10,11 @@ import { Text } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Constants
-import { CATEGORY_PRODUCT, MESSAGES_ERROR, NAME_REGEX } from "@/constants";
+import {
+  CATEGORY_PRODUCT,
+  MESSAGES_ERROR,
+  PRODUCT_NAME_REGEX,
+} from "@/constants";
 import { EXCEPT_KEYS } from "@/constants/common";
 
 // Types
@@ -53,8 +57,8 @@ const ProductInfo = ({ control }: ProductInfoProps) => {
         rules={{
           required: MESSAGES_ERROR.FIELD_REQUIRED,
           pattern: {
-            value: NAME_REGEX,
-            message: MESSAGES_ERROR.INVALID_NAME,
+            value: PRODUCT_NAME_REGEX,
+            message: MESSAGES_ERROR.INVALID_PRODUCT_NAME,
           },
           minLength: {
             value: 4,

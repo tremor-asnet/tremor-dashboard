@@ -48,9 +48,9 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
     {
       key: "isAvailable",
       title: "Is Available",
-      customNode: (_, { isAvailable }) => (
+      customNode: (_, { quantity }) => (
         <Text className="text-xs dark:text-lighter font-semibold">
-          {isAvailable ? "Yes" : "No"}
+          {quantity && quantity > 0 ? "Yes" : "No"}
         </Text>
       ),
     },

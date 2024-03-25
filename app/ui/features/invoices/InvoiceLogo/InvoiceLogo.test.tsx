@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 
 // Components
 import InvoiceLogo from "./InvoiceLogo";
@@ -7,32 +7,24 @@ import InvoiceLogo from "./InvoiceLogo";
 import { color } from "@/themes";
 
 describe("InvoiceLogo component", () => {
-  const invoiceLogo = () => {
-    return render(<InvoiceLogo color={color.black} />);
-  };
+  let renderedComponent: RenderResult;
 
-  it("Should render InvoiceLogo snapshot correctly", () => {
-    expect(invoiceLogo()).toMatchSnapshot();
+  beforeEach(() => {
+    renderedComponent = render(<InvoiceLogo color={color.black} />);
   });
 
-  it("Should render InvoiceLogo and check fill value prop color is red", () => {
-    const { container } = render(<InvoiceLogo color="red" />);
-    expect(container.querySelector("g")).toBeTruthy();
-    const element = document.querySelector("g");
-    expect(element?.getAttribute("fill")).toEqual("red");
+  it("Should matches snapshot", () => {
+    const { container } = renderedComponent;
+    // Take a snapshot of the rendered component
+    expect(container).toMatchSnapshot();
   });
 
-  it("Should render InvoiceLogo and check fill value prop color is black", () => {
-    const { container } = render(<InvoiceLogo color={color.black} />);
-    expect(container.querySelector("g")).toBeTruthy();
-    const element = document.querySelector("g");
-    expect(element?.getAttribute("fill")).toEqual("#000");
-  });
-
-  it("Should render InvoiceLogo and check fill value prop color is empty", () => {
-    const { container } = render(<InvoiceLogo color="" />);
-    expect(container.querySelector("g")).toBeTruthy();
-    const element = document.querySelector("g");
-    expect(element?.getAttribute("fill")).toEqual("");
+  it("Should render InvoiceLogo and check fill value prop color", () => {
+    ["#000", "#ff0000", ""].map(value => {
+      const { container } = render(<InvoiceLogo color={value} />);
+      const element = container.querySelector("g");
+      expect(element).toBeTruthy();
+      expect(element?.getAttribute("fill")).toEqual(value);
+    });
   });
 });

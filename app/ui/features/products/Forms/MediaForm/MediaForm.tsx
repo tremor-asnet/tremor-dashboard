@@ -35,7 +35,7 @@ const MediaForm = ({ onBack, onSubmit }: MediaFormProps) => {
   useEffect(() => {
     setValue("image", image.url);
     setPreviewImage(image.url);
-  }, [cdnResponse]);
+  }, [cdnResponse, image.url, setValue]);
 
   const handleOnRemoveImage = () => {
     setValue("image", "");

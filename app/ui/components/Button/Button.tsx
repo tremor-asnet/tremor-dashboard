@@ -19,6 +19,7 @@ interface ButtonProps {
     | VARIANT_BUTTON.SECONDARY_SHADOW
     | VARIANT_BUTTON.LIGHT
     | VARIANT_BUTTON.SURFACE
+    | VARIANT_BUTTON.DARK
     | "";
   variantTremor?: ButtonVariant;
   additionalClass?: string;
@@ -30,6 +31,7 @@ interface ButtonProps {
   size?: Size;
   tabIndex?: number;
   onClick?: () => void;
+  value?: string;
 }
 
 const Button = ({
@@ -44,6 +46,7 @@ const Button = ({
   size,
   tabIndex,
   onClick,
+  value,
   ...otherProps
 }: ButtonProps) => {
   const renderTypeVariant = (variant: string) => {
@@ -67,6 +70,9 @@ const Button = ({
       case VARIANT_BUTTON.LIGHT:
         return "";
 
+      case VARIANT_BUTTON.DARK:
+        return "text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent";
+
       default:
         return "";
     }
@@ -83,6 +89,7 @@ const Button = ({
       type={type}
       disabled={disabled}
       onClick={onClick}
+      value={value}
       {...otherProps}>
       {children}
     </ButtonTremor>

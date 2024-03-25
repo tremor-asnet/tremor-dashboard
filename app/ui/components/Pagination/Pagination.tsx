@@ -3,7 +3,11 @@ import { HiMiniChevronLeft, HiMiniChevronRight } from "react-icons/hi2";
 import { RxDotsHorizontal } from "react-icons/rx";
 
 // Components
-import { Text, Button } from "@tremor/react";
+import { Text } from "@tremor/react";
+import { Button } from "..";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface PaginationProps {
   onPageChange: (page: number) => void;
@@ -57,7 +61,8 @@ const Pagination = ({
       {showItemsPagination && (
         <div className="flex gap-2 justify-end items-center md:m-0">
           <Button
-            className={`text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
+            variant={VARIANT_BUTTON.DARK}
+            additionalClass={`dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
               currentPage === 1 ? "hidden" : ""
             }`}
             aria-label="Previous page button"
@@ -84,7 +89,7 @@ const Pagination = ({
 
             return (
               <Button
-                className={`dark:hover:bg-grayish ${currentPageActive}`}
+                additionalClass={`dark:hover:bg-grayish ${currentPageActive}`}
                 aria-label={"Page button " + pageNumber}
                 key={`${index}-${pageNumber}`}
                 disabled={currentPage === pageNumber}
@@ -95,7 +100,8 @@ const Pagination = ({
           })}
 
           <Button
-            className={`text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
+            variant={VARIANT_BUTTON.DARK}
+            additionalClass={`dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish ${
               currentPage === lastPage ? "hidden" : ""
             }`}
             aria-label="Next page button"

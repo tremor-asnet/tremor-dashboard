@@ -11,8 +11,6 @@ import { PIN_CODE_LENGTH } from "@/constants";
 
 interface IPinCodeModal extends Omit<IModal, "children"> {
   onSubmit: (codes: number) => void | Promise<void>;
-  open: boolean;
-  onClose?: () => void;
 }
 
 const PinCodeModal = ({ onSubmit, ...others }: IPinCodeModal) => {

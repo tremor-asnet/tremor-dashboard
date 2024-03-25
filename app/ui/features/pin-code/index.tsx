@@ -16,22 +16,24 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
   ssr: false,
 });
 
-export default function PinCode({ pinCode }: { pinCode?: number }) {
-  const { isShowPinCodeModal, confirmPinCode, hidePinCodeModal, setPinCode } =
-    usePinCode();
+export default function PinCode() {
+  const {
+    pinCode,
+    isShowPinCodeModal,
+    confirmPinCode,
+    hidePinCodeModal,
+    setPinCode,
+  } = usePinCode();
 
   const { openToast } = useToast();
 
-  useEffect(() => {
-    pinCode && setPinCode(pinCode);
-  }, [pinCode, setPinCode]);
-
   const handleSubmit = useCallback(
     async (code: number) => {
+      // handle confirm
       if (pinCode) {
         const isMatch = confirmPinCode(code);
 
-        isMatch &&
+        if (isMatch) {
           openToast({
             toastType: {
               icon: <FaCheckCircle />,
@@ -39,13 +41,16 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
               color: "green",
             },
           });
+        }
 
         return;
       }
 
       const { isSuccess } = await updatePinCode(code);
 
-      isSuccess && setPinCode(code);
+      if (isSuccess) {
+        setPinCode(code);
+      }
 
       const { SETUP_FAILED, SETUP_SUCCESS } = PIN_CODE_MESSAGES;
 
@@ -67,10 +72,6 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
         btnCloseLabel: "Skip",
         btnPrimaryLabel: "Set",
       };
-
-  if (!isShowPinCodeModal) {
-    return null;
-  }
 
   return (
     <PinCodeModal

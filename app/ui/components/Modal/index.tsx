@@ -1,6 +1,6 @@
 "use client";
 
-import { ElementRef, ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { GrClose } from "react-icons/gr";
 
 // Tremor
@@ -41,14 +41,12 @@ export default function Modal({
   onClose,
 }: Readonly<IModal>) {
   const [isOpen, setIsOpen] = useState(open);
-  const dialogRef = useRef<ElementRef<"dialog">>(null);
 
   useEffect(() => {
     setIsOpen(open);
   }, [open]);
 
   const handleClose = () => {
-    dialogRef.current?.close();
     setIsOpen(false);
     onClose?.();
   };

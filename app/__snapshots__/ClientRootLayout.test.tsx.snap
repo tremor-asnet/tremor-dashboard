@@ -9,8 +9,5 @@ exports[`ClientRootLayout matches snapshot with dark theme 1`] = `
   <div>
     Tremor Dashboard
   </div>
-  <div
-    id="modal-root"
-  />
 </DocumentFragment>
 `;

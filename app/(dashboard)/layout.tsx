@@ -11,10 +11,7 @@ export default async function DashboardLayoutWrapper({
 }: {
   children: ReactNode;
 }) {
-  const profile = await getProfile();
-
-  // TODO: Will get PIN code in profile data
-  const pinCode = await getPinCode();
+  const [profile, pinCode] = await Promise.all([getProfile(), getPinCode()]);
   const profileData = { ...profile, pinCode };
 
   return (

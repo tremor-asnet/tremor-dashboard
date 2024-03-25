@@ -25,6 +25,12 @@ interface ToastContextProps {
   closeToast: () => void;
 }
 
+const DEFAULT_TOAST_TYPE: ToastType = {
+  icon: <FaCheckCircle />,
+  message: "success",
+  color: "green",
+};
+
 export const ToastMessageType = (type: string): ToastType => {
   switch (type) {
     case TOAST_TYPES.SUCCESS:
@@ -49,16 +55,12 @@ export const ToastMessageType = (type: string): ToastType => {
       };
 
     default:
-      return {
-        icon: <FaCheckCircle />,
-        message: "success",
-        color: "green",
-      };
+      return DEFAULT_TOAST_TYPE;
   }
 };
 
 const ToastContext = createContext<ToastContextProps>({
-  toastType: { icon: <FaCheckCircle />, message: "success", color: "green" },
+  toastType: DEFAULT_TOAST_TYPE,
   openToast: () => {},
   closeToast: () => {},
 });
@@ -74,7 +76,7 @@ const ToastProvider: React.FC<{ children: React.ReactNode }> = ({
   const closeToast = () => {
     setToast({
       isOpen: false,
-      toastType: { icon: <FaCheckCircle />, message: "", color: "green" },
+      toastType: DEFAULT_TOAST_TYPE,
     });
   };
 

@@ -27,7 +27,8 @@ export interface SortItem {
 
 export type TSearchParams = {
   query?: string;
-  filter?: string;
+  isAvailable?: string;
+  status?: string;
   page?: number;
   sortBy?: string;
   orderBy?: string;

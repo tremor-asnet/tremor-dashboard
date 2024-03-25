@@ -26,18 +26,21 @@ const ProductListPage = async ({
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const { query, filter, page, sortBy, orderBy } =
+  const { query, isAvailable, page, sortBy, orderBy } =
     searchParams as TSearchParams;
+
+  const optionByFilter = productList.find(
+    option => option.option?.toLowerCase() === isAvailable?.toLowerCase(),
+  );
 
   let response: ProductResponse = await getProducts({
     pageNum: page,
-    available: filter,
+    available: optionByFilter?.value,
     query,
     sortBy,
     orderBy,
   });
 
-  const optionByFilter = productList.find(option => option.value === filter);
   const { results, total, skip } = response;
 
   return (
@@ -49,7 +52,8 @@ const ProductListPage = async ({
           new product
         </Link>
         <Filter
-          value={optionByFilter?.option}
+          field="isAvailable"
+          value={isAvailable}
           title="Is Available"
           listOption={productList}
         />

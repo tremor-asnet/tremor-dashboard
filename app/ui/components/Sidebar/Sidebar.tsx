@@ -164,7 +164,7 @@ const SideBar = ({
                     <span className="cursor-pointer w-5">L</span>
                     <Button
                       additionalClass={`${hiddenOpenClass} w-full text-start pl-2 justify-start text-lighter hover:text-lighter dark:text-white dark:hover:text-white`}
-                      variant={VARIANT_BUTTON.LIGHT}>
+                      variantTremor={VARIANT_BUTTON.LIGHT}>
                       Logout
                     </Button>
                   </Flex>

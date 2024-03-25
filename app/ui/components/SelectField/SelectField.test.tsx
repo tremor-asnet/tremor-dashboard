@@ -1,4 +1,9 @@
-import { render, queryAllByAttribute, fireEvent } from "@testing-library/react";
+import {
+  render,
+  queryAllByAttribute,
+  fireEvent,
+  waitFor,
+} from "@testing-library/react";
 
 // Constants
 import { TYPE_PRICE } from "@/constants";
@@ -14,14 +19,14 @@ describe("SelectField Component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it.skip("renders correct number of options", () => {
+  it("renders correct number of options", () => {
     const getById = queryAllByAttribute.bind(null, "id");
 
     const { container } = render(
       <SelectField label="Currency" options={TYPE_PRICE} name="currency" />,
     );
     const selectElement = getById(container, "currency");
-    expect(selectElement[0]?.children).toHaveLength(1);
+    expect(selectElement[0]?.children).toHaveLength(7);
   });
 
   it("renders correct name of options", () => {
@@ -31,10 +36,10 @@ describe("SelectField Component", () => {
     expect(getAllByText("GBP")).toBeTruthy();
   });
 
-  it("should call onChange handler with selected value", () => {
+  it("should call onChange handler with selected value", async () => {
     const onChangeMock = jest.fn(); // Mock the onChange handler
 
-    const { getByText } = render(
+    const { getAllByText } = render(
       <SelectField
         label="Test Select"
         options={TYPE_PRICE}
@@ -43,9 +48,8 @@ describe("SelectField Component", () => {
       />,
     );
 
-    fireEvent.click(getByText("Select..."));
-    fireEvent.click(getByText(TYPE_PRICE[2].option));
-
+    fireEvent.click(getAllByText("Select...")[1]);
+    fireEvent.click(getAllByText(TYPE_PRICE[2].option)[1]);
     expect(onChangeMock).toHaveBeenCalledTimes(1);
     expect(onChangeMock).toHaveBeenCalledWith(TYPE_PRICE[2].value);
   });

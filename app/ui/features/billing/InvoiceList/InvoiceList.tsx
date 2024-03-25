@@ -47,7 +47,7 @@ const Invoices = ({ invoices }: InvoicesProps) => {
       <div className="text-primary dark:text-white flex justify-between items-center">
         <h3 className="font-semibold">Invoices</h3>
         <Button
-          variant={VARIANT_BUTTON.LIGHT}
+          variantTremor={VARIANT_BUTTON.LIGHT}
           additionalClass="uppercase font-bold px-4 py-1.5 border border-primary dark:border-white rounded-md tracking-wide">
           <Text className="text-xs text-primary">view all</Text>
         </Button>

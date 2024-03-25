@@ -12,7 +12,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
         class="tremor-Table-root overflow-auto w-full"
       >
         <table
-          class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
         >
           <thead
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
@@ -21,7 +21,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <th
-                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -34,7 +34,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -47,7 +47,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -60,7 +60,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -75,13 +75,13 @@ exports[`TableInvoice Component should match snapshot 1`] = `
             </tr>
           </thead>
           <tbody
-            class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border"
+            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
             <tr
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black"
@@ -90,7 +90,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
@@ -99,7 +99,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p
@@ -115,7 +115,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p
@@ -135,7 +135,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black"
@@ -144,7 +144,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
@@ -153,7 +153,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p
@@ -169,7 +169,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p
@@ -189,7 +189,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-dark-tremor-content max-w-[250px] md:max-w-sm truncate print:text-black dark:print:!text-black"
@@ -198,7 +198,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content dark:text-lighter print:text-black dark:print:!text-black"
@@ -207,7 +207,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p
@@ -223,7 +223,7 @@ exports[`TableInvoice Component should match snapshot 1`] = `
                 </div>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <div>
                   <p

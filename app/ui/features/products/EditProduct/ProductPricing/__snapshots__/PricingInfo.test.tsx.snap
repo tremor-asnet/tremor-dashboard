@@ -59,90 +59,41 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                       Currency
                     </label>
                     <div
-                      class="w-full min-w-[10rem] relative text-tremor-default"
+                      class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+                      data-headlessui-state=""
                     >
-                      <select
-                        class="h-full w-full absolute left-0 top-0 z-0 opacity-0"
-                        title="select-hidden"
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                        data-headlessui-state=""
+                        id="headlessui-listbox-button-:r0:"
+                        type="button"
                       >
-                        <option
-                          class="hidden"
-                          disabled=""
-                          hidden=""
-                          value=""
+                        <span
+                          class="w-[90%] block truncate"
                         >
                           Select...
-                        </option>
-                        <option
-                          class="hidden"
-                          value="1"
+                        </span>
+                        <span
+                          class="absolute inset-y-0 right-0 flex items-center mr-3"
                         >
-                          BTC
-                        </option>
-                        <option
-                          class="hidden"
-                          value="2"
-                        >
-                          CNY
-                        </option>
-                        <option
-                          class="hidden"
-                          value="3"
-                        >
-                          EUR
-                        </option>
-                        <option
-                          class="hidden"
-                          value="4"
-                        >
-                          GBP
-                        </option>
-                        <option
-                          class="hidden"
-                          value="5"
-                        >
-                          INR
-                        </option>
-                        <option
-                          class="hidden"
-                          value="6"
-                        >
-                          USD
-                        </option>
-                      </select>
-                      <div
-                        class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
-                        data-headlessui-state=""
-                      >
-                        <button
-                          aria-expanded="false"
-                          aria-haspopup="listbox"
-                          class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 border pr-8 py-2 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                          data-headlessui-state=""
-                          id="headlessui-listbox-button-:r0:"
-                          type="button"
-                        >
-                          <span
-                            class="w-[90%] block truncate"
+                          <svg
+                            class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            Select...
-                          </span>
-                          <span
-                            class="absolute inset-y-0 right-0 flex items-center mr-3"
-                          >
-                            <svg
-                              class="tremor-Select-arrowDownIcon flex-none h-5 w-5 text-tremor-content-subtle dark:text-dark-tremor-content-subtle"
-                              fill="currentColor"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
-                              />
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
+                            <path
+                              d="M19 9l-7 7-7-7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -177,87 +128,43 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                   Tags
                 </label>
                 <div
-                  class="w-full min-w-[10rem] relative text-tremor-default"
+                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  data-headlessui-state=""
                 >
-                  <select
-                    class="h-full w-full absolute left-0 top-0 z-0 opacity-0"
-                    multiple=""
-                    title="multi-select-hidden"
-                  >
-                    <option
-                      class="hidden"
-                      disabled=""
-                      hidden=""
-                      value=""
-                    >
-                      Select...
-                    </option>
-                    <option
-                      class="hidden"
-                      value="1"
-                    >
-                      Black Friday
-                    </option>
-                    <option
-                      class="hidden"
-                      value="2"
-                    >
-                      Expired
-                    </option>
-                    <option
-                      class="hidden"
-                      value="3"
-                    >
-                      Out of Stock
-                    </option>
-                    <option
-                      class="hidden"
-                      value="4"
-                    >
-                      In Stock
-                    </option>
-                    <option
-                      class="hidden"
-                      value="5"
-                    >
-                      Sale
-                    </option>
-                  </select>
-                  <div
-                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
                     data-headlessui-state=""
+                    id="headlessui-listbox-button-:r1:"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 border pr-8 py-1.5 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                      data-headlessui-state=""
-                      id="headlessui-listbox-button-:r1:"
-                      type="button"
+                    <div
+                      class="h-6 flex items-center"
                     >
-                      <div
-                        class="h-6 flex items-center"
-                      >
-                        <span>
-                          Select...
-                        </span>
-                      </div>
-                      <span
-                        class="absolute inset-y-0 right-0 flex items-center mr-2.5"
-                      >
-                        <svg
-                          class="tremor-MultiSelect-arrowDownIcon flex-none h-5 w-5 text-tremor-content-subtle dark:text-dark-tremor-content-subtle"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
-                          />
-                        </svg>
+                      <span>
+                        Select...
                       </span>
-                    </button>
-                  </div>
+                    </div>
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center mr-2.5"
+                    >
+                      <svg
+                        class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -321,90 +228,41 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                     Currency
                   </label>
                   <div
-                    class="w-full min-w-[10rem] relative text-tremor-default"
+                    class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
+                    data-headlessui-state=""
                   >
-                    <select
-                      class="h-full w-full absolute left-0 top-0 z-0 opacity-0"
-                      title="select-hidden"
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-2 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
+                      data-headlessui-state=""
+                      id="headlessui-listbox-button-:r0:"
+                      type="button"
                     >
-                      <option
-                        class="hidden"
-                        disabled=""
-                        hidden=""
-                        value=""
+                      <span
+                        class="w-[90%] block truncate"
                       >
                         Select...
-                      </option>
-                      <option
-                        class="hidden"
-                        value="1"
+                      </span>
+                      <span
+                        class="absolute inset-y-0 right-0 flex items-center mr-3"
                       >
-                        BTC
-                      </option>
-                      <option
-                        class="hidden"
-                        value="2"
-                      >
-                        CNY
-                      </option>
-                      <option
-                        class="hidden"
-                        value="3"
-                      >
-                        EUR
-                      </option>
-                      <option
-                        class="hidden"
-                        value="4"
-                      >
-                        GBP
-                      </option>
-                      <option
-                        class="hidden"
-                        value="5"
-                      >
-                        INR
-                      </option>
-                      <option
-                        class="hidden"
-                        value="6"
-                      >
-                        USD
-                      </option>
-                    </select>
-                    <div
-                      class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white pt-[6px]"
-                      data-headlessui-state=""
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 border pr-8 py-2 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                        data-headlessui-state=""
-                        id="headlessui-listbox-button-:r0:"
-                        type="button"
-                      >
-                        <span
-                          class="w-[90%] block truncate"
+                        <svg
+                          class="tremor-Select-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          Select...
-                        </span>
-                        <span
-                          class="absolute inset-y-0 right-0 flex items-center mr-3"
-                        >
-                          <svg
-                            class="tremor-Select-arrowDownIcon flex-none h-5 w-5 text-tremor-content-subtle dark:text-dark-tremor-content-subtle"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                    </div>
+                          <path
+                            d="M19 9l-7 7-7-7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -439,87 +297,43 @@ exports[`Testing PricingInfo component Should match snapshot 1`] = `
                 Tags
               </label>
               <div
-                class="w-full min-w-[10rem] relative text-tremor-default"
+                class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                data-headlessui-state=""
               >
-                <select
-                  class="h-full w-full absolute left-0 top-0 z-0 opacity-0"
-                  multiple=""
-                  title="multi-select-hidden"
-                >
-                  <option
-                    class="hidden"
-                    disabled=""
-                    hidden=""
-                    value=""
-                  >
-                    Select...
-                  </option>
-                  <option
-                    class="hidden"
-                    value="1"
-                  >
-                    Black Friday
-                  </option>
-                  <option
-                    class="hidden"
-                    value="2"
-                  >
-                    Expired
-                  </option>
-                  <option
-                    class="hidden"
-                    value="3"
-                  >
-                    Out of Stock
-                  </option>
-                  <option
-                    class="hidden"
-                    value="4"
-                  >
-                    In Stock
-                  </option>
-                  <option
-                    class="hidden"
-                    value="5"
-                  >
-                    Sale
-                  </option>
-                </select>
-                <div
-                  class="w-full min-w-[10rem] relative text-tremor-default select-custom dark:text-white dark:border-light dark:focus:border-white"
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 pr-8 py-1.5 border bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
                   data-headlessui-state=""
+                  id="headlessui-listbox-button-:r1:"
+                  type="button"
                 >
-                  <button
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    class="w-full outline-none text-left whitespace-nowrap truncate rounded-tremor-default focus:ring-2 transition duration-100 border pr-8 py-1.5 shadow-tremor-input focus:border-tremor-brand-subtle focus:ring-tremor-brand-muted dark:shadow-dark-tremor-input dark:focus:border-dark-tremor-brand-subtle dark:focus:ring-dark-tremor-brand-muted pl-3 bg-tremor-background dark:bg-dark-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border dark:border-dark-tremor-border"
-                    data-headlessui-state=""
-                    id="headlessui-listbox-button-:r1:"
-                    type="button"
+                  <div
+                    class="h-6 flex items-center"
                   >
-                    <div
-                      class="h-6 flex items-center"
-                    >
-                      <span>
-                        Select...
-                      </span>
-                    </div>
-                    <span
-                      class="absolute inset-y-0 right-0 flex items-center mr-2.5"
-                    >
-                      <svg
-                        class="tremor-MultiSelect-arrowDownIcon flex-none h-5 w-5 text-tremor-content-subtle dark:text-dark-tremor-content-subtle"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
-                        />
-                      </svg>
+                    <span>
+                      Select...
                     </span>
-                  </button>
-                </div>
+                  </div>
+                  <span
+                    class="absolute inset-y-0 right-0 flex items-center mr-2.5"
+                  >
+                    <svg
+                      class="tremor-MultiSelect-arrowDownIcon flex-none text-tremor-content-subtle dark:text-dark-tremor-content-subtle h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
               </div>
             </div>
           </div>

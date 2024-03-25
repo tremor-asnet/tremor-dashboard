@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createRef, memo, useCallback, useMemo } from "react";
+import React, { createRef, memo, useCallback } from "react";
 
 import { Flex } from "@tremor/react";
 import { PinCodeField } from "./PinCodeField";

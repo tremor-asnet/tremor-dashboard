@@ -8,7 +8,7 @@ import { usePinCode } from "@/context/pincode";
 import { updatePinCode } from "@/services";
 import { useToast } from "@/hooks";
 import { FaCheckCircle } from "react-icons/fa";
-import { CONFIRM_PIN_CODE_MESSAGE, SET_PIN_CODE_MESSAGE } from "@/constants";
+import { PIN_CODE_MESSAGES } from "@/constants";
 
 const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
   ssr: false,
@@ -46,7 +46,7 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
           openToast({
             toastType: {
               icon: <FaCheckCircle />,
-              message: CONFIRM_PIN_CODE_MESSAGE.SUCCESS,
+              message: PIN_CODE_MESSAGES.CONFIRMATION_SUCCESS,
               color: "green",
             },
           });
@@ -60,7 +60,7 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
         openToast({
           toastType: {
             icon: <FaCheckCircle />,
-            message: SET_PIN_CODE_MESSAGE.SUCCESS,
+            message: PIN_CODE_MESSAGES.SETUP_SUCCESS,
             color: "green",
           },
         });

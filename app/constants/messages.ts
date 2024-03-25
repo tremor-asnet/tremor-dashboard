@@ -21,16 +21,6 @@ export const SIGN_UP_MESSAGE = {
   FAILED: "Failed to Sign up",
 };
 
-export const SET_PIN_CODE_MESSAGE = {
-  SUCCESS: "Set pin code successfully.",
-  FAILED: "Failed to Set PIN code",
-};
-
-export const CONFIRM_PIN_CODE_MESSAGE = {
-  SUCCESS: "Confirm pin code successfully.",
-  FAILED: "Failed to Confirm PIN code",
-};
-
 export const EDIT_PRODUCT_MESSAGE = {
   SUCCESS: "Edit product successfully",
   FAILED: "Failed to edit product",

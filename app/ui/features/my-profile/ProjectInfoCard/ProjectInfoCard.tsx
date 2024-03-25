@@ -1,11 +1,12 @@
 // Components
 import Link from "next/link";
 import Image from "next/image";
-import { Title, Text, Flex, Button } from "@tremor/react";
-import { Avatar } from "@/ui/components";
+import { Title, Text, Flex } from "@tremor/react";
+import { Avatar, Button } from "@/ui/components";
 
 // Constants
 import { ROUTES } from "@/constants/routes";
+import { VARIANT_BUTTON } from "@/constants";
 
 interface AvatarProps {
   name: string;
@@ -59,9 +60,10 @@ export const ProjectInfoCard = ({ links }: ProjectInfoCardProps) => {
           <Flex>
             <Link href={ROUTES.PROJECTS}>
               <Button
-                className="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
-                variant="secondary">
-                <Text className="font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom">
+                additionalClass="font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
+                variant={VARIANT_BUTTON.SECONDARY_SHADOW}
+                variantTremor={VARIANT_BUTTON.SECONDARY}>
+                <Text className="font-bold text-seldom text-xs leading-[17px] dark:text-dark-tremor-content-seldom">
                   View Project
                 </Text>
               </Button>

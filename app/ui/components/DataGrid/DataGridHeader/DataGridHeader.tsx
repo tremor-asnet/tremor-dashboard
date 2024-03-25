@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 // Components
 import { HeaderCellContents } from "@/ui/components";
@@ -10,52 +11,58 @@ import { TableHead, TableHeaderCell, TableRow } from "@tremor/react";
 import { ColumnType } from "@/types";
 
 // Constants
-import { DIRECTION } from "@/constants/common";
+import { DIRECTION } from "@/constants";
 
 interface DataTableHeaderProps<T> {
   columns: ColumnType<T>[];
-  handleSorting: (sortField: string, sortOrder: string) => void;
 }
 
-const DataGridHeader = <T,>({
-  columns,
-  handleSorting,
-}: DataTableHeaderProps<T>) => {
+const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
   const [sortField, setSortField] = useState<string>("");
-  const [order, setOrder] = useState<string>(DIRECTION.ASC);
+  const [sortType, setSortType] = useState<string>("");
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+  const params = new URLSearchParams(searchParams);
 
-  const handleSortingChange = (key: string) => {
-    const sortOrder =
-      key === sortField && order === DIRECTION.ASC
-        ? DIRECTION.DESC
-        : DIRECTION.ASC;
+  const handleSortingChange = useCallback(
+    (key: string, urlParams: URLSearchParams) => {
+      return () => {
+        setSortField(key);
+        urlParams.set("sortBy", key);
 
-    setSortField(key);
-    setOrder(sortOrder);
+        const orderByParam =
+          urlParams.get("orderBy") === DIRECTION.DESC
+            ? DIRECTION.ASC
+            : DIRECTION.DESC;
 
-    handleSorting(key, sortOrder);
-  };
+        urlParams.set("orderBy", orderByParam);
+        setSortType(orderByParam);
+
+        // Update url param
+        replace(`${pathname}?${urlParams.toString()}`);
+      };
+    },
+    [],
+  );
 
   return (
     <TableHead>
       <TableRow>
-        {columns.map(({ key, title, sortable }) => {
-          // The column that has sortable set to true will execute handleSortingChange function
-          const handleHeaderClick = () => {
-            sortable ? handleSortingChange(key) : null;
-          };
-
+        {columns.map(({ key, title, isSortable = false }) => {
           return (
             <TableHeaderCell
-              onClick={handleHeaderClick}
+              onClick={
+                isSortable ? handleSortingChange(key, params) : undefined
+              }
               key={key}
               className="px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100">
               <HeaderCellContents
                 title={title}
                 keyColumn={key}
-                sortKey={sortField}
-                sortDirection={order}
-                sortable={sortable}
+                sortField={sortField}
+                sortType={sortType}
+                isSortable={isSortable}
               />
             </TableHeaderCell>
           );

@@ -2,8 +2,8 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 // Components
-import { Button, Flex, Text } from "@tremor/react";
-import { Filter, InputSearch, LoadingIndicator } from "@/ui/components";
+import { Flex } from "@tremor/react";
+import { Filter, InputDebounce, LoadingIndicator } from "@/ui/components";
 
 const TableOrder = dynamic(
   () => import("@/ui/features/orders/TableOrder/TableOrder"),
@@ -13,43 +13,47 @@ const TableOrder = dynamic(
 import { getOrders } from "@/services";
 
 // Types
-import { OrderResponse } from "@/types";
+import { OrderResponse, TSearchParams } from "@/types";
 
 // Constants
 import { orderListOption } from "@/constants";
 
-type SearchParams = {
-  id?: number;
-  filter?: number;
-  page?: number;
-};
-
 const OrderListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParams;
+  searchParams?: TSearchParams;
 }) => {
-  const { id = -1, filter = -1, page = 1 } = searchParams as SearchParams;
+  const { query, status, page, sortBy, orderBy } =
+    searchParams as TSearchParams;
 
-  const response: OrderResponse = await getOrders(page, filter, id);
+  const optionByFilter = orderListOption.find(
+    option => option.option?.toLowerCase() === status?.toLowerCase(),
+  );
+
+  const response: OrderResponse = await getOrders({
+    pageNum: page,
+    status: optionByFilter?.value,
+    query,
+    sortBy,
+    orderBy,
+  });
 
   const { results, total, skip } = response;
 
   return (
     <Flex flexDirection="col" className="gap-4">
-      <Flex className="relative">
-        <Button className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white">
-          <Text className="uppercase text-xs font-bold text-white dark:text-white tracking-wide">
-            new order
-          </Text>
-        </Button>
-        <Filter title="Status" listOption={orderListOption} />
+      <Flex className="relative justify-end">
+        <Filter
+          field="status"
+          value={status}
+          title="Status"
+          listOption={orderListOption}
+        />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="id" />
+        <InputDebounce field="id" param="page" valueParam="1" />
         <div className="w-full relative min-h-[183px] rounded-lg">
           <Suspense
-            key={`${id}-${filter}-${page}`}
             fallback={
               <LoadingIndicator
                 additionalClass="flex justify-center items-center bg-[rgba(0,0,0,0.3)] absolute overflow-hidden w-full h-full inset-0 z-10 cursor-not-allowed"
@@ -60,7 +64,6 @@ const OrderListPage = async ({
               />
             }>
             <TableOrder
-              key={`${id}-${filter}-${page}`}
               orders={results}
               total={total}
               currentPage={skip / 10 + 1}

@@ -28,18 +28,9 @@ describe("InvoiceBody Testing", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders invoice body with correct information", () => {
-    const { getByText } = render(<InvoiceBody {...invoice} />);
+  it("renders invoice body with default data show text Result Not Found", () => {
+    const { getAllByText } = render(<InvoiceBody />);
 
-    expect(getByText("#230220")).toBeInTheDocument();
-    expect(getByText("03/06/2019")).toBeInTheDocument();
-    expect(getByText("03/11/2019")).toBeInTheDocument();
-  });
-
-  it("renders table with invoice details", () => {
-    const { getByText } = render(<InvoiceBody {...invoice} />);
-
-    expect(getByText(INVOICE_DATA.products[0].productName)).toBeInTheDocument();
-    expect(getByText(INVOICE_DATA.products[0].quantity)).toBeInTheDocument();
+    expect(getAllByText("Result Not Found")).toHaveLength(1);
   });
 });

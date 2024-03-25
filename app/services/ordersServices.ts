@@ -3,35 +3,49 @@
 import { revalidateTag } from "next/cache";
 
 // Constants
-import { PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
+import { DIRECTION, PAGE_SIZE, ROUTER_API_URL, ROUTES } from "@/constants";
 
 // Helpers
-import { getErrorMessage } from "@/helpers";
+import { buildSearchUrl, getErrorMessage } from "@/helpers";
 
-export const getOrders = async (
-  pageNum: number,
-  status: number,
-  query: number,
-) => {
-  const statusFilter = status >= 0 ? "&status=" + status : "";
-  const queryFilter = query >= 0 ? "&query=" + query : "";
-  const filter = statusFilter + queryFilter;
+export const getOrders = async ({
+  pageNum,
+  status,
+  query,
+  sortBy,
+  orderBy,
+}: {
+  pageNum?: number;
+  status?: string;
+  query?: string;
+  sortBy?: string;
+  orderBy?: string;
+}) => {
+  const page = pageNum ? pageNum - 1 : 0;
+  const filerSort = sortBy
+    ? orderBy === DIRECTION.ASC
+      ? sortBy
+      : `-${sortBy}`
+    : "";
 
-  const res = await fetch(
-    `${ROUTER_API_URL}/orders?page=${pageNum - 1}&size=${
-      PAGE_SIZE.SIZE
-    }${filter}`,
-    {
-      method: "GET",
-      headers: {
-        "content-type": "application/json;charset=UTF-8",
-      },
-      next: {
-        revalidate: 60,
-        tags: [ROUTES.ORDER_LIST],
-      },
+  const params = buildSearchUrl({
+    page: page,
+    size: PAGE_SIZE.SIZE,
+    status: status ?? "",
+    query: query ?? "",
+    sortBy: filerSort,
+  });
+
+  const res = await fetch(`${ROUTER_API_URL}/orders?${params}`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json;charset=UTF-8",
     },
-  );
+    next: {
+      revalidate: 60,
+      tags: [ROUTES.ORDER_LIST],
+    },
+  });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 

@@ -53,7 +53,8 @@ const AddProductForm = () => {
     <LoadingIndicator
       width={16}
       height={16}
-      additionalClass="light-loading-indicator"
+      additionalClass="fixed top-1/2 z-20"
+      fillColor="gray-500"
     />
   ) : null;
 

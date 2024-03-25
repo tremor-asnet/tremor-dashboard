@@ -5,7 +5,7 @@ export const color = {
   tertiary: "#55576d",
   seldom: "#1a73e8",
   few: "#4caf50",
-  green: "#2a652b",
+  greenter: "#2a652b",
   fewter: "#339537",
   litle: "#ebebeb",
   select: "#f0f2f5",
@@ -112,6 +112,9 @@ export const backgroundColor = {
   "green-500": "#43a047",
   "orange-500": "#fb8c00",
   graydark: "#1a2035",
+  backdrop: "rgba(0, 0, 0, 0.7)",
+  blackAlpha: "rgba(0, 0, 0, 0.07)",
+  whiteAlpha: "rgba(255, 255, 255, 0.07)",
 
   dark: {
     primary: "#111827",
@@ -208,6 +211,7 @@ export const borderColor = {
   // light mode
   tremor: {
     primary: "#344767",
+    secondary: "#60a5fa",
   },
   // dark mode
   "dark-tremor": {

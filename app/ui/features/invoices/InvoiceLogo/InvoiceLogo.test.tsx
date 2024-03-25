@@ -1,14 +1,30 @@
-import { render } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 
 // Components
 import InvoiceLogo from "./InvoiceLogo";
 
-describe("InvoiceLogo component", () => {
-  const loadingIndicator = () => {
-    return render(<InvoiceLogo width={16} height={16} />);
-  };
+// Themes
+import { color } from "@/themes";
 
-  it("Should render InvoiceLogo snapshot correctly", () => {
-    expect(loadingIndicator()).toMatchSnapshot();
+describe("InvoiceLogo component", () => {
+  let renderedComponent: RenderResult;
+
+  beforeEach(() => {
+    renderedComponent = render(<InvoiceLogo color={color.black} />);
+  });
+
+  it("Should matches snapshot", () => {
+    const { container } = renderedComponent;
+    // Take a snapshot of the rendered component
+    expect(container).toMatchSnapshot();
+  });
+
+  it("Should render InvoiceLogo and check fill value prop color", () => {
+    ["#000", "#ff0000", ""].map(value => {
+      const { container } = render(<InvoiceLogo color={value} />);
+      const element = container.querySelector("g");
+      expect(element).toBeTruthy();
+      expect(element?.getAttribute("fill")).toEqual(value);
+    });
   });
 });

@@ -53,13 +53,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
+              class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
+                  class="text-tremor-default font-bold text-seldom text-xs leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -153,13 +153,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
+              class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
+                  class="text-tremor-default font-bold text-seldom text-xs leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -253,13 +253,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
+              class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
+                  class="text-tremor-default font-bold text-seldom text-xs leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>
@@ -353,13 +353,13 @@ exports[`ProjectInfoCard Component render ProjectInfoCard component with snapsho
             href="/all-projects"
           >
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4 box-shadow-transparent"
+              class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm text-tremor-brand dark:text-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-faint box-shadow-transparent uppercase font-sans bg-inherit hover:bg-transparent hover:opacity-75 py-[7px] px-4"
             >
               <span
-                class="tremor-Button-text text-sm whitespace-nowrap"
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
                 <p
-                  class="text-tremor-default font-bold text-seldom text-xs uppercase leading-[17px] dark:text-dark-tremor-content-seldom"
+                  class="text-tremor-default font-bold text-seldom text-xs leading-[17px] dark:text-dark-tremor-content-seldom"
                 >
                   View Project
                 </p>

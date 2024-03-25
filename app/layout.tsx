@@ -7,6 +7,7 @@ import "./globals.css";
 // Context
 import { ThemeProvider } from "@/context/theme";
 import { ToastProvider } from "@/context/toast";
+import { PinCodeProvider } from "./context/pincode";
 
 // Components
 import ClientRootLayout from "./ClientRootLayout";
@@ -50,7 +51,9 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <ClientRootLayout>
-        <ToastProvider>{children}</ToastProvider>
+        <ToastProvider>
+          <PinCodeProvider>{children}</PinCodeProvider>
+        </ToastProvider>
       </ClientRootLayout>
     </ThemeProvider>
   );

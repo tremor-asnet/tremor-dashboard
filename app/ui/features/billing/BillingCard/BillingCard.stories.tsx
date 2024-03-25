@@ -20,6 +20,7 @@ export const Default: Story = {
       cardNumber="4562 1122 4594 7852"
       holderFullName="Jack Peterson"
       expire="11/24"
+      cardLast4Digit="7852"
     />
   ),
 };

@@ -32,10 +32,10 @@ exports[`InvoiceFooter Testing should match snapshot 1`] = `
       </p>
     </div>
     <button
-      class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis py-3 px-6 mt-6 md:mt-0 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white print:hidden"
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis bg-gradient-primary dark:bg-gradient-pickled py-3 px-6 mt-6 md:mt-0 border-none dark:text-white print:hidden"
     >
       <span
-        class="tremor-Button-text text-sm whitespace-nowrap"
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
       >
         <p
           class="text-tremor-default uppercase font-bold text-xs text-white dark:text-white tracking-wide"

@@ -9,17 +9,37 @@ exports[`InputSearch component should matches snapshot 1`] = `
         class="tremor-Flex-root flex w-full flex-row justify-end items-center p-6 relative"
       >
         <div
-          class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border w-auto dark:bg-transparent dark:border-white"
+          class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 border shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border w-auto dark:bg-transparent dark:border-white"
         >
           <input
-            class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
+            class="tremor-TextInput-input w-full bg-transparent focus:outline-none focus:ring-0 border-none text-tremor-default rounded-tremor-default transition duration-100 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pr-3 pl-3 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
             data-testid="base-input"
             id="search_order"
             placeholder="Search..."
+            style="padding-right: 1rem;"
             type="text"
-            value=""
+            value="query"
           />
         </div>
+        <svg
+          class="text-xs text-white bg-black dark:text-black dark:bg-white absolute right-8 p-[2px] cursor-pointer rounded-full z-[1]"
+          data-testid="close-button"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
       </div>
     </div>
   </body>,
@@ -28,17 +48,37 @@ exports[`InputSearch component should matches snapshot 1`] = `
       class="tremor-Flex-root flex w-full flex-row justify-end items-center p-6 relative"
     >
       <div
-        class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content dark:text-dark-tremor-content border-tremor-border border w-auto dark:bg-transparent dark:border-white"
+        class="tremor-TextInput-root relative flex items-center min-w-[10rem] outline-none rounded-tremor-default transition duration-100 border shadow-tremor-input dark:shadow-dark-tremor-input bg-tremor-background hover:bg-tremor-background-muted dark:hover:bg-dark-tremor-background-muted text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis border-tremor-border w-auto dark:bg-transparent dark:border-white"
       >
         <input
-          class="tremor-TextInput-input w-full focus:outline-none focus:ring-0 border-none bg-transparent text-tremor-default rounded-tremor-default transition duration-100 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pl-3 pr-4 py-2 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
+          class="tremor-TextInput-input w-full bg-transparent focus:outline-none focus:ring-0 border-none text-tremor-default rounded-tremor-default transition duration-100 py-2 text-tremor-content-emphasis dark:text-dark-tremor-content-emphasis [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none pr-3 pl-3 placeholder:text-tremor-content dark:placeholder:text-dark-tremor-content"
           data-testid="base-input"
           id="search_order"
           placeholder="Search..."
+          style="padding-right: 1rem;"
           type="text"
-          value=""
+          value="query"
         />
       </div>
+      <svg
+        class="text-xs text-white bg-black dark:text-black dark:bg-white absolute right-8 p-[2px] cursor-pointer rounded-full z-[1]"
+        data-testid="close-button"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </div>
   </div>,
   "debug": [Function],

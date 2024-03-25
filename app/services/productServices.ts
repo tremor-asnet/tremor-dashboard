@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 
 // Constants
 import {
+  DIRECTION,
   PAGE_SIZE,
   PRODUCT_DETAILS_TAG,
   ROUTER_API_URL,
@@ -11,37 +12,47 @@ import {
 } from "@/constants";
 
 // Helpers
-import { getErrorMessage } from "@/helpers";
+import { buildSearchUrl, getErrorMessage } from "@/helpers";
 
 // Types
 import { ProductData } from "@/types";
 
-export const getProducts = async (
-  pageNum?: number,
-  isAvailable?: string,
-  query?: string,
-) => {
-  const isAvailableFilter = !!`${isAvailable}`.length
-    ? `&isAvailable=${isAvailable}`
+export const getProducts = async ({
+  pageNum,
+  available,
+  query,
+  sortBy,
+  orderBy,
+}: {
+  pageNum?: number;
+  available?: string;
+  query?: string;
+  sortBy?: string;
+  orderBy?: string;
+}) => {
+  const page = pageNum ? pageNum - 1 : 0;
+  const filerSort = sortBy
+    ? `${orderBy === DIRECTION.ASC ? "" : "-"}${sortBy}`
     : "";
-  const productNameFilter = query ? "&query=" + query : "";
-  const filter = isAvailableFilter + productNameFilter;
 
-  const res = await fetch(
-    `${ROUTER_API_URL}/products?page=${pageNum! - 1}&size=${
-      PAGE_SIZE.SIZE
-    }${filter}`,
-    {
-      method: "GET",
-      headers: {
-        "content-type": "application/json;charset=UTF-8",
-      },
-      next: {
-        revalidate: 60,
-        tags: [ROUTES.PRODUCT_LIST, PRODUCT_DETAILS_TAG],
-      },
+  const params = buildSearchUrl({
+    page: page,
+    size: PAGE_SIZE.SIZE,
+    isAvailable: available ?? "",
+    query: query ?? "",
+    sortBy: filerSort,
+  });
+
+  const res = await fetch(`${ROUTER_API_URL}/products?${params}`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json;charset=UTF-8",
     },
-  );
+    next: {
+      revalidate: 60,
+      tags: [ROUTES.PRODUCT_LIST, PRODUCT_DETAILS_TAG],
+    },
+  });
 
   if (!res.ok) throw new Error(getErrorMessage(res.status, res.statusText));
 

@@ -10,8 +10,7 @@ import { Text } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Constants
-import { CATEGORY_PRODUCT, MESSAGES_ERROR } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
+import { CATEGORY_PRODUCT, MESSAGES_ERROR, EXCEPT_KEYS } from "@/constants";
 
 // Types
 import { NewInfo } from "@/types";

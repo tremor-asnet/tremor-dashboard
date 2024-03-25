@@ -15,6 +15,8 @@ import { authConfig } from "./auth.config";
 // Services
 import { getUserByEmail } from "./services";
 
+import { UID_KEY } from "./constants";
+
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
   providers: [
@@ -49,6 +51,13 @@ export const { auth, signIn, signOut } = NextAuth({
             );
 
             if (passwordsMatch) {
+              cookies().set({
+                name: UID_KEY,
+                value: user.id,
+                httpOnly: true,
+                path: "/",
+              });
+
               return user;
             }
 

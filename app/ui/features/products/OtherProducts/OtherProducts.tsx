@@ -32,7 +32,6 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
           &#35;{id}
         </Link>
       ),
-      sortable: false,
     },
     {
       key: "product",
@@ -40,25 +39,23 @@ export const OtherProducts = ({ products }: { products: Product[] }) => {
       customNode: (_, { productName, image }) => (
         <CustomAvatarName avatar={image} text={productName} />
       ),
-      sortable: false,
     },
     {
       key: "price",
       title: "Price",
       customNode: (_, { price }) => <CustomNumberFormat value={price} />,
-      sortable: false,
     },
     {
       key: "isAvailable",
       title: "Is Available",
-      customNode: (_, { isAvailable }) => (
+      customNode: (_, { quantity }) => (
         <Text className="text-xs dark:text-lighter font-semibold">
-          {isAvailable ? "Yes" : "No"}
+          {quantity && quantity > 0 ? "Yes" : "No"}
         </Text>
       ),
-      sortable: false,
     },
   ];
+
   return (
     <DataGrid
       data={products}

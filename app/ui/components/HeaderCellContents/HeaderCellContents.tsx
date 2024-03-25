@@ -1,27 +1,27 @@
 // Components
-import { Button, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
+import { Button } from "..";
 
 // Icons
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 
 // Constants
-import { DIRECTION } from "@/constants/common";
-import { VARIANT_BUTTON } from "@/constants";
+import { VARIANT_BUTTON, DIRECTION } from "@/constants";
 
 export interface HeaderCellContentsProps {
   title: string;
   keyColumn?: string;
-  sortKey?: string;
-  sortDirection?: string;
-  sortable?: boolean;
+  sortField?: string;
+  sortType?: string;
+  isSortable: boolean;
 }
 
 const HeaderCellContents = ({
   title,
   keyColumn,
-  sortKey,
-  sortDirection,
-  sortable = true,
+  sortField,
+  sortType,
+  isSortable = false,
 }: HeaderCellContentsProps) => {
   const activeFill = "text-primary";
   const inActiveFill = "fill-secondary";
@@ -29,12 +29,12 @@ const HeaderCellContents = ({
   const checkFill = (type: string) => {
     switch (type) {
       case DIRECTION.ASC:
-        return sortDirection === DIRECTION.ASC && sortKey === keyColumn
+        return sortType === DIRECTION.ASC && sortField === keyColumn
           ? activeFill
           : inActiveFill;
 
       case DIRECTION.DESC:
-        return sortDirection === DIRECTION.DESC && sortKey === keyColumn
+        return sortType === DIRECTION.DESC && sortField === keyColumn
           ? activeFill
           : inActiveFill;
 
@@ -46,12 +46,12 @@ const HeaderCellContents = ({
   return (
     <Flex>
       <Flex>{title}</Flex>
-      {sortable && (
+      {isSortable && (
         <Flex flexDirection="col" className="relative ml-4 -mt-6">
           <Flex justifyContent="end" className="absolute top-0">
             <Button
-              className="justify-center items-center opacity-50 dark:opacity-100"
-              variant={VARIANT_BUTTON.LIGHT}>
+              variantTremor={VARIANT_BUTTON.LIGHT}
+              variant={VARIANT_BUTTON.LIGHT_CENTER}>
               <MdArrowDropUp
                 className={`w-4 h-4 ${checkFill(DIRECTION.ASC)}`}
               />
@@ -59,8 +59,8 @@ const HeaderCellContents = ({
           </Flex>
           <Flex justifyContent="end" className="absolute top-1.5">
             <Button
-              className="justify-center items-center opacity-50 dark:opacity-100"
-              variant={VARIANT_BUTTON.LIGHT}>
+              variantTremor={VARIANT_BUTTON.LIGHT}
+              variant={VARIANT_BUTTON.LIGHT_CENTER}>
               <MdArrowDropDown
                 className={`w-4 h-4 ${checkFill(DIRECTION.DESC)}`}
               />

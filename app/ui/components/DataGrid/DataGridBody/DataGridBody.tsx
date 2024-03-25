@@ -12,7 +12,7 @@ interface DataTableBodyProps<T> {
   columns: ColumnType<T>[];
 }
 
-const DataGridBody = <T,>({ data, columns }: DataTableBodyProps<T>) => {
+const DataGridBody = <T,>({ data = [], columns }: DataTableBodyProps<T>) => {
   return (
     <TableBody>
       {data.length ? (

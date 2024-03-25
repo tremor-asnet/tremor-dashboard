@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { Flex } from "@tremor/react";
 
 // Components
-import { LoadingIndicator, InputSearch, Filter } from "@/ui/components";
+import { LoadingIndicator, InputDebounce, Filter } from "@/ui/components";
 
 const TableProduct = dynamic(
   () => import("@/ui/features/products/TableProduct/TableProduct"),
@@ -14,31 +14,32 @@ const TableProduct = dynamic(
 import { getProducts } from "@/services";
 
 // Types
-import { ProductResponse } from "@/types";
+import { ProductResponse, TSearchParams } from "@/types";
 
 // Constants
 import { ROUTES, productList } from "@/constants";
 
-type SearchParamsProduct = {
-  query: string;
-  filter: string;
-  page?: number;
-};
-
 const ProductListPage = async ({
   searchParams,
 }: {
-  searchParams?: SearchParamsProduct;
+  searchParams?: TSearchParams;
 }) => {
   // TODO: Update key whenever the filter data change
 
-  const {
-    query = "",
-    filter = "",
-    page = 1,
-  } = searchParams as SearchParamsProduct;
+  const { query, isAvailable, page, sortBy, orderBy } =
+    searchParams as TSearchParams;
 
-  const response: ProductResponse = await getProducts(page, filter, query);
+  const optionByFilter = productList.find(
+    option => option.option?.toLowerCase() === isAvailable?.toLowerCase(),
+  );
+
+  let response: ProductResponse = await getProducts({
+    pageNum: page,
+    available: optionByFilter?.value,
+    query,
+    sortBy,
+    orderBy,
+  });
 
   const { results, total, skip } = response;
 
@@ -50,12 +51,16 @@ const ProductListPage = async ({
           className="uppercase text-xs font-bold text-white dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg shadow-btn-primary hover:shadow-btn-primary-hover tracking-wide">
           new product
         </Link>
-        <Filter title="Is Available" listOption={productList} />
+        <Filter
+          field="isAvailable"
+          value={isAvailable}
+          title="Is Available"
+          listOption={productList}
+        />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
-        <InputSearch field="query" />
+        <InputDebounce field="query" param="page" valueParam="1" />
         <Suspense
-          key={`${query}-${filter}-${page}`}
           fallback={
             <LoadingIndicator
               additionalClass="flex justify-center items-center"
@@ -66,7 +71,6 @@ const ProductListPage = async ({
             />
           }>
           <TableProduct
-            key={`${query}-${filter}-${page}`}
             products={results}
             total={total}
             currentPage={skip / 10 + 1}

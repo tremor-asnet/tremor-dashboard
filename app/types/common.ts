@@ -24,3 +24,12 @@ export interface SortItem {
   key: string;
   direction: string;
 }
+
+export type TSearchParams = {
+  query?: string;
+  isAvailable?: string;
+  status?: string;
+  page?: number;
+  sortBy?: string;
+  orderBy?: string;
+};

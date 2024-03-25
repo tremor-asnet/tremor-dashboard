@@ -1,6 +1,16 @@
 // Types
 import { OptionType } from "@/types";
 
+export const EXCEPT_KEYS = {
+  POSITIVE_INTEGER: ["e", "E", "+", "-", "."],
+  POSITIVE_DOUBLE: ["e", "E", "+", "-"],
+};
+
+export const DIRECTION = {
+  ASC: "asc",
+  DESC: "desc",
+};
+
 export const ITEM_ACTION_PROJECT = [
   {
     key: "act",
@@ -51,6 +61,7 @@ export const SOCIAL_LINK = {
 };
 
 export const REMEMBER_ME_COOKIES_KEY = "remember-me";
+export const UID_KEY = "uid";
 export const AUTH_SESSION_COOKIES_KEY = "authjs.session-token";
 
 export const orderListOption: OptionType[] = [
@@ -99,6 +110,13 @@ export const PAGE_SIZE = {
 
 export const enum VARIANT_BUTTON {
   LIGHT = "light",
+  LIGHT_CARD = "lightCard",
+  LIGHT_CENTER = "lightCenter",
+  LIGHT_STATUS = "lightStatus",
   SECONDARY = "secondary",
+  SECONDARY_SHADOW = "secondaryShadow",
   PRIMARY = "primary",
+  PRIMARY_CENTER = "primaryCenter",
+  SURFACE = "surface",
+  DARK = "dark",
 }

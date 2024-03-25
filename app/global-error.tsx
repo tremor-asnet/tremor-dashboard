@@ -1,7 +1,10 @@
 "use client";
 
 // Component
-import { Button } from "@tremor/react";
+import { Button } from "./ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "./constants";
 
 export default function GlobalError({
   error,
@@ -18,8 +21,9 @@ export default function GlobalError({
             Something went wrong!
           </h2>
           <Button
-            className="py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white"
-            onClick={() => reset()}>
+            variant={VARIANT_BUTTON.PRIMARY}
+            additionalClass="py-3 px-5 border-none dark:text-white"
+            onClick={reset}>
             Try again
           </Button>
         </main>

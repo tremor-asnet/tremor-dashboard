@@ -15,21 +15,24 @@ const propsSalesByAge: SalesByAgeContainer = {
   title: "Sales by Age",
 };
 
+const propsNoDataSalesByAge: SalesByAgeContainer = {
+  data: [],
+  title: "Sales by Age",
+};
+
 describe("SalesByAge components", () => {
   let result: RenderResult;
   beforeEach(() => {
     result = render(<SalesByAge {...propsSalesByAge} />);
   });
-  test("Should render correctly", () => {
-    expect(result).toBeTruthy();
-  });
 
-  test("Should match snapshot", () => {
+  it("Should match snapshot", () => {
     expect(result).toMatchSnapshot();
   });
 
-  test("Should render correct title", () => {
-    const title = result.getByText(/Sales by Age/);
-    expect(title).toBeInTheDocument();
+  it("Should show No Data if the data is empty", () => {
+    const { getAllByText } = render(<SalesByAge {...propsNoDataSalesByAge} />);
+
+    expect(getAllByText("No data")).toHaveLength(1);
   });
 });

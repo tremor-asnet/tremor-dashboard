@@ -7,8 +7,7 @@ import { KeyboardEvent } from "react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Constants
-import { TAGS_PRICE, TYPE_PRICE } from "@/constants";
-import { EXCEPT_KEYS } from "@/constants/common";
+import { TAGS_PRICE, TYPE_PRICE, EXCEPT_KEYS } from "@/constants";
 
 // Types
 import { OptionType } from "@/types";

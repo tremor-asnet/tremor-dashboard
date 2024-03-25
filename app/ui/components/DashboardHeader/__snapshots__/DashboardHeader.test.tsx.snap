@@ -38,7 +38,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
               </svg>
             </div>
             <nav
-              class=""
+              class="pl-3 md:pl-0"
             >
               <ol
                 class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"
@@ -85,6 +85,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             >
               <div
                 class="relative p-2 flex items-center"
+                data-testid="toggle-theme"
               >
                 <svg
                   aria-hidden="true"
@@ -124,7 +125,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                   />
                 </svg>
                 <div
-                  class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none text-inherit"
+                  class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none false"
                 >
                   9
                 </div>
@@ -169,7 +170,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             </svg>
           </div>
           <nav
-            class=""
+            class="pl-3 md:pl-0"
           >
             <ol
               class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"
@@ -216,6 +217,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           >
             <div
               class="relative p-2 flex items-center"
+              data-testid="toggle-theme"
             >
               <svg
                 aria-hidden="true"
@@ -255,7 +257,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                 />
               </svg>
               <div
-                class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none text-inherit"
+                class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none false"
               >
                 9
               </div>

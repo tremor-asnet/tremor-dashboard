@@ -1,5 +1,5 @@
 // Components
-import { Button } from "@tremor/react";
+import { Button } from "../..";
 
 // Icons
 import { MdDone, MdReplay, MdClose } from "react-icons/md";
@@ -16,8 +16,9 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
     case 0:
       return (
         <Button
-          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-green-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-          variant={VARIANT_BUTTON.LIGHT}
+          additionalClass="border-green-500"
+          variant={VARIANT_BUTTON.LIGHT_STATUS}
+          variantTremor={VARIANT_BUTTON.LIGHT}
           onClick={() => {}}>
           <MdDone className="text-xs text-green-500" />
         </Button>
@@ -25,8 +26,9 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
     case 1:
       return (
         <Button
-          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-red-500 mr-2 text-tremor-content-title hover:text-tremor-content-title"
-          variant={VARIANT_BUTTON.LIGHT}
+          additionalClass="border-red-500"
+          variant={VARIANT_BUTTON.LIGHT_STATUS}
+          variantTremor={VARIANT_BUTTON.LIGHT}
           onClick={() => {}}>
           <MdClose className="text-xs text-red-500" />
         </Button>
@@ -34,8 +36,9 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
     case 2:
       return (
         <Button
-          className="w-[25px] h-[25px] justify-center items-center rounded-full border border border-primary dark:border-primary mr-2 text-tremor-content-title hover:text-tremor-content-title"
-          variant={VARIANT_BUTTON.LIGHT}
+          additionalClass="border-primary dark:border-primary"
+          variant={VARIANT_BUTTON.LIGHT_STATUS}
+          variantTremor={VARIANT_BUTTON.LIGHT}
           onClick={() => {}}>
           <MdReplay className="text-xs text-primary dark:text-primary" />
         </Button>

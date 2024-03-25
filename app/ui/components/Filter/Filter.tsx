@@ -1,11 +1,10 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { RefObject, useState } from "react";
+import { RefObject, useCallback, useMemo, useState } from "react";
 
 // Components
-import { Button, Text } from "@tremor/react";
-import { SelectOption } from "@/ui/components";
+import { Button, SelectOption } from "@/ui/components";
 
 // Icons
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -16,22 +15,33 @@ import { useOutsideClick } from "@/hooks";
 // Types
 import { OptionType } from "@/types";
 
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
+
 interface ProductFilterProps {
+  field?: string;
+  value?: string;
   title: string;
   listOption: OptionType[];
 }
 
-const Filter = ({ title, listOption }: ProductFilterProps) => {
+// Currently, It only support one filed
+const Filter = ({ field, value, title, listOption }: ProductFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
+  const [filterSelected, setFilterSelected] = useState(value ?? "");
 
   const router = useRouter();
 
-  const newParams = new URLSearchParams(searchParams.toString());
+  const newParams = useMemo(
+    () => new URLSearchParams(searchParams.toString()),
+    [searchParams],
+  );
+
   const pathName = usePathname();
 
-  let currentOption = "filter";
+  let currentOption = field ?? "";
 
   const currentStatus = newParams.get(currentOption);
 
@@ -43,42 +53,41 @@ const Filter = ({ title, listOption }: ProductFilterProps) => {
     setShowListOption(true);
   };
 
-  const handleSelectFilter = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const { value } = e.target as HTMLInputElement;
-    const currentValue = value.toString();
+  const handleSelectFilter = useCallback(
+    (option: string, value: string) => {
+      setFilterSelected(option);
 
-    if (currentStatus !== currentValue) {
-      newParams.set(currentOption, currentValue);
-      newParams.set("page", "1");
-    }
+      if (currentStatus !== value) {
+        newParams.set(currentOption, option?.toLowerCase());
+        newParams.set("page", "1");
+      }
 
-    const query = newParams ? `${newParams}` : "";
-    router.push(`${pathName}?${query}`);
+      const query = newParams ? `${newParams}` : "";
+      router.push(`${pathName}?${query}`);
 
-    setShowListOption(false);
-  };
+      setShowListOption(false);
+    },
+    [currentOption, currentStatus, newParams, pathName, router],
+  );
 
-  const handleRemoveFilter = () => {
+  const handleRemoveFilter = useCallback(() => {
+    setFilterSelected("");
     newParams.delete(currentOption);
     router.push(`${pathName}?${newParams.toString()}`);
     setShowListOption(false);
-  };
-
-  const titleOption = listOption.find(({ value }) => currentStatus === value)
-    ?.option;
+  }, [currentOption, newParams, pathName, router]);
 
   return (
     <div className="relative max-w-[220px]">
       <Button
         icon={RiArrowDropDownLine}
         iconPosition="right"
-        variant="secondary"
-        className="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary box-shadow-transparent"
+        variant={VARIANT_BUTTON.SECONDARY_SHADOW}
+        variantTremor={VARIANT_BUTTON.SECONDARY}
+        additionalClass="py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg  dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
         onClick={handleClickFilter}
         data-testid="toggle-filter">
-        <Text className="uppercase text-xs text-inherit dark:text-inherit tracking-wide">
-          {titleOption ? `${title}: ${titleOption}` : "Filters"}
-        </Text>
+        {filterSelected ? `${title}: ${filterSelected}` : "Filters"}
       </Button>
       {showListOption && (
         <div

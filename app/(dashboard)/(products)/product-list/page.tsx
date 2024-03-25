@@ -37,6 +37,7 @@ const ProductListPage = async ({
     orderBy,
   });
 
+  const optionByFilter = productList.find(option => option.value === filter);
   const { results, total, skip } = response;
 
   return (
@@ -47,7 +48,11 @@ const ProductListPage = async ({
           className="uppercase text-xs font-bold text-white dark:text-white py-3 px-5 bg-gradient-primary dark:bg-gradient-pickled border-none dark:text-white rounded-lg shadow-btn-primary hover:shadow-btn-primary-hover tracking-wide">
           new product
         </Link>
-        <Filter title="Is Available" listOption={productList} />
+        <Filter
+          value={optionByFilter?.option}
+          title="Is Available"
+          listOption={productList}
+        />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputDebounce field="query" param="page" valueParam="1" />

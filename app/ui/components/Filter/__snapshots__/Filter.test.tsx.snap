@@ -9,11 +9,11 @@ exports[`Testing Filter component Should match snapshot 1`] = `
         class="relative max-w-[220px]"
       >
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm box-shadow-transparent uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
+          class="tremor-Button-root shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm box-shadow-transparent uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
           data-testid="toggle-filter"
         >
           <span
-            class="tremor-Button-text text-sm whitespace-nowrap"
+            class="tremor-Button-text text-tremor-default whitespace-nowrap"
           >
             Filters
           </span>
@@ -40,11 +40,11 @@ exports[`Testing Filter component Should match snapshot 1`] = `
       class="relative max-w-[220px]"
     >
       <button
-        class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border text-sm box-shadow-transparent uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
+        class="tremor-Button-root shrink-0 inline-flex justify-center items-center group outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm box-shadow-transparent uppercase py-[9px] px-[26px] font-bold bg-transparent border-primary hover:text-light dark:hover:text-light focus:border-primary hover:border-primary text-primary focus:text-white dark:text-white hover:bg-transparent focus:bg-dark-secondary rounded-lg dark:border-primary dark:bg-transparent dark:hover:border-primary dark:hover:bg-transparent dark:focus:bg-dark-secondary"
         data-testid="toggle-filter"
       >
         <span
-          class="tremor-Button-text text-sm whitespace-nowrap"
+          class="tremor-Button-text text-tremor-default whitespace-nowrap"
         >
           Filters
         </span>

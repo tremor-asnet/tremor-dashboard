@@ -59,8 +59,12 @@ const ChannelChart = ({ title, channelChartData }: ChannelChartProps) => {
               index="name"
               category="percent"
               variant="pie"
-              // @ts-expect-error: Tremor bug when add colors into config
-              colors={["royal-blue", "amaranth", "cod-gray", "river-bed"]}
+              colors={[
+                "royal-blue-500",
+                "amaranth-500",
+                "cod-gray-500",
+                "river-bed-500",
+              ]}
               showAnimation={true}
             />
           </Flex>

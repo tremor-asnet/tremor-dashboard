@@ -76,7 +76,6 @@ export default function DashboardLayout({
       {isPending && (
         <LoadingIndicator width={10} height={10} isFullWidth={true} />
       )}
-
       <PinCode pinCode={pinCode} />
     </>
   );

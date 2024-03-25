@@ -1,5 +1,5 @@
 // Libs
-import { Control, Controller } from "react-hook-form";
+import { Controller, FieldErrors } from "react-hook-form";
 
 // Components
 import { InputField } from "@/ui/components";
@@ -11,10 +11,15 @@ import { MESSAGES_ERROR, REGEX } from "@/constants";
 import { NewSocial } from "@/types";
 
 interface SocialsProps {
-  control: Control<NewSocial>;
+  control: any;
+  errors: FieldErrors<NewSocial>;
 }
 
-const Socials = ({ control }: SocialsProps) => {
+const Socials = ({ control, errors }: SocialsProps) => {
+  const facebookErrorMsg = errors.facebookUrl?.message;
+  const instagramErrorMsg = errors.instagramUrl?.message;
+  const shopifyErrorMsg = errors.shopifyUrl?.message;
+
   return (
     <>
       <Controller
@@ -27,21 +32,17 @@ const Socials = ({ control }: SocialsProps) => {
             message: MESSAGES_ERROR.URL_REQUIRED,
           },
         }}
-        render={({ field, formState: { errors } }) => {
-          const shopifyErrorMsg = errors.shopifyUrl?.message;
-
-          return (
-            <div className="mb-6">
-              <InputField
-                id="add-product-shopify"
-                label="Shopify Handle"
-                type="text"
-                errorMessage={shopifyErrorMsg}
-                {...field}
-              />
-            </div>
-          );
-        }}
+        render={({ field }) => (
+          <div className="mb-6">
+            <InputField
+              id="add-product-shopify"
+              label="Shopify Handle"
+              type="text"
+              errorMessage={shopifyErrorMsg}
+              {...field}
+            />
+          </div>
+        )}
       />
 
       <Controller
@@ -54,21 +55,17 @@ const Socials = ({ control }: SocialsProps) => {
             message: MESSAGES_ERROR.URL_REQUIRED,
           },
         }}
-        render={({ field, formState: { errors } }) => {
-          const facebookErrorMsg = errors.facebookUrl?.message;
-
-          return (
-            <div className="mb-6">
-              <InputField
-                id="add-product-fb"
-                label="Facebook Account"
-                type="text"
-                errorMessage={facebookErrorMsg}
-                {...field}
-              />
-            </div>
-          );
-        }}
+        render={({ field }) => (
+          <div className="mb-6">
+            <InputField
+              id="add-product-fb"
+              label="Facebook Account"
+              type="text"
+              errorMessage={facebookErrorMsg}
+              {...field}
+            />
+          </div>
+        )}
       />
 
       <Controller
@@ -81,21 +78,17 @@ const Socials = ({ control }: SocialsProps) => {
             message: MESSAGES_ERROR.URL_REQUIRED,
           },
         }}
-        render={({ field, formState: { errors } }) => {
-          const instagramErrorMsg = errors.instagramUrl?.message;
-
-          return (
-            <div className="mb-6">
-              <InputField
-                id="add-product-ig"
-                label="Instagram Account"
-                type="text"
-                errorMessage={instagramErrorMsg}
-                {...field}
-              />
-            </div>
-          );
-        }}
+        render={({ field }) => (
+          <div className="mb-6">
+            <InputField
+              id="add-product-ig"
+              label="Instagram Account"
+              type="text"
+              errorMessage={instagramErrorMsg}
+              {...field}
+            />
+          </div>
+        )}
       />
     </>
   );

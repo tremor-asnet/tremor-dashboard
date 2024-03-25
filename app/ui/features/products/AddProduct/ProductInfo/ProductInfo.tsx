@@ -2,7 +2,7 @@
 
 // Libs
 import dynamic from "next/dynamic";
-import { Control, Controller } from "react-hook-form";
+import { Control, Controller, FieldErrors } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
@@ -10,12 +10,7 @@ import { Text } from "@tremor/react";
 import { InputField, SelectField } from "@/ui/components";
 
 // Constants
-import {
-  CATEGORY_PRODUCT,
-  EXCEPT_KEYS,
-  MESSAGES_ERROR,
-  PRODUCT_NAME_REGEX,
-} from "@/constants";
+import { CATEGORY_PRODUCT, MESSAGES_ERROR, EXCEPT_KEYS } from "@/constants";
 
 // Types
 import { NewInfo } from "@/types";
@@ -38,9 +33,12 @@ const QuillEditor = dynamic(() => import("react-quill"), {
 
 interface ProductInfoProps {
   control: Control<NewInfo>;
+  errors: FieldErrors<NewInfo>;
 }
 
-const ProductInfo = ({ control }: ProductInfoProps) => {
+const ProductInfo = ({ control, errors }: ProductInfoProps) => {
+  const errorNameMsg = errors.productName?.message;
+
   const handleWeightKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     EXCEPT_KEYS.POSITIVE_DOUBLE.includes(e.key) && e.preventDefault();
   };
@@ -56,54 +54,34 @@ const ProductInfo = ({ control }: ProductInfoProps) => {
         control={control}
         rules={{
           required: MESSAGES_ERROR.FIELD_REQUIRED,
-          pattern: {
-            value: PRODUCT_NAME_REGEX,
-            message: MESSAGES_ERROR.INVALID_PRODUCT_NAME,
-          },
           minLength: {
             value: 4,
             message: MESSAGES_ERROR.MIN_LENGTH_4,
           },
         }}
-        render={({ field, formState: { errors } }) => {
-          const errorNameMessage = errors.productName?.message;
-
-          return (
-            <InputField
-              id="add-product-name"
-              label="Name"
-              errorMessage={errorNameMessage}
-              {...field}
-            />
-          );
-        }}
+        render={({ field }) => (
+          <div>
+            <InputField id="add-product-name" label="Name" {...field} />
+            <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
+              {errorNameMsg}
+            </Text>
+          </div>
+        )}
       />
 
       {/* Prevent input e, E, +, - to weight field */}
       <Controller
         name="weight"
         control={control}
-        rules={{
-          required: MESSAGES_ERROR.FIELD_REQUIRED,
-          min: {
-            value: 0,
-            message: MESSAGES_ERROR.NEGATIVE_NUMBER,
-          },
-        }}
-        render={({ field, formState: { errors } }) => {
-          const errorWeightMessage = errors.weight?.message;
-
-          return (
-            <InputField
-              id="add-product-weight"
-              type="number"
-              label="Weight"
-              errorMessage={errorWeightMessage}
-              {...field}
-              onKeyDown={handleWeightKeyDown}
-            />
-          );
-        }}
+        render={({ field }) => (
+          <InputField
+            id="add-product-weight"
+            type="number"
+            label="Weight"
+            {...field}
+            onKeyDown={handleWeightKeyDown}
+          />
+        )}
       />
 
       <Controller
@@ -131,7 +109,6 @@ const ProductInfo = ({ control }: ProductInfoProps) => {
             control={control}
             render={({ field: { value, onChange } }) => {
               const convertedValue = value.toString();
-
               return (
                 <SelectField
                   label="Category"
@@ -148,27 +125,15 @@ const ProductInfo = ({ control }: ProductInfoProps) => {
           <Controller
             name="quantity"
             control={control}
-            rules={{
-              required: MESSAGES_ERROR.FIELD_REQUIRED,
-              min: {
-                value: 0,
-                message: MESSAGES_ERROR.NEGATIVE_NUMBER,
-              },
-            }}
-            render={({ field, formState: { errors } }) => {
-              const errorQuantityMessage = errors.quantity?.message;
-
-              return (
-                <InputField
-                  id="add-product-quantity"
-                  type="number"
-                  label="Quantity"
-                  errorMessage={errorQuantityMessage}
-                  onKeyDown={handleQuantityKeyDown}
-                  {...field}
-                />
-              );
-            }}
+            render={({ field }) => (
+              <InputField
+                id="add-product-quantity"
+                type="number"
+                label="Quantity"
+                onKeyDown={handleQuantityKeyDown}
+                {...field}
+              />
+            )}
           />
         </div>
 

@@ -27,7 +27,11 @@ const SocialForm = ({
   onBack,
   onSubmit,
 }: SocialFormProps) => {
-  const { control, handleSubmit } = useForm<NewSocial>({
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<NewSocial>({
     defaultValues: {
       shopifyUrl,
       facebookUrl,
@@ -41,7 +45,7 @@ const SocialForm = ({
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Socials
       </h6>
-      <Socials control={control} />
+      <Socials control={control} errors={errors} />
       <Flex className="mt-6">
         <Button variant={VARIANT_BUTTON.SURFACE} type="submit" onClick={onBack}>
           <Text className="uppercase font-bold text-xs text-gray-900 dark:text-white tracking-wide">

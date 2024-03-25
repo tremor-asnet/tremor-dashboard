@@ -18,6 +18,10 @@ const meta = {
       description:
         "This is control from useForm of react-hook-form with type NewInfo({productName: string, description: string, providerName: string, weight: string, category: string, quantity: string})",
     },
+    errors: {
+      description:
+        "This is errors from FieldErrors of react-hook-form with type NewInfo()",
+    },
   },
 } as Meta<typeof ProductInfo>;
 
@@ -26,7 +30,10 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const ProductInfoFormProvider = () => {
-  const { control } = useForm<NewInfo>({
+  const {
+    control,
+    formState: { errors },
+  } = useForm<NewInfo>({
     defaultValues: {
       productName: "Product A",
       description: "",
@@ -37,7 +44,7 @@ const ProductInfoFormProvider = () => {
     },
   });
 
-  return <ProductInfo control={control} />;
+  return <ProductInfo control={control} errors={errors} />;
 };
 
 export const Default: Story = {

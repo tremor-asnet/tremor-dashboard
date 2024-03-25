@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { memo, useCallback, useState } from "react";
 
 import { PinCode } from "./PinCode";
 import Modal, { IModal } from "../Modal";
@@ -16,11 +16,11 @@ interface IPinCodeModal extends Omit<IModal, "children"> {
 const PinCodeModal = ({ onSubmit, title, ...others }: IPinCodeModal) => {
   const [codes, setCodes] = useState("");
 
-  const handleSubmit = async () => {
+  const handleSubmit = useCallback(async () => {
     const isSuccess = !!(await onSubmit?.(parseFloat(codes)));
     setCodes("");
     return isSuccess;
-  };
+  }, [codes, onSubmit]);
 
   return (
     <Modal
@@ -34,4 +34,4 @@ const PinCodeModal = ({ onSubmit, title, ...others }: IPinCodeModal) => {
   );
 };
 
-export default PinCodeModal;
+export default memo(PinCodeModal);

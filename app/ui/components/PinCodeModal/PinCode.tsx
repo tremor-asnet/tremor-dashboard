@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createRef, useCallback, useMemo } from "react";
+import React, { createRef, memo, useCallback, useMemo } from "react";
 
 import { Flex } from "@tremor/react";
 import { PinCodeField } from "./PinCodeField";
@@ -17,51 +17,56 @@ interface IPinCode {
   value?: string;
 }
 
-export const PinCode = ({
-  length = PIN_CODE_LENGTH,
-  value,
-  onChange,
-}: IPinCode) => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const codes = useMemo(() => formatPinCode({ length, codes: value }), [value]);
+export const PinCode = memo(
+  ({ length = PIN_CODE_LENGTH, value, onChange }: IPinCode) => {
+    const codes = useMemo(
+      () => formatPinCode({ length, codes: value }),
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      [value],
+    );
 
-  const refs = rangeNumber(1, length).map(() => createRef<HTMLInputElement>());
+    const refs = rangeNumber(1, length).map(() =>
+      createRef<HTMLInputElement>(),
+    );
 
-  const handleChange = useCallback(
-    (value: string, index: number) => {
-      const currentCodes = formatPinCode({ codes, index, value });
-      onChange(currentCodes);
+    const handleChange = useCallback(
+      (value: string, index: number) => {
+        const currentCodes = formatPinCode({ codes, index, value });
+        onChange(currentCodes);
 
-      if (value === DEFAULT_PIN_CODE) {
-        if (index > 0) {
-          refs[index - 1].current?.focus();
+        if (value === DEFAULT_PIN_CODE) {
+          if (index > 0) {
+            refs[index - 1].current?.focus();
+          }
+
+          return;
         }
 
-        return;
-      }
+        if (index < length - 1) {
+          refs[index + 1].current?.focus();
+          return;
+        }
 
-      if (index < length - 1) {
-        refs[index + 1].current?.focus();
-        return;
-      }
+        refs[index].current?.blur();
+      },
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      [refs, codes, onchange],
+    );
 
-      refs[index].current?.blur();
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [refs, codes, onchange],
-  );
+    return (
+      <Flex className="gap-6 w-fit self-center">
+        {refs.map((_, index) => (
+          <PinCodeField
+            ref={refs[index]}
+            key={index}
+            index={index}
+            value={codes[index]}
+            onChange={handleChange}
+          />
+        ))}
+      </Flex>
+    );
+  },
+);
 
-  return (
-    <Flex className="gap-6 w-fit self-center">
-      {refs.map((_, index) => (
-        <PinCodeField
-          ref={refs[index]}
-          key={index}
-          index={index}
-          value={codes[index]}
-          onChange={handleChange}
-        />
-      ))}
-    </Flex>
-  );
-};
+PinCode.displayName = "Pin Code";

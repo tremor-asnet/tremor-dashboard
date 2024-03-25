@@ -21,7 +21,7 @@ describe("SelectField Component", () => {
       <SelectField label="Currency" options={TYPE_PRICE} name="currency" />,
     );
     const selectElement = getById(container, "currency");
-    expect(selectElement[0]?.children).toHaveLength(1);
+    expect(selectElement[0]?.children).toHaveLength(7);
   });
 
   it("renders correct name of options", () => {

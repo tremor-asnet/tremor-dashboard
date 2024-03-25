@@ -1,24 +1,19 @@
 // Libs
 import { MultiSelect, MultiSelectItem } from "@tremor/react";
-import { Control, Controller } from "react-hook-form";
+import { Controller } from "react-hook-form";
 import { KeyboardEvent } from "react";
 
 // Components
 import { InputField, SelectField } from "@/ui/components";
 
 // Constants
-import {
-  EXCEPT_KEYS,
-  MESSAGES_ERROR,
-  TAGS_PRICE,
-  TYPE_PRICE,
-} from "@/constants";
+import { TAGS_PRICE, TYPE_PRICE, EXCEPT_KEYS } from "@/constants";
 
 // Types
-import { NewPricing, OptionType } from "@/types";
+import { OptionType } from "@/types";
 
 interface PricingProps {
-  control: Control<NewPricing>;
+  control: any;
 }
 
 const Pricing = ({ control }: PricingProps) => {
@@ -35,26 +30,15 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="price"
         control={control}
-        rules={{
-          required: MESSAGES_ERROR.FIELD_REQUIRED,
-          min: {
-            value: 0,
-            message: MESSAGES_ERROR.NEGATIVE_NUMBER,
-          },
-        }}
-        render={({ field, formState: { errors } }) => {
-          const priceErrorMessage = errors.price?.message || "";
-          return (
-            <InputField
-              id="add-product-price"
-              label="Price"
-              type="number"
-              errorMessage={priceErrorMessage}
-              {...field}
-              onKeyDown={handlePriceKeyDown}
-            />
-          );
-        }}
+        render={({ field }) => (
+          <InputField
+            id="add-product-price"
+            label="Price"
+            type="number"
+            {...field}
+            onKeyDown={handlePriceKeyDown}
+          />
+        )}
       />
 
       <Controller
@@ -76,35 +60,22 @@ const Pricing = ({ control }: PricingProps) => {
       <Controller
         name="sku"
         control={control}
-        rules={{
-          required: MESSAGES_ERROR.FIELD_REQUIRED,
-          min: {
-            value: 0,
-            message: MESSAGES_ERROR.NEGATIVE_NUMBER,
-          },
-        }}
-        render={({ field, formState: { errors } }) => {
-          const skuErrorMessage = errors.sku?.message || "";
-
-          return (
-            <InputField
-              id="add-product-sky"
-              label="SKU"
-              type="number"
-              errorMessage={skuErrorMessage}
-              onKeyDown={handleSkuKeyDown}
-              {...field}
-            />
-          );
-        }}
+        render={({ field }) => (
+          <InputField
+            id="add-product-sky"
+            label="SKU"
+            type="number"
+            onKeyDown={handleSkuKeyDown}
+            {...field}
+          />
+        )}
       />
 
       <Controller
         name="tags"
         control={control}
         render={({ field: { value, onChange } }) => {
-          const convertedValue = value?.map(String);
-
+          const convertedValue = value.map(String);
           return (
             <div className="w-full">
               <label className="text-gray-500 text-sm dark:text-gray-400">

@@ -33,7 +33,11 @@ const ProductInfoForm = ({
   quantity,
   onSubmit,
 }: ProductInfoFormProps) => {
-  const { control, handleSubmit } = useForm<NewInfo>({
+  const {
+    control,
+    formState: { errors },
+    handleSubmit,
+  } = useForm<NewInfo>({
     defaultValues: {
       productName,
       description,
@@ -50,7 +54,7 @@ const ProductInfoForm = ({
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </h6>
-      <ProductInfo control={control} />
+      <ProductInfo control={control} errors={errors} />
       <div className="mt-6">
         <Button
           variant={VARIANT_BUTTON.PRIMARY_CENTER}

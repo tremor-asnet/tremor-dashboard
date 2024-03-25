@@ -16,7 +16,7 @@ const InputField = ({
   label,
   placeHolder = "",
   errorMessage = "",
-  ...rest
+  ...props
 }: InputFieldProps) => {
   return (
     <div className="w-full">
@@ -27,10 +27,10 @@ const InputField = ({
         id={id}
         placeholder={placeHolder}
         className="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
-        {...rest}
+        {...props}
       />
       {errorMessage && (
-        <Text className="pt-1 text-xs text-red-500 dark:text-red-500">
+        <Text className="text-xs text-red-500 dark:text-red-500">
           {errorMessage.toString()}
         </Text>
       )}

@@ -7,14 +7,14 @@ import { Button } from "@tremor/react";
 export type ToastColor = "green" | "red" | "yellow";
 
 interface ToastProps {
-  icon: ReactNode;
+  Icon: JSX.ElementType;
   message: string;
   onClose?: () => void;
-  color?: ToastColor;
+  color?: string | ToastColor;
 }
 
 export const Toast = ({
-  icon,
+  Icon,
   message = "",
   color = "green",
   onClose,
@@ -26,7 +26,7 @@ export const Toast = ({
       data-testid="toast">
       <div
         className={`inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-${color}-500 bg-${color}-100 rounded-lg dark:bg-${color}-800 dark:text-${color}-200`}>
-        {icon}
+        <Icon />
       </div>
       <div className="ms-3 text-sm font-normal">{message}</div>
       <Button

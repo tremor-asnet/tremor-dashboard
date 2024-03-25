@@ -1,6 +1,5 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
-import { TOAST_TYPES } from "@/constants";
 import { ToastProvider, ToastContext, ToastMessageType } from "../toast";
 
 describe("ToastProvider", () => {

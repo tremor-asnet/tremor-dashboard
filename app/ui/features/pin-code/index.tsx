@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React, { useCallback, useEffect, useMemo } from "react";
+import React, { useCallback, useEffect } from "react";
 
 import { usePinCode } from "@/context/pincode";
 
@@ -24,6 +24,10 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
   } = usePinCode();
 
   const { openToast } = useToast();
+
+  useEffect(() => {
+    pinCode && setPinCode(pinCode);
+  }, [pinCode, setPinCode]);
 
   const handleSubmit = useCallback(
     async (code: number) => {
@@ -75,7 +79,7 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
     <PinCodeModal
       onSubmit={handleSubmit}
       onClose={hidePinCodeModal}
-      open={!isConfirm}
+      open={isShowPinCodeModal}
       {...modalProps}
     />
   );

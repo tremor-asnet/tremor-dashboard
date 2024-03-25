@@ -37,9 +37,8 @@ const PinCodeProvider = ({ children }: { children: ReactNode }) => {
   const [pinCode, setPinCode] = useState<number>();
 
   useEffect(() => {
-    pinCode && !isConfirm && setIsConfirm(true);
-    setIsShowPinCodeModal(!isConfirm);
-  }, [pinCode, isConfirm]);
+    setIsShowPinCodeModal(!pinCode);
+  }, [pinCode]);
 
   const handleConfirmPinCode = useCallback(
     (code: number) => {
@@ -58,16 +57,12 @@ const PinCodeProvider = ({ children }: { children: ReactNode }) => {
     [],
   );
 
-  const handleSetPinCode = useCallback((code: number) => {
-    setPinCode(code);
-  }, []);
-
   const pinCodeContextValue: IPinCodeContext = {
     isConfirm,
     confirmPinCode: handleConfirmPinCode,
     pinCode,
     isShowPinCodeModal,
-    setPinCode: handleSetPinCode,
+    setPinCode,
     hidePinCodeModal: handleHidePinCodeModal,
     showPinCodeModal: handleShowPinCodeModal,
   };

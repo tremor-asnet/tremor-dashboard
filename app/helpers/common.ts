@@ -1,10 +1,10 @@
 // Constants
 import {
+  DIRECTION,
   INVOICE_REGEX,
   ORDER_LIST_REGEX,
   PRODUCT_LIST_REGEX,
 } from "@/constants";
-import { DIRECTION } from "@/constants/common";
 
 // Types
 import { Order } from "@/types";
@@ -205,4 +205,19 @@ export const transformOrders = (sortedOrders: Order[]) => {
       productName,
     };
   });
+};
+
+/**
+ * Handle search params for API
+ * @param object key: string, value: string
+ * @returns string
+ */
+export const buildSearchUrl = (object: { [key: string]: string | number }) => {
+  const searchParams = new URLSearchParams();
+
+  for (const [key, value] of Object.entries(object)) {
+    searchParams.append(key, String(value));
+  }
+
+  return searchParams.toString();
 };

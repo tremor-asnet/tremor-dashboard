@@ -27,4 +27,10 @@ describe("InvoiceBody Testing", () => {
     const component = render(<InvoiceBody {...invoice} />);
     expect(component).toMatchSnapshot();
   });
+
+  it("renders invoice body with default data show text Result Not Found", () => {
+    const { getAllByText } = render(<InvoiceBody />);
+
+    expect(getAllByText("Result Not Found")).toHaveLength(1);
+  });
 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, LineChart, Flex, Button, Text } from "@tremor/react";
+import { Card, LineChart, Flex, Text } from "@tremor/react";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 import { useState } from "react";
 
@@ -8,10 +8,13 @@ import { useState } from "react";
 import { Event, RevenueChartData } from "@/types";
 
 // Components
-import { Popover } from "@/ui/components";
+import { Button, Popover } from "@/ui/components";
 
 //Styles
 import "@/styles/sales.css";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface RevenueChartProps {
   dataChart: RevenueChartData[];
@@ -35,8 +38,8 @@ const SalesRevenueChart = ({ dataChart, revenueType }: RevenueChartProps) => {
           content="See which ads perform better"
           className="text-center !bg-black !bottom-[-18px] rounded-md !text-white right-[38px] min-w-[170px] before:content-['▶'] before:absolute before:top-[16px] before:right-[-12px] before:text-[black]">
           <Button
-            className="!rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
-            variant="secondary"
+            variant={VARIANT_BUTTON.SECONDARY}
+            variantTremor={VARIANT_BUTTON.SECONDARY}
             aria-label="Which Ads Perform Better Button">
             <MdOutlinePriorityHigh className="text-xs text-secondary" />
           </Button>

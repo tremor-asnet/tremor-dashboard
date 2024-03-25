@@ -15,6 +15,11 @@ const propsSalesByAge: SalesByAgeContainer = {
   title: "Sales by Age",
 };
 
+const propsNoDataSalesByAge: SalesByAgeContainer = {
+  data: [],
+  title: "Sales by Age",
+};
+
 describe("SalesByAge components", () => {
   let result: RenderResult;
   beforeEach(() => {
@@ -23,5 +28,11 @@ describe("SalesByAge components", () => {
 
   it("Should match snapshot", () => {
     expect(result).toMatchSnapshot();
+  });
+
+  it("Should show No Data if the data is empty", () => {
+    const { getAllByText } = render(<SalesByAge {...propsNoDataSalesByAge} />);
+
+    expect(getAllByText("No data")).toHaveLength(1);
   });
 });

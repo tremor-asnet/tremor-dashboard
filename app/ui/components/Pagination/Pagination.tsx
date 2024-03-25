@@ -36,13 +36,12 @@ const Pagination = ({
   };
 
   const paginationRangeLength = paginationRange.length;
-  const showItemsPagination = currentPage !== 0 && paginationRangeLength > 2;
+  const showItemsPagination = paginationRangeLength > 1;
   const lastPage = paginationRange[paginationRangeLength - 1];
   const firstItemCurrentPage = currentPage * pageSize - pageSize + 1;
   const lastItemCurrentPage =
     currentPage * pageSize >= totalCount ? totalCount : currentPage * pageSize;
   const totalItems = totalCount < pageSize ? pageSize : lastItemCurrentPage;
-
   return (
     <div className="antialiased font-primary flex gap-5 flex-col sm:flex-row items-start sm:items-center w-full justify-between p-6">
       <div className="flex w-auto py-2">
@@ -68,7 +67,7 @@ const Pagination = ({
             <HiMiniChevronLeft />
           </Button>
 
-          {paginationRange.map(pageNumber => {
+          {paginationRange.map((pageNumber, index) => {
             const currentPageActive =
               currentPage === pageNumber
                 ? "text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
@@ -78,7 +77,7 @@ const Pagination = ({
               return (
                 <RxDotsHorizontal
                   className="dark:text-secondary"
-                  key={pageNumber}
+                  key={`${index}-${pageNumber}`}
                 />
               );
             }
@@ -87,7 +86,7 @@ const Pagination = ({
               <Button
                 className={`dark:hover:bg-grayish ${currentPageActive}`}
                 aria-label={"Page button " + pageNumber}
-                key={pageNumber}
+                key={`${index}-${pageNumber}`}
                 disabled={currentPage === pageNumber}
                 onClick={() => onPageChange(pageNumber as number)}>
                 {pageNumber}

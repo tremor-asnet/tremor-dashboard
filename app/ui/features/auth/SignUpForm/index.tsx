@@ -7,8 +7,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 // Components
-import { TextInput, Button, Flex, Text } from "@tremor/react";
-import { LoadingIndicator, Checkbox } from "@/ui/components";
+import { TextInput, Flex, Text } from "@tremor/react";
+import { LoadingIndicator, Checkbox, Button } from "@/ui/components";
 
 // Icons
 import { TbExclamationMark } from "react-icons/tb";
@@ -16,7 +16,13 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
 // Constants
-import { MESSAGES_ERROR, SIGN_UP_MESSAGE, REGEX, ROUTES } from "@/constants";
+import {
+  MESSAGES_ERROR,
+  SIGN_UP_MESSAGE,
+  REGEX,
+  ROUTES,
+  VARIANT_BUTTON,
+} from "@/constants";
 
 // Actions
 import { createNewAccount } from "@/actions";
@@ -266,10 +272,11 @@ const SignUpForm = () => {
         />
         <Button
           tabIndex={0}
+          variant={VARIANT_BUTTON.PRIMARY}
           type="submit"
-          className="min-h-[43px] w-full bg-gradient-primary dark:bg-gradient-pickled rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent"
           size="xs"
-          disabled={!isDirty}>
+          disabled={!isDirty}
+          additionalClass="min-h-[43px] w-full rounded-lg py-[11px] mt-9 uppercase border-0 border-transparent hover:border-transparent">
           {isPending ? (
             <LoadingIndicator width={5} height={5} />
           ) : (

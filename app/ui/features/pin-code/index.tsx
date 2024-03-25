@@ -72,17 +72,13 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
     [confirmPinCode, isConfirm, openToast, pinCode, setPinCode],
   );
 
-  const modalProps = useMemo(() => {
-    if (pinCode) {
-      return { title: "Please enter your PIN code" };
-    }
-
-    return {
-      title: "Please set the PIN code to your account",
-      btnCloseLabel: "Skip",
-      btnPrimaryLabel: "Set",
-    };
-  }, [pinCode]);
+  const modalProps = pinCode
+    ? { title: "Please enter your PIN code" }
+    : {
+        title: "Please set the PIN code to your account",
+        btnCloseLabel: "Skip",
+        btnPrimaryLabel: "Set",
+      };
 
   if (!isShowPinCodeModal) {
     return null;

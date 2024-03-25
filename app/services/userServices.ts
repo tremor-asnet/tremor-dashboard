@@ -89,10 +89,10 @@ const updatePinCode = async (codes: number) => {
   const { message } = await res.json();
 
   if (res.ok) {
-    return { isSuccess: true };
+    return { isSuccess: true, errorMessage: null };
   }
 
-  return { errorMessage: message };
+  return { errorMessage: message, isSuccess: false };
 };
 
 const getUserById = async (id: number): Promise<User> => {

@@ -9,6 +9,7 @@ import {
   EMAIL_REGEX,
   ROUTER_API_URL,
   UID_KEY,
+  API_ROUTES,
 } from "@/constants";
 import { cookies } from "next/headers";
 
@@ -22,7 +23,7 @@ const getUserByEmail = async (email: string): Promise<User | undefined> => {
     return undefined;
   }
 
-  const res = await fetch(`${ROUTER_API_URL}/users?email=${email}`, {
+  const res = await fetch(`${API_ROUTES.USERS}?email=${email}`, {
     cache: "no-store",
   });
 
@@ -43,7 +44,7 @@ const addNewUser = async (formData: FormData) => {
   let errorMessage;
 
   try {
-    const res = await fetch(`${ROUTER_API_URL}/users`, {
+    const res = await fetch(`${API_ROUTES.USERS}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
@@ -77,7 +78,7 @@ const updatePinCode = async (codes: number) => {
     throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
 
-  const res = await fetch(`${ROUTER_API_URL}/users/${id}`, {
+  const res = await fetch(`${API_ROUTES.USERS}/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -96,7 +97,7 @@ const updatePinCode = async (codes: number) => {
 };
 
 const getUserById = async (id: number): Promise<User> => {
-  const res = await fetch(`${ROUTER_API_URL}/users/${id}`, {
+  const res = await fetch(`${API_ROUTES.USERS}/${id}`, {
     method: "GET",
     cache: "no-store",
   });

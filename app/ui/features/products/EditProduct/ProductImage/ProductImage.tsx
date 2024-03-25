@@ -1,8 +1,9 @@
 import { ChangeEvent } from "react";
 
 // Components
-import { Title, Text, Flex, Card, Button } from "@tremor/react";
-import { LoadingIndicator, CustomImage } from "@/ui/components";
+import { Title, Text, Flex, Card } from "@tremor/react";
+import { LoadingIndicator, CustomImage, Button } from "@/ui/components";
+import { VARIANT_BUTTON } from "@/constants";
 
 const ProductImage = ({
   name,
@@ -70,10 +71,10 @@ const ProductImage = ({
 
             <Button
               type="button"
-              className="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
+              additionalClass="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
               onClick={onRemoveImage}
               disabled={disabled}
-              variant="light">
+              variantTremor={VARIANT_BUTTON.LIGHT}>
               <Text className="py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2">
                 Remove
               </Text>

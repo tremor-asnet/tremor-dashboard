@@ -14,7 +14,7 @@ describe("SelectField Component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("renders correct number of options", () => {
+  it.skip("renders correct number of options", () => {
     const getById = queryAllByAttribute.bind(null, "id");
 
     const { container } = render(

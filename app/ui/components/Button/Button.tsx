@@ -18,6 +18,9 @@ interface ButtonProps {
     | VARIANT_BUTTON.SECONDARY
     | VARIANT_BUTTON.SECONDARY_SHADOW
     | VARIANT_BUTTON.LIGHT
+    | VARIANT_BUTTON.LIGHT_CARD
+    | VARIANT_BUTTON.LIGHT_STATUS
+    | VARIANT_BUTTON.LIGHT_CENTER
     | VARIANT_BUTTON.SURFACE
     | VARIANT_BUTTON.DARK
     | "";
@@ -66,9 +69,14 @@ const Button = ({
       case VARIANT_BUTTON.SECONDARY_SHADOW:
         return "box-shadow-transparent uppercase";
 
-      // TODO: Collect style later
-      case VARIANT_BUTTON.LIGHT:
-        return "";
+      case VARIANT_BUTTON.LIGHT_CARD:
+        return "justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md";
+
+      case VARIANT_BUTTON.LIGHT_CENTER:
+        return "justify-center items-center opacity-50 dark:opacity-100";
+
+      case VARIANT_BUTTON.LIGHT_STATUS:
+        return "w-[25px] h-[25px] justify-center items-center rounded-full border border mr-2 text-tremor-content-title hover:text-tremor-content-title";
 
       case VARIANT_BUTTON.DARK:
         return "text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent";

@@ -12,7 +12,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
         class="tremor-Table-root overflow-auto w-full"
       >
         <table
-          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
         >
           <thead
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
@@ -21,7 +21,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
               class="tremor-TableRow-row"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -34,7 +34,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -51,10 +51,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -81,10 +81,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -111,7 +111,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -128,10 +128,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -158,10 +158,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -188,7 +188,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -205,10 +205,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -235,10 +235,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -265,7 +265,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -282,10 +282,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -312,10 +312,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -342,7 +342,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -359,10 +359,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -389,10 +389,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -419,7 +419,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -436,10 +436,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -466,10 +466,10 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -498,13 +498,13 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
             </tr>
           </thead>
           <tbody
-            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+            class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
             <tr
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -513,7 +513,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -522,7 +522,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -531,28 +531,28 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -565,7 +565,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -574,7 +574,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -583,7 +583,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -592,28 +592,28 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -626,7 +626,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -635,7 +635,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -644,7 +644,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -653,28 +653,28 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -687,7 +687,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -696,7 +696,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -705,7 +705,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -714,28 +714,28 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -748,7 +748,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -757,7 +757,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -766,7 +766,7 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -775,28 +775,28 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -844,11 +844,11 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
         >
           <button
             aria-label="Previous page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
             data-testid="prev-page-button"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -870,42 +870,42 @@ exports[`DataGrid Calls handlePageChange correctly on next button click 1`] = `
           </button>
           <button
             aria-label="Page button 1"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               1
             </span>
           </button>
           <button
             aria-label="Page button 2"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
             disabled=""
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               2
             </span>
           </button>
           <button
             aria-label="Page button 3"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               3
             </span>
           </button>
           <button
             aria-label="Next page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
             data-testid="next-page-button"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -944,7 +944,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
         class="tremor-Table-root overflow-auto w-full"
       >
         <table
-          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
         >
           <thead
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
@@ -953,7 +953,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
               class="tremor-TableRow-row"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -966,7 +966,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -983,10 +983,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1013,10 +1013,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1043,7 +1043,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1060,10 +1060,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1090,10 +1090,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1120,7 +1120,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1137,10 +1137,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1167,10 +1167,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1197,7 +1197,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1214,10 +1214,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1244,10 +1244,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1274,7 +1274,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1291,10 +1291,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1321,10 +1321,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1351,7 +1351,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1368,10 +1368,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1398,10 +1398,10 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1430,13 +1430,13 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
             </tr>
           </thead>
           <tbody
-            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+            class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
             <tr
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1445,7 +1445,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1454,7 +1454,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1463,28 +1463,28 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1497,7 +1497,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1506,7 +1506,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1515,7 +1515,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1524,28 +1524,28 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1558,7 +1558,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1567,7 +1567,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1576,7 +1576,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1585,28 +1585,28 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1619,7 +1619,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1628,7 +1628,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1637,7 +1637,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1646,28 +1646,28 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1680,7 +1680,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1689,7 +1689,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1698,7 +1698,7 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1707,28 +1707,28 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -1776,11 +1776,11 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
         >
           <button
             aria-label="Previous page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
             data-testid="prev-page-button"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -1802,42 +1802,42 @@ exports[`DataGrid Calls handlePageChange correctly on page button click 1`] = `
           </button>
           <button
             aria-label="Page button 1"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               1
             </span>
           </button>
           <button
             aria-label="Page button 2"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
             disabled=""
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               2
             </span>
           </button>
           <button
             aria-label="Page button 3"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               3
             </span>
           </button>
           <button
             aria-label="Next page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
             data-testid="next-page-button"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -1876,7 +1876,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
         class="tremor-Table-root overflow-auto w-full"
       >
         <table
-          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
         >
           <thead
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
@@ -1885,7 +1885,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
               class="tremor-TableRow-row"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1898,7 +1898,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1915,10 +1915,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1945,10 +1945,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -1975,7 +1975,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -1992,10 +1992,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2022,10 +2022,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2052,7 +2052,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2069,10 +2069,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2099,10 +2099,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2129,7 +2129,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2146,10 +2146,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2176,10 +2176,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2206,7 +2206,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2223,10 +2223,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2253,10 +2253,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2283,7 +2283,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2300,10 +2300,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2330,10 +2330,10 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2362,13 +2362,13 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
             </tr>
           </thead>
           <tbody
-            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+            class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
             <tr
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2377,7 +2377,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2386,7 +2386,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2395,28 +2395,28 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2429,7 +2429,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2438,7 +2438,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2447,7 +2447,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2456,28 +2456,28 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2490,7 +2490,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2499,7 +2499,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2508,7 +2508,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2517,28 +2517,28 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2551,7 +2551,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2560,7 +2560,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2569,7 +2569,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2578,28 +2578,28 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2612,7 +2612,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2621,7 +2621,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2630,7 +2630,7 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2639,28 +2639,28 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -2708,12 +2708,12 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
         >
           <button
             aria-label="Previous page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 opacity-50 cursor-not-allowed text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish hidden"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 opacity-50 cursor-not-allowed text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish hidden"
             data-testid="prev-page-button"
             disabled=""
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -2735,42 +2735,42 @@ exports[`DataGrid Calls handlePageChange correctly on prev button click 1`] = `
           </button>
           <button
             aria-label="Page button 1"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 border-tremor-brand dark:border-dark-tremor-brand hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis cursor-not-allowed dark:hover:bg-grayish text-sm w-9 h-9 inline-flex opacity-100 border-0 justify-center items-center !rounded-full bg-black text-white dark:text-white shadow-btn-primary dark:shadow-btn-primary dark:bg-gradient-pickled"
             disabled=""
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               1
             </span>
           </button>
           <button
             aria-label="Page button 2"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               2
             </span>
           </button>
           <button
             aria-label="Page button 3"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:hover:bg-grayish text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:border-greyish dark:hover:border-greyish"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               3
             </span>
           </button>
           <button
             aria-label="Next page button"
-            class="tremor-Button-root flex-shrink-0 group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input border px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
+            class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent dark:hover:border-gray-300 dark:border-greyish dark:hover:bg-grayish"
             data-testid="next-page-button"
           >
             <span
-              class="tremor-Button-text text-sm whitespace-nowrap"
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
               <svg
                 aria-hidden="true"
@@ -2809,7 +2809,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
         class="tremor-Table-root overflow-auto w-full"
       >
         <table
-          class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
         >
           <thead
             class="tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content"
@@ -2818,7 +2818,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2831,7 +2831,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2848,10 +2848,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2878,10 +2878,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2908,7 +2908,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2925,10 +2925,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2955,10 +2955,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -2985,7 +2985,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -3002,10 +3002,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3032,10 +3032,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3062,7 +3062,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -3079,10 +3079,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3109,10 +3109,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3139,7 +3139,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -3156,10 +3156,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3186,10 +3186,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3216,7 +3216,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </div>
               </th>
               <th
-                class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+                class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
               >
                 <div
                   class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -3233,10 +3233,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3263,10 +3263,10 @@ exports[`DataGrid Should matches snapshot 1`] = `
                       class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
                     >
                       <button
-                        class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                        class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                       >
                         <span
-                          class="tremor-Button-text text-sm whitespace-nowrap"
+                          class="tremor-Button-text text-tremor-default whitespace-nowrap"
                         >
                           <svg
                             class="w-4 h-4 fill-secondary"
@@ -3295,13 +3295,13 @@ exports[`DataGrid Should matches snapshot 1`] = `
             </tr>
           </thead>
           <tbody
-            class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border"
+            class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border"
           >
             <tr
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3310,7 +3310,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3319,7 +3319,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3328,28 +3328,28 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3362,7 +3362,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3371,7 +3371,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3380,7 +3380,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3389,28 +3389,28 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3423,7 +3423,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3432,7 +3432,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3441,7 +3441,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3450,28 +3450,28 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3484,7 +3484,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3493,7 +3493,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3502,7 +3502,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3511,28 +3511,28 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3545,7 +3545,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
               class="tremor-TableRow-row"
             >
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3554,7 +3554,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3563,7 +3563,7 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
@@ -3572,28 +3572,28 @@ exports[`DataGrid Should matches snapshot 1`] = `
                 </p>
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 />
               </td>
               <td
-                class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
+                class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-6 py-5 border-0 dark:border-grayish border-b border-gray-100"
               >
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"

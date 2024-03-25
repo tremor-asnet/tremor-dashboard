@@ -33,8 +33,7 @@ const ColumnChart = ({ webChartData }: WebChartDataProps) => {
                   data={data}
                   index="description"
                   categories={["sales"]}
-                  // @ts-expect-error: Tremor bug when add colors into config
-                  colors={["light"]}
+                  colors={["light-500"]}
                   yAxisWidth={30}
                   showAnimation={true}
                   showLegend={false}

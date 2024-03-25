@@ -25,3 +25,7 @@ export const borderRadius = {
     "tremor-none": "0",
   },
 };
+
+export const spacing: Record<string, string> = {
+  "4": "1rem",
+};

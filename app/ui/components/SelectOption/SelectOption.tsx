@@ -34,7 +34,7 @@ const SelectOption = ({
             <Button
               onClick={handleSelectItem(option, value)}
               value={value}
-              variant={VARIANT_BUTTON.LIGHT}
+              variantTremor={VARIANT_BUTTON.LIGHT}
               data-testid={`item-filter-${value}`}
               additionalClass="text-secondary hover:text-primary dark:text-lighter dark:hover:text-lighter">
               {title}: {option}

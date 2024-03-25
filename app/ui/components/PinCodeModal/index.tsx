@@ -27,7 +27,7 @@ const PinCodeModal = ({ onSubmit, ...others }: IPinCodeModal) => {
     <Modal
       additionalClasses="md:min-w-[390px] w-[calc(100%-8px)] md:max-w-[390px]"
       primaryBtnDisabled={!isValidPinCode(codes, PIN_CODE_LENGTH)}
-      onPrimaryBtn={handleSubmit}
+      onClickPrimaryBtn={handleSubmit}
       {...others}>
       <PinCode length={PIN_CODE_LENGTH} onChange={setCodes} value={codes} />
     </Modal>

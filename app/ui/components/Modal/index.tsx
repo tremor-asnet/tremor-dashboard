@@ -19,8 +19,8 @@ export interface IModal {
   btnPrimaryLabel?: string;
   btnSecondaryLabel?: string;
   onClose?: () => void;
-  onPrimaryBtn?: () => void | Promise<void>;
-  onSecondaryBtn?: () => void | Promise<void>;
+  onClickPrimaryBtn?: () => void | Promise<void>;
+  onClickSecondaryBtn?: () => void | Promise<void>;
   primaryBtnDisabled?: boolean;
   secondaryBtnDisabled?: boolean;
 }
@@ -36,8 +36,8 @@ export default function Modal({
   btnSecondaryLabel = "Done",
   primaryBtnDisabled,
   secondaryBtnDisabled,
-  onPrimaryBtn,
-  onSecondaryBtn,
+  onClickPrimaryBtn,
+  onClickSecondaryBtn,
   onClose,
 }: Readonly<IModal>) {
   const [isOpen, setIsOpen] = useState(open);
@@ -54,11 +54,11 @@ export default function Modal({
   };
 
   const handlePrimary = async () => {
-    await onPrimaryBtn?.();
+    await onClickPrimaryBtn?.();
   };
 
   const handleSecondary = async () => {
-    await onSecondaryBtn?.();
+    await onClickSecondaryBtn?.();
   };
 
   return (
@@ -86,7 +86,7 @@ export default function Modal({
         {children}
 
         <Flex className="gap-5">
-          {onPrimaryBtn && (
+          {onClickPrimaryBtn && (
             <Button
               onClick={handlePrimary}
               className={twMerge(
@@ -97,7 +97,7 @@ export default function Modal({
             </Button>
           )}
 
-          {onSecondaryBtn && (
+          {onClickSecondaryBtn && (
             <Button
               onClick={handleSecondary}
               className={twMerge(

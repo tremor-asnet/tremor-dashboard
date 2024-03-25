@@ -34,7 +34,10 @@ const ApplicationSetting = ({
         Application
       </Text>
       {applicationSettingFields.map(({ label, field }: PlatformSetting) => (
-        <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
+        <div
+          data-testid="application-setting"
+          className="flex items-center space-x-3 mt-1 py-3"
+          key={label}>
           <Switch
             tabIndex={2}
             id="switch"

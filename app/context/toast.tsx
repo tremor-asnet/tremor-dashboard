@@ -1,21 +1,11 @@
 "use client";
 
-import { ReactNode, createContext, useEffect, useState } from "react";
-
-// Icons
+import React, { ReactNode, createContext, useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { TbExclamationMark } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
-
-// Constants
 import { EDIT_PRODUCT_MESSAGE, TOAST_TYPES } from "@/constants";
-
-// Types
 import Toast, { ToastColor } from "@/ui/components/Toast/Toast";
-
-interface ToastProviderProps {
-  children: React.ReactNode;
-}
 
 interface ToastType {
   icon: ReactNode;
@@ -31,7 +21,7 @@ interface ToastProps {
 interface ToastContextProps {
   isOpen?: boolean;
   toastType: ToastType;
-  openToast: ({ isOpen, toastType }: ToastProps) => void;
+  openToast: (toastProps: ToastProps) => void;
   closeToast: () => void;
 }
 
@@ -53,7 +43,7 @@ export const ToastMessageType = (type: string): ToastType => {
 
     case TOAST_TYPES.ERROR:
       return {
-        icon: RxCross2,
+        icon: <RxCross2 />,
         message: EDIT_PRODUCT_MESSAGE.FAILED,
         color: "red",
       };
@@ -61,64 +51,55 @@ export const ToastMessageType = (type: string): ToastType => {
     default:
       return {
         icon: <FaCheckCircle />,
-        message: "",
+        message: "success",
         color: "green",
       };
   }
 };
 
 const ToastContext = createContext<ToastContextProps>({
-  toastType: { icon: "", message: "", color: "green" },
-  openToast: ({ isOpen, toastType }: ToastProps) => {},
+  toastType: { icon: <FaCheckCircle />, message: "success", color: "green" },
+  openToast: () => {},
   closeToast: () => {},
 });
 
-const ToastProvider = ({ children }: ToastProviderProps) => {
+const ToastProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [toast, setToast] = useState<ToastProps>({
     isOpen: false,
-    toastType: {
-      icon: <FaCheckCircle />,
-      message: "",
-      color: "green",
-    },
+    toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
   });
+
+  const closeToast = () => {
+    setToast({
+      isOpen: false,
+      toastType: { icon: <FaCheckCircle />, message: "", color: "green" },
+    });
+  };
+
+  const openToast = ({ toastType }: ToastProps) => {
+    setToast({ isOpen: true, toastType });
+    setTimeout(() => {
+      closeToast();
+    }, 3000);
+  };
 
   const {
     isOpen,
     toastType: { icon, message, color },
   } = toast;
 
-  const closeToast = () => {
-    setToast({
-      isOpen: false,
-      toastType: {
-        message: "",
-        icon: null,
-        color: "green",
-      },
-    });
-  };
-
-  const openToast = ({ toastType }: ToastProps) => {
-    const { icon, message, color } = toastType;
-
-    setToast({ isOpen: true, toastType: { icon, message, color } });
-    setTimeout(() => {
-      closeToast();
-    }, 3000);
-  };
-
-  const value = {
-    isOpen,
-    toastType: { icon, message, color },
-    openToast,
-    closeToast,
-  };
-
   return (
-    <ToastContext.Provider value={value}>
+    <ToastContext.Provider
+      value={{
+        isOpen,
+        toastType: { icon, message, color },
+        openToast,
+        closeToast,
+      }}>
       {children}
-      {toast.isOpen && (
+      {isOpen && (
         <Toast
           icon={icon}
           message={message}

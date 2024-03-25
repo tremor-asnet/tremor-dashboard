@@ -5,7 +5,7 @@ import type { User } from "@/types";
 
 // Constants
 import {
-  ADD_USER_MESSAGE,
+  USER_MESSAGES,
   EMAIL_REGEX,
   ROUTER_API_URL,
   UID_KEY,
@@ -54,13 +54,13 @@ const addNewUser = async (formData: FormData) => {
     });
 
     if (res.status === 403) {
-      errorMessage = ADD_USER_MESSAGE.MAIL_EXISTS;
+      errorMessage = USER_MESSAGES.MAIL_EXISTS;
     }
 
     const data: User[] = await res.json();
 
     if (!res.ok || !data || data.length <= 0) {
-      errorMessage = ADD_USER_MESSAGE.ADD_FAILED;
+      errorMessage = USER_MESSAGES.ADD_FAILED;
     }
 
     return { user: data[0], errorMessage };
@@ -74,7 +74,7 @@ const updatePinCode = async (codes: number) => {
   const id = cookies().get(UID_KEY)?.value;
 
   if (!id) {
-    throw new Error("Not found User!");
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
 
   const res = await fetch(`${ROUTER_API_URL}/users/${id}`, {
@@ -101,7 +101,7 @@ const getUserById = async (id: number): Promise<User> => {
     cache: "no-store",
   });
   if (!res.ok) {
-    throw new Error("Failed to fetch user.");
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
   return (await res.json()) as User;
 };
@@ -110,7 +110,7 @@ const getPinCode = async () => {
   const id = cookies().get(UID_KEY)?.value;
 
   if (!id) {
-    throw new Error("Not found User!");
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
 
   const { pinCode } = await getUserById(parseInt(id));

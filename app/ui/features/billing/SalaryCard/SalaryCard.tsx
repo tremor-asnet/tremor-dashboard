@@ -25,11 +25,15 @@ import {
 // Types
 import { SalaryCardData } from "@/types";
 
+import { usePinCode } from "@/context/pincode";
+
 const SalaryCard = ({
   type,
   value,
   currency = CURRENCY.DOLLAR,
 }: SalaryCardData): JSX.Element => {
+  const { isConfirm, hidePinCodeModal, showPinCodeModal, pinCode } =
+    usePinCode();
   const [isShowAmount, setIsShowAmount] = useState(false);
   const isSalary = type === AGGREGATION_TYPE.SALARY;
   const description = isSalary
@@ -42,7 +46,8 @@ const SalaryCard = ({
   );
 
   const toggleShowHide = () => {
-    setIsShowAmount(!isShowAmount);
+    setIsShowAmount(prev => !prev);
+    isConfirm ? hidePinCodeModal() : showPinCodeModal();
   };
 
   return (
@@ -64,11 +69,11 @@ const SalaryCard = ({
           <Flex flexDirection="col" className="gap-4">
             <Button
               variant="light"
-              icon={isShowAmount ? FaRegEyeSlash : FaRegEye}
+              icon={isConfirm && isShowAmount ? FaRegEyeSlash : FaRegEye}
               onClick={toggleShowHide}
               className="text-primary hover:text-primary dark:text-lighter dark:hover:text-lighter"
             />
-            {isShowAmount ? (
+            {isConfirm && isShowAmount ? (
               <Flex justifyContent="center">
                 {isSalary && (
                   <Text className="text-primary text-xl dark:text-lighter font-semibold">

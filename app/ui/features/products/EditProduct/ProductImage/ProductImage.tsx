@@ -74,7 +74,7 @@ const ProductImage = ({
               additionalClass="antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
               onClick={onRemoveImage}
               disabled={disabled}
-              variant={VARIANT_BUTTON.LIGHT}>
+              variantTremor={VARIANT_BUTTON.LIGHT}>
               <Text className="py-[1px] text-xs font-bold text-attention dark:text-attention uppercase mx-2">
                 Remove
               </Text>

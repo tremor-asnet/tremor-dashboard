@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 // Constants
-import { EMPTY_IMAGE, NOT_FOUND_IMAGE } from "@/constants";
+import { NO_IMAGE, NOT_FOUND_IMAGE } from "@/constants";
 
 interface ImageProps {
   className?: string;
@@ -29,7 +29,7 @@ const CustomImage = ({
   const [fallbackSrc, setFallbackImgSrc] = useState(false);
 
   const handleOnError = () => setFallbackImgSrc(true);
-  const altImage = src !== NOT_FOUND_IMAGE && alt ? alt : EMPTY_IMAGE.NO_IMAGE;
+  const altImage = src !== NOT_FOUND_IMAGE && alt ? alt : NO_IMAGE;
 
   return (
     <>

@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 import AnalyticsInfo from "./AnalyticsInfo";
 
 // Constants
-import { EMPTY_IMAGE } from "@/constants";
+import { NO_IMAGE } from "@/constants";
 
 // Mock data
 import { ANALYTIC_INFO } from "@/mocks/analytics";
@@ -18,8 +18,8 @@ describe("Testing analytics sale chart component", () => {
 
   it("Should check render AnalyticsInfo with no data", () => {
     const { container } = render(<AnalyticsInfo infoData={[]} />);
-    expect(container.querySelector("img")).toBeTruthy();
     const element = container.querySelector("img");
-    expect(element?.getAttribute("alt")).toEqual(EMPTY_IMAGE.NO_IMAGE);
+    expect(element).toBeTruthy();
+    expect(element?.getAttribute("alt")).toEqual(NO_IMAGE);
   });
 });

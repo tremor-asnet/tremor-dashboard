@@ -19,11 +19,7 @@ interface IPinCode {
 
 export const PinCode = memo(
   ({ length = PIN_CODE_LENGTH, value, onChange }: IPinCode) => {
-    const codes = useMemo(
-      () => formatPinCode({ length, codes: value }),
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      [value],
-    );
+    const codes = formatPinCode({ length, codes: value });
 
     const refs = rangeNumber(1, length).map(() =>
       createRef<HTMLInputElement>(),

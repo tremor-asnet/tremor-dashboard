@@ -10,14 +10,14 @@ import { isValidPinCode } from "@/utils";
 import { PIN_CODE_LENGTH } from "@/constants";
 
 interface IPinCodeModal extends Omit<IModal, "children"> {
-  onSubmit?: (codes: number) => boolean | Promise<boolean>;
+  onSubmit: (codes: number) => boolean | Promise<boolean>;
 }
 
 const PinCodeModal = ({ onSubmit, title, ...others }: IPinCodeModal) => {
   const [codes, setCodes] = useState("");
 
   const handleSubmit = useCallback(async () => {
-    const isSuccess = !!(await onSubmit?.(parseFloat(codes)));
+    const isSuccess = !!(await onSubmit(parseFloat(codes)));
     setCodes("");
     return isSuccess;
   }, [codes, onSubmit]);

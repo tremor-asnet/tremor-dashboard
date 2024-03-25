@@ -103,8 +103,7 @@ const getUserById = async (id: number): Promise<User> => {
   if (!res.ok) {
     throw new Error("Failed to fetch user.");
   }
-  const user: User = await res.json();
-  return user;
+  return (await res.json()) as User;
 };
 
 const getPinCode = async () => {

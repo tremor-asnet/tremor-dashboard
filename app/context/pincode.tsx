@@ -54,18 +54,14 @@ const PinCodeProvider = ({ children }: { children: ReactNode }) => {
     return true;
   }, []);
 
-  const pinCodeContextValue: IPinCodeContext = useMemo(
-    () => ({
-      confirmPinCode: handleConfirmPinCode,
-      pinCode,
-      isShowPinCodeModal,
-      setPinCode: handleSetPinCode,
-      hidePinCodeModal: handleHidePinCodeModal,
-      showPinCodeModal: handleShowPinCodeModal,
-    }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [handleConfirmPinCode, isShowPinCodeModal, pinCode],
-  );
+  const pinCodeContextValue: IPinCodeContext = {
+    confirmPinCode: handleConfirmPinCode,
+    pinCode,
+    isShowPinCodeModal,
+    setPinCode: handleSetPinCode,
+    hidePinCodeModal: handleHidePinCodeModal,
+    showPinCodeModal: handleShowPinCodeModal,
+  };
 
   return (
     <PinCodeContext.Provider value={pinCodeContextValue}>

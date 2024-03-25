@@ -10,7 +10,7 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
         class="tremor-TableRow-row"
       >
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -27,10 +27,10 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
                 class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
               >
                 <button
-                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                  class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                 >
                   <span
-                    class="tremor-Button-text text-sm whitespace-nowrap"
+                    class="tremor-Button-text text-tremor-default whitespace-nowrap"
                   >
                     <svg
                       class="w-4 h-4 text-primary"
@@ -57,10 +57,10 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
                 class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
               >
                 <button
-                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                  class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                 >
                   <span
-                    class="tremor-Button-text text-sm whitespace-nowrap"
+                    class="tremor-Button-text text-tremor-default whitespace-nowrap"
                   >
                     <svg
                       class="w-4 h-4 fill-secondary"
@@ -87,7 +87,7 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -115,7 +115,7 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
         class="tremor-TableRow-row"
       >
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -132,10 +132,10 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-0"
               >
                 <button
-                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                  class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                 >
                   <span
-                    class="tremor-Button-text text-sm whitespace-nowrap"
+                    class="tremor-Button-text text-tremor-default whitespace-nowrap"
                   >
                     <svg
                       class="w-4 h-4 fill-secondary"
@@ -162,10 +162,10 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
                 class="tremor-Flex-root flex w-full flex-row justify-end items-center absolute top-1.5"
               >
                 <button
-                  class="tremor-Button-root flex-shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+                  class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
                 >
                   <span
-                    class="tremor-Button-text text-sm whitespace-nowrap"
+                    class="tremor-Button-text text-tremor-default whitespace-nowrap"
                   >
                     <svg
                       class="w-4 h-4 fill-secondary"
@@ -192,7 +192,7 @@ exports[`DataGridHeader component Should matches snapshot 1`] = `
           </div>
         </th>
         <th
-          class="tremor-TableHeaderCell-root sticky whitespace-nowrap text-left text-tremor-content top-0 px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
+          class="tremor-TableHeaderCell-root whitespace-nowrap text-left top-0 text-tremor-content-strong px-6 py-2 text-[10.4px] leading-[17px] dark:text-white tracking-[0.2px] font-bold opacity-70 uppercase cursor-pointer print:!text-primary dark:print:!text-primary dark:print:opacity-100"
         >
           <div
             class="tremor-Flex-root flex w-full flex-row justify-between items-center"

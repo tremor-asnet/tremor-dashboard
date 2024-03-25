@@ -13,9 +13,6 @@ export const MESSAGES_ERROR = {
   PASSWORD_WRONG:
     "Please make sure your email address and password are correct.",
   TERMS_REQUIRED: "Please agree with the terms and conditions to continue",
-  NEGATIVE_NUMBER: "This field cannot be a negative number",
-  INVALID_PRODUCT_NAME:
-    "This field must start letter, don't start spacing or number and special characters.",
 };
 
 export const SIGN_UP_MESSAGE = {

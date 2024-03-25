@@ -5,10 +5,6 @@ import { MESSAGES_ERROR } from "@/constants";
 
 // Components
 import Socials from "./Socials";
-import { useForm } from "react-hook-form";
-
-// Types
-import { NewSocial } from "@/types";
 
 const mockControllerNonError = (name: string, rule: Object) => ({
   field: {

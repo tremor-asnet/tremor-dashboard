@@ -33,6 +33,9 @@ jest.mock("react-hook-form", () => ({
 }));
 
 describe("Testing PricingInfo component", () => {
+  const mockErrorPrice = "Invalid price";
+  const mockErrorSKU = "Invalid SKU number";
+
   it("Should match snapshot", () => {
     const component = render(<PricingInfo />);
     expect(component).toMatchSnapshot();
@@ -60,7 +63,7 @@ describe("Testing PricingInfo component", () => {
     const { getAllByDisplayValue, queryByText } = render(<PricingInfo />);
     expect(getAllByDisplayValue(validPrice)).toHaveLength(1);
     expect(queryByText(MESSAGES_ERROR.FIELD_REQUIRED)).toBeNull();
-    expect(queryByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toBeNull();
+    expect(queryByText(mockErrorPrice)).toBeNull();
   });
 
   it("Should show error messages for invalid price", () => {
@@ -77,7 +80,7 @@ describe("Testing PricingInfo component", () => {
           },
           formState: {
             errors: {
-              price: { message: MESSAGES_ERROR.NEGATIVE_NUMBER },
+              price: { message: mockErrorPrice },
             },
           },
         });
@@ -87,13 +90,13 @@ describe("Testing PricingInfo component", () => {
     const { getAllByDisplayValue, getAllByText } = render(<PricingInfo />);
     const inputPrice = getAllByDisplayValue(invalidPrice);
     expect(inputPrice).toHaveLength(1);
-    expect(getAllByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toHaveLength(1);
+    expect(getAllByText(mockErrorPrice)).toHaveLength(1);
 
     const parents = inputPrice.map(input => input.parentElement);
     const errorMessage = parents.map(parent => parent?.querySelector("p"));
 
     errorMessage.forEach(p => {
-      expect(p?.textContent).toBe(MESSAGES_ERROR.NEGATIVE_NUMBER);
+      expect(p?.textContent).toBe(mockErrorPrice);
     });
   });
 
@@ -152,11 +155,11 @@ describe("Testing PricingInfo component", () => {
 
     const { getAllByDisplayValue, queryByText } = render(<PricingInfo />);
     expect(getAllByDisplayValue(validSKU)).toHaveLength(1);
-    expect(queryByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toBeNull();
+    expect(queryByText(mockErrorSKU)).toBeNull();
   });
 
   it("Should show error messages for invalid SKU", () => {
-    const invalidSKU = -1;
+    const invalidSKU = "invalid";
     // Override the mock implementation of Controller for this test case
     jest.requireMock("react-hook-form").Controller = (props: any) => {
       if (props.name === "sku")
@@ -169,7 +172,7 @@ describe("Testing PricingInfo component", () => {
           },
           formState: {
             errors: {
-              sku: { message: MESSAGES_ERROR.NEGATIVE_NUMBER },
+              sku: { message: mockErrorSKU },
             },
           },
         });
@@ -179,13 +182,13 @@ describe("Testing PricingInfo component", () => {
     const { getAllByDisplayValue, getAllByText } = render(<PricingInfo />);
     const inputSKU = getAllByDisplayValue(invalidSKU);
     expect(inputSKU).toHaveLength(1);
-    expect(getAllByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toHaveLength(1);
+    expect(getAllByText(mockErrorSKU)).toHaveLength(1);
 
     const parents = inputSKU.map(input => input.parentElement);
     const errorMessage = parents.map(parent => parent?.querySelector("p"));
 
     errorMessage.forEach(p => {
-      expect(p?.textContent).toBe(MESSAGES_ERROR.NEGATIVE_NUMBER);
+      expect(p?.textContent).toBe(mockErrorSKU);
     });
   });
 

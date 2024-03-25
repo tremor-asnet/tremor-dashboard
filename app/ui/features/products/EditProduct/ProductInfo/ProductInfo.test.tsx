@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 // Constants
@@ -238,6 +238,8 @@ describe("Testing ProductInfo component", () => {
     expect(errorMessage?.textContent).toBe(MESSAGES_ERROR.FIELD_REQUIRED);
   });
 
+  const mockErrorQuantity = "Invalid quantity number";
+
   it("Should not show error messages for valid quantity", () => {
     const validQuantity = "123";
     // Override the mock implementation of Controller for this test case
@@ -260,7 +262,7 @@ describe("Testing ProductInfo component", () => {
     const { getAllByDisplayValue, queryByText } = render(<ProductInfo />);
     expect(getAllByDisplayValue(validQuantity)).toHaveLength(1);
     expect(queryByText(MESSAGES_ERROR.FIELD_REQUIRED)).toBeNull();
-    expect(queryByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toBeNull();
+    expect(queryByText(mockErrorQuantity)).toBeNull();
   });
 
   it("Should show error messages for invalid quantity", () => {
@@ -277,7 +279,7 @@ describe("Testing ProductInfo component", () => {
           },
           formState: {
             errors: {
-              quantity: { message: MESSAGES_ERROR.NEGATIVE_NUMBER },
+              quantity: { message: mockErrorQuantity },
             },
           },
         });
@@ -287,13 +289,13 @@ describe("Testing ProductInfo component", () => {
     const { getAllByDisplayValue, getAllByText } = render(<ProductInfo />);
     const inputQuantity = getAllByDisplayValue(invalidQuantity);
     expect(inputQuantity).toHaveLength(1);
-    expect(getAllByText(MESSAGES_ERROR.NEGATIVE_NUMBER)).toHaveLength(1);
+    expect(getAllByText(mockErrorQuantity)).toHaveLength(1);
 
     const parents = inputQuantity.map(input => input.parentElement);
     const errorMessage = parents.map(parent => parent?.querySelector("p"));
 
     errorMessage.forEach(p => {
-      expect(p?.textContent).toBe(MESSAGES_ERROR.NEGATIVE_NUMBER);
+      expect(p?.textContent).toBe(mockErrorQuantity);
     });
   });
 

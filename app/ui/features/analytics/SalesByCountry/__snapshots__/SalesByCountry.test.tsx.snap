@@ -55,16 +55,16 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                 class="tremor-Table-root overflow-auto w-full"
               >
                 <table
-                  class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+                  class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
                 >
                   <tbody
-                    class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
+                    class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
                   >
                     <tr
                       class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -101,7 +101,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -115,7 +115,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -131,7 +131,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -152,7 +152,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -189,7 +189,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -203,7 +203,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -219,7 +219,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -240,7 +240,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -277,7 +277,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -291,7 +291,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -307,7 +307,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -328,7 +328,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                     >
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                       >
                         <div
                           class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -365,7 +365,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </div>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -379,7 +379,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                       >
                         <p
                           class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -395,7 +395,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                         </p>
                       </td>
                       <td
-                        class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                        class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                       >
                         <p
                           class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2125,16 +2125,16 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
               class="tremor-Table-root overflow-auto w-full"
             >
               <table
-                class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+                class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
               >
                 <tbody
-                  class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
+                  class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
                 >
                   <tr
                     class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2171,7 +2171,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2185,7 +2185,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2201,7 +2201,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2222,7 +2222,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2259,7 +2259,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2273,7 +2273,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2289,7 +2289,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2310,7 +2310,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2347,7 +2347,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2361,7 +2361,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2377,7 +2377,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2398,7 +2398,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                     class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                   >
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                     >
                       <div
                         class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -2435,7 +2435,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </div>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2449,7 +2449,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left value w-[25%]"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left value w-[25%]"
                     >
                       <p
                         class="text-tremor-default text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -2465,7 +2465,7 @@ exports[`Testing analytics sale chart component Should match snapshot 1`] = `
                       </p>
                     </td>
                     <td
-                      class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
+                      class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce hidden md:table-cell"
                     >
                       <p
                         class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4228,16 +4228,16 @@ exports[`Testing analytics sale chart component testing component analytics sale
             class="tremor-Table-root overflow-auto w-full"
           >
             <table
-              class="tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+              class="tremor-Table-table w-full text-tremor-default text-tremor-content dark:text-dark-tremor-content"
             >
               <tbody
-                class="tremor-TableBody-root align-top overflow-x-auto divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
+                class="tremor-TableBody-root align-top divide-y divide-tremor-border dark:divide-dark-tremor-border last-child:border-black"
               >
                 <tr
                   class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -4274,7 +4274,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4288,7 +4288,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4309,7 +4309,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -4346,7 +4346,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4360,7 +4360,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4381,7 +4381,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -4418,7 +4418,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4432,7 +4432,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4453,7 +4453,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -4490,7 +4490,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4504,7 +4504,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4525,7 +4525,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                   class="tremor-TableRow-row border-solid border-b !border-gray-100 dark:!border-grayish w-[100%]"
                 >
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums text-left p-4 px-4 py-3 w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap text-left p-4 px-4 py-3 w-[25%]"
                   >
                     <div
                       class="tremor-Flex-root flex w-full flex-row justify-between items-center"
@@ -4562,7 +4562,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </div>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 px-4 py-3 text-left w-[25%]"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 px-4 py-3 text-left w-[25%]"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"
@@ -4576,7 +4576,7 @@ exports[`Testing analytics sale chart component testing component analytics sale
                     </p>
                   </td>
                   <td
-                    class="tremor-TableCell-root align-middle whitespace-nowrap tabular-nums p-4 w-[25%] px-4 py-3 text-left bounce false"
+                    class="tremor-TableCell-root align-middle whitespace-nowrap p-4 w-[25%] px-4 py-3 text-left bounce false"
                   >
                     <p
                       class="text-tremor-default text-left text-xs text-tremor-content-emphasis dark:text-dark-romance font-semibold leading-[1.25]"

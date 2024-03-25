@@ -19,15 +19,16 @@ import { OptionType } from "@/types";
 import { VARIANT_BUTTON } from "@/constants";
 
 interface ProductFilterProps {
+  value?: string;
   title: string;
   listOption: OptionType[];
 }
 
-const Filter = ({ title, listOption }: ProductFilterProps) => {
+const Filter = ({ value, title, listOption }: ProductFilterProps) => {
   const searchParams = useSearchParams();
 
   const [showListOption, setShowListOption] = useState(false);
-  const [filterSelected, setFilterSelected] = useState("");
+  const [filterSelected, setFilterSelected] = useState(value ?? "");
 
   const router = useRouter();
 

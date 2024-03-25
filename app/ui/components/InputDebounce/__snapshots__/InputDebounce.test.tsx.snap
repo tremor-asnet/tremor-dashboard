@@ -13,6 +13,7 @@ exports[`InputDebounce component should clear the search value and delete the pa
         data-testid="base-input"
         id="search_order"
         placeholder="Search..."
+        style="padding-right: 1rem;"
         type="text"
         value=""
       />
@@ -34,6 +35,7 @@ exports[`InputDebounce component should matches snapshot 1`] = `
         data-testid="base-input"
         id="search_order"
         placeholder="Search..."
+        style="padding-right: 1rem;"
         type="text"
         value=""
       />
@@ -55,6 +57,7 @@ exports[`InputDebounce component should reset search and update URL parameters w
         data-testid="base-input"
         id="search_order"
         placeholder="Search..."
+        style="padding-right: 1rem;"
         type="text"
         value=""
       />

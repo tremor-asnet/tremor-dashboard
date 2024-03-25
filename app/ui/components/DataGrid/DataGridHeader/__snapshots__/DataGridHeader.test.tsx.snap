@@ -33,7 +33,7 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
                     class="tremor-Button-text text-sm whitespace-nowrap"
                   >
                     <svg
-                      class="w-4 h-4 fill-secondary"
+                      class="w-4 h-4 text-primary"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"
@@ -63,7 +63,7 @@ exports[`DataGridHeader component Should be call handleSorting function when isS
                     class="tremor-Button-text text-sm whitespace-nowrap"
                   >
                     <svg
-                      class="w-4 h-4 text-primary"
+                      class="w-4 h-4 fill-secondary"
                       fill="currentColor"
                       height="1em"
                       stroke="currentColor"

@@ -131,7 +131,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  Yes
+                  No
                 </p>
               </td>
             </tr>
@@ -189,7 +189,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  Yes
+                  No
                 </p>
               </td>
             </tr>
@@ -247,7 +247,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  Yes
+                  No
                 </p>
               </td>
             </tr>
@@ -363,7 +363,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  Yes
+                  No
                 </p>
               </td>
             </tr>

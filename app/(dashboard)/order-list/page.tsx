@@ -23,21 +23,30 @@ const OrderListPage = async ({
 }: {
   searchParams?: TSearchParams;
 }) => {
-  const { query, filter, page, sortBy } = searchParams as TSearchParams;
+  const { query, filter, page, sortBy, orderBy } =
+    searchParams as TSearchParams;
 
   const response: OrderResponse = await getOrders({
     pageNum: page,
     status: filter,
     query,
     sortBy,
+    orderBy,
   });
 
   const { results, total, skip } = response;
+  const optionByFilter = orderListOption.find(
+    option => option.value === filter,
+  );
 
   return (
     <Flex flexDirection="col" className="gap-4">
       <Flex className="relative justify-end">
-        <Filter title="Status" listOption={orderListOption} />
+        <Filter
+          value={optionByFilter?.option}
+          title="Status"
+          listOption={orderListOption}
+        />
       </Flex>
       <div className="w-full bg-white rounded-lg dark:bg-dark-tremor-primary">
         <InputDebounce field="id" param="page" valueParam="1" />

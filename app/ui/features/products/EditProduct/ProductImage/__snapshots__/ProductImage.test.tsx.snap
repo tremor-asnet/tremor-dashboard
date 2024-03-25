@@ -48,7 +48,7 @@ exports[`ProductImage component should render snapshot correctly 1`] = `
                 </label>
               </div>
               <button
-                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none text-tremor-brand dark:text-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis 123 antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
+                class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none text-tremor-brand dark:text-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
                 type="button"
               >
                 <span
@@ -121,7 +121,7 @@ exports[`ProductImage component should render snapshot correctly 1`] = `
               </label>
             </div>
             <button
-              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none text-tremor-brand dark:text-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis 123 antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
+              class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none text-tremor-brand dark:text-dark-tremor-brand hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis antialiased px-2 py-1.5 text-center uppercase text-xs bg-secondary dark:bg-gradient-pickled rounded-md border border-red-500 hover:border-red-500 dark:border-attention hover:dark:border-attention hover:bg-transparent hover:opacity-75 mx-2 disabled:cursor-not-allowed disabled:opacity-50"
               type="button"
             >
               <span

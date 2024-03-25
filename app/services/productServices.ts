@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 
 // Constants
 import {
+  DIRECTION,
   PAGE_SIZE,
   PRODUCT_DETAILS_TAG,
   ROUTER_API_URL,
@@ -21,20 +22,25 @@ export const getProducts = async ({
   available,
   query,
   sortBy,
+  orderBy,
 }: {
   pageNum?: number;
   available?: string;
   query?: string;
   sortBy?: string;
+  orderBy?: string;
 }) => {
   const page = pageNum ? pageNum - 1 : 0;
+  const filerSort = sortBy
+    ? `${orderBy === DIRECTION.ASC ? "" : "-"}${sortBy}`
+    : "";
 
   const params = buildSearchUrl({
     page: page,
     size: PAGE_SIZE.SIZE,
-    isAvailable: available,
-    query: query,
-    sortBy: sortBy,
+    isAvailable: available ?? "",
+    query: query ?? "",
+    sortBy: filerSort,
   });
 
   const res = await fetch(`${ROUTER_API_URL}/products?${params}`, {

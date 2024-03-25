@@ -29,17 +29,15 @@ const DataGridHeader = <T,>({ columns }: DataTableHeaderProps<T>) => {
     (key: string, urlParams: URLSearchParams) => {
       return () => {
         setSortField(key);
+        urlParams.set("sortBy", key);
 
-        const DEFAULT_SORT_BY = "-createdAt";
-        const sortByParam = urlParams.get("sortBy") ?? DEFAULT_SORT_BY;
+        const orderByParam =
+          urlParams.get("orderBy") === DIRECTION.DESC
+            ? DIRECTION.ASC
+            : DIRECTION.DESC;
 
-        if (sortByParam.startsWith("-")) {
-          urlParams.set("sortBy", key);
-          setSortType(DIRECTION.ASC);
-        } else {
-          urlParams.set("sortBy", `-${key}`);
-          setSortType(DIRECTION.DESC);
-        }
+        urlParams.set("orderBy", orderByParam);
+        setSortType(orderByParam);
 
         // Update url param
         replace(`${pathname}?${urlParams.toString()}`);

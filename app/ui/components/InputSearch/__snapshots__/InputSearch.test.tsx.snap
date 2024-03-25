@@ -16,6 +16,7 @@ exports[`InputSearch component should matches snapshot 1`] = `
             data-testid="base-input"
             id="search_order"
             placeholder="Search..."
+            style="padding-right: 1rem;"
             type="text"
             value="query"
           />
@@ -54,6 +55,7 @@ exports[`InputSearch component should matches snapshot 1`] = `
           data-testid="base-input"
           id="search_order"
           placeholder="Search..."
+          style="padding-right: 1rem;"
           type="text"
           value="query"
         />

@@ -162,7 +162,7 @@ const EditProductForm = ({
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
-              <ProductImage
+              {/* <ProductImage
                 name={productName}
                 desc={description}
                 image={imageValue}
@@ -170,7 +170,7 @@ const EditProductForm = ({
                 onUpload={upload}
                 disabled={imageValue === NOT_FOUND_IMAGE ? true : false}
                 isUpload={isUpload}
-              />
+              /> */}
             </div>
             {/* <Col numColSpanSm={1} numColSpanLg={2}>
               <ProductInfo />

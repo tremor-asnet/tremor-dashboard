@@ -1,6 +1,6 @@
-export const ROUTER_API_URL = process.env.NEXT_PUBLIC_API_URL;
+export const ROUTER_API_URL = process?.env?.NEXT_PUBLIC_API_URL;
 
-export const ROUTER_DOMAIN = process.env.NEXT_PUBLIC_DOMAIN;
+export const ROUTER_DOMAIN = process?.env?.NEXT_PUBLIC_DOMAIN;
 
 export const ROUTES = {
   HOME: "/analytics",

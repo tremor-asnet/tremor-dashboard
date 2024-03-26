@@ -83,7 +83,7 @@ export const NUMBER_REGEX_WITHOUT_0 = /^\d*[1-9]\d*$/;
 export const NUMBER_REGEX = /^\d*[0-9]\d*$/;
 export const DECIMAL_REGEX = /^\d*[1-9]\d*$/;
 
-export const CDN_KEY = process?.env?.NEXT_PUBLIC_CDN_KEY;
+export const CDN_KEY = process.env.NEXT_PUBLIC_CDN_KEY;
 
 export const DRAG_ZONE = {
   DEFAULT: {

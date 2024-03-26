@@ -45,7 +45,7 @@ const EditProduct = async ({ params }: { params: { id: number } }) => {
           </Text>
         </div>
       </Flex>
-      <EditProductForm id={params.id} productData={data} />
+      {/* <EditProductForm id={params.id} productData={data} /> */}
     </>
   );
 };

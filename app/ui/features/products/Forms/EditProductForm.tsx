@@ -160,7 +160,7 @@ const EditProductForm = ({
       )} */}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
-          {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
+          <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
               <ProductImage
                 name={productName}
@@ -172,7 +172,7 @@ const EditProductForm = ({
                 isUpload={isUpload}
               />
             </div>
-            <Col numColSpanSm={1} numColSpanLg={2}>
+            {/* <Col numColSpanSm={1} numColSpanLg={2}>
               <ProductInfo />
             </Col>
             <Col numColSpan={1}>
@@ -180,8 +180,8 @@ const EditProductForm = ({
             </Col>
             <Col numColSpanSm={1} numColSpanLg={2}>
               <PricingInfo />
-            </Col>
-          </Grid> */}
+            </Col> */}
+          </Grid>
         </form>
       </FormProvider>
     </>

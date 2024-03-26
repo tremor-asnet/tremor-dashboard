@@ -9,13 +9,13 @@ import { FormProvider, useForm } from "react-hook-form";
 import { Col, Grid, Text } from "@tremor/react";
 import { Button, LoadingIndicator } from "@/ui/components";
 import ProductImage from "../EditProduct/ProductImage/ProductImage";
-const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
-const ProductInfo = dynamic(
-  () => import("../EditProduct/ProductInfo/ProductInfo"),
-);
-const PricingInfo = dynamic(
-  () => import("../EditProduct/ProductPricing/PricingInfo"),
-);
+// const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
+// const ProductInfo = dynamic(
+//   () => import("../EditProduct/ProductInfo/ProductInfo"),
+// );
+// const PricingInfo = dynamic(
+//   () => import("../EditProduct/ProductPricing/PricingInfo"),
+// );
 
 // Services
 import { editProduct } from "@/services";

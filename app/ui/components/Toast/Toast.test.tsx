@@ -38,4 +38,3 @@ describe("Toast Component", () => {
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
 });
-

@@ -31,14 +31,19 @@ const initialPinCodeContext: IPinCodeContext = {
 
 const PinCodeContext = createContext(initialPinCodeContext);
 
-const PinCodeProvider = ({ children }: { children: ReactNode }) => {
+interface IPinCodeProvider {
+  children: ReactNode;
+  pinCode?: number;
+}
+
+const PinCodeProvider = ({ children, pinCode: code }: IPinCodeProvider) => {
   const [isConfirmPinCode, setIsConfirmPinCode] = useState(false);
-  const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(false);
-  const [pinCode, setPinCode] = useState<number>();
+  const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(!code);
+  const [pinCode, setPinCode] = useState<number | undefined>(code);
 
   useEffect(() => {
-    setIsShowPinCodeModal(!pinCode);
-  }, [pinCode]);
+    code && !pinCode && setPinCode(code);
+  }, [code, pinCode]);
 
   const handleShowPinCodeModal = useCallback(
     () => setIsShowPinCodeModal(true),
@@ -60,12 +65,18 @@ const PinCodeProvider = ({ children }: { children: ReactNode }) => {
     [handleHidePinCodeModal, handleShowPinCodeModal, pinCode],
   );
 
+  const handleSetPinCode = useCallback((pinCode: number) => {
+    setPinCode(pinCode);
+    setIsShowPinCodeModal(false);
+    setIsConfirmPinCode(true);
+  }, []);
+
   const pinCodeContextValue: IPinCodeContext = {
     isConfirmPinCode,
-    confirmPinCode: handleConfirmPinCode,
     pinCode,
     isShowPinCodeModal,
-    setPinCode,
+    setPinCode: handleSetPinCode,
+    confirmPinCode: handleConfirmPinCode,
     hidePinCodeModal: handleHidePinCodeModal,
     showPinCodeModal: handleShowPinCodeModal,
   };

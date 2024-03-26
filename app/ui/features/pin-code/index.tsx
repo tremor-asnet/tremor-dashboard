@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback } from "react";
 
 import { usePinCode } from "@/context/pincode";
 
@@ -18,15 +18,16 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
   ssr: false,
 });
 
-export default function PinCode({ pinCode }: { pinCode?: number }) {
-  const { isShowPinCodeModal, confirmPinCode, hidePinCodeModal, setPinCode } =
-    usePinCode();
+export default function PinCode() {
+  const {
+    pinCode,
+    isShowPinCodeModal,
+    confirmPinCode,
+    hidePinCodeModal,
+    setPinCode,
+  } = usePinCode();
 
   const { openToast } = useToast();
-
-  useEffect(() => {
-    pinCode && setPinCode(pinCode);
-  }, [pinCode, setPinCode]);
 
   const handleSubmit = useCallback(
     async (code: number) => {
@@ -36,11 +37,12 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
       if (pinCode) {
         const isMatch = confirmPinCode(code);
 
-        isMatch &&
+        if (isMatch) {
           openToast({
             type: TOAST_TYPE.SUCCESS,
             message: CONFIRMATION_SUCCESS,
           });
+        }
 
         return;
       }
@@ -58,16 +60,12 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
   );
 
   const modalProps = pinCode
-    ? { title: "Please enter your PIN code" }
+    ? { title: "Enter your PIN code" }
     : {
-        title: "Please set the PIN code to your account",
+        title: "Set your PIN code",
         btnCloseLabel: "Skip",
         btnPrimaryLabel: "Set",
       };
-
-  if (!isShowPinCodeModal) {
-    return null;
-  }
 
   return (
     <PinCodeModal

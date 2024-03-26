@@ -32,8 +32,7 @@ const SalaryCard = ({
   value,
   currency = CURRENCY.DOLLAR,
 }: SalaryCardData): JSX.Element => {
-  const { isConfirmPinCode, hidePinCodeModal, showPinCodeModal, pinCode } =
-    usePinCode();
+  const { isConfirmPinCode, hidePinCodeModal, showPinCodeModal } = usePinCode();
 
   const [isShowAmount, setIsShowAmount] = useState(false);
   const isSalary = type === AGGREGATION_TYPE.SALARY;

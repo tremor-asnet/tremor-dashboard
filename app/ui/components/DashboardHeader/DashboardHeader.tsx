@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 
 // Libs
 import { usePathname } from "next/navigation";
+import { Button } from "@tremor/react";
 
 // Components
 import { Breadcrumb } from "@/ui/components";
@@ -14,13 +15,10 @@ import { HiMiniMoon } from "react-icons/hi2";
 import { IoSunny } from "react-icons/io5";
 
 // Constant
-import { ROUTES } from "@/constants";
+import { ROUTES, VARIANT_BUTTON } from "@/constants";
 
 // Contexts
 import { ThemeContext } from "@/context/theme";
-
-// Helpers
-import { isBrowser } from "@/helpers";
 
 interface DashboardHeaderProps {
   toggleSidebar: () => void;
@@ -70,7 +68,8 @@ const DashboardHeader = ({
       className={`print:hidden mb-4 ${activeStickyScroll} ${activeAllProjectPage}`}>
       <div className="h-16 flex items-center justify-between px-2 px-4">
         <div className="flex items-center">
-          <div
+          <Button
+            variant={VARIANT_BUTTON.LIGHT}
             className={`block xl:hidden cursor-pointer ${
               isAllProjectPage ? "z-20" : "mr-2"
             }`}
@@ -86,14 +85,14 @@ const DashboardHeader = ({
                 color={colorIconCaseProject}
               />
             )}
-          </div>
+          </Button>
           <Breadcrumb isScrolled={isScrolled} pathname={pathname} />
         </div>
         <div className="flex items-center justify-end md:items-center pl-6 xl:pl-0 min-w-[100px]">
           <div className="flex flex-wrap item-center gap-y-1">
-            <div
+            <Button
+              variant={VARIANT_BUTTON.LIGHT}
               className="relative p-2 flex items-center"
-              data-testid="toggle-theme"
               onClick={toggleTheme}>
               {isDarkTheme ? (
                 <IoSunny
@@ -106,7 +105,7 @@ const DashboardHeader = ({
                   color={colorIconCaseProject}
                 />
               )}
-            </div>
+            </Button>
             <div className="relative p-2 flex items-center">
               <MdNotifications
                 className={`${activeIconColor} text-xl cursor-pointer`}

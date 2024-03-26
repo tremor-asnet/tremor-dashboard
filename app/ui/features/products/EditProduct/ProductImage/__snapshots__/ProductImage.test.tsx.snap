@@ -68,7 +68,7 @@ exports[`ProductImage component should render snapshot correctly 1`] = `
               Minimal Bar Stool 3
             </p>
             <div
-              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+              class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center  text-xs lg:text-base line-clamp-4"
             >
               Description
             </div>
@@ -141,7 +141,7 @@ exports[`ProductImage component should render snapshot correctly 1`] = `
             Minimal Bar Stool 3
           </p>
           <div
-            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            class="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center  text-xs lg:text-base line-clamp-4"
           >
             Description
           </div>

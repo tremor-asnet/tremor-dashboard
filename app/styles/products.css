@@ -7,9 +7,9 @@
 }
 
 .product-availability .tremor-ProgressBar-progressBarWrapper {
-  @apply rounded-[0.125rem] h-1.5
+  @apply rounded-[0.125rem] h-1.5;
 }
 
 .product-availability .tremor-ProgressBar-progressBar {
-  @apply rounded-[0.125rem]
+  @apply rounded-[0.125rem];
 }

@@ -154,7 +154,9 @@ const EditProductForm = ({
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}
       <FormProvider {...formHandler}>
-        <form onSubmit={handleSubmit(onSubmit)} className="relative">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="relative product-info">
           <div className="w-full text-end absolute -mt-24">
             <Button
               variant={VARIANT_BUTTON.PRIMARY}

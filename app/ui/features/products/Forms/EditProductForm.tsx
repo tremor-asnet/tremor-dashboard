@@ -8,7 +8,7 @@ import { FormProvider, useForm } from "react-hook-form";
 // Components
 import { Col, Grid, Text } from "@tremor/react";
 import { Button, LoadingIndicator } from "@/ui/components";
-import ProductImage from "../EditProduct/ProductImage/ProductImage";
+
 // const Socials = dynamic(() => import("../EditProduct/ProductSocials/Socials"));
 // const ProductInfo = dynamic(
 //   () => import("../EditProduct/ProductInfo/ProductInfo"),
@@ -32,6 +32,12 @@ import { useToast } from "@/hooks";
 
 // Contexts
 import { ToastMessageType } from "@/context/toast";
+import {
+  PricingInfo,
+  ProductImage,
+  ProductInfo,
+  Socials,
+} from "../EditProduct";
 
 const EditProductForm = ({
   productData,
@@ -145,24 +151,24 @@ const EditProductForm = ({
 
   return (
     <>
-      <div className="w-full text-end absolute -mt-24">
-        <Button
-          variant={VARIANT_BUTTON.PRIMARY}
-          type="submit"
-          size="xs"
-          disabled={false}
-          additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
-          {renderContentButton()}
-        </Button>
-      </div>
-      {/* {false && (
+      {isLoading && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
-      )} */}
+      )}
       <FormProvider {...formHandler}>
         <form onSubmit={handleSubmit(onSubmit)} className="relative">
+          <div className="w-full text-end absolute -mt-24">
+            <Button
+              variant={VARIANT_BUTTON.PRIMARY}
+              type="submit"
+              size="xs"
+              disabled={!formState.isDirty}
+              additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
+              {renderContentButton()}
+            </Button>
+          </div>
           <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
-              {/* <ProductImage
+              <ProductImage
                 name={productName}
                 desc={description}
                 image={imageValue}
@@ -170,9 +176,9 @@ const EditProductForm = ({
                 onUpload={upload}
                 disabled={imageValue === NOT_FOUND_IMAGE ? true : false}
                 isUpload={isUpload}
-              /> */}
+              />
             </div>
-            {/* <Col numColSpanSm={1} numColSpanLg={2}>
+            <Col numColSpanSm={1} numColSpanLg={2}>
               <ProductInfo />
             </Col>
             <Col numColSpan={1}>
@@ -180,7 +186,7 @@ const EditProductForm = ({
             </Col>
             <Col numColSpanSm={1} numColSpanLg={2}>
               <PricingInfo />
-            </Col> */}
+            </Col>
           </Grid>
         </form>
       </FormProvider>

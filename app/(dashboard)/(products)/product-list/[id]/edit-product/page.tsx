@@ -26,9 +26,7 @@ const EditProduct = async ({ params }: { params: { id: number } }) => {
           </Text>
         </div>
       </Flex>
-      <Suspense fallback={<>Loading...</>}>
-        <EditProductForm id={params.id} productData={productData} />
-      </Suspense>
+      <EditProductForm id={params.id} productData={productData} />
     </>
   );
 };

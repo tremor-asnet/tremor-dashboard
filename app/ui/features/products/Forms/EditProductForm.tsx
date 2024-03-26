@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 // import { FormProvider, useForm } from "react-hook-form";
 
@@ -40,26 +40,26 @@ const EditProductForm = ({
   productData: ProductData;
   id: number;
 }) => {
-  // const {
-  //   productName,
-  //   price,
-  //   tags,
-  //   shopifyUrl,
-  //   facebookUrl,
-  //   instagramUrl,
-  //   quantity,
-  //   weight,
-  //   category,
-  //   description,
-  //   image,
-  //   currency,
-  //   sku,
-  //   providerName,
-  //   createdAt,
-  // } = productData;
+  const {
+    productName,
+    price,
+    tags,
+    shopifyUrl,
+    facebookUrl,
+    instagramUrl,
+    quantity,
+    weight,
+    category,
+    description,
+    image,
+    currency,
+    sku,
+    providerName,
+    createdAt,
+  } = productData;
 
-  // // const router = useRouter();
-  // const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
 
   // const formHandler = useForm<ProductData>({
   //   defaultValues: {

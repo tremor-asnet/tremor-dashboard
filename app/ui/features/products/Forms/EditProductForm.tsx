@@ -160,7 +160,7 @@ const EditProductForm = ({
               {renderContentButton()}
             </Button>
           </div>
-          <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
+          {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
               <ProductImage
                 name={productName}
@@ -181,7 +181,7 @@ const EditProductForm = ({
             <Col numColSpanSm={1} numColSpanLg={2}>
               <PricingInfo />
             </Col>
-          </Grid>
+          </Grid> */}
         </form>
       </FormProvider>
     </>

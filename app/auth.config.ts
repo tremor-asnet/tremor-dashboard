@@ -1,12 +1,8 @@
 // Libs
-import { cookies } from "next/headers";
 import type { NextAuthConfig } from "next-auth";
-
 // Constants
-import { ROUTES, UID_KEY } from "@/constants";
-
+import { ROUTES } from "@/constants";
 const maxAge = 24 * 60 * 60;
-
 export const authConfig: NextAuthConfig = {
   pages: {
     signIn: ROUTES.SIGN_IN,
@@ -18,28 +14,19 @@ export const authConfig: NextAuthConfig = {
       const isOnDashboard = ![ROUTES.SIGN_IN, ROUTES.SIGN_UP].includes(
         nextUrl.pathname,
       );
-
       if (isLoggedIn) {
-        if (isOnDashboard && !cookies().has(UID_KEY)) {
-          return Response.redirect(new URL(ROUTES.SIGN_IN, nextUrl));
-        }
-
         // Move to Homepage if logged in
-        if (
-          (nextUrl.pathname === "/" || !isOnDashboard) &&
-          cookies().has(UID_KEY)
-        ) {
+        if (nextUrl.pathname === "/" || !isOnDashboard) {
           return Response.redirect(new URL(ROUTES.HOME, nextUrl));
         }
-
         return true;
+      } else {
+        if (!isOnDashboard) {
+          return true;
+        }
+        // Move to Sign in page if not logged in and try to access the dashboard
+        return Response.redirect(new URL(ROUTES.SIGN_IN, nextUrl));
       }
-
-      if (!isOnDashboard) {
-        return true;
-      }
-      // Move to Sign in page if not logged in and try to access the dashboard
-      return Response.redirect(new URL(ROUTES.SIGN_IN, nextUrl));
     },
   },
   session: {

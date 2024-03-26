@@ -17,13 +17,10 @@ import { ROUTES } from "@/constants";
 
 // Styles
 import "@/styles/billing.css";
+import { PinCodeProvider } from "@/context/pincode";
 
 interface DashboardLayoutProp {
-  profileData: {
-    avatar: string;
-    name: string;
-    pinCode?: number;
-  };
+  profileData: { avatar: string; name: string; pinCode?: number };
   children: ReactNode;
 }
 
@@ -50,7 +47,7 @@ export default function DashboardLayout({
   };
 
   return (
-    <>
+    <PinCodeProvider pinCode={pinCode}>
       <Flex
         alignItems="start"
         className="bg-body dark:bg-dark-primary antialiased font-primary min-h-screen">
@@ -76,7 +73,7 @@ export default function DashboardLayout({
       {isPending && (
         <LoadingIndicator width={10} height={10} isFullWidth={true} />
       )}
-      <PinCode pinCode={pinCode} />
-    </>
+      <PinCode />
+    </PinCodeProvider>
   );
 }

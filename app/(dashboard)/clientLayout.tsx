@@ -1,7 +1,7 @@
 "use client";
 
 // Libs
-import { ReactNode, useState } from "react";
+import { ReactNode, useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 // Components
@@ -16,12 +16,19 @@ import { ROUTES } from "@/constants";
 
 import { signOut } from "@/services";
 
-// Styles
-import "@/styles/billing.css";
 import { PinCodeProvider } from "@/context/pincode";
 
+// Styles
+import "@/styles/billing.css";
+
+interface IProfileData {
+  avatar: string;
+  name: string;
+  pinCode?: number;
+  userId?: number;
+}
 interface DashboardLayoutProp {
-  profileData: { avatar: string; name: string; pinCode?: number };
+  profileData: IProfileData;
   children: ReactNode;
 }
 
@@ -38,17 +45,21 @@ export default function DashboardLayout({
     setIsCollapseSidebar(isCollapseSidebar => !isCollapseSidebar);
   };
 
-  const { avatar, name, pinCode } = profileData;
+  const { avatar, name, pinCode, userId } = profileData;
 
-  const signOutAction = async () => {
+  const signOutAction = useCallback(async () => {
     setIsPending(true);
     await signOut();
     setIsCollapseSidebar(false);
     router.replace(ROUTES.SIGN_IN);
-  };
+  }, [router]);
+
+  useEffect(() => {
+    !userId && signOutAction();
+  }, [signOutAction, userId]);
 
   return (
-    <PinCodeProvider pinCode={pinCode}>
+    <PinCodeProvider pinCode={pinCode} userId={userId}>
       <Flex
         alignItems="start"
         className="bg-body dark:bg-dark-primary antialiased font-primary min-h-screen">

@@ -90,49 +90,49 @@ const EditProductForm = ({
 
   const { openToast } = useToast();
 
-  // const onSubmit = async (data: ProductData) => {
-  //   try {
-  //     const convertedTagsValue = data.tags.map(value => {
-  //       return Number(value);
-  //     });
+  const onSubmit = async (data: ProductData) => {
+    try {
+      const convertedTagsValue = data.tags.map(value => {
+        return Number(value);
+      });
 
-  //     const newData = {
-  //       ...data,
-  //       category: +data.category,
-  //       currency: +data.currency,
-  //       tags: convertedTagsValue,
-  //       createdAt: new Date().toISOString(),
-  //       image: imageValue,
-  //     };
+      const newData = {
+        ...data,
+        category: +data.category,
+        currency: +data.currency,
+        tags: convertedTagsValue,
+        createdAt: new Date().toISOString(),
+        image: imageValue,
+      };
 
-  //     openToast({
-  //       toastType: ToastMessageType(TOAST_TYPES.WARNING),
-  //     });
+      openToast({
+        toastType: ToastMessageType(TOAST_TYPES.WARNING),
+      });
 
-  //     setIsLoading(true);
+      setIsLoading(true);
 
-  //     await editProduct(id, newData);
+      await editProduct(id, newData);
 
-  //     reset(data);
+      reset(data);
 
-  //     setIsLoading(false);
+      setIsLoading(false);
 
-  //     // router.back();
+      // router.back();
 
-  //     openToast({
-  //       toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
-  //     });
-  //   } catch (err: any) {
-  //     openToast({
-  //       toastType: ToastMessageType(TOAST_TYPES.ERROR),
-  //     });
-  //   }
-  // };
+      openToast({
+        toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
+      });
+    } catch (err: any) {
+      openToast({
+        toastType: ToastMessageType(TOAST_TYPES.ERROR),
+      });
+    }
+  };
 
-  // const onRemoveImage = () => {
-  //   removeImage();
-  //   formHandler.setValue("image", "", { shouldDirty: true });
-  // };
+  const onRemoveImage = () => {
+    removeImage();
+    formHandler.setValue("image", "", { shouldDirty: true });
+  };
 
   const renderContentButton = () =>
     false ? (

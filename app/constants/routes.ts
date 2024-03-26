@@ -1,4 +1,5 @@
-export const ROUTER_API_URL = process?.env?.NEXT_PUBLIC_API_URL;
+// export const ROUTER_API_URL = process?.env?.NEXT_PUBLIC_API_URL;
+export const ROUTER_API_URL = "https://tremor-api.onrender.com/api";
 
 export const ROUTER_DOMAIN = process?.env?.NEXT_PUBLIC_DOMAIN;
 

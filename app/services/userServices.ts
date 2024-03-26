@@ -104,6 +104,7 @@ const getUserById = async (id: number): Promise<User> => {
 const getPinCode = async () => {
   const id = cookies().get(UID_KEY)?.value;
 
+  // When the id value is null then will return undefined, and will force a sign-out
   if (!id) {
     return;
   }

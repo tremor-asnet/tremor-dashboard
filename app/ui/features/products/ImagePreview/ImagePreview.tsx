@@ -1,6 +1,10 @@
 // Components
 import Image from "next/image";
-import { Text, Title, Button } from "@tremor/react";
+import { Text, Title } from "@tremor/react";
+import { Button } from "@/ui/components";
+
+// Constants
+import { VARIANT_BUTTON } from "@/constants";
 
 interface PreviewImageProps {
   filename: string;
@@ -35,9 +39,9 @@ const ImagePreview = ({
         {filename}
       </Text>
       <Button
-        className="mt-2 rounded-lg dark:bg-gradient-pickled py-3 px-6 bg-gradient-btn-back hover:dark:bg-gradient-pickled border-none dark:text-white dark:hover:text-white text-center box-shadow-transparent"
+        additionalClass="mt-2 rounded-lg dark:bg-gradient-pickled py-3 px-6 bg-gradient-btn-back hover:dark:bg-gradient-pickled border-none dark:text-white dark:hover:text-white text-center box-shadow-transparent"
         onClick={onRemove}
-        variant="light">
+        variantTremor={VARIANT_BUTTON.LIGHT}>
         <Text className="uppercase font-bold text-xs text-gray-900 dark:text-white tracking-wide">
           Remove photo
         </Text>

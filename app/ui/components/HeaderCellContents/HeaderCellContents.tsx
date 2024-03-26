@@ -1,5 +1,6 @@
 // Components
-import { Button, Flex } from "@tremor/react";
+import { Flex } from "@tremor/react";
+import { Button } from "..";
 
 // Icons
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
@@ -49,8 +50,8 @@ const HeaderCellContents = ({
         <Flex flexDirection="col" className="relative ml-4 -mt-6">
           <Flex justifyContent="end" className="absolute top-0">
             <Button
-              className="justify-center items-center opacity-50 dark:opacity-100"
-              variant={VARIANT_BUTTON.LIGHT}>
+              variantTremor={VARIANT_BUTTON.LIGHT}
+              variant={VARIANT_BUTTON.LIGHT_CENTER}>
               <MdArrowDropUp
                 className={`w-4 h-4 ${checkFill(DIRECTION.ASC)}`}
               />
@@ -58,8 +59,8 @@ const HeaderCellContents = ({
           </Flex>
           <Flex justifyContent="end" className="absolute top-1.5">
             <Button
-              className="justify-center items-center opacity-50 dark:opacity-100"
-              variant={VARIANT_BUTTON.LIGHT}>
+              variantTremor={VARIANT_BUTTON.LIGHT}
+              variant={VARIANT_BUTTON.LIGHT_CENTER}>
               <MdArrowDropDown
                 className={`w-4 h-4 ${checkFill(DIRECTION.DESC)}`}
               />

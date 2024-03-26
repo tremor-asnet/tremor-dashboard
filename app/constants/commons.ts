@@ -110,9 +110,15 @@ export const PAGE_SIZE = {
 
 export const enum VARIANT_BUTTON {
   LIGHT = "light",
+  LIGHT_CARD = "lightCard",
+  LIGHT_CENTER = "lightCenter",
+  LIGHT_STATUS = "lightStatus",
   SECONDARY = "secondary",
   SECONDARY_SHADOW = "secondaryShadow",
   PRIMARY = "primary",
   PRIMARY_CENTER = "primaryCenter",
   SURFACE = "surface",
+  DARK = "dark",
 }
+
+export const NO_IMAGE = "No Image";

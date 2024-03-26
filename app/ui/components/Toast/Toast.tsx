@@ -1,11 +1,8 @@
 import { IoClose } from "react-icons/io5";
-import { ReactNode } from "react";
 import { Button } from "@tremor/react";
 
 // Constants
 import { VARIANT_BUTTON } from "@/constants";
-
-// Components
 
 export type ToastColor = "green" | "red" | "yellow";
 
@@ -16,12 +13,7 @@ interface ToastProps {
   color?: string | ToastColor;
 }
 
-export const Toast = ({
-  Icon,
-  message = "",
-  color = "green",
-  onClose,
-}: ToastProps) => {
+const Toast = ({ Icon, message, color = "green", onClose }: ToastProps) => {
   return (
     <div
       className="fixed right-5 top-5 flex items-center w-full max-w-xs p-4 mb-4 z-40 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"

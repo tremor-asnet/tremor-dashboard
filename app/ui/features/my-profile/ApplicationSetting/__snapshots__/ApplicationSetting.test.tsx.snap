@@ -1,356 +1,160 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ApplicationSetting component Should render ApplicationSetting snapshot correctly 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <p
-        class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
-      >
-        Application
-      </p>
+<div>
+  <p
+    class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+  >
+    Application
+  </p>
+  <div
+    class="flex items-center space-x-3 mt-1 py-3"
+    data-testid="application-setting"
+  >
+    <div
+      class="flex flex-row items-center justify-start"
+    >
       <div
-        class="flex items-center space-x-3 mt-1 py-3"
+        class="flex justify-center items-center"
+        tabindex="2"
       >
-        <div
-          class="flex flex-row items-center justify-start"
+        <input
+          class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+          name="switch"
+          type="checkbox"
+        />
+        <button
+          aria-checked="false"
+          class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+          data-headlessui-state=""
+          id="switch"
+          role="switch"
+          tabindex="0"
+          type="button"
         >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
+          <span
+            class="tremor-Switch-sr-only sr-only"
           >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
-        </div>
-        <p
-          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-        >
-          New launches and projects
-        </p>
-      </div>
-      <div
-        class="flex items-center space-x-3 mt-1 py-3"
-      >
-        <div
-          class="flex flex-row items-center justify-start"
-        >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
-          >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
-        </div>
-        <p
-          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-        >
-          Monthly product updates
-        </p>
-      </div>
-      <div
-        class="flex items-center space-x-3 mt-1 py-3"
-      >
-        <div
-          class="flex flex-row items-center justify-start"
-        >
-          <div
-            class="flex justify-center items-center"
-            tabindex="2"
-          >
-            <input
-              class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-              name="switch"
-              type="checkbox"
-            />
-            <button
-              aria-checked="false"
-              class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-              data-headlessui-state=""
-              id="switch"
-              role="switch"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="tremor-Switch-sr-only sr-only"
-              >
-                Switch 
-                off
-              </span>
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-              />
-              <span
-                aria-hidden="true"
-                class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-              />
-            </button>
-          </div>
-        </div>
-        <p
-          class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-        >
-          Subscribe to newsletter
-        </p>
+            Switch 
+            off
+          </span>
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+          />
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+          />
+        </button>
       </div>
     </div>
-  </body>,
-  "container": <div>
     <p
-      class="text-tremor-default text-xs dark:text-dark-romance leading-tight opacity-100 uppercase no-underline text-[#7b809a] font-bold m-0 pt-4"
+      class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
     >
-      Application
+      New launches and projects
     </p>
+  </div>
+  <div
+    class="flex items-center space-x-3 mt-1 py-3"
+    data-testid="application-setting"
+  >
     <div
-      class="flex items-center space-x-3 mt-1 py-3"
+      class="flex flex-row items-center justify-start"
     >
       <div
-        class="flex flex-row items-center justify-start"
+        class="flex justify-center items-center"
+        tabindex="2"
       >
-        <div
-          class="flex justify-center items-center"
-          tabindex="2"
+        <input
+          class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+          name="switch"
+          type="checkbox"
+        />
+        <button
+          aria-checked="false"
+          class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+          data-headlessui-state=""
+          id="switch"
+          role="switch"
+          tabindex="0"
+          type="button"
         >
-          <input
-            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-            name="switch"
-            type="checkbox"
-          />
-          <button
-            aria-checked="false"
-            class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-            data-headlessui-state=""
-            id="switch"
-            role="switch"
-            tabindex="0"
-            type="button"
+          <span
+            class="tremor-Switch-sr-only sr-only"
           >
-            <span
-              class="tremor-Switch-sr-only sr-only"
-            >
-              Switch 
-              off
-            </span>
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-            />
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-            />
-          </button>
-        </div>
+            Switch 
+            off
+          </span>
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+          />
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+          />
+        </button>
       </div>
-      <p
-        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-      >
-        New launches and projects
-      </p>
     </div>
+    <p
+      class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
+    >
+      Monthly product updates
+    </p>
+  </div>
+  <div
+    class="flex items-center space-x-3 mt-1 py-3"
+    data-testid="application-setting"
+  >
     <div
-      class="flex items-center space-x-3 mt-1 py-3"
+      class="flex flex-row items-center justify-start"
     >
       <div
-        class="flex flex-row items-center justify-start"
+        class="flex justify-center items-center"
+        tabindex="2"
       >
-        <div
-          class="flex justify-center items-center"
-          tabindex="2"
+        <input
+          class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
+          name="switch"
+          type="checkbox"
+        />
+        <button
+          aria-checked="false"
+          class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
+          data-headlessui-state=""
+          id="switch"
+          role="switch"
+          tabindex="0"
+          type="button"
         >
-          <input
-            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-            name="switch"
-            type="checkbox"
-          />
-          <button
-            aria-checked="false"
-            class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-            data-headlessui-state=""
-            id="switch"
-            role="switch"
-            tabindex="0"
-            type="button"
+          <span
+            class="tremor-Switch-sr-only sr-only"
           >
-            <span
-              class="tremor-Switch-sr-only sr-only"
-            >
-              Switch 
-              off
-            </span>
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-            />
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-            />
-          </button>
-        </div>
+            Switch 
+            off
+          </span>
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
+          />
+          <span
+            aria-hidden="true"
+            class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
+          />
+        </button>
       </div>
-      <p
-        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-      >
-        Monthly product updates
-      </p>
     </div>
-    <div
-      class="flex items-center space-x-3 mt-1 py-3"
+    <p
+      class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
     >
-      <div
-        class="flex flex-row items-center justify-start"
-      >
-        <div
-          class="flex justify-center items-center"
-          tabindex="2"
-        >
-          <input
-            class="tremor-Switch-input absolute w-5 h-5 cursor-pointer left-0 top-0 opacity-0"
-            name="switch"
-            type="checkbox"
-          />
-          <button
-            aria-checked="false"
-            class="tremor-Switch-switch w-10 h-5 group relative inline-flex shrink-0 cursor-pointer items-center justify-center rounded-tremor-full focus:outline-none"
-            data-headlessui-state=""
-            id="switch"
-            role="switch"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="tremor-Switch-sr-only sr-only"
-            >
-              Switch 
-              off
-            </span>
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-background bg-tremor-border dark:bg-dark-tremor-border pointer-events-none absolute mx-auto h-3 w-9 rounded-tremor-full transition-colors duration-100 ease-in-out"
-            />
-            <span
-              aria-hidden="true"
-              class="tremor-Switch-round translate-x-0 bg-tremor-border dark:bg-dark-tremor-border border-tremor-background dark:border-dark-tremor-background pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-tremor-full border-2 shadow-tremor-input duration-100 ease-in-out transition"
-            />
-          </button>
-        </div>
-      </div>
-      <p
-        class="text-tremor-default text-secondary font-normal dark:text-dark-romance"
-      >
-        Subscribe to newsletter
-      </p>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+      Subscribe to newsletter
+    </p>
+  </div>
+  <button
+    data-testid="toggle-theme"
+  >
+    isDarkTheme to false
+  </button>
+</div>
 `;

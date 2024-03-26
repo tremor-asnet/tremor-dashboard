@@ -1,23 +1,26 @@
 "use client";
+
 import { Select, SelectItem } from "@tremor/react";
 
 // Types
 import { OptionType } from "@/types";
 
 interface SelectFieldProps {
-  label: string;
   options: OptionType[];
+  label?: string;
   className?: string;
   value?: string;
+  placeholder?: string;
   onChange?: () => void;
   name?: string;
 }
 
 const SelectField = ({
-  label,
-  value,
   options,
+  label = "",
   className,
+  value,
+  placeholder = "Select...",
   name,
   onChange,
   ...props
@@ -32,6 +35,7 @@ const SelectField = ({
         value={value}
         onValueChange={onChange}
         enableClear={false}
+        placeholder={placeholder}
         id={name}
         {...props}>
         {options.map((item: OptionType) => (

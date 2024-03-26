@@ -42,7 +42,7 @@ exports[`Testing BillingCard component Should match snapshot 1`] = `
           **** **** **** 7852
         </p>
         <button
-          class="tremor-Button-root flex-shrink-0 inline-flex justify-center items-center group font-medium outline-none text-sm bg-transparent text-white hover:text-white dark:text-white dark:hover:text-white"
+          class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none text-sm bg-transparent text-white hover:text-white dark:text-white dark:hover:text-white"
         >
           <svg
             class="tremor-Button-icon shrink-0 h-5 w-5"

@@ -1,6 +1,14 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
-import { ToastProvider, ToastContext, ToastMessageType } from "../toast";
+import { ToastProvider, ToastContext, TOAST_TYPE } from "../toast";
+
+jest.mock("../toast", () => {
+  const originalModule = jest.requireActual("../toast");
+  return {
+    ...originalModule,
+    buildToastRenderer: jest.fn(),
+  };
+});
 
 describe("ToastProvider", () => {
   beforeEach(() => {
@@ -12,15 +20,19 @@ describe("ToastProvider", () => {
     jest.resetAllMocks();
   });
 
-  const renderComponent = (toastType: string) =>
+  const renderComponent = ({
+    toastType,
+    message,
+  }: {
+    toastType?: TOAST_TYPE;
+    message?: string;
+  }) =>
     render(
       <ToastProvider>
         <ToastContext.Consumer>
           {({ openToast }) => (
             <button
-              onClick={() =>
-                openToast({ toastType: ToastMessageType(toastType) })
-              }>
+              onClick={() => openToast({ type: toastType, message: message })}>
               Trigger Toast
             </button>
           )}
@@ -28,36 +40,48 @@ describe("ToastProvider", () => {
       </ToastProvider>,
     );
 
-  const checkToastMessage = async (
-    toastType: string,
-    expectedMessage: string,
-  ) => {
-    const { getByText } = renderComponent(toastType);
-    fireEvent.click(getByText("Trigger Toast"));
-
-    await waitFor(() => {
-      expect(getByText(expectedMessage)).toBeInTheDocument;
+  const checkToastMessage = async ({
+    toastType,
+    message,
+  }: {
+    toastType?: TOAST_TYPE;
+    message: string;
+  }) => {
+    const { getByText } = renderComponent({
+      toastType: toastType,
     });
+
+    fireEvent.click(getByText("Trigger Toast"));
+    expect(getByText(message)).toBeInTheDocument;
   };
 
-  it("displays toast success when triggered", async () => {
-    await checkToastMessage(TOAST_TYPES.SUCCESS, "Edit product successfully");
+  it("Displays default toast when triggered", async () => {
+    await checkToastMessage({ message: "Success!" });
   });
 
-  it("displays toast warning when triggered", async () => {
-    await checkToastMessage(TOAST_TYPES.WARNING, "Editing product");
+  it("Displays toast success when triggered", async () => {
+    await checkToastMessage({
+      toastType: TOAST_TYPE.SUCCESS,
+      message: "Success!",
+    });
   });
 
-  it("displays toast error when triggered", async () => {
-    await checkToastMessage(TOAST_TYPES.ERROR, "Failed to edit product");
+  it("Displays toast warning with default message when triggered", async () => {
+    await checkToastMessage({
+      toastType: TOAST_TYPE.WARNING,
+      message: "Warning!",
+    });
   });
 
-  it("displays toast default when triggered", async () => {
-    await checkToastMessage("", "success");
+  it("Displays toast error with default message when triggered", async () => {
+    await checkToastMessage({ toastType: TOAST_TYPE.ERROR, message: "Error!" });
   });
 
-  it("closes toast after a certain duration", async () => {
-    const { getByText, queryByText } = renderComponent(TOAST_TYPES.SUCCESS);
+  it("Closes toast after a certain duration", async () => {
+    const { getByText, queryByText } = renderComponent({
+      toastType: TOAST_TYPE.SUCCESS,
+      message: "Edit product successfully",
+    });
     fireEvent.click(getByText("Trigger Toast"));
 
     jest.advanceTimersByTime(3000);

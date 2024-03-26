@@ -26,23 +26,19 @@ interface ToastContextValue {
   closeToast: () => void;
 }
 
-export const buildToastRenderer = ({
-  type = TOAST_TYPE.SUCCESS,
-  icon,
-  message,
-}: ToastProps) => {
+export const buildToastRenderer = ({ type, icon, message }: ToastProps) => {
   switch (type) {
     case TOAST_TYPE.WARNING:
       return {
         icon: icon || TbExclamationMark,
-        message: message || "Warning!",
+        message: message ?? "Warning!",
         color: "yellow",
       };
 
     case TOAST_TYPE.ERROR:
       return {
         icon: icon || RxCross2,
-        message: message || "Error!",
+        message: message ?? "Error!",
         color: "red",
       };
 
@@ -50,7 +46,7 @@ export const buildToastRenderer = ({
     default:
       return {
         icon: icon || FaCheckCircle,
-        message: message || "Success!",
+        message: message ?? "Success!",
         color: "green",
       };
   }

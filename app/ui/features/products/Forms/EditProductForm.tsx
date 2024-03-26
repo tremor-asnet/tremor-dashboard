@@ -82,13 +82,13 @@ const EditProductForm = ({
   });
 
   const { handleSubmit, formState, reset } = formHandler;
-  // const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
+  const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
 
-  // useEffect(() => {
-  //   formHandler.setValue("image", imageValue, { shouldDirty: true });
-  // }, [imageValue, formHandler]);
+  useEffect(() => {
+    formHandler.setValue("image", imageValue, { shouldDirty: true });
+  }, [imageValue, formHandler]);
 
-  // const { openToast } = useToast();
+  const { openToast } = useToast();
 
   // const onSubmit = async (data: ProductData) => {
   //   try {

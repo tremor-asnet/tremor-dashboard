@@ -5,8 +5,6 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
-  useMemo,
   useState,
 } from "react";
 
@@ -34,16 +32,19 @@ const PinCodeContext = createContext(initialPinCodeContext);
 interface IPinCodeProvider {
   children: ReactNode;
   pinCode?: number;
+  userId?: number;
 }
 
-const PinCodeProvider = ({ children, pinCode: code }: IPinCodeProvider) => {
+const PinCodeProvider = ({
+  children,
+  pinCode: code,
+  userId,
+}: IPinCodeProvider) => {
   const [isConfirmPinCode, setIsConfirmPinCode] = useState(false);
-  const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(!code);
+  const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(
+    !!userId && !code,
+  );
   const [pinCode, setPinCode] = useState<number | undefined>(code);
-
-  useEffect(() => {
-    code && !pinCode && setPinCode(code);
-  }, [code, pinCode]);
 
   const handleShowPinCodeModal = useCallback(
     () => setIsShowPinCodeModal(true),

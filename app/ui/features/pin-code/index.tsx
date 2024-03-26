@@ -29,6 +29,9 @@ export default function PinCode() {
 
   const handleSubmit = useCallback(
     async (code: number) => {
+      const { SETUP_FAILED, SETUP_SUCCESS, CONFIRMATION_SUCCESS } =
+        PIN_CODE_MESSAGES;
+
       // handle confirm
       if (pinCode) {
         const isMatch = confirmPinCode(code);
@@ -37,7 +40,7 @@ export default function PinCode() {
           openToast({
             toastType: {
               icon: <FaCheckCircle />,
-              message: PIN_CODE_MESSAGES.CONFIRMATION_SUCCESS,
+              message: CONFIRMATION_SUCCESS,
               color: "green",
             },
           });
@@ -51,8 +54,6 @@ export default function PinCode() {
       if (isSuccess) {
         setPinCode(code);
       }
-
-      const { SETUP_FAILED, SETUP_SUCCESS } = PIN_CODE_MESSAGES;
 
       openToast({
         toastType: {

@@ -85,7 +85,7 @@ const ProductImage = ({
             {name}
           </Title>
           <div
-            className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center mb-4 text-xs lg:text-base"
+            className="text-secondary dark:text-dark-romance font-primary flex-wrap text-tremor-title font-light leading-[26px] tracking-[0.17136px] text-center  text-xs lg:text-base line-clamp-4"
             dangerouslySetInnerHTML={{ __html: desc }}
           />
         </Flex>

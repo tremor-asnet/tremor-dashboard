@@ -50,7 +50,9 @@ const ProductInfoForm = ({
   });
 
   return (
-    <form className="w-full mt-20" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="w-full mt-20 product-info"
+      onSubmit={handleSubmit(onSubmit)}>
       <h6 className="text-primary dark:text-white font-bold text-xl mb-8">
         Product Information
       </h6>

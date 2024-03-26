@@ -2,7 +2,7 @@
   @apply !bg-transparent rounded-none border-0 !border-b-gray-300 border-b-[2px] border-solid cursor-text shadow-transparent;
 }
 
-.select-custom button:hover  {
+.select-custom button:hover {
   @apply bg-transparent shadow-transparent;
 }
 
@@ -97,14 +97,14 @@
 }
 
 .select-custom button + button {
-  @apply  border-0 hidden;
+  @apply border-0 hidden;
 }
 
 .select-custom[data-headlessui-state="open"] button + button {
   @apply inline;
 }
 
-.select-custom button:focus  {
+.select-custom button:focus {
   @apply bg-transparent rounded-none border-0 border-b !border-b-[#344767] shadow-none outline-none ring-0;
 }
 
@@ -163,5 +163,9 @@ input:-webkit-autofill {
 }
 
 .dark input:-webkit-autofill {
-  -webkit-text-fill-color:white;
+  -webkit-text-fill-color: white;
+}
+
+form.product-info .quill > .ql-container {
+  @apply h-[80px] sm:h-[165px] lg:h-[190px] 2xl:h-[190px];
 }

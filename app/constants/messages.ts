@@ -27,12 +27,6 @@ export const EDIT_PRODUCT_MESSAGE = {
   PENDING: "Editing product",
 };
 
-export const TOAST_TYPES = {
-  SUCCESS: "success",
-  WARNING: "warning",
-  ERROR: "error",
-};
-
 export const USER_MESSAGES = {
   MAIL_EXISTS: "Account with this email already exists!",
   ADD_FAILED: "Failed to create new account. Please try again!",

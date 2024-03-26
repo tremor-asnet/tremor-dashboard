@@ -1,13 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ClientRootLayout matches snapshot with dark theme 1`] = `
-<DocumentFragment>
-  <link
-    href="/assets/images/favicon.ico"
-    rel="icon"
-  />
-  <div>
-    Tremor Dashboard
-  </div>
-</DocumentFragment>
+exports[`ClientRootLayout Should be correct with theme 1`] = `
+<div>
+  <html
+    lang="en"
+  >
+    <head>
+      <link
+        href="/assets/images/favicon.ico"
+        rel="icon"
+      />
+    </head>
+    <body
+      class="className light"
+    >
+      <button
+        data-testid="toggle-theme"
+      >
+        isDarkTheme to false
+      </button>
+      <div
+        id="modal-root"
+      />
+    </body>
+  </html>
+</div>
 `;

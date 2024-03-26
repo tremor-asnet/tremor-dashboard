@@ -157,10 +157,10 @@ const EditProductForm = ({
       </div>
       {/* {false && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
-      )}
+      )} */}
       <FormProvider {...formHandler}>
-        <form onSubmit={handleSubmit(onSubmit)} className="relative"> */}
-      {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="relative">
+          {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
               <ProductImage
                 name={productName}
@@ -182,8 +182,8 @@ const EditProductForm = ({
               <PricingInfo />
             </Col>
           </Grid> */}
-      {/* </form>
-      </FormProvider> */}
+        </form>
+      </FormProvider>
     </>
   );
 };

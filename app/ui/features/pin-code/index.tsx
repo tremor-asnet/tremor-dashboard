@@ -6,11 +6,13 @@ import React, { useCallback, useEffect } from "react";
 import { usePinCode } from "@/context/pincode";
 
 import { updatePinCode } from "@/services";
-import { FaCheckCircle } from "react-icons/fa";
 
 import { useToast } from "@/hooks";
 
 import { PIN_CODE_MESSAGES } from "@/constants";
+
+// Enums
+import { TOAST_TYPE } from "@/context/toast";
 
 const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
   ssr: false,
@@ -28,16 +30,16 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
 
   const handleSubmit = useCallback(
     async (code: number) => {
+      const { SETUP_FAILED, SETUP_SUCCESS, CONFIRMATION_SUCCESS } =
+        PIN_CODE_MESSAGES;
+
       if (pinCode) {
         const isMatch = confirmPinCode(code);
 
         isMatch &&
           openToast({
-            toastType: {
-              icon: <FaCheckCircle />,
-              message: PIN_CODE_MESSAGES.CONFIRMATION_SUCCESS,
-              color: "green",
-            },
+            type: TOAST_TYPE.SUCCESS,
+            message: CONFIRMATION_SUCCESS,
           });
 
         return;
@@ -47,14 +49,9 @@ export default function PinCode({ pinCode }: { pinCode?: number }) {
 
       isSuccess && setPinCode(code);
 
-      const { SETUP_FAILED, SETUP_SUCCESS } = PIN_CODE_MESSAGES;
-
       openToast({
-        toastType: {
-          icon: <FaCheckCircle />,
-          message: isSuccess ? SETUP_SUCCESS : SETUP_FAILED,
-          color: isSuccess ? "green" : "red",
-        },
+        type: isSuccess ? TOAST_TYPE.SUCCESS : TOAST_TYPE.ERROR,
+        message: isSuccess ? SETUP_SUCCESS : SETUP_FAILED,
       });
     },
     [confirmPinCode, openToast, pinCode, setPinCode],

@@ -17,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const ToastDefault: Story = {
   render: () => (
-    <Toast icon={<FaCheckCircle />} message={SIGN_UP_MESSAGE.SUCCESS} />
+    <Toast Icon={FaCheckCircle} message={SIGN_UP_MESSAGE.SUCCESS} />
   ),
 };

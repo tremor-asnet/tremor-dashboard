@@ -23,6 +23,7 @@ import {
 // Styles
 import "@/styles/form.css";
 import "react-quill/dist/quill.snow.css"; // Import Quill styles
+import "@/styles/quill.css";
 
 // Hooks
 import useFocusFieldError from "@/hooks/useFocusFieldError";

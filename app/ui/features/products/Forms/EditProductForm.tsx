@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-// import { FormProvider, useForm } from "react-hook-form";
+import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Col, Grid, Text } from "@tremor/react";
@@ -61,27 +61,27 @@ const EditProductForm = ({
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  // const formHandler = useForm<ProductData>({
-  //   defaultValues: {
-  //     productName,
-  //     price,
-  //     tags,
-  //     shopifyUrl,
-  //     facebookUrl,
-  //     instagramUrl,
-  //     quantity,
-  //     weight,
-  //     category,
-  //     description,
-  //     image,
-  //     currency,
-  //     sku,
-  //     providerName,
-  //     createdAt,
-  //   },
-  // });
+  const formHandler = useForm<ProductData>({
+    defaultValues: {
+      productName,
+      price,
+      tags,
+      shopifyUrl,
+      facebookUrl,
+      instagramUrl,
+      quantity,
+      weight,
+      category,
+      description,
+      image,
+      currency,
+      sku,
+      providerName,
+      createdAt,
+    },
+  });
 
-  // const { handleSubmit, formState, reset } = formHandler;
+  const { handleSubmit, formState, reset } = formHandler;
   // const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
 
   // useEffect(() => {

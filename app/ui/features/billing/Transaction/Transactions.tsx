@@ -7,6 +7,7 @@ import TransactionList from "../TransactionList/TransactionList";
 
 // Types
 import { Transaction } from "@/types";
+import CreateTransactionContainer from "./CreateTransactionContainer";
 
 interface TransactionsProps {
   newest: Transaction[];
@@ -17,9 +18,12 @@ const Transactions = ({ newest, date }: TransactionsProps) => {
   return (
     <div className="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md">
       <div className="flex justify-between">
-        <h6 className="font-semibold text-primary dark:text-white">
-          Your Transaction&#39;s
-        </h6>
+        <div className="flex gap-4">
+          <h6 className="font-semibold text-primary dark:text-white">
+            Your Transaction&#39;s
+          </h6>
+          <CreateTransactionContainer />
+        </div>
         <div className="flex items-center text-secondary">
           <FaRegCalendarAlt className="dark:text-lighter" />
           <Text className="dark:text-lighter ml-2">{date}</Text>

@@ -4,13 +4,7 @@
 import type { User } from "@/types";
 
 // Constants
-import {
-  USER_MESSAGES,
-  EMAIL_REGEX,
-  ROUTER_API_URL,
-  UID_KEY,
-  API_ROUTES,
-} from "@/constants";
+import { USER_MESSAGES, EMAIL_REGEX, UID_KEY, API_ROUTES } from "@/constants";
 import { cookies } from "next/headers";
 
 /**
@@ -111,7 +105,7 @@ const getPinCode = async () => {
   const id = cookies().get(UID_KEY)?.value;
 
   if (!id) {
-    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+    return;
   }
 
   const { pinCode } = await getUserById(parseInt(id));
@@ -119,6 +113,4 @@ const getPinCode = async () => {
   return pinCode;
 };
 
-const signOut = () => fetch(`/api/logout`, { method: "POST" });
-
-export { addNewUser, getUserByEmail, getPinCode, updatePinCode, signOut };
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode };

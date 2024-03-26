@@ -119,4 +119,6 @@ const getPinCode = async () => {
   return pinCode;
 };
 
-export { addNewUser, getUserByEmail, getPinCode, updatePinCode };
+const signOut = () => fetch(`/api/logout`, { method: "POST" });
+
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode, signOut };

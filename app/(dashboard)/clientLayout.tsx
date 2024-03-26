@@ -3,7 +3,6 @@
 // Libs
 import { ReactNode, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
@@ -14,6 +13,8 @@ import PinCode from "@/ui/features/pin-code";
 
 // Constants
 import { ROUTES } from "@/constants";
+
+import { signOut } from "@/services";
 
 // Styles
 import "@/styles/billing.css";
@@ -44,7 +45,7 @@ export default function DashboardLayout({
 
   const signOutAction = async () => {
     setIsPending(true);
-    await fetch(`/api/logout`, { method: "POST" });
+    await signOut();
     setIsCollapseSidebar(false);
     router.replace(ROUTES.SIGN_IN);
   };

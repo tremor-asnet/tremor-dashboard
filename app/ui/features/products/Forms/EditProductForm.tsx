@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 // import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FormProvider, useForm } from "react-hook-form";
+// import { FormProvider, useForm } from "react-hook-form";
 
 // Components
 import { Col, Grid, Text } from "@tremor/react";
@@ -40,102 +40,102 @@ const EditProductForm = ({
   productData: ProductData;
   id: number;
 }) => {
-  const {
-    productName,
-    price,
-    tags,
-    shopifyUrl,
-    facebookUrl,
-    instagramUrl,
-    quantity,
-    weight,
-    category,
-    description,
-    image,
-    currency,
-    sku,
-    providerName,
-    createdAt,
-  } = productData;
+  // const {
+  //   productName,
+  //   price,
+  //   tags,
+  //   shopifyUrl,
+  //   facebookUrl,
+  //   instagramUrl,
+  //   quantity,
+  //   weight,
+  //   category,
+  //   description,
+  //   image,
+  //   currency,
+  //   sku,
+  //   providerName,
+  //   createdAt,
+  // } = productData;
 
-  // const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  // // const router = useRouter();
+  // const [isLoading, setIsLoading] = useState(false);
 
-  const formHandler = useForm<ProductData>({
-    defaultValues: {
-      productName,
-      price,
-      tags,
-      shopifyUrl,
-      facebookUrl,
-      instagramUrl,
-      quantity,
-      weight,
-      category,
-      description,
-      image,
-      currency,
-      sku,
-      providerName,
-      createdAt,
-    },
-  });
+  // const formHandler = useForm<ProductData>({
+  //   defaultValues: {
+  //     productName,
+  //     price,
+  //     tags,
+  //     shopifyUrl,
+  //     facebookUrl,
+  //     instagramUrl,
+  //     quantity,
+  //     weight,
+  //     category,
+  //     description,
+  //     image,
+  //     currency,
+  //     sku,
+  //     providerName,
+  //     createdAt,
+  //   },
+  // });
 
-  const { handleSubmit, formState, reset } = formHandler;
-  const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
+  // const { handleSubmit, formState, reset } = formHandler;
+  // const { upload, imageValue, removeImage, isUpload } = useImageUploader(image);
 
-  useEffect(() => {
-    formHandler.setValue("image", imageValue, { shouldDirty: true });
-  }, [imageValue, formHandler]);
+  // useEffect(() => {
+  //   formHandler.setValue("image", imageValue, { shouldDirty: true });
+  // }, [imageValue, formHandler]);
 
-  const { openToast } = useToast();
+  // const { openToast } = useToast();
 
-  const onSubmit = async (data: ProductData) => {
-    try {
-      const convertedTagsValue = data.tags.map(value => {
-        return Number(value);
-      });
+  // const onSubmit = async (data: ProductData) => {
+  //   try {
+  //     const convertedTagsValue = data.tags.map(value => {
+  //       return Number(value);
+  //     });
 
-      const newData = {
-        ...data,
-        category: +data.category,
-        currency: +data.currency,
-        tags: convertedTagsValue,
-        createdAt: new Date().toISOString(),
-        image: imageValue,
-      };
+  //     const newData = {
+  //       ...data,
+  //       category: +data.category,
+  //       currency: +data.currency,
+  //       tags: convertedTagsValue,
+  //       createdAt: new Date().toISOString(),
+  //       image: imageValue,
+  //     };
 
-      openToast({
-        toastType: ToastMessageType(TOAST_TYPES.WARNING),
-      });
+  //     openToast({
+  //       toastType: ToastMessageType(TOAST_TYPES.WARNING),
+  //     });
 
-      setIsLoading(true);
+  //     setIsLoading(true);
 
-      await editProduct(id, newData);
+  //     await editProduct(id, newData);
 
-      reset(data);
+  //     reset(data);
 
-      setIsLoading(false);
+  //     setIsLoading(false);
 
-      // router.back();
+  //     // router.back();
 
-      openToast({
-        toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
-      });
-    } catch (err: any) {
-      openToast({
-        toastType: ToastMessageType(TOAST_TYPES.ERROR),
-      });
-    }
-  };
+  //     openToast({
+  //       toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
+  //     });
+  //   } catch (err: any) {
+  //     openToast({
+  //       toastType: ToastMessageType(TOAST_TYPES.ERROR),
+  //     });
+  //   }
+  // };
 
-  const onRemoveImage = () => {
-    removeImage();
-    formHandler.setValue("image", "", { shouldDirty: true });
-  };
+  // const onRemoveImage = () => {
+  //   removeImage();
+  //   formHandler.setValue("image", "", { shouldDirty: true });
+  // };
 
   const renderContentButton = () =>
-    isLoading ? (
+    false ? (
       <LoadingIndicator width={4} height={5} additionalClass="px-1.5" />
     ) : (
       <Text className="items-center uppercase py-[2px] text-xs font-bold font-primary text-white dark:text-dark-tremor-content-title">
@@ -145,22 +145,22 @@ const EditProductForm = ({
 
   return (
     <>
-      {isLoading && (
+      <div className="w-full text-end absolute -mt-24">
+        <Button
+          variant={VARIANT_BUTTON.PRIMARY}
+          type="submit"
+          size="xs"
+          disabled={false}
+          additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
+          {renderContentButton()}
+        </Button>
+      </div>
+      {/* {false && (
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}
       <FormProvider {...formHandler}>
-        <form onSubmit={handleSubmit(onSubmit)} className="relative">
-          <div className="w-full text-end absolute -mt-24">
-            <Button
-              variant={VARIANT_BUTTON.PRIMARY}
-              type="submit"
-              size="xs"
-              disabled={!formState.isDirty}
-              additionalClass="antialiased text-center uppercase px-6 py-2.5 rounded-lg border-0 items-end">
-              {renderContentButton()}
-            </Button>
-          </div>
-          {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="relative"> */}
+      {/* <Grid numItemsSm={1} numItemsLg={3} className="gap-6">
             <div className="w-full">
               <ProductImage
                 name={productName}
@@ -182,8 +182,8 @@ const EditProductForm = ({
               <PricingInfo />
             </Col>
           </Grid> */}
-        </form>
-      </FormProvider>
+      {/* </form>
+      </FormProvider> */}
     </>
   );
 };

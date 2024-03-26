@@ -60,9 +60,9 @@ export default function PinCode() {
   );
 
   const modalProps = pinCode
-    ? { title: "Please enter your PIN code" }
+    ? { title: "Enter your PIN code" }
     : {
-        title: "Please set the PIN code to your account",
+        title: "Set your PIN code",
         btnCloseLabel: "Skip",
         btnPrimaryLabel: "Set",
       };

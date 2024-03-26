@@ -8,11 +8,38 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
     <div
       class="flex justify-between"
     >
-      <h6
-        class="font-semibold text-primary dark:text-white"
+      <div
+        class="flex gap-4"
       >
-        Your Transaction's
-      </h6>
+        <h6
+          class="font-semibold text-primary dark:text-white"
+        >
+          Your Transaction's
+        </h6>
+        <button
+          class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis bg-transparent hover:bg-transparent border-none p-0 dark:bg-transparent dark:hover:bg-transparent"
+          style="box-shadow: none;"
+        >
+          <span
+            class="tremor-Button-text text-tremor-default whitespace-nowrap"
+          >
+            <svg
+              class="text-primary w-5 h-4 dark:text-white"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm80 224h-64v64a16 16 0 01-32 0v-64h-64a16 16 0 010-32h64v-64a16 16 0 0132 0v64h64a16 16 0 010 32z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
       <div
         class="flex items-center text-secondary"
       >

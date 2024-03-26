@@ -37,3 +37,4 @@ export { default as Filter } from "./Filter/Filter";
 export { default as Button } from "./Button/Button";
 export { default as PinCodeModal } from "./PinCodeModal";
 export { default as Modal } from "./Modal";
+export { default as DecimalNumberInputGroup } from "./DecimalNumberInputGroup";

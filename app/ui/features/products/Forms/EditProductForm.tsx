@@ -178,7 +178,7 @@ const EditProductForm = ({
                 isUpload={isUpload}
               />
             </div>
-            <Col numColSpanSm={1} numColSpanLg={2}>
+            {/* <Col numColSpanSm={1} numColSpanLg={2}>
               <ProductInfo />
             </Col>
             <Col numColSpan={1}>
@@ -186,7 +186,7 @@ const EditProductForm = ({
             </Col>
             <Col numColSpanSm={1} numColSpanLg={2}>
               <PricingInfo />
-            </Col>
+            </Col> */}
           </Grid>
         </form>
       </FormProvider>

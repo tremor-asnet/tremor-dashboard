@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
@@ -58,7 +58,7 @@ const EditProductForm = ({
     createdAt,
   } = productData;
 
-  const router = useRouter();
+  // const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
   const formHandler = useForm<ProductData>({
@@ -117,7 +117,7 @@ const EditProductForm = ({
 
       setIsLoading(false);
 
-      router.back();
+      // router.back();
 
       openToast({
         toastType: ToastMessageType(TOAST_TYPES.SUCCESS),

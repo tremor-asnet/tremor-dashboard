@@ -11,22 +11,18 @@ import { MdHome } from "react-icons/md";
 import { ROUTES } from "@/constants";
 
 // Helpers
-import { getCrumbName, handleMatchPath, isBrowser } from "@/helpers";
+import { getCrumbName, handleMatchPath } from "@/helpers";
 
 export interface BreadcrumbProps {
-  isScrolled?: boolean;
+  isScrolled: boolean;
   pathname: string;
 }
 
-const Breadcrumb = ({
-  isScrolled = false,
-  pathname,
-}: BreadcrumbProps): JSX.Element => {
+const Breadcrumb = ({ isScrolled, pathname }: BreadcrumbProps): JSX.Element => {
   const params = useParams();
-  const isProjectPage = pathname === ROUTES.PROJECTS;
+  const isProjectPage = pathname.includes(ROUTES.PROJECTS);
   const isStickyHeader = !isScrolled && isProjectPage;
   const newPath = pathname?.split("/").filter(path => path);
-
   const renderTitle = (path?: string) => {
     if (path) {
       const matchPath = handleMatchPath(path);
@@ -63,7 +59,7 @@ const Breadcrumb = ({
                 })}
               </Link>
               {newPath.length !== index + 1 && (
-                <span className={`${isProjectPage && "text-white"}`}>
+                <span className={`${isProjectPage ? "text-white" : ""}`}>
                   &#47;
                 </span>
               )}

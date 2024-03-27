@@ -125,4 +125,11 @@
   button.shadow-tremor-input.box-shadow-transparent:hover {
     @apply shadow-transparent;
   }
+
+  /* Styles for button shadow-none if use shadow-none class name of tailwind, it won't work*/
+  .create-transaction-wrapper {
+    button.shadow-tremor-input {
+      @apply shadow-none shadow-transparent;
+    }
+  }
 }

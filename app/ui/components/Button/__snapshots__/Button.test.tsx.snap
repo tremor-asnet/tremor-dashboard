@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component Should match snapshot 1`] = `
+<div>
+  <div>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis bg-gradient-primary dark:bg-gradient-pickled"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis btn-form-primary rounded-lg py-3 px-6 mt-8 bg-gradient-primary dark:bg-gradient-pickled hover:dark:!bg-gradient-pickled border-none dark:text-white text-center"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm bg-tremor-brand dark:bg-dark-tremor-brand dark:text-dark-tremor-brand-inverted dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis !rounded-full border-secondary dark:border-secondary text-secondary hover:text-secondary hover:opacity-75 hover:bg-transparent p-[5.5px] box-shadow-transparent"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis box-shadow-transparent uppercase"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis justify-start text-tremor-content-title hover:text-tremor-content-title hover:bg-body dark:hover:bg-dark-secondary hover:rounded-md"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none rounded-tremor-default shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis w-[25px] h-[25px] justify-center items-center rounded-full border mr-2 text-tremor-content-title hover:text-tremor-content-title"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis justify-center items-center opacity-50 dark:opacity-100"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis items-start btn-form-secondary rounded-lg dark:bg-gradient-pickled py-3 px-6 mt-8 bg-gradient-btn-back hover:dark:!bg-gradient-pickled border-none dark:text-white text-center box-shadow-transparent"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 dark:border-dark-tremor-brand dark:hover:bg-dark-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis text-sm text-gray-400 dark:text-gray-400 bg-transparent hover:bg-select dark:bg-transparent dark:hover:greyish w-9 h-9 inline-flex justify-center items-center border-gray-300 hover:border-gray-300 !rounded-full box-shadow-transparent"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+    <button
+      class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input px-4 py-2 text-sm bg-tremor-brand dark:bg-dark-tremor-brand border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:bg-tremor-brand-emphasis dark:hover:bg-dark-tremor-brand-emphasis hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis"
+    >
+      <span
+        class="tremor-Button-text text-tremor-default whitespace-nowrap"
+      >
+        Hello
+      </span>
+    </button>
+  </div>
+</div>
+`;

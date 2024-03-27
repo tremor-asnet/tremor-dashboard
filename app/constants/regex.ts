@@ -6,4 +6,10 @@ export const REGEX = {
 
 export const SEPARATOR = {
   COMMAS: ",",
+  DOTS: ".",
+};
+
+export const CURRENCY_AMOUNT = {
+  LOCALES: "en-US",
+  STYLE: "decimal",
 };

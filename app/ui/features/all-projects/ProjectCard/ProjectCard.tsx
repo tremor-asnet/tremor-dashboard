@@ -65,9 +65,7 @@ const ProjectCard = ({
   return (
     <div className="antialiased items-center justify-between pb-1">
       <div className="flex items-center">
-        <Card
-          className="dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md"
-          ref={projectCardRef as RefObject<HTMLDivElement>}>
+        <Card className="dark:bg-dark-tremor-primary mx-auto px-4 py-1 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative mt-[40px] rounded-xl shadow-md">
           <Flex className="absolute top-[-22px] left-40px w-[74px] h-[74px] p-1 bg-gradient-arsenic justify-center rounded-xl dark:bg-gradient-pickled">
             <CustomImage
               src={srcImageCard}
@@ -112,6 +110,7 @@ const ProjectCard = ({
               {openActionProject && (
                 <div
                   data-testid="menu-action"
+                  ref={projectCardRef as RefObject<HTMLDivElement>}
                   className="absolute p-2 right-[26px] top-[3px] z-10 bg-white dark:bg-dark-tremor-primary rounded-md shadow-md dark:shadow-select-option">
                   {actions.map(item => (
                     <Flex key={item.key}>

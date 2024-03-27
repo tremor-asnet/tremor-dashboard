@@ -8,23 +8,17 @@ import {
   useState,
 } from "react";
 
+import { updatePinCode } from "@/services";
+
 interface IPinCodeContext {
-  isConfirmPinCode: boolean;
   pinCode?: number;
   isShowPinCodeModal: boolean;
-  setPinCode: (code: number) => void;
-  showPinCodeModal: () => void;
-  hidePinCodeModal: () => void;
-  confirmPinCode: (code: number) => boolean;
+  setPinCode: (values: number) => void;
 }
 
 const initialPinCodeContext: IPinCodeContext = {
-  isConfirmPinCode: false,
-  confirmPinCode: () => false,
-  hidePinCodeModal: () => {},
-  setPinCode: () => false,
-  showPinCodeModal: () => {},
   isShowPinCodeModal: false,
+  setPinCode: () => {},
 };
 
 const PinCodeContext = createContext(initialPinCodeContext);
@@ -37,49 +31,15 @@ interface IPinCodeProvider {
 
 const PinCodeProvider = ({
   children,
-  pinCode: code,
+  pinCode: initialPinCode,
   userId,
 }: IPinCodeProvider) => {
-  const [isConfirmPinCode, setIsConfirmPinCode] = useState(false);
-  const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(
-    !!userId && !code,
-  );
-  const [pinCode, setPinCode] = useState<number | undefined>(code);
-
-  const handleShowPinCodeModal = useCallback(
-    () => setIsShowPinCodeModal(true),
-    [],
-  );
-
-  const handleHidePinCodeModal = useCallback(
-    () => setIsShowPinCodeModal(false),
-    [],
-  );
-
-  const handleConfirmPinCode = useCallback(
-    (code: number) => {
-      const isMatch = code === pinCode;
-      setIsConfirmPinCode(isMatch);
-      isMatch ? handleHidePinCodeModal() : handleShowPinCodeModal();
-      return isMatch;
-    },
-    [handleHidePinCodeModal, handleShowPinCodeModal, pinCode],
-  );
-
-  const handleSetPinCode = useCallback((pinCode: number) => {
-    setPinCode(pinCode);
-    setIsShowPinCodeModal(false);
-    setIsConfirmPinCode(true);
-  }, []);
+  const [pinCode, setPinCode] = useState<number | undefined>(initialPinCode);
 
   const pinCodeContextValue: IPinCodeContext = {
-    isConfirmPinCode,
     pinCode,
-    isShowPinCodeModal,
-    setPinCode: handleSetPinCode,
-    confirmPinCode: handleConfirmPinCode,
-    hidePinCodeModal: handleHidePinCodeModal,
-    showPinCodeModal: handleShowPinCodeModal,
+    setPinCode,
+    isShowPinCodeModal: !!userId && !pinCode,
   };
 
   return (
@@ -89,14 +49,47 @@ const PinCodeProvider = ({
   );
 };
 
-const usePinCode = () => {
+const usePinCode = (callback?: () => void) => {
   const context = useContext(PinCodeContext);
 
   if (!context) {
     throw new Error("usePinCode hooks should using inside PinCodeProvider!");
   }
 
-  return context;
+  const { pinCode, setPinCode, isShowPinCodeModal } = context;
+
+  const handleConfirmPinCode = useCallback(
+    (code: number) => {
+      const isMatch = code === pinCode;
+
+      if (isMatch) {
+        callback?.();
+      }
+
+      return isMatch;
+    },
+    [callback, pinCode],
+  );
+
+  const handleSetPinCode = useCallback(
+    async (pinCode: number) => {
+      const { isSuccess } = await updatePinCode(pinCode);
+
+      if (isSuccess) {
+        setPinCode(pinCode);
+      }
+
+      return isSuccess;
+    },
+    [setPinCode],
+  );
+
+  return {
+    pinCode,
+    setPinCode: handleSetPinCode,
+    confirmPinCode: handleConfirmPinCode,
+    isShowPinCodeModal,
+  };
 };
 
 export { PinCodeProvider, usePinCode };

@@ -5,8 +5,6 @@ import React, { useCallback } from "react";
 
 import { usePinCode } from "@/context/pincode";
 
-import { updatePinCode } from "@/services";
-
 import { useToast } from "@/hooks";
 
 import { PIN_CODE_MESSAGES } from "@/constants";
@@ -18,14 +16,21 @@ const PinCodeModal = dynamic(() => import("@/ui/components/PinCodeModal"), {
   ssr: false,
 });
 
-export default function PinCode() {
+interface IPinCode {
+  onConfirm?: () => void;
+  isShowPinCodeModal?: boolean;
+  onClose?: () => void;
+}
+
+export default function PinCode({ onConfirm, ...others }: IPinCode) {
   const {
     pinCode,
-    isShowPinCodeModal,
     confirmPinCode,
-    hidePinCodeModal,
     setPinCode,
-  } = usePinCode();
+    isShowPinCodeModal: initial,
+  } = usePinCode(onConfirm);
+
+  const { isShowPinCodeModal = initial, onClose } = others;
 
   const { openToast } = useToast();
 
@@ -42,21 +47,23 @@ export default function PinCode() {
             type: TOAST_TYPE.SUCCESS,
             message: CONFIRMATION_SUCCESS,
           });
+
+          onConfirm?.();
         }
 
         return;
       }
 
-      const { isSuccess } = await updatePinCode(code);
-
-      isSuccess && setPinCode(code);
-
-      openToast({
-        type: isSuccess ? TOAST_TYPE.SUCCESS : TOAST_TYPE.ERROR,
-        message: isSuccess ? SETUP_SUCCESS : SETUP_FAILED,
-      });
+      const isSuccess = await setPinCode(code);
+      if (isSuccess) {
+        onConfirm?.();
+        openToast({
+          type: isSuccess ? TOAST_TYPE.SUCCESS : TOAST_TYPE.ERROR,
+          message: isSuccess ? SETUP_SUCCESS : SETUP_FAILED,
+        });
+      }
     },
-    [confirmPinCode, openToast, pinCode, setPinCode],
+    [confirmPinCode, onConfirm, openToast, pinCode, setPinCode],
   );
 
   const modalProps = pinCode
@@ -70,7 +77,7 @@ export default function PinCode() {
   return (
     <PinCodeModal
       onSubmit={handleSubmit}
-      onClose={hidePinCodeModal}
+      onClose={onClose}
       open={isShowPinCodeModal}
       {...modalProps}
     />

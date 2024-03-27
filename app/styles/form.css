@@ -35,10 +35,6 @@
   @apply border-0 shadow-xl p-2;
 }
 
-.select-custom .translate-y-0 {
-  @apply bottom-8;
-}
-
 .select-custom ul div {
   @apply rounded-md text-secondary;
 }

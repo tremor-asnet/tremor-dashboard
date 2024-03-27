@@ -6,7 +6,7 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary lg:w-80%"
       >
         <p
           class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
@@ -122,33 +122,25 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"
+          class="tremor-Flex-root flex w-full flex-col justify-between items-start mt-10"
         >
-          <div
-            class="w-full"
+          <p
+            class="text-tremor-default text-secondary dark:text-lighter mb-4"
           >
-            <label
-              class="text-secondary text-sm dark:text-lighter"
-              for="details-quantity"
-            >
-              Quantity
-            </label>
-            <input
-              class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
-              id="details-quantity"
-              placeholder=""
-              readonly=""
-              type="number"
-              value="50"
-            />
-          </div>
+            Quantity
+          </p>
+          <p
+            class="text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+          >
+            50
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary"
+      class="tremor-Flex-root flex w-full flex-col justify-between items-start antialiased font-primary lg:w-80%"
     >
       <p
         class="text-tremor-default text-primary dark:text-white font-bold !text-3xl mb-3"
@@ -264,26 +256,18 @@ exports[`ProductInfoDetail Testing should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="tremor-Flex-root flex w-full flex-row justify-between items-center mt-6"
+        class="tremor-Flex-root flex w-full flex-col justify-between items-start mt-10"
       >
-        <div
-          class="w-full"
+        <p
+          class="text-tremor-default text-secondary dark:text-lighter mb-4"
         >
-          <label
-            class="text-secondary text-sm dark:text-lighter"
-            for="details-quantity"
-          >
-            Quantity
-          </label>
-          <input
-            class="block py-2.5 px-0 w-full text-sm text-primary bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
-            id="details-quantity"
-            placeholder=""
-            readonly=""
-            type="number"
-            value="50"
-          />
-        </div>
+          Quantity
+        </p>
+        <p
+          class="text-tremor-default text-tremor-content dark:text-dark-tremor-content"
+        >
+          50
+        </p>
       </div>
     </div>
   </div>,

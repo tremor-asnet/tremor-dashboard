@@ -1,6 +1,7 @@
-// Components
 import Link from "next/link";
 import { Flex } from "@tremor/react";
+
+// Components
 import { CustomImage } from "@/ui/components";
 import { ProductInfoDetail } from "@/ui/features/products";
 
@@ -17,13 +18,18 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
   const productData = await getProductDetails(id);
 
   return (
-    <Flex alignItems="start" flexDirection="col" className="lg:flex-row">
-      <Flex alignItems="center">
+    <Flex
+      alignItems="start"
+      flexDirection="col"
+      justifyContent="start"
+      className="lg:flex-row">
+      <Flex className="lg:w-[30%]">
         <CustomImage
-          className="rounded-lg"
+          objectFit="cover"
+          className="rounded-lg lg:w-full lg:h-full"
           src={productData.image}
-          width={800}
-          height={500}
+          width={500}
+          height={300}
           alt="product-detail"
         />
       </Flex>
@@ -31,7 +37,7 @@ const ProductDetail = async ({ id }: { id: Product["id"] }) => {
         alignItems="start"
         justifyContent="start"
         flexDirection="col"
-        className="lg:px-[50px] xl:px-[90px] 2xl:px-[185px] pt-6 lg:pt-0">
+        className="lg:px-[100px] pt-6 lg:pt-0 lg:w-[70%]">
         <ProductInfoDetail product={productData} />
         <Link
           href={`${ROUTES.PRODUCT_LIST}/${id}/edit-product`}

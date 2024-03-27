@@ -14,6 +14,7 @@ interface ImageProps {
   alt: string;
   sizes?: string;
   priority?: boolean;
+  objectFit?: string;
 }
 
 const CustomImage = ({
@@ -23,7 +24,7 @@ const CustomImage = ({
   height,
   alt,
   sizes,
-
+  objectFit,
   ...rest
 }: ImageProps) => {
   const [fallbackSrc, setFallbackImgSrc] = useState(false);
@@ -41,6 +42,7 @@ const CustomImage = ({
         sizes={sizes}
         alt={altImage}
         onError={handleOnError}
+        objectFit={objectFit}
         {...rest}
       />
     </>

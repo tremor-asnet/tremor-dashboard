@@ -6,16 +6,20 @@ import {
   getErrorMessage,
   isEmpty,
   formattedNumber,
+  formatAdjustNumber,
   formatDateTime,
   formatDateTimeForTransaction,
+  formatNewDate,
   getCrumbName,
   searchOrderDataByValue,
   searchProductDataByValue,
   buildSearchUrl,
+  handleMatchPath,
+  getFormData,
 } from ".";
 
 describe("Test isEmpty function", () => {
-  test("Check the param with empty value", () => {
+  it("Check the param with empty value", () => {
     // Empty string
     let result = isEmpty("");
     expect(result).toBeTruthy();
@@ -37,8 +41,8 @@ describe("Test isEmpty function", () => {
     expect(result).toBeTruthy();
   });
 
-  test("Check the param with value", () => {
-    let result = isEmpty("test value");
+  it("Check the param with value", () => {
+    let result = isEmpty("it value");
     expect(result).toBeFalsy();
 
     // With array
@@ -51,53 +55,70 @@ describe("Test isEmpty function", () => {
   });
 });
 
+describe("Test handleMatchPath function", () => {
+  it("Should render Product Details", () => {
+    const result = handleMatchPath("http://localhost:3000/product-list/87120");
+    expect(result).toBe("Product Details");
+  });
+
+  it("Should render Order Details", () => {
+    const result = handleMatchPath("http://localhost:3000/order-list/87120");
+    expect(result).toBe("Order Details");
+  });
+
+  it("Should render Invoice Details", () => {
+    const result = handleMatchPath("http://localhost:3000/billing/87120");
+    expect(result).toBe("Invoice Details");
+  });
+});
+
 describe("Test getErrorMessage function", () => {
-  test("Should render correct message", () => {
+  it("Should render correct message", () => {
     const result = getErrorMessage(404, "Not Found");
     expect(result).toBe("An error has occurred: 404 - Not Found");
   });
 });
 
 describe("Test formatMoney function", () => {
-  test("formatMoney formats number correctly", () => {
+  it("formatMoney formats number correctly", () => {
     const formattedMoney = formatMoney("23900");
     expect(formattedMoney).toBe("$23,900");
   });
 
-  test("formatMoney handles invalid input gracefully", () => {
+  it("formatMoney handles invalid input gracefully", () => {
     const formattedMoney = formatMoney("invalidNumber");
     expect(formattedMoney).toBe("$NaN");
   });
 });
 
 describe("Test formatPercentage function", () => {
-  test("formatMoney formats number correctly", () => {
+  it("formatMoney formats number correctly", () => {
     const formattedMoney = formatMoney("23900");
     expect(formattedMoney).toBe("$23,900");
   });
 
-  test("formatMoney handles invalid input gracefully", () => {
+  it("formatMoney handles invalid input gracefully", () => {
     const formattedMoney = formatMoney("invalidNumber");
     expect(formattedMoney).toBe("$NaN");
   });
 });
 
 describe("Test formatPercentage function", () => {
-  test("formats positive numbers with a plus sign and percentage", () => {
+  it("formats positive numbers with a plus sign and percentage", () => {
     const positiveNumber = 42;
     const formattedResult = formatPercentage(positiveNumber);
 
     expect(formattedResult).toBe("+42%");
   });
 
-  test("formats negative numbers with a minus sign and percentage", () => {
+  it("formats negative numbers with a minus sign and percentage", () => {
     const negativeNumber = -15.5;
     const formattedResult = formatPercentage(negativeNumber);
 
     expect(formattedResult).toBe("-15.5%");
   });
 
-  test("formats zero with a plus sign and percentage", () => {
+  it("formats zero with a plus sign and percentage", () => {
     const zero = 0;
     const formattedResult = formatPercentage(zero);
 
@@ -106,7 +127,7 @@ describe("Test formatPercentage function", () => {
 });
 
 describe("formatAbbreviateNumber function", () => {
-  test("formatAbbreviateNumber correctly formats numbers", () => {
+  it("formatAbbreviateNumber correctly formats numbers", () => {
     // Test case: number < 1e3
     expect(formatAbbreviateNumber(500)).toBe("500");
 
@@ -121,7 +142,7 @@ describe("formatAbbreviateNumber function", () => {
 });
 
 describe("formattedNumber function", () => {
-  test("formats number with decimal currency", () => {
+  it("formats number with decimal currency", () => {
     const result = formattedNumber({
       value: 23000,
       currency: CURRENCY.DOLLAR,
@@ -130,7 +151,7 @@ describe("formattedNumber function", () => {
     expect(result).toBe("$23,000");
   });
 
-  test("formats number with commas currency", () => {
+  it("formats number with commas currency", () => {
     const result = formattedNumber({
       value: 23000,
       currency: CURRENCY.DOLLAR,
@@ -139,19 +160,36 @@ describe("formattedNumber function", () => {
     expect(result).toBe("$23,000");
   });
 
-  test("formats number with commas", () => {
+  it("formats number with commas", () => {
     const result = formattedNumber({ value: 23000, isDecimalNumber: false });
     expect(result).toBe("23,000");
   });
 
-  test("formats number with decimal", () => {
+  it("formats number with decimal", () => {
     const result = formattedNumber({ value: 23000, isDecimalNumber: true });
     expect(result).toBe("23,000");
   });
 
-  test("formats number without currency and decimal", () => {
+  it("formats number without currency and decimal", () => {
     const result = formattedNumber({ value: 23000 });
     expect(result).toBe("23,000");
+  });
+});
+
+describe("formatAdjustNumber function", () => {
+  it("formatAdjustNumber is positive", () => {
+    const result = formatAdjustNumber({
+      value: 23000,
+    });
+    expect(result).toBe("+23,000");
+  });
+
+  it("formatAdjustNumber is not positive", () => {
+    const result = formatAdjustNumber({
+      value: 23000,
+      isPositive: 1,
+    });
+    expect(result).toBe("-23,000");
   });
 });
 
@@ -178,8 +216,23 @@ describe("formatDateTimeForTransaction function", () => {
   });
 });
 
+describe("formatNewDate function", () => {
+  it("should format date and time without separator", () => {
+    const dateValue = "2022-01-23T12:34:56";
+    const formattedDate = formatNewDate(dateValue);
+    expect(formattedDate).toBe("January 23 2022");
+  });
+
+  it("should format date and time with a separator", () => {
+    const dateValue = "2022-01-23T12:34:56";
+    const separator = ",";
+    const formattedDate = formatNewDate(dateValue, separator);
+    expect(formattedDate).toBe("January, 23, 2022");
+  });
+});
+
 describe("getPageTitle function", () => {
-  test("Should render Order Details with id", () => {
+  it("Should render Order Details with id", () => {
     const mockValue = {
       name: "1234",
       path: "/order-list/1234",
@@ -189,7 +242,7 @@ describe("getPageTitle function", () => {
     expect(name).toBe("#" + "1234");
   });
 
-  test("Should render Product Details with id", () => {
+  it("Should render Product Details with id", () => {
     const mockValue = {
       name: "1234",
       path: "/product-list/1234",
@@ -199,10 +252,10 @@ describe("getPageTitle function", () => {
     expect(name).toBe("#" + "1234");
   });
 
-  test("Should render correct name", () => {
+  it("Should render correct name", () => {
     const mockValue = {
       name: "Test",
-      path: "/test",
+      path: "/it",
     };
     const name = getCrumbName({ ...mockValue });
     expect(name).toBe("Test");
@@ -210,7 +263,7 @@ describe("getPageTitle function", () => {
 });
 
 describe("searchOrderDataByValue function", () => {
-  test("filters data correctly", () => {
+  it("filters data correctly", () => {
     const orderListData = [
       {
         products: [{ name: "ProductA" }, { name: "ProductB" }],
@@ -241,7 +294,7 @@ describe("searchProductDataByValue function", () => {
     { productName: "ProductC" },
   ];
 
-  test("filters data correctly", () => {
+  it("filters data correctly", () => {
     const result = searchProductDataByValue(
       productListData,
       "productName",
@@ -260,9 +313,34 @@ describe("buildSearchUrl function", () => {
     query: "",
   };
 
-  test("build correctly params", () => {
+  it("build correctly params", () => {
     const result = buildSearchUrl(mockObject);
 
     expect(result).toBe("page=0&size=10&query=");
+  });
+});
+
+describe("getFormData function", () => {
+  it("should return FormData object with key-value pairs from input object", () => {
+    const inputObject = {
+      name: "John",
+      age: 30,
+      email: "john@example.com",
+    };
+
+    const formData = getFormData(inputObject);
+
+    expect(formData).toBeInstanceOf(FormData);
+
+    Object.entries(inputObject).forEach(([key, value]) => {
+      expect(formData.get(key)).toEqual(value.toString());
+    });
+  });
+
+  it("should return empty FormData object for empty input object", () => {
+    const emptyObject = {};
+    const formData = getFormData(emptyObject);
+
+    expect(formData).toBeInstanceOf(FormData);
   });
 });

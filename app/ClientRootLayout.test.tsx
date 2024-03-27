@@ -2,11 +2,6 @@ import { fireEvent, render } from "@testing-library/react";
 import ClientRootLayout, { metadata } from "./ClientRootLayout";
 import { ThemeContext, ThemeProvider } from "./context/theme";
 
-jest.mock("./context/theme", () => ({
-  ...jest.requireActual("./context/theme"),
-  useContext: jest.fn().mockReturnValue({ theme: true }),
-}));
-
 describe("ClientRootLayout", () => {
   it("Should have correct title", () => {
     expect(metadata.title).toBe("Tremor Dashboard");

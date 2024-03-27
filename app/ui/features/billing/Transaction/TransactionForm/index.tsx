@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useMemo } from "react";
+import { memo } from "react";
 import {
   Controller,
   FieldValues,
@@ -10,18 +10,29 @@ import {
 import { Button, Flex } from "@tremor/react";
 
 // Constants
-import { TAGS_PRICE } from "@/constants";
+import { MESSAGES_ERROR } from "@/constants";
 
+// Types
+import { OptionType } from "@/types";
 // Components
 import { SelectField, DecimalNumberInputGroup } from "@/ui/components";
 
 interface TransactionFormProps {
+  options: OptionType[];
   onSubmit: SubmitHandler<FieldValues>;
   onClose?: () => void;
 }
 
-const TransactionForm = ({ onSubmit, onClose }: TransactionFormProps) => {
-  const { control, handleSubmit } = useForm();
+const TransactionForm = ({
+  options,
+  onSubmit,
+  onClose,
+}: TransactionFormProps) => {
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid, isSubmitting },
+  } = useForm();
 
   return (
     <form
@@ -30,21 +41,49 @@ const TransactionForm = ({ onSubmit, onClose }: TransactionFormProps) => {
       onSubmit={handleSubmit(onSubmit)}>
       <Controller
         control={control}
+        rules={{
+          required: MESSAGES_ERROR.FIELD_REQUIRED,
+        }}
         name="account"
-        render={() => (
+        render={({
+          field: { value, onChange, ...rest },
+          fieldState: { error },
+        }) => (
           <SelectField
+            value={value}
+            options={options}
+            errorMessage={error?.message}
             placeholder="Choose an account to transfer"
-            options={TAGS_PRICE}
+            onChange={onChange}
+            {...rest}
           />
         )}
       />
       <Controller
         control={control}
+        rules={{
+          required: MESSAGES_ERROR.FIELD_REQUIRED,
+        }}
         name="amount"
-        render={() => <DecimalNumberInputGroup label="Enter amount" />}
+        render={({
+          field: { value, onChange, ...rest },
+          fieldState: { error },
+        }) => {
+          return (
+            <DecimalNumberInputGroup
+              errorMessage={error?.message}
+              value={value}
+              onChange={onChange}
+              label="Enter amount"
+              {...rest}
+            />
+          );
+        }}
       />
       <Flex justifyContent="end" className="gap-5">
-        <Button type="submit">Submit</Button>
+        <Button type="submit" disabled={!isValid} loading={isSubmitting}>
+          Submit
+        </Button>
         <Button onClick={onClose}>Cancel</Button>
       </Flex>
     </form>

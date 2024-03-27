@@ -3,13 +3,22 @@
 import { useState } from "react";
 import { Button, Dialog, DialogPanel } from "@tremor/react";
 
+// Types
+import { OptionType } from "@/types";
+
 // Icons
 import { IoAddCircle } from "react-icons/io5";
 
 // Components
 import TransactionForm from "../TransactionForm";
 
-const CreateTransactionContainer = () => {
+interface CreateTransactionContainerProps {
+  options: OptionType[];
+}
+
+const CreateTransactionContainer = ({
+  options,
+}: CreateTransactionContainerProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleOpen = () => setIsOpen(true);
@@ -22,10 +31,7 @@ const CreateTransactionContainer = () => {
   return (
     <>
       <Button
-        className="bg-transparent hover:bg-transparent border-none p-0 dark:bg-transparent dark:hover:bg-transparent"
-        style={{
-          boxShadow: "none",
-        }}
+        className="bg-transparent hover:bg-transparent border-none p-0 dark:bg-transparent dark:hover:bg-transparent btn-create"
         onClick={handleOpen}>
         <IoAddCircle className="text-primary w-5 h-4 dark:text-white" />
       </Button>
@@ -34,7 +40,11 @@ const CreateTransactionContainer = () => {
           <h2 className="capitalize font-bold text-2xl text-center text-tertiary dark:text-dark-romance">
             Create new transaction
           </h2>
-          <TransactionForm onSubmit={handleSubmit} onClose={handleClose} />
+          <TransactionForm
+            onSubmit={handleSubmit}
+            onClose={handleClose}
+            options={options}
+          />
         </DialogPanel>
       </Dialog>
     </>

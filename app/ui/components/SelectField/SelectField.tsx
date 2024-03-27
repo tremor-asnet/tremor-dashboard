@@ -1,6 +1,6 @@
 "use client";
 
-import { Select, SelectItem } from "@tremor/react";
+import { Select, SelectItem, Text } from "@tremor/react";
 
 // Types
 import { OptionType } from "@/types";
@@ -11,8 +11,9 @@ interface SelectFieldProps {
   className?: string;
   value?: string;
   placeholder?: string;
-  onChange?: () => void;
   name?: string;
+  errorMessage?: string;
+  onChange?: () => void;
 }
 
 const SelectField = ({
@@ -22,11 +23,12 @@ const SelectField = ({
   value,
   placeholder = "Select...",
   name,
+  errorMessage = "",
   onChange,
   ...props
 }: SelectFieldProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col gap-2">
       <label className="text-secondary text-sm dark:text-lighter">
         {label}
       </label>
@@ -47,6 +49,11 @@ const SelectField = ({
           </SelectItem>
         ))}
       </Select>
+      {errorMessage && (
+        <Text className="text-xs text-red-500 dark:text-red-500">
+          {errorMessage}
+        </Text>
+      )}
     </div>
   );
 };

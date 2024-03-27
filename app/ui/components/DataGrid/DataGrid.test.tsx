@@ -63,7 +63,6 @@ describe("DataGrid", () => {
     data: MOCK_ORDERS,
     columns: columns,
     pageSize: 2,
-    currentPageNumber: 1,
     total: MOCK_ORDERS.length,
   };
 
@@ -71,10 +70,13 @@ describe("DataGrid", () => {
   const dataGridComponent = <DataGrid {...mockProps} />;
 
   beforeEach(() => {
+    jest.resetAllMocks();
     renderResult = render(dataGridComponent);
   });
 
   it("Should matches snapshot", async () => {
+    jest.spyOn(URLSearchParams.prototype, "get").mockReturnValue("1");
+
     const { container } = render(
       <DataGrid {...mockProps} pageSize={undefined} />,
     );

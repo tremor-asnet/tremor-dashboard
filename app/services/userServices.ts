@@ -119,4 +119,16 @@ const getPinCode = async () => {
   return pinCode;
 };
 
-export { addNewUser, getUserByEmail, getPinCode, updatePinCode };
+const getUser = async () => {
+  const res = await fetch(`${API_ROUTES.USERS}`, {
+    method: "GET",
+  });
+
+  if (!res.ok) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+  }
+
+  return res.json();
+};
+
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode, getUser };

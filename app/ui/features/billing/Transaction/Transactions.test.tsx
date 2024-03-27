@@ -7,12 +7,23 @@ import Transactions from "./Transactions";
 // Mocks
 import { MOCK_TRANSACTIONS } from "@/mocks/transaction";
 
-describe("Transactions Component Testing", () => {
-  const newest = MOCK_TRANSACTIONS;
+const mockJson = jest.fn().mockReturnValue(Promise.resolve([]));
+const mockFetch = jest.fn().mockImplementation(() =>
+  Promise.resolve({
+    json: mockJson,
+    ok: true,
+  }),
+);
 
-  it("should match snapshot", () => {
+global.fetch = mockFetch;
+
+describe("Transactions Component Testing", () => {
+  it("should match snapshot", async () => {
     const { container } = render(
-      <Transactions newest={newest} date="23 - 30 March 2020" />,
+      await Transactions({
+        newest: MOCK_TRANSACTIONS,
+        date: "23 - 30 March 2020",
+      }),
     );
 
     expect(container).toMatchSnapshot();

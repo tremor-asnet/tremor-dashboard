@@ -3,7 +3,7 @@
 exports[`Transactions Component Testing should match snapshot 1`] = `
 <div>
   <div
-    class="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md"
+    class="p-6 bg-white dark:bg-[#202940] rounded-lg shadow-md create-transaction-wrapper"
   >
     <div
       class="flex justify-between"
@@ -17,8 +17,7 @@ exports[`Transactions Component Testing should match snapshot 1`] = `
           Your Transaction's
         </h6>
         <button
-          class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis bg-transparent hover:bg-transparent border-none p-0 dark:bg-transparent dark:hover:bg-transparent"
-          style="box-shadow: none;"
+          class="tremor-Button-root shrink-0 inline-flex justify-center items-center group font-medium outline-none rounded-tremor-default border shadow-tremor-input dark:shadow-dark-tremor-input text-sm border-tremor-brand dark:border-dark-tremor-brand text-tremor-brand-inverted dark:text-dark-tremor-brand-inverted hover:border-tremor-brand-emphasis dark:hover:border-dark-tremor-brand-emphasis bg-transparent hover:bg-transparent border-none p-0 dark:bg-transparent dark:hover:bg-transparent btn-create"
         >
           <span
             class="tremor-Button-text text-tremor-default whitespace-nowrap"

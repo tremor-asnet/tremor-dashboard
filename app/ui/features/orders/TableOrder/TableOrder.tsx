@@ -9,17 +9,14 @@ import {
   CustomStatus,
   CustomQuantity,
   CustomAvatarName,
+  DataGrid,
 } from "@/ui/components";
-import { DataGrid } from "@/ui/components";
 
 //Types
 import { ColumnType, Order } from "@/types";
 
 // Constants
 import { ROUTES } from "@/constants";
-
-// Helpers
-import { transformOrders } from "@/helpers";
 
 interface TableOrderProps {
   orders: Order[];
@@ -77,17 +74,9 @@ const TableOrder = ({ orders, total, currentPage }: TableOrderProps) => {
     },
   ];
 
-  // Arrange newly added items at the top of the table.
-  let sortedOrders = orders.sort((a, b) =>
-    a.createdAt.localeCompare(b.createdAt),
-  );
-
-  // Handle sort with field inside the object nested
-  sortedOrders = transformOrders(sortedOrders);
-
   return (
     <DataGrid
-      data={sortedOrders}
+      data={orders}
       columns={columns}
       currentPageNumber={currentPage}
       total={total}

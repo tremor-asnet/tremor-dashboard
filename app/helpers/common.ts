@@ -90,29 +90,6 @@ export const searchOrderDataByValue = <T, Y>(
   );
 
 /**
- * Filter Order by IsAvailable
- * @param data []
- * @param field string
- * @param value string
- * @returns []
- */
-export const filterOrderList = <T>(data: T[], field: string, value: string) =>
-  data.filter(item => getObjectValue(item, field).toString() === value);
-
-/**
- * Filter Product by IsAvailable
- * @param data []
- * @param field string
- * @param value string
- * @returns []
- */
-export const filterProductList = <T>(
-  data: T[],
-  field: string,
-  value: boolean,
-) => data.filter(item => Boolean(getObjectValue(item, field)) === value);
-
-/**
  * Convert number to array
  * @param start number
  * @param end number
@@ -121,38 +98,6 @@ export const filterProductList = <T>(
 export const rangeNumber = (start: number, end: number) => {
   const length = end - start + 1;
   return Array.from({ length }, (_, idx) => idx + start);
-};
-
-/**
- * Get sorted array
- * @param array []
- * @param key keyof T
- * @param orderBy string
- * @returns []
- */
-export const sortArrayByKey = <T>(
-  array: T[],
-  key: keyof T,
-  orderBy: string,
-) => {
-  // Define sort items
-  const sortItemCallback = (a: T, b: T) => {
-    const aValue = a[key];
-    const bValue = b[key];
-
-    return aValue > bValue ? 1 : -1;
-  };
-
-  // Call toSorted() if array is an array
-  const arraySort = array.toSorted
-    ? array.toSorted(sortItemCallback)
-    : array.sort(sortItemCallback);
-
-  if (orderBy === DIRECTION.DESC) {
-    return arraySort.reverse();
-  }
-
-  return arraySort;
 };
 
 /**
@@ -178,33 +123,6 @@ export const handleMatchPath = (path: string) => {
     default:
       return null;
   }
-};
-
-/**
- * Field "Count" and "Customer" are currently inside the object
- * So move the field inside the object need to sort to the outside
- * @param sortedOrders []
- */
-export const transformOrders = (sortedOrders: Order[]) => {
-  return sortedOrders.map(item => {
-    const { customer, products } = item;
-    let countKey = 0;
-    let productName = "";
-
-    if (products?.length) {
-      products.forEach(({ count, name }) => {
-        countKey = countKey + count;
-        productName = name;
-      });
-    }
-
-    return {
-      ...item,
-      count: countKey,
-      customerName: customer.fullName || "",
-      productName,
-    };
-  });
 };
 
 /**

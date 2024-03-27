@@ -19,9 +19,6 @@ exports[`ClientRootLayout Should be correct with theme 1`] = `
       >
         isDarkTheme to false
       </button>
-      <div
-        id="modal-root"
-      />
     </body>
   </html>
 </div>

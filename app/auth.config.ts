@@ -17,6 +17,7 @@ export const authConfig: NextAuthConfig = {
       const isOnDashboard = ![ROUTES.SIGN_IN, ROUTES.SIGN_UP].includes(
         nextUrl.pathname,
       );
+
       if (isLoggedIn) {
         // Move to Homepage if logged in
         if (nextUrl.pathname === "/" || !isOnDashboard) {

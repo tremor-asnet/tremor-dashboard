@@ -1,11 +1,13 @@
 "use server";
 
+// Libs
+import { cookies } from "next/headers";
+
 // Types
 import type { User } from "@/types";
 
 // Constants
 import { USER_MESSAGES, EMAIL_REGEX, UID_KEY, API_ROUTES } from "@/constants";
-import { cookies } from "next/headers";
 
 /**
  * Handle get user's account by email
@@ -98,20 +100,21 @@ const getUserById = async (id: number): Promise<User> => {
   if (!res.ok) {
     throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
+
   return (await res.json()) as User;
 };
 
+/**
+ *
+ * @returns pinCode: number
+ */
 const getPinCode = async () => {
   const id = cookies().get(UID_KEY)?.value;
 
-  // When the id value is null then will return undefined, and will force a sign-out
-  if (!id) {
-    return;
+  if (id) {
+    const { pinCode } = await getUserById(parseInt(id));
+    return pinCode;
   }
-
-  const { pinCode } = await getUserById(parseInt(id));
-
-  return pinCode;
 };
 
 export { addNewUser, getUserByEmail, getPinCode, updatePinCode };

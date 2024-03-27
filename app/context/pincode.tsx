@@ -42,7 +42,7 @@ const PinCodeProvider = ({
 }: IPinCodeProvider) => {
   const [isConfirmPinCode, setIsConfirmPinCode] = useState(false);
   const [isShowPinCodeModal, setIsShowPinCodeModal] = useState(
-    Boolean(userId) && !Boolean(code),
+    !!userId && !code,
   );
   const [pinCode, setPinCode] = useState<number | undefined>(code);
 

@@ -32,3 +32,8 @@ export const USER_MESSAGES = {
   ADD_FAILED: "Failed to create new account. Please try again!",
   GET_USER_FAILED: "Failed to get user",
 };
+
+export const SIGN_OUT_MESSAGE = {
+  SUCCESS: "Sign out successfully.",
+  FAILED: "Failed to Sign out",
+};

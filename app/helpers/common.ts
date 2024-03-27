@@ -1,13 +1,9 @@
 // Constants
 import {
-  DIRECTION,
   INVOICE_REGEX,
   ORDER_LIST_REGEX,
   PRODUCT_LIST_REGEX,
 } from "@/constants";
-
-// Types
-import { Order } from "@/types";
 
 export const isBrowser = typeof window !== "undefined";
 
@@ -85,7 +81,7 @@ export const searchOrderDataByValue = <T, Y>(
         itemInner =>
           getObjectValue(itemInner, fieldInner)
             ?.toLowerCase()
-            .includes((value as string).toLowerCase()),
+            .includes(value.toLowerCase()),
       ),
   );
 

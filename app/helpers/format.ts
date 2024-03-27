@@ -85,27 +85,6 @@ export const formattedNumber = ({
     : formattedNumber;
 };
 
-/**
- * Format dots to commas number
- * Ex: ( 23.9 --> 23,9 ), ( 23.9 --> $23,9)
- * @param object
- * @returns string
- */
-export const formatDotsToCommasNumber = ({
-  value,
-  currency = "",
-  positionFraction = 0,
-}: {
-  value: number;
-  currency?: string;
-  positionFraction?: number;
-}): string =>
-  `${currency}${value
-    ?.toLocaleString("en-US", {
-      minimumFractionDigits: positionFraction,
-    })
-    .replace(/\./, ",")}`;
-
 export const moneyFormat = ({
   value,
   currency = "",
@@ -117,8 +96,7 @@ export const moneyFormat = ({
   delimiter?: string;
   positionFraction?: number;
 }): string => {
-  const valuePrice = value ? value : 0;
-  let formattedNumber = valuePrice?.toLocaleString("en-US", {
+  let formattedNumber = value?.toLocaleString("en-US", {
     minimumFractionDigits: positionFraction,
   });
 

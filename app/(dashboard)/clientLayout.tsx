@@ -20,7 +20,12 @@ import "@/styles/billing.css";
 import { PinCodeProvider } from "@/context/pincode";
 
 interface DashboardLayoutProp {
-  profileData: { avatar: string; name: string; pinCode?: number };
+  profileData: {
+    avatar: string;
+    name: string;
+    pinCode?: number;
+    userId?: number;
+  };
   children: ReactNode;
 }
 
@@ -37,7 +42,7 @@ export default function DashboardLayout({
     setIsCollapseSidebar(isCollapseSidebar => !isCollapseSidebar);
   };
 
-  const { avatar, name, pinCode } = profileData;
+  const { avatar, name, pinCode, userId } = profileData;
 
   const signOutAction = async () => {
     setIsPending(true);
@@ -47,7 +52,7 @@ export default function DashboardLayout({
   };
 
   return (
-    <PinCodeProvider pinCode={pinCode}>
+    <PinCodeProvider pinCode={pinCode} userId={userId}>
       <Flex
         alignItems="start"
         className="bg-body dark:bg-dark-primary antialiased font-primary min-h-screen">

@@ -1,13 +1,17 @@
 "use server";
 
-// Libs
-import { cookies } from "next/headers";
-
 // Types
 import type { User } from "@/types";
 
 // Constants
-import { USER_MESSAGES, EMAIL_REGEX, UID_KEY, API_ROUTES } from "@/constants";
+import {
+  USER_MESSAGES,
+  EMAIL_REGEX,
+  ROUTER_API_URL,
+  UID_KEY,
+  API_ROUTES,
+} from "@/constants";
+import { cookies } from "next/headers";
 
 /**
  * Handle get user's account by email
@@ -100,21 +104,23 @@ const getUserById = async (id: number): Promise<User> => {
   if (!res.ok) {
     throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
-
   return (await res.json()) as User;
 };
 
 /**
  *
- * @returns pinCode: number
+ * @returns number || null
  */
-const getPinCode = async () => {
+const getPinCode = async (): Promise<number | null> => {
   const id = cookies().get(UID_KEY)?.value;
 
-  if (id) {
-    const { pinCode } = await getUserById(parseInt(id));
-    return pinCode;
+  if (!id) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
   }
+
+  const { pinCode } = await getUserById(parseInt(id));
+
+  return pinCode ?? null;
 };
 
 export { addNewUser, getUserByEmail, getPinCode, updatePinCode };

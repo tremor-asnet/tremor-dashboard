@@ -12,6 +12,7 @@ describe("usePagination", () => {
     const { result } = renderHook(() =>
       usePagination({ totalCount, pageSize, siblingCount, currentPage }),
     );
+
     expect(result.current).toEqual([1]);
   });
 
@@ -23,6 +24,7 @@ describe("usePagination", () => {
     const { result } = renderHook(() =>
       usePagination({ totalCount, pageSize, siblingCount, currentPage }),
     );
+
     expect(result.current).toEqual([1, 2, 3, 4, 5, 6]);
   });
 
@@ -34,6 +36,7 @@ describe("usePagination", () => {
     const { result } = renderHook(() =>
       usePagination({ totalCount, pageSize, siblingCount, currentPage }),
     );
+
     expect(result.current).toEqual([1, DOTS, 13, 14, 15, 16, 17]);
   });
 
@@ -45,6 +48,7 @@ describe("usePagination", () => {
     const { result } = renderHook(() =>
       usePagination({ totalCount, pageSize, siblingCount, currentPage }),
     );
+
     expect(result.current).toEqual([1, 2, 3, 4, 5, DOTS, 17]);
   });
 
@@ -56,6 +60,19 @@ describe("usePagination", () => {
     const { result } = renderHook(() =>
       usePagination({ totalCount, pageSize, siblingCount, currentPage }),
     );
+
     expect(result.current).toEqual([1, DOTS, 4, 5, 6, 7, 8, 9, 10, DOTS, 30]);
+  });
+
+  it("Renders default one page", () => {
+    const totalCount = 0;
+    const pageSize = 0;
+    const siblingCount = 0;
+    const currentPage = 0;
+    const { result } = renderHook(() =>
+      usePagination({ totalCount, pageSize, siblingCount, currentPage }),
+    );
+
+    expect(result.current).toEqual([1]);
   });
 });

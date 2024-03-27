@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const useFocusFieldError = (formState: any) => {
+const useFocusFieldError = (formState: any) => {
   useEffect(() => {
     const { errors } = formState;
 

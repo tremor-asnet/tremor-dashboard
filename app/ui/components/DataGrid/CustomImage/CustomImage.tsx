@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 // Constants
-import { NOT_FOUND, NOT_FOUND_IMAGE } from "@/constants";
+import { NO_IMAGE, NOT_FOUND_IMAGE } from "@/constants";
 
 interface ImageProps {
   className?: string;
@@ -14,6 +14,7 @@ interface ImageProps {
   alt: string;
   sizes?: string;
   priority?: boolean;
+  objectFit?: string;
 }
 
 const CustomImage = ({
@@ -23,26 +24,26 @@ const CustomImage = ({
   height,
   alt,
   sizes,
-
+  objectFit,
   ...rest
 }: ImageProps) => {
-  const [fallbackSrc, setFallbackImgSrc] = useState(false);
+  const [fallbackSrc, setFallbackSrc] = useState(false);
 
-  const handleOnError = () => setFallbackImgSrc(true);
+  const handleOnError = () => setFallbackSrc(true);
+  const altImage = src !== NOT_FOUND_IMAGE && alt ? alt : NO_IMAGE;
 
   return (
-    <>
-      <Image
-        className={className}
-        src={fallbackSrc ? NOT_FOUND_IMAGE : src}
-        width={width}
-        height={height}
-        sizes={sizes}
-        alt={alt}
-        onError={handleOnError}
-        {...rest}
-      />
-    </>
+    <Image
+      className={className}
+      src={fallbackSrc ? NOT_FOUND_IMAGE : src}
+      width={width}
+      height={height}
+      sizes={sizes}
+      alt={altImage}
+      onError={handleOnError}
+      objectFit={objectFit}
+      {...rest}
+    />
   );
 };
 

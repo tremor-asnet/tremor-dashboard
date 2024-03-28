@@ -1,4 +1,7 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
+
+// Contexts
+import { ThemeContext, ThemeProvider } from "@/context/theme";
 
 // Components
 import InvoiceHeader from "./InvoiceHeader";
@@ -17,7 +20,30 @@ const InvoiceHeaderProps = {
 
 describe("InvoiceHeader component", () => {
   it("should render snapshot correctly", () => {
-    const { container } = render(<InvoiceHeader {...InvoiceHeaderProps} />);
+    const { getByTestId, container } = render(
+      <ThemeProvider>
+        <ThemeContext.Consumer>
+          {({ isDarkTheme, toggleTheme }) => (
+            <>
+              <InvoiceHeader {...InvoiceHeaderProps} />
+              <button
+                data-testid="toggle-theme"
+                onClick={() =>
+                  toggleTheme()
+                }>{`isDarkTheme to ${isDarkTheme}`}</button>
+            </>
+          )}
+        </ThemeContext.Consumer>
+      </ThemeProvider>,
+    );
+    const themeButton = getByTestId("toggle-theme");
+
+    fireEvent.click(themeButton);
+    expect(themeButton.textContent).toBe("isDarkTheme to true");
+
+    fireEvent.click(themeButton);
+    expect(themeButton.textContent).toBe("isDarkTheme to false");
+
     expect(container).toMatchSnapshot();
   });
 

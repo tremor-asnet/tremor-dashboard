@@ -106,7 +106,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
               class="w-full mb-2"
             >
               <div
-                class="w-full"
+                class="w-full flex flex-col gap-2"
               >
                 <label
                   class="text-secondary text-sm dark:text-lighter"
@@ -323,7 +323,7 @@ exports[`Testing ProductInfo component Should match snapshot 1`] = `
             class="w-full mb-2"
           >
             <div
-              class="w-full"
+              class="w-full flex flex-col gap-2"
             >
               <label
                 class="text-secondary text-sm dark:text-lighter"

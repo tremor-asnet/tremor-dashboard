@@ -32,7 +32,6 @@ const ClientRootLayout = ({ children }: ClientRootLayoutProps) => {
       {/* TODO: Add class to custom theme dark or light */}
       <body className={`${inter.className} ${isDarkTheme ? "dark" : "light"}`}>
         {children}
-        <div id="modal-root"></div>
       </body>
     </html>
   );

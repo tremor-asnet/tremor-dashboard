@@ -21,4 +21,17 @@ describe("Testing ChannelsChart component", () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it("Should show no data if data is empty", () => {
+    const mockNoData = {
+      sale_total: 0,
+      sale_social_media: 0,
+      channels: [],
+    };
+
+    const { getByText } = render(
+      <ChannelsChart title="Channels" channelChartData={mockNoData} />,
+    );
+    expect(getByText("No data")).toBeInTheDocument;
+  });
 });

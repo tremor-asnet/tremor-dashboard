@@ -28,7 +28,7 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
     <Flex
       flexDirection="col"
       alignItems="start"
-      className="antialiased font-primary">
+      className="antialiased font-primary lg:w-80%">
       <Text className="text-primary dark:text-white font-bold !text-3xl mb-3">
         {productName}
       </Text>
@@ -65,14 +65,9 @@ const ProductInfoDetail = ({ product }: ProductInfoDetailProps) => {
           dangerouslySetInnerHTML={{ __html: description! }}
         />
       </Flex>
-      <Flex className="mt-6">
-        <InputField
-          id="details-quantity"
-          type="number"
-          label="Quantity"
-          readOnly={true}
-          defaultValue={quantity}
-        />
+      <Flex flexDirection="col" alignItems="start" className="mt-10">
+        <Text className="text-secondary dark:text-lighter mb-4">Quantity</Text>
+        <Text>{quantity}</Text>
       </Flex>
     </Flex>
   );

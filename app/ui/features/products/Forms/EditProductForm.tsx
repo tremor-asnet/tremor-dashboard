@@ -24,14 +24,16 @@ import { editProduct } from "@/services";
 import { ProductData } from "@/types";
 
 // Constants
-import { NOT_FOUND_IMAGE, TOAST_TYPES, VARIANT_BUTTON } from "@/constants";
+import {
+  EDIT_PRODUCT_MESSAGE,
+  NOT_FOUND_IMAGE,
+  VARIANT_BUTTON,
+} from "@/constants";
 
 // Hooks
 import useImageUploader from "@/hooks/useImageUploader";
 import { useToast } from "@/hooks";
-
-// Contexts
-import { ToastMessageType } from "@/context/toast";
+import { TOAST_TYPE } from "@/context/toast";
 
 const EditProductForm = ({
   productData,
@@ -106,7 +108,8 @@ const EditProductForm = ({
       };
 
       openToast({
-        toastType: ToastMessageType(TOAST_TYPES.WARNING),
+        type: TOAST_TYPE.WARNING,
+        message: EDIT_PRODUCT_MESSAGE.PENDING,
       });
 
       setIsLoading(true);
@@ -120,11 +123,13 @@ const EditProductForm = ({
       router.back();
 
       openToast({
-        toastType: ToastMessageType(TOAST_TYPES.SUCCESS),
+        type: TOAST_TYPE.SUCCESS,
+        message: EDIT_PRODUCT_MESSAGE.SUCCESS,
       });
     } catch (err: any) {
       openToast({
-        toastType: ToastMessageType(TOAST_TYPES.ERROR),
+        type: TOAST_TYPE.ERROR,
+        message: EDIT_PRODUCT_MESSAGE.FAILED,
       });
     }
   };
@@ -149,7 +154,9 @@ const EditProductForm = ({
         <div className="opacity-25 fixed inset-0 z-20 bg-black cursor-not-allowed" />
       )}
       <FormProvider {...formHandler}>
-        <form onSubmit={handleSubmit(onSubmit)} className="relative">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="relative product-info">
           <div className="w-full text-end absolute -mt-24">
             <Button
               variant={VARIANT_BUTTON.PRIMARY}

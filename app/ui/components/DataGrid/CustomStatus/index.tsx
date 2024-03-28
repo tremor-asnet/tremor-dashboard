@@ -3,13 +3,13 @@ import { STATUS_TEXT } from "@/constants";
 
 // Components
 import { Text } from "@tremor/react";
-import { ProductStatus } from "./ProductStatus";
+import { default as ProductStatus } from "./ProductStatus";
 
 interface CustomStatusProps {
   status: number;
 }
 
-export const CustomStatus = ({ status }: CustomStatusProps) => (
+const CustomStatus = ({ status }: CustomStatusProps) => (
   <div className="flex justify-start items-center text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">
     <ProductStatus status={status} />
     <Text className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-status">

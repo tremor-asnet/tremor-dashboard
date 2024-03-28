@@ -6,7 +6,7 @@ exports[`SelectField Component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="w-full"
+        class="w-full flex flex-col gap-2"
       >
         <label
           class="text-secondary text-sm dark:text-lighter"
@@ -104,7 +104,7 @@ exports[`SelectField Component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="w-full"
+      class="w-full flex flex-col gap-2"
     >
       <label
         class="text-secondary text-sm dark:text-lighter"

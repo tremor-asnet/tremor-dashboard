@@ -7,6 +7,9 @@ import { ColumnType } from "@/types";
 // Helpers
 import { getObjectValue } from "@/helpers";
 
+// Constants
+import { RESULT_NOT_FOUND } from "@/constants";
+
 interface DataTableBodyProps<T> {
   data: T[];
   columns: ColumnType<T>[];
@@ -40,7 +43,7 @@ const DataGridBody = <T,>({ data = [], columns }: DataTableBodyProps<T>) => {
         <TableRow className="w-full">
           <TableCell colSpan={7} className="h-32 text-center">
             <Text className="text-xl dark:text-white font-semibold">
-              Result Not Found
+              {RESULT_NOT_FOUND}
             </Text>
           </TableCell>
         </TableRow>

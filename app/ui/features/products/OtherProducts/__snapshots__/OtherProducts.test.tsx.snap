@@ -99,15 +99,15 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Christopher Knight Home"
-                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    class="w-10 h-10 min-w-[24px] md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
-                    height="24"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 2x"
+                    height="100"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
                     style="color: transparent;"
-                    width="24"
+                    width="100"
                   />
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
@@ -157,15 +157,15 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Bar Height Swivel Barstool"
-                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    class="w-10 h-10 min-w-[24px] md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
-                    height="24"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=48&q=75 2x"
+                    height="100"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-pink.686a7ae1.jpeg&w=256&q=75 2x"
                     style="color: transparent;"
-                    width="24"
+                    width="100"
                   />
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
@@ -215,15 +215,15 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Christopher Knight Home"
-                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    class="w-10 h-10 min-w-[24px] md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
-                    height="24"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=48&q=75 2x"
+                    height="100"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fblack-chair.b2719b4f.jpeg&w=256&q=75 2x"
                     style="color: transparent;"
-                    width="24"
+                    width="100"
                   />
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
@@ -273,15 +273,15 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Modern Square"
-                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    class="w-10 h-10 min-w-[24px] md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
-                    height="24"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=48&q=75 2x"
+                    height="100"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-wood.d127f22b.jpeg&w=256&q=75 2x"
                     style="color: transparent;"
-                    width="24"
+                    width="100"
                   />
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
@@ -331,15 +331,15 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 >
                   <img
                     alt="Signature Design by Ashley"
-                    class="w-6 h-6 min-w-[24px] rounded-full mr-2"
+                    class="w-10 h-10 min-w-[24px] md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-full mr-2"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
-                    height="24"
-                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75"
-                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=48&q=75 2x"
+                    height="100"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=256&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard-pro%2F%2F_next%2Fstatic%2Fmedia%2Fchair-steel.dd1d3892.jpeg&w=256&q=75 2x"
                     style="color: transparent;"
-                    width="24"
+                    width="100"
                   />
                   <p
                     class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] capitalize order-customer truncate"
@@ -363,7 +363,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  No
+                  Yes
                 </p>
               </td>
             </tr>

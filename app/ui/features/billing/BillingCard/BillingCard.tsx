@@ -63,7 +63,7 @@ const BillingCard = ({
             <Flex
               flexDirection="col"
               alignItems="start"
-              className="min-w-[105px] mr-6">
+              className="min-w-[138px]">
               <Text className="text-whtie opacity-80 tracking-[0.4px] ">
                 Card Holder
               </Text>
@@ -84,8 +84,8 @@ const BillingCard = ({
             <Image
               src={METADATA.MASTERCARD}
               alt="master card icon"
-              width="55"
-              height="41"
+              width="40"
+              height="30"
             />
           </Flex>
         </Flex>

@@ -11,7 +11,7 @@ interface CustomDateFormatProps {
   date: string;
 }
 
-export const CustomDateFormat = ({ date }: CustomDateFormatProps) => (
+const CustomDateFormat = ({ date }: CustomDateFormatProps) => (
   <Text className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-dagte">
     {formatDateTime(date, SEPARATOR.COMMAS)}
   </Text>

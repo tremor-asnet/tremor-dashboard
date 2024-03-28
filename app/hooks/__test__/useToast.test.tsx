@@ -1,32 +1,20 @@
-import { ReactNode } from "react";
 import { renderHook } from "@testing-library/react";
-import { ToastContext } from "@/context/toast";
+import { TOAST_TYPE, ToastContext } from "@/context/toast";
 import { useToast } from "../useToast";
-import { ToastColor } from "@/ui/components/Toast/Toast";
 
 // Mock context value
 const mockToastContextValue: {
-  isOpen?: boolean;
-  toastType: {
-    icon: ReactNode;
-    message: string;
-    color: ToastColor;
-  };
   openToast: ({
-    isOpen,
-    toastType,
+    type,
+    message,
+    icon,
   }: {
-    isOpen?: boolean;
-    toastType: {
-      icon: ReactNode;
-      message: string;
-      color: ToastColor;
-    };
+    type?: TOAST_TYPE;
+    message?: string;
+    icon?: JSX.Element;
   }) => void;
   closeToast: () => void;
 } = {
-  isOpen: false,
-  toastType: { icon: null, message: "", color: "green" },
   openToast: jest.fn(),
   closeToast: jest.fn(),
 };

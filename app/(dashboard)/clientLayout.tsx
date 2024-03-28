@@ -1,9 +1,8 @@
 "use client";
 
 // Libs
-import { ReactNode, useState } from "react";
+import { ReactNode, useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
 
 // Components
 import { Flex } from "@tremor/react";
@@ -15,15 +14,21 @@ import PinCode from "@/ui/features/pin-code";
 // Constants
 import { ROUTES } from "@/constants";
 
+import { signOut } from "@/services";
+
+import { PinCodeProvider } from "@/context/pincode";
+
 // Styles
 import "@/styles/billing.css";
 
+interface IProfileData {
+  avatar: string;
+  name: string;
+  pinCode?: number;
+  userId?: number;
+}
 interface DashboardLayoutProp {
-  profileData: {
-    avatar: string;
-    name: string;
-    pinCode?: number;
-  };
+  profileData: IProfileData;
   children: ReactNode;
 }
 
@@ -40,17 +45,21 @@ export default function DashboardLayout({
     setIsCollapseSidebar(isCollapseSidebar => !isCollapseSidebar);
   };
 
-  const { avatar, name, pinCode } = profileData;
+  const { avatar, name, pinCode, userId } = profileData;
 
-  const signOutAction = async () => {
+  const signOutAction = useCallback(async () => {
     setIsPending(true);
-    await fetch(`/api/logout`, { method: "POST" });
+    await signOut();
     setIsCollapseSidebar(false);
     router.replace(ROUTES.SIGN_IN);
-  };
+  }, [router]);
+
+  useEffect(() => {
+    !userId && signOutAction();
+  }, [signOutAction, userId]);
 
   return (
-    <>
+    <PinCodeProvider pinCode={pinCode} userId={userId}>
       <Flex
         alignItems="start"
         className="bg-body dark:bg-dark-primary antialiased font-primary min-h-screen">
@@ -76,7 +85,7 @@ export default function DashboardLayout({
       {isPending && (
         <LoadingIndicator width={10} height={10} isFullWidth={true} />
       )}
-      <PinCode pinCode={pinCode} />
-    </>
+      <PinCode />
+    </PinCodeProvider>
   );
 }

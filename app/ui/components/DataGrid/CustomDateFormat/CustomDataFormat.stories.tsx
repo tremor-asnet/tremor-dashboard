@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { CustomDateFormat } from ".";
+import CustomDateFormat from ".";
 
 const meta = {
   title: "Components/Tables/CustomDateFormat",

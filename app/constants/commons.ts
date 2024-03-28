@@ -120,3 +120,7 @@ export const enum VARIANT_BUTTON {
   SURFACE = "surface",
   DARK = "dark",
 }
+
+export const NO_IMAGE = "No Image";
+
+export const RESULT_NOT_FOUND = "Result Not Found";

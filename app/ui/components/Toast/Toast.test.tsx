@@ -1,35 +1,40 @@
-// Libs
-import { fireEvent, render } from "@testing-library/react";
-
-// Components
+import { render, fireEvent } from "@testing-library/react";
 import Toast from "./Toast";
+import { IoClose } from "react-icons/io5";
 
-// Constants
-import { SIGN_UP_MESSAGE } from "@/constants";
-import { FaCheckCircle } from "react-icons/fa";
+describe("Toast Component", () => {
+  const onCloseMock = jest.fn();
 
-const handleCloseToast = jest.fn();
-const ToastProps = {
-  icon: <FaCheckCircle />,
-  message: SIGN_UP_MESSAGE.SUCCESS,
-  onClose: handleCloseToast,
-};
-
-const ToastComponent = () => render(<Toast {...ToastProps} />);
-
-describe("Toast component", () => {
-  test("should render Toast component snapshot correctly", () => {
-    const { container } = ToastComponent();
-
-    expect(container).toMatchSnapshot();
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
-  test("calls onClose when close button is clicked", () => {
-    const { getByTestId } = ToastComponent();
+  it("matches the snapshot with default props", () => {
+    const { container } = render(
+      <Toast Icon={IoClose} message="Default Message" />,
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
 
-    const closeButton = getByTestId("toast");
-    fireEvent.click(closeButton);
+  it("renders with custom color", () => {
+    const { getByTestId } = render(
+      <Toast Icon={IoClose} message="Custom Color Message" color="red" />,
+    );
 
-    expect(handleCloseToast).toHaveBeenCalledTimes(0);
+    expect(getByTestId("toast").classList.contains("text-red-500")).toBeTruthy;
+  });
+
+  it("calls onClose when close button is clicked", () => {
+    const { getByLabelText } = render(
+      <Toast
+        Icon={IoClose}
+        message="Close Button Message"
+        onClose={onCloseMock}
+      />,
+    );
+
+    fireEvent.click(getByLabelText("Close"));
+
+    expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
 });

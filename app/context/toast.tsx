@@ -1,128 +1,102 @@
 "use client";
 
-import { ReactNode, createContext, useEffect, useState } from "react";
+import React, { createContext, useState } from "react";
 
-// Icons
+// Components
 import { FaCheckCircle } from "react-icons/fa";
 import { TbExclamationMark } from "react-icons/tb";
 import { RxCross2 } from "react-icons/rx";
+import Toast from "@/ui/components/Toast/Toast";
 
-// Constants
-import { EDIT_PRODUCT_MESSAGE, TOAST_TYPES } from "@/constants";
-
-// Types
-import Toast, { ToastColor } from "@/ui/components/Toast/Toast";
-
-interface ToastProviderProps {
-  children: React.ReactNode;
+export enum TOAST_TYPE {
+  SUCCESS = "success",
+  WARNING = "warning",
+  ERROR = "error",
 }
-
-interface ToastType {
-  icon: ReactNode;
-  message: string;
-  color: ToastColor;
-}
-
 interface ToastProps {
-  isOpen?: boolean;
-  toastType: ToastType;
+  type?: TOAST_TYPE;
+  message?: string;
+  icon?: JSX.Element;
 }
 
-interface ToastContextProps {
-  isOpen?: boolean;
-  toastType: ToastType;
-  openToast: ({ isOpen, toastType }: ToastProps) => void;
+type ToastState = ToastProps & { isOpen: boolean };
+
+interface ToastContextValue {
+  openToast: (toastProps: ToastProps) => void;
   closeToast: () => void;
 }
 
-export const ToastMessageType = (type: string): ToastType => {
+export const buildToastRenderer = ({ type, icon, message }: ToastProps) => {
   switch (type) {
-    case TOAST_TYPES.SUCCESS:
+    case TOAST_TYPE.WARNING:
       return {
-        icon: <FaCheckCircle />,
-        message: EDIT_PRODUCT_MESSAGE.SUCCESS,
-        color: "green",
-      };
-
-    case TOAST_TYPES.WARNING:
-      return {
-        icon: <TbExclamationMark />,
-        message: EDIT_PRODUCT_MESSAGE.PENDING,
+        icon: icon || TbExclamationMark,
+        message: message ?? "Warning!",
         color: "yellow",
       };
 
-    case TOAST_TYPES.ERROR:
+    case TOAST_TYPE.ERROR:
       return {
-        icon: RxCross2,
-        message: EDIT_PRODUCT_MESSAGE.FAILED,
+        icon: icon || RxCross2,
+        message: message ?? "Error!",
         color: "red",
       };
 
+    case TOAST_TYPE.SUCCESS:
     default:
       return {
-        icon: <FaCheckCircle />,
-        message: "",
+        icon: icon || FaCheckCircle,
+        message: message ?? "Success!",
         color: "green",
       };
   }
 };
 
-const ToastContext = createContext<ToastContextProps>({
-  toastType: { icon: "", message: "", color: "green" },
-  openToast: ({ isOpen, toastType }: ToastProps) => {},
+const ToastContext = createContext<ToastContextValue>({
+  openToast: () => {},
   closeToast: () => {},
 });
 
-const ToastProvider = ({ children }: ToastProviderProps) => {
-  const [toast, setToast] = useState<ToastProps>({
+const ToastProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  const [toast, setToast] = useState<ToastState>({
     isOpen: false,
-    toastType: {
-      icon: <FaCheckCircle />,
-      message: "",
-      color: "green",
-    },
+    type: TOAST_TYPE.SUCCESS,
   });
-
-  const {
-    isOpen,
-    toastType: { icon, message, color },
-  } = toast;
 
   const closeToast = () => {
     setToast({
+      ...toast,
       isOpen: false,
-      toastType: {
-        message: "",
-        icon: null,
-        color: "green",
-      },
     });
   };
 
-  const openToast = ({ toastType }: ToastProps) => {
-    const { icon, message, color } = toastType;
+  const openToast = ({
+    type = TOAST_TYPE.SUCCESS,
+    message,
+    icon,
+  }: ToastProps) => {
+    setToast({ isOpen: true, type, message, icon });
 
-    setToast({ isOpen: true, toastType: { icon, message, color } });
     setTimeout(() => {
       closeToast();
     }, 3000);
   };
 
-  const value = {
-    isOpen,
-    toastType: { icon, message, color },
-    openToast,
-    closeToast,
-  };
-
+  const toastRenderer = buildToastRenderer(toast);
   return (
-    <ToastContext.Provider value={value}>
+    <ToastContext.Provider
+      value={{
+        openToast,
+        closeToast,
+      }}>
       {children}
       {toast.isOpen && (
         <Toast
-          icon={icon}
-          message={message}
-          color={color}
+          Icon={toastRenderer.icon}
+          message={toastRenderer.message}
+          color={toastRenderer.color}
           onClose={closeToast}
         />
       )}

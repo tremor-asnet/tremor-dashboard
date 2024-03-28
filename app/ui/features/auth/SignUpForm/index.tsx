@@ -12,8 +12,6 @@ import { LoadingIndicator, Checkbox, Button } from "@/ui/components";
 
 // Icons
 import { TbExclamationMark } from "react-icons/tb";
-import { FaCheckCircle } from "react-icons/fa";
-import { RxCross2 } from "react-icons/rx";
 
 // Constants
 import {
@@ -38,6 +36,9 @@ import "@/styles/form.css";
 
 // Hooks
 import { useToast } from "@/hooks";
+
+// Enums
+import { TOAST_TYPE } from "@/context/toast";
 
 const SignUpForm = () => {
   const {
@@ -74,11 +75,9 @@ const SignUpForm = () => {
       });
 
       openToast({
-        toastType: {
-          icon: <TbExclamationMark />,
-          message: SIGN_UP_MESSAGE.PENDING,
-          color: "yellow",
-        },
+        type: TOAST_TYPE.WARNING,
+        message: SIGN_UP_MESSAGE.PENDING,
+        icon: TbExclamationMark,
       });
 
       const res = await createNewAccount(
@@ -93,11 +92,8 @@ const SignUpForm = () => {
       });
 
       openToast({
-        toastType: {
-          icon: <FaCheckCircle />,
-          message: SIGN_UP_MESSAGE.SUCCESS,
-          color: "green",
-        },
+        type: TOAST_TYPE.SUCCESS,
+        message: SIGN_UP_MESSAGE.SUCCESS,
       });
 
       res?.isSuccess && router.replace(ROUTES.SIGN_IN);
@@ -109,11 +105,8 @@ const SignUpForm = () => {
       });
 
       openToast({
-        toastType: {
-          icon: <RxCross2 />,
-          message: SIGN_UP_MESSAGE.FAILED,
-          color: "red",
-        },
+        type: TOAST_TYPE.ERROR,
+        message: SIGN_UP_MESSAGE.FAILED,
       });
     }
   };

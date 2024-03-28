@@ -107,7 +107,11 @@ const getUserById = async (id: number): Promise<User> => {
   return (await res.json()) as User;
 };
 
-const getPinCode = async () => {
+/**
+ *
+ * @returns number || null
+ */
+const getPinCode = async (): Promise<number | null> => {
   const id = cookies().get(UID_KEY)?.value;
 
   if (!id) {
@@ -116,7 +120,19 @@ const getPinCode = async () => {
 
   const { pinCode } = await getUserById(parseInt(id));
 
-  return pinCode;
+  return pinCode ?? null;
 };
 
-export { addNewUser, getUserByEmail, getPinCode, updatePinCode };
+const getUser = async () => {
+  const res = await fetch(`${API_ROUTES.USERS}`, {
+    method: "GET",
+  });
+
+  if (!res.ok) {
+    throw new Error(USER_MESSAGES.GET_USER_FAILED);
+  }
+
+  return res.json();
+};
+
+export { addNewUser, getUserByEmail, getPinCode, updatePinCode, getUser };

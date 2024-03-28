@@ -6,7 +6,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
   "baseElement": <body>
     <div>
       <div
-        class="print:hidden mb-4 transition-all duration-300 ease-in delay-20 false"
+        class="print:hidden mb-4 transition-all duration-300 ease-in delay-20 pl-1 pr-2"
       >
         <div
           class="h-16 flex items-center justify-between px-2 px-4"
@@ -14,34 +14,39 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           <div
             class="flex items-center"
           >
-            <div
-              class="block xl:hidden cursor-pointer mr-2"
+            <button
+              class="tremor-Button-root shrink-0 justify-center items-center group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis block xl:hidden cursor-pointer z-20"
             >
-              <svg
-                class="text-2xl text-secondary dark:text-white"
-                color=""
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                />
-              </svg>
-            </div>
+                <svg
+                  class="text-2xl text-secondary dark:text-white"
+                  color="white"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  style="color: white;"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                  />
+                </svg>
+              </span>
+            </button>
             <nav
-              class="pl-3 md:pl-0"
+              class="pl-3 z-20"
             >
               <ol
-                class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"
+                class="flex flex-wrap gap-1 sm:gap-2 items-center text-lighter"
               >
                 <li
                   class="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
@@ -71,9 +76,18 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                   </a>
                   /
                 </li>
+                <li
+                  class="flex gap-1 sm:gap-2 bc-link text-sm capitalize tracking-[0.02857em] text-white dark:text-white text-tremor-content-title dark:text-dark-tremor-content-title"
+                >
+                  <a
+                    href="/all-projects"
+                  >
+                    all projects
+                  </a>
+                </li>
               </ol>
               <p
-                class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-primary"
+                class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-white"
               />
             </nav>
           </div>
@@ -83,39 +97,44 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
             <div
               class="flex flex-wrap item-center gap-y-1"
             >
-              <div
-                class="relative p-2 flex items-center"
-                data-testid="toggle-theme"
+              <button
+                class="tremor-Button-root shrink-0 justify-center group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis relative p-2 flex items-center"
               >
-                <svg
-                  aria-hidden="true"
-                  class="text-tremor-content text-xl cursor-pointer"
-                  color=""
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 20 20"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
+                <span
+                  class="tremor-Button-text text-tremor-default whitespace-nowrap"
                 >
-                  <path
-                    clip-rule="evenodd"
-                    d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
+                  <svg
+                    aria-hidden="true"
+                    class="text-tremor-content text-xl cursor-pointer"
+                    color="white"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    style="color: white;"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </button>
               <div
                 class="relative p-2 flex items-center"
               >
                 <svg
                   class="text-tremor-content text-xl cursor-pointer"
-                  color=""
+                  color="white"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
                   stroke-width="0"
+                  style="color: white;"
                   viewBox="0 0 24 24"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +144,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                   />
                 </svg>
                 <div
-                  class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none false"
+                  class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none text-inherit md:text-white md:opacity-[0.8]"
                 >
                   9
                 </div>
@@ -138,7 +157,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
   </body>,
   "container": <div>
     <div
-      class="print:hidden mb-4 transition-all duration-300 ease-in delay-20 false"
+      class="print:hidden mb-4 transition-all duration-300 ease-in delay-20 pl-1 pr-2"
     >
       <div
         class="h-16 flex items-center justify-between px-2 px-4"
@@ -146,34 +165,39 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
         <div
           class="flex items-center"
         >
-          <div
-            class="block xl:hidden cursor-pointer mr-2"
+          <button
+            class="tremor-Button-root shrink-0 justify-center items-center group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis block xl:hidden cursor-pointer z-20"
           >
-            <svg
-              class="text-2xl text-secondary dark:text-white"
-              color=""
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              class="tremor-Button-text text-tremor-default whitespace-nowrap"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-              />
-            </svg>
-          </div>
+              <svg
+                class="text-2xl text-secondary dark:text-white"
+                color="white"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: white;"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                />
+              </svg>
+            </span>
+          </button>
           <nav
-            class="pl-3 md:pl-0"
+            class="pl-3 z-20"
           >
             <ol
-              class="flex flex-wrap gap-1 sm:gap-2 items-center text-gray-400 dark:text-white"
+              class="flex flex-wrap gap-1 sm:gap-2 items-center text-lighter"
             >
               <li
                 class="text-sm flex items-center gap-1 sm:gap-2 capitalize dark:text-dark-primary tracking-[0.02857em]"
@@ -203,9 +227,18 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                 </a>
                 /
               </li>
+              <li
+                class="flex gap-1 sm:gap-2 bc-link text-sm capitalize tracking-[0.02857em] text-white dark:text-white text-tremor-content-title dark:text-dark-tremor-content-title"
+              >
+                <a
+                  href="/all-projects"
+                >
+                  all projects
+                </a>
+              </li>
             </ol>
             <p
-              class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-primary"
+              class="text-tremor-title dark:text-dark-tremor-content-title font-bold capitalize tracking-[0.0075em] mt-1 text-white"
             />
           </nav>
         </div>
@@ -215,39 +248,44 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
           <div
             class="flex flex-wrap item-center gap-y-1"
           >
-            <div
-              class="relative p-2 flex items-center"
-              data-testid="toggle-theme"
+            <button
+              class="tremor-Button-root shrink-0 justify-center group font-medium outline-none text-sm text-tremor-brand dark:text-dark-tremor-brand bg-transparent hover:text-tremor-brand-emphasis dark:hover:text-dark-tremor-brand-emphasis relative p-2 flex items-center"
             >
-              <svg
-                aria-hidden="true"
-                class="text-tremor-content text-xl cursor-pointer"
-                color=""
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 20 20"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="tremor-Button-text text-tremor-default whitespace-nowrap"
               >
-                <path
-                  clip-rule="evenodd"
-                  d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </div>
+                <svg
+                  aria-hidden="true"
+                  class="text-tremor-content text-xl cursor-pointer"
+                  color="white"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  style="color: white;"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
             <div
               class="relative p-2 flex items-center"
             >
               <svg
                 class="text-tremor-content text-xl cursor-pointer"
-                color=""
+                color="white"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
+                style="color: white;"
                 viewBox="0 0 24 24"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +295,7 @@ exports[`DashboardHeader component Should render DashboardHeader snapshot correc
                 />
               </svg>
               <div
-                class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none false"
+                class="absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none text-inherit md:text-white md:opacity-[0.8]"
               >
                 9
               </div>

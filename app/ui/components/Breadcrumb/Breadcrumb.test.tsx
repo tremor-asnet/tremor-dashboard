@@ -3,6 +3,16 @@ import { render } from "@testing-library/react";
 // Components
 import Breadcrumb from "./Breadcrumb";
 
+// Mocking usePathname hook
+jest.mock("next/navigation", () => ({
+  usePathname: jest
+    .fn()
+    .mockReturnValueOnce("/all-projects")
+    .mockReturnValueOnce("/product-list")
+    .mockReturnValue("/product-list/87120/edit-product"),
+  useParams: jest.fn().mockReturnValue({}),
+}));
+
 describe("Testing breadcrumb component", () => {
   it("Should match snapshot", () => {
     const { container } = render(

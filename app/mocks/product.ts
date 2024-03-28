@@ -48,6 +48,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 129,
     isAvailable: true,
     providerName: "Provider B",
+    quantity: 5,
     image:
       "https://demos.creative-tim.com/nextjs-material-dashboard-pro//_next/static/media/chair-steel.dd1d3892.jpeg",
   },

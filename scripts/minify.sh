@@ -7,5 +7,4 @@ npx terser .next/static/chunks/app/*.js -o .next/static/chunks/app/*.js
 
 echo 'Minify Server';
 npx terser .next/server/app/**/*.js -o .next/server/app/**/*.js
-npx terser .next/server/chunks/*.js -o .next/server/chunks/*.js
 npx terser .next/server/pages/*.js -o .next/server/pages/*.js

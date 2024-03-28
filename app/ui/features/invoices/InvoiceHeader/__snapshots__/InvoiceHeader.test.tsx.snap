@@ -101,5 +101,10 @@ exports[`InvoiceHeader component should render snapshot correctly 1`] = `
       </p>
     </div>
   </div>
+  <button
+    data-testid="toggle-theme"
+  >
+    isDarkTheme to false
+  </button>
 </div>
 `;

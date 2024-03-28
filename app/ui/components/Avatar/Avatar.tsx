@@ -28,7 +28,7 @@ const Avatar = ({
   height,
   alt,
   className = "shadow-md",
-  sizes = AVATAR_SRC.md,
+  sizes = "(max-width: 768px) 100vw, 33vw",
   priority = true,
 }: AvatarProps): JSX.Element => {
   return (

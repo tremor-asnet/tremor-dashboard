@@ -14,9 +14,9 @@ exports[`Testing avatar component Should match snapshot 1`] = `
           decoding="async"
           fetchpriority="high"
           height="48"
-          sizes="/images/avatar/avatar-md.webp"
+          sizes="(max-width: 768px) 100vw, 33vw"
           src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75"
-          srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=16&q=75 16w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=32&q=75 32w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 48w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=64&q=75 64w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 96w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=128&q=75 128w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75 3840w"
+          srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75 3840w"
           style="color: transparent;"
           width="48"
         />
@@ -33,9 +33,9 @@ exports[`Testing avatar component Should match snapshot 1`] = `
         decoding="async"
         fetchpriority="high"
         height="48"
-        sizes="/images/avatar/avatar-md.webp"
+        sizes="(max-width: 768px) 100vw, 33vw"
         src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75"
-        srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=16&q=75 16w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=32&q=75 32w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=48&q=75 48w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=64&q=75 64w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=96&q=75 96w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=128&q=75 128w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75 3840w"
+        srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-md.webp&w=3840&q=75 3840w"
         style="color: transparent;"
         width="48"
       />

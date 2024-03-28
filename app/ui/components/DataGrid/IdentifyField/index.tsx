@@ -7,7 +7,7 @@ interface IdentifyFieldProps {
   link: string;
 }
 
-export const IdentifyField = ({ id, link }: IdentifyFieldProps) => (
+const IdentifyField = ({ id, link }: IdentifyFieldProps) => (
   <div className="flex justify-start items-center ml-2 w-16">
     <Link
       prefetch={true}

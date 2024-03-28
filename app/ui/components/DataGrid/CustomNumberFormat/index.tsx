@@ -11,7 +11,7 @@ interface CustomNumberFormatProps {
   value: number;
 }
 
-export const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
+const CustomNumberFormat = ({ value }: CustomNumberFormatProps) => (
   <Text className="text-xs dark:text-lighter font-semibold leading-[15px] tracking-[0.4px] order-revenue">
     {moneyFormat({
       value,

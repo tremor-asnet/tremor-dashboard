@@ -11,15 +11,14 @@ interface ProductStatusProps {
   status: number;
 }
 
-export const ProductStatus = ({ status }: ProductStatusProps) => {
+const ProductStatus = ({ status }: ProductStatusProps) => {
   switch (status) {
     case 0:
       return (
         <Button
           additionalClass="border-green-500"
           variant={VARIANT_BUTTON.LIGHT_STATUS}
-          variantTremor={VARIANT_BUTTON.LIGHT}
-          onClick={() => {}}>
+          variantTremor={VARIANT_BUTTON.LIGHT}>
           <MdDone className="text-xs text-green-500" />
         </Button>
       );
@@ -28,8 +27,7 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
         <Button
           additionalClass="border-red-500"
           variant={VARIANT_BUTTON.LIGHT_STATUS}
-          variantTremor={VARIANT_BUTTON.LIGHT}
-          onClick={() => {}}>
+          variantTremor={VARIANT_BUTTON.LIGHT}>
           <MdClose className="text-xs text-red-500" />
         </Button>
       );
@@ -38,8 +36,7 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
         <Button
           additionalClass="border-primary dark:border-primary"
           variant={VARIANT_BUTTON.LIGHT_STATUS}
-          variantTremor={VARIANT_BUTTON.LIGHT}
-          onClick={() => {}}>
+          variantTremor={VARIANT_BUTTON.LIGHT}>
           <MdReplay className="text-xs text-primary dark:text-primary" />
         </Button>
       );
@@ -47,3 +44,5 @@ export const ProductStatus = ({ status }: ProductStatusProps) => {
       return <span className="w-[25px] h-[25px] mr-2"></span>;
   }
 };
+
+export default ProductStatus;

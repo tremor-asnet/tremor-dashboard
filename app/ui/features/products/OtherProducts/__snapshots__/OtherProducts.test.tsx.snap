@@ -363,7 +363,7 @@ exports[`Other Products Table Testing should match snapshot 1`] = `
                 <p
                   class="text-tremor-default text-tremor-content text-xs dark:text-lighter font-semibold"
                 >
-                  No
+                  Yes
                 </p>
               </td>
             </tr>

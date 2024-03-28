@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useState } from "react";
+import { useState } from "react";
 
 //Components
 import { GrPaypal } from "react-icons/gr";
@@ -59,34 +59,28 @@ const SalaryCard = ({
     <>
       <div className="w-full font-primary antialiased items-center justify-between">
         <div className="flex items-center">
-          <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full border-none relative rounded-xl shadow-md">
+          <Card className="bg-tremor-primary dark:bg-dark-tremor-primary mx-auto pt-3 pb-4 px-4 ring-0 max-w-full lg:max-w-[356px] 2xl:max-w-full max-h-full md:max-h-[236px] border-none relative rounded-xl shadow-md">
             <Flex flexDirection="col">
               <IconBox className="bg-gradient-pickled" icon={icon} />
               <Flex flexDirection="col" className="mt-4 mb-1">
                 <Text className="mb-1 text-primary dark:text-lighter text-tremor-title leading-[33px] tracking-[0.1764px] font-semibold">
                   {type}
                 </Text>
-                <Text className="text-xs dark:text-dark-romance text-primary font-light">
+                <Text className="text-xs text-center dark:text-dark-romance text-primary font-light line-clamp-2">
                   {description}
                 </Text>
               </Flex>
             </Flex>
             <Divider className="opacity-25 dark:opacity-15 my-4" />
-            <Flex flexDirection="col" className="gap-4">
-              <Button
-                variant="light"
-                icon={isShowAmount ? FaRegEyeSlash : FaRegEye}
-                onClick={toggleShowHide}
-                className="text-primary hover:text-primary dark:text-lighter dark:hover:text-lighter"
-              />
+            <Flex className={`gap-2 ${isShowAmount ? "py-[5px]" : "py-[8px]"}`}>
               {isShowAmount ? (
-                <Flex justifyContent="center">
+                <Flex justifyContent="start">
                   {isSalary && (
                     <Text className="text-primary text-xl dark:text-lighter font-semibold">
                       +
                     </Text>
                   )}
-                  <Text className="text-primary text-xl dark:text-lighter font-semibold">
+                  <Text className="text-primary text-xl dark:text-lighter font-semibold truncate max-w-[89px]">
                     {moneyFormat({
                       value: value,
                       currency: currency,
@@ -94,10 +88,16 @@ const SalaryCard = ({
                   </Text>
                 </Flex>
               ) : (
-                <Text className="text-primary text-xl dark:text-lighter font-semibold">
+                <Text className="text-primary text-xl h-[20px] dark:text-lighter font-semibold">
                   *****
                 </Text>
               )}
+              <Button
+                variant="light"
+                icon={isShowAmount ? FaRegEyeSlash : FaRegEye}
+                onClick={toggleShowHide}
+                className="text-primary hover:text-primary dark:text-lighter dark:hover:text-lighter"
+              />
             </Flex>
           </Card>
         </div>

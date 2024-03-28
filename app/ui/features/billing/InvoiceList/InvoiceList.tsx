@@ -52,10 +52,10 @@ const Invoices = ({ invoices }: InvoicesProps) => {
           <Text className="text-xs text-primary">view all</Text>
         </Button>
       </div>
-      <ul className="flex flex-col gap-2 mt-6 hidden xl:block">
+      <ul className="flex flex-col gap-2 mt-6 hidden lg:block">
         {invoiceListDeskTop}
       </ul>
-      <ul className="flex flex-col gap-2 mt-6 xl:hidden">{invoiceList}</ul>
+      <ul className="flex flex-col gap-2 mt-6 lg:hidden">{invoiceList}</ul>
     </div>
   );
 };

@@ -22,8 +22,8 @@ const BillingDetail = ({ cardInfo, aggregation }: BillingDataProps) => {
   const billingCardNumber = cardNumber.match(/.{1,4}/g).join(" ");
 
   return (
-    <div className="w-full flex flex-col md:flex-row">
-      <div className="w-full mr-0 md:mr-6">
+    <div className="w-full flex flex-col md:flex-row items-center">
+      <div className="w-full mr-0 md:mr-6 max-w-[380px]">
         <BillingCard
           cardNumber={billingCardNumber}
           holderFullName={holderFullName}

@@ -28,7 +28,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
       </button>
     </div>
     <ul
-      class="flex flex-col gap-2 mt-6 hidden xl:block"
+      class="flex flex-col gap-2 mt-6 hidden lg:block"
     >
       <li
         class="w-full flex justify-between py-2 pr-2"
@@ -136,7 +136,7 @@ exports[`Invoices Testing should match snapshot 1`] = `
       </li>
     </ul>
     <ul
-      class="flex flex-col gap-2 mt-6 xl:hidden"
+      class="flex flex-col gap-2 mt-6 lg:hidden"
     >
       <li
         class="w-full flex justify-between py-2 pr-2"

@@ -21,7 +21,7 @@ const getRandomColor = () => {
 };
 const colorRandom = getRandomColor();
 
-export const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
+const CustomAvatarName = ({ avatar, text }: CustomAvatarNameProps) => (
   <div className="flex justify-start items-center w-48">
     {avatar ? (
       <CustomImage

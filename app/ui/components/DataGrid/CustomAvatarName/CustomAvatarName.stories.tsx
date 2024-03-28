@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 // Components
-import { CustomAvatarName } from ".";
+import CustomAvatarName from ".";
 
 // Constants
 import { AVATAR_SRC } from "@/constants";

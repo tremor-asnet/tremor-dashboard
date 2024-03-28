@@ -27,25 +27,23 @@ const CustomImage = ({
   objectFit,
   ...rest
 }: ImageProps) => {
-  const [fallbackSrc, setFallbackImgSrc] = useState(false);
+  const [fallbackSrc, setFallbackSrc] = useState(false);
 
-  const handleOnError = () => setFallbackImgSrc(true);
+  const handleOnError = () => setFallbackSrc(true);
   const altImage = src !== NOT_FOUND_IMAGE && alt ? alt : NO_IMAGE;
 
   return (
-    <>
-      <Image
-        className={className}
-        src={fallbackSrc ? NOT_FOUND_IMAGE : src}
-        width={width}
-        height={height}
-        sizes={sizes}
-        alt={altImage}
-        onError={handleOnError}
-        objectFit={objectFit}
-        {...rest}
-      />
-    </>
+    <Image
+      className={className}
+      src={fallbackSrc ? NOT_FOUND_IMAGE : src}
+      width={width}
+      height={height}
+      sizes={sizes}
+      alt={altImage}
+      onError={handleOnError}
+      objectFit={objectFit}
+      {...rest}
+    />
   );
 };
 

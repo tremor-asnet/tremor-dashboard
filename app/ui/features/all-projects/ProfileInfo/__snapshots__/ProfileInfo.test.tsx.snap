@@ -23,8 +23,9 @@ exports[`Testing profile info component Should match snapshot 1`] = `
                 decoding="async"
                 fetchpriority="high"
                 height="74"
-                src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75"
-                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75 2x"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=3840&q=75"
+                srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=3840&q=75 3840w"
                 style="color: transparent;"
                 width="74"
               />
@@ -68,8 +69,9 @@ exports[`Testing profile info component Should match snapshot 1`] = `
               decoding="async"
               fetchpriority="high"
               height="74"
-              src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75"
-              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=96&q=75 1x, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75 2x"
+              sizes="(max-width: 768px) 100vw, 33vw"
+              src="http://localhost/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=256&q=75 256w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=384&q=75 384w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=640&q=75 640w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=750&q=75 750w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=828&q=75 828w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Favatar%2Favatar-lg.webp&w=3840&q=75 3840w"
               style="color: transparent;"
               width="74"
             />

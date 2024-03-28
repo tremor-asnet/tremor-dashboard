@@ -1,9 +1,6 @@
 "use client";
 import { Switch, Text } from "@tremor/react";
 
-// Constants
-import { ACCOUNT_SETTING_FIELDS, ACCOUNT_SETTING_DATA } from "@/constants";
-
 // Types
 import { PlatformSetting, AccountSettingData } from "@/types";
 
@@ -19,8 +16,8 @@ interface AccountSettingProps {
 }
 
 const AccountSetting = ({
-  accountSettingFields = ACCOUNT_SETTING_FIELDS,
-  accountSettingData = ACCOUNT_SETTING_DATA,
+  accountSettingFields,
+  accountSettingData,
 }: AccountSettingProps) => {
   const { isDarkTheme } = useContext(ThemeContext);
   const color = isDarkTheme ? "white" : "zinc";
@@ -31,7 +28,10 @@ const AccountSetting = ({
         Account
       </Text>
       {accountSettingFields.map(({ label, field }: PlatformSetting) => (
-        <div className="flex items-center space-x-3 mt-1 py-3" key={label}>
+        <div
+          className="flex items-center space-x-3 mt-1 py-3"
+          key={label}
+          data-testid="account-setting">
           <Switch
             tabIndex={2}
             id="switch"

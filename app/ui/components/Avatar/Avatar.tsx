@@ -2,6 +2,9 @@
 
 import { memo } from "react";
 
+// Constants
+import { AVATAR_SRC } from "@/constants";
+
 // Components
 import { CustomImage } from "@/ui/components";
 
@@ -21,11 +24,11 @@ interface AvatarProps {
  */
 const Avatar = ({
   src,
-  width = 48,
-  height = 48,
-  alt = "Avatar",
+  width,
+  height,
+  alt,
   className = "shadow-md",
-  sizes,
+  sizes = AVATAR_SRC.md,
   priority = true,
 }: AvatarProps): JSX.Element => {
   return (

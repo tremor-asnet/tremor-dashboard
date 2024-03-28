@@ -32,7 +32,7 @@ const DashboardHeader = ({
   const pathname = usePathname();
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const isAllProjectPage = pathname === ROUTES.PROJECTS;
+  const isAllProjectPage = pathname.includes(ROUTES.PROJECTS);
   // Check the condition if it is page All Project then display the white color
   const colorIconCaseProject =
     (!isScrolled && isAllProjectPage && "white") || "";
@@ -113,8 +113,9 @@ const DashboardHeader = ({
               />
               <div
                 className={`absolute top-0 -right-0.5 text-white rounded-full bg-red-500 text-[10px] font-bold py-1 px-2 cursor-pointer leading-none ${
-                  isAllProjectPage &&
-                  "text-inherit md:text-white md:opacity-[0.8]"
+                  isAllProjectPage
+                    ? "text-inherit md:text-white md:opacity-[0.8]"
+                    : ""
                 }`}>
                 9
               </div>
